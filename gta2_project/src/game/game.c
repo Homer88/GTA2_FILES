@@ -15,6 +15,7 @@ void __thiscall FUN_003f1004(void *this)
 void __thiscall FUN_003f10b0(void)
 
 
+// Было: Game_FUN_003f113c
 int __thiscall Game::Game_FUN_003f113c(Game *this)
 
 
@@ -55,6 +56,7 @@ Player * __thiscall Game::Game_FUN_003f11a8(Game *this)
     } while (DAT_00676203 < this->byte_);
   }
 
+// Было: Game_FUN_003f1208
 int __thiscall Game::Game_FUN_003f1208(Game *this)
 
 
@@ -71,6 +73,7 @@ int __thiscall Game::Game_FUN_003f1208(Game *this)
           return (int)&this->cPlayer[bVar1]->CameraOrPhysics;
         }
 
+// Было: Game_FUN_003f12a8
 undefined4 __thiscall Game::Game_FUN_003f12a8(Game *this)
 
 
@@ -291,6 +294,7 @@ int __thiscall DecoderFloat(void *this)
 float10 __thiscall S17::EncodedFloatToRegularFloat(void *param_1)
 
 
+// Было: S9_FUN_00401b20
 S9::S9_FUN_00401b20(S9 *this,SpriteS1 *pSpriteS1,int *param_2)
 
 
@@ -306,6 +310,7 @@ void * __thiscall FUN_00401b90(void *this,void *param_1,int *param_2)
 SpriteS1 * __thiscall FUN_00401bd0(void *this,SpriteS1 *s110,int *param_2)
 
 
+// Было: FUN_00401bf0
 Model::FUN_00401bf0(Model *this,SpriteS1 *pSpriteS1,int *param_2)
 
 
@@ -325,6 +330,7 @@ Model::FUN_00401bf0(Model *this,SpriteS1 *pSpriteS1,int *param_2)
     this->index = sVar1;
   }
 
+// Было: FUN_00401c40
 CarSystemManager::FUN_00401c40(CarSystemManager *this,void *param_1)
 
 
@@ -634,6 +640,7 @@ void __thiscall FUN_00403870(void *this)
 AutoClass4 * __thiscall AutoClass4::AutoClass4(AutoClass4 *this)
 
 
+// Было: FUN_004038e0
 void __thiscall AutoClass4::FUN_004038e0(AutoClass4 *this)
 
 
@@ -801,9 +808,11 @@ void __fastcall FUN_00403d50(int param_1)
     pPed->uns61 = (char)(Index >> 0x18);
   }
 
+// Было: FUN_00404400
 byte __thiscall AutoClass4::FUN_00404400(AutoClass4 *this,Ped *pPed)
 
 
+// Было: FUN_00404420
 void __thiscall AutoClass4::FUN_00404420(AutoClass4 *this,Ped *pPed,byte index)
 
 
@@ -846,6 +855,7 @@ void __thiscall AutoClass4::FUN_00404420(AutoClass4 *this,Ped *pPed,byte index)
     } while (bVar8 < bVar1);
   }
 
+// Было: FUN_004045d0
 void __thiscall AutoClass4::FUN_004045d0(AutoClass4 *this)
 
 
@@ -902,6 +912,7 @@ LAB_004046aa:
       } while (bVar3 < this->IndexPed);
     }
 
+// Было: FUN_004046f0
 void __thiscall AutoClass4::FUN_004046f0(AutoClass4 *this,byte IndexPed)
 
 
@@ -1406,6 +1417,7 @@ LAB_0040535a:
     } while (Index < (int)(uint)this->Index);
   }
 
+// Было: FUN_00405760
 void __thiscall AutoClass4::FUN_00405760(AutoClass4 *this,byte Index)
 
 
@@ -2512,6 +2524,7 @@ undefined4 __thiscall FUN_00409460(void *this,int param_1)
     puVar3 = puVar3 + 1;
   }
 
+// Было: S159_FUN_004098e0
 cNetwork::S159_FUN_004098e0(cNetwork *this,int param_1,undefined4 *param_2)
 
 
@@ -2605,6 +2618,7 @@ void __thiscall FUN_00409a30(int param_1,undefined4 param_2)
     uVar1 = uVar1 - 0x100;
   }
 
+// Было: FUN_00409d00
 cNetwork::FUN_00409d00(cNetwork *this,undefined4 param_1,int param_2)
 
 
@@ -2612,6 +2626,7 @@ cNetwork::FUN_00409d00(cNetwork *this,undefined4 param_1,int param_2)
     iVar1 = this->arrr23[0];
   }
 
+// Было: FUN_00409da0
 cNetwork::FUN_00409da0(cNetwork *this,short *param_1,uint param_2)
 
 
@@ -4481,6 +4496,7 @@ byte __thiscall FUN_004100f0(void *this,void *param_1)
     *(int *)&this->field_0xc84 = *(int *)&this->field_0xc84 + 1;
   }
 
+// Было: S131_FUN_004102a0
 CameraOrPhysics::S131_FUN_004102a0(CameraOrPhysics *this,S110 *param_1)
 
 
@@ -4529,6 +4545,7 @@ CameraOrPhysics::S131_FUN_004102a0(CameraOrPhysics *this,S110 *param_1)
     *(int *)&this->field_0xc84 = *(int *)&this->field_0xc84 + 1;
   }
 
+// Было: S131_FUN_00410370
 CameraOrPhysics::S131_FUN_00410370(CameraOrPhysics *this,S46 *param_1)
 
 
@@ -4581,9 +4598,11 @@ S132 * __thiscall S132::S132(S132 *this)
     return this;
   }
 
+// Было: FUN_00410580
 DMAudio::FUN_00410580(DMAudio *this,undefined4 param_1,int param_2,int param_3)
 
 
+// Было: FUN_00410590
 DMAudio::FUN_00410590(DMAudio *this,uint param_1,undefined4 param_2)
 
 
@@ -4613,9 +4632,11 @@ void __fastcall thunk_FUN_00410690(undefined4 *param_1)
 void __thiscall FUN_00410710(void *this)
 
 
+// Было: S157_FUN_00410730
 DMAudio::S157_FUN_00410730(DMAudio *this)
 
 
+// Было: S157_FUN_00410750
 DMAudio::S157_FUN_00410750(DMAudio *this,void *pS131,int param_2)
 
 
@@ -4761,6 +4782,7 @@ void FUN_00410800(undefined4 param_1)
     return 0;
   }
 
+// Было: S154_FUN_00410ac0
 AudioManager::S154_FUN_00410ac0(AudioManager *this,undefined4 param_1)
 
 
@@ -4788,6 +4810,7 @@ AudioManager::S154_FUN_00410ac0(AudioManager *this,undefined4 param_1)
 float10 __fastcall FloatDecoder(int *param_1)
 
 
+// Было: S154_FUN_00410bb0
 AudioManager::S154_FUN_00410bb0(AudioManager *this,void *param_1)
 
 
@@ -4797,6 +4820,7 @@ int __thiscall FUN_00410bf0(void *this,int *param_1)
 undefined4 FUN_00410c10(undefined4 param_1,undefined4 param_2)
 
 
+// Было: S154_FUN_00410c80
 AudioManager::S154_FUN_00410c80(AudioManager *this,void *param_1)
 
 
@@ -5006,6 +5030,7 @@ int FUN_00411120(int param_1)
     return (uint)uVar1 << 8;
   }
 
+// Было: S154_FUN_00411250
 AudioManager::S154_FUN_00411250(AudioManager *this,int param_1)
 
 
@@ -5201,6 +5226,7 @@ AudioManager::S154_FUN_00411250(AudioManager *this,int param_1)
     iVar2 = 0x54;
   }
 
+// Было: S154_FUN_004116b0
 AudioManager::S154_FUN_004116b0(AudioManager *this,undefined4 param_1)
 
 
@@ -5214,6 +5240,7 @@ AudioManager::S154_FUN_004116b0(AudioManager *this,undefined4 param_1)
     this->field51_0x54 = (byte)iVar1 >> 1;
   }
 
+// Было: S154_FUN_00411730
 AudioManager::S154_FUN_00411730(AudioManager *this,void *param_1)
 
 
@@ -6609,6 +6636,7 @@ void __thiscall FUN_004148d0(AudioManager *param_1,int *param_2)
     }
   }
 
+// Было: S154_FUN_00414bc0
 AudioManager::S154_FUN_00414bc0(AudioManager *this,undefined4 *param_1)
 
 
@@ -6780,6 +6808,7 @@ AudioManager::S154_FUN_00414bc0(AudioManager *this,undefined4 *param_1)
       return 1;
     }
 
+// Было: S154_FUN_004150e0
 AudioManager::S154_FUN_004150e0(AudioManager *this,int param_1,int param_2)
 
 
@@ -7020,6 +7049,7 @@ switchD_00415541_caseD_8:
     }
   }
 
+// Было: thunk_FUN_004143b0
 AudioManager::thunk_FUN_004143b0(AudioManager *this,int *param_1)
 
 
@@ -7563,6 +7593,7 @@ LAB_004161f7:
     this->field0_0x0 = 0;
   }
 
+// Было: S154_FUN_00416570
 AudioManager::S154_FUN_00416570(AudioManager *this,char *param_1)
 
 
@@ -7600,6 +7631,7 @@ AudioManager::S154_FUN_00416570(AudioManager *this,char *param_1)
     return this->Sound3D;
   }
 
+// Было: S154_FUN_004166e0
 AudioManager::S154_FUN_004166e0(AudioManager *this,undefined *param_1)
 
 
@@ -7648,6 +7680,7 @@ AudioManager::S154_FUN_004166e0(AudioManager *this,undefined *param_1)
 int __fastcall FUN_00416880(int *param_1)
 
 
+// Было: S154_FUN_004168e0
 AudioManager::S154_FUN_004168e0(AudioManager *this,S110 *param_1,Ped *param_2)
 
 
@@ -7710,6 +7743,7 @@ uint FUN_00416960(byte param_1,uint param_2,uint param_3)
 undefined4 __thiscall FUN_00416b70(void *this)
 
 
+// Было: FUN_00416bc0
 bool __thiscall Game::FUN_00416bc0(Game *this)
 
 
@@ -7727,6 +7761,7 @@ void __thiscall FUN_00416bf0(void *this)
 Elements * __thiscall Elements::Elements(Elements *this)
 
 
+// Было: S154_FUN_00416c10
 AudioManager::S154_FUN_00416c10(AudioManager *this,uint sampleRate)
 
 
@@ -7777,6 +7812,7 @@ AudioManager::S154_FUN_00416c10(AudioManager *this,uint sampleRate)
     *(undefined4 *)(&this->field_0x4448 + uVar2 * 4) = 0;
   }
 
+// Было: S154_FUN_00416d30
 AudioManager::S154_FUN_00416d30(AudioManager *this,char *param_1)
 
 
@@ -10446,6 +10482,7 @@ void FUN_0041c0f0Em(void)
 int __thiscall DecoderFloat(void *this)
 
 
+// Было: S154_FUN_0041c240
 AudioManager::S154_FUN_0041c240(AudioManager *this,uint param_1,uint param_2)
 
 
@@ -11187,6 +11224,7 @@ void __thiscall FUN_0041d900(void *this)
 void __fastcall FUN_0041d910(void *param_1)
 
 
+// Было: FUN_0041d930
 void __thiscall AutoClass3::FUN_0041d930(AutoClass3 *this,int param_1)
 
 
@@ -11422,6 +11460,7 @@ bool __thiscall FUN_0041e0f0(void *this,short *param_1)
 byte __thiscall FUN_0041e110(void *this)
 
 
+// Было: S110_FUN_0041e130
 S110::S110_FUN_0041e130(S110 *this,S110 *pS110,int *param_2,int *param_3)
 
 
@@ -11451,6 +11490,7 @@ undefined4 __thiscall FUN_0041e2f0(int param_1,int param_2)
     }
   }
 
+// Было: FUN_0041e370
 void __thiscall S9::FUN_0041e370(S9 *this,undefined4 param_1,undefined4 param_2)
 
 
@@ -11594,6 +11634,7 @@ byte __thiscall FUN_0041f180(void *this,void *param_1,int param_2)
 void __thiscall FUN_0041f2f0(void *this)
 
 
+// Было: S131_FUN_0041f410
 CameraOrPhysics::S131_FUN_0041f410(CameraOrPhysics *this,Ped *pPed)
 
 
@@ -11935,9 +11976,11 @@ LAB_00420ada:
     return;
   }
 
+// Было: S47_FUN_00420c30
 bool __thiscall Char::S47_FUN_00420c30(Char *this,int pID)
 
 
+// Было: FUN_00420c40
 CarSystemManager::FUN_00420c40(CarSystemManager *this,int param_1)
 
 
@@ -12006,6 +12049,7 @@ void __fastcall FUN_00420e60(undefined4 *param_1)
 void __thiscall Passenger::Passenger(Passenger *this)
 
 
+// Было: FUN_00420ea0
 bool __thiscall Passenger::FUN_00420ea0(Passenger *this)
 
 
@@ -12026,27 +12070,34 @@ EngineStruct * __thiscall S10::S10_FUN_00420ef0(S10 *this)
 S2 * __thiscall S2::S2(S2 *this)
 
 
+// Было: S2_FUN_00420fd0
 int __thiscall S2::S2_FUN_00420fd0(S2 *this)
 
 
+// Было: S63_FUN_00420ff0
 undefined1 __thiscall S63::S63_FUN_00420ff0(S63 *this)
 
 
 undefined1 __thiscall FUN_00421020(void *this)
 
 
+// Было: S61_FUN_00421050
 undefined1 __thiscall S61::S61_FUN_00421050(S61 *this)
 
 
+// Было: S61_FUN_00421060
 bool __thiscall S61::S61_FUN_00421060(S61 *this)
 
 
+// Было: S63_FUN_00421080
 byte __thiscall S63::S63_FUN_00421080(S63 *this)
 
 
+// Было: FUN_004210b0
 byte __thiscall S63::FUN_004210b0(S63 *this)
 
 
+// Было: S11_FUN_004210c0
 void __thiscall EngineStruct::S11_FUN_004210c0(EngineStruct *this)
 
 
@@ -12122,6 +12173,7 @@ void __fastcall FUN_004213b0(int param_1)
     this->TEST = 3;
   }
 
+// Было: S46_FUN_004214b0
 byte __thiscall S46::S46_FUN_004214b0(S46 *this)
 
 
@@ -12153,6 +12205,7 @@ FUN_00421910(int param_1,undefined4 *param_2,undefined4 param_3)
 Player * __thiscall Game::GetPlayerSlotByIndex(Game *this,byte PlayerID)
 
 
+// Было: S86_FUN_004219f0
 void __thiscall Hud::S86_FUN_004219f0(Hud *this)
 
 
@@ -13431,18 +13484,22 @@ void __fastcall FUN_00425430(undefined4 *param_1)
 Passenger * __thiscall Passenger::Passenger_FUN_00425450(Passenger *this)
 
 
+// Было: S10_FUN_00425460
 void __thiscall S10::S10_FUN_00425460(S10 *this,EngineStruct *pS11)
 
 
+// Было: S2_FUN_004254f0
 void __thiscall S2::S2_FUN_004254f0(S2 *this,int param_1)
 
 
 S4 * __thiscall S4::S4(S4 *this)
 
 
+// Было: S4_FUN_00425570
 void __thiscall S4::S4_FUN_00425570(S4 *this)
 
 
+// Было: S4_FUN_00425580
 void __thiscall S4::S4_FUN_00425580(S4 *this,void *param_1)
 
 
@@ -15010,6 +15067,7 @@ FUN_00429ff0(Car *param_1,SpriteS1 *param_2,Turrel *param_3,Passenger *param_4)
     goto switchD_0042a0b1_caseD_3;
   }
 
+// Было: FUN_0042a120
 CarSystemManager::FUN_0042a120(CarSystemManager *this,int param_1)
 
 
@@ -18312,6 +18370,7 @@ void __thiscall FUN_00432860(void *this,undefined4 *param_1,undefined4 *param_2)
            FUN_00432880(*(undefined4 *)
                          (&DAT_006639a0 + (uint)*(byte *)(iVar2 + 2) * 4),
 
+// Было: FUN_00432c60
 void __thiscall S285::FUN_00432c60(S285 *this)
 
 
@@ -18324,6 +18383,7 @@ S281 * __thiscall S281::S281(S281 *this)
   if (uVar3 != 0) {
     iVar2 = 0;
     do {
+// Было: FUN_00432c60
       S285::FUN_00432c60((S285 *)((int)&this->S286->S285[0].field0_0x0 + iVar2))
       ;
       iVar2 = iVar2 + 72;
@@ -18367,6 +18427,7 @@ void __thiscall FUN_00433130(void *this,int param_1)
 void * __thiscall Taxi::S84_FUN_00433140(Taxi *this,Car *pCar)
 
 
+// Было: S84_FUN_00433160
 void __thiscall Taxi::S84_FUN_00433160(Taxi *this)
 
 
@@ -18413,6 +18474,7 @@ void __thiscall FUN_00433320(void *this,Car *param_1)
 void __thiscall AutoClass4::SetIndexPed(AutoClass4 *this,byte param_1)
 
 
+// Было: FUN_00433370
 undefined4 __thiscall AutoClass4::FUN_00433370(AutoClass4 *this)
 
 
@@ -18663,9 +18725,11 @@ void __thiscall FUN_00433fe0(void *this)
       return;
     }
 
+// Было: S68_FUN_00434070
 void __thiscall S68::S68_FUN_00434070(S68 *this,byte param_1)
 
 
+// Было: S61_FUN_004340a0
 undefined1 __thiscall S61::S61_FUN_004340a0(S61 *this)
 
 
@@ -18777,9 +18841,11 @@ void __thiscall FUN_00434640(void *this)
 void __thiscall FUN_004348e0(int param_1,undefined2 *param_2)
 
 
+// Было: S90_FUN_00434960
 bool __thiscall TrafficLigthStruct::S90_FUN_00434960(TrafficLigthStruct *this)
 
 
+// Было: S84_FUN_00434970
 bool __thiscall Taxi::S84_FUN_00434970(Taxi *this)
 
 
@@ -19163,6 +19229,7 @@ S50 * __thiscall S50::S50(S50 *this)
 GameObject * __thiscall S50::S50_FUN_004355a0(S50 *this)
 
 
+// Было: S50_FUN_004355c0
 void __thiscall S50::S50_FUN_004355c0(S50 *this,GameObject *param_1)
 
 
@@ -19214,6 +19281,7 @@ undefined4 __fastcall FUN_00435e40(int param_1)
     SetHealthPlayer(this,100);
   }
 
+// Было: FUN_00435f70
 void __thiscall Passenger::FUN_00435f70(Passenger *this)
 
 
@@ -23561,6 +23629,7 @@ LAB_00440a63:
     DAT_005e5bcc = 0;
   }
 
+// Было: FUN_00440cc0
 void __thiscall Char::FUN_00440cc0(Char *this,CameraOrPhysics *param_1)
 
 
@@ -23810,6 +23879,7 @@ void FUN_004415e0(void)
 Char * __thiscall Char::Char(Char *this)
 
 
+// Было: Char_FUN_00441960
 void __thiscall Char::Char_FUN_00441960(Char *this)
 
 
@@ -25674,6 +25744,7 @@ LAB_004459a7:
       goto LAB_004459a7;
     }
 
+// Было: S47_FUN_00445a20
 void __thiscall Char::S47_FUN_00445a20(Char *this)
 
 
@@ -25716,6 +25787,7 @@ int __thiscall FUN_00445bb0(void *this)
 void __thiscall FUN_00445bd0(undefined4 *param_1,int param_2)
 
 
+// Было: FUN_00445c30
 Passenger::FUN_00445c30(Passenger *this,undefined4 param_1,undefined4 param_2)
 
 
@@ -25758,9 +25830,11 @@ undefined4 __fastcall FUN_00445ec0(undefined4 *param_1)
 void __thiscall S52::SetPassengerPrev(S52 *this)
 
 
+// Было: S52_FUN_00445f00
 void __thiscall S52::S52_FUN_00445f00(S52 *this,Passenger *pPassenger)
 
 
+// Было: FUN_00445f10
 void __thiscall Passenger::FUN_00445f10(Passenger *this,Ped *pPed)
 
 
@@ -25771,6 +25845,7 @@ void __thiscall FUN_00445f30(undefined4 *param_1,int param_2)
       return;
     }
 
+// Было: FUN_00445f80
 void __thiscall Passenger::FUN_00445f80(Passenger *this,Passenger *pPassenger)
 
 
@@ -25799,6 +25874,7 @@ void __thiscall FUN_00445fc0(void *this,int param_1)
     pPVar1 = pPassenger;
   }
 
+// Было: Passenger_FUN_00446010
 void __thiscall Passenger::Passenger_FUN_00446010(Passenger *this,void *pPed)
 
 
@@ -25815,12 +25891,14 @@ void __thiscall Passenger::Passenger_FUN_00446010(Passenger *this,void *pPed)
 char __fastcall FUN_00446060(int *param_1)
 
 
+// Было: FUN_004460d0
 void __thiscall Passenger::FUN_004460d0(Passenger *this)
 
 
 Ped * __thiscall FUN_00446100(void *this)
 
 
+// Было: FUN_00446120
 void __thiscall Passenger::FUN_00446120(Passenger *this)
 
 
@@ -25830,9 +25908,11 @@ void __fastcall FUN_00446160(undefined4 *param_1)
 void * __thiscall Model::Model_FUN_004461a0(Model *this)
 
 
+// Было: S121FUN_00446200
 byte __thiscall S121::S121FUN_00446200(S121 *this)
 
 
+// Было: FUN_00446240
 int __thiscall S121::FUN_00446240(S121 *this,Ped *param_2)
 
 
@@ -25847,15 +25927,18 @@ int __thiscall S121::FUN_00446240(S121 *this,Ped *param_2)
     }
   }
 
+// Было: S121_FUN_00446290
 void __thiscall S121::S121_FUN_00446290(S121 *this,Model *pModel)
 
 
 void __thiscall FUN_004462e0(void *this)
 
 
+// Было: FUN_004462f0
 undefined4 __thiscall S121::FUN_004462f0(S121 *this,Ped *param_1,Ped *param_2)
 
 
+// Было: S121_FUN_00446340
 undefined4 __thiscall S121::S121_FUN_00446340(S121 *this,int param_1,Ped *pPed)
 
 
@@ -25887,6 +25970,7 @@ undefined4 __thiscall FUN_004464e0(S121 *param_1,Ped *param_2)
       return 0;
     }
 
+// Было: FUN_00446550
 undefined4 __thiscall S121::FUN_00446550(S121 *this,Ped *param_2)
 
 
@@ -25908,6 +25992,7 @@ undefined4 __thiscall FUN_00446620(S121 *param_1,Ped *param_2)
       return 0;
     }
 
+// Было: FUN_00446690
 undefined4 __thiscall S121::FUN_00446690(S121 *this,Ped *param_2)
 
 
@@ -26040,12 +26125,15 @@ void FUN_00446b80(undefined4 *param_1)
                 _DAT_005e6940 = puVar3;
               }
 
+// Было: S56_FUN_00446cb0
 void __thiscall S56::S56_FUN_00446cb0(S56 *this,uint param_1)
 
 
+// Было: S56_FUN_00446d00
 void __thiscall S56::S56_FUN_00446d00(S56 *this,uint param_1)
 
 
+// Было: S56_FUN_00446d60
 S56::S56_FUN_00446d60(S56 *this,int param_1,int param_2,int param_3,int param_4)
 
 
@@ -26122,15 +26210,19 @@ void * __thiscall FUN_00447330(void *param_1,byte param_2)
 SpriteS1 * __thiscall S54::S54_FUN_00447350(S54 *this)
 
 
+// Было: S54_FUN_00447360
 void __thiscall S54::S54_FUN_00447360(S54 *this,S46 *pS46)
 
 
+// Было: S55_FUN_00447370
 void __thiscall S55::S55_FUN_00447370(S55 *this)
 
 
+// Было: S55_FUN_00447380
 void __thiscall S55::S55_FUN_00447380(S55 *this,void *param_1)
 
 
+// Было: S56_FUN_00447390
 void __thiscall S56::S56_FUN_00447390(S56 *this)
 
 
@@ -26166,6 +26258,7 @@ void __thiscall S56::S56_FUN_00447390(S56 *this)
     iVar6 = 0xff;
   }
 
+// Было: S56_FUN_00447480
 byte __thiscall S56::S56_FUN_00447480(S56 *this,SpriteS1 *param_1)
 
 
@@ -26222,6 +26315,7 @@ byte FUN_004474e0(SpriteS1 *param_1,undefined4 param_2)
       }
     }
 
+// Было: S56_FUN_00447740
 S56::S56_FUN_00447740(S56 *this,SpriteS1 *param_1,undefined4 param_2)
 
 
@@ -26249,6 +26343,7 @@ S56::S56_FUN_00447740(S56 *this,SpriteS1 *param_1,undefined4 param_2)
     } while (iVar3 <= _DAT_00662bfc);
   }
 
+// Было: S56_FUN_00447850
 S56::S56_FUN_00447850(S56 *this,uint param_1,int param_2,S46 *pS46)
 
 
@@ -26328,21 +26423,26 @@ void __thiscall FUN_00447900(void *this,int param_1,S46 *param_2)
       }
     }
 
+// Было: S56_FUN_004479d0
 S56::S56_FUN_004479d0(S56 *this,uint param_1,int param_2,SpriteS1 *_pSpriteS1)
 
 
+// Было: S56_FUN_00447a60
 void __thiscall S56::S56_FUN_00447a60(S56 *this,int param_1,SpriteS1 *pSpriteS1)
 
 
 void FUN_00447b20(void)
 
 
+// Было: S56_FUN_00447ba0
 void __thiscall S56::S56_FUN_00447ba0(S56 *this,SpriteS1 *param_1)
 
 
+// Было: S56_FUN_00447bd0
 void __thiscall S56::S56_FUN_00447bd0(S56 *this,SpriteS1 *pS46)
 
 
+// Было: S56_FUN_00447c00
 void __thiscall S56::S56_FUN_00447c00(S56 *this,SpriteS1 *pSpriteS1)
 
 
@@ -26353,6 +26453,7 @@ void __thiscall S56::S56_FUN_00447c00(S56 *this,SpriteS1 *pSpriteS1)
     } while (iVar1 <= _DAT_00662bfc);
   }
 
+// Было: S56_FUN_00447c40
 void __thiscall S56::S56_FUN_00447c40(S56 *this,SpriteS1 *pSpriteS1)
 
 
@@ -26390,6 +26491,7 @@ void __thiscall S56::S56_FUN_00447c40(S56 *this,SpriteS1 *pSpriteS1)
     this->index = 0;
   }
 
+// Было: S103_FUN_00447d40
 void __thiscall S103::S103_FUN_00447d40(S103 *this)
 
 
@@ -26417,6 +26519,7 @@ void __thiscall FUN_00447df0(undefined4 *param_1,undefined4 *param_2)
 void __thiscall FUN_00447e10(int param_1,undefined4 *param_2)
 
 
+// Было: S38_FUN_00447e20
 SpriteS1::S38_FUN_00447e20(SpriteS1 *this,int param_1,int param_2)
 
 
@@ -26448,9 +26551,11 @@ undefined1 __fastcall FUN_00447f00(Car *param_1)
     }
   }
 
+// Было: S103_FUN_00447f40
 void __thiscall S103::S103_FUN_00447f40(S103 *this)
 
 
+// Было: S1_FUN_00447f60
 void __thiscall S1::S1_FUN_00447f60(S1 *this,undefined4 param_1)
 
 
@@ -26468,6 +26573,7 @@ FUN_00447fe0(void *this,undefined4 param_1,undefined4 param_2,Ped *param_3)
 void __thiscall FUN_00448030(void *this,undefined4 param_1,Ped *param_2)
 
 
+// Было: S103_FUN_00448090
 byte __thiscall S103::S103_FUN_00448090(S103 *this)
 
 
@@ -26478,6 +26584,7 @@ byte __thiscall S103::S103_FUN_00448090(S103 *this)
 bool __thiscall FUN_00448150(void *this)
 
 
+// Было: S103_FUN_004481f0
 void __thiscall S103::S103_FUN_004481f0(S103 *this)
 
 
@@ -26496,6 +26603,7 @@ void __thiscall S103::S103_FUN_004481f0(S103 *this)
     FUN_004bed60(&this->Arr_S104_10[0].Turrel,(S63 *)pSprite);
   }
 
+// Было: S103_FUN_00448290
 void __thiscall S103::S103_FUN_00448290(S103 *this)
 
 
@@ -26531,6 +26639,7 @@ FUN_00448650(int param_1,Car *param_2,Ped *param_3,S169 *param_4)
 FUN_004486c0(int param_1,Car *param_2,Ped *param_3,S169 *param_4)
 
 
+// Было: S103_FUN_00448730
 byte __thiscall S103::S103_FUN_00448730(S103 *this)
 
 
@@ -26562,6 +26671,7 @@ byte __thiscall S103::S103_FUN_00448730(S103 *this)
     }
   }
 
+// Было: S103_FUN_004487d0
 byte __thiscall S103::S103_FUN_004487d0(S103 *this)
 
 
@@ -26593,6 +26703,7 @@ byte __thiscall S103::S103_FUN_004487d0(S103 *this)
     }
   }
 
+// Было: S103_FUN_00448870
 bool __thiscall S103::S103_FUN_00448870(S103 *this)
 
 
@@ -26679,6 +26790,7 @@ void __thiscall FUN_00448a80(void *param_1,Car *param_2)
     }
   }
 
+// Было: S103_FUN_00448c00
 byte __thiscall S103::S103_FUN_00448c00(S103 *this)
 
 
@@ -26692,6 +26804,7 @@ byte __thiscall FUN_00448c60(void *this)
     }
   }
 
+// Было: S103_FUN_00448df0
 void __thiscall S103::S103_FUN_00448df0(S103 *this)
 
 
@@ -26711,6 +26824,7 @@ void __thiscall S103::S103_FUN_00448df0(S103 *this)
 void __thiscall FUN_00448e30(void *this)
 
 
+// Было: S1_FUN_00449130
 S1::S1_FUN_00449130(S1 *this,int param_1,Car *param_2,Ped *param_3)
 
 
@@ -26732,6 +26846,7 @@ S1 * __thiscall FUN_00449810(int param_1,int param_2,Car *param_3)
 S104 * __thiscall S104::S104(S104 *this)
 
 
+// Было: S103_FUN_00449880
 byte __thiscall S103::S103_FUN_00449880(S103 *this)
 
 
@@ -26780,6 +26895,7 @@ byte __thiscall S103::S103_FUN_00449880(S103 *this)
     return bVar5;
   }
 
+// Было: S103_FUN_00449aa0
 void __thiscall S103::S103_FUN_00449aa0(S103 *this)
 
 
@@ -26798,6 +26914,7 @@ void __thiscall S103::S103_FUN_00449aa0(S103 *this)
     S103_FUN_00448df0(this);
   }
 
+// Было: S103_FUN_00449ba0
 void __thiscall S103::S103_FUN_00449ba0(S103 *this)
 
 
@@ -26812,6 +26929,7 @@ void __thiscall S103::S103_FUN_00449ba0(S103 *this)
     S103_FUN_00449aa0(this);
   }
 
+// Было: S103_FUN_00449c40
 void __thiscall S103::S103_FUN_00449c40(S103 *this)
 
 
@@ -26840,6 +26958,7 @@ S140 * __thiscall S140::S140(S140 *this)
 S139 * __thiscall S139::S139(S139 *this)
 
 
+// Было: FUN_00449d10
 void __thiscall S139::FUN_00449d10(S139 *this)
 
 
@@ -26857,6 +26976,7 @@ S139::AdvanceToNextChar(S139 *this,wchar_t *pText,int posPtr,char param_3)
       }
     }
 
+// Было: FUN_00449d70
 void __thiscall S139::FUN_00449d70(S139 *this)
 
 
@@ -26946,6 +27066,7 @@ void __thiscall FUN_0044a010(void *this,int param_1)
 S128 * __thiscall S128::S128(S128 *this)
 
 
+// Было: S128_FUN_0044a060
 void __thiscall S128::S128_FUN_0044a060(S128 *this,int pEventType,int pId)
 
 
@@ -26959,6 +27080,7 @@ void __thiscall S128::S128_FUN_0044a060(S128 *this,int pEventType,int pId)
 S127 * __thiscall S127::S127(S127 *this)
 
 
+// Было: S127_FUN_0044a110
 void __thiscall S127::S127_FUN_0044a110(S127 *this,int pID,int param_2)
 
 
@@ -27006,6 +27128,7 @@ S127 * __thiscall S127::S127(S127 *this)
     }
   }
 
+// Было: S127_FUN_0044a2c0
 byte __thiscall S127::S127_FUN_0044a2c0(S127 *this,Car *pCar,Player *pPlayer)
 
 
@@ -27068,9 +27191,11 @@ void __thiscall FUN_0044a470(void *this)
           *(undefined1 *)(*(int *)((int)this + 0x14) + 0x94) = 0x32;
         }
 
+// Было: S105_FUN_0044a970
 void __thiscall S105::S105_FUN_0044a970(S105 *this,Car *pCar,byte param_2)
 
 
+// Было: S105_FUN_0044a990
 void __thiscall S105::S105_FUN_0044a990(S105 *this)
 
 
@@ -27239,6 +27364,7 @@ void __thiscall FUN_0044ae70(void *this)
 void __thiscall S39::S39(S39 *this)
 
 
+// Было: FUN_0044af70
 void __thiscall S39::FUN_0044af70(S39 *this)
 
 
@@ -27251,6 +27377,7 @@ void __fastcall FUN_0044af90(int param_1)
 void __thiscall FUN_0044afb0(S39 *param_1,ushort *param_2)
 
 
+// Было: FUN_0044afe0
 void __thiscall S39::FUN_0044afe0(S39 *this)
 
 
@@ -27262,9 +27389,11 @@ void __thiscall S39::FUN_0044afe0(S39 *this)
       FUN_004c0380(*puVar3);
     }
 
+// Было: S161_FUN_0044b1d0
 SaveSlotAnimatedValue::S161_FUN_0044b1d0(SaveSlotAnimatedValue *this)
 
 
+// Было: FUN_0044b260
 void __thiscall SaveSlotAnimatedValue::FUN_0044b260(SaveSlotAnimatedValue *this)
 
 
@@ -27289,6 +27418,7 @@ void __thiscall FUN_0044b300(void *this,int param_1,short param_2)
 byte __thiscall FUN_0044b370(void *this)
 
 
+// Было: S161_FUN_0044b390
 SaveSlotAnimatedValue::S161_FUN_0044b390(SaveSlotAnimatedValue *this)
 
 
@@ -27393,9 +27523,11 @@ LAB_0044b76b:
         }
       }
 
+// Было: S18_FUN_0044b890
 void __thiscall cDisplay::S18_FUN_0044b890(cDisplay *this)
 
 
+// Было: S18_FUN_0044b8b0
 void __thiscall cDisplay::S18_FUN_0044b8b0(cDisplay *this,int index)
 
 
@@ -27415,6 +27547,7 @@ void _DirectInput8Create(HINSTANCE param_1)
 void FUN_0044ba40(void)
 
 
+// Было: Input2_FUN_0044ba60
 bool __thiscall Input2::Input2_FUN_0044ba60(Input2 *this,DiUtil *pDiUtil)
 
 
@@ -27458,6 +27591,7 @@ undefined4 __thiscall FUN_0044bc40(void *this,int param_1)
     }
   }
 
+// Было: Input2_FUN_0044bcf0
 void __thiscall Input2::Input2_FUN_0044bcf0(void)
 
 
@@ -27485,9 +27619,11 @@ void __thiscall Input2::Input2_FUN_0044bcf0(void)
       return;
     }
 
+// Было: Input2_FUN_0044bed0
 char __thiscall Input2::Input2_FUN_0044bed0(Input2 *this)
 
 
+// Было: Input2_FUN_0044bf30
 bool __thiscall Input2::Input2_FUN_0044bf30(Input2 *this)
 
 
@@ -27506,6 +27642,7 @@ void ReleaseAndGetDirectInput(void)
 void GetDirectInput(void)
 
 
+// Было: Input2_FUN_0044c070
 bool __thiscall Input2::Input2_FUN_0044c070(Input2 *this)
 
 
@@ -27519,6 +27656,7 @@ bool __thiscall Input2::Input2_FUN_0044c070(Input2 *this)
     }
   }
 
+// Было: FUN_0044c0f0
 Input2::FUN_0044c0f0(Input2 *this,undefined4 param_1,char param_2)
 
 
@@ -27715,9 +27853,11 @@ void __fastcall FUN_0044c830(int *param_1)
 int __thiscall S16_02::S16_02(S16_02 *this)
 
 
+// Было: S76_FUN_0044c860
 byte __thiscall S76::S76_FUN_0044c860(S76 *this)
 
 
+// Было: S119_FUN_0044c870
 byte __thiscall S119::S119_FUN_0044c870(S119 *this,Car *pCar)
 
 
@@ -27757,6 +27897,7 @@ byte __thiscall S119::S119_FUN_0044c870(S119 *this,Car *pCar)
 S76 * __thiscall S76::S76(S76 *this)
 
 
+// Было: S76_FUN_0044ca70
 undefined1 __thiscall S76::S76_FUN_0044ca70(S76 *this,S63 *pCAr)
 
 
@@ -27807,6 +27948,7 @@ switchD_0044ca82_caseD_1:
     goto switchD_0044ca82_caseD_6;
   }
 
+// Было: S76_FUN_0044cb80
 byte __thiscall S76::S76_FUN_0044cb80(S76 *this,Ped *pPed)
 
 
@@ -27915,12 +28057,15 @@ byte __thiscall FUN_0044cff0(void *this)
 byte __thiscall FUN_0044d0f0(void *this)
 
 
+// Было: S75_FUN_0044d180
 void __thiscall Door::S75_FUN_0044d180(Door *this,Car *pCar,byte param_2)
 
 
+// Было: S75_FUN_0044d1b0
 void __thiscall Door::S75_FUN_0044d1b0(Door *this,int param_1,uint param_2)
 
 
+// Было: FUN_0044d1e0
 byte __thiscall Door::FUN_0044d1e0(Door *this,SpriteS1 *pSpriteS1,byte Index)
 
 
@@ -27941,6 +28086,7 @@ byte __thiscall Door::FUN_0044d1e0(Door *this,SpriteS1 *pSpriteS1,byte Index)
       return 0;
     }
 
+// Было: S75_FUN_0044d2a0
 void __thiscall Door::S75_FUN_0044d2a0(Door *this)
 
 
@@ -30717,6 +30863,7 @@ switchD_0045085d_caseD_5:
       return;
     }
 
+// Было: FUN_00450c10
 void __thiscall Tango::FUN_00450c10(Tango *this)
 
 
@@ -31537,6 +31684,7 @@ byte Font::GetCharHeight(undefined4 param_1)
 byte __thiscall FUN_004539d0(void *this,undefined4 param_1,undefined4 param_2)
 
 
+// Было: MapGm_FUN_00453a40
 MapGm::MapGm_FUN_00453a40(MapGm *this,byte playerArea,byte param_2)
 
 
@@ -33729,6 +33877,7 @@ LAB_0045a0b0:
       return this->FrontendState;
     }
 
+// Было: Game_FUN_0045a460
 int __thiscall Game::Game_FUN_0045a460(Game *this)
 
 
@@ -33736,12 +33885,15 @@ int __thiscall Game::Game_FUN_0045a460(Game *this)
     return (-(uint)(this->field13_0x30 != 0) & 0xffffffea) + 0x21;
   }
 
+// Было: Game_FUN_0045a480
 Game::Game_FUN_0045a480(Game *this,int param_1,int param_2,byte Bonus)
 
 
+// Было: Game_FUN_0045a4b0
 Game::Game_FUN_0045a4b0(Game *this,int param_1,undefined4 param_2)
 
 
+// Было: Game_FUN_0045a4d0
 byte __thiscall Game::Game_FUN_0045a4d0(Game *this)
 
 
@@ -33753,9 +33905,11 @@ byte __thiscall Game::Game_FUN_0045a4d0(Game *this)
     this->GameOver = iVar1 + -1;
   }
 
+// Было: FUN_0045a4f0
 Game::FUN_0045a4f0(Game *this,uint WindowWidth,uint WindowHeight)
 
 
+// Было: Game_FUN_0045a540
 void __thiscall Game::Game_FUN_0045a540(Game *this)
 
 
@@ -33775,6 +33929,7 @@ void __thiscall Game::Game_FUN_0045a540(Game *this)
       return;
     }
 
+// Было: Game_FUN_0045a5a0
 void __thiscall Game::Game_FUN_0045a5a0(Game *this)
 
 
@@ -33786,6 +33941,7 @@ void __thiscall Game::Game_FUN_0045a5a0(Game *this)
     Mike::S22_FUN_00474530(_gMike);
   }
 
+// Было: Game_FUN_0045a650
 void __thiscall Game::Game_FUN_0045a650(Game *this)
 
 
@@ -33799,6 +33955,7 @@ void __thiscall Game::Game_FUN_0045a650(Game *this)
     } while (uVar1 < this->byte_);
   }
 
+// Было: Game_FUN_0045a690
 void __thiscall Game::Game_FUN_0045a690(Game *this)
 
 
@@ -33817,6 +33974,7 @@ void __thiscall Game::Game_FUN_0045a690(Game *this)
     return;
   }
 
+// Было: Game_FUN_0045a6e0
 void __thiscall Game::Game_FUN_0045a6e0(Game *this)
 
 
@@ -33824,6 +33982,7 @@ void __thiscall Game::Game_FUN_0045a6e0(Game *this)
     this->Status = 2;
   }
 
+// Было: Game_FUN_0045a6f0
 void __thiscall Game::Game_FUN_0045a6f0(Game *this)
 
 
@@ -33848,6 +34007,7 @@ LAB_0045a784:
       if (bVar3 != 0) goto LAB_0045a784;
     }
 
+// Было: Game_FUN_0045a7a0
 byte __thiscall Game::Game_FUN_0045a7a0(Game *this,Sprite *pSprite,uint param_2)
 
 
@@ -33925,12 +34085,14 @@ General * __thiscall General::S13(General *this)
 void __fastcall FUN_0045acb0(void *param_1)
 
 
+// Было: FUN_0045acd0
 void __thiscall S105::FUN_0045acd0(S105 *this)
 
 
 undefined1 return_1(void)
 
 
+// Было: FUN_0045acf0
 byte __thiscall Game::FUN_0045acf0(Game *this)
 
 
@@ -33940,15 +34102,19 @@ void __fastcall FUN_0045ad00(undefined4 *param_1)
 S115 * __thiscall S115::S115(S115 *this)
 
 
+// Было: FUN_0045ada0
 void __thiscall S9::FUN_0045ada0(S9 *this,undefined4 *param_1)
 
 
+// Было: FUN_0045adb0
 void __thiscall S9::FUN_0045adb0(S9 *this,undefined4 *param_1)
 
 
+// Было: FUN_0045adc0
 void __thiscall S9::FUN_0045adc0(S9 *this,undefined4 *param_1)
 
 
+// Было: FUN_0045add0
 void __thiscall S9::FUN_0045add0(S9 *this,S9 *param_1)
 
 
@@ -33964,9 +34130,11 @@ byte __thiscall FUN_0045aea0(void *this,S110 *param_1,undefined4 param_2)
 void __thiscall FUN_0045afd0(void *this,undefined2 param_1)
 
 
+// Было: FUN_0045aff0
 void __thiscall S167::FUN_0045aff0(S167 *this)
 
 
+// Было: FUN_0045b000
 void __thiscall S167::FUN_0045b000(S167 *this)
 
 
@@ -33975,12 +34143,14 @@ void __thiscall S167::FUN_0045b000(S167 *this)
     this->field2_0x8 = 0;
   }
 
+// Было: S17_FUN_0045b040
 void __thiscall S17::S17_FUN_0045b040(S17 *this)
 
 
 S17 * __thiscall S17::S17(S17 *this)
 
 
+// Было: S161_FUN_0045b0a0
 SaveSlotAnimatedValue::S161_FUN_0045b0a0(SaveSlotAnimatedValue *this)
 
 
@@ -33990,6 +34160,7 @@ undefined4 __thiscall FUN_0045b0b0(void *this)
 byte __thiscall FUN_0045b0c0(void *this)
 
 
+// Было: S23_FUN_0045b0e0
 void __thiscall S23::S23_FUN_0045b0e0(S23 *this)
 
 
@@ -34068,6 +34239,7 @@ void __thiscall MapGm::DefauntSpecialTokens(MapGm *this)
 Tango * __thiscall Tango::S130(Tango *this)
 
 
+// Было: Game_FUN_0045b469
 void __thiscall Game::Game_FUN_0045b469(Game *this)
 
 
@@ -34085,6 +34257,7 @@ void __thiscall Game::Game_FUN_0045b469(Game *this)
     pScriptName = &gFilePath_GCI;
   }
 
+// Было: Game_FUN_0045b5f0
 void __thiscall Game::Game_FUN_0045b5f0(Game *this)
 
 
@@ -34113,9 +34286,11 @@ void __thiscall Game::Game_FUN_0045b5f0(Game *this)
     } while (iVar2 < (int)(uint)this->byte_);
   }
 
+// Было: Game_FUN_0045b750
 void __thiscall Game::Game_FUN_0045b750(Game *this)
 
 
+// Было: Game_FUN_0045ba10
 void __thiscall Game::Game_FUN_0045ba10(Game *this)
 
 
@@ -34129,6 +34304,7 @@ void __thiscall Game::Game_FUN_0045ba10(Game *this)
     FUN_0045afd0(this_00,uVar1);
   }
 
+// Было: Game_FUN_0045ba60
 void __thiscall Game::Game_FUN_0045ba60(Game *this)
 
 
@@ -34181,6 +34357,7 @@ FUN_0045bb50(uint param_1,undefined4 param_2,undefined4 param_3)
         return 1;
       }
 
+// Было: Game_FUN_0045bba0
 Game::Game_FUN_0045bba0(Game *this,Sprite *pSprite,byte param_2,byte param_3)
 
 
@@ -34196,6 +34373,7 @@ Game::Game_FUN_0045bba0(Game *this,Sprite *pSprite,byte param_2,byte param_3)
     }
   }
 
+// Было: FUN_0045bc10
 byte __thiscall Game::FUN_0045bc10(Game *this,Player *param_1,Player *param_2)
 
 
@@ -34221,6 +34399,7 @@ byte __thiscall Game::FUN_0045bc10(Game *this,Player *param_1,Player *param_2)
     } while (iVar4 < (int)(uint)bVar1);
   }
 
+// Было: Game_FUN_0045bc90
 byte __thiscall Game::Game_FUN_0045bc90(Game *this,S9 *pS9)
 
 
@@ -34257,6 +34436,7 @@ undefined4 __thiscall FUN_0045bd00(Game *param_1,undefined4 param_2)
     pPVar2 = Game::Game_FUN_0045a910(param_1);
   }
 
+// Было: Game_FUN_0045bd40
 void __thiscall Game::Game_FUN_0045bd40(Game *this,Sprite *param_1,int param_2)
 
 
@@ -34378,6 +34558,7 @@ LAB_0045bf8d:
       goto LAB_0045bf8d;
     }
 
+// Было: Game_FUN_0045c1f0
 void __thiscall Game::Game_FUN_0045c1f0(Game *this)
 
 
@@ -34436,6 +34617,7 @@ void __thiscall Game::Game_FUN_0045c1f0(Game *this)
     return;
   }
 
+// Было: Game_FUN_0045c3b0
 byte __thiscall Game::Game_FUN_0045c3b0(Game *this)
 
 
@@ -34457,6 +34639,7 @@ byte __thiscall Game::Game_FUN_0045c3b0(Game *this)
       return bVar2;
     }
 
+// Было: Game_FUN_0045c420
 Game::Game_FUN_0045c420(Game *this,Sprite *param_1,undefined4 param_2)
 
 
@@ -34470,6 +34653,7 @@ Game::Game_FUN_0045c420(Game *this,Sprite *param_1,undefined4 param_2)
     } while (bVar2 < this->byte_);
   }
 
+// Было: Game_FUN_0045c470
 Game::Game_FUN_0045c470(Game *this,Sprite *pSprite,undefined4 param_2)
 
 
@@ -34554,6 +34738,7 @@ undefined4 __fastcall FUN_0045db70(int param_1)
       return extraout_DL;
     }
 
+// Было: S81_FUN_0045dd20
 void __thiscall PublicTransport::S81_FUN_0045dd20(PublicTransport *this)
 
 
@@ -34623,6 +34808,7 @@ void __thiscall PublicTransport::S81_FUN_0045dd20(PublicTransport *this)
         pGVar8 = (Gang *)(pGVar8->NameGang + 2);
       }
 
+// Было: S107_FUN_0045e000
 void __thiscall S107::S107_FUN_0045e000(S107 *this)
 
 
@@ -34630,6 +34816,7 @@ void __thiscall S107::S107_FUN_0045e000(S107 *this)
     this->field_0x14a8 = (char)this->Index;
   }
 
+// Было: FUN_0045e0a0
 void __thiscall S63::FUN_0045e0a0(S63 *this,undefined1 param_1)
 
 
@@ -34665,6 +34852,7 @@ void __thiscall FUN_0045e110(void *this)
 void __thiscall FUN_0045e240(void *this)
 
 
+// Было: S107_FUN_0045e2e0
 void __thiscall S107::S107_FUN_0045e2e0(S107 *this)
 
 
@@ -34707,6 +34895,7 @@ void __thiscall MapGm::SetScriptName(MapGm *this,char *param_1)
 void __thiscall MapGm::SetBonusStage(MapGm *this,byte param_1)
 
 
+// Было: MapGm_FUN_0045e4b0
 void __thiscall MapGm::MapGm_FUN_0045e4b0(MapGm *this,byte param_1)
 
 
@@ -34731,48 +34920,61 @@ byte __thiscall MapGm::GetBonus(MapGm *this)
 void __thiscall FUN_0045e570(void *this,uint param_1,undefined4 param_2)
 
 
+// Было: MapGm_FUN_0045e590
 int __thiscall MapGm::MapGm_FUN_0045e590(MapGm *this,byte pIndex)
 
 
 void __thiscall FUN_0045e5b0(void *this,undefined4 param_1)
 
 
+// Было: MapGm_FUN_0045e5c0
 undefined4 __thiscall MapGm::MapGm_FUN_0045e5c0(MapGm *this)
 
 
 void __thiscall FUN_0045e5d0(void *this,undefined4 param_1)
 
 
+// Было: MapGm_FUN_0045e5e0
 undefined4 __thiscall MapGm::MapGm_FUN_0045e5e0(MapGm *this)
 
 
+// Было: MapGm_FUN_0045e5f0
 void __thiscall MapGm::MapGm_FUN_0045e5f0(MapGm *this,undefined2 param_1)
 
 
+// Было: MapGm_FUN_0045e600
 undefined2 __thiscall MapGm::MapGm_FUN_0045e600(MapGm *this)
 
 
+// Было: MapGm_FUN_0045e610
 void __thiscall MapGm::MapGm_FUN_0045e610(MapGm *this,undefined1 param_1)
 
 
+// Было: MapGm_FUN_0045e620
 undefined1 __thiscall MapGm::MapGm_FUN_0045e620(MapGm *this)
 
 
+// Было: MapGm_FUN_0045e630
 void __thiscall MapGm::MapGm_FUN_0045e630(MapGm *this)
 
 
+// Было: MapGm_FUN_0045e700
 undefined1 __thiscall MapGm::MapGm_FUN_0045e700(MapGm *this)
 
 
+// Было: MapGm_FUN_0045e710
 undefined4 __thiscall MapGm::MapGm_FUN_0045e710(MapGm *this)
 
 
+// Было: MapGm_FUN_0045e720
 undefined1 __thiscall MapGm::MapGm_FUN_0045e720(MapGm *this)
 
 
+// Было: MapGm_FUN_0045e730
 undefined1 __thiscall MapGm::MapGm_FUN_0045e730(MapGm *this)
 
 
+// Было: MapGm_FUN_0045e740
 void __thiscall MapGm::MapGm_FUN_0045e740(MapGm *this,undefined1 param_1)
 
 
@@ -34780,21 +34982,26 @@ void __thiscall MapGm::MapGm_FUN_0045e740(MapGm *this,undefined1 param_1)
     this->field23_0x442 = param_1;
   }
 
+// Было: MapGm_FUN_0045e760
 undefined1 __thiscall MapGm::MapGm_FUN_0045e760(MapGm *this)
 
 
 void __thiscall MapGm::SetString(MapGm *this,ushort index,wchar_t *source)
 
 
+// Было: MapGm_FUN_0045e7a0
 int __thiscall MapGm::MapGm_FUN_0045e7a0(MapGm *this,ushort index)
 
 
+// Было: MapGm_FUN_0045e7c0
 void __thiscall MapGm::MapGm_FUN_0045e7c0(MapGm *this,byte param_1,int param_2)
 
 
+// Было: MapGm_FUN_0045e810
 short __thiscall MapGm::MapGm_FUN_0045e810(MapGm *this,byte Index)
 
 
+// Было: MapGm_FUN_0045e830
 MapGm::MapGm_FUN_0045e830(MapGm *this,uint param_1,uint param_2)
 
 
@@ -34894,9 +35101,11 @@ MapGm * __thiscall MapGm::MapGm(MapGm *this)
     piVar10 = piVar10 + 1;
   }
 
+// Было: MapGm_FUN_0045ec20
 void __thiscall MapGm::MapGm_FUN_0045ec20(MapGm *this,int param_2)
 
 
+// Было: MapGm_FUN_0045ec70
 MapGm::MapGm_FUN_0045ec70(MapGm *this,byte PlayerID,byte param_2)
 
 
@@ -34993,6 +35202,7 @@ void FUN_0045f580(void)
     DebugLog(0xac,"input.cpp",0x26b);
   }
 
+// Было: cInput_FUN_0045f780
 Replay::cInput_FUN_0045f780(Replay *this,undefined4 param_1,undefined4 param_2)
 
 
@@ -35207,6 +35417,7 @@ void FUN_0045fb59(void)
     pvVar6 = (void *)*puVar1;
   }
 
+// Было: S59_FUN_0045ff70
 FileMgr::S59_FUN_0045ff70(FileMgr *this,char *param_1,uint param_2)
 
 
@@ -35410,6 +35621,7 @@ void __fastcall FUN_00461360(int param_1)
     return;
   }
 
+// Было: S116_FUN_004613b0
 void __thiscall S116::S116_FUN_004613b0(S116 *this)
 
 
@@ -35660,6 +35872,7 @@ void __thiscall FUN_00461c60(void *this,undefined4 *param_1)
 undefined1 __thiscall FUN_00461db0(void *this)
 
 
+// Было: MapGm_FUN_00461dc0
 int __thiscall MapGm::MapGm_FUN_00461dc0(MapGm *this)
 
 
@@ -36027,6 +36240,7 @@ undefined4 FUN_00462b90(undefined4 param_1)
 void __thiscall FUN_00462be0(void *this)
 
 
+// Было: S16_FUN_00462c60
 int __thiscall MapRelatedStruct::S16_FUN_00462c60(MapRelatedStruct *this)
 
 
@@ -36036,9 +36250,11 @@ int __thiscall FUN_00462cb0(int param_1,uint param_2)
 void FUN_00462ce0(undefined4 param_1,undefined2 param_2)
 
 
+// Было: S16_FUN_00462e40
 MapRelatedStruct::S16_FUN_00462e40(MapRelatedStruct *this,void *param_1)
 
 
+// Было: FUN_00462e80
 undefined1 __thiscall MapRelatedStruct::FUN_00462e80(MapRelatedStruct *this)
 
 
@@ -36524,6 +36740,7 @@ MapRelatedStruct::MapRelatedStruct_CreateMap(MapRelatedStruct *this)
     DebugLog(0x469,"map.cpp",0x1811);
   }
 
+// Было: MapRelatedStruct_FUN_00464880
 void __thiscall MapRelatedStruct::MapRelatedStruct_FUN_00464880(void)
 
 
@@ -36609,6 +36826,7 @@ LAB_0046441b:
     } while ((ushort)pvStack_c < uVar2);
   }
 
+// Было: FUN_00464990
 MapRelatedStruct::FUN_00464990(MapRelatedStruct *this,char *param_1)
 
 
@@ -36649,6 +36867,7 @@ int __fastcall FUN_00464c40(int *param_1)
 void __thiscall FUN_00464c60(int param_1,int param_2)
 
 
+// Было: FUN_00464c70
 MapRelatedStruct::FUN_00464c70(MapRelatedStruct *this,char *param_1)
 
 
@@ -36667,6 +36886,7 @@ FUN_00464d00(MapRelatedStruct *param_1,char *param_2,byte param_3)
     return 0;
   }
 
+// Было: S16_FUN_00464da0
 MapRelatedStruct::S16_FUN_00464da0(MapRelatedStruct *this,char param_1)
 
 
@@ -36731,6 +36951,7 @@ FUN_00465130(MapRelatedStruct *param_1,byte param_2,byte param_3)
         return this;
       }
 
+// Было: MapRelatedStruct_FUN_004651c0
 MapRelatedStruct::MapRelatedStruct_FUN_004651c0(MapRelatedStruct *this)
 
 
@@ -36795,6 +37016,7 @@ MapRelatedStruct::MapRelatedStruct_FUN_004651c0(MapRelatedStruct *this)
 Gang * __fastcall FUN_00465350(MapRelatedStruct *param_1)
 
 
+// Было: MapRelatedStruct_FUN_00465390
 MapRelatedStruct::MapRelatedStruct_FUN_00465390(MapRelatedStruct *this)
 
 
@@ -37194,6 +37416,7 @@ LAB_00465cf7:
     puVar3 = (undefined *)0x0;
   }
 
+// Было: S16_FUN_00465fe0
 MapRelatedStruct::S16_FUN_00465fe0(MapRelatedStruct *this,void *param_1)
 
 
@@ -37450,6 +37673,7 @@ undefined1 __thiscall FUN_00466620(MapRelatedStruct *param_1,char param_2)
     } while (iVar6 <= _DAT_00662bfc);
   }
 
+// Было: S16_FUN_00466730
 MapRelatedStruct::S16_FUN_00466730(MapRelatedStruct *this,char param_1)
 
 
@@ -38048,6 +38272,7 @@ void __thiscall FUN_004690b0(void *this)
     } while ((int)pvVar8 < (int)(uint)uVar1);
   }
 
+// Было: S16_FUN_004692b0
 void __thiscall MapRelatedStruct::S16_FUN_004692b0(MapRelatedStruct *this)
 
 
@@ -38384,6 +38609,7 @@ LAB_0046a297:
     return param_1;
   }
 
+// Было: S16_FUN_0046a4d0
 void __thiscall MapRelatedStruct::S16_FUN_0046a4d0(MapRelatedStruct *this)
 
 
@@ -38941,6 +39167,7 @@ undefined1 __thiscall FUN_0046b5e0(int param_1,undefined4 param_2)
     return 0;
   }
 
+// Было: S17_FUN_0046b620
 void __thiscall S17::S17_FUN_0046b620(S17 *this,byte param_1)
 
 
@@ -39201,9 +39428,11 @@ LAB_0046ba2b:
 undefined4 * __fastcall FUN_0046bb20(undefined4 *param_1)
 
 
+// Было: S17_FUN_0046bb40
 void __thiscall S17::S17_FUN_0046bb40(S17 *this)
 
 
+// Было: FUN_0046bb50
 TextureManager::FUN_0046bb50(TextureManager *this,ushort *index)
 
 
@@ -39260,6 +39489,7 @@ void __thiscall FUN_0046bea0(void)
 void __thiscall FUN_0046c0c0(undefined4 param_1,undefined4 param_2)
 
 
+// Было: FUN_0046c140
 void __thiscall S17::FUN_0046c140(S17 *this,undefined4 *param_2,short *param_3)
 
 
@@ -41264,6 +41494,7 @@ void __thiscall FUN_00471f20(void *this,int *param_1,Car *pCar)
       }
     }
 
+// Было: S17_FUN_004720e0
 void __thiscall S17::S17_FUN_004720e0(S17 *this)
 
 
@@ -41275,6 +41506,7 @@ void __thiscall S17::S17_FUN_004720e0(S17 *this)
     } while (iVar1 != 0);
   }
 
+// Было: S17_FUN_00472110
 void __thiscall S17::S17_FUN_00472110(S17 *this)
 
 
@@ -41551,6 +41783,7 @@ undefined1 __thiscall PauseGame(void *this,byte *param_1)
     return 0;
   }
 
+// Было: S79_FUN_00472f20
 undefined1 __thiscall Ambulance::S79_FUN_00472f20(Ambulance *this,Ped *param_1)
 
 
@@ -41560,9 +41793,11 @@ int __fastcall FUN_00472f60(int param_1)
 void __thiscall FUN_00472fb0(int param_1,Ped *param_2)
 
 
+// Было: S79_FUN_00472fe0
 void __thiscall Ambulance::S79_FUN_00472fe0(Ambulance *this)
 
 
+// Было: FUN_00473010
 byte __thiscall Ambulance::FUN_00473010(Ambulance *this,Ped *param_1)
 
 
@@ -41616,12 +41851,15 @@ joined_r0x004730e3:
       return 0;
     }
 
+// Было: Medical_FUN_00473140
 void __thiscall Medical::Medical_FUN_00473140(Medical *this)
 
 
+// Было: FUN_00473170
 byte __thiscall Medical::FUN_00473170(Medical *this)
 
 
+// Было: Medical_FUN_00473320
 void __thiscall Medical::Medical_FUN_00473320(Medical *this)
 
 
@@ -41676,6 +41914,7 @@ void __thiscall Medical::Medical_FUN_00473320(Medical *this)
       }
     }
 
+// Было: Medical_FUN_00473410
 void __thiscall Medical::Medical_FUN_00473410(Medical *this)
 
 
@@ -42004,6 +42243,7 @@ LAB_00473c37:
       return;
     }
 
+// Было: Medical_FUN_00473ce0
 void __thiscall Medical::Medical_FUN_00473ce0(Medical *this)
 
 
@@ -42056,6 +42296,7 @@ void __thiscall Medical::Medical_FUN_00473ce0(Medical *this)
       return;
     }
 
+// Было: S79_FUN_00473e00
 void __thiscall Ambulance::S79_FUN_00473e00(Ambulance *this)
 
 
@@ -42149,6 +42390,7 @@ void __thiscall Ambulance::S79_FUN_00473e00(Ambulance *this)
     this->field1_0x1 = this->field1_0x1 - 1;
   }
 
+// Было: Ambulance_FUN_004740b0
 void __thiscall Ambulance::Ambulance_FUN_004740b0(Ambulance *this)
 
 
@@ -42163,6 +42405,7 @@ void __thiscall Ambulance::Ambulance_FUN_004740b0(Ambulance *this)
 void FUN_004740f0(void)
 
 
+// Было: S22_FUN_00474100
 void __thiscall Mike::S22_FUN_00474100(Mike *this)
 
 
@@ -42219,6 +42462,7 @@ DWORD GetTickCount(void)
 void FUN_004744c0(void *param_1,void *param_2)
 
 
+// Было: S22_FUN_00474530
 void __thiscall Mike::S22_FUN_00474530(Mike *this)
 
 
@@ -42246,12 +42490,15 @@ S31 * __thiscall S31::S31(S31 *this)
 S31 * __thiscall S31::FUN_00474e80(S31 *this)
 
 
+// Было: S31_FUN_00474ea0
 void __thiscall S31::S31_FUN_00474ea0(S31 *this,int param_1)
 
 
+// Было: FUN_00474ed0
 void __thiscall S31::FUN_00474ed0(S31 *this,int param_1)
 
 
+// Было: FUN_00474f00
 MissionManager::FUN_00474f00(MissionManager *this,short param_1)
 
 
@@ -42277,6 +42524,7 @@ int __thiscall FUN_00474f30(int param_1,char *param_2)
     iVar1 = *(int *)(*(int *)(param_1 + 0x13350) + 4 + (uVar3 & 0xffff) * 4);
   }
 
+// Было: S34_FUN_00474f90
 void __thiscall S34::S34_FUN_00474f90(S34 *this)
 
 
@@ -42543,6 +42791,7 @@ void __thiscall FUN_00475a00(int param_1,undefined4 param_2)
 void __thiscall FUN_00475a10(int param_1,undefined4 param_2)
 
 
+// Было: FUN_00475a40
 MissionManager::FUN_00475a40(MissionManager *this,undefined1 param_2)
 
 
@@ -42802,6 +43051,7 @@ FUN_00476400(void *this,int param_2,char param_3,char param_4)
       return 0;
     }
 
+// Было: FUN_004764d0
 MissionManager::FUN_004764d0(MissionManager *this,int param_1,char param_2)
 
 
@@ -42861,15 +43111,18 @@ FUN_004765a0(void *this,int param_2,char param_3,char param_4)
       return 0;
     }
 
+// Было: FUN_00476610
 CarSystemManager::FUN_00476610(CarSystemManager *this,undefined4 *param_2)
 
 
+// Было: FUN_00476630
 CarSystemManager::FUN_00476630(CarSystemManager *this,int param_2)
 
 
 undefined1 __fastcall FUN_00476640(int param_1)
 
 
+// Было: FUN_00476650
 CarSystemManager::FUN_00476650(CarSystemManager *this,undefined4 param_2)
 
 
@@ -42889,45 +43142,55 @@ undefined4 __thiscall FUN_004766f0(void *this)
       return 1;
     }
 
+// Было: S33_FUN_00476760
 byte __thiscall S33::S33_FUN_00476760(S33 *this)
 
 
 S34 * __thiscall S33::S33_FUN_00476780(S33 *this,S34 *pS34)
 
 
+// Было: FUN_00476790
 undefined1 __thiscall Game::FUN_00476790(Game *this)
 
 
 void * __thiscall S27::S27_FUN_004767a0(S27 *this)
 
 
+// Было: FUN_004767e0
 void __thiscall ArrowTrace::FUN_004767e0(ArrowTrace *this,int param_1)
 
 
+// Было: FUN_004767f0
 void __thiscall ArrowTrace::FUN_004767f0(ArrowTrace *this,undefined4 param_1)
 
 
+// Было: FUN_00476810
 void __thiscall ArrowTrace::FUN_00476810(ArrowTrace *this,undefined4 param_1)
 
 
 void __fastcall FUN_00476830(int param_1)
 
 
+// Было: FUN_00476850
 void __thiscall HudArrow::FUN_00476850(HudArrow *this,undefined4 param_1)
 
 
+// Было: FUN_00476860
 void __thiscall HudArrow::FUN_00476860(HudArrow *this,undefined4 param_1)
 
 
+// Было: HudArrow_FUN_00476870
 HudArrow::HudArrow_FUN_00476870(HudArrow *this,undefined4 param_1)
 
 
 void __thiscall FUN_00476880(void *this)
 
 
+// Было: FUN_004768a0
 byte __thiscall HudBrief::FUN_004768a0(HudBrief *this)
 
 
+// Было: S25_FUN_004768c0
 void __thiscall S25::S25_FUN_004768c0(S25 *this,byte param_1,int param_2)
 
 
@@ -42997,6 +43260,7 @@ void __thiscall FUN_00476ab0(void *this)
 bool __fastcall FUN_00476ac0(int param_1)
 
 
+// Было: FUN_00476ad0
 void __thiscall S119::FUN_00476ad0(S119 *this)
 
 
@@ -43018,6 +43282,7 @@ void * __thiscall FUN_00476b30(void *this)
 void * __thiscall FUN_00476b80(void *this)
 
 
+// Было: S31_FUN_00476bc0
 void __thiscall S31::S31_FUN_00476bc0(S31 *this)
 
 
@@ -43044,6 +43309,7 @@ void __thiscall S31::S31_FUN_00476bc0(S31 *this)
         }
       }
 
+// Было: S31_FUN_00476d50
 void __thiscall S31::S31_FUN_00476d50(S31 *this,int param_1,char param_2)
 
 
@@ -43063,6 +43329,7 @@ void __thiscall S31::S31_FUN_00476d50(S31 *this,int param_1,char param_2)
     }
   }
 
+// Было: S29_FUN_00476dc0
 void __thiscall S29::S29_FUN_00476dc0(S29 *this)
 
 
@@ -43376,9 +43643,11 @@ void __thiscall FUN_0047a620(void *this)
     return;
   }
 
+// Было: FUN_0047a860
 MissionManager::FUN_0047a860(MissionManager *this,ushort param_1)
 
 
+// Было: FUN_0047ab91
 void __thiscall MapRelatedStruct::FUN_0047ab91(MapRelatedStruct *this)
 
 
@@ -43672,6 +43941,7 @@ FUN_0047f3b0(MissionManager *param_1,int param_2,int param_3)
         *(undefined2 *)((int)pvVar2 + 0xc) = *(undefined2 *)(iVar3 + 0x11a);
       }
 
+// Было: S115_FUN_0047f450
 void __thiscall S115::S115_FUN_0047f450(S115 *this,S116 *pS116)
 
 
@@ -43683,12 +43953,15 @@ void __thiscall S115::S115_FUN_0047f450(S115 *this,S116 *pS116)
       }
     }
 
+// Было: S115_FUN_0047f4b0
 void __thiscall S115::S115_FUN_0047f4b0(S115 *this,S116 *pS116)
 
 
+// Было: S27_FUN_0047f4d0
 void __thiscall S27::S27_FUN_0047f4d0(S27 *this)
 
 
+// Было: S115_FUN_0047f4f0
 void __thiscall S115::S115_FUN_0047f4f0(S115 *this,S116 *pS116)
 
 
@@ -43766,6 +44039,7 @@ bool __fastcall FUN_00481120(void *param_1)
 S27 * __thiscall S27::S27(S27 *this)
 
 
+// Было: S27_FUN_00481380
 void __thiscall S27::S27_FUN_00481380(S27 *this)
 
 
@@ -44324,6 +44598,7 @@ undefined4 __thiscall FUN_00482410(void *this,undefined4 param_2)
 S63 * __thiscall S63::S63(S63 *this)
 
 
+// Было: S63_FUN_00482490
 void __thiscall S63::S63_FUN_00482490(S63 *this)
 
 
@@ -44339,12 +44614,15 @@ S110 * __thiscall FUN_00482510(void *this,S110 *param_1)
 byte __thiscall FUN_00482540(void *this)
 
 
+// Было: S63_FUN_00482560
 void __thiscall S63::S63_FUN_00482560(S63 *this)
 
 
+// Было: S63_FUN_004825a0
 void __thiscall S63::S63_FUN_004825a0(S63 *this)
 
 
+// Было: S63_FUN_004825c0
 void __thiscall S63::S63_FUN_004825c0(S63 *this)
 
 
@@ -44368,6 +44646,7 @@ void * __thiscall FUN_004825e0(void *this,undefined4 param_2)
     return this;
   }
 
+// Было: S63_FUN_00482630
 byte __thiscall S63::S63_FUN_00482630(S63 *this)
 
 
@@ -44385,6 +44664,7 @@ byte __thiscall S63::S63_FUN_00482630(S63 *this)
     S56::S56_FUN_00447c00(gS56,pSpriteS1);
   }
 
+// Было: S63_FUN_004826a0
 void __thiscall S63::S63_FUN_004826a0(S63 *this)
 
 
@@ -44394,9 +44674,11 @@ void __thiscall FUN_00482730(void *param_1,undefined4 *param_2,S110 *param_3)
 void FUN_00482770(byte param_1,char *param_2,char *param_3)
 
 
+// Было: S63_FUN_00482790
 void __thiscall S63::S63_FUN_00482790(S63 *this,byte param_1)
 
 
+// Было: S63_FUN_004827b0
 void __thiscall S63::S63_FUN_004827b0(S63 *this)
 
 
@@ -44468,9 +44750,11 @@ S63 * __thiscall S61::S61_FUN_004829a0(S61 *this)
 S63 * __thiscall S61::S61_FUN_004829c0(S61 *this)
 
 
+// Было: S61_FUN_004829e0
 void __thiscall S61::S61_FUN_004829e0(S61 *this,undefined4 *param_1)
 
 
+// Было: S61_FUN_004829f0
 void __thiscall S61::S61_FUN_004829f0(S61 *this,undefined4 *param_1)
 
 
@@ -44486,6 +44770,7 @@ void __thiscall FUN_00482a90(void *this,undefined4 param_1)
 S65 * __thiscall S65::S65(S65 *this)
 
 
+// Было: S65_FUN_00482ad0
 void __thiscall S65::S65_FUN_00482ad0(S65 *this)
 
 
@@ -44504,6 +44789,7 @@ void __thiscall FUN_00482ba0(int param_1,undefined4 *param_2)
 void __fastcall FUN_00482bd0(int param_1)
 
 
+// Было: S63_FUN_00482be0
 void __thiscall S63::S63_FUN_00482be0(S63 *this)
 
 
@@ -44531,9 +44817,11 @@ int __fastcall FUN_00482c90(int param_1)
 undefined1 __thiscall FUN_00482d00(void *this)
 
 
+// Было: FUN_00482d10
 bool __thiscall TrafficLigthStruct::FUN_00482d10(TrafficLigthStruct *this)
 
 
+// Было: FUN_00482d20
 bool __thiscall TrafficLigthStruct::FUN_00482d20(TrafficLigthStruct *this)
 
 
@@ -44563,6 +44851,7 @@ undefined4 __thiscall FUN_00482e80(S63 *param_1,SpriteS1 *param_2)
     }
   }
 
+// Было: S63_FUN_00482ed0
 void __thiscall S63::S63_FUN_00482ed0(S63 *this)
 
 
@@ -44572,6 +44861,7 @@ void __thiscall S63::S63_FUN_00482ed0(S63 *this)
     return;
   }
 
+// Было: S61_FUN_00482f60
 void __thiscall S61::S61_FUN_00482f60(S61 *this)
 
 
@@ -44622,6 +44912,7 @@ undefined1 FUN_00483030(int param_1)
 undefined4 FUN_00483060(SpriteS1 *param_1)
 
 
+// Было: S63_FUN_00483100
 void __thiscall S63::S63_FUN_00483100(S63 *this,SpriteS1 *param_1)
 
 
@@ -44686,6 +44977,7 @@ void __fastcall FUN_00483500(int param_1)
 byte __thiscall FUN_00483570(void *this,SpriteS1 *pSpriteS1)
 
 
+// Было: FUN_004835e0
 bool __thiscall S61::FUN_004835e0(S61 *this,SpriteS1 *pSpriteS1)
 
 
@@ -44880,6 +45172,7 @@ LAB_00483a51:
 byte __thiscall FUN_00483b50(void *this,void *param_1)
 
 
+// Было: S63_FUN_00483ba0
 void __thiscall S63::S63_FUN_00483ba0(S63 *this)
 
 
@@ -44895,12 +45188,15 @@ void __thiscall FUN_00483c00(void *param_1,char param_2,char param_3)
 void __thiscall FUN_00483c20(void *this,undefined4 param_1)
 
 
+// Было: FUN_00483c40
 void __thiscall S63::FUN_00483c40(S63 *this)
 
 
+// Было: S61__FUN_00483c50
 void __thiscall S61::S61__FUN_00483c50(S61 *this)
 
 
+// Было: S61_FUN_00483c60
 void __thiscall S61::S61_FUN_00483c60(S61 *this,byte param_1)
 
 
@@ -44915,6 +45211,7 @@ undefined4 __thiscall FUN_00483c80(void *this)
     return 0x16;
   }
 
+// Было: S61_FUN_00483cc0
 undefined4 __thiscall S61::S61_FUN_00483cc0(S61 *this)
 
 
@@ -44931,6 +45228,7 @@ undefined4 __thiscall S61::S61_FUN_00483cc0(S61 *this)
     return 0;
   }
 
+// Было: FUN_00483d50
 void __thiscall S63::FUN_00483d50(S63 *this)
 
 
@@ -44947,6 +45245,7 @@ void __thiscall S63::FUN_00483d50(S63 *this)
         return;
       }
 
+// Было: FUN_00483ea0
 void __thiscall S61::FUN_00483ea0(S61 *this)
 
 
@@ -44965,12 +45264,14 @@ S64 * __thiscall S64::S64(S64 *this)
 S65 * __thiscall S64::S64_FUN_00483fa0(S64 *this)
 
 
+// Было: S64_FUN_00483fc0
 void __thiscall S64::S64_FUN_00483fc0(S64 *this,undefined4 *param_1)
 
 
 S67 * __thiscall S66::S66_FUN_00483fe0(S66 *this)
 
 
+// Было: S6_FUN_00484000
 void __thiscall S6::S6_FUN_00484000(int *param_1,int param_2)
 
 
@@ -45170,6 +45471,7 @@ void __fastcall FUN_00484710(S63 *param_1)
       return;
     }
 
+// Было: S63_FUN_00484740
 undefined1 __thiscall S63::S63_FUN_00484740(S63 *this)
 
 
@@ -45178,6 +45480,7 @@ undefined1 __thiscall S63::S63_FUN_00484740(S63 *this)
     return 1;
   }
 
+// Было: S63_FUN_00484760
 void __thiscall S63::S63_FUN_00484760(S63 *this)
 
 
@@ -45188,6 +45491,7 @@ void __thiscall S63::S63_FUN_00484760(S63 *this)
 void __thiscall FUN_004847d0(int param_1,Player *param_2)
 
 
+// Было: S61_FUN_00484880
 void __thiscall S61::S61_FUN_00484880(S61 *this)
 
 
@@ -45202,6 +45506,7 @@ void __thiscall S61::S61_FUN_00484880(S61 *this)
 S66 * __thiscall S66::S66(S66 *this)
 
 
+// Было: S63_FUN_00484910
 void __thiscall S63::S63_FUN_00484910(S63 *this)
 
 
@@ -45258,6 +45563,7 @@ void FUN_00484ad0(S61 *param_1)
     pbVar2 = pbVar2 + 4;
   }
 
+// Было: S61_FUN_00484d60
 void __thiscall S61::S61_FUN_00484d60(S61 *this,S63 *param_1)
 
 
@@ -45269,6 +45575,7 @@ void __thiscall S61::S61_FUN_00484d60(S61 *this,S63 *param_1)
       }
     }
 
+// Было: S61_FUN_00484db0
 void __thiscall S61::S61_FUN_00484db0(S61 *this,S63 *pS63)
 
 
@@ -45490,6 +45797,7 @@ void __thiscall FUN_00485760(S63 *param_1,int param_2)
     return;
   }
 
+// Было: S63_FUN_00485b00
 void __thiscall S63::S63_FUN_00485b00(S63 *this,void *param_1)
 
 
@@ -45655,6 +45963,7 @@ void __thiscall S63::S63_FUN_00485b00(S63 *this,void *param_1)
     pPVar3 = (Ped *)0x0;
   }
 
+// Было: S63_FUN_00485c90
 void __thiscall S63::S63_FUN_00485c90(S63 *this)
 
 
@@ -45855,6 +46164,7 @@ void __thiscall S63::S63_FUN_00485c90(S63 *this)
     } while (local_4 != 0);
   }
 
+// Было: S63_FUN_00485fd0
 void __thiscall S63::S63_FUN_00485fd0(S63 *this)
 
 
@@ -45866,6 +46176,7 @@ void __thiscall S63::S63_FUN_00485fd0(S63 *this)
       FUN_00485760(*(undefined4 *)(this->Struc___ + 0x3c));
     }
 
+// Было: S63_FUN_00486060
 byte __thiscall S63::S63_FUN_00486060(S63 *this)
 
 
@@ -45959,9 +46270,11 @@ FUN_00486130(S63 *param_1,SpriteS1 *param_2,Turrel *param_3,Passenger *param_4)
                  ,pSVar2->S3_arr5031[0].PositionZ);
   }
 
+// Было: S63_FUN_00486360
 byte __thiscall S63::S63_FUN_00486360(S63 *this,S63 *param_1)
 
 
+// Было: S63_FUN_00486390
 void __thiscall S63::S63_FUN_00486390(S63 *this,S46 *pSprite)
 
 
@@ -46178,6 +46491,7 @@ void __thiscall FUN_00486c60(void *this,undefined4 param_1)
       return;
     }
 
+// Было: S63_FUN_00486e90
 void __thiscall S63::S63_FUN_00486e90(S63 *this,uint param_1,undefined4 param_2)
 
 
@@ -46457,6 +46771,7 @@ LAB_00487978:
     } while ((int)((uint)local_40 & 0xff) <= iVar10);
   }
 
+// Было: S63_FUN_00487a30
 void __thiscall S63::S63_FUN_00487a30(S63 *this)
 
 
@@ -46503,6 +46818,7 @@ void __thiscall S63::S63_FUN_00487a30(S63 *this)
     }
   }
 
+// Было: S63_FUN_00487bc0
 void __thiscall S63::S63_FUN_00487bc0(S63 *this)
 
 
@@ -46538,6 +46854,7 @@ void __thiscall S63::S63_FUN_00487bc0(S63 *this)
     }
   }
 
+// Было: S63_FUN_00487d70
 void __thiscall S63::S63_FUN_00487d70(S63 *this)
 
 
@@ -46563,6 +46880,7 @@ void __thiscall S63::S63_FUN_00487d70(S63 *this)
       return;
     }
 
+// Было: S63_FUN_00487e80
 undefined4 __thiscall S63::S63_FUN_00487e80(S63 *this)
 
 
@@ -46633,6 +46951,7 @@ void __thiscall FUN_004880a0(int param_1,short param_2,undefined1 param_3)
 S58 * __thiscall S58::S58(S58 *this)
 
 
+// Было: S57_FUN_00488170
 undefined4 __thiscall S57::S57_FUN_00488170(S57 *this,int param_1)
 
 
@@ -46654,9 +46973,11 @@ void __thiscall FUN_00488200(int param_1,undefined1 param_2)
 void __thiscall FUN_004883a0(void *this,SpriteS1 *param_1)
 
 
+// Было: S57_FUN_00488450
 void __thiscall S57::S57_FUN_00488450(S57 *this)
 
 
+// Было: S57_FUN_004884b0
 void __thiscall S57::S57_FUN_004884b0(S57 *this)
 
 
@@ -46694,9 +47015,11 @@ void __thiscall S57::S57_FUN_004884b0(S57 *this)
     } while (iVar4 != 0);
   }
 
+// Было: S57_FUN_00488570
 void __thiscall S57::S57_FUN_00488570(S57 *this)
 
 
+// Было: S57_FUN_00488d10
 void __thiscall S57::S57_FUN_00488d10(S57 *this)
 
 
@@ -46753,6 +47076,7 @@ void __thiscall S57::S57_FUN_00488d10(S57 *this)
     } while (local_8 != 0);
   }
 
+// Было: S57_FUN_00488e50
 void __thiscall S57::S57_FUN_00488e50(S57 *this)
 
 
@@ -46776,6 +47100,7 @@ SpriteS1 * __fastcall FUN_00488ef0(void *param_1)
 void FUN_00488f10(void)
 
 
+// Было: S57_FUN_00488f70
 void __thiscall S57::S57_FUN_00488f70(S57 *this)
 
 
@@ -46812,6 +47137,7 @@ void __thiscall S57::S57_FUN_00488f70(S57 *this)
     *(undefined4 *)(extraout_ECX_12 + 0x3c) = 0xbf;
   }
 
+// Было: S57_FUN_00489530
 void __thiscall S57::S57_FUN_00489530(S57 *this)
 
 
@@ -46857,6 +47183,7 @@ undefined4 __fastcall FUN_00489640(int *param_1)
 void __thiscall FUN_00489650(void *this)
 
 
+// Было: S199_FUN_00489680
 byte __thiscall S119::S199_FUN_00489680(S119 *this)
 
 
@@ -47050,6 +47377,7 @@ void __fastcall FUN_00489b10(int param_1)
     DebugLog(0xbca,"park.cpp",0x3e);
   }
 
+// Было: FUN_00489bc0
 S119::FUN_00489bc0(S119 *this,Car *param_2,undefined4 param_3)
 
 
@@ -47281,6 +47609,7 @@ undefined1 FUN_0048a1d0(void)
 undefined1 FUN_0048a1e0(void)
 
 
+// Было: FUN_0048a1f0
 void __thiscall Particle1::FUN_0048a1f0(Particle1 *this)
 
 
@@ -47312,6 +47641,7 @@ undefined4 __thiscall FUN_0048a4c0(void *this)
 byte __thiscall FUN_0048a4d0(void *this)
 
 
+// Было: S116_FUN_0048a510
 void __thiscall S116::S116_FUN_0048a510(S116 *this)
 
 
@@ -47320,12 +47650,14 @@ void __thiscall S116::S116_FUN_0048a510(S116 *this)
     return;
   }
 
+// Было: S101_FUN_0048a550
 void __thiscall S101::S101_FUN_0048a550(S101 *this)
 
 
 void __thiscall FUN_0048a590(void *this,undefined4 param_1)
 
 
+// Было: S102_FUN_0048a5a0
 void __thiscall S102::S102_FUN_0048a5a0(S102 *this)
 
 
@@ -47393,6 +47725,7 @@ switchD_0048a5e9_caseD_16:
       return;
     }
 
+// Было: S102_FUN_0048a6c0
 byte __thiscall S102::S102_FUN_0048a6c0(S102 *this)
 
 
@@ -47705,6 +48038,7 @@ undefined4 __fastcall FUN_0048c800(int param_1)
     return 0;
   }
 
+// Было: FUN_0048c8f0
 void __thiscall Particle1::FUN_0048c8f0(Particle1 *this)
 
 
@@ -48067,6 +48401,7 @@ void FUN_0048cd10(SpriteS1 *param_1)
     } while (local_44 != (SpriteS1 *)0x0);
   }
 
+// Было: S97_FUN_0048d4e0
 void __thiscall Particles::S97_FUN_0048d4e0(Particles *this,S110 *param_1)
 
 
@@ -48451,6 +48786,7 @@ void FUN_0048dfc0(int param_1)
     }
   }
 
+// Было: S116_FUN_0048e480
 S116::S116_FUN_0048e480(S116 *this,undefined1 *param_1,undefined4 param_2)
 
 
@@ -48480,6 +48816,7 @@ S116::S116_FUN_0048e480(S116 *this,undefined1 *param_1,undefined4 param_2)
       return;
     }
 
+// Было: S116_FUN_0048e5f0
 S116::S116_FUN_0048e5f0(S116 *this,undefined1 *param_1,undefined4 param_2)
 
 
@@ -48508,6 +48845,7 @@ S116::S116_FUN_0048e5f0(S116 *this,undefined1 *param_1,undefined4 param_2)
       return;
     }
 
+// Было: S116_FUN_0048e750
 S116::S116_FUN_0048e750(S116 *this,undefined1 *param_1,undefined4 param_2)
 
 
@@ -48536,6 +48874,7 @@ S116::S116_FUN_0048e750(S116 *this,undefined1 *param_1,undefined4 param_2)
       return;
     }
 
+// Было: S116_FUN_0048e8b0
 S116::S116_FUN_0048e8b0(S116 *this,undefined1 *param_1,undefined4 param_2)
 
 
@@ -49195,6 +49534,7 @@ void __thiscall FUN_00490d60(void *this,ushort param_1)
     }
   }
 
+// Было: S116_FUN_00491240
 void __thiscall S116::S116_FUN_00491240(S116 *this)
 
 
@@ -49270,6 +49610,7 @@ LAB_004912b3:
     this->field17_0x1a = this->field17_0x1a + -1;
   }
 
+// Было: S116_FUN_00491550
 void __thiscall S116::S116_FUN_00491550(S116 *this,undefined1 param_1)
 
 
@@ -49447,6 +49788,7 @@ switchD_00491614_caseD_4:
           }
         }
 
+// Было: S116_FUN_00491a70
 S116::S116_FUN_00491a70(S116 *this,undefined4 param_1,undefined1 *param_2)
 
 
@@ -49504,6 +49846,7 @@ void __fastcall FUN_00491c20(undefined4 *param_1)
     _gParticle = 0;
   }
 
+// Было: Particle_FUN_00491c50
 void __thiscall Particle::Particle_FUN_00491c50(Particle *this)
 
 
@@ -49546,6 +49889,7 @@ LAB_00491c8d:
       goto LAB_00491c8d;
     }
 
+// Было: Particles_FUN_00491ce0
 void __thiscall Particles::Particles_FUN_00491ce0(void)
 
 
@@ -50059,6 +50403,7 @@ void __thiscall FUN_00493040(Ped *param_1,int param_2)
     return;
   }
 
+// Было: S61_FUN_00493090
 S61::S61_FUN_00493090(S61 *this,undefined4 param_1,undefined4 param_2)
 
 
@@ -50114,6 +50459,7 @@ char __thiscall FUN_004930f0(void *this,void *param_1)
     return '\0';
   }
 
+// Было: S63_FUN_004932d0
 byte __thiscall S63::S63_FUN_004932d0(int param_1,S63 *param_2)
 
 
@@ -54143,6 +54489,7 @@ void * __thiscall S95::InitBuffer(S95 *this)
     ppPVar2 = ppPVar2 + 1;
   }
 
+// Было: S95_FUN_0049c700
 void __thiscall S95::S95_FUN_0049c700(S95 *this)
 
 
@@ -54151,6 +54498,7 @@ void __thiscall S95::S95_FUN_0049c700(S95 *this)
     ppPVar2 = ppPVar2 + 1;
   }
 
+// Было: S95_FUN_0049c740
 void __thiscall S95::S95_FUN_0049c740(S95 *this,Passenger *param_1)
 
 
@@ -54159,6 +54507,7 @@ void __thiscall S95::S95_FUN_0049c740(S95 *this,Passenger *param_1)
     this->field_0x2fd1 = 0;
   }
 
+// Было: S95_FUN_0049c760
 byte __thiscall S95::S95_FUN_0049c760(S95 *this)
 
 
@@ -54186,6 +54535,7 @@ byte __thiscall S95::S95_FUN_0049c760(S95 *this)
       }
     }
 
+// Было: S95_FUN_0049c820
 byte __thiscall S95::S95_FUN_0049c820(S95 *this)
 
 
@@ -54405,6 +54755,7 @@ bool __thiscall FUN_0049cb60(int param_1,byte param_2,byte param_3)
       return false;
     }
 
+// Было: S95_FUN_0049cf10
 byte __thiscall S95::S95_FUN_0049cf10(S95 *this)
 
 
@@ -54870,6 +55221,7 @@ LAB_0049de2f:
     return CONCAT31((int3)(uVar3 >> 8),1);
   }
 
+// Было: S1_FUN_0049def0
 void __thiscall S1::S1_FUN_0049def0(S1 *this)
 
 
@@ -54941,6 +55293,7 @@ undefined4 __thiscall FUN_0049e100(void *this,undefined4 param_1)
 undefined * __thiscall FUN_0049e240(void *this)
 
 
+// Было: S1_FUN_0049e270
 byte __thiscall S1::S1_FUN_0049e270(S1 *this)
 
 
@@ -55098,6 +55451,7 @@ void __thiscall FUN_0049ec80(void *this)
 void __thiscall FUN_0049eca0(void *this)
 
 
+// Было: S1_FUN_0049edc0
 void __thiscall S1::S1_FUN_0049edc0(S1 *this)
 
 
@@ -55250,6 +55604,7 @@ void __fastcall FUN_0049f280(int param_1)
     cPlayer_FUN_0049ef50(this,0x1e);
   }
 
+// Было: S1_FUN_0049f350
 void __thiscall S1::S1_FUN_0049f350(S1 *this)
 
 
@@ -55456,6 +55811,7 @@ FUN_004a0120(void *this,uint param_1,S110 *pCar,Ped *param_3,int param_4)
       }
     }
 
+// Было: S1_FUN_004a0290
 void __thiscall S1::S1_FUN_004a0290(S1 *this)
 
 
@@ -55503,6 +55859,7 @@ void __thiscall S1::S1_FUN_004a0290(S1 *this)
     this->field_0xac = this->field_0xac + -1;
   }
 
+// Было: S1_FUN_004a0560
 void __thiscall S1::S1_FUN_004a0560(S1 *this)
 
 
@@ -55610,6 +55967,7 @@ FUN_004a0850(int param_1,undefined4 *param_2,Car *param_3,Ped *param_4)
 void __fastcall FUN_004a0900(int param_1)
 
 
+// Было: S1_FUN_004a0930
 void __thiscall S1::S1_FUN_004a0930(S1 *this)
 
 
@@ -55872,6 +56230,7 @@ undefined1 __fastcall FUN_004a1ba0(int param_1)
     *(undefined1 *)(param_1 + 0x90) = 0;
   }
 
+// Было: S1_FUN_004a1be0
 void __thiscall S1::S1_FUN_004a1be0(S1 *this)
 
 
@@ -56109,6 +56468,7 @@ undefined1 __thiscall FUN_004a26c0(Player *param_1,byte *param_2)
     }
   }
 
+// Было: S1_FUN_004a2980
 void __thiscall S1::S1_FUN_004a2980(S1 *this)
 
 
@@ -56206,6 +56566,7 @@ FUN_004a30a0(Player *param_1,SpriteS1 *param_2,SpriteS1 *param_3)
       this->FirstElement = pSVar3;
     }
 
+// Было: S1_FUN_004a3120
 void __thiscall S1::S1_FUN_004a3120(S1 *this)
 
 
@@ -56614,6 +56975,7 @@ undefined4 __fastcall FUN_004a4490(undefined4 *param_1)
     FUN_004a0cc0();
   }
 
+// Было: S1_FUN_004a4570
 undefined4 __thiscall S1::S1_FUN_004a4570(S1 *this)
 
 
@@ -56684,12 +57046,14 @@ LAB_004a46f4:
     Player::SetAttackChanged((Player *)this);
   }
 
+// Было: Game_FUN_004a4750
 void __thiscall Game::Game_FUN_004a4750(Game *this)
 
 
 void __thiscall FUN_004a4760(void *this)
 
 
+// Было: FUN_004a4770
 void __thiscall S86_8::FUN_004a4770(S86_8 *this)
 
 
@@ -56866,6 +57230,7 @@ void __thiscall FUN_004a4e60(void *this)
 void FUN_004a4f10(void)
 
 
+// Было: S73_FUN_004a4f20
 void __thiscall S73::S73_FUN_004a4f20(S73 *this,Weapon *sWeapon)
 
 
@@ -56937,6 +57302,7 @@ void __thiscall FUN_004a51b0(void *this,undefined2 param_1)
         return;
       }
 
+// Было: S158_FUN_004a5220
 Player::S158_FUN_004a5220(Player *this,Car *pCar,int SelectWeapon)
 
 
@@ -56965,6 +57331,7 @@ bool __thiscall FUN_004a53d0(void *this)
       return true;
     }
 
+// Было: S158_FUN_004a5400
 Player::S158_FUN_004a5400(Player *this,int TypeWeapon,uint param_2)
 
 
@@ -56973,6 +57340,7 @@ Player::S158_FUN_004a5400(Player *this,int TypeWeapon,uint param_2)
     bVar1 = !bVar1;
   }
 
+// Было: S158_FUN_004a5460
 Player::S158_FUN_004a5460(Player *this,byte param_1,byte param_2)
 
 
@@ -58141,9 +58509,11 @@ LAB_004a7959:
     this->string_Arr0x16[0] = L'\0';
   }
 
+// Было: FUN_004a8600
 void __thiscall S151::FUN_004a8600(S151 *this)
 
 
+// Было: FUN_004a8630
 bool __thiscall S151::FUN_004a8630(S151 *this,wchar_t *param_1,uint param_2)
 
 
@@ -58175,6 +58545,7 @@ bool __thiscall S151::FUN_004a8630(S151 *this,wchar_t *param_1,uint param_2)
     }
   }
 
+// Было: S150_FUN_004a8820
 PlayerData::S150_FUN_004a8820(PlayerData *this,uint pID,char *param_2)
 
 
@@ -58194,6 +58565,7 @@ PlayerData::S150_FUN_004a8820(PlayerData *this,uint pID,char *param_2)
 undefined4 __thiscall FUN_004a88c0(PlayerData *param_1,uint param_2)
 
 
+// Было: S150_FUN_004a8a90
 PlayerData::S150_FUN_004a8a90(PlayerData *this,byte pArenaSlots,byte pSubSlots)
 
 
@@ -58299,6 +58671,7 @@ S151 * __thiscall S151::S151(S151 *this)
 void FUN_004a93b0(void)
 
 
+// Было: S111_FUN_004a9430
 void __thiscall Police::S111_FUN_004a9430(Police *this)
 
 
@@ -58307,6 +58680,7 @@ void __thiscall Police::S111_FUN_004a9430(Police *this)
       ppuVar4 = ppuVar4 + 1;
     }
 
+// Было: FUN_004a9500
 undefined4 __thiscall Police::FUN_004a9500(Police *this,Ped *param_1)
 
 
@@ -58330,6 +58704,7 @@ undefined4 __thiscall Police::FUN_004a9500(Police *this,Ped *param_1)
     return 1;
   }
 
+// Было: S111_FUN_004a9590
 byte __thiscall Police::S111_FUN_004a9590(Police *this,Ped *pPed)
 
 
@@ -58345,6 +58720,7 @@ byte __thiscall Police::S111_FUN_004a9590(Police *this,Ped *pPed)
     return 0;
   }
 
+// Было: FUN_004a9610
 undefined4 __thiscall Police::FUN_004a9610(Police *this,Ped *param_2)
 
 
@@ -58353,6 +58729,7 @@ undefined4 __thiscall Police::FUN_004a9610(Police *this,Ped *param_2)
                       this->Arr_s113[local_4].field_0x78 != '\0');
     }
 
+// Было: S111_FUN_004a9670
 void __thiscall Police::S111_FUN_004a9670(Police *this,Ped *pPed)
 
 
@@ -58364,6 +58741,7 @@ void __thiscall Police::S111_FUN_004a9670(Police *this,Ped *pPed)
 void * __thiscall S112::S112_FUN_004a96d0(S112 *this)
 
 
+// Было: S112_FUN_004a9720
 byte __thiscall S112::S112_FUN_004a9720(S112 *this)
 
 
@@ -58416,6 +58794,7 @@ void __thiscall FUN_004a97c0(void *this)
         } while (bVar4 < bVar5);
       }
 
+// Было: S112_FUN_004a9930
 void __thiscall S112::S112_FUN_004a9930(S112 *this)
 
 
@@ -58437,9 +58816,11 @@ void __thiscall S112::S112_FUN_004a9930(S112 *this)
           *pcVar1 = *pcVar1 + -1;
         }
 
+// Было: FUN_004a99f0
 void __thiscall PoliceRoadblock::FUN_004a99f0(PoliceRoadblock *this)
 
 
+// Было: S111_FUN_004a9a90
 undefined1 __thiscall Police::S111_FUN_004a9a90(Police *this)
 
 
@@ -58504,6 +58885,7 @@ void __thiscall FUN_004a9c50(int param_1,int param_2)
       return;
     }
 
+// Было: S111_FUN_004a9d60
 void __thiscall Police::S111_FUN_004a9d60(Police *this,Ped *pPed)
 
 
@@ -58545,6 +58927,7 @@ LAB_004a9e3c:
     DAT_0066b7a4 = 1;
   }
 
+// Было: S111_FUN_004a9e80
 void __thiscall Police::S111_FUN_004a9e80(Police *this)
 
 
@@ -58560,6 +58943,7 @@ void __thiscall Police::S111_FUN_004a9e80(Police *this)
         return;
       }
 
+// Было: S111_FUN_004a9ef0
 byte __thiscall Police::S111_FUN_004a9ef0(Police *this,S113 *pS113)
 
 
@@ -58595,6 +58979,7 @@ byte __thiscall Police::S111_FUN_004a9ef0(Police *this,S113 *pS113)
     S112::S112_FUN_004a96d0(this_00);
   }
 
+// Было: S111_FUN_004aa030
 byte __thiscall Police::S111_FUN_004aa030(Police *this)
 
 
@@ -58876,6 +59261,7 @@ LAB_004aa4f6:
     cVar1 = '\x04';
   }
 
+// Было: S111_FUN_004aa7b0
 byte __thiscall Police::S111_FUN_004aa7b0(Police *this,Car *param_1)
 
 
@@ -58904,9 +59290,11 @@ LAB_004aaabe:
     pPed1->uns43 = *puVar3;
   }
 
+// Было: S111_FUN_004aab90
 byte __thiscall Police::S111_FUN_004aab90(Police *this,S112 *pS112,int param_2)
 
 
+// Было: S111_FUN_004aabb0
 byte __thiscall Police::S111_FUN_004aabb0(Police *this,Car *pCar,int index)
 
 
@@ -58925,6 +59313,7 @@ byte __thiscall Police::S111_FUN_004aabb0(Police *this,Car *pCar,int index)
 void __thiscall FUN_004aaca0(int param_1,Ped *param_2)
 
 
+// Было: S111_FUN_004aad40
 void __thiscall Police::S111_FUN_004aad40(Police *this,Ped *pPed)
 
 
@@ -58982,9 +59371,11 @@ void __fastcall FUN_004aadd0(void *param_1)
     this_01->uns43 = *puVar2;
   }
 
+// Было: FUN_004ab060
 void __thiscall S112::FUN_004ab060(S112 *this)
 
 
+// Было: S112_FUN_004ab330
 void __thiscall S112::S112_FUN_004ab330(S112 *this)
 
 
@@ -59013,6 +59404,7 @@ void __thiscall S112::S112_FUN_004ab330(S112 *this)
       return;
     }
 
+// Было: S112_FUN_004ab400
 void __thiscall S112::S112_FUN_004ab400(S112 *this)
 
 
@@ -59054,6 +59446,7 @@ void __thiscall S112::S112_FUN_004ab400(S112 *this)
           return;
         }
 
+// Было: S112_FUN_004ab610
 void __thiscall S112::S112_FUN_004ab610(S112 *this)
 
 
@@ -59152,6 +59545,7 @@ LAB_004ab90b:
     this->select = 6;
   }
 
+// Было: S112_FUN_004ab930
 byte __thiscall S112::S112_FUN_004ab930(S112 *this)
 
 
@@ -59167,9 +59561,11 @@ byte __thiscall S112::S112_FUN_004ab930(S112 *this)
       return CONCAT31(extraout_var,bVar1) != 0;
     }
 
+// Было: S112_FUN_004ab9d0
 void __thiscall S112::S112_FUN_004ab9d0(S112 *this)
 
 
+// Было: S112_FUN_004aba30
 void __thiscall S112::S112_FUN_004aba30(S112 *this)
 
 
@@ -59274,6 +59670,7 @@ void __fastcall FUN_004abd70(undefined1 *param_1)
 PoliceRoadblock::PoliceRoadblock(PoliceRoadblock *this)
 
 
+// Было: S112_FUN_004ad600
 void __thiscall S112::S112_FUN_004ad600(S112 *this)
 
 
@@ -60168,6 +60565,7 @@ LAB_004ac8bd:
     }
   }
 
+// Было: PoliceRoadblock_FUN_004ad6c0
 PoliceRoadblock::PoliceRoadblock_FUN_004ad6c0(PoliceRoadblock *this)
 
 
@@ -61091,6 +61489,7 @@ LAB_004aeda2:
       }
     }
 
+// Было: S111_FUN_004aee70
 Police::S111_FUN_004aee70(Police *this,void *param_1,void *param_2,int *param_3)
 
 
@@ -61118,6 +61517,7 @@ Police::S111_FUN_004aee70(Police *this,void *param_1,void *param_2,int *param_3)
     bVar2 = (byte)uVar4;
   }
 
+// Было: Police_FUN_004aef70
 void __thiscall Police::Police_FUN_004aef70(Police *this)
 
 
@@ -61203,6 +61603,7 @@ S82 * __thiscall S82::S82(S82 *this)
 S83 * __thiscall S83::S83(S83 *this)
 
 
+// Было: FUN_004af290
 void __thiscall S83::FUN_004af290(S83 *this)
 
 
@@ -61210,6 +61611,7 @@ void __thiscall S83::FUN_004af290(S83 *this)
     this->field60_0x50 = (this->Car->Driver != (Ped *)0x0) + 2;
   }
 
+// Было: FUN_004af2b0
 void __thiscall S83::FUN_004af2b0(S83 *this)
 
 
@@ -61284,6 +61686,7 @@ int __fastcall FUN_004af3d0(int param_1)
     return 0;
   }
 
+// Было: S81_FUN_004af420
 int __thiscall PublicTransport::S81_FUN_004af420(PublicTransport *this)
 
 
@@ -61291,6 +61694,7 @@ int __thiscall PublicTransport::S81_FUN_004af420(PublicTransport *this)
       return (int)(this->ARR_S82 + uVar1);
     }
 
+// Было: FUN_004af460
 PublicTransport::FUN_004af460(PublicTransport *this,undefined4 *param_1)
 
 
@@ -61310,6 +61714,7 @@ PublicTransport::FUN_004af460(PublicTransport *this,undefined4 *param_1)
     } while (iVar3 != 0);
   }
 
+// Было: FUN_004af4a0
 void __thiscall PublicTransport::FUN_004af4a0(PublicTransport *this)
 
 
@@ -61328,6 +61733,7 @@ void __thiscall PublicTransport::FUN_004af4a0(PublicTransport *this)
          _DAT_0066bb34;
   }
 
+// Было: FUN_004af500
 void __thiscall PublicTransport::FUN_004af500(PublicTransport *this)
 
 
@@ -61343,6 +61749,7 @@ void __thiscall PublicTransport::FUN_004af500(PublicTransport *this)
 byte __thiscall PublicTransport::IsThisBus(PublicTransport *this,Car *pCar)
 
 
+// Было: FUN_004af5a0
 int __thiscall PublicTransport::FUN_004af5a0(PublicTransport *this)
 
 
@@ -61353,6 +61760,7 @@ bool __thiscall PublicTransport::HasReachedBusSkipLimit(PublicTransport *this)
     return false;
   }
 
+// Было: FUN_004af5e0
 void __thiscall PublicTransport::FUN_004af5e0(PublicTransport *this)
 
 
@@ -61361,6 +61769,7 @@ void __thiscall PublicTransport::FUN_004af5e0(PublicTransport *this)
     *pbVar1 = *pbVar1 + 1;
   }
 
+// Было: FUN_004af5f0
 void __thiscall PublicTransport::FUN_004af5f0(PublicTransport *this)
 
 
@@ -61374,6 +61783,7 @@ void __thiscall PublicTransport::FUN_004af5f0(PublicTransport *this)
       return this->ARR_S83[local_4].trainComponents;
     }
 
+// Было: FUN_004af660
 PublicTransport::FUN_004af660(PublicTransport *this,int param_2)
 
 
@@ -61381,6 +61791,7 @@ PublicTransport::FUN_004af660(PublicTransport *this,int param_2)
       return this;
     }
 
+// Было: S81_FUN_004af680
 PublicTransport::S81_FUN_004af680(PublicTransport *this,Car *pCar)
 
 
@@ -61402,6 +61813,7 @@ PublicTransport::S81_FUN_004af680(PublicTransport *this,Car *pCar)
       } while (bVar4 < pSVar1->field53_0x43);
     }
 
+// Было: S81_FUN_004af700
 PublicTransport::S81_FUN_004af700(PublicTransport *this,Car *pCar)
 
 
@@ -61423,6 +61835,7 @@ PublicTransport::S81_FUN_004af700(PublicTransport *this,Car *pCar)
 PublicTransport * __thiscall PublicTransport::S81(PublicTransport *this)
 
 
+// Было: FUN_004af7f0
 void __thiscall PublicTransport::FUN_004af7f0(PublicTransport *this)
 
 
@@ -61434,6 +61847,7 @@ void __thiscall PublicTransport::FUN_004af7f0(PublicTransport *this)
     this->field11_0x13c = param_1;
   }
 
+// Было: FUN_004af8a0
 void __thiscall S83::FUN_004af8a0(S83 *this)
 
 
@@ -61477,6 +61891,7 @@ void __thiscall S83::FUN_004af8a0(S83 *this)
     Car::CarMakeDriveable1(pCVar1,uVar4);
   }
 
+// Было: FUN_004af9a0
 void __thiscall S83::FUN_004af9a0(S83 *this)
 
 
@@ -61500,6 +61915,7 @@ void __thiscall S83::FUN_004af9a0(S83 *this)
     }
   }
 
+// Было: FUN_004afa10
 void __thiscall S83::FUN_004afa10(S83 *this)
 
 
@@ -61523,6 +61939,7 @@ void __thiscall S83::FUN_004afa10(S83 *this)
     }
   }
 
+// Было: FUN_004afa80
 void __thiscall S83::FUN_004afa80(S83 *this)
 
 
@@ -61551,6 +61968,7 @@ void __thiscall S83::UpdateTrainComponents(S83 *this)
     } while (iVar2 != 0);
   }
 
+// Было: FUN_004afaf0
 void __thiscall S83::FUN_004afaf0(S83 *this)
 
 
@@ -61568,6 +61986,7 @@ void __thiscall S83::FUN_004afaf0(S83 *this)
     } while (iVar2 != 0);
   }
 
+// Было: FUN_004afb30
 void __thiscall S83::FUN_004afb30(S83 *this)
 
 
@@ -61664,6 +62083,7 @@ LAB_004afdbc:
       return;
     }
 
+// Было: S81_FUN_004afe20
 void __thiscall PublicTransport::S81_FUN_004afe20(PublicTransport *this)
 
 
@@ -62061,6 +62481,7 @@ LAB_004b0128:
     } while (local_f8 != 0);
   }
 
+// Было: S81_FUN_004b08a0
 void __thiscall PublicTransport::S81_FUN_004b08a0(PublicTransport *this)
 
 
@@ -62284,6 +62705,7 @@ int __thiscall FUN_004b0cf0(void *this)
     }
   }
 
+// Было: S81_FUN_004b0d70
 PublicTransport::S81_FUN_004b0d70(PublicTransport *this,Car *pCar)
 
 
@@ -62606,6 +63028,7 @@ LAB_004b10a5:
     }
   }
 
+// Было: S81_FUN_004b1560
 void __thiscall PublicTransport::S81_FUN_004b1560(PublicTransport *this)
 
 
@@ -62876,6 +63299,7 @@ switchD_004b168b_caseD_b:
     } while (uVar5 < 10);
   }
 
+// Было: S81_FUN_004b1b40
 PublicTransport::S81_FUN_004b1b40(PublicTransport *this,Car *pCar)
 
 
@@ -62888,6 +63312,7 @@ PublicTransport::S81_FUN_004b1b40(PublicTransport *this,Car *pCar)
     return *(Car **)(iVar2 + 0xc);
   }
 
+// Было: S81_FUN_004b1b80
 PublicTransport::S81_FUN_004b1b80(PublicTransport *this,Car *pCar,Car *pCar1)
 
 
@@ -63067,6 +63492,7 @@ LAB_004b1f27:
     }
   }
 
+// Было: S154_FUN_004b2180
 AudioManager::S154_FUN_004b2180(AudioManager *this,uint param_1,int param_2)
 
 
@@ -63103,6 +63529,7 @@ void FUN_004b22b0(int param_1,undefined4 param_2)
     *(undefined2 *)(param_1 + 0x12) = 300;
   }
 
+// Было: FUN_004b2350
 AudioManager::FUN_004b2350(AudioManager *this,uint param_1,undefined4 param_2)
 
 
@@ -64314,6 +64741,7 @@ byte __thiscall FUN_004b4a00(void *this,int param_1)
     return 1;
   }
 
+// Было: S8_FUN_004b4a60
 void __thiscall S8::S8_FUN_004b4a60(S8 *this)
 
 
@@ -64390,6 +64818,7 @@ void FUN_004b4a8f(uint param_1,undefined4 param_2,byte param_3)
     }
   }
 
+// Было: S8_FUN_004b4e60
 void __thiscall S8::S8_FUN_004b4e60(S8 *this)
 
 
@@ -64653,6 +65082,7 @@ Registry::ConfigSetScreen(Registry *this,LPCSTR parametr,int value)
     DebugLog(0x2b,"registry.cpp",0x38e);
   }
 
+// Было: FUN_004b5980
 Registry::FUN_004b5980(Registry *this,HKEY param_1,LPCSTR param_2)
 
 
@@ -64724,6 +65154,7 @@ Registry::FUN_004b5980(Registry *this,HKEY param_1,LPCSTR param_2)
 Registry::UseConnectConfig(Registry *this,HKEY param_1,char *Protocol)
 
 
+// Было: S170_FUN_004b5ed0
 undefined1 __thiscall S170::S170_FUN_004b5ed0(S170 *this)
 
 
@@ -65044,6 +65475,7 @@ SaveSlotAnimatedValue::SaveSlotAnimatedValue(SaveSlotAnimatedValue *this)
     piVar2 = piVar2 + 1;
   }
 
+// Было: S161_FUN_004b74d0
 SaveSlotAnimatedValue::S161_FUN_004b74d0(SaveSlotAnimatedValue *this)
 
 
@@ -65060,9 +65492,11 @@ uint __thiscall FUN_004b7500(void *this,byte param_1,char param_2)
     uVar2 = uVar2 * 2;
   }
 
+// Было: S161_FUN_004b7570
 SaveSlotAnimatedValue::S161_FUN_004b7570(SaveSlotAnimatedValue *this)
 
 
+// Было: FUN_004b7580
 void __thiscall S161::FUN_004b7580(void *this,int param_1)
 
 
@@ -65072,6 +65506,7 @@ bool __thiscall Game::GameOver(Game *this)
 SaveSlotAnimatedValue::S161_GetHealth(SaveSlotAnimatedValue *this)
 
 
+// Было: FUN_004b75b0
 SaveSlotAnimatedValue::FUN_004b75b0(SaveSlotAnimatedValue *this,byte param_2)
 
 
@@ -65119,6 +65554,7 @@ void __thiscall FUN_004b76a0(void *this,int param_1,int param_2,Ped *param_3)
     return;
   }
 
+// Было: S161_FUN_004b7770
 SaveSlotAnimatedValue::S161_FUN_004b7770(SaveSlotAnimatedValue *this)
 
 
@@ -65284,9 +65720,11 @@ SaveSlotAnimatedValue::S161_FUN_004b7770(SaveSlotAnimatedValue *this)
     this->field94_0x75 = 1;
   }
 
+// Было: FUN_004b7d50
 void __thiscall SaveSlotAnimatedValue::FUN_004b7d50(SaveSlotAnimatedValue *this)
 
 
+// Было: FUN_004b7d80
 SaveSlotAnimatedValue::FUN_004b7d80(SaveSlotAnimatedValue *this,byte param_1)
 
 
@@ -65569,6 +66007,7 @@ switchD_004b8216_caseD_5:
         puVar14 = (undefined4 *)Ped::GetPositionZ(pPed,(int)local_c);
         puVar15 = (undefined4 *)Ped::GetPositionY(pPed,(int)local_8);
         puVar16 = (undefined4 *)Ped::GetPositionX(pPed,(int)local_4);
+// Было: S123_FUN_004b91f0
         S123::S123_FUN_004b91f0(_gS123,*puVar16,*puVar15,*puVar14,iVar8 * iVar6)
         ;
       }
@@ -65685,6 +66124,7 @@ LAB_004b8731:
 void __thiscall SaveSlotAnimatedValue::GiveMoney20(SaveSlotAnimatedValue *this)
 
 
+// Было: FUN_004b8a70
 void __thiscall SaveSlotAnimatedValue::FUN_004b8a70(void *param_1,Car *param_2)
 
 
@@ -65702,6 +66142,7 @@ void __thiscall SaveSlotAnimatedValue::FUN_004b8a70(void *param_1,Car *param_2)
     }
   }
 
+// Было: FUN_004b8bd0
 SaveSlotAnimatedValue::FUN_004b8bd0(SaveSlotAnimatedValue *this,Car *pCar)
 
 
@@ -65721,6 +66162,7 @@ SaveSlotAnimatedValue::FUN_004b8bd0(SaveSlotAnimatedValue *this,Car *pCar)
     }
   }
 
+// Было: FUN_004b8c80
 SaveSlotAnimatedValue::FUN_004b8c80(SaveSlotAnimatedValue *this,Car *pCar)
 
 
@@ -65743,6 +66185,7 @@ SaveSlotAnimatedValue::FUN_004b8c80(SaveSlotAnimatedValue *this,Car *pCar)
     S127::S127_HandlePedInteraction(gS127,3,pPed);
   }
 
+// Было: S123_FUN_004b8d60
 ushort __thiscall S123::S123_FUN_004b8d60(S123 *this)
 
 
@@ -65750,9 +66193,11 @@ ushort __thiscall S123::S123_FUN_004b8d60(S123 *this)
     this->Arr_Element = 9;
   }
 
+// Было: S123_FUN_004b8d80
 void __thiscall S123::S123_FUN_004b8d80(S123 *this)
 
 
+// Было: FUN_004b8dc0
 void __thiscall S125::FUN_004b8dc0(S125 *this,int param_1)
 
 
@@ -65834,6 +66279,7 @@ void __thiscall S125::FUN_004b8dc0(S125 *this,int param_1)
       this->field0_0x0 = 1;
     }
 
+// Было: S125_FUN_004b8f70
 byte __thiscall S125::S125_FUN_004b8f70(S125 *this)
 
 
@@ -65857,6 +66303,7 @@ S125 * __thiscall S124::GetS125(S124 *this)
 S125 * __thiscall S124::FUN_004b8fe0(S124 *this)
 
 
+// Было: FUN_004b9000
 void __thiscall S124::FUN_004b9000(S124 *this,S125 *pS125)
 
 
@@ -65868,6 +66315,7 @@ void __thiscall S124::FUN_004b9000(S124 *this,S125 *pS125)
       }
     }
 
+// Было: S124_FUN_004b9050
 void __thiscall S124::S124_FUN_004b9050(S124 *this)
 
 
@@ -65924,6 +66372,7 @@ void FUN_004b91e0(void)
     bVar1 = this->count == 0;
   }
 
+// Было: S123_FUN_004b9260
 void __thiscall S123::S123_FUN_004b9260(S123 *this)
 
 
@@ -66019,9 +66468,11 @@ void __thiscall FUN_004b94b0(void *this)
     FUN_004b92b0(this,*(int *)((int)this + 4),(int *)0xffffffb6);
   }
 
+// Было: S123_FUN_004b98b0
 void __thiscall S123::S123_FUN_004b98b0(S123 *this)
 
 
+// Было: S68_FUN_004b98d0
 byte __thiscall S68::S68_FUN_004b98d0(S68 *this,undefined4 param_1)
 
 
@@ -66029,9 +66480,11 @@ byte __thiscall S68::S68_FUN_004b98d0(S68 *this,undefined4 param_1)
       return 0;
     }
 
+// Было: S68_FUN_004b9920
 void __thiscall S68::S68_FUN_004b9920(S68 *this,byte param_1)
 
 
+// Было: S68_FUN_004b9940
 void __thiscall S68::S68_FUN_004b9940(S68 *this,byte param_1)
 
 
@@ -66157,6 +66610,7 @@ byte __thiscall FUN_004b9fd0(void *this,Player *pPlayer)
     }
   }
 
+// Было: S40_FUN_004ba020
 void __thiscall S40::S40_FUN_004ba020(S40 *this)
 
 
@@ -66214,6 +66668,7 @@ byte __thiscall FUN_004ba390(void *this,int param_1)
 void __thiscall FUN_004ba4d0(void *this,float param_1)
 
 
+// Было: S9_FUN_004ba5e0
 void __thiscall S9::S9_FUN_004ba5e0(S9 *this)
 
 
@@ -66236,6 +66691,7 @@ undefined1 __thiscall FUN_004ba6c0(void *this,int param_1)
     }
   }
 
+// Было: FUN_004ba720
 void __thiscall S9::FUN_004ba720(S9 *this)
 
 
@@ -66311,6 +66767,7 @@ uint FUN_004bac60(void)
     return uVar2 | 0x2280;
   }
 
+// Было: S38_FUN_004bacf0
 SpriteS1::S38_FUN_004bacf0(SpriteS1 *this,void *param_1,void *param_2)
 
 
@@ -66526,6 +66983,7 @@ undefined4 __fastcall FUN_004bca80(void *param_1)
 void __fastcall FUN_004bcca0(int param_1)
 
 
+// Было: S3_FUN_004bccc0
 void __thiscall S3::S3_FUN_004bccc0(S3 *this)
 
 
@@ -66718,6 +67176,7 @@ void __thiscall FUN_004bdad0(void *this)
           S63::FUN_00483c40(this_02);
         }
 
+// Было: S3_FUN_004bdc40
 void __thiscall S3::S3_FUN_004bdc40(S3 *this)
 
 
@@ -66734,9 +67193,11 @@ byte __fastcall FUN_004bdd40(SpriteS1 *param_1)
     puVar3 = puVar3 + 1;
   }
 
+// Было: FUN_004bddd0
 SpriteS1::FUN_004bddd0(SpriteS1 *this,S110 *param_1,Ped *param_2,Ped *param_3)
 
 
+// Было: S38_FUN_004bdef0
 SpriteS1::S38_FUN_004bdef0(SpriteS1 *this,undefined4 param_1,int param_2)
 
 
@@ -66747,6 +67208,7 @@ SpriteS1::S38_FUN_004bdef0(SpriteS1 *this,undefined4 param_1,int param_2)
 void __thiscall FUN_004bdf20(void *this,undefined4 param_1,SpriteS1 *pSpriteS1)
 
 
+// Было: S38_FUN_004bdfe0
 SpriteS1::S38_FUN_004bdfe0(SpriteS1 *this,undefined4 param_1)
 
 
@@ -66893,6 +67355,7 @@ undefined1 __thiscall FUN_004be830(void *this)
 byte __thiscall FUN_004be850(void *this)
 
 
+// Было: S46_1_FUN_004be870
 char __thiscall S46::S46_1_FUN_004be870(S46 *this,Sprite *pSprite)
 
 
@@ -66965,6 +67428,7 @@ undefined4 __thiscall FUN_004bea90(void *this,int param_1)
     puVar1 = (undefined4 *)puVar1[1];
   }
 
+// Было: S72_FUN_004beac0
 Turrel::S72_FUN_004beac0(Turrel *this,undefined4 *param_1,undefined4 param_2)
 
 
@@ -66981,6 +67445,7 @@ int __thiscall FUN_004beb30(void *this)
     puVar1 = (undefined4 *)puVar1[1];
   }
 
+// Было: _S72_FUN_004bebc0
 Turrel::_S72_FUN_004bebc0(Turrel *this,void *param_1,char param_2)
 
 
@@ -67003,6 +67468,7 @@ void __thiscall FUN_004bec60(void *this,S46 *param_1)
     }
   }
 
+// Было: S46_1FUN_004becb0
 void __thiscall S46::S46_1FUN_004becb0(S46 *this,S46 *pS46_4)
 
 
@@ -67180,6 +67646,7 @@ uint __thiscall FUN_004bf230(int param_1,ushort param_2,byte param_3)
     return param_2;
   }
 
+// Было: S15_FUN_004bf570
 Style::S15_FUN_004bf570(Style *this,ushort *param_1,ushort *param_2)
 
 
@@ -67627,6 +68094,7 @@ void __fastcall FUN_004c0940(undefined4 *param_1)
 S85 * __thiscall S85::S85(S85 *this)
 
 
+// Было: FUN_004c0980
 void __thiscall Taxi::FUN_004c0980(Taxi *this)
 
 
@@ -67794,9 +68262,11 @@ void * __thiscall Text::Bsearch(Text *this,void *str)
 short __thiscall FUN_004c23d0(void *this,ushort param_1)
 
 
+// Было: S14_FUN_004c23f0
 void __thiscall Text::S14_FUN_004c23f0(Text *this)
 
 
+// Было: FUN_004c2400
 void __thiscall Text::FUN_004c2400(Text *this)
 
 
@@ -67881,9 +68351,11 @@ Text * __thiscall Text::Text(Text *this)
       } while (index < this->count);
     }
 
+// Было: S89_FUN_004c2780
 void __thiscall S89::S89_FUN_004c2780(S89 *this)
 
 
+// Было: S89_FUN_004c27f0
 void __thiscall S89::S89_FUN_004c27f0(S89 *this)
 
 
@@ -67915,6 +68387,7 @@ void __thiscall S89::S89_FUN_004c27f0(S89 *this)
     }
   }
 
+// Было: FUN_004c28d0
 void __thiscall S89::FUN_004c28d0(S89 *this)
 
 
@@ -67925,12 +68398,15 @@ void __thiscall S89::FUN_004c28d0(S89 *this)
       } while (uVar1 < this->count);
     }
 
+// Было: FUN_004c2920
 int __thiscall S89::FUN_004c2920(S89 *this,int param_1,short param_2)
 
 
+// Было: FUN_004c2950
 int __thiscall S89::FUN_004c2950(S89 *this,short param_1,int param_2)
 
 
+// Было: S87_FUN_004c2970
 void __thiscall TextureManager::S87_FUN_004c2970(TextureManager *this)
 
 
@@ -67995,6 +68471,7 @@ undefined4 __thiscall FUN_004c2a00(int param_1,ushort param_2,short param_3)
     return 0;
   }
 
+// Было: FUN_004c2ba0
 TextureManager::FUN_004c2ba0(TextureManager *this,ushort param_1)
 
 
@@ -68035,12 +68512,14 @@ void __thiscall FUN_004c2c30(int param_1,uint param_2,ushort param_3)
 S89 * __thiscall S89::S89(S89 *this)
 
 
+// Было: FUN_004c2f30
 void __thiscall S89::FUN_004c2f30(S89 *this,int param_1,int param_2)
 
 
 void __thiscall S88::S88(S88 *this)
 
 
+// Было: S87_FUN_004c2f90
 void __thiscall TextureManager::S87_FUN_004c2f90(TextureManager *this)
 
 
@@ -68064,6 +68543,7 @@ void __thiscall TextureManager::S87_FUN_004c2f90(TextureManager *this)
     } while (uVar4 < 0x30);
   }
 
+// Было: S87_FUN_004c3040
 void __thiscall TextureManager::S87_FUN_004c3040(TextureManager *this)
 
 
@@ -68098,6 +68578,7 @@ TextureManager * __thiscall TextureManager::TextureManager(TextureManager *this)
     puVar3 = puVar3 + 1;
   }
 
+// Было: S71_FUN_004c3240
 void __thiscall S71::S71_FUN_004c3240(S71 *this)
 
 
@@ -68117,6 +68598,7 @@ void __thiscall FUN_004c32a0(undefined2 *param_1,undefined2 *param_2)
 void __fastcall FUN_004c32e0(S71 *param_1)
 
 
+// Было: S71_FUN_004c3300
 byte __thiscall S71::S71_FUN_004c3300(S71 *this)
 
 
@@ -68142,9 +68624,11 @@ byte __thiscall S71::S71_FUN_004c3300(S71 *this)
     this->count = this->field2_0x4;
   }
 
+// Было: S69_FUN_004c3370
 void __thiscall TileAnim::S69_FUN_004c3370(TileAnim *this)
 
 
+// Было: S70_FUN_004c3380
 undefined4 __thiscall S70::S70_FUN_004c3380(S70 *this)
 
 
@@ -68157,12 +68641,14 @@ void __thiscall S71::S71(S71 *this)
 void FUN_004c3470(undefined4 param_1)
 
 
+// Было: FUN_004c3490
 void __thiscall S70::FUN_004c3490(S70 *this)
 
 
 S70 * __thiscall S70::S70(S70 *this)
 
 
+// Было: S70_FUN_004c3500
 void __thiscall S70::S70_FUN_004c3500(S70 *this)
 
 
@@ -68204,6 +68690,7 @@ LAB_004c3536:
       goto LAB_004c3536;
     }
 
+// Было: TileAnim_FUN_004c3590
 void __thiscall TileAnim::TileAnim_FUN_004c3590(void)
 
 
@@ -68219,6 +68706,7 @@ byte * __thiscall S36::S36_FUN_004c3680(S36 *this)
 void __thiscall S36::S36(S36 *this)
 
 
+// Было: S35_FUN_004c36c0
 void __thiscall Timing::S35_FUN_004c36c0(Timing *this)
 
 
@@ -68228,6 +68716,7 @@ Timing * __thiscall Timing::Timing(Timing *this)
 void FUN_004c3750(void)
 
 
+// Было: S35_FUN_004c3760
 void __thiscall Timing::S35_FUN_004c3760(Timing *this,char param_1,char param_2)
 
 
@@ -68330,6 +68819,7 @@ void __thiscall FUN_004c3a10(undefined4 *param_1,undefined1 param_2)
     }
   }
 
+// Было: S90_FUN_004c3bb0
 void __thiscall TrafficLigthStruct::S90_FUN_004c3bb0(TrafficLigthStruct *this)
 
 
@@ -68403,6 +68893,7 @@ FUN_004c3c70(void *this,uint param_1,Ped *param_2,Ped *param_3,Ped *param_4)
                           (int)param_2,_DAT_00672230);
     }
 
+// Было: S90_FUN_004c4a60
 void __thiscall TrafficLigthStruct::S90_FUN_004c4a60(TrafficLigthStruct *this)
 
 
@@ -68429,6 +68920,7 @@ void __thiscall TrafficLigthStruct::S90_FUN_004c4a60(TrafficLigthStruct *this)
     return;
   }
 
+// Было: S90_FUN_004c4b00
 void __thiscall TrafficLigthStruct::S90_FUN_004c4b00(TrafficLigthStruct *this)
 
 
@@ -68439,15 +68931,18 @@ S20_01 * __thiscall S20::S20_FUN_004c4b40(S20 *this)
     return (S20_01 *)0x0;
   }
 
+// Было: S20_FUN_004c4b70
 void __thiscall S20::S20_FUN_004c4b70(S20 *this)
 
 
+// Было: S21_FUN_004c4b80
 void __thiscall S21::S21_FUN_004c4b80(S21 *this,void *param_1)
 
 
 S21 * __thiscall S21::S21_FUN_004c4ba0(S21 *this)
 
 
+// Было: S21_FUN_004c4bc0
 bool __thiscall S21::S21_FUN_004c4bc0(S21 *this)
 
 
@@ -68523,6 +69018,7 @@ void __thiscall FUN_004c4d20(void *this)
     pS21 = _gS21;
   }
 
+// Было: S19_FUN_004c4d60
 void __thiscall S19::S19_FUN_004c4d60(S19 *this)
 
 
@@ -68535,6 +69031,7 @@ S19 * __thiscall S19::S19(S19 *this)
 void __thiscall FUN_004c4ea0(int param_1,uint param_2)
 
 
+// Было: S25_FUN_004c4ee0
 void __thiscall S25::S25_FUN_004c4ee0(S25 *this)
 
 
@@ -68560,6 +69057,7 @@ undefined4 __fastcall FUN_004c4f20(int param_1)
       return bVar1;
     }
 
+// Было: S25_FUN_004c4fe0
 void __thiscall S25::S25_FUN_004c4fe0(S25 *this,byte param_1,S46 *param_2)
 
 
@@ -68739,6 +69237,7 @@ LAB_004c53cd:
     }
   }
 
+// Было: FUN_004c5420
 void __thiscall S109::FUN_004c5420(void)
 
 
@@ -68749,9 +69248,11 @@ void * __thiscall S109::S109_FUN_004c5430(S109 *this)
       return this->Arr_S110_10 + index;
     }
 
+// Было: S110_FUN_004c5480
 void __thiscall S110::S110_FUN_004c5480(S110 *this)
 
 
+// Было: S110_FUN_004c5480
 void __thiscall S110::S110_FUN_004c5480(S110 *this)
 
 
@@ -69045,6 +69546,7 @@ LAB_004c5d5c:
       return 0;
     }
 
+// Было: S109_FUN_004c5db0
 void __thiscall S109::S109_FUN_004c5db0(S109 *this)
 
 
@@ -69079,6 +69581,7 @@ void __thiscall FUN_004c5e00(void *this,char param_2)
     }
   }
 
+// Было: HudArrow_FUN_004c5e60
 HudArrow::HudArrow_FUN_004c5e60(HudArrow *this,undefined4 param_1)
 
 
@@ -69091,6 +69594,7 @@ HudArrow * __thiscall HudArrow::FUN_004c5e70(HudArrow *this,int param_1)
       return this;
     }
 
+// Было: HudArrow_FUN_004c5ea0
 HudArrow::HudArrow_FUN_004c5ea0(HudArrow *this,undefined4 param_1)
 
 
@@ -69152,6 +69656,7 @@ byte __thiscall FUN_004c5f70(void *this,KeyCode Button)
 void __thiscall FUN_004c5fd0(void *this)
 
 
+// Было: FUN_004c5fe0
 void __thiscall HudMessage::FUN_004c5fe0(HudMessage *this)
 
 
@@ -69171,6 +69676,7 @@ void __thiscall HudMessage::FUN_004c5fe0(HudMessage *this)
 HudMessage::ShowBigOnScreenLabel(HudMessage *this,short *param_1,int param_2)
 
 
+// Было: FUN_004c60b0
 void __thiscall HudMessage::FUN_004c60b0(HudMessage *this)
 
 
@@ -69178,6 +69684,7 @@ void __thiscall HudMessage::FUN_004c60b0(HudMessage *this)
     this->TimeToShow = this->TimeToShow - 1;
   }
 
+// Было: FUN_004c60c0
 void __thiscall HudMessage::FUN_004c60c0(HudMessage *this)
 
 
@@ -69202,6 +69709,7 @@ undefined4 __thiscall FUN_004c6110(wchar_t *param_1,wchar_t *param_2)
       return 1;
     }
 
+// Было: FUN_004c6170
 void __thiscall S86_7::FUN_004c6170(S86_7 *this)
 
 
@@ -69231,24 +69739,31 @@ void __thiscall S86_7::FUN_004c6170(S86_7 *this)
 void __thiscall S86_7::S86_7(S86_7 *this)
 
 
+// Было: S166_FUN_004c6290
 void __thiscall S166::S166_FUN_004c6290(S166 *this)
 
 
+// Было: FUN_004c62b0
 void __thiscall S166::FUN_004c62b0(S166 *this)
 
 
+// Было: HudBrief_FUN_004c62d0
 void __thiscall HudBrief::HudBrief_FUN_004c62d0(HudBrief *this)
 
 
+// Было: FUN_004c62f0
 void __thiscall HudBrief::FUN_004c62f0(HudBrief *this)
 
 
+// Было: FUN_004c6310
 void __thiscall HudBrief::FUN_004c6310(HudBrief *this)
 
 
+// Было: HudBrief_FUN_004c6340
 void __thiscall HudBrief::HudBrief_FUN_004c6340(HudBrief *this)
 
 
+// Было: HudBrief_FUN_004c6380
 void __thiscall HudBrief::HudBrief_FUN_004c6380(HudBrief *this)
 
 
@@ -69330,6 +69845,7 @@ void * __thiscall HudBrief::HudBrief_FUN_004c6470(HudBrief *this)
       ppwVar4 = &gUString;
     }
 
+// Было: HudBrief_FUN_004c6640
 void __thiscall HudBrief::HudBrief_FUN_004c6640(HudBrief *this)
 
 
@@ -69338,9 +69854,11 @@ void __thiscall HudBrief::HudBrief_FUN_004c6640(HudBrief *this)
       this_01 = extraout_ECX;
     }
 
+// Было: FUN_004c6770
 void __thiscall HudBrief::FUN_004c6770(HudBrief *this)
 
 
+// Было: FUN_004c6830
 void __thiscall HudBrief::FUN_004c6830(HudBrief *this)
 
 
@@ -69377,6 +69895,7 @@ void __thiscall HudBrief::Clear(HudBrief *this,int param_1)
 void __thiscall HudBrief::HudBrief(HudBrief *this)
 
 
+// Было: S86_FUN_004c6940
 void __thiscall Hud::S86_FUN_004c6940(Hud *this)
 
 
@@ -69385,9 +69904,11 @@ void __thiscall Hud::S86_FUN_004c6940(Hud *this)
     *(int *)&this->field_0x44 = iVar1;
   }
 
+// Было: S86_FUN_004c6960
 void __thiscall Hud::S86_FUN_004c6960(Hud *this,short *InfoByTypeCar)
 
 
+// Было: S86_FUN_004c69a0
 void __thiscall Hud::S86_FUN_004c69a0(Hud *this)
 
 
@@ -69403,6 +69924,7 @@ void __thiscall Hud::S86_FUN_004c69a0(Hud *this)
     }
   }
 
+// Было: S86_FUN_004c69c0
 void __thiscall Hud::S86_FUN_004c69c0(Hud *this)
 
 
@@ -69448,6 +69970,7 @@ void __thiscall FUN_004c6ab0(void *this)
 void __thiscall FUN_004c6ac0(void *this)
 
 
+// Было: FUN_004c6ad0
 void __thiscall S86_8::FUN_004c6ad0(S86_8 *this)
 
 
@@ -69456,9 +69979,11 @@ void __thiscall S86_8::FUN_004c6ad0(S86_8 *this)
     this->field3_0x84 = pvVar1;
   }
 
+// Было: FUN_004c6af0
 void __thiscall S86_8::FUN_004c6af0(S86_8 *this,void *param_1,void *param_2)
 
 
+// Было: FUN_004c6b70
 byte __thiscall S86_8::FUN_004c6b70(S86_8 *this)
 
 
@@ -69486,6 +70011,7 @@ byte __thiscall S86_8::FUN_004c6b70(S86_8 *this)
       }
     }
 
+// Было: FUN_004c6c60
 void __thiscall S86_8::FUN_004c6c60(S86_8 *this)
 
 
@@ -69495,6 +70021,7 @@ void __thiscall S86_8::S86_8(S86_8 *this)
 void __thiscall FUN_004c6ca0(void *this)
 
 
+// Было: FUN_004c6d00
 void __thiscall S86_10::FUN_004c6d00(S86_10 *this)
 
 
@@ -69523,9 +70050,11 @@ void __thiscall S86_10::FUN_004c6d00(S86_10 *this)
         return;
       }
 
+// Было: S86_FUN_004c6d90
 void __thiscall Hud::S86_FUN_004c6d90(Hud *this)
 
 
+// Было: S86_FUN_004c6da0
 void __thiscall Hud::S86_FUN_004c6da0(Hud *this)
 
 
@@ -69536,6 +70065,7 @@ void __thiscall Hud::S86_FUN_004c6da0(Hud *this)
 void __thiscall Hud::SetTextSpeed(Hud *this)
 
 
+// Было: S86_FUN_004c6de0
 byte __thiscall Hud::S86_FUN_004c6de0(Hud *this,KeyCode Button)
 
 
@@ -69546,9 +70076,11 @@ byte __thiscall Hud::S86_FUN_004c6de0(Hud *this,KeyCode Button)
     }
   }
 
+// Было: S86_FUN_004c6e20
 void __thiscall Hud::S86_FUN_004c6e20(Hud *this,KeyCode param_2)
 
 
+// Было: FUN_004c6e30
 undefined2 __thiscall S57::FUN_004c6e30(S57 *this,int param_1)
 
 
@@ -69561,6 +70093,7 @@ void __thiscall FUN_004c6e70(void *this)
 void __thiscall S83_3::S83_3(S83_3 *this)
 
 
+// Было: FUN_004c6ea0
 void __thiscall S86_4::FUN_004c6ea0(S86_4 *this,byte param_1)
 
 
@@ -69596,12 +70129,14 @@ undefined1 __thiscall FUN_004c6fb0(void *this)
     }
   }
 
+// Было: FUN_004c6ff0
 void __thiscall HudArrow::FUN_004c6ff0(HudArrow *this,int param_1)
 
 
 void __thiscall FUN_004c7030(void *this,undefined4 param_1)
 
 
+// Было: HudArrow_FUN_004c7040
 void __thiscall HudArrow::HudArrow_FUN_004c7040(HudArrow *this,bool param_1)
 
 
@@ -69644,9 +70179,11 @@ void __thiscall FUN_004c7180(void *this,int param_1)
 void __thiscall S86_10::S86_10(S86_10 *this)
 
 
+// Было: S86_FUN_004c7220
 undefined1 __thiscall Hud::S86_FUN_004c7220(Hud *this,short param_1)
 
 
+// Было: S166_FUN_004c7250
 undefined1 __thiscall S166::S166_FUN_004c7250(S166 *this,short param_1)
 
 
@@ -69662,9 +70199,11 @@ bool __thiscall FUN_004c7370(void *this)
 void * __thiscall FUN_004c7380(void *this,Player *param_1)
 
 
+// Было: FUN_004c73a0
 void __thiscall S86_5::FUN_004c73a0(S86_5 *this)
 
 
+// Было: FUN_004c74a0
 void __thiscall S86_5::FUN_004c74a0(S86_5 *this)
 
 
@@ -69752,6 +70291,7 @@ void __thiscall FUN_004c78a0(void)
                                 *(short *)&this_02->field_0x790 + -1),0,0);
         }
 
+// Было: S86_4_FUN_004c79d0
 void __thiscall S86_4::S86_4_FUN_004c79d0(S86_4 *this)
 
 
@@ -69763,9 +70303,11 @@ void __thiscall S86_4::S86_4_FUN_004c79d0(S86_4 *this)
     } while (iVar3 < this->field1_0x48);
   }
 
+// Было: FUN_004c7a30
 void __thiscall S86_4::FUN_004c7a30(S86_4 *this)
 
 
+// Было: FUN_004c7b10
 void __thiscall S86_4::FUN_004c7b10(S86_4 *this)
 
 
@@ -69814,6 +70356,7 @@ void __thiscall FUN_004c7b70(void)
     FUN_004c7280(&gUString,pSVar7,pSVar4,pSVar9,puVar8,uVar10,uVar11,uVar12);
   }
 
+// Было: FUN_004c7cc0
 void __thiscall ArrowTrace::FUN_004c7cc0(ArrowTrace *this,void *param_1)
 
 
@@ -69848,6 +70391,7 @@ void __thiscall FUN_004c7fc0(void *this)
     }
   }
 
+// Было: HudArrow_FUN_004c82c0
 void __thiscall HudArrow::HudArrow_FUN_004c82c0(HudArrow *this)
 
 
@@ -69859,6 +70403,7 @@ void __thiscall HudArrow::HudArrow_FUN_004c82c0(HudArrow *this)
     return;
   }
 
+// Было: HudArrow_FUN_004c83d0
 void __thiscall HudArrow::HudArrow_FUN_004c83d0(HudArrow *this,Ped *pPed)
 
 
@@ -69887,6 +70432,7 @@ void __thiscall HudArrow::HudArrow_FUN_004c83d0(HudArrow *this,Ped *pPed)
     return;
   }
 
+// Было: FUN_004c8470
 undefined1 __thiscall HudArrow::FUN_004c8470(HudArrow *this,void *param_1)
 
 
@@ -69901,6 +70447,7 @@ undefined1 __thiscall HudArrow::FUN_004c8470(HudArrow *this,void *param_1)
       return 0;
     }
 
+// Было: HudArrow_FUN_004c84c0
 void __thiscall HudArrow::HudArrow_FUN_004c84c0(HudArrow *this)
 
 
@@ -69917,6 +70464,7 @@ void __thiscall HudArrow::HudArrow_FUN_004c84c0(HudArrow *this)
       return;
     }
 
+// Было: FUN_004c8540
 void __thiscall HudArrow::FUN_004c8540(HudArrow *this)
 
 
@@ -69953,6 +70501,7 @@ void __thiscall FUN_004c85d0(void *this)
         FUN_00476880((HudArrow *)(puVar4 + -10));
       }
 
+// Было: HudArrow_FUN_004c8620
 void __thiscall HudArrow::HudArrow_FUN_004c8620(HudArrow *this)
 
 
@@ -70104,6 +70653,7 @@ void __thiscall FUN_004c8990(void *this)
 void __thiscall OpenChat(void *this,CameraOrPhysics *param_1)
 
 
+// Было: HudMessage_FUN_004c8a40
 void __thiscall HudMessage::HudMessage_FUN_004c8a40(HudMessage *this)
 
 
@@ -70156,6 +70706,7 @@ void __thiscall FUN_004c8be0(int param_1,undefined4 param_2)
     FUN_004c70f0();
   }
 
+// Было: FUN_004c8c80
 void __thiscall S86_7::FUN_004c8c80(S86_7 *this)
 
 
@@ -70213,9 +70764,11 @@ void __thiscall FUN_004c9040(void *this,byte param_1,byte param_2)
       return;
     }
 
+// Было: FUN_004c92a0
 void __thiscall S166::FUN_004c92a0(S166 *this)
 
 
+// Было: FUN_004c9310
 int __thiscall S166::FUN_004c9310(S166 *this,int param_1)
 
 
@@ -70237,6 +70790,7 @@ int __thiscall FUN_004c9360(void *this,undefined4 param_2)
       }
     }
 
+// Было: FUN_004c93b0
 void __thiscall S166::FUN_004c93b0(S166 *this,int param_1)
 
 
@@ -70249,9 +70803,11 @@ void __thiscall FUN_004c93f0(int param_1_00,int param_2,int param_3)
 void __thiscall FUN_004c9410(void *this)
 
 
+// Было: FUN_004c9430
 void __thiscall HudBrief::FUN_004c9430(HudBrief *this)
 
 
+// Было: S86_FUN_004c94f0
 void __thiscall Hud::S86_FUN_004c94f0(Hud *this)
 
 
@@ -70385,6 +70941,7 @@ void __thiscall FUN_004c9750(void *this,Player *param_1,Player *param_2)
     return;
   }
 
+// Было: FUN_004c9890
 void __thiscall S86_8::FUN_004c9890(S86_8 *this)
 
 
@@ -70591,6 +71148,7 @@ void __thiscall FUN_004c9c20(void *this)
           iVar9 = iVar9 + 0x1b;
         }
 
+// Было: S86_10_FUN_004c9fa0
 void __thiscall S86_10::S86_10_FUN_004c9fa0(S86_10 *this)
 
 
@@ -70734,6 +71292,7 @@ LAB_004ca2b6:
     return;
   }
 
+// Было: S86_FUN_004ca520
 void __thiscall Hud::S86_FUN_004ca520(Hud *this)
 
 
@@ -70747,6 +71306,7 @@ void __thiscall Hud::S86_FUN_004ca520(Hud *this)
                               // 
   }
 
+// Было: S86_FUN_004ca5d0
 undefined1 __thiscall Hud::S86_FUN_004ca5d0(Hud *this,ushort pKey,void *pS1_)
 
 
@@ -70758,9 +71318,11 @@ undefined1 __thiscall Hud::S86_FUN_004ca5d0(Hud *this,ushort pKey,void *pS1_)
     }
   }
 
+// Было: FUN_004ca610
 void __thiscall HudArrow::FUN_004ca610(HudArrow *this)
 
 
+// Было: FUN_004ca650
 void __thiscall HudArrow::FUN_004ca650(HudArrow *this)
 
 
@@ -70857,6 +71419,7 @@ void __thiscall FUN_004ca860(void *this)
     }
   }
 
+// Было: FUN_004ca890
 void __thiscall HudArrow::FUN_004ca890(HudArrow *this)
 
 
@@ -70872,6 +71435,7 @@ void __thiscall HudArrow::FUN_004ca890(HudArrow *this)
 HudArrow * __thiscall HudArrow::HudArrow_FUN_004ca8e0(HudArrow *this)
 
 
+// Было: HudArrow_FUN_004ca910
 HudArrow::HudArrow_FUN_004ca910(HudArrow *this,undefined4 param_1)
 
 
@@ -70911,6 +71475,7 @@ HudArrow::HudArrow_FUN_004ca910(HudArrow *this,undefined4 param_1)
 void __thiscall FUN_004caa80(void *this,int param_1)
 
 
+// Было: FUN_004caad0
 void __thiscall HudArrow::FUN_004caad0(HudArrow *this)
 
 
@@ -70924,12 +71489,15 @@ void __thiscall HudArrow::FUN_004caad0(HudArrow *this)
         }
       }
 
+// Было: S86_FUN_004cab50
 void __thiscall Hud::S86_FUN_004cab50(Hud *this)
 
 
+// Было: S86_FUN_004cabe0
 void __thiscall Hud::S86_FUN_004cabe0(Hud *this)
 
 
+// Было: S86_FUN_004cac30
 void __thiscall Hud::S86_FUN_004cac30(Hud *this)
 
 
@@ -71585,9 +72153,11 @@ void __thiscall FUN_004cd400(void *this,char param_1)
     return;
   }
 
+// Было: S72_FUN_004cd770
 Turrel::S72_FUN_004cd770(Turrel *this,int TypeWeapon,Ped *pPed,ushort pAmmo)
 
 
+// Было: S72_FUN_004cd7b0
 Turrel::S72_FUN_004cd7b0(Turrel *this,undefined4 param_1,Car *pCar,ushort pAmmo)
 
 
@@ -71609,6 +72179,7 @@ void __fastcall FUN_004cd9f0(undefined4 *param_1)
 S73 * __thiscall S73::S73(S73 *this)
 
 
+// Было: S73_FUN_004cda70
 void __thiscall S73::S73_FUN_004cda70(S73 *this,Weapon *cWeapon)
 
 
@@ -72128,6 +72699,7 @@ void __thiscall MSG(void *this,LPCSTR param_1)
 void * GetVersion(uint *pVersionMinor,uint *pVersionMajor)
 
 
+// Было: FUN_004d09c0
 int __thiscall Game::FUN_004d09c0(Game *this)
 
 
@@ -84615,6 +85187,7 @@ void FUN_00505ca0(void)
 void FUN_00505cb0(void)
 
 
+// Было: FUN_00505cc0
 void Passenger::FUN_00505cc0(void)
 
 

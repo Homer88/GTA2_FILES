@@ -7,7 +7,7 @@
 void __thiscall CarSystemManager::Clamp(CarSystemManager *this)
 
 
-// Было: Car_FUN_00403820
+// Было: Car_FUN_00403820 -> Стало: Car_FUN_00403820
 bool __thiscall Car::Car_FUN_00403820(Car *this,int *param_1)
 
 
@@ -20,14 +20,14 @@ byte __thiscall Car::isSWATVANOrBankVan(Car *this)
 CarSystemManager::SetIndexDefautCarManager(CarSystemManager *this)
 
 
-// Было: S5_FUN_0040f490
+// Было: S5_FUN_0040f490 -> Стало: S5_FUN_0040f490
 void __thiscall CarsPrefabs::S5_FUN_0040f490(CarsPrefabs *this,Car *pCar)
 
 
 bool __thiscall Car::Car_GetFullDamegeCar(Car *this)
 
 
-// Было: FUN_004112a0
+// Было: FUN_004112a0 -> Стало: FUN_004112a0
 bool __thiscall Car::FUN_004112a0(Car *this)
 
 
@@ -76,7 +76,7 @@ void__thiscall Car::InitCarVisuals(Car *this)
 undefined1__thiscall Car::GetCarClassType(Car *this)
 
 
-// Было: FUN_00416bb0
+// Было: FUN_00416bb0 -> Стало: FUN_00416bb0
 void __thiscall Car::FUN_00416bb0(Car *this,undefined2 *param_1)
 
 
@@ -89,7 +89,7 @@ void__thiscall Car::ProcessCarCollisions(Car *this,undefined4 *param_1)
 void__thiscall Car::HandleCarImpact(Car *this,undefined4 *param_1)
 
 
-// Было: Set_FUN_0041f6c0
+// Было: Set_FUN_0041f6c0 -> Стало: Set_FUN_0041f6c0
 void __thiscall CarDoor::Set_FUN_0041f6c0(CarDoor *this)
 
 
@@ -108,7 +108,7 @@ int __thiscall Car::GetDoor(Car *this,byte doorIndex)
 undefined1__thiscall Car::GetCarVelocity(Car *this)
 
 
-// Было: FUN_0041f8f0
+// Было: FUN_0041f8f0 -> Стало: FUN_0041f8f0
 void __thiscall Car::FUN_0041f8f0(Car *this)
 
 
@@ -124,11 +124,11 @@ void__thiscall Car::ApplyCarForce(Car *this)
 Car * __thiscall Car::Car_FUN_0041fab0(Car *this)
 
 
-// Было: FUN_0041fac0
+// Было: FUN_0041fac0 -> Стало: FUN_0041fac0
 void __thiscall Car::FUN_0041fac0(Car *this,undefined2 *param_1)
 
 
-// Было: FUN_0041fbb0
+// Было: FUN_0041fbb0 -> Стало: FUN_0041fbb0
 undefined1 __thiscall Car::FUN_0041fbb0(Car *this)
 
 
@@ -159,24 +159,24 @@ void__thiscall Car::GetCarGasLevel(Car *this,undefined4 param_1)
 void __thiscall Car::UpdateDamageCooldown(Car *this)
 
 
+// Было: CarSystemManager_FUN_00420a10 -> Стало: CarSystemManager_FUN_00420a10
 byte * __thiscall CarSystemManager::CarSystemManager_FUN_00420a10(short param_1)
 
 
-// Было: CarSystemManager_FUN_00420c00
 CarSystemManager::CarSystemManager_FUN_00420c00(CarSystemManager *this)
 
 
 Car_conflict1 * __thiscall CarsPrefabs::GetCar(CarsPrefabs *this)
 
 
-// Было: S5_FUN_00420f20
+// Было: S5_FUN_00420f20 -> Стало: S5_FUN_00420f20
 void __thiscall CarsPrefabs::S5_FUN_00420f20(CarsPrefabs *this,Car *pCar)
 
 
+// Было: S5_FUN_00420f30 -> Стало: S5_FUN_00420f30
 void * __thiscall CarsPrefabs::S5_FUN_00420f30(CarsPrefabs *this,Car *pCar)
 
 
-// Было: CarSystemManager_FUN_004212d0
 CarSystemManager::CarSystemManager_FUN_004212d0(CarSystemManager *this)
 
 
@@ -189,14 +189,14 @@ void__thiscall Car::CheckCarOccupied(Car *this)
 void__thiscall Car::CountCarOccupants(Car *this)
 
 
-// Было: Car_Set_FUN_00421460
+// Было: Car_Set_FUN_00421460 -> Стало: Car_Set_FUN_00421460
 void __thiscall Car::Car_Set_FUN_00421460(Car *this)
 
 
 void__thiscall Car::ValidateCarExit(Car *this)
 
 
-// Было: FUN_00421490
+// Было: FUN_00421490 -> Стало: FUN_00421490
 void __thiscall Car::FUN_00421490(Car *this)
 
 
@@ -260,19 +260,19 @@ void __thiscall Car::has_for_hire_lights(Car *this)
 byte__thiscall Car::FlashCarLights(Car *this)
 
 
-// Было: Car_FUN_00421700
+// Было: Car_FUN_00421700 -> Стало: Car_FUN_00421700
 void __thiscall Car::Car_FUN_00421700(Car *this)
 
 
-// Было: Car_FUN_00421720
+// Было: Car_FUN_00421720 -> Стало: Car_FUN_00421720
 bool __thiscall Car::Car_FUN_00421720(Car *this)
 
 
-// Было: Car_FUN_00421740
+// Было: Car_FUN_00421740 -> Стало: Car_FUN_00421740
 byte __thiscall Car::Car_FUN_00421740(Car *this)
 
 
-// Было: Car_FUN_00421760
+// Было: Car_FUN_00421760 -> Стало: Car_FUN_00421760
 byte __thiscall Car::Car_FUN_00421760(Car *this)
 
 
@@ -300,11 +300,11 @@ bool __thiscall Car::isTVVAN(Car *this)
 bool __thiscall Car::isTaxi(Car *this)
 
 
-// Было: Car_FUN_00421810
+// Было: Car_FUN_00421810 -> Стало: Car_FUN_00421810
 void __thiscall Car::Car_FUN_00421810(Car *this)
 
 
-// Было: Car_FUN_00421830
+// Было: Car_FUN_00421830 -> Стало: Car_FUN_00421830
 bool __thiscall Car::Car_FUN_00421830(Car *this)
 
 
@@ -314,182 +314,181 @@ Player * __thiscall Car::GetPlayer(Car *this)
 CarSystemManager * __thiscall Car::Car_FUN_00420840(Car *this,void *param_1)
 
 
-// Было: Car_FUN_00421890
+// Было: Car_FUN_00421890 -> Стало: Car_FUN_00421890
 void __thiscall Car::Car_FUN_00421890(Car *this,ushort param_1)
 
 
-// Было: FUN_004218a0
+// Было: FUN_004218a0 -> Стало: FUN_004218a0
 void __thiscall Car::FUN_004218a0(Car *this)
 
 
-// Было: Car_FUN_004218b0
+// Было: Car_FUN_004218b0 -> Стало: Car_FUN_004218b0
 void __thiscall Car::Car_FUN_004218b0(Car *this)
 
 
-// Было: FUN_004218c0
+// Было: FUN_004218c0 -> Стало: FUN_004218c0
 void __thiscall Car::FUN_004218c0(Car *this)
 
 
-// Было: FUN_004218d0
+// Было: FUN_004218d0 -> Стало: FUN_004218d0
 void __thiscall Car::FUN_004218d0(Car *this)
 
 
-// Было: Car_FUN_004218e0
+// Было: Car_FUN_004218e0 -> Стало: Car_FUN_004218e0
 void __thiscall Car::Car_FUN_004218e0(Car *this)
 
 
-// Было: Car_FUN_004218f0
+// Было: Car_FUN_004218f0 -> Стало: Car_FUN_004218f0
 byte __thiscall Car::Car_FUN_004218f0(Car *this)
 
 
-// Было: Car_FUN_00421900
+// Было: Car_FUN_00421900 -> Стало: Car_FUN_00421900
 void __thiscall Car::Car_FUN_00421900(Car *this,undefined4 param_1)
 
 
 void __thiscall Car::SetSound(Car *this,undefined4 param_1)
 
 
-// Было: CarSystemManager_FUN_00421960
 CarSystemManager::CarSystemManager_FUN_00421960(CarSystemManager *this)
 
 
-// Было: FUN_00421a00
+// Было: FUN_00421a00 -> Стало: FUN_00421a00
 void __thiscall CarDoor::FUN_00421a00(CarDoor *this,Turrel *param_1)
 
 
-// Было: FUN_00421a80
+// Было: FUN_00421a80 -> Стало: FUN_00421a80
 void __thiscall CarDoor::FUN_00421a80(CarDoor *this,Turrel *param_1)
 
 
-// Было: FUN_00421af0
+// Было: FUN_00421af0 -> Стало: FUN_00421af0
 void __thiscall CarDoor::FUN_00421af0(CarDoor *this,Turrel *param_1)
 
 
-// Было: FUN_00421c40
+// Было: FUN_00421c40 -> Стало: FUN_00421c40
 undefined4 __thiscall Car::FUN_00421c40(Car *this,undefined4 param_1)
 
 
-// Было: Car_FUN_00421d80
+// Было: Car_FUN_00421d80 -> Стало: Car_FUN_00421d80
 void __thiscall Car::Car_FUN_00421d80(Car *this)
 
 
 Car * __thiscall Car::Car_FUN_00421d90(Car *this,Car *pCar)
 
 
-// Было: Car_FUN_00421df0
+// Было: Car_FUN_00421df0 -> Стало: Car_FUN_00421df0
 undefined1 __thiscall Car::Car_FUN_00421df0(Car *this)
 
 
+// Было: FUN_00421e70 -> Стало: FUN_00421e70
 undefined4 * __thiscall Car::FUN_00421e70(Car *this,undefined4 *param_1)
 
 
 S6 * __thiscall Car::Car_FUN_00421ec0(Car *this,S6 *param_1)
 
 
-// Было: Car_FUN_00421f40
+// Было: Car_FUN_00421f40 -> Стало: Car_FUN_00421f40
 byte __thiscall Car::Car_FUN_00421f40(Car *this,short Remap)
 
 
-// Было: FUN_00421f80
+// Было: FUN_00421f80 -> Стало: FUN_00421f80
 byte __thiscall Car::FUN_00421f80(Car *this,byte param_1)
 
 
 void __thiscall Car::SetRemap(Car *this,short Remap)
 
 
-// Было: Car_FUN_004220a0
+// Было: Car_FUN_004220a0 -> Стало: Car_FUN_004220a0
 byte __thiscall Car::Car_FUN_004220a0(Car *this)
 
 
-// Было: Car_FUN_004221d0
+// Было: Car_FUN_004221d0 -> Стало: Car_FUN_004221d0
 void __thiscall Car::Car_FUN_004221d0(Car *this,Ped *pPed)
 
 
-// Было: Car_FUN_00422230
+// Было: Car_FUN_00422230 -> Стало: Car_FUN_00422230
 void __thiscall Car::Car_FUN_00422230(Car *this)
 
 
-// Было: Car_FUN_00422260
+// Было: Car_FUN_00422260 -> Стало: Car_FUN_00422260
 void __thiscall Car::Car_FUN_00422260(Car *this)
 
 
-// Было: FUN_004222d0
+// Было: FUN_004222d0 -> Стало: FUN_004222d0
 void __thiscall Car::FUN_004222d0(Car *this)
 
 
-// Было: FUN_004222f0
+// Было: FUN_004222f0 -> Стало: FUN_004222f0
 void __thiscall Car::FUN_004222f0(Car *this)
 
 
-// Было: Car_FUN_00422360
+// Было: Car_FUN_00422360 -> Стало: Car_FUN_00422360
 byte __thiscall Car::Car_FUN_00422360(Car *this,Ped *pPed)
 
 
-// Было: Car_FUN_00422670
+// Было: Car_FUN_00422670 -> Стало: Car_FUN_00422670
 void __thiscall Car::Car_FUN_00422670(Car *this)
 
 
-// Было: Car_FUN_004226c0
+// Было: Car_FUN_004226c0 -> Стало: Car_FUN_004226c0
 void __thiscall Car::Car_FUN_004226c0(Car *this,byte param_1,Ped *sPed)
 
 
-// Было: Car_FUN_004228f0
+// Было: Car_FUN_004228f0 -> Стало: Car_FUN_004228f0
 void __thiscall Car::Car_FUN_004228f0(Car *this)
 
 
-// Было: Car_FUN_00422980
+// Было: Car_FUN_00422980 -> Стало: Car_FUN_00422980
 void __thiscall Car::Car_FUN_00422980(Car *this)
 
 
-// Было: Car_FUN_00422a40
+// Было: Car_FUN_00422a40 -> Стало: Car_FUN_00422a40
 void __thiscall Car::Car_FUN_00422a40(Car *this)
 
 
-// Было: Car_FUN_00422b70
+// Было: Car_FUN_00422b70 -> Стало: Car_FUN_00422b70
 void __thiscall Car::Car_FUN_00422b70(Car *this)
 
 
-// Было: Car_FUN_00422cb0
+// Было: Car_FUN_00422cb0 -> Стало: Car_FUN_00422cb0
 void __thiscall Car::Car_FUN_00422cb0(Car *this)
 
 
-// Было: Car_FUN_00422d20
+// Было: Car_FUN_00422d20 -> Стало: Car_FUN_00422d20
 void __thiscall Car::Car_FUN_00422d20(Car *this)
 
 
-// Было: Car_FUN_00422d80
+// Было: Car_FUN_00422d80 -> Стало: Car_FUN_00422d80
 void __thiscall Car::Car_FUN_00422d80(Car *this)
 
 
-// Было: Car_FUN_00422de0
+// Было: Car_FUN_00422de0 -> Стало: Car_FUN_00422de0
 void __thiscall Car::Car_FUN_00422de0(Car *this)
 
 
-// Было: Car_FUN_00422e00
+// Было: Car_FUN_00422e00 -> Стало: Car_FUN_00422e00
 void __thiscall Car::Car_FUN_00422e00(Car *this,Turrel *param_1)
 
 
-// Было: Car_FUN_00422f00
+// Было: Car_FUN_00422f00 -> Стало: Car_FUN_00422f00
 void __thiscall Car::Car_FUN_00422f00(Car *this,undefined4 param_1)
 
 
-// Было: Car_FUN_004230d0
+// Было: Car_FUN_004230d0 -> Стало: Car_FUN_004230d0
 byte __thiscall Car::Car_FUN_004230d0(Car *this,undefined4 param_1)
 
 
-// Было: Car_FUN_00423230
 Car::Car_FUN_00423230(Car *this,int param_1,SpriteS1 *param_2,S46 *param_3)
 
 
-// Было: Car_FUN_00423290
+// Было: Car_FUN_00423290 -> Стало: Car_FUN_00423290
 void __thiscall Car::Car_FUN_00423290(Car *this)
 
 
-// Было: Car_FUN_004232e0
+// Было: Car_FUN_004232e0 -> Стало: Car_FUN_004232e0
 void __thiscall Car::Car_FUN_004232e0(Car *this)
 
 
-// Было: Car_FUN_004233b0
+// Было: Car_FUN_004233b0 -> Стало: Car_FUN_004233b0
 void __thiscall Car::Car_FUN_004233b0(Car *this)
 
 
@@ -499,157 +498,159 @@ Ped * __thiscall Car::Car_FUN_00423480(Car *this)
 void __thiscall Car::CarPutDummyDriverIn(Car *this)
 
 
-// Было: Car_FUN_00423590
+// Было: Car_FUN_00423590 -> Стало: Car_FUN_00423590
 void __thiscall Car::Car_FUN_00423590(Car *this,Ped *pPed)
 
 
-// Было: Car_FUN_004235d0
+// Было: Car_FUN_004235d0 -> Стало: Car_FUN_004235d0
 void __thiscall Car::Car_FUN_004235d0(Car *this)
 
 
-// Было: FUN_00423630
+// Было: FUN_00423630 -> Стало: FUN_00423630
 undefined4 __thiscall Car::FUN_00423630(Car *this)
 
 
-// Было: Car_FUN_00423720
+// Было: Car_FUN_00423720 -> Стало: Car_FUN_00423720
 byte __thiscall Car::Car_FUN_00423720(Car *this,char param_1)
 
 
-// Было: Car_FUN_00423830
+// Было: Car_FUN_00423830 -> Стало: Car_FUN_00423830
 void __thiscall Car::Car_FUN_00423830(Car *this)
 
 
-// Было: Car_FUN_00423940
+// Было: Car_FUN_00423940 -> Стало: Car_FUN_00423940
 void __thiscall Car::Car_FUN_00423940(Car *this,int param_1)
 
 
-// Было: Car_FUN_00423a50
+// Было: Car_FUN_00423a50 -> Стало: Car_FUN_00423a50
 void __thiscall Car::Car_FUN_00423a50(Car *this)
 
 
-// Было: Car_FUN_00423aa0
+// Было: Car_FUN_00423aa0 -> Стало: Car_FUN_00423aa0
 void __thiscall Car::Car_FUN_00423aa0(Car *this)
 
 
-// Было: FUN_00423b30
+// Было: FUN_00423b30 -> Стало: FUN_00423b30
 void __thiscall Car::FUN_00423b30(Car *this)
 
 
-// Было: Car_FUN_00424010
+// Было: Car_FUN_00424010 -> Стало: Car_FUN_00424010
 byte __thiscall Car::Car_FUN_00424010(Car *this)
 
 
-// Было: Car_FUN_00424090
+// Было: Car_FUN_00424090 -> Стало: Car_FUN_00424090
 void __thiscall Car::Car_FUN_00424090(Car *this)
 
 
-// Было: Car_FUN_004241c0
+// Было: Car_FUN_004241c0 -> Стало: Car_FUN_004241c0
 byte __thiscall Car::Car_FUN_004241c0(Car *this)
 
 
 Ped * __thiscall Car::car_FUN_00424220(Car *this,Ped *param_1)
 
 
-// Было: Car_FUN_00423aa0
+// Было: Car_FUN_00423aa0 -> Стало: Car_FUN_00423aa0
 void __thiscall Car::Car_FUN_00423aa0(Car *this)
 
 
-// Было: Car_FUN_004243c0
+// Было: Car_FUN_004243c0 -> Стало: Car_FUN_004243c0
 int __thiscall Car::Car_FUN_004243c0(Car *this)
 
 
-// Было: Car_FUN_00424400
+// Было: Car_FUN_00424400 -> Стало: Car_FUN_00424400
 void __thiscall Car::Car_FUN_00424400(Car *this)
 
 
-// Было: Car_FUN_004244a0
+// Было: Car_FUN_004244a0 -> Стало: Car_FUN_004244a0
 void __thiscall Car::Car_FUN_004244a0(Car *this,int param_1)
 
 
-// Было: Car__FUN_00424630
+// Было: Car__FUN_00424630 -> Стало: Car__FUN_00424630
 void __thiscall Car::Car__FUN_00424630(Car *this,void *param_1)
 
 
-// Было: Car_FUN_004246a0
+// Было: Car_FUN_004246a0 -> Стало: Car_FUN_004246a0
 int __thiscall Car::Car_FUN_004246a0(Car *this)
 
 
-// Было: Car_FUN_00424700
+// Было: Car_FUN_00424700 -> Стало: Car_FUN_00424700
 void __thiscall Car::Car_FUN_00424700(Car *this)
 
 
-// Было: Car_FUN_00424880
+// Было: Car_FUN_00424880 -> Стало: Car_FUN_00424880
 void __thiscall Car::Car_FUN_00424880(Car *this)
 
 
+// Было: S5_Destruct -> Стало: S5_Destruct
 void __thiscall CarsPrefabs::S5_Destruct(CarsPrefabs *this)
 
 
 Car * __thiscall CarsPrefabs::S5_FUN_00425480(CarsPrefabs *this)
 
 
+// Было: S5_FUN_004254a0 -> Стало: S5_FUN_004254a0
 void * __thiscall CarsPrefabs::S5_FUN_004254a0(CarsPrefabs *this)
 
 
-// Было: Car_FUN_00425590
+// Было: Car_FUN_00425590 -> Стало: Car_FUN_00425590
 void __thiscall Car::Car_FUN_00425590(Car *this)
 
 
-// Было: Car_FUN_00425650
+// Было: Car_FUN_00425650 -> Стало: Car_FUN_00425650
 void __thiscall Car::Car_FUN_00425650(Car *this)
 
 
-// Было: Car_FUN_00425770
+// Было: Car_FUN_00425770 -> Стало: Car_FUN_00425770
 void __thiscall Car::Car_FUN_00425770(Car *this)
 
 
-// Было: Car_FUN_00425780
+// Было: Car_FUN_00425780 -> Стало: Car_FUN_00425780
 void __thiscall Car::Car_FUN_00425780(Car *this)
 
 
-// Было: FUN_004257b0
+// Было: FUN_004257b0 -> Стало: FUN_004257b0
 byte __thiscall Car::FUN_004257b0(Car *this)
 
 
-// Было: Car_FUN_00425810
+// Было: Car_FUN_00425810 -> Стало: Car_FUN_00425810
 byte __thiscall Car::Car_FUN_00425810(Car *this,SpriteS1 *pSprite)
 
 
-// Было: Car_FUN_00425a40
+// Было: Car_FUN_00425a40 -> Стало: Car_FUN_00425a40
 bool __thiscall Car::Car_FUN_00425a40(Car *this,uint param_1)
 
 
-// Было: Car_FUN_00425b60
+// Было: Car_FUN_00425b60 -> Стало: Car_FUN_00425b60
 bool __thiscall Car::Car_FUN_00425b60(Car *this,byte param_1)
 
 
-// Было: Car_FUN_00425ca0
+// Было: Car_FUN_00425ca0 -> Стало: Car_FUN_00425ca0
 void __thiscall Car::Car_FUN_00425ca0(Car *this,Car *pCar)
 
 
-// Было: Car_FUN_00425d90
+// Было: Car_FUN_00425d90 -> Стало: Car_FUN_00425d90
 void __thiscall Car::Car_FUN_00425d90(Car *this)
 
 
 void __thiscall Car::CarMakeDriveable4(Car *this)
 
 
-// Было: Car_FUN_00425df0
+// Было: Car_FUN_00425df0 -> Стало: Car_FUN_00425df0
 void __thiscall Car::Car_FUN_00425df0(Car *this)
 
 
 void __thiscall Car::EnableSiren(Car *this)
 
 
-// Было: Car_FUN_00425e60
+// Было: Car_FUN_00425e60 -> Стало: Car_FUN_00425e60
 void __thiscall Car::Car_FUN_00425e60(Car *this)
 
 
-// Было: Car_FUN_00425e90
+// Было: Car_FUN_00425e90 -> Стало: Car_FUN_00425e90
 void __thiscall Car::Car_FUN_00425e90(Car *this)
 
 
-// Было: Car_FUN_00425ed0
+// Было: Car_FUN_00425ed0 -> Стало: Car_FUN_00425ed0
 void __thiscall Car::Car_FUN_00425ed0(Car *this)
 
 
@@ -659,43 +660,43 @@ void __thiscall Car::FixCarDamage(Car *this)
 void __thiscall Car::AddRoofAntenna(Car *this)
 
 
-// Было: Car_FUN_004260c0
+// Было: Car_FUN_004260c0 -> Стало: Car_FUN_004260c0
 void __thiscall Car::Car_FUN_004260c0(Car *this,char param_1)
 
 
-// Было: Car_FUN_00426120
+// Было: Car_FUN_00426120 -> Стало: Car_FUN_00426120
 void __thiscall Car::Car_FUN_00426120(Car *this)
 
 
-// Было: Car_FUN_00426220
+// Было: Car_FUN_00426220 -> Стало: Car_FUN_00426220
 void __thiscall Car::Car_FUN_00426220(Car *this)
 
 
-// Было: Car_FUN_00426270
+// Было: Car_FUN_00426270 -> Стало: Car_FUN_00426270
 void __thiscall Car::Car_FUN_00426270(Car *this)
 
 
-// Было: Car_FUN_004262b0
+// Было: Car_FUN_004262b0 -> Стало: Car_FUN_004262b0
 void __thiscall Car::Car_FUN_004262b0(Car *this,Car *pCar)
 
 
-// Было: Car_FUN_004262e0
+// Было: Car_FUN_004262e0 -> Стало: Car_FUN_004262e0
 void __thiscall Car::Car_FUN_004262e0(Car *this)
 
 
-// Было: Car_FUN_00426540
+// Было: Car_FUN_00426540 -> Стало: Car_FUN_00426540
 byte __thiscall Car::Car_FUN_00426540(Car *this)
 
 
-// Было: Car_FUN_00426580
+// Было: Car_FUN_00426580 -> Стало: Car_FUN_00426580
 void __thiscall Car::Car_FUN_00426580(Car *this,S110 *param_1)
 
 
-// Было: Car_FUN_004266f0
+// Было: Car_FUN_004266f0 -> Стало: Car_FUN_004266f0
 void __thiscall Car::Car_FUN_004266f0(Car *this)
 
 
-// Было: Car_FUN_00426730
+// Было: Car_FUN_00426730 -> Стало: Car_FUN_00426730
 void __thiscall Car::Car_FUN_00426730(Car *this)
 
 
@@ -708,19 +709,19 @@ CarsPrefabs * __thiscall CarsPrefabs::S5(CarsPrefabs *this)
 void __thiscall Car::ENGINE_ON(Car *this)
 
 
-// Было: Car_FUN_00426ee0
+// Было: Car_FUN_00426ee0 -> Стало: Car_FUN_00426ee0
 void __thiscall Car::Car_FUN_00426ee0(Car *this)
 
 
-// Было: Car_FUN_00426f00
+// Было: Car_FUN_00426f00 -> Стало: Car_FUN_00426f00
 void __thiscall Car::Car_FUN_00426f00(Car *this)
 
 
-// Было: Car_FUN_00426f40
+// Было: Car_FUN_00426f40 -> Стало: Car_FUN_00426f40
 void __thiscall Car::Car_FUN_00426f40(Car *this)
 
 
-// Было: Car_FUN_00426f60
+// Было: Car_FUN_00426f60 -> Стало: Car_FUN_00426f60
 void __thiscall Car::Car_FUN_00426f60(Car *this)
 
 
@@ -730,134 +731,134 @@ void __thiscall Car::ExplodeCar(Car *this,int explosionSize)
 Car::Car_CollisionOnCar(Car *this,int iCount_32000,Ped *param_2)
 
 
-// Было: Car_FUN_00427290
+// Было: Car_FUN_00427290 -> Стало: Car_FUN_00427290
 void __thiscall Car::Car_FUN_00427290(Car *this)
 
 
-// Было: Car_FUN_00427450
+// Было: Car_FUN_00427450 -> Стало: Car_FUN_00427450
 char __thiscall Car::Car_FUN_00427450(Car *this)
 
 
-// Было: Car_FUN_004274c0
+// Было: Car_FUN_004274c0 -> Стало: Car_FUN_004274c0
 int __thiscall Car::Car_FUN_004274c0(Car *this,S63 *param_1)
 
 
 void __thiscall Car::CarMakeDummy(Car *this)
 
 
-// Было: Car_FUN_00427a20
+// Было: Car_FUN_00427a20 -> Стало: Car_FUN_00427a20
 void __thiscall Car::Car_FUN_00427a20(Car *this,Ped *pPed)
 
 
-// Было: Car_FUN_00427b20
+// Было: Car_FUN_00427b20 -> Стало: Car_FUN_00427b20
 void __thiscall Car::Car_FUN_00427b20(Car *this)
 
 
-// Было: Car_FUN_00427b40
+// Было: Car_FUN_00427b40 -> Стало: Car_FUN_00427b40
 void __thiscall Car::Car_FUN_00427b40(Car *this)
 
 
-// Было: Car_FUN_00427b60
+// Было: Car_FUN_00427b60 -> Стало: Car_FUN_00427b60
 void __thiscall Car::Car_FUN_00427b60(Car *this)
 
 
 void __thiscall Car::MaxPaynt(Car *this,short pRemap)
 
 
-// Было: Car_FUN_00427ca0
+// Было: Car_FUN_00427ca0 -> Стало: Car_FUN_00427ca0
 void __thiscall Car::Car_FUN_00427ca0(Car *this,undefined4 param_1)
 
 
-// Было: Car_FUN_00427d10
+// Было: Car_FUN_00427d10 -> Стало: Car_FUN_00427d10
 void __thiscall Car::Car_FUN_00427d10(Car *this,S61 *pS61)
 
 
-// Было: FUN_00428f70
+// Было: FUN_00428f70 -> Стало: FUN_00428f70
 void __thiscall CarSystemManager::FUN_00428f70(CarSystemManager *this,Car *pCar)
 
 
 CarSystemManager::CarSystemManager(CarSystemManager *this)
 
 
-// Было: Car_FUN_004292f0
+// Было: Car_FUN_004292f0 -> Стало: Car_FUN_004292f0
 short __thiscall Car::Car_FUN_004292f0(Car *this,undefined4 param_1)
 
 
-// Было: Car_FUN_00429370
+// Было: Car_FUN_00429370 -> Стало: Car_FUN_00429370
 void __thiscall Car::Car_FUN_00429370(Car *this,int param_1)
 
 
-// Было: Car_FUN_004293d0
+// Было: Car_FUN_004293d0 -> Стало: Car_FUN_004293d0
 byte __thiscall Car::Car_FUN_004293d0(Car *this,S61 *pS61)
 
 
-// Было: Car_FUN_00429660
+// Было: Car_FUN_00429660 -> Стало: Car_FUN_00429660
 void __thiscall Car::Car_FUN_00429660(Car *this)
 
 
-// Было: FUN_00429680
+// Было: FUN_00429680 -> Стало: FUN_00429680
 void __thiscall Car::FUN_00429680(Car *this,int param_1,int param_2,int param_3)
 
 
+// Было: Car_FUN_00429800 -> Стало: Car_FUN_00429800
 void * __thiscall Car::Car_FUN_00429800(Car *this)
 
 
-// Было: Car_FUN_004298b0
+// Было: Car_FUN_004298b0 -> Стало: Car_FUN_004298b0
 byte __thiscall Car::Car_FUN_004298b0(Car *this)
 
 
-// Было: Car_FUN_00429e50
+// Было: Car_FUN_00429e50 -> Стало: Car_FUN_00429e50
 byte __thiscall Car::Car_FUN_00429e50(Car *this)
 
 
-// Было: S5_FUN_0042a2d0
+// Было: S5_FUN_0042a2d0 -> Стало: S5_FUN_0042a2d0
 void __thiscall CarsPrefabs::S5_FUN_0042a2d0(CarsPrefabs *this)
 
 
-// Было: Car_FUN_0042a360
+// Было: Car_FUN_0042a360 -> Стало: Car_FUN_0042a360
 void __thiscall Car::Car_FUN_0042a360(Car *this,void *param_1)
 
 
-// Было: CarSystemManager_FUN_0042a4c0
 CarSystemManager::CarSystemManager_FUN_0042a4c0(CarSystemManager *this)
 
 
-// Было: Car_FUN_0042a510
+// Было: Car_FUN_0042a510 -> Стало: Car_FUN_0042a510
 void __thiscall Car::Car_FUN_0042a510(Car *this)
 
 
-// Было: Car_FUN_0042a5b0
+// Было: Car_FUN_0042a5b0 -> Стало: Car_FUN_0042a5b0
 void __thiscall Car::Car_FUN_0042a5b0(Car *this)
 
 
 void __thiscall Car::CarMakeDriveable3(Car *this,Car *pCar)
 
 
-// Было: FUN_0042c030
+// Было: FUN_0042c030 -> Стало: FUN_0042c030
 void __thiscall Car::FUN_0042c030(Car *this)
 
 
-// Было: FUN_0042d820
+// Было: FUN_0042d820 -> Стало: FUN_0042d820
 void __thiscall Car::FUN_0042d820(Car *this)
 
 
-// Было: FUN_00431c10
+// Было: FUN_00431c10 -> Стало: FUN_00431c10
 void __thiscall Car::FUN_00431c10(Car *this)
 
 
-// Было: Car_FUN_00432370
+// Было: Car_FUN_00432370 -> Стало: Car_FUN_00432370
 void __thiscall Car::Car_FUN_00432370(Car *this)
 
 
-// Было: Car_FUN_004326e0
+// Было: Car_FUN_004326e0 -> Стало: Car_FUN_004326e0
 void __thiscall Car::Car_FUN_004326e0(Car *this)
 
 
-// Было: Car_FUN_004327a0
+// Было: Car_FUN_004327a0 -> Стало: Car_FUN_004327a0
 void __thiscall Car::Car_FUN_004327a0(Car *this)
 
 
-// Было: S96_FUN_004327e0
+// Было: S96_FUN_004327e0 -> Стало: S96_FUN_004327e0
 int __thiscall CarEngines::S96_FUN_004327e0(CarEngines *this,byte param_1)
 
 
@@ -870,89 +871,90 @@ void __thiscall CarEngines::ResetEngineArrays(CarEngines *this)
 CarEngines * __thiscall CarEngines::S96(CarEngines *this)
 
 
-// Было: FUN_00432cd0
+// Было: FUN_00432cd0 -> Стало: FUN_00432cd0
 void __thiscall CarEngines::FUN_00432cd0(CarEngines *this)
 
 
 void __thiscall CarEngines::CarInfo(CarEngines *this)
 
 
-// Было: FUN_00432ea0
+// Было: FUN_00432ea0 -> Стало: FUN_00432ea0
 void __thiscall CarEngines::FUN_00432ea0(CarEngines *this)
 
 
-// Было: FUN_00432fc0
+// Было: FUN_00432fc0 -> Стало: FUN_00432fc0
 void __thiscall CarEngines::FUN_00432fc0(CarEngines *this,char *param_1)
 
 
-// Было: FUN_00433000
+// Было: FUN_00433000 -> Стало: FUN_00433000
 void __thiscall CarEngines::FUN_00433000(CarEngines *this)
 
 
-// Было: thunk_FUN_00433000
+// Было: thunk_FUN_00433000 -> Стало: thunk_FUN_00433000
 void __thiscall CarEngines::thunk_FUN_00433000(CarEngines *this)
 
 
-// Было: FUN_00433050
+// Было: FUN_00433050 -> Стало: FUN_00433050
 void __thiscall CarEngines::FUN_00433050(CarEngines *this)
 
 
+// Было: Car_FUN_00441450 -> Стало: Car_FUN_00441450
 void __thiscall Car_FUN_00441450(void *this,Car *param_1,int param_2)
 
 
 undefined2 * __thiscall CarSystemManager::PrepareArray(CarSystemManager *this)
 
 
-// Было: CarSystemManager_FUN_00447d30
 CarSystemManager::CarSystemManager_FUN_00447d30(CarSystemManager *this)
 
 
-// Было: Car_FUN_00447ea0
+// Было: Car_FUN_00447ea0 -> Стало: Car_FUN_00447ea0
 void __thiscall Car::Car_FUN_00447ea0(Car *this)
 
 
-// Было: Car_FUN_00447eb0
+// Было: Car_FUN_00447eb0 -> Стало: Car_FUN_00447eb0
 bool __thiscall Car::Car_FUN_00447eb0(Car *this)
 
 
+// Было: S105_FindCar -> Стало: S105_FindCar
 bool __thiscall S105::S105_FindCar(S105 *this,Car *pCar)
 
 
-// Было: Car_FUN_00450cc0
+// Было: Car_FUN_00450cc0 -> Стало: Car_FUN_00450cc0
 bool __thiscall Car::Car_FUN_00450cc0(Car *this)
 
 
 short __thiscall CarsPrefabs::GetCarsCount(CarsPrefabs *this)
 
 
-// Было: Car_FUN_00475c10
+// Было: Car_FUN_00475c10 -> Стало: Car_FUN_00475c10
 void __thiscall Car::Car_FUN_00475c10(Car *this)
 
 
-// Было: Car_FUN_00475c30
+// Было: Car_FUN_00475c30 -> Стало: Car_FUN_00475c30
 void __thiscall Car::Car_FUN_00475c30(Car *this)
 
 
-// Было: Car_FUN_00475c80
+// Было: Car_FUN_00475c80 -> Стало: Car_FUN_00475c80
 void __thiscall Car::Car_FUN_00475c80(Car *this)
 
 
-// Было: Car_FUN_00476270
+// Было: Car_FUN_00476270 -> Стало: Car_FUN_00476270
 void __thiscall Car::Car_FUN_00476270(Car *this)
 
 
 bool __thiscall S119::IsCarEqual(S119 *this,Car *param_1)
 
 
-// Было: Car_FUN_0049efc0
+// Было: Car_FUN_0049efc0 -> Стало: Car_FUN_0049efc0
 void __thiscall Car::Car_FUN_0049efc0(Car *this)
 
 
-// Было: Car_FUN_0049efe0
+// Было: Car_FUN_0049efe0 -> Стало: Car_FUN_0049efe0
 undefined1 __thiscall Car::Car_FUN_0049efe0(Car *this)
 
 
-// Было: FUN_004ab220
+// Было: FUN_004ab220 -> Стало: FUN_004ab220
 void __thiscall Car::FUN_004ab220(Car *this)
 
 
@@ -968,86 +970,81 @@ void __thiscall SoundCard::ReleaseSampleHandle(SoundCard *this)
 void __thiscall SoundCard::ReleaseAllSampleHandles(SoundCard *this)
 
 
-// Было: SoundCard_FUN_004b6020
+// Было: SoundCard_FUN_004b6020 -> Стало: SoundCard_FUN_004b6020
 int __thiscall SoundCard::SoundCard_FUN_004b6020(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b6040
 SoundCard::SoundCard_FUN_004b6040(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b6060
 SoundCard::SoundCard_FUN_004b6060(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b6080
 SoundCard::SoundCard_FUN_004b6080(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b60a0
 SoundCard::SoundCard_FUN_004b60a0(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b60c0
 SoundCard::SoundCard_FUN_004b60c0(SoundCard *this,int param_1,int param_2)
 
 
-// Было: SoundCard_FUN_004b6110
+// Было: SoundCard_FUN_004b6110 -> Стало: SoundCard_FUN_004b6110
 void __thiscall SoundCard::SoundCard_FUN_004b6110(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b6130
+// Было: SoundCard_FUN_004b6130 -> Стало: SoundCard_FUN_004b6130
 void __thiscall SoundCard::SoundCard_FUN_004b6130(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b6150
+// Было: SoundCard_FUN_004b6150 -> Стало: SoundCard_FUN_004b6150
 void __thiscall SoundCard::SoundCard_FUN_004b6150(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b6170
+// Было: SoundCard_FUN_004b6170 -> Стало: SoundCard_FUN_004b6170
 void __thiscall SoundCard::SoundCard_FUN_004b6170(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b6190
+// Было: SoundCard_FUN_004b6190 -> Стало: SoundCard_FUN_004b6190
 void __thiscall SoundCard::SoundCard_FUN_004b6190(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b61b0
+// Было: SoundCard_FUN_004b61b0 -> Стало: SoundCard_FUN_004b61b0
 bool __thiscall SoundCard::SoundCard_FUN_004b61b0(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b61e0
+// Было: SoundCard_FUN_004b61e0 -> Стало: SoundCard_FUN_004b61e0
 void __thiscall SoundCard::SoundCard_FUN_004b61e0(SoundCard *this,int param_1)
 
 
 void __thiscall SoundCard::StopSample(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b62b0
+// Было: SoundCard_FUN_004b62b0 -> Стало: SoundCard_FUN_004b62b0
 void __thiscall SoundCard::SoundCard_FUN_004b62b0(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b62d0
+// Было: SoundCard_FUN_004b62d0 -> Стало: SoundCard_FUN_004b62d0
 void __thiscall SoundCard::SoundCard_FUN_004b62d0(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b6320
+// Было: SoundCard_FUN_004b6320 -> Стало: SoundCard_FUN_004b6320
 void __thiscall SoundCard::SoundCard_FUN_004b6320(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b6340
+// Было: SoundCard_FUN_004b6340 -> Стало: SoundCard_FUN_004b6340
 void __thiscall SoundCard::SoundCard_FUN_004b6340(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b6360
+// Было: SoundCard_FUN_004b6360 -> Стало: SoundCard_FUN_004b6360
 void __thiscall SoundCard::SoundCard_FUN_004b6360(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b6380
+// Было: SoundCard_FUN_004b6380 -> Стало: SoundCard_FUN_004b6380
 bool __thiscall SoundCard::SoundCard_FUN_004b6380(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b63b0
+// Было: SoundCard_FUN_004b63b0 -> Стало: SoundCard_FUN_004b63b0
 void __thiscall SoundCard::SoundCard_FUN_004b63b0(SoundCard *this,int param_1)
 
 
@@ -1066,85 +1063,81 @@ void __thiscall SoundCard::Enumerate3DAudioProviders(SoundCard *this)
 void __thiscall SoundCard::ShutdownAudioStream(SoundCard *this)
 
 
-// Было: SoundCard_FUN_004b6680
+// Было: SoundCard_FUN_004b6680 -> Стало: SoundCard_FUN_004b6680
 byte __thiscall SoundCard::SoundCard_FUN_004b6680(SoundCard *this)
 
 
-// Было: SoundCard_FUN_004b66a0
+// Было: SoundCard_FUN_004b66a0 -> Стало: SoundCard_FUN_004b66a0
 bool __thiscall SoundCard::SoundCard_FUN_004b66a0(SoundCard *this)
 
 
-// Было: SoundCard_FUN_004b66d0
 SoundCard::SoundCard_FUN_004b66d0(SoundCard *this,undefined1 param_1)
 
 
-// Было: SoundCard_FUN_004b6700
+// Было: SoundCard_FUN_004b6700 -> Стало: SoundCard_FUN_004b6700
 void __thiscall SoundCard::SoundCard_FUN_004b6700(SoundCard *this,uint param_1)
 
 
-// Было: SoundCard_FUN_004b67b0
+// Было: SoundCard_FUN_004b67b0 -> Стало: SoundCard_FUN_004b67b0
 void __thiscall SoundCard::SoundCard_FUN_004b67b0(SoundCard *this)
 
 
 void __thiscall SoundCard::FadeOutAndCloseStream(SoundCard *this)
 
 
-// Было: SoundCard_FUN_004b6850
+// Было: SoundCard_FUN_004b6850 -> Стало: SoundCard_FUN_004b6850
 undefined1 __thiscall SoundCard::SoundCard_FUN_004b6850(SoundCard *this)
 
 
 void * __thiscall SoundCard::CloseStreamByIndex(SoundCard *this,int streamIndex)
 
 
-// Было: SoundCard_FUN_004b6890
+// Было: SoundCard_FUN_004b6890 -> Стало: SoundCard_FUN_004b6890
 void __thiscall SoundCard::SoundCard_FUN_004b6890(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b68c0
+// Было: SoundCard_FUN_004b68c0 -> Стало: SoundCard_FUN_004b68c0
 void __thiscall SoundCard::SoundCard_FUN_004b68c0(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b68e0
 SoundCard::SoundCard_FUN_004b68e0(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b6910
+// Было: SoundCard_FUN_004b6910 -> Стало: SoundCard_FUN_004b6910
 void __thiscall SoundCard::SoundCard_FUN_004b6910(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b6930
+// Было: SoundCard_FUN_004b6930 -> Стало: SoundCard_FUN_004b6930
 int __thiscall SoundCard::SoundCard_FUN_004b6930(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b6960
+// Было: SoundCard_FUN_004b6960 -> Стало: SoundCard_FUN_004b6960
 int __thiscall SoundCard::SoundCard_FUN_004b6960(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b6990
 SoundCard::SoundCard_FUN_004b6990(SoundCard *this,undefined1 param_1)
 
 
-// Было: SoundCard_FUN_004b69b0
+// Было: SoundCard_FUN_004b69b0 -> Стало: SoundCard_FUN_004b69b0
 void __thiscall SoundCard::SoundCard_FUN_004b69b0(SoundCard *this,int param_1)
 
 
-// Было: SoundCard_FUN_004b6a40
+// Было: SoundCard_FUN_004b6a40 -> Стало: SoundCard_FUN_004b6a40
 bool __thiscall SoundCard::SoundCard_FUN_004b6a40(SoundCard *this)
 
 
-// Было: SoundCard_FUN_004b6a60
+// Было: SoundCard_FUN_004b6a60 -> Стало: SoundCard_FUN_004b6a60
 void __thiscall SoundCard::SoundCard_FUN_004b6a60(SoundCard *this)
 
 
-// Было: SoundCard_FUN_004b6a80
 SoundCard::SoundCard_FUN_004b6a80(SoundCard *this,uint param_1,uint param_2)
 
 
-// Было: SoundCard_FUN_004b6b20
+// Было: SoundCard_FUN_004b6b20 -> Стало: SoundCard_FUN_004b6b20
 void __thiscall SoundCard::SoundCard_FUN_004b6b20(SoundCard *this)
 
 
-// Было: SoundCard_FUN_004b6b40
+// Было: SoundCard_FUN_004b6b40 -> Стало: SoundCard_FUN_004b6b40
 byte __thiscall SoundCard::SoundCard_FUN_004b6b40(SoundCard *this,char *param_1)
 
 
@@ -1160,48 +1153,48 @@ void __thiscall SoundCard::CloseAudioSystem(SoundCard *this)
 byte __thiscall SoundCard::InitializeAudioSystem(SoundCard *this)
 
 
+// Было: Car_FUN_004be980 -> Стало: Car_FUN_004be980
 int * __thiscall Car::Car_FUN_004be980(Car *this,int param_1)
 
 
-// Было: Car_FUN_004be9c0
+// Было: Car_FUN_004be9c0 -> Стало: Car_FUN_004be9c0
 int __thiscall Car::Car_FUN_004be9c0(Car *this,int param_1)
 
 
 SpriteS1 * __thiscall Car::Car_FUN_004be9f0(Car *this)
 
 
-// Было: Car_FUN_004bea20
+// Было: Car_FUN_004bea20 -> Стало: Car_FUN_004bea20
 void __thiscall Car::Car_FUN_004bea20(Car *this)
 
 
-// Было: Car_FUN_004bea40
+// Было: Car_FUN_004bea40 -> Стало: Car_FUN_004bea40
 void __thiscall Car::Car_FUN_004bea40(Car *this)
 
 
-// Было: Car_FUN_004beb70
+// Было: Car_FUN_004beb70 -> Стало: Car_FUN_004beb70
 void __thiscall Car::Car_FUN_004beb70(Car *this)
 
 
-// Было: Car_FUN_004bee80
+// Было: Car_FUN_004bee80 -> Стало: Car_FUN_004bee80
 void __thiscall Car::Car_FUN_004bee80(Car *this)
 
 
-// Было: Car_FUN_004bef70
+// Было: Car_FUN_004bef70 -> Стало: Car_FUN_004bef70
 void __thiscall Car::Car_FUN_004bef70(Car *this,Sprite *param_1)
 
 
-// Было: Car_FUN_004bf000
+// Было: Car_FUN_004bf000 -> Стало: Car_FUN_004bf000
 void __thiscall Car::Car_FUN_004bf000(Car *this)
 
 
 void __thiscall Car::ExtinguishCar(Car *this)
 
 
-// Было: Car_FUN_004bf100
+// Было: Car_FUN_004bf100 -> Стало: Car_FUN_004bf100
 void __thiscall Car::Car_FUN_004bf100(Car *this)
 
 
-// Было: CarSystemManager_FUN_004c39f0
 CarSystemManager::CarSystemManager_FUN_004c39f0(CarSystemManager *this)
 
 
