@@ -9,11 +9,11 @@
 // Found in original gta2.exe.h
 
 S1 {
-struct S1 *CurrentElement;
-    struct S1 *S1*;
+    struct S1 *CurrentElement;
+    struct S1 *FirstElement;
     undefined4 SS;
     struct S1 *FistElement;
-    struct S120 ARR4_S41[4]; // LinkedList20
+    struct S120 ARR4_S41[4];
     struct S1 *S103;
     undefined4 field6_0x34;
     struct S103 *S103_1;
@@ -39,11 +39,11 @@ struct S1 *CurrentElement;
     struct S1 *field27_0x80;
     undefined4 field28_0x84;
     undefined4 field29_0x88;
-    struct S1 *S1;
+    struct S1 *LastElement;
     byte field31_0x90;
     byte field32_0x91;
     byte field33_0x92;
-    byte byte; // Created by retype action
+    byte byte;
     byte field35_0x94;
     byte field36_0x95;
     undefined field37_0x96;

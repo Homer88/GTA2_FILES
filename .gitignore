@@ -21,27 +21,27 @@ target/
 # Build directories
 build/
 dist/
-out/
-
-# Logs and temp files
-*.log
-*.tmp
-*.swp
-
-# Environment files
-.env
-.env.local
-*.env.*
 
 # Editors
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# Logs and temp files
+*.log
+*.tmp
 
 # System files
 .DS_Store
 Thumbs.db
 
-# Coverage reports
+# Environment
+.env
+.env.local
+*.env.*
+
+# Coverage
 coverage/
 htmlcov/
 .coverage

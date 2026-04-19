@@ -9,10 +9,10 @@
 // Found in original gta2.exe.h
 
 S6 {
-struct S46 *S46;
+    struct S46 *Pool;
     undefined4 field1_0x4;
     undefined4 field2_0x8;
-    struct CarDoor S7[4]; // S7
+    struct CarDoor S7[4];
     struct Car *Car;
     struct SpriteS1 *s38;
     undefined4 field6_0x54;

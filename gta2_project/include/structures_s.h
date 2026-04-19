@@ -144,7 +144,7 @@ struct S3 {
     undefined field15_0x2d;
     undefined field16_0x2e;
     undefined field17_0x2f;
-    struct S3 *field18_0x30;
+    struct S3 *PrevElement;
     undefined4 field19_0x34;
     undefined1 field20_0x38;
     undefined1 field21_0x39;
@@ -153,10 +153,10 @@ struct S3 {
 };
 
 struct S6 {
-    struct S46 *S46;
+    struct S46 *Pool;
     undefined4 field1_0x4;
     undefined4 field2_0x8;
-    struct CarDoor S7[4]; // S7
+    struct CarDoor S7[4];
     struct Car *Car;
     struct SpriteS1 *s38;
     undefined4 field6_0x54;
@@ -265,7 +265,7 @@ struct S63 {
 };
 
 struct S46 {
-    struct S46 *DATA;
+    struct S46 *Head;
     struct S46 *NextElement;
     undefined field2_0x8;
     undefined field3_0x9;
@@ -275,8 +275,8 @@ struct S46 {
     undefined field7_0xd;
     undefined field8_0xe;
     undefined field9_0xf;
-    struct CarSystemManager *CarSystemManager; // Created by retype action
-    struct S46 *DATA1;
+    struct CarSystemManager *CarSystemManager;
+    struct S46 *Tail;
 };
 
 struct S200 {
