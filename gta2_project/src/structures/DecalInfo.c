@@ -157,8 +157,8 @@ void __thiscall S112__FUN_004ab060(S112 *this)
   _local_4 = (Car *)this;
   pAutoClass4 = (S169 *)FUN_00404c40(this);
   pPed = Char::CreatePed(gChar);
-  Ped::SetSearchType(pPed,4);
-  Ped::SetOccupation(pPed,0x19);
+  Ped__SetSearchMode(pPed,4);
+  Ped__SetCurrentOccupation(pPed,0x19);
   Ped::PutPedInCarRelated(pPed,this->s110->car);
   Ped::PedSetObjective(pPed,0xe,0);
   FUN_0040ce30(&local_4,this->field2_0x2);
@@ -169,26 +169,26 @@ void __thiscall S112__FUN_004ab060(S112 *this)
   pPed->uns40 = _local_4;
   Ped::SetRemap(pPed,-1);
   Ped::SetNPCWeapon(pPed,0);
-  Ped::SetHealthPlayer(pPed,400);
+  Ped__SetHealth(pPed,400);
   pPed->field129_0x288 = 1;
   pPed->field130_0x28c = 1;
   pPed->GraphicType = 2;
-  AutoClass4::FUN_00404400((AutoClass4 *)pAutoClass4,pPed);
+  AIController__AssignPed((AutoClass4 *)pAutoClass4,pPed);
   AutoClass4::SetIndexPed((AutoClass4 *)pAutoClass4,3);
   _local_4 = (Car *)((uint)_local_4 & 0xffffff00);
   do {
     pPED = Char::CreatePed(gChar);
     FUN_00433320(pPED,this->s110->car);
-    Ped::SetSearchType(pPED,4);
-    Ped::SetOccupation(pPED,0x19);
+    Ped__SetSearchMode(pPED,4);
+    Ped__SetCurrentOccupation(pPED,0x19);
     Ped::PedSetObjective(pPED,0,9999);
     Ped::SetRemap(pPED,-1);
     Ped::SetNPCWeapon(pPED,0);
-    Ped::SetHealthPlayer(pPED,400);
+    Ped__SetHealth(pPED,400);
     pPED->field129_0x288 = 1;
     pPED->field130_0x28c = 1;
     pPED->GraphicType = 2;
-    AutoClass4::FUN_00404420((AutoClass4 *)pAutoClass4,pPED,(byte)_local_4);
+    AIController__SetPedIndex((AutoClass4 *)pAutoClass4,pPED,(byte)_local_4);
     bVar1 = local_4 + 1;
     _local_4 = (Car *)CONCAT31(uStack_3,bVar1);
   } while (bVar1 < 3);
@@ -233,12 +233,12 @@ void __thiscall S112__S112_FUN_004ab330(S112 *this)
     }
   }
   else {
-    bVar3 = S169::S169_FUN_00403c40(pSVar1->S169);
+    bVar3 = PedManager__CheckPedStatus(pSVar1->S169);
     if (bVar3 != 0) {
       bVar3 = 0;
       pS49 = this->s110->pPed;
       while (pS49 != (Ped *)0x0) {
-        Ped::SetDefault(pS49);
+        Ped__ResetToDefaults(pS49);
         Ped::FUN_0043e650(pS49);
         pSVar2 = this->s110->S169;
         if (pSVar2 == (S169 *)0x0) break;
@@ -246,7 +246,7 @@ void __thiscall S112__S112_FUN_004ab330(S112 *this)
         bVar3 = bVar3 + 1;
         pS49 = pSVar2->Ped_Arr9[uVar5];
       }
-      S169::FUN_00403be0(this->s110->S169);
+      PedManager__UpdateAll(this->s110->S169);
       this->s110->field22_0x28 = 5;
       this->s110->field23_0x2c = 1;
       return;
@@ -297,12 +297,12 @@ void __thiscall S112__S112_FUN_004ab400(S112 *this)
       }
     }
     else {
-      bVar3 = S169::S169_FUN_00403c40(pSVar1->S169);
+      bVar3 = PedManager__CheckPedStatus(pSVar1->S169);
       if (bVar3 != 0) {
         bVar3 = 0;
         pS49 = this->s110->pPed;
         while (pS49 != (Ped *)0x0) {
-          Ped::SetDefault(pS49);
+          Ped__ResetToDefaults(pS49);
           Ped::FUN_0043e650(pS49);
           pSVar2 = this->s110->S169;
           if (pSVar2 == (S169 *)0x0) break;
@@ -310,7 +310,7 @@ void __thiscall S112__S112_FUN_004ab400(S112 *this)
           bVar3 = bVar3 + 1;
           pS49 = pSVar2->Ped_Arr9[uVar6];
         }
-        S169::FUN_00403be0(this->s110->S169);
+        PedManager__UpdateAll(this->s110->S169);
         this->s110->field22_0x28 = 5;
         this->s110->field23_0x2c = 1;
         return;
@@ -339,12 +339,12 @@ void __thiscall S112__S112_FUN_004ab400(S112 *this)
     }
     else {
       sVar4 = FUN_004a9ad0(this_00);
-      if ((200 < sVar4) && (bVar3 = S169::S169_FUN_00403c40(pSVar2), bVar3 != 0)
+      if ((200 < sVar4) && (bVar3 = PedManager__CheckPedStatus(pSVar2), bVar3 != 0)
          ) {
         bVar3 = 0;
         pS49 = this->s110->pPed;
         while (pS49 != (Ped *)0x0) {
-          Ped::SetDefault(pS49);
+          Ped__ResetToDefaults(pS49);
           Ped::FUN_0043e650(pS49);
           pSVar2 = this->s110->S169;
           if (pSVar2 == (S169 *)0x0) break;
@@ -352,7 +352,7 @@ void __thiscall S112__S112_FUN_004ab400(S112 *this)
           bVar3 = bVar3 + 1;
           pS49 = pSVar2->Ped_Arr9[uVar6];
         }
-        S169::FUN_00403be0(this->s110->S169);
+        PedManager__UpdateAll(this->s110->S169);
         Car::Car_FUN_00421470(this->s110->car);
 LAB_004ab5bf:
         this->s110->field22_0x28 = 5;
@@ -383,7 +383,7 @@ void __thiscall S112__S112_FUN_004ab610(S112 *this)
      (_pS49_2 != *(int *)(*(int *)(_pS49_2 + 0x16c) + 0x54))) {
     pSVar1 = this->s110;
     if (pSVar1->S169 != (S169 *)0x0) {
-      bVar8 = S169::S169_FUN_00403c40(pSVar1->S169);
+      bVar8 = PedManager__CheckPedStatus(pSVar1->S169);
       if (bVar8 == 0) {
         return;
       }
@@ -396,7 +396,7 @@ void __thiscall S112__S112_FUN_004ab610(S112 *this)
       bVar8 = 0;
       pPed = pSVar1->pPed;
       while (pPed != (Ped *)0x0) {
-        Ped::SetDefault(pPed);
+        Ped__ResetToDefaults(pPed);
         Ped::FUN_0043e650(pPed);
         pSVar3 = this->s110->S169;
         if (pSVar3 == (S169 *)0x0) break;
@@ -404,7 +404,7 @@ void __thiscall S112__S112_FUN_004ab610(S112 *this)
         bVar8 = bVar8 + 1;
         pPed = pSVar3->Ped_Arr9[uVar9];
       }
-      S169::FUN_00403be0(this->s110->S169);
+      PedManager__UpdateAll(this->s110->S169);
       pCVar4 = this->s110->car;
       if (pCVar4->field19_0x7c != 2) {
         Car::Car_FUN_00421470(pCVar4);
@@ -463,19 +463,19 @@ void __thiscall S112__S112_FUN_004ab610(S112 *this)
           return;
         }
       }
-      Ped::SetDefault(pSVar1->pPed);
+      Ped__ResetToDefaults(pSVar1->pPed);
       Car::Car_FUN_00421470(this->s110->car);
       bVar8 = 0;
       pPed = this->s110->S169->Ped_Arr9[0];
       while (pPed != (Ped *)0x0) {
         if (pPed->GameObject != (GameObject *)0x0) {
-          Ped::SetDefault(pPed);
+          Ped__ResetToDefaults(pPed);
           Ped::FUN_0043e650(pPed);
         }
         bVar8 = bVar8 + 1;
         pPed = this->s110->S169->Ped_Arr9[bVar8];
       }
-      S169::FUN_00403be0(this->s110->S169);
+      PedManager__UpdateAll(this->s110->S169);
 LAB_004ab77c:
       this->s110->field22_0x28 = 5;
       this->s110->field23_0x2c = 1;
@@ -484,15 +484,15 @@ LAB_004ab77c:
     bVar8 = 0;
     pPed = this->s110->pPed;
     while (pPed != (Ped *)0x0) {
-      Ped::SetSearchType(pPed,3);
-      Ped::SetDefault(pPed);
+      Ped__SetSearchMode(pPed,3);
+      Ped__ResetToDefaults(pPed);
       pSVar3 = this->s110->S169;
       if (pSVar3 == (S169 *)0x0) break;
       uVar9 = (uint)bVar8;
       bVar8 = bVar8 + 1;
       pPed = pSVar3->Ped_Arr9[uVar9];
     }
-    S169::FUN_00403be0(this->s110->S169);
+    PedManager__UpdateAll(this->s110->S169);
     Car::Car_FUN_00421470(this->s110->car);
   }
   this->s110->field22_0x28 = 5;
@@ -563,11 +563,11 @@ byte __thiscall S112__S112_FUN_004ab930(S112 *this)
   if (((*piVar2 != 0) && (this->field25_0x34 == 0)) && ((short)piVar2[3] != 0))
   {
     if (this->s110->field21_0x24 == 0) {
-      pS110 = (S110 *)Ped::GetPositionY((Ped *)*piVar2,(int)&local_14);
-      pS110_00 = (S110 *)Ped::GetPositionX((Ped *)*piVar2,(int)local_10);
+      pS110 = (S110 *)Ped__GetYCoordinate((Ped *)*piVar2,(int)&local_14);
+      pS110_00 = (S110 *)Ped__GetXCoordinate((Ped *)*piVar2,(int)local_10);
       this_00 = _pS49_2;
-      piVar2 = (int *)Ped::GetPositionY(_pS49_2,(int)local_c);
-      pS110_4 = (S110 *)Ped::GetPositionX(this_00,(int)local_8);
+      piVar2 = (int *)Ped__GetYCoordinate(_pS49_2,(int)local_c);
+      pS110_4 = (S110 *)Ped__GetXCoordinate(this_00,(int)local_8);
       FUN_0042a6b0(this_01,&local_4,pS110_4,piVar2,pS110_00,pS110);
       local_14 = pS110_4->car;
       bVar1 = FUN_004037e0(&local_14,(SpriteS1 *)&DAT_0066bb2c);
@@ -679,16 +679,16 @@ void __thiscall S112__S112_FUN_004ad600(S112 *this)
       if ((pAutoClass4 != (AutoClass4 *)0x0) &&
          (pS49_1 = pAutoClass4->Ped[0], pS49_1 != (Ped *)0x0)) {
         local_10 = 0x4ad655;
-        S169::FUN_00404d40((S169 *)pAutoClass4,pS49_1);
+        PedManager__RemovePed((S169 *)pAutoClass4,pS49_1);
         local_10 = 0x4ad661;
         in_stack_fffffff4 = pS49_1;
-        AutoClass4::FUN_00404400((AutoClass4 *)this->s110->S169,pS49_1);
+        AIController__AssignPed((AutoClass4 *)this->s110->S169,pS49_1);
         this->s110->pPed = pS49_1;
       }
     }
     else if (pS49_1->uns51 == 0) {
       in_stack_fffffff4 = (Ped *)0x4ad623;
-      iVar20 = Ped::GetCurrentState(pS49_1);
+      iVar20 = Ped__GetPedState(pS49_1);
       if (iVar20 != 9) {
         in_stack_fffffff4 = (Ped *)0x4ad62f;
         uVar21 = Ped::Get_FUN_00433b40(pS49_1);
@@ -733,12 +733,12 @@ void __thiscall S112__S112_FUN_004ad600(S112 *this)
       if ((((piVar23 != (int *)0x0) && (*piVar23 != 0)) &&
           (bVar12 = S112_FUN_004ab930(this), bVar12 != 0)) &&
          ((pS110->field20_0x20 == 6 || (piVar23[1] != 6)))) {
-        piVar19 = (int *)Ped::GetPositionX((Ped *)*piVar23,(int)&stack0xfffffffc
+        piVar19 = (int *)Ped__GetXCoordinate((Ped *)*piVar23,(int)&stack0xfffffffc
                                           );
         piVar23[4] = *piVar19;
         puVar15 = (undefined4 *)this->field11_0x14;
         puVar17 = (undefined4 *)
-                  Ped::GetPositionY((Ped *)*puVar15,(int)&stack0xfffffffc);
+                  Ped__GetYCoordinate((Ped *)*puVar15,(int)&stack0xfffffffc);
         puVar15[5] = *puVar17;
         puVar15 = (undefined4 *)this->field11_0x14;
         puVar17 = (undefined4 *)
@@ -752,11 +752,11 @@ void __thiscall S112__S112_FUN_004ad600(S112 *this)
         return;
       }
       _pS49_2 = pS110->pPed;
-      Ped::Ped_Set_FUN_00403a40(_pS49_2);
+      Ped__Initialize(_pS49_2);
       if (_pS49_2 != (Ped *)0x0) {
         do {
           pS49_1 = _pS49_2;
-          uVar18 = Ped::S49_Get_FUN_00403a80(_pS49_2);
+          uVar18 = Ped__GetActionParam(_pS49_2);
           switch(uVar18) {
           case 0:
             if (pS49_1 == this->s110->pPed) {
@@ -776,8 +776,8 @@ void __thiscall S112__S112_FUN_004ad600(S112 *this)
                   local_20[2] = 0x4a;
                   local_20[3] = 0;
                   Ped::PedSetObjective(_pS49_2,0x23,9999);
-                  Ped::S49_FUN_00403aa0(_pS49_2,this->s110->car);
-                  Ped::S49_FUN_00403960(_pS49_2);
+                  Ped__EnterCar(_pS49_2,this->s110->car);
+                  Ped__UpdateState(_pS49_2);
                 }
               }
               else {
@@ -887,7 +887,7 @@ LAB_004ac130:
           if ((pS49_1->CurrentState != PEDSTATE_DEAD) &&
              (pS49_1->field130_0x28c == 1)) {
             _pS49_2 = pS49_1;
-            uVar18 = Ped::S49_Get_FUN_00403a80(pS49_1);
+            uVar18 = Ped__GetActionParam(pS49_1);
             switch(uVar18) {
             case 0:
               bVar11 = Ped::S49_Get_FUN_00472fd0(pS49_1);
@@ -902,7 +902,7 @@ LAB_004ac130:
                 else {
                   Ped::SetAnimationState(pS49_1,0,9999);
                   Ped::PedSetObjective(_pS49_2,0x24,9999);
-                  Ped::S49_FUN_00403aa0(_pS49_2,this->s110->car);
+                  Ped__EnterCar(_pS49_2,this->s110->car);
                 }
               }
               break;
@@ -929,11 +929,11 @@ LAB_004ac130:
                                      ((Car *)&pS49_1->Car_2,
                                       (int *)(iVar20 + 0x14)),
                  CONCAT31(extraout_var_00,bVar11) != 0)) {
-                iVar14 = DecoderFloat((int *)(iVar20 + 0x10));
+                iVar14 = Decoder_DecodeFloat((int *)(iVar20 + 0x10));
                 local_24 = CONCAT31(local_24._1_3_,(char)iVar14);
-                iVar14 = DecoderFloat((void *)(iVar20 + 0x14));
+                iVar14 = Decoder_DecodeFloat((void *)(iVar20 + 0x14));
                 local_20[0] = (char)iVar14;
-                iVar20 = DecoderFloat((void *)(iVar20 + 0x18));
+                iVar20 = Decoder_DecodeFloat((void *)(iVar20 + 0x18));
                 bVar24 = (byte)iVar20;
                 bVar12 = S95::S95_FUN_0049d7a0
                                    (_gS95,'\x01',(byte *)&local_24,local_20,
@@ -986,13 +986,13 @@ LAB_004ac4c7:
               break;
             case 0x34:
               Ped::PedSetObjective(pS49_1,0xe,9999);
-              iVar20 = DecoderFloat((void *)(this->field11_0x14 + 0x10));
+              iVar20 = Decoder_DecodeFloat((void *)(this->field11_0x14 + 0x10));
               FUN_0040ce30(&stack0xffffffe8,(byte)iVar20);
               _pS49_2->Car_1 = in_stack_ffffffe8;
-              iVar20 = DecoderFloat((void *)(this->field11_0x14 + 0x14));
+              iVar20 = Decoder_DecodeFloat((void *)(this->field11_0x14 + 0x14));
               FUN_0040ce30(&local_14,(byte)iVar20);
               _pS49_2->Car_2 = local_14;
-              iVar20 = DecoderFloat((void *)(this->field11_0x14 + 0x18));
+              iVar20 = Decoder_DecodeFloat((void *)(this->field11_0x14 + 0x18));
               FUN_0040ce30(&local_10,(byte)iVar20);
               _pS49_2->uns40 = local_10;
             }
@@ -1084,7 +1084,7 @@ LAB_004ac4c7:
         if (((*piVar23 != 0) && (bVar12 = S112_FUN_004ab930(this), bVar12 != 0))
            && ((pS110->field20_0x20 == 6 ||
                ((piVar23[1] != 6 && (piVar23[1] != 0)))))) {
-          iVar20 = Ped::S49_Get_FUN_00403a80(pS49_1);
+          iVar20 = Ped__GetActionParam(pS49_1);
           if ((iVar20 == 0x23) &&
              (uVar21._0_1_ = pS49_1->flags, uVar21._1_1_ = pS49_1->uns59,
              uVar21._2_1_ = pS49_1->uns60, uVar21._3_1_ = pS49_1->uns61,
@@ -1102,11 +1102,11 @@ LAB_004ac4c7:
           }
           puVar15 = (undefined4 *)this->field11_0x14;
           puVar17 = (undefined4 *)
-                    Ped::GetPositionX((Ped *)*puVar15,(int)&stack0xfffffffc);
+                    Ped__GetXCoordinate((Ped *)*puVar15,(int)&stack0xfffffffc);
           puVar15[4] = *puVar17;
           puVar15 = (undefined4 *)this->field11_0x14;
           puVar17 = (undefined4 *)
-                    Ped::GetPositionY((Ped *)*puVar15,(int)&stack0xfffffffc);
+                    Ped__GetYCoordinate((Ped *)*puVar15,(int)&stack0xfffffffc);
           puVar15[5] = *puVar17;
           puVar15 = (undefined4 *)this->field11_0x14;
           puVar17 = (undefined4 *)
@@ -1121,12 +1121,12 @@ LAB_004ac4c7:
         }
       }
       if (((pS110->field21_0x24 != 2) && (pS49_1 != (Ped *)0x0)) &&
-         (Ped::Ped_Set_FUN_00403a40(pS49_1), _pS49_2 != (Ped *)0x0)) {
+         (Ped__Initialize(pS49_1), _pS49_2 != (Ped *)0x0)) {
         do {
           pS49_1 = _pS49_2;
           if ((_pS49_2->CurrentState != PEDSTATE_DEAD) &&
              (_pS49_2->field130_0x28c == 1)) {
-            uVar18 = Ped::S49_Get_FUN_00403a80(_pS49_2);
+            uVar18 = Ped__GetActionParam(_pS49_2);
             switch(uVar18) {
             case 0:
               pS110 = this->s110;
@@ -1146,8 +1146,8 @@ LAB_004ac4c7:
                     local_20[2] = 0x4a;
                     local_20[3] = 0;
                     Ped::PedSetObjective(_pS49_2,0x23,9999);
-                    Ped::S49_FUN_00403aa0(_pS49_2,this->s110->car);
-                    Ped::S49_FUN_00403960(_pS49_2);
+                    Ped__EnterCar(_pS49_2,this->s110->car);
+                    Ped__UpdateState(_pS49_2);
                   }
                 }
                 else if ((pS110->S169 == (S169 *)0x0) ||
@@ -1291,11 +1291,11 @@ LAB_004ac661:
       }
       if (this->s110->field21_0x24 == 0) goto LAB_004acdda;
       if (((Ped *)*puVar15)->CarCurrent != (Car *)0x0) {
-        puVar17 = (undefined4 *)Ped::GetPositionX((Ped *)*puVar15,(int)local_20)
+        puVar17 = (undefined4 *)Ped__GetXCoordinate((Ped *)*puVar15,(int)local_20)
         ;
         puVar15[4] = *puVar17;
         puVar15 = (undefined4 *)this->field11_0x14;
-        puVar17 = (undefined4 *)Ped::GetPositionY((Ped *)*puVar15,(int)local_20)
+        puVar17 = (undefined4 *)Ped__GetYCoordinate((Ped *)*puVar15,(int)local_20)
         ;
         puVar15[5] = *puVar17;
         puVar15 = (undefined4 *)this->field11_0x14;
@@ -1307,10 +1307,10 @@ LAB_004ac661:
     }
     else {
       puVar15 = (undefined4 *)this->field11_0x14;
-      puVar17 = (undefined4 *)Ped::GetPositionX((Ped *)*puVar15,(int)local_20);
+      puVar17 = (undefined4 *)Ped__GetXCoordinate((Ped *)*puVar15,(int)local_20);
       puVar15[4] = *puVar17;
       puVar15 = (undefined4 *)this->field11_0x14;
-      puVar17 = (undefined4 *)Ped::GetPositionY((Ped *)*puVar15,(int)local_20);
+      puVar17 = (undefined4 *)Ped__GetYCoordinate((Ped *)*puVar15,(int)local_20);
       puVar15[5] = *puVar17;
       puVar15 = (undefined4 *)this->field11_0x14;
       puVar17 = (undefined4 *)Ped::GetPositionZ((Ped *)*puVar15,(int)local_20);
@@ -1329,7 +1329,7 @@ LAB_004acdda:
       do {
         if ((pS49_1->CurrentState != PEDSTATE_DEAD) &&
            (pS49_1->field130_0x28c == 1)) {
-          uVar18 = Ped::S49_Get_FUN_00403a80(pS49_1);
+          uVar18 = Ped__GetActionParam(pS49_1);
           switch(uVar18) {
           case 0:
             pS110 = this->s110;
@@ -1343,9 +1343,9 @@ LAB_004acdda:
                   if ((uVar2 & 0x8000000) == 0) {
                     Ped::SetAnimationState(pS49_1,0,9999);
                     Ped::PedSetObjective(_pS49_2,0x14,9999);
-                    Ped::SetDriverPed(_pS49_2,*(undefined4 *)this->field11_0x14)
+                    Ped__SetAsDriver(_pS49_2,*(undefined4 *)this->field11_0x14)
                     ;
-                    Ped::S49_FUN_00403960(_pS49_2);
+                    Ped__UpdateState(_pS49_2);
                     this->field_0x28 = 0;
                     this->field_0x35 = 0;
                   }
@@ -1358,29 +1358,29 @@ LAB_004acdda:
                   if ((uVar1 & 0x8000000) == 0) {
                     Ped::SetAnimationState(pS49_1,0,9999);
                     Ped::PedSetObjective(_pS49_2,0x23,9999);
-                    Ped::S49_FUN_00403aa0(_pS49_2,this->s110->car);
-                    Ped::S49_FUN_00403960(_pS49_2);
+                    Ped__EnterCar(_pS49_2,this->s110->car);
+                    Ped__UpdateState(_pS49_2);
                   }
                 }
               }
               else if (*(int *)(*(int *)this->field11_0x14 + 0x16c) == 0) {
                 Ped::SetAnimationState(pS49_1,0,9999);
                 Ped::PedSetObjective(_pS49_2,0x24,9999);
-                Ped::S49_FUN_00403aa0(_pS49_2,this->s110->car);
+                Ped__EnterCar(_pS49_2,this->s110->car);
                 this->field_0x28 = 0;
               }
               else if ((pS110->S169 == (S169 *)0x0) ||
-                      (cVar13 = FUN_004048a0(), pS49_1 = _pS49_2, cVar13 != '\0'
+                      (cVar13 = PathFind_CalculateRoute(), pS49_1 = _pS49_2, cVar13 != '\0'
                       )) {
                 Ped::SetAnimationState(pS49_1,0,9999);
                 goto LAB_004ac8bd;
               }
             }
             else {
-              iVar20 = Ped::GetPed(pS49_1);
+              iVar20 = Ped__GetLinkedPed(pS49_1);
               if ((iVar20 == this->field24_0x30) &&
-                 (iVar20 = Ped::GetPed(pS49_1), iVar20 != 0)) {
-                Ped::SetLinkedPed(pS49_1,*(undefined4 *)this->field11_0x14);
+                 (iVar20 = Ped__GetLinkedPed(pS49_1), iVar20 != 0)) {
+                Ped__SetLinkedPedestrian(pS49_1,*(undefined4 *)this->field11_0x14);
               }
             }
             break;
@@ -1415,22 +1415,22 @@ LAB_004aca8e:
                 Ped::PedSetObjective(_pS49_2,0x34,9999);
                 uVar18 = *(undefined4 *)this->field11_0x14;
               }
-              Ped::SetDriverPed(_pS49_2,uVar18);
+              Ped__SetAsDriver(_pS49_2,uVar18);
               this->field_0x28 = 1;
             }
             this->field_0x28 = 1;
             break;
           case 0x14:
           case 0x20:
-            iVar20 = Ped::GetPed(pS49_1);
-            iVar14 = Ped::S49_Get_FUN_00403ad0(pS49_1);
+            iVar20 = Ped__GetLinkedPed(pS49_1);
+            iVar14 = Ped__GetPassenger(pS49_1);
             if (iVar14 == iVar20) {
-              uVar18 = Ped::S49_Get_FUN_00403ad0(pS49_1);
+              uVar18 = Ped__GetPassenger(pS49_1);
               this->field24_0x30 = uVar18;
-              Ped::SetLinkedPed(_pS49_2,*(undefined4 *)this->field11_0x14);
+              Ped__SetLinkedPedestrian(_pS49_2,*(undefined4 *)this->field11_0x14);
               pS49_1 = _pS49_2;
             }
-            Ped::SetDriverPed(pS49_1,*(undefined4 *)this->field11_0x14);
+            Ped__SetAsDriver(pS49_1,*(undefined4 *)this->field11_0x14);
             pS49_1 = _pS49_2;
             cVar13 = Ped::S49_FUN_00450cb0(_pS49_2);
             if (cVar13 == '\x01') {
@@ -1448,13 +1448,13 @@ LAB_004aca8e:
                 this->field8_0x8 = *puVar15;
               }
               else {
-                pS110 = (S110 *)Ped::GetPositionY((Ped *)*piVar23,(int)local_20)
+                pS110 = (S110 *)Ped__GetYCoordinate((Ped *)*piVar23,(int)local_20)
                 ;
-                pS110_00 = (S110 *)Ped::GetPositionX((Ped *)*piVar23,
+                pS110_00 = (S110 *)Ped__GetXCoordinate((Ped *)*piVar23,
                                                      (int)&stack0xffffffe4);
-                piVar19 = (int *)Ped::GetPositionY(pS49_1,(int)&stack0xffffffe8)
+                piVar19 = (int *)Ped__GetYCoordinate(pS49_1,(int)&stack0xffffffe8)
                 ;
-                pS110_4 = (S110 *)Ped::GetPositionX(pS49_1,(int)&local_14);
+                pS110_4 = (S110 *)Ped__GetXCoordinate(pS49_1,(int)&local_14);
                 puVar15 = &local_10;
                 FUN_0042a6b0(this_01,puVar15,pS110_4,piVar19,pS110_00,pS110);
                 this->field8_0x8 = *puVar15;
@@ -1482,9 +1482,9 @@ LAB_004aca8e:
                     if (0x1e < bVar22) {
 LAB_004acb79:
                       pS49_1 = _pS49_2;
-                      iVar20 = Ped::S49_Get_FUN_00403a80(_pS49_2);
+                      iVar20 = Ped__GetActionParam(_pS49_2);
                       if (((iVar20 != 0x20) ||
-                          (iVar20 = Ped::GetCurrentState(pS49_1), iVar20 == 1))
+                          (iVar20 = Ped__GetPedState(pS49_1), iVar20 == 1))
                          && (uVar7._0_1_ = pS49_1->flags,
                             uVar7._1_1_ = pS49_1->uns59,
                             uVar7._2_1_ = pS49_1->uns60,
@@ -1492,8 +1492,8 @@ LAB_004acb79:
                             (uVar7 & 0x8000000) == 0)) {
                         Ped::SetAnimationState(pS49_1,0,9999);
                         Ped::PedSetObjective(_pS49_2,0x23,9999);
-                        Ped::S49_FUN_00403aa0(_pS49_2,this->s110->car);
-                        Ped::S49_FUN_00403960(_pS49_2);
+                        Ped__EnterCar(_pS49_2,this->s110->car);
+                        Ped__UpdateState(_pS49_2);
                         this->field_0x28 = 1;
                       }
                       break;
@@ -1502,7 +1502,7 @@ LAB_004acb79:
                 }
               }
               pS49_1 = _pS49_2;
-              iVar20 = Ped::S49_Get_FUN_00403a80(_pS49_2);
+              iVar20 = Ped__GetActionParam(_pS49_2);
               if (iVar20 == 0x20) {
                 if ((*(int *)(*(int *)this->field11_0x14 + 0x168) != 0) &&
                    (uVar8._0_1_ = pS49_1->flags, uVar8._1_1_ = pS49_1->uns59,
@@ -1510,15 +1510,15 @@ LAB_004acb79:
                    (uVar8 & 0x8000000) != 0)) {
                   Ped::SetAnimationState(pS49_1,0,9999);
                   Ped::PedSetObjective(_pS49_2,0x14,9999);
-                  Ped::SetDriverPed(_pS49_2,*(undefined4 *)this->field11_0x14);
-                  Ped::S49_FUN_00403960(_pS49_2);
+                  Ped__SetAsDriver(_pS49_2,*(undefined4 *)this->field11_0x14);
+                  Ped__UpdateState(_pS49_2);
                   this->field_0x28 = 0;
                 }
               }
               else if (bVar10) {
                 Ped::PedSetObjective(pS49_1,0x20,9999);
-                Ped::SetDriverPed(_pS49_2,*(undefined4 *)this->field11_0x14);
-                Ped::S49_FUN_00403960(_pS49_2);
+                Ped__SetAsDriver(_pS49_2,*(undefined4 *)this->field11_0x14);
+                Ped__UpdateState(_pS49_2);
               }
             }
             break;
@@ -1530,7 +1530,7 @@ LAB_004acb79:
             bVar11 = Player::CheckCondition(this_00,piVar23);
             if (CONCAT31(extraout_var_04,bVar11) != 0) {
               Ped::PedSetObjective(_pS49_2,0x24,9999);
-              Ped::S49_FUN_00403aa0(_pS49_2,_pS49_2->CarCurrent);
+              Ped__EnterCar(_pS49_2,_pS49_2->CarCurrent);
             }
             break;
           case 0x1c:
@@ -1551,14 +1551,14 @@ LAB_004acb79:
             if (pSVar16 == (S169 *)0x0) {
 LAB_004ac8bd:
               Ped::PedSetObjective(_pS49_2,0x34,9999);
-              Ped::SetDriverPed(_pS49_2,*(undefined4 *)this->field11_0x14);
+              Ped__SetAsDriver(_pS49_2,*(undefined4 *)this->field11_0x14);
               this->field_0x28 = 1;
             }
             else {
               bVar11 = S169::FUN_00404840(pSVar16);
               if (bVar11) {
                 Ped::PedSetObjective(_pS49_2,0x34,9999);
-                Ped::SetDriverPed(_pS49_2,*(undefined4 *)this->field11_0x14);
+                Ped__SetAsDriver(_pS49_2,*(undefined4 *)this->field11_0x14);
                 this->field_0x28 = 1;
               }
               else {
@@ -1571,7 +1571,7 @@ LAB_004ac8bd:
             pS49_1 = _pS49_2;
             if ((this->s110->car == (Car *)0x0) ||
                ((this->s110->S169 != (S169 *)0x0 &&
-                (cVar13 = FUN_004048a0(), pS49_1 = _pS49_2, cVar13 == '\0'))))
+                (cVar13 = PathFind_CalculateRoute(), pS49_1 = _pS49_2, cVar13 == '\0'))))
             goto LAB_004aca8e;
             FUN_004abae0();
             this->field_0x28 = 1;

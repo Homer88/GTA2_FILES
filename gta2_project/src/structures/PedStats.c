@@ -20,7 +20,7 @@ S17 * __thiscall S17__S17(S17 *this)
   this->DAT_005eb854 = DAT_005eb854;
   this->DAT_005eb854_ = DAT_005eb854;
   local_4 = this;
-  bitShiftLeft1(&local_4,(void *)0x0);
+  Decoder_ShiftLeft(&local_4,(void *)0x0);
   this->s17 = local_4;
   this->field12020_0x2f00 = 0;
   S17_FUN_0045b040(this);
@@ -142,8 +142,8 @@ void __thiscall S17__FUN_0046c140(S17 *this,undefined4 *param_2,short *param_3)
     local_4 = this;
     FUN_0041f990(&param_2,(uint)piVar2);
     puVar3 = &param_3;
-    this_00 = S110_FUN_00401b40(&this->DAT_005eb854_,(S110 *)&local_4,this);
-    puVar3 = (undefined4 *)FUN_00401b90(this_00,puVar3,piVar2);
+    this_00 = Decoder_ProcessData(&this->DAT_005eb854_,(S110 *)&local_4,this);
+    puVar3 = (undefined4 *)Decoder_ReadInt(this_00,puVar3,piVar2);
     this->s17 = (S17 *)*puVar3;
     return;
   }
@@ -237,7 +237,7 @@ void __thiscall S17__S17_FUN_00472110(S17 *this)
       FUN_0041f980(auStack_50,iVar12);
       pSVar3 = S9::S9_FUN_00401b20((S9 *)pSVar3,pSpriteS1,piVar4);
       pSStack_64 = pSVar3->FirstElement;
-      piVar4 = (int *)FUN_00401b90(&pSStack_64,auStack_4c,
+      piVar4 = (int *)Decoder_ReadInt(&pSStack_64,auStack_4c,
                                    (int *)&pCameraOrPhysics->field_0xa4);
       auStack_78._0_4_ = *piVar4;
       puVar5 = (undefined4 *)
@@ -248,16 +248,16 @@ void __thiscall S17__S17_FUN_00472110(S17 *this)
       pSVar3 = Model::FUN_00401bf0((Model *)auStack_78,
                                    (SpriteS1 *)(auStack_48 + 4),
                                    (int *)&pSStack_64);
-      pvVar6 = S110_FUN_00401b40(&pCameraOrPhysics->field_0x98,
+      pvVar6 = Decoder_ProcessData(&pCameraOrPhysics->field_0x98,
                                  (S110 *)auStack_40,pSVar3);
-      auStack_78._4_4_ = DecoderFloat(pvVar6);
+      auStack_78._4_4_ = Decoder_DecodeFloat(pvVar6);
       pSStack_64 = (SpriteS1 *)0x2;
       pSVar3 = Model::FUN_00401bf0((Model *)auStack_78,
                                    (SpriteS1 *)(auStack_40 + 4),
                                    (int *)&pSStack_64);
       pSVar3 = S9::S9_FUN_00401b20((S9 *)&pCameraOrPhysics->field_0x98,
                                    (SpriteS1 *)(auStack_40 + 8),(int *)pSVar3);
-      pvStack_68 = (void *)DecoderFloat(pSVar3);
+      pvStack_68 = (void *)Decoder_DecodeFloat(pSVar3);
       iVar11 = (int)(((int)pvStack_68 - auStack_78._4_4_) + 1U) / 2;
       uVar8 = (int)pvStack_68 - auStack_78._4_4_ & 0x80000001;
       if ((int)uVar8 < 0) {
@@ -270,9 +270,9 @@ void __thiscall S17__S17_FUN_00472110(S17 *this)
       pSVar3 = Model::FUN_00401bf0((Model *)(auStack_78 + 0xc),
                                    (SpriteS1 *)(auStack_40 + 0xc),
                                    (int *)&pSStack_64);
-      pvVar6 = S110_FUN_00401b40(&pCameraOrPhysics->field_0x9c,
+      pvVar6 = Decoder_ProcessData(&pCameraOrPhysics->field_0x9c,
                                  (S110 *)(auStack_40 + 0x10),pSVar3);
-      auStack_78._0_4_ = DecoderFloat(pvVar6);
+      auStack_78._0_4_ = Decoder_DecodeFloat(pvVar6);
       pSStack_64 = (SpriteS1 *)0x2;
       pSVar3 = Model::FUN_00401bf0((Model *)(auStack_78 + 0xc),
                                    (SpriteS1 *)(auStack_40 + 0x14),
@@ -280,7 +280,7 @@ void __thiscall S17__S17_FUN_00472110(S17 *this)
       pSVar3 = S9::S9_FUN_00401b20((S9 *)&pCameraOrPhysics->field_0x9c,
                                    (SpriteS1 *)(auStack_40 + 0x18),(int *)pSVar3
                                   );
-      auStack_78._12_4_ = DecoderFloat(pSVar3);
+      auStack_78._12_4_ = Decoder_DecodeFloat(pSVar3);
       pSStack_64 = (SpriteS1 *)
                    ((int)((auStack_78._12_4_ - auStack_78._0_4_) + 1) / 2);
       uVar8 = auStack_78._12_4_ - auStack_78._0_4_ & 0x80000001;
@@ -304,7 +304,7 @@ void __thiscall S17__S17_FUN_00472110(S17 *this)
       uVar9 = _DAT_006634b4;
       if (CONCAT31(extraout_var,bVar2) == 0) {
         puVar5 = (undefined4 *)
-                 FUN_00401b90(&DAT_00663450,auStack_18,(int *)&pSStack_7c);
+                 Decoder_ReadInt(&DAT_00663450,auStack_18,(int *)&pSStack_7c);
         uVar9 = *puVar5;
       }
       _gS17_V2 = uVar9;
@@ -325,7 +325,7 @@ void __thiscall S17__S17_FUN_00472110(S17 *this)
       uVar10 = _DAT_006634b4;
       if (CONCAT31(extraout_var_00,bVar2) == 0) {
         puVar5 = (undefined4 *)
-                 FUN_00401b90(&DAT_00663450,auStack_8,(int *)&pSStack_7c);
+                 Decoder_ReadInt(&DAT_00663450,auStack_8,(int *)&pSStack_7c);
         uVar10 = *puVar5;
       }
       _DAT_006635fc = uVar10;

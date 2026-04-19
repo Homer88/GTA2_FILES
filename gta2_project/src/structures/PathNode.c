@@ -172,7 +172,7 @@ void __thiscall S57__S57_FUN_00488570(S57 *this)
   *(undefined4 *)(iVar1 + 0x3c) = 0x35;
   *(undefined4 *)(iVar1 + 0x44) = 0;
   *(undefined4 *)(iVar1 + 0x10) = _DAT_00665b50;
-  puVar2 = (undefined4 *)FUN_00403780(&DAT_00665b54,&local_4);
+  puVar2 = (undefined4 *)Texture_Find(&DAT_00665b54,&local_4);
   *(undefined4 *)(iVar1 + 0x14) = *puVar2;
   *(undefined1 *)(iVar1 + 0x61) = 1;
   *(undefined4 *)(iVar1 + 0x4c) = 3;
@@ -192,7 +192,7 @@ void __thiscall S57__S57_FUN_00488570(S57 *this)
   *(undefined4 *)(iVar1 + 0x40) = 4;
   *(undefined4 *)(iVar1 + 0x44) = 0;
   *(undefined4 *)(iVar1 + 0x10) = _DAT_00665b50;
-  puVar2 = (undefined4 *)FUN_00403780(&DAT_00665b54,&local_4);
+  puVar2 = (undefined4 *)Texture_Find(&DAT_00665b54,&local_4);
   *(undefined4 *)(iVar1 + 0x14) = *puVar2;
   *(undefined1 *)(iVar1 + 0x61) = 1;
   *(undefined4 *)(iVar1 + 0x4c) = 3;
@@ -212,7 +212,7 @@ void __thiscall S57__S57_FUN_00488570(S57 *this)
   *(undefined4 *)(iVar1 + 0x40) = 4;
   *(undefined4 *)(iVar1 + 0x44) = 0;
   *(undefined4 *)(iVar1 + 0x10) = _DAT_00665b50;
-  puVar2 = (undefined4 *)FUN_00403780(&DAT_00665b54,&local_4);
+  puVar2 = (undefined4 *)Texture_Find(&DAT_00665b54,&local_4);
   *(undefined4 *)(iVar1 + 0x14) = *puVar2;
   *(undefined1 *)(iVar1 + 0x61) = 1;
   *(undefined4 *)(iVar1 + 0x4c) = 3;
@@ -232,7 +232,7 @@ void __thiscall S57__S57_FUN_00488570(S57 *this)
   *(undefined4 *)(iVar1 + 0x40) = 4;
   *(undefined4 *)(iVar1 + 0x44) = 0;
   *(undefined4 *)(iVar1 + 0x10) = _DAT_00665b50;
-  puVar2 = (undefined4 *)FUN_00403780(&DAT_00665b54,&local_4);
+  puVar2 = (undefined4 *)Texture_Find(&DAT_00665b54,&local_4);
   *(undefined4 *)(iVar1 + 0x14) = *puVar2;
   *(undefined1 *)(iVar1 + 0x61) = 1;
   *(undefined4 *)(iVar1 + 0x4c) = 3;
@@ -249,7 +249,7 @@ void __thiscall S57__S57_FUN_00488570(S57 *this)
   *(undefined4 *)(iVar1 + 0x40) = 4;
   *(undefined4 *)(iVar1 + 0x44) = 0;
   *(undefined4 *)(iVar1 + 0x10) = _DAT_00665b50;
-  puVar2 = (undefined4 *)FUN_00403780(&DAT_00665b54,&local_4);
+  puVar2 = (undefined4 *)Texture_Find(&DAT_00665b54,&local_4);
   *(undefined4 *)(iVar1 + 0x14) = *puVar2;
   *(undefined1 *)(iVar1 + 0x61) = 1;
   *(undefined4 *)(iVar1 + 0x4c) = 3;
@@ -269,7 +269,7 @@ void __thiscall S57__S57_FUN_00488570(S57 *this)
   *(undefined4 *)(iVar1 + 0x40) = 4;
   *(undefined4 *)(iVar1 + 0x44) = 0;
   *(undefined4 *)(iVar1 + 0x10) = _DAT_00665b50;
-  puVar2 = (undefined4 *)FUN_00403780(&DAT_00665b54,&local_4);
+  puVar2 = (undefined4 *)Texture_Find(&DAT_00665b54,&local_4);
   *(undefined4 *)(iVar1 + 0x14) = *puVar2;
   *(undefined1 *)(iVar1 + 0x61) = 1;
   *(undefined4 *)(iVar1 + 0x4c) = 3;
@@ -289,7 +289,7 @@ void __thiscall S57__S57_FUN_00488570(S57 *this)
   *(undefined4 *)(iVar1 + 0x40) = 4;
   *(undefined4 *)(iVar1 + 0x44) = 0;
   *(undefined4 *)(iVar1 + 0x10) = _DAT_00665b50;
-  puVar2 = (undefined4 *)FUN_00403780(&DAT_00665b54,&local_4);
+  puVar2 = (undefined4 *)Texture_Find(&DAT_00665b54,&local_4);
   *(undefined4 *)(iVar1 + 0x14) = *puVar2;
   *(undefined1 *)(iVar1 + 0x61) = 1;
   *(undefined4 *)(iVar1 + 0x4c) = 3;
@@ -309,7 +309,7 @@ void __thiscall S57__S57_FUN_00488570(S57 *this)
   *(undefined4 *)(iVar1 + 0x40) = 4;
   *(undefined4 *)(iVar1 + 0x44) = 0;
   *(undefined4 *)(iVar1 + 0x10) = _DAT_00665b50;
-  puVar2 = (undefined4 *)FUN_00403780(&DAT_00665b54,&local_4);
+  puVar2 = (undefined4 *)Texture_Find(&DAT_00665b54,&local_4);
   *(undefined4 *)(iVar1 + 0x14) = *puVar2;
   *(undefined1 *)(iVar1 + 0x61) = 1;
   *(undefined4 *)(iVar1 + 0x4c) = 3;
@@ -326,7 +326,7 @@ void __thiscall S57__S57_FUN_00488570(S57 *this)
   *(undefined4 *)(iVar1 + 0x40) = 4;
   *(undefined4 *)(iVar1 + 0x44) = 0;
   *(undefined4 *)(iVar1 + 0x10) = _DAT_00665b50;
-  puVar2 = (undefined4 *)FUN_00403780(&DAT_00665b54,&local_4);
+  puVar2 = (undefined4 *)Texture_Find(&DAT_00665b54,&local_4);
   *(undefined4 *)(iVar1 + 0x14) = *puVar2;
   *(undefined1 *)(iVar1 + 0x61) = 1;
   *(undefined4 *)(iVar1 + 0x4c) = 3;
@@ -346,7 +346,7 @@ void __thiscall S57__S57_FUN_00488570(S57 *this)
   *(undefined4 *)(iVar1 + 0x40) = 4;
   *(undefined4 *)(iVar1 + 0x44) = 0;
   *(undefined4 *)(iVar1 + 0x10) = _DAT_00665b50;
-  puVar2 = (undefined4 *)FUN_00403780(&DAT_00665b54,&local_4);
+  puVar2 = (undefined4 *)Texture_Find(&DAT_00665b54,&local_4);
   *(undefined4 *)(iVar1 + 0x14) = *puVar2;
   *(undefined1 *)(iVar1 + 0x61) = 1;
   *(undefined4 *)(iVar1 + 0x4c) = 3;
@@ -363,7 +363,7 @@ void __thiscall S57__S57_FUN_00488570(S57 *this)
   *(undefined4 *)(iVar1 + 0x40) = 4;
   *(undefined4 *)(iVar1 + 0x44) = 0;
   *(undefined4 *)(iVar1 + 0x10) = _DAT_00665b50;
-  puVar2 = (undefined4 *)FUN_00403780(&DAT_00665b54,&local_4);
+  puVar2 = (undefined4 *)Texture_Find(&DAT_00665b54,&local_4);
   *(undefined4 *)(iVar1 + 0x14) = *puVar2;
   *(undefined1 *)(iVar1 + 0x61) = 1;
   *(undefined4 *)(iVar1 + 0x4c) = 3;
@@ -379,7 +379,7 @@ void __thiscall S57__S57_FUN_00488570(S57 *this)
   *(undefined4 *)(iVar1 + 0x40) = 4;
   *(undefined4 *)(iVar1 + 0x44) = 0;
   *(undefined4 *)(iVar1 + 0x10) = _DAT_00665b50;
-  puVar2 = (undefined4 *)FUN_00403780(&DAT_00665b54,&local_4);
+  puVar2 = (undefined4 *)Texture_Find(&DAT_00665b54,&local_4);
   *(undefined4 *)(iVar1 + 0x14) = *puVar2;
   *(undefined1 *)(iVar1 + 0x61) = 1;
   *(undefined4 *)(iVar1 + 0x4c) = 3;
@@ -392,7 +392,7 @@ void __thiscall S57__S57_FUN_00488570(S57 *this)
   iVar1 = FUN_00488180(0x9d,7);
   *(undefined4 *)(iVar1 + 0x34) = 3;
   *(undefined4 *)(iVar1 + 0x4c) = 2;
-  puVar2 = (undefined4 *)FUN_00403780(&DAT_00665b54,&local_4);
+  puVar2 = (undefined4 *)Texture_Find(&DAT_00665b54,&local_4);
   *(undefined4 *)(iVar1 + 0x14) = *puVar2;
   *(undefined4 *)(iVar1 + 0x40) = 4;
   *(undefined4 *)(iVar1 + 0x38) = 7;
@@ -403,7 +403,7 @@ void __thiscall S57__S57_FUN_00488570(S57 *this)
   iVar1 = FUN_00488180(0x9e,1);
   *(undefined4 *)(iVar1 + 0x34) = 3;
   *(undefined4 *)(iVar1 + 0x4c) = 2;
-  puVar2 = (undefined4 *)FUN_00403780(&DAT_00665b54,&local_4);
+  puVar2 = (undefined4 *)Texture_Find(&DAT_00665b54,&local_4);
   *(undefined4 *)(iVar1 + 0x14) = *puVar2;
   *(undefined4 *)(iVar1 + 0x38) = 1;
   *(undefined4 *)(iVar1 + 0x3c) = 1;
@@ -726,7 +726,7 @@ void __thiscall S57__S57_FUN_00488f70(S57 *this)
     iVar4 = FUN_00488180(iVar2 + -0x88,iVar2);
     *(int *)(iVar4 + 0x38) = iVar2;
     *(uint *)(iVar4 + 0x34) = (uint)(*(int *)(iVar4 + 0x34) != 6) * 2 + 7;
-    puVar3 = (undefined4 *)FUN_00403780(&DAT_00665b54,local_4);
+    puVar3 = (undefined4 *)Texture_Find(&DAT_00665b54,local_4);
     uVar1 = *puVar3;
     *(undefined4 *)(iVar4 + 0x4c) = 1;
     *(undefined4 *)(iVar4 + 0x14) = uVar1;

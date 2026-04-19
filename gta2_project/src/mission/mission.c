@@ -5,7 +5,7 @@
 #include "../../include/common.h"
 
 // Было: FUN_003f163c
-void __thiscall MissionManager::FUN_003f163c(MissionManager *this)
+void __thiscall MissionManager__UpdateMissionState(MissionManager *this)
 
 
 // Было: FUN_004751d0
@@ -89,7 +89,7 @@ void __thiscall MissionManager::MissionManager_FUN_00475ca0(void)
 
 
 // Было: MissionManager_FUN_00476200
-MissionManager::MissionManager_FUN_00476200(MissionManager *this,ushort param_1)
+MissionManager__StartMission(MissionManager *this,ushort param_1)
 
 
 // Было: FUN_00476e50

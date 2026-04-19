@@ -4,25 +4,25 @@
 
 #include "../../include/common.h"
 
-void __thiscall Fread(void *this,size_t param_1,size_t param_2,void *param_3)
+void __thiscall DataStream_ReadBlock(void *this,size_t param_1,size_t param_2,void *param_3)
 
 
-void __thiscall FileMgr::CloseFile(FileMgr *this)
+void __thiscall FileMgr__Close(FileMgr *this)
 
 
-void __thiscall FileMgr::Seek(FileMgr *this,int size)
+void __thiscall FileMgr__SeekPosition(FileMgr *this,int size)
 
 
-void __thiscall FileMgr::Read(FileMgr *this,size_t size)
+void __thiscall FileMgr__ReadData(FileMgr *this,size_t size)
 
 
-bool __thiscall FileMgr::ReadLine(FileMgr *this,void *buffer,int size)
+bool __thiscall FileMgr__ReadDataLine(FileMgr *this,void *buffer,int size)
 
 
-void __thiscall FileMgr::FileOpen(FileMgr *this,char *param_1)
+void __thiscall FileMgr__OpenFile(FileMgr *this,char *param_1)
 
 
-void MessageBoXErrorOpenFile(char *param_1,char *param_2)
+void UI_ShowFileError(char *param_1,char *param_2)
 
 
 bool __thiscall Style::CarExist(Style *this,byte param_1)
@@ -36,7 +36,7 @@ byte __thiscall Style::GetNumberOfCars(Style *this)
 
 
 // Было: FUN_0044dbb0
-void __thiscall FileMgr::FUN_0044dbb0(FileMgr *this,char *part)
+void __thiscall FileMgr__SetFilePath(FileMgr *this,char *part)
 
 
 bool TestFileGxt(void)

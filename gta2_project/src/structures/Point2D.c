@@ -53,10 +53,10 @@ undefined4 S9__FUN_00424ff0(SpriteS1 *param_1,S9 *pS9,undefined4 param_3)
   this = MapRelatedStruct::FindMaxZForLocation
                    (_gMapRelatedStruct,(float10 *)local_48,(float10 *)param_1,
                     (float10 *)pS9);
-  local_58 = DecoderFloat(this);
+  local_58 = Decoder_DecodeFloat(this);
   do {
-    iVar4 = DecoderFloat(&pS9);
-    iVar5 = DecoderFloat(&param_1);
+    iVar4 = Decoder_DecodeFloat(&pS9);
+    iVar5 = Decoder_DecodeFloat(&param_1);
     iVar4 = FUN_00466a00(iVar5,iVar4);
     local_58 = local_58 + 1;
     if ((iVar4 != 0) && ((*(byte *)(iVar4 + 0xb) & 3) == 1)) {
@@ -97,17 +97,17 @@ undefined4 S9__FUN_00424ff0(SpriteS1 *param_1,S9 *pS9,undefined4 param_3)
         pSVar6 = S9::S9_FUN_00401b20((S9 *)&pS9,(SpriteS1 *)(local_48 + 8),
                                      &local_54);
         puVar7 = (undefined4 *)
-                 S110_FUN_00401b40(&pS9,(S110 *)(local_48 + 0xc),&local_54);
+                 Decoder_ProcessData(&pS9,(S110 *)(local_48 + 0xc),&local_54);
         pSVar8 = S9::S9_FUN_00401b20((S9 *)&param_1,
                                      (SpriteS1 *)(local_48 + 0x10),&local_50);
         puVar9 = (undefined4 *)
-                 S110_FUN_00401b40(&param_1,(S110 *)local_34,&local_50);
+                 Decoder_ProcessData(&param_1,(S110 *)local_34,&local_50);
         S9::FUN_0041e350((S9 *)(local_34 + 0x1c),*puVar9,pSVar8->FirstElement,
                          *puVar7,pSVar6->FirstElement);
         pSVar6 = S9::S9_FUN_00401b20((S9 *)local_48,(SpriteS1 *)(local_34 + 4),
                                      &DAT_005e4d4c);
         puVar7 = (undefined4 *)
-                 S110_FUN_00401b40(local_48,(S110 *)(local_34 + 8),&DAT_005e4d4c
+                 Decoder_ProcessData(local_48,(S110 *)(local_34 + 8),&DAT_005e4d4c
                                   );
         S9::FUN_0041e370((S9 *)(local_34 + 0x1c),*puVar7,pSVar6->FirstElement);
         cVar1 = S56::FUN_004477b0(gS56,(S9 *)(local_34 + 0x1c),0,0,0);
@@ -136,12 +136,12 @@ undefined4 S9__FUN_00424ff0(SpriteS1 *param_1,S9 *pS9,undefined4 param_3)
       break;
     case 2:
       puVar7 = (undefined4 *)
-               S110_FUN_00401b40(&pS9,(S110 *)(local_34 + 0x10),&DAT_005e4d4c);
+               Decoder_ProcessData(&pS9,(S110 *)(local_34 + 0x10),&DAT_005e4d4c);
       pS9 = (S9 *)*puVar7;
       break;
     case 3:
       pSVar10 = (SpriteS1 *)
-                S110_FUN_00401b40(&param_1,(S110 *)(local_34 + 0x14),
+                Decoder_ProcessData(&param_1,(S110 *)(local_34 + 0x14),
                                   &DAT_005e4d4c);
       goto LAB_004252b6;
     case 4:
@@ -295,10 +295,10 @@ byte __thiscall S9__Game_FUN_0045bc90(Game *this,S9 *pS9)
 void __thiscall S9__S9_FUN_004ba5e0(S9 *this)
 
 {
-  _DAT_00662bd4 = DecoderFloat(this);
-  _DAT_00662bf8 = DecoderFloat(this->Arr_24 + 4);
-  _DAT_00662bac = DecoderFloat(this->Arr_24 + 8);
-  _DAT_00662bfc = DecoderFloat(this->Arr_24 + 0xc);
+  _DAT_00662bd4 = Decoder_DecodeFloat(this);
+  _DAT_00662bf8 = Decoder_DecodeFloat(this->Arr_24 + 4);
+  _DAT_00662bac = Decoder_DecodeFloat(this->Arr_24 + 8);
+  _DAT_00662bfc = Decoder_DecodeFloat(this->Arr_24 + 0xc);
   return;
 }
 
@@ -321,21 +321,21 @@ void __thiscall S9__FUN_004ba720(S9 *this)
   pSVar1 = S9_FUN_00401b20(this,(SpriteS1 *)(local_c + 2),
                            (int *)(this->Arr_24 + 4));
   pSVar2 = Model::FUN_00401bf0((Model *)pSVar1,pSVar2,piVar6);
-  iVar3 = DecoderFloat(pSVar2);
+  iVar3 = Decoder_DecodeFloat(pSVar2);
   piVar6 = local_c;
   pSVar2 = (SpriteS1 *)(local_c + 2);
   local_c[0] = 2;
   pSVar1 = S9_FUN_00401b20((S9 *)(this->Arr_24 + 8),(SpriteS1 *)(local_c + 1),
                            (int *)(this->Arr_24 + 0xc));
   pSVar2 = Model::FUN_00401bf0((Model *)pSVar1,pSVar2,piVar6);
-  iVar4 = DecoderFloat(pSVar2);
+  iVar4 = Decoder_DecodeFloat(pSVar2);
   piVar6 = local_c;
   pSVar2 = (SpriteS1 *)(local_c + 2);
   local_c[0] = 2;
   pSVar1 = S9_FUN_00401b20((S9 *)(this->Arr_24 + 0x10),(SpriteS1 *)(local_c + 1)
                            ,(int *)(this->Arr_24 + 0x14));
   pSVar2 = Model::FUN_00401bf0((Model *)pSVar1,pSVar2,piVar6);
-  iVar5 = DecoderFloat(pSVar2);
+  iVar5 = Decoder_DecodeFloat(pSVar2);
   FUN_0046b440(iVar3,iVar4,iVar5,0,0x400);
   return;
 }
@@ -399,19 +399,19 @@ uint __thiscall S9__FUN_004bb020(void *this,S9 *param_2)
   iVar14 = (int)this + 0x14;
   iVar13 = iVar14;
   iVar15 = iVar16;
-  pvVar2 = FUN_00401c80(this,&local_38);
+  pvVar2 = PedPool_Get(this,&local_38);
   this_00 = param_2;
   pvVar6 = pvVar2;
   S9::FUN_0045add0(param_2,(S9 *)&param_2);
   puVar3 = (undefined4 *)&local_24;
   S9::FUN_0045adb0(this_00,puVar3);
   FUN_0042a720(puVar3,pvVar2,pvVar6,iVar13,iVar15,puVar17,puVar18);
-  piVar4 = (int *)FUN_00403780(&local_2c,&param_2);
+  piVar4 = (int *)Texture_Find(&local_2c,&param_2);
   bVar1 = Player::FUN_0040ce70((Player *)local_34,piVar4);
   if (CONCAT31(extraout_var,bVar1) != 0) {
     bVar1 = Player::CheckCondition((Player *)local_34,&local_2c);
     if (CONCAT31(extraout_var_00,bVar1) != 0) {
-      piVar4 = (int *)FUN_00403780(&local_28,&param_2);
+      piVar4 = (int *)Texture_Find(&local_28,&param_2);
       bVar1 = Player::FUN_0040ce70((Player *)local_30,piVar4);
       if (CONCAT31(extraout_var_01,bVar1) != 0) {
         bVar1 = Player::CheckCondition((Player *)local_30,&local_28);
@@ -424,18 +424,18 @@ uint __thiscall S9__FUN_004bb020(void *this,S9 *param_2)
   puVar17 = local_34;
   iVar13 = iVar14;
   iVar15 = iVar16;
-  pvVar2 = FUN_00401c80(this,&param_2);
+  pvVar2 = PedPool_Get(this,&param_2);
   pvVar6 = pvVar2;
   S9::FUN_0045add0(this_00,&local_24);
   piVar4 = &local_38;
   S9::FUN_0045ada0(this_00,piVar4);
   FUN_0042a720(piVar4,pvVar2,pvVar6,iVar13,iVar15,puVar17,puVar18);
-  piVar4 = (int *)FUN_00403780(&local_2c,&param_2);
+  piVar4 = (int *)Texture_Find(&local_2c,&param_2);
   bVar1 = Player::FUN_0040ce70((Player *)local_34,piVar4);
   if (CONCAT31(extraout_var_03,bVar1) != 0) {
     bVar1 = Player::CheckCondition((Player *)local_34,&local_2c);
     if (CONCAT31(extraout_var_04,bVar1) != 0) {
-      piVar4 = (int *)FUN_00403780(&local_28,&param_2);
+      piVar4 = (int *)Texture_Find(&local_28,&param_2);
       bVar1 = Player::FUN_0040ce70((Player *)local_30,piVar4);
       if (CONCAT31(extraout_var_05,bVar1) != 0) {
         bVar1 = Player::CheckCondition((Player *)local_30,&local_28);
@@ -448,18 +448,18 @@ uint __thiscall S9__FUN_004bb020(void *this,S9 *param_2)
   puVar17 = local_34;
   iVar13 = iVar14;
   iVar15 = iVar16;
-  pvVar2 = FUN_00401c80(this,&param_2);
+  pvVar2 = PedPool_Get(this,&param_2);
   pvVar6 = pvVar2;
   S9::FUN_0045adc0(this_00,(undefined4 *)&local_24);
   piVar4 = &local_38;
   S9::FUN_0045ada0(this_00,piVar4);
   FUN_0042a720(piVar4,pvVar2,pvVar6,iVar13,iVar15,puVar17,puVar18);
-  piVar4 = (int *)FUN_00403780(&local_2c,&param_2);
+  piVar4 = (int *)Texture_Find(&local_2c,&param_2);
   bVar1 = Player::FUN_0040ce70((Player *)local_34,piVar4);
   if (CONCAT31(extraout_var_07,bVar1) != 0) {
     bVar1 = Player::CheckCondition((Player *)local_34,&local_2c);
     if (CONCAT31(extraout_var_08,bVar1) != 0) {
-      piVar4 = (int *)FUN_00403780(&local_28,&param_2);
+      piVar4 = (int *)Texture_Find(&local_28,&param_2);
       bVar1 = Player::FUN_0040ce70((Player *)local_30,piVar4);
       if (CONCAT31(extraout_var_09,bVar1) != 0) {
         bVar1 = Player::CheckCondition((Player *)local_30,&local_28);
@@ -472,18 +472,18 @@ uint __thiscall S9__FUN_004bb020(void *this,S9 *param_2)
   puVar17 = local_34;
   iVar13 = iVar14;
   iVar15 = iVar16;
-  pvVar2 = FUN_00401c80(this,&param_2);
+  pvVar2 = PedPool_Get(this,&param_2);
   pvVar6 = pvVar2;
   S9::FUN_0045adc0(this_00,(undefined4 *)&local_24);
   piVar4 = &local_38;
   S9::FUN_0045adb0(this_00,piVar4);
   FUN_0042a720(piVar4,pvVar2,pvVar6,iVar13,iVar15,puVar17,puVar18);
-  piVar4 = (int *)FUN_00403780(&local_2c,&param_2);
+  piVar4 = (int *)Texture_Find(&local_2c,&param_2);
   bVar1 = Player::FUN_0040ce70((Player *)local_34,piVar4);
   if (CONCAT31(extraout_var_11,bVar1) != 0) {
     bVar1 = Player::CheckCondition((Player *)local_34,&local_2c);
     if (CONCAT31(extraout_var_12,bVar1) != 0) {
-      piVar4 = (int *)FUN_00403780(&local_28,&param_2);
+      piVar4 = (int *)Texture_Find(&local_28,&param_2);
       bVar1 = Player::FUN_0040ce70((Player *)local_30,piVar4);
       if (CONCAT31(extraout_var_13,bVar1) != 0) {
         bVar1 = Player::CheckCondition((Player *)local_30,&local_28);
@@ -496,7 +496,7 @@ uint __thiscall S9__FUN_004bb020(void *this,S9 *param_2)
   local_38 = 2;
   local_24.Arr_24._0_4_ = (S46 *)0x2;
   puVar17 = local_34;
-  pvVar6 = FUN_00401c80(this,&param_2);
+  pvVar6 = PedPool_Get(this,&param_2);
   piVar4 = &local_38;
   piVar7 = (int *)((int)&local_24 + 4);
   pSVar11 = (SpriteS1 *)piVar7;
@@ -516,14 +516,14 @@ uint __thiscall S9__FUN_004bb020(void *this,S9 *param_2)
   pSVar11 = S9::S9_FUN_00401b20(pSVar8,pSVar11,(int *)pSVar12);
   pSVar9 = Model::FUN_00401bf0((Model *)pSVar11,pSVar9,piVar4);
   FUN_0042a720(pSVar9,pSVar10,pvVar6,iVar14,iVar16,puVar17,puVar18);
-  piVar4 = (int *)FUN_00403780(&local_2c,&param_2);
+  piVar4 = (int *)Texture_Find(&local_2c,&param_2);
   bVar1 = Player::FUN_0040ce70((Player *)local_34,piVar4);
   uVar5 = CONCAT31(extraout_var_15,bVar1);
   if (uVar5 != 0) {
     bVar1 = Player::CheckCondition((Player *)local_34,&local_2c);
     uVar5 = CONCAT31(extraout_var_16,bVar1);
     if (uVar5 != 0) {
-      piVar4 = (int *)FUN_00403780(&local_28,&param_2);
+      piVar4 = (int *)Texture_Find(&local_28,&param_2);
       bVar1 = Player::FUN_0040ce70((Player *)local_30,piVar4);
       uVar5 = CONCAT31(extraout_var_17,bVar1);
       if (uVar5 != 0) {

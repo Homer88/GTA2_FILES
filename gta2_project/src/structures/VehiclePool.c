@@ -114,11 +114,11 @@ LAB_00411b5c:
   this->field62_0x68 = (int *)0xffffffff;
   this->field63_0x6c = 0;
   this->field65_0x71 = 1;
-  bitShiftLeft1(&param_1,(void *)0x2);
+  Decoder_ShiftLeft(&param_1,(void *)0x2);
   this_00 = local_8;
   puVar8 = this_00;
-  bitShiftLeft1(local_4,(void *)0xa);
-  puVar5 = (undefined4 *)FUN_00401b90(this_00,puVar8,piVar4);
+  Decoder_ShiftLeft(local_4,(void *)0xa);
+  puVar5 = (undefined4 *)Decoder_ReadInt(this_00,puVar8,piVar4);
   this->field78_0x84 = *puVar5;
   this->field79_0x88 = 0x14;
   this->field81_0x90 = 0x7f;
@@ -195,18 +195,18 @@ void __thiscall S46__S154_FUN_00411d20(AudioManager *this,S46 *param_1)
     piVar4 = (int *)S154_FUN_00411730(this,&param_1);
     this->field31_0x28 = (int *)*piVar4;
     this->field32_0x2c = 0;
-    bitShiftLeft1(&param_1,(void *)0x2);
+    Decoder_ShiftLeft(&param_1,(void *)0x2);
     piVar8 = &local_20;
     piVar14 = piVar4;
-    bitShiftLeft1(&local_24,(void *)0x32);
-    piVar5 = (int *)FUN_00401b90(piVar4,piVar8,piVar14);
+    Decoder_ShiftLeft(&local_24,(void *)0x32);
+    piVar5 = (int *)Decoder_ReadInt(piVar4,piVar8,piVar14);
     piVar8 = &local_2c;
     piVar4 = piVar8;
-    bitShiftLeft1(local_18,(void *)0x2);
+    Decoder_ShiftLeft(local_18,(void *)0x2);
     puVar7 = local_14;
     piVar14 = piVar8;
-    bitShiftLeft1(local_10,(void *)0x32);
-    pvVar2 = FUN_00401b90(piVar8,puVar7,piVar14);
+    Decoder_ShiftLeft(local_10,(void *)0x32);
+    pvVar2 = Decoder_ReadInt(piVar8,puVar7,piVar14);
     puVar6 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar2,piVar4,piVar5);
     bVar1 = S154_FUN_004116b0(this,*puVar6);
     if (bVar1 != 0) {
@@ -226,11 +226,11 @@ void __thiscall S46__S154_FUN_00411d20(AudioManager *this,S46 *param_1)
             cVar11 = '\0';
 LAB_00411edb:
             if (bVar1 < 5) {
-              bitShiftLeft1(local_10,(void *)0x2);
+              Decoder_ShiftLeft(local_10,(void *)0x2);
               puVar7 = local_14;
               puVar15 = puVar7;
-              bitShiftLeft1(local_18,(void *)0x32);
-              piVar8 = (int *)FUN_00401b90(puVar7,puVar15,piVar8);
+              Decoder_ShiftLeft(local_18,(void *)0x32);
+              piVar8 = (int *)Decoder_ReadInt(puVar7,puVar15,piVar8);
               bVar1 = S154_FUN_004116f0(this,local_2c,*piVar8,(char)_local_1c);
               if (bVar1 != 0) {
                 this->SoundCar = iVar13;
@@ -251,11 +251,11 @@ LAB_00411edb:
                                           ((SoundCard *)&gSoundCard,iVar13);
                 this->field62_0x68 = piVar8;
                 this->field49_0x4c = local_24;
-                bitShiftLeft1(local_c,(void *)0x2);
+                Decoder_ShiftLeft(local_c,(void *)0x2);
                 puVar7 = local_8;
                 puVar15 = puVar7;
-                bitShiftLeft1(local_4,(void *)0x32);
-                puVar6 = (undefined4 *)FUN_00401b90(puVar7,puVar15,piVar8);
+                Decoder_ShiftLeft(local_4,(void *)0x32);
+                puVar6 = (undefined4 *)Decoder_ReadInt(puVar7,puVar15,piVar8);
                 this->field78_0x84 = *puVar6;
                 this->field81_0x90 = (undefined1)local_2c;
                 this->field85_0x94 = 0x32;
@@ -356,28 +356,28 @@ void __thiscall S46__S154_FUN_00412010(AudioManager *this,S46 *param_1)
       piVar8 = (int *)*puVar3;
       this->field31_0x28 = piVar8;
       this->field32_0x2c = 0;
-      bitShiftLeft1(local_1c,(void *)0x2);
+      Decoder_ShiftLeft(local_1c,(void *)0x2);
       puVar10 = local_18;
       piVar5 = piVar8;
-      bitShiftLeft1(local_14,(void *)0x16);
-      piVar5 = (int *)FUN_00401b90(piVar8,puVar10,piVar5);
+      Decoder_ShiftLeft(local_14,(void *)0x16);
+      piVar5 = (int *)Decoder_ReadInt(piVar8,puVar10,piVar5);
       puVar10 = local_10;
       piVar8 = piVar5;
-      bitShiftLeft1(local_c,(void *)0x2);
+      Decoder_ShiftLeft(local_c,(void *)0x2);
       puVar6 = local_8;
       puVar11 = puVar6;
-      bitShiftLeft1(local_4,(void *)0x16);
-      pvVar7 = FUN_00401b90(puVar6,puVar11,piVar5);
+      Decoder_ShiftLeft(local_4,(void *)0x16);
+      pvVar7 = Decoder_ReadInt(puVar6,puVar11,piVar5);
       puVar3 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar7,puVar10,piVar8)
       ;
       bVar2 = S154_FUN_004116b0(this,*puVar3);
       piVar8 = (int *)CONCAT31(extraout_var,bVar2);
       if (bVar2 != 0) {
-        bitShiftLeft1(local_4,(void *)0x2);
+        Decoder_ShiftLeft(local_4,(void *)0x2);
         puVar10 = local_8;
         piVar5 = piVar8;
-        bitShiftLeft1(local_c,(void *)0x16);
-        piVar8 = (int *)FUN_00401b90(piVar8,puVar10,piVar5);
+        Decoder_ShiftLeft(local_c,(void *)0x16);
+        piVar8 = (int *)Decoder_ReadInt(piVar8,puVar10,piVar5);
         bVar2 = S154_FUN_004116f0(this,0x6e,*piVar8,(char)param_1);
         if (bVar2 != 0) {
           this->SoundCar = 0x3c;
@@ -393,11 +393,11 @@ void __thiscall S46__S154_FUN_00412010(AudioManager *this,S46 *param_1)
                                     ((SoundCard *)&gSoundCard,0x3c);
           this->field62_0x68 = piVar8;
           this->field49_0x4c = 6;
-          bitShiftLeft1(&param_1,(void *)0x2);
+          Decoder_ShiftLeft(&param_1,(void *)0x2);
           puVar10 = local_4;
           puVar6 = puVar10;
-          bitShiftLeft1(local_8,(void *)0x16);
-          puVar3 = (undefined4 *)FUN_00401b90(puVar10,puVar6,piVar8);
+          Decoder_ShiftLeft(local_8,(void *)0x16);
+          puVar3 = (undefined4 *)Decoder_ReadInt(puVar10,puVar6,piVar8);
           uVar9 = *puVar3;
           this->field81_0x90 = 0x6e;
           this->field78_0x84 = uVar9;
@@ -452,7 +452,7 @@ void __thiscall S46__S154_FUN_00414e50(AudioManager *this,S46 *param_1)
       this->field81_0x90 = (byte)puVar3;
       this->field85_0x94 = 100;
       this->field79_0x88 = 0x14;
-      bitShiftLeft1(&param_1,(void *)0x64);
+      Decoder_ShiftLeft(&param_1,(void *)0x64);
       this->field78_0x84 = *puVar3;
       this->field37_0x34 = 0;
       this->field65_0x71 = 0;
@@ -536,39 +536,39 @@ void __thiscall S46__FUN_00415880(void *this,S46 *param_1,S46 *param_2)
       return;
     }
   }
-  bitShiftLeft1(&param_1,(void *)0x2);
+  Decoder_ShiftLeft(&param_1,(void *)0x2);
   ppSVar7 = &param_2;
   ppSVar12 = ppSVar7;
-  bitShiftLeft1(local_14,(void *)0xf);
-  this_00 = (int *)FUN_00401b90(ppSVar7,ppSVar12,piVar6);
+  Decoder_ShiftLeft(local_14,(void *)0xf);
+  this_00 = (int *)Decoder_ReadInt(ppSVar7,ppSVar12,piVar6);
   puVar11 = local_10;
   piVar9 = this_00;
-  bitShiftLeft1(local_c,(void *)0x2);
+  Decoder_ShiftLeft(local_c,(void *)0x2);
   puVar10 = local_8;
   piVar6 = this_00;
-  bitShiftLeft1(local_4,(void *)0xf);
-  this_01 = FUN_00401b90(this_00,puVar10,piVar6);
+  Decoder_ShiftLeft(local_4,(void *)0xf);
+  this_01 = Decoder_ReadInt(this_00,puVar10,piVar6);
   puVar8 = (undefined4 *)WorldCoordinateToScreenCoord(this_01,puVar11,piVar9);
   bVar5 = AudioManager::S154_FUN_004116b0((AudioManager *)this,*puVar8);
   if (bVar5 != 0) {
     piVar9 = (int *)Car::GetModelCar(pCar);
     cVar4 = (-(piVar9 != (int *)0x3c) & 0x95U) + 0x7f;
     param_1 = (S46 *)CONCAT31(param_1._1_3_,cVar4);
-    bitShiftLeft1(&param_2,(void *)0x2);
+    Decoder_ShiftLeft(&param_2,(void *)0x2);
     puVar11 = local_4;
     piVar6 = piVar9;
-    bitShiftLeft1(local_8,(void *)0xf);
-    piVar6 = (int *)FUN_00401b90(piVar9,puVar11,piVar6);
+    Decoder_ShiftLeft(local_8,(void *)0xf);
+    piVar6 = (int *)Decoder_ReadInt(piVar9,puVar11,piVar6);
     bVar5 = AudioManager::S154_FUN_004116f0
                       ((AudioManager *)this,param_1,*piVar6,
                        *(char *)((int)&pSVar2->NextElement + 1));
     piVar6 = (int *)CONCAT31(extraout_var_01,bVar5);
     if (bVar5 != 0) {
-      bitShiftLeft1(&param_1,(void *)0x2);
+      Decoder_ShiftLeft(&param_1,(void *)0x2);
       ppSVar7 = &param_2;
       piVar9 = piVar6;
-      bitShiftLeft1(local_4,(void *)0xf);
-      puVar8 = (undefined4 *)FUN_00401b90(piVar6,ppSVar7,piVar9);
+      Decoder_ShiftLeft(local_4,(void *)0xf);
+      puVar8 = (undefined4 *)Decoder_ReadInt(piVar6,ppSVar7,piVar9);
       uVar1 = *puVar8;
       *(char *)((int)this + 0x90) = cVar4;
       *(undefined4 *)((int)this + 0x84) = uVar1;
@@ -651,39 +651,39 @@ void __thiscall S46__FUN_00415880(void *this,S46 *param_1,S46 *param_2)
       return;
     }
   }
-  bitShiftLeft1(&param_1,(void *)0x2);
+  Decoder_ShiftLeft(&param_1,(void *)0x2);
   ppSVar7 = &param_2;
   ppSVar12 = ppSVar7;
-  bitShiftLeft1(local_14,(void *)0xf);
-  this_00 = (int *)FUN_00401b90(ppSVar7,ppSVar12,piVar6);
+  Decoder_ShiftLeft(local_14,(void *)0xf);
+  this_00 = (int *)Decoder_ReadInt(ppSVar7,ppSVar12,piVar6);
   puVar11 = local_10;
   piVar9 = this_00;
-  bitShiftLeft1(local_c,(void *)0x2);
+  Decoder_ShiftLeft(local_c,(void *)0x2);
   puVar10 = local_8;
   piVar6 = this_00;
-  bitShiftLeft1(local_4,(void *)0xf);
-  this_01 = FUN_00401b90(this_00,puVar10,piVar6);
+  Decoder_ShiftLeft(local_4,(void *)0xf);
+  this_01 = Decoder_ReadInt(this_00,puVar10,piVar6);
   puVar8 = (undefined4 *)WorldCoordinateToScreenCoord(this_01,puVar11,piVar9);
   bVar5 = AudioManager::S154_FUN_004116b0((AudioManager *)this,*puVar8);
   if (bVar5 != 0) {
     piVar9 = (int *)Car::GetModelCar(pCar);
     cVar4 = (-(piVar9 != (int *)0x3c) & 0x95U) + 0x7f;
     param_1 = (S46 *)CONCAT31(param_1._1_3_,cVar4);
-    bitShiftLeft1(&param_2,(void *)0x2);
+    Decoder_ShiftLeft(&param_2,(void *)0x2);
     puVar11 = local_4;
     piVar6 = piVar9;
-    bitShiftLeft1(local_8,(void *)0xf);
-    piVar6 = (int *)FUN_00401b90(piVar9,puVar11,piVar6);
+    Decoder_ShiftLeft(local_8,(void *)0xf);
+    piVar6 = (int *)Decoder_ReadInt(piVar9,puVar11,piVar6);
     bVar5 = AudioManager::S154_FUN_004116f0
                       ((AudioManager *)this,param_1,*piVar6,
                        *(char *)((int)&pSVar2->NextElement + 1));
     piVar6 = (int *)CONCAT31(extraout_var_01,bVar5);
     if (bVar5 != 0) {
-      bitShiftLeft1(&param_1,(void *)0x2);
+      Decoder_ShiftLeft(&param_1,(void *)0x2);
       ppSVar7 = &param_2;
       piVar9 = piVar6;
-      bitShiftLeft1(local_4,(void *)0xf);
-      puVar8 = (undefined4 *)FUN_00401b90(piVar6,ppSVar7,piVar9);
+      Decoder_ShiftLeft(local_4,(void *)0xf);
+      puVar8 = (undefined4 *)Decoder_ReadInt(piVar6,ppSVar7,piVar9);
       uVar1 = *puVar8;
       *(char *)((int)this + 0x90) = cVar4;
       *(undefined4 *)((int)this + 0x84) = uVar1;
@@ -918,7 +918,7 @@ void __thiscall S46__S154_FUN_00415f90(AudioManager *this,S46 *param_1)
   undefined1 local_4 [4];
   
   local_36 = 0;
-  bitShiftLeft1(&local_30,(void *)0x0);
+  Decoder_ShiftLeft(&local_30,(void *)0x0);
   local_37 = 0xff;
   local_35 = 0;
   iVar2 = *(int *)(*(int *)&this->Elements[(int)((int)&param_1[-1].DATA1 + 3)].
@@ -952,11 +952,11 @@ void __thiscall S46__S154_FUN_00415f90(AudioManager *this,S46 *param_1)
             this->field62_0x68 = (int *)0xffffffff;
             this->field63_0x6c = 0;
             this->field_0x70 = 0x3f;
-            bitShiftLeft1(&param_1,(void *)0x2);
+            Decoder_ShiftLeft(&param_1,(void *)0x2);
             puVar13 = local_4;
             piVar12 = piVar10;
-            bitShiftLeft1(local_8,(void *)0xa);
-            puVar9 = (undefined4 *)FUN_00401b90(piVar10,puVar13,piVar12);
+            Decoder_ShiftLeft(local_8,(void *)0xa);
+            puVar9 = (undefined4 *)Decoder_ReadInt(piVar10,puVar13,piVar12);
             uVar3 = *puVar9;
             this->field81_0x90 = 0x2d;
             this->field78_0x84 = uVar3;
@@ -971,28 +971,28 @@ void __thiscall S46__S154_FUN_00415f90(AudioManager *this,S46 *param_1)
             piVar12 = (int *)*puVar9;
             this->field31_0x28 = piVar12;
             this->field32_0x2c = 0;
-            bitShiftLeft1(local_28,(void *)0x2);
+            Decoder_ShiftLeft(local_28,(void *)0x2);
             puVar13 = local_24;
             piVar10 = piVar12;
-            bitShiftLeft1(local_20,(void *)0xa);
-            piVar10 = (int *)FUN_00401b90(piVar12,puVar13,piVar10);
+            Decoder_ShiftLeft(local_20,(void *)0xa);
+            piVar10 = (int *)Decoder_ReadInt(piVar12,puVar13,piVar10);
             puVar13 = local_1c;
             piVar12 = piVar10;
-            bitShiftLeft1(local_18,(void *)0x2);
+            Decoder_ShiftLeft(local_18,(void *)0x2);
             puVar11 = local_14;
             puVar14 = puVar11;
-            bitShiftLeft1(local_10,(void *)0xa);
-            this_00 = FUN_00401b90(puVar11,puVar14,piVar10);
+            Decoder_ShiftLeft(local_10,(void *)0xa);
+            this_00 = Decoder_ReadInt(puVar11,puVar14,piVar10);
             puVar9 = (undefined4 *)
                      WorldCoordinateToScreenCoord(this_00,puVar13,piVar12);
             bVar5 = S154_FUN_004116b0(this,*puVar9);
             piVar12 = (int *)CONCAT31(extraout_var,bVar5);
             if (bVar5 != 0) {
-              bitShiftLeft1(local_c,(void *)0x2);
+              Decoder_ShiftLeft(local_c,(void *)0x2);
               puVar13 = local_8;
               piVar10 = piVar12;
-              bitShiftLeft1(local_4,(void *)0xa);
-              piVar12 = (int *)FUN_00401b90(piVar12,puVar13,piVar10);
+              Decoder_ShiftLeft(local_4,(void *)0xa);
+              piVar12 = (int *)Decoder_ReadInt(piVar12,puVar13,piVar10);
               uVar8 = MapRelatedStruct::S16_FUN_00463850
                                 (_gMapRelatedStruct,this->field41_0x38,
                                  this->field42_0x3c,this->field43_0x40);
@@ -1020,11 +1020,11 @@ void __thiscall S46__S154_FUN_00415f90(AudioManager *this,S46 *param_1)
         this->field51_0x54 = local_36;
         this->field81_0x90 = local_35;
         this->field85_0x94 = 10;
-        bitShiftLeft1(&param_1,(void *)0x2);
+        Decoder_ShiftLeft(&param_1,(void *)0x2);
         puVar13 = local_4;
         puVar11 = puVar13;
-        bitShiftLeft1(local_8,(void *)0xa);
-        puVar9 = (undefined4 *)FUN_00401b90(puVar13,puVar11,piVar12);
+        Decoder_ShiftLeft(local_8,(void *)0xa);
+        puVar9 = (undefined4 *)Decoder_ReadInt(puVar13,puVar11,piVar12);
         this->field78_0x84 = *puVar9;
         this->field37_0x34 = DAT_005dc76a._2_1_;
         cVar7 = DAT_005dc76a._2_1_ + '\x01';
@@ -1149,36 +1149,36 @@ void __thiscall S46__S154_FUN_0041cca0(AudioManager *this,S46 *param_1)
     piVar6 = (int *)S154_FUN_00411730(this,&local_1c);
     this->field31_0x28 = (int *)*piVar6;
     this->field32_0x2c = 0;
-    bitShiftLeft1(&local_1c,(void *)0x2);
+    Decoder_ShiftLeft(&local_1c,(void *)0x2);
     puVar7 = local_18;
     puVar10 = puVar7;
-    bitShiftLeft1(local_14,(void *)0x14);
-    this_01 = (int *)FUN_00401b90(puVar7,puVar10,piVar6);
+    Decoder_ShiftLeft(local_14,(void *)0x14);
+    this_01 = (int *)Decoder_ReadInt(puVar7,puVar10,piVar6);
     puVar7 = local_10;
     piVar11 = this_01;
-    bitShiftLeft1(local_c,(void *)0x2);
+    Decoder_ShiftLeft(local_c,(void *)0x2);
     puVar10 = local_8;
     piVar6 = this_01;
-    bitShiftLeft1(local_4,(void *)0x14);
-    this_02 = FUN_00401b90(this_01,puVar10,piVar6);
+    Decoder_ShiftLeft(local_4,(void *)0x14);
+    this_02 = Decoder_ReadInt(this_01,puVar10,piVar6);
     puVar8 = (undefined4 *)WorldCoordinateToScreenCoord(this_02,puVar7,piVar11);
     bVar2 = S154_FUN_004116b0(this,*puVar8);
     piVar6 = (int *)CONCAT31(extraout_var,bVar2);
     if (bVar2 != 0) {
-      bitShiftLeft1(local_4,(void *)0x2);
+      Decoder_ShiftLeft(local_4,(void *)0x2);
       puVar7 = local_8;
       piVar11 = piVar6;
-      bitShiftLeft1(local_c,(void *)0x14);
-      piVar6 = (int *)FUN_00401b90(piVar6,puVar7,piVar11);
+      Decoder_ShiftLeft(local_c,(void *)0x14);
+      piVar6 = (int *)Decoder_ReadInt(piVar6,puVar7,piVar11);
       bVar2 = S154_FUN_004116f0(this,local_24,*piVar6,(char)param_1);
       piVar6 = (int *)CONCAT31(extraout_var_00,bVar2);
       if (bVar2 != 0) {
         this->SoundCar = local_28;
-        bitShiftLeft1(&param_1,(void *)0x2);
+        Decoder_ShiftLeft(&param_1,(void *)0x2);
         puVar7 = local_4;
         piVar11 = piVar6;
-        bitShiftLeft1(local_8,(void *)0x14);
-        puVar8 = (undefined4 *)FUN_00401b90(piVar6,puVar7,piVar11);
+        Decoder_ShiftLeft(local_8,(void *)0x14);
+        puVar8 = (undefined4 *)Decoder_ReadInt(piVar6,puVar7,piVar11);
         uVar4 = *puVar8;
         this->field81_0x90 = (undefined1)local_24;
         this->field78_0x84 = uVar4;
@@ -1437,7 +1437,7 @@ void __thiscall S46__FUN_004ba070(void *this,S46 *param_1,undefined4 param_2)
 {
   *(undefined4 *)((int)this + 4) = param_2;
   *(S46 **)this = param_1;
-  bitShiftLeft1(&param_1,(void *)0x0);
+  Decoder_ShiftLeft(&param_1,(void *)0x0);
   *(S46 **)((int)this + 8) = param_1;
   return;
 }
@@ -1692,7 +1692,7 @@ void __thiscall S46__S25_FUN_004c4fe0(S25 *this,byte param_1,S46 *param_2)
     this_01 = (GameObject *)param_2;
     if (iVar3 == 2) {
       this_01 = SpriteS1::GetObject((SpriteS1 *)this_00);
-      pvVar5 = MissionManager::MissionManager_FUN_00476200
+      pvVar5 = MissionManager__StartMission
                          (_gMissionManager,*(ushort *)(*piVar1 + 8));
       if (this_01->field63_0x6c == *(int *)(*(int *)((int)pvVar5 + 8) + 0x6c)) {
         piVar1[5] = 0;
@@ -1710,7 +1710,7 @@ void __thiscall S46__S25_FUN_004c4fe0(S25 *this,byte param_1,S46 *param_2)
       if (pPVar4 == (Ped *)0x0) break;
       iVar3 = *piVar1;
       if (*(short *)(iVar3 + 2) != 0x1b2) goto LAB_004c51b2;
-      pvVar5 = MissionManager::MissionManager_FUN_00476200
+      pvVar5 = MissionManager__StartMission
                          (_gMissionManager,*(ushort *)(iVar3 + 0x24));
       goto LAB_004c53bd;
     }
@@ -1742,7 +1742,7 @@ LAB_004c50d9:
       uVar8 = *(ushort *)(iVar3 + 0x24);
     }
 LAB_004c50de:
-    pvVar5 = MissionManager::MissionManager_FUN_00476200(_gMissionManager,uVar8)
+    pvVar5 = MissionManager__StartMission(_gMissionManager,uVar8)
     ;
     iVar3 = FUN_004c4f20();
     bVar2 = iVar3 == *(int *)(*(int *)((int)pvVar5 + 8) + 0x200);
@@ -1761,7 +1761,7 @@ LAB_004c522d:
     if (pPVar4 == (Ped *)0x0) break;
     iVar3 = *piVar1;
 LAB_004c51b2:
-    pvVar5 = MissionManager::MissionManager_FUN_00476200
+    pvVar5 = MissionManager__StartMission
                        (_gMissionManager,*(ushort *)(iVar3 + 8));
     goto LAB_004c53bd;
   case 6:
@@ -1771,7 +1771,7 @@ LAB_004c51b2:
       pPVar4 = FUN_00433a20(pvVar5);
       this_01 = (GameObject *)param_2;
       if (pPVar4 == (Ped *)0x0) break;
-      pvVar5 = MissionManager::MissionManager_FUN_00476200
+      pvVar5 = MissionManager__StartMission
                          (_gMissionManager,*(ushort *)(*piVar1 + 8));
       pPVar9 = (Player *)&DAT_00672900;
       pPVar6 = (Player *)FUN_00433c20(pPVar4,&param_1);
@@ -1788,7 +1788,7 @@ LAB_004c51b2:
     this_01 = SpriteS1::GetObject((SpriteS1 *)this_00);
     pPVar4 = Get_FUN_004118b0(this_01);
     if (pPVar4 == (Ped *)0x0) break;
-    pvVar5 = MissionManager::MissionManager_FUN_00476200
+    pvVar5 = MissionManager__StartMission
                        (_gMissionManager,*(ushort *)(*piVar1 + 8));
     pPVar9 = (Player *)&DAT_00672900;
     pPVar6 = (Player *)Ped::FUN_00436160(pPVar4,local_8);
@@ -1805,7 +1805,7 @@ LAB_004c51b2:
     pPVar4 = FUN_00433a20(pvVar5);
     this_01 = (GameObject *)param_2;
     if (pPVar4 == (Ped *)0x0) break;
-    pvVar5 = MissionManager::MissionManager_FUN_00476200
+    pvVar5 = MissionManager__StartMission
                        (_gMissionManager,*(ushort *)(*piVar1 + 8));
     pPVar9 = (Player *)&DAT_00672900;
     pPVar6 = (Player *)FUN_00433c20(pPVar4,&param_2);
@@ -1822,7 +1822,7 @@ LAB_004c51b2:
     this_01 = SpriteS1::GetObject((SpriteS1 *)this_00);
     pPVar4 = Get_FUN_004118b0(this_01);
     if (pPVar4 == (Ped *)0x0) break;
-    pvVar5 = MissionManager::MissionManager_FUN_00476200
+    pvVar5 = MissionManager__StartMission
                        (_gMissionManager,*(ushort *)(*piVar1 + 8));
     pPVar9 = (Player *)&DAT_00672900;
     pPVar6 = (Player *)Ped::FUN_00436160(pPVar4,local_4);

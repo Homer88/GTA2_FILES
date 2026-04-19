@@ -122,19 +122,19 @@ byte __thiscall S119__S199_FUN_00489680(S119 *this)
               pPVar6 = (Ped *)this->field5_0x14;
               if (pPVar6 != (Ped *)0x0) {
                 ppSVar16 = &this->S1_1;
-                pPVar5 = (Player *)Ped::GetPositionX(pPVar6,(int)local_4c);
+                pPVar5 = (Player *)Ped__GetXCoordinate(pPVar6,(int)local_4c);
                 bVar2 = Player::FUN_0040ce70(pPVar5,(int *)ppSVar16);
                 if (CONCAT31(extraout_var,bVar2) != 0) {
                   ppSVar16 = &this->S1_2;
-                  pPVar5 = (Player *)Ped::GetPositionX(pPVar6,(int)local_48);
+                  pPVar5 = (Player *)Ped__GetXCoordinate(pPVar6,(int)local_48);
                   bVar2 = Player::CheckCondition(pPVar5,(int *)ppSVar16);
                   if (CONCAT31(extraout_var_00,bVar2) != 0) {
                     piVar11 = (int *)&this->field_0x1c;
-                    pPVar5 = (Player *)Ped::GetPositionY(pPVar6,(int)local_44);
+                    pPVar5 = (Player *)Ped__GetYCoordinate(pPVar6,(int)local_44);
                     bVar2 = Player::FUN_0040ce70(pPVar5,piVar11);
                     if (CONCAT31(extraout_var_01,bVar2) != 0) {
                       piVar11 = (int *)&this->field_0x24;
-                      pPVar5 = (Player *)Ped::GetPositionY(pPVar6,(int)local_40)
+                      pPVar5 = (Player *)Ped__GetYCoordinate(pPVar6,(int)local_40)
                       ;
                       bVar2 = Player::CheckCondition(pPVar5,piVar11);
                       puVar4 = (undefined4 *)CONCAT31(extraout_var_02,bVar2);

@@ -11,10 +11,10 @@ void * __thiscall S1__S1_FUN_0041e1e0(S1 *this)
   S1 *local_4;
   
   local_4 = this;
-  bitShiftLeft1(&local_4,(void *)0x0);
+  Decoder_ShiftLeft(&local_4,(void *)0x0);
   this->CurrentElement = local_4;
   pSVar1 = local_4;
-  bitShiftLeft1(&local_4,(void *)0x0);
+  Decoder_ShiftLeft(&local_4,(void *)0x0);
   this->S1_ = local_4;
   return pSVar1;
 }
@@ -114,20 +114,20 @@ void __thiscall S1__S1_FUN_0049f350(S1 *this)
   Car *pCar;
   
   local_4 = (Car *)this->field22_0x6c;
-  iVar5 = DecoderFloat(&local_4);
-  iVar6 = DecoderFloat(&this->field8_0x3c);
-  iVar7 = DecoderFloat(&this->S103_1);
+  iVar5 = Decoder_DecodeFloat(&local_4);
+  iVar6 = Decoder_DecodeFloat(&this->field8_0x3c);
+  iVar7 = Decoder_DecodeFloat(&this->S103_1);
   bVar2 = MapRelatedStruct::S16_FUN_00466cf0
                     (_gMapRelatedStruct,iVar7,iVar6,iVar5);
   if (bVar2 == 0) {
     puVar8 = (undefined4 *)
-             S110_FUN_00401b40(&this->field22_0x6c,(S110 *)&local_4,
+             Decoder_ProcessData(&this->field22_0x6c,(S110 *)&local_4,
                                &DAT_0066ac4c);
     local_4 = (Car *)*puVar8;
   }
-  iVar5 = DecoderFloat(&local_4);
-  iVar6 = DecoderFloat(&this->field8_0x3c);
-  iVar7 = DecoderFloat(&this->S103_1);
+  iVar5 = Decoder_DecodeFloat(&local_4);
+  iVar6 = Decoder_DecodeFloat(&this->field8_0x3c);
+  iVar7 = Decoder_DecodeFloat(&this->S103_1);
   iVar5 = MapRelatedStruct::S16_FUN_004653c0
                     (_gMapRelatedStruct,iVar7,iVar6,iVar5);
   if ((iVar5 != 0) &&
@@ -210,11 +210,11 @@ void __thiscall S1__S1_FUN_004a0290(S1 *this)
     local_10 = *puVar4;
     if (((iVar8 == 7) || (iVar8 == 8)) || (iVar8 == 9)) {
       puVar4 = &local_14;
-      puVar5 = (undefined4 *)FUN_00403780(&local_18,local_c);
-      FUN_00401d20(local_8,puVar5,puVar4);
+      puVar5 = (undefined4 *)Texture_Find(&local_18,local_c);
+      String_ParseLine(local_8,puVar5,puVar4);
       FUN_004a0120(this,0,(S110 *)*puVar5,(Ped *)puVar5[1],3);
       puVar4 = &local_14;
-      FUN_00401d20(local_8,&local_18,puVar4);
+      String_ParseLine(local_8,&local_18,puVar4);
       iVar8 = 3;
 LAB_004a0408:
       FUN_004a0120(this,1,(S110 *)*puVar4,(Ped *)puVar4[1],iVar8);
@@ -233,11 +233,11 @@ LAB_004a0408:
 LAB_004a0369:
         if (iVar8 != 6) {
           puVar4 = &local_14;
-          puVar5 = (undefined4 *)FUN_00403780(&local_18,local_c);
-          FUN_00401d20(local_8,puVar5,puVar4);
+          puVar5 = (undefined4 *)Texture_Find(&local_18,local_c);
+          String_ParseLine(local_8,puVar5,puVar4);
           FUN_004a0120(this,0,(S110 *)*puVar5,(Ped *)puVar5[1],iVar6);
           puVar4 = &local_14;
-          FUN_00401d20(local_8,&local_18,puVar4);
+          String_ParseLine(local_8,&local_18,puVar4);
           iVar8 = iVar6;
           goto LAB_004a0408;
         }
@@ -248,11 +248,11 @@ LAB_004a0369:
     iVar8 = this->field39_0x98;
     if (((iVar8 == 7) || (iVar8 == 8)) || (iVar8 == 9)) {
       puVar4 = &local_10;
-      puVar5 = (undefined4 *)FUN_00403780(&local_18,local_c);
-      FUN_00401d20(local_8,puVar5,puVar4);
+      puVar5 = (undefined4 *)Texture_Find(&local_18,local_c);
+      String_ParseLine(local_8,puVar5,puVar4);
       FUN_004a0120(this,3,(S110 *)*puVar5,(Ped *)puVar5[1],3);
       puVar4 = &local_10;
-      FUN_00401d20(local_8,&local_18,puVar4);
+      String_ParseLine(local_8,&local_18,puVar4);
       iVar6 = 3;
 LAB_004a04bb:
       FUN_004a0120(this,2,(S110 *)*puVar4,(Ped *)puVar4[1],iVar6);
@@ -272,11 +272,11 @@ LAB_004a04bb:
 LAB_004a0474:
       if (iVar8 != 6) {
         puVar4 = &local_10;
-        puVar5 = (undefined4 *)FUN_00403780(&local_18,local_c);
-        FUN_00401d20(local_8,puVar5,puVar4);
+        puVar5 = (undefined4 *)Texture_Find(&local_18,local_c);
+        String_ParseLine(local_8,puVar5,puVar4);
         FUN_004a0120(this,3,(S110 *)*puVar5,(Ped *)puVar5[1],iVar6);
         puVar4 = &local_10;
-        FUN_00401d20(local_8,&local_18,puVar4);
+        String_ParseLine(local_8,&local_18,puVar4);
         goto LAB_004a04bb;
       }
     }
@@ -352,7 +352,7 @@ void __thiscall S1__S1_FUN_004a1be0(S1 *this)
   
   local_4 = this;
   S1_FUN_0041e1e0((S1 *)&this->S1_5);
-  bitShiftLeft1(&local_4,(void *)0x0);
+  Decoder_ShiftLeft(&local_4,(void *)0x0);
   this->field24_0x74 = local_4;
   this->field23_0x70 = _DAT_0066acdc;
   Player::cPlayer_FUN_0049fac0((Player *)this);
@@ -454,7 +454,7 @@ void __fastcall S1__FUN_004a20e0(S1 *param_1)
       local_8 = _DAT_0066acdc;
       piVar2 = (int *)FUN_004634e0(local_28,1);
       puVar5 = local_24;
-      pvVar3 = FUN_00403780(&DAT_0066b044,local_20);
+      pvVar3 = Texture_Find(&DAT_0066b044,local_20);
       puVar4 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar3,puVar5,piVar2);
       local_4 = *puVar4;
       break;
@@ -469,7 +469,7 @@ void __fastcall S1__FUN_004a20e0(S1 *param_1)
     case 4:
       piVar2 = (int *)FUN_004634e0(local_14,1);
       puVar5 = local_10;
-      pvVar3 = FUN_00403780(&DAT_0066b044,local_c);
+      pvVar3 = Texture_Find(&DAT_0066b044,local_c);
       puVar4 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar3,puVar5,piVar2);
       local_8 = *puVar4;
       local_4 = _DAT_0066acdc;
@@ -555,7 +555,7 @@ void __fastcall S1__FUN_004a2a30(S1 *param_1)
       if (CONCAT31(extraout_var_03,bVar1) == 0) goto LAB_004a2b02;
     }
     else {
-      puVar3 = (undefined4 *)FUN_00403780(&DAT_0066ae3c,local_10);
+      puVar3 = (undefined4 *)Texture_Find(&DAT_0066ae3c,local_10);
       uVar4 = *puVar3;
     }
   }
@@ -567,7 +567,7 @@ void __fastcall S1__FUN_004a2a30(S1 *param_1)
       bVar1 = CarSystemManager::greater_than
                         ((CarSystemManager *)local_10,(short *)&DAT_0066ae50);
       if (CONCAT31(extraout_var_01,bVar1) == 0) goto LAB_004a2b02;
-      puVar3 = (undefined4 *)FUN_00403780(&DAT_0066ae3c,local_10);
+      puVar3 = (undefined4 *)Texture_Find(&DAT_0066ae3c,local_10);
       uVar4 = *puVar3;
     }
   }
@@ -621,7 +621,7 @@ void __fastcall S1__FUN_004a2b40(S1 *param_1)
       bVar1 = CarSystemManager::greater_than
                         ((CarSystemManager *)local_10,(short *)&DAT_0066ad38);
       if (CONCAT31(extraout_var_05,bVar1) == 0) goto LAB_004a2c31;
-      puVar3 = (undefined4 *)FUN_00403780(&DAT_0066ae3c,local_10);
+      puVar3 = (undefined4 *)Texture_Find(&DAT_0066ae3c,local_10);
       uVar4 = *puVar3;
     }
   }
@@ -639,7 +639,7 @@ void __fastcall S1__FUN_004a2b40(S1 *param_1)
       goto LAB_004a2c31;
     }
     else {
-      puVar3 = (undefined4 *)FUN_00403780(&DAT_0066ae3c,local_10);
+      puVar3 = (undefined4 *)Texture_Find(&DAT_0066ae3c,local_10);
       uVar4 = *puVar3;
     }
   }
@@ -693,11 +693,11 @@ void __fastcall S1__FUN_004a2c70(S1 *param_1)
            FUN_0040f600(&param_1->S103_1,local_1c,(S110 *)&DAT_0066ad08);
   local_8 = *puVar4;
   local_4 = puVar4[1];
-  pSVar5 = (S110 *)FUN_00401c80(&param_1->special_buffer,local_1c);
+  pSVar5 = (S110 *)PedPool_Get(&param_1->special_buffer,local_1c);
   FUN_0040f6b0(&local_8,pSVar5);
   bVar2 = FUN_004037e0(&local_8,(SpriteS1 *)&DAT_0066acdc);
   if (CONCAT31(extraout_var,bVar2) == 0) {
-    puVar4 = (undefined4 *)FUN_00403780(local_14,local_1c);
+    puVar4 = (undefined4 *)Texture_Find(local_14,local_1c);
     uVar6 = *puVar4;
   }
   FUN_0049e330(uVar6);

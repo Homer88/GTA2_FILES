@@ -11,11 +11,11 @@ S116 * __thiscall S116__S166(S116 *this)
   
   this->field0_0x0 = 0x2a2a2a2a;
   local_4 = this;
-  bitShiftLeft1(&local_4,(void *)0x0);
+  Decoder_ShiftLeft(&local_4,(void *)0x0);
   this->S116 = local_4;
-  bitShiftLeft1(&local_4,(void *)0x0);
+  Decoder_ShiftLeft(&local_4,(void *)0x0);
   *(S116 **)&this->field_0x8 = local_4;
-  bitShiftLeft1(&local_4,(void *)0x0);
+  Decoder_ShiftLeft(&local_4,(void *)0x0);
   this->field10_0x10 = 0xffffff;
   *(S116 **)&this->field_0xc = local_4;
   this->S116_1 = (S116 *)0x0;
@@ -37,8 +37,8 @@ void __thiscall S116__S116_FUN_004613b0(S116 *this)
   int iVar2;
   
   if (this->field20_0x24 == 0) {
-    iVar1 = DecoderFloat(&this->field_0x8);
-    iVar2 = DecoderFloat(&this->S116);
+    iVar1 = Decoder_DecodeFloat(&this->field_0x8);
+    iVar2 = Decoder_DecodeFloat(&this->S116);
     *(undefined4 *)(_Buffer_0x4000 + ((iVar1 >> 2) * 0x40 + (iVar2 >> 2)) * 4) =
          this->field19_0x20;
   }
@@ -182,39 +182,39 @@ LAB_004912b3:
   case 0x45:
   case 0x4f:
   case 0x59:
-    bitShiftLeft1(local_c,(void *)0x91);
+    Decoder_ShiftLeft(local_c,(void *)0x91);
     puVar7 = puVar3;
-    bitShiftLeft1(local_8,(void *)0x71);
+    Decoder_ShiftLeft(local_8,(void *)0x71);
     pvVar8 = (void *)CONCAT22(extraout_var_01,_DAT_00669ee0);
     iVar12 = 5;
     pvVar4 = pvVar8;
-    bitShiftLeft1(&stack0xffffffd4,(void *)0x2);
+    Decoder_ShiftLeft(&stack0xffffffd4,(void *)0x2);
     pvVar4 = Object::S60_FUN_00485540
                        (_gObject,*puVar7,*puVar3,pvVar8,pvVar4,iVar12);
     if (pvVar4 != (void *)0x0) {
-      FUN_00403780(&DAT_00669fcc,local_4);
+      Texture_Find(&DAT_00669fcc,local_4);
       iVar12 = *(int *)(*(int *)&this->field_0x14 + 4);
       iVar12 = FUN_004854c0(0x7f,*(undefined4 *)(iVar12 + 0x14),
                             *(undefined4 *)(iVar12 + 0x18));
       uVar9 = CONCAT22(extraout_var_02,_DAT_00669ee0);
       uVar13 = uVar9;
-      bitShiftLeft1(&stack0xffffffdc,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffdc,(void *)0x0);
       sVar15 = (short)uVar13;
       pSVar10 = extraout_ECX;
-      bitShiftLeft1(&stack0xffffffd8,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffd8,(void *)0x0);
       SpriteS1::FUN_004b9d50
                 (*(SpriteS1 **)(iVar12 + 4),*(int *)((int)pvVar4 + 4),pSVar10,
                  uVar9,sVar15);
-      bitShiftLeft1(&stack0xffffffdc,(void *)0x3);
-      bitShiftLeft1(&stack0xffffffd4,(void *)0x2);
-      bitShiftLeft1(&stack0xffffffd0,(void *)0x8a);
-      bitShiftLeft1(&stack0xffffffcc,(void *)0x5e);
+      Decoder_ShiftLeft(&stack0xffffffdc,(void *)0x3);
+      Decoder_ShiftLeft(&stack0xffffffd4,(void *)0x2);
+      Decoder_ShiftLeft(&stack0xffffffd0,(void *)0x8a);
+      Decoder_ShiftLeft(&stack0xffffffcc,(void *)0x5e);
       iVar5 = FUN_00485370();
       uVar13 = extraout_ECX_00;
       sVar15 = _DAT_00669ee0;
-      bitShiftLeft1(&stack0xffffffdc,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffdc,(void *)0x0);
       pSVar10 = extraout_ECX_01;
-      bitShiftLeft1(&stack0xffffffd8,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffd8,(void *)0x0);
       SpriteS1::FUN_004b9d50
                 (*(SpriteS1 **)(iVar12 + 4),*(int *)(iVar5 + 4),pSVar10,uVar13,
                  sVar15);
@@ -227,7 +227,7 @@ switchD_004912d4_caseD_3c:
     if (CONCAT31(extraout_var_00,bVar2) != 0) {
       *puVar3 = _DAT_0066a17c;
     }
-    piVar6 = (int *)FUN_00401b90(&DAT_00669fcc,local_4,(int *)&DAT_00669ff0);
+    piVar6 = (int *)Decoder_ReadInt(&DAT_00669fcc,local_4,(int *)&DAT_00669ff0);
     FUN_0040e550(puVar3,piVar6);
   }
   else {
@@ -240,7 +240,7 @@ switchD_004912d4_caseD_3c:
                          (&DAT_0066a17c,local_4,(int *)&DAT_00669ff0);
       *puVar3 = *puVar7;
     }
-    piVar6 = (int *)FUN_00401b90(&DAT_00669fcc,local_4,(int *)&DAT_00669ff0);
+    piVar6 = (int *)Decoder_ReadInt(&DAT_00669fcc,local_4,(int *)&DAT_00669ff0);
     FUN_0040e530(puVar3,piVar6);
   }
   if (0x32 < (ushort)this->field17_0x1a) {
@@ -251,7 +251,7 @@ switchD_004912d4_caseD_3c:
     pPVar11 = *(Player **)(iVar12 + 0x18);
     pPVar14 = *(Player **)(iVar12 + 0x14);
     pPVar16 = pPVar11;
-    bitShiftLeft1(&stack0xffffffd8,(void *)0x8);
+    Decoder_ShiftLeft(&stack0xffffffd8,(void *)0x8);
     Game::Game_FUN_0045bb00(gGame,pPVar11,pPVar14,pPVar16);
   }
   if (this->field17_0x1a != 9999) {
@@ -327,7 +327,7 @@ void __thiscall S116__S116_FUN_00491550(S116 *this,undefined1 param_1)
   undefined1 local_c [12];
   
   iVar12 = *(int *)&this->field_0x14;
-  bitShiftLeft1(&local_54,(void *)0xfe);
+  Decoder_ShiftLeft(&local_54,(void *)0xfe);
   bVar4 = Player::FUN_0040ce70((Player *)(*(int *)(iVar12 + 4) + 0x14),in_EAX);
   if (CONCAT31(extraout_var,bVar4) == 0) {
     iVar12 = *(int *)(iVar12 + 4);
@@ -335,7 +335,7 @@ void __thiscall S116__S116_FUN_00491550(S116 *this,undefined1 param_1)
                       ((Player *)(iVar12 + 0x14),(int *)&DAT_00669f14);
     piVar15 = (int *)CONCAT31(extraout_var_00,bVar4);
     if (piVar15 == (int *)0x0) {
-      bitShiftLeft1(&local_54,(void *)0xfe);
+      Decoder_ShiftLeft(&local_54,(void *)0xfe);
       bVar4 = Player::FUN_0040ce70((Player *)(iVar12 + 0x18),piVar15);
       if ((CONCAT31(extraout_var_01,bVar4) == 0) &&
          (local_7d = Player::CheckCondition
@@ -354,7 +354,7 @@ void __thiscall S116__S116_FUN_00491550(S116 *this,undefined1 param_1)
               local_64 = 0x2d;
               bVar5 = Random(&gRandom,(int)&local_64);
               piVar15 = (int *)CONCAT31(extraout_var_03,bVar5);
-              FUN_00401ae0(local_50,(short)piVar15);
+              Decoder_SetValue(local_50,(short)piVar15);
               pvVar7 = WorldCoordinateToScreenCoord
                                  (&DAT_0066a17c,local_4c,piVar15);
               psVar8 = (short *)FUN_0040f540(local_7c,(int)pvVar7);
@@ -379,7 +379,7 @@ void __thiscall S116__S116_FUN_00491550(S116 *this,undefined1 param_1)
               local_60 = 0x5a;
               bVar5 = Random(&gRandom,(int)&local_60);
               piVar15 = (int *)CONCAT31(extraout_var_04,bVar5);
-              FUN_00401ae0(local_40,(short)piVar15);
+              Decoder_SetValue(local_40,(short)piVar15);
               pvVar7 = WorldCoordinateToScreenCoord
                                  (&DAT_0066a17c,local_3c,piVar15);
               psVar8 = (short *)FUN_0040f540(local_76,(int)pvVar7);
@@ -404,7 +404,7 @@ void __thiscall S116__S116_FUN_00491550(S116 *this,undefined1 param_1)
               local_5c = 0x5a;
               bVar5 = Random(&gRandom,(int)&local_5c);
               piVar15 = (int *)CONCAT31(extraout_var_05,bVar5);
-              FUN_00401ae0(local_30,(short)piVar15);
+              Decoder_SetValue(local_30,(short)piVar15);
               pvVar7 = WorldCoordinateToScreenCoord
                                  (&DAT_0066a17c,local_2c,piVar15);
               psVar8 = (short *)FUN_0040f540(local_70,(int)pvVar7);
@@ -429,7 +429,7 @@ void __thiscall S116__S116_FUN_00491550(S116 *this,undefined1 param_1)
               local_58 = 0x5a;
               bVar5 = Random(&gRandom,(int)&local_58);
               piVar15 = (int *)CONCAT31(extraout_var_06,bVar5);
-              FUN_00401ae0(local_20,(short)piVar15);
+              Decoder_SetValue(local_20,(short)piVar15);
               pvVar7 = WorldCoordinateToScreenCoord
                                  (&DAT_0066a17c,local_1c,piVar15);
               psVar8 = (short *)FUN_0040f540(local_6a,(int)pvVar7);
@@ -471,7 +471,7 @@ switchD_00491614_caseD_4:
             }
             bVar5 = Random(&gRandom,(int)&local_54);
             piVar15 = (int *)CONCAT31(extraout_var_07,bVar5);
-            FUN_00401ae0(local_10,(short)piVar15);
+            Decoder_SetValue(local_10,(short)piVar15);
             puVar11 = (undefined4 *)
                       WorldCoordinateToScreenCoord
                                 (&DAT_0066a1a8,local_c,piVar15);
@@ -508,7 +508,7 @@ switchD_00491614_caseD_4:
           iVar12 = *(int *)&this->field_0x14;
           pPVar16 = *(Player **)(*(int *)(iVar12 + 4) + 0x18);
           pPVar14 = *(Player **)(*(int *)(iVar12 + 4) + 0x14);
-          bitShiftLeft1(&stack0xffffff64,(void *)0x8);
+          Decoder_ShiftLeft(&stack0xffffff64,(void *)0x8);
           Game::Game_FUN_0045bb00(gGame,iVar12,pPVar14,pPVar16);
         }
         if (0x32 < (ushort)this->field17_0x1a) {

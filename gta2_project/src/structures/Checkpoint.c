@@ -73,9 +73,9 @@ void __thiscall S56__S56_FUN_00447390(S56 *this)
   CameraOrPhysics *pCameraOrPhysics;
   
   pCameraOrPhysics = gCameraOrPhysics;
-  pvVar1 = S110_FUN_00401b40(&gCameraOrPhysics->CamPosition,
+  pvVar1 = Decoder_ProcessData(&gCameraOrPhysics->CamPosition,
                              (S110 *)&stack0xfffffffc,&DAT_005e672c);
-  iVar2 = DecoderFloat(pvVar1);
+  iVar2 = Decoder_DecodeFloat(pvVar1);
   if (iVar2 < 0) {
     iVar2 = 0;
   }
@@ -85,16 +85,16 @@ void __thiscall S56__S56_FUN_00447390(S56 *this)
   pSVar3 = S9::S9_FUN_00401b20((S9 *)&pCameraOrPhysics->field_148,
                                (SpriteS1 *)&stack0xfffffffc,(int *)&DAT_005e6944
                               );
-  iVar4 = DecoderFloat(pSVar3);
+  iVar4 = Decoder_DecodeFloat(pSVar3);
   if (iVar4 < 0) {
     iVar4 = 0;
   }
   else if (0xff < iVar4) {
     iVar4 = 255;
   }
-  pvVar1 = S110_FUN_00401b40(&pCameraOrPhysics->PosInterp,
+  pvVar1 = Decoder_ProcessData(&pCameraOrPhysics->PosInterp,
                              (S110 *)&stack0xfffffffc,&DAT_005e672c);
-  iVar5 = DecoderFloat(pvVar1);
+  iVar5 = Decoder_DecodeFloat(pvVar1);
   if (iVar5 < 0) {
     iVar5 = 0;
   }
@@ -104,7 +104,7 @@ void __thiscall S56__S56_FUN_00447390(S56 *this)
   pSVar3 = S9::S9_FUN_00401b20((S9 *)&pCameraOrPhysics->field_164,
                                (SpriteS1 *)&stack0xfffffffc,(int *)&DAT_005e6944
                               );
-  iVar6 = DecoderFloat(pSVar3);
+  iVar6 = Decoder_DecodeFloat(pSVar3);
   if (iVar6 < 0) {
     iVar6 = 0;
   }
@@ -199,8 +199,8 @@ void __thiscall S56__S56_FUN_00447ba0(S56 *this,SpriteS1 *param_1)
   SpriteS1 *pSprite;
   
   pSprite = param_1;
-  iVar1 = DecoderFloat(&param_1->S3_arr5031[0].PositionY);
-  uVar2 = DecoderFloat(&param_1->S3_arr5031[0].PositionX);
+  iVar1 = Decoder_DecodeFloat(&param_1->S3_arr5031[0].PositionY);
+  uVar2 = Decoder_DecodeFloat(&param_1->S3_arr5031[0].PositionX);
   S56_FUN_004479d0(this,uVar2,iVar1,pSprite);
   return;
 }
@@ -214,8 +214,8 @@ void __thiscall S56__S56_FUN_00447bd0(S56 *this,SpriteS1 *pS46)
   SpriteS1 *pS46_1;
   
   pS46_1 = pS46;
-  iVar1 = DecoderFloat(&pS46->S3_arr5031[0].PositionY);
-  uVar2 = DecoderFloat(&pS46->S3_arr5031[0].PositionX);
+  iVar1 = Decoder_DecodeFloat(&pS46->S3_arr5031[0].PositionY);
+  uVar2 = Decoder_DecodeFloat(&pS46->S3_arr5031[0].PositionX);
   S56_FUN_00447850(this,uVar2,iVar1,(S46 *)pS46_1);
   return;
 }

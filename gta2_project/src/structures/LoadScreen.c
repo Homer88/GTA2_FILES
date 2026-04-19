@@ -340,11 +340,11 @@ void __thiscall S83__FUN_004afb30(S83 *this)
                   pPVar6 = Char::S47_FUN_0043deb0(gChar);
                   pPVar6->CarCurrent = pTVar1->linkedCar;
                   Ped::PedSetObjective(pPVar6,0x26,9999);
-                  Ped::S49_FUN_00403aa0(pPVar6,pTVar1->linkedCar);
+                  Ped__EnterCar(pPVar6,pTVar1->linkedCar);
                   Passenger::FUN_00445f10
                             ((Passenger *)&pPVar6->CarCurrent->Passenger,pPVar6)
                   ;
-                  Ped::S49_FUN_00403a70(pPVar6,DAT_0066bee8);
+                  Ped__SetAnimationState(pPVar6,DAT_0066bee8);
                   this->SkipCount = this->SkipCount - 1;
                 }
                 DAT_0066bee8 = DAT_0066bee8 + 1;
@@ -373,9 +373,9 @@ void __thiscall S83__FUN_004afb30(S83 *this)
       pPVar6 = FUN_00446100(this_00);
       pPVar6->CarCurrent = this->Car;
       Ped::PedSetObjective(pPVar6,0x26,9999);
-      Ped::S49_FUN_00403aa0(pPVar6,this->Car);
-      Ped::S49_FUN_00403a70(pPVar6,2);
-      Ped::SetOccupation(pPVar6,8);
+      Ped__EnterCar(pPVar6,this->Car);
+      Ped__SetAnimationState(pPVar6,2);
+      Ped__SetCurrentOccupation(pPVar6,8);
       if ((this->field0_0x0 == 1) &&
          (bVar4 = this->SkipCount, '\0' < (char)bVar4)) {
 LAB_004afdbc:
@@ -388,9 +388,9 @@ LAB_004afdbc:
       pPVar6->CarCurrent = this->Car;
       Passenger::FUN_00445f10((Passenger *)&this->Car->Passenger,pPVar6);
       Ped::PedSetObjective(pPVar6,0x26,9999);
-      Ped::S49_FUN_00403aa0(pPVar6,this->Car);
-      Ped::S49_FUN_00403a70(pPVar6,2);
-      Ped::SetOccupation(pPVar6,8);
+      Ped__EnterCar(pPVar6,this->Car);
+      Ped__SetAnimationState(pPVar6,2);
+      Ped__SetCurrentOccupation(pPVar6,8);
       if (this->field0_0x0 == 1) {
         bVar4 = this->SkipCount;
         goto LAB_004afdbc;

@@ -75,13 +75,13 @@ undefined4 __thiscall S121__FUN_004462f0(S121 *this,Ped *param_1,Ped *param_2)
   int iVar1;
   Gang *pGVar2;
   
-  iVar1 = Ped::GetOccupation(param_1);
+  iVar1 = Ped__GetCurrentOccupation(param_1);
   if ((iVar1 < 0x18) || (0x1b < iVar1)) {
     pGVar2 = param_1->Gang;
     if (param_2->Gang != pGVar2) goto LAB_00446333;
   }
   else {
-    pGVar2 = (Gang *)Ped::GetOccupation(param_2);
+    pGVar2 = (Gang *)Ped__GetCurrentOccupation(param_2);
     if (((int)pGVar2 < 0x18) || (0x1b < (int)pGVar2)) {
 LAB_00446333:
       return (uint)pGVar2 & 0xffffff00;

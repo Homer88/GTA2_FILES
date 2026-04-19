@@ -40,7 +40,7 @@ void __thiscall S101__S101_FUN_0048a550(S101 *this)
   this->field6_0x10 = 0;
   this->field8_0x18 = 0;
   local_4 = this;
-  bitShiftLeft1(&local_4,(void *)0x0);
+  Decoder_ShiftLeft(&local_4,(void *)0x0);
   this->field13_0x24 = local_4;
   uVar1 = _DAT_00669ee0;
   this->field7_0x14 = 0;

@@ -38,7 +38,7 @@ void __thiscall S8__S8_FUN_004b4a60(S8 *this)
   if ((gLimitRecycling) && (1 < (int)gCarSystemManager->RecycledCars)) {
     return;
   }
-  FUN_003f1314((void *)(gCarSystemManager->RecycledCars_1 +
+  CheckPlayerLimit((void *)(gCarSystemManager->RecycledCars_1 +
                        gCarSystemManager->RecycledCars),in_stack_fffffff0,
                in_stack_fffffff4,in_stack_fffffff8);
   return;
@@ -61,18 +61,18 @@ void __thiscall S8__S8_FUN_004b4e60(S8 *this)
   undefined1 local_4 [4];
   
   if (!gSkipRecycling) {
-    iVar2 = Game::Game_FUN_003f113c(gGame);
+    iVar2 = Game__GetCurrentPlayerSlot(gGame);
     this->field0_0x0 = iVar2;
-    pPVar3 = Game::Game_FUN_003f11a8(gGame);
+    pPVar3 = Game__FindNextActivePlayer(gGame);
     this->field6_0xc = pPVar3;
     if (pPVar3 != (Player *)0x0) {
       pPVar7 = *(Ped **)&pPVar3->field_0x2c4;
-      puVar4 = (undefined4 *)Ped::GetPositionX(pPVar7,(int)&local_c);
+      puVar4 = (undefined4 *)Ped__GetXCoordinate(pPVar7,(int)&local_c);
       local_c = *puVar4;
-      puVar4 = (undefined4 *)Ped::GetPositionY(pPVar7,(int)&local_10);
+      puVar4 = (undefined4 *)Ped__GetYCoordinate(pPVar7,(int)&local_10);
       local_10 = *puVar4;
-      iVar2 = DecoderFloat(&local_10);
-      iVar5 = DecoderFloat(&local_c);
+      iVar2 = Decoder_DecodeFloat(&local_10);
+      iVar5 = Decoder_DecodeFloat(&local_c);
       uVar6 = MapRelatedStruct::S16_FUN_00465250(_gMapRelatedStruct,iVar5,iVar2)
       ;
       this->field7_0x10 = uVar6;
@@ -84,25 +84,25 @@ void __thiscall S8__S8_FUN_004b4e60(S8 *this)
       if (bVar1 != 0) {
         S8_FUN_004b4a60(this);
       }
-      iVar2 = Game::Game_FUN_003f1208(gGame);
+      iVar2 = Game__SwitchToNextPlayer(gGame);
       this->field0_0x0 = iVar2;
       if (iVar2 == this->field6_0xc + 0x208) {
         pPVar7 = *(Ped **)(this->field6_0xc + 0x2c8);
 LAB_004b4f34:
         if (pPVar7 != (Ped *)0x0) {
-          puVar4 = (undefined4 *)Ped::GetPositionX(pPVar7,(int)local_8);
+          puVar4 = (undefined4 *)Ped__GetXCoordinate(pPVar7,(int)local_8);
           local_c = *puVar4;
-          puVar4 = (undefined4 *)Ped::GetPositionY(pPVar7,(int)local_4);
+          puVar4 = (undefined4 *)Ped__GetYCoordinate(pPVar7,(int)local_4);
           local_10 = *puVar4;
-          iVar2 = DecoderFloat(&local_10);
-          iVar5 = DecoderFloat(&local_c);
+          iVar2 = Decoder_DecodeFloat(&local_10);
+          iVar5 = Decoder_DecodeFloat(&local_c);
           uVar6 = MapRelatedStruct::S16_FUN_00465250
                             (_gMapRelatedStruct,iVar5,iVar2);
           this->field7_0x10 = uVar6;
         }
       }
       else {
-        iVar2 = Game::Game_FUN_003f12a8(gGame);
+        iVar2 = Game__CycleToNextPlayer(gGame);
         this->field6_0xc = iVar2;
         if (iVar2 != 0) {
           pPVar7 = *(Ped **)(iVar2 + 0x2c4);

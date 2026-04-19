@@ -13,7 +13,7 @@ S290 * __thiscall S290__S290(S290 *this)
   float10 fVar4;
   int local_10;
   
-  Constructor(this,4,1440,FUN_00403770);
+  Constructor(this,4,1440,Texture_Load);
   local_10 = 0;
   iVar3 = 0x5a0;
   pSVar2 = this->field0_0x0;

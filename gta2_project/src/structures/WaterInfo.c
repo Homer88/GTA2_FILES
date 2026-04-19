@@ -62,7 +62,7 @@ byte __thiscall S103__S103_FUN_00448090(S103 *this)
   FUN_0040f540(&local_c,(int)&this->Arr_S104_10[0].Player3);
   FUN_00447f90(this->Arr_S104_10[0].CameraOrPhysics2,local_c,&local_8);
   FUN_0040f680(&local_8,(int)&this->Arr_S104_10[0].field2_0x8);
-  piVar2 = (int *)S110_FUN_00401b40(&this->Arr_S104_10[0].field32_0x80,
+  piVar2 = (int *)Decoder_ProcessData(&this->Arr_S104_10[0].field32_0x80,
                                     (S110 *)&local_c,
                                     &this->Arr_S104_10[0].field71_0x11c);
   SpriteS1::SetPosition

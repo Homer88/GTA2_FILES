@@ -8,7 +8,7 @@ S6 * __thiscall S6__Car_FUN_00421ec0(Car *this,S6 *param_1)
 
 {
   if (this->Player == (Player *)0x0) {
-    bitShiftLeft1(param_1,(void *)0x0);
+    Decoder_ShiftLeft(param_1,(void *)0x0);
     return param_1;
   }
   Player::FUN_004211c0(this->Player,param_1);

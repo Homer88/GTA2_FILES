@@ -9,7 +9,7 @@ void * __thiscall S110__S110_FUN_00401b40(void *this,S110 *param_1,void *param_2
 {
                               // WARNING: Load size is inaccurate
                               // WARNING: Load size is inaccurate
-  SpriteS1::FUN_00401ad0((SpriteS1 *)param_1,(S3 *)(*this - *param_2));
+  SpriteS1__LinkToS3((SpriteS1 *)param_1,(S3 *)(*this - *param_2));
   return param_1;
 }
 
@@ -21,7 +21,7 @@ int * __thiscall S110__FUN_00403840(void *this,int *param_1,S110 *pS110)
     *param_1 = (int)pS110->car;
     return param_1;
   }
-  FUN_00403780(pS110,param_1);
+  Texture_Find(pS110,param_1);
   return param_1;
 }
 
@@ -37,10 +37,10 @@ void * __thiscall S110__FUN_0040f600(void *this,void *param_1,S110 *param_2)
   pSVar1 = param_2;
   local_4 = (Car *)this;
   puVar2 = (undefined4 *)
-           S110_FUN_00401b40((void *)((int)this + 4),(S110 *)&param_2,
+           Decoder_ProcessData((void *)((int)this + 4),(S110 *)&param_2,
                              &param_2->pPed);
-  puVar3 = (undefined4 *)S110_FUN_00401b40(this,(S110 *)&local_4,pSVar1);
-  FUN_00401d20(param_1,puVar3,puVar2);
+  puVar3 = (undefined4 *)Decoder_ProcessData(this,(S110 *)&local_4,pSVar1);
+  String_ParseLine(param_1,puVar3,puVar2);
   return param_1;
 }
 
@@ -77,7 +77,7 @@ void __thiscall S110__FUN_0040f6b0(void *this,S110 *param_1)
   pSVar4 = (SpriteS1 *)(local_8 + 4);
   piVar2 = &local_18;
   pS110 = &param_1;
-  this_01 = FUN_00403780(&local_14,local_c);
+  this_01 = Texture_Find(&local_14,local_c);
   pSVar3 = (S9 *)WorldCoordinateToScreenCoord(this_01,pS110,piVar2);
   pSVar4 = S9::S9_FUN_00401b20(pSVar3,pSVar4,piVar5);
   *this_00 = pSVar4->FirstElement;
@@ -144,12 +144,12 @@ void __thiscall S110__Car_FUN_00426580(Car *this,S110 *param_1)
     puVar2 = &gCarSystemManager->field18_0x1c;
     puVar6 = &DAT_005e4f38;
     pvVar3 = (void *)FUN_00401bd0(&DAT_005e4f40,&local_20,puVar2);
-    piVar4 = (int *)S110_FUN_00401b40(pvVar3,pSVar5,puVar6);
+    piVar4 = (int *)Decoder_ProcessData(pvVar3,pSVar5,puVar6);
     FUN_0040e530(&local_10,piVar4);
     pSVar5 = (S110 *)local_18;
     puVar6 = &DAT_005e4f38;
     pvVar3 = (void *)FUN_00401bd0(&DAT_005e4f40,&local_20,puVar2);
-    piVar4 = (int *)S110_FUN_00401b40(pvVar3,pSVar5,puVar6);
+    piVar4 = (int *)Decoder_ProcessData(pvVar3,pSVar5,puVar6);
     FUN_0040e530(&local_c,piVar4);
     puVar2 = (undefined4 *)FUN_0040f600(&local_10,local_18,param_1);
     local_20 = (S169 *)*puVar2;
@@ -192,7 +192,7 @@ byte __thiscall S110__FUN_0045aea0(void *this,S110 *param_1,undefined4 param_2)
   
   pSVar1 = param_1;
   this_00 = &param_1->field_0x14;
-  piVar3 = (int *)S110_FUN_00401b40((void *)((int)this + 0x20),(S110 *)&param_1,
+  piVar3 = (int *)Decoder_ProcessData((void *)((int)this + 0x20),(S110 *)&param_1,
                                     &param_2);
   bVar2 = Player::FUN_0040ce70((Player *)this_00,piVar3);
   if (CONCAT31(extraout_var,bVar2) != 0) {
@@ -200,7 +200,7 @@ byte __thiscall S110__FUN_0045aea0(void *this,S110 *param_1,undefined4 param_2)
                                  (SpriteS1 *)&stack0xfffffff4,&param_2);
     bVar2 = Player::CheckCondition((Player *)this_00,(int *)pSVar4);
     if (CONCAT31(extraout_var_00,bVar2) != 0) {
-      piVar3 = (int *)S110_FUN_00401b40((void *)((int)this + 0x28),
+      piVar3 = (int *)Decoder_ProcessData((void *)((int)this + 0x28),
                                         (S110 *)&stack0xfffffff8,&param_2);
       bVar2 = Player::FUN_0040ce70((Player *)&pSVar1->field15_0x18,piVar3);
       if (CONCAT31(extraout_var_01,bVar2) != 0) {
@@ -234,7 +234,7 @@ S110 * __thiscall S110__FUN_00482510(void *this,S110 *param_1)
                               // WARNING: Load size is inaccurate
   pS3 = *this;
   *(undefined1 **)this = &pS3[-0x112].field20_0x38;
-  SpriteS1::FUN_00401ad0((SpriteS1 *)param_1,pS3);
+  SpriteS1__LinkToS3((SpriteS1 *)param_1,pS3);
   return param_1;
 }
 
@@ -250,7 +250,7 @@ void __thiscall S110__FUN_00482730(void *param_1,undefined4 *param_2,S110 *param
   
   pSVar1 = param_3;
   pSpriteS1 = (SpriteS1 *)&DAT_006658dc;
-  this = FUN_00403840(param_1,(int *)&param_3,param_3);
+  this = Matrix_Multiply(param_1,(int *)&param_3,param_3);
   bVar2 = FUN_004037e0(this,pSpriteS1);
   if (CONCAT31(extraout_var,bVar2) != 0) {
     *param_2 = _DAT_00665894;
@@ -399,9 +399,9 @@ void __thiscall S110__FUN_004867e0(void *param_1,int param_2,S110 *param_3)
   undefined1 local_10 [12];
   
   this = *(Ped **)(param_2 + 0x7c);
-  puVar3 = (undefined4 *)Ped::GetPositionY(this,(int)&local_50);
-  puVar4 = (undefined4 *)Ped::GetPositionX(this,(int)&local_48);
-  FUN_00401d20(local_30,puVar4,puVar3);
+  puVar3 = (undefined4 *)Ped__GetYCoordinate(this,(int)&local_50);
+  puVar4 = (undefined4 *)Ped__GetXCoordinate(this,(int)&local_48);
+  String_ParseLine(local_30,puVar4,puVar3);
   FUN_00482c30(local_40);
   piVar5 = (int *)FUN_0040f600(local_40,&local_48,param_3);
   local_38 = *piVar5;
@@ -477,24 +477,24 @@ void __thiscall S110__S97_FUN_0048d4e0(Particles *this,S110 *param_1)
       local_24 = (undefined1  [4])&stack0xffffffb8;
       z = extraout_ECX;
       rot = _DAT_00669ee0;
-      bitShiftLeft1(&stack0xffffffb8,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffb8,(void *)0x0);
       local_24 = (undefined1  [4])&stack0xffffffb4;
       iVar7 = extraout_ECX_00;
-      bitShiftLeft1(&stack0xffffffb4,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffb4,(void *)0x0);
       local_24 = (undefined1  [4])&stack0xffffffb0;
       iVar3 = extraout_ECX_01;
-      bitShiftLeft1(&stack0xffffffb0,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffb0,(void *)0x0);
       pvVar2 = Object::SpawnObject(_gObject,0xc2,iVar3,iVar7,z,rot);
       this->field0_0x0 = pvVar2;
     }
-    bitShiftLeft1(local_30,(void *)0x0);
-    bitShiftLeft1(local_24,(void *)0x0);
+    Decoder_ShiftLeft(local_30,(void *)0x0);
+    Decoder_ShiftLeft(local_24,(void *)0x0);
     local_20[0] = (SpriteS1 *)&stack0xffffffbc;
-    bitShiftLeft1(&stack0xffffffbc,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xffffffbc,(void *)0x0);
     local_20[0] = (SpriteS1 *)&stack0xffffffb8;
-    bitShiftLeft1(&stack0xffffffb8,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xffffffb8,(void *)0x0);
     local_20[0] = (SpriteS1 *)&stack0xffffffb4;
-    bitShiftLeft1(&stack0xffffffb4,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xffffffb4,(void *)0x0);
     iVar3 = FUN_0048c930(local_30._0_4_,local_24);
     if (iVar3 != 0) {
       *(uint *)(iVar3 + 4) = *(uint *)(iVar3 + 4) | 1;
@@ -531,11 +531,11 @@ void __thiscall S110__S97_FUN_0048d4e0(Particles *this,S110 *param_1)
         if (piVar8 == (int *)0x0) {
           piVar8 = Car::Car_FUN_004be980((Car *)this_00,0xf8);
           local_30._4_2_ = *(undefined2 *)*piVar8;
-          bitShiftLeft1(local_30,(void *)0x0);
+          Decoder_ShiftLeft(local_30,(void *)0x0);
           FUN_00432860(&local_18,(undefined4 *)local_30,
                        (undefined4 *)&DAT_00669f34);
           FUN_0040f6b0(&local_18,(S110 *)(local_30 + 4));
-          bitShiftLeft1(local_30,(void *)0x0);
+          Decoder_ShiftLeft(local_30,(void *)0x0);
           puVar4 = (undefined4 *)&DAT_0066a1c0;
         }
         else {
@@ -543,11 +543,11 @@ void __thiscall S110__S97_FUN_0048d4e0(Particles *this,S110 *param_1)
                    FUN_0040e5a0((void *)*piVar8,(short *)local_30,
                                 (short *)&DAT_0066a090,unaff_EDI,unaff_ESI);
           local_30._4_2_ = *puVar9;
-          bitShiftLeft1(local_30,(void *)0x0);
+          Decoder_ShiftLeft(local_30,(void *)0x0);
           FUN_00432860(&local_18,(undefined4 *)local_30,
                        (undefined4 *)&DAT_00669ff8);
           FUN_0040f6b0(&local_18,(S110 *)(local_30 + 4));
-          bitShiftLeft1(local_30,(void *)0x0);
+          Decoder_ShiftLeft(local_30,(void *)0x0);
           puVar4 = (undefined4 *)&DAT_0066a06c;
         }
         FUN_00432860(&local_10,(undefined4 *)local_30,puVar4);
@@ -560,7 +560,7 @@ void __thiscall S110__S97_FUN_0048d4e0(Particles *this,S110 *param_1)
         FUN_004a0d10();
       }
       else {
-        puVar4 = (undefined4 *)FUN_00403780(&DAT_0066a180,local_20);
+        puVar4 = (undefined4 *)Texture_Find(&DAT_0066a180,local_20);
         local_10 = (S3 *)*puVar4;
         pSVar6 = S9::S9_FUN_00401b20((S9 *)&DAT_00669e94,(SpriteS1 *)local_20,
                                      (int *)&DAT_0066a150);
@@ -608,9 +608,9 @@ void __fastcall S110__FUN_0049e3c0(S110 *param_1)
   int local_4;
   
   pSpriteS1 = (SpriteS1 *)&DAT_0066ad48;
-  piVar2 = FUN_00403840(param_1,local_c,(S110 *)&param_1->pPed);
+  piVar2 = Matrix_Multiply(param_1,local_c,(S110 *)&param_1->pPed);
   pSVar3 = (SpriteS1 *)(local_c + 1);
-  this = (S9 *)FUN_00403840(pSVar3,&local_4,param_1);
+  this = (S9 *)Matrix_Multiply(pSVar3,&local_4,param_1);
   pSVar3 = S9::S9_FUN_00401b20(this,pSVar3,piVar2);
   bVar1 = FUN_004037e0(pSVar3,pSpriteS1);
   if (CONCAT31(extraout_var,bVar1) != 0) {
@@ -633,7 +633,7 @@ void * __thiscall S110__FUN_004a0d10(Player *param_1,void *param_2,S110 *param_3
 S110 * __thiscall S110__FUN_004b3110(int param_1,S110 *param_2)
 
 {
-  S110_FUN_00401b40((void *)(param_1 + 0x24),param_2,(void *)(param_1 + 0x20));
+  Decoder_ProcessData((void *)(param_1 + 0x24),param_2,(void *)(param_1 + 0x20));
   return param_2;
 }
 
@@ -641,7 +641,7 @@ S110 * __thiscall S110__FUN_004b3110(int param_1,S110 *param_2)
 S110 * __thiscall S110__FUN_004b3130(int param_1,S110 *param_2)
 
 {
-  S110_FUN_00401b40((void *)(param_1 + 0x2c),param_2,(void *)(param_1 + 0x28));
+  Decoder_ProcessData((void *)(param_1 + 0x2c),param_2,(void *)(param_1 + 0x28));
   return param_2;
 }
 

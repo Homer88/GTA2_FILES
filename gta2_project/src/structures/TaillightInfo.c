@@ -31,9 +31,9 @@ void __thiscall S128__S128_FUN_0044a060(S128 *this,int pEventType,int pId)
     return;
   }
   this_00 = Char::FindPed(gChar,pId);
-  puVar1 = (undefined4 *)Ped::GetPositionX(this_00,(int)&pEventType);
+  puVar1 = (undefined4 *)Ped__GetXCoordinate(this_00,(int)&pEventType);
   this->field2_0x8 = *puVar1;
-  puVar1 = (undefined4 *)Ped::GetPositionY(this_00,(int)&pEventType);
+  puVar1 = (undefined4 *)Ped__GetYCoordinate(this_00,(int)&pEventType);
   this->field3_0xc = *puVar1;
   puVar1 = (undefined4 *)Ped::GetPositionZ(this_00,(int)&pEventType);
   this->field4_0x10 = *puVar1;

@@ -76,7 +76,7 @@ byte __thiscall S127__S127_FUN_0044a2c0(S127 *this,Car *pCar,Player *pPlayer)
   bVar5 = 1;
   pCVar4 = gCarSystemManager;
   if ((bool)bVar6 != false) {
-    bitShiftLeft1(&stack0xfffffff4,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xfffffff4,(void *)0x0);
     bVar1 = Player::Player_GetID(pPlayer);
     bVar2 = Game::Game_FUN_0045bba0(gGame,(Sprite *)pCar->CarSprite,bVar1,bVar6)
     ;

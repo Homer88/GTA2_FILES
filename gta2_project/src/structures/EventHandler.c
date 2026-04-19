@@ -242,7 +242,7 @@ LAB_00427882:
         puVar11 = local_f4;
       }
 LAB_004276c5:
-      pSVar9 = (S110 *)FUN_00401c80(pSVar12,puVar11);
+      pSVar9 = (S110 *)PedPool_Get(pSVar12,puVar11);
       FUN_0040f6b0(&local_108,pSVar9);
       Car_FUN_00423230(this,0x12,local_108,local_104);
       this_00 = local_100;
@@ -826,10 +826,10 @@ void __thiscall S63__S63_FUN_00483100(S63 *this,SpriteS1 *param_1)
   this_00 = &param_1->S3_arr5031[0].PositionY;
   this_01 = &param_1->S3_arr5031[0].PositionX;
   param_1 = (SpriteS1 *)param_1->S3_arr5031[0].PositionZ;
-  iVar5 = DecoderFloat(&pSVar1->PositionZ);
+  iVar5 = Decoder_DecodeFloat(&pSVar1->PositionZ);
   iVar5 = iVar5 + -1;
-  iVar6 = DecoderFloat(this_00);
-  iVar7 = DecoderFloat(this_01);
+  iVar6 = Decoder_DecodeFloat(this_00);
+  iVar7 = Decoder_DecodeFloat(this_01);
   bVar2 = MapRelatedStruct::S16_FUN_00466cf0
                     (_gMapRelatedStruct,iVar7,iVar6,iVar5);
   if (bVar2 != 0) {
@@ -1975,9 +1975,9 @@ void __thiscall S63__S63_FUN_00486e90(S63 *this,uint param_1,undefined4 param_2)
   SpriteS1::S38_FUN_00482a30(pSVar2,this->SpriteS1->S3_arr5031[0].Car);
   puVar14 = &pSVar2->S3_arr5031[0].PositionZ;
   this_00 = &pSVar2->S3_arr5031[0].PositionY;
-  iVar8 = DecoderFloat(puVar14);
-  iVar9 = DecoderFloat(this_00);
-  iVar10 = DecoderFloat(&pSVar2->S3_arr5031[0].PositionX);
+  iVar8 = Decoder_DecodeFloat(puVar14);
+  iVar9 = Decoder_DecodeFloat(this_00);
+  iVar10 = Decoder_DecodeFloat(&pSVar2->S3_arr5031[0].PositionX);
   bVar4 = MapRelatedStruct::S16_FUN_00466cf0
                     (_gMapRelatedStruct,iVar10,iVar9,iVar8);
   if (bVar4 == 0) {
@@ -1992,12 +1992,12 @@ void __thiscall S63__S63_FUN_00486e90(S63 *this,uint param_1,undefined4 param_2)
     local_48._0_4_ = _DAT_00665894;
   }
   else {
-    piVar11 = (int *)FUN_00401b90(&local_54,&local_20,
+    piVar11 = (int *)Decoder_ReadInt(&local_54,&local_20,
                                   (int *)(this->Struc___ + 0xc));
     local_58 = (SpriteS1 *)*piVar11;
-    piVar11 = (int *)FUN_00401b90(&local_54,&local_20,(int *)&local_58);
+    piVar11 = (int *)Decoder_ReadInt(&local_54,&local_20,(int *)&local_58);
     local_48._0_4_ = *piVar11;
-    piVar11 = (int *)FUN_00401b90(&this->s6->S7[0].doorState,&local_20,
+    piVar11 = (int *)Decoder_ReadInt(&this->s6->S7[0].doorState,&local_20,
                                   (int *)&local_58);
     local_4c = (Player *)*piVar11;
   }
@@ -2011,7 +2011,7 @@ void __thiscall S63__S63_FUN_00486e90(S63 *this,uint param_1,undefined4 param_2)
   FUN_0041fc20(&param_2,&param_2,(S110 *)local_30,(Ped *)(local_48 + 0xc),
                (Ped *)(local_48 + 8));
   local_54 = (SpriteS1 *)CONCAT31(local_54._1_3_,1);
-  iVar8 = DecoderFloat(&local_58);
+  iVar8 = Decoder_DecodeFloat(&local_58);
   if (0 < iVar8) {
     do {
       local_30._12_4_ = pSVar2->S3_arr5031[0].PositionX;
@@ -2051,7 +2051,7 @@ void __thiscall S63__S63_FUN_00486e90(S63 *this,uint param_1,undefined4 param_2)
         local_59 = FUN_00484090(pSVar2,&local_8,&local_5a,local_48._16_4_);
       }
       local_54 = (SpriteS1 *)CONCAT31(local_54._1_3_,(char)local_54 + '\x01');
-      iVar8 = DecoderFloat(&local_58);
+      iVar8 = Decoder_DecodeFloat(&local_58);
     } while ((int)((uint)local_54 & 0xff) <= iVar8);
     if ((char)local_50 != '\0') {
       CameraOrPhysics::S131_FUN_004102a0
@@ -2235,9 +2235,9 @@ void __thiscall S63__FUN_004874d0(S63 *param_1,SpriteS1 *param_2,Ped *param_3)
   }
   else {
     puVar9 = (undefined4 *)
-             FUN_00401b90(&local_44,&param_2,(int *)(param_1->Struc___ + 0xc));
+             Decoder_ReadInt(&local_44,&param_2,(int *)(param_1->Struc___ + 0xc));
     param_2 = (SpriteS1 *)*puVar9;
-    puVar9 = (undefined4 *)FUN_00401b90(&local_44,local_28,(int *)&param_2);
+    puVar9 = (undefined4 *)Decoder_ReadInt(&local_44,local_28,(int *)&param_2);
     local_44 = (SpriteS1 *)*puVar9;
   }
   bVar5 = FUN_004037e0(&param_2,(SpriteS1 *)&DAT_0066582c);
@@ -2249,7 +2249,7 @@ void __thiscall S63__FUN_004874d0(S63 *param_1,SpriteS1 *param_2,Ped *param_3)
   FUN_0041fc20(&param_3,&param_3,(S110 *)&local_2c,(Ped *)&local_38,
                (Ped *)&local_3c);
   local_40 = (Player *)CONCAT31(local_40._1_3_,1);
-  iVar10 = DecoderFloat(&param_2);
+  iVar10 = Decoder_DecodeFloat(&param_2);
   if (0 < iVar10) {
     puVar9 = &this_01->S3_arr5031[0].PositionY;
     this = &this_01->S3_arr5031[0].PositionX;
@@ -2262,9 +2262,9 @@ void __thiscall S63__FUN_004874d0(S63 *param_1,SpriteS1 *param_2,Ped *param_3)
       pSVar3 = param_1->s6;
       pSVar3->S7[1].field5_0xe = 0;
       pSVar3->S7[1].field6_0xf = 0;
-      iVar10 = DecoderFloat(this_00);
-      iVar11 = DecoderFloat(puVar9);
-      iVar12 = DecoderFloat(this);
+      iVar10 = Decoder_DecodeFloat(this_00);
+      iVar11 = Decoder_DecodeFloat(puVar9);
+      iVar12 = Decoder_DecodeFloat(this);
       bVar6 = MapRelatedStruct::S16_FUN_00466cf0
                         (_gMapRelatedStruct,iVar12,iVar11,iVar10);
       if (bVar6 != 0) {
@@ -2277,25 +2277,25 @@ void __thiscall S63__FUN_004874d0(S63 *param_1,SpriteS1 *param_2,Ped *param_3)
                 (this_01,(int)pSVar13->FirstElement,
                  (int)local_28[0]->FirstElement,*this_00);
       SpriteS1::SetRotation(this_01,(short)param_3);
-      iVar10 = DecoderFloat(this_00);
-      iVar11 = DecoderFloat(puVar9);
-      iVar12 = DecoderFloat(this);
+      iVar10 = Decoder_DecodeFloat(this_00);
+      iVar11 = Decoder_DecodeFloat(puVar9);
+      iVar12 = Decoder_DecodeFloat(this);
       bVar6 = MapRelatedStruct::S16_FUN_00466cf0
                         (_gMapRelatedStruct,iVar12,iVar11,iVar10);
       if (bVar6 != 0) {
         S63::S63_FUN_00483100(param_1,this_01);
       }
-      pvVar14 = S110_FUN_00401b40(this_00,(S110 *)(local_20 + 8),&DAT_0066582c);
-      iVar10 = DecoderFloat(pvVar14);
-      iVar11 = DecoderFloat(puVar9);
-      iVar12 = DecoderFloat(this);
+      pvVar14 = Decoder_ProcessData(this_00,(S110 *)(local_20 + 8),&DAT_0066582c);
+      iVar10 = Decoder_DecodeFloat(pvVar14);
+      iVar11 = Decoder_DecodeFloat(puVar9);
+      iVar12 = Decoder_DecodeFloat(this);
       cVar7 = FUN_00420420(iVar12,iVar11,iVar10);
       if (cVar7 == '\0') {
-        pvVar14 = S110_FUN_00401b40(this_00,(S110 *)(local_20 + 0xc),
+        pvVar14 = Decoder_ProcessData(this_00,(S110 *)(local_20 + 0xc),
                                     &DAT_0066582c);
-        iVar10 = DecoderFloat(pvVar14);
-        iVar11 = DecoderFloat(puVar9);
-        iVar12 = DecoderFloat(this);
+        iVar10 = Decoder_DecodeFloat(pvVar14);
+        iVar11 = Decoder_DecodeFloat(puVar9);
+        iVar12 = Decoder_DecodeFloat(this);
         bVar6 = MapRelatedStruct::S16_FUN_00466cf0
                           (_gMapRelatedStruct,iVar12,iVar11,iVar10);
         if (bVar6 != 0) {
@@ -2384,7 +2384,7 @@ LAB_004877f8:
       }
 LAB_00487978:
       local_40 = (Player *)CONCAT31(local_40._1_3_,(char)local_40 + '\x01');
-      iVar10 = DecoderFloat(&param_2);
+      iVar10 = Decoder_DecodeFloat(&param_2);
     } while ((int)((uint)local_40 & 0xff) <= iVar10);
   }
   SpriteS1::SetPosition

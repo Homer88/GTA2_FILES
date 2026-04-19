@@ -18,11 +18,11 @@ byte __thiscall S113__S111_FUN_004a9ef0(Police *this,S113 *pS113)
   undefined4 local_4;
   
   pSVar2 = pS113;
-  iVar4 = DecoderFloat(&pS113->S110);
+  iVar4 = Decoder_DecodeFloat(&pS113->S110);
   pS113 = (S113 *)CONCAT31(pS113._1_3_,(char)iVar4);
-  iVar4 = DecoderFloat(&pSVar2->ped2);
+  iVar4 = Decoder_DecodeFloat(&pSVar2->ped2);
   local_c[0] = (char)iVar4;
-  iVar4 = DecoderFloat(&pSVar2->ped1);
+  iVar4 = Decoder_DecodeFloat(&pSVar2->ped1);
   local_8[0] = (char)iVar4;
   bVar3 = S95::S95_FUN_0049d7a0
                     (_gS95,'\x01',(byte *)&pS113,local_c,local_8,'\0');

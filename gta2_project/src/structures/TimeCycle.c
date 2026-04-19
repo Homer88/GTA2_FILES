@@ -106,7 +106,7 @@ void __thiscall S31__S31_FUN_00476bc0(S31 *this)
   
   this_00 = *(S169 **)(*(int *)&gGame->PlayerMain->field_0x2c4 + 0x164);
   if (this_00 != (S169 *)0x0) {
-    S169::FUN_00403e90(this_00);
+    PedManager__UpdatePedStates(this_00);
   }
   if ((_DAT_006644b0 != (Car *)0x0) &&
      (_DAT_006644b0->ID_Object == _DAT_006644b4)) {
@@ -146,7 +146,7 @@ void __thiscall S31__S31_FUN_00476bc0(S31 *this)
       else if ((uVar1 == '\x03') && (*(uint32_t *)&this_01[0xb].z == puVar4[2]))
       {
         if (this_01[8].SpriteS1 != (SpriteS1 *)0x0) {
-          S169::FUN_00403da0((S169 *)this_01[8].SpriteS1);
+          PedManager__ProcessPeds((S169 *)this_01[8].SpriteS1);
         }
         Ped::sPed_FUN_0043ec30((Ped *)*puVar4);
         *(uint *)(*puVar4 + 0x21c) = *(uint *)(*puVar4 + 0x21c) | 0x400;

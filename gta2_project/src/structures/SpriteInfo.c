@@ -79,7 +79,7 @@ void __thiscall S25__S25_FUN_004c4fe0(S25 *this,byte param_1,S46 *param_2)
     this_01 = (GameObject *)param_2;
     if (iVar3 == 2) {
       this_01 = SpriteS1::GetObject((SpriteS1 *)this_00);
-      pvVar5 = MissionManager::MissionManager_FUN_00476200
+      pvVar5 = MissionManager__StartMission
                          (_gMissionManager,*(ushort *)(*piVar1 + 8));
       if (this_01->field63_0x6c == *(int *)(*(int *)((int)pvVar5 + 8) + 0x6c)) {
         piVar1[5] = 0;
@@ -97,7 +97,7 @@ void __thiscall S25__S25_FUN_004c4fe0(S25 *this,byte param_1,S46 *param_2)
       if (pPVar4 == (Ped *)0x0) break;
       iVar3 = *piVar1;
       if (*(short *)(iVar3 + 2) != 0x1b2) goto LAB_004c51b2;
-      pvVar5 = MissionManager::MissionManager_FUN_00476200
+      pvVar5 = MissionManager__StartMission
                          (_gMissionManager,*(ushort *)(iVar3 + 0x24));
       goto LAB_004c53bd;
     }
@@ -129,7 +129,7 @@ LAB_004c50d9:
       uVar8 = *(ushort *)(iVar3 + 0x24);
     }
 LAB_004c50de:
-    pvVar5 = MissionManager::MissionManager_FUN_00476200(_gMissionManager,uVar8)
+    pvVar5 = MissionManager__StartMission(_gMissionManager,uVar8)
     ;
     iVar3 = FUN_004c4f20();
     bVar2 = iVar3 == *(int *)(*(int *)((int)pvVar5 + 8) + 0x200);
@@ -148,7 +148,7 @@ LAB_004c522d:
     if (pPVar4 == (Ped *)0x0) break;
     iVar3 = *piVar1;
 LAB_004c51b2:
-    pvVar5 = MissionManager::MissionManager_FUN_00476200
+    pvVar5 = MissionManager__StartMission
                        (_gMissionManager,*(ushort *)(iVar3 + 8));
     goto LAB_004c53bd;
   case 6:
@@ -158,7 +158,7 @@ LAB_004c51b2:
       pPVar4 = FUN_00433a20(pvVar5);
       this_01 = (GameObject *)param_2;
       if (pPVar4 == (Ped *)0x0) break;
-      pvVar5 = MissionManager::MissionManager_FUN_00476200
+      pvVar5 = MissionManager__StartMission
                          (_gMissionManager,*(ushort *)(*piVar1 + 8));
       pPVar9 = (Player *)&DAT_00672900;
       pPVar6 = (Player *)FUN_00433c20(pPVar4,&param_1);
@@ -175,7 +175,7 @@ LAB_004c51b2:
     this_01 = SpriteS1::GetObject((SpriteS1 *)this_00);
     pPVar4 = Get_FUN_004118b0(this_01);
     if (pPVar4 == (Ped *)0x0) break;
-    pvVar5 = MissionManager::MissionManager_FUN_00476200
+    pvVar5 = MissionManager__StartMission
                        (_gMissionManager,*(ushort *)(*piVar1 + 8));
     pPVar9 = (Player *)&DAT_00672900;
     pPVar6 = (Player *)Ped::FUN_00436160(pPVar4,local_8);
@@ -192,7 +192,7 @@ LAB_004c51b2:
     pPVar4 = FUN_00433a20(pvVar5);
     this_01 = (GameObject *)param_2;
     if (pPVar4 == (Ped *)0x0) break;
-    pvVar5 = MissionManager::MissionManager_FUN_00476200
+    pvVar5 = MissionManager__StartMission
                        (_gMissionManager,*(ushort *)(*piVar1 + 8));
     pPVar9 = (Player *)&DAT_00672900;
     pPVar6 = (Player *)FUN_00433c20(pPVar4,&param_2);
@@ -209,7 +209,7 @@ LAB_004c51b2:
     this_01 = SpriteS1::GetObject((SpriteS1 *)this_00);
     pPVar4 = Get_FUN_004118b0(this_01);
     if (pPVar4 == (Ped *)0x0) break;
-    pvVar5 = MissionManager::MissionManager_FUN_00476200
+    pvVar5 = MissionManager__StartMission
                        (_gMissionManager,*(ushort *)(*piVar1 + 8));
     pPVar9 = (Player *)&DAT_00672900;
     pPVar6 = (Player *)Ped::FUN_00436160(pPVar4,local_4);

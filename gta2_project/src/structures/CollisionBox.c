@@ -366,9 +366,9 @@ undefined4 __thiscall S61__S61_FUN_00483cc0(S61 *this)
   ushort *puVar6;
   
   pSVar1 = this->Index;
-  iVar3 = DecoderFloat(&pSVar1->z);
-  iVar4 = DecoderFloat(&pSVar1->DamageType);
-  iVar5 = DecoderFloat(&pSVar1->CameraX);
+  iVar3 = Decoder_DecodeFloat(&pSVar1->z);
+  iVar4 = Decoder_DecodeFloat(&pSVar1->DamageType);
+  iVar5 = Decoder_DecodeFloat(&pSVar1->CameraX);
   puVar6 = (ushort *)
            MapRelatedStruct::S16_FUN_004653c0
                      (_gMapRelatedStruct,iVar5,iVar4,iVar3);

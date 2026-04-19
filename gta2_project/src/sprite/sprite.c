@@ -5,7 +5,7 @@
 #include "../../include/common.h"
 
 // Было: FUN_00401ad0
-void __thiscall SpriteS1::FUN_00401ad0(SpriteS1 *this,S3 *pS3)
+void __thiscall SpriteS1__LinkToS3(SpriteS1 *this,S3 *pS3)
 
 
 // Было: FUN_0040f7b0
