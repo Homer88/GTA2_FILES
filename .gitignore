@@ -1,1 +1,2 @@
-Nothing should be ignored since only a source code file (.c) was modified and no build artifacts, dependencies, or temporary files were present in the changes.
+# Documentation
+docs/ANALYSIS_REPORT.md
