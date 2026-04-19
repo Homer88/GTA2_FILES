@@ -1,3 +1,7 @@
+// Структура: AmbulanceInfo
+// Оригинал: S281
+// Размер: ~44 байт
+
 #ifndef S281_H
 #define S281_H
 

@@ -1,3 +1,7 @@
+// Структура: TriggerVolume
+// Оригинал: S64
+// Размер: ~0 байт
+
 #ifndef S64_H
 #define S64_H
 

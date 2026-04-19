@@ -1,3 +1,7 @@
+// Структура: TransmissionInfo
+// Оригинал: S123
+// Размер: ~10 байт
+
 #ifndef S123_H
 #define S123_H
 

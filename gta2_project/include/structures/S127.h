@@ -1,3 +1,7 @@
+// Структура: HeadlightInfo
+// Оригинал: S127
+// Размер: ~4 байт
+
 #ifndef S127_H
 #define S127_H
 

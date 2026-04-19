@@ -1,3 +1,7 @@
+// Структура: BuildingModel
+// Оригинал: S23
+// Размер: ~8 байт
+
 #ifndef S23_H
 #define S23_H
 

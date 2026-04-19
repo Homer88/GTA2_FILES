@@ -1,3 +1,7 @@
+// Структура: ObjectModel
+// Оригинал: S24
+// Размер: ~8 байт
+
 #ifndef S24_H
 #define S24_H
 

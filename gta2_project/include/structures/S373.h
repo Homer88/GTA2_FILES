@@ -1,3 +1,7 @@
+// Структура: SubmarineInfo
+// Оригинал: S373
+// Размер: ~16 байт
+
 #ifndef S373_H
 #define S373_H
 

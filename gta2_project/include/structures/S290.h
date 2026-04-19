@@ -1,3 +1,7 @@
+// Структура: HelicopterInfo
+// Оригинал: S290
+// Размер: ~0 байт
+
 #ifndef S290_H
 #define S290_H
 

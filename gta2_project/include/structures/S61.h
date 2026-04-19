@@ -1,3 +1,7 @@
+// Структура: CollisionBox
+// Оригинал: S61
+// Размер: ~4 байт
+
 #ifndef S61_H
 #define S61_H
 

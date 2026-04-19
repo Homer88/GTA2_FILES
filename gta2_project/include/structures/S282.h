@@ -1,3 +1,7 @@
+// Структура: FiretruckInfo
+// Оригинал: S282
+// Размер: ~4 байт
+
 #ifndef S282_H
 #define S282_H
 

@@ -1,3 +1,7 @@
+// Структура: ReflectionInfo
+// Оригинал: S102
+// Размер: ~0 байт
+
 #ifndef S102_H
 #define S102_H
 

@@ -1,3 +1,7 @@
+// Структура: NetworkPlayer
+// Оригинал: S88
+// Размер: ~6 байт
+
 #ifndef S88_H
 #define S88_H
 

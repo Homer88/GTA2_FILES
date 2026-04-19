@@ -1,3 +1,7 @@
+// Структура: VehiclePool
+// Оригинал: S46
+// Размер: ~8 байт
+
 #ifndef S46_H
 #define S46_H
 

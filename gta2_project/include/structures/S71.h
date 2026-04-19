@@ -1,3 +1,7 @@
+// Структура: ScriptCommand
+// Оригинал: S71
+// Размер: ~15 байт
+
 #ifndef S71_H
 #define S71_H
 

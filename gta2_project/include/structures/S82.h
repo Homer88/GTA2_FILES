@@ -1,3 +1,7 @@
+// Структура: SaveGameData
+// Оригинал: S82
+// Размер: ~51 байт
+
 #ifndef S82_H
 #define S82_H
 

@@ -1,3 +1,7 @@
+// Структура: WantedLevel
+// Оригинал: S41
+// Размер: ~8 байт
+
 #ifndef S41_H
 #define S41_H
 

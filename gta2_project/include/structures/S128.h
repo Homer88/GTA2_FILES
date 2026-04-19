@@ -1,3 +1,7 @@
+// Структура: TaillightInfo
+// Оригинал: S128
+// Размер: ~20 байт
+
 #ifndef S128_H
 #define S128_H
 

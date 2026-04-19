@@ -1,3 +1,7 @@
+// Структура: EventHandler
+// Оригинал: S63
+// Размер: ~24 байт
+
 #ifndef S63_H
 #define S63_H
 

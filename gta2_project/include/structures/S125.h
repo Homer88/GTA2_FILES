@@ -1,3 +1,7 @@
+// Структура: SuspensionInfo
+// Оригинал: S125
+// Размер: ~24 байт
+
 #ifndef S125_H
 #define S125_H
 
