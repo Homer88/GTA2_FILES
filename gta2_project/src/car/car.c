@@ -8,7 +8,8 @@ void __thiscall CarSystemManager::Clamp(CarSystemManager *this)
 
 
 // Было: Car_FUN_00403820
-bool __thiscall Car::Car_FUN_00403820(Car *this,int *param_1)
+// Стало: Car::CheckCarCondition
+bool __thiscall Car::CheckCarCondition(Car *this, int *pResult)
 
 
 bool __thiscall Car::IsTrainOrTrainCarriage(Car *this)
@@ -17,18 +18,20 @@ bool __thiscall Car::IsTrainOrTrainCarriage(Car *this)
 byte __thiscall Car::isSWATVANOrBankVan(Car *this)
 
 
-CarSystemManager::SetIndexDefautCarManager(CarSystemManager *this)
+void __thiscall CarSystemManager::SetIndexDefautCarManager(CarSystemManager *this)
 
 
 // Было: S5_FUN_0040f490
-void __thiscall CarsPrefabs::S5_FUN_0040f490(CarsPrefabs *this,Car *pCar)
+// Стало: CarsPrefabs::InitializeCarPrefab
+void __thiscall CarsPrefabs::InitializeCarPrefab(CarsPrefabs *this, Car *pCar)
 
 
 bool __thiscall Car::Car_GetFullDamegeCar(Car *this)
 
 
 // Было: FUN_004112a0
-bool __thiscall Car::FUN_004112a0(Car *this)
+// Стало: Car::IsCarUsable
+bool __thiscall Car::IsCarUsable(Car *this)
 
 
 bool __thiscall Car::IsEngineOn(Car *this)
@@ -49,87 +52,124 @@ bool __thiscall Car::isGunJeep(Car *this)
 bool __thiscall Car::isEDSELFBI(Car *this)
 
 
-byte__thiscall Car::GetCarFlags(Car *this,ushort param_1)
+// Было: GetCarFlags
+// Стало: Car::GetCarFlags
+ushort __thiscall Car::GetCarFlags(Car *this, ushort flagsMask)
 
 
 CarType __thiscall Car::GetModelCar(Car *this)
 
 
-byte__thiscall Car::GetCarDamageFlags(Car *this)
+// Было: GetCarDamageFlags
+// Стало: Car::GetCarDamageFlags
+byte __thiscall Car::GetCarDamageFlags(Car *this)
 
 
-byte__thiscall Car::GetCarSpecialFlags(Car *this)
+// Было: GetCarSpecialFlags
+// Стало: Car::GetCarSpecialFlags
+byte __thiscall Car::GetCarSpecialFlags(Car *this)
 
 
-undefined1__thiscall Car::GetCarState(Car *this)
+// Было: GetCarState
+// Стало: Car::GetCarState
+undefined1 __thiscall Car::GetCarState(Car *this)
 
 
 bool __thiscall Car::IsEmergencyOrFbiCar(Car *this)
 
 
-void__thiscall Car::ResetCarPhysics(Car *this)
+// Было: ResetCarPhysics
+// Стало: Car::ResetCarPhysics
+void __thiscall Car::ResetCarPhysics(Car *this)
 
 
-void__thiscall Car::InitCarVisuals(Car *this)
+// Было: InitCarVisuals
+// Стало: Car::InitCarVisuals
+void __thiscall Car::InitCarVisuals(Car *this)
 
 
-undefined1__thiscall Car::GetCarClassType(Car *this)
+// Было: GetCarClassType
+// Стало: Car::GetCarClassType
+undefined1 __thiscall Car::GetCarClassType(Car *this)
 
 
 // Было: FUN_00416bb0
-void __thiscall Car::FUN_00416bb0(Car *this,undefined2 *param_1)
+// Стало: Car::UpdateCarElectronics
+void __thiscall Car::UpdateCarElectronics(Car *this, undefined2 *pElectronicsData)
 
 
-void__thiscall Car::UpdateCarMatrix(Car *this,undefined4 *param_1)
+// Было: UpdateCarMatrix
+// Стало: Car::UpdateCarMatrix
+void __thiscall Car::UpdateCarMatrix(Car *this, undefined4 *pTransformData)
 
 
-void__thiscall Car::ProcessCarCollisions(Car *this,undefined4 *param_1)
+// Было: ProcessCarCollisions
+// Стало: Car::ProcessCarCollisions
+void __thiscall Car::ProcessCarCollisions(Car *this, undefined4 *pCollisionData)
 
 
-void__thiscall Car::HandleCarImpact(Car *this,undefined4 *param_1)
+// Было: HandleCarImpact
+// Стало: Car::HandleCarImpact
+void __thiscall Car::HandleCarImpact(Car *this, undefined4 *pImpactData)
 
 
 // Было: Set_FUN_0041f6c0
-void __thiscall CarDoor::Set_FUN_0041f6c0(CarDoor *this)
+// Стало: CarDoor::ResetDoorState
+void __thiscall CarDoor::ResetDoorState(CarDoor *this)
 
 
 bool __thiscall Car::IsCopCar(Car *this)
 
 
-void * __thiscall Car::GetInfoByTypeCar(Car *this)
+void* __thiscall Car::GetInfoByTypeCar(Car *this)
 
 
-void__thiscall Car::SetCarPaintJob(Car *this,undefined *param_1)
+// Было: SetCarPaintJob
+// Стало: Car::SetCarPaintJob
+void __thiscall Car::SetCarPaintJob(Car *this, undefined *pPaintJobData)
 
 
-int __thiscall Car::GetDoor(Car *this,byte doorIndex)
+int __thiscall Car::GetDoor(Car *this, byte doorIndex)
 
 
-undefined1__thiscall Car::GetCarVelocity(Car *this)
+// Было: GetCarVelocity
+// Стало: Car::GetCarVelocity
+undefined1 __thiscall Car::GetCarVelocity(Car *this)
 
 
 // Было: FUN_0041f8f0
-void __thiscall Car::FUN_0041f8f0(Car *this)
+// Стало: Car::UpdateCarMovement
+void __thiscall Car::UpdateCarMovement(Car *this)
 
 
-void__thiscall Car::GetCarHeading(Car *this)
+// Было: GetCarHeading
+// Стало: Car::GetCarHeading
+void __thiscall Car::GetCarHeading(Car *this)
 
 
-void__thiscall Car::SetCarHeading(Car *this)
+// Было: SetCarHeading
+// Стало: Car::SetCarHeading
+void __thiscall Car::SetCarHeading(Car *this)
 
 
-void__thiscall Car::ApplyCarForce(Car *this)
+// Было: ApplyCarForce
+// Стало: Car::ApplyCarForce
+void __thiscall Car::ApplyCarForce(Car *this)
 
 
-Car * __thiscall Car::Car_FUN_0041fab0(Car *this)
+// Было: Car_FUN_0041fab0
+// Стало: Car::ApplyHandbrake
+Car* __thiscall Car::ApplyHandbrake(Car *this)
 
 
 // Было: FUN_0041fac0
-void __thiscall Car::FUN_0041fac0(Car *this,undefined2 *param_1)
+// Стало: Car::StartCarEngine
+void __thiscall Car::StartCarEngine(Car *this, undefined2 *pEngineParams)
 
 
 // Было: FUN_0041fbb0
-undefined1 __thiscall Car::FUN_0041fbb0(Car *this)
+// Стало: Car::StopCarEngine
+undefined1 __thiscall Car::StopCarEngine(Car *this)
 
 
 void __thiscall Car::AddRoofWaterGun(Car *this)
@@ -144,136 +184,197 @@ void __thiscall Car::AddRoofGun(Car *this)
 void __thiscall Car::DecrementHorn(Car *this)
 
 
-void __thiscall Car::SetPosition(Car *this,int x,int y,int z)
+void __thiscall Car::SetPosition(Car *this, int x, int y, int z)
 
 
-CarSystemManager * __thiscall Car::Car_FUN_00420840(Car *this,void *param_1)
+// Было: Car_FUN_00420840
+// Стало: Car::DamageCarFromImpact
+CarSystemManager* __thiscall Car::DamageCarFromImpact(Car *this, void *pImpactSource)
 
 
-void__thiscall Car::SetCarIntegrity(Car *this)
+// Было: SetCarIntegrity
+// Стало: Car::SetCarIntegrity
+void __thiscall Car::SetCarIntegrity(Car *this)
 
 
-void__thiscall Car::GetCarGasLevel(Car *this,undefined4 param_1)
+// Было: GetCarGasLevel
+// Стало: Car::GetCarGasLevel
+void __thiscall Car::GetCarGasLevel(Car *this, undefined4 param_1)
 
 
 void __thiscall Car::UpdateDamageCooldown(Car *this)
 
 
-byte * __thiscall CarSystemManager::CarSystemManager_FUN_00420a10(short param_1)
+// Было: CarSystemManager_FUN_00420a10
+// Стало: CarSystemManager::GetCarByIndex
+byte* __thiscall CarSystemManager::GetCarByIndex(short index)
 
 
 // Было: CarSystemManager_FUN_00420c00
-CarSystemManager::CarSystemManager_FUN_00420c00(CarSystemManager *this)
+// Стало: CarSystemManager::ResetCarSystem
+void __thiscall CarSystemManager::ResetCarSystem(CarSystemManager *this)
 
 
-Car_conflict1 * __thiscall CarsPrefabs::GetCar(CarsPrefabs *this)
+Car_conflict1* __thiscall CarsPrefabs::GetCar(CarsPrefabs *this)
 
 
 // Было: S5_FUN_00420f20
-void __thiscall CarsPrefabs::S5_FUN_00420f20(CarsPrefabs *this,Car *pCar)
+// Стало: CarsPrefabs::ReleaseCarPrefab
+void __thiscall CarsPrefabs::ReleaseCarPrefab(CarsPrefabs *this, Car *pCar)
 
 
-void * __thiscall CarsPrefabs::S5_FUN_00420f30(CarsPrefabs *this,Car *pCar)
+// Было: S5_FUN_00420f30
+// Стало: CarsPrefabs::CloneCarPrefab
+void* __thiscall CarsPrefabs::CloneCarPrefab(CarsPrefabs *this, Car *pCar)
 
 
 // Было: CarSystemManager_FUN_004212d0
-CarSystemManager::CarSystemManager_FUN_004212d0(CarSystemManager *this)
+// Стало: CarSystemManager::CleanupCarSystem
+void __thiscall CarSystemManager::CleanupCarSystem(CarSystemManager *this)
 
 
-void __thiscall CarDoor::S7(CarDoor *this)
+// Было: S7
+// Стало: CarDoor::InitDoor
+void __thiscall CarDoor::InitDoor(CarDoor *this)
 
 
-void__thiscall Car::CheckCarOccupied(Car *this)
+// Было: CheckCarOccupied
+// Стало: Car::CheckCarOccupied
+void __thiscall Car::CheckCarOccupied(Car *this)
 
 
-void__thiscall Car::CountCarOccupants(Car *this)
+// Было: CountCarOccupants
+// Стало: Car::CountCarOccupants
+void __thiscall Car::CountCarOccupants(Car *this)
 
 
 // Было: Car_Set_FUN_00421460
-void __thiscall Car::Car_Set_FUN_00421460(Car *this)
+// Стало: Car::PrepareCarForEntry
+void __thiscall Car::PrepareCarForEntry(Car *this)
 
 
-void__thiscall Car::ValidateCarExit(Car *this)
+// Было: ValidateCarExit
+// Стало: Car::ValidateCarExit
+void __thiscall Car::ValidateCarExit(Car *this)
 
 
 // Было: FUN_00421490
-void __thiscall Car::FUN_00421490(Car *this)
+// Стало: Car::BoardCarAsDriver
+void __thiscall Car::BoardCarAsDriver(Car *this)
 
 
-bool__thiscall Car::BoardCarAsPassenger(Car *this)
+// Было: BoardCarAsPassenger
+// Стало: Car::BoardCarAsPassenger
+bool __thiscall Car::BoardCarAsPassenger(Car *this)
 
 
-void__thiscall Car::DisembarkCar(Car *this)
+// Было: DisembarkCar
+// Стало: Car::DisembarkCar
+void __thiscall Car::DisembarkCar(Car *this)
 
 
 bool __thiscall Car::IsDriverActive(Car *this)
 
 
-void __thiscall Car::CarMakeDriveable2(Car *this)
+// Было: CarMakeDriveable2
+// Стало: Car::MakeCarDriveableAdvanced
+void __thiscall Car::MakeCarDriveableAdvanced(Car *this)
 
 
-void__thiscall Car::ReadCarDoorAngle(Car *this)
+// Было: ReadCarDoorAngle
+// Стало: Car::ReadCarDoorAngle
+void __thiscall Car::ReadCarDoorAngle(Car *this)
 
 
-void__thiscall Car::WriteCarDoorAngle(Car *this)
+// Было: WriteCarDoorAngle
+// Стало: Car::WriteCarDoorAngle
+void __thiscall Car::WriteCarDoorAngle(Car *this)
 
 
-void __thiscall Car::CarMakeDriveable1(Car *this,int param_1)
+// Было: CarMakeDriveable1
+// Стало: Car::MakeCarDriveableBasic
+void __thiscall Car::MakeCarDriveableBasic(Car *this, int driveableFlags)
 
 
+// Было: FixCarBrokenEngine
+// Стало: Car::FixCarBrokenEngine
 void __thiscall Car::FixCarBrokenEngine(Car *this)
 
 
-void__thiscall Car::SwingCarDoorOpen(Car *this)
+// Было: SwingCarDoorOpen
+// Стало: Car::SwingCarDoorOpen
+void __thiscall Car::SwingCarDoorOpen(Car *this)
 
 
 bool __thiscall Car::IsMask5(Car *this)
 
 
-byte__thiscall Car::ShutCarDoor(Car *this)
+// Было: ShutCarDoor
+// Стало: Car::ShutCarDoor
+byte __thiscall Car::ShutCarDoor(Car *this)
 
 
-void__thiscall Car::EngageCarDoorLocks(Car *this)
+// Было: EngageCarDoorLocks
+// Стало: Car::EngageCarDoorLocks
+void __thiscall Car::EngageCarDoorLocks(Car *this)
 
 
 bool __thiscall Car::IsTrain(Car *this)
 
 
-void__thiscall Car::DisengageCarDoorLocks(Car *this)
+// Было: DisengageCarDoorLocks
+// Стало: Car::DisengageCarDoorLocks
+void __thiscall Car::DisengageCarDoorLocks(Car *this)
 
 
-void__thiscall Car::InspectCarWheel(Car *this)
+// Было: InspectCarWheel
+// Стало: Car::InspectCarWheel
+void __thiscall Car::InspectCarWheel(Car *this)
 
 
-void__thiscall Car::RepairCarWheel(Car *this)
+// Было: RepairCarWheel
+// Стало: Car::RepairCarWheel
+void __thiscall Car::RepairCarWheel(Car *this)
 
 
-void__thiscall Car::CheckCarLights(Car *this)
+// Было: CheckCarLights
+// Стало: Car::CheckCarLights
+void __thiscall Car::CheckCarLights(Car *this)
 
 
-void__thiscall Car::ControlCarLights(Car *this)
+// Было: ControlCarLights
+// Стало: Car::ControlCarLights
+void __thiscall Car::ControlCarLights(Car *this)
 
 
-void __thiscall Car::has_for_hire_lights(Car *this)
+// Было: has_for_hire_lights
+// Стало: Car::SetTaxiLightState
+void __thiscall Car::SetTaxiLightState(Car *this)
 
 
-byte__thiscall Car::FlashCarLights(Car *this)
+// Было: FlashCarLights
+// Стало: Car::FlashCarLights
+byte __thiscall Car::FlashCarLights(Car *this)
 
 
 // Было: Car_FUN_00421700
-void __thiscall Car::Car_FUN_00421700(Car *this)
+// Стало: Car::UpdateCarAlarm
+void __thiscall Car::UpdateCarAlarm(Car *this)
 
 
 // Было: Car_FUN_00421720
-bool __thiscall Car::Car_FUN_00421720(Car *this)
+// Стало: Car::IsCarAlarmActive
+bool __thiscall Car::IsCarAlarmActive(Car *this)
 
 
 // Было: Car_FUN_00421740
-byte __thiscall Car::Car_FUN_00421740(Car *this)
+// Стало: Car::GetCarSirenState
+byte __thiscall Car::GetCarSirenState(Car *this)
 
 
 // Было: Car_FUN_00421760
-byte __thiscall Car::Car_FUN_00421760(Car *this)
+// Стало: Car::GetCarHornState
+byte __thiscall Car::GetCarHornState(Car *this)
 
 
 bool __thiscall Car::isMedicCar(Car *this)
@@ -291,7 +392,9 @@ bool __thiscall Car::isJeep(Car *this)
 bool __thiscall Car::IsAPC(Car *this)
 
 
-bool __thiscall Car::GetGT24640(Car *this)
+// Было: GetGT24640
+// Стало: Car::HasSpecialEquipment
+bool __thiscall Car::HasSpecialEquipment(Car *this)
 
 
 bool __thiscall Car::isTVVAN(Car *this)
@@ -301,230 +404,292 @@ bool __thiscall Car::isTaxi(Car *this)
 
 
 // Было: Car_FUN_00421810
-void __thiscall Car::Car_FUN_00421810(Car *this)
+// Стало: Car::UpdateCarRadar
+void __thiscall Car::UpdateCarRadar(Car *this)
 
 
 // Было: Car_FUN_00421830
-bool __thiscall Car::Car_FUN_00421830(Car *this)
+// Стало: Car::IsCarTargetable
+bool __thiscall Car::IsCarTargetable(Car *this)
 
 
-Player * __thiscall Car::GetPlayer(Car *this)
+Player* __thiscall Car::GetPlayer(Car *this)
 
 
-CarSystemManager * __thiscall Car::Car_FUN_00420840(Car *this,void *param_1)
+// Было: Car_FUN_00420840 (дубликат)
+// Стало: Car::RequestCarDamage
+CarSystemManager* __thiscall Car::RequestCarDamage(Car *this, void *pDamageSource)
 
 
 // Было: Car_FUN_00421890
-void __thiscall Car::Car_FUN_00421890(Car *this,ushort param_1)
+// Стало: Car::SetCarSpecialMode
+void __thiscall Car::SetCarSpecialMode(Car *this, ushort modeFlags)
 
 
 // Было: FUN_004218a0
-void __thiscall Car::FUN_004218a0(Car *this)
+// Стало: Car::ResetCarWeapons
+void __thiscall Car::ResetCarWeapons(Car *this)
 
 
 // Было: Car_FUN_004218b0
-void __thiscall Car::Car_FUN_004218b0(Car *this)
+// Стало: Car::UpdateCarTurret
+void __thiscall Car::UpdateCarTurret(Car *this)
 
 
 // Было: FUN_004218c0
-void __thiscall Car::FUN_004218c0(Car *this)
+// Стало: Car::ClearCarPassengers
+void __thiscall Car::ClearCarPassengers(Car *this)
 
 
 // Было: FUN_004218d0
-void __thiscall Car::FUN_004218d0(Car *this)
+// Стало: Car::ResetCarState
+void __thiscall Car::ResetCarState(Car *this)
 
 
 // Было: Car_FUN_004218e0
-void __thiscall Car::Car_FUN_004218e0(Car *this)
+// Стало: Car::RefreshCarVisuals
+void __thiscall Car::RefreshCarVisuals(Car *this)
 
 
 // Было: Car_FUN_004218f0
-byte __thiscall Car::Car_FUN_004218f0(Car *this)
+// Стало: Car::GetCarTransmissionState
+byte __thiscall Car::GetCarTransmissionState(Car *this)
 
 
 // Было: Car_FUN_00421900
-void __thiscall Car::Car_FUN_00421900(Car *this,undefined4 param_1)
+// Стало: Car::SetCarRadioStation
+void __thiscall Car::SetCarRadioStation(Car *this, undefined4 stationId)
 
 
-void __thiscall Car::SetSound(Car *this,undefined4 param_1)
+// Было: SetSound
+// Стало: Car::SetEngineSound
+void __thiscall Car::SetEngineSound(Car *this, undefined4 soundId)
 
 
 // Было: CarSystemManager_FUN_00421960
-CarSystemManager::CarSystemManager_FUN_00421960(CarSystemManager *this)
+// Стало: CarSystemManager::ProcessAllCars
+void __thiscall CarSystemManager::ProcessAllCars(CarSystemManager *this)
 
 
 // Было: FUN_00421a00
-void __thiscall CarDoor::FUN_00421a00(CarDoor *this,Turrel *param_1)
+// Стало: CarDoor::AttachTurret
+void __thiscall CarDoor::AttachTurret(CarDoor *this, Turrel *pTurret)
 
 
 // Было: FUN_00421a80
-void __thiscall CarDoor::FUN_00421a80(CarDoor *this,Turrel *param_1)
+// Стало: CarDoor::DetachTurret
+void __thiscall CarDoor::DetachTurret(CarDoor *this, Turrel *pTurret)
 
 
 // Было: FUN_00421af0
-void __thiscall CarDoor::FUN_00421af0(CarDoor *this,Turrel *param_1)
+// Стало: CarDoor::UpdateTurretPosition
+void __thiscall CarDoor::UpdateTurretPosition(CarDoor *this, Turrel *pTurret)
 
 
 // Было: FUN_00421c40
-undefined4 __thiscall Car::FUN_00421c40(Car *this,undefined4 param_1)
+// Стало: Car::ProcessCarComponent
+undefined4 __thiscall Car::ProcessCarComponent(Car *this, undefined4 componentId)
 
 
 // Было: Car_FUN_00421d80
-void __thiscall Car::Car_FUN_00421d80(Car *this)
+// Стало: Car::CleanupCarExtras
+void __thiscall Car::CleanupCarExtras(Car *this)
 
 
-Car * __thiscall Car::Car_FUN_00421d90(Car *this,Car *pCar)
+// Было: Car_FUN_00421d90
+// Стало: Car::CopyCarData
+Car* __thiscall Car::CopyCarData(Car *this, Car *pSourceCar)
 
 
 // Было: Car_FUN_00421df0
-undefined1 __thiscall Car::Car_FUN_00421df0(Car *this)
+// Стало: Car::FinalizeCarInit
+undefined1 __thiscall Car::FinalizeCarInit(Car *this)
 
 
-undefined4 * __thiscall Car::FUN_00421e70(Car *this,undefined4 *param_1)
+// Было: FUN_00421e70
+// Стало: Car::GetCarTransformMatrix
+undefined4* __thiscall Car::GetCarTransformMatrix(Car *this, undefined4 *pMatrix)
 
 
-S6 * __thiscall Car::Car_FUN_00421ec0(Car *this,S6 *param_1)
+// Было: Car_FUN_00421ec0
+// Стало: Car::GetCarGameObject
+S6* __thiscall Car::GetCarGameObject(Car *this, S6 *pGameObject)
 
 
 // Было: Car_FUN_00421f40
-byte __thiscall Car::Car_FUN_00421f40(Car *this,short Remap)
+// Стало: Car::SetCarRemapTexture
+byte __thiscall Car::SetCarRemapTexture(Car *this, short remapId)
 
 
 // Было: FUN_00421f80
-byte __thiscall Car::FUN_00421f80(Car *this,byte param_1)
+// Стало: Car::SetCarPaintJobIndex
+byte __thiscall Car::SetCarPaintJobIndex(Car *this, byte paintJobId)
 
 
-void __thiscall Car::SetRemap(Car *this,short Remap)
+void __thiscall Car::SetRemap(Car *this, short Remap)
 
 
 // Было: Car_FUN_004220a0
-byte __thiscall Car::Car_FUN_004220a0(Car *this)
+// Стало: Car::IsCarVisible
+byte __thiscall Car::IsCarVisible(Car *this)
 
 
 // Было: Car_FUN_004221d0
-void __thiscall Car::Car_FUN_004221d0(Car *this,Ped *pPed)
+// Стало: Car::AssignPedToCar
+void __thiscall Car::AssignPedToCar(Car *this, Ped *pPed)
 
 
 // Было: Car_FUN_00422230
-void __thiscall Car::Car_FUN_00422230(Car *this)
+// Стало: Car::RemoveCarOccupants
+void __thiscall Car::RemoveCarOccupants(Car *this)
 
 
 // Было: Car_FUN_00422260
-void __thiscall Car::Car_FUN_00422260(Car *this)
+// Стало: Car::EjectAllOccupants
+void __thiscall Car::EjectAllOccupants(Car *this)
 
 
 // Было: FUN_004222d0
-void __thiscall Car::FUN_004222d0(Car *this)
+// Стало: Car::ExplodeCar
+void __thiscall Car::ExplodeCar(Car *this)
 
 
 // Было: FUN_004222f0
-void __thiscall Car::FUN_004222f0(Car *this)
+// Стало: Car::IgniteCarFuel
+void __thiscall Car::IgniteCarFuel(Car *this)
 
 
 // Было: Car_FUN_00422360
-byte __thiscall Car::Car_FUN_00422360(Car *this,Ped *pPed)
+// Стало: Car::CanPedEnterCar
+byte __thiscall Car::CanPedEnterCar(Car *this, Ped *pPed)
 
 
 // Было: Car_FUN_00422670
-void __thiscall Car::Car_FUN_00422670(Car *this)
+// Стало: Car::UpdateCarAI
+void __thiscall Car::UpdateCarAI(Car *this)
 
 
 // Было: Car_FUN_004226c0
-void __thiscall Car::Car_FUN_004226c0(Car *this,byte param_1,Ped *sPed)
+// Стало: Car::SetCarDriver
+void __thiscall Car::SetCarDriver(Car *this, byte driverType, Ped *pPed)
 
 
 // Было: Car_FUN_004228f0
-void __thiscall Car::Car_FUN_004228f0(Car *this)
+// Стало: Car::StartCarMission
+void __thiscall Car::StartCarMission(Car *this)
 
 
 // Было: Car_FUN_00422980
-void __thiscall Car::Car_FUN_00422980(Car *this)
+// Стало: Car::StopCarMission
+void __thiscall Car::StopCarMission(Car *this)
 
 
 // Было: Car_FUN_00422a40
-void __thiscall Car::Car_FUN_00422a40(Car *this)
+// Стало: Car::UpdateCarPathfinding
+void __thiscall Car::UpdateCarPathfinding(Car *this)
 
 
 // Было: Car_FUN_00422b70
-void __thiscall Car::Car_FUN_00422b70(Car *this)
+// Стало: Car::AvoidCarObstacles
+void __thiscall Car::AvoidCarObstacles(Car *this)
 
 
 // Было: Car_FUN_00422cb0
-void __thiscall Car::Car_FUN_00422cb0(Car *this)
+// Стало: Car::FollowCarRoute
+void __thiscall Car::FollowCarRoute(Car *this)
 
 
 // Было: Car_FUN_00422d20
-void __thiscall Car::Car_FUN_00422d20(Car *this)
+// Стало: Car::ParkCar
+void __thiscall Car::ParkCar(Car *this)
 
 
 // Было: Car_FUN_00422d80
-void __thiscall Car::Car_FUN_00422d80(Car *this)
+// Стало: Car::UnparkCar
+void __thiscall Car::UnparkCar(Car *this)
 
 
 // Было: Car_FUN_00422de0
-void __thiscall Car::Car_FUN_00422de0(Car *this)
+// Стало: Car::FleeCarFromDanger
+void __thiscall Car::FleeCarFromDanger(Car *this)
 
 
 // Было: Car_FUN_00422e00
-void __thiscall Car::Car_FUN_00422e00(Car *this,Turrel *param_1)
+// Стало: Car::AimCarTurret
+void __thiscall Car::AimCarTurret(Car *this, Turrel *pTarget)
 
 
 // Было: Car_FUN_00422f00
-void __thiscall Car::Car_FUN_00422f00(Car *this,undefined4 param_1)
+// Стало: Car::FireCarWeapon
+void __thiscall Car::FireCarWeapon(Car *this, undefined4 weaponType)
 
 
 // Было: Car_FUN_004230d0
-byte __thiscall Car::Car_FUN_004230d0(Car *this,undefined4 param_1)
+// Стало: Car::IsCarWeaponReady
+byte __thiscall Car::IsCarWeaponReady(Car *this, undefined4 weaponType)
 
 
 // Было: Car_FUN_00423230
-Car::Car_FUN_00423230(Car *this,int param_1,SpriteS1 *param_2,S46 *param_3)
+// Стало: Car::SpawnCarWithParams
+void __thiscall Car::SpawnCarWithParams(Car *this, int carType, SpriteS1 *pSpawnPoint, S46 *pCarPool)
 
 
 // Было: Car_FUN_00423290
-void __thiscall Car::Car_FUN_00423290(Car *this)
+// Стало: Car::DespawnCar
+void __thiscall Car::DespawnCar(Car *this)
 
 
 // Было: Car_FUN_004232e0
-void __thiscall Car::Car_FUN_004232e0(Car *this)
+// Стало: Car::RespawnCar
+void __thiscall Car::RespawnCar(Car *this)
 
 
 // Было: Car_FUN_004233b0
-void __thiscall Car::Car_FUN_004233b0(Car *this)
+// Стало: Car::WarpCarToLocation
+void __thiscall Car::WarpCarToLocation(Car *this)
 
 
-Ped * __thiscall Car::Car_FUN_00423480(Car *this)
+// Было: Car_FUN_00423480
+// Стало: Car::GetCarDriver
+Ped* __thiscall Car::GetCarDriver(Car *this)
 
 
 void __thiscall Car::CarPutDummyDriverIn(Car *this)
 
 
 // Было: Car_FUN_00423590
-void __thiscall Car::Car_FUN_00423590(Car *this,Ped *pPed)
+// Стало: Car::RemovePedFromCar
+void __thiscall Car::RemovePedFromCar(Car *this, Ped *pPed)
 
 
 // Было: Car_FUN_004235d0
-void __thiscall Car::Car_FUN_004235d0(Car *this)
+// Стало: Car::KillCarDriver
+void __thiscall Car::KillCarDriver(Car *this)
 
 
 // Было: FUN_00423630
-undefined4 __thiscall Car::FUN_00423630(Car *this)
+// Стало: Car::GetCarSpeed
+undefined4 __thiscall Car::GetCarSpeed(Car *this)
 
 
 // Было: Car_FUN_00423720
-byte __thiscall Car::Car_FUN_00423720(Car *this,char param_1)
+// Стало: Car::SetCarAlertState
+byte __thiscall Car::SetCarAlertState(Car *this, char alertLevel)
 
 
 // Было: Car_FUN_00423830
-void __thiscall Car::Car_FUN_00423830(Car *this)
+// Стало: Car::ResetCarAlert
+void __thiscall Car::ResetCarAlert(Car *this)
 
 
 // Было: Car_FUN_00423940
-void __thiscall Car::Car_FUN_00423940(Car *this,int param_1)
+// Стало: Car::SetCarTarget
+void __thiscall Car::SetCarTarget(Car *this, int targetType)
 
 
 // Было: Car_FUN_00423a50
-void __thiscall Car::Car_FUN_00423a50(Car *this)
+// Стало: Car::ClearCarTarget
+void __thiscall Car::ClearCarTarget(Car *this)
 
 
 // Было: Car_FUN_00423aa0
