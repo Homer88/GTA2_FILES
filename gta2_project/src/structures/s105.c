@@ -1,0 +1,9 @@
+// Module: S105
+// Functions working with structure S105
+// Generated from gta2.exe.c
+
+#include "../../include/common.h"
+
+// TODO: Add functions that use S105
+// Structure definition is in structures_s.h
+
