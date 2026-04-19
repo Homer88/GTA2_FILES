@@ -5,6 +5,7 @@
 #include "types.h"
 #include "enums.h"
 #include "forward_declarations.h"
+#include "structures_s.h"
 #include "game.h"
 #include "player.h"
 #include "car.h"
