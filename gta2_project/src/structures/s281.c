@@ -4,6 +4,10 @@
 
 #include "../../include/common.h"
 
-// TODO: Add functions that use S281
-// Structure definition is in structures_s.h
+S281 * __thiscall S281__S281(S281 *this)
+
+{
+  return this;
+}
+
 

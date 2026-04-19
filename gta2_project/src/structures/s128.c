@@ -4,6 +4,40 @@
 
 #include "../../include/common.h"
 
-// TODO: Add functions that use S128
-// Structure definition is in structures_s.h
+S128 * __thiscall S128__S128(S128 *this)
+
+{
+  this->field0_0x0 = 0;
+  this->field1_0x4 = 0;
+  this->field2_0x8 = DAT_005e7ae0;
+  this->field3_0xc = DAT_005e7ae0;
+  this->field4_0x10 = DAT_005e7ae0;
+  return this;
+}
+
+
+void __thiscall S128__S128_FUN_0044a060(S128 *this,int pEventType,int pId)
+
+{
+  Ped *this_00;
+  undefined4 *puVar1;
+  
+  this->field0_0x0 = pEventType;
+  this->field1_0x4 = pId;
+  if (pId == 0) {
+    this->field2_0x8 = DAT_005e7ae0;
+    this->field3_0xc = DAT_005e7ae0;
+    this->field4_0x10 = DAT_005e7ae0;
+    return;
+  }
+  this_00 = Char::FindPed(gChar,pId);
+  puVar1 = (undefined4 *)Ped::GetPositionX(this_00,(int)&pEventType);
+  this->field2_0x8 = *puVar1;
+  puVar1 = (undefined4 *)Ped::GetPositionY(this_00,(int)&pEventType);
+  this->field3_0xc = *puVar1;
+  puVar1 = (undefined4 *)Ped::GetPositionZ(this_00,(int)&pEventType);
+  this->field4_0x10 = *puVar1;
+  return;
+}
+
 

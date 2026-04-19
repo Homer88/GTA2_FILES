@@ -4,6 +4,29 @@
 
 #include "../../include/common.h"
 
-// TODO: Add functions that use S167
-// Structure definition is in structures_s.h
+void __thiscall S167__FUN_0045aff0(S167 *this)
+
+{
+  this->field0_0x0 = -1;
+  return;
+}
+
+
+void __thiscall S167__FUN_0045b000(S167 *this)
+
+{
+  this->field1_0x4 = 0;
+  return;
+}
+
+
+S167 * __thiscall S167__S167(S167 *this)
+
+{
+  this->field0_0x0 = -1;
+  this->field1_0x4 = 0;
+  this->field2_0x8 = 0;
+  return this;
+}
+
 

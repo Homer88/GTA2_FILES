@@ -4,6 +4,14 @@
 
 #include "../../include/common.h"
 
-// TODO: Add functions that use S138
-// Structure definition is in structures_s.h
+void __thiscall S138__S138(S138 *this)
+
+{
+  this->field0_0x0 = 0;
+  this->field1_0x1 = 0;
+  this->field2_0x2 = 0;
+  this->field3_0x3 = 0;
+  return;
+}
+
 

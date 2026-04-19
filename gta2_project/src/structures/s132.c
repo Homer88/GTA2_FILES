@@ -4,6 +4,10 @@
 
 #include "../../include/common.h"
 
-// TODO: Add functions that use S132
-// Structure definition is in structures_s.h
+S132 * __thiscall S132__S132(S132 *this)
+
+{
+  return this;
+}
+
 

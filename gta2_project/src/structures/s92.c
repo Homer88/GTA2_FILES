@@ -4,6 +4,15 @@
 
 #include "../../include/common.h"
 
-// TODO: Add functions that use S92
-// Structure definition is in structures_s.h
+void __thiscall S92__S92(S92 *this)
+
+{
+  this->field0_0x0 = 0;
+  this->field1_0x2 = -1;
+  this->S92_a = 0;
+  this->field5_0x8 = 0;
+  this->field6_0xc = 0;
+  return;
+}
+
 

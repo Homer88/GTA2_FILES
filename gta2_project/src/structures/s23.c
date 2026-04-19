@@ -4,6 +4,20 @@
 
 #include "../../include/common.h"
 
-// TODO: Add functions that use S23
-// Structure definition is in structures_s.h
+void __thiscall S23__S23_FUN_0045b0e0(S23 *this)
+
+{
+  this->field0_0x0 = 0;
+  this->field1_0x4 = 0;
+  return;
+}
+
+
+S23 * __thiscall S23__S23(S23 *this)
+
+{
+  S23_FUN_0045b0e0(this);
+  return this;
+}
+
 

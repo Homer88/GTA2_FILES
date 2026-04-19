@@ -4,6 +4,11 @@
 
 #include "../../include/common.h"
 
-// TODO: Add functions that use S106
-// Structure definition is in structures_s.h
+void __thiscall S106__S106(S106 *this)
+
+{
+  this->field21_0x18 = 0;
+  return;
+}
+
 

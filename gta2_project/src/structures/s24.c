@@ -4,6 +4,20 @@
 
 #include "../../include/common.h"
 
-// TODO: Add functions that use S24
-// Structure definition is in structures_s.h
+S24 * __thiscall S24__S24(S24 *this)
+
+{
+  int Index;
+  S24 *pS24;
+  
+  this->next = 0;
+  this->Test = 0;
+  pS24 = this;
+  for (Index = 30; Index != 0; Index = Index + -1) {
+    pS24->Data[0] = 0;
+    pS24 = (S24 *)(pS24->Data + 1);
+  }
+  return this;
+}
+
 

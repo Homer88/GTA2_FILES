@@ -4,6 +4,12 @@
 
 #include "../../include/common.h"
 
-// TODO: Add functions that use S108
-// Structure definition is in structures_s.h
+S108 * __thiscall S108__S108(S108 *this)
+
+{
+  CarSystemManager::SetIndexDefautCarManager
+            ((CarSystemManager *)&this->CarSystemManager);
+  return this;
+}
+
 

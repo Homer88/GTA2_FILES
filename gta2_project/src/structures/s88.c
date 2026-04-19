@@ -4,6 +4,14 @@
 
 #include "../../include/common.h"
 
-// TODO: Add functions that use S88
-// Structure definition is in structures_s.h
+void __thiscall S88__S88(S88 *this)
+
+{
+  this->field0_0x0 = 0;
+  this->Texture = (void *)0x0;
+  this->field2_0x8 = 0;
+  this->field3_0xa = 0;
+  return;
+}
+
 

@@ -4,6 +4,13 @@
 
 #include "../../include/common.h"
 
-// TODO: Add functions that use S200
-// Structure definition is in structures_s.h
+void __thiscall S200__S200(S200 *this)
+
+{
+  this->X = 0;
+  this->Y = 0;
+  this->c = 0;
+  return;
+}
+
 

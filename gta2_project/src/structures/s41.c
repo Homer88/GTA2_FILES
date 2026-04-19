@@ -4,6 +4,10 @@
 
 #include "../../include/common.h"
 
-// TODO: Add functions that use S41
-// Structure definition is in structures_s.h
+S41 * __thiscall S41__S41(S41 *this)
+
+{
+  return this;
+}
+
 

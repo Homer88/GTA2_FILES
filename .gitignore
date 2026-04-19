@@ -2,11 +2,11 @@
 # Compiled and build artifacts
 *.o
 *.obj
-*.out
-*.a
-*.so
-*.dll
 *.exe
+*.dll
+*.so
+*.a
+*.out
 
 # Dependencies
 node_modules/
@@ -15,8 +15,6 @@ venv/
 __pycache__/
 .mypy_cache/
 .pytest_cache/
-dist/
-build/
 target/
 .gradle/
 
@@ -34,7 +32,16 @@ target/
 .vscode/
 .idea/
 
-# System files
+# OS generated files
 .DS_Store
 Thumbs.db
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Build directories (common for C/C++)
+build/
+dist/
 ```

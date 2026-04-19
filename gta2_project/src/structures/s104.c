@@ -4,6 +4,12 @@
 
 #include "../../include/common.h"
 
-// TODO: Add functions that use S104
-// Structure definition is in structures_s.h
+S104 * __thiscall S104__S104(S104 *this)
+
+{
+  Turrel::Turrel_FUN_00424620((Turrel *)&this->Turrel);
+  this->AAAAA = 0;
+  return this;
+}
+
 
