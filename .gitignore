@@ -27,10 +27,10 @@ dist/
 .idea/
 *.swp
 *.swo
-
-# Logs and temp files
-*.log
 *.tmp
+
+# Logs
+*.log
 
 # System files
 .DS_Store
