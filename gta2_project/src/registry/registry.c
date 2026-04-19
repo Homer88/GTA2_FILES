@@ -4,11 +4,11 @@
 
 #include "../../include/common.h"
 
-byte * __thiscall Registry::GetrRplayNum(Registry *this,LPCSTR param_1)
+byte * __thiscall Registry__GetReplayNumber(Registry *this,LPCSTR param_1)
 
 
 // Было: Registry_FUN_003f1422
-void __thiscall Registry::Registry_FUN_003f1422(Registry *this)
+void __thiscall Registry__InitReplaySettings(Registry *this)
 
 
 // Было: FUN_00405a60
@@ -16,17 +16,17 @@ LPDWORD __thiscall Registry::FUN_00405a60(Registry *this)
 
 
 // Было: FUN_00406250
-void __thiscall Registry::FUN_00406250(Registry *this,LPDWORD param_1)
+void __thiscall Registry__GetDwordValue(Registry *this,LPDWORD param_1)
 
 
-void __thiscall Registry::RegNetwork(Registry *this)
+void __thiscall Registry__InitNetworkSettings(Registry *this)
 
 
-void __thiscall Registry::GetPlayerNameNetwork(Registry *this,wchar_t *param_1)
+void __thiscall Registry__GetNetworkPlayerName(Registry *this,wchar_t *param_1)
 
 
 // Было: FUN_00407930
-void __thiscall Registry::FUN_00407930(Registry *this)
+void __thiscall Registry__LoadAllSettings(Registry *this)
 
 
 void __thiscall Registry::Registry_RegPararm_Cheat(Registry *this)

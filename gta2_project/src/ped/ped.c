@@ -4,7 +4,7 @@
 
 #include "../../include/common.h"
 
-undefined1 __thiscall S169::AreAnyPedActive(S169 *this)
+undefined1 __thiscall PedManager__HasActivePeds(S169 *this)
 
 
 // Было: FUN_00403800
@@ -18,112 +18,112 @@ Ped * __thiscall PedManager::S48_FUN_00403890(PedManager *this)
 bool __thiscall S169::FUN_004038f0(S169 *this)
 
 
-void __thiscall Ped::SetSearchType(Ped *this,SearchType type)
+void __thiscall Ped__SetSearchMode(Ped *this,SearchType type)
 
 
-void * __thiscall Ped::SetAutoClass4(Ped *this,AutoClass4 *pAutoClass4)
+void * __thiscall Ped__SetAIController(Ped *this,AutoClass4 *pAutoClass4)
 
 
-void __thiscall Ped::SetCarId(Ped *this,byte pIndex)
+void __thiscall Ped__SetAssignedCarIndex(Ped *this,byte pIndex)
 
 
 // Было: S49_Set_FUN_00403950
-void __thiscall Ped::S49_Set_FUN_00403950(Ped *this)
+void __thiscall Ped__ClearFlags(Ped *this)
 
 
 // Было: S49_FUN_00403960
-void __thiscall Ped::S49_FUN_00403960(Ped *this)
+void __thiscall Ped__UpdateState(Ped *this)
 
 
-void __thiscall Ped::SetOccupation(Ped *this,int occupation)
+void __thiscall Ped__SetCurrentOccupation(Ped *this,int occupation)
 
 
-int __thiscall Ped::GetOccupation(Ped *this)
+int __thiscall Ped__GetCurrentOccupation(Ped *this)
 
 
-PedState __thiscall Ped::GetCurrentState(Ped *this)
+PedState __thiscall Ped__GetPedState(Ped *this)
 
 
-void __thiscall Ped::SetHealthPlayer(Ped *this,short Health)
+void __thiscall Ped__SetHealth(Ped *this,short Health)
 
 
-void __thiscall Ped::SetTargetCarDoor(Ped *this,int param_1)
+void __thiscall Ped__SetTargetCarDoorIndex(Ped *this,int param_1)
 
 
 // Было: S49_Get_FUN_004039c0
-int __thiscall Ped::S49_Get_FUN_004039c0(Ped *this)
+int __thiscall Ped__GetFlags1(Ped *this)
 
 
 // Было: S49_Get_FUN_004039d0
-byte __thiscall Ped::S49_Get_FUN_004039d0(Ped *this)
+byte __thiscall Ped__GetFlags2(Ped *this)
 
 
 // Было: S49_Get_FUN_004039e0
-CarDamageState __thiscall Ped::S49_Get_FUN_004039e0(Ped *this)
+CarDamageState __thiscall Ped__GetDamageState(Ped *this)
 
 
 // Было: S49_FUN_004039f0
 ushort __thiscall Ped::S49_FUN_004039f0(Ped *this)
 
 
-int __thiscall Ped::GetPositionX(Ped *this,int x)
+int __thiscall Ped__GetXCoordinate(Ped *this,int x)
 
 
-int __thiscall Ped::GetPositionY(Ped *this,int Y)
+int __thiscall Ped__GetYCoordinate(Ped *this,int Y)
 
 
-void __thiscall Ped::SetDefaut_Pararam0x228(Ped *this)
+void __thiscall Ped__ResetSpecialParam(Ped *this)
 
 
-void __thiscall Ped::SetDefault(Ped *this)
+void __thiscall Ped__ResetToDefaults(Ped *this)
 
 
 // Было: Ped_Set_FUN_00403a40
-void __thiscall Ped::Ped_Set_FUN_00403a40(Ped *this)
+void __thiscall Ped__Initialize(Ped *this)
 
 
 // Было: S49_FUN_00403a50
-void __thiscall Ped::S49_FUN_00403a50(Ped *this,undefined4 param_1)
+void __thiscall Ped__SetFlags(Ped *this,undefined4 param_1)
 
 
 // Было: S49_Get_FUN_00403a60
-byte __thiscall Ped::S49_Get_FUN_00403a60(Ped *this)
+byte __thiscall Ped__GetAnimationState(Ped *this)
 
 
 // Было: S49_FUN_00403a70
-void __thiscall Ped::S49_FUN_00403a70(Ped *this,byte param_1)
+void __thiscall Ped__SetAnimationState(Ped *this,byte param_1)
 
 
 // Было: S49_Get_FUN_00403a80
-undefined4 __thiscall Ped::S49_Get_FUN_00403a80(Ped *this)
+undefined4 __thiscall Ped__GetActionParam(Ped *this)
 
 
-int __thiscall Ped::GetCurrentAction(Ped *this)
+int __thiscall Ped__GetCurrentAction(Ped *this)
 
 
 // Было: S49_FUN_00403aa0
-void __thiscall Ped::S49_FUN_00403aa0(Ped *this,Car *param_1)
+void __thiscall Ped__EnterCar(Ped *this,Car *param_1)
 
 
-Car * __thiscall Ped::GetCarPed(Ped *this)
+Car * __thiscall Ped__GetVehicle(Ped *this)
 
 
-void __thiscall Ped::SetDriverPed(Ped *this,Ped *param_1)
+void __thiscall Ped__SetAsDriver(Ped *this,Ped *param_1)
 
 
-Ped * __thiscall Ped::S49_Get_FUN_00403ad0(Ped *this)
+Ped * __thiscall Ped__GetPassenger(Ped *this)
 
 
-void __thiscall Ped::SetLinkedPed(Ped *this,Ped *linkedPed)
+void __thiscall Ped__SetLinkedPedestrian(Ped *this,Ped *linkedPed)
 
 
-Ped * __thiscall Ped::GetPed(Ped *this)
+Ped * __thiscall Ped__GetLinkedPed(Ped *this)
 
 
-void __thiscall Ped::SetObjectiveTargetCar(Ped *this,Car *pCar)
+void __thiscall Ped__SetTargetVehicle(Ped *this,Car *pCar)
 
 
-Car * __thiscall Ped::GetCurrentCar(Ped *this)
+Car * __thiscall Ped__GetCurrentVehicle(Ped *this)
 
 
 // Было: S49_Get_FUN_00403b20
@@ -134,77 +134,77 @@ short __thiscall Ped::S49_Get_FUN_00403b20(Ped *this)
 short __thiscall Ped::S49_Get_FUN_00403b30(Ped *this)
 
 
-void __thiscall Ped::SetCarDamageState(Ped *this,CarDamageState param_1)
+void __thiscall Ped__SetVehicleDamageState(Ped *this,CarDamageState param_1)
 
 
-void __thiscall Ped::SetExitAnimState(Ped *this,byte param_1)
+void __thiscall Ped__SetExitAnimationState(Ped *this,byte param_1)
 
 
 bool __thiscall Ped::GetDeadPed(Ped *this)
 
 
 // Было: S49_Get_FUN_00403b70
-byte __thiscall Ped::S49_Get_FUN_00403b70(Ped *this)
+byte __thiscall Ped__GetExitAnimState(Ped *this)
 
 
-byte __thiscall Ped::IsInCar(Ped *this)
+byte __thiscall Ped__IsInsideVehicle(Ped *this)
 
 
-PedFlags __thiscall Ped::IsCrouching(Ped *this)
+PedFlags __thiscall Ped__GetStance(Ped *this)
 
 
 // Было: FUN_00403be0
-void __thiscall S169::FUN_00403be0(S169 *this)
+void __thiscall PedManager__UpdateAll(S169 *this)
 
 
 // Было: S169_FUN_00403c40
-byte __thiscall S169::S169_FUN_00403c40(S169 *this)
+byte __thiscall PedManager__CheckPedStatus(S169 *this)
 
 
 // Было: FUN_00403da0
-void __thiscall S169::FUN_00403da0(S169 *this)
+void __thiscall PedManager__ProcessPeds(S169 *this)
 
 
 // Было: FUN_00403e90
-void __thiscall S169::FUN_00403e90(S169 *this)
+void __thiscall PedManager__UpdatePedStates(S169 *this)
 
 
 // Было: FUN_00403fb0
-void __thiscall S169::FUN_00403fb0(S169 *this,int param_1)
+void __thiscall PedManager__HandlePedAction(S169 *this,int param_1)
 
 
 // Было: FUN_00404120
-void __thiscall S169::FUN_00404120(S169 *this,byte index)
+void __thiscall PedManager__SetPedIndex(S169 *this,byte index)
 
 
 // Было: FUN_00404450
-undefined4 __thiscall S169::FUN_00404450(S169 *this)
+undefined4 __thiscall PedManager__GetPedCount(S169 *this)
 
 
 // Было: FUN_00404480
-void __thiscall S169::FUN_00404480(S169 *this)
+void __thiscall PedManager__ClearAll(S169 *this)
 
 
-Ped * __thiscall S169::FUN_00404490(S169 *this,int *param_1)
+Ped * __thiscall PedManager__GetPedByIndex(S169 *this,int *param_1)
 
 
 // Было: FUN_00404840
 bool __thiscall S169::FUN_00404840(S169 *this)
 
 
-void __thiscall PedGroupAddPed(void *this,Ped *param_1)
+void __thiscall PedGroup_AddMember(void *this,Ped *param_1)
 
 
 // Было: FUN_00404d40
-void __thiscall S169::FUN_00404d40(S169 *this,void *pPed)
+void __thiscall PedManager__RemovePed(S169 *this,void *pPed)
 
 
 // Было: FUN_00404ef0
-void __thiscall S169::FUN_00404ef0(S169 *this,undefined4 *param_1)
+void __thiscall PedManager__ProcessGroup(S169 *this,undefined4 *param_1)
 
 
 // Было: FUN_00405240
-void __thiscall S169::FUN_00405240(S169 *this)
+void __thiscall PedManager__UpdateGroup(S169 *this)
 
 
 int __thiscall Ped::GetPositionZ(Ped *this,int Z)
@@ -236,7 +236,7 @@ void __thiscall Ped::SetPoliceNoStar(Ped *this)
 int __thiscall S68::S68GetPedID(S68 *this,byte param_1)
 
 
-byte __thiscall Ped::GetOccupationPolice(Ped *this)
+byte __thiscall Ped__GetCurrentOccupationPolice(Ped *this)
 
 
 // Было: sPed_FUN_004331d0
@@ -268,7 +268,7 @@ byte __thiscall Ped::PedNormal_FUN_00433380(Ped *this)
 bool __thiscall Ped::HasSearchType(Ped *this,SearchType param_1)
 
 
-void __thiscall Ped::SetOccupationAGENT(Ped *this,int newOccupation)
+void __thiscall Ped__SetCurrentOccupationAGENT(Ped *this,int newOccupation)
 
 
 void * __thiscall Ped::S49_FUN_00433580(Ped *this,byte param_1)

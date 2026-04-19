@@ -4,7 +4,7 @@
 
 #include "../../include/common.h"
 
-void __thiscall CarSystemManager::Clamp(CarSystemManager *this)
+void __thiscall CarSystemManager__ClampValues(CarSystemManager *this)
 
 
 // Было: Car_FUN_00403820
@@ -15,7 +15,7 @@ bool __thiscall Car::CheckCarCondition(Car *this, int *pResult)
 bool __thiscall Car::IsTrainOrTrainCarriage(Car *this)
 
 
-byte __thiscall Car::isSWATVANOrBankVan(Car *this)
+byte __thiscall Car__IsSpecialVehicle(Car *this)
 
 
 void __thiscall CarSystemManager::SetIndexDefautCarManager(CarSystemManager *this)

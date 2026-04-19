@@ -7,10 +7,10 @@
 Registry::GetReplayNum(Registry *this,LPCSTR param_1,byte param_2)
 
 
-void __thiscall Replay::PlayReplay(Replay *this,char *Part)
+void __thiscall Replay__PlaySegment(Replay *this,char *Part)
 
 
-void __thiscall Replay::StartPlayReplay(Replay *this)
+void __thiscall Replay__StartPlayback(Replay *this)
 
 
 bool __thiscall Replay::IsPlayingBack(Replay *this)

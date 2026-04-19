@@ -4,11 +4,11 @@
 
 #include "../../include/common.h"
 
-Car * __thiscall GameObject::GetCar(GameObject *this)
+Car * __thiscall GameObject__GetVehicle(GameObject *this)
 
 
 // Было: FUN_00403910
-void __thiscall GameObject::FUN_00403910(GameObject *this,GameObject *param_1)
+void __thiscall GameObject__LinkTo(GameObject *this,GameObject *param_1)
 
 
 // Было: S91_FUN_0040c690

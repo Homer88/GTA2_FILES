@@ -4,7 +4,7 @@
 
 #include "../../include/common.h"
 
-void __thiscall ShowWindows(void *this,int param_1)
+void __thiscall UI_ShowWindow(void *this,int param_1)
 
 
 // Было: FUN_0041d8a0

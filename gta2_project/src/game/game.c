@@ -4,7 +4,7 @@
 
 #include "../../include/common.h"
 
-void __thiscall FUN_003f1004(void *this)
+void __thiscall FindNearestPlayer(void *this)
 
 
     if (dVar2 < dVar1) {
@@ -12,11 +12,11 @@ void __thiscall FUN_003f1004(void *this)
       dVar1 = dVar2;
     }
 
-void __thiscall FUN_003f10b0(void)
+void __thiscall Callback_MissionComplete(void)
 
 
 // Было: Game_FUN_003f113c
-int __thiscall Game::Game_FUN_003f113c(Game *this)
+int __thiscall Game__GetCurrentPlayerSlot(Game *this)
 
 
   if (extraout_DL != '\0') {
@@ -37,7 +37,7 @@ int __thiscall Game::Game_FUN_003f113c(Game *this)
     } while (DAT_00676201 < *(byte *)(extraout_ECX + 0x23));
   }
 
-Player * __thiscall Game::Game_FUN_003f11a8(Game *this)
+Player * __thiscall Game__FindNextActivePlayer(Game *this)
 
 
   if (this->byte_ != 0) {
@@ -57,7 +57,7 @@ Player * __thiscall Game::Game_FUN_003f11a8(Game *this)
   }
 
 // Было: Game_FUN_003f1208
-int __thiscall Game::Game_FUN_003f1208(Game *this)
+int __thiscall Game__SwitchToNextPlayer(Game *this)
 
 
     if (5 < bVar1) {
@@ -74,7 +74,7 @@ int __thiscall Game::Game_FUN_003f1208(Game *this)
         }
 
 // Было: Game_FUN_003f12a8
-undefined4 __thiscall Game::Game_FUN_003f12a8(Game *this)
+undefined4 __thiscall Game__CycleToNextPlayer(Game *this)
 
 
   if (5 < bVar1) {
@@ -97,13 +97,13 @@ undefined4 __thiscall Game::Game_FUN_003f12a8(Game *this)
     } while (DAT_00676203 < this->byte_);
   }
 
-FUN_003f1314(void *this,undefined4 param_1,undefined4 param_2,uint param_3)
+CheckPlayerLimit(void *this,undefined4 param_1,undefined4 param_2,uint param_3)
 
 
-undefined1 __fastcall FUN_003f135c(void *param_1,char param_2)
+undefined1 __fastcall ShouldPauseGame(void *param_1,char param_2)
 
 
-FUN_003f1380(void *this,char *FileName,void *param_2,size_t *param_3)
+SaveGameData(void *this,char *FileName,void *param_2,size_t *param_3)
 
 
   if (*param_3 != 0) {
@@ -129,10 +129,10 @@ FUN_003f1490(void *param_1,size_t *param_2,void *param_3,size_t *param_4)
 FUN_003f14a8(void *param_1,size_t *param_2,void *param_3,size_t *param_4)
 
 
-void __thiscall FUN_003f14c0(void *this,void *param_1)
+void __thiscall CopyObject(void *this,void *param_1)
 
 
-void FUN_003f14d8(void)
+void InitializeGlobals(void)
 
 
     if (*unaff_ESI == '\"') {
@@ -172,14 +172,14 @@ LAB_003f1535:
     uVar3 = extraout_EDX_01;
   }
 
-void FUN_003f15bc(void)
+void InitReplaySystem(void)
 
 
     if (*this == 0x2f) {
       *this = 0x3f;
     }
 
-int __thiscall FUN_003f1614(void *this)
+int __thiscall GetMissionStatus(void *this)
 
 
   if (in_AX != 0) {
@@ -190,19 +190,19 @@ int __thiscall FUN_003f1614(void *this)
     }
   }
 
-void __thiscall FUN_003f1674(void *this)
+void __thiscall UpdateMissionTimer(void *this)
 
 
-void __thiscall FUN_003f1afa(void)
+void __thiscall MainGameLoop(void)
 
 
     if (0x68 < uVar2) {
       if (uVar2 < 0x6f) goto LAB_003f1bcc;
       if (0x72 < uVar2) {
         if ((uVar2 != 0x78) && (uVar2 != 0x79)) goto LAB_003f1bcc;
-        pvVar5 = MissionManager::MissionManager_FUN_00476200
+        pvVar5 = MissionManager__StartMission
                            (_gMissionManager,*(ushort *)(unaff_ESI + 8));
-        pvVar6 = MissionManager::MissionManager_FUN_00476200
+        pvVar6 = MissionManager__StartMission
                            (this_00,*(ushort *)(unaff_ESI + 0xc));
         uVar4 = *(uint *)((int)pvVar5 + 8);
         uVar7 = uVar4;
@@ -216,7 +216,7 @@ void __thiscall FUN_003f1afa(void)
       }
     }
 
-void FUN_00401050(short *param_1,int param_2)
+void Math_ScaleVector(short *param_1,int param_2)
 
 
   if (*param_1 == 0) {
@@ -228,28 +228,28 @@ void FUN_00401050(short *param_1,int param_2)
     }
   }
 
-void FUN_00401080(int param_1,int param_2)
+void Math_RotatePoint(int param_1,int param_2)
 
 
     if (*puVar1 != 0) {
       uVar2 = (uint)*puVar1;
       do {
-        FUN_00401050(iVar3,param_2);
+        Math_ScaleVector(iVar3,param_2);
         iVar3 = iVar3 + 0x20;
         uVar2 = uVar2 - 1;
       } while (uVar2 != 0);
     }
 
-void FUN_004010e0(undefined4 param_1,int param_2,int param_3)
+void Math_TransformCoords(undefined4 param_1,int param_2,int param_3)
 
 
-void FUN_00401180(float *param_1,float *param_2,float *param_3)
+void Math_CalculateNormal(float *param_1,float *param_2,float *param_3)
 
 
-void FUN_004012c0(undefined4 param_1)
+void Renderer_SetTransform(undefined4 param_1)
 
 
-void FUN_004012f0(void)
+void Renderer_Reset(void)
 
 
 S353 * __thiscall S353::S353(S353 *this,int param_1)
@@ -264,13 +264,13 @@ S352 * __thiscall S352::S352(S352 *this,int param_1,int param_2)
       puVar5 = (undefined4 *)((int)puVar5 + 1);
     }
 
-void * __thiscall FUN_004018a0(void *this,byte param_1)
+void * __thiscall Pool_Allocate(void *this,byte param_1)
 
 
-void __thiscall FUN_004018c0(void *this)
+void __thiscall Pool_Free(void *this)
 
 
-void __thiscall FUN_004019a0(void *this,int param_1)
+void __thiscall Pool_Init(void *this,int param_1)
 
 
   if (param_1 != 0) {
@@ -282,13 +282,13 @@ void __thiscall FUN_004019a0(void *this,int param_1)
     return;
   }
 
-void __thiscall FUN_00401ae0(void *this,short param_1)
+void __thiscall Decoder_SetValue(void *this,short param_1)
 
 
-void __thiscall bitShiftLeft1(void *this,void *param_1)
+void __thiscall Decoder_ShiftLeft(void *this,void *param_1)
 
 
-int __thiscall DecoderFloat(void *this)
+int __thiscall Decoder_DecodeFloat(void *this)
 
 
 float10 __thiscall S17::EncodedFloatToRegularFloat(void *param_1)
@@ -298,13 +298,13 @@ float10 __thiscall S17::EncodedFloatToRegularFloat(void *param_1)
 S9::S9_FUN_00401b20(S9 *this,SpriteS1 *pSpriteS1,int *param_2)
 
 
-void * __thiscall S110_FUN_00401b40(void *this,S110 *param_1,void *param_2)
+void * __thiscall Decoder_ProcessData(void *this,S110 *param_1,void *param_2)
 
 
 WorldCoordinateToScreenCoord(void *this,void *pS110,int *param_2)
 
 
-void * __thiscall FUN_00401b90(void *this,void *param_1,int *param_2)
+void * __thiscall Decoder_ReadInt(void *this,void *param_1,int *param_2)
 
 
 SpriteS1 * __thiscall FUN_00401bd0(void *this,SpriteS1 *s110,int *param_2)
@@ -331,13 +331,13 @@ Model::FUN_00401bf0(Model *this,SpriteS1 *pSpriteS1,int *param_2)
   }
 
 // Было: FUN_00401c40
-CarSystemManager::FUN_00401c40(CarSystemManager *this,void *param_1)
+CarSystemManager__AddCarToSystem(CarSystemManager *this,void *param_1)
 
 
-void * __thiscall FUN_00401c60(void *this,int param_1)
+void * __thiscall CarPool_Get(void *this,int param_1)
 
 
-void * __thiscall FUN_00401c80(void *this,void *pPed)
+void * __thiscall PedPool_Get(void *this,void *pPed)
 
 
 FUN_00401cb0(void *this,CarSystemManager *param_1,S110 *param_2)
@@ -350,13 +350,13 @@ FUN_00401cb0(void *this,CarSystemManager *param_1,S110 *param_2)
     } while (param_3 != 0);
   }
 
-void __thiscall FUN_00401d20(void *this,undefined4 *param_1,undefined4 *param_2)
+void __thiscall String_ParseLine(void *this,undefined4 *param_1,undefined4 *param_2)
 
 
-void __thiscall FUN_00402180(void *this)
+void __thiscall DataStream_Read(void *this)
 
 
-void * __thiscall FUN_004021e0(void *this,byte param_1)
+void * __thiscall DataStream_Allocate(void *this,byte param_1)
 
 
     if (360.0 < fVar1) {
@@ -377,7 +377,7 @@ void * __thiscall FUN_004021e0(void *this,byte param_1)
       puVar7 = (undefined4 *)((int)puVar7 + 1);
     }
 
-void __thiscall FUN_004023e0(void *this)
+void __thiscall DataStream_Close(void *this)
 
 
       if (fVar22 < _DAT_00599ee0) {
@@ -443,7 +443,7 @@ long FUN_004029c0(FILE *param_1)
     }
   }
 
-void FUN_00402f00(void)
+void ErrorHandler_Init(void)
 
 
   if (DAT_005d25f4 != 0) {
@@ -451,7 +451,7 @@ void FUN_00402f00(void)
     DAT_005d25f4 = 0;
   }
 
-void Error(int param_1)
+void ErrorHandler_Throw(int param_1)
 
 
   if (DAT_005d25f4 == 0) {
@@ -459,7 +459,7 @@ void Error(int param_1)
   }
 
   if (iVar1 != 0) {
-    Error(0xe);
+    ErrorHandler_Throw(0xe);
   }
 
   if (DAT_005d25f4 == 0) {
@@ -467,14 +467,14 @@ void Error(int param_1)
   }
 
   if (iVar1 != 1) {
-    Error(0xf);
+    ErrorHandler_Throw(0xf);
   }
 
   if (DAT_005d25f4 == 0) {
     DebugLog(0x15,"File.cpp",0x1d1);
   }
 
-uint FUN_00403040(size_t param_1,uint *param_2)
+uint Checksum_Calculate(size_t param_1,uint *param_2)
 
 
   if (DAT_005d25f4 == 0) {
@@ -482,19 +482,19 @@ uint FUN_00403040(size_t param_1,uint *param_2)
   }
 
   if (_Offset == -1) {
-    Error(0xd);
+    ErrorHandler_Throw(0xd);
   }
 
   if (iVar1 != 0) {
-    Error(0xe);
+    ErrorHandler_Throw(0xe);
   }
 
   if (lVar2 == -1) {
-    Error(0xd);
+    ErrorHandler_Throw(0xd);
   }
 
   if (iVar1 != 0) {
-    Error(0xe);
+    ErrorHandler_Throw(0xe);
   }
 
 bool GetNextSignificantChar(FILE *param_1)
@@ -505,7 +505,7 @@ bool GetNextSignificantChar(FILE *param_1)
     this = extraout_ECX;
   }
 
-void InitDirectX(HINSTANCE phInstance,int param_2)
+void DirectX_Initialize(HINSTANCE phInstance,int param_2)
 
 
   if (BVar1 == 0) {
@@ -591,7 +591,7 @@ void InitDirectX(HINSTANCE phInstance,int param_2)
       *(undefined4 *)OSVERSIONINFOA.szCSDVersion._120_4_ = 0x601;
     }
 
-void __thiscall FUN_004035a0(void *this)
+void __thiscall Direct3D_CreateDevice(void *this)
 
 
 AutoClass4 * __thiscall AutoClass4::FUN_004035b0(AutoClass4 *this)
@@ -602,20 +602,20 @@ AutoClass4 * __thiscall AutoClass4::FUN_004035b0(AutoClass4 *this)
     ppPVar2 = ppPVar2 + 1;
   }
 
-void __fastcall FUN_004035e0(int param_1)
+void __fastcall Direct3D_SetRenderState(int param_1)
 
 
-byte __thiscall FUN_00403650(void *this)
+byte __thiscall Direct3D_CheckCaps(void *this)
 
 
     if (bVar2 != 0) {
       return 1;
     }
 
-undefined4 __fastcall FUN_00403770(undefined4 param_1)
+undefined4 __fastcall Texture_Load(undefined4 param_1)
 
 
-void * __thiscall FUN_00403780(void *this,void *param_1)
+void * __thiscall Texture_Find(void *this,void *param_1)
 
 
   if (this->Index != 0) {
@@ -631,17 +631,17 @@ void * __thiscall FUN_00403780(void *this,void *param_1)
 bool __thiscall FUN_004037e0(void *this,SpriteS1 *pSpriteS1)
 
 
-int * __thiscall FUN_00403840(void *this,int *param_1,S110 *pS110)
+int * __thiscall Matrix_Multiply(void *this,int *param_1,S110 *pS110)
 
 
-void __thiscall FUN_00403870(void *this)
+void __thiscall Matrix_Identity(void *this)
 
 
 AutoClass4 * __thiscall AutoClass4::AutoClass4(AutoClass4 *this)
 
 
 // Было: FUN_004038e0
-void __thiscall AutoClass4::FUN_004038e0(AutoClass4 *this)
+void __thiscall AIController__Initialize(AutoClass4 *this)
 
 
   if (this->Index != 0) {
@@ -668,7 +668,7 @@ undefined4 __fastcall FUN_00403d20(int param_1)
 
 
   if (iVar1 != 3) {
-    iVar1 = Ped::GetCurrentState(this);
+    iVar1 = Ped__GetPedState(this);
     if (iVar1 != 5) {
       return 0;
     }
@@ -685,16 +685,16 @@ void __fastcall FUN_00403d50(int param_1)
       do {
         this_00 = this->Ped_Arr9[local_4];
         piVar1 = this->Ped_Arr9 + local_4;
-        iVar2 = Ped::GetCurrentState(this_00);
+        iVar2 = Ped__GetPedState(this_00);
         if ((iVar2 == 9) || (this_00->SavedState == PEDSTATE_DEAD)) {
-          Ped::SetDefault(this_00);
+          Ped__ResetToDefaults(this_00);
         }
         else {
-          bVar1 = Ped::IsInCar(this_00);
+          bVar1 = Ped__IsInsideVehicle(this_00);
           if (bVar1 == 1) {
             Ped::PedSetObjective(this_00,0x22,9999);
                               // WARNING: Load size is inaccurate
-            Ped::S49_FUN_00403aa0(*piVar1,(*piVar1)->CarCurrent);
+            Ped__EnterCar(*piVar1,(*piVar1)->CarCurrent);
           }
           else {
             Ped::PedSetObjective(this_00,0,9999);
@@ -702,9 +702,9 @@ void __fastcall FUN_00403d50(int param_1)
                               // WARNING: Load size is inaccurate
           Ped::SetAnimationState(*piVar1,0,9999);
                               // WARNING: Load size is inaccurate
-          Ped::SetDefault(*piVar1);
+          Ped__ResetToDefaults(*piVar1);
                               // WARNING: Load size is inaccurate
-          Ped::SetSearchType(*piVar1,3);
+          Ped__SetSearchMode(*piVar1,3);
         }
                               // WARNING: Load size is inaccurate
         bVar3 = bVar3 + 1;
@@ -721,23 +721,23 @@ void __fastcall FUN_00403d50(int param_1)
       do {
         pPed = this->Ped_Arr9[local_4];
         ppPVar1 = this->Ped_Arr9 + local_4;
-        iVar3 = Ped::GetCurrentState(pPed);
+        iVar3 = Ped__GetPedState(pPed);
         if ((iVar3 == 9) || (pPed->SavedState == PEDSTATE_DEAD)) {
-          Ped::SetDefault(pPed);
+          Ped__ResetToDefaults(pPed);
         }
         else {
-          bVar2 = Ped::IsInCar(pPed);
+          bVar2 = Ped__IsInsideVehicle(pPed);
           if (bVar2 == 1) {
             Ped::SetAnimationState(pPed,0,9999);
             Ped::PedSetObjective(*ppPVar1,0x22,9999);
-            Ped::S49_FUN_00403aa0(*ppPVar1,(*ppPVar1)->CarCurrent);
+            Ped__EnterCar(*ppPVar1,(*ppPVar1)->CarCurrent);
           }
           else {
             Ped::PedSetObjective(pPed,0,9999);
             Ped::SetAnimationState(*ppPVar1,0,9999);
           }
-          Ped::SetDefault(*ppPVar1);
-          Ped::SetSearchType(*ppPVar1,3);
+          Ped__ResetToDefaults(*ppPVar1);
+          Ped__SetSearchMode(*ppPVar1,3);
         }
         bVar4 = bVar4 + 1;
         local_4 = (uint)bVar4;
@@ -748,37 +748,37 @@ void __fastcall FUN_00403d50(int param_1)
     bVar1 = Ped::HasSearchType(this->Ped,SEARCHTYPE_LINE_OF_SIGHT_PLAYER_ONLY);
     if (!bVar1) {
       Ped::PedSetObjective(this->Ped,3,9999);
-      Ped::SetDriverPed(this->Ped,param_1);
+      Ped__SetAsDriver(this->Ped,param_1);
       Ped::SetAnimationState(this->Ped,3,9999);
-      Ped::SetLinkedPed(this->Ped,param_1);
-      Ped::S49_Set_FUN_00403950(this->Ped);
-      Ped::SetDefaut_Pararam0x228(this->Ped);
-      Ped::S49_FUN_00403a50(this->Ped,DAT_005d2e28);
+      Ped__SetLinkedPedestrian(this->Ped,param_1);
+      Ped__ClearFlags(this->Ped);
+      Ped__ResetSpecialParam(this->Ped);
+      Ped__SetFlags(this->Ped,DAT_005d2e28);
     }
-    Ped::SetDefault(this->Ped);
+    Ped__ResetToDefaults(this->Ped);
     param_1 = 0;
     if (this->Index != 0) {
       iVar3 = 0;
       do {
         pS49 = this->Ped_Arr9[iVar3];
-        bVar2 = Ped::IsInCar(pS49);
+        bVar2 = Ped__IsInsideVehicle(pS49);
         if (bVar2 == 1) {
           Ped::SetAnimationState(pS49,0,9999);
           Ped::PedSetObjective(this->Ped_Arr9[iVar3],6,9999);
-          Ped::SetDriverPed(this->Ped_Arr9[iVar3],linkedPed);
-          Ped::SetDefaut_Pararam0x228(this->Ped_Arr9[iVar3]);
-          Ped::SetDefault(this->Ped_Arr9[iVar3]);
+          Ped__SetAsDriver(this->Ped_Arr9[iVar3],linkedPed);
+          Ped__ResetSpecialParam(this->Ped_Arr9[iVar3]);
+          Ped__ResetToDefaults(this->Ped_Arr9[iVar3]);
         }
         else {
           Ped::PedSetObjective(pS49,3,9999);
-          Ped::SetDriverPed(this->Ped_Arr9[iVar3],linkedPed);
+          Ped__SetAsDriver(this->Ped_Arr9[iVar3],linkedPed);
           Ped::SetAnimationState(this->Ped_Arr9[iVar3],3,9999);
-          Ped::SetLinkedPed(this->Ped_Arr9[iVar3],linkedPed);
-          Ped::S49_Set_FUN_00403950(this->Ped_Arr9[iVar3]);
-          Ped::SetDefaut_Pararam0x228(this->Ped_Arr9[iVar3]);
-          Ped::S49_FUN_00403a50(this->Ped_Arr9[iVar3],DAT_005d2e28);
-          Ped::SetDefault(this->Ped_Arr9[iVar3]);
-          Ped::SetSearchType(this->Ped_Arr9[iVar3],3);
+          Ped__SetLinkedPedestrian(this->Ped_Arr9[iVar3],linkedPed);
+          Ped__ClearFlags(this->Ped_Arr9[iVar3]);
+          Ped__ResetSpecialParam(this->Ped_Arr9[iVar3]);
+          Ped__SetFlags(this->Ped_Arr9[iVar3],DAT_005d2e28);
+          Ped__ResetToDefaults(this->Ped_Arr9[iVar3]);
+          Ped__SetSearchMode(this->Ped_Arr9[iVar3],3);
         }
         iVar3 = (int)(char)((char)param_1 + 1U);
         param_1 = (int)(byte)((char)param_1 + 1U);
@@ -790,7 +790,7 @@ void __fastcall FUN_00403d50(int param_1)
 
     if (iVar5 == 0x17) {
       pGameGameObject->Ped = this->Ped_Arr9[Index];
-      Ped::SetTargetCarDoor(this->Ped_Arr9[Index],1);
+      Ped__SetTargetCarDoorIndex(this->Ped_Arr9[Index],1);
       goto LAB_004043b1;
     }
 
@@ -809,33 +809,33 @@ void __fastcall FUN_00403d50(int param_1)
   }
 
 // Было: FUN_00404400
-byte __thiscall AutoClass4::FUN_00404400(AutoClass4 *this,Ped *pPed)
+byte __thiscall AIController__AssignPed(AutoClass4 *this,Ped *pPed)
 
 
 // Было: FUN_00404420
-void __thiscall AutoClass4::FUN_00404420(AutoClass4 *this,Ped *pPed,byte index)
+void __thiscall AIController__SetPedIndex(AutoClass4 *this,Ped *pPed,byte index)
 
 
   if (bVar1 != 0) {
     this_00 = this->Ped;
     ppPVar9 = this->Ped_Arr9;
     do {
-      puVar4 = (undefined4 *)Ped::GetPositionX(this_00,(int)local_20);
+      puVar4 = (undefined4 *)Ped__GetXCoordinate(this_00,(int)local_20);
       local_34 = (Ped *)*puVar4;
       pPVar2 = *ppPVar9;
-      pvVar5 = (void *)Ped::GetPositionX(pPVar2,(int)local_1c);
+      pvVar5 = (void *)Ped__GetXCoordinate(pPVar2,(int)local_1c);
       puVar4 = (undefined4 *)
-               S110_FUN_00401b40(&local_34,(S110 *)(local_1c + 4),pvVar5);
+               Decoder_ProcessData(&local_34,(S110 *)(local_1c + 4),pvVar5);
       local_34 = (Ped *)*puVar4;
-      puVar4 = (undefined4 *)Ped::GetPositionY(this_00,(int)local_14);
+      puVar4 = (undefined4 *)Ped__GetYCoordinate(this_00,(int)local_14);
       local_30 = (Ped *)*puVar4;
-      pvVar5 = (void *)Ped::GetPositionY(pPVar2,(int)local_10);
+      pvVar5 = (void *)Ped__GetYCoordinate(pPVar2,(int)local_10);
       puVar4 = (undefined4 *)
-               S110_FUN_00401b40(&local_30,(S110 *)(local_10 + 4),pvVar5);
+               Decoder_ProcessData(&local_30,(S110 *)(local_10 + 4),pvVar5);
       local_30 = (Ped *)*puVar4;
-      piVar6 = FUN_00403840(&local_34,&local_8,(S110 *)&local_34);
+      piVar6 = Matrix_Multiply(&local_34,&local_8,(S110 *)&local_34);
       local_34 = (Ped *)*piVar6;
-      piVar6 = FUN_00403840(&local_30,&local_4,(S110 *)&local_30);
+      piVar6 = Matrix_Multiply(&local_30,&local_4,(S110 *)&local_30);
       local_30 = (Ped *)*piVar6;
       bVar3 = FUN_00403800((S169 *)&local_34,(int *)&local_30);
       ppPVar7 = &local_34;
@@ -856,13 +856,13 @@ void __thiscall AutoClass4::FUN_00404420(AutoClass4 *this,Ped *pPed,byte index)
   }
 
 // Было: FUN_004045d0
-void __thiscall AutoClass4::FUN_004045d0(AutoClass4 *this)
+void __thiscall AIController__Update(AutoClass4 *this)
 
 
     if (this->IndexPed != 0) {
       do {
         pPed = this->Ped[Index];
-        Action = Ped::GetCurrentAction(pPed);
+        Action = Ped__GetCurrentAction(pPed);
         if ((Action != 9) && (pPed->GameObject != (GameObject *)0x0)) {
           Ped::SetAnimationState(pPed,9,9999);
         }
@@ -875,7 +875,7 @@ LAB_004046a6:
             linkedPed = this->Ped[Index - 1];
           }
 LAB_004046aa:
-          Ped::SetLinkedPed(pPed,linkedPed);
+          Ped__SetLinkedPedestrian(pPed,linkedPed);
         }
         else {
           bVar2 = Ped::GetDeadPed(pPed);
@@ -906,30 +906,30 @@ LAB_004046aa:
             goto LAB_004046aa;
           }
         }
-        Ped::Ped_Set_FUN_00403a40(pPed);
+        Ped__Initialize(pPed);
         bVar3 = bVar3 + 1;
         Index = (uint)bVar3;
       } while (bVar3 < this->IndexPed);
     }
 
 // Было: FUN_004046f0
-void __thiscall AutoClass4::FUN_004046f0(AutoClass4 *this,byte IndexPed)
+void __thiscall AIController__ProcessPed(AutoClass4 *this,byte IndexPed)
 
 
   if (bVar1 != 0) {
-    puVar3 = (undefined4 *)Ped::GetPositionX(this_00,(int)&IndexPed);
+    puVar3 = (undefined4 *)Ped__GetXCoordinate(this_00,(int)&IndexPed);
     _IndexPed = (Car *)*puVar3;
-    pvVar4 = (void *)Ped::GetPositionX(this_01,(int)&local_c);
-    puVar3 = (undefined4 *)S110_FUN_00401b40(&IndexPed,(S110 *)local_8,pvVar4);
+    pvVar4 = (void *)Ped__GetXCoordinate(this_01,(int)&local_c);
+    puVar3 = (undefined4 *)Decoder_ProcessData(&IndexPed,(S110 *)local_8,pvVar4);
     _IndexPed = (Car *)*puVar3;
-    puVar3 = (undefined4 *)Ped::GetPositionY(this_00,(int)local_8);
+    puVar3 = (undefined4 *)Ped__GetYCoordinate(this_00,(int)local_8);
     local_c = (Car *)*puVar3;
-    pvVar4 = (void *)Ped::GetPositionY(this_01,(int)local_8);
-    puVar3 = (undefined4 *)S110_FUN_00401b40(&local_c,(S110 *)&local_4,pvVar4);
+    pvVar4 = (void *)Ped__GetYCoordinate(this_01,(int)local_8);
+    puVar3 = (undefined4 *)Decoder_ProcessData(&local_c,(S110 *)&local_4,pvVar4);
     local_c = (Car *)*puVar3;
-    piVar5 = FUN_00403840(local_c,&local_4,(S110 *)&IndexPed);
+    piVar5 = Matrix_Multiply(local_c,&local_4,(S110 *)&IndexPed);
     _IndexPed = (Car *)*piVar5;
-    piVar5 = FUN_00403840(_IndexPed,&local_4,(S110 *)&local_c);
+    piVar5 = Matrix_Multiply(_IndexPed,&local_4,(S110 *)&local_c);
     local_c = (Car *)*piVar5;
     bVar2 = ::S169::FUN_00403800((S169 *)&IndexPed,(int *)&local_c);
     ppCVar6 = (Car **)&IndexPed;
@@ -940,8 +940,8 @@ void __thiscall AutoClass4::FUN_004046f0(AutoClass4 *this,byte IndexPed)
     bVar2 = FUN_004037e0(&IndexPed,(SpriteS1 *)&DAT_005d304c);
     if (CONCAT31(extraout_var_00,bVar2) != 0) {
       Ped::SetAnimationState(this_01,9,9999);
-      Ped::SetLinkedPed(this_01,this->PedDefault);
-      Ped::Ped_Set_FUN_00403a40(this_01);
+      Ped__SetLinkedPedestrian(this_01,this->PedDefault);
+      Ped__Initialize(this_01);
       Ped::PedSetObjective(this_01,0,9999);
       return;
     }
@@ -953,7 +953,7 @@ void __thiscall AutoClass4::FUN_004046f0(AutoClass4 *this,byte IndexPed)
 
   if (bVar1 != 0) {
     do {
-      iVar3 = Ped::GetCurrentState(this->Ped_Arr9[bVar2]);
+      iVar3 = Ped__GetPedState(this->Ped_Arr9[bVar2]);
       if (iVar3 != 10) {
         return false;
       }
@@ -961,45 +961,45 @@ void __thiscall AutoClass4::FUN_004046f0(AutoClass4 *this,byte IndexPed)
     } while (bVar2 < bVar1);
   }
 
-uint __fastcall FUN_004048a0(int param_1)
+uint __fastcall PathFind_CalculateRoute(int param_1)
 
 
       if (uVar1 != 10) {
-        uVar1 = Ped::GetCurrentState(this);
+        uVar1 = Ped__GetPedState(this);
         if (uVar1 != 9) {
           return uVar1 & 0xffffff00;
         }
       }
 
-undefined4 __thiscall FUN_00404900(int param_1,Car *param_2)
+undefined4 __thiscall PathFind_SetTarget(int param_1,Car *param_2)
 
 
 bool FUN_004049f0(void)
 
 
   if (iVar3 == 0) {
-    iVar3 = Ped::GetCarPed(this);
+    iVar3 = Ped__GetVehicle(this);
   }
 
-undefined4 __thiscall FUN_00404ad0(int param_1,byte param_2)
+undefined4 __thiscall PathFind_UpdatePosition(int param_1,byte param_2)
 
 
       if (bVar7 != param_2) {
-        puVar3 = (undefined4 *)Ped::GetPositionX(this,(int)local_20);
+        puVar3 = (undefined4 *)Ped__GetXCoordinate(this,(int)local_20);
         local_34 = (SpriteS1 *)*puVar3;
-        pvVar4 = (void *)Ped::GetPositionX(this_00,(int)local_1c);
+        pvVar4 = (void *)Ped__GetXCoordinate(this_00,(int)local_1c);
         puVar3 = (undefined4 *)
-                 S110_FUN_00401b40(&local_34,(S110 *)(local_1c + 4),pvVar4);
+                 Decoder_ProcessData(&local_34,(S110 *)(local_1c + 4),pvVar4);
         local_34 = (SpriteS1 *)*puVar3;
-        puVar3 = (undefined4 *)Ped::GetPositionY(this,(int)local_14);
+        puVar3 = (undefined4 *)Ped__GetYCoordinate(this,(int)local_14);
         local_30 = (SpriteS1 *)*puVar3;
-        pvVar4 = (void *)Ped::GetPositionY(this_00,(int)local_10);
+        pvVar4 = (void *)Ped__GetYCoordinate(this_00,(int)local_10);
         puVar3 = (undefined4 *)
-                 S110_FUN_00401b40(&local_30,(S110 *)(local_10 + 4),pvVar4);
+                 Decoder_ProcessData(&local_30,(S110 *)(local_10 + 4),pvVar4);
         local_30 = (SpriteS1 *)*puVar3;
-        piVar5 = FUN_00403840(&local_34,&local_8,(S110 *)&local_34);
+        piVar5 = Matrix_Multiply(&local_34,&local_8,(S110 *)&local_34);
         local_34 = (SpriteS1 *)*piVar5;
-        piVar5 = FUN_00403840(&local_30,&local_4,(S110 *)&local_30);
+        piVar5 = Matrix_Multiply(&local_30,&local_4,(S110 *)&local_30);
         local_30 = (SpriteS1 *)*piVar5;
         bVar1 = S169::FUN_00403800((S169 *)&local_34,(int *)&local_30);
         ppSVar6 = &local_34;
@@ -1021,16 +1021,16 @@ AutoClass4 * __thiscall FUN_00404c40(void *this)
     if (!bVar1) {
       pAutoClass4 = (AutoClass4 *)(&gS169 + iVar2 * 0x11);
       AutoClass4::FUN_004035b0(pAutoClass4);
-      AutoClass4::FUN_004038e0(pAutoClass4);
+      AIController__Initialize(pAutoClass4);
       return pAutoClass4;
     }
 
-void __thiscall FUN_00404ce0(void *this,Ped *param_1)
+void __thiscall PedGroup_RemoveMember(void *this,Ped *param_1)
 
 
     if (!bVar1) {
       pS49 = this->Ped;
-      iVar2 = Ped::GetCurrentState(pS49);
+      iVar2 = Ped__GetPedState(pS49);
       if ((iVar2 == 9) &&
          (pS49->SearchType ==
           (SEARCHTYPE_AREA_PLAYER_ONLY|SEARCHTYPE_LINE_OF_SIGHT))) {
@@ -1048,22 +1048,22 @@ void __thiscall FUN_00404ce0(void *this,Ped *param_1)
       if ((pS49 != (Ped *)0x0) && (bVar1 = Ped::GetDeadPed(pS49), !bVar1)) {
         FUN_00404120(this,0);
         pS49_1 = this->Ped;
-        iVar2 = Ped::GetCurrentAction(pS49_1);
+        iVar2 = Ped__GetCurrentAction(pS49_1);
         Ped::S49_FUN_00433650(pS49_1,iVar2 == 0);
-        iVar2 = Ped::GetOccupation((Ped *)pPed);
+        iVar2 = Ped__GetCurrentOccupation((Ped *)pPed);
         IndexNextPed = this->Index;
         if (iVar2 == 0x17) {
           if (IndexNextPed != 0) {
             this->Ped_Arr9[IndexNextPed] = pS49;
-            Ped::SetCarId(this->Ped_Arr9[this->Index],this->field13_0x36 - 1);
-            AutoClass4::FUN_004045d0((AutoClass4 *)this);
+            Ped__SetAssignedCarIndex(this->Ped_Arr9[this->Index],this->field13_0x36 - 1);
+            AIController__Update((AutoClass4 *)this);
             return;
           }
         }
         else if (IndexNextPed != 0) {
           this->Ped_Arr9[IndexNextPed] = (Ped *)0x0;
         }
-        AutoClass4::FUN_004045d0((AutoClass4 *)this);
+        AIController__Update((AutoClass4 *)this);
         return;
       }
       FUN_00403be0(this);
@@ -1080,12 +1080,12 @@ void __thiscall FUN_00404ce0(void *this,Ped *param_1)
       }
       pS49 = this->Ped_Arr9[this->Index - 1];
       this->Ped_Arr9[(int)pPed] = pS49;
-      Ped::SetCarId(pS49,(char)pPed);
+      Ped__SetAssignedCarIndex(pS49,(char)pPed);
       this->Ped_Arr9[this->Index - 1] = (Ped *)this_00;
-      Ped::SetCarId((Ped *)this_00,this->Index - 1);
-      iVar2 = Ped::GetOccupation((Ped *)this_00);
+      Ped__SetAssignedCarIndex((Ped *)this_00,this->Index - 1);
+      iVar2 = Ped__GetCurrentOccupation((Ped *)this_00);
       if (iVar2 != 0x17) {
-        Ped::SetDefault(this->Ped_Arr9[this->Index - 1]);
+        Ped__ResetToDefaults(this->Ped_Arr9[this->Index - 1]);
         this->Ped_Arr9[this->Index - 1] = (Ped *)0x0;
         if (*(int *)((int)this_00 + 0x238) == 5) {
           *(uint *)((int)this_00 + 0x21c) =
@@ -1099,15 +1099,15 @@ void __thiscall FUN_00404ce0(void *this,Ped *param_1)
       param_1 = this->Ped_Arr9 + cVar10;
       do {
         pPed1 = (Ped *)*param_1;
-        PVar5 = Ped::IsCrouching(pPed1);
+        PVar5 = Ped__GetStance(pPed1);
         if (((PVar5 == 0) &&
             (uVar1._0_1_ = pPed1->flags, uVar1._1_1_ = pPed1->uns59,
             uVar1._2_1_ = pPed1->uns60, uVar1._3_1_ = pPed1->uns61,
             (uVar1 & 0x8000000) == 0)) &&
            (pPed1->GameObject != (GameObject *)0x0)) {
-          cVar6 = FUN_00404900(cVar10);
+          cVar6 = PathFind_SetTarget(cVar10);
           if (cVar6 == '\0') {
-            iVar9 = Ped::GetCurrentAction(this->Ped);
+            iVar9 = Ped__GetCurrentAction(this->Ped);
             if (iVar9 == 0x23) {
               bVar7 = FUN_004049f0();
               if (!bVar7) goto LAB_00404fac;
@@ -1119,8 +1119,8 @@ void __thiscall FUN_00404ce0(void *this,Ped *param_1)
             Ped::SetAnimationState(pPed1,7,9999);
             pPed = this->Ped;
           }
-          Ped::SetLinkedPed(pPed1,pPed);
-          Ped::S49_Set_FUN_00403950(pPed1);
+          Ped__SetLinkedPedestrian(pPed1,pPed);
+          Ped__ClearFlags(pPed1);
         }
 LAB_00404fac:
         cVar10 = cVar10 + -1;
@@ -1130,16 +1130,16 @@ LAB_00404fac:
 
     if (!bVar7) {
       pPed1 = this->Ped;
-      PVar5 = Ped::IsCrouching(pPed1);
+      PVar5 = Ped__GetStance(pPed1);
       if (PVar5 == 0) {
-        bVar8 = Ped::IsInCar(pPed1);
+        bVar8 = Ped__IsInsideVehicle(pPed1);
         if (((bVar8 == 0) &&
             (uVar2._0_1_ = pPed1->flags, uVar2._1_1_ = pPed1->uns59,
             uVar2._2_1_ = pPed1->uns60, uVar2._3_1_ = pPed1->uns61,
             (uVar2 & 0x8000000) == 0)) && (pPed1->CarCurrent == (Car *)0x0)) {
           Ped::SetAnimationState(pPed1,0x14,9999);
-          Ped::SetLinkedPed(this->Ped,linkedPed);
-          Ped::S49_Set_FUN_00403950(this->Ped);
+          Ped__SetLinkedPedestrian(this->Ped,linkedPed);
+          Ped__ClearFlags(this->Ped);
           return;
         }
       }
@@ -1150,7 +1150,7 @@ LAB_00404fac:
       param_1 = this->Ped_Arr9 + cVar10;
       do {
         pPed1 = (Ped *)*param_1;
-        pPedFlag = Ped::IsCrouching(pPed1);
+        pPedFlag = Ped__GetStance(pPed1);
         if (((pPedFlag == 0) &&
             (uVar11._0_1_ = pPed1->flags, uVar11._1_1_ = pPed1->uns59,
             uVar11._2_1_ = pPed1->uns60, uVar11._3_1_ = pPed1->uns61,
@@ -1163,18 +1163,18 @@ LAB_00404fac:
             uVar11 = (uint)(short)CONCAT31(extraout_var,bVar8);
             if (uVar11 == this_00->Index) {
               if (this_00->Ped != (Ped *)0x0) {
-                pPedState = Ped::GetCurrentState(this_00->Ped);
+                pPedState = Ped__GetPedState(this_00->Ped);
                 if (pPedState != PEDSTATE_DEAD) {
                   Ped::SetAnimationState(pPed1,0x14,9999);
                   pPed = this_00->Ped;
 LAB_00405155:
-                  Ped::SetLinkedPed(pPed1,pPed);
+                  Ped__SetLinkedPedestrian(pPed1,pPed);
                   goto LAB_0040515e;
                 }
               }
             }
             else if (this_00->Ped_Arr9[uVar11] != (Ped *)0x0) {
-              iVar9 = Ped::GetCurrentState(this_00->Ped_Arr9[uVar11]);
+              iVar9 = Ped__GetPedState(this_00->Ped_Arr9[uVar11]);
               if (iVar9 != 9) {
                 Ped::SetAnimationState(pPed1,0x14,9999);
                 pPed = this_00->Ped_Arr9[uVar11];
@@ -1184,15 +1184,15 @@ LAB_00405155:
           }
           else {
             Ped::SetAnimationState(pPed1,0x14,9999);
-            Ped::SetLinkedPed(pPed1,pPed);
-            Ped::S49_Set_FUN_00403950(pPed1);
-            bVar8 = Ped::IsInCar(pPed);
+            Ped__SetLinkedPedestrian(pPed1,pPed);
+            Ped__ClearFlags(pPed1);
+            bVar8 = Ped__IsInsideVehicle(pPed);
             if (bVar8 == 0) {
               Ped::SetAnimationState(pPed,0x14,9999);
-              Ped::SetLinkedPed(pPed,pPed1);
+              Ped__SetLinkedPedestrian(pPed,pPed1);
               pPed1 = pPed;
 LAB_0040515e:
-              Ped::S49_Set_FUN_00403950(pPed1);
+              Ped__ClearFlags(pPed1);
             }
           }
         }
@@ -1202,7 +1202,7 @@ LAB_0040515e:
     }
 
     if (PVar5 == 0) {
-      PVar5 = Ped::IsCrouching(this_00->Ped);
+      PVar5 = Ped__GetStance(this_00->Ped);
       if (PVar5 == 0) {
         bVar7 = Ped::HasSearchType(pPed1,SEARCHTYPE_LINE_OF_SIGHT_PLAYER_ONLY);
         if (((!bVar7) &&
@@ -1211,8 +1211,8 @@ LAB_0040515e:
             uVar3._3_1_ = pPed1->uns61, (uVar3 & 0x8000000) == 0)) &&
            (pPed1->GameObject != (GameObject *)0x0)) {
           Ped::SetAnimationState(pPed1,0x14,9999);
-          Ped::SetLinkedPed(this->Ped,this_00->Ped);
-          Ped::S49_Set_FUN_00403950(this->Ped);
+          Ped__SetLinkedPedestrian(this->Ped,this_00->Ped);
+          Ped__ClearFlags(this->Ped);
         }
         bVar7 = Ped::HasSearchType(this_00->Ped,
                                    SEARCHTYPE_LINE_OF_SIGHT_PLAYER_ONLY);
@@ -1222,8 +1222,8 @@ LAB_0040515e:
             uVar4._3_1_ = pPed1->uns61, (uVar4 & 0x8000000) == 0)) &&
            (pPed1->GameObject != (GameObject *)0x0)) {
           Ped::SetAnimationState(pPed1,0x14,9999);
-          Ped::SetLinkedPed(this_00->Ped,this->Ped);
-          Ped::S49_Set_FUN_00403950(this_00->Ped);
+          Ped__SetLinkedPedestrian(this_00->Ped,this->Ped);
+          Ped__ClearFlags(this_00->Ped);
         }
       }
     }
@@ -1234,37 +1234,37 @@ LAB_0040515e:
         do {
           if ((int)(uint)this->Index <= Index) break;
           pPed1 = this->Ped_Arr9[Index];
-          bVar2 = Ped::IsInCar(pPed1);
+          bVar2 = Ped__IsInsideVehicle(pPed1);
           if ((((bVar2 != 1) && (bVar3 = Ped::GetDeadPed(pPed1), !bVar3)) &&
-              ((Index = Ped::GetOccupation(pPed1), Index != 0x17 ||
-               (Index = Ped::S49_Get_FUN_00403a80(pPed1), Index == 0)))) &&
-             (Index = Ped::S49_Get_FUN_00403a80(pPed1), Index != 8)) {
+              ((Index = Ped__GetCurrentOccupation(pPed1), Index != 0x17 ||
+               (Index = Ped__GetActionParam(pPed1), Index == 0)))) &&
+             (Index = Ped__GetActionParam(pPed1), Index != 8)) {
             pCar = this->Ped->CarCurrent;
             if ((pCar == (Car *)0x0) ||
                (bVar3 = Car::IsTrainOrTrainCarriage(pCar), !bVar3)) {
-              Index = Ped::GetCurrentAction(pPed1);
+              Index = Ped__GetCurrentAction(pPed1);
               if (Index != 0x23) {
-                Ped::S49_FUN_00403960(pPed1);
+                Ped__UpdateState(pPed1);
                 if (this->Ped->GameObject == (GameObject *)0x0) {
                   Ped::PedSetObjective(pPed1,0,9999);
                   Ped::SetAnimationState(pPed1,0x23,9999);
-                  Ped::SetTargetCarDoor(pPed1,1);
+                  Ped__SetTargetCarDoorIndex(pPed1,1);
                   pCar = this->Ped->CarCurrent;
                 }
                 else {
                   Ped::SetAnimationState(pPed1,0x12,9999);
-                  Ped::SetTargetCarDoor(pPed1,1);
-                  pCar = (Car *)GameObject::GetCar(this->Ped->GameObject);
+                  Ped__SetTargetCarDoorIndex(pPed1,1);
+                  pCar = (Car *)GameObject__GetVehicle(this->Ped->GameObject);
                 }
-                Ped::SetObjectiveTargetCar(pPed1,pCar);
+                Ped__SetTargetVehicle(pPed1,pCar);
                 GameObject::FUN_00491e60(pPed1->GameObject);
               }
-              pCar = (Car *)Ped::GetCurrentCar(pPed1);
+              pCar = (Car *)Ped__GetCurrentVehicle(pPed1);
               DAT_0058f512 = local_18 + -1;
               bVar2 = 0;
               cVar9 = Car::Car_FUN_0041f880(pCar);
               bVar5 = cVar9 - 1;
-              bVar6 = Car::isSWATVANOrBankVan(pCar);
+              bVar6 = Car__IsSpecialVehicle(pCar);
               uVar1 = (uint)bVar5;
               uVar10 = (undefined3)(uVar8 >> 8);
               if (bVar6 == 0) {
@@ -1338,13 +1338,13 @@ LAB_0040566e:
                 do {
                   this_00 = this->Ped_Arr9[Index];
                   if ((this_00 != pPed1) &&
-                     (Index = Ped::GetCurrentAction(this_00), Index == 0x12)) {
-                    cVar9 = Ped::S49_Get_FUN_00403a60(this_00);
-                    cVar7 = Ped::S49_Get_FUN_00403a60(pPed1);
+                     (Index = Ped__GetCurrentAction(this_00), Index == 0x12)) {
+                    cVar9 = Ped__GetAnimationState(this_00);
+                    cVar7 = Ped__GetAnimationState(pPed1);
                     this = pS169;
                     if (cVar7 == cVar9) {
                       Ped::SetAnimationState(pPed1,9,9999);
-                      Ped::SetLinkedPed(pPed1,this_00);
+                      Ped__SetLinkedPedestrian(pPed1,this_00);
                       uVar8 = CONCAT31((int3)(uVar8 >> 8),DAT_0058f512);
                       this = pS169;
                     }
@@ -1353,12 +1353,12 @@ LAB_0040566e:
                   Index = (int)local_17;
                 } while (Index < (int)(uint)this->Index);
               }
-              Ped::S49_FUN_00403a70(pPed1,(char)uVar8);
+              Ped__SetAnimationState(pPed1,(char)uVar8);
               uVar8 = CONCAT31((int3)(uVar8 >> 8),local_16);
             }
             else {
               Ped::SetAnimationState(pPed1,0x25,9999);
-              Ped::SetObjectiveTargetCar(pPed1,this->Ped->CarCurrent);
+              Ped__SetTargetVehicle(pPed1,this->Ped->CarCurrent);
             }
           }
           local_16 = (char)uVar8 + '\x01';
@@ -1384,11 +1384,11 @@ LAB_0040566e:
         uVar8 = (uint)bVar3;
         if (!bVar3) {
           pPed1 = this->Ped;
-          uVar8 = Ped::S49_Get_FUN_00403a80(pPed1);
+          uVar8 = Ped__GetActionParam(pPed1);
           if ((uVar8 != 0xd) &&
-             (uVar8 = Ped::GetCurrentAction(pPed1), uVar8 != 0x24)) {
+             (uVar8 = Ped__GetCurrentAction(pPed1), uVar8 != 0x24)) {
             Ped::SetAnimationState(pPed1,9,9999);
-            Ped::SetLinkedPed(this->Ped,linkedPed);
+            Ped__SetLinkedPedestrian(this->Ped,linkedPed);
             this->field16_0x3c = 1;
           }
           goto LAB_0040531a;
@@ -1410,7 +1410,7 @@ LAB_0040535a:
   if (this->Index != 0) {
     Index = 0;
     do {
-      PVar4 = Ped::IsCrouching(this->Ped_Arr9[Index]);
+      PVar4 = Ped__GetStance(this->Ped_Arr9[Index]);
       if (PVar4 == 1) goto LAB_0040535a;
       cVar9 = cVar9 + '\x01';
       Index = (int)cVar9;
@@ -1418,16 +1418,16 @@ LAB_0040535a:
   }
 
 // Было: FUN_00405760
-void __thiscall AutoClass4::FUN_00405760(AutoClass4 *this,byte Index)
+void __thiscall AIController__ExecuteAction(AutoClass4 *this,byte Index)
 
 
   if (Action == 8) {
-    Action = Ped::GetCurrentAction(this_00);
+    Action = Ped__GetCurrentAction(this_00);
     bVar7 = Action == 9;
   }
 
     if (bVar7) {
-      Action = Ped::GetOccupation(this_00);
+      Action = Ped__GetCurrentOccupation(this_00);
       if (Action != 0x29) {
         if (Action == 0x2d) {
           this_00->field129_0x288 = 2;
@@ -1441,14 +1441,14 @@ void __thiscall AutoClass4::FUN_00405760(AutoClass4 *this,byte Index)
     }
 
     if (bVar3 == 0) {
-      Action = Ped::GetCurrentAction(this_00);
+      Action = Ped__GetCurrentAction(this_00);
       if ((Action == 9) &&
-         ((Action = Ped::GetOccupation(this_00), Action < 0x18 ||
+         ((Action = Ped__GetCurrentOccupation(this_00), Action < 0x18 ||
           (0x1b < Action)))) {
-        pPVar4 = (Ped *)Ped::GetPed(this_00);
-        bVar3 = Ped::IsInCar(pPVar4);
+        pPVar4 = (Ped *)Ped__GetLinkedPed(this_00);
+        bVar3 = Ped__IsInsideVehicle(pPVar4);
         if ((bVar3 != 0) &&
-           (Action = Ped::S49_Get_FUN_00403a80(this_00), Action != 8)) {
+           (Action = Ped__GetActionParam(this_00), Action != 8)) {
           Ped::PedSetObjective(this_00,8,9999);
           Ped::SetAnimationState(this_00,0,9999);
         }
@@ -1456,15 +1456,15 @@ void __thiscall AutoClass4::FUN_00405760(AutoClass4 *this,byte Index)
     }
 
       if (bVar3 == 0) {
-        Action = Ped::GetCurrentAction(this_00);
+        Action = Ped__GetCurrentAction(this_00);
         if (Action != 0x24) {
           Ped::SetAnimationState(this_00,0x24,9999);
-          Ped::SetObjectiveTargetCar(this_00,this_00->CarCurrent);
+          Ped__SetTargetVehicle(this_00,this_00->CarCurrent);
         }
       }
 
             if (Action == 8) {
-              Action = Ped::GetCurrentAction(this_00);
+              Action = Ped__GetCurrentAction(this_00);
               if (Action == 9) {
                 Ped::PedSetObjective(this_00,0,9999);
               }
@@ -1472,8 +1472,8 @@ void __thiscall AutoClass4::FUN_00405760(AutoClass4 *this,byte Index)
 
               if (Action == 0x3b) {
                 Ped::SetAnimationState(this_00,0x3b,9999);
-                uVar5 = Ped::GetCurrentCar(this->PedDefault);
-                Ped::SetObjectiveTargetCar(this_00,uVar5);
+                uVar5 = Ped__GetCurrentVehicle(this->PedDefault);
+                Ped__SetTargetVehicle(this_00,uVar5);
               }
 
     if (Action == 0) {
@@ -1488,25 +1488,25 @@ void __thiscall AutoClass4::FUN_00405760(AutoClass4 *this,byte Index)
     Ped::SetAnimationState(this_00,0,9999);
   }
 
-void * CreateBuffer(size_t param_1)
+void * Memory_Allocate(size_t param_1)
 
 
 short FUN_004059f0(int param_1,int *param_2)
 
 
-void __thiscall FUN_00405a40(void *this)
+void __thiscall Memory_Free(void *this)
 
 
-void __thiscall FUN_00405a50(int param_1,undefined4 param_2)
+void __thiscall Memory_Set(int param_1,undefined4 param_2)
 
 
-undefined4 __thiscall FUN_00405b10(void *this)
+undefined4 __thiscall UI_CreateDialog(void *this)
 
 
-void __thiscall FUN_00405b20(void *this,int param_1)
+void __thiscall UI_DestroyDialog(void *this,int param_1)
 
 
-void FUN_00405b50(void *param_1,LPCWSTR param_2)
+void UI_SetTextW(void *param_1,LPCWSTR param_2)
 
 
   if (iVar1 == 1) {
@@ -1535,7 +1535,7 @@ void FUN_00405b50(void *param_1,LPCWSTR param_2)
       ppCVar4 = ppCVar4 + 1;
     }
 
-void __cdecl __chkstk(void)
+void __cdecl Stack_Check(void)
 
 
   if (WVar2 != 0) {
@@ -1553,19 +1553,19 @@ void __cdecl __chkstk(void)
     SendDlgItemMessageA(pHVar1,iVar3,UVar4,WVar2,WVar5);
   }
 
-void __thiscall FUN_004061c0(void *this)
+void __thiscall Config_Load(void *this)
 
 
-void __fastcall FUN_00406210(int param_1)
+void __fastcall Config_GetInt(int param_1)
 
 
-undefined4 __thiscall FUN_00406220(void *this)
+undefined4 __thiscall Config_GetBool(void *this)
 
 
-void __fastcall FUN_00406230(int param_1)
+void __fastcall Config_GetFloat(int param_1)
 
 
-void __fastcall FUN_00406240(int param_1)
+void __fastcall Config_GetString(int param_1)
 
 
 undefined4 __thiscall FUN_00406260(void *this)
@@ -1597,10 +1597,10 @@ undefined4 __thiscall FUN_00406260(void *this)
     RegCloseKey(local_10c);
   }
 
-void __thiscall FUN_004063c0(int param_1,int param_2)
+void __thiscall Network_Connect(int param_1,int param_2)
 
 
-void __thiscall FUN_00406450(void *this,undefined4 *param_1)
+void __thiscall Network_SendData(void *this,undefined4 *param_1)
 
 
     for (iVar1 = 0x48; iVar1 != 0; iVar1 = iVar1 + -1) {
@@ -1609,28 +1609,28 @@ void __thiscall FUN_00406450(void *this,undefined4 *param_1)
       param_1 = param_1 + 1;
     }
 
-void __thiscall FUN_00406470(void *this)
+void __thiscall Network_ReceiveData(void *this)
 
 
-void __thiscall FUN_0040653e(void *this)
+void __thiscall Network_Disconnect(void *this)
 
 
-int __fastcall FUN_00406550(int param_1)
+int __fastcall String_Hash1(int param_1)
 
 
-int __fastcall FUN_00406570(int param_1)
+int __fastcall String_Hash2(int param_1)
 
 
-int __fastcall FUN_00406590(int param_1)
+int __fastcall String_Hash3(int param_1)
 
 
-void __thiscall FUN_004065f0(void *this,undefined4 param_1,HWND param_2)
+void __thiscall UI_InitDialog(void *this,undefined4 param_1,HWND param_2)
 
 
-void __thiscall FUN_00406660(void *this)
+void __thiscall UI_CloseDialog(void *this)
 
 
-void __fastcall FUN_0040667c(undefined4 param_1,int param_2)
+void __fastcall UI_SetControlText(undefined4 param_1,int param_2)
 
 
   if (1 < uVar2) {
@@ -1642,7 +1642,7 @@ void __fastcall FUN_0040667c(undefined4 param_1,int param_2)
     return;
   }
 
-void FUN_004066e0(int param_1,HWND param_2)
+void UI_CreateButton(int param_1,HWND param_2)
 
 
   if (param_1 != 0) {
@@ -1650,7 +1650,7 @@ void FUN_004066e0(int param_1,HWND param_2)
     return;
   }
 
-void FUN_00406720(LPCSTR param_1,HWND param_2)
+void UI_CreateLabel(LPCSTR param_1,HWND param_2)
 
 
 FUN_00406770(void *param_1,char *param_2,char *param_3,HWND param_4)
@@ -1664,28 +1664,28 @@ FUN_00406770(void *param_1,char *param_2,char *param_3,HWND param_4)
     return;
   }
 
-void FUN_004068c0(char *param_1,HWND param_2)
+void UI_CreateEdit(char *param_1,HWND param_2)
 
 
-void FUN_00406980(char *param_1,void *param_2,HWND param_3)
+void UI_CreateListBox(char *param_1,void *param_2,HWND param_3)
 
 
-void FUN_00406b10(undefined4 param_1,HWND param_2)
+void UI_CreateCombo(undefined4 param_1,HWND param_2)
 
 
-void FUN_00406b80(char *param_1,HWND param_2)
+void UI_CreateCheckbox(char *param_1,HWND param_2)
 
 
-void * __thiscall FUN_00406bc0(void *this,byte param_1)
+void * __thiscall UI_AllocateControl(void *this,byte param_1)
 
 
 void FUN_00406be0(Registry *pRegistry,int param_2)
 
 
-void __thiscall FUN_00406c92(void *this,BOOL param_1)
+void __thiscall UI_SetEnabled(void *this,BOOL param_1)
 
 
-void FUN_00406cc0(void *param_1,LPCWSTR param_2)
+void UI_SetTextW2(void *param_1,LPCWSTR param_2)
 
 
   if (iVar1 == 0) {
@@ -1715,8 +1715,8 @@ void FUN_00406cc0(void *param_1,LPCWSTR param_2)
       aLStack_12c[0] = 1;
       aLStack_12c[2] = 0;
       SendMessageA(pHVar2,0x1007,0,(LPARAM)aLStack_12c);
-      FUN_00406210((int)param_1);
-      FUN_00406660(this);
+      Config_GetInt((int)param_1);
+      UI_CloseDialog(this);
       return;
     }
 
@@ -1729,7 +1729,7 @@ void FUN_00406cc0(void *param_1,LPCWSTR param_2)
       pLVar3 = pLVar3 + 1;
     }
 
-void FUN_00406e40(HWND param_1)
+void UI_DestroyControl(HWND param_1)
 
 
   if (iVar1 != 0) {
@@ -1750,7 +1750,7 @@ void FUN_00406e40(HWND param_1)
     return;
   }
 
-void FUN_00406f20(void *param_1,LPCWSTR param_2)
+void UI_GetTextW(void *param_1,LPCWSTR param_2)
 
 
   if (iVar1 == 1) {
@@ -1766,8 +1766,8 @@ void FUN_00406f20(void *param_1,LPCWSTR param_2)
     apCStack_11c[0] = (CHAR *)0x2;
     WVar3 = SendMessageA(pHVar2,0x100d,0xffffffff,(LPARAM)apCStack_11c);
     SendMessageA(pHVar2,0x1008,WVar3,0);
-    FUN_00406230((int)param_1);
-    FUN_00406660(this);
+    Config_GetFloat((int)param_1);
+    UI_CloseDialog(this);
   }
 
   else if (iVar1 == 2) {
@@ -1786,10 +1786,10 @@ void FUN_00406f20(void *param_1,LPCWSTR param_2)
     return;
   }
 
-void __thiscall FUN_00407030(void *this,void *param_1)
+void __thiscall UI_CopyData(void *this,void *param_1)
 
 
-void __thiscall FUN_00407070(void *this)
+void __thiscall UI_ClearData(void *this)
 
 
   for (iVar4 = 8; iVar4 != 0; iVar4 = iVar4 + -1) {
@@ -1817,13 +1817,13 @@ void __thiscall FUN_00407070(void *this)
     return;
   }
 
-void __thiscall FUN_0040720d(void *this,undefined4 param_1)
+void __thiscall UI_SetProperty(void *this,undefined4 param_1)
 
 
-void __thiscall FUN_00407362(void *this)
+void __thiscall UI_UpdateLayout(void *this)
 
 
-void __thiscall FUN_004073d0(int param_1,undefined4 *param_2)
+void __thiscall UI_ProcessMessage(int param_1,undefined4 *param_2)
 
 
     for (iVar1 = 0x48; iVar1 != 0; iVar1 = iVar1 + -1) {
@@ -1832,7 +1832,7 @@ void __thiscall FUN_004073d0(int param_1,undefined4 *param_2)
       puVar2 = puVar2 + 1;
     }
 
-void __thiscall FUN_00407402(void *this,undefined4 param_1,uint param_2)
+void __thiscall UI_HandleInput(void *this,undefined4 param_1,uint param_2)
 
 
       if (bVar1 != *unaff_EBX) {
@@ -1853,7 +1853,7 @@ LAB_00407432:
       return;
     }
 
-void __fastcall FUN_00407476(undefined4 param_1,LPCSTR param_2)
+void __fastcall Debug_Print(undefined4 param_1,LPCSTR param_2)
 
 
   if (iVar2 == 0) {
@@ -1889,7 +1889,7 @@ void __fastcall FUN_00407476(undefined4 param_1,LPCSTR param_2)
     } while (cVar1 != '\0');
   }
 
-void __thiscall FUN_0040748d(void *this)
+void __thiscall Debug_Update(void *this)
 
 
   if (iVar2 == 0) {
@@ -1925,7 +1925,7 @@ void __thiscall FUN_0040748d(void *this)
     } while (cVar1 != '\0');
   }
 
-void __thiscall FUN_004075c0(void *this,undefined4 param_1,char *param_2)
+void __thiscall Console_AddLine(void *this,undefined4 param_1,char *param_2)
 
 
   switch(param_1) {
@@ -2016,7 +2016,7 @@ void __thiscall FUN_004075c0(void *this,undefined4 param_1,char *param_2)
     goto switchD_004075d8_caseD_7;
   }
 
-void __thiscall FUN_00407800(void *this,Registry *param_1)
+void __thiscall Options_LoadFromRegistry(void *this,Registry *param_1)
 
 
   for (iVar7 = 0x50; iVar7 != 0; iVar7 = iVar7 + -1) {
@@ -2036,7 +2036,7 @@ void __thiscall FUN_00407800(void *this,Registry *param_1)
         pDVar13 = (DWORD *)((int)pDVar13 + 1);
       }
 
-void FUN_00407c90(HWND param_1,HWND param_2,undefined4 param_3)
+void Multiplayer_JoinGame(HWND param_1,HWND param_2,undefined4 param_3)
 
 
   if (iVar1 == 0x407) {
@@ -2049,14 +2049,14 @@ void FUN_00407c90(HWND param_1,HWND param_2,undefined4 param_3)
     case 6:
     case 7:
       pcVar2 = (char *)SendDlgItemMessageA(param_1,0x407,0x400,0,0);
-      FUN_004075c0(this,5,pcVar2);
+      Console_AddLine(this,5,pcVar2);
     }
   }
 
-void __thiscall FUN_00407d10(void *this)
+void __thiscall Multiplayer_LeaveGame(void *this)
 
 
-void __thiscall FUN_00407d8b(void *this)
+void __thiscall Multiplayer_UpdateLobby(void *this)
 
 
 LRESULT WinProc(HWND _HWND,UINT uMsg,WPARAM wParam,LPARAM lParam)
@@ -2068,8 +2068,8 @@ LRESULT WinProc(HWND _HWND,UINT uMsg,WPARAM wParam,LPARAM lParam)
         pvVar4 = (void *)GetWindowLongA(_HWND,8);
         WVar11 = SendDlgItemMessageA(_HWND,0x402,0x147,0,0);
         pcVar7 = (char *)SendDlgItemMessageA(_HWND,0x402,0x150,WVar11,0);
-        FUN_004075c0(pvVar4,1,pcVar7);
-        FUN_00406660(pvVar4);
+        Console_AddLine(pvVar4,1,pcVar7);
+        UI_CloseDialog(pvVar4);
         return (LRESULT)pcVar7;
       }
     }
@@ -2093,17 +2093,17 @@ LRESULT WinProc(HWND _HWND,UINT uMsg,WPARAM wParam,LPARAM lParam)
         MultiByteToWideChar(0,0,local_830,-1,aWStack_210,L'Ą');
         pWPARAM = cNetwork::FUN_0040a5b0((cNetwork *)&gNetwork,aWStack_620);
         if ((char *)pWPARAM != (char *)0x0) {
-          Registry::GetPlayerNameNetwork(this,aWStack_210);
-          ShowWindows(this,1);
+          Registry__GetNetworkPlayerName(this,aWStack_210);
+          UI_ShowWindow(this,1);
           FUN_00406770(this[0x8025].LPDWORD_a,this[0x8024].LPDWORD_a,_HWND);
-          iVar3 = FUN_003f1614(this_02);
+          iVar3 = GetMissionStatus(this_02);
           return iVar3;
         }
       }
 
         if (uMsg == 2) {
           pvVar4 = (void *)GetWindowLongA(_HWND,8);
-          iVar3 = FUN_00405b10(pvVar4);
+          iVar3 = UI_CreateDialog(pvVar4);
           if (iVar3 == 0) {
             if (gTextNet != (Text *)0x0) {
               Text::~S14(gTextNet,1);
@@ -2139,8 +2139,8 @@ LRESULT WinProc(HWND _HWND,UINT uMsg,WPARAM wParam,LPARAM lParam)
             uVar12 = 0x41b;
           }
           pLRESULT = (*pcVar8)(_HWND,uVar12,&DAT_0056e5b4);
-          FUN_00406240((int)pvVar4);
-          ShowWindows(this_01,0);
+          Config_GetString((int)pvVar4);
+          UI_ShowWindow(this_01,0);
           return pLRESULT;
         }
 
@@ -2154,7 +2154,7 @@ LRESULT WinProc(HWND _HWND,UINT uMsg,WPARAM wParam,LPARAM lParam)
             GetDlgItemTextA(_HWND,0x3ec,local_830,0x103);
             MultiByteToWideChar(0,0,local_830,-1,aWStack_418,0x104);
             pRVar2 = (Registry *)GetWindowLongA(_HWND,8);
-            Registry::GetPlayerNameNetwork(pRVar2,aWStack_418);
+            Registry__GetNetworkPlayerName(pRVar2,aWStack_418);
             pWPARAM = SendDlgItemMessageA(_HWND,1000,0x188,0,0);
             if ((char *)pWPARAM != (char *)0xffffffff) {
               pLRESULT = SendDlgItemMessageA(_HWND,1000,0x199,pWPARAM,0);
@@ -2162,7 +2162,7 @@ LRESULT WinProc(HWND _HWND,UINT uMsg,WPARAM wParam,LPARAM lParam)
                                   ((cNetwork *)&gNetwork,pLRESULT,
                                    (int)aWStack_418,&local_8e8,(int)&local_8f0);
               if ((char *)pWPARAM != (char *)0x0) {
-                ShowWindows(pRVar2,2);
+                UI_ShowWindow(pRVar2,2);
                 return pWPARAM;
               }
             }
@@ -2175,9 +2175,9 @@ LRESULT WinProc(HWND _HWND,UINT uMsg,WPARAM wParam,LPARAM lParam)
                                   ((cNetwork *)&gNetwork,pLRESULT,
                                    (int)aWStack_418,&local_8e8,(int)&local_8f0);
               if ((char *)pWPARAM != (char *)0x0) {
-                FUN_004073d0(local_8f0);
-                ShowWindows(pRVar2,2);
-                iVar3 = FUN_003f1614(this_00);
+                UI_ProcessMessage(local_8f0);
+                UI_ShowWindow(pRVar2,2);
+                iVar3 = GetMissionStatus(this_00);
                 return iVar3;
               }
             }
@@ -2206,7 +2206,7 @@ LRESULT WinProc(HWND _HWND,UINT uMsg,WPARAM wParam,LPARAM lParam)
         GetDlgItemTextA(_HWND,0x3ec,acStack_728,0x104);
         MultiByteToWideChar(0,0,acStack_728,-1,aWStack_620,0x104);
         pRVar2 = (Registry *)GetWindowLongA(_HWND,8);
-        Registry::GetPlayerNameNetwork(pRVar2,aWStack_620);
+        Registry__GetNetworkPlayerName(pRVar2,aWStack_620);
         cNetwork::S159_FUN_0040ab90((cNetwork *)&gNetwork);
         if (gTextNet != (Text *)0x0) {
           Text::~S14(gTextNet,1);
@@ -2221,10 +2221,10 @@ LRESULT WinProc(HWND _HWND,UINT uMsg,WPARAM wParam,LPARAM lParam)
       pLRESULT = SendDlgItemMessageA(_HWND,0x403,0xf2,0,0);
       pvVar4 = (void *)GetWindowLongA(_HWND,8);
       if (((byte)pLRESULT & 3) != 1) {
-        FUN_004075c0(pvVar4,6,(char *)0x0);
+        Console_AddLine(pvVar4,6,(char *)0x0);
         return (LRESULT)pvVar4;
       }
-      FUN_004075c0(pvVar4,6,(char *)0x1);
+      Console_AddLine(pvVar4,6,(char *)0x1);
       return (LRESULT)pvVar4;
     case 0x407:
       if (lParam == 4) {
@@ -2237,7 +2237,7 @@ LRESULT WinProc(HWND _HWND,UINT uMsg,WPARAM wParam,LPARAM lParam)
       if ((char *)pWPARAM == (char *)0x0) {
         pvVar4 = (void *)GetWindowLongA(_HWND,8);
         pLRESULT = SendDlgItemMessageA(_HWND,0x40c,0x147,0,0);
-        FUN_004075c0(pvVar4,3,(char *)(pLRESULT + 1));
+        Console_AddLine(pvVar4,3,(char *)(pLRESULT + 1));
         pLRESULT = FUN_00406770((char *)(pLRESULT + 1),
                                 *(undefined4 *)((int)pvVar4 + 0x20090),_HWND);
         return pLRESULT;
@@ -2256,7 +2256,7 @@ LRESULT WinProc(HWND _HWND,UINT uMsg,WPARAM wParam,LPARAM lParam)
           pcStack_8dc = (char *)pWPARAM;
           _sscanf(local_8b0,"%d",&pcStack_8e0);
           pWPARAM = GetWindowLongA(_HWND,8);
-          FUN_004075c0((void *)pWPARAM,7,pcStack_8e0);
+          Console_AddLine((void *)pWPARAM,7,pcStack_8e0);
         }
       }
       break;
@@ -2266,7 +2266,7 @@ LRESULT WinProc(HWND _HWND,UINT uMsg,WPARAM wParam,LPARAM lParam)
       MultiByteToWideChar(0,0,local_8b0,-1,aWStack_620,0x104);
       cNetwork::FUN_00409d00((cNetwork *)&gNetwork,aWStack_620,-1);
       pLRESULT = SetDlgItemTextA(_HWND,0x41d,"");
-      __chkstk();
+      Stack_Check();
       return pLRESULT;
     case 0x423:
       if (lParam == 0x300) {
@@ -2281,13 +2281,13 @@ LRESULT WinProc(HWND _HWND,UINT uMsg,WPARAM wParam,LPARAM lParam)
           pcStack_8dc = (char *)pWPARAM;
           _sscanf(local_8b0,"%d",&pcStack_8e0);
           pvVar4 = (void *)GetWindowLongA(_HWND,8);
-          FUN_004075c0(pvVar4,2,pcStack_8e0);
+          Console_AddLine(pvVar4,2,pcStack_8e0);
           return (LRESULT)pvVar4;
         }
       }
     }
 
-void __thiscall FUN_004086a0(void *param_1,HWND param_2)
+void __thiscall WindowProc_Handler(void *param_1,HWND param_2)
 
 
       if (*str == '\0') {
@@ -2301,7 +2301,7 @@ void FUN_00408900(void *param_1,undefined4 *param_2)
 
 
   if (iVar1 == 2) {
-    FUN_004073d0(*param_2);
+    UI_ProcessMessage(*param_2);
   }
 
 FUN_00408954(HWND param_1,undefined4 param_2,uint param_3,WPARAM param_4)
@@ -3778,8 +3778,8 @@ uint __thiscall FUN_0040d0c0(ushort *param_1,ushort param_2)
                  ,unaff_EDI,unaff_ESI);
       sVar7 = 1;
       sVar6 = _DAT_00670668;
-      iVar2 = DecoderFloat(local_1c);
-      iVar3 = DecoderFloat(local_18);
+      iVar2 = Decoder_DecodeFloat(local_1c);
+      iVar3 = Decoder_DecodeFloat(local_18);
       FUN_004c8c20(&gHud->S86_7,&gUString,iVar3,iVar2,sVar6,sVar7);
       this = extraout_ECX_01;
     }
@@ -4537,7 +4537,7 @@ CameraOrPhysics::S131_FUN_004102a0(CameraOrPhysics *this,S110 *param_1)
       *(GameObject **)(this_01 + 0x10) = pGVar4;
     }
     puVar5 = (undefined4 *)
-             S110_FUN_00401b40(this_00,(S110 *)&param_1,&DAT_005d826c);
+             Decoder_ProcessData(this_00,(S110 *)&param_1,&DAT_005d826c);
     uVar3._0_2_ = this_02->field15_0x18;
     uVar3._2_2_ = this_02->field16_0x1a;
     iVar6 = FUN_00465650(*(undefined4 *)&this_02->field_0x14,uVar3,*puVar5);
@@ -5383,11 +5383,11 @@ LAB_00411b5c:
             cVar11 = '\0';
 LAB_00411edb:
             if (bVar1 < 5) {
-              bitShiftLeft1(local_10,(void *)0x2);
+              Decoder_ShiftLeft(local_10,(void *)0x2);
               puVar7 = local_14;
               puVar15 = puVar7;
-              bitShiftLeft1(local_18,(void *)0x32);
-              piVar8 = (int *)FUN_00401b90(puVar7,puVar15,piVar8);
+              Decoder_ShiftLeft(local_18,(void *)0x32);
+              piVar8 = (int *)Decoder_ReadInt(puVar7,puVar15,piVar8);
               bVar1 = S154_FUN_004116f0(this,local_2c,*piVar8,(char)_local_1c);
               if (bVar1 != 0) {
                 this->SoundCar = iVar13;
@@ -5408,11 +5408,11 @@ LAB_00411edb:
                                           ((SoundCard *)&gSoundCard,iVar13);
                 this->field62_0x68 = piVar8;
                 this->field49_0x4c = local_24;
-                bitShiftLeft1(local_c,(void *)0x2);
+                Decoder_ShiftLeft(local_c,(void *)0x2);
                 puVar7 = local_8;
                 puVar15 = puVar7;
-                bitShiftLeft1(local_4,(void *)0x32);
-                puVar6 = (undefined4 *)FUN_00401b90(puVar7,puVar15,piVar8);
+                Decoder_ShiftLeft(local_4,(void *)0x32);
+                puVar6 = (undefined4 *)Decoder_ReadInt(puVar7,puVar15,piVar8);
                 this->field78_0x84 = *puVar6;
                 this->field81_0x90 = (undefined1)local_2c;
                 this->field85_0x94 = 0x32;
@@ -5463,11 +5463,11 @@ LAB_00411edb:
     }
 
       if (bVar2 != 0) {
-        bitShiftLeft1(local_4,(void *)0x2);
+        Decoder_ShiftLeft(local_4,(void *)0x2);
         puVar10 = local_8;
         piVar5 = piVar8;
-        bitShiftLeft1(local_c,(void *)0x16);
-        piVar8 = (int *)FUN_00401b90(piVar8,puVar10,piVar5);
+        Decoder_ShiftLeft(local_c,(void *)0x16);
+        piVar8 = (int *)Decoder_ReadInt(piVar8,puVar10,piVar5);
         bVar2 = S154_FUN_004116f0(this,0x6e,*piVar8,(char)param_1);
         if (bVar2 != 0) {
           this->SoundCar = 0x3c;
@@ -5483,11 +5483,11 @@ LAB_00411edb:
                                     ((SoundCard *)&gSoundCard,0x3c);
           this->field62_0x68 = piVar8;
           this->field49_0x4c = 6;
-          bitShiftLeft1(&param_1,(void *)0x2);
+          Decoder_ShiftLeft(&param_1,(void *)0x2);
           puVar10 = local_4;
           puVar6 = puVar10;
-          bitShiftLeft1(local_8,(void *)0x16);
-          puVar3 = (undefined4 *)FUN_00401b90(puVar10,puVar6,piVar8);
+          Decoder_ShiftLeft(local_8,(void *)0x16);
+          puVar3 = (undefined4 *)Decoder_ReadInt(puVar10,puVar6,piVar8);
           uVar9 = *puVar3;
           this->field81_0x90 = 0x6e;
           this->field78_0x84 = uVar9;
@@ -5518,7 +5518,7 @@ uint __thiscall FUN_004121f0(int param_1,undefined4 *param_2)
       pSVar10->field2_0x2 = uVar2;
       pSVar10->field3_0x3 = uVar3;
     }
-    param_2 = (undefined4 *)FUN_00401b90(pSVar10,&param_2,&DAT_005dc8f0);
+    param_2 = (undefined4 *)Decoder_ReadInt(pSVar10,&param_2,&DAT_005dc8f0);
     param_2 = (undefined4 *)*param_2;
     goto LAB_00412348;
   case 3:
@@ -5627,18 +5627,18 @@ void __thiscall FUN_004123c0(AudioManager *param_1,int *param_2)
                            ((uint)param_1->field36_0x30 % 5) * 4) % 7 + 0x109;
         }
         param_1->SoundCar = iVar3;
-        bitShiftLeft1(&param_2,(void *)0x2);
+        Decoder_ShiftLeft(&param_2,(void *)0x2);
         puVar6 = local_18;
         puVar12 = puVar6;
-        bitShiftLeft1(local_14,(void *)0x15);
-        this_00 = (int *)FUN_00401b90(puVar6,puVar12,piVar5);
+        Decoder_ShiftLeft(local_14,(void *)0x15);
+        this_00 = (int *)Decoder_ReadInt(puVar6,puVar12,piVar5);
         puVar6 = local_10;
         piVar8 = this_00;
-        bitShiftLeft1(local_c,(void *)0x2);
+        Decoder_ShiftLeft(local_c,(void *)0x2);
         puVar12 = local_8;
         piVar5 = this_00;
-        bitShiftLeft1(local_4,(void *)0x15);
-        this_01 = FUN_00401b90(this_00,puVar12,piVar5);
+        Decoder_ShiftLeft(local_4,(void *)0x15);
+        this_01 = Decoder_ReadInt(this_00,puVar12,piVar5);
         puVar7 = (undefined4 *)
                  WorldCoordinateToScreenCoord(this_01,puVar6,piVar8);
         bVar2 = AudioManager::S154_FUN_004116b0(param_1,*puVar7);
@@ -5651,21 +5651,21 @@ void __thiscall FUN_004123c0(AudioManager *param_1,int *param_2)
                                    ((uint)param_1->field36_0x30 % 5) * 4) % 0x1e
                          ) + '2';
           param_2 = (int *)CONCAT31(param_2._1_3_,cVar11);
-          bitShiftLeft1(local_4,(void *)0x2);
+          Decoder_ShiftLeft(local_4,(void *)0x2);
           puVar6 = local_8;
           piVar5 = piVar8;
-          bitShiftLeft1(local_c,(void *)0x15);
-          piVar5 = (int *)FUN_00401b90(piVar8,puVar6,piVar5);
+          Decoder_ShiftLeft(local_c,(void *)0x15);
+          piVar5 = (int *)Decoder_ReadInt(piVar8,puVar6,piVar5);
           bVar2 = AudioManager::S154_FUN_004116f0
                             (param_1,param_2,*piVar5,*(char *)((int)piVar9 + 5))
           ;
           piVar9 = (int *)CONCAT31(extraout_var,bVar2);
           if (bVar2 != 0) {
-            bitShiftLeft1(&param_2,(void *)0x2);
+            Decoder_ShiftLeft(&param_2,(void *)0x2);
             puVar6 = local_4;
             piVar5 = piVar9;
-            bitShiftLeft1(local_8,(void *)0x15);
-            puVar7 = (undefined4 *)FUN_00401b90(piVar9,puVar6,piVar5);
+            Decoder_ShiftLeft(local_8,(void *)0x15);
+            puVar7 = (undefined4 *)Decoder_ReadInt(piVar9,puVar6,piVar5);
             param_1->field78_0x84 = *puVar7;
             param_1->field81_0x90 = cVar11;
             param_1->field85_0x94 = 0x15;
@@ -5698,29 +5698,29 @@ void __thiscall FUN_00412680(AudioManager *param_1,Turrel *param_2)
 
 
       if (bVar3 != 0) {
-        bitShiftLeft1(local_4,(void *)0x41);
+        Decoder_ShiftLeft(local_4,(void *)0x41);
         puVar8 = &param_2;
-        pvVar7 = FUN_00401b90(&local_20,local_8,(int *)&param_2);
+        pvVar7 = Decoder_ReadInt(&local_20,local_8,(int *)&param_2);
         piVar9 = (int *)WorldCoordinateToScreenCoord(pvVar7,puVar8,piVar9);
         piVar9 = (int *)FUN_00410bf0(this_00,piVar9);
         cVar4 = (char)piVar9;
         param_2 = (Turrel *)CONCAT31(param_2._1_3_,cVar4);
         if (cVar4 != '\0') {
-          bitShiftLeft1(local_4,(void *)0x2);
+          Decoder_ShiftLeft(local_4,(void *)0x2);
           puVar6 = local_8;
           piVar11 = piVar9;
-          bitShiftLeft1(local_c,(void *)0x82);
-          piVar9 = (int *)FUN_00401b90(piVar9,puVar6,piVar11);
+          Decoder_ShiftLeft(local_c,(void *)0x82);
+          piVar9 = (int *)Decoder_ReadInt(piVar9,puVar6,piVar11);
           bVar3 = AudioManager::S154_FUN_004116f0
                             (param_1,param_2,*piVar9,
                              *(char *)((int)&pTVar1->count + 1));
           piVar9 = (int *)CONCAT31(extraout_var_02,bVar3);
           if (bVar3 != 0) {
-            bitShiftLeft1(&param_2,(void *)0x2);
+            Decoder_ShiftLeft(&param_2,(void *)0x2);
             puVar6 = local_4;
             piVar11 = piVar9;
-            bitShiftLeft1(local_8,(void *)0x82);
-            puVar8 = (undefined4 *)FUN_00401b90(piVar9,puVar6,piVar11);
+            Decoder_ShiftLeft(local_8,(void *)0x82);
+            puVar8 = (undefined4 *)Decoder_ReadInt(piVar9,puVar6,piVar11);
             param_1->field78_0x84 = *puVar8;
             param_1->field81_0x90 = cVar4;
             param_1->field85_0x94 = 0x82;
@@ -5738,29 +5738,29 @@ void __thiscall FUN_00412830(AudioManager *param_1,Turrel *param_2)
 
 
       if (bVar3 != 0) {
-        bitShiftLeft1(local_4,(void *)0x7f);
+        Decoder_ShiftLeft(local_4,(void *)0x7f);
         puVar8 = &param_2;
-        pvVar7 = FUN_00401b90(&local_20,local_8,(int *)&param_2);
+        pvVar7 = Decoder_ReadInt(&local_20,local_8,(int *)&param_2);
         piVar9 = (int *)WorldCoordinateToScreenCoord(pvVar7,puVar8,piVar9);
         piVar9 = (int *)FUN_00410bf0(this_00,piVar9);
         cVar4 = (char)piVar9;
         param_2 = (Turrel *)CONCAT31(param_2._1_3_,cVar4);
         if (cVar4 != '\0') {
-          bitShiftLeft1(local_4,(void *)0x2);
+          Decoder_ShiftLeft(local_4,(void *)0x2);
           puVar6 = local_8;
           piVar11 = piVar9;
-          bitShiftLeft1(local_c,(void *)0x1e);
-          piVar9 = (int *)FUN_00401b90(piVar9,puVar6,piVar11);
+          Decoder_ShiftLeft(local_c,(void *)0x1e);
+          piVar9 = (int *)Decoder_ReadInt(piVar9,puVar6,piVar11);
           bVar3 = AudioManager::S154_FUN_004116f0
                             (param_1,param_2,*piVar9,
                              *(char *)((int)&pTVar1->count + 1));
           piVar9 = (int *)CONCAT31(extraout_var_02,bVar3);
           if (bVar3 != 0) {
-            bitShiftLeft1(&param_2,(void *)0x2);
+            Decoder_ShiftLeft(&param_2,(void *)0x2);
             puVar6 = local_4;
             piVar11 = piVar9;
-            bitShiftLeft1(local_8,(void *)0x1e);
-            puVar8 = (undefined4 *)FUN_00401b90(piVar9,puVar6,piVar11);
+            Decoder_ShiftLeft(local_8,(void *)0x1e);
+            puVar8 = (undefined4 *)Decoder_ReadInt(piVar9,puVar6,piVar11);
             param_1->field78_0x84 = *puVar8;
             param_1->field81_0x90 = cVar4;
             param_1->field85_0x94 = 0x1e;
@@ -5789,19 +5789,19 @@ void __thiscall FUN_00412a20(AudioManager *param_1,int *param_2)
     }
 
     if (bVar1 != 0) {
-      bitShiftLeft1(&param_2,(void *)0x2);
+      Decoder_ShiftLeft(&param_2,(void *)0x2);
       puVar7 = local_4;
       puVar9 = puVar7;
-      bitShiftLeft1(local_8,(void *)0x46);
-      piVar8 = (int *)FUN_00401b90(puVar7,puVar9,piVar8);
+      Decoder_ShiftLeft(local_8,(void *)0x46);
+      piVar8 = (int *)Decoder_ReadInt(puVar7,puVar9,piVar8);
       bVar1 = AudioManager::S154_FUN_004116f0(param_1,100,*piVar8,'\0');
       piVar8 = (int *)CONCAT31(extraout_var_00,bVar1);
       if (bVar1 != 0) {
-        bitShiftLeft1(&param_2,(void *)0x2);
+        Decoder_ShiftLeft(&param_2,(void *)0x2);
         puVar7 = local_4;
         piVar5 = piVar8;
-        bitShiftLeft1(local_8,(void *)0x46);
-        puVar4 = (undefined4 *)FUN_00401b90(piVar8,puVar7,piVar5);
+        Decoder_ShiftLeft(local_8,(void *)0x46);
+        puVar4 = (undefined4 *)Decoder_ReadInt(piVar8,puVar7,piVar5);
         param_1->field78_0x84 = *puVar4;
         param_1->field81_0x90 = 100;
         param_1->field85_0x94 = 0x46;
@@ -5818,18 +5818,18 @@ void __thiscall FUN_00412bd0(AudioManager *param_1,Turrel *param_2)
 
 
   if (bVar4) {
-    bitShiftLeft1(&param_2,(void *)0x2);
+    Decoder_ShiftLeft(&param_2,(void *)0x2);
     ppTVar14 = &local_18;
     piVar6 = piVar11;
-    bitShiftLeft1(local_14,(void *)0x14);
-    piVar6 = (int *)FUN_00401b90(piVar11,ppTVar14,piVar6);
+    Decoder_ShiftLeft(local_14,(void *)0x14);
+    piVar6 = (int *)Decoder_ReadInt(piVar11,ppTVar14,piVar6);
     puVar12 = local_10;
     piVar11 = piVar6;
-    bitShiftLeft1(local_c,(void *)0x2);
+    Decoder_ShiftLeft(local_c,(void *)0x2);
     puVar7 = local_8;
     puVar13 = puVar7;
-    bitShiftLeft1(local_4,(void *)0x14);
-    pvVar8 = FUN_00401b90(puVar7,puVar13,piVar6);
+    Decoder_ShiftLeft(local_4,(void *)0x14);
+    pvVar8 = Decoder_ReadInt(puVar7,puVar13,piVar6);
     puVar9 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar8,puVar12,piVar11);
     bVar5 = AudioManager::S154_FUN_004116b0(param_1,*puVar9);
     if (bVar5 != 0) {
@@ -5844,28 +5844,28 @@ void __thiscall FUN_00412bd0(AudioManager *param_1,Turrel *param_2)
         if (piVar11 != (int *)0x0) {
           local_18 = pTVar1;
         }
-        bitShiftLeft1(local_4,(void *)0x5a);
+        Decoder_ShiftLeft(local_4,(void *)0x5a);
         puVar9 = &param_2;
-        pvVar8 = FUN_00401b90(&local_18,local_8,(int *)&param_2);
+        pvVar8 = Decoder_ReadInt(&local_18,local_8,(int *)&param_2);
         piVar11 = (int *)WorldCoordinateToScreenCoord(pvVar8,puVar9,piVar11);
         piVar11 = (int *)FUN_00410bf0(this,piVar11);
         uVar2 = SUB41(piVar11,0);
         param_2 = (Turrel *)CONCAT31(param_2._1_3_,uVar2);
-        bitShiftLeft1(local_4,(void *)0x2);
+        Decoder_ShiftLeft(local_4,(void *)0x2);
         puVar12 = local_8;
         puVar7 = puVar12;
-        bitShiftLeft1(local_c,(void *)0x14);
-        piVar11 = (int *)FUN_00401b90(puVar12,puVar7,piVar11);
+        Decoder_ShiftLeft(local_c,(void *)0x14);
+        piVar11 = (int *)Decoder_ReadInt(puVar12,puVar7,piVar11);
         bVar5 = AudioManager::S154_FUN_004116f0
                           (param_1,param_2,*piVar11,
                            *(char *)((int)&pTVar3->count + 1));
         piVar11 = (int *)CONCAT31(extraout_var_02,bVar5);
         if (bVar5 != 0) {
-          bitShiftLeft1(&param_2,(void *)0x2);
+          Decoder_ShiftLeft(&param_2,(void *)0x2);
           puVar12 = local_4;
           piVar6 = piVar11;
-          bitShiftLeft1(local_8,(void *)0x14);
-          puVar9 = (undefined4 *)FUN_00401b90(piVar11,puVar12,piVar6);
+          Decoder_ShiftLeft(local_8,(void *)0x14);
+          puVar9 = (undefined4 *)Decoder_ReadInt(piVar11,puVar12,piVar6);
           param_1->field78_0x84 = *puVar9;
           param_1->field81_0x90 = uVar2;
           param_1->field85_0x94 = 0x14;
@@ -5884,36 +5884,36 @@ void __thiscall FUN_00412d80(AudioManager *param_1,int *param_2)
 
 
   if (cVar2 != '\0') {
-    bitShiftLeft1(&param_2,(void *)0x2);
+    Decoder_ShiftLeft(&param_2,(void *)0x2);
     puVar8 = local_18;
     piVar4 = piVar7;
-    bitShiftLeft1(local_14,(void *)0xa);
-    piVar4 = (int *)FUN_00401b90(piVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_14,(void *)0xa);
+    piVar4 = (int *)Decoder_ReadInt(piVar7,puVar8,piVar4);
     puVar8 = local_10;
     piVar7 = piVar4;
-    bitShiftLeft1(local_c,(void *)0x2);
+    Decoder_ShiftLeft(local_c,(void *)0x2);
     puVar5 = local_8;
     puVar9 = puVar5;
-    bitShiftLeft1(local_4,(void *)0xa);
-    this = FUN_00401b90(puVar5,puVar9,piVar4);
+    Decoder_ShiftLeft(local_4,(void *)0xa);
+    this = Decoder_ReadInt(puVar5,puVar9,piVar4);
     puVar6 = (undefined4 *)WorldCoordinateToScreenCoord(this,puVar8,piVar7);
     bVar3 = AudioManager::S154_FUN_004116b0(param_1,*puVar6);
     piVar7 = (int *)CONCAT31(extraout_var_00,bVar3);
     if (bVar3 != 0) {
-      bitShiftLeft1(&param_2,(void *)0x2);
+      Decoder_ShiftLeft(&param_2,(void *)0x2);
       puVar8 = local_4;
       piVar4 = piVar7;
-      bitShiftLeft1(local_8,(void *)0xa);
-      piVar7 = (int *)FUN_00401b90(piVar7,puVar8,piVar4);
+      Decoder_ShiftLeft(local_8,(void *)0xa);
+      piVar7 = (int *)Decoder_ReadInt(piVar7,puVar8,piVar4);
       bVar3 = AudioManager::S154_FUN_004116f0
                         (param_1,0x32,*piVar7,*(char *)((int)piVar1 + 5));
       piVar7 = (int *)CONCAT31(extraout_var_01,bVar3);
       if (bVar3 != 0) {
-        bitShiftLeft1(&param_2,(void *)0x2);
+        Decoder_ShiftLeft(&param_2,(void *)0x2);
         puVar8 = local_4;
         puVar5 = puVar8;
-        bitShiftLeft1(local_8,(void *)0xa);
-        puVar6 = (undefined4 *)FUN_00401b90(puVar8,puVar5,piVar7);
+        Decoder_ShiftLeft(local_8,(void *)0xa);
+        puVar6 = (undefined4 *)Decoder_ReadInt(puVar8,puVar5,piVar7);
         param_1->field78_0x84 = *puVar6;
         param_1->field81_0x90 = 0x32;
         param_1->field85_0x94 = 10;
@@ -5931,36 +5931,36 @@ void __thiscall FUN_00412eb0(AudioManager *param_1,int *param_2)
 
 
   if (bVar2) {
-    bitShiftLeft1(&param_2,(void *)0x2);
+    Decoder_ShiftLeft(&param_2,(void *)0x2);
     puVar9 = local_18;
     piVar4 = piVar7;
-    bitShiftLeft1(local_14,(void *)0xa);
-    piVar4 = (int *)FUN_00401b90(piVar7,puVar9,piVar4);
+    Decoder_ShiftLeft(local_14,(void *)0xa);
+    piVar4 = (int *)Decoder_ReadInt(piVar7,puVar9,piVar4);
     puVar9 = local_10;
     piVar7 = piVar4;
-    bitShiftLeft1(local_c,(void *)0x2);
+    Decoder_ShiftLeft(local_c,(void *)0x2);
     puVar5 = local_8;
     puVar10 = puVar5;
-    bitShiftLeft1(local_4,(void *)0xa);
-    this = FUN_00401b90(puVar5,puVar10,piVar4);
+    Decoder_ShiftLeft(local_4,(void *)0xa);
+    this = Decoder_ReadInt(puVar5,puVar10,piVar4);
     puVar6 = (undefined4 *)WorldCoordinateToScreenCoord(this,puVar9,piVar7);
     bVar3 = AudioManager::S154_FUN_004116b0(param_1,*puVar6);
     piVar7 = (int *)CONCAT31(extraout_var_00,bVar3);
     if (bVar3 != 0) {
-      bitShiftLeft1(&param_2,(void *)0x2);
+      Decoder_ShiftLeft(&param_2,(void *)0x2);
       puVar9 = local_4;
       piVar4 = piVar7;
-      bitShiftLeft1(local_8,(void *)0xa);
-      piVar7 = (int *)FUN_00401b90(piVar7,puVar9,piVar4);
+      Decoder_ShiftLeft(local_8,(void *)0xa);
+      piVar7 = (int *)Decoder_ReadInt(piVar7,puVar9,piVar4);
       bVar3 = AudioManager::S154_FUN_004116f0
                         (param_1,0x28,*piVar7,*(char *)((int)piVar8 + 5));
       piVar8 = (int *)CONCAT31(extraout_var_01,bVar3);
       if (bVar3 != 0) {
-        bitShiftLeft1(&param_2,(void *)0x2);
+        Decoder_ShiftLeft(&param_2,(void *)0x2);
         puVar9 = local_4;
         puVar5 = puVar9;
-        bitShiftLeft1(local_8,(void *)0xa);
-        puVar6 = (undefined4 *)FUN_00401b90(puVar9,puVar5,piVar8);
+        Decoder_ShiftLeft(local_8,(void *)0xa);
+        puVar6 = (undefined4 *)Decoder_ReadInt(puVar9,puVar5,piVar8);
         uVar1 = *puVar6;
         param_1->field79_0x88 = 0xf;
         param_1->field37_0x34 = 0xf;
@@ -6036,11 +6036,11 @@ void __thiscall FUN_00413160(AudioManager *param_1,int *param_2)
   }
 
   if (bVar3 != 0) {
-    bitShiftLeft1(&param_2,(void *)0x2);
+    Decoder_ShiftLeft(&param_2,(void *)0x2);
     puVar14 = local_4;
     piVar15 = piVar11;
-    bitShiftLeft1(local_8,(void *)0xc);
-    puVar7 = (undefined4 *)FUN_00401b90(piVar11,puVar14,piVar15);
+    Decoder_ShiftLeft(local_8,(void *)0xc);
+    puVar7 = (undefined4 *)Decoder_ReadInt(piVar11,puVar14,piVar15);
     param_1->field78_0x84 = *puVar7;
     param_1->field81_0x90 = cVar12;
     param_1->field85_0x94 = 0xc;
@@ -6069,36 +6069,36 @@ void __thiscall FUN_004139a0(AudioManager *param_1,int *param_2)
 
 
   if (cVar1 != '\0') {
-    bitShiftLeft1(&param_2,(void *)0x2);
+    Decoder_ShiftLeft(&param_2,(void *)0x2);
     puVar7 = local_18;
     piVar9 = piVar8;
-    bitShiftLeft1(local_14,(void *)0x19);
-    piVar5 = (int *)FUN_00401b90(piVar8,puVar7,piVar9);
+    Decoder_ShiftLeft(local_14,(void *)0x19);
+    piVar5 = (int *)Decoder_ReadInt(piVar8,puVar7,piVar9);
     piVar8 = &local_10;
     pS110 = piVar8;
-    bitShiftLeft1(local_c,(void *)0x2);
+    Decoder_ShiftLeft(local_c,(void *)0x2);
     puVar7 = local_8;
     piVar9 = piVar8;
-    bitShiftLeft1(local_4,(void *)0x19);
-    this = FUN_00401b90(piVar8,puVar7,piVar9);
+    Decoder_ShiftLeft(local_4,(void *)0x19);
+    this = Decoder_ReadInt(piVar8,puVar7,piVar9);
     puVar6 = (undefined4 *)WorldCoordinateToScreenCoord(this,pS110,piVar5);
     bVar4 = AudioManager::S154_FUN_004116b0(param_1,*puVar6);
     piVar8 = (int *)CONCAT31(extraout_var,bVar4);
     if (bVar4 != 0) {
-      bitShiftLeft1(&param_2,(void *)0x2);
+      Decoder_ShiftLeft(&param_2,(void *)0x2);
       puVar7 = local_4;
       puVar10 = puVar7;
-      bitShiftLeft1(local_8,(void *)0x19);
-      piVar8 = (int *)FUN_00401b90(puVar7,puVar10,piVar8);
+      Decoder_ShiftLeft(local_8,(void *)0x19);
+      piVar8 = (int *)Decoder_ReadInt(puVar7,puVar10,piVar8);
       bVar4 = AudioManager::S154_FUN_004116f0
                         (param_1,0x32,*piVar8,*(char *)((int)piVar3 + 5));
       piVar8 = (int *)CONCAT31(extraout_var_00,bVar4);
       if (bVar4 != 0) {
-        bitShiftLeft1(&param_2,(void *)0x2);
+        Decoder_ShiftLeft(&param_2,(void *)0x2);
         puVar7 = local_4;
         puVar10 = puVar7;
-        bitShiftLeft1(local_8,(void *)0x19);
-        puVar6 = (undefined4 *)FUN_00401b90(puVar7,puVar10,piVar8);
+        Decoder_ShiftLeft(local_8,(void *)0x19);
+        puVar6 = (undefined4 *)Decoder_ReadInt(puVar7,puVar10,piVar8);
         uVar2 = *puVar6;
         param_1->field81_0x90 = 0x32;
         param_1->field78_0x84 = uVar2;
@@ -6148,20 +6148,20 @@ void __thiscall FUN_00413bd0(AudioManager *param_1,int *param_2)
       cVar8 = ((char)(iVar7 / 16000) + (char)(iVar7 >> 0x1f)) -
               (char)((longlong)iVar7 * 0x10624dd3 >> 0x3f);
       param_2 = (int *)CONCAT31(param_2._1_3_,cVar8);
-      bitShiftLeft1(local_4,(void *)0x2);
+      Decoder_ShiftLeft(local_4,(void *)0x2);
       puVar10 = local_8;
       piVar5 = piVar3;
-      bitShiftLeft1(local_c,(void *)0xe);
-      piVar5 = (int *)FUN_00401b90(piVar3,puVar10,piVar5);
+      Decoder_ShiftLeft(local_c,(void *)0xe);
+      piVar5 = (int *)Decoder_ReadInt(piVar3,puVar10,piVar5);
       bVar2 = AudioManager::S154_FUN_004116f0
                         (param_1,param_2,*piVar5,*(char *)((int)piVar6 + 5));
       piVar6 = (int *)CONCAT31(extraout_var_00,bVar2);
       if (bVar2 != 0) {
-        bitShiftLeft1(&param_2,(void *)0x2);
+        Decoder_ShiftLeft(&param_2,(void *)0x2);
         puVar10 = local_4;
         piVar5 = piVar6;
-        bitShiftLeft1(local_8,(void *)0xe);
-        puVar4 = (undefined4 *)FUN_00401b90(piVar6,puVar10,piVar5);
+        Decoder_ShiftLeft(local_8,(void *)0xe);
+        puVar4 = (undefined4 *)Decoder_ReadInt(piVar6,puVar10,piVar5);
         param_1->field78_0x84 = *puVar4;
         param_1->field81_0x90 = cVar8;
         param_1->field85_0x94 = 0xe;
@@ -6232,20 +6232,20 @@ void __thiscall FUN_00413eb0(AudioManager *param_1,int *param_2,S169 *param_3)
 
 
         if (bVar4 != 0) {
-          bitShiftLeft1(&param_3,(void *)0x2);
+          Decoder_ShiftLeft(&param_3,(void *)0x2);
           puVar11 = local_4;
           piVar13 = piVar7;
-          bitShiftLeft1(local_8,(void *)0xa);
-          piVar7 = (int *)FUN_00401b90(piVar7,puVar11,piVar13);
+          Decoder_ShiftLeft(local_8,(void *)0xa);
+          piVar7 = (int *)Decoder_ReadInt(piVar7,puVar11,piVar13);
           bVar4 = AudioManager::S154_FUN_004116f0
                             (param_1,0x28,*piVar7,*(char *)((int)param_2 + 5));
           piVar7 = (int *)CONCAT31(extraout_var_02,bVar4);
           if (bVar4 != 0) {
-            bitShiftLeft1(&param_2,(void *)0x2);
+            Decoder_ShiftLeft(&param_2,(void *)0x2);
             puVar8 = &param_3;
             puVar12 = puVar8;
-            bitShiftLeft1(local_4,(void *)0xa);
-            puVar8 = (undefined4 *)FUN_00401b90(puVar8,puVar12,piVar7);
+            Decoder_ShiftLeft(local_4,(void *)0xa);
+            puVar8 = (undefined4 *)Decoder_ReadInt(puVar8,puVar12,piVar7);
             param_1->field78_0x84 = *puVar8;
             param_1->field81_0x90 = 0x28;
             param_1->field85_0x94 = 10;
@@ -6277,38 +6277,38 @@ void __thiscall FUN_00414030(AudioManager *param_1,Turrel *param_2)
       case 0x3f:
       case 0x40:
       case 0x56:
-        bitShiftLeft1(&param_2,(void *)0x2);
+        Decoder_ShiftLeft(&param_2,(void *)0x2);
         puVar7 = local_30;
         piVar8 = piVar10;
-        bitShiftLeft1(local_2c,(void *)0xa);
-        piVar5 = (int *)FUN_00401b90(piVar10,puVar7,piVar8);
+        Decoder_ShiftLeft(local_2c,(void *)0xa);
+        piVar5 = (int *)Decoder_ReadInt(piVar10,puVar7,piVar8);
         piVar10 = &local_28;
         pS110 = piVar10;
-        bitShiftLeft1(local_24,(void *)0x2);
+        Decoder_ShiftLeft(local_24,(void *)0x2);
         puVar7 = local_20;
         piVar8 = piVar10;
-        bitShiftLeft1(local_1c,(void *)0xa);
-        this_01 = FUN_00401b90(piVar10,puVar7,piVar8);
+        Decoder_ShiftLeft(local_1c,(void *)0xa);
+        this_01 = Decoder_ReadInt(piVar10,puVar7,piVar8);
         puVar6 = (undefined4 *)
                  WorldCoordinateToScreenCoord(this_01,pS110,piVar5);
         bVar2 = AudioManager::S154_FUN_004116b0(param_1,*puVar6);
         piVar10 = (int *)CONCAT31(extraout_var_00,bVar2);
         if (bVar2 != 0) {
-          bitShiftLeft1(local_18,(void *)0x2);
+          Decoder_ShiftLeft(local_18,(void *)0x2);
           puVar7 = local_14;
           puVar9 = puVar7;
-          bitShiftLeft1(local_10,(void *)0xa);
-          piVar10 = (int *)FUN_00401b90(puVar7,puVar9,piVar10);
+          Decoder_ShiftLeft(local_10,(void *)0xa);
+          piVar10 = (int *)Decoder_ReadInt(puVar7,puVar9,piVar10);
           bVar2 = AudioManager::S154_FUN_004116f0
                             (param_1,0x19,*piVar10,
                              *(char *)((int)&pTVar1->count + 1));
           piVar10 = (int *)CONCAT31(extraout_var_01,bVar2);
           if (bVar2 != 0) {
-            bitShiftLeft1(local_c,(void *)0x2);
+            Decoder_ShiftLeft(local_c,(void *)0x2);
             puVar7 = local_8;
             puVar9 = puVar7;
-            bitShiftLeft1(local_4,(void *)0xa);
-            puVar6 = (undefined4 *)FUN_00401b90(puVar7,puVar9,piVar10);
+            Decoder_ShiftLeft(local_4,(void *)0xa);
+            puVar6 = (undefined4 *)Decoder_ReadInt(puVar7,puVar9,piVar10);
             param_1->field78_0x84 = *puVar6;
             param_1->field81_0x90 = 0x19;
             param_1->field85_0x94 = 10;
@@ -6328,29 +6328,29 @@ void __thiscall FUN_00414200(AudioManager *param_1,int *param_2)
 
 
         if (bVar3 != 0) {
-          bitShiftLeft1(local_4,(void *)0xb);
+          Decoder_ShiftLeft(local_4,(void *)0xb);
           puVar8 = &param_2;
-          pvVar7 = FUN_00401b90(&local_20,local_8,(int *)&param_2);
+          pvVar7 = Decoder_ReadInt(&local_20,local_8,(int *)&param_2);
           piVar9 = (int *)WorldCoordinateToScreenCoord(pvVar7,puVar8,piVar9);
           piVar9 = (int *)FUN_00410bf0(this,piVar9);
           bVar3 = (byte)piVar9;
           param_2 = (int *)CONCAT31(param_2._1_3_,bVar3);
           if (bVar3 != 0) {
-            bitShiftLeft1(local_4,(void *)0x2);
+            Decoder_ShiftLeft(local_4,(void *)0x2);
             puVar10 = local_8;
             puVar13 = puVar10;
-            bitShiftLeft1(local_c,(void *)0x12);
-            piVar9 = (int *)FUN_00401b90(puVar10,puVar13,piVar9);
+            Decoder_ShiftLeft(local_c,(void *)0x12);
+            piVar9 = (int *)Decoder_ReadInt(puVar10,puVar13,piVar9);
             bVar4 = AudioManager::S154_FUN_004116f0
                               (param_1,param_2,*piVar9,
                                *(char *)((int)piVar11 + 5));
             piVar11 = (int *)CONCAT31(extraout_var_02,bVar4);
             if (bVar4 != 0) {
-              bitShiftLeft1(&param_2,(void *)0x2);
+              Decoder_ShiftLeft(&param_2,(void *)0x2);
               puVar10 = local_4;
               piVar9 = piVar11;
-              bitShiftLeft1(local_8,(void *)0x12);
-              puVar8 = (undefined4 *)FUN_00401b90(piVar11,puVar10,piVar9);
+              Decoder_ShiftLeft(local_8,(void *)0x12);
+              puVar8 = (undefined4 *)Decoder_ReadInt(piVar11,puVar10,piVar9);
               param_1->field78_0x84 = *puVar8;
               param_1->field81_0x90 = bVar3;
               param_1->field85_0x94 = 0x12;
@@ -6377,37 +6377,37 @@ void __thiscall FUN_00414200(AudioManager *param_1,int *param_2)
          (piVar8 = (int *)FUN_00411870(pCar->CarDoor + bVar16),
          (char)piVar8 != '\0')) {
         bVar2 = true;
-        bitShiftLeft1(local_8,(void *)0x2);
+        Decoder_ShiftLeft(local_8,(void *)0x2);
         puVar9 = local_60;
         puVar17 = puVar9;
-        bitShiftLeft1(local_30,(void *)0xf);
-        piVar10 = (int *)FUN_00401b90(puVar9,puVar17,piVar8);
+        Decoder_ShiftLeft(local_30,(void *)0xf);
+        piVar10 = (int *)Decoder_ReadInt(puVar9,puVar17,piVar8);
         puVar9 = local_58;
         piVar18 = piVar10;
-        bitShiftLeft1(local_18,(void *)0x2);
+        Decoder_ShiftLeft(local_18,(void *)0x2);
         puVar17 = local_50;
         piVar8 = piVar10;
-        bitShiftLeft1(local_28,(void *)0xf);
-        pvVar11 = FUN_00401b90(piVar10,puVar17,piVar8);
+        Decoder_ShiftLeft(local_28,(void *)0xf);
+        pvVar11 = Decoder_ReadInt(piVar10,puVar17,piVar8);
         puVar12 = (undefined4 *)
                   WorldCoordinateToScreenCoord(pvVar11,puVar9,piVar18);
         bVar5 = S154_FUN_004116b0(this,*puVar12);
         piVar8 = (int *)CONCAT31(extraout_var,bVar5);
         if (bVar5 != 0) {
-          bitShiftLeft1(local_48,(void *)0x2);
+          Decoder_ShiftLeft(local_48,(void *)0x2);
           puVar9 = local_68;
           piVar18 = piVar8;
-          bitShiftLeft1(local_40,(void *)0xf);
-          piVar8 = (int *)FUN_00401b90(piVar8,puVar9,piVar18);
+          Decoder_ShiftLeft(local_40,(void *)0xf);
+          piVar8 = (int *)Decoder_ReadInt(piVar8,puVar9,piVar18);
           bVar5 = S154_FUN_004116f0(this,0x32,*piVar8,
                                     *(char *)((int)param_1 + 5));
           piVar8 = (int *)CONCAT31(extraout_var_00,bVar5);
           if (bVar5 != 0) {
-            bitShiftLeft1(local_20,(void *)0x2);
+            Decoder_ShiftLeft(local_20,(void *)0x2);
             puVar9 = local_38;
             piVar18 = piVar8;
-            bitShiftLeft1(local_10,(void *)0xf);
-            puVar12 = (undefined4 *)FUN_00401b90(piVar8,puVar9,piVar18);
+            Decoder_ShiftLeft(local_10,(void *)0xf);
+            puVar12 = (undefined4 *)Decoder_ReadInt(piVar8,puVar9,piVar18);
             uVar1 = *puVar12;
             this->field81_0x90 = 0x32;
             this->field78_0x84 = uVar1;
@@ -6434,37 +6434,37 @@ void __thiscall FUN_00414200(AudioManager *param_1,int *param_2)
       }
       if ((!bVar3) && (piVar8 = (int *)FUN_00411890(), (char)piVar8 != '\0')) {
         bVar3 = true;
-        bitShiftLeft1(local_64,(void *)0x2);
+        Decoder_ShiftLeft(local_64,(void *)0x2);
         puVar9 = local_5c;
         puVar17 = puVar9;
-        bitShiftLeft1(local_54,(void *)0xf);
-        piVar10 = (int *)FUN_00401b90(puVar9,puVar17,piVar8);
+        Decoder_ShiftLeft(local_54,(void *)0xf);
+        piVar10 = (int *)Decoder_ReadInt(puVar9,puVar17,piVar8);
         puVar9 = local_4c;
         piVar18 = piVar10;
-        bitShiftLeft1(local_44,(void *)0x2);
+        Decoder_ShiftLeft(local_44,(void *)0x2);
         puVar17 = local_3c;
         piVar8 = piVar10;
-        bitShiftLeft1(local_34,(void *)0xf);
-        pvVar11 = FUN_00401b90(piVar10,puVar17,piVar8);
+        Decoder_ShiftLeft(local_34,(void *)0xf);
+        pvVar11 = Decoder_ReadInt(piVar10,puVar17,piVar8);
         puVar12 = (undefined4 *)
                   WorldCoordinateToScreenCoord(pvVar11,puVar9,piVar18);
         bVar5 = S154_FUN_004116b0(this,*puVar12);
         piVar8 = (int *)CONCAT31(extraout_var_01,bVar5);
         if (bVar5 != 0) {
-          bitShiftLeft1(local_2c,(void *)0x2);
+          Decoder_ShiftLeft(local_2c,(void *)0x2);
           puVar9 = local_24;
           piVar18 = piVar8;
-          bitShiftLeft1(local_1c,(void *)0xf);
-          piVar8 = (int *)FUN_00401b90(piVar8,puVar9,piVar18);
+          Decoder_ShiftLeft(local_1c,(void *)0xf);
+          piVar8 = (int *)Decoder_ReadInt(piVar8,puVar9,piVar18);
           bVar5 = S154_FUN_004116f0(this,0x32,*piVar8,
                                     *(char *)((int)param_1 + 5));
           piVar8 = (int *)CONCAT31(extraout_var_02,bVar5);
           if (bVar5 != 0) {
-            bitShiftLeft1(local_14,(void *)0x2);
+            Decoder_ShiftLeft(local_14,(void *)0x2);
             puVar9 = local_c;
             piVar18 = piVar8;
-            bitShiftLeft1(local_4,(void *)0xf);
-            puVar12 = (undefined4 *)FUN_00401b90(piVar8,puVar9,piVar18);
+            Decoder_ShiftLeft(local_4,(void *)0xf);
+            puVar12 = (undefined4 *)Decoder_ReadInt(piVar8,puVar9,piVar18);
             uVar1 = *puVar12;
             this->field81_0x90 = 0x32;
             this->field78_0x84 = uVar1;
@@ -6497,20 +6497,20 @@ void __thiscall FUN_00414780(AudioManager *param_1,int *param_2)
 
 
     if (bVar3 != 0) {
-      bitShiftLeft1(&param_2,(void *)0x2);
+      Decoder_ShiftLeft(&param_2,(void *)0x2);
       puVar8 = local_4;
       piVar5 = piVar4;
-      bitShiftLeft1(local_8,(void *)0xa);
-      piVar4 = (int *)FUN_00401b90(piVar4,puVar8,piVar5);
+      Decoder_ShiftLeft(local_8,(void *)0xa);
+      piVar4 = (int *)Decoder_ReadInt(piVar4,puVar8,piVar5);
       bVar3 = AudioManager::S154_FUN_004116f0
                         (param_1,0x46,*piVar4,*(char *)((int)piVar2 + 5));
       piVar4 = (int *)CONCAT31(extraout_var_00,bVar3);
       if (bVar3 != 0) {
-        bitShiftLeft1(&param_2,(void *)0x2);
+        Decoder_ShiftLeft(&param_2,(void *)0x2);
         puVar8 = local_4;
         puVar6 = puVar8;
-        bitShiftLeft1(local_8,(void *)0xa);
-        puVar7 = (undefined4 *)FUN_00401b90(puVar8,puVar6,piVar4);
+        Decoder_ShiftLeft(local_8,(void *)0xa);
+        puVar7 = (undefined4 *)Decoder_ReadInt(puVar8,puVar6,piVar4);
         uVar1 = *puVar7;
         param_1->field81_0x90 = 0x46;
         param_1->field78_0x84 = uVar1;
@@ -6553,8 +6553,8 @@ void __thiscall FUN_004148d0(AudioManager *param_1,int *param_2)
       pSVar16 = (S110 *)local_14;
       piVar9 = piVar13;
       pvVar8 = (void *)FUN_00411840(local_18);
-      pvVar8 = S110_FUN_00401b40(pvVar8,pSVar16,piVar13);
-      piVar9 = (int *)FUN_00401b90(pvVar8,puVar10,piVar9);
+      pvVar8 = Decoder_ProcessData(pvVar8,pSVar16,piVar13);
+      piVar9 = (int *)Decoder_ReadInt(pvVar8,puVar10,piVar9);
       local_1c = (void *)*piVar9;
       bVar4 = S169::FUN_00403800((S169 *)&local_1c,(int *)&DAT_005dc804);
       if (CONCAT31(extraout_var_01,bVar4) != 0) {
@@ -6563,7 +6563,7 @@ void __thiscall FUN_004148d0(AudioManager *param_1,int *param_2)
       ppvVar17 = &local_1c;
       puVar10 = local_10;
       puVar15 = puVar10;
-      bitShiftLeft1(local_14,(void *)0x46);
+      Decoder_ShiftLeft(local_14,(void *)0x46);
       piVar9 = (int *)WorldCoordinateToScreenCoord
                                 (puVar10,puVar15,(int *)ppvVar17);
       iVar6 = FUN_00410bf0(this_02,piVar9);
@@ -6585,8 +6585,8 @@ void __thiscall FUN_004148d0(AudioManager *param_1,int *param_2)
       pSVar16 = (S110 *)local_14;
       piVar9 = piVar13;
       pvVar8 = (void *)FUN_00411850(local_18);
-      pvVar8 = S110_FUN_00401b40(pvVar8,pSVar16,piVar13);
-      piVar9 = (int *)FUN_00401b90(pvVar8,puVar10,piVar9);
+      pvVar8 = Decoder_ProcessData(pvVar8,pSVar16,piVar13);
+      piVar9 = (int *)Decoder_ReadInt(pvVar8,puVar10,piVar9);
       local_1c = (void *)*piVar9;
       bVar4 = S169::FUN_00403800((S169 *)&local_1c,(int *)&DAT_005dc804);
       pvVar8 = (void *)CONCAT31(extraout_var_03,bVar4);
@@ -6596,7 +6596,7 @@ void __thiscall FUN_004148d0(AudioManager *param_1,int *param_2)
       }
       ppvVar17 = &local_1c;
       puVar10 = local_10;
-      bitShiftLeft1(local_14,(void *)0x46);
+      Decoder_ShiftLeft(local_14,(void *)0x46);
       piVar9 = (int *)WorldCoordinateToScreenCoord
                                 (pvVar8,puVar10,(int *)ppvVar17);
       piVar9 = (int *)FUN_00410bf0(this_03,piVar9);
@@ -6610,20 +6610,20 @@ void __thiscall FUN_004148d0(AudioManager *param_1,int *param_2)
   }
 
   if (bVar5 != 0) {
-    bitShiftLeft1(local_4,(void *)0x2);
+    Decoder_ShiftLeft(local_4,(void *)0x2);
     puVar10 = local_8;
     piVar13 = piVar9;
-    bitShiftLeft1(local_c,(void *)0xa);
-    piVar9 = (int *)FUN_00401b90(piVar9,puVar10,piVar13);
+    Decoder_ShiftLeft(local_c,(void *)0xa);
+    piVar9 = (int *)Decoder_ReadInt(piVar9,puVar10,piVar13);
     bVar5 = AudioManager::S154_FUN_004116f0
                       (param_1,local_20,*piVar9,*(char *)((int)param_2 + 5));
     piVar9 = (int *)CONCAT31(extraout_var_05,bVar5);
     if (bVar5 != 0) {
-      bitShiftLeft1(&param_2,(void *)0x2);
+      Decoder_ShiftLeft(&param_2,(void *)0x2);
       puVar10 = local_4;
       piVar13 = piVar9;
-      bitShiftLeft1(local_8,(void *)0xa);
-      puVar11 = (undefined4 *)FUN_00401b90(piVar9,puVar10,piVar13);
+      Decoder_ShiftLeft(local_8,(void *)0xa);
+      puVar11 = (undefined4 *)Decoder_ReadInt(piVar9,puVar10,piVar13);
       param_1->field78_0x84 = *puVar11;
       param_1->field81_0x90 = bVar12;
       param_1->field85_0x94 = 10;
@@ -6670,8 +6670,8 @@ AudioManager::S154_FUN_00414bc0(AudioManager *this,undefined4 *param_1)
       pSVar12 = (S110 *)&local_8;
       piVar14 = piVar8;
       pvVar6 = (void *)FUN_00411840(&local_10);
-      pvVar6 = S110_FUN_00401b40(pvVar6,pSVar12,piVar8);
-      puVar7 = (undefined4 *)FUN_00401b90(pvVar6,puVar13,piVar14);
+      pvVar6 = Decoder_ProcessData(pvVar6,pSVar12,piVar8);
+      puVar7 = (undefined4 *)Decoder_ReadInt(pvVar6,puVar13,piVar14);
       local_10 = (Ped *)*puVar7;
       bVar3 = S169::FUN_00403800((S169 *)&local_10,(int *)&DAT_005dc804);
       if (CONCAT31(extraout_var_01,bVar3) != 0) {
@@ -6687,8 +6687,8 @@ AudioManager::S154_FUN_00414bc0(AudioManager *this,undefined4 *param_1)
       pSVar12 = (S110 *)&local_8;
       piVar14 = piVar8;
       pvVar6 = (void *)FUN_00411850(&local_c);
-      pvVar6 = S110_FUN_00401b40(pvVar6,pSVar12,piVar8);
-      puVar7 = (undefined4 *)FUN_00401b90(pvVar6,puVar13,piVar14);
+      pvVar6 = Decoder_ProcessData(pvVar6,pSVar12,piVar8);
+      puVar7 = (undefined4 *)Decoder_ReadInt(pvVar6,puVar13,piVar14);
       local_c = (Ped *)*puVar7;
       bVar3 = S169::FUN_00403800((S169 *)&local_c,(int *)&DAT_005dc804);
       if (CONCAT31(extraout_var_03,bVar3) != 0) {
@@ -6698,12 +6698,12 @@ AudioManager::S154_FUN_00414bc0(AudioManager *this,undefined4 *param_1)
     bVar3 = S169::FUN_00403800((S169 *)&local_10,(int *)&local_c);
     piVar8 = (int *)CONCAT31(extraout_var_04,bVar3);
     if (piVar8 == (int *)0x0) {
-      bitShiftLeft1(local_4,(void *)0x1770);
+      Decoder_ShiftLeft(local_4,(void *)0x1770);
       pS110 = &local_8;
       ppPVar5 = &local_c;
     }
     else {
-      bitShiftLeft1(local_4,(void *)0x1770);
+      Decoder_ShiftLeft(local_4,(void *)0x1770);
       pS110 = &local_8;
       ppPVar5 = &local_10;
     }
@@ -6732,7 +6732,7 @@ AudioManager::S154_FUN_00414bc0(AudioManager *this,undefined4 *param_1)
       this->field81_0x90 = (byte)puVar3;
       this->field85_0x94 = 100;
       this->field79_0x88 = 0x14;
-      bitShiftLeft1(&param_1,(void *)0x64);
+      Decoder_ShiftLeft(&param_1,(void *)0x64);
       this->field78_0x84 = *puVar3;
       this->field37_0x34 = 0;
       this->field65_0x71 = 0;
@@ -7066,37 +7066,37 @@ AudioManager::thunk_FUN_004143b0(AudioManager *this,int *param_1)
          (piVar8 = (int *)FUN_00411870(this_00->CarDoor + bVar16),
          (char)piVar8 != '\0')) {
         bVar2 = true;
-        bitShiftLeft1(auStack_8,(void *)0x2);
+        Decoder_ShiftLeft(auStack_8,(void *)0x2);
         puVar9 = auStack_60;
         puVar17 = puVar9;
-        bitShiftLeft1(auStack_30,(void *)0xf);
-        piVar10 = (int *)FUN_00401b90(puVar9,puVar17,piVar8);
+        Decoder_ShiftLeft(auStack_30,(void *)0xf);
+        piVar10 = (int *)Decoder_ReadInt(puVar9,puVar17,piVar8);
         puVar9 = auStack_58;
         piVar18 = piVar10;
-        bitShiftLeft1(auStack_18,(void *)0x2);
+        Decoder_ShiftLeft(auStack_18,(void *)0x2);
         puVar17 = auStack_50;
         piVar8 = piVar10;
-        bitShiftLeft1(auStack_28,(void *)0xf);
-        pvVar11 = FUN_00401b90(piVar10,puVar17,piVar8);
+        Decoder_ShiftLeft(auStack_28,(void *)0xf);
+        pvVar11 = Decoder_ReadInt(piVar10,puVar17,piVar8);
         puVar12 = (undefined4 *)
                   WorldCoordinateToScreenCoord(pvVar11,puVar9,piVar18);
         bVar5 = S154_FUN_004116b0(this,*puVar12);
         piVar8 = (int *)CONCAT31(extraout_var,bVar5);
         if (bVar5 != 0) {
-          bitShiftLeft1(auStack_48,(void *)0x2);
+          Decoder_ShiftLeft(auStack_48,(void *)0x2);
           puVar9 = auStack_68;
           piVar18 = piVar8;
-          bitShiftLeft1(auStack_40,(void *)0xf);
-          piVar8 = (int *)FUN_00401b90(piVar8,puVar9,piVar18);
+          Decoder_ShiftLeft(auStack_40,(void *)0xf);
+          piVar8 = (int *)Decoder_ReadInt(piVar8,puVar9,piVar18);
           bVar5 = S154_FUN_004116f0(this,0x32,*piVar8,
                                     *(char *)((int)param_1 + 5));
           piVar8 = (int *)CONCAT31(extraout_var_00,bVar5);
           if (bVar5 != 0) {
-            bitShiftLeft1(auStack_20,(void *)0x2);
+            Decoder_ShiftLeft(auStack_20,(void *)0x2);
             puVar9 = auStack_38;
             piVar18 = piVar8;
-            bitShiftLeft1(auStack_10,(void *)0xf);
-            puVar12 = (undefined4 *)FUN_00401b90(piVar8,puVar9,piVar18);
+            Decoder_ShiftLeft(auStack_10,(void *)0xf);
+            puVar12 = (undefined4 *)Decoder_ReadInt(piVar8,puVar9,piVar18);
             uVar1 = *puVar12;
             this->field81_0x90 = 0x32;
             this->field78_0x84 = uVar1;
@@ -7123,37 +7123,37 @@ AudioManager::thunk_FUN_004143b0(AudioManager *this,int *param_1)
       }
       if ((!bVar3) && (piVar8 = (int *)FUN_00411890(), (char)piVar8 != '\0')) {
         bVar3 = true;
-        bitShiftLeft1(auStack_64,(void *)0x2);
+        Decoder_ShiftLeft(auStack_64,(void *)0x2);
         puVar9 = auStack_5c;
         puVar17 = puVar9;
-        bitShiftLeft1(auStack_54,(void *)0xf);
-        piVar10 = (int *)FUN_00401b90(puVar9,puVar17,piVar8);
+        Decoder_ShiftLeft(auStack_54,(void *)0xf);
+        piVar10 = (int *)Decoder_ReadInt(puVar9,puVar17,piVar8);
         puVar9 = auStack_4c;
         piVar18 = piVar10;
-        bitShiftLeft1(auStack_44,(void *)0x2);
+        Decoder_ShiftLeft(auStack_44,(void *)0x2);
         puVar17 = auStack_3c;
         piVar8 = piVar10;
-        bitShiftLeft1(auStack_34,(void *)0xf);
-        pvVar11 = FUN_00401b90(piVar10,puVar17,piVar8);
+        Decoder_ShiftLeft(auStack_34,(void *)0xf);
+        pvVar11 = Decoder_ReadInt(piVar10,puVar17,piVar8);
         puVar12 = (undefined4 *)
                   WorldCoordinateToScreenCoord(pvVar11,puVar9,piVar18);
         bVar5 = S154_FUN_004116b0(this,*puVar12);
         piVar8 = (int *)CONCAT31(extraout_var_01,bVar5);
         if (bVar5 != 0) {
-          bitShiftLeft1(auStack_2c,(void *)0x2);
+          Decoder_ShiftLeft(auStack_2c,(void *)0x2);
           puVar9 = auStack_24;
           piVar18 = piVar8;
-          bitShiftLeft1(auStack_1c,(void *)0xf);
-          piVar8 = (int *)FUN_00401b90(piVar8,puVar9,piVar18);
+          Decoder_ShiftLeft(auStack_1c,(void *)0xf);
+          piVar8 = (int *)Decoder_ReadInt(piVar8,puVar9,piVar18);
           bVar5 = S154_FUN_004116f0(this,0x32,*piVar8,
                                     *(char *)((int)param_1 + 5));
           piVar8 = (int *)CONCAT31(extraout_var_02,bVar5);
           if (bVar5 != 0) {
-            bitShiftLeft1(auStack_14,(void *)0x2);
+            Decoder_ShiftLeft(auStack_14,(void *)0x2);
             puVar9 = auStack_c;
             piVar18 = piVar8;
-            bitShiftLeft1(auStack_4,(void *)0xf);
-            puVar12 = (undefined4 *)FUN_00401b90(piVar8,puVar9,piVar18);
+            Decoder_ShiftLeft(auStack_4,(void *)0xf);
+            puVar12 = (undefined4 *)Decoder_ReadInt(piVar8,puVar9,piVar18);
             uVar1 = *puVar12;
             this->field81_0x90 = 0x32;
             this->field78_0x84 = uVar1;
@@ -7197,28 +7197,28 @@ void __thiscall FUN_004156c0(AudioManager *param_1,Turrel *param_2)
         if (piVar11 != (int *)0x0) {
           local_18 = pTVar1;
         }
-        bitShiftLeft1(local_4,(void *)0x50);
+        Decoder_ShiftLeft(local_4,(void *)0x50);
         puVar9 = &param_2;
-        pvVar8 = FUN_00401b90(&local_18,local_8,(int *)&param_2);
+        pvVar8 = Decoder_ReadInt(&local_18,local_8,(int *)&param_2);
         piVar11 = (int *)WorldCoordinateToScreenCoord(pvVar8,puVar9,piVar11);
         piVar11 = (int *)FUN_00410bf0(this,piVar11);
         uVar2 = SUB41(piVar11,0);
         param_2 = (Turrel *)CONCAT31(param_2._1_3_,uVar2);
-        bitShiftLeft1(local_4,(void *)0x2);
+        Decoder_ShiftLeft(local_4,(void *)0x2);
         puVar12 = local_8;
         puVar7 = puVar12;
-        bitShiftLeft1(local_c,(void *)0xf);
-        piVar11 = (int *)FUN_00401b90(puVar12,puVar7,piVar11);
+        Decoder_ShiftLeft(local_c,(void *)0xf);
+        piVar11 = (int *)Decoder_ReadInt(puVar12,puVar7,piVar11);
         bVar5 = AudioManager::S154_FUN_004116f0
                           (param_1,param_2,*piVar11,
                            *(char *)((int)&pTVar3->count + 1));
         piVar11 = (int *)CONCAT31(extraout_var_02,bVar5);
         if (bVar5 != 0) {
-          bitShiftLeft1(&param_2,(void *)0x2);
+          Decoder_ShiftLeft(&param_2,(void *)0x2);
           puVar12 = local_4;
           piVar6 = piVar11;
-          bitShiftLeft1(local_8,(void *)0xf);
-          puVar9 = (undefined4 *)FUN_00401b90(piVar11,puVar12,piVar6);
+          Decoder_ShiftLeft(local_8,(void *)0xf);
+          puVar9 = (undefined4 *)Decoder_ReadInt(piVar11,puVar12,piVar6);
           param_1->field78_0x84 = *puVar9;
           param_1->field81_0x90 = uVar2;
           param_1->field85_0x94 = 0xf;
@@ -7255,21 +7255,21 @@ void __thiscall FUN_00415880(void *this,S46 *param_1,S46 *param_2)
     piVar9 = (int *)Car::GetModelCar(pCar);
     cVar4 = (-(piVar9 != (int *)0x3c) & 0x95U) + 0x7f;
     param_1 = (S46 *)CONCAT31(param_1._1_3_,cVar4);
-    bitShiftLeft1(&param_2,(void *)0x2);
+    Decoder_ShiftLeft(&param_2,(void *)0x2);
     puVar11 = local_4;
     piVar6 = piVar9;
-    bitShiftLeft1(local_8,(void *)0xf);
-    piVar6 = (int *)FUN_00401b90(piVar9,puVar11,piVar6);
+    Decoder_ShiftLeft(local_8,(void *)0xf);
+    piVar6 = (int *)Decoder_ReadInt(piVar9,puVar11,piVar6);
     bVar5 = AudioManager::S154_FUN_004116f0
                       ((AudioManager *)this,param_1,*piVar6,
                        *(char *)((int)&pSVar2->NextElement + 1));
     piVar6 = (int *)CONCAT31(extraout_var_01,bVar5);
     if (bVar5 != 0) {
-      bitShiftLeft1(&param_1,(void *)0x2);
+      Decoder_ShiftLeft(&param_1,(void *)0x2);
       ppSVar7 = &param_2;
       piVar9 = piVar6;
-      bitShiftLeft1(local_4,(void *)0xf);
-      puVar8 = (undefined4 *)FUN_00401b90(piVar6,ppSVar7,piVar9);
+      Decoder_ShiftLeft(local_4,(void *)0xf);
+      puVar8 = (undefined4 *)Decoder_ReadInt(piVar6,ppSVar7,piVar9);
       uVar1 = *puVar8;
       *(char *)((int)this + 0x90) = cVar4;
       *(undefined4 *)((int)this + 0x84) = uVar1;
@@ -7291,36 +7291,36 @@ void __thiscall FUN_00415a90(AudioManager *param_1,int *param_2)
     this = *(Car **)(*piVar1 + 8);
     bVar3 = Car::IsEngineOn(this);
     if ((bVar3) && (this_00 = Get_FUN_004118b0(this), this_00 != (Ped *)0x0)) {
-      bitShiftLeft1(&param_2,(void *)0x2);
+      Decoder_ShiftLeft(&param_2,(void *)0x2);
       puVar7 = local_18;
       pPVar11 = this_00;
-      bitShiftLeft1(local_14,(void *)0x28);
-      piVar5 = (int *)FUN_00401b90(this_00,puVar7,(int *)pPVar11);
+      Decoder_ShiftLeft(local_14,(void *)0x28);
+      piVar5 = (int *)Decoder_ReadInt(this_00,puVar7,(int *)pPVar11);
       piVar8 = &local_10;
       pS110 = piVar8;
-      bitShiftLeft1(local_c,(void *)0x2);
+      Decoder_ShiftLeft(local_c,(void *)0x2);
       puVar7 = local_8;
       piVar9 = piVar8;
-      bitShiftLeft1(local_4,(void *)0x28);
-      this_01 = FUN_00401b90(piVar8,puVar7,piVar9);
+      Decoder_ShiftLeft(local_4,(void *)0x28);
+      this_01 = Decoder_ReadInt(piVar8,puVar7,piVar9);
       puVar6 = (undefined4 *)WorldCoordinateToScreenCoord(this_01,pS110,piVar5);
       bVar4 = AudioManager::S154_FUN_004116b0(param_1,*puVar6);
       piVar8 = (int *)CONCAT31(extraout_var,bVar4);
       if (bVar4 != 0) {
-        bitShiftLeft1(&param_2,(void *)0x2);
+        Decoder_ShiftLeft(&param_2,(void *)0x2);
         puVar7 = local_4;
         puVar10 = puVar7;
-        bitShiftLeft1(local_8,(void *)0x28);
-        piVar8 = (int *)FUN_00401b90(puVar7,puVar10,piVar8);
+        Decoder_ShiftLeft(local_8,(void *)0x28);
+        piVar8 = (int *)Decoder_ReadInt(puVar7,puVar10,piVar8);
         bVar4 = AudioManager::S154_FUN_004116f0
                           (param_1,0x46,*piVar8,*(char *)((int)piVar1 + 5));
         piVar8 = (int *)CONCAT31(extraout_var_00,bVar4);
         if (bVar4 != 0) {
-          bitShiftLeft1(&param_2,(void *)0x2);
+          Decoder_ShiftLeft(&param_2,(void *)0x2);
           puVar7 = local_4;
           puVar10 = puVar7;
-          bitShiftLeft1(local_8,(void *)0x28);
-          puVar6 = (undefined4 *)FUN_00401b90(puVar7,puVar10,piVar8);
+          Decoder_ShiftLeft(local_8,(void *)0x28);
+          puVar6 = (undefined4 *)Decoder_ReadInt(puVar7,puVar10,piVar8);
           param_1->field78_0x84 = *puVar6;
           param_1->field81_0x90 = 0x46;
           param_1->field85_0x94 = 0x28;
@@ -7420,11 +7420,11 @@ void __thiscall FUN_00415d20(AudioManager *param_1,S46 *param_2,S46 *param_3)
             this->field62_0x68 = (int *)0xffffffff;
             this->field63_0x6c = 0;
             this->field_0x70 = 0x3f;
-            bitShiftLeft1(&param_1,(void *)0x2);
+            Decoder_ShiftLeft(&param_1,(void *)0x2);
             puVar13 = local_4;
             piVar12 = piVar10;
-            bitShiftLeft1(local_8,(void *)0xa);
-            puVar9 = (undefined4 *)FUN_00401b90(piVar10,puVar13,piVar12);
+            Decoder_ShiftLeft(local_8,(void *)0xa);
+            puVar9 = (undefined4 *)Decoder_ReadInt(piVar10,puVar13,piVar12);
             uVar3 = *puVar9;
             this->field81_0x90 = 0x2d;
             this->field78_0x84 = uVar3;
@@ -7439,28 +7439,28 @@ void __thiscall FUN_00415d20(AudioManager *param_1,S46 *param_2,S46 *param_3)
             piVar12 = (int *)*puVar9;
             this->field31_0x28 = piVar12;
             this->field32_0x2c = 0;
-            bitShiftLeft1(local_28,(void *)0x2);
+            Decoder_ShiftLeft(local_28,(void *)0x2);
             puVar13 = local_24;
             piVar10 = piVar12;
-            bitShiftLeft1(local_20,(void *)0xa);
-            piVar10 = (int *)FUN_00401b90(piVar12,puVar13,piVar10);
+            Decoder_ShiftLeft(local_20,(void *)0xa);
+            piVar10 = (int *)Decoder_ReadInt(piVar12,puVar13,piVar10);
             puVar13 = local_1c;
             piVar12 = piVar10;
-            bitShiftLeft1(local_18,(void *)0x2);
+            Decoder_ShiftLeft(local_18,(void *)0x2);
             puVar11 = local_14;
             puVar14 = puVar11;
-            bitShiftLeft1(local_10,(void *)0xa);
-            this_00 = FUN_00401b90(puVar11,puVar14,piVar10);
+            Decoder_ShiftLeft(local_10,(void *)0xa);
+            this_00 = Decoder_ReadInt(puVar11,puVar14,piVar10);
             puVar9 = (undefined4 *)
                      WorldCoordinateToScreenCoord(this_00,puVar13,piVar12);
             bVar5 = S154_FUN_004116b0(this,*puVar9);
             piVar12 = (int *)CONCAT31(extraout_var,bVar5);
             if (bVar5 != 0) {
-              bitShiftLeft1(local_c,(void *)0x2);
+              Decoder_ShiftLeft(local_c,(void *)0x2);
               puVar13 = local_8;
               piVar10 = piVar12;
-              bitShiftLeft1(local_4,(void *)0xa);
-              piVar12 = (int *)FUN_00401b90(piVar12,puVar13,piVar10);
+              Decoder_ShiftLeft(local_4,(void *)0xa);
+              piVar12 = (int *)Decoder_ReadInt(piVar12,puVar13,piVar10);
               uVar8 = MapRelatedStruct::S16_FUN_00463850
                                 (_gMapRelatedStruct,this->field41_0x38,
                                  this->field42_0x3c,this->field43_0x40);
@@ -7488,11 +7488,11 @@ void __thiscall FUN_00415d20(AudioManager *param_1,S46 *param_2,S46 *param_3)
         this->field51_0x54 = local_36;
         this->field81_0x90 = local_35;
         this->field85_0x94 = 10;
-        bitShiftLeft1(&param_1,(void *)0x2);
+        Decoder_ShiftLeft(&param_1,(void *)0x2);
         puVar13 = local_4;
         puVar11 = puVar13;
-        bitShiftLeft1(local_8,(void *)0xa);
-        puVar9 = (undefined4 *)FUN_00401b90(puVar13,puVar11,piVar12);
+        Decoder_ShiftLeft(local_8,(void *)0xa);
+        puVar9 = (undefined4 *)Decoder_ReadInt(puVar13,puVar11,piVar12);
         this->field78_0x84 = *puVar9;
         this->field37_0x34 = DAT_005dc76a._2_1_;
         cVar7 = DAT_005dc76a._2_1_ + '\x01';
@@ -7719,7 +7719,7 @@ uint FUN_00416960(byte param_1,uint param_2,uint param_3)
       this->S155_arr16[bVar1].field_0x24 = 0;
       this->S155_arr16[bVar1].field_0x60 = 0;
       this->S155_arr16[bVar1].field49_0x64 = 10;
-      bitShiftLeft1(&local_8,(void *)0x0);
+      Decoder_ShiftLeft(&local_8,(void *)0x0);
       this->S155_arr16[bVar1].field22_0x28 = local_8;
       this->S155_arr16[bVar1].field_0x2c = 0;
       this->S155_arr16[bVar1].field_0x2d = 0;
@@ -7727,7 +7727,7 @@ uint FUN_00416960(byte param_1,uint param_2,uint param_3)
       this->S155_arr16[bVar1].field28_0x34 = 0;
       this->S155_arr16[bVar1].field29_0x38 = 0xffffffff;
       this->S155_arr16[bVar1].field30_0x3c = 0;
-      bitShiftLeft1(local_4,(void *)0x64);
+      Decoder_ShiftLeft(local_4,(void *)0x64);
       this->S155_arr16[bVar1].field42_0x54 = *puVar2;
       this->S155_arr16[bVar1].field_0x40 = 0x3f;
       this->S155_arr16[bVar1].field_0x41 = 0;
@@ -8168,7 +8168,7 @@ LAB_00417ab3:
           else {
             local_38 = 0.0;
             local_3c = 0.0;
-            bitShiftLeft1(&local_2c,(void *)0x186a0);
+            Decoder_ShiftLeft(&local_2c,(void *)0x186a0);
             pSVar1->field42_0x54 = local_2c;
           }
           SoundCard::SoundCard_FUN_004b62d0((SoundCard *)&gSoundCard,local_44);
@@ -8298,22 +8298,22 @@ byte __thiscall FUN_004181d0(void *this)
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 1;
-    bitShiftLeft1(&local_644,(void *)0x2);
+    Decoder_ShiftLeft(&local_644,(void *)0x2);
     puVar7 = local_320;
     piVar9 = piVar4;
-    bitShiftLeft1(local_190,(void *)0x19);
-    puVar10 = (undefined4 *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_190,(void *)0x19);
+    puVar10 = (undefined4 *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar4 = (int *)*puVar10;
     this->field78_0x84 = piVar4;
     this->field85_0x94 = 0x19;
-    bitShiftLeft1(local_630,(void *)0x2);
+    Decoder_ShiftLeft(local_630,(void *)0x2);
     puVar7 = local_318;
     piVar9 = piVar4;
-    bitShiftLeft1(local_628,(void *)0x19);
-    piVar11 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_628,(void *)0x19);
+    piVar11 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar9 = &local_c8;
     piVar6 = piVar11;
-    bitShiftLeft1(local_620,(void *)0x2);
+    Decoder_ShiftLeft(local_620,(void *)0x2);
     piVar4 = &local_310;
     pvVar15 = (void *)0x19;
     puVar7 = local_618;
@@ -8326,21 +8326,21 @@ byte __thiscall FUN_004181d0(void *this)
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 1;
-    bitShiftLeft1(local_188,(void *)0x2);
+    Decoder_ShiftLeft(local_188,(void *)0x2);
     puVar7 = local_610;
     piVar9 = piVar4;
-    bitShiftLeft1(local_308,(void *)0x19);
-    piVar4 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_308,(void *)0x19);
+    piVar4 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     this->field78_0x84 = *piVar4;
     this->field85_0x94 = 0x19;
-    bitShiftLeft1(local_608,(void *)0x2);
+    Decoder_ShiftLeft(local_608,(void *)0x2);
     puVar7 = local_10;
     puVar8 = puVar7;
-    bitShiftLeft1(local_600,(void *)0x19);
-    piVar5 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_600,(void *)0x19);
+    piVar5 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     piVar9 = &local_300;
     piVar6 = piVar5;
-    bitShiftLeft1(local_5f8,(void *)0x2);
+    Decoder_ShiftLeft(local_5f8,(void *)0x2);
     piVar4 = &local_180;
     puVar7 = local_5f0;
     piVar11 = piVar5;
@@ -8352,21 +8352,21 @@ byte __thiscall FUN_004181d0(void *this)
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 4;
-    bitShiftLeft1(local_2f8,(void *)0x2);
+    Decoder_ShiftLeft(local_2f8,(void *)0x2);
     puVar7 = local_5e8;
     puVar8 = puVar7;
-    bitShiftLeft1(local_c0,(void *)0x12);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_c0,(void *)0x12);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     this->field78_0x84 = *piVar9;
     this->field85_0x94 = 0x12;
-    bitShiftLeft1(local_5e0,(void *)0x2);
+    Decoder_ShiftLeft(local_5e0,(void *)0x2);
     puVar7 = local_2f0;
     piVar4 = piVar9;
-    bitShiftLeft1(local_5d8,(void *)0x12);
-    piVar6 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_5d8,(void *)0x12);
+    piVar6 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar5 = &local_178;
     piVar9 = piVar5;
-    bitShiftLeft1(local_5d0,(void *)0x2);
+    Decoder_ShiftLeft(local_5d0,(void *)0x2);
     piVar4 = &local_2e8;
     pvVar15 = (void *)0x12;
     puVar7 = local_5c8;
@@ -8385,25 +8385,25 @@ byte __thiscall FUN_004181d0(void *this)
     this->field60_0x60 = 1;
     this->field65_0x71 = 1;
     this->field49_0x4c = 0x14;
-    bitShiftLeft1(local_22c,(void *)0x2);
+    Decoder_ShiftLeft(local_22c,(void *)0x2);
     puVar7 = local_224;
     puVar8 = puVar7;
-    bitShiftLeft1(local_21c,(void *)0xa);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_21c,(void *)0xa);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     this->field78_0x84 = *piVar9;
     this->field85_0x94 = 10;
-    bitShiftLeft1(local_214,(void *)0x2);
+    Decoder_ShiftLeft(local_214,(void *)0x2);
     puVar7 = local_20c;
     piVar4 = piVar9;
-    bitShiftLeft1(local_204,(void *)0xa);
-    piVar11 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_204,(void *)0xa);
+    piVar11 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar4 = &local_1fc;
     piVar5 = piVar4;
-    bitShiftLeft1(local_1f4,(void *)0x2);
+    Decoder_ShiftLeft(local_1f4,(void *)0x2);
     puVar7 = local_1ec;
     piVar9 = piVar4;
-    bitShiftLeft1(local_1e4,(void *)0xa);
-    pvVar15 = FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_1e4,(void *)0xa);
+    pvVar15 = Decoder_ReadInt(piVar4,puVar7,piVar9);
     puVar10 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar15,piVar5,piVar11)
     ;
     uVar2 = 0x1e;
@@ -8415,22 +8415,22 @@ byte __thiscall FUN_004181d0(void *this)
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 3;
-    bitShiftLeft1(local_60,(void *)0x2);
+    Decoder_ShiftLeft(local_60,(void *)0x2);
     puVar7 = local_5c0;
     piVar9 = piVar4;
-    bitShiftLeft1(local_2e0,(void *)0x14);
-    puVar10 = (undefined4 *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_2e0,(void *)0x14);
+    puVar10 = (undefined4 *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar4 = (int *)*puVar10;
     this->field78_0x84 = piVar4;
     this->field85_0x94 = 0x14;
-    bitShiftLeft1(local_5b8,(void *)0x2);
+    Decoder_ShiftLeft(local_5b8,(void *)0x2);
     puVar7 = local_170;
     piVar9 = piVar4;
-    bitShiftLeft1(local_5b0,(void *)0x14);
-    piVar11 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_5b0,(void *)0x14);
+    piVar11 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar4 = &local_2d8;
     piVar6 = piVar11;
-    bitShiftLeft1(local_5a8,(void *)0x2);
+    Decoder_ShiftLeft(local_5a8,(void *)0x2);
     piVar9 = &local_b8;
     pvVar15 = (void *)0x14;
     puVar7 = local_5a0;
@@ -8443,21 +8443,21 @@ byte __thiscall FUN_004181d0(void *this)
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 1;
-    bitShiftLeft1(local_2d0,(void *)0x2);
+    Decoder_ShiftLeft(local_2d0,(void *)0x2);
     puVar7 = local_598;
     piVar9 = piVar4;
-    bitShiftLeft1(local_168,(void *)0x19);
-    piVar4 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_168,(void *)0x19);
+    piVar4 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     this->field78_0x84 = *piVar4;
     this->field85_0x94 = 0x19;
-    bitShiftLeft1(local_590,(void *)0x2);
+    Decoder_ShiftLeft(local_590,(void *)0x2);
     puVar7 = local_2c8;
     puVar8 = puVar7;
-    bitShiftLeft1(local_588,(void *)0x19);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_588,(void *)0x19);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     piVar4 = &local_30;
     piVar6 = piVar9;
-    bitShiftLeft1(local_580,(void *)0x2);
+    Decoder_ShiftLeft(local_580,(void *)0x2);
     piVar5 = &local_2c0;
     puVar7 = local_578;
     piVar11 = piVar9;
@@ -8470,21 +8470,21 @@ byte __thiscall FUN_004181d0(void *this)
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 5;
-    bitShiftLeft1(local_280,(void *)0x2);
+    Decoder_ShiftLeft(local_280,(void *)0x2);
     puVar7 = local_4f8;
     puVar8 = puVar7;
-    bitShiftLeft1(local_140,(void *)0x19);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_140,(void *)0x19);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     this->field78_0x84 = *piVar9;
     this->field85_0x94 = 0x19;
-    bitShiftLeft1(local_4f0,(void *)0x2);
+    Decoder_ShiftLeft(local_4f0,(void *)0x2);
     puVar7 = local_278;
     piVar4 = piVar9;
-    bitShiftLeft1(local_4e8,(void *)0x19);
-    piVar6 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_4e8,(void *)0x19);
+    piVar6 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar5 = &local_a0;
     piVar9 = piVar5;
-    bitShiftLeft1(local_4e0,(void *)0x2);
+    Decoder_ShiftLeft(local_4e0,(void *)0x2);
     piVar4 = &local_270;
     pvVar15 = (void *)0x19;
     puVar7 = local_4d8;
@@ -8495,21 +8495,21 @@ byte __thiscall FUN_004181d0(void *this)
     this->field60_0x60 = 1;
     this->field65_0x71 = 1;
     this->field49_0x4c = 0x14;
-    bitShiftLeft1(local_18c,(void *)0x2);
+    Decoder_ShiftLeft(local_18c,(void *)0x2);
     puVar7 = local_184;
     piVar4 = piVar9;
-    bitShiftLeft1(local_17c,(void *)0x14);
-    piVar4 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_17c,(void *)0x14);
+    piVar4 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     this->field78_0x84 = *piVar4;
     this->field85_0x94 = 0x14;
-    bitShiftLeft1(local_174,(void *)0x2);
+    Decoder_ShiftLeft(local_174,(void *)0x2);
     puVar7 = local_16c;
     puVar8 = puVar7;
-    bitShiftLeft1(local_164,(void *)0x14);
-    piVar5 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_164,(void *)0x14);
+    piVar5 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     piVar9 = &local_15c;
     piVar6 = piVar5;
-    bitShiftLeft1(local_154,(void *)0x2);
+    Decoder_ShiftLeft(local_154,(void *)0x2);
     piVar4 = &local_14c;
     pvVar15 = (void *)0x14;
     puVar7 = local_144;
@@ -8520,21 +8520,21 @@ byte __thiscall FUN_004181d0(void *this)
     this->field60_0x60 = 1;
     this->field65_0x71 = 1;
     this->field49_0x4c = 0x14;
-    bitShiftLeft1(local_13c,(void *)0x2);
+    Decoder_ShiftLeft(local_13c,(void *)0x2);
     puVar7 = local_134;
     puVar8 = puVar7;
-    bitShiftLeft1(local_12c,(void *)0xf);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_12c,(void *)0xf);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     this->field78_0x84 = *piVar9;
     this->field85_0x94 = 0xf;
-    bitShiftLeft1(local_124,(void *)0x2);
+    Decoder_ShiftLeft(local_124,(void *)0x2);
     puVar7 = local_11c;
     piVar4 = piVar9;
-    bitShiftLeft1(local_114,(void *)0xf);
-    piVar6 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_114,(void *)0xf);
+    piVar6 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar4 = &local_10c;
     piVar9 = piVar4;
-    bitShiftLeft1(local_104,(void *)0x2);
+    Decoder_ShiftLeft(local_104,(void *)0x2);
     piVar5 = &local_fc;
     pvVar15 = (void *)0xf;
     puVar7 = local_f4;
@@ -8547,21 +8547,21 @@ byte __thiscall FUN_004181d0(void *this)
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 3;
-    bitShiftLeft1(local_160,(void *)0x2);
+    Decoder_ShiftLeft(local_160,(void *)0x2);
     puVar7 = local_570;
     puVar8 = puVar7;
-    bitShiftLeft1(local_2b8,(void *)0x17);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_2b8,(void *)0x17);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     this->field78_0x84 = *piVar9;
     this->field85_0x94 = 0x17;
-    bitShiftLeft1(local_568,(void *)0x2);
+    Decoder_ShiftLeft(local_568,(void *)0x2);
     puVar7 = local_b0;
     piVar4 = piVar9;
-    bitShiftLeft1(local_560,(void *)0x17);
-    piVar6 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_560,(void *)0x17);
+    piVar6 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar5 = &local_2b0;
     piVar9 = piVar5;
-    bitShiftLeft1(local_558,(void *)0x2);
+    Decoder_ShiftLeft(local_558,(void *)0x2);
     piVar4 = &local_158;
     pvVar15 = (void *)0x17;
     puVar7 = local_550;
@@ -8574,22 +8574,22 @@ byte __thiscall FUN_004181d0(void *this)
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 0xc;
-    bitShiftLeft1(local_80,(void *)0x2);
+    Decoder_ShiftLeft(local_80,(void *)0x2);
     puVar7 = local_3e0;
     piVar9 = piVar4;
-    bitShiftLeft1(local_1f0,(void *)0x5);
-    puVar10 = (undefined4 *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_1f0,(void *)0x5);
+    puVar10 = (undefined4 *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar4 = (int *)*puVar10;
     this->field78_0x84 = piVar4;
     this->field85_0x94 = 5;
-    bitShiftLeft1(local_3d8,(void *)0x2);
+    Decoder_ShiftLeft(local_3d8,(void *)0x2);
     puVar7 = local_f8;
     piVar9 = piVar4;
-    bitShiftLeft1(local_3d0,(void *)0x5);
-    piVar11 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_3d0,(void *)0x5);
+    piVar11 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar9 = &local_1e8;
     piVar6 = piVar11;
-    bitShiftLeft1(local_3c8,(void *)0x2);
+    Decoder_ShiftLeft(local_3c8,(void *)0x2);
     piVar4 = &local_40;
     pvVar15 = (void *)0x5;
     puVar7 = local_3c0;
@@ -8602,21 +8602,21 @@ byte __thiscall FUN_004181d0(void *this)
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 6;
-    bitShiftLeft1(local_a8,(void *)0x2);
+    Decoder_ShiftLeft(local_a8,(void *)0x2);
     puVar7 = local_520;
     piVar9 = piVar4;
-    bitShiftLeft1(local_290,(void *)0xf);
-    piVar4 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_290,(void *)0xf);
+    piVar4 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     this->field78_0x84 = *piVar4;
     this->field85_0x94 = 0xf;
-    bitShiftLeft1(local_518,(void *)0x2);
+    Decoder_ShiftLeft(local_518,(void *)0x2);
     puVar7 = local_148;
     puVar8 = puVar7;
-    bitShiftLeft1(local_510,(void *)0xf);
-    piVar5 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_510,(void *)0xf);
+    piVar5 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     piVar9 = &local_288;
     piVar6 = piVar5;
-    bitShiftLeft1(local_508,(void *)0x2);
+    Decoder_ShiftLeft(local_508,(void *)0x2);
     piVar4 = &local_18;
     pvVar15 = (void *)0xf;
     puVar7 = local_500;
@@ -8628,21 +8628,21 @@ byte __thiscall FUN_004181d0(void *this)
     this->field60_0x60 = 1;
     this->field65_0x71 = 1;
     this->field49_0x4c = 7;
-    bitShiftLeft1(local_27c,(void *)0x2);
+    Decoder_ShiftLeft(local_27c,(void *)0x2);
     puVar7 = local_274;
     piVar4 = piVar9;
-    bitShiftLeft1(local_26c,(void *)0x14);
-    piVar4 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_26c,(void *)0x14);
+    piVar4 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     this->field78_0x84 = *piVar4;
     this->field85_0x94 = 0x14;
-    bitShiftLeft1(local_264,(void *)0x2);
+    Decoder_ShiftLeft(local_264,(void *)0x2);
     puVar7 = local_25c;
     puVar8 = puVar7;
-    bitShiftLeft1(local_254,(void *)0x14);
-    piVar5 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_254,(void *)0x14);
+    piVar5 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     piVar9 = &local_24c;
     piVar6 = piVar5;
-    bitShiftLeft1(local_244,(void *)0x2);
+    Decoder_ShiftLeft(local_244,(void *)0x2);
     piVar4 = &local_23c;
     puVar7 = local_234;
     piVar11 = piVar5;
@@ -8654,22 +8654,22 @@ byte __thiscall FUN_004181d0(void *this)
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 3;
-    bitShiftLeft1(local_2a8,(void *)0x2);
+    Decoder_ShiftLeft(local_2a8,(void *)0x2);
     puVar7 = local_548;
     piVar9 = piVar4;
-    bitShiftLeft1(local_58,(void *)0x2d);
-    puVar10 = (undefined4 *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_58,(void *)0x2d);
+    puVar10 = (undefined4 *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar4 = (int *)*puVar10;
     this->field78_0x84 = piVar4;
     this->field85_0x94 = 0x2d;
-    bitShiftLeft1(local_540,(void *)0x2);
+    Decoder_ShiftLeft(local_540,(void *)0x2);
     puVar7 = local_2a0;
     piVar9 = piVar4;
-    bitShiftLeft1(local_538,(void *)0x2d);
-    piVar11 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_538,(void *)0x2d);
+    piVar11 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar9 = &local_150;
     piVar6 = piVar11;
-    bitShiftLeft1(local_530,(void *)0x2);
+    Decoder_ShiftLeft(local_530,(void *)0x2);
     piVar5 = &local_298;
     pvVar15 = (void *)0x2d;
     puVar7 = local_528;
@@ -8682,22 +8682,22 @@ byte __thiscall FUN_004181d0(void *this)
     this->field60_0x60 = 1;
     this->field65_0x71 = 1;
     this->field49_0x4c = 5;
-    bitShiftLeft1(local_ec,(void *)0x2);
+    Decoder_ShiftLeft(local_ec,(void *)0x2);
     puVar7 = local_e4;
     piVar4 = piVar9;
-    bitShiftLeft1(local_dc,(void *)0xf);
-    puVar10 = (undefined4 *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_dc,(void *)0xf);
+    puVar10 = (undefined4 *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar4 = (int *)*puVar10;
     this->field78_0x84 = piVar4;
     this->field85_0x94 = 0xf;
-    bitShiftLeft1(local_d4,(void *)0x2);
+    Decoder_ShiftLeft(local_d4,(void *)0x2);
     puVar7 = local_cc;
     piVar9 = piVar4;
-    bitShiftLeft1(local_c4,(void *)0xf);
-    piVar11 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_c4,(void *)0xf);
+    piVar11 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar9 = &local_bc;
     piVar6 = piVar11;
-    bitShiftLeft1(local_b4,(void *)0x2);
+    Decoder_ShiftLeft(local_b4,(void *)0x2);
     piVar4 = &local_ac;
     pvVar15 = (void *)0xf;
     puVar7 = local_a4;
@@ -8708,21 +8708,21 @@ byte __thiscall FUN_004181d0(void *this)
     this->field60_0x60 = 1;
     this->field65_0x71 = 1;
     this->field49_0x4c = 4;
-    bitShiftLeft1(local_4c,(void *)0x2);
+    Decoder_ShiftLeft(local_4c,(void *)0x2);
     puVar7 = local_44;
     puVar8 = puVar7;
-    bitShiftLeft1(local_3c,(void *)0x14);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_3c,(void *)0x14);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     this->field78_0x84 = *piVar9;
     this->field85_0x94 = 0x14;
-    bitShiftLeft1(local_34,(void *)0x2);
+    Decoder_ShiftLeft(local_34,(void *)0x2);
     puVar7 = local_2c;
     piVar4 = piVar9;
-    bitShiftLeft1(local_24,(void *)0x14);
-    piVar6 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_24,(void *)0x14);
+    piVar6 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar5 = &local_1c;
     piVar9 = piVar5;
-    bitShiftLeft1(local_14,(void *)0x2);
+    Decoder_ShiftLeft(local_14,(void *)0x2);
     piVar4 = &local_c;
     puVar7 = local_4;
     piVar11 = piVar5;
@@ -8735,21 +8735,21 @@ byte __thiscall FUN_004181d0(void *this)
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 0;
-    bitShiftLeft1(local_258,(void *)0x2);
+    Decoder_ShiftLeft(local_258,(void *)0x2);
     puVar7 = local_4a8;
     piVar4 = piVar9;
-    bitShiftLeft1(local_98,(void *)0x23);
-    piVar4 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_98,(void *)0x23);
+    piVar4 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     this->field78_0x84 = *piVar4;
     this->field85_0x94 = 0x23;
-    bitShiftLeft1(local_4a0,(void *)0x2);
+    Decoder_ShiftLeft(local_4a0,(void *)0x2);
     puVar7 = local_250;
     puVar8 = puVar7;
-    bitShiftLeft1(local_498,(void *)0x23);
-    piVar4 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_498,(void *)0x23);
+    piVar4 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     piVar9 = &local_128;
     piVar6 = piVar4;
-    bitShiftLeft1(local_490,(void *)0x2);
+    Decoder_ShiftLeft(local_490,(void *)0x2);
     pvVar15 = (void *)0x23;
     puVar7 = local_488;
     piVar5 = &local_248;
@@ -8762,22 +8762,22 @@ byte __thiscall FUN_004181d0(void *this)
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 0xe;
-    bitShiftLeft1(local_230,(void *)0x2);
+    Decoder_ShiftLeft(local_230,(void *)0x2);
     puVar7 = local_458;
     piVar9 = piVar4;
-    bitShiftLeft1(local_118,(void *)0xa);
-    puVar10 = (undefined4 *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_118,(void *)0xa);
+    puVar10 = (undefined4 *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar4 = (int *)*puVar10;
     this->field78_0x84 = piVar4;
     this->field85_0x94 = 10;
-    bitShiftLeft1(local_450,(void *)0x2);
+    Decoder_ShiftLeft(local_450,(void *)0x2);
     puVar7 = local_228;
     piVar9 = piVar4;
-    bitShiftLeft1(local_448,(void *)0xa);
-    piVar11 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_448,(void *)0xa);
+    piVar11 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar9 = &local_48;
     piVar6 = piVar11;
-    bitShiftLeft1(local_440,(void *)0x2);
+    Decoder_ShiftLeft(local_440,(void *)0x2);
     piVar4 = &local_220;
     pvVar15 = (void *)0xa;
     puVar7 = local_438;
@@ -8789,25 +8789,25 @@ byte __thiscall FUN_004181d0(void *this)
     this->field60_0x60 = 1;
     this->field65_0x71 = 1;
     this->field49_0x4c = 2;
-    bitShiftLeft1(local_36c,(void *)0x2);
+    Decoder_ShiftLeft(local_36c,(void *)0x2);
     puVar7 = local_364;
     piVar4 = piVar9;
-    bitShiftLeft1(local_35c,(void *)0x14);
-    piVar4 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_35c,(void *)0x14);
+    piVar4 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     this->field78_0x84 = *piVar4;
     this->field85_0x94 = 0x14;
-    bitShiftLeft1(local_354,(void *)0x2);
+    Decoder_ShiftLeft(local_354,(void *)0x2);
     puVar7 = local_34c;
     puVar8 = puVar7;
-    bitShiftLeft1(local_344,(void *)0x14);
-    piVar5 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_344,(void *)0x14);
+    piVar5 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     puVar7 = local_33c;
     piVar9 = piVar5;
-    bitShiftLeft1(local_334,(void *)0x2);
+    Decoder_ShiftLeft(local_334,(void *)0x2);
     puVar8 = local_32c;
     piVar4 = piVar5;
-    bitShiftLeft1(local_324,(void *)0x14);
-    pvVar15 = FUN_00401b90(piVar5,puVar8,piVar4);
+    Decoder_ShiftLeft(local_324,(void *)0x14);
+    pvVar15 = Decoder_ReadInt(piVar5,puVar8,piVar4);
     puVar10 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar15,puVar7,piVar9);
     uVar2 = 100;
     break;
@@ -8817,26 +8817,26 @@ byte __thiscall FUN_004181d0(void *this)
     this->field60_0x60 = 1;
     this->field65_0x71 = 1;
     this->field49_0x4c = 10;
-    bitShiftLeft1(local_1dc,(void *)0x2);
+    Decoder_ShiftLeft(local_1dc,(void *)0x2);
     puVar7 = local_1d4;
     piVar4 = piVar9;
-    bitShiftLeft1(local_1cc,(void *)0x19);
-    puVar10 = (undefined4 *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_1cc,(void *)0x19);
+    puVar10 = (undefined4 *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar4 = (int *)*puVar10;
     this->field78_0x84 = piVar4;
     this->field85_0x94 = 0x19;
-    bitShiftLeft1(local_1c4,(void *)0x2);
+    Decoder_ShiftLeft(local_1c4,(void *)0x2);
     puVar7 = local_1bc;
     piVar9 = piVar4;
-    bitShiftLeft1(local_1b4,(void *)0x19);
-    piVar9 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_1b4,(void *)0x19);
+    piVar9 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     puVar7 = local_1ac;
     piVar4 = piVar9;
-    bitShiftLeft1(local_1a4,(void *)0x2);
+    Decoder_ShiftLeft(local_1a4,(void *)0x2);
     puVar8 = local_19c;
     puVar16 = puVar8;
-    bitShiftLeft1(local_194,(void *)0x19);
-    pvVar15 = FUN_00401b90(puVar8,puVar16,piVar9);
+    Decoder_ShiftLeft(local_194,(void *)0x19);
+    pvVar15 = Decoder_ReadInt(puVar8,puVar16,piVar9);
     puVar10 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar15,puVar7,piVar4);
     uVar2 = 0x69;
     break;
@@ -8847,21 +8847,21 @@ byte __thiscall FUN_004181d0(void *this)
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 0xc;
-    bitShiftLeft1(local_208,(void *)0x2);
+    Decoder_ShiftLeft(local_208,(void *)0x2);
     puVar7 = local_408;
     puVar8 = puVar7;
-    bitShiftLeft1(local_8,(void *)0x5);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_8,(void *)0x5);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     this->field78_0x84 = *piVar9;
     this->field85_0x94 = 5;
-    bitShiftLeft1(local_400,(void *)0x2);
+    Decoder_ShiftLeft(local_400,(void *)0x2);
     puVar7 = local_200;
     piVar4 = piVar9;
-    bitShiftLeft1(local_3f8,(void *)0x5);
-    piVar6 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_3f8,(void *)0x5);
+    piVar6 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar5 = &local_100;
     piVar9 = piVar5;
-    bitShiftLeft1(local_3f0,(void *)0x2);
+    Decoder_ShiftLeft(local_3f0,(void *)0x2);
     piVar4 = &local_1f8;
     pvVar15 = (void *)0x5;
     puVar7 = local_3e8;
@@ -8875,26 +8875,26 @@ byte __thiscall FUN_004181d0(void *this)
     this->field65_0x71 = 1;
     this->field49_0x4c = 3;
     this->SoundCar = uVar1 % 6 + 0xe9;
-    bitShiftLeft1(local_3bc,(void *)0x2);
+    Decoder_ShiftLeft(local_3bc,(void *)0x2);
     puVar7 = local_3b4;
     piVar4 = piVar9;
-    bitShiftLeft1(local_3ac,(void *)0x14);
-    puVar10 = (undefined4 *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_3ac,(void *)0x14);
+    puVar10 = (undefined4 *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar4 = (int *)*puVar10;
     this->field78_0x84 = piVar4;
     this->field85_0x94 = 0x14;
-    bitShiftLeft1(local_3a4,(void *)0x2);
+    Decoder_ShiftLeft(local_3a4,(void *)0x2);
     puVar7 = local_39c;
     piVar9 = piVar4;
-    bitShiftLeft1(local_394,(void *)0x14);
-    piVar9 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_394,(void *)0x14);
+    piVar9 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     puVar7 = local_38c;
     piVar4 = piVar9;
-    bitShiftLeft1(local_384,(void *)0x2);
+    Decoder_ShiftLeft(local_384,(void *)0x2);
     puVar8 = local_37c;
     puVar16 = puVar8;
-    bitShiftLeft1(local_374,(void *)0x14);
-    pvVar15 = FUN_00401b90(puVar8,puVar16,piVar9);
+    Decoder_ShiftLeft(local_374,(void *)0x14);
+    pvVar15 = Decoder_ReadInt(puVar8,puVar16,piVar9);
     puVar10 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar15,puVar7,piVar4);
     uVar2 = 0x50;
     break;
@@ -8905,22 +8905,22 @@ byte __thiscall FUN_004181d0(void *this)
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 7;
-    bitShiftLeft1(local_138,(void *)0x2);
+    Decoder_ShiftLeft(local_138,(void *)0x2);
     puVar7 = local_4d0;
     piVar9 = piVar4;
-    bitShiftLeft1(local_268,(void *)0xa);
-    puVar10 = (undefined4 *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_268,(void *)0xa);
+    puVar10 = (undefined4 *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar4 = (int *)*puVar10;
     this->field78_0x84 = piVar4;
     this->field85_0x94 = 10;
-    bitShiftLeft1(local_4c8,(void *)0x2);
+    Decoder_ShiftLeft(local_4c8,(void *)0x2);
     puVar7 = local_50;
     piVar9 = piVar4;
-    bitShiftLeft1(local_4c0,(void *)0xa);
-    piVar11 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_4c0,(void *)0xa);
+    piVar11 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar9 = &local_260;
     piVar6 = piVar11;
-    bitShiftLeft1(local_4b8,(void *)0x2);
+    Decoder_ShiftLeft(local_4b8,(void *)0x2);
     piVar4 = &local_130;
     pvVar15 = (void *)0xa;
     puVar7 = local_4b0;
@@ -8932,21 +8932,21 @@ byte __thiscall FUN_004181d0(void *this)
     this->field60_0x60 = 1;
     this->field65_0x71 = 1;
     this->field49_0x4c = 1;
-    bitShiftLeft1(local_31c,(void *)0x2);
+    Decoder_ShiftLeft(local_31c,(void *)0x2);
     puVar7 = local_314;
     puVar8 = puVar7;
-    bitShiftLeft1(local_30c,(void *)0x14);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_30c,(void *)0x14);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     this->field78_0x84 = *piVar9;
     this->field85_0x94 = 0x14;
-    bitShiftLeft1(local_304,(void *)0x2);
+    Decoder_ShiftLeft(local_304,(void *)0x2);
     puVar7 = local_2fc;
     piVar4 = piVar9;
-    bitShiftLeft1(local_2f4,(void *)0x14);
-    piVar6 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_2f4,(void *)0x14);
+    piVar6 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar5 = &local_2ec;
     piVar9 = piVar5;
-    bitShiftLeft1(local_2e4,(void *)0x2);
+    Decoder_ShiftLeft(local_2e4,(void *)0x2);
     piVar4 = &local_2dc;
     puVar7 = local_2d4;
     piVar11 = piVar5;
@@ -8957,30 +8957,30 @@ byte __thiscall FUN_004181d0(void *this)
     this->field60_0x60 = 1;
     this->field65_0x71 = 1;
     this->field49_0x4c = 1;
-    bitShiftLeft1(local_2cc,(void *)0x2);
+    Decoder_ShiftLeft(local_2cc,(void *)0x2);
     puVar7 = local_2c4;
     piVar4 = piVar9;
-    bitShiftLeft1(local_2bc,(void *)0x14);
-    puVar10 = (undefined4 *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_2bc,(void *)0x14);
+    puVar10 = (undefined4 *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar4 = (int *)*puVar10;
     this->field78_0x84 = piVar4;
     this->field85_0x94 = 0x14;
-    bitShiftLeft1(local_2b4,(void *)0x2);
+    Decoder_ShiftLeft(local_2b4,(void *)0x2);
     puVar7 = local_2ac;
     piVar9 = piVar4;
-    bitShiftLeft1(local_2a4,(void *)0x14);
-    piVar11 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_2a4,(void *)0x14);
+    piVar11 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar9 = &local_29c;
     piVar6 = piVar11;
-    bitShiftLeft1(local_294,(void *)0x2);
+    Decoder_ShiftLeft(local_294,(void *)0x2);
     piVar5 = &local_28c;
     puVar7 = local_284;
     piVar4 = piVar5;
 LAB_00419e85:
     pvVar15 = (void *)0x14;
 LAB_00419e87:
-    bitShiftLeft1(puVar7,pvVar15);
-    pvVar15 = FUN_00401b90(piVar5,piVar4,piVar11);
+    Decoder_ShiftLeft(puVar7,pvVar15);
+    pvVar15 = Decoder_ReadInt(piVar5,piVar4,piVar11);
     puVar10 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar15,piVar9,piVar6);
     uVar2 = 0x32;
     break;
@@ -8991,21 +8991,21 @@ LAB_00419e87:
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 1;
-    bitShiftLeft1(local_110,(void *)0x2);
+    Decoder_ShiftLeft(local_110,(void *)0x2);
     puVar7 = local_430;
     piVar9 = piVar4;
-    bitShiftLeft1(local_218,(void *)0xa);
-    piVar4 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_218,(void *)0xa);
+    piVar4 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     this->field78_0x84 = *piVar4;
     this->field85_0x94 = 10;
-    bitShiftLeft1(local_428,(void *)0x2);
+    Decoder_ShiftLeft(local_428,(void *)0x2);
     puVar7 = local_88;
     puVar8 = puVar7;
-    bitShiftLeft1(local_420,(void *)0xa);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_420,(void *)0xa);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     piVar4 = &local_210;
     piVar6 = piVar9;
-    bitShiftLeft1(local_418,(void *)0x2);
+    Decoder_ShiftLeft(local_418,(void *)0x2);
     pvVar15 = (void *)0xa;
     puVar7 = local_410;
     piVar5 = &local_108;
@@ -9017,21 +9017,21 @@ LAB_00419e87:
     this->field60_0x60 = 1;
     this->field65_0x71 = 1;
     this->field49_0x4c = 1;
-    bitShiftLeft1(local_4ac,(void *)0x2);
+    Decoder_ShiftLeft(local_4ac,(void *)0x2);
     puVar7 = local_4a4;
     piVar4 = piVar9;
-    bitShiftLeft1(local_49c,(void *)0x14);
-    piVar4 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_49c,(void *)0x14);
+    piVar4 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     this->field78_0x84 = *piVar4;
     this->field85_0x94 = 0x14;
-    bitShiftLeft1(local_494,(void *)0x2);
+    Decoder_ShiftLeft(local_494,(void *)0x2);
     puVar7 = local_48c;
     puVar8 = puVar7;
-    bitShiftLeft1(local_484,(void *)0x14);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_484,(void *)0x14);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     piVar4 = &local_47c;
     piVar6 = piVar9;
-    bitShiftLeft1(local_474,(void *)0x2);
+    Decoder_ShiftLeft(local_474,(void *)0x2);
     pvVar15 = (void *)0x14;
     puVar7 = local_464;
     piVar5 = &local_46c;
@@ -9043,21 +9043,21 @@ LAB_00419e87:
     this->field60_0x60 = 1;
     this->field65_0x71 = 1;
     this->field49_0x4c = 5;
-    bitShiftLeft1(local_45c,(void *)0x2);
+    Decoder_ShiftLeft(local_45c,(void *)0x2);
     puVar7 = local_454;
     puVar8 = puVar7;
-    bitShiftLeft1(local_44c,(void *)0x14);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_44c,(void *)0x14);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     this->field78_0x84 = *piVar9;
     this->field85_0x94 = 0x14;
-    bitShiftLeft1(local_444,(void *)0x2);
+    Decoder_ShiftLeft(local_444,(void *)0x2);
     puVar7 = local_43c;
     piVar4 = piVar9;
-    bitShiftLeft1(local_434,(void *)0x14);
-    piVar6 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_434,(void *)0x14);
+    piVar6 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar9 = &local_42c;
     piVar4 = piVar9;
-    bitShiftLeft1(local_424,(void *)0x2);
+    Decoder_ShiftLeft(local_424,(void *)0x2);
     pvVar15 = (void *)0x14;
     puVar7 = local_414;
     piVar5 = &local_41c;
@@ -9069,21 +9069,21 @@ LAB_00419e87:
     this->field60_0x60 = 1;
     this->field65_0x71 = 1;
     this->field49_0x4c = 2;
-    bitShiftLeft1(local_40c,(void *)0x2);
+    Decoder_ShiftLeft(local_40c,(void *)0x2);
     puVar7 = local_404;
     puVar8 = puVar7;
-    bitShiftLeft1(local_3fc,(void *)0x14);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_3fc,(void *)0x14);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     this->field78_0x84 = *piVar9;
     this->field85_0x94 = 0x14;
-    bitShiftLeft1(local_3f4,(void *)0x2);
+    Decoder_ShiftLeft(local_3f4,(void *)0x2);
     puVar7 = local_3ec;
     piVar4 = piVar9;
-    bitShiftLeft1(local_3e4,(void *)0x14);
-    piVar6 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_3e4,(void *)0x14);
+    piVar6 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar9 = &local_3dc;
     piVar4 = piVar9;
-    bitShiftLeft1(local_3d4,(void *)0x2);
+    Decoder_ShiftLeft(local_3d4,(void *)0x2);
     pvVar15 = (void *)0x14;
     puVar7 = local_3c4;
     piVar5 = &local_3cc;
@@ -9095,22 +9095,22 @@ LAB_00419e87:
     this->field60_0x60 = 1;
     this->field65_0x71 = 1;
     this->field49_0x4c = 1;
-    bitShiftLeft1(local_4fc,(void *)0x2);
+    Decoder_ShiftLeft(local_4fc,(void *)0x2);
     puVar7 = local_4f4;
     piVar4 = piVar9;
-    bitShiftLeft1(local_4ec,(void *)0x14);
-    puVar10 = (undefined4 *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_4ec,(void *)0x14);
+    puVar10 = (undefined4 *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar4 = (int *)*puVar10;
     this->field78_0x84 = piVar4;
     this->field85_0x94 = 0x14;
-    bitShiftLeft1(local_4e4,(void *)0x2);
+    Decoder_ShiftLeft(local_4e4,(void *)0x2);
     puVar7 = local_4dc;
     piVar9 = piVar4;
-    bitShiftLeft1(local_4d4,(void *)0x14);
-    piVar11 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_4d4,(void *)0x14);
+    piVar11 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar4 = &local_4cc;
     piVar6 = piVar11;
-    bitShiftLeft1(local_4c4,(void *)0x2);
+    Decoder_ShiftLeft(local_4c4,(void *)0x2);
     piVar9 = &local_4bc;
     pvVar15 = (void *)0x14;
     puVar7 = local_4b4;
@@ -9123,21 +9123,21 @@ LAB_00419e87:
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 1;
-    bitShiftLeft1(local_1e0,(void *)0x2);
+    Decoder_ShiftLeft(local_1e0,(void *)0x2);
     puVar7 = local_3b8;
     piVar9 = piVar4;
-    bitShiftLeft1(local_f0,(void *)0x14);
-    piVar4 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_f0,(void *)0x14);
+    piVar4 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     this->field78_0x84 = *piVar4;
     this->field85_0x94 = 0x14;
-    bitShiftLeft1(local_3b0,(void *)0x2);
+    Decoder_ShiftLeft(local_3b0,(void *)0x2);
     puVar7 = local_1d8;
     puVar8 = puVar7;
-    bitShiftLeft1(local_3a8,(void *)0x14);
-    piVar5 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_3a8,(void *)0x14);
+    piVar5 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     piVar9 = &local_78;
     piVar6 = piVar5;
-    bitShiftLeft1(local_3a0,(void *)0x2);
+    Decoder_ShiftLeft(local_3a0,(void *)0x2);
     pvVar15 = (void *)0x14;
     puVar7 = local_398;
     piVar4 = &local_1d0;
@@ -9150,21 +9150,21 @@ LAB_00419e87:
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 5;
-    bitShiftLeft1(local_e8,(void *)0x2);
+    Decoder_ShiftLeft(local_e8,(void *)0x2);
     puVar7 = local_390;
     puVar8 = puVar7;
-    bitShiftLeft1(local_1c8,(void *)0xa);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_1c8,(void *)0xa);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     this->field78_0x84 = *piVar9;
     this->field85_0x94 = 10;
-    bitShiftLeft1(local_388,(void *)0x2);
+    Decoder_ShiftLeft(local_388,(void *)0x2);
     puVar7 = local_20;
     piVar4 = piVar9;
-    bitShiftLeft1(local_380,(void *)0xa);
-    piVar6 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_380,(void *)0xa);
+    piVar6 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar4 = &local_1c0;
     piVar9 = piVar4;
-    bitShiftLeft1(local_378,(void *)0x2);
+    Decoder_ShiftLeft(local_378,(void *)0x2);
     pvVar15 = (void *)0xa;
     puVar7 = local_370;
     piVar5 = &local_e0;
@@ -9177,21 +9177,21 @@ LAB_00419e87:
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 4;
-    bitShiftLeft1(local_28,(void *)0x2);
+    Decoder_ShiftLeft(local_28,(void *)0x2);
     puVar7 = local_480;
     puVar8 = puVar7;
-    bitShiftLeft1(local_240,(void *)0x19);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_240,(void *)0x19);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     this->field78_0x84 = *piVar9;
     this->field85_0x94 = 0x19;
-    bitShiftLeft1(local_478,(void *)0x2);
+    Decoder_ShiftLeft(local_478,(void *)0x2);
     puVar7 = local_120;
     piVar4 = piVar9;
-    bitShiftLeft1(local_470,(void *)0x19);
-    piVar6 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_470,(void *)0x19);
+    piVar6 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar5 = &local_238;
     piVar9 = piVar5;
-    bitShiftLeft1(local_468,(void *)0x2);
+    Decoder_ShiftLeft(local_468,(void *)0x2);
     piVar4 = &local_90;
     puVar7 = local_460;
     piVar11 = piVar5;
@@ -9203,22 +9203,22 @@ LAB_00419e87:
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 1;
-    bitShiftLeft1(local_1b8,(void *)0x2);
+    Decoder_ShiftLeft(local_1b8,(void *)0x2);
     puVar7 = local_368;
     piVar9 = piVar4;
-    bitShiftLeft1(local_70,(void *)0x19);
-    puVar10 = (undefined4 *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_70,(void *)0x19);
+    puVar10 = (undefined4 *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar4 = (int *)*puVar10;
     this->field78_0x84 = piVar4;
     this->field85_0x94 = 0x19;
-    bitShiftLeft1(local_360,(void *)0x2);
+    Decoder_ShiftLeft(local_360,(void *)0x2);
     puVar7 = local_1b0;
     piVar9 = piVar4;
-    bitShiftLeft1(local_358,(void *)0x19);
-    piVar11 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_358,(void *)0x19);
+    piVar11 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar9 = &local_d8;
     piVar6 = piVar11;
-    bitShiftLeft1(local_350,(void *)0x2);
+    Decoder_ShiftLeft(local_350,(void *)0x2);
     piVar5 = &local_1a8;
     puVar7 = local_348;
     piVar4 = piVar5;
@@ -9230,28 +9230,28 @@ LAB_00419e87:
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 3;
-    bitShiftLeft1(local_59c,(void *)0x2);
+    Decoder_ShiftLeft(local_59c,(void *)0x2);
     puVar7 = local_594;
     piVar9 = piVar4;
-    bitShiftLeft1(local_58c,(void *)0x5);
-    piVar4 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_58c,(void *)0x5);
+    piVar4 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     this->field78_0x84 = *piVar4;
     this->field85_0x94 = 5;
-    bitShiftLeft1(local_584,(void *)0x2);
+    Decoder_ShiftLeft(local_584,(void *)0x2);
     puVar7 = local_57c;
     puVar8 = puVar7;
-    bitShiftLeft1(local_574,(void *)0x5);
-    piVar4 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_574,(void *)0x5);
+    piVar4 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     piVar9 = &local_56c;
     piVar6 = piVar4;
-    bitShiftLeft1(local_564,(void *)0x2);
+    Decoder_ShiftLeft(local_564,(void *)0x2);
     pvVar15 = (void *)0x5;
     puVar7 = local_554;
     piVar5 = &local_55c;
     piVar11 = piVar4;
 LAB_00419c4a:
-    bitShiftLeft1(puVar7,pvVar15);
-    pvVar15 = FUN_00401b90(piVar4,piVar5,piVar11);
+    Decoder_ShiftLeft(puVar7,pvVar15);
+    pvVar15 = Decoder_ReadInt(piVar4,piVar5,piVar11);
     puVar10 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar15,piVar9,piVar6);
     uVar2 = 0x28;
     break;
@@ -9260,21 +9260,21 @@ LAB_00419c4a:
     this->field60_0x60 = 1;
     this->field65_0x71 = 1;
     this->field49_0x4c = 5;
-    bitShiftLeft1(local_9c,(void *)0x2);
+    Decoder_ShiftLeft(local_9c,(void *)0x2);
     puVar7 = local_94;
     piVar4 = piVar9;
-    bitShiftLeft1(local_8c,(void *)0x19);
-    piVar4 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_8c,(void *)0x19);
+    piVar4 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     this->field78_0x84 = *piVar4;
     this->field85_0x94 = 0x19;
-    bitShiftLeft1(local_84,(void *)0x2);
+    Decoder_ShiftLeft(local_84,(void *)0x2);
     puVar7 = local_7c;
     puVar8 = puVar7;
-    bitShiftLeft1(local_74,(void *)0x19);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_74,(void *)0x19);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     piVar4 = &local_6c;
     piVar6 = piVar9;
-    bitShiftLeft1(local_64,(void *)0x2);
+    Decoder_ShiftLeft(local_64,(void *)0x2);
     piVar5 = &local_5c;
     puVar7 = local_54;
     piVar11 = piVar9;
@@ -9286,29 +9286,29 @@ LAB_00419c4a:
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 1;
-    bitShiftLeft1(local_38,(void *)0x2);
+    Decoder_ShiftLeft(local_38,(void *)0x2);
     puVar7 = local_340;
     piVar9 = piVar4;
-    bitShiftLeft1(local_1a0,(void *)0x19);
-    piVar4 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_1a0,(void *)0x19);
+    piVar4 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     this->field78_0x84 = *piVar4;
     this->field85_0x94 = 0x19;
-    bitShiftLeft1(local_338,(void *)0x2);
+    Decoder_ShiftLeft(local_338,(void *)0x2);
     puVar7 = local_d0;
     puVar8 = puVar7;
-    bitShiftLeft1(local_330,(void *)0x19);
-    piVar5 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_330,(void *)0x19);
+    piVar5 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     piVar9 = &local_198;
     piVar6 = piVar5;
-    bitShiftLeft1(local_328,(void *)0x2);
+    Decoder_ShiftLeft(local_328,(void *)0x2);
     piVar4 = &local_68;
     puVar7 = local_63c;
     piVar11 = piVar5;
 LAB_00419028:
     pvVar15 = (void *)0x19;
 LAB_0041902a:
-    bitShiftLeft1(puVar7,pvVar15);
-    pvVar15 = FUN_00401b90(piVar5,piVar4,piVar11);
+    Decoder_ShiftLeft(puVar7,pvVar15);
+    pvVar15 = Decoder_ReadInt(piVar5,piVar4,piVar11);
     puVar10 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar15,piVar9,piVar6);
     uVar2 = 0x46;
     break;
@@ -9319,28 +9319,28 @@ LAB_0041902a:
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 1;
-    bitShiftLeft1(local_638,(void *)0x2);
+    Decoder_ShiftLeft(local_638,(void *)0x2);
     puVar7 = local_634;
     puVar8 = puVar7;
-    bitShiftLeft1(local_62c,(void *)0x19);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_62c,(void *)0x19);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     this->field78_0x84 = *piVar9;
     this->field85_0x94 = 0x19;
-    bitShiftLeft1(local_624,(void *)0x2);
+    Decoder_ShiftLeft(local_624,(void *)0x2);
     puVar7 = local_61c;
     piVar4 = piVar9;
-    bitShiftLeft1(local_614,(void *)0x19);
-    piVar6 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_614,(void *)0x19);
+    piVar6 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar4 = &local_60c;
     piVar9 = piVar4;
-    bitShiftLeft1(local_604,(void *)0x2);
+    Decoder_ShiftLeft(local_604,(void *)0x2);
     pvVar15 = (void *)0x19;
     puVar7 = local_5f4;
     piVar5 = &local_5fc;
     piVar11 = piVar4;
 LAB_00419d09:
-    bitShiftLeft1(puVar7,pvVar15);
-    pvVar15 = FUN_00401b90(piVar4,piVar5,piVar11);
+    Decoder_ShiftLeft(puVar7,pvVar15);
+    pvVar15 = Decoder_ReadInt(piVar4,piVar5,piVar11);
     puVar10 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar15,piVar9,piVar6);
     uVar2 = 0x5a;
     break;
@@ -9351,30 +9351,30 @@ LAB_00419d09:
     this->field37_0x34 = 0;
     this->field65_0x71 = 0;
     this->field49_0x4c = 1;
-    bitShiftLeft1(local_5ec,(void *)0x2);
+    Decoder_ShiftLeft(local_5ec,(void *)0x2);
     puVar7 = local_5e4;
     piVar9 = piVar4;
-    bitShiftLeft1(local_5dc,(void *)0x19);
-    puVar10 = (undefined4 *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_5dc,(void *)0x19);
+    puVar10 = (undefined4 *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar4 = (int *)*puVar10;
     this->field78_0x84 = piVar4;
     this->field85_0x94 = 0x19;
-    bitShiftLeft1(local_5d4,(void *)0x2);
+    Decoder_ShiftLeft(local_5d4,(void *)0x2);
     puVar7 = local_5cc;
     piVar9 = piVar4;
-    bitShiftLeft1(local_5c4,(void *)0x19);
-    piVar11 = (int *)FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_5c4,(void *)0x19);
+    piVar11 = (int *)Decoder_ReadInt(piVar4,puVar7,piVar9);
     piVar4 = &local_5bc;
     piVar6 = piVar11;
-    bitShiftLeft1(local_5b4,(void *)0x2);
+    Decoder_ShiftLeft(local_5b4,(void *)0x2);
     piVar9 = &local_5ac;
     puVar7 = local_5a4;
     piVar5 = piVar9;
 LAB_00419dc6:
     pvVar15 = (void *)0x19;
 LAB_00419dc8:
-    bitShiftLeft1(puVar7,pvVar15);
-    pvVar15 = FUN_00401b90(piVar9,piVar5,piVar11);
+    Decoder_ShiftLeft(puVar7,pvVar15);
+    pvVar15 = Decoder_ReadInt(piVar9,piVar5,piVar11);
     puVar10 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar15,piVar4,piVar6);
     uVar2 = 0x3c;
     break;
@@ -9385,25 +9385,25 @@ LAB_00419dc8:
     this->field60_0x60 = 1;
     this->field65_0x71 = 1;
     this->field49_0x4c = 3;
-    bitShiftLeft1(local_54c,(void *)0x2);
+    Decoder_ShiftLeft(local_54c,(void *)0x2);
     puVar7 = local_544;
     puVar8 = puVar7;
-    bitShiftLeft1(local_53c,(void *)0x14);
-    piVar9 = (int *)FUN_00401b90(puVar7,puVar8,piVar4);
+    Decoder_ShiftLeft(local_53c,(void *)0x14);
+    piVar9 = (int *)Decoder_ReadInt(puVar7,puVar8,piVar4);
     this->field78_0x84 = *piVar9;
     this->field85_0x94 = 0x14;
-    bitShiftLeft1(local_534,(void *)0x2);
+    Decoder_ShiftLeft(local_534,(void *)0x2);
     puVar7 = local_52c;
     piVar4 = piVar9;
-    bitShiftLeft1(local_524,(void *)0x14);
-    piVar11 = (int *)FUN_00401b90(piVar9,puVar7,piVar4);
+    Decoder_ShiftLeft(local_524,(void *)0x14);
+    piVar11 = (int *)Decoder_ReadInt(piVar9,puVar7,piVar4);
     piVar4 = &local_51c;
     piVar5 = piVar4;
-    bitShiftLeft1(local_514,(void *)0x2);
+    Decoder_ShiftLeft(local_514,(void *)0x2);
     puVar7 = local_50c;
     piVar9 = piVar4;
-    bitShiftLeft1(local_504,(void *)0x14);
-    pvVar15 = FUN_00401b90(piVar4,puVar7,piVar9);
+    Decoder_ShiftLeft(local_504,(void *)0x14);
+    pvVar15 = Decoder_ReadInt(piVar4,puVar7,piVar9);
     puVar10 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar15,piVar5,piVar11)
     ;
     uVar2 = 0x4b;
@@ -9524,25 +9524,25 @@ LAB_00419dc8:
     iVar15 = 0x91;
     local_21c = CONCAT31(local_21c._1_3_,0x32);
     bVar1 = false;
-    bitShiftLeft1(local_9c,(void *)0x2);
+    Decoder_ShiftLeft(local_9c,(void *)0x2);
     puVar9 = local_94;
     puVar7 = puVar9;
-    bitShiftLeft1(local_8c,(void *)0xc);
-    piVar10 = (int *)FUN_00401b90(puVar9,puVar7,piVar6);
+    Decoder_ShiftLeft(local_8c,(void *)0xc);
+    piVar10 = (int *)Decoder_ReadInt(puVar9,puVar7,piVar6);
     iVar5 = *piVar10;
     local_218 = 0xc;
-    bitShiftLeft1(local_84,(void *)0x2);
+    Decoder_ShiftLeft(local_84,(void *)0x2);
     puVar9 = local_7c;
     piVar6 = piVar10;
-    bitShiftLeft1(local_74,(void *)0xc);
-    piVar10 = (int *)FUN_00401b90(piVar10,puVar9,piVar6);
+    Decoder_ShiftLeft(local_74,(void *)0xc);
+    piVar10 = (int *)Decoder_ReadInt(piVar10,puVar9,piVar6);
     puVar9 = local_6c;
     piVar6 = piVar10;
-    bitShiftLeft1(local_64,(void *)0x2);
+    Decoder_ShiftLeft(local_64,(void *)0x2);
     puVar7 = local_5c;
     puVar14 = puVar7;
-    bitShiftLeft1(local_54,(void *)0xc);
-    pvVar12 = FUN_00401b90(puVar7,puVar14,piVar10);
+    Decoder_ShiftLeft(local_54,(void *)0xc);
+    pvVar12 = Decoder_ReadInt(puVar7,puVar14,piVar10);
     puVar13 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar12,puVar9,piVar6);
     local_210 = *puVar13;
     local_214 = 7;
@@ -9560,20 +9560,20 @@ LAB_00419dc8:
     case 4:
     case 0xc:
       iVar15 = 0xbe;
-      bitShiftLeft1(local_13c,(void *)0x2);
+      Decoder_ShiftLeft(local_13c,(void *)0x2);
       puVar9 = local_134;
       piVar10 = piVar6;
-      bitShiftLeft1(local_12c,(void *)0xe);
-      piVar6 = (int *)FUN_00401b90(piVar6,puVar9,piVar10);
+      Decoder_ShiftLeft(local_12c,(void *)0xe);
+      piVar6 = (int *)Decoder_ReadInt(piVar6,puVar9,piVar10);
       iVar5 = *piVar6;
-      bitShiftLeft1(local_124,(void *)0x2);
+      Decoder_ShiftLeft(local_124,(void *)0x2);
       puVar9 = local_11c;
       puVar7 = puVar9;
-      bitShiftLeft1(local_114,(void *)0xe);
-      piVar10 = (int *)FUN_00401b90(puVar9,puVar7,piVar6);
+      Decoder_ShiftLeft(local_114,(void *)0xe);
+      piVar10 = (int *)Decoder_ReadInt(puVar9,puVar7,piVar6);
       puVar9 = local_10c;
       piVar6 = piVar10;
-      bitShiftLeft1(local_104,(void *)0x2);
+      Decoder_ShiftLeft(local_104,(void *)0x2);
       puVar7 = local_fc;
       puVar14 = local_f4;
       goto LAB_0041aca6;
@@ -9585,25 +9585,25 @@ LAB_00419dc8:
       local_21c = CONCAT31(local_21c._1_3_,0x55);
       bVar1 = false;
       local_21d = 1;
-      bitShiftLeft1(local_ec,(void *)0x2);
+      Decoder_ShiftLeft(local_ec,(void *)0x2);
       puVar9 = local_e4;
       piVar10 = piVar6;
-      bitShiftLeft1(local_dc,(void *)0xe);
-      piVar10 = (int *)FUN_00401b90(piVar6,puVar9,piVar10);
+      Decoder_ShiftLeft(local_dc,(void *)0xe);
+      piVar10 = (int *)Decoder_ReadInt(piVar6,puVar9,piVar10);
       iVar5 = *piVar10;
       local_218 = 0xe;
-      bitShiftLeft1(local_d4,(void *)0x2);
+      Decoder_ShiftLeft(local_d4,(void *)0x2);
       puVar9 = local_cc;
       piVar6 = piVar10;
-      bitShiftLeft1(local_c4,(void *)0xe);
-      piVar11 = (int *)FUN_00401b90(piVar10,puVar9,piVar6);
+      Decoder_ShiftLeft(local_c4,(void *)0xe);
+      piVar11 = (int *)Decoder_ReadInt(piVar10,puVar9,piVar6);
       piVar6 = &local_bc;
       piVar8 = piVar6;
-      bitShiftLeft1(local_b4,(void *)0x2);
+      Decoder_ShiftLeft(local_b4,(void *)0x2);
       puVar9 = local_ac;
       piVar10 = piVar6;
-      bitShiftLeft1(local_a4,(void *)0xe);
-      pvVar12 = FUN_00401b90(piVar6,puVar9,piVar10);
+      Decoder_ShiftLeft(local_a4,(void *)0xe);
+      pvVar12 = Decoder_ReadInt(piVar6,puVar9,piVar10);
       puVar13 = (undefined4 *)
                 WorldCoordinateToScreenCoord(pvVar12,piVar8,piVar11);
       local_210 = *puVar13;
@@ -9618,25 +9618,25 @@ LAB_00419dc8:
         iVar15 = 0xba;
         local_21c = CONCAT31(local_21c._1_3_,0x7f);
         bVar1 = true;
-        bitShiftLeft1(local_c8,(void *)0x2);
+        Decoder_ShiftLeft(local_c8,(void *)0x2);
         puVar9 = local_188;
         puVar7 = puVar9;
-        bitShiftLeft1(local_10,(void *)0x23);
-        piVar10 = (int *)FUN_00401b90(puVar9,puVar7,piVar6);
+        Decoder_ShiftLeft(local_10,(void *)0x23);
+        piVar10 = (int *)Decoder_ReadInt(puVar9,puVar7,piVar6);
         iVar5 = *piVar10;
         local_218 = 0x23;
-        bitShiftLeft1(local_180,(void *)0x2);
+        Decoder_ShiftLeft(local_180,(void *)0x2);
         puVar9 = local_c0;
         piVar6 = piVar10;
-        bitShiftLeft1(local_178,(void *)0x23);
-        piVar10 = (int *)FUN_00401b90(piVar10,puVar9,piVar6);
+        Decoder_ShiftLeft(local_178,(void *)0x23);
+        piVar10 = (int *)Decoder_ReadInt(piVar10,puVar9,piVar6);
         puVar9 = local_60;
         piVar6 = piVar10;
-        bitShiftLeft1(local_170,(void *)0x2);
+        Decoder_ShiftLeft(local_170,(void *)0x2);
         puVar7 = local_b8;
         puVar14 = puVar7;
-        bitShiftLeft1(local_168,(void *)0x23);
-        pvVar12 = FUN_00401b90(puVar7,puVar14,piVar10);
+        Decoder_ShiftLeft(local_168,(void *)0x23);
+        pvVar12 = Decoder_ReadInt(puVar7,puVar14,piVar10);
         puVar13 = (undefined4 *)
                   WorldCoordinateToScreenCoord(pvVar12,puVar9,piVar6);
         local_210 = *puVar13;
@@ -9653,25 +9653,25 @@ LAB_0041a813:
         bVar1 = false;
         local_21c = CONCAT31(local_21c._1_3_,0x32);
         local_21d = 1;
-        bitShiftLeft1(local_30,(void *)0x2);
+        Decoder_ShiftLeft(local_30,(void *)0x2);
         puVar9 = local_160;
         piVar10 = piVar6;
-        bitShiftLeft1(local_b0,(void *)0xe);
-        piVar6 = (int *)FUN_00401b90(piVar6,puVar9,piVar10);
+        Decoder_ShiftLeft(local_b0,(void *)0xe);
+        piVar6 = (int *)Decoder_ReadInt(piVar6,puVar9,piVar10);
         iVar5 = *piVar6;
         local_218 = 0xe;
-        bitShiftLeft1(local_158,(void *)0x2);
+        Decoder_ShiftLeft(local_158,(void *)0x2);
         puVar9 = local_58;
         puVar7 = puVar9;
-        bitShiftLeft1(local_150,(void *)0xe);
-        piVar8 = (int *)FUN_00401b90(puVar9,puVar7,piVar6);
+        Decoder_ShiftLeft(local_150,(void *)0xe);
+        piVar8 = (int *)Decoder_ReadInt(puVar9,puVar7,piVar6);
         puVar9 = local_a8;
         piVar10 = piVar8;
-        bitShiftLeft1(local_148,(void *)0x2);
+        Decoder_ShiftLeft(local_148,(void *)0x2);
         puVar7 = local_18;
         piVar6 = piVar8;
-        bitShiftLeft1(local_140,(void *)0xe);
-        pvVar12 = FUN_00401b90(piVar8,puVar7,piVar6);
+        Decoder_ShiftLeft(local_140,(void *)0xe);
+        pvVar12 = Decoder_ReadInt(piVar8,puVar7,piVar6);
         puVar13 = (undefined4 *)
                   WorldCoordinateToScreenCoord(pvVar12,puVar9,piVar10);
         local_210 = *puVar13;
@@ -9691,25 +9691,25 @@ LAB_0041a813:
         iVar15 = 0xbb;
         local_21c = CONCAT31(local_21c._1_3_,0x7f);
         bVar1 = true;
-        bitShiftLeft1(local_a0,(void *)0x2);
+        Decoder_ShiftLeft(local_a0,(void *)0x2);
         puVar9 = local_138;
         piVar10 = piVar6;
-        bitShiftLeft1(local_50,(void *)0x23);
-        piVar6 = (int *)FUN_00401b90(piVar6,puVar9,piVar10);
+        Decoder_ShiftLeft(local_50,(void *)0x23);
+        piVar6 = (int *)Decoder_ReadInt(piVar6,puVar9,piVar10);
         iVar5 = *piVar6;
         local_218 = 0x23;
-        bitShiftLeft1(local_130,(void *)0x2);
+        Decoder_ShiftLeft(local_130,(void *)0x2);
         puVar9 = local_98;
         puVar7 = puVar9;
-        bitShiftLeft1(local_128,(void *)0x23);
-        piVar8 = (int *)FUN_00401b90(puVar9,puVar7,piVar6);
+        Decoder_ShiftLeft(local_128,(void *)0x23);
+        piVar8 = (int *)Decoder_ReadInt(puVar9,puVar7,piVar6);
         puVar9 = local_28;
         piVar10 = piVar8;
-        bitShiftLeft1(local_120,(void *)0x2);
+        Decoder_ShiftLeft(local_120,(void *)0x2);
         puVar7 = local_90;
         piVar6 = piVar8;
-        bitShiftLeft1(local_118,(void *)0x23);
-        pvVar12 = FUN_00401b90(piVar8,puVar7,piVar6);
+        Decoder_ShiftLeft(local_118,(void *)0x23);
+        pvVar12 = Decoder_ReadInt(piVar8,puVar7,piVar6);
         puVar13 = (undefined4 *)
                   WorldCoordinateToScreenCoord(pvVar12,puVar9,piVar10);
         local_210 = *puVar13;
@@ -9722,25 +9722,25 @@ LAB_0041a813:
         local_21c = CONCAT31(local_21c._1_3_,0x7f);
         bVar1 = false;
         local_21d = 1;
-        bitShiftLeft1(local_48,(void *)0x2);
+        Decoder_ShiftLeft(local_48,(void *)0x2);
         puVar9 = local_208;
         piVar10 = piVar6;
-        bitShiftLeft1(local_88,(void *)0xe);
-        piVar10 = (int *)FUN_00401b90(piVar6,puVar9,piVar10);
+        Decoder_ShiftLeft(local_88,(void *)0xe);
+        piVar10 = (int *)Decoder_ReadInt(piVar6,puVar9,piVar10);
         iVar5 = *piVar10;
         local_218 = 0xe;
-        bitShiftLeft1(local_108,(void *)0x2);
+        Decoder_ShiftLeft(local_108,(void *)0x2);
         puVar9 = local_8;
         piVar6 = piVar10;
-        bitShiftLeft1(local_204,(void *)0xe);
-        piVar11 = (int *)FUN_00401b90(piVar10,puVar9,piVar6);
+        Decoder_ShiftLeft(local_204,(void *)0xe);
+        piVar11 = (int *)Decoder_ReadInt(piVar10,puVar9,piVar6);
         piVar6 = &local_1fc;
         piVar8 = piVar6;
-        bitShiftLeft1(local_1f4,(void *)0x2);
+        Decoder_ShiftLeft(local_1f4,(void *)0x2);
         puVar9 = local_1ec;
         piVar10 = piVar6;
-        bitShiftLeft1(local_1e4,(void *)0xe);
-        pvVar12 = FUN_00401b90(piVar6,puVar9,piVar10);
+        Decoder_ShiftLeft(local_1e4,(void *)0xe);
+        pvVar12 = Decoder_ReadInt(piVar6,puVar9,piVar10);
         puVar13 = (undefined4 *)
                   WorldCoordinateToScreenCoord(pvVar12,piVar8,piVar11);
         local_210 = *puVar13;
@@ -9756,25 +9756,25 @@ LAB_0041a813:
         iVar15 = 0xbc;
         local_21c = CONCAT31(local_21c._1_3_,0x7f);
         bVar1 = true;
-        bitShiftLeft1(local_1dc,(void *)0x2);
+        Decoder_ShiftLeft(local_1dc,(void *)0x2);
         puVar9 = local_1d4;
         piVar10 = piVar6;
-        bitShiftLeft1(local_1cc,(void *)0x23);
-        piVar10 = (int *)FUN_00401b90(piVar6,puVar9,piVar10);
+        Decoder_ShiftLeft(local_1cc,(void *)0x23);
+        piVar10 = (int *)Decoder_ReadInt(piVar6,puVar9,piVar10);
         iVar5 = *piVar10;
         local_218 = 0x23;
-        bitShiftLeft1(local_1c4,(void *)0x2);
+        Decoder_ShiftLeft(local_1c4,(void *)0x2);
         puVar9 = local_1bc;
         piVar6 = piVar10;
-        bitShiftLeft1(local_1b4,(void *)0x23);
-        piVar11 = (int *)FUN_00401b90(piVar10,puVar9,piVar6);
+        Decoder_ShiftLeft(local_1b4,(void *)0x23);
+        piVar11 = (int *)Decoder_ReadInt(piVar10,puVar9,piVar6);
         piVar6 = &local_1ac;
         piVar8 = piVar6;
-        bitShiftLeft1(local_1a4,(void *)0x2);
+        Decoder_ShiftLeft(local_1a4,(void *)0x2);
         puVar9 = local_19c;
         piVar10 = piVar6;
-        bitShiftLeft1(local_194,(void *)0x23);
-        pvVar12 = FUN_00401b90(piVar6,puVar9,piVar10);
+        Decoder_ShiftLeft(local_194,(void *)0x23);
+        pvVar12 = Decoder_ReadInt(piVar6,puVar9,piVar10);
         puVar13 = (undefined4 *)
                   WorldCoordinateToScreenCoord(pvVar12,piVar8,piVar11);
         local_210 = *puVar13;
@@ -9787,25 +9787,25 @@ LAB_0041a813:
         local_21c = CONCAT31(local_21c._1_3_,0x7f);
         bVar1 = false;
         local_21d = 1;
-        bitShiftLeft1(local_18c,(void *)0x2);
+        Decoder_ShiftLeft(local_18c,(void *)0x2);
         puVar9 = local_184;
         puVar7 = puVar9;
-        bitShiftLeft1(local_17c,(void *)0xe);
-        piVar10 = (int *)FUN_00401b90(puVar9,puVar7,piVar6);
+        Decoder_ShiftLeft(local_17c,(void *)0xe);
+        piVar10 = (int *)Decoder_ReadInt(puVar9,puVar7,piVar6);
         iVar5 = *piVar10;
         local_218 = 0xe;
-        bitShiftLeft1(local_174,(void *)0x2);
+        Decoder_ShiftLeft(local_174,(void *)0x2);
         puVar9 = local_16c;
         piVar6 = piVar10;
-        bitShiftLeft1(local_164,(void *)0xe);
-        piVar10 = (int *)FUN_00401b90(piVar10,puVar9,piVar6);
+        Decoder_ShiftLeft(local_164,(void *)0xe);
+        piVar10 = (int *)Decoder_ReadInt(piVar10,puVar9,piVar6);
         puVar9 = local_15c;
         piVar6 = piVar10;
-        bitShiftLeft1(local_154,(void *)0x2);
+        Decoder_ShiftLeft(local_154,(void *)0x2);
         puVar7 = local_14c;
         puVar14 = puVar7;
-        bitShiftLeft1(local_144,(void *)0xe);
-        pvVar12 = FUN_00401b90(puVar7,puVar14,piVar10);
+        Decoder_ShiftLeft(local_144,(void *)0xe);
+        pvVar12 = Decoder_ReadInt(puVar7,puVar14,piVar10);
         puVar13 = (undefined4 *)
                   WorldCoordinateToScreenCoord(pvVar12,puVar9,piVar6);
         local_210 = *puVar13;
@@ -9825,25 +9825,25 @@ LAB_0041a813:
     bVar1 = false;
     local_21c = CONCAT31(local_21c._1_3_,0x7f);
     local_21d = 1;
-    bitShiftLeft1(local_110,(void *)0x2);
+    Decoder_ShiftLeft(local_110,(void *)0x2);
     puVar9 = local_200;
     puVar7 = puVar9;
-    bitShiftLeft1(local_100,(void *)0xe);
-    piVar10 = (int *)FUN_00401b90(puVar9,puVar7,piVar6);
+    Decoder_ShiftLeft(local_100,(void *)0xe);
+    piVar10 = (int *)Decoder_ReadInt(puVar9,puVar7,piVar6);
     iVar5 = *piVar10;
     local_218 = 0xe;
-    bitShiftLeft1(local_1f8,(void *)0x2);
+    Decoder_ShiftLeft(local_1f8,(void *)0x2);
     puVar9 = local_80;
     piVar6 = piVar10;
-    bitShiftLeft1(local_1f0,(void *)0xe);
-    piVar10 = (int *)FUN_00401b90(piVar10,puVar9,piVar6);
+    Decoder_ShiftLeft(local_1f0,(void *)0xe);
+    piVar10 = (int *)Decoder_ReadInt(piVar10,puVar9,piVar6);
     puVar9 = local_f8;
     piVar6 = piVar10;
-    bitShiftLeft1(local_1e8,(void *)0x2);
+    Decoder_ShiftLeft(local_1e8,(void *)0x2);
     puVar7 = local_40;
     puVar14 = puVar7;
-    bitShiftLeft1(local_1e0,(void *)0xe);
-    pvVar12 = FUN_00401b90(puVar7,puVar14,piVar10);
+    Decoder_ShiftLeft(local_1e0,(void *)0xe);
+    pvVar12 = Decoder_ReadInt(puVar7,puVar14,piVar10);
     puVar13 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar12,puVar9,piVar6);
     local_210 = *puVar13;
     local_214 = 0xf;
@@ -9852,25 +9852,25 @@ LAB_0041a813:
     iVar15 = 0x96;
     bVar1 = false;
     local_21c = CONCAT31(local_21c._1_3_,0x14);
-    bitShiftLeft1(local_4c,(void *)0x2);
+    Decoder_ShiftLeft(local_4c,(void *)0x2);
     puVar9 = local_44;
     piVar10 = piVar6;
-    bitShiftLeft1(local_3c,(void *)0x28);
-    piVar6 = (int *)FUN_00401b90(piVar6,puVar9,piVar10);
+    Decoder_ShiftLeft(local_3c,(void *)0x28);
+    piVar6 = (int *)Decoder_ReadInt(piVar6,puVar9,piVar10);
     iVar5 = *piVar6;
     local_218 = 0x28;
-    bitShiftLeft1(local_34,(void *)0x2);
+    Decoder_ShiftLeft(local_34,(void *)0x2);
     puVar9 = local_2c;
     puVar7 = puVar9;
-    bitShiftLeft1(local_24,(void *)0x28);
-    piVar8 = (int *)FUN_00401b90(puVar9,puVar7,piVar6);
+    Decoder_ShiftLeft(local_24,(void *)0x28);
+    piVar8 = (int *)Decoder_ReadInt(puVar9,puVar7,piVar6);
     puVar9 = local_1c;
     piVar10 = piVar8;
-    bitShiftLeft1(local_14,(void *)0x2);
+    Decoder_ShiftLeft(local_14,(void *)0x2);
     puVar7 = local_c;
     piVar6 = piVar8;
-    bitShiftLeft1(local_4,(void *)0x28);
-    pvVar12 = FUN_00401b90(piVar8,puVar7,piVar6);
+    Decoder_ShiftLeft(local_4,(void *)0x28);
+    pvVar12 = Decoder_ReadInt(piVar8,puVar7,piVar6);
     puVar13 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar12,puVar9,piVar10)
     ;
     local_210 = *puVar13;
@@ -9886,25 +9886,25 @@ LAB_0041a813:
     }
     iVar15 = 0x1e;
     local_21c = CONCAT31(local_21c._1_3_,0x55);
-    bitShiftLeft1(local_f0,(void *)0x2);
+    Decoder_ShiftLeft(local_f0,(void *)0x2);
     puVar9 = local_1d8;
     piVar10 = piVar6;
-    bitShiftLeft1(local_78,(void *)0xf);
-    piVar6 = (int *)FUN_00401b90(piVar6,puVar9,piVar10);
+    Decoder_ShiftLeft(local_78,(void *)0xf);
+    piVar6 = (int *)Decoder_ReadInt(piVar6,puVar9,piVar10);
     iVar5 = *piVar6;
     local_218 = 0xf;
-    bitShiftLeft1(local_1d0,(void *)0x2);
+    Decoder_ShiftLeft(local_1d0,(void *)0x2);
     puVar9 = local_e8;
     puVar7 = puVar9;
-    bitShiftLeft1(local_1c8,(void *)0xf);
-    piVar8 = (int *)FUN_00401b90(puVar9,puVar7,piVar6);
+    Decoder_ShiftLeft(local_1c8,(void *)0xf);
+    piVar8 = (int *)Decoder_ReadInt(puVar9,puVar7,piVar6);
     puVar9 = local_20;
     piVar10 = piVar8;
-    bitShiftLeft1(local_1c0,(void *)0x2);
+    Decoder_ShiftLeft(local_1c0,(void *)0x2);
     puVar7 = local_e0;
     piVar6 = piVar8;
-    bitShiftLeft1(local_1b8,(void *)0xf);
-    pvVar12 = FUN_00401b90(piVar8,puVar7,piVar6);
+    Decoder_ShiftLeft(local_1b8,(void *)0xf);
+    pvVar12 = Decoder_ReadInt(piVar8,puVar7,piVar6);
     puVar13 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar12,puVar9,piVar10)
     ;
     local_210 = *puVar13;
@@ -9920,20 +9920,20 @@ LAB_0041a813:
     return;
   case 0xc5:
     iVar15 = 0xbd;
-    bitShiftLeft1(local_70,(void *)0x2);
+    Decoder_ShiftLeft(local_70,(void *)0x2);
     puVar9 = local_1b0;
     piVar10 = piVar6;
-    bitShiftLeft1(local_d8,(void *)0xe);
-    piVar6 = (int *)FUN_00401b90(piVar6,puVar9,piVar10);
+    Decoder_ShiftLeft(local_d8,(void *)0xe);
+    piVar6 = (int *)Decoder_ReadInt(piVar6,puVar9,piVar10);
     iVar5 = *piVar6;
-    bitShiftLeft1(local_1a8,(void *)0x2);
+    Decoder_ShiftLeft(local_1a8,(void *)0x2);
     puVar9 = local_38;
     puVar7 = puVar9;
-    bitShiftLeft1(local_1a0,(void *)0xe);
-    piVar10 = (int *)FUN_00401b90(puVar9,puVar7,piVar6);
+    Decoder_ShiftLeft(local_1a0,(void *)0xe);
+    piVar10 = (int *)Decoder_ReadInt(puVar9,puVar7,piVar6);
     puVar9 = local_d0;
     piVar6 = piVar10;
-    bitShiftLeft1(local_198,(void *)0x2);
+    Decoder_ShiftLeft(local_198,(void *)0x2);
     puVar7 = local_68;
     puVar14 = local_190;
 LAB_0041aca6:
@@ -9942,8 +9942,8 @@ LAB_0041aca6:
     local_21d = 1;
     bVar1 = false;
     piVar8 = piVar10;
-    bitShiftLeft1(puVar14,(void *)0xe);
-    pvVar12 = FUN_00401b90(piVar10,puVar7,piVar8);
+    Decoder_ShiftLeft(puVar14,(void *)0xe);
+    pvVar12 = Decoder_ReadInt(piVar10,puVar7,piVar8);
     puVar13 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar12,puVar9,piVar6);
     local_210 = *puVar13;
     local_214 = 0xf;
@@ -10163,21 +10163,21 @@ switchD_0041b4de_caseD_a:
       cVar8 = (-(cVar8 != '\0') & 0x16U) + 0x28;
     }
     local_1c = CONCAT31(local_1c._1_3_,cVar8);
-    bitShiftLeft1(local_4,(void *)0x2);
+    Decoder_ShiftLeft(local_4,(void *)0x2);
     puVar11 = local_8;
     piVar5 = piVar4;
-    bitShiftLeft1(local_c,(void *)0x12);
-    piVar4 = (int *)FUN_00401b90(piVar4,puVar11,piVar5);
+    Decoder_ShiftLeft(local_c,(void *)0x12);
+    piVar4 = (int *)Decoder_ReadInt(piVar4,puVar11,piVar5);
     bVar1 = S154_FUN_004116f0(this,local_1c,*piVar4,*(char *)((int)param_1 + 5))
     ;
     piVar4 = (int *)CONCAT31(extraout_var_01,bVar1);
     if (bVar1 != 0) {
       this->SoundCar = iVar9;
-      bitShiftLeft1(&param_1,(void *)0x2);
+      Decoder_ShiftLeft(&param_1,(void *)0x2);
       puVar11 = local_4;
       piVar5 = piVar4;
-      bitShiftLeft1(local_8,(void *)0x12);
-      puVar6 = (undefined4 *)FUN_00401b90(piVar4,puVar11,piVar5);
+      Decoder_ShiftLeft(local_8,(void *)0x12);
+      puVar6 = (undefined4 *)Decoder_ReadInt(piVar4,puVar11,piVar5);
       this->field78_0x84 = *puVar6;
       this->field81_0x90 = cVar8;
       this->field85_0x94 = 0x12;
@@ -10234,18 +10234,18 @@ switchD_0041b4de_caseD_a:
         iVar3 = 0xce;
         iVar12 = 0xd1;
       }
-      bitShiftLeft1(&local_70,(void *)0x2);
+      Decoder_ShiftLeft(&local_70,(void *)0x2);
       ppPVar6 = &local_74;
       piVar8 = piVar21;
-      bitShiftLeft1(&local_78,(void *)0x4);
-      piVar4 = (int *)FUN_00401b90(piVar21,ppPVar6,piVar8);
+      Decoder_ShiftLeft(&local_78,(void *)0x4);
+      piVar4 = (int *)Decoder_ReadInt(piVar21,ppPVar6,piVar8);
       piVar21 = &local_7c;
       piVar9 = piVar21;
-      bitShiftLeft1(local_6c,(void *)0x2);
+      Decoder_ShiftLeft(local_6c,(void *)0x2);
       puVar5 = local_68;
       piVar8 = piVar21;
-      bitShiftLeft1(local_64,(void *)0x4);
-      pvVar7 = FUN_00401b90(piVar21,puVar5,piVar8);
+      Decoder_ShiftLeft(local_64,(void *)0x4);
+      pvVar7 = Decoder_ReadInt(piVar21,puVar5,piVar8);
       puVar11 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar7,piVar9,piVar4)
       ;
       bVar2 = S154_FUN_004116b0(this,*puVar11);
@@ -10259,11 +10259,11 @@ switchD_0041b4de_caseD_a:
           local_78 = 0x11;
           local_7c = CONCAT31(local_7c._1_3_,0x14);
         }
-        bitShiftLeft1(local_64,(void *)0x2);
+        Decoder_ShiftLeft(local_64,(void *)0x2);
         puVar5 = local_68;
         puVar19 = puVar5;
-        bitShiftLeft1(local_6c,(void *)0x4);
-        piVar21 = (int *)FUN_00401b90(puVar5,puVar19,piVar21);
+        Decoder_ShiftLeft(local_6c,(void *)0x4);
+        piVar21 = (int *)Decoder_ReadInt(puVar5,puVar19,piVar21);
         bVar2 = S154_FUN_004116f0(this,local_7c,*piVar21,
                                   *(char *)((int)param_1 + 5));
         if (bVar2 != 0) {
@@ -10274,11 +10274,11 @@ switchD_0041b4de_caseD_a:
           this->SoundCar =
                *(uint *)((int)(this->Elements + -4) +
                         ((uint)this->field36_0x30 % 5) * 4) % uVar17 + iVar3;
-          bitShiftLeft1(local_64,(void *)0x2);
+          Decoder_ShiftLeft(local_64,(void *)0x2);
           puVar5 = local_68;
           piVar21 = piVar8;
-          bitShiftLeft1(local_6c,(void *)0x4);
-          puVar11 = (undefined4 *)FUN_00401b90(piVar8,puVar5,piVar21);
+          Decoder_ShiftLeft(local_6c,(void *)0x4);
+          puVar11 = (undefined4 *)Decoder_ReadInt(piVar8,puVar5,piVar21);
           uVar16 = *puVar11;
           this->field81_0x90 = (undefined1)local_7c;
           this->field78_0x84 = uVar16;
@@ -10315,11 +10315,11 @@ switchD_0041b4de_caseD_a:
                                  ((uint)this->field36_0x30 % 5) * 4) % 0x17) +
                  '\x1e';
         local_7c = CONCAT31(local_7c._1_3_,cVar15);
-        bitShiftLeft1(local_60,(void *)0x2);
+        Decoder_ShiftLeft(local_60,(void *)0x2);
         puVar5 = local_64;
         piVar21 = piVar8;
-        bitShiftLeft1(local_68,(void *)0x12);
-        piVar21 = (int *)FUN_00401b90(piVar8,puVar5,piVar21);
+        Decoder_ShiftLeft(local_68,(void *)0x12);
+        piVar21 = (int *)Decoder_ReadInt(piVar8,puVar5,piVar21);
         bVar2 = S154_FUN_004116f0(this,local_7c,*piVar21,
                                   *(char *)((int)param_1 + 5));
         if (bVar2 != 0) {
@@ -10328,11 +10328,11 @@ switchD_0041b4de_caseD_a:
           this->SoundCar =
                *(uint *)((int)(this->Elements + -4) +
                         ((uint)this->field36_0x30 % 5) * 4) % 6 + 0xe9;
-          bitShiftLeft1(local_60,(void *)0x2);
+          Decoder_ShiftLeft(local_60,(void *)0x2);
           puVar5 = local_64;
           piVar21 = piVar8;
-          bitShiftLeft1(local_68,(void *)0x12);
-          puVar11 = (undefined4 *)FUN_00401b90(piVar8,puVar5,piVar21);
+          Decoder_ShiftLeft(local_68,(void *)0x12);
+          puVar11 = (undefined4 *)Decoder_ReadInt(piVar8,puVar5,piVar21);
           this->field78_0x84 = *puVar11;
           this->field81_0x90 = cVar15;
           this->field85_0x94 = 0x12;
@@ -10366,15 +10366,15 @@ switchD_0041b4de_caseD_a:
     piVar21 = (int *)CONCAT31(extraout_var_01,bVar1);
     if (piVar21 == (int *)0x0) goto LAB_0041bf0b;
     local_74 = (Ped *)0xc1;
-    bitShiftLeft1(local_44,(void *)0x28);
+    Decoder_ShiftLeft(local_44,(void *)0x28);
     puVar5 = local_40;
-    pvVar10 = S110_FUN_00401b40(&local_78,(S110 *)local_3c,&DAT_005e2834);
+    pvVar10 = Decoder_ProcessData(&local_78,(S110 *)local_3c,&DAT_005e2834);
     piVar21 = (int *)WorldCoordinateToScreenCoord(pvVar10,puVar5,piVar21);
     piVar21 = (int *)FUN_00410bf0(this_01,piVar21);
     if ((int)piVar21 < 0x80) {
-      bitShiftLeft1(local_3c + 4,(void *)0x28);
+      Decoder_ShiftLeft(local_3c + 4,(void *)0x28);
       puVar5 = local_3c + 8;
-      pvVar10 = S110_FUN_00401b40(&local_78,(S110 *)(local_3c + 0xc),
+      pvVar10 = Decoder_ProcessData(&local_78,(S110 *)(local_3c + 0xc),
                                   &DAT_005e2834);
       piVar21 = (int *)WorldCoordinateToScreenCoord(pvVar10,puVar5,piVar21);
       piVar21 = (int *)FUN_00410bf0(this_02,piVar21);
@@ -10384,24 +10384,24 @@ switchD_0041b4de_caseD_a:
       local_7c = CONCAT31(local_7c._1_3_,0x7f);
     }
     uVar16 = 5;
-    bitShiftLeft1(local_2c,(void *)0x2);
+    Decoder_ShiftLeft(local_2c,(void *)0x2);
     puVar5 = local_28;
     piVar8 = piVar21;
-    bitShiftLeft1(local_24,(void *)0xa);
-    piVar21 = (int *)FUN_00401b90(piVar21,puVar5,piVar8);
+    Decoder_ShiftLeft(local_24,(void *)0xa);
+    piVar21 = (int *)Decoder_ReadInt(piVar21,puVar5,piVar8);
     iVar3 = *piVar21;
-    bitShiftLeft1(local_20,(void *)0x2);
+    Decoder_ShiftLeft(local_20,(void *)0x2);
     puVar5 = local_1c;
     puVar19 = puVar5;
-    bitShiftLeft1(local_18,(void *)0xa);
-    piVar9 = (int *)FUN_00401b90(puVar5,puVar19,piVar21);
+    Decoder_ShiftLeft(local_18,(void *)0xa);
+    piVar9 = (int *)Decoder_ReadInt(puVar5,puVar19,piVar21);
     puVar5 = local_14;
     piVar8 = piVar9;
-    bitShiftLeft1(local_10,(void *)0x2);
+    Decoder_ShiftLeft(local_10,(void *)0x2);
     puVar19 = local_c;
     piVar21 = piVar9;
-    bitShiftLeft1(local_8,(void *)0xa);
-    pvVar10 = FUN_00401b90(piVar9,puVar19,piVar21);
+    Decoder_ShiftLeft(local_8,(void *)0xa);
+    pvVar10 = Decoder_ReadInt(piVar9,puVar19,piVar21);
     puVar11 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar10,puVar5,piVar8);
     local_70 = (Ped *)*puVar11;
     this->field65_0x71 = 0;
@@ -10479,7 +10479,7 @@ void FUN_0041c0f0Em(void)
       return uVar3;
     }
 
-int __thiscall DecoderFloat(void *this)
+int __thiscall Decoder_DecodeFloat(void *this)
 
 
 // Было: S154_FUN_0041c240
@@ -10639,9 +10639,9 @@ AudioManager::S154_FUN_0041c240(AudioManager *this,uint param_1,uint param_2)
         if (local_c == 9) {
           if (iVar5 == 0) {
 LAB_0041c661:
-            iVar5 = DecoderFloat(local_10);
+            iVar5 = Decoder_DecodeFloat(local_10);
             uVar2 = (undefined1)iVar5;
-            iVar5 = DecoderFloat(local_14);
+            iVar5 = Decoder_DecodeFloat(local_14);
             local_1c = CONCAT31(local_1c._1_3_,(char)iVar5);
             iVar5 = iVar4;
           }
@@ -10831,20 +10831,20 @@ undefined1 __thiscall FUN_0041cc80(void *this)
     }
 
     if (bVar2 != 0) {
-      bitShiftLeft1(local_4,(void *)0x2);
+      Decoder_ShiftLeft(local_4,(void *)0x2);
       puVar7 = local_8;
       piVar11 = piVar6;
-      bitShiftLeft1(local_c,(void *)0x14);
-      piVar6 = (int *)FUN_00401b90(piVar6,puVar7,piVar11);
+      Decoder_ShiftLeft(local_c,(void *)0x14);
+      piVar6 = (int *)Decoder_ReadInt(piVar6,puVar7,piVar11);
       bVar2 = S154_FUN_004116f0(this,local_24,*piVar6,(char)param_1);
       piVar6 = (int *)CONCAT31(extraout_var_00,bVar2);
       if (bVar2 != 0) {
         this->SoundCar = local_28;
-        bitShiftLeft1(&param_1,(void *)0x2);
+        Decoder_ShiftLeft(&param_1,(void *)0x2);
         puVar7 = local_4;
         piVar11 = piVar6;
-        bitShiftLeft1(local_8,(void *)0x14);
-        puVar8 = (undefined4 *)FUN_00401b90(piVar6,puVar7,piVar11);
+        Decoder_ShiftLeft(local_8,(void *)0x14);
+        puVar8 = (undefined4 *)Decoder_ReadInt(piVar6,puVar7,piVar11);
         uVar4 = *puVar8;
         this->field81_0x90 = (undefined1)local_24;
         this->field78_0x84 = uVar4;
@@ -11198,7 +11198,7 @@ int FUN_0041d620(char *param_1)
       return iVar3;
     }
     if (bVar6) {
-      puVar4 = (uint *)FUN_00403780(&local_8,local_4);
+      puVar4 = (uint *)Texture_Find(&local_8,local_4);
       local_8 = *puVar4;
     }
     iVar3 = FUN_0041d230(4,&local_8);
@@ -11585,7 +11585,7 @@ void __thiscall FUN_0041eb70(void *this,uint WindowWidth,uint WindowHeight)
     local_1c = 0x80;
     pSVar6 = Model::FUN_00401bf0((Model *)&param_5,(SpriteS1 *)local_18,
                                  &local_1c);
-    S110_FUN_00401b40(&DAT_005e3d64,(S110 *)&param_5,pSVar6);
+    Decoder_ProcessData(&DAT_005e3d64,(S110 *)&param_5,pSVar6);
     FUN_0041e0d0(&param_2);
   }
 
@@ -11723,10 +11723,10 @@ undefined4 __thiscall FUN_0041f9b0(byte this)
     }
   }
 
-int __thiscall DecoderFloat(void *this)
+int __thiscall Decoder_DecodeFloat(void *this)
 
 
-int __fastcall DecoderFloat(int *param_1)
+int __fastcall Decoder_DecodeFloat(int *param_1)
 
 
   if (bVar2 != 0) {
@@ -11734,7 +11734,7 @@ int __fastcall DecoderFloat(int *param_1)
     pSVar1 = this->CarSprite;
     pedID = 4;
     pvVar3 = pvVar4;
-    bitShiftLeft1(&stack0xffffffe8,(void *)0x4);
+    Decoder_ShiftLeft(&stack0xffffffe8,(void *)0x4);
     pvVar3 = Object::S60_FUN_00485540
                        (_gObject,pSVar1->S3_arr5031[0].PositionX,
                         pSVar1->S3_arr5031[0].PositionY,pvVar4,pvVar3,pedID);
@@ -11767,7 +11767,7 @@ FUN_0041fe70(void *this,undefined4 *param_1,char param_2)
 
 
   if (param_2 < '\0') {
-    FUN_00403780((void *)((int)this + param_2 * -4),param_1);
+    Texture_Find((void *)((int)this + param_2 * -4),param_1);
     return param_1;
   }
 
@@ -12274,11 +12274,11 @@ undefined4 * __thiscall FUN_00421b90(int param_1,undefined4 *param_2)
 
 
   if (15999 < sVar1) {
-    FUN_00401ae0(local_c,16000);
+    Decoder_SetValue(local_c,16000);
     this = local_8;
     puVar3 = this;
-    bitShiftLeft1(local_4,(void *)(0x7d01 - sVar1));
-    puVar2 = (undefined4 *)FUN_00401b90(this,puVar3,in_EAX);
+    Decoder_ShiftLeft(local_4,(void *)(0x7d01 - sVar1));
+    puVar2 = (undefined4 *)Decoder_ReadInt(this,puVar3,in_EAX);
     *param_2 = *puVar2;
     return param_2;
   }
@@ -12475,7 +12475,7 @@ switchD_004225ad_caseD_1:
     else if (param_1 == 2) {
       ppPVar8 = local_18;
       pSVar5 = FUN_0041ff60(pvVar2,(S110 *)&local_8);
-      puVar4 = (undefined4 *)FUN_00403780(pSVar5,ppPVar8);
+      puVar4 = (undefined4 *)Texture_Find(pSVar5,ppPVar8);
       sPed = (Ped *)*puVar4;
       if ((gCarSystemManager->field16_0x1a == 0) ||
          (gCarSystemManager->field16_0x1a == 3)) {
@@ -13220,7 +13220,7 @@ void __thiscall FUN_00424680(void *this,void *param_1)
   while( true ) {
     if (Driver != (Ped *)0x0) {
       Driver = this->Driver;
-      iVar3 = Ped::GetOccupation(Driver);
+      iVar3 = Ped__GetCurrentOccupation(Driver);
       if (iVar3 != 4) {
         Driver = (Ped *)Driver->ID;
         bVar2 = Char::S47_FUN_00420c30(gChar,(int)Driver);
@@ -13317,17 +13317,17 @@ void __thiscall FUN_00424680(void *this,void *param_1)
         pSVar9 = local_44->SpriteS1;
         while ((pSVar9 != (SpriteS1 *)0x0 && (bVar2 < 2))) {
           pSprite = pSVar9->S3_arr5031[1].PositionX;
-          pSVar4 = (S110 *)S110_FUN_00401b40((void *)(pSprite + 0x1c),
+          pSVar4 = (S110 *)Decoder_ProcessData((void *)(pSprite + 0x1c),
                                              (S110 *)(local_24 + 1),&param_3);
-          piVar5 = FUN_00403840(this_02,local_1c,pSVar4);
+          piVar5 = Matrix_Multiply(this_02,local_1c,pSVar4);
           pSVar8 = (SpriteS1 *)(local_1c + 1);
-          pSVar4 = (S110 *)S110_FUN_00401b40((void *)(pSprite + 0x18),
+          pSVar4 = (S110 *)Decoder_ProcessData((void *)(pSprite + 0x18),
                                              (S110 *)(local_1c + 2),&param_2);
-          piVar6 = FUN_00403840(local_10,(int *)local_10,pSVar4);
+          piVar6 = Matrix_Multiply(local_10,(int *)local_10,pSVar4);
           pSVar10 = (SpriteS1 *)(local_10 + 4);
-          pSVar4 = (S110 *)S110_FUN_00401b40((void *)(pSprite + 0x14),
+          pSVar4 = (S110 *)Decoder_ProcessData((void *)(pSprite + 0x14),
                                              (S110 *)(local_10 + 8),&param_1);
-          pSVar7 = (S9 *)FUN_00403840(this_03,&local_4,pSVar4);
+          pSVar7 = (S9 *)Matrix_Multiply(this_03,&local_4,pSVar4);
           pSVar10 = S9::S9_FUN_00401b20(pSVar7,pSVar10,piVar6);
           pSVar8 = S9::S9_FUN_00401b20((S9 *)pSVar10,pSVar8,piVar5);
           pSVar8 = pSVar8->FirstElement;
@@ -13419,17 +13419,17 @@ undefined4 FUN_00424ff0(SpriteS1 *param_1,S9 *pS9,undefined4 param_3)
         pSVar6 = S9::S9_FUN_00401b20((S9 *)&pS9,(SpriteS1 *)(local_48 + 8),
                                      &local_54);
         puVar7 = (undefined4 *)
-                 S110_FUN_00401b40(&pS9,(S110 *)(local_48 + 0xc),&local_54);
+                 Decoder_ProcessData(&pS9,(S110 *)(local_48 + 0xc),&local_54);
         pSVar8 = S9::S9_FUN_00401b20((S9 *)&param_1,
                                      (SpriteS1 *)(local_48 + 0x10),&local_50);
         puVar9 = (undefined4 *)
-                 S110_FUN_00401b40(&param_1,(S110 *)local_34,&local_50);
+                 Decoder_ProcessData(&param_1,(S110 *)local_34,&local_50);
         S9::FUN_0041e350((S9 *)(local_34 + 0x1c),*puVar9,pSVar8->FirstElement,
                          *puVar7,pSVar6->FirstElement);
         pSVar6 = S9::S9_FUN_00401b20((S9 *)local_48,(SpriteS1 *)(local_34 + 4),
                                      &DAT_005e4d4c);
         puVar7 = (undefined4 *)
-                 S110_FUN_00401b40(local_48,(S110 *)(local_34 + 8),&DAT_005e4d4c
+                 Decoder_ProcessData(local_48,(S110 *)(local_34 + 8),&DAT_005e4d4c
                                   );
         S9::FUN_0041e370((S9 *)(local_34 + 0x1c),*puVar7,pSVar6->FirstElement);
         cVar1 = S56::FUN_004477b0(gS56,(S9 *)(local_34 + 0x1c),0,0,0);
@@ -13458,12 +13458,12 @@ undefined4 FUN_00424ff0(SpriteS1 *param_1,S9 *pS9,undefined4 param_3)
       break;
     case 2:
       puVar7 = (undefined4 *)
-               S110_FUN_00401b40(&pS9,(S110 *)(local_34 + 0x10),&DAT_005e4d4c);
+               Decoder_ProcessData(&pS9,(S110 *)(local_34 + 0x10),&DAT_005e4d4c);
       pS9 = (S9 *)*puVar7;
       break;
     case 3:
       pSVar10 = (SpriteS1 *)
-                S110_FUN_00401b40(&param_1,(S110 *)(local_34 + 0x14),
+                Decoder_ProcessData(&param_1,(S110 *)(local_34 + 0x14),
                                   &DAT_005e4d4c);
       goto LAB_004252b6;
     case 4:
@@ -13771,12 +13771,12 @@ void __fastcall FUN_00426140(void *param_1)
     puVar2 = &gCarSystemManager->field18_0x1c;
     puVar6 = &DAT_005e4f38;
     pvVar3 = (void *)FUN_00401bd0(&DAT_005e4f40,&local_20,puVar2);
-    piVar4 = (int *)S110_FUN_00401b40(pvVar3,pSVar5,puVar6);
+    piVar4 = (int *)Decoder_ProcessData(pvVar3,pSVar5,puVar6);
     FUN_0040e530(&local_10,piVar4);
     pSVar5 = (S110 *)local_18;
     puVar6 = &DAT_005e4f38;
     pvVar3 = (void *)FUN_00401bd0(&DAT_005e4f40,&local_20,puVar2);
-    piVar4 = (int *)S110_FUN_00401b40(pvVar3,pSVar5,puVar6);
+    piVar4 = (int *)Decoder_ProcessData(pvVar3,pSVar5,puVar6);
     FUN_0040e530(&local_c,piVar4);
     puVar2 = (undefined4 *)FUN_0040f600(&local_10,local_18,param_1);
     local_20 = (S169 *)*puVar2;
@@ -13921,7 +13921,7 @@ uint FUN_004268c0(SpriteS1 *param_1)
     Car_FUN_00422670(this);
     Car_FUN_004beb70(this);
     if ((this->Driver != (Ped *)0x0) &&
-       (iVar5 = Ped::GetOccupation(this->Driver), iVar5 == 4)) {
+       (iVar5 = Ped__GetCurrentOccupation(this->Driver), iVar5 == 4)) {
       bVar1 = true;
     }
     Car_FUN_00423290(this);
@@ -13980,9 +13980,9 @@ uint FUN_004268c0(SpriteS1 *param_1)
     ppTVar2 = &local_8;
     this_00 = &iCount_32000;
     pS110 = this_00;
-    FUN_00401ae0(local_4,(short)iCount_32000);
+    Decoder_SetValue(local_4,(short)iCount_32000);
     this_01 = WorldCoordinateToScreenCoord(this_00,pS110,(int *)ppTVar2);
-    iVar3 = DecoderFloat(this_01);
+    iVar3 = Decoder_DecodeFloat(this_01);
     damage = (short)iVar3;
     if ((damage == 0) &&
        (bVar1 = Car_FUN_00403820((Car *)&local_8,(int *)&gSpriteS1_0),
@@ -14172,7 +14172,7 @@ LAB_00427882:
         puVar11 = local_f4;
       }
 LAB_004276c5:
-      pSVar9 = (S110 *)FUN_00401c80(pSVar12,puVar11);
+      pSVar9 = (S110 *)PedPool_Get(pSVar12,puVar11);
       FUN_0040f6b0(&local_108,pSVar9);
       Car_FUN_00423230(this,0x12,local_108,local_104);
       this_00 = local_100;
@@ -14233,7 +14233,7 @@ LAB_004278ed:
   }
 
     if (bVar2 != 0) {
-      iVar5 = Ped::GetOccupation(this->Driver);
+      iVar5 = Ped__GetCurrentOccupation(this->Driver);
       if (iVar5 != 1) {
         InfoByTypeCar = (short *)GetInfoByTypeCar(this);
         Hud::S86_FUN_004c6960(gHud,InfoByTypeCar);
@@ -14288,7 +14288,7 @@ LAB_00427c64:
                 switch(param_3) {
                 case 1:
                   puVar8 = (undefined4 *)
-                           S110_FUN_00401b40(&param_2,(S110 *)(local_50 + 4),
+                           Decoder_ProcessData(&param_2,(S110 *)(local_50 + 4),
                                              &DAT_005e4d4c);
                   param_2 = (S3 *)*puVar8;
                   pSVar11 = S9::S9_FUN_00401b20((S9 *)&param_1,
@@ -14297,20 +14297,20 @@ LAB_00427c64:
                   pSVar11 = pSVar11->FirstElement;
                   piVar14 = &local_88;
                   param_1 = (S3 *)pSVar11;
-                  iVar5 = DecoderFloat(&param_2);
-                  iVar6 = DecoderFloat(&param_1);
+                  iVar5 = Decoder_DecodeFloat(&param_2);
+                  iVar6 = Decoder_DecodeFloat(&param_1);
                   iVar5 = MapRelatedStruct::FindMaxZForTile
                                     (_gMapRelatedStruct,iVar6,iVar5,piVar14);
                   cVar2 = FUN_0040c810(iVar5,1,4);
                   if (cVar2 == '\0') {
                     puVar8 = (undefined4 *)
-                             S110_FUN_00401b40(&param_1,(S110 *)local_64,
+                             Decoder_ProcessData(&param_1,(S110 *)local_64,
                                                &DAT_005e4e34);
                     pSVar11 = (SpriteS1 *)*puVar8;
                     piVar14 = &local_88;
                     param_1 = (S3 *)pSVar11;
-                    iVar5 = DecoderFloat(&param_2);
-                    iVar6 = DecoderFloat(&param_1);
+                    iVar5 = Decoder_DecodeFloat(&param_2);
+                    iVar6 = Decoder_DecodeFloat(&param_1);
                     iVar5 = MapRelatedStruct::FindMaxZForTile
                                       (_gMapRelatedStruct,iVar6,iVar5,piVar14);
                     cVar2 = FUN_0040c810(iVar5,1,3);
@@ -14333,21 +14333,21 @@ LAB_00427c64:
                   pSVar11 = pSVar11->FirstElement;
                   piVar14 = &local_88;
                   param_1 = (S3 *)pSVar11;
-                  iVar5 = DecoderFloat(&param_2);
-                  iVar6 = DecoderFloat(&param_1);
+                  iVar5 = Decoder_DecodeFloat(&param_2);
+                  iVar6 = Decoder_DecodeFloat(&param_1);
                   iVar5 = MapRelatedStruct::FindMaxZForTile
                                     (_gMapRelatedStruct,iVar6,iVar5,piVar14);
                   cVar2 = FUN_0040c810(iVar5,1,4);
                   if (cVar2 == '\0') {
                     puVar8 = (undefined4 *)
-                             S110_FUN_00401b40(&param_1,(S110 *)(local_34 + 0x18
+                             Decoder_ProcessData(&param_1,(S110 *)(local_34 + 0x18
                                                                 ),&DAT_005e4e34)
                     ;
                     pSVar11 = (SpriteS1 *)*puVar8;
                     piVar14 = &local_88;
                     param_1 = (S3 *)pSVar11;
-                    iVar5 = DecoderFloat(&param_2);
-                    iVar6 = DecoderFloat(&param_1);
+                    iVar5 = Decoder_DecodeFloat(&param_2);
+                    iVar6 = Decoder_DecodeFloat(&param_1);
                     iVar5 = MapRelatedStruct::FindMaxZForTile
                                       (_gMapRelatedStruct,iVar6,iVar5,piVar14);
                     cVar2 = FUN_0040c810(iVar5,1,3);
@@ -14366,12 +14366,12 @@ LAB_00427c64:
                   pSVar11 = pSVar11->FirstElement;
                   param_1 = (S3 *)pSVar11;
                   puVar8 = (undefined4 *)
-                           S110_FUN_00401b40(&param_2,(S110 *)local_34,
+                           Decoder_ProcessData(&param_2,(S110 *)local_34,
                                              &DAT_005e4d4c);
                   param_2 = (S3 *)*puVar8;
                   piVar14 = &local_88;
-                  iVar5 = DecoderFloat(&param_2);
-                  iVar6 = DecoderFloat(&param_1);
+                  iVar5 = Decoder_DecodeFloat(&param_2);
+                  iVar6 = Decoder_DecodeFloat(&param_1);
                   iVar5 = MapRelatedStruct::FindMaxZForTile
                                     (_gMapRelatedStruct,iVar6,iVar5,piVar14);
                   cVar2 = FUN_0040c810(iVar5,1,2);
@@ -14382,8 +14382,8 @@ LAB_00427c64:
                     param_2 = (S3 *)pSVar7->FirstElement;
 LAB_004281f7:
                     piVar14 = &local_88;
-                    iVar5 = DecoderFloat(&param_2);
-                    iVar6 = DecoderFloat(&param_1);
+                    iVar5 = Decoder_DecodeFloat(&param_2);
+                    iVar6 = Decoder_DecodeFloat(&param_1);
                     iVar5 = MapRelatedStruct::FindMaxZForTile
                                       (_gMapRelatedStruct,iVar6,iVar5,piVar14);
                     cVar2 = FUN_0040c810(iVar5,1,1);
@@ -14395,17 +14395,17 @@ LAB_004281f7:
                   break;
                 case 4:
                   puVar8 = (undefined4 *)
-                           S110_FUN_00401b40(&param_1,(S110 *)(local_34 + 0x10),
+                           Decoder_ProcessData(&param_1,(S110 *)(local_34 + 0x10),
                                              &DAT_005e4d4c);
                   pSVar11 = (SpriteS1 *)*puVar8;
                   param_1 = (S3 *)pSVar11;
                   puVar8 = (undefined4 *)
-                           S110_FUN_00401b40(&param_2,(S110 *)local_44,
+                           Decoder_ProcessData(&param_2,(S110 *)local_44,
                                              &DAT_005e4d4c);
                   param_2 = (S3 *)*puVar8;
                   piVar14 = &local_88;
-                  iVar5 = DecoderFloat(&param_2);
-                  iVar6 = DecoderFloat(&param_1);
+                  iVar5 = Decoder_DecodeFloat(&param_2);
+                  iVar6 = Decoder_DecodeFloat(&param_1);
                   iVar5 = MapRelatedStruct::FindMaxZForTile
                                     (_gMapRelatedStruct,iVar6,iVar5,piVar14);
                   cVar2 = FUN_0040c810(iVar5,1,2);
@@ -14449,17 +14449,17 @@ LAB_00428232:
         pSVar7 = S9::S9_FUN_00401b20((S9 *)&param_2,(SpriteS1 *)&stack0xffffff98
                                      ,&local_84);
         puVar8 = (undefined4 *)
-                 S110_FUN_00401b40(&param_2,(S110 *)(local_64 + 4),&local_84);
+                 Decoder_ProcessData(&param_2,(S110 *)(local_64 + 4),&local_84);
         pSVar9 = S9::S9_FUN_00401b20((S9 *)&param_1,(SpriteS1 *)(local_64 + 0xc)
                                      ,&local_80);
         puVar10 = (undefined4 *)
-                  S110_FUN_00401b40(&param_1,(S110 *)local_50,&local_80);
+                  Decoder_ProcessData(&param_1,(S110 *)local_50,&local_80);
         S9::FUN_0041e350(&pS9,*puVar10,pSVar9->FirstElement,*puVar8,
                          pSVar7->FirstElement);
         pSVar7 = S9::S9_FUN_00401b20((S9 *)&local_7c,(SpriteS1 *)(local_50 + 8),
                                      &DAT_005e4d4c);
         puVar8 = (undefined4 *)
-                 S110_FUN_00401b40(&local_7c,(S110 *)(local_44 + 4),
+                 Decoder_ProcessData(&local_7c,(S110 *)(local_44 + 4),
                                    &DAT_005e4d4c);
         S9::FUN_0041e370(&pS9,*puVar8,pSVar7->FirstElement);
         cVar2 = S56::FUN_004477b0(gS56,&pS9,0,0,0);
@@ -14482,12 +14482,12 @@ LAB_00428232:
       break;
     case 2:
       puVar8 = (undefined4 *)
-               S110_FUN_00401b40(&param_2,(S110 *)(local_34 + 4),&DAT_005e4d4c);
+               Decoder_ProcessData(&param_2,(S110 *)(local_34 + 4),&DAT_005e4d4c);
       param_2 = (S3 *)*puVar8;
       break;
     case 3:
       pSVar11 = (SpriteS1 *)
-                S110_FUN_00401b40(&param_1,(S110 *)(local_34 + 0xc),
+                Decoder_ProcessData(&param_1,(S110 *)(local_34 + 0xc),
                                   &DAT_005e4d4c);
       goto LAB_00428445;
     case 4:
@@ -14530,7 +14530,7 @@ LAB_00428445:
                 switch(param_3) {
                 case (Ped *)0x1:
                   puVar11 = (undefined4 *)
-                            S110_FUN_00401b40(&param_2,(S110 *)local_54,
+                            Decoder_ProcessData(&param_2,(S110 *)local_54,
                                               &DAT_005e4d4c);
                   pSVar10 = (SpriteS1 *)*puVar11;
                   param_2 = (Ped *)pSVar10;
@@ -14540,20 +14540,20 @@ LAB_00428445:
                   pSVar13 = pSVar13->FirstElement;
                   piVar17 = &local_98;
                   param_1 = (S110 *)pSVar13;
-                  iVar6 = DecoderFloat(&param_2);
-                  iVar7 = DecoderFloat(&param_1);
+                  iVar6 = Decoder_DecodeFloat(&param_2);
+                  iVar7 = Decoder_DecodeFloat(&param_1);
                   iVar6 = MapRelatedStruct::FindMaxZForTile
                                     (_gMapRelatedStruct,iVar7,iVar6,piVar17);
                   cVar2 = FUN_0040c810(iVar6,1,4);
                   if (cVar2 == '\0') {
                     puVar11 = (undefined4 *)
-                              S110_FUN_00401b40(&param_1,(S110 *)local_64,
+                              Decoder_ProcessData(&param_1,(S110 *)local_64,
                                                 &DAT_005e4e34);
                     pSVar13 = (SpriteS1 *)*puVar11;
                     piVar17 = &local_98;
                     param_1 = (S110 *)pSVar13;
-                    iVar6 = DecoderFloat(&param_2);
-                    iVar7 = DecoderFloat(&param_1);
+                    iVar6 = Decoder_DecodeFloat(&param_2);
+                    iVar7 = Decoder_DecodeFloat(&param_1);
                     iVar6 = MapRelatedStruct::FindMaxZForTile
                                       (_gMapRelatedStruct,iVar7,iVar6,piVar17);
                     cVar2 = FUN_0040c810(iVar6,1,3);
@@ -14577,21 +14577,21 @@ LAB_00428445:
                   pSVar13 = pSVar13->FirstElement;
                   piVar17 = &local_98;
                   param_1 = (S110 *)pSVar13;
-                  iVar6 = DecoderFloat(&param_2);
-                  iVar7 = DecoderFloat(&param_1);
+                  iVar6 = Decoder_DecodeFloat(&param_2);
+                  iVar7 = Decoder_DecodeFloat(&param_1);
                   iVar6 = MapRelatedStruct::FindMaxZForTile
                                     (_gMapRelatedStruct,iVar7,iVar6,piVar17);
                   cVar2 = FUN_0040c810(iVar6,1,4);
                   if (cVar2 == '\0') {
                     puVar11 = (undefined4 *)
-                              S110_FUN_00401b40(&param_1,(S110 *)(local_34 +
+                              Decoder_ProcessData(&param_1,(S110 *)(local_34 +
                                                                  0x18),
                                                 &DAT_005e4e34);
                     pSVar13 = (SpriteS1 *)*puVar11;
                     piVar17 = &local_98;
                     param_1 = (S110 *)pSVar13;
-                    iVar6 = DecoderFloat(&param_2);
-                    iVar7 = DecoderFloat(&param_1);
+                    iVar6 = Decoder_DecodeFloat(&param_2);
+                    iVar7 = Decoder_DecodeFloat(&param_1);
                     iVar6 = MapRelatedStruct::FindMaxZForTile
                                       (_gMapRelatedStruct,iVar7,iVar6,piVar17);
                     cVar2 = FUN_0040c810(iVar6,1,3);
@@ -14610,13 +14610,13 @@ LAB_00428445:
                   pSVar13 = pSVar10->FirstElement;
                   param_1 = (S110 *)pSVar13;
                   puVar11 = (undefined4 *)
-                            S110_FUN_00401b40(&param_2,(S110 *)local_34,
+                            Decoder_ProcessData(&param_2,(S110 *)local_34,
                                               &DAT_005e4d4c);
                   pSVar10 = (SpriteS1 *)*puVar11;
                   piVar17 = &local_98;
                   param_2 = (Ped *)pSVar10;
-                  iVar6 = DecoderFloat(&param_2);
-                  iVar7 = DecoderFloat(&param_1);
+                  iVar6 = Decoder_DecodeFloat(&param_2);
+                  iVar7 = Decoder_DecodeFloat(&param_1);
                   iVar6 = MapRelatedStruct::FindMaxZForTile
                                     (_gMapRelatedStruct,iVar7,iVar6,piVar17);
                   cVar2 = FUN_0040c810(iVar6,1,2);
@@ -14628,8 +14628,8 @@ LAB_00428b21:
                     piVar17 = &local_98;
                     pSVar10 = pSVar10->FirstElement;
                     param_2 = (Ped *)pSVar10;
-                    iVar6 = DecoderFloat(&param_2);
-                    iVar7 = DecoderFloat(&param_1);
+                    iVar6 = Decoder_DecodeFloat(&param_2);
+                    iVar7 = Decoder_DecodeFloat(&param_1);
                     iVar6 = MapRelatedStruct::FindMaxZForTile
                                       (_gMapRelatedStruct,iVar7,iVar6,piVar17);
                     cVar2 = FUN_0040c810(iVar6,1,1);
@@ -14641,18 +14641,18 @@ LAB_00428b21:
                   break;
                 case (Ped *)0x4:
                   puVar11 = (undefined4 *)
-                            S110_FUN_00401b40(&param_1,(S110 *)(local_34 + 0x10)
+                            Decoder_ProcessData(&param_1,(S110 *)(local_34 + 0x10)
                                               ,&DAT_005e4d4c);
                   pSVar13 = (SpriteS1 *)*puVar11;
                   param_1 = (S110 *)pSVar13;
                   puVar11 = (undefined4 *)
-                            S110_FUN_00401b40(&param_2,(S110 *)local_44,
+                            Decoder_ProcessData(&param_2,(S110 *)local_44,
                                               &DAT_005e4d4c);
                   pSVar10 = (SpriteS1 *)*puVar11;
                   piVar17 = &local_98;
                   param_2 = (Ped *)pSVar10;
-                  iVar6 = DecoderFloat(&param_2);
-                  iVar7 = DecoderFloat(&param_1);
+                  iVar6 = Decoder_DecodeFloat(&param_2);
+                  iVar7 = Decoder_DecodeFloat(&param_1);
                   iVar6 = MapRelatedStruct::FindMaxZForTile
                                     (_gMapRelatedStruct,iVar7,iVar6,piVar17);
                   cVar2 = FUN_0040c810(iVar6,1,2);
@@ -14698,18 +14698,18 @@ LAB_00428b65:
         pSVar9 = S9::S9_FUN_00401b20((S9 *)&param_2,(SpriteS1 *)&stack0xffffff98
                                      ,(int *)&local_94);
         puVar11 = (undefined4 *)
-                  S110_FUN_00401b40(&param_2,(S110 *)(local_64 + 4),&local_94);
+                  Decoder_ProcessData(&param_2,(S110 *)(local_64 + 4),&local_94);
         local_94 = S9::S9_FUN_00401b20((S9 *)&param_1,
                                        (SpriteS1 *)(local_64 + 0xc),
                                        (int *)&local_8c);
         puVar12 = (undefined4 *)
-                  S110_FUN_00401b40(&param_1,(S110 *)(local_54 + 4),&local_8c);
+                  Decoder_ProcessData(&param_1,(S110 *)(local_54 + 4),&local_8c);
         S9::FUN_0041e350(&pS9,*puVar12,local_94->FirstElement,*puVar11,
                          pSVar9->FirstElement);
         pSVar9 = S9::S9_FUN_00401b20((S9 *)local_90,(SpriteS1 *)(local_54 + 0xc)
                                      ,&DAT_005e4d4c);
         puVar11 = (undefined4 *)
-                  S110_FUN_00401b40(local_90,(S110 *)(local_44 + 4),
+                  Decoder_ProcessData(local_90,(S110 *)(local_44 + 4),
                                     &DAT_005e4d4c);
         S9::FUN_0041e370(&pS9,*puVar11,pSVar9->FirstElement);
         cVar2 = S56::FUN_004477b0(gS56,&pS9,0,0,0);
@@ -14739,14 +14739,14 @@ LAB_00428b65:
       break;
     case (Ped *)0x2:
       puVar11 = (undefined4 *)
-                S110_FUN_00401b40(&param_2,(S110 *)(local_34 + 4),&DAT_005e4d4c)
+                Decoder_ProcessData(&param_2,(S110 *)(local_34 + 4),&DAT_005e4d4c)
       ;
       pSVar10 = (SpriteS1 *)*puVar11;
       param_2 = (Ped *)pSVar10;
       break;
     case (Ped *)0x3:
       pSVar13 = (SpriteS1 *)
-                S110_FUN_00401b40(&param_1,(S110 *)(local_34 + 0xc),
+                Decoder_ProcessData(&param_1,(S110 *)(local_34 + 0xc),
                                   &DAT_005e4d4c);
       goto LAB_00428d80;
     case (Ped *)0x4:
@@ -14775,7 +14775,7 @@ void __thiscall Destruct(void *this)
     puVar4 = &DAT_005e4cec;
     local_8 = 200;
     this_00 = (void *)FUN_00401bd0(&param_1,local_4,&local_8);
-    iCount_32000 = DecoderFloat(this_00);
+    iCount_32000 = Decoder_DecodeFloat(this_00);
     sVar3 = Car_CollisionOnCar(this,iCount_32000,puVar4);
     return sVar3;
   }
@@ -14877,23 +14877,23 @@ void __thiscall FUN_004295c0(void *this,char param_1)
           puVar9 = puVar20;
           Car_FUN_0041e440(this,(undefined4 *)(local_a0 + 0xc));
           puVar10 = puVar9;
-          bitShiftLeft1(local_5c + 8,(void *)0xa);
+          Decoder_ShiftLeft(local_5c + 8,(void *)0xa);
           pSVar5 = (S110 *)(local_a0 + 0x14);
           puVar12 = &local_34;
           Car_FUN_0041e440(this,puVar12);
-          pSVar11 = (S9 *)S110_FUN_00401b40(puVar12,pSVar5,puVar10);
+          pSVar11 = (S9 *)Decoder_ProcessData(puVar12,pSVar5,puVar10);
           pSVar16 = pSVar11;
-          bitShiftLeft1(local_84,(void *)0x1);
+          Decoder_ShiftLeft(local_84,(void *)0x1);
           pSVar15 = (SpriteS1 *)(local_5c + 0x10);
           pSVar17 = pSVar16;
           Car_FUN_0041e430(this,&local_7c);
           pSVar15 = S9::S9_FUN_00401b20(pSVar16,pSVar15,(int *)pSVar17);
           local_dc._0_4_ = pSVar15;
-          bitShiftLeft1(local_cc + 0xc,(void *)0x1);
+          Decoder_ShiftLeft(local_cc + 0xc,(void *)0x1);
           pSVar5 = (S110 *)local_74;
           pSVar21 = pSVar5;
           Car_FUN_0041e430(this,&local_44);
-          puVar12 = (undefined4 *)S110_FUN_00401b40(pSVar5,pSVar21,pSVar15);
+          puVar12 = (undefined4 *)Decoder_ProcessData(pSVar5,pSVar21,pSVar15);
           FUN_00420470(&local_18,(Car *)*puVar12,
                        (Ped *)*(SpriteS1 **)local_dc._0_4_,
                        *(Ped **)pSVar11->Arr_24,*puVar9,*puVar20);
@@ -14901,7 +14901,7 @@ void __thiscall FUN_004295c0(void *this,char param_1)
         case (int *)0x1:
           Car_FUN_0041e450(this,&local_d0);
           piVar13 = piVar6;
-          bitShiftLeft1(local_cc,(void *)0xa);
+          Decoder_ShiftLeft(local_cc,(void *)0xa);
           pSVar15 = (SpriteS1 *)(local_dc + 8);
           pSVar18 = pSVar15;
           Car_FUN_0041e440(this,local_2c);
@@ -14909,17 +14909,17 @@ void __thiscall FUN_004295c0(void *this,char param_1)
           pSVar18 = pSVar8;
           Car_FUN_0041e440(this,(undefined4 *)(local_cc + 0x18));
           pSVar19 = pSVar18;
-          bitShiftLeft1(local_64,(void *)0x1);
+          Decoder_ShiftLeft(local_64,(void *)0x1);
           pSVar15 = (SpriteS1 *)(local_cc + 0x20);
           pSpriteS1 = pSVar15;
           Car_FUN_0041e430(this,&local_3c);
           pSVar15 = S9::S9_FUN_00401b20((S9 *)pSVar15,pSpriteS1,(int *)pSVar19);
           local_dc._0_4_ = pSVar15;
-          bitShiftLeft1(local_a4,(void *)0x1);
+          Decoder_ShiftLeft(local_a4,(void *)0x1);
           pSVar5 = (S110 *)local_5c;
           puVar20 = (undefined4 *)(local_a0 + 4);
           Car_FUN_0041e430(this,puVar20);
-          puVar20 = (undefined4 *)S110_FUN_00401b40(puVar20,pSVar5,pSVar15);
+          puVar20 = (undefined4 *)Decoder_ProcessData(puVar20,pSVar5,pSVar15);
           FUN_00420470(&local_18,(Car *)*puVar20,
                        (Ped *)*(SpriteS1 **)local_dc._0_4_,
                        (Ped *)pSVar18->FirstElement,pSVar8->FirstElement,*piVar6
@@ -14928,19 +14928,19 @@ void __thiscall FUN_004295c0(void *this,char param_1)
         case (int *)0x2:
           Car_FUN_0041e450(this,&local_6c);
           piVar13 = piVar6;
-          bitShiftLeft1(local_cc + 0x10,(void *)0x1);
+          Decoder_ShiftLeft(local_cc + 0x10,(void *)0x1);
           pSVar15 = (SpriteS1 *)(local_cc + 0x14);
           pSVar16 = (S9 *)(local_cc + 0x1c);
           Car_FUN_0041e440(this,(undefined4 *)pSVar16);
           pSVar19 = S9::S9_FUN_00401b20(pSVar16,pSVar15,piVar13);
           pSVar15 = pSVar19;
-          bitShiftLeft1(local_a8,(void *)0x1);
+          Decoder_ShiftLeft(local_a8,(void *)0x1);
           pSVar5 = (S110 *)local_a0;
           pSVar18 = pSVar15;
           Car_FUN_0041e440(this,(undefined4 *)(local_a0 + 8));
-          piVar14 = (int *)S110_FUN_00401b40(pSVar15,pSVar5,pSVar18);
+          piVar14 = (int *)Decoder_ProcessData(pSVar15,pSVar5,pSVar18);
           piVar13 = piVar14;
-          bitShiftLeft1(local_a0 + 0x10,(void *)0xa);
+          Decoder_ShiftLeft(local_a0 + 0x10,(void *)0xa);
           pSVar15 = (SpriteS1 *)(local_a0 + 0x18);
           pSVar18 = pSVar15;
           Car_FUN_0041e430(this,&local_80);
@@ -14955,25 +14955,25 @@ void __thiscall FUN_004295c0(void *this,char param_1)
           pSVar16 = (S9 *)(local_74 + 4);
           Car_FUN_0041e450(this,(undefined4 *)pSVar16);
           pSVar17 = pSVar16;
-          bitShiftLeft1(local_68,(void *)0x1);
+          Decoder_ShiftLeft(local_68,(void *)0x1);
           pSVar15 = (SpriteS1 *)(local_64 + 4);
           pSVar11 = pSVar17;
           Car_FUN_0041e440(this,(undefined4 *)(local_5c + 4));
           pSVar18 = S9::S9_FUN_00401b20(pSVar17,pSVar15,(int *)pSVar11);
           pSVar15 = pSVar18;
-          bitShiftLeft1(local_5c + 0xc,(void *)0x1);
+          Decoder_ShiftLeft(local_5c + 0xc,(void *)0x1);
           pSVar5 = (S110 *)(local_5c + 0x14);
           pSVar21 = pSVar5;
           Car_FUN_0041e440(this,&local_40);
-          pSVar19 = (SpriteS1 *)S110_FUN_00401b40(pSVar5,pSVar21,pSVar15);
+          pSVar19 = (SpriteS1 *)Decoder_ProcessData(pSVar5,pSVar21,pSVar15);
           pSVar15 = pSVar19;
           Car_FUN_0041e430(this,&local_38);
           local_dc._0_4_ = pSVar15;
-          bitShiftLeft1(local_30,(void *)0xa);
+          Decoder_ShiftLeft(local_30,(void *)0xa);
           pSVar5 = (S110 *)(local_2c + 1);
           pSVar21 = pSVar5;
           Car_FUN_0041e430(this,&local_20);
-          puVar20 = (undefined4 *)S110_FUN_00401b40(pSVar5,pSVar21,pSVar15);
+          puVar20 = (undefined4 *)Decoder_ProcessData(pSVar5,pSVar21,pSVar15);
           FUN_00420470(&local_18,(Car *)*puVar20,
                        (Ped *)*(SpriteS1 **)local_dc._0_4_,
                        (Ped *)pSVar19->FirstElement,pSVar18->FirstElement,
@@ -15547,7 +15547,7 @@ void __fastcall FUN_0042b350(int *param_1)
       local_5c = (undefined1  [4])pSVar7;
       if (local_5f == 0) {
         puVar5 = (undefined4 *)
-                 S110_FUN_00401b40(local_58,&local_3c,&DAT_005e520c);
+                 Decoder_ProcessData(local_58,&local_3c,&DAT_005e520c);
         pSVar8 = (SpriteS1 *)*puVar5;
         local_58[4] = 3;
         param_1[0x12] = 4;
@@ -15578,7 +15578,7 @@ void __fastcall FUN_0042b350(int *param_1)
       }
       else {
         puVar5 = (undefined4 *)
-                 S110_FUN_00401b40(local_58,(S110 *)&local_3c.field_0x10,
+                 Decoder_ProcessData(local_58,(S110 *)&local_3c.field_0x10,
                                    &DAT_005e512c);
         pSVar8 = (SpriteS1 *)*puVar5;
         local_58[4] = 6;
@@ -15594,7 +15594,7 @@ void __fastcall FUN_0042b350(int *param_1)
       local_58._0_4_ = pSVar8;
       if (local_5f == 0) {
         puVar5 = (undefined4 *)
-                 S110_FUN_00401b40(local_5c,(S110 *)&local_3c.field15_0x18,
+                 Decoder_ProcessData(local_5c,(S110 *)&local_3c.field15_0x18,
                                    &DAT_005e520c);
         pSVar7 = (SpriteS1 *)*puVar5;
         local_58[4] = 3;
@@ -15624,7 +15624,7 @@ void __fastcall FUN_0042b350(int *param_1)
       }
       else {
         pSVar7 = (SpriteS1 *)
-                 S110_FUN_00401b40(local_5c,(S110 *)&local_3c.field22_0x28,
+                 Decoder_ProcessData(local_5c,(S110 *)&local_3c.field22_0x28,
                                    &DAT_005e520c);
         local_58[4] = 6;
       }
@@ -15639,7 +15639,7 @@ void __fastcall FUN_0042b350(int *param_1)
         switch(param_1[0x13]) {
         case 1:
           puVar5 = (undefined4 *)
-                   S110_FUN_00401b40(local_5c,(S110 *)&local_3c.field23_0x2c,
+                   Decoder_ProcessData(local_5c,(S110 *)&local_3c.field23_0x2c,
                                      &DAT_005e512c);
           pSVar7 = (SpriteS1 *)*puVar5;
           local_5c = (undefined1  [4])pSVar7;
@@ -15658,7 +15658,7 @@ void __fastcall FUN_0042b350(int *param_1)
           goto LAB_0042b7c3;
         case 4:
           pSVar8 = (SpriteS1 *)
-                   S110_FUN_00401b40(local_58,(S110 *)&stack0xfffffffc,
+                   Decoder_ProcessData(local_58,(S110 *)&stack0xfffffffc,
                                      &DAT_005e512c);
 LAB_0042b7c3:
           pSVar8 = pSVar8->FirstElement;
@@ -15704,10 +15704,10 @@ void __thiscall FUN_0042b8a0(void *this)
   if (iVar4 == 0) {
 LAB_0042b911:
                               // WARNING: Load size is inaccurate
-    iVar4 = DecoderFloat((void *)(*(int *)(*this + 0x50) + 0x1c));
+    iVar4 = Decoder_DecodeFloat((void *)(*(int *)(*this + 0x50) + 0x1c));
     iVar4 = iVar4 + -1;
-    iVar5 = DecoderFloat(&DAT_005e5198);
-    iVar6 = DecoderFloat(&DAT_005e5244);
+    iVar5 = Decoder_DecodeFloat(&DAT_005e5198);
+    iVar6 = Decoder_DecodeFloat(&DAT_005e5244);
     iVar4 = MapRelatedStruct::S16_FUN_004653c0
                       (_gMapRelatedStruct,iVar6,iVar5,iVar4);
   }
@@ -15903,17 +15903,17 @@ LAB_0042bea7:
 switchD_0042be36_caseD_4:
         FUN_0040e530(&local_1c,(int *)&local_24);
         FUN_0040e530(&local_20,&local_28);
-        iVar4 = DecoderFloat(&local_18);
-        iVar5 = DecoderFloat(&local_20);
-        iVar6 = DecoderFloat(&local_1c);
+        iVar4 = Decoder_DecodeFloat(&local_18);
+        iVar5 = Decoder_DecodeFloat(&local_20);
+        iVar6 = Decoder_DecodeFloat(&local_1c);
         iVar4 = MapRelatedStruct::S16_FUN_004653c0
                           (_gMapRelatedStruct,iVar6,iVar5,iVar4);
         if (iVar4 == 0) {
 LAB_0042bf13:
-          iVar4 = DecoderFloat(&local_18);
+          iVar4 = Decoder_DecodeFloat(&local_18);
           iVar4 = iVar4 + -1;
-          iVar5 = DecoderFloat(&local_20);
-          iVar6 = DecoderFloat(&local_1c);
+          iVar5 = Decoder_DecodeFloat(&local_20);
+          iVar6 = Decoder_DecodeFloat(&local_1c);
           iVar4 = MapRelatedStruct::S16_FUN_004653c0
                             (_gMapRelatedStruct,iVar6,iVar5,iVar4);
         }
@@ -16139,11 +16139,11 @@ LAB_0042bf13:
   switch(pCVar2) {
   case (Car *)0x1:
     pTVar13 = this->s72;
-    pvVar6 = (void *)DecoderFloat((void *)((int)pTVar13[10].void1 + 0x14));
+    pvVar6 = (void *)Decoder_DecodeFloat((void *)((int)pTVar13[10].void1 + 0x14));
     _local_24 = (Player *)CONCAT31(uStack_23,(byte)pvVar6);
     FUN_0040ce30(local_20,(byte)pvVar6);
     puVar7 = (undefined4 *)
-             S110_FUN_00401b40((void *)((int)pTVar13[10].void1 + 0x14),
+             Decoder_ProcessData((void *)((int)pTVar13[10].void1 + 0x14),
                                (S110 *)(local_20 + 4),pvVar6);
     local_28 = (Player *)*puVar7;
     bVar4 = FUN_004037e0(&local_28,(SpriteS1 *)&DAT_005e5380);
@@ -16173,11 +16173,11 @@ LAB_0042c347:
     goto LAB_0042c370;
   case (Car *)0x2:
     pTVar13 = this->s72;
-    pvVar6 = (void *)DecoderFloat((void *)((int)pTVar13[10].void1 + 0x14));
+    pvVar6 = (void *)Decoder_DecodeFloat((void *)((int)pTVar13[10].void1 + 0x14));
     _local_24 = (Player *)CONCAT31(uStack_23,(byte)pvVar6);
     FUN_0040ce30(local_18,(byte)pvVar6);
     puVar7 = (undefined4 *)
-             S110_FUN_00401b40((void *)((int)pTVar13[10].void1 + 0x14),
+             Decoder_ProcessData((void *)((int)pTVar13[10].void1 + 0x14),
                                (S110 *)(local_18 + 4),pvVar6);
     local_28 = (Player *)*puVar7;
     bVar4 = FUN_004037e0(&local_28,(SpriteS1 *)&DAT_005e5380);
@@ -16197,11 +16197,11 @@ LAB_0042c347:
     break;
   case (Car *)0x3:
     pTVar13 = this->s72;
-    pvVar6 = (void *)DecoderFloat((void *)((int)pTVar13[10].void1 + 0x18));
+    pvVar6 = (void *)Decoder_DecodeFloat((void *)((int)pTVar13[10].void1 + 0x18));
     _local_24 = (Player *)CONCAT31(uStack_23,(byte)pvVar6);
     FUN_0040ce30(local_10,(byte)pvVar6);
     puVar7 = (undefined4 *)
-             S110_FUN_00401b40((void *)((int)pTVar13[10].void1 + 0x18),
+             Decoder_ProcessData((void *)((int)pTVar13[10].void1 + 0x18),
                                (S110 *)(local_10 + 4),pvVar6);
     local_28 = (Player *)*puVar7;
     bVar4 = Player::CheckCondition((Player *)&local_28,&DAT_005e5380);
@@ -16225,11 +16225,11 @@ LAB_0042c347:
     break;
   case (Car *)0x4:
     pTVar13 = this->s72;
-    pvVar6 = (void *)DecoderFloat((void *)((int)pTVar13[10].void1 + 0x18));
+    pvVar6 = (void *)Decoder_DecodeFloat((void *)((int)pTVar13[10].void1 + 0x18));
     _local_24 = (Player *)CONCAT31(uStack_23,(byte)pvVar6);
     FUN_0040ce30(local_8,(byte)pvVar6);
     puVar7 = (undefined4 *)
-             S110_FUN_00401b40((void *)((int)pTVar13[10].void1 + 0x18),
+             Decoder_ProcessData((void *)((int)pTVar13[10].void1 + 0x18),
                                (S110 *)(local_8 + 4),pvVar6);
     local_28 = (Player *)*puVar7;
     bVar4 = Player::CheckCondition((Player *)&local_28,&DAT_005e5380);
@@ -16290,10 +16290,10 @@ void __thiscall FUN_0042c8b0(void *this)
       if (iVar7 == 0) {
 LAB_0042cb70:
                               // WARNING: Load size is inaccurate
-        iVar7 = DecoderFloat((void *)(*(int *)(*this + 0x50) + 0x1c));
+        iVar7 = Decoder_DecodeFloat((void *)(*(int *)(*this + 0x50) + 0x1c));
         iVar7 = iVar7 + -1;
-        iVar11 = DecoderFloat(&DAT_005e5198);
-        iVar12 = DecoderFloat(&DAT_005e5244);
+        iVar11 = Decoder_DecodeFloat(&DAT_005e5198);
+        iVar12 = Decoder_DecodeFloat(&DAT_005e5244);
         iVar7 = MapRelatedStruct::S16_FUN_004653c0
                           (_gMapRelatedStruct,iVar12,iVar11,iVar7);
       }
@@ -16361,11 +16361,11 @@ void __thiscall FUN_0042d390(void *this)
   if (iVar7 == 0) {
 LAB_0042d5e7:
     puVar5 = (undefined4 *)
-             S110_FUN_00401b40(&DAT_005e5218,(S110 *)&local_10,&DAT_005e512c);
+             Decoder_ProcessData(&DAT_005e5218,(S110 *)&local_10,&DAT_005e512c);
     local_10 = (Car *)*puVar5;
-    iVar7 = DecoderFloat(&local_10);
-    iVar8 = DecoderFloat(&DAT_005e538c);
-    iVar9 = DecoderFloat(&DAT_005e5168);
+    iVar7 = Decoder_DecodeFloat(&local_10);
+    iVar8 = Decoder_DecodeFloat(&DAT_005e538c);
+    iVar9 = Decoder_DecodeFloat(&DAT_005e5168);
     iVar7 = MapRelatedStruct::S16_FUN_004653c0
                       (_gMapRelatedStruct,iVar9,iVar8,iVar7);
   }
@@ -16393,11 +16393,11 @@ LAB_0042d692:
   if (iVar7 == 0) {
 LAB_0042d785:
     puVar5 = (undefined4 *)
-             S110_FUN_00401b40(&DAT_005e5218,(S110 *)&local_10,&DAT_005e512c);
+             Decoder_ProcessData(&DAT_005e5218,(S110 *)&local_10,&DAT_005e512c);
     local_10 = (Car *)*puVar5;
-    iVar7 = DecoderFloat(&local_10);
-    iVar8 = DecoderFloat(&DAT_005e538c);
-    iVar9 = DecoderFloat(&DAT_005e5168);
+    iVar7 = Decoder_DecodeFloat(&local_10);
+    iVar8 = Decoder_DecodeFloat(&DAT_005e538c);
+    iVar9 = Decoder_DecodeFloat(&DAT_005e5168);
     iVar7 = MapRelatedStruct::S16_FUN_004653c0
                       (_gMapRelatedStruct,iVar9,iVar8,iVar7);
   }
@@ -16446,9 +16446,9 @@ LAB_0042d785:
         FUN_0042a6b0(local_18,(undefined4 *)local_18,(S110 *)&DAT_005e53d8,
                      &DAT_005e5320,(S110 *)&DAT_005e5168,(S110 *)&DAT_005e538c);
         local_170 = (SpriteS1 *)pCVar17->s72;
-        piVar11 = (int *)S110_FUN_00401b40(&DAT_005e5168,(S110 *)local_50,
+        piVar11 = (int *)Decoder_ProcessData(&DAT_005e5168,(S110 *)local_50,
                                            &DAT_005e53d8);
-        pvVar15 = S110_FUN_00401b40(&DAT_005e538c,(S110 *)(local_38 + 0x10),
+        pvVar15 = Decoder_ProcessData(&DAT_005e538c,(S110 *)(local_38 + 0x10),
                                     &DAT_005e5320);
         psVar14 = FUN_0040e8d0(this_02,(undefined2 *)(local_88 + 4),pvVar15,
                                piVar11);
@@ -16471,9 +16471,9 @@ LAB_0042d785:
                      (S110 *)&DAT_005e53d8,&DAT_005e5320,(S110 *)&DAT_005e5168,
                      (S110 *)&DAT_005e538c);
         local_170 = (SpriteS1 *)*piVar11;
-        piVar11 = (int *)S110_FUN_00401b40(&DAT_005e5168,(S110 *)(local_38 + 8),
+        piVar11 = (int *)Decoder_ProcessData(&DAT_005e5168,(S110 *)(local_38 + 8),
                                            &DAT_005e53d8);
-        pvVar15 = S110_FUN_00401b40(&DAT_005e538c,(S110 *)local_58,&DAT_005e5320
+        pvVar15 = Decoder_ProcessData(&DAT_005e538c,(S110 *)local_58,&DAT_005e5320
                                    );
         psVar14 = FUN_0040e8d0(this_01,&local_102,pvVar15,piVar11);
         local_168._4_2_ = *psVar14;
@@ -16496,10 +16496,10 @@ LAB_0042d785:
                      (S110 *)&DAT_005e53d8,&DAT_005e5320,(S110 *)&DAT_005e5168,
                      (S110 *)&DAT_005e538c);
         local_170 = (SpriteS1 *)*piVar11;
-        piVar11 = (int *)S110_FUN_00401b40(&DAT_005e5168,
+        piVar11 = (int *)Decoder_ProcessData(&DAT_005e5168,
                                            (S110 *)(local_88 + 0x14),
                                            &DAT_005e53d8);
-        pvVar15 = S110_FUN_00401b40(&DAT_005e538c,(S110 *)(local_70 + 4),
+        pvVar15 = Decoder_ProcessData(&DAT_005e538c,(S110 *)(local_70 + 4),
                                     &DAT_005e5320);
         psVar14 = FUN_0040e8d0(this_07,&local_ea,pvVar15,piVar11);
         local_168._4_2_ = *psVar14;
@@ -16530,10 +16530,10 @@ LAB_0042d785:
         FUN_0042a6b0(this_05,piVar11,(S110 *)&DAT_005e53d8,&DAT_005e5320,
                      (S110 *)&DAT_005e5168,(S110 *)&DAT_005e538c);
         local_170 = (SpriteS1 *)*piVar11;
-        piVar11 = (int *)S110_FUN_00401b40(&DAT_005e5168,
+        piVar11 = (int *)Decoder_ProcessData(&DAT_005e5168,
                                            (S110 *)(local_18 + 0x10),
                                            &DAT_005e53d8);
-        pvVar15 = S110_FUN_00401b40(&DAT_005e538c,(S110 *)local_40,&DAT_005e5320
+        pvVar15 = Decoder_ProcessData(&DAT_005e538c,(S110 *)local_40,&DAT_005e5320
                                    );
         psVar14 = FUN_0040e8d0(local_f2,(undefined2 *)local_f2,pvVar15,piVar11);
         local_168._4_2_ = *psVar14;
@@ -16559,9 +16559,9 @@ LAB_0042d785:
       FUN_0042a6b0(this_09,piVar11,(S110 *)&DAT_005e53d8,&DAT_005e5320,
                    (S110 *)&DAT_005e5168,(S110 *)&DAT_005e538c);
       local_170 = (SpriteS1 *)*piVar11;
-      piVar11 = (int *)S110_FUN_00401b40(&DAT_005e5168,(S110 *)(local_60 + 4),
+      piVar11 = (int *)Decoder_ProcessData(&DAT_005e5168,(S110 *)(local_60 + 4),
                                          &DAT_005e53d8);
-      pvVar15 = S110_FUN_00401b40(&DAT_005e538c,(S110 *)(local_58 + 4),
+      pvVar15 = Decoder_ProcessData(&DAT_005e538c,(S110 *)(local_58 + 4),
                                   &DAT_005e5320);
       psVar14 = FUN_0040e8d0(local_134,(undefined2 *)local_134,pvVar15,piVar11);
       local_168._4_2_ = *psVar14;
@@ -16587,9 +16587,9 @@ LAB_0042d785:
       FUN_0042a6b0(this_13,piVar11,(S110 *)&DAT_005e53d8,&DAT_005e5320,
                    (S110 *)&DAT_005e5168,(S110 *)&DAT_005e538c);
       local_170 = (SpriteS1 *)*piVar11;
-      piVar11 = (int *)S110_FUN_00401b40(&DAT_005e5168,(S110 *)(local_38 + 0xc),
+      piVar11 = (int *)Decoder_ProcessData(&DAT_005e5168,(S110 *)(local_38 + 0xc),
                                          &DAT_005e53d8);
-      pvVar15 = S110_FUN_00401b40(&DAT_005e538c,(S110 *)(local_38 + 0x14),
+      pvVar15 = Decoder_ProcessData(&DAT_005e538c,(S110 *)(local_38 + 0x14),
                                   &DAT_005e5320);
       psVar14 = FUN_0040e8d0(local_a2,(undefined2 *)local_a2,pvVar15,piVar11);
       local_168._4_2_ = *psVar14;
@@ -16613,9 +16613,9 @@ LAB_0042d785:
                    (S110 *)&DAT_005e53d8,&DAT_005e5320,(S110 *)&DAT_005e5168,
                    (S110 *)&DAT_005e538c);
       local_170 = (SpriteS1 *)*piVar11;
-      piVar11 = (int *)S110_FUN_00401b40(&DAT_005e5168,(S110 *)(local_50 + 0xc),
+      piVar11 = (int *)Decoder_ProcessData(&DAT_005e5168,(S110 *)(local_50 + 0xc),
                                          &DAT_005e53d8);
-      pvVar15 = S110_FUN_00401b40(&DAT_005e538c,(S110 *)(local_40 + 4),
+      pvVar15 = Decoder_ProcessData(&DAT_005e538c,(S110 *)(local_40 + 4),
                                   &DAT_005e5320);
       psVar14 = FUN_0040e8d0(this_11,(undefined2 *)(local_c0 + 0xe),pvVar15,
                              piVar11);
@@ -16638,9 +16638,9 @@ LAB_0042d785:
       FUN_0042a6b0(local_1c,(undefined4 *)local_1c,(S110 *)&DAT_005e53d8,
                    &DAT_005e5320,(S110 *)&DAT_005e5168,(S110 *)&DAT_005e538c);
       local_170 = (SpriteS1 *)*piVar11;
-      piVar11 = (int *)S110_FUN_00401b40(&DAT_005e5168,(S110 *)(local_18 + 4),
+      piVar11 = (int *)Decoder_ProcessData(&DAT_005e5168,(S110 *)(local_18 + 4),
                                          &DAT_005e53d8);
-      pvVar15 = S110_FUN_00401b40(&DAT_005e538c,(S110 *)(local_18 + 0xc),
+      pvVar15 = Decoder_ProcessData(&DAT_005e538c,(S110 *)(local_18 + 0xc),
                                   &DAT_005e5320);
       psVar14 = FUN_0040e8d0(this_15,(undefined2 *)(local_e8 + 6),pvVar15,
                              piVar11);
@@ -16663,9 +16663,9 @@ LAB_0042d785:
       FUN_0042a6b0(local_130,(undefined4 *)local_130,(S110 *)&DAT_005e53d8,
                    &DAT_005e5320,(S110 *)&DAT_005e5168,(S110 *)&DAT_005e538c);
       local_170 = (SpriteS1 *)*piVar11;
-      piVar11 = (int *)S110_FUN_00401b40(&DAT_005e5168,(S110 *)local_128,
+      piVar11 = (int *)Decoder_ProcessData(&DAT_005e5168,(S110 *)local_128,
                                          &DAT_005e53d8);
-      pvVar15 = S110_FUN_00401b40(&DAT_005e538c,(S110 *)local_120,&DAT_005e5320)
+      pvVar15 = Decoder_ProcessData(&DAT_005e538c,(S110 *)local_120,&DAT_005e5320)
       ;
       psVar14 = FUN_0040e8d0(this_21,&local_12a,pvVar15,piVar11);
       local_168._4_2_ = *psVar14;
@@ -16753,9 +16753,9 @@ LAB_0042e2de:
         FUN_0042a6b0(this_17,&local_20,(S110 *)&DAT_005e53d8,&DAT_005e5320,
                      (S110 *)&DAT_005e5168,(S110 *)&DAT_005e538c);
         local_170 = (SpriteS1 *)*piVar11;
-        piVar11 = (int *)S110_FUN_00401b40(&DAT_005e5168,(S110 *)local_70,
+        piVar11 = (int *)Decoder_ProcessData(&DAT_005e5168,(S110 *)local_70,
                                            &DAT_005e53d8);
-        pvVar15 = S110_FUN_00401b40(&DAT_005e538c,(S110 *)local_38,&DAT_005e5320
+        pvVar15 = Decoder_ProcessData(&DAT_005e538c,(S110 *)local_38,&DAT_005e5320
                                    );
         psVar14 = FUN_0040e8d0(this_18,(undefined2 *)(local_88 + 6),pvVar15,
                                piVar11);
@@ -16778,9 +16778,9 @@ LAB_0042e2de:
         FUN_0042a6b0(this_19,piVar11,(S110 *)&DAT_005e53d8,&DAT_005e5320,
                      (S110 *)&DAT_005e5168,(S110 *)&DAT_005e538c);
         local_170 = (SpriteS1 *)*piVar11;
-        piVar11 = (int *)S110_FUN_00401b40(&DAT_005e5168,(S110 *)(local_18 + 8),
+        piVar11 = (int *)Decoder_ProcessData(&DAT_005e5168,(S110 *)(local_18 + 8),
                                            &DAT_005e53d8);
-        pvVar15 = S110_FUN_00401b40(&DAT_005e538c,(S110 *)local_60,&DAT_005e5320
+        pvVar15 = Decoder_ProcessData(&DAT_005e538c,(S110 *)local_60,&DAT_005e5320
                                    );
         psVar14 = FUN_0040e8d0(local_132,(undefined2 *)local_132,pvVar15,piVar11
                               );
@@ -16870,9 +16870,9 @@ LAB_0042e6e8:
                      (S110 *)&DAT_005e53d8,&DAT_005e5320,(S110 *)&DAT_005e5168,
                      (S110 *)&DAT_005e538c);
         local_170 = (SpriteS1 *)*piVar11;
-        piVar11 = (int *)S110_FUN_00401b40(&DAT_005e5168,(S110 *)local_100,
+        piVar11 = (int *)Decoder_ProcessData(&DAT_005e5168,(S110 *)local_100,
                                            &DAT_005e53d8);
-        pvVar15 = S110_FUN_00401b40(&DAT_005e538c,(S110 *)(local_100 + 8),
+        pvVar15 = Decoder_ProcessData(&DAT_005e538c,(S110 *)(local_100 + 8),
                                     &DAT_005e5320);
         psVar14 = FUN_0040e8d0(this_24,(undefined2 *)(local_128 + 6),pvVar15,
                                piVar11);
@@ -16895,9 +16895,9 @@ LAB_0042e6e8:
         FUN_0042a6b0(this_25,piVar11,(S110 *)&DAT_005e53d8,&DAT_005e5320,
                      (S110 *)&DAT_005e5168,(S110 *)&DAT_005e538c);
         local_170 = (SpriteS1 *)*piVar11;
-        piVar11 = (int *)S110_FUN_00401b40(&DAT_005e5168,(S110 *)local_e8,
+        piVar11 = (int *)Decoder_ProcessData(&DAT_005e5168,(S110 *)local_e8,
                                            &DAT_005e53d8);
-        pvVar15 = S110_FUN_00401b40(&DAT_005e538c,(S110 *)local_e0,&DAT_005e5320
+        pvVar15 = Decoder_ProcessData(&DAT_005e538c,(S110 *)local_e0,&DAT_005e5320
                                    );
         psVar14 = FUN_0040e8d0(local_a0 + 0xe,(undefined2 *)(local_a0 + 0xe),
                                pvVar15,piVar11);
@@ -16928,9 +16928,9 @@ LAB_0042e6e8:
       FUN_0042a6b0(this_28,piVar11,(S110 *)&DAT_005e53d8,&DAT_005e5320,
                    (S110 *)&DAT_005e5168,(S110 *)&DAT_005e538c);
       local_170 = (SpriteS1 *)*piVar11;
-      piVar11 = (int *)S110_FUN_00401b40(&DAT_005e5168,(S110 *)(local_e0 + 0x18)
+      piVar11 = (int *)Decoder_ProcessData(&DAT_005e5168,(S110 *)(local_e0 + 0x18)
                                          ,&DAT_005e53d8);
-      pvVar15 = S110_FUN_00401b40(&DAT_005e538c,(S110 *)local_c0,&DAT_005e5320);
+      pvVar15 = Decoder_ProcessData(&DAT_005e538c,(S110 *)local_c0,&DAT_005e5320);
       psVar14 = FUN_0040e8d0(local_e0 + 0x16,(undefined2 *)(local_e0 + 0x16),
                              pvVar15,piVar11);
       local_168._4_2_ = *psVar14;
@@ -16960,9 +16960,9 @@ LAB_0042e6e8:
       FUN_0042a6b0(this_31,piVar11,(S110 *)&DAT_005e53d8,&DAT_005e5320,
                    (S110 *)&DAT_005e5168,(S110 *)&DAT_005e538c);
       local_170 = (SpriteS1 *)*piVar11;
-      piVar11 = (int *)S110_FUN_00401b40(&DAT_005e5168,(S110 *)(local_c0 + 0x18)
+      piVar11 = (int *)Decoder_ProcessData(&DAT_005e5168,(S110 *)(local_c0 + 0x18)
                                          ,&DAT_005e53d8);
-      pvVar15 = S110_FUN_00401b40(&DAT_005e538c,(S110 *)local_a0,&DAT_005e5320);
+      pvVar15 = Decoder_ProcessData(&DAT_005e538c,(S110 *)local_a0,&DAT_005e5320);
       psVar14 = FUN_0040e8d0(local_154 + 10,(undefined2 *)(local_154 + 10),
                              pvVar15,piVar11);
       local_168._4_2_ = *psVar14;
@@ -16982,17 +16982,17 @@ LAB_0042e6e8:
                    (S110 *)&DAT_005e53d8,&DAT_005e5320,(S110 *)&DAT_005e5168,
                    (S110 *)&DAT_005e538c);
       local_170 = (SpriteS1 *)*piVar11;
-      piVar11 = (int *)S110_FUN_00401b40(&DAT_005e5168,(S110 *)(local_a0 + 0x10)
+      piVar11 = (int *)Decoder_ProcessData(&DAT_005e5168,(S110 *)(local_a0 + 0x10)
                                          ,&DAT_005e53d8);
-      pvVar15 = S110_FUN_00401b40(&DAT_005e538c,(S110 *)local_88,&DAT_005e5320);
+      pvVar15 = Decoder_ProcessData(&DAT_005e538c,(S110 *)local_88,&DAT_005e5320);
       psVar14 = FUN_0040e8d0(this_32,(undefined2 *)(local_154 + 0xc),pvVar15,
                              piVar11);
       local_168._4_2_ = *psVar14;
       if (pMVar21->field6_0xc == 0xd) {
-        piVar11 = (int *)S110_FUN_00401b40(local_154 + 0x10,
+        piVar11 = (int *)Decoder_ProcessData(local_154 + 0x10,
                                            (S110 *)(local_154 + 0x18),
                                            &DAT_005e53d8);
-        pvVar15 = S110_FUN_00401b40(local_154 + 0x14,(S110 *)local_154,
+        pvVar15 = Decoder_ProcessData(local_154 + 0x14,(S110 *)local_154,
                                     &DAT_005e5320);
         puVar12 = FUN_0040e8d0(this_33,(undefined2 *)(local_168 + 10),pvVar15,
                                piVar11);
@@ -17662,7 +17662,7 @@ void __thiscall FUN_00430320(void *this)
 
   switch(uVar4) {
   case 1:
-    iVar7 = DecoderFloat(&DAT_005e5320);
+    iVar7 = Decoder_DecodeFloat(&DAT_005e5320);
     if ((byte)iVar7 <= bVar2) {
 LAB_00430493:
       FUN_0042ab90();
@@ -17677,7 +17677,7 @@ LAB_00430619:
     }
     break;
   case 2:
-    iVar7 = DecoderFloat(&DAT_005e5320);
+    iVar7 = Decoder_DecodeFloat(&DAT_005e5320);
     if (bVar2 <= (byte)iVar7) {
       FUN_0042ab90();
                               // WARNING: Load size is inaccurate
@@ -17690,7 +17690,7 @@ LAB_00430619:
     }
     break;
   case 3:
-    iVar7 = DecoderFloat(&DAT_005e53d8);
+    iVar7 = Decoder_DecodeFloat(&DAT_005e53d8);
     if ((byte)iVar7 <= bVar8) {
       FUN_0042ab90();
                               // WARNING: Load size is inaccurate
@@ -17701,16 +17701,16 @@ LAB_00430619:
       *(undefined1 *)(*(int *)(*this + 0x60) + 0x26) = 1;
       return;
     }
-    iVar7 = DecoderFloat(&DAT_005e5320);
+    iVar7 = Decoder_DecodeFloat(&DAT_005e5320);
     if ((byte)iVar7 < bVar2) goto LAB_004305aa;
-    iVar7 = DecoderFloat(&DAT_005e5320);
+    iVar7 = Decoder_DecodeFloat(&DAT_005e5320);
     if ((byte)iVar7 <= bVar2) goto switchD_0043047c_caseD_4;
     uVar6 = *(uint *)((int)this + 0x24) | 0x40000;
     goto LAB_004305b2;
   case 4:
-    iVar7 = DecoderFloat(&DAT_005e53d8);
+    iVar7 = Decoder_DecodeFloat(&DAT_005e53d8);
     if (bVar8 <= (byte)iVar7) goto LAB_00430493;
-    iVar7 = DecoderFloat(&DAT_005e5320);
+    iVar7 = Decoder_DecodeFloat(&DAT_005e5320);
     if ((byte)iVar7 < bVar2) {
       uVar6 = *(uint *)((int)this + 0x24) | 0x40000;
       goto LAB_004305b2;
@@ -17767,10 +17767,10 @@ void __thiscall FUN_00430cc0(void *this)
 LAB_00430d47:
                               // WARNING: Load size is inaccurate
     iVar4 = *(int *)(*this + 0x50);
-    iVar2 = DecoderFloat((void *)(iVar4 + 0x1c));
+    iVar2 = Decoder_DecodeFloat((void *)(iVar4 + 0x1c));
     iVar2 = iVar2 + -1;
-    iVar3 = DecoderFloat((void *)(iVar4 + 0x18));
-    iVar4 = DecoderFloat((void *)(iVar4 + 0x14));
+    iVar3 = Decoder_DecodeFloat((void *)(iVar4 + 0x18));
+    iVar4 = Decoder_DecodeFloat((void *)(iVar4 + 0x14));
     iVar4 = MapRelatedStruct::S16_FUN_004653c0
                       (_gMapRelatedStruct,iVar4,iVar3,iVar2);
   }
@@ -17839,11 +17839,11 @@ LAB_00430df1:
           }
                               // WARNING: Load size is inaccurate
           iVar4 = *this;
-          pvVar7 = (void *)DecoderFloat((void *)(*(int *)(iVar4 + 0x50) + 0x14))
+          pvVar7 = (void *)Decoder_DecodeFloat((void *)(*(int *)(iVar4 + 0x50) + 0x14))
           ;
           local_24 = (SpriteS1 *)CONCAT31(local_24._1_3_,(byte)pvVar7);
           FUN_0040ce30(local_20,(byte)pvVar7);
-          pSVar9 = (S200 *)S110_FUN_00401b40((void *)(*(int *)(iVar4 + 0x50) +
+          pSVar9 = (S200 *)Decoder_ProcessData((void *)(*(int *)(iVar4 + 0x50) +
                                                      0x14),
                                              (S110 *)(local_20 + 4),pvVar7);
           local_30 = *(SpriteS1 **)pSVar9;
@@ -17968,11 +17968,11 @@ LAB_00431320:
           }
                               // WARNING: Load size is inaccurate
           iVar4 = *this;
-          pvVar7 = (void *)DecoderFloat((void *)(*(int *)(iVar4 + 0x50) + 0x14))
+          pvVar7 = (void *)Decoder_DecodeFloat((void *)(*(int *)(iVar4 + 0x50) + 0x14))
           ;
           local_24 = (SpriteS1 *)CONCAT31(local_24._1_3_,(byte)pvVar7);
           FUN_0040ce30(local_18,(byte)pvVar7);
-          pSVar9 = (S200 *)S110_FUN_00401b40((void *)(*(int *)(iVar4 + 0x50) +
+          pSVar9 = (S200 *)Decoder_ProcessData((void *)(*(int *)(iVar4 + 0x50) +
                                                      0x14),
                                              (S110 *)(local_18 + 4),pvVar7);
           local_30 = *(SpriteS1 **)pSVar9;
@@ -18179,22 +18179,22 @@ switchD_00431ac7_caseD_3:
     bVar2 = Player::IsCurrentPlayer(this_01,pPlayer);
     if (CONCAT31(extraout_var_01,bVar2) == 0) {
       if (DAT_005e507c != '\0') goto LAB_00432181;
-      iVar8 = DecoderFloat(pvVar6);
-      iVar9 = DecoderFloat(&pSVar3->S3_arr5031[0].PositionY);
-      iVar10 = DecoderFloat(&pSVar3->S3_arr5031[0].PositionX);
+      iVar8 = Decoder_DecodeFloat(pvVar6);
+      iVar9 = Decoder_DecodeFloat(&pSVar3->S3_arr5031[0].PositionY);
+      iVar10 = Decoder_DecodeFloat(&pSVar3->S3_arr5031[0].PositionX);
       cVar1 = FUN_0042a8c0(iVar10,iVar9,iVar8);
     }
     else {
       if (DAT_005e507c == '\0') {
-        pvVar6 = S110_FUN_00401b40(pvVar6,(S110 *)local_4,&DAT_005e512c);
+        pvVar6 = Decoder_ProcessData(pvVar6,(S110 *)local_4,&DAT_005e512c);
       }
       else {
-        pvVar6 = S110_FUN_00401b40(pvVar6,(S110 *)local_4,&DAT_005e512c);
+        pvVar6 = Decoder_ProcessData(pvVar6,(S110 *)local_4,&DAT_005e512c);
       }
 LAB_00432181:
-      iVar8 = DecoderFloat(pvVar6);
-      iVar9 = DecoderFloat(&pSVar3->S3_arr5031[0].PositionY);
-      iVar10 = DecoderFloat(&pSVar3->S3_arr5031[0].PositionX);
+      iVar8 = Decoder_DecodeFloat(pvVar6);
+      iVar9 = Decoder_DecodeFloat(&pSVar3->S3_arr5031[0].PositionY);
+      iVar10 = Decoder_DecodeFloat(&pSVar3->S3_arr5031[0].PositionX);
       cVar1 = FUN_0042a8c0(iVar10,iVar9,iVar8);
     }
     if (cVar1 != '\0') {
@@ -18278,10 +18278,10 @@ LAB_00432181:
   if (iVar7 == 0) {
 LAB_00432428:
     pvVar11 = this->s72[10].void1;
-    iVar7 = DecoderFloat((void *)((int)pvVar11 + 0x1c));
+    iVar7 = Decoder_DecodeFloat((void *)((int)pvVar11 + 0x1c));
     iVar7 = iVar7 + -1;
-    iVar8 = DecoderFloat((void *)((int)pvVar11 + 0x18));
-    iVar9 = DecoderFloat((void *)((int)pvVar11 + 0x14));
+    iVar8 = Decoder_DecodeFloat((void *)((int)pvVar11 + 0x18));
+    iVar9 = Decoder_DecodeFloat((void *)((int)pvVar11 + 0x14));
     iVar7 = MapRelatedStruct::S16_FUN_004653c0
                       (_gMapRelatedStruct,iVar9,iVar8,iVar7);
     DAT_005e507c = 0;
@@ -18790,12 +18790,12 @@ void __thiscall FUN_0043455e(void *this)
     uStack00000010 = *(undefined4 *)(*piVar2 + 0x14);
     uStack00000014 = *(undefined4 *)(*piVar2 + 0x18);
     pSVar6 = (S110 *)&stack0x00000018;
-    pvVar3 = (void *)Ped::GetPositionX(unaff_EDI,(int)&stack0x0000001c);
-    piVar2 = (int *)S110_FUN_00401b40(pvVar3,pSVar6,puVar7);
+    pvVar3 = (void *)Ped__GetXCoordinate(unaff_EDI,(int)&stack0x0000001c);
+    piVar2 = (int *)Decoder_ProcessData(pvVar3,pSVar6,puVar7);
     puVar7 = (undefined1 *)&stack0x00000014;
     pSVar6 = (S110 *)&stack0x00000020;
-    pvVar3 = (void *)Ped::GetPositionY(unaff_EDI,(int)&stack0x00000024);
-    pvVar3 = S110_FUN_00401b40(pvVar3,pSVar6,puVar7);
+    pvVar3 = (void *)Ped__GetYCoordinate(unaff_EDI,(int)&stack0x00000024);
+    pvVar3 = Decoder_ProcessData(pvVar3,pSVar6,puVar7);
     puVar4 = FUN_0040e8d0(&stack0x0000000e,(undefined2 *)&stack0x0000000e,pvVar3
                           ,piVar2);
     uStack00000014 = CONCAT22(uStack00000014._2_2_,*puVar4);
@@ -19363,17 +19363,17 @@ undefined4 FUN_00436220(int param_1)
   switch(this->CurrentState) {
   case New_Name_(1):
     if (this->field126_0x27c == 3) {
-      piVar5 = (int *)S110_FUN_00401b40(&this->PositionX,(S110 *)local_34,
+      piVar5 = (int *)Decoder_ProcessData(&this->PositionX,(S110 *)local_34,
                                         &this->uns32);
-      pvVar6 = S110_FUN_00401b40(&this->PositionY,(S110 *)(local_34 + 4),
+      pvVar6 = Decoder_ProcessData(&this->PositionY,(S110 *)(local_34 + 4),
                                  &this->uns33);
       puVar7 = FUN_0040e8d0(this_01,&local_66,pvVar6,piVar5);
       this->field5_0x130 = *puVar7;
     }
     if (this->field126_0x27c == 2) {
-      piVar5 = (int *)S110_FUN_00401b40(&this->uns32,(S110 *)(local_34 + 8),
+      piVar5 = (int *)Decoder_ProcessData(&this->uns32,(S110 *)(local_34 + 8),
                                         &this->PositionX);
-      pvVar6 = S110_FUN_00401b40(&this->uns33,(S110 *)(local_34 + 0xc),
+      pvVar6 = Decoder_ProcessData(&this->uns33,(S110 *)(local_34 + 0xc),
                                  &this->PositionY);
       puVar4 = FUN_0040e8d0(this_02,&local_64,pvVar6,piVar5);
       puVar7 = &this->field5_0x130;
@@ -19391,7 +19391,7 @@ undefined4 FUN_00436220(int param_1)
           puVar10 = &DAT_005e5fa0;
           *puVar7 = this->field3_0x12c;
           pvVar6 = (void *)FUN_00436160(this->LinkedPed,local_20);
-          puVar10 = (undefined4 *)S110_FUN_00401b40(pvVar6,pSVar8,puVar10);
+          puVar10 = (undefined4 *)Decoder_ProcessData(pvVar6,pSVar8,puVar10);
           GameObject::FUN_00433920(this->GameObject,*puVar10);
           return;
         }
@@ -19407,7 +19407,7 @@ undefined4 FUN_00436220(int param_1)
           local_48._3_1_ = 0;
           bVar2 = Random(&gRandom,(int)&local_48);
           piVar5 = (int *)CONCAT31(extraout_var_02,bVar2);
-          FUN_00401ae0(local_14,(short)piVar5);
+          Decoder_SetValue(local_14,(short)piVar5);
           pvVar6 = WorldCoordinateToScreenCoord(&DAT_005e5ecc,local_10,piVar5);
           puVar4 = (undefined2 *)FUN_0040f540(local_5a,(int)pvVar6);
           ppuVar11 = &local_50;
@@ -19421,7 +19421,7 @@ undefined4 FUN_00436220(int param_1)
           local_4c = 0x2d;
           bVar2 = Random(&gRandom,(int)&local_4c);
           piVar5 = (int *)CONCAT31(extraout_var_01,bVar2);
-          FUN_00401ae0(local_1c,(short)piVar5);
+          Decoder_SetValue(local_1c,(short)piVar5);
           pvVar6 = WorldCoordinateToScreenCoord(&DAT_005e5ecc,local_18,piVar5);
           puVar4 = (undefined2 *)FUN_0040f540(local_60,(int)pvVar6);
           ppuVar11 = &local_50;
@@ -19448,17 +19448,17 @@ undefined4 FUN_00436220(int param_1)
   case New_Name_(2):
     local_50 = this->uns32;
     local_54 = this->uns33;
-    piVar5 = (int *)S110_FUN_00401b40(&local_50,(S110 *)local_44,
+    piVar5 = (int *)Decoder_ProcessData(&local_50,(S110 *)local_44,
                                       &this->PositionX);
-    pvVar3 = S110_FUN_00401b40(&local_54,(S110 *)(local_44 + 4),&this->PositionY
+    pvVar3 = Decoder_ProcessData(&local_54,(S110 *)(local_44 + 4),&this->PositionY
                               );
     puVar7 = &local_6a;
     pvVar6 = extraout_ECX;
     goto LAB_004364fb;
   case PEDSTATE_ENTER_CAR:
-    piVar5 = (int *)S110_FUN_00401b40(&this->uns32,(S110 *)local_3c,
+    piVar5 = (int *)Decoder_ProcessData(&this->uns32,(S110 *)local_3c,
                                       &this->PositionX);
-    pvVar3 = S110_FUN_00401b40(&this->uns33,(S110 *)(local_3c + 4),
+    pvVar3 = Decoder_ProcessData(&this->uns33,(S110 *)(local_3c + 4),
                                &this->PositionY);
     puVar7 = &local_68;
     pvVar6 = extraout_ECX_00;
@@ -19468,9 +19468,9 @@ LAB_004364fb:
     break;
   case PEDSTATE_IDLE:
     if (this->field126_0x27c == 0xb) {
-      piVar5 = (int *)S110_FUN_00401b40(&this->uns32,(S110 *)(local_c + 4),
+      piVar5 = (int *)Decoder_ProcessData(&this->uns32,(S110 *)(local_c + 4),
                                         &this->PositionX);
-      pvVar6 = S110_FUN_00401b40(&this->uns33,(S110 *)(local_c + 8),
+      pvVar6 = Decoder_ProcessData(&this->uns33,(S110 *)(local_c + 8),
                                  &this->PositionY);
       puVar7 = FUN_0040e8d0(this_03,(undefined2 *)&local_54,pvVar6,piVar5);
       this->field5_0x130 = *puVar7;
@@ -19509,11 +19509,11 @@ LAB_004364fb:
     iVar1 = param_1;
     this->CurrentAction = param_1;
     this->CarStateTimer = (short)param_2;
-    bitShiftLeft1(&param_2,(void *)0xffffffff);
+    Decoder_ShiftLeft(&param_2,(void *)0xffffffff);
     this->uns32 = (undefined *)param_2;
-    bitShiftLeft1(&param_2,(void *)0xffffffff);
+    Decoder_ShiftLeft(&param_2,(void *)0xffffffff);
     this->uns33 = (undefined *)param_2;
-    bitShiftLeft1(&param_2,(void *)0xffffffff);
+    Decoder_ShiftLeft(&param_2,(void *)0xffffffff);
     this->uns34 = (undefined *)param_2;
     this->uns35 = DAT_005e5cfc;
     this->uns36 = DAT_005e5cfc;
@@ -19548,11 +19548,11 @@ LAB_004364fb:
       break;
     case 0x11:
       local_20 = 3;
-      iVar1 = DecoderFloat(&this->PositionX);
+      iVar1 = Decoder_DecodeFloat(&this->PositionX);
       local_1c = (S9 *)CONCAT31(local_1c._1_3_,(char)iVar1);
-      iVar1 = DecoderFloat(&this->PositionY);
+      iVar1 = Decoder_DecodeFloat(&this->PositionY);
       local_18 = (S9 *)CONCAT31(local_18._1_3_,(char)iVar1);
-      iVar1 = DecoderFloat(&this->PositionZ);
+      iVar1 = Decoder_DecodeFloat(&this->PositionZ);
       local_14[0] = (S9 *)CONCAT31(local_14[0]._1_3_,(char)iVar1);
       FUN_00469400(&local_1c,&local_18,local_14,2);
       pSVar4 = (SpriteS1 *)&param_2;
@@ -19656,7 +19656,7 @@ void __thiscall FUN_00436bf0(void *this)
 
       if (bVar4 == 0) {
 LAB_00437198:
-        S169::FUN_00404ef0(this_01,(undefined4 *)this_00);
+        PedManager__ProcessGroup(this_01,(undefined4 *)this_00);
         return;
       }
 
@@ -19872,10 +19872,10 @@ switchD_0043731f_caseD_18:
        ((this->CurrentState != PEDSTATE_FALL &&
         (((this->flags & 1) != 0 && (gPed_4 != this)))))) {
       pvVar8 = (void *)GetPositionX(gPed_4,(int)local_44);
-      piVar7 = (int *)S110_FUN_00401b40(&this->PositionX,(S110 *)local_40,pvVar8
+      piVar7 = (int *)Decoder_ProcessData(&this->PositionX,(S110 *)local_40,pvVar8
                                        );
       pvVar8 = (void *)GetPositionY(pPVar3,(int)(local_40 + 4));
-      pvVar8 = S110_FUN_00401b40(&this->PositionY,(S110 *)(local_40 + 8),pvVar8)
+      pvVar8 = Decoder_ProcessData(&this->PositionY,(S110 *)(local_40 + 8),pvVar8)
       ;
       psVar10 = FUN_0040e8d0(this_04,&local_6c,pvVar8,piVar7);
       local_58 = (undefined4 *)CONCAT22(local_58._2_2_,*psVar10);
@@ -19925,9 +19925,9 @@ switchD_0043731f_caseD_18:
         piVar7 = &this->PositionX;
         this_00 = &this->PositionY;
         pvVar8 = (void *)GetPositionX(gPed_4,(int)local_34);
-        piVar9 = (int *)S110_FUN_00401b40(piVar7,&local_30,pvVar8);
+        piVar9 = (int *)Decoder_ProcessData(piVar7,&local_30,pvVar8);
         pvVar8 = (void *)GetPositionY(pPVar3,(int)&local_30.pPed);
-        pvVar8 = S110_FUN_00401b40(this_00,(S110 *)&local_30.S169,pvVar8);
+        pvVar8 = Decoder_ProcessData(this_00,(S110 *)&local_30.S169,pvVar8);
         psVar10 = FUN_0040e8d0(this_05,&local_64,pvVar8,piVar9);
         pPVar3 = gPed_4;
         local_58 = (undefined4 *)CONCAT22(local_58._2_2_,*psVar10);
@@ -19945,10 +19945,10 @@ switchD_0043731f_caseD_18:
            CONCAT31(extraout_var_03,bVar5) != 0)) {
           if ((pPVar3->pS169 != (S169 *)0x0) &&
              (bVar4 = IsPlayerControlled(pPVar3->pS169->Ped), bVar4 != 0)) {
-            pSVar12 = (S110 *)S110_FUN_00401b40(&pPVar3->PositionZ,
+            pSVar12 = (S110 *)Decoder_ProcessData(&pPVar3->PositionZ,
                                                 (S110 *)&local_30.field_0xc,
                                                 &this->PositionZ);
-            piVar9 = FUN_00403840(this_06,(int *)&local_30.field_0x10,pSVar12);
+            piVar9 = Matrix_Multiply(this_06,(int *)&local_30.field_0x10,pSVar12);
             local_54 = (Player *)*piVar9;
             bVar5 = Player::FUN_0040ce70((Player *)&local_54,&DAT_005e5c94);
             if (CONCAT31(extraout_var_04,bVar5) != 0) {
@@ -20126,23 +20126,23 @@ LAB_00438591:
         *this_00 = (undefined *)param_2;
         piVar31 = &param_1->PositionX;
         piVar10 = &DAT_005e5e74;
-        pSVar16 = (S9 *)DecoderFloat(this);
+        pSVar16 = (S9 *)Decoder_DecodeFloat(this);
         FUN_0040ce30(local_8,(byte)pSVar16);
         pSVar17 = S9::S9_FUN_00401b20(pSVar16,pSVar17,piVar10);
-        puVar13 = (undefined4 *)S110_FUN_00401b40(pSVar17,pSVar30,piVar31);
+        puVar13 = (undefined4 *)Decoder_ProcessData(pSVar17,pSVar30,piVar31);
         param_2 = (SpriteS1 *)*puVar13;
         pSVar30 = (S110 *)local_c;
         piVar31 = &param_1->PositionY;
         pSVar17 = (SpriteS1 *)&local_4;
         piVar10 = &DAT_005e5e74;
-        pSVar16 = (S9 *)DecoderFloat(this_00);
+        pSVar16 = (S9 *)Decoder_DecodeFloat(this_00);
         FUN_0040ce30(local_8,(byte)pSVar16);
         pSVar17 = S9::S9_FUN_00401b20(pSVar16,pSVar17,piVar10);
-        puVar13 = (undefined4 *)S110_FUN_00401b40(pSVar17,pSVar30,piVar31);
+        puVar13 = (undefined4 *)Decoder_ProcessData(pSVar17,pSVar30,piVar31);
         local_30 = (Car *)*puVar13;
-        piVar31 = FUN_00403840(&param_2,&local_4,(S110 *)&param_2);
+        piVar31 = Matrix_Multiply(&param_2,&local_4,(S110 *)&param_2);
         param_2 = (SpriteS1 *)*piVar31;
-        piVar31 = FUN_00403840(&local_30,&local_4,(S110 *)&local_30);
+        piVar31 = Matrix_Multiply(&local_30,&local_4,(S110 *)&local_30);
         local_30 = (Car *)*piVar31;
         bVar8 = S169::FUN_00403800((S169 *)&param_2,(int *)&local_30);
         ppCVar24 = (Car **)&param_2;
@@ -20211,14 +20211,14 @@ LAB_00438591:
       pbVar32 = &param_1->uns106;
       bVar9 = FUN_00472c00(pbVar32,local_2c);
       uVar22 = CONCAT31(extraout_var_03,bVar9);
-      iVar14 = DecoderFloat(&local_38);
+      iVar14 = Decoder_DecodeFloat(&local_38);
       bVar9 = (byte)iVar14;
-      iVar14 = DecoderFloat(&local_34);
+      iVar14 = Decoder_DecodeFloat(&local_34);
       bVar29 = (byte)iVar14;
-      uVar28 = DecoderFloat(&local_30);
-      uVar19 = DecoderFloat(&param_1->PositionZ);
-      uVar20 = DecoderFloat(&param_1->PositionY);
-      uVar21 = DecoderFloat(&param_1->PositionX);
+      uVar28 = Decoder_DecodeFloat(&local_30);
+      uVar19 = Decoder_DecodeFloat(&param_1->PositionZ);
+      uVar20 = Decoder_DecodeFloat(&param_1->PositionY);
+      uVar21 = Decoder_DecodeFloat(&param_1->PositionX);
       uVar22 = S95::FUN_0049cf70(_gS95,param_1->ID,(int)param_1,uVar21,uVar20,
                                  uVar19,uVar28,bVar29,bVar9,uVar22,pbVar32);
       if ((char)uVar22 == '\0') goto LAB_00438591;
@@ -20237,11 +20237,11 @@ LAB_00438591:
         pcVar5 = (char *)param_1->uns17;
         cVar3 = *pcVar5;
         if (cVar3 == '\0') break;
-        uVar18 = DecoderFloat(&param_1->PositionX);
+        uVar18 = Decoder_DecodeFloat(&param_1->PositionX);
         if (((cVar3 == (char)uVar18) &&
-            (uVar18 = DecoderFloat(&param_1->PositionY),
+            (uVar18 = Decoder_DecodeFloat(&param_1->PositionY),
             pcVar5[1] == (char)uVar18)) &&
-           (uVar18 = DecoderFloat(&param_1->PositionZ),
+           (uVar18 = Decoder_DecodeFloat(&param_1->PositionZ),
            pcVar5[2] == (char)uVar18)) goto LAB_0043856b;
         param_1->uns17 = pcVar5 + 3;
       }
@@ -20289,7 +20289,7 @@ void __thiscall FUN_004388e0(void *this)
       }
       Ped::SetAnimationState((Ped *)this,0x14,9999);
       *(undefined4 *)((int)this + 0x14c) = *(undefined4 *)((int)this + 0x148);
-      Ped::S49_FUN_00403960((Ped *)this);
+      Ped__UpdateState((Ped *)this);
       return;
     }
     if (*(Ped **)((int)this + 0x14c) == pPVar1) {
@@ -20832,16 +20832,16 @@ void __thiscall FUN_00439640(void *this)
             this->uns34 = (undefined *)this->LinkedPed->PositionZ;
             GameObject::SetCar(this->GameObject,this_00);
             puVar6 = (undefined4 *)
-                     S110_FUN_00401b40(&this->uns32,(S110 *)&local_8,
+                     Decoder_ProcessData(&this->uns32,(S110 *)&local_8,
                                        &this->PositionX);
             local_c = (Ped *)*puVar6;
             puVar6 = (undefined4 *)
-                     S110_FUN_00401b40(&this->uns33,(S110 *)&local_8,
+                     Decoder_ProcessData(&this->uns33,(S110 *)&local_8,
                                        &this->PositionY);
             local_8 = (Ped *)*puVar6;
-            piVar7 = FUN_00403840(&local_c,&local_4,(S110 *)&local_c);
+            piVar7 = Matrix_Multiply(&local_c,&local_4,(S110 *)&local_c);
             local_c = (Ped *)*piVar7;
-            piVar7 = FUN_00403840(&local_8,&local_4,(S110 *)&local_8);
+            piVar7 = Matrix_Multiply(&local_8,&local_4,(S110 *)&local_8);
             local_8 = (Ped *)*piVar7;
             bVar3 = S169::FUN_00403800((S169 *)&local_c,(int *)&local_8);
             ppPVar8 = &local_c;
@@ -21090,14 +21090,14 @@ LAB_0043a076:
       local_d = 0;
       while( true ) {
         FUN_0040e550(&local_c,&DAT_005e5c94);
-        iVar3 = DecoderFloat(&local_c);
+        iVar3 = Decoder_DecodeFloat(&local_c);
         local_8 = CONCAT31(local_8._1_3_,(char)iVar3);
-        this_00 = S110_FUN_00401b40(&this->PositionZ,(S110 *)local_4,
+        this_00 = Decoder_ProcessData(&this->PositionZ,(S110 *)local_4,
                                     &DAT_005e5c94);
-        iVar3 = DecoderFloat(this_00);
+        iVar3 = Decoder_DecodeFloat(this_00);
         uVar1 = local_8;
         uVar6 = local_8;
-        iVar4 = DecoderFloat(&this->PositionX);
+        iVar4 = Decoder_DecodeFloat(&this->PositionX);
         piVar5 = (int *)FUN_00433530(iVar4,uVar6,iVar3);
         if ((char)piVar5 != '\0') break;
         local_d = local_d + 1;
@@ -21121,12 +21121,12 @@ LAB_0043a076:
       local_d = 0;
       while( true ) {
         FUN_0040e530(&local_c,&DAT_005e5c94);
-        iVar3 = DecoderFloat(&local_c);
+        iVar3 = Decoder_DecodeFloat(&local_c);
         local_8 = CONCAT31(local_8._1_3_,(char)iVar3);
-        this_00 = S110_FUN_00401b40(&this->PositionZ,(S110 *)local_4,
+        this_00 = Decoder_ProcessData(&this->PositionZ,(S110 *)local_4,
                                     &DAT_005e5c94);
-        iVar3 = DecoderFloat(this_00);
-        iVar4 = DecoderFloat(&this->PositionY);
+        iVar3 = Decoder_DecodeFloat(this_00);
+        iVar4 = Decoder_DecodeFloat(&this->PositionY);
         uVar1 = local_8;
         piVar5 = (int *)FUN_00433530(local_8,iVar4,iVar3);
         if ((char)piVar5 != '\0') break;
@@ -21151,14 +21151,14 @@ LAB_0043a076:
       local_d = 0;
       while( true ) {
         FUN_0040e530(&local_c,&DAT_005e5c94);
-        iVar3 = DecoderFloat(&local_c);
+        iVar3 = Decoder_DecodeFloat(&local_c);
         local_8 = CONCAT31(local_8._1_3_,(char)iVar3);
-        this_00 = S110_FUN_00401b40(&this->PositionZ,(S110 *)local_4,
+        this_00 = Decoder_ProcessData(&this->PositionZ,(S110 *)local_4,
                                     &DAT_005e5c94);
-        iVar3 = DecoderFloat(this_00);
+        iVar3 = Decoder_DecodeFloat(this_00);
         uVar1 = local_8;
         uVar6 = local_8;
-        iVar4 = DecoderFloat(&this->PositionX);
+        iVar4 = Decoder_DecodeFloat(&this->PositionX);
         piVar5 = (int *)FUN_00433530(iVar4,uVar6,iVar3);
         if ((char)piVar5 != '\0') break;
         local_d = local_d + 1;
@@ -21182,12 +21182,12 @@ LAB_0043a076:
       local_d = 0;
       while( true ) {
         FUN_0040e550(&local_c,&DAT_005e5c94);
-        iVar3 = DecoderFloat(&local_c);
+        iVar3 = Decoder_DecodeFloat(&local_c);
         local_8 = CONCAT31(local_8._1_3_,(char)iVar3);
-        this_00 = S110_FUN_00401b40(&this->PositionZ,(S110 *)local_4,
+        this_00 = Decoder_ProcessData(&this->PositionZ,(S110 *)local_4,
                                     &DAT_005e5c94);
-        iVar3 = DecoderFloat(this_00);
-        iVar4 = DecoderFloat(&this->PositionY);
+        iVar3 = Decoder_DecodeFloat(this_00);
+        iVar4 = Decoder_DecodeFloat(&this->PositionY);
         uVar1 = local_8;
         piVar5 = (int *)FUN_00433530(local_8,iVar4,iVar3);
         if ((char)piVar5 != '\0') break;
@@ -21719,11 +21719,11 @@ LAB_0043ce77:
                 (gCarSystemManager,*piVar11,*this_00,car,this);
       if (car == (Car *)0x0) {
 LAB_0043c7e7:
-        iVar5 = DecoderFloat(piVar11);
+        iVar5 = Decoder_DecodeFloat(piVar11);
         local_1c = (Ped *)CONCAT31(local_1c._1_3_,(char)iVar5);
-        iVar5 = DecoderFloat(this_00);
+        iVar5 = Decoder_DecodeFloat(this_00);
         local_20[0] = (char)iVar5;
-        iVar5 = DecoderFloat(&this->PositionZ);
+        iVar5 = Decoder_DecodeFloat(&this->PositionZ);
         local_24[0] = (char)iVar5;
         bVar2 = CarSystemManager::CarSystemManager_FUN_00420ce0
                           (gCarSystemManager,1);
@@ -21811,11 +21811,11 @@ LAB_0043ca33:
         Car::FUN_004222f0(car);
         goto LAB_0043ca68;
       }
-      iVar5 = DecoderFloat(piVar11);
+      iVar5 = Decoder_DecodeFloat(piVar11);
       local_1c = (Ped *)CONCAT31(local_1c._1_3_,(char)iVar5);
-      iVar5 = DecoderFloat(this_00);
+      iVar5 = Decoder_DecodeFloat(this_00);
       local_20[0] = (char)iVar5;
-      iVar5 = DecoderFloat(&this->PositionZ);
+      iVar5 = Decoder_DecodeFloat(&this->PositionZ);
       local_24[0] = (char)iVar5;
       bVar2 = CarSystemManager::CarSystemManager_FUN_00420ce0
                         (gCarSystemManager,1);
@@ -21953,7 +21953,7 @@ void __fastcall FUN_0043cfc0(Ped *pPed)
       pPed->Idex = 2;
       Ped::SetAnimationState(pPed,0,9999);
       Ped::PedSetObjective(pPed,0x21,9999);
-      Ped::S49_FUN_00403aa0(pPed,pPed->CarCurrent);
+      Ped__EnterCar(pPed,pPed->CarCurrent);
     }
 
   if (bVar1 == 0) {
@@ -22105,28 +22105,28 @@ LAB_0043d25d:
     pvVar7 = (void *)0x1;
     do {
       pPed1 = PedManager::S48_FUN_00403890(gPedManager);
-      Ped::SetOccupation(pPed1,0x16);
+      Ped__SetCurrentOccupation(pPed1,0x16);
       pvVar6 = (void *)param_1;
       Ped::SetRemap(pPed1,(char)param_1);
-      Ped::SetSearchType(pPed1,4);
+      Ped__SetSearchMode(pPed1,4);
       pS110 = local_18;
       piVar8 = &DAT_005e5c0c;
-      bitShiftLeft1(local_14,pvVar7);
+      Decoder_ShiftLeft(local_14,pvVar7);
       pvVar6 = WorldCoordinateToScreenCoord(pvVar6,pS110,piVar8);
-      local_20._4_4_ = S110_FUN_00401b40(&param_3,(S110 *)(local_14 + 4),pvVar6)
+      local_20._4_4_ = Decoder_ProcessData(&param_3,(S110 *)(local_14 + 4),pvVar6)
       ;
       piVar8 = &DAT_005e5c0c;
       pS110 = local_c;
       pS110_00 = pS110;
-      bitShiftLeft1(local_8,pvVar7);
+      Decoder_ShiftLeft(local_8,pvVar7);
       pvVar6 = WorldCoordinateToScreenCoord(pS110,pS110_00,piVar8);
-      piVar8 = (int *)S110_FUN_00401b40(local_20,(S110 *)(local_8 + 4),pvVar6);
+      piVar8 = (int *)Decoder_ProcessData(local_20,(S110 *)(local_8 + 4),pvVar6);
       Ped::SetPedPosition(pPed1,*piVar8,*(int *)local_20._4_4_,param_5);
       cVar1 = Ped::GetRemap(pPed1);
       Ped::sPed_FUN_00433c10(pPed1,cVar1);
-      Ped::SetHealthPlayer(pPed1,100);
+      Ped__SetHealth(pPed1,100);
       pPed1->GraphicType = 1;
-      AutoClass4::FUN_00404420(pAutoClass4,pPed1,IndexPed);
+      AIController__SetPedIndex(pAutoClass4,pPed1,IndexPed);
       IndexPed = IndexPed + 1;
       pvVar7 = (void *)((int)pvVar7 + 1);
     } while (IndexPed < param_2);
@@ -22292,13 +22292,13 @@ void FUN_0043e270(Car *param_1,Ped *param_2)
     cVar1 = Car::Car_FUN_0041f880(param_1);
     if (cVar1 != '\0') {
       this = (Ped *)Char::FUN_0043de10(gChar);
-      Ped::SetOccupation(this,0x32);
+      Ped__SetCurrentOccupation(this,0x32);
       param_1->Driver = this;
       this->CarCurrent = param_1;
-      Ped::S49_FUN_00403a70(this,0);
-      Ped::SetTargetCarDoor(this,0);
+      Ped__SetAnimationState(this,0);
+      Ped__SetTargetCarDoorIndex(this,0);
       Ped::PedSetObjective(this,0x24,9999);
-      Ped::S49_FUN_00403aa0(this,this->CarCurrent);
+      Ped__EnterCar(this,this->CarCurrent);
       this->field130_0x28c = 3;
       this->PedDriver = param_2;
     }
@@ -22319,9 +22319,9 @@ void FUN_0043e270(Car *param_1,Ped *param_2)
         goto LAB_0043e465;
       }
     }
-    piVar3 = (int *)S110_FUN_00401b40(&pSVar2->S3_arr5031[7].Car,
+    piVar3 = (int *)Decoder_ProcessData(&pSVar2->S3_arr5031[7].Car,
                                       (S110 *)(local_a + 2),&this->PositionX);
-    pvVar4 = S110_FUN_00401b40(&pSVar2->S3_arr5031[7].SpriteS3,
+    pvVar4 = Decoder_ProcessData(&pSVar2->S3_arr5031[7].SpriteS3,
                                (S110 *)(local_a + 6),&this->PositionY);
     puVar5 = FUN_0040e8d0(local_a,(undefined2 *)local_a,pvVar4,piVar3);
     this->field5_0x130 = *puVar5;
@@ -22394,24 +22394,24 @@ char __thiscall FUN_0043e550(void *this,S61 *pS61)
     if (this->IndexPed == 99) {
       bVar3 = S169::FUN_00404840((S169 *)pAutoClass4);
       if (bVar3) {
-        S169::FUN_00403be0(this->pS169);
+        PedManager__UpdateAll(this->pS169);
       }
       else if ((this->Occupation == 0x2c) || (this->Occupation == 0x16)) {
-        bVar4 = S169::S169_FUN_00403c40(this->pS169);
+        bVar4 = PedManager__CheckPedStatus(this->pS169);
         if (bVar4 == 0) {
-          S169::FUN_00403fb0(this->pS169,this->uns23);
+          PedManager__HandlePedAction(this->pS169,this->uns23);
         }
         else {
-          S169::FUN_00403e90(this->pS169);
+          PedManager__UpdatePedStates(this->pS169);
         }
       }
       else {
-        S169::FUN_00403e90(this->pS169);
+        PedManager__UpdatePedStates(this->pS169);
       }
     }
 
     else if (this->Occupation == 0x16) {
-      S169::FUN_00403fb0((S169 *)pAutoClass4,this->uns23);
+      PedManager__HandlePedAction((S169 *)pAutoClass4,this->uns23);
     }
 
     if (iVar6 == 1) {
@@ -22690,7 +22690,7 @@ LAB_0043f15b:
       if (this->Occupation == 0x2c) {
         if (this->pS169 == (S169 *)0x0) goto LAB_0043f15b;
         if ((500 < this->uns51) &&
-           (bVar1 = S169::S169_FUN_00403c40(this->pS169), bVar1 != 0)) {
+           (bVar1 = PedManager__CheckPedStatus(this->pS169), bVar1 != 0)) {
           FUN_0043e650(this);
           return 0;
         }
@@ -22716,7 +22716,7 @@ LAB_0043f0fb:
   }
 
   if (this->CurrentState == PEDSTATE_IN_CAR) {
-    pCar = (Car *)GameObject::GetCar(pGameObject);
+    pCar = (Car *)GameObject__GetVehicle(pGameObject);
     this->CarCurrent = pCar;
     if (pGameObject->Car != (Car *)0x0) {
       Car::Car_FUN_004bf000((Car *)&pGameObject->Car);
@@ -22911,7 +22911,7 @@ LAB_0043f7c3:
             this->uns50 = 0;
             goto LAB_0043f884;
           }
-          S169::FUN_00404ef0(this_00,(undefined4 *)pPed);
+          PedManager__ProcessGroup(this_00,(undefined4 *)pPed);
           goto LAB_0043f884;
         }
       }
@@ -22968,17 +22968,17 @@ LAB_0043f884:
         piVar14 = &this->PositionX;
         pSVar13 = &local_34;
         pvVar12 = (void *)GetPositionX(pPed,(int)&local_34.pPed);
-        puVar20 = (undefined4 *)S110_FUN_00401b40(pvVar12,pSVar13,piVar14);
+        puVar20 = (undefined4 *)Decoder_ProcessData(pvVar12,pSVar13,piVar14);
         local_68._0_4_ = *puVar20;
         piVar14 = &this->PositionY;
         pSVar13 = (S110 *)&local_34.S169;
         pvVar12 = (void *)GetPositionY(pPed,(int)&local_34.field_0xc);
-        puVar20 = (undefined4 *)S110_FUN_00401b40(pvVar12,pSVar13,piVar14);
+        puVar20 = (undefined4 *)Decoder_ProcessData(pvVar12,pSVar13,piVar14);
         local_68._4_4_ = *puVar20;
-        piVar14 = FUN_00403840(&local_34.field_0x10,(int *)&local_34.field_0x10,
+        piVar14 = Matrix_Multiply(&local_34.field_0x10,(int *)&local_34.field_0x10,
                                (S110 *)local_68);
         local_68._0_4_ = *piVar14;
-        piVar14 = FUN_00403840(&local_34.field_0x14,(int *)&local_34.field_0x14,
+        piVar14 = Matrix_Multiply(&local_34.field_0x14,(int *)&local_34.field_0x14,
                                (S110 *)(local_68 + 4));
         local_68._4_4_ = *piVar14;
         bVar10 = S169::FUN_00403800((S169 *)local_68,(int *)(local_68 + 4));
@@ -23002,17 +23002,17 @@ LAB_0043f884:
       }
     }
     puVar20 = (undefined4 *)
-              S110_FUN_00401b40(&this->uns32,(S110 *)&local_34.field15_0x18,
+              Decoder_ProcessData(&this->uns32,(S110 *)&local_34.field15_0x18,
                                 &this->PositionX);
     local_68._0_4_ = *puVar20;
     puVar20 = (undefined4 *)
-              S110_FUN_00401b40(&this->uns33,(S110 *)&local_34.count,
+              Decoder_ProcessData(&this->uns33,(S110 *)&local_34.count,
                                 &this->PositionY);
     local_68._4_4_ = *puVar20;
-    piVar14 = FUN_00403840(&local_34.field20_0x20,&local_34.field20_0x20,
+    piVar14 = Matrix_Multiply(&local_34.field20_0x20,&local_34.field20_0x20,
                            (S110 *)local_68);
     local_68._0_4_ = *piVar14;
-    piVar14 = FUN_00403840(&local_34.field21_0x24,&local_34.field21_0x24,
+    piVar14 = Matrix_Multiply(&local_34.field21_0x24,&local_34.field21_0x24,
                            (S110 *)(local_68 + 4));
     local_68._4_4_ = *piVar14;
     bVar10 = S169::FUN_00403800((S169 *)local_68,(int *)(local_68 + 4));
@@ -23022,7 +23022,7 @@ LAB_0043f884:
     }
     local_68._4_4_ = *puVar20;
     if ((this->pS169 != (S169 *)0x0) && (this->IndexPed != 99)) {
-      cVar9 = FUN_00404900(CONCAT31((int3)((uint)puVar20 >> 8),this->IndexPed));
+      cVar9 = PathFind_SetTarget(CONCAT31((int3)((uint)puVar20 >> 8),this->IndexPed));
       if (cVar9 != '\0') {
         SetAnimationState(this,7,9999);
         SetLinkedPed(this,this->pS169->Ped);
@@ -23142,14 +23142,14 @@ LAB_0043fc95:
           pSVar13 = (S110 *)local_60;
           piVar14 = &this->PositionX;
           pvVar12 = (void *)GetPositionX(pPed,(int)(local_60 + 4));
-          pSVar13 = (S110 *)S110_FUN_00401b40(pvVar12,pSVar13,piVar14);
-          piVar14 = FUN_00403840(local_60 + 8,(int *)(local_60 + 8),pSVar13);
+          pSVar13 = (S110 *)Decoder_ProcessData(pvVar12,pSVar13,piVar14);
+          piVar14 = Matrix_Multiply(local_60 + 8,(int *)(local_60 + 8),pSVar13);
           local_68._0_4_ = *piVar14;
           pSVar13 = (S110 *)(local_60 + 0xc);
           piVar14 = &this->PositionY;
           pvVar12 = (void *)GetPositionY(pPed,(int)local_50);
-          pSVar13 = (S110 *)S110_FUN_00401b40(pvVar12,pSVar13,piVar14);
-          piVar14 = FUN_00403840(this_02,&local_4c,pSVar13);
+          pSVar13 = (S110 *)Decoder_ProcessData(pvVar12,pSVar13,piVar14);
+          piVar14 = Matrix_Multiply(this_02,&local_4c,pSVar13);
           local_68._4_4_ = *piVar14;
           bVar8 = S169::FUN_00403800((S169 *)local_68,(int *)(local_68 + 4));
           puVar20 = (undefined4 *)local_68;
@@ -23185,10 +23185,10 @@ LAB_0043fc95:
             SetAnimationState(this,2,9999);
             SetLinkedPed(this,pPed);
             pvVar12 = (void *)GetPositionX(pPed,(int)local_48);
-            piVar14 = (int *)S110_FUN_00401b40(&this->PositionX,(S110 *)local_44
+            piVar14 = (int *)Decoder_ProcessData(&this->PositionX,(S110 *)local_44
                                                ,pvVar12);
             pvVar12 = (void *)GetPositionY(pPed,(int)(local_44 + 4));
-            pvVar12 = S110_FUN_00401b40(&this->PositionY,(S110 *)(local_44 + 8),
+            pvVar12 = Decoder_ProcessData(&this->PositionY,(S110 *)(local_44 + 8),
                                         pvVar12);
             psVar15 = FUN_0040e8d0(local_6a,(undefined2 *)local_6a,pvVar12,
                                    piVar14);
@@ -23285,16 +23285,16 @@ LAB_0043fc95:
           Car::Car_FUN_00422500
                     (this->ObjectiveTargetCar,(uint)pSVar1,&local_18,local_14);
           puVar7 = (undefined4 *)
-                   S110_FUN_00401b40(&local_18,(S110 *)(local_14 + 1),
+                   Decoder_ProcessData(&local_18,(S110 *)(local_14 + 1),
                                      &this->PositionX);
           local_28 = (SpriteS1 *)*puVar7;
           puVar7 = (undefined4 *)
-                   S110_FUN_00401b40(local_14,(S110 *)(local_14 + 2),
+                   Decoder_ProcessData(local_14,(S110 *)(local_14 + 2),
                                      &this->PositionY);
           local_24 = (SpriteS1 *)*puVar7;
-          piVar8 = FUN_00403840(&local_28,&local_8,(S110 *)&local_28);
+          piVar8 = Matrix_Multiply(&local_28,&local_8,(S110 *)&local_28);
           local_28 = (SpriteS1 *)*piVar8;
-          piVar8 = FUN_00403840(&local_24,&local_4,(S110 *)&local_24);
+          piVar8 = Matrix_Multiply(&local_24,&local_4,(S110 *)&local_24);
           local_24 = (SpriteS1 *)*piVar8;
           bVar3 = S169::FUN_00403800((S169 *)&local_28,(int *)&local_24);
           ppSVar9 = &local_28;
@@ -23337,19 +23337,19 @@ void __thiscall FUN_004400a0(void *this,undefined4 param_1,byte param_2)
     _param_2 = (uint)(byte)(param_2 - 1);
     do {
       pPVar3 = PedManager::S48_FUN_00403890(gPedManager);
-      Ped::SetOccupation(pPVar3,0x11);
+      Ped__SetCurrentOccupation(pPVar3,0x11);
       Ped::SetRemap(pPVar3,(char)param_1);
       pPVar3->GraphicType = pPed->GraphicType;
-      Ped::SetSearchType(pPVar3,5);
+      Ped__SetSearchMode(pPVar3,5);
       piVar5 = (int *)Ped::GetPositionZ(pPed,(int)local_4);
-      piVar4 = (int *)Ped::GetPositionY(pPed,(int)local_8);
-      piVar9 = (int *)Ped::GetPositionX(pPed,(int)local_c);
+      piVar4 = (int *)Ped__GetYCoordinate(pPed,(int)local_8);
+      piVar9 = (int *)Ped__GetXCoordinate(pPed,(int)local_c);
       Ped::SetPedPosition(pPVar3,*piVar9,*piVar4,*piVar5);
       cVar2 = Ped::GetRemap(pPVar3);
       Ped::sPed_FUN_00433c10(pPVar3,cVar2);
-      Ped::SetHealthPlayer(pPVar3,100);
+      Ped__SetHealth(pPVar3,100);
       Ped::PedNormal_FUN_00433bc0(pPVar3,1);
-      PedGroupAddPed(this_00,pPVar3);
+      PedGroup_AddMember(this_00,pPVar3);
       Ped::SetNPCWeapon(pPVar3,0);
       _param_2 = _param_2 - 1;
     } while (_param_2 != 0);
@@ -23383,7 +23383,7 @@ void __thiscall FUN_004400a0(void *this,undefined4 param_1,byte param_2)
       this_01->field129_0x288 = this->field129_0x288;
       this_01->field130_0x28c = this->field130_0x28c;
       this_01->Gang = this->Gang;
-      AutoClass4::FUN_00404420(this_00,this_01,index);
+      AIController__SetPedIndex(this_00,this_01,index);
       if (this->SelectedWeapon != (Weapon *)0x0) {
         SetNPCWeapon(this_01,this->SelectedWeapon->TypeWeapon);
       }
@@ -23407,10 +23407,10 @@ LAB_00440a85:
       return;
     }
     gMUGGER = '\x01';
-    Ped::SetOccupation(pPed,0xf);
+    Ped__SetCurrentOccupation(pPed,0xf);
     Ped::PedNormal_FUN_00433bc0(pPed,2);
     Ped::Set_UNS56_FUN_00433c80(pPed,0x28);
-    Ped::SetSearchType(pPed,4);
+    Ped__SetSearchMode(pPed,4);
     Ped::SetRemap(pPed,'\x11');
     pPed->field129_0x288 = 2;
     pPed->field130_0x28c = 3;
@@ -23421,8 +23421,8 @@ LAB_00440a85:
     gCARTHIEF = '\x01';
     Ped::PedNormal_FUN_00433bc0(pPed,2);
     Ped::Set_UNS56_FUN_00433c80(pPed,0x28);
-    Ped::SetOccupation(pPed,0x10);
-    Ped::SetSearchType(pPed,6);
+    Ped__SetCurrentOccupation(pPed,0x10);
+    Ped__SetSearchMode(pPed,6);
     Ped::SetRemap(pPed,'\x0f');
     uVar8._0_1_ = pPed->flags;
     uVar8._1_1_ = pPed->uns59;
@@ -23448,14 +23448,14 @@ LAB_00440a85:
     break;
   case 4:
     bVar2 = 0xe;
-    iVar6 = DecoderFloat(&param_2);
-    iVar7 = DecoderFloat(&param_1);
+    iVar6 = Decoder_DecodeFloat(&param_2);
+    iVar7 = Decoder_DecodeFloat(&param_1);
     bVar2 = MapRelatedStruct::S16_FUN_00464fe0
                       (_gMapRelatedStruct,iVar7,iVar6,bVar2);
     if (CONCAT31(extraout_var_01,bVar2) == 0) {
-      Ped::SetOccupation(pPed,3);
+      Ped__SetCurrentOccupation(pPed,3);
       Ped::PedNormal_FUN_00433bc0(pPed,0);
-      Ped::SetSearchType(pPed,3);
+      Ped__SetSearchMode(pPed,3);
       pPed->field129_0x288 = 2;
       pPed->field130_0x28c = 3;
       pPed->GraphicType = 0;
@@ -23482,8 +23482,8 @@ LAB_00440b3d:
                          (gGangs,(char *)(CONCAT31(extraout_var_01,bVar2) + 6));
       if (DAT_005e5bd4 < 4) {
         DAT_005e5bd4 = DAT_005e5bd4 + 1;
-        Ped::SetSearchType(pPed,4);
-        Ped::SetOccupation(pPed,0x13);
+        Ped__SetSearchMode(pPed,4);
+        Ped__SetCurrentOccupation(pPed,0x13);
         pPed->Gang = pGVar9;
         Ped::SetRemap(pPed,pGVar9->field_0x101);
         cVar4 = Ped::GetRemap(pPed);
@@ -23518,9 +23518,9 @@ LAB_00440b3d:
       }
       else {
         pPed->Gang1 = pGVar9;
-        Ped::SetOccupation(pPed,3);
+        Ped__SetCurrentOccupation(pPed,3);
         Ped::PedNormal_FUN_00433bc0(pPed,0);
-        Ped::SetSearchType(pPed,3);
+        Ped__SetSearchMode(pPed,3);
         pPed->field129_0x288 = 2;
         pPed->field130_0x28c = 3;
         Ped::SetRemap(pPed,pGVar9->field_0x101);
@@ -23548,13 +23548,13 @@ LAB_00440b3d:
     if (iVar6 < 0) {
 LAB_00440a63:
       Ped::FUN_0043ad10(pPed,0);
-      Ped::SetHealthPlayer(pPed,100);
+      Ped__SetHealth(pPed,100);
       pPed->GraphicType = 2;
     }
     else if (iVar6 < 2) {
       pPed->SelectedWeapon = (Weapon *)0x0;
       Ped::FUN_0043ad10(pPed,0);
-      Ped::SetHealthPlayer(pPed,0x32);
+      Ped__SetHealth(pPed,0x32);
       puVar11 = (undefined4 *)
                 WorldCoordinateToScreenCoord(&Int_1024,local_4,&DAT_005e5da4);
       uVar1 = *puVar11;
@@ -23564,7 +23564,7 @@ LAB_00440a63:
     else {
       if (iVar6 != 2) goto LAB_00440a63;
       Ped::FUN_0043ad10(pPed,0);
-      Ped::SetHealthPlayer(pPed,100);
+      Ped__SetHealth(pPed,100);
       puVar11 = (undefined4 *)
                 WorldCoordinateToScreenCoord(&Int_1024,local_8,&DAT_005e5da4);
       uVar1 = *puVar11;
@@ -23574,9 +23574,9 @@ LAB_00440a63:
     break;
   default:
     if (_gPolice->field8_0x65c != 6) {
-      Ped::SetOccupation(pPed,3);
+      Ped__SetCurrentOccupation(pPed,3);
       Ped::PedNormal_FUN_00433bc0(pPed,0);
-      Ped::SetSearchType(pPed,3);
+      Ped__SetSearchMode(pPed,3);
       pPed->field129_0x288 = 2;
       pPed->field130_0x28c = 3;
       pPed->GraphicType = 0;
@@ -23618,8 +23618,8 @@ LAB_00440a63:
       }
       Ped::PedNormal_FUN_00433bc0(pPed,2);
       Ped::Set_UNS56_FUN_00433c80(pPed,0x28);
-      Ped::SetOccupation(pPed,0x28);
-      Ped::SetSearchType(pPed,4);
+      Ped__SetCurrentOccupation(pPed,0x28);
+      Ped__SetSearchMode(pPed,4);
       pPed->field129_0x288 = 2;
       pPed->field130_0x28c = 2;
     }
@@ -23671,34 +23671,34 @@ void __thiscall Char::FUN_00440cc0(Char *this,CameraOrPhysics *param_1)
       sVar17 = (short)iVar7;
       switch(DAT_005e5bce) {
       case '\0':
-        FUN_00401ae0(&local_48,sVar17);
+        Decoder_SetValue(&local_48,sVar17);
         local_64 = local_48;
         pPVar10 = local_48;
-        bitShiftLeft1(local_24,(void *)((int)cVar1 + (int)sVar18));
+        Decoder_ShiftLeft(local_24,(void *)((int)cVar1 + (int)sVar18));
         local_68 = *(Ped **)pPVar10->S200;
         local_60 = (Ped *)CONCAT22(local_60._2_2_,DAT_005e5f24);
         break;
       case '\x01':
-        FUN_00401ae0(&local_44,sVar18);
+        Decoder_SetValue(&local_44,sVar18);
         piVar11 = (int *)((int)cVar1 + (int)sVar17);
         local_68 = local_44;
-        bitShiftLeft1(local_20,piVar11);
+        Decoder_ShiftLeft(local_20,piVar11);
         local_64 = (Ped *)*piVar11;
         local_60 = (Ped *)CONCAT22(local_60._2_2_,DAT_005e5f60);
         break;
       case '\x02':
-        FUN_00401ae0(&local_40,(short)local_54);
+        Decoder_SetValue(&local_40,(short)local_54);
         piVar11 = (int *)((int)cVar1 + (int)sVar18);
         local_64 = local_40;
-        bitShiftLeft1(local_1c,piVar11);
+        Decoder_ShiftLeft(local_1c,piVar11);
         local_68 = (Ped *)*piVar11;
         local_60 = (Ped *)CONCAT22(local_60._2_2_,DAT_005e5e6c);
         break;
       case '\x03':
-        FUN_00401ae0(&local_3c,(short)pPVar10);
+        Decoder_SetValue(&local_3c,(short)pPVar10);
         piVar11 = (int *)(int)sVar17;
         local_68 = local_3c;
-        bitShiftLeft1(local_18,(void *)((int)cVar1 + (int)piVar11));
+        Decoder_ShiftLeft(local_18,(void *)((int)cVar1 + (int)piVar11));
         local_64 = (Ped *)*piVar11;
         local_60 = (Ped *)CONCAT22(local_60._2_2_,DAT_005e5edc);
       }
@@ -23717,25 +23717,25 @@ void __thiscall Char::FUN_00440cc0(Char *this,CameraOrPhysics *param_1)
       bVar5 = S169::FUN_00403800((S169 *)&local_64,&DAT_005e5c94);
       if (CONCAT31(extraout_var_02,bVar5) != 0) {
         pSVar8 = (SpriteS1 *)
-                 S110_FUN_00401b40(&DAT_005e5f14,(S110 *)(local_10 + 4),
+                 Decoder_ProcessData(&DAT_005e5f14,(S110 *)(local_10 + 4),
                                    &DAT_005e5c94);
         bVar5 = FUN_004037e0(&local_64,pSVar8);
         if ((CONCAT31(extraout_var_03,bVar5) != 0) &&
            (bVar5 = S169::FUN_00403800((S169 *)&local_68,&DAT_005e5c94),
            CONCAT31(extraout_var_04,bVar5) != 0)) {
           pSVar8 = (SpriteS1 *)
-                   S110_FUN_00401b40(&DAT_005e5f14,(S110 *)(local_10 + 8),
+                   Decoder_ProcessData(&DAT_005e5f14,(S110 *)(local_10 + 8),
                                      &DAT_005e5c94);
           bVar5 = FUN_004037e0(&local_68,pSVar8);
           if (CONCAT31(extraout_var_05,bVar5) != 0) {
-            iVar12 = DecoderFloat(&local_68);
-            iVar13 = DecoderFloat(&local_64);
+            iVar12 = Decoder_DecodeFloat(&local_68);
+            iVar13 = Decoder_DecodeFloat(&local_64);
             iVar12 = MapRelatedStruct::S16_FUN_00465250
                                (_gMapRelatedStruct,iVar13,iVar12);
             if ((uint)(byte)local_2c->field_0x6 <
                 *(ushort *)(iVar12 + 10) / 0x19) {
-              iVar12 = DecoderFloat(&local_68);
-              iVar13 = DecoderFloat(&local_64);
+              iVar12 = Decoder_DecodeFloat(&local_68);
+              iVar13 = Decoder_DecodeFloat(&local_64);
               iVar12 = FUN_00466910(iVar13,iVar12);
               if (iVar12 != 0) {
                 iVar12 = extraout_ECX;
@@ -23752,9 +23752,9 @@ void __thiscall Char::FUN_00440cc0(Char *this,CameraOrPhysics *param_1)
                                            ,pSVar8->S3_arr5031[0].PositionY);
                 pPVar9 = local_50;
                 if (bVar4 == 0) {
-                  uVar14 = DecoderFloat(&local_68);
+                  uVar14 = Decoder_DecodeFloat(&local_68);
                   uVar14 = uVar14 & 0xff;
-                  uVar15 = DecoderFloat(&local_64);
+                  uVar15 = Decoder_DecodeFloat(&local_64);
                   puVar16 = (undefined4 *)FUN_00433430(uVar15 & 0xff,uVar14);
                   pPVar9 = local_50;
                   if ((char)puVar16 == '\0') {
@@ -23794,7 +23794,7 @@ void __thiscall Char::FUN_00440cc0(Char *this,CameraOrPhysics *param_1)
       if (this->uns23 == 0) {
         this->uns23 = this;
       }
-      S169::FUN_00403fb0(this->pS169,this->uns23);
+      PedManager__HandlePedAction(this->pS169,this->uns23);
     }
     break;
   case 0x17:
@@ -23819,7 +23819,7 @@ joined_r0x0044127e:
         Player::S158_FUN_004a5640(this->Player);
       }
       if (this->pS169 != (S169 *)0x0) {
-        S169::FUN_00403e90(this->pS169);
+        PedManager__UpdatePedStates(this->pS169);
       }
       uVar3._0_1_ = this->flags;
       uVar3._1_1_ = this->uns59;
@@ -23834,7 +23834,7 @@ joined_r0x0044127e:
 
     if (this->SearchType == SEARCHTYPE_LINE_OF_SIGHT_PLAYER_ONLY) {
       if (this->pS169 != (S169 *)0x0) {
-        S169::FUN_00403e90(this->pS169);
+        PedManager__UpdatePedStates(this->pS169);
         FUN_004338f0(this->GameObject,6);
         goto LAB_0044135e;
       }
@@ -24101,7 +24101,7 @@ LAB_00441d16:
           bVar4 = bVar4 + 1;
           pPed = this->pS169->Ped_Arr9[bVar4];
         }
-        S169::FUN_00403be0(this->pS169);
+        PedManager__UpdateAll(this->pS169);
       }
       else {
         bVar4 = 0;
@@ -24128,7 +24128,7 @@ LAB_00441d16:
           bVar4 = bVar4 + 1;
           pPed = this->pS169->Ped_Arr9[bVar4];
         }
-        S169::FUN_00403be0(this->pS169);
+        PedManager__UpdateAll(this->pS169);
       }
     }
 
@@ -24220,16 +24220,16 @@ LAB_004423c7:
     else if ((this->CarCurrent != (Car *)0x0) &&
             (bVar2 = Car::IsMask5(this->Car), bVar2)) goto LAB_004420bd;
     puVar3 = (undefined4 *)
-             S110_FUN_00401b40(&this->pPed,(S110 *)(local_14 + 1),
+             Decoder_ProcessData(&this->pPed,(S110 *)(local_14 + 1),
                                &this->PositionX);
     local_18 = (Ped *)*puVar3;
     puVar3 = (undefined4 *)
-             S110_FUN_00401b40(&this->uns30,(S110 *)(local_14 + 2),
+             Decoder_ProcessData(&this->uns30,(S110 *)(local_14 + 2),
                                &this->PositionY);
     local_14[0] = (Ped *)*puVar3;
-    piVar4 = FUN_00403840(local_14[0],&local_8,(S110 *)&local_18);
+    piVar4 = Matrix_Multiply(local_14[0],&local_8,(S110 *)&local_18);
     local_18 = (Ped *)*piVar4;
-    piVar4 = FUN_00403840(local_18,&local_4,(S110 *)local_14);
+    piVar4 = Matrix_Multiply(local_18,&local_4,(S110 *)local_14);
     local_14[0] = (Ped *)*piVar4;
     bVar2 = S169::FUN_00403800((S169 *)&local_18,(int *)local_14);
     ppPVar5 = &local_18;
@@ -24355,16 +24355,16 @@ LAB_004423c7:
 
       if (this->CurrentState != PEDSTATE_IN_CAR) {
         puVar6 = (undefined4 *)
-                 S110_FUN_00401b40(&this->pPed,(S110 *)(local_18 + 1),
+                 Decoder_ProcessData(&this->pPed,(S110 *)(local_18 + 1),
                                    &this->PositionX);
         local_1c = (Ped *)*puVar6;
         puVar6 = (undefined4 *)
-                 S110_FUN_00401b40(&this->uns30,(S110 *)(local_18 + 2),
+                 Decoder_ProcessData(&this->uns30,(S110 *)(local_18 + 2),
                                    &this->PositionY);
         local_18[0] = (Ped *)*puVar6;
-        piVar7 = FUN_00403840(&local_1c,&local_c,(S110 *)&local_1c);
+        piVar7 = Matrix_Multiply(&local_1c,&local_c,(S110 *)&local_1c);
         local_1c = (Ped *)*piVar7;
-        piVar7 = FUN_00403840(local_18,&local_8,(S110 *)local_18);
+        piVar7 = Matrix_Multiply(local_18,&local_8,(S110 *)local_18);
         local_18[0] = (Ped *)*piVar7;
         bVar5 = S169::FUN_00403800((S169 *)&local_1c,(int *)local_18);
         ppPVar8 = &local_1c;
@@ -25323,9 +25323,9 @@ LAB_004448a5:
       pSVar9 = this->GameObject->SpriteS1;
       pSVar10 = S9::S9_FUN_00401b20((S9 *)&pSVar9->S3_arr5031[0].PositionZ,
                                     (SpriteS1 *)&param_1,(int *)&DAT_005e5c94);
-      iVar14 = DecoderFloat(pSVar10);
-      iVar17 = DecoderFloat(&pSVar9->S3_arr5031[0].PositionY);
-      iVar18 = DecoderFloat(&pSVar9->S3_arr5031[0].PositionX);
+      iVar14 = Decoder_DecodeFloat(pSVar10);
+      iVar17 = Decoder_DecodeFloat(&pSVar9->S3_arr5031[0].PositionY);
+      iVar18 = Decoder_DecodeFloat(&pSVar9->S3_arr5031[0].PositionX);
       cVar7 = FUN_00420420(iVar18,iVar17,iVar14);
       if (cVar7 != '\0') {
         TransitionState(this,New_Name_(1));
@@ -25370,9 +25370,9 @@ LAB_004448a5:
         cVar1 = FUN_00434ba0(this->pS169);
         if (cVar1 != '\0') {
           if (this_02->pS169 != (S169 *)0x0) {
-            S169::FUN_00404d40(this_02->pS169,this_02);
+            PedManager__RemovePed(this_02->pS169,this_02);
           }
-          PedGroupAddPed(this->pS169,this_02);
+          PedGroup_AddMember(this->pS169,this_02);
           sPed_FUN_004402c0(this_02,(int)this,10);
           if (this->pS169->Index == param_1) break;
         }
@@ -25593,7 +25593,7 @@ LAB_00444c79:
     if ((this->flags & DAMAGE_ANIMATION_LOCKED) != 0) goto LAB_004453cd;
     iVar2 = AutoClass4::FUN_00433370((AutoClass4 *)pAutoClass4);
     gEnableAdvancedDamageLogic = iVar2 != 1;
-    S169::FUN_00405240(pAutoClass4);
+    PedManager__UpdateGroup(pAutoClass4);
     DAT_005e5bc8 = true;
   }
 
@@ -25797,7 +25797,7 @@ void __fastcall FUN_00445e40(undefined4 *param_1)
     if (iVar1 == 8) {
       Ped::SetAnimationState(this,0,9999);
       Ped::PedSetObjective((Ped *)*param_1,0x22,9999);
-      Ped::S49_FUN_00403aa0((Ped *)*param_1,((Ped *)*param_1)->CarCurrent);
+      Ped__EnterCar((Ped *)*param_1,((Ped *)*param_1)->CarCurrent);
     }
 
 void __thiscall FUN_00445e90(void *this)
@@ -27144,7 +27144,7 @@ bool __thiscall FUN_0044a320(void *this,int param_1,Player *param_2)
 
 
   if (DAT_0066a3c9 != '\0') {
-    bitShiftLeft1(&stack0xfffffff8,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xfffffff8,(void *)0x0);
     bVar1 = Player::Player_GetID(param_2);
     bVar2 = Game::Game_FUN_0045bba0
                       (gGame,*(Sprite **)(param_1 + 0x80),bVar1,bVar3);
@@ -28130,7 +28130,7 @@ void * __thiscall FUN_0044d3a0(void *param_1,byte param_2)
     param_7 = DAT_005e94dc;
     pSVar6 = DAT_005e94dc;
     FUN_0040ce30(local_10,(byte)param_3);
-    puVar4 = (undefined4 *)S110_FUN_00401b40(pSVar6,pSVar5,puVar4);
+    puVar4 = (undefined4 *)Decoder_ProcessData(pSVar6,pSVar5,puVar4);
     pSVar6 = (SpriteS1 *)*puVar4;
     FUN_0040ce30(local_24,bVar8);
     pSVar7 = (SpriteS1 *)*puVar4;
@@ -28142,10 +28142,10 @@ void * __thiscall FUN_0044d3a0(void *param_1,byte param_2)
     piVar10 = &DAT_005e951c;
     this = (S9 *)((param_3 & 0xff) + 1);
     param_7 = DAT_005e94dc;
-    bitShiftLeft1(local_28,this);
+    Decoder_ShiftLeft(local_28,this);
     pSVar7 = S9::S9_FUN_00401b20(this,pSVar6,piVar10);
     pSVar6 = pSVar7->FirstElement;
-    bitShiftLeft1(local_24,(void *)((uVar2 & 0xff) + 1));
+    Decoder_ShiftLeft(local_24,(void *)((uVar2 & 0xff) + 1));
     pSVar7 = pSVar7->FirstElement;
     break;
   case 3:
@@ -28153,13 +28153,13 @@ void * __thiscall FUN_0044d3a0(void *param_1,byte param_2)
     local_38 = (uint)(byte)((byte)param_3 + 1);
     param_8 = DAT_005e94dc;
     param_7 = DAT_005e9408;
-    bitShiftLeft1(local_20,puVar4);
+    Decoder_ShiftLeft(local_20,puVar4);
     pSVar6 = (SpriteS1 *)*puVar4;
     pSVar5 = (S110 *)(local_20 + 4);
     puVar4 = &DAT_005e951c;
     pSVar9 = pSVar5;
     FUN_0040ce30(local_18,bVar8);
-    puVar4 = (undefined4 *)S110_FUN_00401b40(pSVar5,pSVar9,puVar4);
+    puVar4 = (undefined4 *)Decoder_ProcessData(pSVar5,pSVar9,puVar4);
     pSVar7 = (SpriteS1 *)*puVar4;
     break;
   case 4:
@@ -28171,7 +28171,7 @@ void * __thiscall FUN_0044d3a0(void *param_1,byte param_2)
     pSVar7 = (SpriteS1 *)(local_c + 4);
     piVar10 = &DAT_005e951c;
     pSpriteS1 = pSVar7;
-    bitShiftLeft1(local_4,(void *)((param_4 & 0xff) + 1));
+    Decoder_ShiftLeft(local_4,(void *)((param_4 & 0xff) + 1));
     pSVar7 = S9::S9_FUN_00401b20((S9 *)pSVar7,pSpriteS1,piVar10);
     local_38 = (uint)(byte)((byte)param_3 - 1);
     pSVar7 = pSVar7->FirstElement;
@@ -28202,7 +28202,7 @@ void __fastcall FUN_0044d7d0(void *param_1)
     puVar14 = &DAT_005e951c;
     pSVar12 = pSVar5;
     FUN_0040ce30(&param_3,bVar10);
-    pSVar3 = (S9 *)S110_FUN_00401b40(pSVar5,pSVar12,puVar14);
+    pSVar3 = (S9 *)Decoder_ProcessData(pSVar5,pSVar12,puVar14);
     pSVar4 = *(SpriteS1 **)pSVar3->Arr_24;
     pSVar7 = (SpriteS1 *)&stack0xffffffc0;
     piVar13 = &DAT_005e951c;
@@ -28242,7 +28242,7 @@ void __fastcall FUN_0044d7d0(void *param_1)
     puVar14 = &DAT_005e951c;
     pSVar12 = pSVar5;
     FUN_0040ce30(local_18,bVar11);
-    puVar14 = (undefined4 *)S110_FUN_00401b40(pSVar5,pSVar12,puVar14);
+    puVar14 = (undefined4 *)Decoder_ProcessData(pSVar5,pSVar12,puVar14);
     pSVar7 = (SpriteS1 *)*puVar14;
     if (*(char *)(param_1 + 0x2b) != '\0') {
       FUN_0040e550(&param_5,&DAT_005e9408);
@@ -28477,7 +28477,7 @@ void __thiscall FUN_0044dbf0(void *this)
     }
     else if (param_1 < 0x579) {
       if (param_1 == 0x578) {
-        pcVar2 = "Error with 1 param: %d";
+        pcVar2 = "ErrorHandler_Throw with 1 param: %d";
       }
       else {
         switch(param_1) {
@@ -28687,7 +28687,7 @@ void __thiscall FUN_0044dbf0(void *this)
     else {
       if (param_1 < 0x962) {
         if (param_1 == 0x961) {
-          strcpy((char *)&gLanguage,"Error with 2 param: %d,%d",(char *)param_5)
+          strcpy((char *)&gLanguage,"ErrorHandler_Throw with 2 param: %d,%d",(char *)param_5)
           ;
           this = extraout_ECX_69;
           goto LAB_0044fec3;
@@ -28967,7 +28967,7 @@ void __thiscall FUN_0044dbf0(void *this)
           break;
         case 0xbca:
           strcpy((char *)&gLanguage,
-                 "Error in set-up of park command. Walls intruding on the park\'s triggerspace! Door coords: (%d, %d, %d)"
+                 "ErrorHandler_Throw in set-up of park command. Walls intruding on the park\'s triggerspace! Door coords: (%d, %d, %d)"
                  ,(char *)param_6);
           this = extraout_ECX_85;
           break;
@@ -29101,7 +29101,7 @@ void __thiscall FUN_0044dbf0(void *this)
             goto LAB_0044feb6;
           }
 switchD_0044dcbc_caseD_3:
-          strcpy((char *)&gLanguage,"No Error Message Declared",unaff_EDI);
+          strcpy((char *)&gLanguage,"No ErrorHandler_Throw Message Declared",unaff_EDI);
           this = extraout_ECX_97;
           goto LAB_0044fec3;
         }
@@ -29127,7 +29127,7 @@ switchD_0044dcbc_caseD_3:
       }
       else {
         if (param_1 != 0x2333) goto switchD_0044dcbc_caseD_3;
-        pcVar2 = "DirectX Error: %s";
+        pcVar2 = "DirectX ErrorHandler_Throw: %s";
       }
     }
     goto LAB_0044feb6;
@@ -29381,7 +29381,7 @@ switchD_0044dcbc_caseD_3:
         break;
       case 0x8b:
         strcpy((char *)&gLanguage,
-               "Error doing car routefind: no routefinder data in map.",
+               "ErrorHandler_Throw doing car routefind: no routefinder data in map.",
                unaff_EDI);
         this = extraout_ECX_33;
         break;
@@ -29611,7 +29611,7 @@ switchD_0044dcbc_caseD_3:
     }
     if (param_1 < 0x29b) {
       if (param_1 == 0x29a) {
-        strcpy((char *)&gLanguage,"List Error see Kivlin",unaff_EDI);
+        strcpy((char *)&gLanguage,"List ErrorHandler_Throw see Kivlin",unaff_EDI);
         this = extraout_ECX_36;
         goto LAB_0044fec3;
       }
@@ -29809,7 +29809,7 @@ switchD_0044dcbc_caseD_3:
         this = (void *)0x0;
         break;
       case 0xb6:
-        pcVar2 = "Error in reading image from targa file";
+        pcVar2 = "ErrorHandler_Throw in reading image from targa file";
         ppacVar4 = &gLanguage;
         for (iVar3 = 9; iVar3 != 0; iVar3 = iVar3 + -1) {
           *ppacVar4 = *(char (**) [256])pcVar2;
@@ -30880,28 +30880,28 @@ int __fastcall FUN_00450c40(int param_1)
       pvVar5 = (void *)CONCAT31(extraout_var_00,bVar2);
       if ((!bVar2) && (pS49 != (Ped *)0x0)) {
         Car::Car_FUN_0041e430(pS46,&local_14);
-        iVar4 = DecoderFloat(pvVar5);
-        pvVar5 = (void *)DecoderFloat(&pS49->Car_1);
+        iVar4 = Decoder_DecodeFloat(pvVar5);
+        pvVar5 = (void *)Decoder_DecodeFloat(&pS49->Car_1);
         if ((char)iVar4 == (char)pvVar5) {
           Car::Car_FUN_0041e440(pS46,&local_10);
-          iVar4 = DecoderFloat(pvVar5);
-          iVar6 = DecoderFloat(&pS49->Car_2);
+          iVar4 = Decoder_DecodeFloat(pvVar5);
+          iVar6 = Decoder_DecodeFloat(&pS49->Car_2);
           if ((char)iVar4 == (char)iVar6) goto LAB_00450eeb;
         }
         Ped::PedSetObjective(pS49,0xe,9999);
         puVar7 = &local_c;
         Car::Car_FUN_0041e430(this->arr_Tango[0].Car1,puVar7);
-        iVar4 = DecoderFloat(puVar7);
+        iVar4 = Decoder_DecodeFloat(puVar7);
         FUN_0040ce30(&local_18,(byte)iVar4);
         puVar7 = &local_8;
         (this->arr_Tango[0].sPed)->Car_1 = local_18;
         Car::Car_FUN_0041e440(this->arr_Tango[0].Car1,puVar7);
-        iVar4 = DecoderFloat(puVar7);
+        iVar4 = Decoder_DecodeFloat(puVar7);
         FUN_0040ce30(&local_18,(byte)iVar4);
         puVar7 = &local_4;
         (this->arr_Tango[0].sPed)->Car_2 = local_18;
         Car::Car_FUN_0041e450(this->arr_Tango[0].Car1,puVar7);
-        iVar4 = DecoderFloat(puVar7);
+        iVar4 = Decoder_DecodeFloat(puVar7);
         FUN_0040ce30(&local_18,(byte)iVar4);
         (this->arr_Tango[0].sPed)->uns40 = local_18;
       }
@@ -30933,23 +30933,23 @@ int __fastcall FUN_00450c40(int param_1)
         Car::CarMakeDriveable3((Car *)pCVar5->EngineStruct,pCVar5);
         pPed = Char::CreatePed(gChar);
         this->arr_Tango[0].sPed = pPed;
-        Ped::SetSearchType(pPed,4);
-        Ped::SetOccupation(this->arr_Tango[0].sPed,0x26);
+        Ped__SetSearchMode(pPed,4);
+        Ped__SetCurrentOccupation(this->arr_Tango[0].sPed,0x26);
         pCVar5 = this->arr_Tango[0].Car;
         Ped::PutPedInCarRelated(this->arr_Tango[0].sPed,pCVar5);
         Ped::PedSetObjective(this->arr_Tango[0].sPed,0xe,9999);
         Car::Car_FUN_0041e430(this->arr_Tango[0].Car1,&local_20);
-        iVar6 = DecoderFloat(pCVar5);
+        iVar6 = Decoder_DecodeFloat(pCVar5);
         FUN_0040ce30(&local_24,(byte)iVar6);
         (this->arr_Tango[0].sPed)->Car_1 = local_24;
         pCVar5 = local_24;
         Car::Car_FUN_0041e440(this->arr_Tango[0].Car1,&local_1c);
-        iVar6 = DecoderFloat(pCVar5);
+        iVar6 = Decoder_DecodeFloat(pCVar5);
         FUN_0040ce30(&local_24,(byte)iVar6);
         (this->arr_Tango[0].sPed)->Car_2 = local_24;
         pCVar5 = local_24;
         Car::Car_FUN_0041e450(this->arr_Tango[0].Car1,&local_18);
-        iVar6 = DecoderFloat(pCVar5);
+        iVar6 = Decoder_DecodeFloat(pCVar5);
         FUN_0040ce30(&local_24,(byte)iVar6);
         (this->arr_Tango[0].sPed)->uns40 = local_24;
         pPed = this->arr_Tango[0].sPed;
@@ -31019,7 +31019,7 @@ LAB_004510cb:
     if (((bVar4 != 0) && (pPed = this->arr_Tango[0].sPed, pPed != (Ped *)0x0))
        && (this->arr_Tango[0].select == 3)) {
       Ped::PedSetObjective(pPed,0x3c,9999);
-      Ped::S49_FUN_00403aa0(this->arr_Tango[0].sPed,this->arr_Tango[0].Car1);
+      Ped__EnterCar(this->arr_Tango[0].sPed,this->arr_Tango[0].Car1);
       this->arr_Tango[0].select = 4;
     }
     break;
@@ -31057,9 +31057,9 @@ LAB_004510cb:
       Car::Car_FUN_00422d80(this->arr_Tango[0].Car);
       pPed = (this->arr_Tango[0].Car)->Driver;
       if (pPed != (Ped *)0x0) {
-        Ped::S49_FUN_00403aa0(pPed,0);
+        Ped__EnterCar(pPed,0);
         Ped::PedSetObjective((this->arr_Tango[0].Car)->Driver,0,9999);
-        Ped::Ped_Set_FUN_00403a40((this->arr_Tango[0].Car)->Driver);
+        Ped__Initialize((this->arr_Tango[0].Car)->Driver);
       }
     }
     FUN_00450c30((int)this);
@@ -31081,13 +31081,13 @@ LAB_004510cb:
   }
 
   if (!gSkipFireEngines) {
-    iVar3 = DecoderFloat(&param_3);
+    iVar3 = Decoder_DecodeFloat(&param_3);
     local_8[0] = (char)iVar3;
-    iVar3 = DecoderFloat(&param_4);
+    iVar3 = Decoder_DecodeFloat(&param_4);
     param_4 = (Car *)CONCAT31(param_4._1_3_,(char)iVar3);
     pSVar4 = S9::S9_FUN_00401b20((S9 *)&param_5,(SpriteS1 *)local_4,
                                  &DAT_005eab70);
-    iVar3 = DecoderFloat(pSVar4);
+    iVar3 = Decoder_DecodeFloat(pSVar4);
     param_5 = (SpriteS3 *)CONCAT31(param_5._1_3_,(char)iVar3);
     bVar1 = S95::S95_FUN_0049d7a0
                       (_gS95,'\x01',local_8,(byte *)&param_4,(byte *)&param_5,
@@ -31609,7 +31609,7 @@ Menu::FindLastActiveArenaSlot(Menu *this,PlayerSlotSave *param_1)
   if (this->field8751_0x1eb1c != 0) {
     this->field8751_0x1eb1c = 0;
     pPlayer = &this->Player;
-    bitShiftLeft1(auStack_c,(void *)0xffffffec);
+    Decoder_ShiftLeft(auStack_c,(void *)0xffffffec);
     bVar3 = Player::CheckCondition((Player *)pPlayer,(int *)pConditionValue);
     iVar7 = CONCAT31(extraout_var,bVar3);
     uVar2 = extraout_ECX;
@@ -31628,13 +31628,13 @@ Menu::FindLastActiveArenaSlot(Menu *this,PlayerSlotSave *param_1)
                                    piVar4);
       pSVar5 = pSVar5->FirstElement;
       *pPlayer = (Player *)pSVar5;
-      bitShiftLeft1(auStack_c,(void *)0xffffffec);
+      Decoder_ShiftLeft(auStack_c,(void *)0xffffffec);
       bVar3 = Player::CheckCondition((Player *)pPlayer,(int *)pSVar5);
       uVar2 = extraout_ECX_00;
       iVar7 = CONCAT31(extraout_var_00,bVar3);
     }
     puVar6 = (undefined4 *)
-             S110_FUN_00401b40(pPlayer,(S110 *)(auStack_8 + 4),&DAT_005eb4cc);
+             Decoder_ProcessData(pPlayer,(S110 *)(auStack_8 + 4),&DAT_005eb4cc);
     *pPlayer = (Player *)*puVar6;
   }
 
@@ -31703,7 +31703,7 @@ undefined4 __thiscall FUN_00453aa0(void *this,int param_1)
   }
 
   if (iVar1 == 0) {
-    bitShiftLeft1(&stack0xfffffff8,(void *)0x1);
+    Decoder_ShiftLeft(&stack0xfffffff8,(void *)0x1);
     uVar2 = CONCAT22((short)((uint)iVar1 >> 0x10),_DAT_00670664);
     uVar7 = extraout_ECX;
     FUN_0041f990(&stack0xfffffff0,0xc);
@@ -31715,19 +31715,19 @@ undefined4 __thiscall FUN_00453aa0(void *this,int param_1)
   }
 
   if (this->field8747_0xedf6 == 0xbe) {
-    bitShiftLeft1(&stack0xfffffff8,(void *)0x1);
+    Decoder_ShiftLeft(&stack0xfffffff8,(void *)0x1);
     uVar6 = CONCAT22(extraout_var,_DAT_0067064c);
     uVar7 = uVar6;
   }
 
   if (this->field8747_0xedf6 == 0xd2) {
-    bitShiftLeft1(&stack0xfffffff8,(void *)0x1);
+    Decoder_ShiftLeft(&stack0xfffffff8,(void *)0x1);
     uVar7 = extraout_ECX_05;
     uVar2 = CONCAT22(uVar4,_DAT_0067064c);
   }
 
   if (this->field8747_0xedf6 == 0xe6) {
-    bitShiftLeft1(&stack0xfffffff8,(void *)0x1);
+    Decoder_ShiftLeft(&stack0xfffffff8,(void *)0x1);
     uVar2 = CONCAT22(extraout_var_02,_DAT_0067064c);
     uVar7 = extraout_ECX_08;
   }
@@ -31939,7 +31939,7 @@ LAB_00455a89:
         uVar11 = 500;
         uVar9 = extraout_ECX_01;
       }
-      bitShiftLeft1(&stack0xffffffa4,(void *)0x1);
+      Decoder_ShiftLeft(&stack0xffffffa4,(void *)0x1);
       uVar7 = CONCAT22(extraout_var,this->FontStyle);
       uVar13 = uVar7;
       FUN_0041f990(&stack0xffffff9c,CONCAT22(uVar8,(ushort)bVar10) * 0x14 + 0xaa
@@ -31954,7 +31954,7 @@ LAB_00455a89:
         iVar5 = CONCAT22((short)((uint)iVar5 >> 0x10),(ushort)local_47) + 0x10;
         uVar11 = iVar5 * 0x14;
         uVar13 = extraout_ECX_03;
-        bitShiftLeft1(&stack0xffffffa4,(void *)0x1);
+        Decoder_ShiftLeft(&stack0xffffffa4,(void *)0x1);
         uVar7 = CONCAT22((short)((uint)iVar5 >> 0x10),this->FontStyle);
         uVar12 = extraout_ECX_04;
         FUN_0041f990(&stack0xffffff9c,uVar11);
@@ -32176,7 +32176,7 @@ byte __thiscall FUN_004565e0(Menu *param_1,PlayerSlotSave *param_2)
         iVar7 = iVar2;
         FUN_0041f990(&stack0xffffffe0,in_stack_0000000c);
         uVar8 = extraout_ECX_00;
-        bitShiftLeft1(&stack0xffffffdc,
+        Decoder_ShiftLeft(&stack0xffffffdc,
                       (void *)((uVar6 & 0xffff) + (uVar3 & 0xffff)));
         DrawGTATextRawMain(&stack0x00000020,uVar8,uVar9,iVar7,uVar4);
       }
@@ -32191,7 +32191,7 @@ byte __thiscall FUN_004565e0(Menu *param_1,PlayerSlotSave *param_2)
         style = iVar2;
         FUN_0041f990(&stack0xffffffd0,in_stack_0000000c);
         X = uVar3 & 0xffff;
-        bitShiftLeft1(&stack0xffffffcc,(void *)((uVar6 & 0xffff) + X));
+        Decoder_ShiftLeft(&stack0xffffffcc,(void *)((uVar6 & 0xffff) + X));
         Font::DrawGTATextRaw
                   ((wchar_t *)&stack0x00000020,X,iVar7,style,uVar4,Mode,palette,
                    enableAlpha,alpha);
@@ -32206,7 +32206,7 @@ byte __thiscall FUN_004565e0(Menu *param_1,PlayerSlotSave *param_2)
     psVar3 = (short *)Text::Bsearch(gText,local_20c);
     FUN_004c2450(local_200,(short *)local_200,psVar3,0x230,uVar1);
     uVar6 = extraout_ECX;
-    bitShiftLeft1(&stack0xfffffde4,(void *)0x1);
+    Decoder_ShiftLeft(&stack0xfffffde4,(void *)0x1);
     uVar5 = extraout_ECX_00;
     FUN_0041f990(&stack0xfffffddc,0x10e);
     uVar4 = extraout_ECX_01;
@@ -32303,7 +32303,7 @@ LAB_00456945:
         iVar3 = extraout_ECX_00;
       }
       if ((short)_param_6 == -1) {
-        bitShiftLeft1(&stack0xffffffe8,(void *)0x1);
+        Decoder_ShiftLeft(&stack0xffffffe8,(void *)0x1);
         uVar8 = extraout_ECX_01;
         iVar6 = iVar2;
         FUN_0041f990(&stack0xffffffe0,uVar5);
@@ -32318,7 +32318,7 @@ LAB_00456945:
         Mode = &param_5;
         param_5 = 8;
         palette = _param_6;
-        bitShiftLeft1(&stack0xffffffd8,(void *)0x1);
+        Decoder_ShiftLeft(&stack0xffffffd8,(void *)0x1);
         Y = extraout_ECX_04;
         style = iVar2;
         FUN_0041f990(&stack0xffffffd0,uVar5);
@@ -32343,7 +32343,7 @@ LAB_00456945:
 
   if (gTestFileGxt == false) {
     uVar10 = extraout_ECX_15;
-    bitShiftLeft1(&stack0xffffffe0,(void *)0x1);
+    Decoder_ShiftLeft(&stack0xffffffe0,(void *)0x1);
     uVar8 = extraout_ECX_16;
     uVar9 = local_8;
     FUN_0041f990(&stack0xffffffd8,param_2 + 0x50);
@@ -32392,10 +32392,10 @@ void FUN_00457830(void)
     sVar7 = PrintCentr(this,pwVar18,wVar36,uVar39);
     uVar10 = CONCAT22(extraout_var_01,sVar7);
     uVar14 = extraout_ECX_00;
-    bitShiftLeft1(&stack0xfffffff4,(void *)0x1);
+    Decoder_ShiftLeft(&stack0xfffffff4,(void *)0x1);
     iVar8 = CONCAT22((short)(uVar10 >> 0x10),this->FontStyle);
     uVar24 = extraout_ECX_01;
-    bitShiftLeft1(&stack0xffffffec,&DAT_00000104);
+    Decoder_ShiftLeft(&stack0xffffffec,&DAT_00000104);
     uVar29 = extraout_ECX_02;
     FUN_0041f990(&stack0xffffffe8,CONCAT22(extraout_var_01,sVar7));
     pvVar15 = Text::Bsearch(gText,"loading");
@@ -32414,7 +32414,7 @@ void FUN_00457830(void)
     Y = (SpriteS1 *)this->Player;
     uVar35 = uVar10;
     pMVar37 = this;
-    bitShiftLeft1(&stack0xfffffff4,(void *)0x1e0);
+    Decoder_ShiftLeft(&stack0xfffffff4,(void *)0x1e0);
     bVar4 = FUN_004037e0(&stack0xffffffe4,pSVar12);
     iVar8 = CONCAT31(extraout_var,bVar4);
     while ((iVar8 != 0 && ((ushort)uVar10 < 600))) {
@@ -32486,7 +32486,7 @@ void FUN_00457830(void)
             piVar11 = (int *)&stack0xffffffe0;
             uVar23 = iVar9 / 2;
             uVar10 = in_stack_fffffff4;
-            bitShiftLeft1(&stack0xffffffb8,(void *)0x1);
+            Decoder_ShiftLeft(&stack0xffffffb8,(void *)0x1);
             iVar8 = extraout_ECX;
             iVar33 = in_stack_ffffffdc;
             FUN_0041f990(&stack0xffffffac,uVar23);
@@ -32504,7 +32504,7 @@ void FUN_00457830(void)
       pSVar12 = S9::S9_FUN_00401b20((S9 *)&stack0xffffffe4,
                                     (SpriteS1 *)&stack0xfffffffc,piVar11);
       Y = pSVar12->FirstElement;
-      bitShiftLeft1(&stack0xfffffff4,(void *)0x1e0);
+      Decoder_ShiftLeft(&stack0xfffffff4,(void *)0x1e0);
       bVar4 = FUN_004037e0(&stack0xffffffe4,pSVar12);
       iVar8 = CONCAT31(extraout_var_00,bVar4);
       this = pMVar37;
@@ -32526,12 +32526,12 @@ void FUN_00457830(void)
                          (ushort *)L"GTA2 V%d.%d",_gVersionMinor,_gVersionMajor,
                          unaff_EDI);
     uVar20 = (undefined2)((uint)pFVar13 >> 0x10);
-    bitShiftLeft1(&stack0xffffffd0,(void *)0x1);
+    Decoder_ShiftLeft(&stack0xffffffd0,(void *)0x1);
     uVar14 = CONCAT22(uVar20,_DAT_0067067c);
     uVar24 = extraout_ECX_03;
-    bitShiftLeft1(&stack0xffffffc8,(void *)0x1cc);
+    Decoder_ShiftLeft(&stack0xffffffc8,(void *)0x1cc);
     uVar29 = extraout_ECX_04;
-    bitShiftLeft1(&stack0xffffffc4,(void *)0x12c);
+    Decoder_ShiftLeft(&stack0xffffffc4,(void *)0x12c);
     DrawGTATextRawMain(&gUString,uVar29,uVar24,uVar14,pPVar31);
     uVar10 = extraout_ECX_05;
     uVar20 = extraout_var_14;
@@ -32660,7 +32660,7 @@ LAB_00458087:
             piVar11 = (int *)&stack0xfffffff0;
             in_stack_fffffff0 = (SpriteS1 *)0x8;
             piVar27 = piVar11;
-            bitShiftLeft1(&stack0xffffffc0,(void *)0x1);
+            Decoder_ShiftLeft(&stack0xffffffc0,(void *)0x1);
             iVar28 = CONCAT22(extraout_var_20,this->FontStyle);
             iVar26 = extraout_ECX_14;
             FUN_0041f990(&stack0xffffffb8,in_stack_ffffffe8);
@@ -32670,7 +32670,7 @@ LAB_00458087:
           else {
             piVar27 = (int *)&stack0xfffffff0;
             in_stack_fffffff0 = (SpriteS1 *)0x8;
-            bitShiftLeft1(&stack0xffffffc0,(void *)0x1);
+            Decoder_ShiftLeft(&stack0xffffffc0,(void *)0x1);
             iVar28 = CONCAT22(uVar20,pMVar21->StringLength);
             iVar26 = extraout_ECX_17;
             FUN_0041f990(&stack0xffffffb8,in_stack_ffffffe8);
@@ -32700,7 +32700,7 @@ LAB_004580c1:
         in_stack_ffffffe8 = CONCAT22(wVar36,pMVar21->Y);
         if ((wchar_t)uVar17 == pMVar2->IndexMenuActions) {
           pMVar21 = (MenuEntry *)0x0;
-          bitShiftLeft1(&stack0xffffffd0,(void *)0x1);
+          Decoder_ShiftLeft(&stack0xffffffd0,(void *)0x1);
           uVar14 = CONCAT22(extraout_var_18,_DAT_0067064c);
           uVar24 = extraout_ECX_07;
           FUN_0041f990(&stack0xffffffc8,in_stack_ffffffe8);
@@ -32772,7 +32772,7 @@ LAB_004580c1:
                     CONCAT22((short)((uint)pMVar21 >> 0x10),*psVar1);
           palette = pMVar21;
           if (*psVar1 != -1) goto LAB_00458087;
-          bitShiftLeft1(&stack0xffffffd0,(void *)0x1);
+          Decoder_ShiftLeft(&stack0xffffffd0,(void *)0x1);
           uVar14 = CONCAT22(extraout_var_08,this->FontStyle);
           uVar24 = uVar14;
           FUN_0041f990(&stack0xffffffc8,in_stack_ffffffe8);
@@ -32789,7 +32789,7 @@ LAB_004580c1:
             piVar27 = (int *)&stack0xfffffff0;
             in_stack_fffffff0 = (SpriteS1 *)0x8;
             palette = pMVar16;
-            bitShiftLeft1(&stack0xffffffc0,(void *)0x1);
+            Decoder_ShiftLeft(&stack0xffffffc0,(void *)0x1);
             iVar28 = CONCAT22((short)((uint)pMVar16 >> 0x10),
                               pMVar21->StringLength);
             iVar26 = extraout_ECX_11;
@@ -32798,7 +32798,7 @@ LAB_004580c1:
             FUN_0041f990(&stack0xffffffb4,unaff_EBX);
             goto LAB_004580c1;
           }
-          bitShiftLeft1(&stack0xffffffd0,(void *)0x1);
+          Decoder_ShiftLeft(&stack0xffffffd0,(void *)0x1);
           uVar14 = CONCAT22(extraout_var_19,pMVar21->StringLength);
           uVar24 = extraout_ECX_09;
           FUN_0041f990(&stack0xffffffc8,in_stack_ffffffe8);
@@ -32860,7 +32860,7 @@ LAB_004580c1:
             pGVar22 = (GUI *)CONCAT22((short)((uint)pGVar22 >> 0x10),*psVar1);
             if (*psVar1 == -1) {
               uVar38 = uVar10;
-              bitShiftLeft1(&stack0xffffffd0,(void *)0x1);
+              Decoder_ShiftLeft(&stack0xffffffd0,(void *)0x1);
               uVar24 = extraout_ECX_20;
               uVar17 = unaff_EBX;
               FUN_0041f990(&stack0xffffffc8,in_stack_ffffffe8);
@@ -32875,7 +32875,7 @@ LAB_004580c1:
               piVar11 = (int *)&stack0xfffffffc;
               piVar27 = piVar11;
               palette_00 = pGVar22;
-              bitShiftLeft1(&stack0xffffffc0,(void *)0x1);
+              Decoder_ShiftLeft(&stack0xffffffc0,(void *)0x1);
               iVar33 = extraout_ECX_22;
               uVar17 = unaff_EBX;
               FUN_0041f990(&stack0xffffffb8,in_stack_ffffffe8);
@@ -32936,7 +32936,7 @@ LAB_004580c1:
       PlayerData::ShowTextDisplay
                 (this_03,(char *)&gUString,(ushort *)&DAT_0057360c,unaff_EDI,
                  unaff_ESI,uVar35);
-      bitShiftLeft1(&stack0xffffffd0,(void *)0x1);
+      Decoder_ShiftLeft(&stack0xffffffd0,(void *)0x1);
       uVar14 = CONCAT22(extraout_var_11,this->FontStyle);
       uVar24 = uVar14;
       FUN_0041f990(&stack0xffffffc8,CONCAT22(uVar20,sVar7));
@@ -32947,7 +32947,7 @@ LAB_004580c1:
     }
     pwVar18 = (wchar_t *)Text::Bsearch(gText,"entrnam");
     CopyWideString((wchar_t *)&gUString,pwVar18);
-    bitShiftLeft1(&stack0xffffffd0,(void *)0x1);
+    Decoder_ShiftLeft(&stack0xffffffd0,(void *)0x1);
     uVar14 = CONCAT22(extraout_var_21,_DAT_00670664);
     uVar24 = extraout_ECX_25;
     FUN_0041f990(&stack0xffffffc8,0xc);
@@ -32998,7 +32998,7 @@ LAB_00458771:
 
   if (page == 9) {
     this->field8751_0x1eb1c = 0;
-    bitShiftLeft1(&local_f4,(void *)0x19a);
+    Decoder_ShiftLeft(&local_f4,(void *)0x19a);
     pPVar1 = (Player *)*pProfileName;
     this->field8755_0x1eb24 = 0;
     this->Player = pPVar1;
@@ -35213,11 +35213,11 @@ Replay::cInput_FUN_0045f780(Replay *this,undefined4 param_1,undefined4 param_2)
 
   if (gPlayReplay == true) {
     gByte1 = '\0';
-    FileMgr::FileOpen((FileMgr *)0x0,s_test_replay_rep_00595f80);
+    FileMgr__OpenFile((FileMgr *)0x0,s_test_replay_rep_00595f80);
     cInput_FUN_0045f270(this,true);
     in_stack_00000010 = (void *)480000;
-    uVar1 = FUN_00403040(this->LPBUFFER,&stack0x00000010);
-    FileMgr::CloseFile(this_00);
+    uVar1 = Checksum_Calculate(this->LPBUFFER,&stack0x00000010);
+    FileMgr__Close(this_00);
     this->field432008_0x7533c = uVar1 / 0xc;
     if ((uVar1 / 0xc) * 0xc != uVar1) {
       DebugLog(0x40b,"input.cpp",700);
@@ -35270,7 +35270,7 @@ void FUN_0045faff(void)
 
 
     if (bVar1 == 0) {
-      FUN_003f14c0((void *)(extraout_ECX + 0x3c),(void *)(extraout_ECX + 0x3c));
+      CopyObject((void *)(extraout_ECX + 0x3c),(void *)(extraout_ECX + 0x3c));
       return;
     }
 
@@ -35626,8 +35626,8 @@ void __thiscall S116::S116_FUN_004613b0(S116 *this)
 
 
   if (this->field20_0x24 == 0) {
-    iVar1 = DecoderFloat(&this->field_0x8);
-    iVar2 = DecoderFloat(&this->S116);
+    iVar1 = Decoder_DecodeFloat(&this->field_0x8);
+    iVar2 = Decoder_DecodeFloat(&this->S116);
     *(undefined4 *)(_Buffer_0x4000 + ((iVar1 >> 2) * 0x40 + (iVar2 >> 2)) * 4) =
          this->field19_0x20;
   }
@@ -36298,7 +36298,7 @@ Map * __thiscall Map::Map(Map *this)
 
   switch(param_4) {
   case (S169 *)0x1:
-    puVar1 = (undefined4 *)S110_FUN_00401b40(param_2,(S110 *)&param_2,&param_3);
+    puVar1 = (undefined4 *)Decoder_ProcessData(param_2,(S110 *)&param_2,&param_3);
     pSVar2->FirstElement = (SpriteS1 *)*puVar1;
     return;
   case (S169 *)0x2:
@@ -36307,7 +36307,7 @@ Map * __thiscall Map::Map(Map *this)
   case (S169 *)0x3:
     break;
   case (S169 *)0x4:
-    puVar1 = (undefined4 *)S110_FUN_00401b40(param_1,(S110 *)&param_2,&param_3);
+    puVar1 = (undefined4 *)Decoder_ProcessData(param_1,(S110 *)&param_2,&param_3);
     param_1->FirstElement = (SpriteS1 *)*puVar1;
     return;
   default:
@@ -36662,7 +36662,7 @@ void __fastcall FUN_00464330(MapRelatedStruct *param_1)
   }
 
     if (uVar2 != 0) {
-      pvVar3 = CreateBuffer((uint)uVar2);
+      pvVar3 = Memory_Allocate((uint)uVar2);
       param_1->field4_0x330 = pvVar3;
     }
 
@@ -36782,7 +36782,7 @@ void __fastcall thunk_FUN_00464330(MapRelatedStruct *param_1)
   }
 
     if (uVar2 != 0) {
-      pvVar3 = CreateBuffer((uint)uVar2);
+      pvVar3 = Memory_Allocate((uint)uVar2);
       param_1->field4_0x330 = pvVar3;
     }
 
@@ -36836,7 +36836,7 @@ MapRelatedStruct::FUN_00464990(MapRelatedStruct *this,char *param_1)
         FUN_00464890(this,local_10,local_c);
       }
       local_1c = 8;
-      bVar1 = FileMgr::ReadLine((FileMgr *)local_10,(FileMgr *)local_10,
+      bVar1 = FileMgr__ReadDataLine((FileMgr *)local_10,(FileMgr *)local_10,
                                 (int)&local_1c);
       this_00 = extraout_ECX_00;
     } while (bVar1);
@@ -37786,7 +37786,7 @@ switchD_00466bdc_caseD_0:
   case 1:
     pvVar10 = (void *)FUN_0042a630(&param_2,&param_3);
     puVar9 = (undefined4 *)
-             S110_FUN_00401b40(&DAT_00662c98,(S110 *)&param_3,pvVar10);
+             Decoder_ProcessData(&DAT_00662c98,(S110 *)&param_3,pvVar10);
     param_3 = (SpriteS1 *)*puVar9;
     break;
   case 2:
@@ -37796,7 +37796,7 @@ switchD_00466bdc_caseD_0:
   case 3:
     pvVar10 = (void *)FUN_0042a630(local_8,&param_2);
     puVar9 = (undefined4 *)
-             S110_FUN_00401b40(&DAT_00662c98,(S110 *)(local_8 + 4),pvVar10);
+             Decoder_ProcessData(&DAT_00662c98,(S110 *)(local_8 + 4),pvVar10);
     goto LAB_00466c51;
   case 4:
     puVar9 = (undefined4 *)FUN_0042a630(&param_4,&param_2);
@@ -37846,7 +37846,7 @@ switchD_00466db8_caseD_4:
     }
 
   if (_gMaxZForTile == 0) {
-    bitShiftLeft1(param_2,(void *)0x1);
+    Decoder_ShiftLeft(param_2,(void *)0x1);
     return param_2;
   }
 
@@ -37854,7 +37854,7 @@ int * FUN_00466f70(int *param_1,undefined4 param_2,undefined4 param_3)
 
 
   if (_gMaxZForTile == 0) {
-    bitShiftLeft1(param_1,(void *)0x0);
+    Decoder_ShiftLeft(param_1,(void *)0x0);
     return param_1;
   }
 
@@ -37895,15 +37895,15 @@ switchD_00467207_caseD_4:
           if (iVar7 != iVar6) {
             S16_FUN_00467020(this,local_5c,local_58,(S110 *)local_54,(Ped *)0x1,
                              (Ped *)0x0);
-            pvVar5 = S110_FUN_00401b40(local_54,(S110 *)local_44,&DAT_00662c98);
-            iVar6 = DecoderFloat(pvVar5);
-            iVar7 = DecoderFloat(&local_58);
-            iVar8 = DecoderFloat(&local_5c);
+            pvVar5 = Decoder_ProcessData(local_54,(S110 *)local_44,&DAT_00662c98);
+            iVar6 = Decoder_DecodeFloat(pvVar5);
+            iVar7 = Decoder_DecodeFloat(&local_58);
+            iVar8 = Decoder_DecodeFloat(&local_5c);
             iVar7 = S16_FUN_004653c0(this,iVar8,iVar7,iVar6);
             if ((*(byte *)(iVar7 + 0xb) & 0xfc) == 0xfc) {
-              iVar6 = DecoderFloat(local_54);
-              iVar7 = DecoderFloat(&local_58);
-              iVar8 = DecoderFloat(&local_5c);
+              iVar6 = Decoder_DecodeFloat(local_54);
+              iVar7 = Decoder_DecodeFloat(&local_58);
+              iVar8 = Decoder_DecodeFloat(&local_5c);
               iVar7 = S16_FUN_004653c0(this,iVar8,iVar7,iVar6);
             }
           }
@@ -37918,7 +37918,7 @@ LAB_0046770b:
     else {
       FUN_004630d0(&local_5c,&local_58,_DAT_00662c98,local_54._4_4_);
       puVar10 = (undefined4 *)
-                S110_FUN_00401b40(&param_4,(S110 *)local_44,&DAT_00662c98);
+                Decoder_ProcessData(&param_4,(S110 *)local_44,&DAT_00662c98);
       param_4 = (S110 *)*puVar10;
     }
   }
@@ -37940,11 +37940,11 @@ LAB_0046770b:
         if (iVar8 != iVar7) {
           S16_FUN_00467020(this,local_5c,local_58,(S110 *)local_54,(Ped *)0x1,
                            (Ped *)0x0);
-          pvVar5 = S110_FUN_00401b40(local_54,(S110 *)&local_30.field23_0x2c,
+          pvVar5 = Decoder_ProcessData(local_54,(S110 *)&local_30.field23_0x2c,
                                      &DAT_00662c98);
-          iVar6 = DecoderFloat(pvVar5);
-          iVar7 = DecoderFloat(&local_58);
-          iVar8 = DecoderFloat(&local_5c);
+          iVar6 = Decoder_DecodeFloat(pvVar5);
+          iVar7 = Decoder_DecodeFloat(&local_58);
+          iVar8 = Decoder_DecodeFloat(&local_5c);
           iVar8 = S16_FUN_004653c0(this,iVar8,iVar7,iVar6);
           bVar4 = *(byte *)(iVar8 + 0xb);
           goto LAB_00467edf;
@@ -37953,18 +37953,18 @@ LAB_0046770b:
         if (iVar8 != iVar7) {
           S16_FUN_00467020(this,local_5c,local_58,(S110 *)local_54,(Ped *)0x1,
                            (Ped *)0x0);
-          pvVar5 = S110_FUN_00401b40(local_54,(S110 *)&local_30.field20_0x20,
+          pvVar5 = Decoder_ProcessData(local_54,(S110 *)&local_30.field20_0x20,
                                      &DAT_00662c98);
-          iVar6 = DecoderFloat(pvVar5);
-          iVar7 = DecoderFloat(&local_58);
-          iVar8 = DecoderFloat(&local_5c);
+          iVar6 = Decoder_DecodeFloat(pvVar5);
+          iVar7 = Decoder_DecodeFloat(&local_58);
+          iVar8 = Decoder_DecodeFloat(&local_5c);
           iVar8 = S16_FUN_004653c0(this,iVar8,iVar7,iVar6);
           bVar4 = *(byte *)(iVar8 + 0xb);
 LAB_00467edf:
           if ((bVar4 & 0xfc) == 0xfc) {
-            iVar6 = DecoderFloat(local_54);
-            iVar7 = DecoderFloat(&local_58);
-            iVar8 = DecoderFloat(&local_5c);
+            iVar6 = Decoder_DecodeFloat(local_54);
+            iVar7 = Decoder_DecodeFloat(&local_58);
+            iVar8 = Decoder_DecodeFloat(&local_5c);
             iVar8 = S16_FUN_004653c0(this,iVar8,iVar7,iVar6);
           }
         }
@@ -37972,16 +37972,16 @@ LAB_00467edf:
       if (iVar8 != iVar7) {
         S16_FUN_00467020(this,local_5c,local_58,(S110 *)local_54,(Ped *)0x1,
                          (Ped *)0x0);
-        pvVar5 = S110_FUN_00401b40(local_54,(S110 *)(local_3c + 4),&DAT_00662c98
+        pvVar5 = Decoder_ProcessData(local_54,(S110 *)(local_3c + 4),&DAT_00662c98
                                   );
-        iVar6 = DecoderFloat(pvVar5);
-        iVar7 = DecoderFloat(&local_58);
-        iVar8 = DecoderFloat(&local_5c);
+        iVar6 = Decoder_DecodeFloat(pvVar5);
+        iVar7 = Decoder_DecodeFloat(&local_58);
+        iVar8 = Decoder_DecodeFloat(&local_5c);
         iVar8 = S16_FUN_004653c0(this,iVar8,iVar7,iVar6);
         if ((*(byte *)(iVar8 + 0xb) & 0xfc) == 0xfc) {
-          iVar6 = DecoderFloat(local_54);
-          iVar7 = DecoderFloat(&local_58);
-          iVar8 = DecoderFloat(&local_5c);
+          iVar6 = Decoder_DecodeFloat(local_54);
+          iVar7 = Decoder_DecodeFloat(&local_58);
+          iVar8 = Decoder_DecodeFloat(&local_5c);
           iVar8 = S16_FUN_004653c0(this,iVar8,iVar7,iVar6);
         }
       }
@@ -37994,28 +37994,28 @@ LAB_00467edf:
                                CONCAT22(extraout_var_13,*puVar9));
         local_54._8_4_ = *puVar10;
         puVar10 = (undefined4 *)
-                  S110_FUN_00401b40(&DAT_00662c98,&local_30,local_54 + 8);
+                  Decoder_ProcessData(&DAT_00662c98,&local_30,local_54 + 8);
         psVar18 = &local_62;
         psVar19 = (short *)&DAT_00663108;
         pvVar5 = (void *)FUN_004725b0(local_5e,local_54 + 4);
         pvVar5 = FUN_0040e5a0(pvVar5,psVar18,psVar19,unaff_EDI,unaff_ESI);
         bVar4 = FUN_00472c00(this_01,pvVar5);
         FUN_004630d0(&local_5c,&local_58,*puVar10,bVar4);
-        piVar13 = (int *)S110_FUN_00401b40(&DAT_00662c98,(S110 *)&local_30.pPed,
+        piVar13 = (int *)Decoder_ProcessData(&DAT_00662c98,(S110 *)&local_30.pPed,
                                            local_54 + 8);
         pSVar14 = S9::S9_FUN_00401b20((S9 *)&param_4,(SpriteS1 *)&local_30.S169,
                                       piVar13);
         param_4 = (S110 *)pSVar14->FirstElement;
-        pvVar5 = S110_FUN_00401b40(local_54,(S110 *)&local_30.field_0xc,
+        pvVar5 = Decoder_ProcessData(local_54,(S110 *)&local_30.field_0xc,
                                    &DAT_00662c98);
-        iVar6 = DecoderFloat(pvVar5);
-        iVar7 = DecoderFloat(&local_58);
-        iVar8 = DecoderFloat(&local_5c);
+        iVar6 = Decoder_DecodeFloat(pvVar5);
+        iVar7 = Decoder_DecodeFloat(&local_58);
+        iVar8 = Decoder_DecodeFloat(&local_5c);
         iVar8 = S16_FUN_004653c0(this,iVar8,iVar7,iVar6);
         if ((*(byte *)(iVar8 + 0xb) & 0xfc) == 0xfc) {
-          iVar6 = DecoderFloat(local_54);
-          iVar7 = DecoderFloat(&local_58);
-          iVar8 = DecoderFloat(&local_5c);
+          iVar6 = Decoder_DecodeFloat(local_54);
+          iVar7 = Decoder_DecodeFloat(&local_58);
+          iVar8 = Decoder_DecodeFloat(&local_5c);
           iVar8 = S16_FUN_004653c0(this,iVar8,iVar7,iVar6);
         }
         uVar16 = local_58;
@@ -38023,16 +38023,16 @@ LAB_00467edf:
         if (iVar8 != local_54._12_4_) {
           S16_FUN_00467020(this,local_5c,local_58,(S110 *)local_54,(Ped *)0x1,
                            (Ped *)0x0);
-          pvVar5 = S110_FUN_00401b40(local_54,(S110 *)&local_30.field_0x10,
+          pvVar5 = Decoder_ProcessData(local_54,(S110 *)&local_30.field_0x10,
                                      &DAT_00662c98);
-          iVar6 = DecoderFloat(pvVar5);
-          iVar7 = DecoderFloat(&local_58);
-          iVar8 = DecoderFloat(&local_5c);
+          iVar6 = Decoder_DecodeFloat(pvVar5);
+          iVar7 = Decoder_DecodeFloat(&local_58);
+          iVar8 = Decoder_DecodeFloat(&local_5c);
           iVar8 = S16_FUN_004653c0(this,iVar8,iVar7,iVar6);
           if ((*(byte *)(iVar8 + 0xb) & 0xfc) == 0xfc) {
-            iVar6 = DecoderFloat(local_54);
-            iVar7 = DecoderFloat(&local_58);
-            iVar8 = DecoderFloat(&local_5c);
+            iVar6 = Decoder_DecodeFloat(local_54);
+            iVar7 = Decoder_DecodeFloat(&local_58);
+            iVar8 = Decoder_DecodeFloat(&local_5c);
             iVar8 = S16_FUN_004653c0(this,iVar8,iVar7,iVar6);
           }
         }
@@ -38079,7 +38079,7 @@ switchD_00468091_caseD_4:
       else {
         FUN_004630d0(&local_9c,&local_a0,_DAT_00662c98,uVar2);
         puVar13 = (undefined4 *)
-                  S110_FUN_00401b40(&param_4,(S110 *)(local_98 + 8),
+                  Decoder_ProcessData(&param_4,(S110 *)(local_98 + 8),
                                     &DAT_00662c98);
         param_4 = (Ped *)*puVar13;
         pSVar16 = local_a0;
@@ -38090,15 +38090,15 @@ switchD_00468091_caseD_4:
     if (pSVar14 != local_84) {
       S16_FUN_00467020(this,pPVar17,pSVar16,(S110 *)local_98,(Ped *)0x0,
                        (Ped *)0x0);
-      pvVar6 = S110_FUN_00401b40(local_98,(S110 *)(local_98 + 8),&DAT_00662c98);
-      iVar7 = DecoderFloat(pvVar6);
-      iVar8 = DecoderFloat(&local_a0);
-      iVar9 = DecoderFloat(&local_9c);
+      pvVar6 = Decoder_ProcessData(local_98,(S110 *)(local_98 + 8),&DAT_00662c98);
+      iVar7 = Decoder_DecodeFloat(pvVar6);
+      iVar8 = Decoder_DecodeFloat(&local_a0);
+      iVar9 = Decoder_DecodeFloat(&local_9c);
       pSVar14 = (SpriteS1 *)S16_FUN_004653c0(this,iVar9,iVar8,iVar7);
       if (((uint)pSVar14->S3_arr5031[0].Car & 0xfc000000) == 0xfc000000) {
-        iVar7 = DecoderFloat(local_98);
-        iVar8 = DecoderFloat(&local_a0);
-        iVar9 = DecoderFloat(&local_9c);
+        iVar7 = Decoder_DecodeFloat(local_98);
+        iVar8 = Decoder_DecodeFloat(&local_a0);
+        iVar9 = Decoder_DecodeFloat(&local_9c);
         pSVar14 = (SpriteS1 *)S16_FUN_004653c0(this,iVar9,iVar8,iVar7);
       }
     }
@@ -38113,7 +38113,7 @@ LAB_004684e9:
     else {
       FUN_004630d0(&local_9c,&local_a0,_DAT_00662c98,local_98._4_4_);
       puVar13 = (undefined4 *)
-                S110_FUN_00401b40(&param_4,(S110 *)(local_98 + 8),&DAT_00662c98)
+                Decoder_ProcessData(&param_4,(S110 *)(local_98 + 8),&DAT_00662c98)
       ;
       param_4 = (Ped *)*puVar13;
     }
@@ -38137,25 +38137,25 @@ LAB_004684e9:
       switch(local_98._4_4_) {
       case 1:
       case 2:
-        pvVar6 = S110_FUN_00401b40(&local_7c,(S110 *)local_38,&DAT_00662c98);
-        iVar7 = DecoderFloat(pvVar6);
-        iVar8 = DecoderFloat(local_78);
+        pvVar6 = Decoder_ProcessData(&local_7c,(S110 *)local_38,&DAT_00662c98);
+        iVar7 = Decoder_DecodeFloat(pvVar6);
+        iVar8 = Decoder_DecodeFloat(local_78);
         pSVar10 = S9::S9_FUN_00401b20((S9 *)local_74,
                                       (SpriteS1 *)&local_30.field20_0x20,
                                       (int *)&DAT_00662c98);
-        iVar9 = DecoderFloat(pSVar10);
+        iVar9 = Decoder_DecodeFloat(pSVar10);
         pSVar14 = (SpriteS1 *)
                   S16_FUN_004653c0(_gMapRelatedStruct,iVar9,iVar8,iVar7);
         if ((pSVar14 == (SpriteS1 *)0x0) ||
            (iVar7 = FUN_004633a0(pSVar14,0), iVar7 != 3)) {
-          pvVar6 = S110_FUN_00401b40(&local_7c,&local_30,&DAT_00662c98);
-          iVar7 = DecoderFloat(pvVar6);
-          iVar8 = DecoderFloat(local_78);
+          pvVar6 = Decoder_ProcessData(&local_7c,&local_30,&DAT_00662c98);
+          iVar7 = Decoder_DecodeFloat(pvVar6);
+          iVar8 = Decoder_DecodeFloat(local_78);
           this_00 = (undefined1 *)
-                    S110_FUN_00401b40(local_74,(S110 *)(local_60 + 4),
+                    Decoder_ProcessData(local_74,(S110 *)(local_60 + 4),
                                       &DAT_00662c98);
 LAB_00468bac:
-          iVar9 = DecoderFloat(this_00);
+          iVar9 = Decoder_DecodeFloat(this_00);
           pSVar14 = (SpriteS1 *)
                     S16_FUN_004653c0(_gMapRelatedStruct,iVar9,iVar8,iVar7);
           pPVar17 = (Ped *)FUN_004633a0(pSVar14,0);
@@ -38166,23 +38166,23 @@ LAB_00468bac:
         break;
       case 3:
       case 4:
-        pvVar6 = S110_FUN_00401b40(&local_7c,(S110 *)(local_58 + 4),
+        pvVar6 = Decoder_ProcessData(&local_7c,(S110 *)(local_58 + 4),
                                    &DAT_00662c98);
-        iVar7 = DecoderFloat(pvVar6);
+        iVar7 = Decoder_DecodeFloat(pvVar6);
         pSVar10 = S9::S9_FUN_00401b20((S9 *)local_78,(SpriteS1 *)(local_50 + 4),
                                       (int *)&DAT_00662c98);
-        iVar8 = DecoderFloat(pSVar10);
-        iVar9 = DecoderFloat(local_74);
+        iVar8 = Decoder_DecodeFloat(pSVar10);
+        iVar9 = Decoder_DecodeFloat(local_74);
         pSVar14 = (SpriteS1 *)
                   S16_FUN_004653c0(_gMapRelatedStruct,iVar9,iVar8,iVar7);
         if ((pSVar14 == (SpriteS1 *)0x0) ||
            (iVar7 = FUN_004633a0(pSVar14,0), iVar7 != 2)) {
-          pvVar6 = S110_FUN_00401b40(&local_7c,(S110 *)(local_50 + 0xc),
+          pvVar6 = Decoder_ProcessData(&local_7c,(S110 *)(local_50 + 0xc),
                                      &DAT_00662c98);
-          iVar7 = DecoderFloat(pvVar6);
-          pvVar6 = S110_FUN_00401b40(local_78,(S110 *)(local_40 + 4),
+          iVar7 = Decoder_DecodeFloat(pvVar6);
+          pvVar6 = Decoder_ProcessData(local_78,(S110 *)(local_40 + 4),
                                      &DAT_00662c98);
-          iVar8 = DecoderFloat(pvVar6);
+          iVar8 = Decoder_DecodeFloat(pvVar6);
           this_00 = local_74;
           goto LAB_00468bac;
         }
@@ -38192,11 +38192,11 @@ LAB_00468bac:
         if (pSVar10 != pSVar14) {
           S16_FUN_00467020(this,local_9c,local_a0,(S110 *)local_98,(Ped *)0x0,
                            (Ped *)0x0);
-          pvVar6 = S110_FUN_00401b40(local_98,(S110 *)(local_74 + 0xc),
+          pvVar6 = Decoder_ProcessData(local_98,(S110 *)(local_74 + 0xc),
                                      &DAT_00662c98);
-          iVar7 = DecoderFloat(pvVar6);
-          iVar8 = DecoderFloat(&local_a0);
-          iVar9 = DecoderFloat(&local_9c);
+          iVar7 = Decoder_DecodeFloat(pvVar6);
+          iVar8 = Decoder_DecodeFloat(&local_a0);
+          iVar9 = Decoder_DecodeFloat(&local_9c);
           pSVar10 = (SpriteS1 *)S16_FUN_004653c0(this,iVar9,iVar8,iVar7);
           bVar5 = *(byte *)((int)&pSVar10->S3_arr5031[0].Car + 3);
           goto LAB_00468ed1;
@@ -38205,18 +38205,18 @@ LAB_00468bac:
         if (pSVar10 != pSVar14) {
           S16_FUN_00467020(this,local_9c,local_a0,(S110 *)local_98,(Ped *)0x0,
                            (Ped *)0x0);
-          pvVar6 = S110_FUN_00401b40(local_98,(S110 *)&local_30.field_0x14,
+          pvVar6 = Decoder_ProcessData(local_98,(S110 *)&local_30.field_0x14,
                                      &DAT_00662c98);
-          iVar7 = DecoderFloat(pvVar6);
-          iVar8 = DecoderFloat(&local_a0);
-          iVar9 = DecoderFloat(&local_9c);
+          iVar7 = Decoder_DecodeFloat(pvVar6);
+          iVar8 = Decoder_DecodeFloat(&local_a0);
+          iVar9 = Decoder_DecodeFloat(&local_9c);
           pSVar10 = (SpriteS1 *)S16_FUN_004653c0(this,iVar9,iVar8,iVar7);
           bVar5 = *(byte *)((int)&pSVar10->S3_arr5031[0].Car + 3);
 LAB_00468ed1:
           if ((bVar5 & 0xfc) == 0xfc) {
-            iVar7 = DecoderFloat(local_98);
-            iVar8 = DecoderFloat(&local_a0);
-            iVar9 = DecoderFloat(&local_9c);
+            iVar7 = Decoder_DecodeFloat(local_98);
+            iVar8 = Decoder_DecodeFloat(&local_a0);
+            iVar9 = Decoder_DecodeFloat(&local_9c);
             pSVar10 = (SpriteS1 *)S16_FUN_004653c0(this,iVar9,iVar8,iVar7);
           }
         }
@@ -38224,16 +38224,16 @@ LAB_00468ed1:
         if (pSVar10 != local_84) {
           S16_FUN_00467020(this,pPVar17,pSVar16,(S110 *)local_98,(Ped *)0x0,
                            (Ped *)0x0);
-          pvVar6 = S110_FUN_00401b40(local_98,(S110 *)local_58,&DAT_00662c98);
-          iVar7 = DecoderFloat(pvVar6);
-          iVar8 = DecoderFloat(&local_a0);
-          iVar9 = DecoderFloat(&local_9c);
+          pvVar6 = Decoder_ProcessData(local_98,(S110 *)local_58,&DAT_00662c98);
+          iVar7 = Decoder_DecodeFloat(pvVar6);
+          iVar8 = Decoder_DecodeFloat(&local_a0);
+          iVar9 = Decoder_DecodeFloat(&local_9c);
           pSVar10 = (SpriteS1 *)S16_FUN_004653c0(this,iVar9,iVar8,iVar7);
           if (pSVar10 == (SpriteS1 *)0x0) goto LAB_00468832;
           if (((uint)pSVar10->S3_arr5031[0].Car & 0xfc000000) == 0xfc000000) {
-            iVar7 = DecoderFloat(local_98);
-            iVar8 = DecoderFloat(&local_a0);
-            iVar9 = DecoderFloat(&local_9c);
+            iVar7 = Decoder_DecodeFloat(local_98);
+            iVar8 = Decoder_DecodeFloat(&local_a0);
+            iVar9 = Decoder_DecodeFloat(&local_9c);
             pSVar10 = (SpriteS1 *)S16_FUN_004653c0(this,iVar9,iVar8,iVar7);
           }
         }
@@ -38241,16 +38241,16 @@ LAB_00468ed1:
       if (pSVar10 != local_84) {
         S16_FUN_00467020(this,local_9c,local_a0,(S110 *)local_98,(Ped *)0x0,
                          (Ped *)0x0);
-        pvVar6 = S110_FUN_00401b40(local_98,(S110 *)&local_30.field_0x10,
+        pvVar6 = Decoder_ProcessData(local_98,(S110 *)&local_30.field_0x10,
                                    &DAT_00662c98);
-        iVar7 = DecoderFloat(pvVar6);
-        iVar8 = DecoderFloat(&local_a0);
-        iVar9 = DecoderFloat(&local_9c);
+        iVar7 = Decoder_DecodeFloat(pvVar6);
+        iVar8 = Decoder_DecodeFloat(&local_a0);
+        iVar9 = Decoder_DecodeFloat(&local_9c);
         pSVar10 = (SpriteS1 *)S16_FUN_004653c0(this,iVar9,iVar8,iVar7);
         if (((uint)pSVar10->S3_arr5031[0].Car & 0xfc000000) == 0xfc000000) {
-          iVar7 = DecoderFloat(local_98);
-          iVar8 = DecoderFloat(&local_a0);
-          iVar9 = DecoderFloat(&local_9c);
+          iVar7 = Decoder_DecodeFloat(local_98);
+          iVar8 = Decoder_DecodeFloat(&local_a0);
+          iVar9 = Decoder_DecodeFloat(&local_9c);
           pSVar10 = (SpriteS1 *)S16_FUN_004653c0(this,iVar9,iVar8,iVar7);
         }
       }
@@ -38471,11 +38471,11 @@ FUN_00469b00(void *this,undefined4 param_1,undefined4 param_2)
     }
 
   if (uVar7 == 0) {
-    this_01 = S110_FUN_00401b40(&stack0x0000000c,(S110 *)&local_4,&DAT_00662c98)
+    this_01 = Decoder_ProcessData(&stack0x0000000c,(S110 *)&local_4,&DAT_00662c98)
     ;
-    iVar3 = DecoderFloat(this_01);
-    iVar4 = DecoderFloat(&param_2);
-    iVar5 = DecoderFloat(&param_1);
+    iVar3 = Decoder_DecodeFloat(this_01);
+    iVar4 = Decoder_DecodeFloat(&param_2);
+    iVar5 = Decoder_DecodeFloat(&param_1);
     uVar7 = MapRelatedStruct::S16_FUN_004653c0
                       ((MapRelatedStruct *)this,iVar5,iVar4,iVar3);
     _gMaxZForTile = uVar7;
@@ -38513,9 +38513,9 @@ LAB_00469db2:
           SpriteS1::SetPosition
                     (this_00,(int)pSVar10->FirstElement,
                      (int)param_3->FirstElement,(int)param_9->FirstElement);
-          iVar9 = DecoderFloat(this);
-          iVar11 = DecoderFloat(puVar4);
-          iVar12 = DecoderFloat(puVar5);
+          iVar9 = Decoder_DecodeFloat(this);
+          iVar11 = Decoder_DecodeFloat(puVar4);
+          iVar12 = Decoder_DecodeFloat(puVar5);
           bVar2 = MapRelatedStruct::S16_FUN_00466cf0
                             (_gMapRelatedStruct,iVar12,iVar11,iVar9);
           if (bVar2 == 0) {
@@ -38526,9 +38526,9 @@ LAB_00469db2:
             }
           }
           else {
-            iVar9 = DecoderFloat(this);
-            iVar11 = DecoderFloat(puVar4);
-            iVar12 = DecoderFloat(puVar5);
+            iVar9 = Decoder_DecodeFloat(this);
+            iVar11 = Decoder_DecodeFloat(puVar4);
+            iVar12 = Decoder_DecodeFloat(puVar5);
             cVar3 = FUN_00420420(iVar12,iVar11,iVar9);
             if (cVar3 != '\0') {
               piVar6 = (int *)FUN_00469570(&local_30.field22_0x28,*puVar5,
@@ -38562,9 +38562,9 @@ LAB_00469db2:
           bVar1 = FUN_004037e0(this,(SpriteS1 *)&DAT_00662c50);
           if (CONCAT31(extraout_var_04,bVar1) == 0) {
 LAB_0046a297:
-            iVar9 = DecoderFloat(this);
-            iVar11 = DecoderFloat(puVar4);
-            iVar12 = DecoderFloat(puVar5);
+            iVar9 = Decoder_DecodeFloat(this);
+            iVar11 = Decoder_DecodeFloat(puVar4);
+            iVar12 = Decoder_DecodeFloat(puVar5);
             bVar2 = MapRelatedStruct::S16_FUN_00466cf0
                               (_gMapRelatedStruct,iVar12,iVar11,iVar9);
             if (bVar2 == 0) {
@@ -38575,9 +38575,9 @@ LAB_0046a297:
             pSVar10 = S9::S9_FUN_00401b20((S9 *)this,
                                           (SpriteS1 *)&local_30.field15_0x18,
                                           (int *)&DAT_00663164);
-            iVar9 = DecoderFloat(pSVar10);
-            iVar11 = DecoderFloat(puVar4);
-            iVar12 = DecoderFloat(puVar5);
+            iVar9 = Decoder_DecodeFloat(pSVar10);
+            iVar11 = Decoder_DecodeFloat(puVar4);
+            iVar12 = Decoder_DecodeFloat(puVar5);
             cVar3 = FUN_00420420(iVar12,iVar11,iVar9);
             if (cVar3 != '\0') goto LAB_0046a297;
           }
@@ -38600,12 +38600,12 @@ LAB_0046a297:
         return 0;
       }
       param_2 = CONCAT31(param_2._1_3_,(char)param_2 + '\x01');
-      iVar9 = DecoderFloat(&param_5);
+      iVar9 = Decoder_DecodeFloat(&param_5);
     } while ((int)(param_2 & 0xff) <= iVar9);
   }
 
   if (_gMaxZForTile == 0) {
-    bitShiftLeft1(param_1,(void *)0x0);
+    Decoder_ShiftLeft(param_1,(void *)0x0);
     return param_1;
   }
 
@@ -39497,8 +39497,8 @@ void __thiscall S17::FUN_0046c140(S17 *this,undefined4 *param_2,short *param_3)
     local_4 = this;
     FUN_0041f990(&param_2,(uint)piVar2);
     puVar3 = &param_3;
-    this_00 = S110_FUN_00401b40(&this->DAT_005eb854_,(S110 *)&local_4,this);
-    puVar3 = (undefined4 *)FUN_00401b90(this_00,puVar3,piVar2);
+    this_00 = Decoder_ProcessData(&this->DAT_005eb854_,(S110 *)&local_4,this);
+    puVar3 = (undefined4 *)Decoder_ReadInt(this_00,puVar3,piVar2);
     this->s17 = (S17 *)*puVar3;
     return;
   }
@@ -41525,7 +41525,7 @@ void __thiscall S17::S17_FUN_00472110(S17 *this)
       FUN_0041f980(auStack_50,iVar12);
       pSVar3 = S9::S9_FUN_00401b20((S9 *)pSVar3,pSpriteS1,piVar4);
       pSStack_64 = pSVar3->FirstElement;
-      piVar4 = (int *)FUN_00401b90(&pSStack_64,auStack_4c,
+      piVar4 = (int *)Decoder_ReadInt(&pSStack_64,auStack_4c,
                                    (int *)&pCameraOrPhysics->field_0xa4);
       auStack_78._0_4_ = *piVar4;
       puVar5 = (undefined4 *)
@@ -41536,16 +41536,16 @@ void __thiscall S17::S17_FUN_00472110(S17 *this)
       pSVar3 = Model::FUN_00401bf0((Model *)auStack_78,
                                    (SpriteS1 *)(auStack_48 + 4),
                                    (int *)&pSStack_64);
-      pvVar6 = S110_FUN_00401b40(&pCameraOrPhysics->field_0x98,
+      pvVar6 = Decoder_ProcessData(&pCameraOrPhysics->field_0x98,
                                  (S110 *)auStack_40,pSVar3);
-      auStack_78._4_4_ = DecoderFloat(pvVar6);
+      auStack_78._4_4_ = Decoder_DecodeFloat(pvVar6);
       pSStack_64 = (SpriteS1 *)0x2;
       pSVar3 = Model::FUN_00401bf0((Model *)auStack_78,
                                    (SpriteS1 *)(auStack_40 + 4),
                                    (int *)&pSStack_64);
       pSVar3 = S9::S9_FUN_00401b20((S9 *)&pCameraOrPhysics->field_0x98,
                                    (SpriteS1 *)(auStack_40 + 8),(int *)pSVar3);
-      pvStack_68 = (void *)DecoderFloat(pSVar3);
+      pvStack_68 = (void *)Decoder_DecodeFloat(pSVar3);
       iVar11 = (int)(((int)pvStack_68 - auStack_78._4_4_) + 1U) / 2;
       uVar8 = (int)pvStack_68 - auStack_78._4_4_ & 0x80000001;
       if ((int)uVar8 < 0) {
@@ -41558,9 +41558,9 @@ void __thiscall S17::S17_FUN_00472110(S17 *this)
       pSVar3 = Model::FUN_00401bf0((Model *)(auStack_78 + 0xc),
                                    (SpriteS1 *)(auStack_40 + 0xc),
                                    (int *)&pSStack_64);
-      pvVar6 = S110_FUN_00401b40(&pCameraOrPhysics->field_0x9c,
+      pvVar6 = Decoder_ProcessData(&pCameraOrPhysics->field_0x9c,
                                  (S110 *)(auStack_40 + 0x10),pSVar3);
-      auStack_78._0_4_ = DecoderFloat(pvVar6);
+      auStack_78._0_4_ = Decoder_DecodeFloat(pvVar6);
       pSStack_64 = (SpriteS1 *)0x2;
       pSVar3 = Model::FUN_00401bf0((Model *)(auStack_78 + 0xc),
                                    (SpriteS1 *)(auStack_40 + 0x14),
@@ -41568,7 +41568,7 @@ void __thiscall S17::S17_FUN_00472110(S17 *this)
       pSVar3 = S9::S9_FUN_00401b20((S9 *)&pCameraOrPhysics->field_0x9c,
                                    (SpriteS1 *)(auStack_40 + 0x18),(int *)pSVar3
                                   );
-      auStack_78._12_4_ = DecoderFloat(pSVar3);
+      auStack_78._12_4_ = Decoder_DecodeFloat(pSVar3);
       pSStack_64 = (SpriteS1 *)
                    ((int)((auStack_78._12_4_ - auStack_78._0_4_) + 1) / 2);
       uVar8 = auStack_78._12_4_ - auStack_78._0_4_ & 0x80000001;
@@ -41592,7 +41592,7 @@ void __thiscall S17::S17_FUN_00472110(S17 *this)
       uVar9 = _DAT_006634b4;
       if (CONCAT31(extraout_var,bVar2) == 0) {
         puVar5 = (undefined4 *)
-                 FUN_00401b90(&DAT_00663450,auStack_18,(int *)&pSStack_7c);
+                 Decoder_ReadInt(&DAT_00663450,auStack_18,(int *)&pSStack_7c);
         uVar9 = *puVar5;
       }
       _gS17_V2 = uVar9;
@@ -41613,7 +41613,7 @@ void __thiscall S17::S17_FUN_00472110(S17 *this)
       uVar10 = _DAT_006634b4;
       if (CONCAT31(extraout_var_00,bVar2) == 0) {
         puVar5 = (undefined4 *)
-                 FUN_00401b90(&DAT_00663450,auStack_8,(int *)&pSStack_7c);
+                 Decoder_ReadInt(&DAT_00663450,auStack_8,(int *)&pSStack_7c);
         uVar10 = *puVar5;
       }
       _DAT_006635fc = uVar10;
@@ -41812,13 +41812,13 @@ byte __thiscall Ambulance::FUN_00473010(Ambulance *this,Ped *param_1)
         }
         pPVar2 = this->ARR_S80[Index].Ped;
         if ((pPVar2 != (Ped *)0x0) &&
-           (iVar5 = Ped::GetCurrentState(pPVar2), iVar5 == 9)) {
+           (iVar5 = Ped__GetPedState(pPVar2), iVar5 == 9)) {
           S79_FUN_00472f20(this,pPVar2);
           this->ARR_S80[Index].Ped = (Ped *)0x0;
         }
         pPVar2 = (Ped *)this->ARR_S80[Index].field6_0xc;
         if ((pPVar2 != (Ped *)0x0) &&
-           (iVar5 = Ped::GetCurrentState(pPVar2), iVar5 == 9)) {
+           (iVar5 = Ped__GetPedState(pPVar2), iVar5 == 9)) {
           S79_FUN_00472f20(this,pPVar2);
           this->ARR_S80[Index].field6_0xc = 0;
         }
@@ -41839,7 +41839,7 @@ joined_r0x004730e3:
         }
         pPVar2 = (Ped *)this->ARR_S80[Index].field6_0xc;
         if ((pPVar2 != (Ped *)0x0) &&
-           (iVar5 = Ped::GetCurrentState(pPVar2), iVar5 == 9)) {
+           (iVar5 = Ped__GetPedState(pPVar2), iVar5 == 9)) {
           S79_FUN_00472f20(this,pPVar2);
         }
         pGVar3 = param_1->GameObject;
@@ -41950,9 +41950,9 @@ LAB_004736be:
                 Ped::SetAnimationState(_gS49_1,0,9999);
                 Ped::PedSetObjective(_gS49_1,0x23,9999);
                               // WARNING: Load size is inaccurate
-                Ped::S49_FUN_00403aa0(_gS49_1,*this->field4_0x4);
-                Ped::SetTargetCarDoor(_gS49_1,0);
-                Ped::S49_FUN_00403a70(_gS49_1,0);
+                Ped__EnterCar(_gS49_1,*this->field4_0x4);
+                Ped__SetTargetCarDoorIndex(_gS49_1,0);
+                Ped__SetAnimationState(_gS49_1,0);
                 this->Ped = (Ped *)0x0;
               }
             }
@@ -42005,9 +42005,9 @@ LAB_00473877:
                   Ped::SetAnimationState(_gS49_1,0,9999);
                   Ped::PedSetObjective(_gS49_1,0x23,9999);
                               // WARNING: Load size is inaccurate
-                  Ped::S49_FUN_00403aa0(_gS49_1,*this->field4_0x4);
-                  Ped::SetTargetCarDoor(_gS49_1,0);
-                  Ped::S49_FUN_00403a70(_gS49_1,0);
+                  Ped__EnterCar(_gS49_1,*this->field4_0x4);
+                  Ped__SetTargetCarDoorIndex(_gS49_1,0);
+                  Ped__SetAnimationState(_gS49_1,0);
                 }
                 cVar5 = *(char *)&(this->S195).PassengerPrev;
                 local_2f = true;
@@ -42031,27 +42031,27 @@ LAB_00473877:
                  (uVar7 & 0x8000000) != 0)) {
                 Ped::SetAnimationState(_gS49_1,0,9999);
                 Ped::PedSetObjective(_gS49_1,0x10,9999);
-                Ped::SetDriverPed(_gS49_1,pS49);
+                Ped__SetAsDriver(_gS49_1,pS49);
                 local_2f = true;
                 goto LAB_00473877;
               }
               Ped::PedSetObjective(_gS49_1,0x24,9999);
                               // WARNING: Load size is inaccurate
-              Ped::S49_FUN_00403aa0(_gS49_1,*this->field4_0x4);
-              Ped::SetSearchType(_gS49_1,4);
+              Ped__EnterCar(_gS49_1,*this->field4_0x4);
+              Ped__SetSearchMode(_gS49_1,4);
               local_2f = true;
               this->Ped = pS49;
             }
           }
         }
         else {
-          iVar8 = Ped::GetCurrentAction(pS49);
+          iVar8 = Ped__GetCurrentAction(pS49);
           if (iVar8 == 9) {
             pS49 = FUN_00446100(&this->S195);
             if (pS49 != (Ped *)0x0) {
               Ped::SetAnimationState(_gS49_1,0,9999);
               Ped::PedSetObjective(_gS49_1,0x10,9999);
-              Ped::SetDriverPed(_gS49_1,pS49);
+              Ped__SetAsDriver(_gS49_1,pS49);
               *(char *)&(this->S195).PassengerPrev =
                    *(char *)&(this->S195).PassengerPrev + -1;
               *(undefined4 *)(*(int *)((int)this->field4_0x4 + 8) + 0x30) = 1;
@@ -42069,14 +42069,14 @@ LAB_00473877:
                               // WARNING: Load size is inaccurate
           this_00 = *this->field4_0x4;
           local_2f = this_00->field15_0x76 < 0x3e9;
-          cVar5 = Ped::S49_Get_FUN_004039e0(pS49);
+          cVar5 = Ped__GetDamageState(pS49);
           if (cVar5 != '\x01') {
             FUN_0040ce30(local_24,this->field1_0x1);
             FUN_0040ce30(local_20,this->field0_0x0);
             pS110_1 = (S110 *)local_24;
             pS110 = (S110 *)local_20;
-            piVar10 = (int *)Ped::GetPositionY(pS49,(int)local_18);
-            pS110_4 = (S110 *)Ped::GetPositionX(pS49,(int)local_14);
+            piVar10 = (int *)Ped__GetYCoordinate(pS49,(int)local_18);
+            pS110_4 = (S110 *)Ped__GetXCoordinate(pS49,(int)local_14);
             FUN_0042a6b0(this_01,&local_10,pS110_4,piVar10,pS110,pS110_1);
             local_1c = (S169 *)pS110_4->car;
             bVar4 = FUN_004037e0(&local_1c,(SpriteS1 *)&DAT_00664164);
@@ -42104,36 +42104,36 @@ LAB_004735d7:
         Ped::PedSetObjective(_gS49_1,0,9999);
         break;
       case 0x10:
-        pS49_1 = (Ped *)Ped::S49_Get_FUN_00403ad0(pS49);
+        pS49_1 = (Ped *)Ped__GetPassenger(pS49);
         cVar5 = Ped::S49_FUN_00450cb0(pS49);
         if ((cVar5 != '\0') &&
            (cVar5 = this->field13_0x1d + '\x01', this->field13_0x1d = cVar5,
            cVar5 == '2')) {
           if (pS49_1->field130_0x28c == 1) {
-            iVar8 = Ped::GetOccupation(pS49_1);
+            iVar8 = Ped__GetCurrentOccupation(pS49_1);
             bVar14 = iVar8 == 0x17;
           }
           Ped::SetAnimationState(pS49_1,0,9999);
           if (bVar14) {
-            Ped::SetCarDamageState(pS49_1,1);
+            Ped__SetVehicleDamageState(pS49_1,1);
           }
           else {
             Ped::SetAnimationState(pS49_1,0,9999);
             pS49_1->CurrentState = PEDSTATE_MOVE_TURN;
             pS49_1->field126_0x27c = 0;
             Ped::PedSetObjective(pS49_1,1,9999);
-            puVar11 = (undefined4 *)Ped::GetPositionX(pS49_1,(int)local_c);
+            puVar11 = (undefined4 *)Ped__GetXCoordinate(pS49_1,(int)local_c);
             pS49_1->Car_1 = (Car *)*puVar11;
-            puVar11 = (undefined4 *)Ped::GetPositionY(pS49_1,(int)local_8);
+            puVar11 = (undefined4 *)Ped__GetYCoordinate(pS49_1,(int)local_8);
             pS49_1->Car_2 = (Car *)*puVar11;
             puVar11 = (undefined4 *)Ped::GetPositionZ(pS49_1,(int)local_4);
             pS49_1->uns40 = *puVar11;
-            Ped::SetSearchType(pS49_1,3);
-            Ped::SetOccupation(pS49_1,3);
+            Ped__SetSearchMode(pS49_1,3);
+            Ped__SetCurrentOccupation(pS49_1,3);
             pS49_1->field130_0x28c = 3;
           }
-          Ped::SetHealthPlayer(pS49_1,100);
-          Ped::S49_FUN_00403960(pS49_1);
+          Ped__SetHealth(pS49_1,100);
+          Ped__UpdateState(pS49_1);
           if (pS49_1 == this->Ped) {
             this->Ped = (Ped *)0x0;
           }
@@ -42159,7 +42159,7 @@ LAB_004735d7:
           pvVar1 = this->field4_0x4;
           pS49 = *(Ped **)((int)pvVar1 + 4);
           if ((_gS49_1 != pS49) && (bVar4 = Ped::GetDeadPed(pS49), bVar4)) {
-            S169::FUN_00404120(*(S169 **)((int)pvVar1 + 8),0);
+            PedManager__SetPedIndex(*(S169 **)((int)pvVar1 + 8),0);
             *(undefined4 *)((int)this->field4_0x4 + 4) =
                  *(undefined4 *)(*(int *)((int)this->field4_0x4 + 8) + 0x2c);
             Ped::PedSetObjective(*(Ped **)((int)this->field4_0x4 + 4),0,9999);
@@ -42200,7 +42200,7 @@ LAB_00473b94:
               else {
                 Ped::SetAnimationState(_gS49_1,0,9999);
                 Ped::PedSetObjective(_gS49_1,0x10,9999);
-                Ped::SetDriverPed(_gS49_1,pS49);
+                Ped__SetAsDriver(_gS49_1,pS49);
                 *(char *)&(this->S195).PassengerPrev =
                      *(char *)&(this->S195).PassengerPrev + -1;
                 bVar4 = Ped::S49_Get_FUN_00472fd0(_gS49_1);
@@ -42229,7 +42229,7 @@ LAB_00473b94:
         if (cVar5 != '\0') {
           Ped::SetAnimationState(pS49,0,9999);
           Ped::PedSetObjective(_gS49_1,0x10,9999);
-          Ped::SetDriverPed(_gS49_1,this->Ped);
+          Ped__SetAsDriver(_gS49_1,this->Ped);
         }
 LAB_00473c37:
         local_2f = true;
@@ -42308,14 +42308,14 @@ void __thiscall Ambulance::S79_FUN_00473e00(Ambulance *this)
       S79_FUN_00472f20(_gAmbulance,this_00);
       return;
     }
-    pvVar3 = (void *)Ped::GetPositionX(this_00,(int)&local_10);
-    iVar4 = DecoderFloat(pvVar3);
+    pvVar3 = (void *)Ped__GetXCoordinate(this_00,(int)&local_10);
+    iVar4 = Decoder_DecodeFloat(pvVar3);
     local_28[0] = (char)iVar4;
-    pvVar3 = (void *)Ped::GetPositionY(this_00,(int)&local_10);
-    iVar4 = DecoderFloat(pvVar3);
+    pvVar3 = (void *)Ped__GetYCoordinate(this_00,(int)&local_10);
+    iVar4 = Decoder_DecodeFloat(pvVar3);
     local_24[0] = (char)iVar4;
     pvVar3 = (void *)Ped::GetPositionZ(this_00,(int)&local_10);
-    iVar4 = DecoderFloat(pvVar3);
+    iVar4 = Decoder_DecodeFloat(pvVar3);
     local_20[0] = (char)iVar4;
     bVar7 = S95::S95_FUN_0049d7a0(_gS95,'\x01',local_28,local_24,local_20,'\0');
     if (bVar7 == 0) {
@@ -42332,8 +42332,8 @@ void __thiscall Ambulance::S79_FUN_00473e00(Ambulance *this)
         FUN_0040ce30(local_14,pMVar6->field0_0x0);
         pS110_1 = (S110 *)local_18;
         pS110 = (S110 *)local_14;
-        piVar5 = (int *)Ped::GetPositionY(this_00,(int)local_c);
-        pS110_4 = (S110 *)Ped::GetPositionX(this_00,(int)local_8);
+        piVar5 = (int *)Ped__GetYCoordinate(this_00,(int)local_c);
+        pS110_4 = (S110 *)Ped__GetXCoordinate(this_00,(int)local_8);
         FUN_0042a6b0(local_4,(undefined4 *)local_4,pS110_4,piVar5,pS110,pS110_1)
         ;
         local_10 = (S169 *)pS110_4->car;
@@ -42945,22 +42945,22 @@ void __fastcall FUN_00476070(int param_1)
           strcpy((char *)&gLanguage,"data\\%s\\",(char *)(param_1 + 0x45c));
           _strncat((char *)&gLanguage,(char *)(iVar4 + 9),
                    (uint)*(byte *)(iVar4 + 8));
-          FileMgr::FileOpen(this,(char *)&gLanguage);
+          FileMgr__OpenFile(this,(char *)&gLanguage);
           local_8 = 2;
-          FileMgr::Read((FileMgr *)&local_8,(size_t)local_14);
+          FileMgr__ReadData((FileMgr *)&local_8,(size_t)local_14);
           uVar7 = local_10 & 0xffff;
           *(undefined2 *)(param_1 + 0xc1d72 + uVar7 * 2) = local_14[0];
           local_8 = 2;
-          FileMgr::Read((FileMgr *)&local_8,(size_t)local_14);
+          FileMgr__ReadData((FileMgr *)&local_8,(size_t)local_14);
           *(undefined2 *)(param_1 + 0xc1d34 + uVar7 * 2) = local_14[0];
           local_8 = 4;
-          FileMgr::Read((FileMgr *)&local_8,(size_t)&local_4);
+          FileMgr__ReadData((FileMgr *)&local_8,(size_t)&local_4);
           piVar2 = (int *)(param_1 + 0xc1db0 + uVar7 * 4);
           *piVar2 = local_4;
           local_8 = 0xc00;
-          FileMgr::Read((FileMgr *)&local_8,uVar7 * 0xc00 + 0xaa934 + param_1);
-          FUN_00403040(uVar7 * 20000 + 0x13354 + param_1,piVar2);
-          FileMgr::CloseFile(this_00);
+          FileMgr__ReadData((FileMgr *)&local_8,uVar7 * 0xc00 + 0xaa934 + param_1);
+          Checksum_Calculate(uVar7 * 20000 + 0x13354 + param_1,piVar2);
+          FileMgr__Close(this_00);
           *(short *)(iVar4 + 2) = (short)local_10;
           local_10 = local_10 + 1;
         }
@@ -43404,7 +43404,7 @@ void __thiscall FUN_00476e80(void *this,short param_2)
     }
 
       if (!bVar2) {
-        Ped::SetHealthPlayer(this_02,100);
+        Ped__SetHealth(this_02,100);
       }
 
   if (sVar1 == -1) {
@@ -43830,7 +43830,7 @@ void __thiscall FUN_0047ef10(void *this)
 
     if (*puVar3 != 0) {
       uVar1 = puVar3[1];
-      pvVar2 = MissionManager::MissionManager_FUN_00476200
+      pvVar2 = MissionManager__StartMission
                          ((MissionManager *)this,*puVar3);
       *(int *)((int)pvVar2 + 8) = (int)(short)uVar1;
       this = extraout_ECX;
@@ -43857,15 +43857,15 @@ MissionManager::SaveGame(MissionManager *this,char *saveFileName)
   }
 
   if (local_10 != 0) {
-    FileMgr::Read((FileMgr *)&local_10,local_c);
+    FileMgr__ReadData((FileMgr *)&local_10,local_c);
   }
 
   if (local_14 != 0) {
-    FileMgr::Read(this_02,local_8);
+    FileMgr__ReadData(this_02,local_8);
   }
 
   if (local_18 != 0) {
-    FileMgr::Read(local_4,(size_t)local_4);
+    FileMgr__ReadData(local_4,(size_t)local_4);
   }
 
   for (iVar1 = 0xc; iVar1 != 0; iVar1 = iVar1 + -1) {
@@ -43908,18 +43908,18 @@ MissionManager::loadScript(MissionManager *this,char *ScriptName)
       pcVar2 = pcVar2 + 1;
     } while (cVar1 != '\0');
     local_4 = this;
-    FileMgr::FUN_0044dbb0((FileMgr *)this_00,(char *)part);
-    FileMgr::FileOpen(this_01,(char *)part);
+    FileMgr__SetFilePath((FileMgr *)this_00,(char *)part);
+    FileMgr__OpenFile(this_01,(char *)part);
     ScriptName = (char *)0x2ee0;
-    FileMgr::Read((FileMgr *)this->OBJECTIVE_DATA_SIZE,
+    FileMgr__ReadData((FileMgr *)this->OBJECTIVE_DATA_SIZE,
                   (size_t)this->OBJECTIVE_DATA_SIZE);
     ScriptName = (char *)0x10000;
-    FileMgr::Read(this_02,(size_t)this->MAIN_BUFFER_SIZE);
+    FileMgr__ReadData(this_02,(size_t)this->MAIN_BUFFER_SIZE);
     ScriptName = (char *)0x2;
-    FileMgr::Read((FileMgr *)&ScriptName,(size_t)&local_4);
+    FileMgr__ReadData((FileMgr *)&ScriptName,(size_t)&local_4);
     ScriptName = (char *)0x13fe;
-    FUN_00403040(this->EVENT_LOG_SIZE[0],&ScriptName);
-    FileMgr::CloseFile(this_03);
+    Checksum_Calculate(this->EVENT_LOG_SIZE[0],&ScriptName);
+    FileMgr__Close(this_03);
     FUN_00475d30(local_4);
     ExtractFileNameWithoutExtension(this);
     FUN_00476070((int)this);
@@ -44025,7 +44025,7 @@ bool __fastcall FUN_00481120(void *param_1)
 
 
     while( true ) {
-      pvVar1 = MissionManager::MissionManager_FUN_00476200
+      pvVar1 = MissionManager__StartMission
                          (_gMissionManager,*(ushort *)((int)param_1 + 4));
       MissionManager::FUN_004805b0((MissionManager *)param_1);
       if ((*(short *)((int)pvVar1 + 6) != 1) ||
@@ -44555,17 +44555,17 @@ LAB_00482235:
           pSVar6 = (S110 *)(local_20 + 1);
           puVar9 = local_18;
           pPVar3 = (Ped *)GetPed(pPed);
-          pvVar5 = (void *)Ped::GetPositionY(pPVar3,(int)puVar9);
-          pSVar6 = (S110 *)S110_FUN_00401b40(pvVar5,pSVar6,ppSVar11);
-          piVar7 = FUN_00403840(this_01,local_14,pSVar6);
+          pvVar5 = (void *)Ped__GetYCoordinate(pPVar3,(int)puVar9);
+          pSVar6 = (S110 *)Decoder_ProcessData(pvVar5,pSVar6,ppSVar11);
+          piVar7 = Matrix_Multiply(this_01,local_14,pSVar6);
           pSVar8 = (SpriteS1 *)(local_14 + 1);
           ppPVar10 = &pPlayer;
           pSVar6 = (S110 *)(local_14 + 2);
           puVar9 = local_8;
           pPVar3 = (Ped *)GetPed(pPed);
-          pvVar5 = (void *)Ped::GetPositionX(pPVar3,(int)puVar9);
-          pSVar6 = (S110 *)S110_FUN_00401b40(pvVar5,pSVar6,ppPVar10);
-          this_00 = (S9 *)FUN_00403840(local_4,(int *)local_4,pSVar6);
+          pvVar5 = (void *)Ped__GetXCoordinate(pPVar3,(int)puVar9);
+          pSVar6 = (S110 *)Decoder_ProcessData(pvVar5,pSVar6,ppPVar10);
+          this_00 = (S9 *)Matrix_Multiply(local_4,(int *)local_4,pSVar6);
           pSVar8 = S9::S9_FUN_00401b20(this_00,pSVar8,piVar7);
           pSVar8 = pSVar8->FirstElement;
           local_20[0] = pSVar8;
@@ -45279,10 +45279,10 @@ S67 * __thiscall S67::S67(S67 *this)
 
 
   if (bVar2 == 0) {
-    iVar5 = DecoderFloat(puVar9);
+    iVar5 = Decoder_DecodeFloat(puVar9);
     iVar5 = iVar5 + -1;
-    iVar6 = DecoderFloat(puVar8);
-    iVar7 = DecoderFloat(&param_2->S3_arr5031[0].PositionX);
+    iVar6 = Decoder_DecodeFloat(puVar8);
+    iVar7 = Decoder_DecodeFloat(&param_2->S3_arr5031[0].PositionX);
     cVar4 = FUN_00420420(iVar7,iVar6,iVar5);
     if ((cVar4 == '\0') &&
        (*(char *)((int)&param_1->s6->S7[2].AnimationFrame + 3) == '\0')) {
@@ -45391,7 +45391,7 @@ LAB_004845bb:
         *param_5 = 1;
         goto LAB_004845f4;
       }
-      pSpriteS1 = (SpriteS1 *)FUN_00403780(&DAT_006657ac,&param_2);
+      pSpriteS1 = (SpriteS1 *)Texture_Find(&DAT_006657ac,&param_2);
       bVar4 = FUN_004037e0(param_6,pSpriteS1);
       if (CONCAT31(extraout_var_02,bVar4) != 0) goto LAB_00484477;
       goto LAB_0048453e;
@@ -45610,7 +45610,7 @@ void __thiscall FUN_00484dd0(S63 *param_1,int param_2)
       case 0x20:
       case 0x21:
         *(undefined2 *)(*(int *)((int)pvVar3 + 0xc) + 0x1a) = 100;
-        bitShiftLeft1(&param_4,(void *)0x0);
+        Decoder_ShiftLeft(&param_4,(void *)0x0);
         *(void **)(*(int *)((int)pvVar3 + 0xc) + 0x24) = param_4;
         break;
       default:
@@ -46395,11 +46395,11 @@ void __thiscall FUN_004869e0(int param_1,Car *param_2)
     FUN_004828c0(param_2);
     FUN_0040e530(local_18,(int *)(*(int *)(param_1 + 4) + 0x14));
     local_18[1] = DAT_005e688c;
-    pSVar4 = (S110 *)S110_FUN_00401b40(local_18,(S110 *)&param_2,&DAT_005e687c);
-    pSpriteS1 = (SpriteS1 *)FUN_00403840(this_00,local_28,pSVar4);
-    pSVar4 = (S110 *)S110_FUN_00401b40(local_18,(S110 *)(local_28 + 1),
+    pSVar4 = (S110 *)Decoder_ProcessData(local_18,(S110 *)&param_2,&DAT_005e687c);
+    pSpriteS1 = (SpriteS1 *)Matrix_Multiply(this_00,local_28,pSVar4);
+    pSVar4 = (S110 *)Decoder_ProcessData(local_18,(S110 *)(local_28 + 1),
                                        &DAT_005e6878);
-    this = FUN_00403840(this_01,local_20,pSVar4);
+    this = Matrix_Multiply(this_01,local_20,pSVar4);
     bVar2 = FUN_004037e0(this,pSpriteS1);
     if (CONCAT31(extraout_var,bVar2) == 0) {
       local_18[0] = DAT_005e687c;
@@ -46420,12 +46420,12 @@ void __thiscall FUN_00486b20(int param_1,Car *param_2)
     FUN_004828c0(param_2);
     FUN_0040e530(&local_14,(int *)(*(int *)(param_1 + 4) + 0x18));
     local_18 = DAT_005e6888;
-    pSVar5 = (S110 *)S110_FUN_00401b40(&local_14,(S110 *)&param_2,&DAT_005e6884)
+    pSVar5 = (S110 *)Decoder_ProcessData(&local_14,(S110 *)&param_2,&DAT_005e6884)
     ;
-    pSpriteS1 = (SpriteS1 *)FUN_00403840(this_00,local_28,pSVar5);
-    pSVar5 = (S110 *)S110_FUN_00401b40(&local_14,(S110 *)(local_28 + 1),
+    pSpriteS1 = (SpriteS1 *)Matrix_Multiply(this_00,local_28,pSVar5);
+    pSVar5 = (S110 *)Decoder_ProcessData(&local_14,(S110 *)(local_28 + 1),
                                        &DAT_005e6880);
-    this = FUN_00403840(this_01,local_20,pSVar5);
+    this = Matrix_Multiply(this_01,local_20,pSVar5);
     bVar2 = FUN_004037e0(this,pSpriteS1);
     if (CONCAT31(extraout_var,bVar2) == 0) {
       local_14 = DAT_005e6884;
@@ -46542,7 +46542,7 @@ void __thiscall S63::S63_FUN_00486e90(S63 *this,uint param_1,undefined4 param_2)
         local_59 = FUN_00484090(pSVar2,&local_8,&local_5a,local_48._16_4_);
       }
       local_54 = (SpriteS1 *)CONCAT31(local_54._1_3_,(char)local_54 + '\x01');
-      iVar8 = DecoderFloat(&local_58);
+      iVar8 = Decoder_DecodeFloat(&local_58);
     } while ((int)((uint)local_54 & 0xff) <= iVar8);
     if ((char)local_50 != '\0') {
       CameraOrPhysics::S131_FUN_004102a0
@@ -46645,9 +46645,9 @@ void __thiscall FUN_004874d0(S63 *param_1,SpriteS1 *param_2,Ped *param_3)
       pSVar3 = param_1->s6;
       pSVar3->S7[1].field5_0xe = 0;
       pSVar3->S7[1].field6_0xf = 0;
-      iVar10 = DecoderFloat(this_00);
-      iVar11 = DecoderFloat(puVar9);
-      iVar12 = DecoderFloat(this);
+      iVar10 = Decoder_DecodeFloat(this_00);
+      iVar11 = Decoder_DecodeFloat(puVar9);
+      iVar12 = Decoder_DecodeFloat(this);
       bVar6 = MapRelatedStruct::S16_FUN_00466cf0
                         (_gMapRelatedStruct,iVar12,iVar11,iVar10);
       if (bVar6 != 0) {
@@ -46660,25 +46660,25 @@ void __thiscall FUN_004874d0(S63 *param_1,SpriteS1 *param_2,Ped *param_3)
                 (this_01,(int)pSVar13->FirstElement,
                  (int)local_28[0]->FirstElement,*this_00);
       SpriteS1::SetRotation(this_01,(short)param_3);
-      iVar10 = DecoderFloat(this_00);
-      iVar11 = DecoderFloat(puVar9);
-      iVar12 = DecoderFloat(this);
+      iVar10 = Decoder_DecodeFloat(this_00);
+      iVar11 = Decoder_DecodeFloat(puVar9);
+      iVar12 = Decoder_DecodeFloat(this);
       bVar6 = MapRelatedStruct::S16_FUN_00466cf0
                         (_gMapRelatedStruct,iVar12,iVar11,iVar10);
       if (bVar6 != 0) {
         S63::S63_FUN_00483100(param_1,this_01);
       }
-      pvVar14 = S110_FUN_00401b40(this_00,(S110 *)(local_20 + 8),&DAT_0066582c);
-      iVar10 = DecoderFloat(pvVar14);
-      iVar11 = DecoderFloat(puVar9);
-      iVar12 = DecoderFloat(this);
+      pvVar14 = Decoder_ProcessData(this_00,(S110 *)(local_20 + 8),&DAT_0066582c);
+      iVar10 = Decoder_DecodeFloat(pvVar14);
+      iVar11 = Decoder_DecodeFloat(puVar9);
+      iVar12 = Decoder_DecodeFloat(this);
       cVar7 = FUN_00420420(iVar12,iVar11,iVar10);
       if (cVar7 == '\0') {
-        pvVar14 = S110_FUN_00401b40(this_00,(S110 *)(local_20 + 0xc),
+        pvVar14 = Decoder_ProcessData(this_00,(S110 *)(local_20 + 0xc),
                                     &DAT_0066582c);
-        iVar10 = DecoderFloat(pvVar14);
-        iVar11 = DecoderFloat(puVar9);
-        iVar12 = DecoderFloat(this);
+        iVar10 = Decoder_DecodeFloat(pvVar14);
+        iVar11 = Decoder_DecodeFloat(puVar9);
+        iVar12 = Decoder_DecodeFloat(this);
         bVar6 = MapRelatedStruct::S16_FUN_00466cf0
                           (_gMapRelatedStruct,iVar12,iVar11,iVar10);
         if (bVar6 != 0) {
@@ -46767,7 +46767,7 @@ LAB_004877f8:
       }
 LAB_00487978:
       local_40 = (Player *)CONCAT31(local_40._1_3_,(char)local_40 + '\x01');
-      iVar10 = DecoderFloat(&param_2);
+      iVar10 = Decoder_DecodeFloat(&param_2);
     } while ((int)((uint)local_40 & 0xff) <= iVar10);
   }
 
@@ -47245,19 +47245,19 @@ byte __thiscall S119::S199_FUN_00489680(S119 *this)
               pPVar6 = (Ped *)this->field5_0x14;
               if (pPVar6 != (Ped *)0x0) {
                 ppSVar16 = &this->S1_1;
-                pPVar5 = (Player *)Ped::GetPositionX(pPVar6,(int)local_4c);
+                pPVar5 = (Player *)Ped__GetXCoordinate(pPVar6,(int)local_4c);
                 bVar2 = Player::FUN_0040ce70(pPVar5,(int *)ppSVar16);
                 if (CONCAT31(extraout_var,bVar2) != 0) {
                   ppSVar16 = &this->S1_2;
-                  pPVar5 = (Player *)Ped::GetPositionX(pPVar6,(int)local_48);
+                  pPVar5 = (Player *)Ped__GetXCoordinate(pPVar6,(int)local_48);
                   bVar2 = Player::CheckCondition(pPVar5,(int *)ppSVar16);
                   if (CONCAT31(extraout_var_00,bVar2) != 0) {
                     piVar11 = (int *)&this->field_0x1c;
-                    pPVar5 = (Player *)Ped::GetPositionY(pPVar6,(int)local_44);
+                    pPVar5 = (Player *)Ped__GetYCoordinate(pPVar6,(int)local_44);
                     bVar2 = Player::FUN_0040ce70(pPVar5,piVar11);
                     if (CONCAT31(extraout_var_01,bVar2) != 0) {
                       piVar11 = (int *)&this->field_0x24;
-                      pPVar5 = (Player *)Ped::GetPositionY(pPVar6,(int)local_40)
+                      pPVar5 = (Player *)Ped__GetYCoordinate(pPVar6,(int)local_40)
                       ;
                       bVar2 = Player::CheckCondition(pPVar5,piVar11);
                       puVar4 = (undefined4 *)CONCAT31(extraout_var_02,bVar2);
@@ -47397,7 +47397,7 @@ S119::FUN_00489bc0(S119 *this,Car *param_2,undefined4 param_3)
       pSVar7 = (S110 *)local_88;
       piVar18 = piVar17;
       FUN_0040ce30(&local_118.field_0x10,local_130.Arr_24[7]);
-      puVar8 = (undefined4 *)S110_FUN_00401b40(piVar17,pSVar7,piVar18);
+      puVar8 = (undefined4 *)Decoder_ProcessData(piVar17,pSVar7,piVar18);
       this_01 = &local_8;
       bVar14 = local_130.Arr_24[7];
     }
@@ -47407,7 +47407,7 @@ S119::FUN_00489bc0(S119 *this,Car *param_2,undefined4 param_3)
       pSVar7 = &local_118;
       pSVar12 = pSVar11;
       FUN_0040ce30(local_48,local_130.Arr_24[7]);
-      puVar8 = (undefined4 *)S110_FUN_00401b40(pSVar11,pSVar7,pSVar12);
+      puVar8 = (undefined4 *)Decoder_ProcessData(pSVar11,pSVar7,pSVar12);
       this_01 = &local_118.S169;
       bVar14 = local_130.Arr_24[7];
     }
@@ -47439,18 +47439,18 @@ S119::FUN_00489bc0(S119 *this,Car *param_2,undefined4 param_3)
     puVar16 = &DAT_00669db4;
     pSVar15 = pSVar7;
     FUN_0040ce30(local_20,local_130.Arr_24[0xb]);
-    pSVar12 = (SpriteS1 *)S110_FUN_00401b40(pSVar7,pSVar15,puVar16);
+    pSVar12 = (SpriteS1 *)Decoder_ProcessData(pSVar7,pSVar15,puVar16);
     goto LAB_0048a167;
   case (undefined4 *)0x1:
     puVar13 = local_134;
     pSVar7 = (S110 *)(local_e8 + 8);
     FUN_0040ce30(local_88 + 0x18,local_130.Arr_24[7]);
-    puVar8 = (undefined4 *)S110_FUN_00401b40(puVar8,pSVar7,puVar13);
+    puVar8 = (undefined4 *)Decoder_ProcessData(puVar8,pSVar7,puVar13);
     pSVar10 = &local_130;
     pSVar7 = (S110 *)local_d8;
     pSVar6 = pSVar10;
     FUN_0040ce30(local_38,local_130.Arr_24[0xb]);
-    puVar5 = (undefined4 *)S110_FUN_00401b40(pSVar10,pSVar7,pSVar6);
+    puVar5 = (undefined4 *)Decoder_ProcessData(pSVar10,pSVar7,pSVar6);
     FUN_00432860(&this->S1_1,puVar5,puVar8);
     cVar3 = FUN_00489600();
     if (cVar3 == '\0') {
@@ -47501,7 +47501,7 @@ S119::FUN_00489bc0(S119 *this,Car *param_2,undefined4 param_3)
     pSVar7 = (S110 *)(local_94 + 4);
     puVar5 = puVar8;
     FUN_0040ce30(local_130.Arr_24 + 0x14,local_130.Arr_24[0xb]);
-    puVar8 = (undefined4 *)S110_FUN_00401b40(puVar8,pSVar7,puVar13);
+    puVar8 = (undefined4 *)Decoder_ProcessData(puVar8,pSVar7,puVar13);
     FUN_00432860(&this->S1_1,puVar8,puVar5);
     cVar3 = FUN_00489600();
     pSVar10 = &local_130;
@@ -47541,7 +47541,7 @@ S119::FUN_00489bc0(S119 *this,Car *param_2,undefined4 param_3)
     puVar16 = &DAT_00669db4;
     pSVar15 = pSVar7;
     FUN_0040ce30(local_ac,local_130.Arr_24[7]);
-    pSVar12 = (SpriteS1 *)S110_FUN_00401b40(pSVar7,pSVar15,puVar16);
+    pSVar12 = (SpriteS1 *)Decoder_ProcessData(pSVar7,pSVar15,puVar16);
     puVar1 = local_ac;
     puVar13 = local_9c;
     break;
@@ -47551,7 +47551,7 @@ S119::FUN_00489bc0(S119 *this,Car *param_2,undefined4 param_3)
       pSVar10 = &local_130;
       pSVar7 = (S110 *)(local_88 + 0x1c);
       FUN_0040ce30(local_64,local_130.Arr_24[7]);
-      puVar8 = (undefined4 *)S110_FUN_00401b40(this_00,pSVar7,pSVar10);
+      puVar8 = (undefined4 *)Decoder_ProcessData(this_00,pSVar7,pSVar10);
       pSVar12 = (SpriteS1 *)local_134;
       pSVar11 = (SpriteS1 *)(local_64 + 8);
       puVar13 = local_54;
@@ -47562,7 +47562,7 @@ S119::FUN_00489bc0(S119 *this,Car *param_2,undefined4 param_3)
       pSVar7 = (S110 *)local_94;
       pSVar15 = pSVar7;
       FUN_0040ce30(local_8c,local_130.Arr_24[7]);
-      puVar8 = (undefined4 *)S110_FUN_00401b40(pSVar7,pSVar15,pSVar10);
+      puVar8 = (undefined4 *)Decoder_ProcessData(pSVar7,pSVar15,pSVar10);
       pSVar9 = S9::S9_FUN_00401b20((S9 *)&DAT_00669b74,
                                    (SpriteS1 *)(local_88 + 4),(int *)local_134);
       pSVar12 = (SpriteS1 *)(local_88 + 0xc);
@@ -47570,7 +47570,7 @@ S119::FUN_00489bc0(S119 *this,Car *param_2,undefined4 param_3)
       pSVar11 = pSVar12;
     }
     FUN_0040ce30(puVar13,local_130.Arr_24[0xb]);
-    pSVar10 = (S9 *)S110_FUN_00401b40(pSVar12,(S110 *)pSVar11,pSVar9);
+    pSVar10 = (S9 *)Decoder_ProcessData(pSVar12,(S110 *)pSVar11,pSVar9);
     FUN_00432860(&this->S1_1,(undefined4 *)pSVar10,puVar8);
     pSVar12 = (SpriteS1 *)(local_54 + 8);
     piVar17 = (int *)&DAT_00669b74;
@@ -47907,7 +47907,7 @@ undefined4 __fastcall FUN_0048bee0(int param_1)
           }
           else {
             ppSVar11 = &local_34;
-            puVar7 = (undefined4 *)FUN_00403780(&local_30,local_8);
+            puVar7 = (undefined4 *)Texture_Find(&local_30,local_8);
             FUN_00432860(&local_10,puVar7,ppSVar11);
             FUN_0040f6b0(&local_10,(S110 *)&local_2c);
           }
@@ -47935,11 +47935,11 @@ LAB_0048c235:
 
         if (bVar10 != 4) {
           if ((*(byte *)(iVar2 + 0x58) & 8) == 0) {
-            puVar7 = (undefined4 *)FUN_00403780(&DAT_00669e90,local_8);
+            puVar7 = (undefined4 *)Texture_Find(&DAT_00669e90,local_8);
             local_14 = _DAT_00669f98;
           }
           else {
-            puVar7 = (undefined4 *)FUN_00403780(&DAT_00669e90,local_8);
+            puVar7 = (undefined4 *)Texture_Find(&DAT_00669e90,local_8);
             local_14 = _DAT_0066a168;
           }
           local_18 = (SpriteS1 *)*puVar7;
@@ -48065,14 +48065,14 @@ void FUN_0048c9c0(int param_1,int param_2,int param_3)
 
 
   if (gSkipParticles == false) {
-    bitShiftLeft1(&local_48,(void *)0x0);
+    Decoder_ShiftLeft(&local_48,(void *)0x0);
     pS110 = &local_30;
     piVar10 = (int *)&DAT_0066a1a8;
     local_10 = local_48;
     local_48 = (SpriteS1 *)0x32;
     bVar1 = Random(&gRandom,(int)&local_48);
     pvVar4 = (void *)CONCAT31(extraout_var,bVar1);
-    bitShiftLeft1(&local_34,(void *)((short)pvVar4 + 0x19));
+    Decoder_ShiftLeft(&local_34,(void *)((short)pvVar4 + 0x19));
     piVar10 = (int *)WorldCoordinateToScreenCoord(pvVar4,pS110,piVar10);
     local_c = (Ped *)*piVar10;
     FUN_0040f6b0(&local_10,(S110 *)&stack0x00000010);
@@ -48080,7 +48080,7 @@ void FUN_0048c9c0(int param_1,int param_2,int param_3)
     local_34 = (S169 *)0xf;
     local_30 = (S169 *)0xf;
     do {
-      bitShiftLeft1(&local_44,(void *)0x0);
+      Decoder_ShiftLeft(&local_44,(void *)0x0);
       puVar9 = local_2c;
       piVar11 = (int *)&DAT_00669f44;
       local_10 = local_44;
@@ -48089,16 +48089,16 @@ void FUN_0048c9c0(int param_1,int param_2,int param_3)
       local_40 = (undefined1 *)0x64;
       bVar1 = Random(&gRandom,(int)&local_40);
       this = (S9 *)CONCAT31(extraout_var_00,bVar1);
-      FUN_00401ae0(local_24,(short)this);
+      Decoder_SetValue(local_24,(short)this);
       pSVar2 = S9::S9_FUN_00401b20(this,pSVar2,piVar10);
       piVar10 = (int *)WorldCoordinateToScreenCoord(pSVar2,puVar9,piVar11);
       local_c = (Ped *)*piVar10;
       local_40 = (undefined1 *)0x10;
       bVar1 = Random(&gRandom,(int)&local_40);
-      FUN_00401ae0(local_3c,(short)CONCAT31(extraout_var_01,bVar1));
+      Decoder_SetValue(local_3c,(short)CONCAT31(extraout_var_01,bVar1));
       psVar3 = (short *)FUN_00401cb0(&DAT_0066a030,local_56,(S110 *)local_3c);
       local_4c[0] = *psVar3;
-      bitShiftLeft1(local_3c + 4,(void *)0x8);
+      Decoder_ShiftLeft(local_3c + 4,(void *)0x8);
       psVar3 = (short *)FUN_00401cb0(&DAT_0066a030,local_54,
                                      (S110 *)(local_3c + 4));
       pPed = (Ped *)(local_54 + 2);
@@ -48109,13 +48109,13 @@ void FUN_0048c9c0(int param_1,int param_2,int param_3)
       puVar9 = local_20;
       pSVar2 = Model::FUN_00401bf0((Model *)&local_c,(SpriteS1 *)(local_20 + 4),
                                    (int *)&local_34);
-      puVar6 = (undefined4 *)FUN_00403780(pSVar2,puVar9);
+      puVar6 = (undefined4 *)Texture_Find(pSVar2,puVar9);
       puVar9 = local_18;
       pSVar2 = Model::FUN_00401bf0((Model *)&local_10,(SpriteS1 *)(local_18 + 4)
                                    ,(int *)&local_30);
-      puVar7 = (undefined4 *)FUN_00403780(pSVar2,puVar9);
+      puVar7 = (undefined4 *)Texture_Find(pSVar2,puVar9);
       local_40 = &stack0xffffff9c;
-      bitShiftLeft1(&stack0xffffff9c,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffff9c,(void *)0x0);
       iVar8 = FUN_0048c930(local_10,local_c,_DAT_0066a0f0,*puVar7,*puVar6);
       if (iVar8 != 0) {
         *(undefined4 *)(iVar8 + 0x34) = 1;
@@ -48160,11 +48160,11 @@ void FUN_0048cd10(SpriteS1 *param_1)
     if (iVar1 == 2) {
       CarSystemManager::SetIndexDefautCarManager((CarSystemManager *)&param_1);
       local_24._0_4_ = &stack0xffffffc4;
-      bitShiftLeft1(&stack0xffffffc4,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffc4,(void *)0x0);
       local_24._0_4_ = &stack0xffffffc0;
-      bitShiftLeft1(&stack0xffffffc0,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffc0,(void *)0x0);
       local_24._0_4_ = &stack0xffffffbc;
-      bitShiftLeft1(&stack0xffffffbc,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffbc,(void *)0x0);
       iVar1 = FUN_0048c930(local_8,local_4,_DAT_0066a0f0);
       if (iVar1 != 0) {
         *(uint *)(iVar1 + 4) = *(uint *)(iVar1 + 4) | 1;
@@ -48211,11 +48211,11 @@ void FUN_0048cd10(SpriteS1 *param_1)
         FUN_004337f0(*(int *)(iVar1 + 0x30));
       }
       local_10 = (SpriteS1 *)&stack0xffffffc4;
-      bitShiftLeft1(&stack0xffffffc4,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffc4,(void *)0x0);
       local_10 = (SpriteS1 *)&stack0xffffffc0;
-      bitShiftLeft1(&stack0xffffffc0,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffc0,(void *)0x0);
       local_10 = (SpriteS1 *)&stack0xffffffbc;
-      bitShiftLeft1(&stack0xffffffbc,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffbc,(void *)0x0);
       iVar1 = FUN_0048c930(local_8,local_4,_DAT_0066a0f0);
       if (iVar1 == 0) {
         return;
@@ -48250,7 +48250,7 @@ void FUN_0048cd10(SpriteS1 *param_1)
       pSVar4 = S9::S9_FUN_00401b20((S9 *)pSVar3,pSVar4,(int *)pSVar9);
       local_28 = pSVar4->FirstElement;
       pSVar4 = (SpriteS1 *)&local_28;
-      puVar6 = (undefined4 *)FUN_00403780(local_24,&local_8);
+      puVar6 = (undefined4 *)Texture_Find(local_24,&local_8);
       FUN_00432860(&local_10,puVar6,&pSVar4->FirstElement);
       FUN_0040f6b0(&local_10,(S110 *)&param_1);
       iVar5 = SpriteS1::FUN_004207b0(this_00,&local_8);
@@ -48262,11 +48262,11 @@ void FUN_0048cd10(SpriteS1 *param_1)
     }
     else {
       param_1 = (SpriteS1 *)&stack0xffffffc4;
-      bitShiftLeft1(&stack0xffffffc4,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffc4,(void *)0x0);
       param_1 = (SpriteS1 *)&stack0xffffffc0;
-      bitShiftLeft1(&stack0xffffffc0,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffc0,(void *)0x0);
       param_1 = (SpriteS1 *)&stack0xffffffbc;
-      bitShiftLeft1(&stack0xffffffbc,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffbc,(void *)0x0);
       iVar1 = FUN_0048c930(local_8,local_4,_DAT_0066a0f0);
       if (iVar1 == 0) {
         return;
@@ -48289,7 +48289,7 @@ void FUN_0048cd10(SpriteS1 *param_1)
       pSVar4 = S9::S9_FUN_00401b20((S9 *)local_24,(SpriteS1 *)&param_1,this);
       _DAT_0066a1ec = pSVar4->FirstElement;
       param_1 = (SpriteS1 *)this_00->S3_arr5031[0].PositionZ;
-      puVar7 = (undefined4 *)FUN_00403780(&DAT_0066a180,&local_8);
+      puVar7 = (undefined4 *)Texture_Find(&DAT_0066a180,&local_8);
       local_18 = (SpriteS1 *)*puVar7;
       pSVar4 = S9::S9_FUN_00401b20((S9 *)&DAT_00669e94,(SpriteS1 *)&local_8,
                                    (int *)&DAT_0066a150);
@@ -48318,14 +48318,14 @@ void FUN_0048cd10(SpriteS1 *param_1)
   }
 
   if (gSkipParticles == false) {
-    bitShiftLeft1(&local_44,(void *)0x0);
+    Decoder_ShiftLeft(&local_44,(void *)0x0);
     pS110 = &local_30.S169;
     piVar9 = (int *)&DAT_0066a1a8;
     local_30.field22_0x28 = local_44;
     local_44 = (SpriteS1 *)0x32;
     bVar1 = Random(&gRandom,(int)&local_44);
     pvVar4 = (void *)CONCAT31(extraout_var,bVar1);
-    bitShiftLeft1(&local_30.pPed,(void *)((short)pvVar4 + 0x19));
+    Decoder_ShiftLeft(&local_30.pPed,(void *)((short)pvVar4 + 0x19));
     piVar9 = (int *)WorldCoordinateToScreenCoord(pvVar4,pS110,piVar9);
     local_30._44_4_ = *piVar9;
     FUN_0040f6b0(&local_30.field22_0x28,(S110 *)&param_4);
@@ -48340,11 +48340,11 @@ void FUN_0048cd10(SpriteS1 *param_1)
       else {
         local_40 = (undefined1 *)0x168;
         bVar1 = Random(&gRandom,(int)&local_40);
-        FUN_00401ae0(local_3c,(short)CONCAT31(extraout_var_00,bVar1));
+        Decoder_SetValue(local_3c,(short)CONCAT31(extraout_var_00,bVar1));
         psVar2 = (short *)FUN_00401cb0(&DAT_0066a030,&param_3,(S110 *)local_3c);
         local_4c[0] = *psVar2;
       }
-      bitShiftLeft1(local_3c + 4,(void *)0x0);
+      Decoder_ShiftLeft(local_3c + 4,(void *)0x0);
       pvVar4 = &local_30.field_0xc;
       piVar10 = (int *)&DAT_00669f44;
       local_30.field22_0x28 = (SpriteS1 *)local_3c._4_4_;
@@ -48353,17 +48353,17 @@ void FUN_0048cd10(SpriteS1 *param_1)
       local_40 = (undefined1 *)0x64;
       bVar1 = Random(&gRandom,(int)&local_40);
       this = (S9 *)CONCAT31(extraout_var_01,bVar1);
-      FUN_00401ae0(&local_30.field_0x14,(short)this);
+      Decoder_SetValue(&local_30.field_0x14,(short)this);
       pSVar3 = S9::S9_FUN_00401b20(this,pSVar3,piVar9);
       piVar9 = (int *)WorldCoordinateToScreenCoord(pSVar3,pvVar4,piVar10);
       local_30._44_4_ = *piVar9;
       local_40 = (undefined1 *)0x10;
       bVar1 = Random(&gRandom,(int)&local_40);
-      FUN_00401ae0(local_3c + 8,(short)CONCAT31(extraout_var_02,bVar1));
+      Decoder_SetValue(local_3c + 8,(short)CONCAT31(extraout_var_02,bVar1));
       psVar2 = (short *)FUN_00401cb0(&DAT_0066a030,local_56,
                                      (S110 *)(local_3c + 8));
       local_48[0] = *psVar2;
-      bitShiftLeft1(&local_30,(void *)0x8);
+      Decoder_ShiftLeft(&local_30,(void *)0x8);
       psVar2 = (short *)FUN_00401cb0(&DAT_0066a030,local_54,&local_30);
       pPed = (Ped *)(local_54 + 2);
       pvVar4 = FUN_0040e5a0(local_48,local_50,local_4c,pPed,psVar2);
@@ -48373,14 +48373,14 @@ void FUN_0048cd10(SpriteS1 *param_1)
       pSVar3 = Model::FUN_00401bf0((Model *)&local_30.field23_0x2c,
                                    (SpriteS1 *)&local_30.count,
                                    (int *)&local_30.pPed);
-      puVar6 = (undefined4 *)FUN_00403780(pSVar3,pvVar4);
+      puVar6 = (undefined4 *)Texture_Find(pSVar3,pvVar4);
       pvVar4 = &local_30.field20_0x20;
       pSVar3 = Model::FUN_00401bf0((Model *)&local_30.field22_0x28,
                                    (SpriteS1 *)&local_30.field21_0x24,
                                    (int *)&local_30.S169);
-      puVar7 = (undefined4 *)FUN_00403780(pSVar3,pvVar4);
+      puVar7 = (undefined4 *)Texture_Find(pSVar3,pvVar4);
       local_40 = &stack0xffffff94;
-      bitShiftLeft1(&stack0xffffff94,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffff94,(void *)0x0);
       iVar8 = FUN_0048c930(local_30.field22_0x28,local_30._44_4_,_DAT_0066a0f0,
                            *puVar7,*puVar6);
       if (iVar8 != 0) {
@@ -48410,24 +48410,24 @@ void __thiscall Particles::S97_FUN_0048d4e0(Particles *this,S110 *param_1)
       local_24 = (undefined1  [4])&stack0xffffffb8;
       z = extraout_ECX;
       rot = _DAT_00669ee0;
-      bitShiftLeft1(&stack0xffffffb8,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffb8,(void *)0x0);
       local_24 = (undefined1  [4])&stack0xffffffb4;
       iVar7 = extraout_ECX_00;
-      bitShiftLeft1(&stack0xffffffb4,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffb4,(void *)0x0);
       local_24 = (undefined1  [4])&stack0xffffffb0;
       iVar3 = extraout_ECX_01;
-      bitShiftLeft1(&stack0xffffffb0,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffb0,(void *)0x0);
       pvVar2 = Object::SpawnObject(_gObject,0xc2,iVar3,iVar7,z,rot);
       this->field0_0x0 = pvVar2;
     }
-    bitShiftLeft1(local_30,(void *)0x0);
-    bitShiftLeft1(local_24,(void *)0x0);
+    Decoder_ShiftLeft(local_30,(void *)0x0);
+    Decoder_ShiftLeft(local_24,(void *)0x0);
     local_20[0] = (SpriteS1 *)&stack0xffffffbc;
-    bitShiftLeft1(&stack0xffffffbc,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xffffffbc,(void *)0x0);
     local_20[0] = (SpriteS1 *)&stack0xffffffb8;
-    bitShiftLeft1(&stack0xffffffb8,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xffffffb8,(void *)0x0);
     local_20[0] = (SpriteS1 *)&stack0xffffffb4;
-    bitShiftLeft1(&stack0xffffffb4,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xffffffb4,(void *)0x0);
     iVar3 = FUN_0048c930(local_30._0_4_,local_24);
     if (iVar3 != 0) {
       *(uint *)(iVar3 + 4) = *(uint *)(iVar3 + 4) | 1;
@@ -48464,11 +48464,11 @@ void __thiscall Particles::S97_FUN_0048d4e0(Particles *this,S110 *param_1)
         if (piVar8 == (int *)0x0) {
           piVar8 = Car::Car_FUN_004be980((Car *)this_00,0xf8);
           local_30._4_2_ = *(undefined2 *)*piVar8;
-          bitShiftLeft1(local_30,(void *)0x0);
+          Decoder_ShiftLeft(local_30,(void *)0x0);
           FUN_00432860(&local_18,(undefined4 *)local_30,
                        (undefined4 *)&DAT_00669f34);
           FUN_0040f6b0(&local_18,(S110 *)(local_30 + 4));
-          bitShiftLeft1(local_30,(void *)0x0);
+          Decoder_ShiftLeft(local_30,(void *)0x0);
           puVar4 = (undefined4 *)&DAT_0066a1c0;
         }
         else {
@@ -48476,11 +48476,11 @@ void __thiscall Particles::S97_FUN_0048d4e0(Particles *this,S110 *param_1)
                    FUN_0040e5a0((void *)*piVar8,(short *)local_30,
                                 (short *)&DAT_0066a090,unaff_EDI,unaff_ESI);
           local_30._4_2_ = *puVar9;
-          bitShiftLeft1(local_30,(void *)0x0);
+          Decoder_ShiftLeft(local_30,(void *)0x0);
           FUN_00432860(&local_18,(undefined4 *)local_30,
                        (undefined4 *)&DAT_00669ff8);
           FUN_0040f6b0(&local_18,(S110 *)(local_30 + 4));
-          bitShiftLeft1(local_30,(void *)0x0);
+          Decoder_ShiftLeft(local_30,(void *)0x0);
           puVar4 = (undefined4 *)&DAT_0066a06c;
         }
         FUN_00432860(&local_10,(undefined4 *)local_30,puVar4);
@@ -48493,7 +48493,7 @@ void __thiscall Particles::S97_FUN_0048d4e0(Particles *this,S110 *param_1)
         FUN_004a0d10();
       }
       else {
-        puVar4 = (undefined4 *)FUN_00403780(&DAT_0066a180,local_20);
+        puVar4 = (undefined4 *)Texture_Find(&DAT_0066a180,local_20);
         local_10 = (S3 *)*puVar4;
         pSVar6 = S9::S9_FUN_00401b20((S9 *)&DAT_00669e94,(SpriteS1 *)local_20,
                                      (int *)&DAT_0066a150);
@@ -48533,24 +48533,24 @@ void __thiscall FUN_0048d8b0(int param_1,SpriteS1 *param_2)
       local_8 = &stack0xffffffdc;
       z = param_1;
       rot = _DAT_00669ee0;
-      bitShiftLeft1(&stack0xffffffdc,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffdc,(void *)0x0);
       local_8 = &stack0xffffffd8;
       iVar7 = extraout_ECX;
-      bitShiftLeft1(&stack0xffffffd8,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffd8,(void *)0x0);
       local_8 = &stack0xffffffd4;
       iVar3 = extraout_ECX_00;
-      bitShiftLeft1(&stack0xffffffd4,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffd4,(void *)0x0);
       pvVar2 = Object::SpawnObject(_gObject,0xc6,iVar3,iVar7,z,rot);
       *(void **)(param_1 + 4) = pvVar2;
     }
-    bitShiftLeft1(&local_8,(void *)0x0);
-    bitShiftLeft1(&local_c,(void *)0x0);
+    Decoder_ShiftLeft(&local_8,(void *)0x0);
+    Decoder_ShiftLeft(&local_c,(void *)0x0);
     local_4 = (SpriteS1 *)&stack0xffffffe0;
-    bitShiftLeft1(&stack0xffffffe0,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xffffffe0,(void *)0x0);
     local_4 = (SpriteS1 *)&stack0xffffffdc;
-    bitShiftLeft1(&stack0xffffffdc,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xffffffdc,(void *)0x0);
     local_4 = (SpriteS1 *)&stack0xffffffd8;
-    bitShiftLeft1(&stack0xffffffd8,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xffffffd8,(void *)0x0);
     iVar3 = FUN_0048c930(local_8,local_c);
     if (iVar3 != 0) {
       *(uint *)(iVar3 + 4) = *(uint *)(iVar3 + 4) | 1;
@@ -48621,10 +48621,10 @@ void FUN_0048db00(int param_1,int param_2,int param_3)
     if (local_6a[0] < 4) {
       local_48 = (undefined1 *)0x20;
       bVar1 = Random(&gRandom,(int)&local_48);
-      FUN_00401ae0(local_44,(short)CONCAT31(extraout_var_00,bVar1));
+      Decoder_SetValue(local_44,(short)CONCAT31(extraout_var_00,bVar1));
       psVar2 = (short *)FUN_00401cb0(&DAT_0066a030,local_68,(S110 *)local_44);
       local_54[0] = *psVar2;
-      bitShiftLeft1(local_44 + 4,(void *)0x10);
+      Decoder_ShiftLeft(local_44 + 4,(void *)0x10);
       psVar4 = (short *)FUN_00401cb0(&DAT_0066a030,local_66,
                                      (S110 *)(local_44 + 4));
       pPed = (Ped *)(local_66 + 2);
@@ -48652,7 +48652,7 @@ void FUN_0048ddc0(int param_1,int param_2,int param_3,undefined4 param_4)
   if (gSkipParticles == false) {
     local_14 = (S169 *)0x3;
     Random(&gRandom,(int)&local_14);
-    bitShiftLeft1(&local_14,(void *)0x0);
+    Decoder_ShiftLeft(&local_14,(void *)0x0);
     pS110 = local_10;
     piVar7 = (int *)&DAT_00669ec4;
     local_8[0] = local_14;
@@ -48661,22 +48661,22 @@ void FUN_0048ddc0(int param_1,int param_2,int param_3,undefined4 param_4)
     local_14 = (S169 *)0x64;
     bVar1 = Random(&gRandom,(int)&local_14);
     this = (S9 *)CONCAT31(extraout_var,bVar1);
-    FUN_00401ae0(&local_c,(short)this);
+    Decoder_SetValue(&local_c,(short)this);
     pSVar2 = S9::S9_FUN_00401b20(this,pSVar2,piVar6);
     puVar3 = (undefined4 *)WorldCoordinateToScreenCoord(pSVar2,pS110,piVar7);
     local_8[1] = (S169 *)*puVar3;
     local_14 = (S169 *)0x168;
     bVar1 = Random(&gRandom,(int)&local_14);
-    FUN_00401ae0(local_10,(short)CONCAT31(extraout_var_00,bVar1));
+    Decoder_SetValue(local_10,(short)CONCAT31(extraout_var_00,bVar1));
     psVar4 = (short *)FUN_00401cb0(&DAT_0066a030,&local_1c,(S110 *)local_10);
     local_18 = *psVar4;
     FUN_0040f6b0(local_8,(S110 *)&local_18);
     local_c = (Ped *)&stack0xffffffdc;
-    bitShiftLeft1(&stack0xffffffdc,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xffffffdc,(void *)0x0);
     local_c = (Ped *)&stack0xffffffd8;
-    bitShiftLeft1(&stack0xffffffd8,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xffffffd8,(void *)0x0);
     local_c = (Ped *)&stack0xffffffd4;
-    bitShiftLeft1(&stack0xffffffd4,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xffffffd4,(void *)0x0);
     iVar5 = FUN_0048c930(local_8[0],local_8[1],_DAT_0066a0f0);
     if (iVar5 != 0) {
       *(undefined2 *)(iVar5 + 0x2e) = *(undefined2 *)(iVar5 + 0x2c);
@@ -48725,14 +48725,14 @@ void FUN_0048dfc0(int param_1)
   }
 
   if (!gSkipParticles) {
-    bitShiftLeft1(&local_8,(void *)0x0);
-    bitShiftLeft1(&local_c,(void *)0x0);
+    Decoder_ShiftLeft(&local_8,(void *)0x0);
+    Decoder_ShiftLeft(&local_c,(void *)0x0);
     local_4 = &stack0xffffffe0;
-    bitShiftLeft1(&stack0xffffffe0,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xffffffe0,(void *)0x0);
     local_4 = &stack0xffffffdc;
-    bitShiftLeft1(&stack0xffffffdc,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xffffffdc,(void *)0x0);
     local_4 = &stack0xffffffd8;
-    bitShiftLeft1(&stack0xffffffd8,(void *)0x0);
+    Decoder_ShiftLeft(&stack0xffffffd8,(void *)0x0);
     iVar2 = FUN_0048c930(_local_8,_local_c,_DAT_0066a0f0);
     bVar1 = param_2;
     if (iVar2 != 0) {
@@ -48919,7 +48919,7 @@ void __thiscall FUN_0048ed40(void *this)
       local_14 = 0x30;
       bVar2 = Random(&gRandom,(int)&local_14);
       piVar3 = (int *)CONCAT31(extraout_var,bVar2);
-      FUN_00401ae0(&local_c,(short)piVar3);
+      Decoder_SetValue(&local_c,(short)piVar3);
       puVar4 = (undefined4 *)
                WorldCoordinateToScreenCoord
                          ((void *)((int)this + 0x24),&local_10,piVar3);
@@ -48927,7 +48927,7 @@ void __thiscall FUN_0048ed40(void *this)
       local_10 = 0x168;
       bVar2 = Random(&gRandom,(int)&local_10);
       piVar3 = (int *)CONCAT31(extraout_var_00,bVar2);
-      FUN_00401ae0(local_8,(short)piVar3);
+      Decoder_SetValue(local_8,(short)piVar3);
       pvVar5 = WorldCoordinateToScreenCoord(&DAT_0066a17c,local_4,piVar3);
       puVar6 = (undefined2 *)FUN_0040f540(&local_14,(int)pvVar5);
       *(undefined2 *)((int)this + 0x22) = *puVar6;
@@ -48989,7 +48989,7 @@ void __fastcall FUN_0048ef90(int param_1)
       local_14 = 0x50;
       bVar2 = Random(&gRandom,(int)&local_14);
       piVar3 = (int *)CONCAT31(extraout_var,bVar2);
-      FUN_00401ae0(&local_c,(short)piVar3);
+      Decoder_SetValue(&local_c,(short)piVar3);
       puVar4 = (undefined4 *)
                WorldCoordinateToScreenCoord
                          ((void *)(param_1 + 0x24),&local_10,piVar3);
@@ -48997,7 +48997,7 @@ void __fastcall FUN_0048ef90(int param_1)
       local_10 = 0x168;
       bVar2 = Random(&gRandom,(int)&local_10);
       piVar3 = (int *)CONCAT31(extraout_var_00,bVar2);
-      FUN_00401ae0(local_8,(short)piVar3);
+      Decoder_SetValue(local_8,(short)piVar3);
       pvVar5 = WorldCoordinateToScreenCoord(&DAT_0066a17c,local_4,piVar3);
       puVar6 = (undefined2 *)FUN_0040f540(&local_14,(int)pvVar5);
       *(undefined2 *)(param_1 + 0x22) = *puVar6;
@@ -49069,17 +49069,17 @@ undefined4 __fastcall FUN_0048f230(int param_1)
         FUN_0048a250();
         FUN_0040f680(&local_28,(int)local_38);
         local_44 = &stack0xffffff94;
-        bitShiftLeft1(&stack0xffffff94,(void *)0x0);
+        Decoder_ShiftLeft(&stack0xffffff94,(void *)0x0);
         local_44 = &stack0xffffff90;
-        bitShiftLeft1(&stack0xffffff90,(void *)0x0);
+        Decoder_ShiftLeft(&stack0xffffff90,(void *)0x0);
         local_44 = &stack0xffffff8c;
-        bitShiftLeft1(&stack0xffffff8c,(void *)0x0);
+        Decoder_ShiftLeft(&stack0xffffff8c,(void *)0x0);
         local_44 = &stack0xffffff88;
-        bitShiftLeft1(&stack0xffffff88,(void *)0x0);
+        Decoder_ShiftLeft(&stack0xffffff88,(void *)0x0);
         local_44 = &stack0xffffff84;
-        bitShiftLeft1(&stack0xffffff84,(void *)0x0);
+        Decoder_ShiftLeft(&stack0xffffff84,(void *)0x0);
         local_44 = &stack0xffffff80;
-        bitShiftLeft1(&stack0xffffff80,(void *)0x0);
+        Decoder_ShiftLeft(&stack0xffffff80,(void *)0x0);
         iVar3 = FUN_0048c930();
         if (iVar3 != 0) {
           *(undefined4 *)(iVar3 + 0x34) = 0;
@@ -49102,7 +49102,7 @@ undefined4 __fastcall FUN_0048f230(int param_1)
         local_38._0_4_ = local_38._8_4_;
         local_38._4_4_ = local_38._12_4_;
         local_54._0_4_ = pCVar10;
-        iVar3 = DecoderFloat(local_54 + 4);
+        iVar3 = Decoder_DecodeFloat(local_54 + 4);
       } while ((int)pCVar10 <= iVar3);
     }
 
@@ -49228,7 +49228,7 @@ undefined4 __fastcall FUN_0048fe90(int param_1)
           else {
             local_8 = (Ped *)0x8;
             bVar2 = Random(&gRandom,(int)&local_8);
-            bitShiftLeft1(local_10,(void *)(((short)CONCAT31(extraout_var,bVar2)
+            Decoder_ShiftLeft(local_10,(void *)(((short)CONCAT31(extraout_var,bVar2)
                                             + -4) / 2));
             puVar6 = (undefined2 *)FUN_0040f540(&local_14,(int)local_10);
             local_14._0_2_ = *puVar6;
@@ -49494,10 +49494,10 @@ void __thiscall FUN_00490d60(void *this,ushort param_1)
         *(undefined1 *)
          &(this_00->S3_arr5031[2].SpriteS1)->S3_arr5031[10].SpriteS3 = 0x32;
         iVar9 = *(int *)((int)this + 0x14);
-        piVar7 = (int *)S110_FUN_00401b40((void *)local_54._4_4_,
+        piVar7 = (int *)Decoder_ProcessData((void *)local_54._4_4_,
                                           (S110 *)(auStack_44 + 8),
                                           (void *)(*(int *)(iVar9 + 4) + 0x14));
-        pvVar5 = S110_FUN_00401b40(this_02,(S110 *)local_38,
+        pvVar5 = Decoder_ProcessData(this_02,(S110 *)local_38,
                                    (void *)(*(int *)(iVar9 + 4) + 0x18));
         puVar10 = FUN_0040e8d0(this_01,(undefined2 *)local_54,pvVar5,piVar7);
         auStack_44._0_2_ = *puVar10;
@@ -49558,39 +49558,39 @@ LAB_004912b3:
   case 0x45:
   case 0x4f:
   case 0x59:
-    bitShiftLeft1(local_c,(void *)0x91);
+    Decoder_ShiftLeft(local_c,(void *)0x91);
     puVar7 = puVar3;
-    bitShiftLeft1(local_8,(void *)0x71);
+    Decoder_ShiftLeft(local_8,(void *)0x71);
     pvVar8 = (void *)CONCAT22(extraout_var_01,_DAT_00669ee0);
     iVar12 = 5;
     pvVar4 = pvVar8;
-    bitShiftLeft1(&stack0xffffffd4,(void *)0x2);
+    Decoder_ShiftLeft(&stack0xffffffd4,(void *)0x2);
     pvVar4 = Object::S60_FUN_00485540
                        (_gObject,*puVar7,*puVar3,pvVar8,pvVar4,iVar12);
     if (pvVar4 != (void *)0x0) {
-      FUN_00403780(&DAT_00669fcc,local_4);
+      Texture_Find(&DAT_00669fcc,local_4);
       iVar12 = *(int *)(*(int *)&this->field_0x14 + 4);
       iVar12 = FUN_004854c0(0x7f,*(undefined4 *)(iVar12 + 0x14),
                             *(undefined4 *)(iVar12 + 0x18));
       uVar9 = CONCAT22(extraout_var_02,_DAT_00669ee0);
       uVar13 = uVar9;
-      bitShiftLeft1(&stack0xffffffdc,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffdc,(void *)0x0);
       sVar15 = (short)uVar13;
       pSVar10 = extraout_ECX;
-      bitShiftLeft1(&stack0xffffffd8,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffd8,(void *)0x0);
       SpriteS1::FUN_004b9d50
                 (*(SpriteS1 **)(iVar12 + 4),*(int *)((int)pvVar4 + 4),pSVar10,
                  uVar9,sVar15);
-      bitShiftLeft1(&stack0xffffffdc,(void *)0x3);
-      bitShiftLeft1(&stack0xffffffd4,(void *)0x2);
-      bitShiftLeft1(&stack0xffffffd0,(void *)0x8a);
-      bitShiftLeft1(&stack0xffffffcc,(void *)0x5e);
+      Decoder_ShiftLeft(&stack0xffffffdc,(void *)0x3);
+      Decoder_ShiftLeft(&stack0xffffffd4,(void *)0x2);
+      Decoder_ShiftLeft(&stack0xffffffd0,(void *)0x8a);
+      Decoder_ShiftLeft(&stack0xffffffcc,(void *)0x5e);
       iVar5 = FUN_00485370();
       uVar13 = extraout_ECX_00;
       sVar15 = _DAT_00669ee0;
-      bitShiftLeft1(&stack0xffffffdc,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffdc,(void *)0x0);
       pSVar10 = extraout_ECX_01;
-      bitShiftLeft1(&stack0xffffffd8,(void *)0x0);
+      Decoder_ShiftLeft(&stack0xffffffd8,(void *)0x0);
       SpriteS1::FUN_004b9d50
                 (*(SpriteS1 **)(iVar12 + 4),*(int *)(iVar5 + 4),pSVar10,uVar13,
                  sVar15);
@@ -49602,7 +49602,7 @@ LAB_004912b3:
     pPVar11 = *(Player **)(iVar12 + 0x18);
     pPVar14 = *(Player **)(iVar12 + 0x14);
     pPVar16 = pPVar11;
-    bitShiftLeft1(&stack0xffffffd8,(void *)0x8);
+    Decoder_ShiftLeft(&stack0xffffffd8,(void *)0x8);
     Game::Game_FUN_0045bb00(gGame,pPVar11,pPVar14,pPVar16);
   }
 
@@ -49623,7 +49623,7 @@ void __thiscall S116::S116_FUN_00491550(S116 *this,undefined1 param_1)
               local_64 = 0x2d;
               bVar5 = Random(&gRandom,(int)&local_64);
               piVar15 = (int *)CONCAT31(extraout_var_03,bVar5);
-              FUN_00401ae0(local_50,(short)piVar15);
+              Decoder_SetValue(local_50,(short)piVar15);
               pvVar7 = WorldCoordinateToScreenCoord
                                  (&DAT_0066a17c,local_4c,piVar15);
               psVar8 = (short *)FUN_0040f540(local_7c,(int)pvVar7);
@@ -49648,7 +49648,7 @@ void __thiscall S116::S116_FUN_00491550(S116 *this,undefined1 param_1)
               local_60 = 0x5a;
               bVar5 = Random(&gRandom,(int)&local_60);
               piVar15 = (int *)CONCAT31(extraout_var_04,bVar5);
-              FUN_00401ae0(local_40,(short)piVar15);
+              Decoder_SetValue(local_40,(short)piVar15);
               pvVar7 = WorldCoordinateToScreenCoord
                                  (&DAT_0066a17c,local_3c,piVar15);
               psVar8 = (short *)FUN_0040f540(local_76,(int)pvVar7);
@@ -49673,7 +49673,7 @@ void __thiscall S116::S116_FUN_00491550(S116 *this,undefined1 param_1)
               local_5c = 0x5a;
               bVar5 = Random(&gRandom,(int)&local_5c);
               piVar15 = (int *)CONCAT31(extraout_var_05,bVar5);
-              FUN_00401ae0(local_30,(short)piVar15);
+              Decoder_SetValue(local_30,(short)piVar15);
               pvVar7 = WorldCoordinateToScreenCoord
                                  (&DAT_0066a17c,local_2c,piVar15);
               psVar8 = (short *)FUN_0040f540(local_70,(int)pvVar7);
@@ -49698,7 +49698,7 @@ void __thiscall S116::S116_FUN_00491550(S116 *this,undefined1 param_1)
               local_58 = 0x5a;
               bVar5 = Random(&gRandom,(int)&local_58);
               piVar15 = (int *)CONCAT31(extraout_var_06,bVar5);
-              FUN_00401ae0(local_20,(short)piVar15);
+              Decoder_SetValue(local_20,(short)piVar15);
               pvVar7 = WorldCoordinateToScreenCoord
                                  (&DAT_0066a17c,local_1c,piVar15);
               psVar8 = (short *)FUN_0040f540(local_6a,(int)pvVar7);
@@ -49740,7 +49740,7 @@ switchD_00491614_caseD_4:
             }
             bVar5 = Random(&gRandom,(int)&local_54);
             piVar15 = (int *)CONCAT31(extraout_var_07,bVar5);
-            FUN_00401ae0(local_10,(short)piVar15);
+            Decoder_SetValue(local_10,(short)piVar15);
             puVar11 = (undefined4 *)
                       WorldCoordinateToScreenCoord
                                 (&DAT_0066a1a8,local_c,piVar15);
@@ -49775,7 +49775,7 @@ switchD_00491614_caseD_4:
           iVar12 = *(int *)&this->field_0x14;
           pPVar16 = *(Player **)(*(int *)(iVar12 + 4) + 0x18);
           pPVar14 = *(Player **)(*(int *)(iVar12 + 4) + 0x14);
-          bitShiftLeft1(&stack0xffffff64,(void *)0x8);
+          Decoder_ShiftLeft(&stack0xffffff64,(void *)0x8);
           Game::Game_FUN_0045bb00(gGame,iVar12,pPVar14,pPVar16);
         }
 
@@ -50016,23 +50016,23 @@ undefined1 __thiscall FUN_00492190(int param_1,Car *param_2)
 
   switch(&pCVar2[-1].field_0xbb) {
   case (undefined1 *)0x0:
-    iVar8 = DecoderFloat(&local_c);
+    iVar8 = Decoder_DecodeFloat(&local_c);
     iVar8 = iVar8 + -1;
-    iVar9 = DecoderFloat(&local_8);
+    iVar9 = Decoder_DecodeFloat(&local_8);
     break;
   case (undefined1 *)0x1:
-    iVar8 = DecoderFloat(&local_c);
+    iVar8 = Decoder_DecodeFloat(&local_c);
     iVar8 = iVar8 + 1;
-    iVar9 = DecoderFloat(&local_8);
+    iVar9 = Decoder_DecodeFloat(&local_8);
     break;
   case (undefined1 *)0x2:
-    iVar8 = DecoderFloat(&local_c);
-    iVar9 = DecoderFloat(&local_8);
+    iVar8 = Decoder_DecodeFloat(&local_c);
+    iVar9 = Decoder_DecodeFloat(&local_8);
     iVar9 = iVar9 + 1;
     break;
   case (undefined1 *)0x3:
-    iVar8 = DecoderFloat(&local_c);
-    iVar9 = DecoderFloat(&local_8);
+    iVar8 = Decoder_DecodeFloat(&local_c);
+    iVar9 = Decoder_DecodeFloat(&local_8);
     iVar9 = iVar9 + -1;
     break;
   default:
@@ -50106,18 +50106,18 @@ bool __thiscall FUN_00492420(int param_1,undefined4 param_2,SpriteS1 *param_3)
           local_9 = cVar9 != '\0' && cVar4 != '\0';
           *(undefined4 *)(*(int *)(param_1 + 0x80) + 0x14) = uVar1;
           *(undefined4 *)(*(int *)(param_1 + 0x80) + 0x18) = uVar2;
-          iVar6 = DecoderFloat(&DAT_0066a74c);
-          pvVar7 = S110_FUN_00401b40(&DAT_0066a480,(S110 *)&param_3,
+          iVar6 = Decoder_DecodeFloat(&DAT_0066a74c);
+          pvVar7 = Decoder_ProcessData(&DAT_0066a480,(S110 *)&param_3,
                                      &DAT_0066a46c);
-          iVar5 = DecoderFloat(pvVar7);
+          iVar5 = Decoder_DecodeFloat(pvVar7);
           cVar4 = FUN_00492420(iVar5,iVar6);
           if (cVar4 == '\0') {
             local_9 = false;
           }
-          pvVar7 = S110_FUN_00401b40(&DAT_0066a74c,(S110 *)&param_3,
+          pvVar7 = Decoder_ProcessData(&DAT_0066a74c,(S110 *)&param_3,
                                      &DAT_0066a46c);
-          iVar6 = DecoderFloat(pvVar7);
-          iVar5 = DecoderFloat(&DAT_0066a480);
+          iVar6 = Decoder_DecodeFloat(pvVar7);
+          iVar5 = Decoder_DecodeFloat(&DAT_0066a480);
           cVar4 = FUN_00492420(iVar5,iVar6);
           if (cVar4 == '\0') {
             local_9 = false;
@@ -50133,10 +50133,10 @@ bool __thiscall FUN_00492420(int param_1,undefined4 param_2,SpriteS1 *param_3)
         *(undefined4 *)(*(int *)(param_1 + 0x80) + 0x14) = uVar1;
         *(undefined4 *)(*(int *)(param_1 + 0x80) + 0x18) = uVar2;
         iVar6 = *(int *)(param_1 + 0x80);
-        iVar5 = DecoderFloat((void *)(iVar6 + 0x18));
-        pvVar7 = S110_FUN_00401b40((void *)(iVar6 + 0x14),(S110 *)&param_3,
+        iVar5 = Decoder_DecodeFloat((void *)(iVar6 + 0x18));
+        pvVar7 = Decoder_ProcessData((void *)(iVar6 + 0x14),(S110 *)&param_3,
                                    &DAT_0066a46c);
-        iVar6 = DecoderFloat(pvVar7);
+        iVar6 = Decoder_DecodeFloat(pvVar7);
         cVar10 = FUN_00492420(iVar6,iVar5);
         bVar11 = cVar10 != '\0' && (cVar9 != '\0' && cVar4 != '\0');
       }
@@ -50157,19 +50157,19 @@ bool __thiscall FUN_00492420(int param_1,undefined4 param_2,SpriteS1 *param_3)
           *(undefined4 *)(*(int *)(param_1 + 0x80) + 0x14) = uVar1;
           *(undefined4 *)(*(int *)(param_1 + 0x80) + 0x18) = uVar2;
           iVar6 = *(int *)(param_1 + 0x80);
-          iVar5 = DecoderFloat((void *)(iVar6 + 0x18));
+          iVar5 = Decoder_DecodeFloat((void *)(iVar6 + 0x18));
           pSVar8 = S9::S9_FUN_00401b20((S9 *)(iVar6 + 0x14),(SpriteS1 *)&param_3
                                        ,(int *)&DAT_0066a46c);
-          iVar6 = DecoderFloat(pSVar8);
+          iVar6 = Decoder_DecodeFloat(pSVar8);
           cVar10 = FUN_00492420(iVar6,iVar5);
           if (cVar10 == '\0') {
             DAT_00593228 = 1;
           }
           iVar6 = *(int *)(param_1 + 0x80);
-          pvVar7 = S110_FUN_00401b40((void *)(iVar6 + 0x18),(S110 *)&param_3,
+          pvVar7 = Decoder_ProcessData((void *)(iVar6 + 0x18),(S110 *)&param_3,
                                      &DAT_0066a46c);
-          iVar5 = DecoderFloat(pvVar7);
-          iVar6 = DecoderFloat((void *)(iVar6 + 0x14));
+          iVar5 = Decoder_DecodeFloat(pvVar7);
+          iVar6 = Decoder_DecodeFloat((void *)(iVar6 + 0x14));
           cVar3 = FUN_00492420(iVar6,iVar5);
           if (cVar3 == '\0') {
             DAT_00593228 = 3;
@@ -50823,7 +50823,7 @@ LAB_00493f55:
   if (cVar2 == '\0') {
     if (this->field29_0x45 == '\0') {
       this->field46_0x58 = this->field46_0x58 & 0xfffffffe;
-      puVar5 = (uint *)DecoderFloat(&local_c);
+      puVar5 = (uint *)Decoder_DecodeFloat(&local_c);
       FUN_0040ce30(local_4,(byte)puVar5);
       local_c = *puVar5;
     }
@@ -50868,9 +50868,9 @@ switchD_00494355_caseD_2:
           iVar1 = *(int *)((int)this + 0x80);
           psVar13 = &local_50;
           psVar14 = (short *)&DAT_0066a5f4;
-          piVar9 = (int *)S110_FUN_00401b40((void *)(iVar1 + 0x14),&local_30,
+          piVar9 = (int *)Decoder_ProcessData((void *)(iVar1 + 0x14),&local_30,
                                             (void *)(iVar4 + 0x14));
-          pvVar10 = S110_FUN_00401b40((void *)(iVar1 + 0x18),
+          pvVar10 = Decoder_ProcessData((void *)(iVar1 + 0x18),
                                       (S110 *)&local_30.pPed,
                                       (void *)(iVar4 + 0x18));
           puVar11 = FUN_0040e8d0(this_00,&local_4e,pvVar10,piVar9);
@@ -50884,17 +50884,17 @@ switchD_00494355_caseD_2:
         iVar4 = *(int *)(*(int *)((int)this + 0x7c) + 0x164);
         if ((iVar4 == 0) || (*(int *)(*(int *)(iVar6 + 0x7c) + 0x164) != iVar4))
         {
-          iVar4 = Ped::GetOccupation(*(Ped **)(iVar6 + 0x7c));
+          iVar4 = Ped__GetCurrentOccupation(*(Ped **)(iVar6 + 0x7c));
           if (iVar4 != 0x2b) {
             *(undefined1 *)(iVar6 + 0x6a) = 4;
             iVar4 = *(int *)(iVar6 + 0x80);
             iVar1 = *(int *)((int)this + 0x80);
             piVar9 = &param_1;
             psVar13 = (short *)&DAT_0066a5f4;
-            piVar5 = (int *)S110_FUN_00401b40((void *)(iVar1 + 0x14),
+            piVar5 = (int *)Decoder_ProcessData((void *)(iVar1 + 0x14),
                                               (S110 *)local_38,
                                               (void *)(iVar4 + 0x14));
-            pvVar10 = S110_FUN_00401b40((void *)(iVar1 + 0x18),
+            pvVar10 = Decoder_ProcessData((void *)(iVar1 + 0x18),
                                         (S110 *)(local_38 + 4),
                                         (void *)(iVar4 + 0x18));
             puVar11 = FUN_0040e8d0(local_52,(undefined2 *)local_52,pvVar10,
@@ -50911,27 +50911,27 @@ switchD_00494355_caseD_2:
       break;
     case 3:
       pPed1 = *(Ped **)((int)this + 0x7c);
-      iVar4 = Ped::GetCurrentAction(pPed1);
+      iVar4 = Ped__GetCurrentAction(pPed1);
       if ((((iVar4 == 0x30) ||
-           (iVar4 = Ped::GetCurrentAction(pPed1), iVar4 == 0x25)) ||
-          (iVar4 = Ped::GetCurrentAction(pPed1), iVar4 == 0x26)) ||
-         (iVar4 = Ped::GetCurrentAction(pPed1), iVar4 == 0xc)) {
+           (iVar4 = Ped__GetCurrentAction(pPed1), iVar4 == 0x25)) ||
+          (iVar4 = Ped__GetCurrentAction(pPed1), iVar4 == 0x26)) ||
+         (iVar4 = Ped__GetCurrentAction(pPed1), iVar4 == 0xc)) {
         *(undefined4 *)((int)this + 0x38) = _DAT_0066a428;
       }
       else {
         switch(param_1) {
         case 2:
           if ((*(short *)(*(int *)(iVar6 + 0x7c) + 0x20a) < 1) ||
-             (bVar2 = Ped::GetOccupationPolice(pPed1), bVar2 == 0)) {
+             (bVar2 = Ped__GetCurrentOccupationPolice(pPed1), bVar2 == 0)) {
             bVar3 = Car::Car_FUN_00403820
                               ((Car *)(iVar6 + 0x38),(int *)&DAT_0066a634);
             if (CONCAT31(extraout_var_00,bVar3) == 0) {
               iVar6 = *(int *)(iVar6 + 0x80);
               iVar4 = *(int *)((int)this + 0x80);
-              piVar9 = (int *)S110_FUN_00401b40((void *)(iVar4 + 0x14),
+              piVar9 = (int *)Decoder_ProcessData((void *)(iVar4 + 0x14),
                                                 (S110 *)&local_30.field15_0x18,
                                                 (void *)(iVar6 + 0x14));
-              pvVar10 = S110_FUN_00401b40((void *)(iVar4 + 0x18),
+              pvVar10 = Decoder_ProcessData((void *)(iVar4 + 0x18),
                                           (S110 *)&local_30.count,
                                           (void *)(iVar6 + 0x18));
               puVar11 = FUN_0040e8d0(this_02,&local_44,pvVar10,piVar9);
@@ -50950,10 +50950,10 @@ switchD_00494355_caseD_2:
             psVar15 = (short *)&DAT_0066a70c;
             psVar14 = &local_3e;
             psVar12 = (short *)&DAT_0066a5f4;
-            piVar9 = (int *)S110_FUN_00401b40((void *)(iVar1 + 0x14),
+            piVar9 = (int *)Decoder_ProcessData((void *)(iVar1 + 0x14),
                                               (S110 *)&local_30.field22_0x28,
                                               (void *)(iVar4 + 0x14));
-            pvVar10 = S110_FUN_00401b40((void *)(iVar1 + 0x18),
+            pvVar10 = Decoder_ProcessData((void *)(iVar1 + 0x18),
                                         (S110 *)&local_30.field23_0x2c,
                                         (void *)(iVar4 + 0x18));
             puVar11 = FUN_0040e8d0(this_04,(undefined2 *)&local_3c,pvVar10,
@@ -50971,10 +50971,10 @@ switchD_00494355_caseD_2:
           if (CONCAT31(extraout_var_01,bVar3) == 0) {
             iVar6 = *(int *)(iVar6 + 0x80);
             iVar4 = *(int *)((int)this + 0x80);
-            piVar9 = (int *)S110_FUN_00401b40((void *)(iVar4 + 0x14),
+            piVar9 = (int *)Decoder_ProcessData((void *)(iVar4 + 0x14),
                                               (S110 *)&local_30.field20_0x20,
                                               (void *)(iVar6 + 0x14));
-            pvVar10 = S110_FUN_00401b40((void *)(iVar4 + 0x18),
+            pvVar10 = Decoder_ProcessData((void *)(iVar4 + 0x18),
                                         (S110 *)&local_30.field21_0x24,
                                         (void *)(iVar6 + 0x18));
             puVar11 = FUN_0040e8d0(this_03,&local_42,pvVar10,piVar9);
@@ -50994,7 +50994,7 @@ switchD_004946dc_caseD_4:
       switch(param_1) {
       case 2:
         if (0 < *(short *)(*(int *)(iVar6 + 0x7c) + 0x20a)) {
-          Ped::GetOccupationPolice(*(Ped **)((int)this + 0x7c));
+          Ped__GetCurrentOccupationPolice(*(Ped **)((int)this + 0x7c));
           return;
         }
         break;
@@ -51004,10 +51004,10 @@ switchD_004946dc_caseD_4:
         iVar1 = *(int *)((int)this + 0x80);
         psVar13 = &local_48;
         psVar14 = (short *)&DAT_0066a5f4;
-        piVar9 = (int *)S110_FUN_00401b40((void *)(iVar1 + 0x14),
+        piVar9 = (int *)Decoder_ProcessData((void *)(iVar1 + 0x14),
                                           (S110 *)&local_30.field_0x10,
                                           (void *)(iVar4 + 0x14));
-        pvVar10 = S110_FUN_00401b40((void *)(iVar1 + 0x18),
+        pvVar10 = Decoder_ProcessData((void *)(iVar1 + 0x18),
                                     (S110 *)&local_30.field_0x14,
                                     (void *)(iVar4 + 0x18));
         puVar11 = FUN_0040e8d0(this_01,&local_46,pvVar10,piVar9);
@@ -51030,7 +51030,7 @@ switchD_004946dc_caseD_4:
               return;
             }
 LAB_004944f9:
-            iVar6 = Ped::GetCurrentAction(pPed1);
+            iVar6 = Ped__GetCurrentAction(pPed1);
             if (iVar6 != 0xb) {
               FUN_0041fa70(&DAT_0066a70c);
             }
@@ -51053,10 +51053,10 @@ LAB_00494532:
         iVar1 = *(int *)((int)this + 0x80);
         psVar13 = &local_4c;
         psVar14 = (short *)&DAT_0066a5f4;
-        piVar9 = (int *)S110_FUN_00401b40((void *)(iVar1 + 0x14),
+        piVar9 = (int *)Decoder_ProcessData((void *)(iVar1 + 0x14),
                                           (S110 *)&local_30.S169,
                                           (void *)(iVar4 + 0x14));
-        pvVar10 = S110_FUN_00401b40((void *)(iVar1 + 0x18),
+        pvVar10 = Decoder_ProcessData((void *)(iVar1 + 0x18),
                                     (S110 *)&local_30.field_0xc,
                                     (void *)(iVar4 + 0x18));
         puVar11 = FUN_0040e8d0(local_4a,(undefined2 *)local_4a,pvVar10,piVar9);
@@ -51136,7 +51136,7 @@ void __thiscall FUN_004948c0(void *this,Car *pCar,int param_2,int param_3)
         SpriteS1::SetPosition
                   (*(SpriteS1 **)((int)this + 0x80),_DAT_0066a480,_DAT_0066a74c,
                    _DAT_0066a754);
-        iVar6 = DecoderFloat(&DAT_0066a414);
+        iVar6 = Decoder_DecodeFloat(&DAT_0066a414);
         *(char *)((int)this + 0x45) = (char)iVar6;
         *(undefined4 *)((int)this + 0x10) = 0x1b;
         return;
@@ -51169,11 +51169,11 @@ void __thiscall FUN_004948c0(void *this,Car *pCar,int param_2,int param_3)
 
   if (bVar5) {
     pPVar3 = *(Ped **)((int)this + 0x7c);
-    iVar6 = Ped::GetCurrentAction(pPVar3);
+    iVar6 = Ped__GetCurrentAction(pPVar3);
     if (iVar6 != 0x23) {
       return;
     }
-    pCVar15 = (Car *)Ped::GetCurrentCar(pPVar3);
+    pCVar15 = (Car *)Ped__GetCurrentVehicle(pPVar3);
     bVar5 = S119::IsCarEqual(_gS119,pCVar15);
     if (bVar5) {
       return;
@@ -51195,23 +51195,23 @@ uint __thiscall FUN_00495220(int param_1,Car *param_2)
 
   switch(pCVar3) {
   case (Car *)0x1:
-    iVar7 = DecoderFloat(&local_10);
+    iVar7 = Decoder_DecodeFloat(&local_10);
     iVar7 = iVar7 + -1;
-    iVar8 = DecoderFloat(&local_c);
+    iVar8 = Decoder_DecodeFloat(&local_c);
     break;
   case (Car *)0x2:
-    iVar7 = DecoderFloat(&local_10);
+    iVar7 = Decoder_DecodeFloat(&local_10);
     iVar7 = iVar7 + 1;
-    iVar8 = DecoderFloat(&local_c);
+    iVar8 = Decoder_DecodeFloat(&local_c);
     break;
   case (Car *)0x3:
-    iVar7 = DecoderFloat(&local_10);
-    iVar8 = DecoderFloat(&local_c);
+    iVar7 = Decoder_DecodeFloat(&local_10);
+    iVar8 = Decoder_DecodeFloat(&local_c);
     iVar8 = iVar8 + 1;
     break;
   case (Car *)0x4:
-    iVar7 = DecoderFloat(&local_10);
-    iVar8 = DecoderFloat(&local_c);
+    iVar7 = Decoder_DecodeFloat(&local_10);
+    iVar8 = Decoder_DecodeFloat(&local_c);
     iVar8 = iVar8 + -1;
     break;
   default:
@@ -51304,7 +51304,7 @@ undefined4 __thiscall FUN_00495980(GameObject *param_1,int param_2)
 
 
   if (bVar3 != 0) {
-    iVar6 = DecoderFloat(&local_8);
+    iVar6 = Decoder_DecodeFloat(&local_8);
   }
 
   if (cVar4 != '\0') {
@@ -51329,23 +51329,23 @@ undefined4 __thiscall FUN_00495980(GameObject *param_1,int param_2)
 
   switch(iVar7 + -1) {
   case 0:
-    iVar8 = DecoderFloat(&local_10);
+    iVar8 = Decoder_DecodeFloat(&local_10);
     iVar8 = iVar8 + -1;
-    iVar9 = DecoderFloat(&local_c);
+    iVar9 = Decoder_DecodeFloat(&local_c);
     break;
   case 1:
-    iVar8 = DecoderFloat(&local_10);
+    iVar8 = Decoder_DecodeFloat(&local_10);
     iVar8 = iVar8 + 1;
-    iVar9 = DecoderFloat(&local_c);
+    iVar9 = Decoder_DecodeFloat(&local_c);
     break;
   case 2:
-    iVar8 = DecoderFloat(&local_10);
-    iVar9 = DecoderFloat(&local_c);
+    iVar8 = Decoder_DecodeFloat(&local_10);
+    iVar9 = Decoder_DecodeFloat(&local_c);
     iVar9 = iVar9 + 1;
     break;
   case 3:
-    iVar8 = DecoderFloat(&local_10);
-    iVar9 = DecoderFloat(&local_c);
+    iVar8 = Decoder_DecodeFloat(&local_10);
+    iVar9 = Decoder_DecodeFloat(&local_c);
     iVar9 = iVar9 + -1;
     break;
   default:
@@ -51367,9 +51367,9 @@ char __thiscall FUN_00495bf0(int param_1,char param_2,char param_3)
 
 
   if (cVar12 == '\0') {
-    pvVar10 = FUN_00401b90(&DAT_0066a780,local_4,(int *)&DAT_0066a54c);
-    pvVar10 = S110_FUN_00401b40(&DAT_0066a44c,(S110 *)local_8,pvVar10);
-    iVar8 = DecoderFloat(pvVar10);
+    pvVar10 = Decoder_ReadInt(&DAT_0066a780,local_4,(int *)&DAT_0066a54c);
+    pvVar10 = Decoder_ProcessData(&DAT_0066a44c,(S110 *)local_8,pvVar10);
+    iVar8 = Decoder_DecodeFloat(pvVar10);
     iVar9 = FUN_00491ee0(&local_14);
     cVar12 = (char)iVar8 - (char)iVar9;
     if (cVar12 == '\0') {
@@ -51378,9 +51378,9 @@ char __thiscall FUN_00495bf0(int param_1,char param_2,char param_3)
   }
 
   if (local_18 == '\0') {
-    pvVar10 = FUN_00401b90(&DAT_0066a780,local_4,(int *)&DAT_0066a54c);
-    pvVar10 = S110_FUN_00401b40(&DAT_0066a7a0,(S110 *)local_8,pvVar10);
-    iVar8 = DecoderFloat(pvVar10);
+    pvVar10 = Decoder_ReadInt(&DAT_0066a780,local_4,(int *)&DAT_0066a54c);
+    pvVar10 = Decoder_ProcessData(&DAT_0066a7a0,(S110 *)local_8,pvVar10);
+    iVar8 = Decoder_DecodeFloat(pvVar10);
     iVar9 = FUN_00491ee0(local_10);
     local_18 = (char)iVar8 - (char)iVar9;
     if (local_18 == '\0') {
@@ -51806,7 +51806,7 @@ void __fastcall FUN_00496800(GameObject *param_1)
   if (param_1->field63_0x6c != 7) {
     param_1->field63_0x6c = 7;
     param_1->field59_0x68 = 0;
-    uVar1 = Ped::S49_Get_FUN_00403a60(param_1->Ped);
+    uVar1 = Ped__GetAnimationState(param_1->Ped);
     cVar2 = FUN_004224a0(uVar1);
     if (cVar2 == '\0') {
       uVar3 = param_1->field46_0x58 & 0xffffffef;
@@ -51851,14 +51851,14 @@ void __fastcall FUN_00496800(GameObject *param_1)
         local_38 = _DAT_0066a510;
       }
       if (0x36 < (short)local_34) {
-        piVar8 = (int *)FUN_00403780(&DAT_0066a510,local_30.Arr_24 + 4);
+        piVar8 = (int *)Texture_Find(&DAT_0066a510,local_30.Arr_24 + 4);
         local_38 = (Turrel *)*piVar8;
       }
       if ((short)local_30.Arr_24._0_4_ < 10) {
         local_3c = pTVar3;
       }
       if (0x36 < (short)local_30.Arr_24._0_4_) {
-        piVar8 = (int *)FUN_00403780(&DAT_0066a510,local_30.Arr_24 + 8);
+        piVar8 = (int *)Texture_Find(&DAT_0066a510,local_30.Arr_24 + 8);
         local_3c = (Turrel *)*piVar8;
       }
       pSVar16 = this->SpriteS1;
@@ -51954,9 +51954,9 @@ LAB_0049705c:
       if (this->field59_0x68 == '\x03') {
         if (this->Car_1->Player == (Player *)0x0) {
           puVar13 = (undefined4 *)
-                    FUN_00403780(&DAT_0066a6b8,local_30.Arr_24 + 0x14);
+                    Texture_Find(&DAT_0066a6b8,local_30.Arr_24 + 0x14);
           pSVar10 = this->SpriteS1;
-          bitShiftLeft1(&stack0xffffffb0,(void *)0x0);
+          Decoder_ShiftLeft(&stack0xffffffb0,(void *)0x0);
           uVar15 = FUN_004854c0(0x6e,pSVar10->S3_arr5031[0].PositionX,
                                 pSVar10->S3_arr5031[0].PositionY,
                                 pSVar10->S3_arr5031[0].PositionZ,
@@ -51969,11 +51969,11 @@ LAB_0049705c:
         }
         else {
           puVar13 = (undefined4 *)
-                    FUN_00403780(&DAT_0066a6b8,local_30.Arr_24 + 8);
+                    Texture_Find(&DAT_0066a6b8,local_30.Arr_24 + 8);
           pCVar2 = this->Car_1;
           local_30.Arr_24._0_4_ = GetSpeed(pCVar2->Player,local_30.Arr_24 + 4);
           pSVar10 = this->SpriteS1;
-          bitShiftLeft1(&stack0xffffffb0,(void *)0x0);
+          Decoder_ShiftLeft(&stack0xffffffb0,(void *)0x0);
           uVar15 = FUN_004854c0(0x6e,pSVar10->S3_arr5031[0].PositionX,
                                 pSVar10->S3_arr5031[0].PositionY,
                                 pSVar10->S3_arr5031[0].PositionZ,
@@ -52012,7 +52012,7 @@ LAB_0049705c:
           this->SpriteS1->S3_arr5031[0].PositionZ = uVar15;
           FUN_00433300();
           pPVar17 = this->Ped;
-          uVar15 = Ped::GetCurrentState(pPVar17);
+          uVar15 = Ped__GetPedState(pPVar17);
           this->field5_0x8 = uVar15;
           uVar15 = FUN_00433b60(pPVar17);
           this->field6_0xc = uVar15;
@@ -52020,7 +52020,7 @@ LAB_0049705c:
           if (this->field63_0x6c == 0xc) {
             Ped::S49_FUN_00433dd0(this->Ped,0x1b);
             if (pSVar10 != (SpriteS1 *)0x0) {
-              puVar13 = (undefined4 *)FUN_00403780(&DAT_0066a3e0,local_10);
+              puVar13 = (undefined4 *)Texture_Find(&DAT_0066a3e0,local_10);
               pSVar10 = this->SpriteS1;
               uVar15 = FUN_004854c0(0x6e,pSVar10->S3_arr5031[0].PositionX,
                                     pSVar10->S3_arr5031[0].PositionY,
@@ -52058,8 +52058,8 @@ LAB_0049705c:
                    (Ped *)&local_34,(Ped *)&local_38);
       FUN_0040e530(&local_34,(int *)&DAT_0066a480);
       FUN_0040e530(&local_38,(int *)&DAT_0066a74c);
-      DecoderFloat(&local_38);
-      iVar14 = DecoderFloat(&local_34);
+      Decoder_DecodeFloat(&local_38);
+      iVar14 = Decoder_DecodeFloat(&local_34);
       cVar5 = FUN_00495540(iVar14);
       if (cVar5 != '\0') {
         SpriteS1::SetPosition
@@ -52173,7 +52173,7 @@ LAB_0049705c:
         if (iVar14 == 0x18) {
           FUN_00433300();
           pPVar17 = this->Ped;
-          uVar15 = Ped::GetCurrentState(pPVar17);
+          uVar15 = Ped__GetPedState(pPVar17);
           this->field5_0x8 = uVar15;
           uVar15 = FUN_00433b60(pPVar17);
           this->field6_0xc = uVar15;
@@ -52478,9 +52478,9 @@ LAB_0049796d:
                    this->SpriteS1->S3_arr5031[0].PositionY,&local_54);
       puVar20 = local_30 + 4;
       piVar13 = (int *)&DAT_0066a54c;
-      pvVar15 = S110_FUN_00401b40(&this->SpriteS1->S3_arr5031[0].PositionZ,
+      pvVar15 = Decoder_ProcessData(&this->SpriteS1->S3_arr5031[0].PositionZ,
                                   (S110 *)(local_30 + 8),&local_54);
-      piVar13 = (int *)FUN_00401b90(pvVar15,puVar20,piVar13);
+      piVar13 = (int *)Decoder_ReadInt(pvVar15,puVar20,piVar13);
       pPVar12 = (Ped *)*piVar13;
       local_58 = pPVar12;
       bVar9 = S169::FUN_00403800((S169 *)&local_58,(int *)&DAT_0066a4d8);
@@ -52507,7 +52507,7 @@ LAB_0049796d:
       FUN_00466b70(this->SpriteS1->S3_arr5031[0].PositionX,
                    this->SpriteS1->S3_arr5031[0].PositionY,&local_54);
       puVar19 = (undefined4 *)
-                S110_FUN_00401b40(&this->SpriteS1->S3_arr5031[0].PositionZ,
+                Decoder_ProcessData(&this->SpriteS1->S3_arr5031[0].PositionZ,
                                   (S110 *)(local_3c + 4),&local_54);
       pPVar12 = (Ped *)*puVar19;
       local_58 = pPVar12;
@@ -52561,7 +52561,7 @@ switchD_00498d0f_caseD_9:
       pvVar15 = (void *)(uint)bVar8;
       puVar20 = local_c;
       piVar13 = (int *)&DAT_0066a6f8;
-      bitShiftLeft1(local_8,(void *)(0x19 - (int)pvVar15));
+      Decoder_ShiftLeft(local_8,(void *)(0x19 - (int)pvVar15));
       piVar13 = (int *)WorldCoordinateToScreenCoord(pvVar15,puVar20,piVar13);
       pSVar22 = S9::S9_FUN_00401b20((S9 *)&DAT_0066a46c,
                                     (SpriteS1 *)(local_8 + 4),piVar13);
@@ -52582,7 +52582,7 @@ switchD_00498d0f_caseD_9:
     pCVar4->field15_0x76 = 0;
     switch(this->field59_0x68) {
     case 0:
-      bVar8 = Ped::S49_Get_FUN_00403a60(this->Ped);
+      bVar8 = Ped__GetAnimationState(this->Ped);
       iVar16 = Car::GetDoor(this->Car_1,bVar8);
       if ((this->field46_0x58 & 0x10) == 0) {
         if ((this->field64_0x70 == '\x01') &&
@@ -52593,7 +52593,7 @@ switchD_00498d0f_caseD_9:
         psVar14 = &this->Rotation;
         ppPVar28 = &local_5c;
         ppPVar27 = &local_58;
-        uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        uVar10 = Ped__GetAnimationState(this->Ped);
         FUN_00493940(CONCAT31(extraout_var_00,this->field59_0x68),pCVar4,
                      CONCAT31(extraout_var_00,uVar10),ppPVar27,ppPVar28,psVar14)
         ;
@@ -52607,7 +52607,7 @@ switchD_00498d0f_caseD_9:
         ppPVar28 = &local_5c;
         ppPVar27 = &local_58;
         sVar11 = (ushort)(byte)this->field59_0x68 + sVar25;
-        uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        uVar10 = Ped__GetAnimationState(this->Ped);
         FUN_00493940(7,pCVar4,uVar10,ppPVar27,ppPVar28,psVar14);
       }
       break;
@@ -52618,7 +52618,7 @@ switchD_00498d0f_caseD_9:
         psVar14 = &this->Rotation;
         ppPVar28 = &local_5c;
         ppPVar27 = &local_58;
-        uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        uVar10 = Ped__GetAnimationState(this->Ped);
         FUN_00493940(CONCAT31(extraout_var_01,this->field59_0x68),pCVar4,
                      CONCAT31(extraout_var_01,uVar10),ppPVar27,ppPVar28,psVar14)
         ;
@@ -52630,7 +52630,7 @@ switchD_00498d0f_caseD_9:
         ppPVar28 = &local_5c;
         ppPVar27 = &local_58;
         local_60 = 1;
-        uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        uVar10 = Ped__GetAnimationState(this->Ped);
         FUN_00493940('\a' - this->field59_0x68,pCVar4,uVar10,ppPVar27,ppPVar28,
                      psVar14);
         SpriteS1::FUN_0040f7b0(this->SpriteS1,9);
@@ -52645,7 +52645,7 @@ switchD_00498d0f_caseD_9:
         psVar14 = &this->Rotation;
         ppPVar28 = &local_5c;
         ppPVar27 = &local_58;
-        uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        uVar10 = Ped__GetAnimationState(this->Ped);
         FUN_00493940(CONCAT31(extraout_var_02,this->field59_0x68),pCVar4,
                      CONCAT31(extraout_var_02,uVar10),ppPVar27,ppPVar28,psVar14)
         ;
@@ -52658,7 +52658,7 @@ switchD_00498d0f_caseD_9:
         ppPVar28 = &local_5c;
         ppPVar27 = &local_58;
         local_60 = 1;
-        uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        uVar10 = Ped__GetAnimationState(this->Ped);
         FUN_00493940('\a' - this->field59_0x68,pCVar4,uVar10,ppPVar27,ppPVar28,
                      psVar14);
         sVar11 = (ushort)(byte)this->field59_0x68 + sVar25;
@@ -52669,7 +52669,7 @@ switchD_00498d0f_caseD_9:
       psVar14 = &this->Rotation;
       ppPVar28 = &local_5c;
       ppPVar27 = &local_58;
-      uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+      uVar10 = Ped__GetAnimationState(this->Ped);
       FUN_00493940(CONCAT31(extraout_var_03,this->field59_0x68),pCVar4,
                    CONCAT31(extraout_var_03,uVar10),ppPVar27,ppPVar28,psVar14);
       SpriteS1::FUN_0040f7b0(this->SpriteS1,9);
@@ -52683,7 +52683,7 @@ switchD_00498d0f_caseD_9:
       sVar11 = (byte)this->field59_0x68 + 0x13 + sVar25;
       pPVar12 = pCVar4->Driver;
       if (pPVar12 != (Ped *)0x0) {
-        iVar16 = Ped::GetOccupation(pPVar12);
+        iVar16 = Ped__GetCurrentOccupation(pPVar12);
         if (iVar16 == 4) {
           pPVar12 = (Ped *)Char::FUN_0043de10(gChar);
           CVar5 = pCVar4->CarType;
@@ -52696,7 +52696,7 @@ LAB_004984ee:
           pPVar12->PedDriver = this->Ped;
         }
         else if (iVar16 == 5) {
-          Ped::SetOccupation(pPVar12,10);
+          Ped__SetCurrentOccupation(pPVar12,10);
           FUN_00492cb0(pCVar4);
           pPVar12->PedDriver = this->Ped;
         }
@@ -52704,7 +52704,7 @@ LAB_004984ee:
           if (iVar16 != 0x18) {
             if (pPVar12->Gang != (Gang *)0x0) {
               Ped::SetAnimationState(pPVar12,0x14,9999);
-              Ped::SetLinkedPed(pPVar12,this->Ped);
+              Ped__SetLinkedPedestrian(pPVar12,this->Ped);
             }
             goto LAB_004984ee;
           }
@@ -52713,17 +52713,17 @@ LAB_004984ee:
             this->Ped->PoliceStar = 600;
           }
           FUN_004aaca0(this->Ped);
-          iVar16 = Ped::S49_Get_FUN_00403a80(pPVar12);
+          iVar16 = Ped__GetActionParam(pPVar12);
           if (iVar16 == 0x2b) {
             Police::S111_FUN_004aabb0
                       (_gPolice,pPVar12->CarCurrent,(int)this->Ped);
           }
           Ped::PedSetObjective(pPVar12,0,9999);
         }
-        iVar16 = Ped::GetCurrentAction(this->Ped);
+        iVar16 = Ped__GetCurrentAction(this->Ped);
         if ((iVar16 == 0x23) &&
-           (cVar7 = Ped::S49_Get_FUN_004039d0(this->Ped), cVar7 == '\x01')) {
-          Ped::SetExitAnimState(this->Ped,0);
+           (cVar7 = Ped__GetFlags2(this->Ped), cVar7 == '\x01')) {
+          Ped__SetExitAnimationState(this->Ped,0);
         }
         Ped::TransitionState(pPVar12,PEDSTATE_FALL);
         Ped::S49_FUN_004332b0(pPVar12,0x11);
@@ -52731,7 +52731,7 @@ LAB_004984ee:
         psVar14 = &this->Rotation;
         ppPVar28 = &local_5c;
         ppPVar27 = &local_58;
-        uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        uVar10 = Ped__GetAnimationState(this->Ped);
         FUN_00493940(8,pCVar4,uVar10,ppPVar27,ppPVar28,psVar14);
         piVar13 = (int *)FUN_004696c0(local_48,local_58,local_5c,
                                       pCVar4->CarSprite->S3_arr5031[0].PositionZ
@@ -52740,8 +52740,8 @@ LAB_004984ee:
         SetRotation(pPVar12->GameObject,
                     *(short *)&pCVar4->CarSprite->FirstElement);
         FUN_00433910(pPVar12->GameObject,8);
-        uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
-        Ped::S49_FUN_00403a70(pPVar12,uVar10);
+        uVar10 = Ped__GetAnimationState(this->Ped);
+        Ped__SetAnimationState(pPVar12,uVar10);
         FUN_00433a50(pPVar12->GameObject,0x11);
         pPVar12->GameObject->Car_1 = pCVar4;
         SpriteS1::FUN_0040f7b0(pPVar12->GameObject->SpriteS1,6);
@@ -52757,7 +52757,7 @@ LAB_004984ee:
       psVar14 = &this->Rotation;
       ppPVar28 = &local_5c;
       ppPVar27 = &local_58;
-      uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+      uVar10 = Ped__GetAnimationState(this->Ped);
       FUN_00493940(CONCAT31(extraout_var_04,this->field59_0x68),pCVar4,
                    CONCAT31(extraout_var_04,uVar10),ppPVar27,ppPVar28,psVar14);
       break;
@@ -52767,7 +52767,7 @@ LAB_004984ee:
       psVar14 = &this->Rotation;
       ppPVar28 = &local_5c;
       ppPVar27 = &local_58;
-      uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+      uVar10 = Ped__GetAnimationState(this->Ped);
       FUN_00493940(CONCAT31(extraout_var_05,this->field59_0x68),pCVar4,
                    CONCAT31(extraout_var_05,uVar10),ppPVar27,ppPVar28,psVar14);
       local_60 = 2;
@@ -52786,7 +52786,7 @@ LAB_004984ee:
     }
     if ((byte)this->field64_0x70 <= local_60) {
       if ((this->field64_0x70 == 5) && (this->field59_0x68 == '\0')) {
-        bVar8 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        bVar8 = Ped__GetAnimationState(this->Ped);
         pvVar15 = (void *)Car::GetDoor(this->Car_1,bVar8);
         if ((this->field46_0x58 & 0x10) == 0) {
           FUN_0041f680((int)pvVar15);
@@ -52805,21 +52805,21 @@ LAB_004984ee:
     switch(bVar8) {
     case 0:
       if ((this->field46_0x58 & 0x10) != 0) {
-        bVar8 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        bVar8 = Ped__GetAnimationState(this->Ped);
         iVar16 = Car::GetDoor(this->Car_1,bVar8);
         FUN_0041f680(iVar16);
         psVar14 = &this->Rotation;
         ppPVar28 = &local_5c;
         ppPVar27 = &local_58;
         sVar11 = (ushort)(byte)this->field59_0x68 + sVar25;
-        uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        uVar10 = Ped__GetAnimationState(this->Ped);
         uVar26 = 0;
         goto LAB_00498896;
       }
       psVar14 = &this->Rotation;
       ppPVar28 = &local_5c;
       ppPVar27 = &local_58;
-      uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+      uVar10 = Ped__GetAnimationState(this->Ped);
       FUN_00493940(7,pCVar4,uVar10,ppPVar27,ppPVar28,psVar14);
       SpriteS1::FUN_0040f7b0(this->SpriteS1,9);
       local_60 = 3;
@@ -52831,12 +52831,12 @@ LAB_004984ee:
       if ((this->field46_0x58 & 0x10) != 0) {
         ppPVar27 = &local_58;
         sVar11 = (ushort)bVar8 + sVar25;
-        uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        uVar10 = Ped__GetAnimationState(this->Ped);
         uVar26 = 1;
         goto LAB_00498896;
       }
       ppPVar27 = &local_58;
-      uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+      uVar10 = Ped__GetAnimationState(this->Ped);
       FUN_00493940(6,pCVar4,uVar10,ppPVar27,ppPVar28,psVar14);
       SpriteS1::FUN_0040f7b0(this->SpriteS1,9);
       local_60 = 3;
@@ -52848,12 +52848,12 @@ LAB_004984ee:
       if ((this->field46_0x58 & 0x10) != 0) {
         ppPVar27 = &local_58;
         sVar11 = (ushort)bVar8 + sVar25;
-        uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        uVar10 = Ped__GetAnimationState(this->Ped);
         uVar26 = 2;
         goto LAB_00498896;
       }
       ppPVar27 = &local_58;
-      uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+      uVar10 = Ped__GetAnimationState(this->Ped);
       FUN_00493940(5,pCVar4,uVar10,ppPVar27,ppPVar28,psVar14);
       SpriteS1::FUN_0040f7b0(this->SpriteS1,9);
       local_60 = 3;
@@ -52865,12 +52865,12 @@ LAB_004984ee:
       if ((this->field46_0x58 & 0x10) != 0) {
         ppPVar27 = &local_58;
         sVar11 = (ushort)bVar8 + sVar25;
-        uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        uVar10 = Ped__GetAnimationState(this->Ped);
         uVar26 = 3;
         goto LAB_00498896;
       }
       ppPVar27 = &local_58;
-      uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+      uVar10 = Ped__GetAnimationState(this->Ped);
       FUN_00493940(4,pCVar4,uVar10,ppPVar27,ppPVar28,psVar14);
       SpriteS1::FUN_0040f7b0(this->SpriteS1,9);
       local_60 = 3;
@@ -52882,12 +52882,12 @@ LAB_004984ee:
       if ((this->field46_0x58 & 0x10) != 0) {
         ppPVar27 = &local_58;
         sVar11 = (ushort)bVar8 + sVar25;
-        uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        uVar10 = Ped__GetAnimationState(this->Ped);
         uVar26 = 4;
         goto LAB_00498896;
       }
       ppPVar27 = &local_58;
-      uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+      uVar10 = Ped__GetAnimationState(this->Ped);
       uVar26 = 0;
 LAB_00498bb6:
       FUN_00493940(uVar26,pCVar4,uVar10,ppPVar27,ppPVar28,psVar14);
@@ -52901,12 +52901,12 @@ LAB_00498bb6:
       if ((this->field46_0x58 & 0x10) != 0) {
         ppPVar28 = &local_5c;
         sVar11 = (ushort)bVar8 + sVar25;
-        uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        uVar10 = Ped__GetAnimationState(this->Ped);
         uVar26 = 5;
         goto LAB_00498896;
       }
       ppPVar28 = &local_5c;
-      uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+      uVar10 = Ped__GetAnimationState(this->Ped);
       FUN_00493940(1,pCVar4,uVar10,ppPVar27,ppPVar28,psVar14);
       SpriteS1::FUN_0040f7b0(this->SpriteS1,0x17);
       local_60 = 1;
@@ -52918,12 +52918,12 @@ LAB_00498bb6:
       if ((this->field46_0x58 & 0x10) != 0) {
         psVar14 = &this->Rotation;
         sVar11 = (ushort)bVar8 + sVar25;
-        uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        uVar10 = Ped__GetAnimationState(this->Ped);
         uVar26 = 6;
         goto LAB_00498896;
       }
       psVar14 = &this->Rotation;
-      uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+      uVar10 = Ped__GetAnimationState(this->Ped);
       FUN_00493940(2,pCVar4,uVar10,ppPVar27,ppPVar28,psVar14);
       SpriteS1::FUN_0040f7b0(this->SpriteS1,0x17);
       local_60 = 1;
@@ -52934,13 +52934,13 @@ LAB_00498bb6:
       psVar14 = &this->Rotation;
       if ((this->field46_0x58 & 0x10) == 0) {
         ppPVar27 = &local_58;
-        uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        uVar10 = Ped__GetAnimationState(this->Ped);
         uVar26 = 3;
         goto LAB_00498bb6;
       }
       ppPVar27 = &local_58;
       sVar11 = (ushort)bVar8 + sVar25;
-      uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+      uVar10 = Ped__GetAnimationState(this->Ped);
       uVar26 = 7;
 LAB_00498896:
       local_60 = 0;
@@ -52952,7 +52952,7 @@ LAB_00498896:
       Ped::TransitionState(this->Ped,PEDSTATE_MOVE_TURN);
       this->field6_0xc = 0;
       this->field5_0x8 = 0;
-      bVar8 = Ped::S49_Get_FUN_00403a60(this->Ped);
+      bVar8 = Ped__GetAnimationState(this->Ped);
       this_00 = (CarDoor *)Car::GetDoor(this->Car_1,bVar8);
       bVar8 = (byte)this->field46_0x58;
       if ((bVar8 & 0x10) == 0) {
@@ -52962,10 +52962,10 @@ LAB_00498896:
       FUN_00491e40(this);
       if (bVar8 == 0) {
         pSVar22 = this->SpriteS1;
-        iVar16 = DecoderFloat(&pSVar22->S3_arr5031[0].PositionZ);
+        iVar16 = Decoder_DecodeFloat(&pSVar22->S3_arr5031[0].PositionZ);
         iVar16 = iVar16 + -1;
-        iVar17 = DecoderFloat(&pSVar22->S3_arr5031[0].PositionY);
-        iVar18 = DecoderFloat(&pSVar22->S3_arr5031[0].PositionX);
+        iVar17 = Decoder_DecodeFloat(&pSVar22->S3_arr5031[0].PositionY);
+        iVar18 = Decoder_DecodeFloat(&pSVar22->S3_arr5031[0].PositionX);
         DAT_0066a3c4 = MapRelatedStruct::S16_FUN_00466cf0
                                  (_gMapRelatedStruct,iVar18,iVar17,iVar16);
         FUN_00494180(this);
@@ -52982,7 +52982,7 @@ LAB_00498896:
     SpriteS1::SetPosition(this->SpriteS1,(int)pPVar6,(int)pPVar12,*piVar13);
     if ((byte)this->field64_0x70 <= local_60) {
       if ((this->field64_0x70 == 1) && (this->field59_0x68 == '\0')) {
-        bVar8 = Ped::S49_Get_FUN_00403a60(this->Ped);
+        bVar8 = Ped__GetAnimationState(this->Ped);
         pvVar15 = (void *)Car::GetDoor(this->Car_1,bVar8);
         if ((this->field46_0x58 & 0x10) == 0) {
           FUN_0041f680((int)pvVar15);
@@ -53011,14 +53011,14 @@ LAB_004988db:
       psVar14 = &this->Rotation;
       ppPVar28 = &local_5c;
       ppPVar27 = &local_58;
-      uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+      uVar10 = Ped__GetAnimationState(this->Ped);
       uVar26 = 4;
     }
     else if (cVar7 == '\x01') {
       psVar14 = &this->Rotation;
       ppPVar28 = &local_5c;
       ppPVar27 = &local_58;
-      uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+      uVar10 = Ped__GetAnimationState(this->Ped);
       uVar26 = 2;
     }
     else {
@@ -53026,7 +53026,7 @@ LAB_004988db:
       psVar14 = &this->Rotation;
       ppPVar28 = &local_5c;
       ppPVar27 = &local_58;
-      uVar10 = Ped::S49_Get_FUN_00403a60(this->Ped);
+      uVar10 = Ped__GetAnimationState(this->Ped);
       uVar26 = 99;
     }
     FUN_00493940(uVar26,pCVar4,uVar10,ppPVar27,ppPVar28,psVar14);
@@ -53036,10 +53036,10 @@ LAB_0049879d:
                pCVar4->CarSprite->S3_arr5031[0].PositionZ);
     SpriteS1::FUN_0040f7b0(this->SpriteS1,6);
     pSVar22 = this->SpriteS1;
-    iVar16 = DecoderFloat(&pSVar22->S3_arr5031[0].PositionZ);
+    iVar16 = Decoder_DecodeFloat(&pSVar22->S3_arr5031[0].PositionZ);
     iVar16 = iVar16 + -1;
-    iVar17 = DecoderFloat(&pSVar22->S3_arr5031[0].PositionY);
-    iVar18 = DecoderFloat(&pSVar22->S3_arr5031[0].PositionX);
+    iVar17 = Decoder_DecodeFloat(&pSVar22->S3_arr5031[0].PositionY);
+    iVar18 = Decoder_DecodeFloat(&pSVar22->S3_arr5031[0].PositionX);
     DAT_0066a3c4 = MapRelatedStruct::S16_FUN_00466cf0
                              (_gMapRelatedStruct,iVar18,iVar17,iVar16);
     FUN_00494180(this);
@@ -53221,13 +53221,13 @@ LAB_0049953b:
       FUN_0040e530(local_98,(int *)&DAT_0066a480);
       FUN_0040e530(local_94,(int *)&DAT_0066a74c);
       _DAT_0066a3fc = _DAT_0066a718;
-      iVar4 = DecoderFloat(local_94);
-      iVar5 = DecoderFloat(local_98);
+      iVar4 = Decoder_DecodeFloat(local_94);
+      iVar5 = Decoder_DecodeFloat(local_98);
       cVar3 = FUN_00495bf0(iVar5,iVar4);
       if (cVar3 != '\0') {
         pPVar11 = (Ped *)local_94;
         pPVar10 = (Ped *)local_98;
-        pSVar6 = (S110 *)FUN_00401b90(piVar1,local_20,(int *)&DAT_0066a54c);
+        pSVar6 = (S110 *)Decoder_ReadInt(piVar1,local_20,(int *)&DAT_0066a54c);
         FUN_0041fc20(this_02,&DAT_0066a718,pSVar6,pPVar10,pPVar11);
         pSVar9 = this->SpriteS1;
         pSVar7 = S9::S9_FUN_00401b20((S9 *)&pSVar9->S3_arr5031[0].PositionY,
@@ -53240,15 +53240,15 @@ LAB_0049953b:
       FUN_0040e530(local_98,(int *)&DAT_0066a480);
       FUN_0040e530(local_94,(int *)&DAT_0066a74c);
       _DAT_0066a3fc = _DAT_0066a758;
-      iVar4 = DecoderFloat(local_94);
-      iVar5 = DecoderFloat(local_98);
+      iVar4 = Decoder_DecodeFloat(local_94);
+      iVar5 = Decoder_DecodeFloat(local_98);
       cVar3 = FUN_00495bf0(iVar5,iVar4);
       if (cVar3 == '\0') {
         return;
       }
       pPVar11 = (Ped *)local_94;
       pPVar10 = (Ped *)local_98;
-      pSVar6 = (S110 *)FUN_00401b90(piVar1,local_68,(int *)&DAT_0066a54c);
+      pSVar6 = (S110 *)Decoder_ReadInt(piVar1,local_68,(int *)&DAT_0066a54c);
       FUN_0041fc20(this_03,&DAT_0066a758,pSVar6,pPVar10,pPVar11);
       pSVar9 = this->SpriteS1;
       pSVar7 = S9::S9_FUN_00401b20((S9 *)&pSVar9->S3_arr5031[0].PositionY,
@@ -53266,13 +53266,13 @@ LAB_0049953b:
       FUN_0040e530(local_98,(int *)&DAT_0066a480);
       FUN_0040e530(local_94,(int *)&DAT_0066a74c);
       _DAT_0066a3fc = _DAT_0066a654;
-      iVar4 = DecoderFloat(local_94);
-      iVar5 = DecoderFloat(local_98);
+      iVar4 = Decoder_DecodeFloat(local_94);
+      iVar5 = Decoder_DecodeFloat(local_98);
       cVar3 = FUN_00495bf0(iVar5,iVar4);
       if (cVar3 != '\0') {
         pPVar11 = (Ped *)local_94;
         pPVar10 = (Ped *)local_98;
-        pSVar6 = (S110 *)FUN_00401b90(piVar1,local_28,(int *)&DAT_0066a54c);
+        pSVar6 = (S110 *)Decoder_ReadInt(piVar1,local_28,(int *)&DAT_0066a54c);
         FUN_0041fc20(this_00,&DAT_0066a654,pSVar6,pPVar10,pPVar11);
         pSVar9 = this->SpriteS1;
         pSVar7 = S9::S9_FUN_00401b20((S9 *)&pSVar9->S3_arr5031[0].PositionY,
@@ -53285,15 +53285,15 @@ LAB_0049953b:
       FUN_0040e530(local_98,(int *)&DAT_0066a480);
       FUN_0040e530(local_94,(int *)&DAT_0066a74c);
       _DAT_0066a3fc = _DAT_0066a758;
-      iVar4 = DecoderFloat(local_94);
-      iVar5 = DecoderFloat(local_98);
+      iVar4 = Decoder_DecodeFloat(local_94);
+      iVar5 = Decoder_DecodeFloat(local_98);
       cVar3 = FUN_00495bf0(iVar5,iVar4);
       if (cVar3 == '\0') {
         return;
       }
       pPVar11 = (Ped *)local_94;
       pPVar10 = (Ped *)local_98;
-      pSVar6 = (S110 *)FUN_00401b90(piVar1,local_80,(int *)&DAT_0066a54c);
+      pSVar6 = (S110 *)Decoder_ReadInt(piVar1,local_80,(int *)&DAT_0066a54c);
       FUN_0041fc20(this_01,&DAT_0066a758,pSVar6,pPVar10,pPVar11);
       pSVar9 = this->SpriteS1;
       pSVar7 = S9::S9_FUN_00401b20((S9 *)&pSVar9->S3_arr5031[0].PositionY,
@@ -53314,13 +53314,13 @@ LAB_0049953b:
       FUN_0040e530(local_98,(int *)&DAT_0066a480);
       FUN_0040e530(local_94,(int *)&DAT_0066a74c);
       _DAT_0066a3fc = _DAT_0066a718;
-      iVar4 = DecoderFloat(local_94);
-      iVar5 = DecoderFloat(local_98);
+      iVar4 = Decoder_DecodeFloat(local_94);
+      iVar5 = Decoder_DecodeFloat(local_98);
       cVar3 = FUN_00495bf0(iVar5,iVar4);
       if (cVar3 != '\0') {
         pPVar11 = (Ped *)local_94;
         pPVar10 = (Ped *)local_98;
-        pSVar6 = (S110 *)FUN_00401b90(piVar1,local_8c,(int *)&DAT_0066a54c);
+        pSVar6 = (S110 *)Decoder_ReadInt(piVar1,local_8c,(int *)&DAT_0066a54c);
         FUN_0041fc20(this_06,&DAT_0066a718,pSVar6,pPVar10,pPVar11);
         pSVar9 = this->SpriteS1;
         pSVar7 = S9::S9_FUN_00401b20((S9 *)&pSVar9->S3_arr5031[0].PositionY,
@@ -53333,15 +53333,15 @@ LAB_0049953b:
       FUN_0040e530(local_98,(int *)&DAT_0066a480);
       FUN_0040e530(local_94,(int *)&DAT_0066a74c);
       _DAT_0066a3fc = _DAT_0066a6c8;
-      iVar4 = DecoderFloat(local_94);
-      iVar5 = DecoderFloat(local_98);
+      iVar4 = Decoder_DecodeFloat(local_94);
+      iVar5 = Decoder_DecodeFloat(local_98);
       cVar3 = FUN_00495bf0(iVar5,iVar4);
       if (cVar3 == '\0') {
         return;
       }
       pPVar11 = (Ped *)local_94;
       pPVar10 = (Ped *)local_98;
-      pSVar6 = (S110 *)FUN_00401b90(piVar1,local_74,(int *)&DAT_0066a54c);
+      pSVar6 = (S110 *)Decoder_ReadInt(piVar1,local_74,(int *)&DAT_0066a54c);
       FUN_0041fc20(this_07,&DAT_0066a6c8,pSVar6,pPVar10,pPVar11);
       pSVar9 = this->SpriteS1;
       pSVar7 = S9::S9_FUN_00401b20((S9 *)&pSVar9->S3_arr5031[0].PositionY,
@@ -53358,13 +53358,13 @@ LAB_0049953b:
       FUN_0040e530(local_98,(int *)&DAT_0066a480);
       FUN_0040e530(local_94,(int *)&DAT_0066a74c);
       _DAT_0066a3fc = _DAT_0066a654;
-      iVar4 = DecoderFloat(local_94);
-      iVar5 = DecoderFloat(local_98);
+      iVar4 = Decoder_DecodeFloat(local_94);
+      iVar5 = Decoder_DecodeFloat(local_98);
       cVar3 = FUN_00495bf0(iVar5,iVar4);
       if (cVar3 != '\0') {
         pPVar11 = (Ped *)local_94;
         pPVar10 = (Ped *)local_98;
-        pSVar6 = (S110 *)FUN_00401b90(piVar1,local_5c,(int *)&DAT_0066a54c);
+        pSVar6 = (S110 *)Decoder_ReadInt(piVar1,local_5c,(int *)&DAT_0066a54c);
         FUN_0041fc20(this_08,&DAT_0066a654,pSVar6,pPVar10,pPVar11);
         pSVar9 = this->SpriteS1;
         pSVar7 = S9::S9_FUN_00401b20((S9 *)&pSVar9->S3_arr5031[0].PositionY,
@@ -53377,15 +53377,15 @@ LAB_0049953b:
       FUN_0040e530(local_98,(int *)&DAT_0066a480);
       FUN_0040e530(local_94,(int *)&DAT_0066a74c);
       _DAT_0066a3fc = _DAT_0066a6c8;
-      iVar4 = DecoderFloat(local_94);
-      iVar5 = DecoderFloat(local_98);
+      iVar4 = Decoder_DecodeFloat(local_94);
+      iVar5 = Decoder_DecodeFloat(local_98);
       cVar3 = FUN_00495bf0(iVar5,iVar4);
       if (cVar3 == '\0') {
         return;
       }
       pPVar11 = (Ped *)local_94;
       pPVar10 = (Ped *)local_98;
-      pSVar6 = (S110 *)FUN_00401b90(piVar1,local_44,(int *)&DAT_0066a54c);
+      pSVar6 = (S110 *)Decoder_ReadInt(piVar1,local_44,(int *)&DAT_0066a54c);
       FUN_0041fc20(this_09,&DAT_0066a6c8,pSVar6,pPVar10,pPVar11);
       pSVar9 = this->SpriteS1;
       pSVar7 = S9::S9_FUN_00401b20((S9 *)&pSVar9->S3_arr5031[0].PositionY,
@@ -53404,15 +53404,15 @@ LAB_0049953b:
       FUN_0040e530(local_98,(int *)&DAT_0066a480);
       FUN_0040e530(local_94,(int *)&DAT_0066a74c);
       _DAT_0066a3fc = _DAT_0066a758;
-      iVar4 = DecoderFloat(local_94);
-      iVar5 = DecoderFloat(local_98);
+      iVar4 = Decoder_DecodeFloat(local_94);
+      iVar5 = Decoder_DecodeFloat(local_98);
       cVar3 = FUN_00495bf0(iVar5,iVar4);
       if (cVar3 == '\0') {
         return;
       }
       pPVar11 = (Ped *)local_94;
       pPVar10 = (Ped *)local_98;
-      pSVar6 = (S110 *)FUN_00401b90(&this->Int_1024,local_50,
+      pSVar6 = (S110 *)Decoder_ReadInt(&this->Int_1024,local_50,
                                     (int *)&DAT_0066a54c);
       FUN_0041fc20(this_05,&DAT_0066a758,pSVar6,pPVar10,pPVar11);
       pSVar9 = this->SpriteS1;
@@ -53430,15 +53430,15 @@ LAB_0049953b:
       FUN_0040e530(local_98,(int *)&DAT_0066a480);
       FUN_0040e530(local_94,(int *)&DAT_0066a74c);
       _DAT_0066a3fc = _DAT_0066a6c8;
-      iVar4 = DecoderFloat(local_94);
-      iVar5 = DecoderFloat(local_98);
+      iVar4 = Decoder_DecodeFloat(local_94);
+      iVar5 = Decoder_DecodeFloat(local_98);
       cVar3 = FUN_00495bf0(iVar5,iVar4);
       if (cVar3 == '\0') {
         return;
       }
       pPVar11 = (Ped *)local_94;
       pPVar10 = (Ped *)local_98;
-      pSVar6 = (S110 *)FUN_00401b90(&this->Int_1024,local_30,
+      pSVar6 = (S110 *)Decoder_ReadInt(&this->Int_1024,local_30,
                                     (int *)&DAT_0066a54c);
       FUN_0041fc20(this_04,&DAT_0066a6c8,pSVar6,pPVar10,pPVar11);
       pSVar9 = this->SpriteS1;
@@ -53465,15 +53465,15 @@ LAB_00499db3:
       FUN_0040e530(local_98,(int *)&DAT_0066a480);
       FUN_0040e530(local_94,(int *)&DAT_0066a74c);
       _DAT_0066a3fc = _DAT_0066a758;
-      iVar4 = DecoderFloat(local_94);
-      iVar5 = DecoderFloat(local_98);
+      iVar4 = Decoder_DecodeFloat(local_94);
+      iVar5 = Decoder_DecodeFloat(local_98);
       cVar3 = FUN_00495bf0(iVar5,iVar4);
       if (cVar3 == '\0') {
         return;
       }
       pPVar11 = (Ped *)local_94;
       pPVar10 = (Ped *)local_98;
-      pSVar6 = (S110 *)FUN_00401b90(&this->Int_1024,local_14,
+      pSVar6 = (S110 *)Decoder_ReadInt(&this->Int_1024,local_14,
                                     (int *)&DAT_0066a54c);
       FUN_0041fc20(this_11,&DAT_0066a758,pSVar6,pPVar10,pPVar11);
       pSVar9 = this->SpriteS1;
@@ -53491,15 +53491,15 @@ LAB_00499db3:
       FUN_0040e530(local_98,(int *)&DAT_0066a480);
       FUN_0040e530(local_94,(int *)&DAT_0066a74c);
       _DAT_0066a3fc = _DAT_0066a6c8;
-      iVar4 = DecoderFloat(local_94);
-      iVar5 = DecoderFloat(local_98);
+      iVar4 = Decoder_DecodeFloat(local_94);
+      iVar5 = Decoder_DecodeFloat(local_98);
       cVar3 = FUN_00495bf0(iVar5,iVar4);
       if (cVar3 == '\0') {
         return;
       }
       pPVar11 = (Ped *)local_94;
       pPVar10 = (Ped *)local_98;
-      pSVar6 = (S110 *)FUN_00401b90(&this->Int_1024,local_2c,
+      pSVar6 = (S110 *)Decoder_ReadInt(&this->Int_1024,local_2c,
                                     (int *)&DAT_0066a54c);
       FUN_0041fc20(this_10,&DAT_0066a6c8,pSVar6,pPVar10,pPVar11);
       pSVar9 = this->SpriteS1;
@@ -53577,7 +53577,7 @@ LAB_0049a8bc:
           bVar5 = FUN_004037e0(pCVar13,pSVar26);
           if ((CONCAT31(extraout_var_02,bVar5) != 0) ||
              ((this->field46_0x58 & 8) != 0)) {
-            piVar15 = (int *)FUN_00403780(&this->Int_1024,&local_4);
+            piVar15 = (int *)Texture_Find(&this->Int_1024,&local_4);
             this->Int_1024 = *piVar15;
           }
         }
@@ -53619,7 +53619,7 @@ LAB_0049a8bc:
     uVar16 = FUN_00436140(&iStack_2c);
     FUN_0041fa70(uVar16);
     if (this->field7_0x10 == 0xf) {
-      Ped::Ped_Set_FUN_00403a40(this->Ped);
+      Ped__Initialize(this->Ped);
       if (this->field63_0x6c != 5) {
         this->field63_0x6c = 5;
         this->field59_0x68 = 0;
@@ -53721,8 +53721,8 @@ LAB_0049a8bc:
     bVar3 = Ped::HasSearchType(this->Ped,SEARCHTYPE_LINE_OF_SIGHT_PLAYER_ONLY);
     if (bVar3) {
       _DAT_0066a3fc = *psVar14;
-      iVar9 = DecoderFloat(&local_28);
-      iVar10 = DecoderFloat(&local_24);
+      iVar9 = Decoder_DecodeFloat(&local_28);
+      iVar10 = Decoder_DecodeFloat(&local_24);
       cVar4 = FUN_00495bf0(iVar10,iVar9);
       cVar7 = MapRelatedStruct::FUN_00462e80(_gMapRelatedStruct);
       local_2e = bVar3;
@@ -53731,8 +53731,8 @@ LAB_0049a8bc:
       local_2e = false;
     }
     else {
-      iVar9 = DecoderFloat(&local_28);
-      iVar10 = DecoderFloat(&local_24);
+      iVar9 = Decoder_DecodeFloat(&local_28);
+      iVar10 = Decoder_DecodeFloat(&local_24);
       cVar4 = FUN_00495540(iVar10,iVar9);
       if (DAT_0066a3c1 != '\0') {
         FUN_00495470();
@@ -53747,8 +53747,8 @@ LAB_0049a8bc:
                        (Ped *)&local_14);
           FUN_0040e530(&local_10,(int *)&DAT_0066a480);
           FUN_0040e530(&local_14,(int *)&DAT_0066a74c);
-          iVar9 = DecoderFloat(&local_14);
-          iVar10 = DecoderFloat(&local_10);
+          iVar9 = Decoder_DecodeFloat(&local_14);
+          iVar10 = Decoder_DecodeFloat(&local_10);
           cVar4 = FUN_00495540(iVar10,iVar9);
           if (cVar4 == '\x01') {
             local_20[0] = *psVar14;
@@ -53758,8 +53758,8 @@ LAB_0049a8bc:
                          ,(Ped *)&local_c);
             FUN_0040e530(&local_8,(int *)&DAT_0066a480);
             FUN_0040e530(&local_c,(int *)&DAT_0066a74c);
-            iVar9 = DecoderFloat(&local_c);
-            iVar10 = DecoderFloat(&local_8);
+            iVar9 = Decoder_DecodeFloat(&local_c);
+            iVar10 = Decoder_DecodeFloat(&local_8);
             cVar4 = FUN_00495540(iVar10,iVar9);
             if (cVar4 == '\0') {
               FUN_004923d0();
@@ -53791,11 +53791,11 @@ LAB_0049a8bc:
   }
 
     if (this->field7_0x10 == 0xf) {
-      pvVar13 = S110_FUN_00401b40(&DAT_0066a754,(S110 *)&local_18,&DAT_0066a46c)
+      pvVar13 = Decoder_ProcessData(&DAT_0066a754,(S110 *)&local_18,&DAT_0066a46c)
       ;
-      iVar10 = DecoderFloat(pvVar13);
-      iVar11 = DecoderFloat(&DAT_0066a74c);
-      iVar12 = DecoderFloat(&DAT_0066a480);
+      iVar10 = Decoder_DecodeFloat(pvVar13);
+      iVar11 = Decoder_DecodeFloat(&DAT_0066a74c);
+      iVar12 = Decoder_DecodeFloat(&DAT_0066a480);
       cVar5 = FUN_00492140(iVar12,iVar11,iVar10);
       if (cVar5 == '\0') goto LAB_0049b3c0;
       FUN_00493710();
@@ -53909,16 +53909,16 @@ LAB_0049a8bc:
       pSVar19 = this->SpriteS1;
       local_24 = (SpriteS1 *)pSVar19->S3_arr5031[0].PositionX;
       local_28 = (SpriteS1 *)pSVar19->S3_arr5031[0].PositionY;
-      iVar9 = DecoderFloat(&pSVar19->S3_arr5031[0].PositionX);
+      iVar9 = Decoder_DecodeFloat(&pSVar19->S3_arr5031[0].PositionX);
       pSStack_1c = (SpriteS1 *)CONCAT31(pSStack_1c._1_3_,(char)iVar9);
-      iVar9 = DecoderFloat(&pSVar19->S3_arr5031[0].PositionY);
+      iVar9 = Decoder_DecodeFloat(&pSVar19->S3_arr5031[0].PositionY);
       local_18 = (SpriteS1 *)CONCAT31(local_18._1_3_,(char)iVar9);
-      iVar10 = DecoderFloat(&DAT_0066a480);
+      iVar10 = Decoder_DecodeFloat(&DAT_0066a480);
       if (((byte)iVar10 != (byte)pSStack_1c) ||
-         (iVar10 = DecoderFloat(&DAT_0066a74c), (char)iVar10 != (char)iVar9)) {
+         (iVar10 = Decoder_DecodeFloat(&DAT_0066a74c), (char)iVar10 != (char)iVar9)) {
         SpriteS1::SetPosition(pSVar19,_DAT_0066a480,_DAT_0066a74c,_DAT_0066a754)
         ;
-        iVar9 = DecoderFloat(&DAT_0066a414);
+        iVar9 = Decoder_DecodeFloat(&DAT_0066a414);
         this->field29_0x45 = (char)iVar9;
         cVar6 = FUN_00492420(pSStack_1c,local_18);
         if (cVar6 == '\0') {
@@ -53947,11 +53947,11 @@ LAB_0049a8bc:
                     (this->SpriteS1,(int)local_24,(int)local_28,_DAT_0066a754);
           if ((bVar2) || ((this->field46_0x58 & 1) != 0)) {
             pSVar19 = this->SpriteS1;
-            pvVar13 = S110_FUN_00401b40(&pSVar19->S3_arr5031[0].PositionZ,
+            pvVar13 = Decoder_ProcessData(&pSVar19->S3_arr5031[0].PositionZ,
                                         (S110 *)auStack_4,&DAT_0066a46c);
-            iVar9 = DecoderFloat(pvVar13);
-            iVar10 = DecoderFloat(&pSVar19->S3_arr5031[0].PositionY);
-            iVar11 = DecoderFloat(&pSVar19->S3_arr5031[0].PositionX);
+            iVar9 = Decoder_DecodeFloat(pvVar13);
+            iVar10 = Decoder_DecodeFloat(&pSVar19->S3_arr5031[0].PositionY);
+            iVar11 = Decoder_DecodeFloat(&pSVar19->S3_arr5031[0].PositionX);
             DAT_0066a3c4 = MapRelatedStruct::S16_FUN_00466cf0
                                      (_gMapRelatedStruct,iVar11,iVar10,iVar9);
             FUN_00494180(this);
@@ -53977,11 +53977,11 @@ LAB_0049a8bc:
   }
 
     if (this->field7_0x10 == 0xf) {
-      pvVar13 = S110_FUN_00401b40(&DAT_0066a754,(S110 *)&pSStack_18,
+      pvVar13 = Decoder_ProcessData(&DAT_0066a754,(S110 *)&pSStack_18,
                                   &DAT_0066a46c);
-      iVar10 = DecoderFloat(pvVar13);
-      iVar11 = DecoderFloat(&DAT_0066a74c);
-      iVar12 = DecoderFloat(&DAT_0066a480);
+      iVar10 = Decoder_DecodeFloat(pvVar13);
+      iVar11 = Decoder_DecodeFloat(&DAT_0066a74c);
+      iVar12 = Decoder_DecodeFloat(&DAT_0066a480);
       cVar5 = FUN_00492140(iVar12,iVar11,iVar10);
       if (cVar5 == '\0') goto LAB_0049b3c0;
       FUN_00493710();
@@ -54095,16 +54095,16 @@ LAB_0049a8bc:
       pSVar19 = this->SpriteS1;
       pSStack_24 = (SpriteS1 *)pSVar19->S3_arr5031[0].PositionX;
       pSStack_28 = (SpriteS1 *)pSVar19->S3_arr5031[0].PositionY;
-      iVar9 = DecoderFloat(&pSVar19->S3_arr5031[0].PositionX);
+      iVar9 = Decoder_DecodeFloat(&pSVar19->S3_arr5031[0].PositionX);
       pSStack_1c = (SpriteS1 *)CONCAT31(pSStack_1c._1_3_,(char)iVar9);
-      iVar9 = DecoderFloat(&pSVar19->S3_arr5031[0].PositionY);
+      iVar9 = Decoder_DecodeFloat(&pSVar19->S3_arr5031[0].PositionY);
       pSStack_18 = (SpriteS1 *)CONCAT31(pSStack_18._1_3_,(char)iVar9);
-      iVar10 = DecoderFloat(&DAT_0066a480);
+      iVar10 = Decoder_DecodeFloat(&DAT_0066a480);
       if (((byte)iVar10 != (byte)pSStack_1c) ||
-         (iVar10 = DecoderFloat(&DAT_0066a74c), (char)iVar10 != (char)iVar9)) {
+         (iVar10 = Decoder_DecodeFloat(&DAT_0066a74c), (char)iVar10 != (char)iVar9)) {
         SpriteS1::SetPosition(pSVar19,_DAT_0066a480,_DAT_0066a74c,_DAT_0066a754)
         ;
-        iVar9 = DecoderFloat(&DAT_0066a414);
+        iVar9 = Decoder_DecodeFloat(&DAT_0066a414);
         this->field29_0x45 = (char)iVar9;
         cVar6 = FUN_00492420(pSStack_1c,pSStack_18);
         if (cVar6 == '\0') {
@@ -54134,11 +54134,11 @@ LAB_0049a8bc:
                      _DAT_0066a754);
           if ((bVar2) || ((this->field46_0x58 & 1) != 0)) {
             pSVar19 = this->SpriteS1;
-            pvVar13 = S110_FUN_00401b40(&pSVar19->S3_arr5031[0].PositionZ,
+            pvVar13 = Decoder_ProcessData(&pSVar19->S3_arr5031[0].PositionZ,
                                         (S110 *)auStack_4,&DAT_0066a46c);
-            iVar9 = DecoderFloat(pvVar13);
-            iVar10 = DecoderFloat(&pSVar19->S3_arr5031[0].PositionY);
-            iVar11 = DecoderFloat(&pSVar19->S3_arr5031[0].PositionX);
+            iVar9 = Decoder_DecodeFloat(pvVar13);
+            iVar10 = Decoder_DecodeFloat(&pSVar19->S3_arr5031[0].PositionY);
+            iVar11 = Decoder_DecodeFloat(&pSVar19->S3_arr5031[0].PositionX);
             DAT_0066a3c4 = MapRelatedStruct::S16_FUN_00466cf0
                                      (_gMapRelatedStruct,iVar11,iVar10,iVar9);
             FUN_00494180(this);
@@ -54190,24 +54190,24 @@ void __fastcall FUN_0049bd10(GameObject *param_1)
       this = (Player *)FUN_0042a630(&local_4,&DAT_0066a754);
       bVar2 = Player::IsCurrentPlayer(this,pPlayer);
       if (CONCAT31(extraout_var,bVar2) == 0) goto LAB_0049bde4;
-      iVar7 = DecoderFloat(&DAT_0066a754);
+      iVar7 = Decoder_DecodeFloat(&DAT_0066a754);
       iVar7 = iVar7 + -1;
-      iVar8 = DecoderFloat(&DAT_0066a74c);
-      iVar9 = DecoderFloat(&DAT_0066a480);
+      iVar8 = Decoder_DecodeFloat(&DAT_0066a74c);
+      iVar9 = Decoder_DecodeFloat(&DAT_0066a480);
       FUN_00420420(iVar9,iVar8,iVar7);
-      iVar7 = DecoderFloat(&DAT_0066a754);
+      iVar7 = Decoder_DecodeFloat(&DAT_0066a754);
       iVar7 = iVar7 + -1;
     }
     else {
 LAB_0049bde4:
-      iVar7 = DecoderFloat(&DAT_0066a754);
-      iVar8 = DecoderFloat(&DAT_0066a74c);
-      iVar9 = DecoderFloat(&DAT_0066a480);
+      iVar7 = Decoder_DecodeFloat(&DAT_0066a754);
+      iVar8 = Decoder_DecodeFloat(&DAT_0066a74c);
+      iVar9 = Decoder_DecodeFloat(&DAT_0066a480);
       FUN_00420420(iVar9,iVar8,iVar7);
-      iVar7 = DecoderFloat(&DAT_0066a754);
+      iVar7 = Decoder_DecodeFloat(&DAT_0066a754);
     }
-    iVar8 = DecoderFloat(&DAT_0066a74c);
-    iVar9 = DecoderFloat(&DAT_0066a480);
+    iVar8 = Decoder_DecodeFloat(&DAT_0066a74c);
+    iVar9 = Decoder_DecodeFloat(&DAT_0066a480);
     iVar7 = MapRelatedStruct::S16_FUN_004653c0
                       (_gMapRelatedStruct,iVar9,iVar8,iVar7);
     if (((iVar7 != 0) &&
@@ -54323,7 +54323,7 @@ LAB_0049c1cc:
     param_1->field9_0x16 = 0;
     this_00 = param_1->Ped->pS169;
     if ((this_00 != (S169 *)0x0) && (this_00->field0_0x0 != 0)) {
-      S169::FUN_00404d40(this_00,param_1->Ped);
+      PedManager__RemovePed(this_00,param_1->Ped);
       param_1->Ped->pS169 = (S169 *)0x0;
     }
     param_1->field21_0x34 = 0;
@@ -54369,17 +54369,17 @@ LAB_0049c1cc:
     break;
   case 0xf:
     pSVar2 = param_1->SpriteS1;
-    iVar9 = DecoderFloat(&pSVar2->S3_arr5031[0].PositionZ);
+    iVar9 = Decoder_DecodeFloat(&pSVar2->S3_arr5031[0].PositionZ);
     if ((char)iVar9 != '\0') {
       puVar1 = &pSVar2->S3_arr5031[0].PositionX;
-      iVar9 = DecoderFloat(puVar1);
+      iVar9 = Decoder_DecodeFloat(puVar1);
       if (1 < (byte)iVar9) {
         puVar11 = &pSVar2->S3_arr5031[0].PositionY;
-        iVar9 = DecoderFloat(puVar11);
+        iVar9 = Decoder_DecodeFloat(puVar11);
         if (((1 < (byte)iVar9) &&
-            (iVar9 = DecoderFloat(puVar1), (byte)iVar9 < 0xfe)) &&
-           (iVar9 = DecoderFloat(puVar11), (byte)iVar9 < 0xfe)) {
-          piVar10 = (int *)FUN_00403780(&DAT_0066a574,local_14);
+            (iVar9 = Decoder_DecodeFloat(puVar1), (byte)iVar9 < 0xfe)) &&
+           (iVar9 = Decoder_DecodeFloat(puVar11), (byte)iVar9 < 0xfe)) {
+          piVar10 = (int *)Texture_Find(&DAT_0066a574,local_14);
           param_1->Int_1024 = *piVar10;
           GameObject::FUN_0049a560(param_1);
           return;
@@ -54389,17 +54389,17 @@ LAB_0049c1cc:
     goto LAB_0049c347;
   case 0x10:
     pSVar2 = param_1->SpriteS1;
-    iVar9 = DecoderFloat(&pSVar2->S3_arr5031[0].PositionZ);
+    iVar9 = Decoder_DecodeFloat(&pSVar2->S3_arr5031[0].PositionZ);
     if ((char)iVar9 != '\0') {
       puVar1 = &pSVar2->S3_arr5031[0].PositionX;
-      iVar9 = DecoderFloat(puVar1);
+      iVar9 = Decoder_DecodeFloat(puVar1);
       if (1 < (byte)iVar9) {
         puVar11 = &pSVar2->S3_arr5031[0].PositionY;
-        iVar9 = DecoderFloat(puVar11);
+        iVar9 = Decoder_DecodeFloat(puVar11);
         if (((1 < (byte)iVar9) &&
-            (iVar9 = DecoderFloat(puVar1), (byte)iVar9 < 0xfe)) &&
-           (iVar9 = DecoderFloat(puVar11), (byte)iVar9 < 0xfe)) {
-          piVar10 = (int *)FUN_00403780(&DAT_0066a574,local_c);
+            (iVar9 = Decoder_DecodeFloat(puVar1), (byte)iVar9 < 0xfe)) &&
+           (iVar9 = Decoder_DecodeFloat(puVar11), (byte)iVar9 < 0xfe)) {
+          piVar10 = (int *)Texture_Find(&DAT_0066a574,local_c);
           param_1->Int_1024 = *piVar10;
           GameObject::FUN_0049a560(param_1);
           return;
@@ -54806,7 +54806,7 @@ byte __thiscall S95::S95_FUN_0049cf10(S95 *this)
       puVar10 = puVar9;
       FUN_0040ce30(&param_8,bVar21);
       this_00 = (void *)FUN_00469570(&param_1,*puVar10,*puVar9,*puVar8);
-      iVar11 = DecoderFloat(this_00);
+      iVar11 = Decoder_DecodeFloat(this_00);
       this->field_0x10 = (char)iVar11;
     }
     DAT_0066a7e0 = 0;
@@ -55046,7 +55046,7 @@ LAB_0049d63b:
       puVar8 = puVar7;
       FUN_0040ce30(local_34,this->field_0xe);
       this_00 = (void *)FUN_00469570(local_28,*puVar8,*puVar7,*puVar9);
-      iVar6 = DecoderFloat(this_00);
+      iVar6 = Decoder_DecodeFloat(this_00);
       this->field_0x10 = (char)iVar6;
     }
 
@@ -55388,7 +55388,7 @@ void __thiscall FUN_0049ea00(void *this,undefined4 *param_1)
 void * __thiscall FUN_0049ea30(int param_1,void *param_2,int param_3)
 
 
-  FUN_00401d20(param_2,(undefined4 *)
+  String_ParseLine(param_2,(undefined4 *)
                        (*(int *)(param_1 + 0xc) + 0xc + param_3 * 8),
 
 void __fastcall FUN_0049ea60(int param_1)
@@ -55398,12 +55398,12 @@ void __fastcall FUN_0049ea70(Player *param_1)
 
 
   if (bVar2 == 0) {
-    pPVar4 = (Player *)FUN_00403840(&local_4,(int *)&local_4,(S110 *)pS110);
+    pPVar4 = (Player *)Matrix_Multiply(&local_4,(int *)&local_4,(S110 *)pS110);
     bVar3 = Player::CheckCondition(pPVar4,piVar7);
     if (CONCAT31(extraout_var_01,bVar3) != 0) {
       piVar7 = (int *)&DAT_0066af84;
       pPVar4 = (Player *)
-               FUN_00403840(this_00,(int *)&local_4,
+               Matrix_Multiply(this_00,(int *)&local_4,
                             (S110 *)&param_1->PlayerState);
       bVar3 = Player::CheckCondition(pPVar4,piVar7);
       if (CONCAT31(extraout_var_02,bVar3) != 0) {
@@ -55411,7 +55411,7 @@ void __fastcall FUN_0049ea70(Player *param_1)
         return;
       }
     }
-    pSVar5 = (S110 *)FUN_00401c80(&param_1->theta,&local_4);
+    pSVar5 = (S110 *)PedPool_Get(&param_1->theta,&local_4);
     FUN_0040f6b0(pS110,pSVar5);
     FUN_0041e0d0(pS110);
     FUN_0041e0d0(&param_1->PlayerState);
@@ -55551,7 +55551,7 @@ void __thiscall FUN_0049f1b0(void *this)
 
 
   if (iVar1 != 0) {
-    piVar2 = (int *)FUN_00401b90(&DAT_0066ac4c,&local_14,(int *)&DAT_0066afc0);
+    piVar2 = (int *)Decoder_ReadInt(&DAT_0066ac4c,&local_14,(int *)&DAT_0066afc0);
     local_14 = *piVar2;
     piVar2 = &local_14;
     iVar1 = *(int *)(*(int *)(iVar1 + 0xc) + 0x58);
@@ -55569,7 +55569,7 @@ void __thiscall FUN_0049f1b0(void *this)
     piVar2 = &local_14;
     puVar6 = local_8;
     *(undefined4 *)(iVar1 + 0x74) = *puVar3;
-    pvVar5 = S110_FUN_00401b40((void *)(iVar1 + 0x6c),(S110 *)local_10,
+    pvVar5 = Decoder_ProcessData((void *)(iVar1 + 0x6c),(S110 *)local_10,
                                &DAT_0066ab98);
     puVar3 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar5,puVar6,piVar2);
     *(undefined4 *)(iVar1 + 0x70) = *puVar3;
@@ -55610,7 +55610,7 @@ void __thiscall S1::S1_FUN_0049f350(S1 *this)
 
   if (bVar2 == 0) {
     puVar8 = (undefined4 *)
-             S110_FUN_00401b40(&this->field22_0x6c,(S110 *)&local_4,
+             Decoder_ProcessData(&this->field22_0x6c,(S110 *)&local_4,
                                &DAT_0066ac4c);
     local_4 = (Car *)*puVar8;
   }
@@ -55672,7 +55672,7 @@ void __thiscall FUN_0049f760(int param_1)
     bVar2 = S169::FUN_00403800(this,(int *)&DAT_0066acdc);
     if (CONCAT31(extraout_var_00,bVar2) != 0) {
       puVar4 = (undefined4 *)
-               S110_FUN_00401b40(this,(S110 *)&stack0x00000008,&DAT_0066af34);
+               Decoder_ProcessData(this,(S110 *)&stack0x00000008,&DAT_0066af34);
       uVar1 = *puVar4;
       this->field0_0x0 = (char)uVar1;
       this->field1_0x1 = (char)((uint)uVar1 >> 8);
@@ -55830,11 +55830,11 @@ void __thiscall S1::S1_FUN_004a0290(S1 *this)
 
         if (iVar8 != 6) {
           puVar4 = &local_14;
-          puVar5 = (undefined4 *)FUN_00403780(&local_18,local_c);
-          FUN_00401d20(local_8,puVar5,puVar4);
+          puVar5 = (undefined4 *)Texture_Find(&local_18,local_c);
+          String_ParseLine(local_8,puVar5,puVar4);
           FUN_004a0120(this,0,(S110 *)*puVar5,(Ped *)puVar5[1],iVar6);
           puVar4 = &local_14;
-          FUN_00401d20(local_8,&local_18,puVar4);
+          String_ParseLine(local_8,&local_18,puVar4);
           iVar8 = iVar6;
           goto LAB_004a0408;
         }
@@ -55847,11 +55847,11 @@ void __thiscall S1::S1_FUN_004a0290(S1 *this)
 
       if (iVar8 != 6) {
         puVar4 = &local_10;
-        puVar5 = (undefined4 *)FUN_00403780(&local_18,local_c);
-        FUN_00401d20(local_8,puVar5,puVar4);
+        puVar5 = (undefined4 *)Texture_Find(&local_18,local_c);
+        String_ParseLine(local_8,puVar5,puVar4);
         FUN_004a0120(this,3,(S110 *)*puVar5,(Ped *)puVar5[1],iVar6);
         puVar4 = &local_10;
-        FUN_00401d20(local_8,&local_18,puVar4);
+        String_ParseLine(local_8,&local_18,puVar4);
         goto LAB_004a04bb;
       }
 
@@ -55890,7 +55890,7 @@ void __thiscall S1::S1_FUN_004a0560(S1 *this)
   if (iVar3 == 0) {
     iVar3 = FUN_00420360(param_5);
     if (iVar3 == 0) {
-      puVar4 = (undefined4 *)FUN_00401b90(&DAT_0066ac4c,&local_4c,&param_2);
+      puVar4 = (undefined4 *)Decoder_ReadInt(&DAT_0066ac4c,&local_4c,&param_2);
       pvVar8 = param_6;
       local_54._0_4_ = *puVar4;
       puVar13 = local_10;
@@ -55906,13 +55906,13 @@ void __thiscall S1::S1_FUN_004a0560(S1 *this)
       puVar14 = local_48;
       pSVar6 = S9::S9_FUN_00401b20((S9 *)&DAT_0066ac4c,(SpriteS1 *)local_44,
                                    (int *)&stack0x0000002c);
-      this = FUN_00403780(pSVar6,puVar14);
+      this = Texture_Find(pSVar6,puVar14);
       puVar4 = (undefined4 *)WorldCoordinateToScreenCoord(this,puVar13,piVar5);
       local_4c = (Car *)*puVar4;
       bVar2 = Player::IsCurrentPlayer
                         ((Player *)&param_3,(Player *)&DAT_0066ac60);
       if (CONCAT31(extraout_var,bVar2) == 0) {
-        FUN_00401b90(&DAT_0066ac4c,local_54 + 4,&param_3);
+        Decoder_ReadInt(&DAT_0066ac4c,local_54 + 4,&param_3);
         puVar13 = local_10;
         FUN_0040f600(pvVar8,local_40,param_8);
         FUN_0049e420(puVar13);
@@ -55920,13 +55920,13 @@ void __thiscall S1::S1_FUN_004a0560(S1 *this)
         puVar13 = local_38;
         uVar7 = FUN_0049e500(local_40,local_10,&local_18);
         pvVar8 = (void *)FUN_0049e0e0(local_44,uVar7);
-        piVar9 = (int *)FUN_00401b90(pvVar8,puVar13,piVar5);
+        piVar9 = (int *)Decoder_ReadInt(pvVar8,puVar13,piVar5);
         pSVar6 = (SpriteS1 *)local_48;
         piVar5 = (int *)&stack0x00000024;
         puVar13 = local_34;
         uVar7 = FUN_0049e500(local_30,local_20,&local_18);
         pvVar8 = (void *)FUN_0049e0e0(local_2c,uVar7);
-        piVar5 = (int *)FUN_00401b90(pvVar8,puVar13,piVar5);
+        piVar5 = (int *)Decoder_ReadInt(pvVar8,puVar13,piVar5);
         pSVar12 = (SpriteS1 *)local_54;
         pSVar11 = S9::S9_FUN_00401b20((S9 *)local_54,(SpriteS1 *)(local_2c + 4),
                                       (int *)(local_54 + 4));
@@ -55943,7 +55943,7 @@ void __thiscall S1::S1_FUN_004a0560(S1 *this)
         puVar13 = local_44;
         uVar7 = FUN_0049e500(local_48,local_20,&local_18);
         pvVar8 = (void *)FUN_0049e0e0(local_54 + 4,uVar7);
-        piVar9 = (int *)FUN_00401b90(pvVar8,puVar13,piVar5);
+        piVar9 = (int *)Decoder_ReadInt(pvVar8,puVar13,piVar5);
         pSVar6 = (SpriteS1 *)local_54;
         piVar5 = (int *)local_54;
         puVar13 = local_40;
@@ -55952,7 +55952,7 @@ void __thiscall S1::S1_FUN_004a0560(S1 *this)
         pSVar6 = S9::S9_FUN_00401b20(pSVar10,pSVar6,piVar9);
         local_54._0_4_ = pSVar6->FirstElement;
       }
-      puVar4 = (undefined4 *)FUN_00401b90(&local_4c,local_20,(int *)local_54);
+      puVar4 = (undefined4 *)Decoder_ReadInt(&local_4c,local_20,(int *)local_54);
       local_4c = (Car *)*puVar4;
       puVar4 = (undefined4 *)FUN_0041e1a0(local_10,&local_4c);
       *param_1 = *puVar4;
@@ -56065,7 +56065,7 @@ undefined4 * __thiscall FUN_004a1360(Player *param_1,undefined4 *param_2)
     }
     else {
       puVar4 = (undefined4 *)
-               S110_FUN_00401b40(&DAT_0066ac4c,&local_3c,
+               Decoder_ProcessData(&DAT_0066ac4c,&local_3c,
                                  (void *)(_DAT_0066ab70 + 0x14));
       local_48 = (SpriteS1 *)*puVar4;
     }
@@ -56125,7 +56125,7 @@ undefined4 * __thiscall FUN_004a1360(Player *param_1,undefined4 *param_2)
           local_3c.car = (Car *)0x1e;
           pvVar3 = (void *)FUN_00401bd0(&DAT_0066afe4,&local_3c.field_0xc,
                                         (int *)&local_3c);
-          puVar5 = (uint *)S110_FUN_00401b40(&param_1->KEY_UP,
+          puVar5 = (uint *)Decoder_ProcessData(&param_1->KEY_UP,
                                              (S110 *)&local_3c.field_0x10,pvVar3
                                             );
           local_4c = *puVar5;
@@ -56134,7 +56134,7 @@ undefined4 * __thiscall FUN_004a1360(Player *param_1,undefined4 *param_2)
           local_3c.car = (Car *)0xffffffe2;
           pvVar3 = (void *)FUN_00401bd0(&DAT_0066afe4,&local_3c.field_0x14,
                                         (int *)&local_3c);
-          puVar5 = (uint *)S110_FUN_00401b40(&param_1->KEY_UP,
+          puVar5 = (uint *)Decoder_ProcessData(&param_1->KEY_UP,
                                              (S110 *)&local_3c.field15_0x18,
                                              pvVar3);
           local_4c = *puVar5;
@@ -56162,12 +56162,12 @@ undefined4 * __thiscall FUN_004a1360(Player *param_1,undefined4 *param_2)
     FUN_0049e3a0(_DAT_0066ab70 + 0x1c);
     piVar9 = Player::FUN_0041e260((Player *)&param_1->S103,&local_c);
     puVar4 = (undefined4 *)
-             S110_FUN_00401b40(&DAT_0066add0,(S110 *)&local_3c.field22_0x28,
+             Decoder_ProcessData(&DAT_0066add0,(S110 *)&local_3c.field22_0x28,
                                piVar9);
     local_3c.car = (Car *)*puVar4;
     piVar9 = (int *)WorldCoordinateToScreenCoord
                               (&DAT_0066add0,&local_c,(int *)&DAT_0066ac3c);
-    puVar4 = (undefined4 *)FUN_00401b90(&local_3c,&local_3c.field23_0x2c,piVar9)
+    puVar4 = (undefined4 *)Decoder_ReadInt(&local_3c,&local_3c.field23_0x2c,piVar9)
     ;
     local_3c.car = (Car *)*puVar4;
     pvVar3 = WorldCoordinateToScreenCoord(&local_4c,&local_c,(int *)&local_3c);
@@ -56345,7 +56345,7 @@ void __fastcall FUN_004a20e0(S1 *param_1)
       local_8 = _DAT_0066acdc;
       piVar2 = (int *)FUN_004634e0(local_28,1);
       puVar5 = local_24;
-      pvVar3 = FUN_00403780(&DAT_0066b044,local_20);
+      pvVar3 = Texture_Find(&DAT_0066b044,local_20);
       puVar4 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar3,puVar5,piVar2);
       local_4 = *puVar4;
       break;
@@ -56360,7 +56360,7 @@ void __fastcall FUN_004a20e0(S1 *param_1)
     case 4:
       piVar2 = (int *)FUN_004634e0(local_14,1);
       puVar5 = local_10;
-      pvVar3 = FUN_00403780(&DAT_0066b044,local_c);
+      pvVar3 = Texture_Find(&DAT_0066b044,local_c);
       puVar4 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar3,puVar5,piVar2);
       local_8 = *puVar4;
       local_4 = _DAT_0066acdc;
@@ -56422,7 +56422,7 @@ undefined1 __thiscall FUN_004a26c0(Player *param_1,byte *param_2)
 
 
   if (bVar1 != 0) {
-    piVar4 = (int *)FUN_00403780(&DAT_0066ad4c,local_24);
+    piVar4 = (int *)Texture_Find(&DAT_0066ad4c,local_24);
     bVar2 = S169::FUN_00403800((S169 *)&param_1->ID,piVar4);
     if (CONCAT31(extraout_var,bVar2) != 0) {
       FUN_0040e550(&param_1->ID,(int *)&DAT_0066af58);
@@ -56454,7 +56454,7 @@ undefined1 __thiscall FUN_004a26c0(Player *param_1,byte *param_2)
       bVar1 = 1;
       do {
         if (((byte)piVar4 & bVar1) != bVar1) {
-          bitShiftLeft1(local_24,(void *)0x32);
+          Decoder_ShiftLeft(local_24,(void *)0x32);
           puVar16 = local_10;
           pSVar13 = (S110 *)FUN_0049ea30(local_18,iVar14);
           pvVar8 = FUN_0040f600(&param_1->EnterControlStatus,local_20,pSVar13);
@@ -56615,11 +56615,11 @@ void __thiscall FUN_004a32d0(Player *param_1,int param_2)
       puVar3 = &param_2;
       piVar10 = (int *)&DAT_0066ae48;
       puVar2 = &param_1->ID;
-      this = FUN_00403780(puVar2,local_14);
+      this = Texture_Find(puVar2,local_14);
       puVar3 = (undefined4 *)WorldCoordinateToScreenCoord(this,puVar3,piVar10);
       pSpriteS1 = (SpriteS1 *)&DAT_0066ade4;
       *puVar2 = *puVar3;
-      piVar10 = FUN_00403840(this_01,&param_2,(S110 *)puVar2);
+      piVar10 = Matrix_Multiply(this_01,&param_2,(S110 *)puVar2);
       bVar1 = FUN_004037e0(piVar10,pSpriteS1);
       if (CONCAT31(extraout_var_00,bVar1) != 0) {
         *puVar2 = _DAT_0066acdc;
@@ -56660,12 +56660,12 @@ void __thiscall FUN_004a32d0(Player *param_1,int param_2)
     if (CONCAT31(extraout_var,bVar2) == 0) goto LAB_004a3731;
     piVar10 = local_38;
     piVar16 = (int *)&DAT_0066ae48;
-    pvVar8 = FUN_00403780(&this->ID,local_40);
+    pvVar8 = Texture_Find(&this->ID,local_40);
     puVar7 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar8,piVar10,piVar16);
     pvVar8 = (void *)*puVar7;
     pSpriteS1 = (SpriteS1 *)&DAT_0066ade4;
     this->ID = pvVar8;
-    piVar10 = FUN_00403840(pvVar8,local_38,(S110 *)&this->ID);
+    piVar10 = Matrix_Multiply(pvVar8,local_38,(S110 *)&this->ID);
     bVar2 = FUN_004037e0(piVar10,pSpriteS1);
     if (CONCAT31(extraout_var_00,bVar2) != 0) {
       this->ID = _DAT_0066acdc;
@@ -56697,7 +56697,7 @@ LAB_004a36c9:
     piVar16 = &local_4c;
     puVar13 = local_40;
     local_48 = (Ped *)0x32;
-    this_00 = FUN_00403840(local_44,(int *)local_44,(S110 *)&this->field47_0x70)
+    this_00 = Matrix_Multiply(local_44,(int *)local_44,(S110 *)&this->field47_0x70)
     ;
     pvVar8 = WorldCoordinateToScreenCoord(this_00,puVar13,piVar16);
     puVar7 = (undefined4 *)FUN_00401bd0(pvVar8,piVar10,(int *)ppPVar17);
@@ -56783,13 +56783,13 @@ void __thiscall FUN_004a3a40(Player *param_1,void *param_2,undefined4 param_3)
       piVar5 = local_48;
       puVar4 = &param_1->ID;
       piVar13 = (int *)&DAT_0066ae48;
-      pvVar6 = FUN_00403780(puVar4,&local_4c);
+      pvVar6 = Texture_Find(puVar4,&local_4c);
       puVar7 = (undefined4 *)WorldCoordinateToScreenCoord(pvVar6,piVar5,piVar13)
       ;
       pvVar6 = (void *)*puVar7;
       pSpriteS1 = (SpriteS1 *)&DAT_0066ade4;
       *puVar4 = pvVar6;
-      piVar5 = FUN_00403840(pvVar6,local_48,(S110 *)puVar4);
+      piVar5 = Matrix_Multiply(pvVar6,local_48,(S110 *)puVar4);
       bVar3 = FUN_004037e0(piVar5,pSpriteS1);
       if (CONCAT31(extraout_var_00,bVar3) != 0) {
         *puVar4 = _DAT_0066acdc;
@@ -56814,7 +56814,7 @@ void __thiscall FUN_004a3a40(Player *param_1,void *param_2,undefined4 param_3)
       piVar11 = &local_50;
       puVar9 = local_40;
       local_4c = 0x32;
-      this = FUN_00403840(local_40 + 8,(int *)(local_40 + 8),
+      this = Matrix_Multiply(local_40 + 8,(int *)(local_40 + 8),
                           (S110 *)&param_1->field47_0x70);
       pvVar6 = WorldCoordinateToScreenCoord(this,puVar9,piVar11);
       piVar5 = (int *)FUN_00401bd0(pvVar6,piVar13,piVar5);
@@ -56833,9 +56833,9 @@ void __thiscall FUN_004a3df0(Player *param_1,Car *param_2)
 
 
   if (cVar1 != '\0') {
-    bitShiftLeft1(&stack0x00000008,(void *)0x0);
+    Decoder_ShiftLeft(&stack0x00000008,(void *)0x0);
     puVar3 = (undefined4 *)
-             S110_FUN_00401b40(&param_1->field28_0x3c,(S110 *)&param_2,
+             Decoder_ProcessData(&param_1->field28_0x3c,(S110 *)&param_2,
                                &DAT_005e688c);
     FUN_00432860(&DAT_0066afb4,(undefined4 *)&stack0x00000008,puVar3);
     puVar3 = (undefined4 *)
@@ -56851,10 +56851,10 @@ void __thiscall FUN_004a3fb0(Player *param_1,Car *param_2)
 
 
   if (cVar1 != '\0') {
-    bitShiftLeft1(&stack0x00000008,(void *)0x0);
+    Decoder_ShiftLeft(&stack0x00000008,(void *)0x0);
     puVar4 = (undefined4 *)&stack0x00000008;
     puVar3 = (undefined4 *)
-             S110_FUN_00401b40(&param_1->field27_0x38,(S110 *)&param_2,
+             Decoder_ProcessData(&param_1->field27_0x38,(S110 *)&param_2,
                                &DAT_005e6888);
     FUN_00432860(&DAT_0066afb4,puVar3,puVar4);
     puVar4 = (undefined4 *)
@@ -56911,7 +56911,7 @@ undefined1 __thiscall FUN_004a4310(void *this)
       return uVar6;
     }
     FUN_004637b0(&DAT_005e6874);
-    bitShiftLeft1(&local_1c,(void *)0x0);
+    Decoder_ShiftLeft(&local_1c,(void *)0x0);
     *(undefined4 *)((int)this + 0x70) = local_1c;
     S1::S1_FUN_0049def0((S1 *)this);
     Player::cPlayer_FUN_004a2e30((Player *)this,_DAT_0066ac4c);
@@ -56939,7 +56939,7 @@ undefined1 __thiscall FUN_004a4310(void *this)
     }
     pS110 = local_18;
     piVar9 = (int *)&DAT_0066afc0;
-    this_00 = S110_FUN_00401b40(&DAT_0066ac4c,(S110 *)(local_18 + 4),&local_24);
+    this_00 = Decoder_ProcessData(&DAT_0066ac4c,(S110 *)(local_18 + 4),&local_24);
     puVar5 = (undefined4 *)WorldCoordinateToScreenCoord(this_00,pS110,piVar9);
     _DAT_0066afc0 = *puVar5;
     aiStack_10[iVar8] = DAT_005e6894;
@@ -57586,11 +57586,11 @@ void __thiscall FUN_004a5c50(int param_1,Ped *param_2)
     }
     this_00 = *(Ped **)&this->field_0x2c4;
     cVar1 = '\x10';
-    pvVar3 = (void *)Ped::GetPositionY(this_00,(int)local_8);
-    iVar2 = DecoderFloat(pvVar3);
+    pvVar3 = (void *)Ped__GetYCoordinate(this_00,(int)local_8);
+    iVar2 = Decoder_DecodeFloat(pvVar3);
     bVar5 = (byte)iVar2;
-    pvVar3 = (void *)Ped::GetPositionX(this_00,(int)local_4);
-    iVar2 = DecoderFloat(pvVar3);
+    pvVar3 = (void *)Ped__GetXCoordinate(this_00,(int)local_4);
+    iVar2 = Decoder_DecodeFloat(pvVar3);
     pcVar4 = MapRelatedStruct::S16_FUN_00469110
                        (_gMapRelatedStruct,(byte)iVar2,bVar5,cVar1);
     Ped::sPed_FUN_0043e140(*(Ped **)&this->field_0x2c4,pcVar4);
@@ -58092,7 +58092,7 @@ void __thiscall FUN_004a76d0(int param_1,Ped *param_2)
   }
 
       if (iVar4 == 10) {
-        cVar3 = Ped::S49_Get_FUN_004039e0(param_2);
+        cVar3 = Ped__GetDamageState(param_2);
         if (cVar3 != '\0') {
           Ped::PedSetObjective(param_2,0,9999);
           Ped::SetAnimationState(param_2,0,9999);
@@ -58102,7 +58102,7 @@ void __thiscall FUN_004a76d0(int param_1,Ped *param_2)
       }
 
     if (bVar1 == 0) {
-      iVar4 = Ped::S49_Get_FUN_00403a80(param_2);
+      iVar4 = Ped__GetActionParam(param_2);
       if ((iVar4 != 0x24) &&
          (this_00 = (Car *)FUN_00424e70(param_2->GameObject->SpriteS1,3),
          this_00 != (Car *)0x0)) {
@@ -58115,9 +58115,9 @@ void __thiscall FUN_004a76d0(int param_1,Ped *param_2)
           iVar4 = 0x23;
         }
         Ped::PedSetObjective(param_2,iVar4,9999);
-        Ped::S49_FUN_00403aa0(param_2,this_00);
-        Ped::SetTargetCarDoor(param_2,0);
-        Ped::S49_FUN_00403a70(param_2,0);
+        Ped__EnterCar(param_2,this_00);
+        Ped__SetTargetCarDoorIndex(param_2,0);
+        Ped__SetAnimationState(param_2,0);
       }
     }
 
@@ -58130,7 +58130,7 @@ void __thiscall FUN_004a76d0(int param_1,Ped *param_2)
           iVar4 = 0x24;
         }
         Ped::PedSetObjective(param_2,iVar4,9999);
-        Ped::S49_FUN_00403aa0(param_2,param_2->CarCurrent);
+        Ped__EnterCar(param_2,param_2->CarCurrent);
       }
 
     if (cVar3 != '\0') {
@@ -58185,7 +58185,7 @@ LAB_004a7959:
       *(int *)&this->field_0x2c8 = iVar4;
       *(undefined4 *)(iVar4 + 0x170) = 0;
       *(undefined4 *)(*(int *)&this->field_0x2c8 + 0x200) = 0;
-      Ped::Ped_Set_FUN_00403a40(*(Ped **)&this->field_0x2c8);
+      Ped__Initialize(*(Ped **)&this->field_0x2c8);
       *(undefined1 *)(*(int *)&this->field_0x2c8 + 0x267) = 0;
       this->ID = 2;
       ppCVar6 = &this->CameraOrPhysics;
@@ -58258,13 +58258,13 @@ LAB_004a7959:
     }
     this_00 = *(S169 **)(*(int *)&this->field_0x2c4 + 0x164);
     if (this_00 != (S169 *)0x0) {
-      S169::FUN_00403e90(this_00);
+      PedManager__UpdatePedStates(this_00);
     }
     iVar7 = Char::S47_FUN_0043dfb0(gChar,*(undefined4 *)&this->field_0x2c4);
     *(int *)&this->field_0x2c8 = iVar7;
     *(undefined4 *)(iVar7 + 0x170) = 0;
     *(undefined4 *)(*(int *)&this->field_0x2c8 + 0x200) = 0;
-    Ped::Ped_Set_FUN_00403a40(*(Ped **)&this->field_0x2c8);
+    Ped__Initialize(*(Ped **)&this->field_0x2c8);
     *(undefined1 *)(*(int *)&this->field_0x2c8 + 0x267) = 0;
     Police::S111_FUN_004a9670(_gPolice,*(Ped **)&this->field_0x2c4);
     this->ID = 2;
@@ -58342,7 +58342,7 @@ LAB_004a7959:
         *(undefined2 *)(*(int *)&this->field_0x2c4 + 0x210) = 0;
         *(undefined2 *)(*(int *)&this->field_0x2c4 + 0x20a) = 0;
         Ped::PedSetObjective(*(Ped **)&this->field_0x2c4,0x36,0x3c);
-        Ped::S49_FUN_00403aa0(*(Ped **)&this->field_0x2c4,0);
+        Ped__EnterCar(*(Ped **)&this->field_0x2c4,0);
       }
     }
   }
@@ -58695,7 +58695,7 @@ undefined4 __thiscall Police::FUN_004a9500(Police *this,Ped *param_1)
 
   if (pSVar1->pPed != param_1) {
     if (param_1->pS169 != (S169 *)0x0) {
-      S169::FUN_00404d40(param_1->pS169,param_1);
+      PedManager__RemovePed(param_1->pS169,param_1);
     }
     return 0;
   }
@@ -58844,8 +58844,8 @@ S112 * __thiscall Police::S111_FUN_004a9ae0(Police *this)
 
   if (_DAT_0066b798 == 1) {
     this = Char::SpawnPedAtPosition(gChar,param_1,param_2,param_3,0,param_4);
-    Ped::SetSearchType(this,4);
-    Ped::SetOccupation(this,0x25);
+    Ped__SetSearchMode(this,4);
+    Ped__SetCurrentOccupation(this,0x25);
     Ped::PedSetObjective(this,0x18,0);
     Ped::SetRemap(this,'\0');
     this->GraphicType = 2;
@@ -58903,9 +58903,9 @@ void __thiscall Police::S111_FUN_004a9d60(Police *this,Ped *pPed)
       if (this->Arr_s113[(int)pPed].Ped == (Ped *)0x0) {
         this->Arr_s113[(int)pPed].Ped = this_00;
         this->Arr_s113[(int)pPed].field2_0x8 = 0;
-        puVar2 = (undefined4 *)Ped::GetPositionX(this_00,(int)&local_4);
+        puVar2 = (undefined4 *)Ped__GetXCoordinate(this_00,(int)&local_4);
         this->Arr_s113[(int)pPed].S110 = (S110 *)*puVar2;
-        puVar2 = (undefined4 *)Ped::GetPositionY(this_00,(int)&local_4);
+        puVar2 = (undefined4 *)Ped__GetYCoordinate(this_00,(int)&local_4);
         this->Arr_s113[(int)pPed].ped2 = (Ped *)*puVar2;
         puVar2 = (undefined4 *)Ped::GetPositionZ(this_00,(int)&local_4);
         this->Arr_s113[(int)pPed].ped1 = (Ped *)*puVar2;
@@ -59218,8 +59218,8 @@ LAB_004aa4f6:
                   pPed = pS113->Ped;
                   if (pPed != (Ped *)0x0) {
                     piVar7 = (int *)&DAT_0066b7d0;
-                    pS110_1 = (S110 *)Ped::GetPositionY(pPed,(int)local_c);
-                    pS110 = (S110 *)Ped::GetPositionX(pPed,(int)local_8);
+                    pS110_1 = (S110 *)Ped__GetYCoordinate(pPed,(int)local_c);
+                    pS110 = (S110 *)Ped__GetXCoordinate(pPed,(int)local_8);
                     this_00 = (S169 *)(local_8 + 4);
                     FUN_0042a6b0(&pS113->ped2,(undefined4 *)this_00,
                                  (S110 *)&pS113->S110,(int *)&pS113->ped2,pS110,
@@ -59256,8 +59256,8 @@ LAB_004aa4f6:
       }
 
   if (this->field8_0x65c == 6) {
-    Ped::SetOccupation(pPed,0x1f);
-    Ped::SetSearchType(pPed,3);
+    Ped__SetCurrentOccupation(pPed,0x1f);
+    Ped__SetSearchMode(pPed,3);
     cVar1 = '\x04';
   }
 
@@ -59268,22 +59268,22 @@ byte __thiscall Police::S111_FUN_004aa7b0(Police *this,Car *param_1)
   if (iVar1 < 0) {
 LAB_004aaabe:
     Ped::FUN_0043ad10(pPed,0);
-    Ped::SetHealthPlayer(pPed,100);
+    Ped__SetHealth(pPed,100);
     Ped::FUN_0043ad10(pPed1,0);
-    Ped::SetHealthPlayer(pPed1,100);
+    Ped__SetHealth(pPed1,100);
   }
 
   else if (iVar1 < 2) {
     pPed->SelectedWeapon = (Weapon *)0x0;
     Ped::FUN_0043ad10(pPed,0);
-    Ped::SetHealthPlayer(pPed,50);
+    Ped__SetHealth(pPed,50);
     puVar3 = (undefined4 *)
              WorldCoordinateToScreenCoord
                        (&DAT_0066b8c4,auStack_8,(int *)&DAT_0066b93c);
     pPed->uns43 = *puVar3;
     pPed1->SelectedWeapon = (Weapon *)0x0;
     Ped::FUN_0043ad10(pPed1,0);
-    Ped::SetHealthPlayer(pPed1,0x32);
+    Ped__SetHealth(pPed1,0x32);
     puVar3 = (undefined4 *)
              WorldCoordinateToScreenCoord
                        (&DAT_0066b8c4,auStack_4,(int *)&DAT_0066b93c);
@@ -59318,9 +59318,9 @@ void __thiscall Police::S111_FUN_004aad40(Police *this,Ped *pPed)
 
 
     if (this->Arr_s113[local_4].Ped == pPed) {
-      pPEd2 = (undefined4 *)Ped::GetPositionX(pPed,(int)&pPed);
+      pPEd2 = (undefined4 *)Ped__GetXCoordinate(pPed,(int)&pPed);
       this->Arr_s113[local_4].S110 = (S110 *)*pPEd2;
-      pPEd2 = (undefined4 *)Ped::GetPositionY(pPed_1,(int)&pPed);
+      pPEd2 = (undefined4 *)Ped__GetYCoordinate(pPed_1,(int)&pPed);
       this->Arr_s113[local_4].ped2 = (Ped *)*pPEd2;
       pPEd2 = (undefined4 *)Ped::GetPositionZ(pPed_1,(int)&pPed);
       this->Arr_s113[local_4].ped1 = (Ped *)*pPEd2;
@@ -59334,7 +59334,7 @@ void __fastcall FUN_004aadd0(void *param_1)
     if (iVar1 < 2) {
       this_00->SelectedWeapon = (Weapon *)0x0;
       Ped::FUN_0043ad10(this_00,0);
-      Ped::SetHealthPlayer(this_00,0x32);
+      Ped__SetHealth(this_00,0x32);
       puVar2 = (undefined4 *)
                WorldCoordinateToScreenCoord
                          (&DAT_0066b8c4,local_4,(int *)&DAT_0066b93c);
@@ -59343,7 +59343,7 @@ void __fastcall FUN_004aadd0(void *param_1)
     }
     if (iVar1 == 2) {
       Ped::FUN_0043ad10(this_00,0);
-      Ped::SetHealthPlayer(this_00,100);
+      Ped__SetHealth(this_00,100);
       puVar2 = (undefined4 *)
                WorldCoordinateToScreenCoord
                          (&DAT_0066b8c4,&local_8,(int *)&DAT_0066b93c);
@@ -59355,7 +59355,7 @@ void __fastcall FUN_004aadd0(void *param_1)
   if (iVar1 == 1) {
     this_01->SelectedWeapon = (Weapon *)0x0;
     Ped::FUN_0043ad10(this_01,0);
-    Ped::SetHealthPlayer(this_01,0x32);
+    Ped__SetHealth(this_01,0x32);
     puVar2 = (undefined4 *)
              WorldCoordinateToScreenCoord
                        (&DAT_0066b8c4,&local_8,(int *)&DAT_0066b93c);
@@ -59364,7 +59364,7 @@ void __fastcall FUN_004aadd0(void *param_1)
 
   else if (iVar1 == 2) {
     Ped::FUN_0043ad10(this_01,0);
-    Ped::SetHealthPlayer(this_01,100);
+    Ped__SetHealth(this_01,100);
     puVar2 = (undefined4 *)
              WorldCoordinateToScreenCoord
                        (&DAT_0066b8c4,local_4,(int *)&DAT_0066b93c);
@@ -59390,7 +59390,7 @@ void __thiscall S112::S112_FUN_004ab330(S112 *this)
       bVar3 = 0;
       pS49 = this->s110->pPed;
       while (pS49 != (Ped *)0x0) {
-        Ped::SetDefault(pS49);
+        Ped__ResetToDefaults(pS49);
         Ped::FUN_0043e650(pS49);
         pSVar2 = this->s110->S169;
         if (pSVar2 == (S169 *)0x0) break;
@@ -59398,7 +59398,7 @@ void __thiscall S112::S112_FUN_004ab330(S112 *this)
         bVar3 = bVar3 + 1;
         pS49 = pSVar2->Ped_Arr9[uVar5];
       }
-      S169::FUN_00403be0(this->s110->S169);
+      PedManager__UpdateAll(this->s110->S169);
       this->s110->field22_0x28 = 5;
       this->s110->field23_0x2c = 1;
       return;
@@ -59425,7 +59425,7 @@ void __thiscall S112::S112_FUN_004ab400(S112 *this)
         bVar3 = 0;
         pS49 = this->s110->pPed;
         while (pS49 != (Ped *)0x0) {
-          Ped::SetDefault(pS49);
+          Ped__ResetToDefaults(pS49);
           Ped::FUN_0043e650(pS49);
           pSVar2 = this->s110->S169;
           if (pSVar2 == (S169 *)0x0) break;
@@ -59433,7 +59433,7 @@ void __thiscall S112::S112_FUN_004ab400(S112 *this)
           bVar3 = bVar3 + 1;
           pS49 = pSVar2->Ped_Arr9[uVar6];
         }
-        S169::FUN_00403be0(this->s110->S169);
+        PedManager__UpdateAll(this->s110->S169);
         this->s110->field22_0x28 = 5;
         this->s110->field23_0x2c = 1;
         return;
@@ -59494,19 +59494,19 @@ void __thiscall S112::S112_FUN_004ab610(S112 *this)
           return;
         }
       }
-      Ped::SetDefault(pSVar1->pPed);
+      Ped__ResetToDefaults(pSVar1->pPed);
       Car::Car_FUN_00421470(this->s110->car);
       bVar8 = 0;
       pPed = this->s110->S169->Ped_Arr9[0];
       while (pPed != (Ped *)0x0) {
         if (pPed->GameObject != (GameObject *)0x0) {
-          Ped::SetDefault(pPed);
+          Ped__ResetToDefaults(pPed);
           Ped::FUN_0043e650(pPed);
         }
         bVar8 = bVar8 + 1;
         pPed = this->s110->S169->Ped_Arr9[bVar8];
       }
-      S169::FUN_00403be0(this->s110->S169);
+      PedManager__UpdateAll(this->s110->S169);
 LAB_004ab77c:
       this->s110->field22_0x28 = 5;
       this->s110->field23_0x2c = 1;
@@ -59550,11 +59550,11 @@ byte __thiscall S112::S112_FUN_004ab930(S112 *this)
 
 
     if (this->s110->field21_0x24 == 0) {
-      pS110 = (S110 *)Ped::GetPositionY((Ped *)*piVar2,(int)&local_14);
-      pS110_00 = (S110 *)Ped::GetPositionX((Ped *)*piVar2,(int)local_10);
+      pS110 = (S110 *)Ped__GetYCoordinate((Ped *)*piVar2,(int)&local_14);
+      pS110_00 = (S110 *)Ped__GetXCoordinate((Ped *)*piVar2,(int)local_10);
       this_00 = _pS49_2;
-      piVar2 = (int *)Ped::GetPositionY(_pS49_2,(int)local_c);
-      pS110_4 = (S110 *)Ped::GetPositionX(this_00,(int)local_8);
+      piVar2 = (int *)Ped__GetYCoordinate(_pS49_2,(int)local_c);
+      pS110_4 = (S110 *)Ped__GetXCoordinate(this_00,(int)local_8);
       FUN_0042a6b0(this_01,&local_4,pS110_4,piVar2,pS110_00,pS110);
       local_14 = pS110_4->car;
       bVar1 = FUN_004037e0(&local_14,(SpriteS1 *)&DAT_0066bb2c);
@@ -59641,23 +59641,23 @@ void __fastcall FUN_004abd70(undefined1 *param_1)
 
 
     if (pS49->uns51 == 0) {
-      Ped::SetSearchType(pS49,3);
+      Ped__SetSearchMode(pS49,3);
     }
 
     if (pS49->uns51 == 0) {
-      Ped::SetSearchType(pS49,3);
+      Ped__SetSearchMode(pS49,3);
     }
 
     if (pS49->uns51 == 0) {
-      Ped::SetSearchType(pS49,3);
+      Ped__SetSearchMode(pS49,3);
     }
 
     if (pS49->uns51 == 0) {
-      Ped::SetSearchType(pS49,3);
+      Ped__SetSearchMode(pS49,3);
     }
 
     if (pS49->uns51 == 0) {
-      Ped::SetSearchType(pS49,3);
+      Ped__SetSearchMode(pS49,3);
     }
 
     if (pS49->uns51 != 0) {
@@ -59676,7 +59676,7 @@ void __thiscall S112::S112_FUN_004ad600(S112 *this)
 
     else if (pS49_1->uns51 == 0) {
       in_stack_fffffff4 = (Ped *)0x4ad623;
-      iVar20 = Ped::GetCurrentState(pS49_1);
+      iVar20 = Ped__GetPedState(pS49_1);
       if (iVar20 != 9) {
         in_stack_fffffff4 = (Ped *)0x4ad62f;
         uVar21 = Ped::Get_FUN_00433b40(pS49_1);
@@ -59721,12 +59721,12 @@ void __thiscall S112::S112_FUN_004ad600(S112 *this)
       if ((((piVar23 != (int *)0x0) && (*piVar23 != 0)) &&
           (bVar12 = S112_FUN_004ab930(this), bVar12 != 0)) &&
          ((pS110->field20_0x20 == 6 || (piVar23[1] != 6)))) {
-        piVar19 = (int *)Ped::GetPositionX((Ped *)*piVar23,(int)&stack0xfffffffc
+        piVar19 = (int *)Ped__GetXCoordinate((Ped *)*piVar23,(int)&stack0xfffffffc
                                           );
         piVar23[4] = *piVar19;
         puVar15 = (undefined4 *)this->field11_0x14;
         puVar17 = (undefined4 *)
-                  Ped::GetPositionY((Ped *)*puVar15,(int)&stack0xfffffffc);
+                  Ped__GetYCoordinate((Ped *)*puVar15,(int)&stack0xfffffffc);
         puVar15[5] = *puVar17;
         puVar15 = (undefined4 *)this->field11_0x14;
         puVar17 = (undefined4 *)
@@ -59740,11 +59740,11 @@ void __thiscall S112::S112_FUN_004ad600(S112 *this)
         return;
       }
       _pS49_2 = pS110->pPed;
-      Ped::Ped_Set_FUN_00403a40(_pS49_2);
+      Ped__Initialize(_pS49_2);
       if (_pS49_2 != (Ped *)0x0) {
         do {
           pS49_1 = _pS49_2;
-          uVar18 = Ped::S49_Get_FUN_00403a80(_pS49_2);
+          uVar18 = Ped__GetActionParam(_pS49_2);
           switch(uVar18) {
           case 0:
             if (pS49_1 == this->s110->pPed) {
@@ -59764,8 +59764,8 @@ void __thiscall S112::S112_FUN_004ad600(S112 *this)
                   local_20[2] = 0x4a;
                   local_20[3] = 0;
                   Ped::PedSetObjective(_pS49_2,0x23,9999);
-                  Ped::S49_FUN_00403aa0(_pS49_2,this->s110->car);
-                  Ped::S49_FUN_00403960(_pS49_2);
+                  Ped__EnterCar(_pS49_2,this->s110->car);
+                  Ped__UpdateState(_pS49_2);
                 }
               }
               else {
@@ -59875,7 +59875,7 @@ LAB_004ac130:
           if ((pS49_1->CurrentState != PEDSTATE_DEAD) &&
              (pS49_1->field130_0x28c == 1)) {
             _pS49_2 = pS49_1;
-            uVar18 = Ped::S49_Get_FUN_00403a80(pS49_1);
+            uVar18 = Ped__GetActionParam(pS49_1);
             switch(uVar18) {
             case 0:
               bVar11 = Ped::S49_Get_FUN_00472fd0(pS49_1);
@@ -59890,7 +59890,7 @@ LAB_004ac130:
                 else {
                   Ped::SetAnimationState(pS49_1,0,9999);
                   Ped::PedSetObjective(_pS49_2,0x24,9999);
-                  Ped::S49_FUN_00403aa0(_pS49_2,this->s110->car);
+                  Ped__EnterCar(_pS49_2,this->s110->car);
                 }
               }
               break;
@@ -59917,11 +59917,11 @@ LAB_004ac130:
                                      ((Car *)&pS49_1->Car_2,
                                       (int *)(iVar20 + 0x14)),
                  CONCAT31(extraout_var_00,bVar11) != 0)) {
-                iVar14 = DecoderFloat((int *)(iVar20 + 0x10));
+                iVar14 = Decoder_DecodeFloat((int *)(iVar20 + 0x10));
                 local_24 = CONCAT31(local_24._1_3_,(char)iVar14);
-                iVar14 = DecoderFloat((void *)(iVar20 + 0x14));
+                iVar14 = Decoder_DecodeFloat((void *)(iVar20 + 0x14));
                 local_20[0] = (char)iVar14;
-                iVar20 = DecoderFloat((void *)(iVar20 + 0x18));
+                iVar20 = Decoder_DecodeFloat((void *)(iVar20 + 0x18));
                 bVar24 = (byte)iVar20;
                 bVar12 = S95::S95_FUN_0049d7a0
                                    (_gS95,'\x01',(byte *)&local_24,local_20,
@@ -59974,13 +59974,13 @@ LAB_004ac4c7:
               break;
             case 0x34:
               Ped::PedSetObjective(pS49_1,0xe,9999);
-              iVar20 = DecoderFloat((void *)(this->field11_0x14 + 0x10));
+              iVar20 = Decoder_DecodeFloat((void *)(this->field11_0x14 + 0x10));
               FUN_0040ce30(&stack0xffffffe8,(byte)iVar20);
               _pS49_2->Car_1 = in_stack_ffffffe8;
-              iVar20 = DecoderFloat((void *)(this->field11_0x14 + 0x14));
+              iVar20 = Decoder_DecodeFloat((void *)(this->field11_0x14 + 0x14));
               FUN_0040ce30(&local_14,(byte)iVar20);
               _pS49_2->Car_2 = local_14;
-              iVar20 = DecoderFloat((void *)(this->field11_0x14 + 0x18));
+              iVar20 = Decoder_DecodeFloat((void *)(this->field11_0x14 + 0x18));
               FUN_0040ce30(&local_10,(byte)iVar20);
               _pS49_2->uns40 = local_10;
             }
@@ -60072,7 +60072,7 @@ LAB_004ac4c7:
         if (((*piVar23 != 0) && (bVar12 = S112_FUN_004ab930(this), bVar12 != 0))
            && ((pS110->field20_0x20 == 6 ||
                ((piVar23[1] != 6 && (piVar23[1] != 0)))))) {
-          iVar20 = Ped::S49_Get_FUN_00403a80(pS49_1);
+          iVar20 = Ped__GetActionParam(pS49_1);
           if ((iVar20 == 0x23) &&
              (uVar21._0_1_ = pS49_1->flags, uVar21._1_1_ = pS49_1->uns59,
              uVar21._2_1_ = pS49_1->uns60, uVar21._3_1_ = pS49_1->uns61,
@@ -60090,11 +60090,11 @@ LAB_004ac4c7:
           }
           puVar15 = (undefined4 *)this->field11_0x14;
           puVar17 = (undefined4 *)
-                    Ped::GetPositionX((Ped *)*puVar15,(int)&stack0xfffffffc);
+                    Ped__GetXCoordinate((Ped *)*puVar15,(int)&stack0xfffffffc);
           puVar15[4] = *puVar17;
           puVar15 = (undefined4 *)this->field11_0x14;
           puVar17 = (undefined4 *)
-                    Ped::GetPositionY((Ped *)*puVar15,(int)&stack0xfffffffc);
+                    Ped__GetYCoordinate((Ped *)*puVar15,(int)&stack0xfffffffc);
           puVar15[5] = *puVar17;
           puVar15 = (undefined4 *)this->field11_0x14;
           puVar17 = (undefined4 *)
@@ -60109,12 +60109,12 @@ LAB_004ac4c7:
         }
       }
       if (((pS110->field21_0x24 != 2) && (pS49_1 != (Ped *)0x0)) &&
-         (Ped::Ped_Set_FUN_00403a40(pS49_1), _pS49_2 != (Ped *)0x0)) {
+         (Ped__Initialize(pS49_1), _pS49_2 != (Ped *)0x0)) {
         do {
           pS49_1 = _pS49_2;
           if ((_pS49_2->CurrentState != PEDSTATE_DEAD) &&
              (_pS49_2->field130_0x28c == 1)) {
-            uVar18 = Ped::S49_Get_FUN_00403a80(_pS49_2);
+            uVar18 = Ped__GetActionParam(_pS49_2);
             switch(uVar18) {
             case 0:
               pS110 = this->s110;
@@ -60134,8 +60134,8 @@ LAB_004ac4c7:
                     local_20[2] = 0x4a;
                     local_20[3] = 0;
                     Ped::PedSetObjective(_pS49_2,0x23,9999);
-                    Ped::S49_FUN_00403aa0(_pS49_2,this->s110->car);
-                    Ped::S49_FUN_00403960(_pS49_2);
+                    Ped__EnterCar(_pS49_2,this->s110->car);
+                    Ped__UpdateState(_pS49_2);
                   }
                 }
                 else if ((pS110->S169 == (S169 *)0x0) ||
@@ -60263,11 +60263,11 @@ LAB_004ac661:
       }
       if (this->s110->field21_0x24 == 0) goto LAB_004acdda;
       if (((Ped *)*puVar15)->CarCurrent != (Car *)0x0) {
-        puVar17 = (undefined4 *)Ped::GetPositionX((Ped *)*puVar15,(int)local_20)
+        puVar17 = (undefined4 *)Ped__GetXCoordinate((Ped *)*puVar15,(int)local_20)
         ;
         puVar15[4] = *puVar17;
         puVar15 = (undefined4 *)this->field11_0x14;
-        puVar17 = (undefined4 *)Ped::GetPositionY((Ped *)*puVar15,(int)local_20)
+        puVar17 = (undefined4 *)Ped__GetYCoordinate((Ped *)*puVar15,(int)local_20)
         ;
         puVar15[5] = *puVar17;
         puVar15 = (undefined4 *)this->field11_0x14;
@@ -60279,10 +60279,10 @@ LAB_004ac661:
     }
     else {
       puVar15 = (undefined4 *)this->field11_0x14;
-      puVar17 = (undefined4 *)Ped::GetPositionX((Ped *)*puVar15,(int)local_20);
+      puVar17 = (undefined4 *)Ped__GetXCoordinate((Ped *)*puVar15,(int)local_20);
       puVar15[4] = *puVar17;
       puVar15 = (undefined4 *)this->field11_0x14;
-      puVar17 = (undefined4 *)Ped::GetPositionY((Ped *)*puVar15,(int)local_20);
+      puVar17 = (undefined4 *)Ped__GetYCoordinate((Ped *)*puVar15,(int)local_20);
       puVar15[5] = *puVar17;
       puVar15 = (undefined4 *)this->field11_0x14;
       puVar17 = (undefined4 *)Ped::GetPositionZ((Ped *)*puVar15,(int)local_20);
@@ -60301,7 +60301,7 @@ LAB_004acdda:
       do {
         if ((pS49_1->CurrentState != PEDSTATE_DEAD) &&
            (pS49_1->field130_0x28c == 1)) {
-          uVar18 = Ped::S49_Get_FUN_00403a80(pS49_1);
+          uVar18 = Ped__GetActionParam(pS49_1);
           switch(uVar18) {
           case 0:
             pS110 = this->s110;
@@ -60315,9 +60315,9 @@ LAB_004acdda:
                   if ((uVar2 & 0x8000000) == 0) {
                     Ped::SetAnimationState(pS49_1,0,9999);
                     Ped::PedSetObjective(_pS49_2,0x14,9999);
-                    Ped::SetDriverPed(_pS49_2,*(undefined4 *)this->field11_0x14)
+                    Ped__SetAsDriver(_pS49_2,*(undefined4 *)this->field11_0x14)
                     ;
-                    Ped::S49_FUN_00403960(_pS49_2);
+                    Ped__UpdateState(_pS49_2);
                     this->field_0x28 = 0;
                     this->field_0x35 = 0;
                   }
@@ -60330,29 +60330,29 @@ LAB_004acdda:
                   if ((uVar1 & 0x8000000) == 0) {
                     Ped::SetAnimationState(pS49_1,0,9999);
                     Ped::PedSetObjective(_pS49_2,0x23,9999);
-                    Ped::S49_FUN_00403aa0(_pS49_2,this->s110->car);
-                    Ped::S49_FUN_00403960(_pS49_2);
+                    Ped__EnterCar(_pS49_2,this->s110->car);
+                    Ped__UpdateState(_pS49_2);
                   }
                 }
               }
               else if (*(int *)(*(int *)this->field11_0x14 + 0x16c) == 0) {
                 Ped::SetAnimationState(pS49_1,0,9999);
                 Ped::PedSetObjective(_pS49_2,0x24,9999);
-                Ped::S49_FUN_00403aa0(_pS49_2,this->s110->car);
+                Ped__EnterCar(_pS49_2,this->s110->car);
                 this->field_0x28 = 0;
               }
               else if ((pS110->S169 == (S169 *)0x0) ||
-                      (cVar13 = FUN_004048a0(), pS49_1 = _pS49_2, cVar13 != '\0'
+                      (cVar13 = PathFind_CalculateRoute(), pS49_1 = _pS49_2, cVar13 != '\0'
                       )) {
                 Ped::SetAnimationState(pS49_1,0,9999);
                 goto LAB_004ac8bd;
               }
             }
             else {
-              iVar20 = Ped::GetPed(pS49_1);
+              iVar20 = Ped__GetLinkedPed(pS49_1);
               if ((iVar20 == this->field24_0x30) &&
-                 (iVar20 = Ped::GetPed(pS49_1), iVar20 != 0)) {
-                Ped::SetLinkedPed(pS49_1,*(undefined4 *)this->field11_0x14);
+                 (iVar20 = Ped__GetLinkedPed(pS49_1), iVar20 != 0)) {
+                Ped__SetLinkedPedestrian(pS49_1,*(undefined4 *)this->field11_0x14);
               }
             }
             break;
@@ -60387,22 +60387,22 @@ LAB_004aca8e:
                 Ped::PedSetObjective(_pS49_2,0x34,9999);
                 uVar18 = *(undefined4 *)this->field11_0x14;
               }
-              Ped::SetDriverPed(_pS49_2,uVar18);
+              Ped__SetAsDriver(_pS49_2,uVar18);
               this->field_0x28 = 1;
             }
             this->field_0x28 = 1;
             break;
           case 0x14:
           case 0x20:
-            iVar20 = Ped::GetPed(pS49_1);
-            iVar14 = Ped::S49_Get_FUN_00403ad0(pS49_1);
+            iVar20 = Ped__GetLinkedPed(pS49_1);
+            iVar14 = Ped__GetPassenger(pS49_1);
             if (iVar14 == iVar20) {
-              uVar18 = Ped::S49_Get_FUN_00403ad0(pS49_1);
+              uVar18 = Ped__GetPassenger(pS49_1);
               this->field24_0x30 = uVar18;
-              Ped::SetLinkedPed(_pS49_2,*(undefined4 *)this->field11_0x14);
+              Ped__SetLinkedPedestrian(_pS49_2,*(undefined4 *)this->field11_0x14);
               pS49_1 = _pS49_2;
             }
-            Ped::SetDriverPed(pS49_1,*(undefined4 *)this->field11_0x14);
+            Ped__SetAsDriver(pS49_1,*(undefined4 *)this->field11_0x14);
             pS49_1 = _pS49_2;
             cVar13 = Ped::S49_FUN_00450cb0(_pS49_2);
             if (cVar13 == '\x01') {
@@ -60420,13 +60420,13 @@ LAB_004aca8e:
                 this->field8_0x8 = *puVar15;
               }
               else {
-                pS110 = (S110 *)Ped::GetPositionY((Ped *)*piVar23,(int)local_20)
+                pS110 = (S110 *)Ped__GetYCoordinate((Ped *)*piVar23,(int)local_20)
                 ;
-                pS110_00 = (S110 *)Ped::GetPositionX((Ped *)*piVar23,
+                pS110_00 = (S110 *)Ped__GetXCoordinate((Ped *)*piVar23,
                                                      (int)&stack0xffffffe4);
-                piVar19 = (int *)Ped::GetPositionY(pS49_1,(int)&stack0xffffffe8)
+                piVar19 = (int *)Ped__GetYCoordinate(pS49_1,(int)&stack0xffffffe8)
                 ;
-                pS110_4 = (S110 *)Ped::GetPositionX(pS49_1,(int)&local_14);
+                pS110_4 = (S110 *)Ped__GetXCoordinate(pS49_1,(int)&local_14);
                 puVar15 = &local_10;
                 FUN_0042a6b0(this_01,puVar15,pS110_4,piVar19,pS110_00,pS110);
                 this->field8_0x8 = *puVar15;
@@ -60454,9 +60454,9 @@ LAB_004aca8e:
                     if (0x1e < bVar22) {
 LAB_004acb79:
                       pS49_1 = _pS49_2;
-                      iVar20 = Ped::S49_Get_FUN_00403a80(_pS49_2);
+                      iVar20 = Ped__GetActionParam(_pS49_2);
                       if (((iVar20 != 0x20) ||
-                          (iVar20 = Ped::GetCurrentState(pS49_1), iVar20 == 1))
+                          (iVar20 = Ped__GetPedState(pS49_1), iVar20 == 1))
                          && (uVar7._0_1_ = pS49_1->flags,
                             uVar7._1_1_ = pS49_1->uns59,
                             uVar7._2_1_ = pS49_1->uns60,
@@ -60464,8 +60464,8 @@ LAB_004acb79:
                             (uVar7 & 0x8000000) == 0)) {
                         Ped::SetAnimationState(pS49_1,0,9999);
                         Ped::PedSetObjective(_pS49_2,0x23,9999);
-                        Ped::S49_FUN_00403aa0(_pS49_2,this->s110->car);
-                        Ped::S49_FUN_00403960(_pS49_2);
+                        Ped__EnterCar(_pS49_2,this->s110->car);
+                        Ped__UpdateState(_pS49_2);
                         this->field_0x28 = 1;
                       }
                       break;
@@ -60474,7 +60474,7 @@ LAB_004acb79:
                 }
               }
               pS49_1 = _pS49_2;
-              iVar20 = Ped::S49_Get_FUN_00403a80(_pS49_2);
+              iVar20 = Ped__GetActionParam(_pS49_2);
               if (iVar20 == 0x20) {
                 if ((*(int *)(*(int *)this->field11_0x14 + 0x168) != 0) &&
                    (uVar8._0_1_ = pS49_1->flags, uVar8._1_1_ = pS49_1->uns59,
@@ -60482,15 +60482,15 @@ LAB_004acb79:
                    (uVar8 & 0x8000000) != 0)) {
                   Ped::SetAnimationState(pS49_1,0,9999);
                   Ped::PedSetObjective(_pS49_2,0x14,9999);
-                  Ped::SetDriverPed(_pS49_2,*(undefined4 *)this->field11_0x14);
-                  Ped::S49_FUN_00403960(_pS49_2);
+                  Ped__SetAsDriver(_pS49_2,*(undefined4 *)this->field11_0x14);
+                  Ped__UpdateState(_pS49_2);
                   this->field_0x28 = 0;
                 }
               }
               else if (bVar10) {
                 Ped::PedSetObjective(pS49_1,0x20,9999);
-                Ped::SetDriverPed(_pS49_2,*(undefined4 *)this->field11_0x14);
-                Ped::S49_FUN_00403960(_pS49_2);
+                Ped__SetAsDriver(_pS49_2,*(undefined4 *)this->field11_0x14);
+                Ped__UpdateState(_pS49_2);
               }
             }
             break;
@@ -60502,7 +60502,7 @@ LAB_004acb79:
             bVar11 = Player::CheckCondition(this_00,piVar23);
             if (CONCAT31(extraout_var_04,bVar11) != 0) {
               Ped::PedSetObjective(_pS49_2,0x24,9999);
-              Ped::S49_FUN_00403aa0(_pS49_2,_pS49_2->CarCurrent);
+              Ped__EnterCar(_pS49_2,_pS49_2->CarCurrent);
             }
             break;
           case 0x1c:
@@ -60523,14 +60523,14 @@ LAB_004acb79:
             if (pSVar16 == (S169 *)0x0) {
 LAB_004ac8bd:
               Ped::PedSetObjective(_pS49_2,0x34,9999);
-              Ped::SetDriverPed(_pS49_2,*(undefined4 *)this->field11_0x14);
+              Ped__SetAsDriver(_pS49_2,*(undefined4 *)this->field11_0x14);
               this->field_0x28 = 1;
             }
             else {
               bVar11 = S169::FUN_00404840(pSVar16);
               if (bVar11) {
                 Ped::PedSetObjective(_pS49_2,0x34,9999);
-                Ped::SetDriverPed(_pS49_2,*(undefined4 *)this->field11_0x14);
+                Ped__SetAsDriver(_pS49_2,*(undefined4 *)this->field11_0x14);
                 this->field_0x28 = 1;
               }
               else {
@@ -60543,7 +60543,7 @@ LAB_004ac8bd:
             pS49_1 = _pS49_2;
             if ((this->s110->car == (Car *)0x0) ||
                ((this->s110->S169 != (S169 *)0x0 &&
-                (cVar13 = FUN_004048a0(), pS49_1 = _pS49_2, cVar13 == '\0'))))
+                (cVar13 = PathFind_CalculateRoute(), pS49_1 = _pS49_2, cVar13 == '\0'))))
             goto LAB_004aca8e;
             FUN_004abae0();
             this->field_0x28 = 1;
@@ -60679,9 +60679,9 @@ PoliceRoadblock::PoliceRoadblock_FUN_004ad6c0(PoliceRoadblock *this)
       FUN_0040ce30(&local_14,this->field4_0x9);
       pS110_1 = pS110;
       FUN_0040ce30(local_10,this->field3_0x8);
-      piVar5 = (int *)Ped::GetPositionY(*(Ped **)&pGameObject1->PlayerMain->
+      piVar5 = (int *)Ped__GetYCoordinate(*(Ped **)&pGameObject1->PlayerMain->
                                                   field_0x2c4,(int)local_c);
-      pS110_4 = (S110 *)Ped::GetPositionX(*(Ped **)&pGameObject1->PlayerMain->
+      pS110_4 = (S110 *)Ped__GetXCoordinate(*(Ped **)&pGameObject1->PlayerMain->
                                                     field_0x2c4,(int)local_8);
       FUN_0042a6b0(local_4,(undefined4 *)local_4,pS110_4,piVar5,pS110,pS110_1);
       local_14 = pS110_4->car;
@@ -60783,7 +60783,7 @@ switchD_004adcc2_caseD_0:
       pCVar21 = (Car *)((uint)pSVar15 & 0xff);
       pSVar6 = (SpriteS1 *)(local_98._4_4_ & 0xff);
       local_7c = pSVar6;
-      bitShiftLeft1(local_84,(undefined1 *)((int)&pSVar6->FirstElement + 1) +
+      Decoder_ShiftLeft(local_84,(undefined1 *)((int)&pSVar6->FirstElement + 1) +
                              (int)pCVar21);
       pSVar6 = pSVar6->FirstElement;
       local_a0._0_4_ = pSVar6;
@@ -60792,32 +60792,32 @@ switchD_004adcc2_caseD_0:
       local_8c = S9::S9_FUN_00401b20((S9 *)(local_a0 + 4),(SpriteS1 *)local_84,
                                      (int *)&DAT_0066ba04);
       puVar5 = (undefined4 *)
-               S110_FUN_00401b40(&local_88,(S110 *)(local_78 + 4),&DAT_0066ba04)
+               Decoder_ProcessData(&local_88,(S110 *)(local_78 + 4),&DAT_0066ba04)
       ;
       S9::FUN_0041e350(*(S9 **)((int)this + 0xa0),*puVar5,local_8c->FirstElement
                        ,local_98._8_4_,local_a0._0_4_);
       local_8c = S9::S9_FUN_00401b20((S9 *)local_98,(SpriteS1 *)(local_78 + 4),
                                      (int *)&DAT_0066b838);
       puVar5 = (undefined4 *)
-               S110_FUN_00401b40(local_98,(S110 *)local_84,&DAT_0066b838);
+               Decoder_ProcessData(local_98,(S110 *)local_84,&DAT_0066b838);
       S9::FUN_0041e370(*(S9 **)((int)this + 0xa0),*puVar5,local_8c->FirstElement
                       );
       cVar2 = S56::FUN_004477b0(gS56,*(S9 **)((int)this + 0xa0),0,0,0);
       puVar5 = (undefined4 *)CONCAT31(extraout_var,cVar2);
       if (cVar2 == '\0') {
-        DecoderFloat(local_98);
-        pvVar7 = S110_FUN_00401b40(local_a0,(S110 *)(local_78 + 4),&DAT_0066b808
+        Decoder_DecodeFloat(local_98);
+        pvVar7 = Decoder_ProcessData(local_a0,(S110 *)(local_78 + 4),&DAT_0066b808
                                   );
-        DecoderFloat(pvVar7);
-        iVar8 = DecoderFloat(local_98 + 8);
+        Decoder_DecodeFloat(pvVar7);
+        iVar8 = Decoder_DecodeFloat(local_98 + 8);
         pSVar23 = (S110 *)local_84;
         puVar24 = &DAT_0066b808;
         pSVar6 = S9::S9_FUN_00401b20((S9 *)(local_a0 + 4),(SpriteS1 *)&local_8c,
                                      (int *)&DAT_0066ba04);
-        pvVar7 = S110_FUN_00401b40(pSVar6,pSVar23,puVar24);
-        iVar9 = DecoderFloat(pvVar7);
-        pvVar7 = S110_FUN_00401b40(&local_88,(S110 *)local_a0,&DAT_0066ba04);
-        iVar10 = DecoderFloat(pvVar7);
+        pvVar7 = Decoder_ProcessData(pSVar6,pSVar23,puVar24);
+        iVar9 = Decoder_DecodeFloat(pvVar7);
+        pvVar7 = Decoder_ProcessData(&local_88,(S110 *)local_a0,&DAT_0066ba04);
+        iVar10 = Decoder_DecodeFloat(pvVar7);
         puVar5 = (undefined4 *)FUN_00466380(iVar10,iVar9,iVar8);
         if ((char)puVar5 == '\0') {
           PoliceRoadblock::FUN_004a99f0((PoliceRoadblock *)this);
@@ -60837,7 +60837,7 @@ switchD_004adcc2_caseD_0:
                 if (DAT_00593e61 != '\0') {
                   pSVar6 = (SpriteS1 *)(local_70 + 0xc);
                   piVar27 = (int *)&DAT_0066ba04;
-                  bitShiftLeft1(local_5c,pCVar21);
+                  Decoder_ShiftLeft(local_5c,pCVar21);
                   pSVar13 = S9::S9_FUN_00401b20((S9 *)pCVar21,pSVar6,piVar27);
                   pSVar6 = (SpriteS1 *)(local_5c + 8);
                   piVar27 = (int *)&DAT_0066ba94;
@@ -60854,7 +60854,7 @@ switchD_004adcc2_caseD_0:
                   pSVar6 = (SpriteS1 *)(local_4c + 8);
                   piVar27 = (int *)&DAT_0066ba04;
                   pCVar21 = (Car *)local_a0._0_4_;
-                  bitShiftLeft1(local_3c,(void *)local_a0._0_4_);
+                  Decoder_ShiftLeft(local_3c,(void *)local_a0._0_4_);
                   pSVar13 = S9::S9_FUN_00401b20((S9 *)pCVar21,pSVar6,piVar27);
                   pSVar6 = (SpriteS1 *)(local_3c + 8);
                   piVar27 = (int *)&DAT_0066b93c;
@@ -60923,7 +60923,7 @@ switchD_004adcc2_caseD_0:
                   pSVar6 = (SpriteS1 *)local_70;
                   piVar27 = (int *)&DAT_0066ba04;
                   pSVar15 = pSVar6;
-                  bitShiftLeft1(local_70 + 4,(void *)local_a0._0_4_);
+                  Decoder_ShiftLeft(local_70 + 4,(void *)local_a0._0_4_);
                   pSVar15 = S9::S9_FUN_00401b20((S9 *)pSVar6,pSVar15,piVar27);
                   pSVar6 = (SpriteS1 *)local_78;
                   piVar27 = (int *)&DAT_0066b950;
@@ -60966,8 +60966,8 @@ switchD_004adcc2_caseD_0:
                 local_88 = (SpriteS1 *)0x20;
                 bVar3 = Random(&gRandom,(int)&local_88);
                 pvVar7 = (void *)CONCAT31(extraout_var_00,bVar3);
-                FUN_00401ae0(local_84,(short)pvVar7);
-                piVar27 = (int *)S110_FUN_00401b40(pvVar7,pSVar23,puVar24);
+                Decoder_SetValue(local_84,(short)pvVar7);
+                piVar27 = (int *)Decoder_ProcessData(pvVar7,pSVar23,puVar24);
                 pvVar7 = WorldCoordinateToScreenCoord
                                    (&DAT_0066ba5c,local_50,piVar27);
                 psVar11 = (short *)FUN_0040f540(local_98 + 8,(int)pvVar7);
@@ -60985,7 +60985,7 @@ switchD_004adcc2_caseD_0:
               case (SpriteS1 *)0x0:
                 pSVar20 = (SpriteS1 *)(local_28 + 4);
                 piVar27 = (int *)&DAT_0066ba04;
-                bitShiftLeft1(local_1c,pCVar21);
+                Decoder_ShiftLeft(local_1c,pCVar21);
                 pSVar15 = S9::S9_FUN_00401b20((S9 *)pSVar6,pSVar20,piVar27);
                 pSVar20 = (SpriteS1 *)(local_18 + 4);
                 puVar18 = local_c;
@@ -60994,7 +60994,7 @@ switchD_004adcc2_caseD_0:
               case (SpriteS1 *)0x1:
                 pSVar20 = (SpriteS1 *)(local_70 + 0x10);
                 piVar27 = (int *)&DAT_0066ba04;
-                bitShiftLeft1(local_30,pCVar21);
+                Decoder_ShiftLeft(local_30,pCVar21);
                 pSVar20 = S9::S9_FUN_00401b20((S9 *)pSVar6,pSVar20,piVar27);
                 puVar18 = local_18;
                 pSVar15 = pSVar20;
@@ -61016,7 +61016,7 @@ LAB_004ae025:
               case (SpriteS1 *)0x2:
                 pSVar20 = (SpriteS1 *)(local_70 + 8);
                 piVar27 = (int *)&DAT_0066ba04;
-                bitShiftLeft1(local_28,pCVar21);
+                Decoder_ShiftLeft(local_28,pCVar21);
                 pSVar15 = S9::S9_FUN_00401b20((S9 *)pSVar6,pSVar20,piVar27);
                 pSVar20 = (SpriteS1 *)(local_4c + 4);
                 piVar27 = (int *)&DAT_0066ba04;
@@ -61031,7 +61031,7 @@ LAB_004ae025:
                     (SpriteS1 *)&local_7c[-1].S3_arr5031[0x13a6].field_0x3b) {
                   pSVar20 = (SpriteS1 *)(local_4c + 0xc);
                   piVar27 = (int *)&DAT_0066bab4;
-                  bitShiftLeft1(local_20,pCVar21);
+                  Decoder_ShiftLeft(local_20,pCVar21);
                   pSVar15 = S9::S9_FUN_00401b20((S9 *)pSVar6,pSVar20,piVar27);
                   pSVar20 = (SpriteS1 *)(local_3c + 4);
                   piVar27 = (int *)&DAT_0066ba04;
@@ -61045,8 +61045,8 @@ LAB_004ae025:
                   DAT_00593e61 = '\0';
                   DAT_00593e60 = '\0';
                   this_00 = (Ped *)Char::S47_FUN_0043dbd0(gChar,pSVar20);
-                  Ped::SetSearchType(this_00,5);
-                  Ped::SetOccupation(this_00,0x27);
+                  Ped__SetSearchMode(this_00,5);
+                  Ped__SetCurrentOccupation(this_00,0x27);
                   this_00->field130_0x28c = 1;
                   pSVar6 = (SpriteS1 *)
                            Car::Car_FUN_004be980((Car *)pSVar20,0x94);
@@ -61167,7 +61167,7 @@ switchD_004ae5f0_caseD_0:
       pCVar21 = (Car *)((uint)pSVar6 & 0xff);
       pSVar6 = (SpriteS1 *)(local_98._4_4_ & 0xff);
       local_7c = pSVar6;
-      bitShiftLeft1(local_84 + 4,(char *)((int)&pCVar21->s72 + 1) + (int)pSVar6)
+      Decoder_ShiftLeft(local_84 + 4,(char *)((int)&pCVar21->s72 + 1) + (int)pSVar6)
       ;
       pSVar15 = pSVar6->FirstElement;
       pSVar6 = (SpriteS1 *)(local_84 + 4);
@@ -61182,32 +61182,32 @@ switchD_004ae5f0_caseD_0:
            S9::S9_FUN_00401b20((S9 *)local_a0,(SpriteS1 *)(local_84 + 4),
                                (int *)&DAT_0066ba04);
       puVar5 = (undefined4 *)
-               S110_FUN_00401b40(local_98 + 8,(S110 *)local_78,&DAT_0066ba04);
+               Decoder_ProcessData(local_98 + 8,(S110 *)local_78,&DAT_0066ba04);
       S9::FUN_0041e350(*(S9 **)((int)this + 0xa0),local_88,local_a0._4_4_,
                        *puVar5,*(SpriteS1 **)local_84._0_4_);
       local_84._0_4_ =
            S9::S9_FUN_00401b20((S9 *)local_98,(SpriteS1 *)(local_84 + 4),
                                (int *)&DAT_0066b838);
       puVar5 = (undefined4 *)
-               S110_FUN_00401b40(local_98,(S110 *)local_78,&DAT_0066b838);
+               Decoder_ProcessData(local_98,(S110 *)local_78,&DAT_0066b838);
       S9::FUN_0041e370(*(S9 **)((int)this + 0xa0),*puVar5,
                        *(SpriteS1 **)local_84._0_4_);
       cVar2 = S56::FUN_004477b0(gS56,*(S9 **)((int)this + 0xa0),0,0,0);
       puVar5 = (undefined4 *)CONCAT31(extraout_var_02,cVar2);
       if (cVar2 == '\0') {
-        DecoderFloat(local_98);
+        Decoder_DecodeFloat(local_98);
         pSVar23 = (S110 *)(local_84 + 4);
         puVar24 = &DAT_0066b808;
         pSVar6 = S9::S9_FUN_00401b20((S9 *)local_a0,(SpriteS1 *)local_78,
                                      (int *)&DAT_0066ba04);
-        pvVar7 = S110_FUN_00401b40(pSVar6,pSVar23,puVar24);
-        DecoderFloat(pvVar7);
-        pvVar7 = S110_FUN_00401b40(local_98 + 8,(S110 *)(local_70 + 4),
+        pvVar7 = Decoder_ProcessData(pSVar6,pSVar23,puVar24);
+        Decoder_DecodeFloat(pvVar7);
+        pvVar7 = Decoder_ProcessData(local_98 + 8,(S110 *)(local_70 + 4),
                                    &DAT_0066ba04);
-        iVar8 = DecoderFloat(pvVar7);
-        pvVar7 = S110_FUN_00401b40(local_a0 + 4,(S110 *)local_70,&DAT_0066b808);
-        iVar9 = DecoderFloat(pvVar7);
-        iVar10 = DecoderFloat(&local_88);
+        iVar8 = Decoder_DecodeFloat(pvVar7);
+        pvVar7 = Decoder_ProcessData(local_a0 + 4,(S110 *)local_70,&DAT_0066b808);
+        iVar9 = Decoder_DecodeFloat(pvVar7);
+        iVar10 = Decoder_DecodeFloat(&local_88);
         puVar5 = (undefined4 *)FUN_00466380(iVar10,iVar9,iVar8);
         if ((char)puVar5 == '\0') {
           PoliceRoadblock::FUN_004a99f0((PoliceRoadblock *)this);
@@ -61233,7 +61233,7 @@ switchD_004ae5f0_caseD_0:
                   pSVar20 = (SpriteS1 *)(local_5c + 4);
                   piVar27 = (int *)&DAT_0066ba04;
                   pSVar6 = pSVar20;
-                  bitShiftLeft1(local_30,(void *)local_a0._0_4_);
+                  Decoder_ShiftLeft(local_30,(void *)local_a0._0_4_);
                   pSVar20 = S9::S9_FUN_00401b20((S9 *)pSVar20,pSVar6,piVar27);
                   iVar9 = CONCAT22(extraout_var_05,_DAT_0066b804);
                   iVar8 = iVar9;
@@ -61250,7 +61250,7 @@ switchD_004ae5f0_caseD_0:
                   pSVar20 = (SpriteS1 *)(local_18 + 4);
                   piVar27 = (int *)&DAT_0066ba04;
                   pSVar6 = pSVar15;
-                  bitShiftLeft1(local_1c,(void *)uVar1);
+                  Decoder_ShiftLeft(local_1c,(void *)uVar1);
                   pSVar20 = S9::S9_FUN_00401b20((S9 *)pSVar6,pSVar20,piVar27);
                   iVar8 = extraout_ECX_01;
                   sVar26 = _DAT_0066b804;
@@ -61319,7 +61319,7 @@ switchD_004ae5f0_caseD_0:
                   pSVar20 = (SpriteS1 *)(local_78 + 4);
                   piVar27 = (int *)&DAT_0066ba04;
                   pCVar21 = (Car *)local_a0._0_4_;
-                  bitShiftLeft1(local_4,(void *)local_a0._0_4_);
+                  Decoder_ShiftLeft(local_4,(void *)local_a0._0_4_);
                   pSVar20 = S9::S9_FUN_00401b20((S9 *)pCVar21,pSVar20,piVar27);
                   FUN_0040ce30(&stack0xffffff44,bVar25);
                   pSVar6 = (SpriteS1 *)
@@ -61357,8 +61357,8 @@ switchD_004ae5f0_caseD_0:
                 local_84._0_4_ = (SpriteS1 *)0x10;
                 bVar3 = Random(&gRandom,(int)local_84);
                 pvVar7 = (void *)CONCAT31(extraout_var_03,bVar3);
-                FUN_00401ae0(local_78,(short)pvVar7);
-                piVar27 = (int *)S110_FUN_00401b40(pvVar7,pSVar23,puVar24);
+                Decoder_SetValue(local_78,(short)pvVar7);
+                piVar27 = (int *)Decoder_ProcessData(pvVar7,pSVar23,puVar24);
                 pvVar7 = WorldCoordinateToScreenCoord
                                    (&DAT_0066ba5c,local_70 + 4,piVar27);
                 psVar11 = (short *)FUN_0040f540(local_98 + 8,(int)pvVar7);
@@ -61392,7 +61392,7 @@ switchD_004ae5f0_caseD_0:
                 pSVar6 = (SpriteS1 *)(local_5c + 8);
 LAB_004ae945:
                 piVar27 = (int *)&DAT_0066ba04;
-                bitShiftLeft1(puVar18,pCVar21);
+                Decoder_ShiftLeft(puVar18,pCVar21);
                 pSVar20 = S9::S9_FUN_00401b20((S9 *)pSVar20,pSVar6,piVar27);
                 iVar8 = 0xc;
 LAB_004ae954:
@@ -61412,7 +61412,7 @@ LAB_004ae954:
                 pSVar20 = (SpriteS1 *)(local_3c + 4);
                 piVar27 = (int *)&DAT_0066ba04;
                 pSVar6 = pSVar15;
-                bitShiftLeft1(local_20,pCVar21);
+                Decoder_ShiftLeft(local_20,pCVar21);
                 pSVar20 = S9::S9_FUN_00401b20((S9 *)pSVar6,pSVar20,piVar27);
                 iVar8 = 0x54;
                 goto LAB_004ae954;
@@ -61427,7 +61427,7 @@ LAB_004ae954:
                   pSVar20 = (SpriteS1 *)(local_4c + 4);
                   piVar27 = (int *)&DAT_0066bab4;
                   pSVar6 = pSVar20;
-                  bitShiftLeft1(local_28,pCVar21);
+                  Decoder_ShiftLeft(local_28,pCVar21);
                   pSVar20 = S9::S9_FUN_00401b20((S9 *)pSVar20,pSVar6,piVar27);
                   pSVar20 = pSVar20->FirstElement;
                   CarSystemManager::CarSystemManager_FUN_00426e40
@@ -61438,8 +61438,8 @@ LAB_004ae954:
                   local_8c = pSVar20;
                   pSVar15 = (SpriteS1 *)Char::S47_FUN_0043dbd0(gChar,pSVar20);
                   pSVar6 = pSVar15;
-                  Ped::SetSearchType((Ped *)pSVar15,5);
-                  Ped::SetOccupation((Ped *)pSVar15,0x27);
+                  Ped__SetSearchMode((Ped *)pSVar15,5);
+                  Ped__SetCurrentOccupation((Ped *)pSVar15,0x27);
                   pSVar15->S3_arr5031[10].field18_0x30 = (S3 *)0x1;
                 }
               }
@@ -62020,11 +62020,11 @@ void __thiscall S83::FUN_004afb30(S83 *this)
                   pPVar6 = Char::S47_FUN_0043deb0(gChar);
                   pPVar6->CarCurrent = pTVar1->linkedCar;
                   Ped::PedSetObjective(pPVar6,0x26,9999);
-                  Ped::S49_FUN_00403aa0(pPVar6,pTVar1->linkedCar);
+                  Ped__EnterCar(pPVar6,pTVar1->linkedCar);
                   Passenger::FUN_00445f10
                             ((Passenger *)&pPVar6->CarCurrent->Passenger,pPVar6)
                   ;
-                  Ped::S49_FUN_00403a70(pPVar6,DAT_0066bee8);
+                  Ped__SetAnimationState(pPVar6,DAT_0066bee8);
                   this->SkipCount = this->SkipCount - 1;
                 }
                 DAT_0066bee8 = DAT_0066bee8 + 1;
@@ -62049,9 +62049,9 @@ void __thiscall S83::FUN_004afb30(S83 *this)
       pPVar6 = FUN_00446100(this_00);
       pPVar6->CarCurrent = this->Car;
       Ped::PedSetObjective(pPVar6,0x26,9999);
-      Ped::S49_FUN_00403aa0(pPVar6,this->Car);
-      Ped::S49_FUN_00403a70(pPVar6,2);
-      Ped::SetOccupation(pPVar6,8);
+      Ped__EnterCar(pPVar6,this->Car);
+      Ped__SetAnimationState(pPVar6,2);
+      Ped__SetCurrentOccupation(pPVar6,8);
       if ((this->field0_0x0 == 1) &&
          (bVar4 = this->SkipCount, '\0' < (char)bVar4)) {
 LAB_004afdbc:
@@ -62064,9 +62064,9 @@ LAB_004afdbc:
       pPVar6->CarCurrent = this->Car;
       Passenger::FUN_00445f10((Passenger *)&this->Car->Passenger,pPVar6);
       Ped::PedSetObjective(pPVar6,0x26,9999);
-      Ped::S49_FUN_00403aa0(pPVar6,this->Car);
-      Ped::S49_FUN_00403a70(pPVar6,2);
-      Ped::SetOccupation(pPVar6,8);
+      Ped__EnterCar(pPVar6,this->Car);
+      Ped__SetAnimationState(pPVar6,2);
+      Ped__SetCurrentOccupation(pPVar6,8);
       if (this->field0_0x0 == 1) {
         bVar4 = this->SkipCount;
         goto LAB_004afdbc;
@@ -62127,14 +62127,14 @@ void __thiscall PublicTransport::S81_FUN_004afe20(PublicTransport *this)
                 pvVar8 = (void *)(uVar14 + 1);
                 piVar19 = (int *)&DAT_0066bcd4;
                 auStack_108 = (undefined1  [4])pvVar8;
-                bitShiftLeft1(auStack_58,pvVar8);
+                Decoder_ShiftLeft(auStack_58,pvVar8);
                 pvVar8 = WorldCoordinateToScreenCoord(pvVar8,puVar16,piVar19);
                 bVar1 = *(byte *)(iVar3 + 2);
                 pvVar9 = (void *)CONCAT31((int3)((uint)pvVar8 >> 8),bVar1);
                 pSVar17 = (S110 *)(auStack_cc + 0x24);
                 FUN_0040ce30(auStack_18,bVar1);
                 auStack_10c = (undefined1  [4])
-                              S110_FUN_00401b40(pvVar9,pSVar17,pvVar8);
+                              Decoder_ProcessData(pvVar9,pSVar17,pvVar8);
                 piVar19 = &uStack_104;
                 bVar1 = *(byte *)(iVar3 + 1);
                 pSVar4 = (S9 *)CONCAT31((int3)((uint)auStack_10c >> 8),bVar1);
@@ -62155,20 +62155,20 @@ void __thiscall PublicTransport::S81_FUN_004afe20(PublicTransport *this)
                   puVar16 = auStack_9c + 4;
                   piVar19 = (int *)&DAT_0066bcd4;
                   auVar10 = auStack_108;
-                  bitShiftLeft1(auStack_28,(void *)auStack_108);
+                  Decoder_ShiftLeft(auStack_28,(void *)auStack_108);
                   pvVar9 = WorldCoordinateToScreenCoord
                                      ((void *)auVar10,puVar16,piVar19);
                   pSVar17 = (S110 *)(auStack_9c + 0xc);
                   pvVar8 = pvVar9;
                   FUN_0040ce30(auStack_48,*(byte *)(iVar3 + 2));
-                  pvVar8 = S110_FUN_00401b40(pvVar9,pSVar17,pvVar8);
-                  DecoderFloat(pvVar8);
+                  pvVar8 = Decoder_ProcessData(pvVar9,pSVar17,pvVar8);
+                  Decoder_DecodeFloat(pvVar8);
                   pSVar4 = (S9 *)auStack_10c;
                   pSVar6 = (SpriteS1 *)&stack0xffffff10;
                   pSVar7 = pSVar4;
                   FUN_0040ce30(auStack_8,*(byte *)(iVar3 + 1));
                   pSVar6 = S9::S9_FUN_00401b20(pSVar4,pSVar6,(int *)pSVar7);
-                  DecoderFloat(pSVar6);
+                  Decoder_DecodeFloat(pSVar6);
                   DebugLog(0xbc9,"pubtrans.cpp",0x305);
                 }
                 bVar1 = (char)uStack_111 + 1;
@@ -62208,13 +62208,13 @@ void __thiscall PublicTransport::S81_FUN_004afe20(PublicTransport *this)
                 pvVar8 = (void *)(uVar14 + 1);
                 piVar19 = (int *)&DAT_0066be74;
                 auStack_108 = (undefined1  [4])pvVar8;
-                bitShiftLeft1(auStack_d4,pvVar8);
+                Decoder_ShiftLeft(auStack_d4,pvVar8);
                 pvVar8 = WorldCoordinateToScreenCoord(pvVar8,puVar16,piVar19);
                 bVar1 = *(byte *)(iVar3 + 1);
                 pvVar9 = (void *)CONCAT31((int3)((uint)pvVar8 >> 8),bVar1);
                 pSVar17 = (S110 *)auStack_cc;
                 FUN_0040ce30(auStack_cc + 8,bVar1);
-                piVar19 = (int *)S110_FUN_00401b40(pvVar9,pSVar17,pvVar8);
+                piVar19 = (int *)Decoder_ProcessData(pvVar9,pSVar17,pvVar8);
                 bVar1 = FUN_004af170(piVar15 + -4,uStack_111);
                 CarSystemManager::CarSystemManager_FUN_00426e40
                           (gCarSystemManager,*piVar19,
@@ -62230,18 +62230,18 @@ void __thiscall PublicTransport::S81_FUN_004afe20(PublicTransport *this)
                   pSVar5 = pSVar6;
                   FUN_0040ce30(auStack_cc + 0x18,*(byte *)(iVar3 + 2));
                   pSVar6 = S9::S9_FUN_00401b20((S9 *)pSVar6,pSVar5,piVar19);
-                  DecoderFloat(pSVar6);
+                  Decoder_DecodeFloat(pSVar6);
                   puVar16 = auStack_cc + 0x20;
                   piVar19 = (int *)&DAT_0066be74;
                   auVar10 = auStack_108;
-                  bitShiftLeft1(auStack_a4,(void *)auStack_108);
+                  Decoder_ShiftLeft(auStack_a4,(void *)auStack_108);
                   pvVar9 = WorldCoordinateToScreenCoord
                                      ((void *)auVar10,puVar16,piVar19);
                   pSVar17 = (S110 *)auStack_9c;
                   pvVar8 = pvVar9;
                   FUN_0040ce30(auStack_9c + 8,*(byte *)(iVar3 + 1));
-                  pvVar8 = S110_FUN_00401b40(pvVar9,pSVar17,pvVar8);
-                  DecoderFloat(pvVar8);
+                  pvVar8 = Decoder_ProcessData(pvVar9,pSVar17,pvVar8);
+                  Decoder_DecodeFloat(pvVar8);
                   DebugLog(0xbc9,"pubtrans.cpp",0x311);
                 }
                 bVar1 = (char)uStack_111 + 1;
@@ -62275,7 +62275,7 @@ void __thiscall PublicTransport::S81_FUN_004afe20(PublicTransport *this)
                 pvVar8 = (void *)(uVar14 + 1);
                 piVar19 = (int *)&DAT_0066bcd4;
                 auStack_108 = (undefined1  [4])pvVar8;
-                bitShiftLeft1(auStack_6c,pvVar8);
+                Decoder_ShiftLeft(auStack_6c,pvVar8);
                 piVar19 = (int *)WorldCoordinateToScreenCoord
                                            (pvVar8,puVar16,piVar19);
                 bVar1 = *(byte *)(iVar3 + 2);
@@ -62303,20 +62303,20 @@ void __thiscall PublicTransport::S81_FUN_004afe20(PublicTransport *this)
                   puVar16 = auStack_44;
                   piVar19 = (int *)&DAT_0066bcd4;
                   auVar10 = auStack_108;
-                  bitShiftLeft1(auStack_3c,(void *)auStack_108);
+                  Decoder_ShiftLeft(auStack_3c,(void *)auStack_108);
                   pSVar7 = (S9 *)WorldCoordinateToScreenCoord
                                            ((void *)auVar10,puVar16,piVar19);
                   pSVar6 = (SpriteS1 *)(auStack_3c + 8);
                   pSVar4 = pSVar7;
                   FUN_0040ce30(auStack_2c,*(byte *)(iVar3 + 2));
                   pSVar6 = S9::S9_FUN_00401b20(pSVar7,pSVar6,(int *)pSVar4);
-                  DecoderFloat(pSVar6);
+                  Decoder_DecodeFloat(pSVar6);
                   pSVar4 = (S9 *)auStack_10c;
                   pSVar6 = (SpriteS1 *)(auStack_28 + 4);
                   pSVar7 = pSVar4;
                   FUN_0040ce30(auStack_1c,*(byte *)(iVar3 + 1));
                   pSVar6 = S9::S9_FUN_00401b20(pSVar4,pSVar6,(int *)pSVar7);
-                  DecoderFloat(pSVar6);
+                  Decoder_DecodeFloat(pSVar6);
                   DebugLog(0xbc9,"pubtrans.cpp",0x31c);
                 }
                 bVar1 = (char)uStack_111 + 1;
@@ -62355,7 +62355,7 @@ void __thiscall PublicTransport::S81_FUN_004afe20(PublicTransport *this)
               pvVar8 = (void *)(uVar14 + 1);
               piVar19 = (int *)&DAT_0066be74;
               auStack_108 = (undefined1  [4])pvVar8;
-              bitShiftLeft1(auStack_e0,pvVar8);
+              Decoder_ShiftLeft(auStack_e0,pvVar8);
               piVar19 = (int *)WorldCoordinateToScreenCoord
                                          (pvVar8,puVar16,piVar19);
               bVar1 = *(byte *)(iVar3 + 1);
@@ -62379,18 +62379,18 @@ void __thiscall PublicTransport::S81_FUN_004afe20(PublicTransport *this)
                 pSVar5 = pSVar6;
                 FUN_0040ce30(auStack_d0,*(byte *)(iVar3 + 2));
                 pSVar6 = S9::S9_FUN_00401b20((S9 *)pSVar6,pSVar5,piVar19);
-                DecoderFloat(pSVar6);
+                Decoder_DecodeFloat(pSVar6);
                 puVar16 = auStack_68;
                 piVar19 = (int *)&DAT_0066be74;
                 auVar10 = auStack_108;
-                bitShiftLeft1(auStack_cc + 4,(void *)auStack_108);
+                Decoder_ShiftLeft(auStack_cc + 4,(void *)auStack_108);
                 pSVar7 = (S9 *)WorldCoordinateToScreenCoord
                                          ((void *)auVar10,puVar16,piVar19);
                 pSVar6 = (SpriteS1 *)(auStack_14 + 4);
                 pSVar4 = pSVar7;
                 FUN_0040ce30(auStack_cc + 0xc,*(byte *)(iVar3 + 1));
                 pSVar6 = S9::S9_FUN_00401b20(pSVar7,pSVar6,(int *)pSVar4);
-                DecoderFloat(pSVar6);
+                Decoder_DecodeFloat(pSVar6);
                 DebugLog(0xbc9,"pubtrans.cpp",0x2f9);
               }
               bVar1 = (char)uStack_111 + 1;
@@ -62435,16 +62435,16 @@ LAB_004b0128:
                    *(Car **)(iVar2 + 0xc));
         Car::CarPutDummyDriverIn(*(Car **)(iVar2 + 0xc));
         Car::CarMakeDriveable1(*(Car **)(iVar2 + 0xc),5);
-        bitShiftLeft1(&stack0xfffffee0,(void *)0x3);
-        bitShiftLeft1(&stack0xfffffed8,(void *)0x2);
-        bitShiftLeft1(&stack0xfffffed4,(void *)0x8a);
-        bitShiftLeft1(&stack0xfffffed0,(void *)0x5e);
+        Decoder_ShiftLeft(&stack0xfffffee0,(void *)0x3);
+        Decoder_ShiftLeft(&stack0xfffffed8,(void *)0x2);
+        Decoder_ShiftLeft(&stack0xfffffed4,(void *)0x8a);
+        Decoder_ShiftLeft(&stack0xfffffed0,(void *)0x5e);
         iVar11 = FUN_00485370();
         uVar20 = extraout_ECX;
         uVar21 = _DAT_0066bd10;
-        bitShiftLeft1(&stack0xfffffee0,(void *)0x2);
+        Decoder_ShiftLeft(&stack0xfffffee0,(void *)0x2);
         uVar12 = extraout_ECX_00;
-        bitShiftLeft1(&stack0xfffffedc,(void *)0x0);
+        Decoder_ShiftLeft(&stack0xfffffedc,(void *)0x0);
         FUN_004bed90(*(void **)(iVar2 + 0xc),*(undefined4 *)(iVar11 + 4),uVar12,
                      uVar20,uVar21);
         Car::Car_FUN_00475c30(*(Car **)(iVar2 + 0xc));
@@ -62584,8 +62584,8 @@ switchD_004b08d0_caseD_5:
       local_3c[1] = local_24[1];
       local_3c[2] = local_24[2];
       local_3c[3] = local_24[3];
-      _iVar13 = DecoderFloat(local_3c);
-      iVar6 = DecoderFloat(local_3c + 4);
+      _iVar13 = Decoder_DecodeFloat(local_3c);
+      iVar6 = Decoder_DecodeFloat(local_3c + 4);
       MapRelatedStruct::FindMaxZForTile
                 (_gMapRelatedStruct,iVar6,_iVar13,piVar13);
       _iVar13 = puVar5[4];
@@ -62600,8 +62600,8 @@ switchD_004b08d0_caseD_5:
       local_3c[1] = local_1c[1];
       local_3c[2] = local_1c[2];
       local_3c[3] = local_1c[3];
-      _iVar13 = DecoderFloat(local_3c);
-      iVar6 = DecoderFloat(local_3c + 4);
+      _iVar13 = Decoder_DecodeFloat(local_3c);
+      iVar6 = Decoder_DecodeFloat(local_3c + 4);
       MapRelatedStruct::FindMaxZForTile
                 (_gMapRelatedStruct,iVar6,_iVar13,piVar13);
       _iVar13 = local_34;
@@ -62612,8 +62612,8 @@ switchD_004b08d0_caseD_5:
         switch(local_30 & 0xff) {
         case 0:
           iVar6 = _iVar13;
-          iVar7 = DecoderFloat(local_3c);
-          iVar8 = DecoderFloat(local_3c + 4);
+          iVar7 = Decoder_DecodeFloat(local_3c);
+          iVar8 = Decoder_DecodeFloat(local_3c + 4);
           cVar3 = FUN_00433470(iVar8,iVar7,iVar6);
           if (cVar3 != '\0') {
             piVar13 = (int *)&DAT_0066bbe8;
@@ -62626,8 +62626,8 @@ LAB_004b0bf8:
           break;
         case 1:
           iVar6 = _iVar13;
-          iVar7 = DecoderFloat(local_3c);
-          iVar8 = DecoderFloat(local_3c + 4);
+          iVar7 = Decoder_DecodeFloat(local_3c);
+          iVar8 = Decoder_DecodeFloat(local_3c + 4);
           bVar2 = MapRelatedStruct::FUN_004334a0
                             (this_00,(char)iVar8,iVar7,iVar6);
           if (bVar2) {
@@ -62637,8 +62637,8 @@ LAB_004b0bf8:
           break;
         case 2:
           iVar6 = _iVar13;
-          iVar7 = DecoderFloat(local_3c);
-          iVar8 = DecoderFloat(local_3c + 4);
+          iVar7 = Decoder_DecodeFloat(local_3c);
+          iVar8 = Decoder_DecodeFloat(local_3c + 4);
           cVar3 = FUN_004334d0(iVar8,iVar7,iVar6);
           if (cVar3 != '\0') {
             FUN_0040e530(local_3c,(int *)&DAT_0066bbe8);
@@ -62647,8 +62647,8 @@ LAB_004b0bf8:
           break;
         case 3:
           iVar6 = _iVar13;
-          iVar7 = DecoderFloat(local_3c);
-          iVar8 = DecoderFloat(local_3c + 4);
+          iVar7 = Decoder_DecodeFloat(local_3c);
+          iVar8 = Decoder_DecodeFloat(local_3c + 4);
           cVar3 = FUN_00433500(iVar8,iVar7,iVar6);
           if (cVar3 != '\0') {
             piVar13 = (int *)&DAT_0066bd18;
@@ -62660,8 +62660,8 @@ LAB_004b0bf8:
         local_30 = CONCAT31(local_30._1_3_,bVar12);
       } while (bVar12 < 4);
       piVar13 = &local_34;
-      _iVar13 = DecoderFloat(local_3c);
-      iVar6 = DecoderFloat(local_3c + 4);
+      _iVar13 = Decoder_DecodeFloat(local_3c);
+      iVar6 = Decoder_DecodeFloat(local_3c + 4);
       this_01 = (S9 *)MapRelatedStruct::FindMaxZForTile
                                 (this_00,iVar6,_iVar13,piVar13);
       pSVar9 = (SpriteS1 *)(local_1c + 4);
@@ -62783,8 +62783,8 @@ void __thiscall FUN_004b0f20(void *this)
         local_14 = local_10;
         FUN_0040ce30(&local_10,*(byte *)(iVar5 + 2));
         piVar13 = &local_c;
-        iVar5 = DecoderFloat(&local_10);
-        iVar6 = DecoderFloat(&local_14);
+        iVar5 = Decoder_DecodeFloat(&local_10);
+        iVar6 = Decoder_DecodeFloat(&local_14);
         MapRelatedStruct::FindMaxZForTile
                   (_gMapRelatedStruct,iVar6,iVar5,piVar13);
         pMapRelatedStruct = _gMapRelatedStruct;
@@ -62793,8 +62793,8 @@ void __thiscall FUN_004b0f20(void *this)
           switch(uVar12) {
           case 0:
             iVar5 = local_c;
-            iVar6 = DecoderFloat(&local_10);
-            iVar7 = DecoderFloat(&local_14);
+            iVar6 = Decoder_DecodeFloat(&local_10);
+            iVar7 = Decoder_DecodeFloat(&local_14);
             cVar2 = FUN_00433470(iVar7,iVar6,iVar5);
             if (cVar2 != '\0') {
               this_01 = &local_10;
@@ -62806,8 +62806,8 @@ LAB_004b10a5:
             break;
           case 1:
             iVar5 = local_c;
-            iVar6 = DecoderFloat(&local_10);
-            iVar7 = DecoderFloat(&local_14);
+            iVar6 = Decoder_DecodeFloat(&local_10);
+            iVar7 = Decoder_DecodeFloat(&local_14);
             bVar3 = MapRelatedStruct::FUN_004334a0
                               (pMapRelatedStruct,(char)iVar7,iVar6,iVar5);
             if (bVar3) {
@@ -62817,8 +62817,8 @@ LAB_004b10a5:
             break;
           case 2:
             iVar5 = local_c;
-            iVar6 = DecoderFloat(&local_10);
-            iVar7 = DecoderFloat(&local_14);
+            iVar6 = Decoder_DecodeFloat(&local_10);
+            iVar7 = Decoder_DecodeFloat(&local_14);
             cVar2 = FUN_004334d0(iVar7,iVar6,iVar5);
             if (cVar2 != '\0') {
               FUN_0040e530(&local_10,(int *)&DAT_0066bbe8);
@@ -62827,8 +62827,8 @@ LAB_004b10a5:
             break;
           case 3:
             iVar5 = local_c;
-            iVar6 = DecoderFloat(&local_10);
-            iVar7 = DecoderFloat(&local_14);
+            iVar6 = Decoder_DecodeFloat(&local_10);
+            iVar7 = Decoder_DecodeFloat(&local_14);
             cVar2 = FUN_00433500(iVar7,iVar6,iVar5);
             if (cVar2 != '\0') {
               this_01 = &local_14;
@@ -62838,8 +62838,8 @@ LAB_004b10a5:
           uVar12 = uVar12 + 1;
         } while (uVar12 < 4);
         piVar13 = &local_c;
-        iVar5 = DecoderFloat(&local_10);
-        iVar6 = DecoderFloat(&local_14);
+        iVar5 = Decoder_DecodeFloat(&local_10);
+        iVar6 = Decoder_DecodeFloat(&local_14);
         iVar5 = MapRelatedStruct::FindMaxZForTile
                           (pMapRelatedStruct,iVar6,iVar5,piVar13);
         bVar1 = FUN_004af030(4,iVar5);
@@ -62911,8 +62911,8 @@ LAB_004b10a5:
         if (bVar1 == 0) {
           pPed = pCVar9->Driver;
           if (((pPed != (Ped *)0x0) &&
-              (iVar5 = Ped::GetOccupation(pPed), iVar5 != 4)) &&
-             (iVar5 = Ped::GetOccupation(pPed), iVar5 != 5)) {
+              (iVar5 = Ped__GetCurrentOccupation(pPed), iVar5 != 4)) &&
+             (iVar5 = Ped__GetCurrentOccupation(pPed), iVar5 != 5)) {
             this_00->field0_0x0 = 1;
           }
         }
@@ -62926,11 +62926,11 @@ LAB_004b10a5:
       else {
         bVar1 = Car::IsDriverPlayer(pCVar9);
         if (((bVar1 == 0) && (pCVar9->Driver != (Ped *)0x0)) &&
-           (iVar5 = Ped::GetOccupation(pCVar9->Driver), iVar5 == 0xc)) {
+           (iVar5 = Ped__GetCurrentOccupation(pCVar9->Driver), iVar5 == 0xc)) {
           this_00->field0_0x0 = 0;
           *(undefined1 *)((int)this + 0x17c2) = 0;
-          Ped::SetOccupation(pCVar9->Driver,5);
-          Ped::SetSearchType(*(Ped **)(*(int *)((int)this + 0x17cc) + 0x54),3);
+          Ped__SetCurrentOccupation(pCVar9->Driver,5);
+          Ped__SetSearchMode(*(Ped **)(*(int *)((int)this + 0x17cc) + 0x54),3);
         }
         if ((*(char *)((int)this + 0x17c2) == '\0') &&
            (*(char *)((int)this + 0x1818) == '\0')) {
@@ -63090,9 +63090,9 @@ LAB_004b175d:
             pCar = this_00->Car;
             pSVar9 = pCar->CarSprite;
             iVar7 = *(int *)(iVar1 + 4);
-            iVar6 = DecoderFloat(&pSVar9->S3_arr5031[0].PositionX);
+            iVar6 = Decoder_DecodeFloat(&pSVar9->S3_arr5031[0].PositionX);
             if (((char)iVar6 == *(char *)(iVar7 + 1)) &&
-               (iVar6 = DecoderFloat(&pSVar9->S3_arr5031[0].PositionY),
+               (iVar6 = Decoder_DecodeFloat(&pSVar9->S3_arr5031[0].PositionY),
                (char)iVar6 == *(char *)(iVar7 + 2))) {
               if ((pCar != (Car *)0x0) &&
                  ((pCar->Driver != (Ped *)0x0 && (this_00->field53_0x43 != 0))))
@@ -63124,9 +63124,9 @@ LAB_004b175d:
           *(S83 **)(iVar1 + 0x18) = this_00;
           iVar1 = *(int *)(iVar1 + 0xc);
           pSVar9 = this_00->Car->CarSprite;
-          iVar7 = DecoderFloat(&pSVar9->S3_arr5031[0].PositionX);
+          iVar7 = Decoder_DecodeFloat(&pSVar9->S3_arr5031[0].PositionX);
           if (((char)iVar7 == *(char *)(iVar1 + 1)) &&
-             (iVar7 = DecoderFloat(&pSVar9->S3_arr5031[0].PositionY),
+             (iVar7 = Decoder_DecodeFloat(&pSVar9->S3_arr5031[0].PositionY),
              (char)iVar7 == *(char *)(iVar1 + 2))) {
             this_00->field58_0x48 = 4;
           }
@@ -63264,9 +63264,9 @@ LAB_004b175d:
           else if (!bVar2) {
             iVar7 = *(int *)(iVar1 + 0xc);
             pSVar9 = this_00->Car->CarSprite;
-            iVar6 = DecoderFloat(&pSVar9->S3_arr5031[0].PositionX);
+            iVar6 = Decoder_DecodeFloat(&pSVar9->S3_arr5031[0].PositionX);
             if (((char)iVar6 == *(char *)(iVar7 + 1)) &&
-               (iVar6 = DecoderFloat(&pSVar9->S3_arr5031[0].PositionY),
+               (iVar6 = Decoder_DecodeFloat(&pSVar9->S3_arr5031[0].PositionY),
                (char)iVar6 == *(char *)(iVar7 + 2))) {
               this_00->field58_0x48 = 4;
               break;
@@ -63275,9 +63275,9 @@ LAB_004b175d:
           }
           iVar1 = *(int *)(iVar1 + 8);
           pSVar9 = this_00->Car->CarSprite;
-          iVar7 = DecoderFloat(&pSVar9->S3_arr5031[0].PositionX);
+          iVar7 = Decoder_DecodeFloat(&pSVar9->S3_arr5031[0].PositionX);
           if (((char)iVar7 == *(char *)(iVar1 + 1)) &&
-             (iVar7 = DecoderFloat(&pSVar9->S3_arr5031[0].PositionY),
+             (iVar7 = Decoder_DecodeFloat(&pSVar9->S3_arr5031[0].PositionY),
              (char)iVar7 == *(char *)(iVar1 + 2))) {
             this_00->field58_0x48 = 0;
             S83::FUN_004af9a0(this_00);
@@ -63456,7 +63456,7 @@ LAB_004b1f27:
     this->field61_0x64 = 0;
     this->field62_0x68 = (int *)0xffffffff;
     this->field49_0x4c = 0;
-    bitShiftLeft1(&local_c,(void *)0x0);
+    Decoder_ShiftLeft(&local_c,(void *)0x0);
     this->field55_0x58 = local_c;
     this->field_0x70 = 0x40;
     this->field65_0x71 = 0;
@@ -63484,7 +63484,7 @@ LAB_004b1f27:
       this->field51_0x54 =
            (byte)((char)((this->CDVol * uVar9) / 0xfe) +
                  (char)((ulonglong)*(uint *)&this->field_0x145c % 3)) >> 2;
-      bitShiftLeft1(&local_c,(void *)0x0);
+      Decoder_ShiftLeft(&local_c,(void *)0x0);
       this->field55_0x58 = local_c;
       this->field_0x70 = 0x40;
       this->field79_0x88 = 0x14;
@@ -63507,9 +63507,9 @@ void FUN_004b22b0(int param_1,undefined4 param_2)
   case 1:
     *(undefined2 *)(param_1 + 0x10) = 0;
     *(undefined2 *)(param_1 + 0x12) = 600;
-    bitShiftLeft1(&param_1,(void *)0x0);
+    Decoder_ShiftLeft(&param_1,(void *)0x0);
     *(int *)(iVar1 + 4) = param_1;
-    bitShiftLeft1(&param_1,(void *)0x0);
+    Decoder_ShiftLeft(&param_1,(void *)0x0);
     *(int *)(iVar1 + 8) = param_1;
     return;
   case 2:
@@ -63843,9 +63843,9 @@ switchD_004b28a3_caseD_b:
     *(undefined1 *)((int)&this->audioBuffers[1].isActive + 1) = 1;
     *(undefined1 *)&this->audioBuffers[2].isActive = 0;
     *(undefined4 *)((int)&this->audioBuffers[3].endOffset + 2) = 0;
-    bitShiftLeft1(local_8,(void *)0x0);
+    Decoder_ShiftLeft(local_8,(void *)0x0);
     piVar2 = piVar1;
-    bitShiftLeft1(local_4,(void *)0x0);
+    Decoder_ShiftLeft(local_4,(void *)0x0);
     S154_FUN_004b2bc0(this,1,*piVar2,*piVar1);
     if (this->audioBuffers[2].sampleRate == 0) {
       piVar1 = &this->audioBuffers[2].endOffset;
@@ -63893,7 +63893,7 @@ undefined4 __thiscall FUN_004b3150(SpriteS1 *param_1,SpriteS1 *param_2)
   case (SpriteS1 *)0x2:
     if (*(char *)&param_1->S3_arr5031[0].Car == '\0') {
       pSVar2 = (SpriteS1 *)
-               S110_FUN_00401b40(param_1->FirstElement->S3_arr5031 + 2,
+               Decoder_ProcessData(param_1->FirstElement->S3_arr5031 + 2,
                                  (S110 *)&stack0x0000000c,&DAT_0066c310);
       bVar1 = FUN_004037e0(&stack0x00000008,pSVar2);
       if (CONCAT31(extraout_var,bVar1) != 0) {
@@ -63914,7 +63914,7 @@ undefined4 __thiscall FUN_004b3150(SpriteS1 *param_1,SpriteS1 *param_2)
   case (SpriteS1 *)0x4:
     if (*(char *)&param_1->S3_arr5031[0].Car == '\0') {
       pSVar2 = (SpriteS1 *)
-               S110_FUN_00401b40(&param_1->FirstElement->S3_arr5031[2].SpriteS3,
+               Decoder_ProcessData(&param_1->FirstElement->S3_arr5031[2].SpriteS3,
                                  (S110 *)&stack0x00000008,&DAT_0066c310);
       bVar1 = FUN_004037e0(&stack0x0000000c,pSVar2);
       if (CONCAT31(extraout_var_01,bVar1) != 0) {
@@ -63966,13 +63966,13 @@ S8 * __thiscall S8::S8(S8 *this)
   case (SpriteS1 *)0x1:
     iVar5 = *unaff_ESI;
     puVar10 = (undefined4 *)
-              S110_FUN_00401b40((void *)(iVar5 + 0x80),(S110 *)&stack0x00000078,
+              Decoder_ProcessData((void *)(iVar5 + 0x80),(S110 *)&stack0x00000078,
                                 &DAT_0066c360);
     pSVar9 = (SpriteS1 *)*puVar10;
     in_stack_00000034 = pSVar9;
     if ((char)unaff_ESI[2] == '\0') {
       puVar10 = (undefined4 *)
-                S110_FUN_00401b40((void *)(iVar5 + 0x78),
+                Decoder_ProcessData((void *)(iVar5 + 0x78),
                                   (S110 *)&stack0x0000007c,&DAT_0066c310);
       in_stack_00000030 = (SpriteS1 *)*puVar10;
       in_stack_00000074 = (S103 *)CONCAT31(in_stack_00000074._1_3_,1);
@@ -63995,7 +63995,7 @@ S8 * __thiscall S8::S8(S8 *this)
     in_stack_00000034 = pSVar9;
     if ((char)unaff_ESI[2] == '\0') {
       puVar10 = (undefined4 *)
-                S110_FUN_00401b40((void *)(iVar5 + 0x78),
+                Decoder_ProcessData((void *)(iVar5 + 0x78),
                                   (S110 *)&stack0x00000070,&DAT_0066c310);
       in_stack_00000030 = (SpriteS1 *)*puVar10;
       in_stack_00000074 = (S103 *)CONCAT31(in_stack_00000074._1_3_,1);
@@ -64032,7 +64032,7 @@ LAB_004b3722:
   case (SpriteS1 *)0x4:
     iVar5 = *unaff_ESI;
     puVar10 = (undefined4 *)
-              S110_FUN_00401b40((void *)(iVar5 + 0x78),(S110 *)&stack0x0000005c,
+              Decoder_ProcessData((void *)(iVar5 + 0x78),(S110 *)&stack0x0000005c,
                                 &DAT_0066c360);
     pSVar11 = (SpriteS1 *)*puVar10;
     if ((char)unaff_ESI[2] != '\0') {
@@ -64043,7 +64043,7 @@ LAB_004b3722:
 LAB_004b36d3:
     in_stack_00000030 = pSVar11;
     puVar10 = (undefined4 *)
-              S110_FUN_00401b40((void *)(iVar5 + 0x80),pSVar21,&DAT_0066c310);
+              Decoder_ProcessData((void *)(iVar5 + 0x80),pSVar21,&DAT_0066c310);
     in_stack_00000034 = (SpriteS1 *)*puVar10;
     in_stack_00000068 = (Ped *)CONCAT31(in_stack_00000068._1_3_,1);
     pSVar9 = in_stack_00000034;
@@ -64055,9 +64055,9 @@ LAB_004b36d3:
     pSStack00000044 = _DAT_0066c3e8;
     break;
   case (undefined1 *)0x1:
-    puVar10 = (undefined4 *)FUN_00403780(&DAT_0066c310,&stack0x00000078);
+    puVar10 = (undefined4 *)Texture_Find(&DAT_0066c310,&stack0x00000078);
     pSStack00000040 = (SpriteS1 *)*puVar10;
-    puVar10 = (undefined4 *)FUN_00403780(&DAT_0066c3e8,&stack0x0000007c);
+    puVar10 = (undefined4 *)Texture_Find(&DAT_0066c3e8,&stack0x0000007c);
     pSStack00000044 = (SpriteS1 *)*puVar10;
     break;
   case (undefined1 *)0x2:
@@ -64065,9 +64065,9 @@ LAB_004b36d3:
     pSStack00000048 = _DAT_0066c3e8;
     break;
   case (undefined1 *)0x3:
-    puVar10 = (undefined4 *)FUN_00403780(&DAT_0066c310,&stack0x00000078);
+    puVar10 = (undefined4 *)Texture_Find(&DAT_0066c310,&stack0x00000078);
     pSStack0000003c = (SpriteS1 *)*puVar10;
-    puVar10 = (undefined4 *)FUN_00403780(&DAT_0066c3e8,&stack0x0000007c);
+    puVar10 = (undefined4 *)Texture_Find(&DAT_0066c3e8,&stack0x0000007c);
     pSStack00000048 = (SpriteS1 *)*puVar10;
   }
 
@@ -64095,13 +64095,13 @@ LAB_004b36d3:
                                      (SpriteS1 *)&stack0x000001cc,
                                      &stack0x0000002c);
         puVar10 = (undefined4 *)
-                  S110_FUN_00401b40(&stack0x00000020,(S110 *)&stack0x000000a4,
+                  Decoder_ProcessData(&stack0x00000020,(S110 *)&stack0x000000a4,
                                     &stack0x0000002c);
         pSVar11 = S9::S9_FUN_00401b20((S9 *)&stack0x0000001c,
                                       (SpriteS1 *)&stack0x0000016c,
                                       &stack0x00000028);
         puVar12 = (undefined4 *)
-                  S110_FUN_00401b40(&stack0x0000001c,(S110 *)&stack0x000000ac,
+                  Decoder_ProcessData(&stack0x0000001c,(S110 *)&stack0x000000ac,
                                     &stack0x00000028);
         S9::FUN_0041e350((S9 *)unaff_ESI[1],*puVar12,pSVar11->FirstElement,
                          *puVar10,pSVar9->FirstElement);
@@ -64109,13 +64109,13 @@ LAB_004b36d3:
                                      (SpriteS1 *)&stack0x00000224,
                                      (int *)&DAT_0066c310);
         puVar10 = (undefined4 *)
-                  S110_FUN_00401b40(&stack0x00000024,(S110 *)&stack0x000000b4,
+                  Decoder_ProcessData(&stack0x00000024,(S110 *)&stack0x000000b4,
                                     &DAT_0066c310);
         S9::FUN_0041e370((S9 *)unaff_ESI[1],*puVar10,pSVar9->FirstElement);
         uVar13 = FUN_004ba8f0((void *)unaff_ESI[1],in_stack_0000023c);
         if ((char)uVar13 != '\0') {
-          iVar5 = DecoderFloat(&stack0x00000020);
-          iVar6 = DecoderFloat(&stack0x0000001c);
+          iVar5 = Decoder_DecodeFloat(&stack0x00000020);
+          iVar6 = Decoder_DecodeFloat(&stack0x0000001c);
           psVar14 = (short *)MapRelatedStruct::S16_FUN_00465250
                                        (_gMapRelatedStruct,iVar6,iVar5);
           if ((psVar14 != (short *)0x0) && (*psVar14 == 0)) {
@@ -64224,16 +64224,16 @@ LAB_004b3a5e:
           in_stack_00000064 = (SpriteS1 *)CONCAT31(in_stack_00000064._1_3_,2);
           in_stack_00000050 = (SpriteS1 *)CONCAT31(in_stack_00000050._1_3_,2);
           puVar10 = (undefined4 *)
-                    S110_FUN_00401b40(&param_5,(S110 *)&stack0x000000bc,
+                    Decoder_ProcessData(&param_5,(S110 *)&stack0x000000bc,
                                       &stack0x0000003c);
           puVar12 = (undefined4 *)
-                    S110_FUN_00401b40(&param_6,(S110 *)&stack0x000001d4,
+                    Decoder_ProcessData(&param_6,(S110 *)&stack0x000001d4,
                                       &stack0x00000040);
           bVar2 = FUN_004b33f0(unaff_ESI,*puVar12,*puVar10);
           if (bVar2) {
             pSVar9 = (SpriteS1 *)&stack0x000000c4;
             piVar7 = (int *)&DAT_0066c4f0;
-            puVar15 = (uint *)S110_FUN_00401b40(&param_6,(S110 *)&
+            puVar15 = (uint *)Decoder_ProcessData(&param_6,(S110 *)&
                                         stack0x0000017c,&stack0x00000040);
             pSVar8 = (S9 *)FUN_00462ea0(&stack0x000000cc,
                                         (uint *)&stack0x000000cc,puVar15);
@@ -64241,7 +64241,7 @@ LAB_004b3a5e:
             in_stack_0000001c = pSVar9->FirstElement;
             pSVar9 = (SpriteS1 *)&stack0x00000204;
             piVar7 = (int *)&DAT_0066c4f0;
-            puVar15 = (uint *)S110_FUN_00401b40(&param_5,(S110 *)&
+            puVar15 = (uint *)Decoder_ProcessData(&param_5,(S110 *)&
                                         stack0x000000d4,&stack0x0000003c);
             pSVar8 = (S9 *)FUN_00462ea0(this_00,(uint *)&stack0x00000184,puVar15
                                        );
@@ -64251,14 +64251,14 @@ LAB_004b3a5e:
                                          (SpriteS1 *)&stack0x000000dc,
                                          &stack0x0000002c);
             puVar10 = (undefined4 *)
-                      S110_FUN_00401b40(&stack0x00000020,
+                      Decoder_ProcessData(&stack0x00000020,
                                         (S110 *)&stack0x000001dc,
                                         &stack0x0000002c);
             pSVar11 = S9::S9_FUN_00401b20((S9 *)&stack0x0000001c,
                                           (SpriteS1 *)&stack0x000000e4,
                                           &stack0x00000028);
             puVar12 = (undefined4 *)
-                      S110_FUN_00401b40(&stack0x0000001c,
+                      Decoder_ProcessData(&stack0x0000001c,
                                         (S110 *)&stack0x0000018c,
                                         &stack0x00000028);
             S9::FUN_0041e350((S9 *)unaff_ESI[1],*puVar12,pSVar11->FirstElement,
@@ -64267,7 +64267,7 @@ LAB_004b3a5e:
                                          (SpriteS1 *)&stack0x000000ec,
                                          (int *)&DAT_0066c310);
             puVar10 = (undefined4 *)
-                      S110_FUN_00401b40(&stack0x00000038,
+                      Decoder_ProcessData(&stack0x00000038,
                                         (S110 *)&stack0x0000021c,&DAT_0066c310);
             S9::FUN_0041e370((S9 *)unaff_ESI[1],*puVar10,pSVar9->FirstElement);
             uVar13 = FUN_004ba8f0((void *)unaff_ESI[1],in_stack_0000023c);
@@ -64278,16 +64278,16 @@ LAB_004b3a5e:
             }
           }
           puVar10 = (undefined4 *)
-                    S110_FUN_00401b40(&param_5,(S110 *)&stack0x000000f4,
+                    Decoder_ProcessData(&param_5,(S110 *)&stack0x000000f4,
                                       &stack0x00000048);
           puVar12 = (undefined4 *)
-                    S110_FUN_00401b40(&param_6,(S110 *)&stack0x00000194,
+                    Decoder_ProcessData(&param_6,(S110 *)&stack0x00000194,
                                       &stack0x00000044);
           bVar2 = FUN_004b33f0(unaff_ESI,*puVar12,*puVar10);
           if (bVar2) {
             pSVar9 = (SpriteS1 *)&stack0x000000fc;
             piVar7 = (int *)&DAT_0066c4f0;
-            puVar15 = (uint *)S110_FUN_00401b40(&param_6,(S110 *)&
+            puVar15 = (uint *)Decoder_ProcessData(&param_6,(S110 *)&
                                         stack0x000001e4,&stack0x00000044);
             pSVar8 = (S9 *)FUN_00462ea0(this_01,(uint *)&stack0x00000104,puVar15
                                        );
@@ -64295,7 +64295,7 @@ LAB_004b3a5e:
             in_stack_0000001c = pSVar9->FirstElement;
             pSVar9 = (SpriteS1 *)&stack0x0000019c;
             piVar7 = (int *)&DAT_0066c4f0;
-            puVar15 = (uint *)S110_FUN_00401b40(&param_5,(S110 *)&
+            puVar15 = (uint *)Decoder_ProcessData(&param_5,(S110 *)&
                                         stack0x0000010c,&stack0x00000048);
             pSVar8 = (S9 *)FUN_00462ea0(this_02,(uint *)&stack0x0000020c,puVar15
                                        );
@@ -64305,14 +64305,14 @@ LAB_004b3a5e:
                                          (SpriteS1 *)&stack0x00000114,
                                          &stack0x0000002c);
             puVar10 = (undefined4 *)
-                      S110_FUN_00401b40(&stack0x00000020,
+                      Decoder_ProcessData(&stack0x00000020,
                                         (S110 *)&stack0x000001a4,
                                         &stack0x0000002c);
             pSVar11 = S9::S9_FUN_00401b20((S9 *)&stack0x0000001c,
                                           (SpriteS1 *)&stack0x0000011c,
                                           &stack0x00000028);
             puVar12 = (undefined4 *)
-                      S110_FUN_00401b40(&stack0x0000001c,
+                      Decoder_ProcessData(&stack0x0000001c,
                                         (S110 *)&stack0x00000084,
                                         &stack0x00000028);
             S9::FUN_0041e350((S9 *)unaff_ESI[1],*puVar12,pSVar11->FirstElement,
@@ -64321,7 +64321,7 @@ LAB_004b3a5e:
                                          (SpriteS1 *)&stack0x00000124,
                                          (int *)&DAT_0066c310);
             puVar10 = (undefined4 *)
-                      S110_FUN_00401b40(&stack0x00000038,
+                      Decoder_ProcessData(&stack0x00000038,
                                         (S110 *)&stack0x000001ac,&DAT_0066c310);
             S9::FUN_0041e370((S9 *)unaff_ESI[1],*puVar10,pSVar9->FirstElement);
             uVar13 = FUN_004ba8f0((void *)unaff_ESI[1],in_stack_0000023c);
@@ -64362,14 +64362,14 @@ LAB_004b3a5e:
                                          (SpriteS1 *)&stack0x0000014c,
                                          &stack0x0000002c);
             puVar10 = (undefined4 *)
-                      S110_FUN_00401b40(&stack0x00000020,
+                      Decoder_ProcessData(&stack0x00000020,
                                         (S110 *)&stack0x00000214,
                                         &stack0x0000002c);
             pSVar11 = S9::S9_FUN_00401b20((S9 *)&stack0x0000001c,
                                           (SpriteS1 *)&stack0x00000154,
                                           &stack0x00000028);
             puVar12 = (undefined4 *)
-                      S110_FUN_00401b40(&stack0x0000001c,
+                      Decoder_ProcessData(&stack0x0000001c,
                                         (S110 *)&stack0x000001c4,
                                         &stack0x00000028);
             S9::FUN_0041e350((S9 *)unaff_ESI[1],*puVar12,pSVar11->FirstElement,
@@ -64378,7 +64378,7 @@ LAB_004b3a5e:
                                          (SpriteS1 *)&stack0x0000015c,
                                          (int *)&DAT_0066c310);
             puVar10 = (undefined4 *)
-                      S110_FUN_00401b40(&stack0x00000038,
+                      Decoder_ProcessData(&stack0x00000038,
                                         (S110 *)&stack0x00000088,&DAT_0066c310);
             S9::FUN_0041e370((S9 *)unaff_ESI[1],*puVar10,pSVar9->FirstElement);
             uVar13 = FUN_004ba8f0((void *)unaff_ESI[1],in_stack_0000023c);
@@ -64419,14 +64419,14 @@ LAB_004b3a5e:
                                          (SpriteS1 *)&stack0x000000d0,
                                          &stack0x0000002c);
             puVar10 = (undefined4 *)
-                      S110_FUN_00401b40(&stack0x00000020,
+                      Decoder_ProcessData(&stack0x00000020,
                                         (S110 *)&stack0x000000d8,
                                         &stack0x0000002c);
             pSVar11 = S9::S9_FUN_00401b20((S9 *)&stack0x0000001c,
                                           (SpriteS1 *)&stack0x000000e0,
                                           &stack0x00000028);
             puVar12 = (undefined4 *)
-                      S110_FUN_00401b40(&stack0x0000001c,
+                      Decoder_ProcessData(&stack0x0000001c,
                                         (S110 *)&stack0x000000e8,
                                         &stack0x00000028);
             S9::FUN_0041e350((S9 *)unaff_ESI[1],*puVar12,pSVar11->FirstElement,
@@ -64435,7 +64435,7 @@ LAB_004b3a5e:
                                          (SpriteS1 *)&stack0x000000f0,
                                          (int *)&DAT_0066c310);
             puVar10 = (undefined4 *)
-                      S110_FUN_00401b40(&stack0x00000038,
+                      Decoder_ProcessData(&stack0x00000038,
                                         (S110 *)&stack0x000000f8,&DAT_0066c310);
             S9::FUN_0041e370((S9 *)unaff_ESI[1],*puVar10,pSVar9->FirstElement);
             uVar13 = FUN_004ba8f0((void *)unaff_ESI[1],in_stack_0000023c);
@@ -64545,14 +64545,14 @@ LAB_004b3a5e:
               pSVar17 = S9::S9_FUN_00401b20((S9 *)&stack0x0000005c,
                                             (SpriteS1 *)&stack0x000001b0,
                                             (int *)&stack0x00000054);
-              piVar7 = (int *)FUN_00401b90(pSVar17,puVar22,piVar7);
+              piVar7 = (int *)Decoder_ReadInt(pSVar17,puVar22,piVar7);
               in_stack_00000060 = (SpriteS1 *)*piVar7;
               piVar7 = (int *)&DAT_0066c3e8;
               puVar22 = &stack0x000001b8;
               pSVar17 = S9::S9_FUN_00401b20((S9 *)&stack0x0000006c,
                                             (SpriteS1 *)&stack0x000001c0,
                                             (int *)&stack0x00000070);
-              puVar10 = (undefined4 *)FUN_00401b90(pSVar17,puVar22,piVar7);
+              puVar10 = (undefined4 *)Decoder_ReadInt(pSVar17,puVar22,piVar7);
               param_3 = (SpriteS1 *)*puVar10;
             }
           }
@@ -64590,13 +64590,13 @@ LAB_004b3a5e:
                                        (SpriteS1 *)&stack0x000001e8,
                                        &stack0x0000002c);
           puVar10 = (undefined4 *)
-                    S110_FUN_00401b40(&stack0x00000020,(S110 *)&stack0x000001f0,
+                    Decoder_ProcessData(&stack0x00000020,(S110 *)&stack0x000001f0,
                                       &stack0x0000002c);
           pSVar11 = S9::S9_FUN_00401b20((S9 *)&stack0x0000001c,
                                         (SpriteS1 *)&stack0x000001f8,
                                         &stack0x00000028);
           puVar12 = (undefined4 *)
-                    S110_FUN_00401b40(&stack0x0000001c,(S110 *)&stack0x00000200,
+                    Decoder_ProcessData(&stack0x0000001c,(S110 *)&stack0x00000200,
                                       &stack0x00000028);
           S9::FUN_0041e350((S9 *)unaff_ESI[1],*puVar12,pSVar11->FirstElement,
                            *puVar10,pSVar9->FirstElement);
@@ -64604,7 +64604,7 @@ LAB_004b3a5e:
                                        (SpriteS1 *)&stack0x00000208,
                                        (int *)&DAT_0066c310);
           puVar10 = (undefined4 *)
-                    S110_FUN_00401b40(&stack0x00000038,(S110 *)&stack0x00000210,
+                    Decoder_ProcessData(&stack0x00000038,(S110 *)&stack0x00000210,
                                       &DAT_0066c310);
           S9::FUN_0041e370((S9 *)unaff_ESI[1],*puVar10,pSVar9->FirstElement);
           if (_gNetworkGame == 0) {
@@ -64704,8 +64704,8 @@ LAB_004b470d:
                     return 1;
                   }
                   pSVar9 = in_stack_0000023c;
-                  pvVar18 = (void *)DecoderFloat(&stack0x00000038);
-                  pvVar19 = (void *)DecoderFloat(&param_5);
+                  pvVar18 = (void *)Decoder_DecodeFloat(&stack0x00000038);
+                  pvVar19 = (void *)Decoder_DecodeFloat(&param_5);
                   Police::S111_FUN_004aee70
                             (_gPolice,pvVar19,pvVar18,(int *)pSVar9);
                 }
@@ -64823,18 +64823,18 @@ void __thiscall S8::S8_FUN_004b4e60(S8 *this)
 
 
   if (!gSkipRecycling) {
-    iVar2 = Game::Game_FUN_003f113c(gGame);
+    iVar2 = Game__GetCurrentPlayerSlot(gGame);
     this->field0_0x0 = iVar2;
-    pPVar3 = Game::Game_FUN_003f11a8(gGame);
+    pPVar3 = Game__FindNextActivePlayer(gGame);
     this->field6_0xc = pPVar3;
     if (pPVar3 != (Player *)0x0) {
       pPVar7 = *(Ped **)&pPVar3->field_0x2c4;
-      puVar4 = (undefined4 *)Ped::GetPositionX(pPVar7,(int)&local_c);
+      puVar4 = (undefined4 *)Ped__GetXCoordinate(pPVar7,(int)&local_c);
       local_c = *puVar4;
-      puVar4 = (undefined4 *)Ped::GetPositionY(pPVar7,(int)&local_10);
+      puVar4 = (undefined4 *)Ped__GetYCoordinate(pPVar7,(int)&local_10);
       local_10 = *puVar4;
-      iVar2 = DecoderFloat(&local_10);
-      iVar5 = DecoderFloat(&local_c);
+      iVar2 = Decoder_DecodeFloat(&local_10);
+      iVar5 = Decoder_DecodeFloat(&local_c);
       uVar6 = MapRelatedStruct::S16_FUN_00465250(_gMapRelatedStruct,iVar5,iVar2)
       ;
       this->field7_0x10 = uVar6;
@@ -64846,25 +64846,25 @@ void __thiscall S8::S8_FUN_004b4e60(S8 *this)
       if (bVar1 != 0) {
         S8_FUN_004b4a60(this);
       }
-      iVar2 = Game::Game_FUN_003f1208(gGame);
+      iVar2 = Game__SwitchToNextPlayer(gGame);
       this->field0_0x0 = iVar2;
       if (iVar2 == this->field6_0xc + 0x208) {
         pPVar7 = *(Ped **)(this->field6_0xc + 0x2c8);
 LAB_004b4f34:
         if (pPVar7 != (Ped *)0x0) {
-          puVar4 = (undefined4 *)Ped::GetPositionX(pPVar7,(int)local_8);
+          puVar4 = (undefined4 *)Ped__GetXCoordinate(pPVar7,(int)local_8);
           local_c = *puVar4;
-          puVar4 = (undefined4 *)Ped::GetPositionY(pPVar7,(int)local_4);
+          puVar4 = (undefined4 *)Ped__GetYCoordinate(pPVar7,(int)local_4);
           local_10 = *puVar4;
-          iVar2 = DecoderFloat(&local_10);
-          iVar5 = DecoderFloat(&local_c);
+          iVar2 = Decoder_DecodeFloat(&local_10);
+          iVar5 = Decoder_DecodeFloat(&local_c);
           uVar6 = MapRelatedStruct::S16_FUN_00465250
                             (_gMapRelatedStruct,iVar5,iVar2);
           this->field7_0x10 = uVar6;
         }
       }
       else {
-        iVar2 = Game::Game_FUN_003f12a8(gGame);
+        iVar2 = Game__CycleToNextPlayer(gGame);
         this->field6_0xc = iVar2;
         if (iVar2 != 0) {
           pPVar7 = *(Ped **)(iVar2 + 0x2c4);
@@ -65560,7 +65560,7 @@ SaveSlotAnimatedValue::S161_FUN_004b7770(SaveSlotAnimatedValue *this)
 
   if (999 < uVar9) {
     this->field107_0x18c = uVar9 - 1000;
-    Mull = Ped::IsInCar(pPed);
+    Mull = Ped__IsInsideVehicle(pPed);
     if ((Mull != 0) && (bVar1 = Ped::sPed_FUN_004a5040(pPed), bVar1)) {
       pCar = (Car *)Ped::GetCarPlayers(pPed);
       pCVar7 = pCar;
@@ -66005,8 +66005,8 @@ switchD_004b8216_caseD_5:
       bVar5 = Player::GetCurrentPlayer(this->Player);
       if (bVar5 != 0) {
         puVar14 = (undefined4 *)Ped::GetPositionZ(pPed,(int)local_c);
-        puVar15 = (undefined4 *)Ped::GetPositionY(pPed,(int)local_8);
-        puVar16 = (undefined4 *)Ped::GetPositionX(pPed,(int)local_4);
+        puVar15 = (undefined4 *)Ped__GetYCoordinate(pPed,(int)local_8);
+        puVar16 = (undefined4 *)Ped__GetXCoordinate(pPed,(int)local_4);
 // Было: S123_FUN_004b91f0
         S123::S123_FUN_004b91f0(_gS123,*puVar16,*puVar15,*puVar14,iVar8 * iVar6)
         ;
@@ -66550,12 +66550,12 @@ void * FUN_004b9c20(void *param_1,int *param_2)
 
 
   if (0 < *param_2) {
-    bitShiftLeft1(param_1,(void *)0x1);
+    Decoder_ShiftLeft(param_1,(void *)0x1);
     return param_1;
   }
 
   if (*param_2 < 0) {
-    bitShiftLeft1(param_1,(void *)0xffffffff);
+    Decoder_ShiftLeft(param_1,(void *)0xffffffff);
     return param_1;
   }
 
@@ -66839,7 +66839,7 @@ uint __thiscall FUN_004bb020(void *this,S9 *param_2)
     bVar1 = Player::CheckCondition((Player *)local_34,&local_2c);
     uVar5 = CONCAT31(extraout_var_16,bVar1);
     if (uVar5 != 0) {
-      piVar4 = (int *)FUN_00403780(&local_28,&param_2);
+      piVar4 = (int *)Texture_Find(&local_28,&param_2);
       bVar1 = Player::FUN_0040ce70((Player *)local_30,piVar4);
       uVar5 = CONCAT31(extraout_var_17,bVar1);
       if (uVar5 != 0) {
@@ -66909,7 +66909,7 @@ byte __thiscall FUN_004bb9c0(void *this,int param_1,int param_2)
         puVar13 = local_10;
         piVar4 = &local_24;
         piVar5 = &local_20;
-        pvVar3 = FUN_00403780(&local_20,local_1c);
+        pvVar3 = Texture_Find(&local_20,local_1c);
         cVar2 = FUN_00472950(pvVar3,piVar5,piVar4,puVar13,puVar15);
         return cVar2 != '\0';
       }
@@ -66994,7 +66994,7 @@ undefined1 __thiscall FUN_004bd2e0(void *this)
 
 
       if (bVar1) {
-        piVar3 = (int *)S110_FUN_00401b40((void *)((int)this + 0x1c),
+        piVar3 = (int *)Decoder_ProcessData((void *)((int)this + 0x1c),
                                           (S110 *)&local_4,&DAT_0066ffac);
         iVar4 = FUN_00491ee0(piVar3);
         *(char *)((int)this + 0x39) = (char)iVar4;
@@ -67034,15 +67034,15 @@ undefined4 __fastcall FUN_004bd490(SpriteS1 *param_1)
     this_00 = &pSVar1->S39_Arr48[1].field7_0xc;
     this_01 = &pSVar1->S39_Arr48[1].field6_0x8;
     iVar6 = iVar3;
-    iVar4 = DecoderFloat(this_00);
-    iVar5 = DecoderFloat(this_01);
+    iVar4 = Decoder_DecodeFloat(this_00);
+    iVar5 = Decoder_DecodeFloat(this_01);
     bVar2 = MapRelatedStruct::S16_FUN_00466cf0
                       (_gMapRelatedStruct,iVar5,iVar4,iVar6);
     if (bVar2 == 0) {
       this_02 = &pSVar1->S39_Arr48[1].field8_0x10;
       iVar6 = iVar3;
-      iVar4 = DecoderFloat(pSVar1->S39_Arr48 + 2);
-      iVar5 = DecoderFloat(this_02);
+      iVar4 = Decoder_DecodeFloat(pSVar1->S39_Arr48 + 2);
+      iVar5 = Decoder_DecodeFloat(this_02);
       bVar2 = MapRelatedStruct::S16_FUN_00466cf0
                         (_gMapRelatedStruct,iVar5,iVar4,iVar6);
       if (bVar2 == 0) {
@@ -67051,25 +67051,25 @@ undefined4 __fastcall FUN_004bd490(SpriteS1 *param_1)
         }
         iVar3 = iVar3 + -1;
         iVar6 = iVar3;
-        iVar4 = DecoderFloat(&pSVar1->S39_Arr48[0].field8_0x10);
-        iVar5 = DecoderFloat(this_03);
+        iVar4 = Decoder_DecodeFloat(&pSVar1->S39_Arr48[0].field8_0x10);
+        iVar5 = Decoder_DecodeFloat(this_03);
         bVar2 = MapRelatedStruct::S16_FUN_00466cf0
                           (_gMapRelatedStruct,iVar5,iVar4,iVar6);
         if (bVar2 == 0) {
           iVar6 = iVar3;
-          iVar4 = DecoderFloat(this);
-          iVar5 = DecoderFloat(pSVar1->S39_Arr48 + 1);
+          iVar4 = Decoder_DecodeFloat(this);
+          iVar5 = Decoder_DecodeFloat(pSVar1->S39_Arr48 + 1);
           bVar2 = MapRelatedStruct::S16_FUN_00466cf0
                             (_gMapRelatedStruct,iVar5,iVar4,iVar6);
           if (bVar2 == 0) {
             iVar6 = iVar3;
-            iVar4 = DecoderFloat(this_00);
-            iVar5 = DecoderFloat(this_01);
+            iVar4 = Decoder_DecodeFloat(this_00);
+            iVar5 = Decoder_DecodeFloat(this_01);
             bVar2 = MapRelatedStruct::S16_FUN_00466cf0
                               (_gMapRelatedStruct,iVar5,iVar4,iVar6);
             if (bVar2 == 0) {
-              iVar6 = DecoderFloat(pSVar1->S39_Arr48 + 2);
-              iVar4 = DecoderFloat(this_02);
+              iVar6 = Decoder_DecodeFloat(pSVar1->S39_Arr48 + 2);
+              iVar4 = Decoder_DecodeFloat(this_02);
               bVar2 = MapRelatedStruct::S16_FUN_00466cf0
                                 (_gMapRelatedStruct,iVar4,iVar6,iVar3);
               if (bVar2 == 0) {
@@ -67147,11 +67147,11 @@ void __thiscall FUN_004bdad0(void *this)
         if ((bVar2 != 0) || (bVar2 = FUN_00475e60(this_01,iVar3), bVar2 != 0))
         goto LAB_004bdc18;
       }
-      iVar3 = DecoderFloat((void *)((int)this + 0x14));
+      iVar3 = Decoder_DecodeFloat((void *)((int)this + 0x14));
       local_4 = CONCAT31(local_4._1_3_,(char)iVar3);
-      iVar3 = DecoderFloat((void *)((int)this + 0x18));
+      iVar3 = Decoder_DecodeFloat((void *)((int)this + 0x18));
       local_8 = CONCAT31(local_8._1_3_,(char)iVar3);
-      iVar3 = DecoderFloat((void *)((int)this + 0x1c));
+      iVar3 = Decoder_DecodeFloat((void *)((int)this + 0x1c));
       local_10.count._0_1_ = (char)iVar3;
       bVar2 = S95::S95_FUN_0049d7a0
                         (_gS95,'\x01',(byte *)&local_4,(byte *)&local_8,
@@ -67893,7 +67893,7 @@ void __thiscall FUN_004c0040(int param_1,undefined4 param_2)
 
   while (sVar1 != 0) {
     *(undefined4 *)(param_1 + 0x6c + (local_8 & 0xffff) * 4) = param_2;
-    FileMgr::Read(this,(size_t)&local_8);
+    FileMgr__ReadData(this,(size_t)&local_8);
     this = extraout_ECX_00;
     sVar1 = (short)local_8;
   }
@@ -68082,7 +68082,7 @@ void __thiscall FUN_004c0580(int param_1,size_t param_2)
         S15_FUN_004c05b0(this,local_10,local_c);
       }
       local_1c = 8;
-      bVar1 = FileMgr::ReadLine((FileMgr *)local_10,(FileMgr *)local_10,
+      bVar1 = FileMgr__ReadDataLine((FileMgr *)local_10,(FileMgr *)local_10,
                                 (int)&local_1c);
       this_00 = extraout_ECX_00;
     } while (bVar1);
@@ -68336,7 +68336,7 @@ void __thiscall Text::Load(Text *this)
         pFVar2 = extraout_ECX_00;
       }
       param_3 = 8;
-      bVar1 = FileMgr::ReadLine(pFVar2,&stack0x00000020,(int)&param_3);
+      bVar1 = FileMgr__ReadDataLine(pFVar2,&stack0x00000020,(int)&param_3);
       pFVar2 = extraout_ECX_01;
     } while (bVar1);
   }
@@ -68852,11 +68852,11 @@ FUN_004c3c70(void *this,uint param_1,Ped *param_2,Ped *param_3,Ped *param_4)
       puVar28 = &DAT_00672438;
       pSVar7 = pSVar5;
       FUN_0040ce30(local_8,bVar25);
-      piVar6 = (int *)S110_FUN_00401b40(pSVar5,pSVar7,puVar28);
+      piVar6 = (int *)Decoder_ProcessData(pSVar5,pSVar7,puVar28);
       pSVar12 = (S9 *)((uint)param_3 & 0xff);
       pSVar13 = (SpriteS1 *)(local_20.Arr_24 + 0x14);
       piVar30 = (int *)&DAT_00672438;
-      bitShiftLeft1(local_20.Arr_24 + 0x10,pSVar12->Arr_24 + (param_1 & 0xff));
+      Decoder_ShiftLeft(local_20.Arr_24 + 0x10,pSVar12->Arr_24 + (param_1 & 0xff));
       pSVar13 = S9::S9_FUN_00401b20(pSVar12,pSVar13,piVar30);
       Object::SpawnObject(_gObject,0x102,(int)pSVar13->FirstElement,*piVar6,
                           (int)param_2,_DAT_00672230);
@@ -68866,12 +68866,12 @@ FUN_004c3c70(void *this,uint param_1,Ped *param_2,Ped *param_3,Ped *param_4)
       pSVar13 = (SpriteS1 *)local_4;
       piVar6 = (int *)&DAT_00672438;
       pSVar12 = (S9 *)(((uint)pPVar2 & 0xff) + ((uint)param_4 & 0xff));
-      bitShiftLeft1(local_8,pSVar12);
+      Decoder_ShiftLeft(local_8,pSVar12);
       pSVar4 = S9::S9_FUN_00401b20(pSVar12,pSVar13,piVar6);
       pSVar13 = (SpriteS1 *)(local_20.Arr_24 + 0x14);
       piVar6 = (int *)&DAT_00672438;
       pSVar12 = (S9 *)((param_1 & 0xff) + ((uint)param_3 & 0xff));
-      bitShiftLeft1(local_20.Arr_24 + 0x10,pSVar12);
+      Decoder_ShiftLeft(local_20.Arr_24 + 0x10,pSVar12);
       pSVar13 = S9::S9_FUN_00401b20(pSVar12,pSVar13,piVar6);
       Object::SpawnObject(_gObject,0x102,(int)pSVar13->FirstElement,
                           (int)pSVar4->FirstElement,(int)param_2,_DAT_00672230);
@@ -68881,14 +68881,14 @@ FUN_004c3c70(void *this,uint param_1,Ped *param_2,Ped *param_3,Ped *param_4)
       pSVar13 = (SpriteS1 *)local_4;
       piVar6 = (int *)&DAT_00672438;
       pSVar4 = pSVar13;
-      bitShiftLeft1(local_8,(void *)(((uint)pPVar2 & 0xff) +
+      Decoder_ShiftLeft(local_8,(void *)(((uint)pPVar2 & 0xff) +
                                     ((uint)param_4 & 0xff)));
       pSVar13 = S9::S9_FUN_00401b20((S9 *)pSVar13,pSVar4,piVar6);
       pSVar5 = (S110 *)(local_20.Arr_24 + 0x14);
       puVar28 = &DAT_00672438;
       pSVar7 = pSVar5;
       FUN_0040ce30(local_20.Arr_24 + 0x10,bVar24);
-      piVar6 = (int *)S110_FUN_00401b40(pSVar5,pSVar7,puVar28);
+      piVar6 = (int *)Decoder_ProcessData(pSVar5,pSVar7,puVar28);
       Object::SpawnObject(_gObject,0x102,*piVar6,(int)pSVar13->FirstElement,
                           (int)param_2,_DAT_00672230);
     }
@@ -69079,7 +69079,7 @@ void __thiscall S25::S25_FUN_004c4fe0(S25 *this,byte param_1,S46 *param_2)
     this_01 = (GameObject *)param_2;
     if (iVar3 == 2) {
       this_01 = SpriteS1::GetObject((SpriteS1 *)this_00);
-      pvVar5 = MissionManager::MissionManager_FUN_00476200
+      pvVar5 = MissionManager__StartMission
                          (_gMissionManager,*(ushort *)(*piVar1 + 8));
       if (this_01->field63_0x6c == *(int *)(*(int *)((int)pvVar5 + 8) + 0x6c)) {
         piVar1[5] = 0;
@@ -69097,7 +69097,7 @@ void __thiscall S25::S25_FUN_004c4fe0(S25 *this,byte param_1,S46 *param_2)
       if (pPVar4 == (Ped *)0x0) break;
       iVar3 = *piVar1;
       if (*(short *)(iVar3 + 2) != 0x1b2) goto LAB_004c51b2;
-      pvVar5 = MissionManager::MissionManager_FUN_00476200
+      pvVar5 = MissionManager__StartMission
                          (_gMissionManager,*(ushort *)(iVar3 + 0x24));
       goto LAB_004c53bd;
     }
@@ -69129,7 +69129,7 @@ LAB_004c50d9:
       uVar8 = *(ushort *)(iVar3 + 0x24);
     }
 LAB_004c50de:
-    pvVar5 = MissionManager::MissionManager_FUN_00476200(_gMissionManager,uVar8)
+    pvVar5 = MissionManager__StartMission(_gMissionManager,uVar8)
     ;
     iVar3 = FUN_004c4f20();
     bVar2 = iVar3 == *(int *)(*(int *)((int)pvVar5 + 8) + 0x200);
@@ -69148,7 +69148,7 @@ LAB_004c522d:
     if (pPVar4 == (Ped *)0x0) break;
     iVar3 = *piVar1;
 LAB_004c51b2:
-    pvVar5 = MissionManager::MissionManager_FUN_00476200
+    pvVar5 = MissionManager__StartMission
                        (_gMissionManager,*(ushort *)(iVar3 + 8));
     goto LAB_004c53bd;
   case 6:
@@ -69158,7 +69158,7 @@ LAB_004c51b2:
       pPVar4 = FUN_00433a20(pvVar5);
       this_01 = (GameObject *)param_2;
       if (pPVar4 == (Ped *)0x0) break;
-      pvVar5 = MissionManager::MissionManager_FUN_00476200
+      pvVar5 = MissionManager__StartMission
                          (_gMissionManager,*(ushort *)(*piVar1 + 8));
       pPVar9 = (Player *)&DAT_00672900;
       pPVar6 = (Player *)FUN_00433c20(pPVar4,&param_1);
@@ -69175,7 +69175,7 @@ LAB_004c51b2:
     this_01 = SpriteS1::GetObject((SpriteS1 *)this_00);
     pPVar4 = Get_FUN_004118b0(this_01);
     if (pPVar4 == (Ped *)0x0) break;
-    pvVar5 = MissionManager::MissionManager_FUN_00476200
+    pvVar5 = MissionManager__StartMission
                        (_gMissionManager,*(ushort *)(*piVar1 + 8));
     pPVar9 = (Player *)&DAT_00672900;
     pPVar6 = (Player *)Ped::FUN_00436160(pPVar4,local_8);
@@ -69192,7 +69192,7 @@ LAB_004c51b2:
     pPVar4 = FUN_00433a20(pvVar5);
     this_01 = (GameObject *)param_2;
     if (pPVar4 == (Ped *)0x0) break;
-    pvVar5 = MissionManager::MissionManager_FUN_00476200
+    pvVar5 = MissionManager__StartMission
                        (_gMissionManager,*(ushort *)(*piVar1 + 8));
     pPVar9 = (Player *)&DAT_00672900;
     pPVar6 = (Player *)FUN_00433c20(pPVar4,&param_2);
@@ -69209,7 +69209,7 @@ LAB_004c51b2:
     this_01 = SpriteS1::GetObject((SpriteS1 *)this_00);
     pPVar4 = Get_FUN_004118b0(this_01);
     if (pPVar4 == (Ped *)0x0) break;
-    pvVar5 = MissionManager::MissionManager_FUN_00476200
+    pvVar5 = MissionManager__StartMission
                        (_gMissionManager,*(ushort *)(*piVar1 + 8));
     pPVar9 = (Player *)&DAT_00672900;
     pPVar6 = (Player *)Ped::FUN_00436160(pPVar4,local_4);
@@ -69326,8 +69326,8 @@ LAB_004c592e:
       if (pPVar11->GameObject == (GameObject *)0x0) goto LAB_004c59f6;
       pS110_1 = (S110 *)&local_c->CarSprite->S3_arr5031[0].PositionY;
       pS110 = (S110 *)&local_c->CarSprite->S3_arr5031[0].PositionX;
-      piVar9 = (int *)Ped::GetPositionY(pPVar11,(int)&local_c);
-      pS110_4 = (S110 *)Ped::GetPositionX(pPVar11,(int)local_8);
+      piVar9 = (int *)Ped__GetYCoordinate(pPVar11,(int)&local_c);
+      pS110_4 = (S110 *)Ped__GetXCoordinate(pPVar11,(int)local_8);
       FUN_0042a6b0(&local_4,&local_4,pS110_4,piVar9,pS110,pS110_1);
       local_4 = pS110_4->car;
     }
@@ -69335,8 +69335,8 @@ LAB_004c592e:
 
   if (bVar4) {
     if (*(Ped **)((int)this + 4) != (Ped *)0x0) {
-      Ped::SetOccupation(*(Ped **)((int)this + 4),3);
-      Ped::SetDefault(*(Ped **)((int)this + 4));
+      Ped__SetCurrentOccupation(*(Ped **)((int)this + 4),3);
+      Ped__ResetToDefaults(*(Ped **)((int)this + 4));
       Ped::FUN_0043e650(*(Ped **)((int)this + 4));
     }
     iVar10 = *(int *)((int)this + 8);
@@ -69344,14 +69344,14 @@ LAB_004c592e:
     if (iVar10 != 0) {
       pPVar8 = *(Ped **)(iVar10 + 4);
       while (pPVar8 != (Ped *)0x0) {
-        Ped::SetOccupation(pPVar8,3);
-        Ped::SetDefault(pPVar8);
+        Ped__SetCurrentOccupation(pPVar8,3);
+        Ped__ResetToDefaults(pPVar8);
         Ped::FUN_0043e650(pPVar8);
         iVar10 = *(int *)((int)this + 8);
         bVar12 = bVar12 + 1;
         pPVar8 = *(Ped **)(iVar10 + 4 + (uint)bVar12 * 4);
       }
-      S169::FUN_00403be0(*(S169 **)((int)this + 8));
+      PedManager__UpdateAll(*(S169 **)((int)this + 8));
     }
     *(undefined4 *)((int)this + 8) = 0;
     *(undefined4 *)((int)this + 4) = 0;
@@ -69362,7 +69362,7 @@ LAB_004c592e:
       if (bVar12 == 0) {
         pPVar8 = pSVar1->Ped;
         *(Ped **)((int)this + 4) = pPVar8;
-        S169::FUN_00403e90(pSVar1);
+        PedManager__UpdatePedStates(pSVar1);
         bVar12 = (byte)pPVar8;
       }
 
@@ -69377,7 +69377,7 @@ LAB_004c592e:
           *(char *)(iVar10 + 0x34) = *(char *)(iVar10 + 0x34) + -1;
           *(undefined4 *)((int)this + 4) =
                *(undefined4 *)(*(int *)((int)this + 8) + 0x2c);
-          FUN_004035e0(*(int *)((int)this + 8));
+          Direct3D_SetRenderState(*(int *)((int)this + 8));
           *(undefined4 *)((int)this + 0x24) = 0;
           return (byte)iVar10;
         }
@@ -69413,12 +69413,12 @@ byte __thiscall FUN_004c5a00(void *this)
     if (iVar5 != 0) {
       pPVar6 = *(Ped **)(iVar5 + 4);
       while (pPVar6 != (Ped *)0x0) {
-        Ped::SetDefault(pPVar6);
+        Ped__ResetToDefaults(pPVar6);
         Ped::FUN_0043e650(pPVar6);
         bVar7 = bVar7 + 1;
         pPVar6 = *(Ped **)(*(int *)((int)this + 8) + 4 + (uint)bVar7 * 4);
       }
-      S169::FUN_00403be0(*(S169 **)((int)this + 8));
+      PedManager__UpdateAll(*(S169 **)((int)this + 8));
     }
 
       if (bVar2) {
@@ -69454,8 +69454,8 @@ byte __thiscall FUN_004c5a00(void *this)
     *(undefined4 *)this = 0;
     if (bVar1) {
       if (*(Ped **)((int)this + 4) != (Ped *)0x0) {
-        Ped::SetOccupation(*(Ped **)((int)this + 4),3);
-        Ped::SetDefault(*(Ped **)((int)this + 4));
+        Ped__SetCurrentOccupation(*(Ped **)((int)this + 4),3);
+        Ped__ResetToDefaults(*(Ped **)((int)this + 4));
         Ped::FUN_0043e650(*(Ped **)((int)this + 4));
       }
       iVar5 = *(int *)((int)this + 8);
@@ -69463,14 +69463,14 @@ byte __thiscall FUN_004c5a00(void *this)
       if (iVar5 != 0) {
         pPVar6 = *(Ped **)(iVar5 + 4);
         while (pPVar6 != (Ped *)0x0) {
-          Ped::SetOccupation(pPVar6,3);
-          Ped::SetDefault(pPVar6);
+          Ped__SetCurrentOccupation(pPVar6,3);
+          Ped__ResetToDefaults(pPVar6);
           Ped::FUN_0043e650(pPVar6);
           iVar5 = *(int *)((int)this + 8);
           bVar7 = bVar7 + 1;
           pPVar6 = *(Ped **)(iVar5 + 4 + (uint)bVar7 * 4);
         }
-        S169::FUN_00403be0(*(S169 **)((int)this + 8));
+        PedManager__UpdateAll(*(S169 **)((int)this + 8));
       }
       *(undefined4 *)((int)this + 8) = 0;
       *(undefined1 *)((int)this + 0x2c) = 1;
@@ -70318,7 +70318,7 @@ void __thiscall FUN_004c7b70(void)
     do {
       puVar8 = &local_4;
       local_4 = 2;
-      bitShiftLeft1(&stack0xffffffd0,(void *)0x22);
+      Decoder_ShiftLeft(&stack0xffffffd0,(void *)0x22);
       uVar10 = extraout_ECX;
       FUN_0041f980(&stack0xffffffcc,iVar6);
       Hud::DrawSprite(this_01,6,(void *)0x71,uVar10,puVar8);
@@ -70333,7 +70333,7 @@ void __thiscall FUN_004c7b70(void)
     }
     puVar8 = &local_4;
     local_4 = 2;
-    bitShiftLeft1(&stack0xffffffd0,(void *)0x22);
+    Decoder_ShiftLeft(&stack0xffffffd0,(void *)0x22);
     uVar10 = extraout_ECX_00;
     FUN_0041f980(&stack0xffffffcc,iVar6);
     Hud::DrawSprite(this_02,6,(void *)0x72,uVar10,puVar8);
@@ -70350,9 +70350,9 @@ void __thiscall FUN_004c7b70(void)
     uVar11 = 0;
     uVar10 = 0;
     pSVar9 = pSVar4;
-    bitShiftLeft1(&stack0xffffffd0,(void *)0x22);
+    Decoder_ShiftLeft(&stack0xffffffd0,(void *)0x22);
     pSVar7 = extraout_ECX_01;
-    bitShiftLeft1(&stack0xffffffcc,(void *)0x227);
+    Decoder_ShiftLeft(&stack0xffffffcc,(void *)0x227);
     FUN_004c7280(&gUString,pSVar7,pSVar4,pSVar9,puVar8,uVar10,uVar11,uVar12);
   }
 
@@ -70636,7 +70636,7 @@ void __thiscall DrawChat(void *this)
                   ((PlayerData *)&pPVar1->field_0x796,(char *)&gUString,
                    (ushort *)L"%s:%s_",pPVar1->string_Arr0x16,
                    &pPVar1->field_0x796,unaff_EDI);
-        FUN_003f15bc();
+        InitReplaySystem();
         return;
       }
       pPVar1 = Game::Game_FUN_0045a910(gGame);
@@ -70826,7 +70826,7 @@ void __thiscall Hud::S86_FUN_004c94f0(Hud *this)
       local_4 = (Hud *)0x2;
       FUN_0041f980(&stack0xffffffd8,this->field38_0x48);
       uVar7 = extraout_ECX_00;
-      bitShiftLeft1(&stack0xffffffd4,(void *)0x140);
+      Decoder_ShiftLeft(&stack0xffffffd4,(void *)0x140);
       DrawSprite(this_01,6,(void *)0xc,uVar7,uVar5);
       uVar5 = CONCAT22(extraout_var_02,_DAT_00672f98);
       local_4 = (Hud *)0x2;
@@ -70877,7 +70877,7 @@ void __thiscall FUN_004c9690(void *this)
     uVar5 = 5;
     local_4 = 8;
     pSVar3 = pSVar1;
-    bitShiftLeft1(&stack0xffffffe0,(void *)0x20);
+    Decoder_ShiftLeft(&stack0xffffffe0,(void *)0x20);
     pSVar2 = extraout_ECX;
     FUN_0041f980(&stack0xffffffdc,(0x280 - *(int *)((int)this + 0x84)) / 2);
     FUN_004c7280((int)this + 2,pSVar2,pSVar1,pSVar3,puVar4,uVar5,uVar6,uVar7);
@@ -70894,7 +70894,7 @@ void __thiscall FUN_004c96f0(void *this)
     uVar5 = 5;
     local_4 = 8;
     pSVar3 = pSVar1;
-    bitShiftLeft1(&stack0xffffffe0,(void *)0x10);
+    Decoder_ShiftLeft(&stack0xffffffe0,(void *)0x10);
     pSVar2 = extraout_ECX;
     FUN_0041f980(&stack0xffffffdc,(0x280 - *(int *)((int)this + 0xcc)) / 2);
     FUN_004c7280((int)this + 2,pSVar2,pSVar1,pSVar3,puVar4,uVar5,uVar6,uVar7);
@@ -71033,7 +71033,7 @@ void __thiscall FUN_004c9a40(void *this)
       pSVar4 = (S110 *)CONCAT22(uVar5,_DAT_00672f1c);
       local_4 = (void *)0x8;
       pSVar9 = pSVar4;
-      bitShiftLeft1(&stack0xffffffd8,(void *)0x52);
+      Decoder_ShiftLeft(&stack0xffffffd8,(void *)0x52);
       iVar3 = Font::GetStringWidth((wchar_t *)&gUString,sVar6);
       pSVar7 = extraout_ECX_00;
       FUN_0041f980(&stack0xffffffd4,0x27e - iVar3);
@@ -71056,7 +71056,7 @@ int __thiscall FUN_004c9b40(void *this,Car *param_1)
     uVar8 = 6;
     param_1 = (Car *)0x8;
     pSVar7 = pSVar6;
-    bitShiftLeft1(&stack0xffffffdc,(void *)0x7f);
+    Decoder_ShiftLeft(&stack0xffffffdc,(void *)0x7f);
     pSVar5 = extraout_ECX_00;
     FUN_0041f980(&stack0xffffffd8,
                  unaff_EDI -
@@ -71092,14 +71092,14 @@ void __thiscall FUN_004c9c20(void *this)
     iVar9 = FUN_0044b500(&pPVar4->Lives,0x20b,0x1c);
     pS161 = (SaveSlotAnimatedValue *)0x2;
     uVar13 = extraout_ECX_08;
-    bitShiftLeft1(&stack0xffffffb4,(void *)0x20);
+    Decoder_ShiftLeft(&stack0xffffffb4,(void *)0x20);
     uVar3 = extraout_ECX_09;
     FUN_0041f980(&stack0xffffffb0,iVar9 + -7);
     Hud::DrawSprite(this_02,6,(void *)0x11,uVar3,uVar13);
     iVar9 = FUN_0044b500(&pPVar4->MultiPlayer,0x20b,0xb);
     ppSVar7 = &pS161;
     pS161 = (SaveSlotAnimatedValue *)0x2;
-    bitShiftLeft1(&stack0xffffffb4,(void *)0x12);
+    Decoder_ShiftLeft(&stack0xffffffb4,(void *)0x12);
     uVar3 = extraout_ECX_10;
     FUN_0041f980(&stack0xffffffb0,iVar9 + -7);
     Hud::DrawSprite(this_03,6,(void *)0x12,uVar3,ppSVar7);
@@ -71118,7 +71118,7 @@ void __thiscall FUN_004c9c20(void *this)
           uVar13 = extraout_ECX_05;
           FUN_0041f980(&stack0xffffffb4,iVar9 + 10);
           uVar3 = extraout_ECX_06;
-          bitShiftLeft1(&stack0xffffffb0,(void *)0x8);
+          Decoder_ShiftLeft(&stack0xffffffb0,(void *)0x8);
           Hud::DrawSprite(this_01,6,(void *)0x10,uVar3,uVar13);
           bVar1 = Player::cPlayer_FUN_00434b20((Player *)&gPlayer_2);
           if (bVar1 == 0) {
@@ -71347,9 +71347,9 @@ void __thiscall FUN_004ca680(void *this)
     }
     iVar3 = Ped::GetPositionZ(this_01,(int)local_c);
     FloatDecoder(iVar3);
-    iVar3 = Ped::GetPositionY(this_01,(int)local_8);
+    iVar3 = Ped__GetYCoordinate(this_01,(int)local_8);
     FloatDecoder(iVar3);
-    iVar3 = Ped::GetPositionX(this_01,(int)local_4);
+    iVar3 = Ped__GetXCoordinate(this_01,(int)local_4);
     fVar4 = FloatDecoder(iVar3);
     PlayerData::ShowTextDisplay
               (this_02,(char *)&gUString,
@@ -71444,7 +71444,7 @@ HudArrow::HudArrow_FUN_004ca910(HudArrow *this,undefined4 param_1)
     _DAT_005ea828 = *puVar6;
     puVar6 = (undefined4 *)FUN_004340e0(uVar2,local_4);
     _DAT_005ea98c = *puVar6;
-    bitShiftLeft1(&param_1,(void *)0x0);
+    Decoder_ShiftLeft(&param_1,(void *)0x0);
     _DAT_005ea984 = param_1;
     DebugLog(0xfa7,"user.cpp",0x5ab);
   }
@@ -72028,7 +72028,7 @@ void FUN_004ccbd0(Ped *param_1,Ped *param_2,undefined4 param_3)
 
 
   if (DAT_00673940 == '\0') {
-    puVar7 = (undefined4 *)FUN_00403780(&DAT_00673c6c,&local_5c);
+    puVar7 = (undefined4 *)Texture_Find(&DAT_00673c6c,&local_5c);
     local_48._0_4_ = *puVar7;
     pSVar5 = S9::S9_FUN_00401b20((S9 *)&DAT_00673c70,(SpriteS1 *)&local_5c,
                                  (int *)&DAT_00673c3c);
@@ -72052,8 +72052,8 @@ void FUN_004ccbd0(Ped *param_1,Ped *param_2,undefined4 param_3)
       pSVar14 = (S110 *)local_54;
       bVar3 = Random(&gRandom,(int)&local_5c);
       this = (void *)CONCAT31(extraout_var_00,bVar3);
-      FUN_00401ae0(local_54 + 4,(short)this);
-      piVar6 = (int *)S110_FUN_00401b40(this,pSVar14,pvVar8);
+      Decoder_SetValue(local_54 + 4,(short)this);
+      piVar6 = (int *)Decoder_ProcessData(this,pSVar14,pvVar8);
       pvVar8 = WorldCoordinateToScreenCoord(&DAT_00673c34,local_54 + 8,piVar6);
       puVar10 = (undefined2 *)FUN_0040f540(&local_76,(int)pvVar8);
       local_70._12_2_ = *puVar10;
@@ -72092,7 +72092,7 @@ void FUN_004ccbd0(Ped *param_1,Ped *param_2,undefined4 param_3)
         local_48._0_4_ = local_30;
         local_48._4_4_ = local_2c;
         iVar12 = iVar12 + 1;
-        iVar9 = DecoderFloat(&local_74);
+        iVar9 = Decoder_DecodeFloat(&local_74);
       } while (iVar12 <= iVar9);
     }
 
@@ -72132,7 +72132,7 @@ void __thiscall FUN_004cd020(void *this)
           pPed = *(Ped **)((int)this + 0x24);
           this_00 = (Ped *)(pSVar11->S3_arr5031[0].Car)->field19_0x7c;
           if ((this_00 != pPed->ped3) && (this_00 != pPed)) {
-            iVar10 = Ped::GetCurrentState(this_00);
+            iVar10 = Ped__GetPedState(this_00);
             if ((iVar10 < 8) || (9 < iVar10)) {
               Weapon::SetTypeWeapons(pPed->SelectedWeapon,SNG);
             }
@@ -72140,7 +72140,7 @@ void __thiscall FUN_004cd020(void *this)
         }
       }
       local_3c[4] = local_3c[4] + '\x01';
-      iVar10 = DecoderFloat(&local_40);
+      iVar10 = Decoder_DecodeFloat(&local_40);
     } while ((int)(local_3c._4_4_ & 0xff) <= iVar10);
   }
 
@@ -72236,10 +72236,10 @@ LAB_004cf1bf:
           else {
             puVar14 = local_58;
             pPVar13 = (Ped *)&param_2;
-            piVar5 = (int *)S110_FUN_00401b40(&this->S3_arr5031[0].PositionX,
+            piVar5 = (int *)Decoder_ProcessData(&this->S3_arr5031[0].PositionX,
                                               (S110 *)&local_30.pPed,
                                               (void *)((int)&local_48 + 4));
-            pvVar6 = S110_FUN_00401b40(&this->S3_arr5031[0].PositionY,&local_30,
+            pvVar6 = Decoder_ProcessData(&this->S3_arr5031[0].PositionY,&local_30,
                                        &local_40);
             puVar7 = FUN_0040e8d0(&param_6,(undefined2 *)&param_6,pvVar6,piVar5)
             ;
@@ -72256,8 +72256,8 @@ LAB_004cf1bf:
           pPVar13 = param_5;
           pS110_1 = (S110 *)(*(int *)(iVar4 + 0x80) + 0x18);
           pS110 = (S110 *)(*(int *)(iVar4 + 0x80) + 0x14);
-          piVar5 = (int *)Ped::GetPositionY(param_5,(int)(local_38 + 4));
-          pS110_4 = (S110 *)Ped::GetPositionX(pPVar13,(int)local_38);
+          piVar5 = (int *)Ped__GetYCoordinate(param_5,(int)(local_38 + 4));
+          pS110_4 = (S110 *)Ped__GetXCoordinate(pPVar13,(int)local_38);
           FUN_0042a6b0(local_50,(undefined4 *)local_50,pS110_4,piVar5,pS110,
                        pS110_1);
           if (bVar3) {
@@ -72326,10 +72326,10 @@ LAB_004cf1bf:
       if (iVar4 == 0) {
         puVar14 = local_58;
         pPVar13 = (Ped *)&param_2;
-        piVar5 = (int *)S110_FUN_00401b40(&this->S3_arr5031[0].PositionX,
+        piVar5 = (int *)Decoder_ProcessData(&this->S3_arr5031[0].PositionX,
                                           (S110 *)local_38,
                                           (void *)((int)&local_48 + 4));
-        pvVar6 = S110_FUN_00401b40(&this->S3_arr5031[0].PositionY,
+        pvVar6 = Decoder_ProcessData(&this->S3_arr5031[0].PositionY,
                                    (S110 *)(local_38 + 4),&local_40);
         puVar7 = FUN_0040e8d0(&param_6,(undefined2 *)&param_6,pvVar6,piVar5);
         psVar8 = (short *)FUN_0040e5d0(puVar7,pPVar13,(int)puVar14);
@@ -72349,10 +72349,10 @@ LAB_004cf1bf:
         if (this == pSVar1) goto joined_r0x004cf130;
         puVar14 = local_58;
         pPVar13 = (Ped *)(local_58 + 3);
-        piVar5 = (int *)S110_FUN_00401b40(&this->S3_arr5031[0].PositionX,
+        piVar5 = (int *)Decoder_ProcessData(&this->S3_arr5031[0].PositionX,
                                           &local_30,(void *)((int)&local_48 + 4)
                                          );
-        pvVar6 = S110_FUN_00401b40(&this->S3_arr5031[0].PositionY,
+        pvVar6 = Decoder_ProcessData(&this->S3_arr5031[0].PositionY,
                                    (S110 *)&local_30.pPed,&local_40);
         puVar7 = FUN_0040e8d0(this_00,local_50,pvVar6,piVar5);
         psVar8 = (short *)FUN_0040e5d0(puVar7,pPVar13,(int)puVar14);
@@ -72377,14 +72377,14 @@ void __thiscall FUN_004cf380(void *this,char param_1,SpriteS1 *param_2)
   if (param_1 == '\0') {
     puVar9 = &param_2->S3_arr5031[0].PositionX;
     puVar7 = (undefined4 *)
-             S110_FUN_00401b40(puVar9,(S110 *)(local_5c + 4),&DAT_00673ac8);
+             Decoder_ProcessData(puVar9,(S110 *)(local_5c + 4),&DAT_00673ac8);
     uVar11 = *puVar7;
     pSVar8 = S9::S9_FUN_00401b20((S9 *)puVar9,(SpriteS1 *)(local_5c + 4),
                                  (int *)&DAT_00673ac8);
     local_70._0_4_ = pSVar8->FirstElement;
     puVar9 = &param_2->S3_arr5031[0].PositionY;
     puVar7 = (undefined4 *)
-             S110_FUN_00401b40(puVar9,(S110 *)(local_5c + 4),&DAT_00673ac8);
+             Decoder_ProcessData(puVar9,(S110 *)(local_5c + 4),&DAT_00673ac8);
     local_70._4_4_ = *puVar7;
     pSVar8 = S9::S9_FUN_00401b20((S9 *)puVar9,(SpriteS1 *)(local_5c + 4),
                                  (int *)&DAT_00673ac8);
@@ -72394,9 +72394,9 @@ void __thiscall FUN_004cf380(void *this,char param_1,SpriteS1 *param_2)
         if (param_2 != pSVar8) {
           uVar11 = Turrel::S72_FUN_004be7c0(_gTurrel,(int)pSVar8);
           if ((char)uVar11 == '\0') {
-            piVar12 = (int *)S110_FUN_00401b40(&pSVar8->S3_arr5031[0].PositionX,
+            piVar12 = (int *)Decoder_ProcessData(&pSVar8->S3_arr5031[0].PositionX,
                                                (S110 *)local_48,pS110);
-            pvVar13 = S110_FUN_00401b40(&pSVar8->S3_arr5031[0].PositionY,
+            pvVar13 = Decoder_ProcessData(&pSVar8->S3_arr5031[0].PositionY,
                                         (S110 *)(local_48 + 4),puVar7);
             puVar14 = FUN_0040e8d0(local_70,(undefined2 *)local_70,pvVar13,
                                    piVar12);
@@ -72570,8 +72570,8 @@ void __thiscall FUN_004d0530(void *this)
         puVar18 = (undefined2 *)((int)&uStack_1c + 2);
         FUN_004cca90(pPed,puVar18);
         puVar23 = (undefined4 *)Ped::GetPositionZ(pPed,(int)&stack0xffffffec);
-        pSStack_18 = (SpriteS1 *)Ped::GetPositionY(pPed,(int)&stack0xfffffff0);
-        pSVar8 = (SpriteS1 *)Ped::GetPositionX(pPed,(int)&stack0xfffffff4);
+        pSStack_18 = (SpriteS1 *)Ped__GetYCoordinate(pPed,(int)&stack0xfffffff0);
+        pSVar8 = (SpriteS1 *)Ped__GetXCoordinate(pPed,(int)&stack0xfffffff4);
         pSVar13 = pSVar8;
         FUN_00435c20(*(void **)((int)this + 0x24),(undefined4 *)&stack0xfffffff8
                     );
@@ -72608,7 +72608,7 @@ void __thiscall FUN_004d0530(void *this)
 
       if (bVar6) {
         iVar22 = *(int *)((int)this + 0x24);
-        iVar19 = Ped::GetCurrentState(*(Ped **)(iVar22 + 0x198));
+        iVar19 = Ped__GetPedState(*(Ped **)(iVar22 + 0x198));
         if ((7 < iVar19) && (iVar19 < 10)) {
           *(undefined4 *)(iVar22 + 0x198) = 0;
           return;
@@ -73071,14 +73071,14 @@ void switchD_004d0d02::caseD_d(void)
     }
 
   if (bVar2) {
-    FUN_00406450(buffer,(undefined4 *)&DAT_00673e30);
-    iVar5 = FUN_00406550((int)buffer);
+    Network_SendData(buffer,(undefined4 *)&DAT_00673e30);
+    iVar5 = String_Hash1((int)buffer);
     wsprintfA(aCStack_20330,"data\\%s",iVar5);
     MapGm::SetMapName(&gMapGm,aCStack_20330);
-    iVar5 = FUN_00406570((int)buffer);
+    iVar5 = String_Hash2((int)buffer);
     wsprintfA(aCStack_20330,"data\\%s",iVar5);
     MapGm::SetStyleName(&gMapGm,aCStack_20330);
-    iVar5 = FUN_00406590((int)buffer);
+    iVar5 = String_Hash3((int)buffer);
     wsprintfA(aCStack_20330,"data\\%s",iVar5);
     MapGm::SetScriptName(&gMapGm,aCStack_20330);
     uVar7 = _DAT_00673f4c;
@@ -74126,7 +74126,7 @@ void FUN_004d696f(void)
 void FUN_004d6a3f(void)
 
 
-void __chkstk(void)
+void Stack_Check(void)
 
 
   if (in_EAX < 0x1000) {
@@ -79093,7 +79093,7 @@ void FUN_004deddd(DWORD param_1)
       sVar4 = _strlen(_Dest);
       sVar5 = _strlen(*(char **)(iVar8 + 0x595894));
       iVar1 = -(sVar4 + sVar5 + 0x1f & 0xfffffffc);
-      *(char **)(local_110 + iVar1 + -0x10) = "Runtime Error!\n\nProgram: ";
+      *(char **)(local_110 + iVar1 + -0x10) = "Runtime ErrorHandler_Throw!\n\nProgram: ";
       *(CHAR **)(local_110 + iVar1 + -0x14) = local_110 + iVar1 + -0xc;
       pCVar6 = local_110 + iVar1 + -0x18;
       pCVar6[0] = -0x1a;
@@ -90781,7 +90781,7 @@ void __fastcall FUN_0056dc78(undefined4 param_1,int param_2)
         DVar5 != 0xffffffff)) &&
        (DVar5 = GetFileAttributesA(lpReturnedString), pCVar15 = lpReturnedString
        , DVar5 != 0xffffffff)) break;
-    MessageBoXErrorOpenFile(lpReturnedString_00 + 0x410,pCVar15);
+    UI_ShowFileError(lpReturnedString_00 + 0x410,pCVar15);
   }
 
 void __thiscall FUN_0056dcab(void)
