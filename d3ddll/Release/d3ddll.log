@@ -1,0 +1,40 @@
+﻿  d3ddll.cpp
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(363,28): warning C4244: =: преобразование "const DWORD" в "u8", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(369,12): warning C4244: return: преобразование "const DWORD" в "char", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(422,20): warning C4018: >: несоответствие типов со знаком и без знака
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(436,20): warning C4018: >: несоответствие типов со знаком и без знака
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(437,19): warning C4018: >: несоответствие типов со знаком и без знака
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(438,21): warning C4018: >: несоответствие типов со знаком и без знака
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(439,22): warning C4018: >: несоответствие типов со знаком и без знака
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(445,40): warning C4018: >: несоответствие типов со знаком и без знака
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(446,40): warning C4018: >: несоответствие типов со знаком и без знака
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(675,9): warning C4005: HIBYTE: изменение макроопределения
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(207,9):
+      см. предыдущее определение "HIBYTE"
+  
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(731,35): warning C4244: =: преобразование "double" в "DWORD", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(732,66): warning C4244: =: преобразование "double" в "DWORD", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(763,27): warning C4018: <: несоответствие типов со знаком и без знака
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(1368,41): warning C4244: =: преобразование "double" в "DWORD", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(1385,31): warning C4018: <: несоответствие типов со знаком и без знака
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(1527,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(1528,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(2209,65): warning C4244: =: преобразование "DWORD" в "D3DVALUE", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(2210,61): warning C4244: =: преобразование "DWORD" в "D3DVALUE", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(2211,61): warning C4244: =: преобразование "DWORD" в "D3DVALUE", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(2212,60): warning C4244: =: преобразование "DWORD" в "D3DVALUE", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(2213,66): warning C4244: =: преобразование "DWORD" в "D3DVALUE", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(2465,27): warning C4018: <: несоответствие типов со знаком и без знака
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(2486,31): warning C4305: =: усечение из "unsigned int" в "BYTE"
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(2486,31): warning C4309: =: усечение константного значения
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(2487,31): warning C4244: =: преобразование "WORD" в "BYTE", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(2858,64): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(2863,76): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(2864,77): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(2865,55): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(2867,75): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(2871,40): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(3000,9): warning C4244: return: преобразование "unsigned long" в "WORD", возможна потеря данных
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(3077,27): warning C4018: <: несоответствие типов со знаком и без знака
+F:\Github\GTA2_RE\d3ddll\d3ddll.cpp(3248,40): warning C4244: =: преобразование "DWORD" в "u8", возможна потеря данных
+  d3ddll.vcxproj -> F:\Github\GTA2_RE\d3ddll\Release\d3ddll.dll
