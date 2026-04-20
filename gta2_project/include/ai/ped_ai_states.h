@@ -3,27 +3,7 @@
 
 #include "../types.h"
 
-/**
- * @brief Основные состояния пешехода (Finite State Machine)
- * Определяют текущее поведение и доступные действия.
- */
-typedef enum PedState {
-    PED_STATE_IDLE = 0,       // Бездействие, ожидание
-    PED_STATE_WALK = 1,       // Обычная ходьба
-    PED_STATE_RUN = 2,        // Бег (спешка, погоня)
-    PED_STATE_FLEE = 3,       // Побег от угрозы
-    PED_STATE_ATTACK = 4,     // Атака цели
-    PED_STATE_ENTER_CAR = 5,  // Посадка в машину
-    PED_STATE_EXIT_CAR = 6,   // Выход из машины
-    PED_STATE_DRIVE = 7,      // Вождение автомобиля
-    PED_STATE_PASSENGER = 8,  // Пассажир в машине
-    PED_STATE_DIE = 9,        // Процесс смерти (анимация)
-    PED_STATE_DEAD = 10,      // Мёртв (тело)
-    PED_STATE_STUNNED = 11,   // Оглушён (взрыв, удар)
-    PED_STATE_HANDSUP = 12,   // Руки вверх (сдача полиции)
-    PED_STATE_WATCH = 13,     // Наблюдение за событием
-    PED_STATE_TALK = 14       // Разговор с другим педом
-} PedState;
+// PedState уже определен в enums.h, используем его напрямую
 
 /**
  * @brief Типы задач в очереди действий
@@ -61,11 +41,11 @@ typedef enum TaskPriority {
  * Влияют на реакцию пешехода в различных ситуациях.
  */
 typedef enum PedPersonality {
-    PERSONALITY_COWARD = 0,   // Легко пугается, быстро бежит
-    PERSONALITY_NORMAL = 1,   // Стандартное поведение
-    PERSONALITY_BRAVE = 2,    // Редко убегает, часто атакует
-    PERSONALITY_AGGRESSIVE = 3, // Быстро злится, любит драки
-    PERSONALITY_POLICE = 4    // Специфичное для копов
+    PERSONALITY_COWARD = 0,   // Трус: легко пугается, убегает
+    PERSONALITY_NORMAL = 1,   // Обычный: стандартное поведение
+    PERSONALITY_BRAVE = 2,    // Смелый: реже убегает, чаще атакует
+    PERSONALITY_AGGRESSIVE = 3, // Агрессивный: быстро злится, атакует
+    PERSONALITY_POLICE = 4    // Полиция: следует закону, арестовывает
 } PedPersonality;
 
 #endif // PED_AI_STATES_H

@@ -1,9 +1,9 @@
 #ifndef COLLISION_H
 #define COLLISION_H
 
+#include "types.h"
 #include "math_types/vector2d.h"
 #include "math_types/rect2d.h"
-#include "../types.h"
 
 // Предварительное объявление структуры Car
 struct Car;

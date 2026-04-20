@@ -5,7 +5,7 @@
 #include "types.h"
 #include "enums.h"
 #include "forward_declarations.h"
-#include "structures_s.h"
+// #include "structures_s.h"  // ОТКЛЮЧЕНО: содержит сырые данные IDA, конфликты с новыми структурами
 #include "game.h"
 #include "player.h"
 #include "car.h"

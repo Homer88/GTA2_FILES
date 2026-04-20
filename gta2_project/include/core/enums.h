@@ -142,7 +142,7 @@ typedef enum WeaponType {
 } WeaponType;
 
 // MenuActions - действия меню
-typedef enum MenuActions : int8_t {
+typedef enum {
     MENUACTION_NONE = 0,           // Нет действия
     MENUACTION_CHANGEPAGE = 1,     // Сменить страницу меню
     MENUACTION_SETPLAYERNAME = 2,  // Установить имя игрока
@@ -154,7 +154,7 @@ typedef enum MenuActions : int8_t {
 } MenuActions;
 
 // MenuPic - типы изображений меню
-typedef enum MenuPic : int8_t {
+typedef enum {
     MENUPIC_OPTIONS = 0,       // Опции
     MENUPIC_PLAY = 1,          // Играть
     MENUPIC_QUIT = 2,          // Выход
