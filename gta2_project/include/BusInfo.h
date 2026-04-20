@@ -1,83 +1,15 @@
-// Структура: BusInfo
-// Оригинал: S285
-// Размер: ~68 байт
+// Структура: BusInfo (S82)
+// Общественный транспорт (автобусы)
+// Размер: ~56 байт
 
 #ifndef BUSINFO_H
 #define BUSINFO_H
 
-// Structure definition for S285
-// Found in original gta2.exe.h
+#include "structures_s.h"
 
-S285 {
-void *field0_0x0;
-    undefined field1_0x4;
-    undefined field2_0x5;
-    undefined field3_0x6;
-    undefined field4_0x7;
-    undefined field5_0x8;
-    undefined field6_0x9;
-    undefined field7_0xa;
-    undefined field8_0xb;
-    undefined field9_0xc;
-    undefined field10_0xd;
-    undefined field11_0xe;
-    undefined field12_0xf;
-    undefined field13_0x10;
-    undefined field14_0x11;
-    undefined field15_0x12;
-    undefined field16_0x13;
-    undefined field17_0x14;
-    undefined field18_0x15;
-    undefined field19_0x16;
-    undefined field20_0x17;
-    undefined field21_0x18;
-    undefined field22_0x19;
-    undefined field23_0x1a;
-    undefined field24_0x1b;
-    undefined field25_0x1c;
-    undefined field26_0x1d;
-    undefined field27_0x1e;
-    undefined field28_0x1f;
-    undefined field29_0x20;
-    undefined field30_0x21;
-    undefined field31_0x22;
-    undefined field32_0x23;
-    undefined field33_0x24;
-    undefined field34_0x25;
-    undefined field35_0x26;
-    undefined field36_0x27;
-    undefined field37_0x28;
-    undefined field38_0x29;
-    undefined field39_0x2a;
-    undefined field40_0x2b;
-    undefined field41_0x2c;
-    undefined field42_0x2d;
-    undefined field43_0x2e;
-    undefined field44_0x2f;
-    undefined field45_0x30;
-    undefined field46_0x31;
-    undefined field47_0x32;
-    undefined field48_0x33;
-    undefined field49_0x34;
-    undefined field50_0x35;
-    undefined field51_0x36;
-    undefined field52_0x37;
-    undefined field53_0x38;
-    undefined field54_0x39;
-    undefined field55_0x3a;
-    undefined field56_0x3b;
-    undefined field57_0x3c;
-    undefined field58_0x3d;
-    undefined field59_0x3e;
-    undefined field60_0x3f;
-    undefined field61_0x40;
-    undefined field62_0x41;
-    undefined field63_0x42;
-    undefined field64_0x43;
-    undefined field65_0x44;
-    undefined field66_0x45;
-    undefined field67_0x46;
-    undefined field68_0x47;
-};
+// Structure definition for S82 (Public Transport Vehicle)
+// Исправлено: RouteID заменён на RouteNodesPtr (указатель на массив узлов маршрута)
+
+typedef struct S82 BusInfo;
 
 #endif // BUSINFO_H
