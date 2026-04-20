@@ -1,5 +1,33 @@
 ```
-# Compiled and binary files
+# Dependencies
+node_modules/
+__pycache__/
+*.egg-info/
+dist/
+build/
+target/
+.gradle/
+.cargo/
+deps/
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.env
+.env.local
+.env.*
+.pytest_cache/
+.mypy_cache/
+.coverage
+coverage/
+
+# Compiled files
+*.class
 *.o
 *.obj
 *.exe
@@ -8,58 +36,7 @@
 *.a
 *.out
 
-# Dependencies
-node_modules/
-venv/
-.venv/
-__pycache__/
-dist/
-build/
-target/
-.gradle/
-
-# Editor/IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
-
-# System files
-.DS_Store
-Thumbs.db
-.env
-.env.local
-*.env.*
-
-# Logs
-*.log
-
-# Coverage
-coverage/
-htmlcov/
-.coverage
-
-# Python specific
-*.pyc
-*.pyo
-*.pyd
-__pycache__/
-*.egg-info/
-.Python
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Build outputs
-*.class
-*.jar
-*.war
-*.ear
-*.iml
-*.ipr
-*.iws
-
-# Compressed files
+# Archives
 *.zip
 *.gz
 *.tar
@@ -82,4 +59,20 @@ pip-delete-this-directory.txt
 *.tar.bz2
 *.tar.xz
 *.tar.zst
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*.tmp
+.vscode/
+.idea/
+*.swp
+*~
 ```
