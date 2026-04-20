@@ -3,6 +3,8 @@
 
 #include <windows.h>
 #include <stdio.h>
+#include <stdbool.h>
+#include <float.h>
 
 // Basic types from Ghidra
 typedef unsigned char   undefined;
@@ -34,5 +36,17 @@ typedef __time64_t      time_t;
 // Pointer types
 typedef void* pointer32;
 typedef pointer32 ImageBaseOffset32;
+
+// Standard numeric types for GTA2
+typedef signed char     s8;
+typedef signed short    s16;
+typedef signed int      s32;
+typedef signed long long s64;
+typedef unsigned char   u8;
+typedef unsigned short  u16;
+typedef unsigned int    u32;
+typedef unsigned long long u64;
+typedef float           f32;
+typedef double          f64;
 
 #endif // TYPES_H

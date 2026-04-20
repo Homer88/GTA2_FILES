@@ -4,8 +4,8 @@
 #include "types.h"
 #include "enums.h"
 #include "forward_declarations.h"
-#include "Rect2D.h"       // Для BoundingBox
-#include "CollisionBox.h" // Для LastCollision
+#include "math_types/rect2d.h"  // Для BoundingBox (OBB)
+#include "collision.h"          // Для CollisionInfo
 
 // ============================================================================
 // Вспомогательные структуры
@@ -131,9 +131,9 @@ struct Car {
     u32 UpgradeSoundID;               // ID звука апгрейда (турбо, нитро)
     u32 Reserved7;                    // Выравнивание до конца структуры (field52_0xb8 - field55_0xbb)
 
-    // === Блок 7: Коллизии (добавлено для интеграции с CollisionBox) ===
-    Rect2D BoundingBox;               // Ограничивающая коробка для коллизий
-    struct CollisionBox* LastCollision; // Последняя detected коллизия
+    // === Блок 7: Коллизии (интеграция с collision.h) ===
+    Rect2D BoundingBox;               // Ограничивающая коробка для коллизий (OBB)
+    CollisionInfo LastCollision;      // Информация о последнем столкновении
 };
 
 // Car function declarations

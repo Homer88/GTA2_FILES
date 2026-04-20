@@ -4,446 +4,266 @@
 #include "types.h"
 #include "enums.h"
 #include "forward_declarations.h"
+#include "math_types/vector2d.h"
 
 #pragma pack(push, 1)
 
-struct Weapon {
-    undefined4 field0_0x0;
-    undefined4 field1_0x4;
-    undefined4 field2_0x8;
-    undefined4 field3_0xc;
-    undefined4 field4_0x10;
-    undefined4 field5_0x14;
-    undefined4 field6_0x18;
-    undefined4 field7_0x1c;
-    undefined4 field8_0x20;
-    undefined4 field9_0x24;
-    undefined4 field10_0x28;
-};
-
-struct Gang {
-    undefined4 field0_0x0;
-    undefined4 field1_0x4;
-    undefined4 field2_0x8;
-    undefined4 field3_0xc;
-    undefined4 field4_0x10;
-    undefined4 field5_0x14;
-    undefined4 field6_0x18;
-    undefined4 field7_0x1c;
-    undefined4 field8_0x20;
-    undefined4 field9_0x24;
-    undefined4 field10_0x28;
-    undefined4 field11_0x2c;
-    undefined4 field12_0x30;
-    undefined4 field13_0x34;
-    undefined4 field14_0x38;
-    undefined4 field15_0x3c;
-    undefined4 field16_0x40;
-    undefined4 field17_0x44;
-    undefined4 field18_0x48;
-    undefined4 field19_0x4c;
-    undefined4 field20_0x50;
-    undefined4 field21_0x54;
-    undefined4 field22_0x58;
-    undefined4 field23_0x5c;
-    undefined4 field24_0x60;
-    undefined4 field25_0x64;
-    undefined4 field26_0x68;
-    undefined4 field27_0x6c;
-    undefined4 field28_0x70;
-    undefined4 field29_0x74;
-    undefined4 field30_0x78;
-    undefined4 field31_0x7c;
-    undefined4 field32_0x80;
-    undefined4 field33_0x84;
-    undefined4 field34_0x88;
-    undefined4 field35_0x8c;
-    undefined4 field36_0x90;
-    undefined4 field37_0x94;
-    undefined4 field38_0x98;
-    undefined4 field39_0x9c;
-    undefined4 field40_0xa0;
-    undefined4 field41_0xa4;
-    undefined4 field42_0xa8;
-    undefined4 field43_0xac;
-    undefined4 field44_0xb0;
-    undefined4 field45_0xb4;
-    undefined4 field46_0xb8;
-    undefined4 field47_0xbc;
-    undefined4 field48_0xc0;
-    undefined4 field49_0xc4;
-    undefined4 field50_0xc8;
-    undefined4 field51_0xcc;
-    undefined4 field52_0xd0;
-    undefined4 field53_0xd4;
-    undefined4 field54_0xd8;
-    undefined4 field55_0xdc;
-    undefined4 field56_0xe0;
-    undefined4 field57_0xe4;
-    undefined4 field58_0xe8;
-    undefined4 field59_0xec;
-    undefined4 field60_0xf0;
-    undefined4 field61_0xf4;
-    undefined4 field62_0xf8;
-    undefined4 field63_0xfc;
-    undefined4 field64_0x100;
-    undefined4 field65_0x104;
-    undefined4 field66_0x108;
-    undefined4 field67_0x10c;
-    undefined4 field68_0x110;
-    undefined4 field69_0x114;
-    undefined4 field70_0x118;
-    undefined4 field71_0x11c;
-    undefined4 field72_0x120;
-    undefined4 field73_0x124;
-    undefined4 field74_0x128;
-    undefined4 field75_0x12c;
-    undefined4 field76_0x130;
-    undefined4 field77_0x134;
-    undefined4 field78_0x138;
-    undefined4 field79_0x13c;
-    undefined4 field80_0x140;
-    undefined4 field81_0x144;
-    undefined4 field82_0x148;
-    undefined4 field83_0x14c;
-    undefined4 field84_0x150;
-    undefined4 field85_0x154;
-    undefined4 field86_0x158;
-    undefined4 field87_0x15c;
-    undefined4 field88_0x160;
-    undefined4 field89_0x164;
-    undefined4 field90_0x168;
-    undefined4 field91_0x16c;
-    undefined4 field92_0x170;
-    undefined4 field93_0x174;
-    undefined4 field94_0x178;
-    undefined4 field95_0x17c;
-    undefined4 field96_0x180;
-    undefined4 field97_0x184;
-    undefined4 field98_0x188;
-    undefined4 field99_0x18c;
-    undefined4 field100_0x190;
-    undefined4 field101_0x194;
-    undefined4 field102_0x198;
-    undefined4 field103_0x19c;
-    undefined4 field104_0x1a0;
-    undefined4 field105_0x1a4;
-    undefined4 field106_0x1a8;
-    undefined4 field107_0x1ac;
-    undefined4 field108_0x1b0;
-    undefined4 field109_0x1b4;
-    undefined4 field110_0x1b8;
-    undefined4 field111_0x1bc;
-    undefined4 field112_0x1c0;
-    undefined4 field113_0x1c4;
-    undefined4 field114_0x1c8;
-    undefined4 field115_0x1cc;
-    undefined4 field116_0x1d0;
-    undefined4 field117_0x1d4;
-    undefined4 field118_0x1d8;
-    undefined4 field119_0x1dc;
-    undefined4 field120_0x1e0;
-    undefined4 field121_0x1e4;
-    undefined4 field122_0x1e8;
-    undefined4 field123_0x1ec;
-    undefined4 field124_0x1f0;
-    undefined4 field125_0x1f4;
-    undefined4 field126_0x1f8;
-    undefined4 field127_0x1fc;
-    undefined4 field128_0x200;
-    undefined4 field129_0x204;
-    undefined4 field130_0x208;
-    undefined4 field131_0x20c;
-    undefined4 field132_0x210;
-    undefined4 field133_0x214;
-    undefined4 field134_0x218;
-    undefined4 field135_0x21c;
-    undefined4 field136_0x220;
-    undefined4 field137_0x224;
-    undefined4 field138_0x228;
-    undefined4 field139_0x22c;
-    undefined4 field140_0x230;
-    undefined4 field141_0x234;
-    undefined4 field142_0x238;
-    undefined4 field143_0x23c;
-    undefined4 field144_0x240;
-    undefined4 field145_0x244;
-    undefined4 field146_0x248;
-    undefined4 field147_0x24c;
-    undefined4 field148_0x250;
-    undefined4 field149_0x254;
-    undefined4 field150_0x258;
-    undefined4 field151_0x25c;
-    undefined4 field152_0x260;
-    undefined4 field153_0x264;
-    undefined4 field154_0x268;
-    undefined4 field155_0x26c;
-    undefined4 field156_0x270;
-    undefined4 field157_0x274;
-    undefined4 field158_0x278;
-    undefined4 field159_0x27c;
-    undefined4 field160_0x280;
-    undefined4 field161_0x284;
-    undefined4 field162_0x288;
-    undefined4 field163_0x28c;
-    undefined4 field164_0x290;
-    undefined4 field165_0x294;
-    undefined4 field166_0x298;
-    undefined4 field167_0x29c;
-    undefined4 field168_0x2a0;
-    undefined4 field169_0x2a4;
-    undefined4 field170_0x2a8;
-    undefined4 field171_0x2ac;
-    undefined4 field172_0x2b0;
-    undefined4 field173_0x2b4;
-    undefined4 field174_0x2b8;
-    undefined4 field175_0x2bc;
-    undefined4 field176_0x2c0;
-    undefined4 field177_0x2c4;
-    undefined4 field178_0x2c8;
-    undefined4 field179_0x2cc;
-    undefined4 field180_0x2d0;
-    undefined4 field181_0x2d4;
-    undefined4 field182_0x2d8;
-    undefined4 field183_0x2dc;
-    undefined4 field184_0x2e0;
-    undefined4 field185_0x2e4;
-    undefined4 field186_0x2e8;
-    undefined4 field187_0x2ec;
-    undefined4 field188_0x2f0;
-    undefined4 field189_0x2f4;
-    undefined4 field190_0x2f8;
-    undefined4 field191_0x2fc;
-};
-
-struct S169 {
-    // Add fields as needed
-};
-
-struct GameObject {
-    undefined4 field0_0x0;
-    undefined4 field1_0x4;
-    undefined4 field2_0x8;
-    undefined4 field3_0xc;
-    undefined4 field4_0x10;
-    undefined4 field5_0x14;
-    undefined4 field6_0x18;
-    undefined4 field7_0x1c;
-    undefined4 field8_0x20;
-    undefined4 field9_0x24;
-    undefined4 field10_0x28;
-    undefined4 field11_0x2c;
-    undefined4 field12_0x30;
-    undefined4 field13_0x34;
-    undefined4 field14_0x38;
-    undefined4 field15_0x3c;
-    undefined4 field16_0x40;
-    undefined4 field17_0x44;
-    undefined4 field18_0x48;
-    undefined4 field19_0x4c;
-    undefined4 field20_0x50;
-    undefined4 field21_0x54;
-    undefined4 field22_0x58;
-    undefined4 field23_0x5c;
-    undefined4 field24_0x60;
-    undefined4 field25_0x64;
-    undefined4 field26_0x68;
-    undefined4 field27_0x6c;
-    undefined4 field28_0x70;
-    undefined4 field29_0x74;
-    undefined4 field30_0x78;
-    undefined4 field31_0x7c;
-    undefined4 field32_0x80;
-    undefined4 field33_0x84;
-    undefined4 field34_0x88;
-    undefined4 field35_0x8c;
-    undefined4 field36_0x90;
-    undefined4 field37_0x94;
-    undefined4 field38_0x98;
-    undefined4 field39_0x9c;
-    undefined4 field40_0xa0;
-    undefined4 field41_0xa4;
-    undefined4 field42_0xa8;
-    undefined4 field43_0xac;
-    undefined4 field44_0xb0;
-    undefined4 field45_0xb4;
-    undefined4 field46_0xb8;
-    undefined4 field47_0xbc;
-    undefined4 field48_0xc0;
-    undefined4 field49_0xc4;
-    undefined4 field50_0xc8;
-    undefined4 field51_0xcc;
-    undefined4 field52_0xd0;
-    undefined4 field53_0xd4;
-    undefined4 field54_0xd8;
-    undefined4 field55_0xdc;
-    undefined4 field56_0xe0;
-    undefined4 field57_0xe4;
-    undefined4 field58_0xe8;
-    undefined4 field59_0xec;
-    undefined4 field60_0xf0;
-    undefined4 field61_0xf4;
-    undefined4 field62_0xf8;
-    undefined4 field63_0xfc;
-};
-
+// ============================================================================
+// S200 - Элемент очереди задач (3 байта)
+// ============================================================================
 struct S200 {
-    undefined4 field0_0x0;
-    undefined4 field1_0x4;
-    undefined4 field2_0x8;
-    undefined4 field3_0xc;
+    u8 X;           // 0x0 - Координата X или параметр задачи
+    u8 Y;           // 0x1 - Координата Y или параметр задачи
+    u8 Param;       // 0x2 - Параметр задачи (тип действия)
 };
 
-struct Ped {
-    struct S200 objective_queue[50];  // Массив целей/задач
-    int counter;                       // Счетчик
-    char reserved_0x9a[146];           // Резерв
-    int16_t field_0x12c;
-    int16_t field_0x12e;
-    int16_t field_0x130;
-    int16_t field_0x132;
-    int16_t field_0x134;
-    int8_t field_0x136;
-    int8_t field_0x137;
-    int32_t field_0x138;
-    int32_t field_0x13c;
-    int32_t field_0x140;
-    struct Ped *sPed1;                 // Связанный пед 1
-    struct Ped *driver;                // Водитель (если пед в машине)
-    struct Ped *linked_ped;            // Связанный пед
-    struct Car *car;                   // Машина для анимации входа/выхода
-    struct Car *objective_target_car;  // Целевая машина для задачи
-    struct Car *target_car_for_enter;  // Машина для входа
-    struct Player *player;             // Игрок
-    struct Ped *next_ped;              // Следующий пед в списке
-    struct S169 *pS169;                // Неизвестная структура
-    int8_t field_0x168;
-    int8_t field_0x169;
-    int8_t field_0x16a;
-    int8_t field_0x16b;
-    struct Car *car_current;           // Текущая машина
-    struct Weapon *selected_weapon;    // Выбранное оружие
-    struct Weapon *weapon1;            // Оружие 1
-    struct Weapon *weapon2;            // Оружие 2
-    struct Gang *gang;                 // Банда
-    struct Ped *ped_driver;            // Пед-водитель
-    int32_t field_0x184;
-    struct Ped *last_char_punched;     // Последний ударенный персонаж
-    int32_t field_0x18c;
-    int32_t field_0x190;
-    int32_t field_0x194;
-    struct Ped *ped3;                  // Пед 3
-    struct Gang *gang1;                // Банда 1
-    int32_t field_0x1a0;
-    int32_t field_0x1a4;
-    int32_t field_0x1a8;
-    int position_x;                    // Позиция X
-    int position_y;                    // Позиция Y
-    int position_z;                    // Позиция Z
-    struct Ped *pPed;                  // Указатель на педа
-    void *field_0x1dc;
-    void *field_0x1e0;
-    void *field_0x1e4;
-    void *field_0x1e8;
-    void *field_0x1ec;
-    int32_t field_0x1f0;
-    int32_t field_0x1f4;
-    struct SpriteS1 *sprite_s1;        // Спрайт
-    struct Car *car_1;
-    struct Car *car_2;
-    int32_t field_0x200;
-    int32_t field_0x204;
-    int32_t field_0x208;
-    int32_t field_0x20c;
-    int32_t field_0x210;
-    int32_t field_0x214;
-    int32_t field_0x218;
-    int id;                            // ID персонажа
-    int ped_id;                        // ID педа
-    int16_t invulnerability;           // Невосприимчивость (видимость)
-    int16_t police_star;               // Звезды полиции
-    int16_t field_0x224;
-    uint16_t field_0x226;
-    int16_t field_0x228;
-    int16_t field_0x22a;
-    int16_t field_0x22c;
-    int16_t health;                    // Здоровье
-    int16_t objective_timer;           // Таймер задачи
-    int16_t car_state_timer;           // Таймер состояния машины
-    enum PedFlags flags;               // Флаги педа
-    int8_t field_0x234;
-    int8_t field_0x235;
-    int8_t field_0x236;
-    int32_t field_0x238;
-    int8_t damage_state;               // Состояние повреждений
-    int8_t exit_anim_state;            // Состояние анимации выхода
-    int8_t field_0x23f;
-    int8_t field_0x240;
-    int8_t field_0x241;
-    int8_t field_0x242;
-    int8_t field_0x243;
-    int32_t field_0x244;
-    int32_t field_0x248;
-    int8_t field_0x24c;
-    int8_t field_0x24d;
-    int8_t field_0x24e;
-    int8_t field_0x24f;
-    enum SearchType search_type;       // Тип поиска
-    int8_t index_ped;                  // Индекс педа
-    int8_t field_0x253;
-    int8_t field_0x254;
-    int8_t field_0x255;
-    enum ALL_PED occupation;           // Профессия/занятие
-    enum Remap remap;                  // Ремэппинг текстур
-    int8_t field_0x259;
-    int8_t field_0x25a;
-    int8_t field_0x25b;
-    int target_car_door;               // Целевая дверь машины
-    int8_t animation_state;            // Состояние анимации
-    int8_t field_0x261;
-    int8_t field_0x262;
-    int8_t field_0x263;
-    int32_t field_0x264;
-    int8_t field_0x268;
-    int8_t field_0x269;
-    int8_t field_0x26a;
-    int8_t field_0x26b;
-    int action_state;                  // Состояние действия
-    int current_action;                // Текущее действие
-    int8_t field_0x270;
-    int8_t field_0x271;
-    int8_t field_0x272;
-    int8_t field_0x273;
-    int8_t field_0x274;
-    int8_t field_0x275;
-    int8_t field_0x276;
-    int8_t field_0x277;
-    int8_t field_0x278;
-    int8_t field_0x279;
-    int8_t field_0x27a;
-    int8_t field_0x27b;
-    enum GraphicType graphic_type;     // Тип графики
-    int32_t field_0x27c;
-    int gang_car_model;                // Модель машины банды
-    enum PedState current_state;       // Текущее состояние
-    int32_t field_0x284;
-    enum PedState saved_state;         // Сохраненное состояние
-    int32_t field_0x28c;
-    int32_t field_0x290;
-    int32_t field_0x294;
-    int32_t field_0x298;
+// ============================================================================
+// Weapon - Оружие (48 байт)
+// ============================================================================
+struct Weapon {
+    u16 Ammo;               // 0x0 - Патроны
+    u8 field1_0x2;          // 0x2
+    u8 field2_0x3;          // 0x3
+    u32 WeaponType;         // 0x4 - Тип оружия
+    u32 field4_0x8;         // 0x8
+    u32 field5_0xc;         // 0xc
+    u16 field6_0x10;        // 0x10
+    u8 field7_0x12;         // 0x12
+    u8 field8_0x13;         // 0x13
+    struct Car* Car;        // 0x14 - Машина (для оружия транспорта)
+    struct Weapon* Next;    // 0x18 - Следующее оружие в списке
+    u32 Type;               // 0x1c - Тип оружия (дубликат?)
+    u8 field12_0x20;        // 0x20
+    u8 field13_0x21;        // 0x21
+    u8 field14_0x22;        // 0x22
+    u8 field15_0x23;        // 0x23
+    struct Ped* Ped;        // 0x24 - Владелец оружия
+    u32 Sound;              // 0x28 - Звук выстрела
+    u8 field18_0x2c;        // 0x2c
+    u8 field19_0x2d;        // 0x2d
+    u8 field20_0x2e;        // 0x2e
+    u8 field21_0x2f;        // 0x2f
 };
+
+// ============================================================================
+// Gang - Банда (размер уточняется)
+// ============================================================================
+struct Gang {
+    bool IsCreated;         // 0x0 - Флаг создания банды
+    enum GANG CurrentGang;  // 0x4 - Тип текущей банды
+    char Name[10];          // 0x8 - Название банды
+    // 0x12 - далее данные о членах, территориях и т.д.
+};
+
+// ============================================================================
+// SpriteS1 - Спрайт (огромный массив матриц)
+// ============================================================================
+struct SpriteS1 {
+    struct SpriteS1* FirstElement;      // 0x0 - Первый элемент
+    struct Matrix3D MatrixArray[5031];  // 0x4 - Массив 3D матриц (5031 шт.)
+};
+
+// ============================================================================
+// S169 - Неизвестная структура (заглушка)
+// ============================================================================
+struct S169 {
+    u8 data[1]; // Размер неизвестен
+};
+
+// ============================================================================
+// Ped - Пешеход/Персонаж (~664 байта)
+// ============================================================================
+struct Ped {
+    // === Блок 1: Очередь задач (150 байт) ===
+    struct S200 ObjectiveQueue[50];   // 0x0 - Массив целей/задач (50 * 3 = 150 байт)
+    i32 Counter;                       // 0x96 - Счетчик задач
+    u8 Reserved_0x9a[146];            // 0x9a - Резерв
+    
+    // === Блок 2: Неизвестные поля (12 байт) ===
+    u16 field_0x12c;                  // 0x12c
+    u16 field_0x12e;                  // 0x12e
+    u16 field_0x130;                  // 0x130
+    u16 field_0x132;                  // 0x132
+    u16 field_0x134;                  // 0x134
+    u8 field_0x136;                   // 0x136
+    u8 field_0x137;                   // 0x137
+    u32 field_0x138;                  // 0x138
+    u32 field_0x13c;                  // 0x13c
+    u32 field_0x140;                  // 0x140
+    
+    // === Блок 3: Связи с другими педами и машинами (32 байта) ===
+    struct Ped* sPed1;                // 0x144 - Связанный пед 1
+    struct Ped* Driver;               // 0x148 - Водитель (если пед в машине)
+    struct Ped* LinkedPed;            // 0x14c - Связанный пед
+    struct Car* Car;                  // 0x150 - Машина (анимация входа/выхода)
+    struct Car* ObjectiveTargetCar;   // 0x154 - Целевая машина для задачи
+    struct Car* TargetCarForEnter;    // 0x158 - Машина для входа
+    struct Player* Player;            // 0x15c - Игрок
+    struct Ped* NextPed;              // 0x160 - Следующий пед в списке
+    struct S169* pS169;               // 0x164 - Неизвестная структура
+    u8 field_0x168;                   // 0x168
+    u8 field_0x169;                   // 0x169
+    u8 field_0x16a;                   // 0x16a
+    u8 field_0x16b;                   // 0x16b
+    
+    // === Блок 4: Текущее состояние и оружие (28 байт) ===
+    struct Car* CarCurrent;           // 0x16c - Текущая машина
+    struct Weapon* SelectedWeapon;    // 0x170 - Выбранное оружие
+    struct Weapon* Weapon1;           // 0x174 - Оружие 1
+    struct Weapon* Weapon2;           // 0x178 - Оружие 2
+    struct Gang* Gang;                // 0x17c - Банда
+    struct Ped* PedDriver;            // 0x180 - Пед-водитель
+    u32 field_0x184;                  // 0x184
+    struct Ped* LastCharPunched;      // 0x188 - Последний ударенный персонаж
+    u32 field_0x18c;                  // 0x18c
+    u32 field_0x190;                  // 0x190
+    u32 field_0x194;                  // 0x194
+    struct Ped* ped3;                 // 0x198 - Пед 3
+    struct Gang* Gang1;               // 0x19c - Банда 1
+    u32 field_0x1a0;                  // 0x1a0
+    u32 field_0x1a4;                  // 0x1a4
+    u32 field_0x1a8;                  // 0x1a8
+    
+    // === Блок 5: Позиция в мире (16 байт) ===
+    i32 PositionX;                    // 0x1ac - Позиция X
+    i32 PositionY;                    // 0x1b0 - Позиция Y
+    i32 PositionZ;                    // 0x1b4 - Позиция Z
+    struct Ped* pPed;                 // 0x1b8 - Указатель на педа
+    
+    // === Блок 6: Неизвестные указатели (24 байта) ===
+    void* field_0x1bc;                // 0x1bc
+    void* field_0x1c0;                // 0x1c0
+    void* field_0x1c4;                // 0x1c4
+    void* field_0x1c8;                // 0x1c8
+    void* field_0x1cc;                // 0x1cc
+    u32 field_0x1d0;                  // 0x1d0
+    u32 field_0x1d4;                  // 0x1d4
+    
+    // === Блок 7: Спрайт и дополнительные машины (28 байт) ===
+    struct SpriteS1* SpriteS1;        // 0x1d8 - Спрайт
+    struct Car* Car_1;                // 0x1dc - Машина 1
+    struct Car* Car_2;                // 0x1e0 - Машина 2
+    u32 field_0x1e4;                  // 0x1e4
+    u32 field_0x1e8;                  // 0x1e8
+    u32 field_0x1ec;                  // 0x1ec
+    u32 field_0x1f0;                  // 0x1f0
+    u32 field_0x1f4;                  // 0x1f4
+    u32 field_0x1f8;                  // 0x1f8
+    
+    // === Блок 8: Идентификаторы и статусы (24 байта) ===
+    i32 ID;                           // 0x1fc - ID персонажа
+    i32 PedID;                        // 0x200 - ID педа
+    i16 Invulnerability;              // 0x204 - Невосприимчивость (видимость)
+    i16 PoliceStars;                  // 0x206 - Звезды полиции
+    i16 field_0x208;                  // 0x208
+    u16 field_0x20a;                  // 0x20a
+    i16 field_0x20c;                  // 0x20c
+    i16 field_0x20e;                  // 0x20e
+    i16 field_0x210;                  // 0x210
+    i16 Health;                       // 0x212 - Здоровье
+    i16 ObjectiveTimer;               // 0x214 - Таймер задачи
+    i16 CarStateTimer;                // 0x216 - Таймер состояния машины
+    enum PedFlags Flags;              // 0x218 - Флаги педа
+    u8 field_0x21c;                   // 0x21c
+    u8 field_0x21d;                   // 0x21d
+    u8 field_0x21e;                   // 0x21e
+    u32 field_0x220;                  // 0x220
+    enum CarDamageState DamageState;  // 0x224 - Состояние повреждений
+    u8 ExitAnimState;                 // 0x225 - Состояние анимации выхода
+    u8 field_0x227;                   // 0x227
+    u8 field_0x228;                   // 0x228
+    u8 field_0x229;                   // 0x229
+    u8 field_0x22a;                   // 0x22a
+    u8 field_0x22b;                   // 0x22b
+    u32 field_0x22c;                  // 0x22c
+    u32 field_0x230;                  // 0x230
+    u8 field_0x234;                   // 0x234
+    u8 field_0x235;                   // 0x235
+    u8 field_0x236;                   // 0x236
+    u8 field_0x237;                   // 0x237
+    enum SearchType SearchType;       // 0x238 - Тип поиска
+    u8 IndexPed;                      // 0x23c - Индекс педа
+    u8 field_0x23d;                   // 0x23d
+    u8 field_0x23e;                   // 0x23e
+    u8 field_0x23f;                   // 0x23f
+    enum ALL_PED Occupation;          // 0x240 - Профессия/занятие
+    enum Remap Remap;                 // 0x244 - Ремэппинг текстур
+    u8 field_0x248;                   // 0x248
+    u8 field_0x249;                   // 0x249
+    u8 field_0x24a;                   // 0x24a
+    i32 TargetCarDoor;                // 0x24c - Целевая дверь машины
+    u8 Idex;                          // 0x250 - Индекс анимации
+    u8 field_0x251;                   // 0x251
+    u8 field_0x252;                   // 0x252
+    u8 field_0x253;                   // 0x253
+    u32 field_0x254;                  // 0x254
+    u32 field_0x258;                  // 0x258
+    u32 State;                        // 0x25c - Состояние
+    i32 CurrentAction;                // 0x260 - Текущее действие
+    u8 field_0x264;                   // 0x264
+    u8 field_0x265;                   // 0x265
+    u8 field_0x266;                   // 0x266
+    u8 field_0x267;                   // 0x267
+    u8 field_0x268;                   // 0x268
+    u8 field_0x269;                   // 0x269
+    u8 field_0x26a;                   // 0x26a
+    u8 field_0x26b;                   // 0x26b
+    u8 field_0x26c;                   // 0x26c
+    u8 field_0x26d;                   // 0x26d
+    u8 field_0x26e;                   // 0x26e
+    u8 field_0x26f;                   // 0x26f
+    u32 GraphicType;                  // 0x270 - Тип графики
+    u32 field_0x274;                  // 0x274
+    i32 GangCarModel;                 // 0x278 - Модель машины банды
+    enum PedState CurrentState;       // 0x27c - Текущее состояние
+    u32 field_0x280;                  // 0x280
+    enum PedState SavedState;         // 0x284 - Сохраненное состояние
+    u32 field_0x288;                  // 0x288
+    u32 field_0x28c;                  // 0x28c
+    u32 field_0x290;                  // 0x290
+    u32 field_0x294;                  // 0x294
+};
+
 #pragma pack(pop)
 
-// Ped function declarations
-void Ped__SetSearchType(struct Ped *this, enum SearchType type);
-void Ped__SetOccupation(struct Ped *this, int occupation);
-int Ped__GetOccupation(struct Ped *this);
-enum PedState Ped__GetCurrentState(struct Ped *this);
-void Ped__SetHealthPlayer(struct Ped *this, int16_t health);
-bool Ped__GetDeadPed(struct Ped *this);
-struct Car* Ped__GetCurrentCar(struct Ped *this);
-void Ped__SetRemap(struct Ped *this, char remap);
-char Ped__GetRemap(struct Ped *this);
+// ============================================================================
+// Функции работы с Ped
+// ============================================================================
+
+// Поиск и цели
+void Ped__SetSearchType(struct Ped* this, enum SearchType type);
+enum SearchType Ped__GetSearchType(struct Ped* this);
+
+// Профессия
+void Ped__SetOccupation(struct Ped* this, enum ALL_PED occupation);
+enum ALL_PED Ped__GetOccupation(struct Ped* this);
+
+// Состояние
+enum PedState Ped__GetCurrentState(struct Ped* this);
+void Ped__SetCurrentState(struct Ped* this, enum PedState state);
+enum PedState Ped__GetSavedState(struct Ped* this);
+void Ped__SetSavedState(struct Ped* this, enum PedState state);
+
+// Здоровье
+void Ped__SetHealth(struct Ped* this, i16 health);
+i16 Ped__GetHealth(struct Ped* this);
+bool Ped__IsDead(struct Ped* this);
+
+// Машина
+struct Car* Ped__GetCurrentCar(struct Ped* this);
+void Ped__SetCar(struct Ped* this, struct Car* car);
+struct Car* Ped__GetTargetCarForEnter(struct Ped* this);
+
+// Ремэппинг
+void Ped__SetRemap(struct Ped* this, enum Remap remap);
+enum Remap Ped__GetRemap(struct Ped* this);
+
+// Оружие
+struct Weapon* Ped__GetSelectedWeapon(struct Ped* this);
+void Ped__SetSelectedWeapon(struct Ped* this, struct Weapon* weapon);
+
+// Флаги
+bool Ped__IsCrouching(struct Ped* this);
+void Ped__SetCrouching(struct Ped* this, bool crouch);
 
 #endif // PED_H
