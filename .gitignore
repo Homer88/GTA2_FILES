@@ -2,7 +2,7 @@
 # Compiled and build artifacts
 *.o
 *.obj
-
+*.exe
 *.dll
 *.so
 *.a
@@ -18,28 +18,24 @@ __pycache__/
 target/
 .gradle/
 
-# Build directories
-build/
-dist/
-
-# Editors
-.vscode/
-.idea/
+# Logs and temp files
+*.log
+*.tmp
 *.swp
 *.swo
-*.tmp
-
-# Logs
-*.log
-
-# System files
-.DS_Store
-Thumbs.db
 
 # Environment
 .env
 .env.local
 *.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
 
 # Coverage
 coverage/

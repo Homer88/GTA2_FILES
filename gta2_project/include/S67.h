@@ -1,11 +1,15 @@
-#ifndef UNKNOWN_67_H
-#define UNKNOWN_67_H
+// S67: Структура данных (обновлено из structures_s.h)
+// Размер: ~49 байт, 28 полей
+// Статус: Частично определена
 
-// Structure definition for S67
-// Found in original gta2.exe.h
+#ifndef S67_H
+#define S67_H
 
-S67 {
-struct S6 *S6*;
+#include "types.h"
+
+#pragma pack(push, 1)
+typedef struct S67 {
+    struct S6 *S6*;
     struct CarSystemManager *CarSystemManager;
     undefined4 Count;
     undefined4 field3_0xc;
@@ -35,6 +39,7 @@ struct S6 *S6*;
     undefined field27_0x39;
     undefined field28_0x3a;
     undefined field29_0x3b;
-};
+} S67;
+#pragma pack(pop)
 
-#endif // UNKNOWN_67_H
+#endif // S67_H

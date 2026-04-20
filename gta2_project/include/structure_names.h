@@ -5,182 +5,17 @@
 
 #include "structures_s.h"
 
-// S1: ~90 байт, 36 полей
-typedef struct S1 LinkedList;
-
-// S2: ~0 байт, 0 полей
-typedef struct S2 Vector3D;
-
-// S3: ~39 байт, 19 полей
-typedef struct S3 Matrix3D;
-
-// S4: ~0 байт, 0 полей
-typedef struct S4 ColorRGBA;
-
-// S6: ~105 байт, 54 полей
-typedef struct S6 GameObject;
-
-// S8: ~16 байт, 7 полей
-typedef struct S8 Rect2D;
-
-// S9: ~0 байт, 0 полей
-typedef struct S9 Point2D;
-
-// S10: ~0 байт, 0 полей
-typedef struct S10 Sphere3D;
-
-// S12: ~20 байт, 20 полей
-typedef struct S12 Plane3D;
-
-// S17: ~12032 байт, 12020 полей
-typedef struct S17 PedStats;
-
-// S19: ~4 байт, 1 полей
-typedef struct S19 WeaponInfo;
-
-// S20: ~4 байт, 1 полей
-typedef struct S20 CarModel;
-
-// S21: ~3996 байт, 3996 полей
-typedef struct S21 PedModel;
-
-// S23: ~8 байт, 2 полей
-typedef struct S23 BuildingModel;
-
-// S24: ~8 байт, 2 полей
-typedef struct S24 ObjectModel;
-
-// S25: ~444 байт, 443 полей
-typedef struct S25 SpriteInfo;
-
-// S27: ~7 байт, 4 полей
-typedef struct S27 Animation;
-
-// S28: ~24 байт, 16 полей
-typedef struct S28 SoundInfo;
-
-// S29: ~4 байт, 4 полей
-typedef struct S29 Particle;
-
-// S30: ~4 байт, 3 полей
-typedef struct S30 Weather;
-
-// S31: ~4 байт, 4 полей
-typedef struct S31 TimeCycle;
-
-// S32: ~12 байт, 3 полей
-typedef struct S32 LightInfo;
-
-// S33: ~0 байт, 0 полей
-typedef struct S33 Camera;
-
-// S34: ~8 байт, 4 полей
-typedef struct S34 Viewport;
-
-// S36: ~12 байт, 3 полей
-typedef struct S36 Radar;
-
-// S39: ~20 байт, 10 полей
-typedef struct S39 MissionData;
-
-// S40: ~40 байт, 31 полей
-typedef struct S40 GangInfo;
-
-// S41: ~8 байт, 8 полей
-typedef struct S41 WantedLevel;
-
-// S43: ~16 байт, 16 полей
-typedef struct S43 PhoneCall;
-
-// S44: ~16384 байт, 16384 полей
-typedef struct S44 Cutscene;
-
-// S46: ~8 байт, 8 полей
-typedef struct S46 VehiclePool;
-
-// S50: ~0 байт, 0 полей
+// S50: ~72004 байт, 72004 полей
 typedef struct S50 PedPool;
 
 // S52: ~400 байт, 394 полей
 typedef struct S52 ObjectPool;
-
-// S54: ~16388 байт, 16382 полей
-typedef struct S54 PickupInfo;
-
-// S55: ~48012 байт, 48003 полей
-typedef struct S55 Powerup;
-
-// S56: ~0 байт, 0 полей
-typedef struct S56 Checkpoint;
-
-// S57: ~6 байт, 6 полей
-typedef struct S57 PathNode;
-
-// S58: ~114 байт, 42 полей
-typedef struct S58 RouteInfo;
-
-// S61: ~4 байт, 3 полей
-typedef struct S61 CollisionBox;
-
-// S63: ~24 байт, 18 полей
-typedef struct S63 EventHandler;
 
 // S64: ~0 байт, 0 полей
 typedef struct S64 TriggerVolume;
 
 // S68: ~1788 байт, 1782 полей
 typedef struct S68 ScriptThread;
-
-// S70: ~3 байт, 3 полей
-typedef struct S70 ScriptVar;
-
-// S71: ~15 байт, 9 полей
-typedef struct S71 ScriptCommand;
-
-// S73: ~3 байт, 3 полей
-typedef struct S73 TextLabel;
-
-// S76: ~50 байт, 20 полей
-typedef struct S76 HudElement;
-
-// S77: ~20 байт, 11 полей
-typedef struct S77 MenuInfo;
-
-// S78: ~12 байт, 12 полей
-typedef struct S78 ButtonInfo;
-
-// S82: ~51 байт, 18 полей
-typedef struct S82 SaveGameData;
-
-// S83: ~75 байт, 63 полей
-typedef struct S83 LoadScreen;
-
-// S85: ~8 байт, 2 полей
-typedef struct S85 Controller;
-
-// S86_2: ~12 байт, 9 полей
-typedef struct S86_2 KeyBinding;
-
-// S88: ~6 байт, 3 полей
-typedef struct S88 NetworkPlayer;
-
-// S89: ~13 байт, 5 полей
-typedef struct S89 PacketInfo;
-
-// S92: ~16 байт, 7 полей
-typedef struct S92 TextureInfo;
-
-// S93: ~2 байт, 1 полей
-typedef struct S93 ModelIndex;
-
-// S94: ~0 байт, 0 полей
-typedef struct S94 DrawCall;
-
-// S95: ~3257 байт, 3250 полей
-typedef struct S95 VertexBuffer;
-
-// S100: ~0 байт, 0 полей
-typedef struct S100 RenderQueue;
 
 // S101: ~35 байт, 14 полей
 typedef struct S101 ShadowInfo;
@@ -193,30 +28,6 @@ typedef struct S103 WaterInfo;
 
 // S104: ~228 байт, 65 полей
 typedef struct S104 ExplosionInfo;
-
-// S105: ~4 байт, 1 полей
-typedef struct S105 FireInfo;
-
-// S106: ~44 байт, 41 полей
-typedef struct S106 SmokeInfo;
-
-// S107: ~12 байт, 6 полей
-typedef struct S107 SkidmarkInfo;
-
-// S108: ~36 байт, 17 полей
-typedef struct S108 BloodInfo;
-
-// S109: ~0 байт, 0 полей
-typedef struct S109 DebrisInfo;
-
-// S110: ~34 байт, 24 полей
-typedef struct S110 GlassInfo;
-
-// S112: ~49 байт, 28 полей
-typedef struct S112 DecalInfo;
-
-// S113: ~104 байт, 95 полей
-typedef struct S113 StainInfo;
 
 // S115: ~3 байт, 3 полей
 typedef struct S115 ImpactInfo;
@@ -235,9 +46,6 @@ typedef struct S121 EngineInfo;
 
 // S123: ~10 байт, 5 полей
 typedef struct S123 TransmissionInfo;
-
-// S124: ~1 байт, 1 полей
-typedef struct S124 BrakeInfo;
 
 // S125: ~24 байт, 9 полей
 typedef struct S125 SuspensionInfo;
@@ -307,9 +115,6 @@ typedef struct S200 GameState;
 
 // S208: ~257 байт, 257 полей
 typedef struct S208 LevelInfo;
-
-// S280: ~4 байт, 1 полей
-typedef struct S280 PoliceInfo;
 
 // S281: ~44 байт, 44 полей
 typedef struct S281 AmbulanceInfo;
