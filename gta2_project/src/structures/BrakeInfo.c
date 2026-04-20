@@ -4,14 +4,14 @@
 
 #include "common.h"
 
-S125 * __thiscall S124__GetS125(S124 *this)
+S125 * __thiscall BrakeInfo_GetCurrent(S124 *this)
 
 {
   return this->s125;
 }
 
 
-S125 * __thiscall S124__FUN_004b8fe0(S124 *this)
+S125 * __thiscall BrakeInfo_PopFront(S124 *this)
 
 {
   S125 *pSVar1;
@@ -24,7 +24,7 @@ S125 * __thiscall S124__FUN_004b8fe0(S124 *this)
 }
 
 
-void __thiscall S124__FUN_004b9000(S124 *this,S125 *pS125)
+void __thiscall BrakeInfo_MoveToActive(S124 *this,S125 *pS125)
 
 {
   S125 *pSVar1;
@@ -55,7 +55,7 @@ void __thiscall S124__FUN_004b9000(S124 *this,S125 *pS125)
 }
 
 
-void __thiscall S124__S124_FUN_004b9050(S124 *this)
+void __thiscall BrakeInfo_ReorderActive(S124 *this)
 
 {
   byte bVar1;
@@ -77,7 +77,7 @@ void __thiscall S124__S124_FUN_004b9050(S124 *this)
         }
         this->count = this->count + 1;
         pS125 = pS125_2->s125;
-        bVar1 = S125::S125_FUN_004b8f70(pS125_2);
+        bVar1 = S125_isActive(pS125_2);
       } while (bVar1 == 0);
       if (pS125_3 != (S125 *)0x0) break;
 LAB_004b9086:
@@ -112,10 +112,10 @@ LAB_004b9086:
 }
 
 
-S124 * __thiscall S124__S124(S124 *this)
+S124 * __thiscall BrakeInfo_ctor(S124 *this)
 
 {
-  _eh_vector_constructor_iterator_(this->S125_arr_3,80,3,S125::S125,S125::~S125)
+  _eh_vector_constructor_iterator_(this->S125_arr_3,80,3,S125_ctor,S125_dtor)
   ;
   this->S125_arr_3[0].s125 = this->S125_arr_3 + 1;
   this->S125_arr_3[1].s125 = this->S125_arr_3 + 2;

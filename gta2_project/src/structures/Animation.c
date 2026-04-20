@@ -4,7 +4,7 @@
 
 #include "common.h"
 
-void * __thiscall S27__S27_FUN_004767a0(S27 *this)
+void * __thiscall S27_RemoveFirstElement(S27 *this)
 
 {
   S28 *this_00;
@@ -14,31 +14,31 @@ void * __thiscall S27__S27_FUN_004767a0(S27 *this)
   this->FirstElement = this_00->NextElement;
   this_00->NextElement = (S28 *)this->field1_0x4;
   this->field1_0x4 = this_00;
-  FUN_004751b0(this_00);
+  S28_dtor(this_00);
   return extraout_ECX;
 }
 
 
-void __thiscall S27__S27_FUN_0047f4d0(S27 *this)
+void __thiscall S27_DestroyAllElements(S27 *this)
 
 {
   undefined4 *this_00;
   
   for (this_00 = (undefined4 *)this->field1_0x4; this_00 != (undefined4 *)0x0;
       this_00 = (undefined4 *)*this_00) {
-    FUN_00476e10(this_00);
+    S28_reset(this_00);
   }
   return;
 }
 
 
-S27 * __thiscall S27__S27(S27 *this)
+S27 * __thiscall S27_ctor(S27 *this)
 
 {
   S28 *pS28;
   
   pS28 = this->S28;
-  _eh_vector_constructor_iterator_(pS28,0x11c,8,S28::S28,S28::~S28);
+  _eh_vector_constructor_iterator_(pS28,0x11c,8,S28_ctor,S28_dtor);
   pS28->NextElement = this->S28 + 1;
   this->S28[1].NextElement = this->S28 + 2;
   this->S28[2].NextElement = this->S28 + 3;
@@ -54,7 +54,7 @@ S27 * __thiscall S27__S27(S27 *this)
 }
 
 
-void __thiscall S27__S27_FUN_00481380(S27 *this)
+void __thiscall S27_ctor_FUN_00481380(S27 *this)
 
 {
   S28 *pSVar1;
@@ -76,7 +76,7 @@ void __thiscall S27__S27_FUN_00481380(S27 *this)
         }
         this->field3_0x8e8 = this->field3_0x8e8 + 1;
         pSVar1 = pSVar3->NextElement;
-        bVar4 = FUN_00481120(pSVar3);
+        bVar4 = S28_isActive(pSVar3);
       } while (!bVar4);
       if (pSVar5 != (S28 *)0x0) break;
 LAB_004813b4:
