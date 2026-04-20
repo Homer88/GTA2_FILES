@@ -22,21 +22,22 @@ target/
 build/
 dist/
 
-# Logs and temp files
-*.log
-*.tmp
+# Editors
+.vscode/
+.idea/
 *.swp
+*.swo
+*.tmp
+
+# Logs
+*.log
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# Editors
-.vscode/
-.idea/
-
-# System files
+# System
 .DS_Store
 Thumbs.db
 
