@@ -295,281 +295,143 @@ struct S200 {
 };
 
 struct Ped {
-    struct S200 S200_50[50];
-    int Counter;
-    char field_9A;
-    char field_9B;
-    char field_9C;
-    char field_9D;
-    char field_9E;
-    char field_9F;
-    char field_A0;
-    char field_A1;
-    char field_A2;
-    char field_A3;
-    char field_A4;
-    char field_A5;
-    char field_A6;
-    char field_A7;
-    char field_A8;
-    char field_A9;
-    char field_AA;
-    char field_AB;
-    char field_AC;
-    char field_AD;
-    char field_AE;
-    char field_AF;
-    char field_B0;
-    char field_B1;
-    char field_B2;
-    char field_B3;
-    char field_B4;
-    char field_B5;
-    char field_B6;
-    char field_B7;
-    char field_B8;
-    char field_B9;
-    char field_BA;
-    char field_BB;
-    char field_BC;
-    char field_BD;
-    char field_BE;
-    char field_BF;
-    char field_C0;
-    char field_C1;
-    char field_C2;
-    char field_C3;
-    char field_C4;
-    char field_C5;
-    char field_C6;
-    char field_C7;
-    char field_C8;
-    char field_C9;
-    char field_CA;
-    char field_CB;
-    char field_CC;
-    char field_CD;
-    char field_CE;
-    char field_CF;
-    char field_D0;
-    char field_D1;
-    char field_D2;
-    char field_D3;
-    char field_D4;
-    char field_D5;
-    char field_D6;
-    char field_D7;
-    char field_D8;
-    char field_D9;
-    char field_DA;
-    char field_DB;
-    char field_DC;
-    char field_DD;
-    char field_DE;
-    char field_DF;
-    char field_E0;
-    char field_E1;
-    char field_E2;
-    char field_E3;
-    char field_E4;
-    char field_E5;
-    char field_E6;
-    char field_E7;
-    char field_E8;
-    char field_E9;
-    char field_EA;
-    char field_EB;
-    char field_EC;
-    char field_ED;
-    char field_EE;
-    char field_EF;
-    char field_F0;
-    char field_F1;
-    char field_F2;
-    char field_F3;
-    char field_F4;
-    char field_F5;
-    char field_F6;
-    char field_F7;
-    char field_F8;
-    char field_F9;
-    char field_FA;
-    char field_FB;
-    char field_FC;
-    char field_FD;
-    char field_FE;
-    char field_FF;
-    char field_100;
-    char field_101;
-    char field_102;
-    char field_103;
-    char field_104;
-    char field_105;
-    char field_106;
-    char field_107;
-    char field_108;
-    char field_109;
-    char field_10A;
-    char field_10B;
-    char field_10C;
-    char field_10D;
-    char field_10E;
-    char field_10F;
-    char field_110;
-    char field_111;
-    char field_112;
-    char field_113;
-    char field_114;
-    char field_115;
-    char field_116;
-    int16_t field_117;
-    char field_119;
-    char field_11A;
-    char field_11B;
-    char field_11C;
-    char field_11D;
-    char field_11E;
-    char field_11F;
-    char field_120;
-    char field_121;
-    char field_122;
-    char field_123;
-    char field_124;
-    char field_125;
-    char field_126;
-    char field_127;
-    int16_t field_128;
-    char field_12A;
-    char field_12B;
-    int16_t field_12C;
-    int16_t field_12E;
-    int16_t field_130;
-    int16_t field_132;
-    int16_t field_134;
-    char field_136;
-    char field_137;
-    struct GameObject *GameObject1;
-    int field_13C;
-    struct Car *Car1;
-    struct Ped *sPed1;
-    struct Ped *Driver;
-    struct Ped *LinkedPed;
-    struct Car *Vehicle;
-    struct Car *CurrentVehicle;
-    struct Car *TargetCarForEnter;
-    struct Player *Player;
-    struct Ped *NextPed;
-    struct S169 *S169;
-    struct GameObject *GameObject;
-    struct Car *CurrentCar;
-    struct Weapon *SelectedWeapon;
-    struct Weapon *Weapon1;
-    struct Weapon *Weapon2;
-    struct Gang *Gang;
-    struct Ped *DriverPed;
-    int field_184;
-    struct Ped *LastCharPunched;
-    struct Ped *field_18C;
-    struct S94 *S94;
-    int field_194;
-    struct Ped *sPed3;
-    struct Gang *Gang1;
-    int field_1A0;
-    int field_1A4;
-    struct Ped *ElvisLeader;
-    int XCoordinate;
-    int PositionY;
-    int Camer_Z_View;
-    int PositionX1;
-    int PositionY1;
-    int PositionZ2;
-    int X;
-    int Y;
-    int Z;
-    int field_1D0;
-    int field_1D4;
-    int field_1D8;
-    int PositionX2;
-    struct Ped *DriverPed1;
-    int PositionZ1;
-    int field_1E8;
-    int field_1EC;
-    int field_1F0;
-    int field_1F4;
-    int field_1F8;
-    int field_1FC;
-    int ID;
-    int IDPed;
-    int16_t Invulnerability;
-    int16_t PoliceStar;
-    int16_t field_20C;
-    uint16_t field_20E;
-    int16_t field_210;
-    int16_t field_212;
-    int16_t field_214;
-    int16_t Health;
-    int16_t ObjectiveTimer;
-    int16_t CarStateTimer;
-    unsigned int Flags;
-    int field_220;
-    char field_224;
-    char DamageState;
-    uint8_t ExitAnimState;
-    char field_227;
-    char field_228;
-    char field_229;
-    char field_22A;
-    char field_22B;
-    int field_22C;
-    int field_230;
-    char field_234;
-    char field_235;
-    char field_236;
-    char field_237;
-    enum SearchType SearchType;
-    char CarId;
-    char field_23D;
-    char field_23E;
-    char field_23F;
-    enum ALL_PED Occupation;
-    enum Remap Remap;
-    char field_245;
-    char field_246;
-    char field_247;
-    int TargetCarDoor;
-    char AnimationState;
-    char field_24D;
-    char field_24E;
-    char field_24F;
-    int field_250;
-    char field_254;
-    char field_255;
-    char field_256;
-    char field_257;
-    int ActionState;
-    int CurrentAction;
-    char field_260;
-    char field_261;
-    char field_262;
-    char field_263;
-    char field_264;
-    uint8_t field_265;
-    char field_266;
-    char field_267;
-    char field_268;
-    char field_269;
-    char field_26A;
-    char field_26B;
-    enum GraphicType GraphicType;
-    int field_270;
-    int GangCarModel;
-    enum PedState PedState;
-    int field_27C;
-    int SavedState;
-    int field_284;
-    int field_288;
-    int field_28C;
-    int DamageType;
+    struct S200 objective_queue[50];  // Массив целей/задач
+    int counter;                       // Счетчик
+    char reserved_0x9a[146];           // Резерв
+    int16_t field_0x12c;
+    int16_t field_0x12e;
+    int16_t field_0x130;
+    int16_t field_0x132;
+    int16_t field_0x134;
+    int8_t field_0x136;
+    int8_t field_0x137;
+    int32_t field_0x138;
+    int32_t field_0x13c;
+    int32_t field_0x140;
+    struct Ped *sPed1;                 // Связанный пед 1
+    struct Ped *driver;                // Водитель (если пед в машине)
+    struct Ped *linked_ped;            // Связанный пед
+    struct Car *car;                   // Машина для анимации входа/выхода
+    struct Car *objective_target_car;  // Целевая машина для задачи
+    struct Car *target_car_for_enter;  // Машина для входа
+    struct Player *player;             // Игрок
+    struct Ped *next_ped;              // Следующий пед в списке
+    struct S169 *pS169;                // Неизвестная структура
+    int8_t field_0x168;
+    int8_t field_0x169;
+    int8_t field_0x16a;
+    int8_t field_0x16b;
+    struct Car *car_current;           // Текущая машина
+    struct Weapon *selected_weapon;    // Выбранное оружие
+    struct Weapon *weapon1;            // Оружие 1
+    struct Weapon *weapon2;            // Оружие 2
+    struct Gang *gang;                 // Банда
+    struct Ped *ped_driver;            // Пед-водитель
+    int32_t field_0x184;
+    struct Ped *last_char_punched;     // Последний ударенный персонаж
+    int32_t field_0x18c;
+    int32_t field_0x190;
+    int32_t field_0x194;
+    struct Ped *ped3;                  // Пед 3
+    struct Gang *gang1;                // Банда 1
+    int32_t field_0x1a0;
+    int32_t field_0x1a4;
+    int32_t field_0x1a8;
+    int position_x;                    // Позиция X
+    int position_y;                    // Позиция Y
+    int position_z;                    // Позиция Z
+    struct Ped *pPed;                  // Указатель на педа
+    void *field_0x1dc;
+    void *field_0x1e0;
+    void *field_0x1e4;
+    void *field_0x1e8;
+    void *field_0x1ec;
+    int32_t field_0x1f0;
+    int32_t field_0x1f4;
+    struct SpriteS1 *sprite_s1;        // Спрайт
+    struct Car *car_1;
+    struct Car *car_2;
+    int32_t field_0x200;
+    int32_t field_0x204;
+    int32_t field_0x208;
+    int32_t field_0x20c;
+    int32_t field_0x210;
+    int32_t field_0x214;
+    int32_t field_0x218;
+    int id;                            // ID персонажа
+    int ped_id;                        // ID педа
+    int16_t invulnerability;           // Невосприимчивость (видимость)
+    int16_t police_star;               // Звезды полиции
+    int16_t field_0x224;
+    uint16_t field_0x226;
+    int16_t field_0x228;
+    int16_t field_0x22a;
+    int16_t field_0x22c;
+    int16_t health;                    // Здоровье
+    int16_t objective_timer;           // Таймер задачи
+    int16_t car_state_timer;           // Таймер состояния машины
+    enum PedFlags flags;               // Флаги педа
+    int8_t field_0x234;
+    int8_t field_0x235;
+    int8_t field_0x236;
+    int32_t field_0x238;
+    int8_t damage_state;               // Состояние повреждений
+    int8_t exit_anim_state;            // Состояние анимации выхода
+    int8_t field_0x23f;
+    int8_t field_0x240;
+    int8_t field_0x241;
+    int8_t field_0x242;
+    int8_t field_0x243;
+    int32_t field_0x244;
+    int32_t field_0x248;
+    int8_t field_0x24c;
+    int8_t field_0x24d;
+    int8_t field_0x24e;
+    int8_t field_0x24f;
+    enum SearchType search_type;       // Тип поиска
+    int8_t index_ped;                  // Индекс педа
+    int8_t field_0x253;
+    int8_t field_0x254;
+    int8_t field_0x255;
+    enum ALL_PED occupation;           // Профессия/занятие
+    enum Remap remap;                  // Ремэппинг текстур
+    int8_t field_0x259;
+    int8_t field_0x25a;
+    int8_t field_0x25b;
+    int target_car_door;               // Целевая дверь машины
+    int8_t animation_state;            // Состояние анимации
+    int8_t field_0x261;
+    int8_t field_0x262;
+    int8_t field_0x263;
+    int32_t field_0x264;
+    int8_t field_0x268;
+    int8_t field_0x269;
+    int8_t field_0x26a;
+    int8_t field_0x26b;
+    int action_state;                  // Состояние действия
+    int current_action;                // Текущее действие
+    int8_t field_0x270;
+    int8_t field_0x271;
+    int8_t field_0x272;
+    int8_t field_0x273;
+    int8_t field_0x274;
+    int8_t field_0x275;
+    int8_t field_0x276;
+    int8_t field_0x277;
+    int8_t field_0x278;
+    int8_t field_0x279;
+    int8_t field_0x27a;
+    int8_t field_0x27b;
+    enum GraphicType graphic_type;     // Тип графики
+    int32_t field_0x27c;
+    int gang_car_model;                // Модель машины банды
+    enum PedState current_state;       // Текущее состояние
+    int32_t field_0x284;
+    enum PedState saved_state;         // Сохраненное состояние
+    int32_t field_0x28c;
+    int32_t field_0x290;
+    int32_t field_0x294;
+    int32_t field_0x298;
 };
 #pragma pack(pop)
 
@@ -578,8 +440,10 @@ void Ped__SetSearchType(struct Ped *this, enum SearchType type);
 void Ped__SetOccupation(struct Ped *this, int occupation);
 int Ped__GetOccupation(struct Ped *this);
 enum PedState Ped__GetCurrentState(struct Ped *this);
-void Ped__SetHealthPlayer(struct Ped *this, int16_t Health);
+void Ped__SetHealthPlayer(struct Ped *this, int16_t health);
 bool Ped__GetDeadPed(struct Ped *this);
 struct Car* Ped__GetCurrentCar(struct Ped *this);
+void Ped__SetRemap(struct Ped *this, char remap);
+char Ped__GetRemap(struct Ped *this);
 
 #endif // PED_H

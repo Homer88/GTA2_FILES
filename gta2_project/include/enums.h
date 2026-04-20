@@ -82,8 +82,41 @@ typedef enum PedState {
     PEDSTATE_IDLE=7,
     PEDSTATE_FALL=8,
     PEDSTATE_DEAD=9,
-    PEDSTATE_IN_CAR=10
+    PEDSTATE_IN_CAR=10,
+    PEDSTATE_UNKNOWN_11=11,
+    PEDSTATE_UNKNOWN_12=12,
+    PEDSTATE_UNKNOWN_13=13,
+    PEDSTATE_UNKNOWN_14=14,
+    PEDSTATE_UNKNOWN_15=15,
+    PEDSTATE_UNKNOWN_16=16,
+    PEDSTATE_UNKNOWN_17=17,
+    PEDSTATE_UNKNOWN_18=18,
+    PEDSTATE_UNKNOWN_19=19
 } PedState;
+
+// Remap - типы ремэппинга текстур педа
+typedef enum Remap {
+    REMAP_NONE=0,
+    REMAP_PLAYER_1=1,
+    REMAP_PLAYER_2=2,
+    REMAP_PLAYER_3=3
+} Remap;
+
+// GraphicType - типы графики педа
+typedef enum GraphicType {
+    GRAPHIC_NORMAL=0,
+    GRAPHIC_SPECIAL=1
+} GraphicType;
+
+// ALL_PED - профессии/занятия педов
+typedef enum ALL_PED {
+    OCCUPATION_NONE=0,
+    OCCUPATION_CIVILIAN=1,
+    OCCUPATION_COP=2,
+    OCCUPATION_GANG=3,
+    OCCUPATION_MEDIC=4,
+    OCCUPATION_DRIVER=5
+} ALL_PED;
 
 // GANG
 typedef enum GANG {
