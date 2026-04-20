@@ -7,110 +7,204 @@
 
 #pragma pack(push, 1)
 struct Player {
-    // --- Указатели на текущий и основной объект игрока ---
-    struct Player *CurrentPlayer;   // Было: CurrentPlayer - Указатель на текущего активного игрока
-    struct Player *Player;          // Было: Player - Указатель на основной объект игрока
-    
-    // --- Управление (Input) ---
-    int16_t TurnLeftRight;          // Было: Left - Поворот влево/вправо (48=влево, 1392=вправо)
-    int16_t field3_0xa;             // Было: field3_0xa - Неизвестное поле управления (требует анализа)
-    int32_t MoveForwardBackward;    // Было: Forw - Движение вперед/назад (16384=вперед, 4294950912=назад)
-    
-    // --- Состояние транспорта ---
-    struct S46 *s46;                // Было: s46 - Указатель на структуру S46 (возможно, данные транспортного средства)
-    int16_t SW;                     // Было: SW - Переключатель или состояние (требуется анализ)
-    
-    // --- Оружие ---
-    int16_t TypeWeapon;             // Было: TypeWeapon - Тип текущего оружия
-    uint16_t field8_0x18;           // Было: field8_0x18 - Неизвестное поле оружия (возможно, прицел)
-    uint16_t Armor;                 // Было: Arrmo - Текущее состояние брони/защиты
-    uint16_t SelectWeaponNext;      // Было: SelectWeaponNext - Индекс следующего оружия для выбора
-    uint8_t field11_0x1e;           // Было: field11_0x1e - Неизвестный флаг оружия
-    uint8_t field12_0x1f;           // Было: field12_0x1f - Неизвестный флаг оружия
-    
-    // --- Транспорт ---
-    struct Car *car;                // Было: car - Указатель на машину, в которой находится игрок
-    int ID_1;                       // Было: ID_1 - Первый ID игрока (возможно, связан с Ped)
-    uint8_t field15_0x28;           // Было: field15_0x28 - Неизвестное поле транспорта
-    uint8_t field16_0x29;           // Было: field16_0x29 - Неизвестное поле транспорта
-    uint8_t field17_0x2a;           // Было: field17_0x2a - Неизвестное поле транспорта
-    uint8_t field18_0x2b;           // Было: field18_0x2b - Неизвестное поле транспорта
-    uint16_t field19_0x2c;          // Было: field19_0x2c - Неизвестное поле транспорта
-    
-    // --- Идентификаторы и статусы ---
-    uint8_t IDs;                    // Было: IDs - Основной ID игрока (байт)
-    uint8_t AllControlStatus;       // Было: AllControlStatus - Общий статус управления (все контролы активны?)
-    uint8_t EnterControlStatus;     // Было: EnterControlStatus - Статус управления при посадке/высадке
-    bool field23_0x31;              // Было: field23_0x31 - Флаг неизвестного назначения
-    uint8_t field24_0x32;           // Было: field24_0x32 - Неизвестное поле статуса
-    uint8_t field25_0x33;           // Было: field25_0x33 - Неизвестное поле статуса
-    
-    // --- Репутация и статистика ---
-    int32_t RESPECT;                // Было: RESPECT - Уровень репутации/уважения игрока
-    int32_t field27_0x38;           // Было: field27_0x38 - Дополнительная статистика (возможно, деньги)
-    int32_t field28_0x3c;           // Было: field28_0x3c - Дополнительная статистика (возможно, очки)
-    
-    // --- Миссии и задания ---
-    struct S103 *S103;              // Было: S103 - Указатель на структуру миссии/задания S103
-    int PlayerState;                // Было: PlayerState - Состояние игрока (жив, мертв, в машине, арестован)
-    uint8_t field31_0x48;           // Было: field31_0x48 - Неизвестное поле состояния
-    uint8_t field32_0x49;           // Было: field32_0x49 - Неизвестное поле состояния
-    uint8_t field33_0x4a;           // Было: field33_0x4a - Неизвестное поле состояния
-    uint8_t field34_0x4b;           // Было: field34_0x4b - Неизвестное поле состояния
-    int32_t field35_0x4c;           // Было: field35_0x4c - Неизвестное поле состояния (таймер?)
-    uint8_t field36_0x50;           // Было: field36_0x50 - Неизвестное поле состояния
-    uint8_t field37_0x51;           // Было: field37_0x51 - Неизвестное поле состояния
-    uint8_t field38_0x52;           // Было: field38_0x52 - Неизвестное поле состояния
-    uint8_t field39_0x53;           // Было: field39_0x53 - Неизвестное поле состояния
-    int32_t field40_0x54;           // Было: field40_0x54 - Неизвестное поле состояния (таймер?)
-    
-    // --- Физика и камера ---
-    int32_t theta;                  // Было: theta - Угол поворота камеры или игрока
-    struct Car *pCar_2;             // Было: pCar_2 - Второй указатель на машину (возможно, предыдущая или целевая)
-    int32_t Revs;                   // Было: Revs - Обороты двигателя (если в машине)
-    int32_t field44_0x64;           // Было: field44_0x64 - Неизвестное поле физики
-    int32_t ID;                     // Было: ID - Основной уникальный ID игрока
-    int32_t field46_0x6c;           // Было: field46_0x6c - Неизвестное поле (возможно, смещение или таймер)
-    
-    // --- Флаги и байтовые поля ---
-    uint8_t field47_0x70;           // Было: field47_0x70 - Неизвестный флаг
-    uint8_t field48_0x71;           // Было: field48_0x71 - Неизвестный флаг
-    uint8_t field49_0x72;           // Было: field49_0x72 - Неизвестный флаг
-    uint8_t field50_0x73;           // Было: field50_0x73 - Неизвестный флаг
-    uint8_t field51_0x74;           // Было: field51_0x74 - Неизвестный флаг
-    uint8_t field52_0x75;           // Было: field52_0x75 - Неизвестный флаг
-    uint8_t field53_0x76;           // Было: field53_0x76 - Неизвестный флаг
-    uint8_t field54_0x77;           // Было: field54_0x77 - Неизвестный флаг
-    
-    // --- Состояние кнопок управления (Input Flags) ---
-    bool KEY_UP;                    // Было: KEY_UP - Флаг нажатия кнопки "Вверх"
-    bool Backward;                  // Было: Backward - Флаг нажатия кнопки "Назад"
-    bool RotateLeft;                // Было: RotateLeft - Флаг нажатия кнопки "Влево"
-    bool RotateRight;               // Было: RotateRight - Флаг нажатия кнопки "Вправо"
-    bool Attack;                    // Было: Attack - Флаг нажатия кнопки "Атака/Огонь"
-    bool Enter;                     // Было: Enter - Флаг нажатия кнопки "Войти/Выйти"
-    uint8_t Jump;                   // Было: Jump - Флаг/состояние прыжка
-    uint8_t NextWeaponZ;            // Было: NextWeaponZ - Флаг переключения оружия вперед (клавиша Z)
-    uint8_t PrevWeaponX;            // Было: PrevWeaponX - Флаг переключения оружия назад (клавиша X)
-    uint8_t keySpecial;             // Было: keySpecial - Флаг специальной кнопки 1
-    uint8_t keySpecial2;            // Было: keySpecial2 - Флаг специальной кнопки 2
-    uint8_t field66_0x83;           // Было: field66_0x83 - Неизвестный флаг управления
-    uint8_t field67_0x84;           // Было: field67_0x84 - Неизвестный флаг управления
-    uint8_t field68_0x85;           // Было: field68_0x85 - Неизвестный флаг управления
-    uint8_t field69_0x86;           // Было: field69_0x86 - Неизвестный флаг управления
-    uint8_t field70_0x87;           // Было: field70_0x87 - Неизвестный флаг управления
-    uint8_t field71_0x88;           // Было: field71_0x88 - Неизвестный флаг управления
-    uint8_t field72_0x89;           // Было: field72_0x89 - Неизвестный флаг управления
-    uint8_t field73_0x8a;           // Было: field73_0x8a - Неизвестный флаг управления
-    uint8_t field74_0x8b;           // Было: field74_0x8b - Неизвестный флаг управления
-    uint8_t AttackIsChanged;        // Было: AttackIsChanged - Флаг изменения режима атаки
-    uint8_t field76_0x8d;           // Было: field76_0x8d - Неизвестный флаг управления
-    bool NextPlayer;                // Было: NextPlayer - Флаг переключения на следующего игрока
-    uint8_t field78_0x8f;           // Было: field78_0x8f - Неизвестный флаг управления
-    
-    // --- Камера ---
-    struct CameraOrPhysics *CameraOrPhysics; // Было: CameraOrPhysics - Указатель на камеру или физику
-    uint8_t field80_0x94;           // Было: field80_0x94 - Неизвестное поле камеры
+    struct Player *CurrentPlayer;
+    struct Player *Player;
+    struct KeyPlayer Rotate;
+    struct FW FW;
+    struct S103 *S103;
+    int16_t Sw;
+    int16_t TypeWeapon;
+    struct S103 *S103_1;
+    int16_t SelectWeaponNext;
+    char field_1E;
+    char field_1F;
+    struct S103 *pS103;
+    int ID;
+    struct S103 *S103_2;
+    int16_t MoneyValue;
+    uint8_t Ids;
+    char field_2F;
+    struct S103 *S103_5;
+    struct Gangs *RESPECT;
+    struct S103 *field_38;
+    int field_3C;
+    struct S103 *S103_4;
+    enum DEATH_REASON DeathReason;
+    struct Tango *Tango1;
+    int Sound;
+    int field_50;
+    int field_54;
+    int field_58;
+    struct Car *sCar1;
+    int field_60;
+    int field_64;
+    int MultiPlayerMode;
+    int field_6C;
+    uint8_t Up;
+    uint8_t Down;
+    uint8_t Left;
+    uint8_t Right;
+    uint8_t prevWeapon;
+    uint8_t nextWeapon;
+    uint8_t debugKey1;
+    uint8_t debugKey2;
+    bool Forward;
+    bool Backward;
+    bool RotateLeft;
+    bool RotateRight;
+    bool Attack;
+    bool Enter;
+    bool Jump;
+    bool NextWeaponZ;
+    bool PrevWeaponX;
+    bool keySpecial;
+    bool keySpecial2;
+    char field_83;
+    int field_84;
+    int field_88;
+    char AttackIsChanged;
+    char field_8D;
+    uint8_t PlayerNext;
+    char field_8F;
+    struct CameraOrPhysics *CameraOrPhysics1;
+    char field_94;
+    char field_95;
+    char field_96;
+    char field_97;
+    int State;
+    struct AudioManager *AudioManager;
+    int field_A0;
+    char gapA4[3];
+    char field_A7;
+    char field_A8;
+    char field_A9;
+    uint8_t sbw;
+    uint8_t tpa;
+    char field_AC;
+    char gapAD[11];
+    struct S131 *S1__;
+    char gapBC[23];
+    char field_D3;
+    char gapD4[7];
+    char field_DB;
+    char gapDC[14];
+    char field_EA;
+    char gapEB[12];
+    char field_F7;
+    char gapF8[10];
+    char field_102;
+    char gap103[18];
+    char field_115;
+    char field_116;
+    char field_117;
+    int field_118;
+    int field_11C;
+    int field_120;
+    char field_124;
+    char field_125;
+    char field_126;
+    char field_127;
+    int field_128;
+    int field_12C;
+    int field_130;
+    char gap134[24];
+    struct CameraOrPhysics *CameraOrPhysics;
+    char gap150[4];
+    char field_154;
+    char gap155[62];
+    char field_193;
+    char gap194[18];
+    char field_1A6;
+    char gap1A7[32];
+    char field_1C7;
+    char gap1C8[9];
+    char field_1D1;
+    int field_1D4;
+    int field_1D8;
+    int field_1DC;
+    char gap1E0[4];
+    int Camer_X_View;
+    int Camer_Y_View;
+    int Camer_Z_View;
+    char gap1F0[3];
+    char field_1F3;
+    char gap1F4[6];
+    char field_1FA;
+    char gap1FB[7];
+    char field_202;
+    char gap203[5];
+    struct CameraOrPhysics *CameraOrPhysics2;
+    char field_20C;
+    char gap20D[28];
+    char field_229;
+    char gap22A[35];
+    char field_24D;
+    char gap24E[11];
+    char field_259;
+    char gap25A[17];
+    char field_26B;
+    char gap26C[32];
+    char field_28C;
+    char gap28D[11];
+    char field_298;
+    char gap299[5];
+    char field_29E;
+    char field_29F;
+    int AuxGameCameraX;
+    int AuxGameCameraY;
+    int AuxGameCameraZ;
+    char gap2AC[24];
+    struct Ped *MainPed;
+    struct Ped *pPassenger;
+    struct Car *sCar2;
+    char field_2D0;
+    struct S161 *Money;
+    char gap2D8[107];
+    char field_343;
+    char gap344[160];
+    char field_3E4;
+    char gap3E5[53];
+    char field_41A;
+    char gap41B[46];
+    char field_449;
+    char gap44A[31];
+    char field_469;
+    char field_46A;
+    char field_46B;
+    char field_46C;
+    char field_46D;
+    char field_46E;
+    char field_46F;
+    char field_470;
+    char field_471;
+    char field_472;
+    char field_473;
+    char field_474;
+    char field_475;
+    char field_476;
+    char field_477;
+    char field_478;
+    char field_479;
+    char field_47A;
+    char field_47B;
+    char field_47C;
+    char field_47D;
+    char field_47E;
+    char field_47F;
+    char field_480;
+    char gap481[9];
+    char field_48A;
+    char gap48B[437];
+    char field_640;
+    int field_644;
+    char gap648[48];
+    int field_678;
+    int field_67C;
+    uint16_t field_680;
+    int16_t field_682;
+    struct S161 *Lives;
+    char gap688[52];
+    struct S161 *MultiPlayer;
 };
 #pragma pack(pop)
 

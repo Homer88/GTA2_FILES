@@ -7,29 +7,26 @@
 #include "player.h"
 
 struct Game {
-    int Status;
-    struct Player *cPlayer[6];
-    struct Player *cPlayer_1;
-    byte CurrentPlayer;
-    byte IndexPlayer;
-    undefined field5_0x22;
-    byte byte_;
-    undefined1 IDs;
-    undefined field8_0x25;
-    undefined field9_0x26;
-    undefined field10_0x27;
-    int GameOver;
-    int field12_0x2c;
-    byte field13_0x30;
-    undefined field14_0x31;
-    undefined field15_0x32;
-    undefined field16_0x33;
+    unsigned int Status;
+    struct Player *pPlayer[6];
+    struct Player *CurentPlayer;
+    byte CurentPlayer__;
+    byte Index;
+    char field_22;
+    byte MaxIdx;
+    byte PlayerInFocus;
+    char field_25;
+    char field_26;
+    char field_27;
+    int isDead;
+    int State;
+    int field_30;
     int SkipPolice;
-    struct Player *PlayerMain;
-    byte gSkipPolice;
-    undefined field20_0x3d;
-    undefined field21_0x3e;
-    undefined field22_0x3f;
+    struct Player *Player;
+    char gSkilPolice;
+    char field_3D;
+    char field_3E;
+    char field_3F;
 };
 
 // Global game pointer

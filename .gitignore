@@ -18,11 +18,14 @@ __pycache__/
 target/
 .gradle/
 
+# Build directories
+build/
+dist/
+
 # Logs and temp files
 *.log
 *.tmp
 *.swp
-*.swo
 
 # Environment
 .env
@@ -66,6 +69,3 @@ htmlcov/
 *.tar.xz
 *.tar.zst
 ```
-/d3ddll/Release
-/d3ddll/Release
-/dmavideo/Debug
