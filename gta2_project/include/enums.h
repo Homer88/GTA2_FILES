@@ -108,6 +108,43 @@ typedef enum WeaponType {
     CAR_BOMB=14
 } WeaponType;
 
+// MenuActions - действия меню
+typedef enum MenuActions : int8_t {
+    MENUACTION_NONE = 0,           // Нет действия
+    MENUACTION_CHANGEPAGE = 1,     // Сменить страницу меню
+    MENUACTION_SETPLAYERNAME = 2,  // Установить имя игрока
+    MENUACTION_START_GAME = 3,     // Начать игру
+    MENUACTION_OPTIONS = 4,        // Опции
+    MENUACTION_QUIT = 5,           // Выход
+    MENUACTION_VIEW_HIGHSCORE = 6, // Просмотр рекордов
+    MENUACTION_SELECT_LEVEL = 7,   // Выбор уровня
+} MenuActions;
+
+// MenuPic - типы изображений меню
+typedef enum MenuPic : int8_t {
+    MENUPIC_OPTIONS = 0,       // Опции
+    MENUPIC_PLAY = 1,          // Играть
+    MENUPIC_QUIT = 2,          // Выход
+    MENUPIC_3 = 3,             // Неизвестно 3
+    MENUPIC_4 = 4,             // Неизвестно 4
+    MENUPIC_5 = 5,             // Неизвестно 5
+    MENUPIC_VIEW_HIGH = 6,     // Просмотр рекордов
+    MENUPIC_START_LEVEL1 = 7,  // Начать уровень 1
+    MENUPIC_LOAD_SAVE = 8,     // Загрузка/Сохранение
+    MENUPIC_START_LEVEL3 = 9,  // Начать уровень 3
+    MENUPIC_PLAYER_NAME = 10,  // Имя игрока
+    MENUPIC_RESTART = 11,      // Перезапуск
+    MENUPIC_HIGH_SCORES = 12,  // Таблица рекордов
+    MENUPIC_RIP = 13,          // Экран смерти (RIP)
+    MENUPIC_14 = 14,           // Неизвестно 14
+    MENUPIC_15 = 15,           // Неизвестно 15
+    MENUPIC_RESUM_SAVE = 16,   // Продолжить/Сохранить
+    MENUPIC_TITLE = 17,        // Заглавный экран
+    MENUPIC_18 = 18,           // Неизвестно 18
+    MENUPIC_19 = 19,           // Неизвестно 19
+} MenuPic;
+
+
 // SectionFlags
 typedef enum SectionFlags {
     IMAGE_SCN_TYPE_NO_PAD=8,
