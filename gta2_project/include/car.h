@@ -4,110 +4,71 @@
 #include "types.h"
 #include "enums.h"
 #include "forward_declarations.h"
+#include "Rect2D.h"       // Для BoundingBox
+#include "CollisionBox.h" // Для LastCollision
 
 // ============================================================================
 // Вспомогательные структуры
 // ============================================================================
 
 struct Turret {
-    void *void1;              // Указатель на данные турели
-    undefined2 count;         // Счётчик (возможно, боезапас или количество выстрелов)
-    undefined field2_0x6;     // Выравнивание
-    undefined field3_0x7;     // Выравнивание
+    void* TargetPtr;        // 0x0 - Указатель на цель или флаги (void1 в IDA)
+    u16 Counter;            // 0x4 - Счётчик/таймер (count в IDA, значение 45 = полное)
+    u8 State;               // 0x6 - Состояние турели (field2_0x6 в IDA)
+    u8 Padding;             // 0x7 - Выравнивание (field3_0x7 в IDA)
 };
 
 struct Passenger {
-    struct Passenger *Next;   // Следующий пассажир в списке
-    struct Passenger *Prev;   // Предыдущий пассажир в списке
+    struct Ped* PedPtr;     // 0x0 - Указатель на сущность пешехода
+    s32 SeatIndex;          // 0x4 - Индекс сиденья (-1 = пусто, 0 = водитель, 1+ = пассажиры)
+    u8 StateFlags;          // 0x5 - Флаги состояния (бит 0: жив, бит 1: входит, бит 2: выходит)
+    u16 ActionTimer;        // 0x6 - Таймер или кадр анимации входа/выхода
+    u8 ActionState;         // 0x8 - Состояние действия (0=сидит, 1=посадка, 2=высадка)
+    u8 Reserved[3];         // 0x9 - Выравнивание до 0xC
+    u32 Reserved2;          // 0xC - Резервное поле
 };
 
 struct CarDoor {
-    int AnimationFrame;       // Битовое поле: [0]=текущий кадр(0-4), [1]=таймер задержки, [2]=кол-во кадров
-    int doorState;            // Состояние: 0=закрыта, 1=открыта, 2=открывается, 3=закрывается, 4=переход, 5=задержка, 6=принудительно закрыта
-    struct Ped *PedInDoor;    // Пешеход, входящий/выходящий через дверь (обнуляется если мёртв)
-    byte DoorTimer;           // Таймер задержки перед открытием (уменьшается в состоянии 5)
-    byte AnimationFlags;      // Флаги анимации (байт 1 из AnimationFrame)
-    byte TotalFrames;         // Общее количество кадров анимации (байт 2 из AnimationFrame)
-    byte Padding;             // Выравнивание
+    s32 AnimationFrame;     // 0x0 - Текущий кадр анимации / таймер задержки
+    s32 DoorState;          // 0x4 - Состояние: 0=закрыта, 1=открыта, 2=открывается, 3=закрывается, 4=переход, 5=задержка, 6=принудительно закрыта
+    struct Ped* PedInDoor;  // 0x8 - Пешеход, входящий/выходящий через дверь
+    u8 DoorTimer;           // 0xC - Таймер задержки перед открытием (уменьшается в состоянии 5)
+    u8 AnimationFlags;      // 0xD - Флаги анимации (бит 0: активна, бит 1: обратное направление)
+    u8 TotalFrames;         // 0xE - Общее количество кадров анимации
+    u8 Padding;             // 0xF - Выравнивание
 };
 
 struct EngineStruct {
-    struct EngineStruct *ElementNext;         // Следующий элемент в списке двигателей
-    undefined4 field1_0x4;                    // Звук двигателя или RPM
-    undefined1 field2_0x8;                    // Флаги состояния
-    undefined1 field3_0x9;                    // Фаза работы
-    undefined1 field4_0xa;                    // Уровень повреждения
-    undefined field5_0xb;                     // Выравнивание
-    struct EngineStruct *FirstElement;        // Первый элемент в пуле
-    struct CarSystemManager *sCarSystemManager; // Менеджер системы автомобилей
-    undefined4 field8_0x14;                   // Параметр двигателя 1
-    undefined4 field9_0x18;                   // Параметр двигателя 2
-    undefined4 field10_0x1c;                  // Параметр двигателя 3
-    undefined4 field11_0x20;                  // Параметр двигателя 4
-    uint field12_0x24;                        // Обороты двигателя или нагрузка
-    undefined field13_0x28;                   // Температура
-    undefined field14_0x29;                   // Давление масла
-    undefined field15_0x2a;                   // Топливо
-    undefined field16_0x2b;                   // Износ
-    undefined field17_0x2c;                   // Резерв
-    undefined field18_0x2d;                   // Резерв
-    undefined field19_0x2e;                   // Резерв
-    undefined field20_0x2f;                   // Резерв
-    undefined field21_0x30;                   // Резерв
-    undefined field22_0x31;                   // Резерв
-    undefined field23_0x32;                   // Резерв
-    undefined field24_0x33;                   // Резерв
-    undefined4 field25_0x34;                  // Звук холостого хода
-    undefined4 field26_0x38;                  // Звук ускорения
-    undefined4 field27_0x3c;                  // Звук замедления
-    undefined4 field28_0x40;                  // Параметр выхлопа
-    undefined4 field29_0x44;                  // Параметр трансмиссии
-    undefined4 field30_0x48;                  // Параметр сцепления
-    undefined4 field31_0x4c;                  // Параметр дифференциала
-    undefined4 field32_0x50;                  // Параметр колёс
-    undefined2 field33_0x54;                  // Передаточное число КПП
-    undefined2 field34_0x56;                  // Текущая передача
-    undefined2 field35_0x58;                  // Крутящий момент
-    undefined2 field36_0x5a;                  // Мощность
-    undefined4 field37_0x5c;                  // Общий параметр производительности
-    undefined4 field_0x604;                   // Смещение или указатель
-    undefined4 field39_0x64;                  // Таймер перегрева
-    undefined4 field40_0x68;                  // Таймер поломки
-    struct EngineStruct *NextElement;         // Следующий элемент в активном списке
-    undefined4 field42_0x70;                  // Резерв
-    undefined4 field43_0x74;                  // Резерв
+    struct EngineStruct* Next;      // 0x0 - Следующий элемент в списке
+    f32 Rpm;                        // 0x4 - Обороты двигателя (RPM)
+    u8 Flags;                       // 0x8 - Флаги состояния (бит 0: заведён, бит 1: повреждён)
+    u8 Phase;                       // 0x9 - Фаза работы (0=старт, 1=работа, 2=остановка)
+    u8 DamageLevel;                 // 0xA - Уровень повреждения (0-100)
+    u8 Padding;                     // 0xB - Выравнивание
+    struct EngineStruct* PoolFirst; // 0xC - Первый элемент в пуле
+    struct CarSystemManager* Manager; // 0x10 - Менеджер системы автомобилей
+    f32 Throttle;                   // 0x14 - Положение дросселя (0.0-1.0)
+    f32 Temperature;                // 0x18 - Температура двигателя
+    f32 OilPressure;                // 0x1C - Давление масла
+    f32 FuelLevel;                  // 0x20 - Уровень топлива
+    u32 IgnitionTimer;              // 0x24 - Таймер возгорания
+    u32 StallTimer;                 // 0x28 - Таймер заглохания
+    struct EngineStruct* ActiveNext;// 0x2C - Следующий в активном списке
+    u32 Reserved[16];               // 0x30 - Резервные поля
 };
 
 struct Model {
-    int ModelCar;             // ID модели автомобиля
-    undefined field1_0x4;     // Флаги модели
-    undefined field2_0x5;     // Тип кузова
-    undefined field3_0x6;     // Класс автомобиля
-    undefined field4_0x7;     // Приоритет рендеринга
-    undefined4 field5_0x8;    // Масса автомобиля
-    int field6_0xc;           // Длина (габарит X)
-    undefined field7_0x10;    // Ширина (габарит Z)
-    undefined field8_0x11;    // Высота (габарит Y)
-    undefined field9_0x12;    // Центр масс X
-    undefined field10_0x13;   // Центр масс Y
-    int field11_0x14;         // Максимальная скорость
-    int field12_0x18;         // Ускорение
-    int field13_0x1c;         // Торможение
-    byte field14_0x20;        // Количество дверей
-    undefined field15_0x21;   // Тип привода (передний/задний/полный)
-    undefined field16_0x22;   // Тип коробки передач
-    undefined field17_0x23;   // Объём двигателя
-    undefined field18_0x24;   // Расход топлива
-    undefined field19_0x25;   // Вместимость багажника
-    undefined field20_0x26;   // Вместимость пассажиров
-    undefined field21_0x27;   // Уровень брони
-    undefined field22_0x28;   // Стоимость
-    undefined field23_0x29;   // Группа трафика
-    ushort field24_0x2a;      // Флаги видимости
-    short field25_0x2c;       // Смещение текстуры X
-    short field26_0x2e;       // Смещение текстуры Y
-    struct Ped *Ped;          // Связанный пешеход (для спец. автомобилей)
-    undefined field28_0x34;   // Выравнивание
+    u32 ModelId;            // 0x0 - ID модели автомобиля
+    u8 Flags;               // 0x4 - Флаги модели (бит 0: видим, бит 1: отражение)
+    u8 BodyType;            // 0x5 - Тип кузова (седан, грузовик, спорт)
+    u8 Class;               // 0x6 - Класс автомобиля (гражданский, военный, спец)
+    u8 RenderPriority;      // 0x7 - Приоритет рендеринга
+    f32 Mass;               // 0x8 - Масса автомобиля (кг)
+    f32 Length;             // 0xC - Длина (габарит X)
+    f32 Width;              // 0x10 - Ширина (габарит Y)
+    f32 Height;             // 0x14 - Высота (габарит Z)
+    void* SpriteData;       // 0x18 - Указатель на данные спрайта
+    u32 CurrentSprite;      // 0x1C - Индекс текущего спрайта
 };
 
 // ============================================================================
@@ -129,46 +90,50 @@ struct Car {
     struct EngineStruct *Engine;      // Параметры двигателя (мощность, износ, звук)
     struct Model *ModelData;          // Статические данные модели (масса, габариты, текстуры)
     void *pVehicleStats;              // Указатель на глобальные характеристики ТС (из конфига)
-    undefined4 PhysicsFlags;          // Флаги физики (коллизии, гравитация, трение) - значение 16384
+    u32 PhysicsFlags;                 // Флаги физики (коллизии, гравитация, трение) - значение 16384
 
     // === Блок 3: Идентификация и урон (0x30 - 0x4F) ===
     int ObjectID;                     // Уникальный ID объекта в мире
     struct Ped *Attacker;             // Последний пешеход, нанёсший урон (триггер засветки выстрела)
     short Health;                     // Здоровье машины (0 = уничтожена)
     short VisibilityTimer;            // Таймер невидимости (сбрасывается когда машину видят игроки)
-    ushort StatusFlags;               // Битовые флаги состояния (двигатель, сигнализация, угон)
-    undefined Reserved1[2];           // Выравнивание (field17_0x7a, field18_0x7b)
+    u16 StatusFlags;                  // Битовые флаги состояния (двигатель, сигнализация, угон)
+    u16 Reserved1;                    // Выравнивание (field17_0x7a, field18_0x7b)
     int SpecialTimer;                 // Таймер специального события (например, время до взрыва)
 
     // === Блок 4: Состояние и тип (0x50 - 0x5F) ===
-    undefined Reserved2[4];           // Выравнивание (field20_0x80 - field23_0x83)
+    u32 Reserved2;                    // Выравнивание (field20_0x80 - field23_0x83)
     enum CarType Type;                // Тип машины (гражданская, полиция, пожарная, военная)
     int State;                        // Состояние машины: 0=неактивна, 1=активна, 5=уничтожена, 7=особое
-    byte FireFlags;                   // Флаги возгорания (бит 0: горит, бит 1: взрывается)
-    byte SirenFlags;                  // Флаги сирены (тип, приоритет)
-    byte SirenTimer;                  // Таймер сирены (кадры до следующего звука)
-    byte HornTimer;                   // Таймер гудка
+    u8 FireFlags;                     // Флаги возгорания (бит 0: горит, бит 1: взрывается)
+    u8 SirenFlags;                    // Флаги сирены (тип, приоритет)
+    u8 SirenTimer;                    // Таймер сирены (кадры до следующего звука)
+    u8 HornTimer;                     // Таймер гудка
 
     // === Блок 5: Повреждения и игрок (0x60 - 0x6F) ===
-    undefined4 DamageSource;          // Тип последнего повреждения (пуля, таран, взрыв)
-    byte DamageCooldown;              // Кулдаун получения урона (защита от спама)
-    byte OwnerPlayerId;               // ID игрока-владельца (для мультиплеера)
-    undefined Reserved3[2];           // Выравнивание (field33_0x96, field34_0x97)
+    u32 DamageSource;                 // Тип последнего повреждения (пуля, таран, взрыв)
+    u8 DamageCooldown;                // Кулдаун получения урона (защита от спама)
+    u8 OwnerPlayerId;                 // ID игрока-владельца (для мультиплеера)
+    u16 Reserved3;                    // Выравнивание (field33_0x96, field34_0x97)
     int DoorLockState;                // Состояние замков дверей (1=locked, 2=unlocked)
     int EngineStatus;                 // Состояние двигателя (0=выкл, 1=заведён, 2=сломан)
 
     // === Блок 6: Трафик и спецэффекты (0x70 - 0x7F) ===
     enum TRAFFIC_CAR_TYPE TrafficType;// Тип для ИИ трафика (грузовик, такси, скорая)
     char SirenState;                  // Состояние сирены (выключена/включена/мигает)
-    byte SirenPhase;                  // Фаза мигания сирены
-    undefined Reserved4;              // Выравнивание (field40_0xa6)
-    byte HornActive;                  // Флаг активного гудка (0=тихо, >0=гудит)
-    undefined Reserved5;              // Выравнивание (field42_0xa8)
-    byte FireDuration;                // Таймер горения (кадры до воспламенения/затухания)
-    undefined Reserved6[6];           // Выравнивание / будущие расширения (field44_0xaa - field49_0xaf)
-    undefined4 ExplosionTimer;        // Таймер до взрыва (если машина загорелась)
-    undefined4 UpgradeSoundID;        // ID звука апгрейда (турбо, нитро)
-    undefined Reserved7[4];           // Выравнивание до конца структуры (field52_0xb8 - field55_0xbb)
+    u8 SirenPhase;                    // Фаза мигания сирены
+    u8 Reserved4;                     // Выравнивание (field40_0xa6)
+    u8 HornActive;                    // Флаг активного гудка (0=тихо, >0=гудит)
+    u8 Reserved5;                     // Выравнивание (field42_0xa8)
+    u8 FireDuration;                  // Таймер горения (кадры до воспламенения/затухания)
+    u8 Reserved6[6];                  // Выравнивание / будущие расширения (field44_0xaa - field49_0xaf)
+    u32 ExplosionTimer;               // Таймер до взрыва (если машина загорелась)
+    u32 UpgradeSoundID;               // ID звука апгрейда (турбо, нитро)
+    u32 Reserved7;                    // Выравнивание до конца структуры (field52_0xb8 - field55_0xbb)
+
+    // === Блок 7: Коллизии (добавлено для интеграции с CollisionBox) ===
+    Rect2D BoundingBox;               // Ограничивающая коробка для коллизий
+    struct CollisionBox* LastCollision; // Последняя detected коллизия
 };
 
 // Car function declarations
