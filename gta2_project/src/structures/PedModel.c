@@ -2,7 +2,7 @@
 // Functions working with structure S21
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall S21__S21_FUN_004c4b80(S21 *this,void *param_1)
 

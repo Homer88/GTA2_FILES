@@ -2,7 +2,7 @@
 // Functions working with structure S110
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void * __thiscall S110__S110_FUN_00401b40(void *this,S110 *param_1,void *param_2)
 

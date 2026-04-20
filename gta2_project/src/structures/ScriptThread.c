@@ -2,7 +2,7 @@
 // Functions working with structure S68
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 int __thiscall S68__S68GetPedID(S68 *this,byte param_1)
 

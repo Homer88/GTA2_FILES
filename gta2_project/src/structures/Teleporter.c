@@ -2,7 +2,7 @@
 // Functions working with structure S170
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 undefined1 __thiscall S170__S170_FUN_004b5ed0(S170 *this)
 

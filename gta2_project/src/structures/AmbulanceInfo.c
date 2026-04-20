@@ -2,7 +2,7 @@
 // Functions working with structure S281
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 S281 * __thiscall S281__S281(S281 *this)
 

@@ -2,7 +2,7 @@
 // Generated from gta2.exe.c
 // Functions count: 83
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall UI_ShowWindow(void *this,int param_1)
 

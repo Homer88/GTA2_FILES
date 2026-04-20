@@ -2,7 +2,7 @@
 // Functions working with structure S2
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 S2 * __thiscall S2__S2(S2 *this)
 

@@ -2,7 +2,7 @@
 // Functions working with structure S57
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 undefined4 __thiscall S57__S57_FUN_00488170(S57 *this,int param_1)
 

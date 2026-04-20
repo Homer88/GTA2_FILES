@@ -2,7 +2,7 @@
 // Functions working with structure S89
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall S89__S89_FUN_004c2780(S89 *this)
 

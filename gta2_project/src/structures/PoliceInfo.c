@@ -2,7 +2,7 @@
 // Functions working with structure S280
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void * __thiscall S280__S280(S280 *this,byte param_1)
 

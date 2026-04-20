@@ -2,7 +2,7 @@
 // Functions working with structure S93
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 S93 * __thiscall S93__S93(S93 *this)
 

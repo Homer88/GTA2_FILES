@@ -2,7 +2,7 @@
 // Functions working with structure S138
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall S138__S138(S138 *this)
 

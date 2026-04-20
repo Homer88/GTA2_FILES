@@ -2,7 +2,7 @@
 // Functions working with structure S25
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall S25__S25_FUN_004768c0(S25 *this,byte param_1,int param_2)
 

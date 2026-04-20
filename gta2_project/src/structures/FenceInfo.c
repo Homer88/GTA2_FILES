@@ -2,7 +2,7 @@
 // Functions working with structure S151
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall S151__FUN_004a8600(S151 *this)
 

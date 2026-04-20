@@ -2,7 +2,7 @@
 // Functions working with structure S76
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 byte __thiscall S76__S76_FUN_0044c860(S76 *this)
 

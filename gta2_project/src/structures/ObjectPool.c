@@ -2,7 +2,7 @@
 // Functions working with structure S52
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall S52__S52(S52 *this)
 

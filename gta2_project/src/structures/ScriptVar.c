@@ -2,7 +2,7 @@
 // Functions working with structure S70
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 undefined4 __thiscall S70__S70_FUN_004c3380(S70 *this)
 

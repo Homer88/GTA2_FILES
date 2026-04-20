@@ -2,7 +2,7 @@
 // Functions working with structure S63
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 S63 * __thiscall S63__FUN_0041d030(S63 *param_1,byte param_2)
 

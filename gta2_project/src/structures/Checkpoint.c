@@ -2,7 +2,7 @@
 // Functions working with structure S56
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 S56 * __thiscall S56__S56_FUN_00446860(S56 *this)
 
