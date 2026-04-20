@@ -4,7 +4,7 @@
 
 #include "common.h"
 
-void __thiscall S23__S23_FUN_0045b0e0(S23 *this)
+void __thiscall BuildingModel_Clear(S23 *this)
 
 {
   this->field0_0x0 = 0;
@@ -13,10 +13,10 @@ void __thiscall S23__S23_FUN_0045b0e0(S23 *this)
 }
 
 
-S23 * __thiscall S23__S23(S23 *this)
+S23 * __thiscall BuildingModel_ctor(S23 *this)
 
 {
-  S23_FUN_0045b0e0(this);
+  BuildingModel_Clear(this);
   return this;
 }
 

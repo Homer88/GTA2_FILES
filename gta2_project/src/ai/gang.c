@@ -4,78 +4,87 @@
 
 #include "common.h"
 
-byte __thiscall Gang::Get_Pararam0x111(Gang *this)
+// Было: Gang::Get_Pararam0x111
+byte __thiscall Gang_GetMood(Gang *this)
 
 
-Gang * __thiscall Gang::Gang(Gang *this)
+// Было: Gang::Gang
+Gang* __thiscall Gang_ctor(Gang *this)
 
 
-Gangs * __thiscall Gangs::Gangs(Gangs *this)
+// Было: Gangs::Gangs
+Gangs* __thiscall Gangs_ctor(Gangs *this)
 
 
 // Было: FUN_0045d960
-void __thiscall Gang::FUN_0045d960(Gang *this)
+void __thiscall Gang_ResetState(Gang *this)
 
 
 // Было: FUN_0045da20
-void __thiscall Gang::FUN_0045da20(Gang *this,byte pPrestige,char param_2)
+void __thiscall Gang_SetPrestige(Gang *this, byte pPrestige, char param_2)
 
 
 // Было: FUN_0045da40
-void __thiscall Gang::FUN_0045da40(Gang *this,byte param_1,byte param_2)
+void __thiscall Gang_SetRelations(Gang *this, byte param_1, byte param_2)
 
 
 // Было: FUN_0045da80
-void __thiscall Gang::FUN_0045da80(Gang *this,byte pPrestige,GANG pGANG)
+void __thiscall Gang_InitFromPreset(Gang *this, byte pPrestige, GANG pGANG)
 
 
 // Было: CopeNameGangFUN_0045db40
-Gang::CopeNameGangFUN_0045db40(Gang *this,char *param_1,byte index)
+const char* __thiscall Gang_GetName(Gang *this, char *param_1, byte index)
 
 
-Gang * __thiscall Gangs::Gangs_FUN_0045dbb0(Gangs *this,char *param_1)
+// Было: Gangs::Gangs_FUN_0045dbb0
+Gang* __thiscall Gangs_FindByName(Gangs *this, char *param_1)
 
 
-Gang * __thiscall Gangs::FUN_0045dc20(Gangs *this)
+// Было: Gangs::FUN_0045dc20
+Gang* __thiscall Gangs_GetRandomGang(Gangs *this)
 
 
-Gang * __thiscall Gangs::SetGang(Gangs *this,GANG Index)
+// Было: Gangs::SetGang
+Gang* __thiscall Gangs_SelectGang(Gangs *this, GANG Index)
 
 
 // Было: Gangs_FUN_0045dc90
-void __thiscall Gangs::Gangs_FUN_0045dc90(Gangs *this,void *param_1)
+void __thiscall Gangs_RegisterGang(Gangs *this, void *param_1)
 
 
 // Было: FUN_0045dcc0
-GANG __thiscall Gangs::FUN_0045dcc0(Gangs *this,char *param_2)
+GANG __thiscall Gangs_GetIndexByName(Gangs *this, char *param_2)
 
 
 // Было: Gangs_FUN_0045dce0
-char __thiscall Gangs::Gangs_FUN_0045dce0(Gangs *this,int pCarType)
+char __thiscall Gangs_GetPreferredCarType(Gangs *this, int pCarType)
 
 
-bool __thiscall Gang::GetVisibleGang(Gang *this)
+// Было: Gang::GetVisibleGang
+bool __thiscall Gang_IsVisible(Gang *this)
 
 
-void * __thiscall Gangs::Gangs_FUN_0045dd60(Gangs *this)
+// Было: Gangs::Gangs_FUN_0045dd60
+void* __thiscall Gangs_GetGangData(Gangs *this)
 
 
-Gang * __thiscall Gangs::S117_FUN_0045ddb0(Gangs *this)
+// Было: Gangs::S117_FUN_0045ddb0
+Gang* __thiscall Gangs_GetActiveGang(Gangs *this)
 
 
 // Было: FUN_0045de10
-void __thiscall Gang::FUN_0045de10(Gang *this,byte param_1,GANG pGANG)
+void __thiscall Gang_SetColor(Gang *this, byte param_1, GANG pGANG)
 
 
 // Было: FUN_0045dea0
-void __thiscall Gang::FUN_0045dea0(Gang *this,byte param_1,GANG param_2)
+void __thiscall Gang_SetWeaponPreference(Gang *this, byte param_1, GANG param_2)
 
 
 // Было: FUN_0045df30
-void __thiscall Gangs::FUN_0045df30(Gangs *this,int param_1,GANG param_2)
+void __thiscall Gangs_SetGangPresence(Gangs *this, int param_1, GANG param_2)
 
 
 // Было: FUN_00475900
-void __thiscall Gang::FUN_00475900(Gang *this,byte param_1)
+void __thiscall Gang_UpdateInfluence(Gang *this, byte param_1)
 
 
