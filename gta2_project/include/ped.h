@@ -5,6 +5,7 @@
 #include "enums.h"
 #include "forward_declarations.h"
 #include "math_types/vector2d.h"
+#include "ai/ped_ai_states.h"
 
 #pragma pack(push, 1)
 
@@ -222,6 +223,9 @@ struct Ped {
     u32 field_0x28c;                  // 0x28c
     u32 field_0x290;                  // 0x290
     u32 field_0x294;                  // 0x294
+    
+    // === Блок 9: ИИ пешехода (контекст AI) ===
+    struct PedAIContext AI;           // Контекст искусственного интеллекта
 };
 
 #pragma pack(pop)
