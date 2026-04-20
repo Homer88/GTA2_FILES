@@ -2,7 +2,7 @@
 // Functions working with structure S3
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall S3__FUN_00401ad0(SpriteS1 *this,S3 *pS3)
 

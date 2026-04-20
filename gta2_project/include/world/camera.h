@@ -1,8 +1,8 @@
 #ifndef CAMERA_H
 #define CAMERA_H
 
-#include "../types.h"
-#include "math_types/vector2d.h"
+#include "core/types.h"
+#include "systems/vector2d.h"
 #include "forward_declarations.h"
 
 /**

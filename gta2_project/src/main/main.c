@@ -2,7 +2,7 @@
 // Generated from gta2.exe.c
 // Functions count: 7
 
-#include "../../include/common.h"
+#include "common.h"
 
 // Было: TangoMai_FUN_00450bc0
 void __thiscall TangoMain::TangoMai_FUN_00450bc0(TangoMain *this)

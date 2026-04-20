@@ -2,7 +2,7 @@
 // Functions working with structure S127
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 byte __thiscall S127__S127_IsActionAllowed(S127 *this,int param_1)
 

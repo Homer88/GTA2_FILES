@@ -2,7 +2,7 @@
 // Generated from gta2.exe.c
 // Functions count: 25
 
-#include "../../include/common.h"
+#include "common.h"
 
 Registry::GetReplayNum(Registry *this,LPCSTR param_1,byte param_2)
 

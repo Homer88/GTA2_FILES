@@ -2,7 +2,7 @@
 // Generated from gta2.exe.c
 // Functions count: 153
 
-#include "../../include/common.h"
+#include "common.h"
 
 bool __thiscall Player::CheckCondition(Player *this,int *pConditionValue)
 

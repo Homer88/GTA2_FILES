@@ -2,7 +2,7 @@
 // Functions working with structure S61
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 undefined1 __thiscall S61__S61_FUN_00421050(S61 *this)
 

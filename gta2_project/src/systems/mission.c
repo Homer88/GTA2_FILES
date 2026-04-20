@@ -2,7 +2,7 @@
 // Generated from gta2.exe.c
 // Functions count: 66
 
-#include "../../include/common.h"
+#include "common.h"
 
 // Было: FUN_003f163c
 void __thiscall MissionManager__UpdateMissionState(MissionManager *this)

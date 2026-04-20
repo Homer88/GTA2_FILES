@@ -2,7 +2,7 @@
 // Functions working with structure S105
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 bool __thiscall S105__S105_FindCar(S105 *this,Car *pCar)
 

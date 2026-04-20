@@ -2,7 +2,7 @@
 // Functions working with structure S200
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall S200__S200(S200 *this)
 

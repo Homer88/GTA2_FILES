@@ -1,7 +1,7 @@
 #ifndef SAVEGAME_TYPES_H
 #define SAVEGAME_TYPES_H
 
-#include "../types.h"
+#include "core/types.h"
 
 #define SAVE_MAGIC 0x47544132  // "GTA2" в little-endian
 #define SAVE_VERSION 1

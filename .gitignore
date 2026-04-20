@@ -2,58 +2,49 @@
 # Compiled and build artifacts
 *.o
 *.obj
-*.exe
+*.a
+*.lib
 *.dll
 *.so
-*.a
+*.dylib
+*.exe
 *.out
-
-# Dependencies
-node_modules/
 
 # Build directories
 build/
 dist/
-target/
+release/
+debug/
 
-# Logs and temp files
-*.log
+# Dependencies
+*.pyc
+__pycache__/
+.venv/
+venv/
+env/
+node_modules/
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
 *.tmp
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
 
 # Environment files
 .env
 .env.local
 *.env.*
-
-# Editors
-.vscode/
-.idea/
-
-# OS specific
-.DS_Store
-Thumbs.db
-
-# Compression files
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
 ```

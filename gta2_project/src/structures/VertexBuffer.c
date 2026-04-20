@@ -2,7 +2,7 @@
 // Functions working with structure S95
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 S95 * __thiscall S95__S95(S95 *this)
 

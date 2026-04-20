@@ -2,7 +2,7 @@
 // Functions working with structure S124
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 S125 * __thiscall S124__GetS125(S124 *this)
 

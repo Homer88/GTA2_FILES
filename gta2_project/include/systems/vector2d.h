@@ -1,7 +1,7 @@
 #ifndef VECTOR2D_H
 #define VECTOR2D_H
 
-#include "../types.h"
+#include "core/types.h"
 
 /**
  * @brief 2D вектор для физики и математики

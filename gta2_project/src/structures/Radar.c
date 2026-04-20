@@ -2,7 +2,7 @@
 // Functions working with structure S36
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 byte * __thiscall S36__S36_FUN_004c3680(S36 *this)
 

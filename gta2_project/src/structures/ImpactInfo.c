@@ -2,7 +2,7 @@
 // Functions working with structure S115
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 S115 * __thiscall S115__S115(S115 *this)
 

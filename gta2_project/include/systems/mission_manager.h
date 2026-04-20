@@ -1,7 +1,7 @@
 #ifndef MISSION_MANAGER_H
 #define MISSION_MANAGER_H
 
-#include "../types.h"
+#include "core/types.h"
 #include "mission_types.h"
 #include "forward_declarations.h"
 

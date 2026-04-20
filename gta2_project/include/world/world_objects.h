@@ -2,8 +2,8 @@
 #define WORLD_OBJECTS_H
 
 #include "types.h"
-#include "math_types/vector2d.h"
-#include "math_types/rect2d.h"
+#include "systems/vector2d.h"
+#include "systems/rect2d.h"
 
 /* ============================================================================
    ЗДАНИЯ И СТАТИЧЕСКИЕ ОБЪЕКТЫ (Building)

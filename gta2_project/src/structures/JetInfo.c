@@ -2,7 +2,7 @@
 // Functions working with structure S353
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 S353 * __thiscall S353__S353(S353 *this,int param_1)
 

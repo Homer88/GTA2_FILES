@@ -2,7 +2,7 @@
 // Functions working with structure S121
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 byte __thiscall S121__S121FUN_00446200(S121 *this)
 

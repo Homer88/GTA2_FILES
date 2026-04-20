@@ -2,7 +2,7 @@
 // Functions working with structure S73
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall S73__S73_FUN_004a4f20(S73 *this,Weapon *sWeapon)
 

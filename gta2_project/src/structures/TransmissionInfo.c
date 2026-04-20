@@ -2,7 +2,7 @@
 // Functions working with structure S123
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 ushort __thiscall S123__S123_FUN_004b8d60(S123 *this)
 

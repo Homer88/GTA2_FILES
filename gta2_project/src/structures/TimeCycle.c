@@ -2,7 +2,7 @@
 // Functions working with structure S31
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 S31 * __thiscall S31__S31(S31 *this)
 

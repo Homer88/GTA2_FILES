@@ -4,7 +4,7 @@
 #include "types.h"
 #include "enums.h"
 #include "forward_declarations.h"
-#include "math_types/vector2d.h"
+#include "systems/vector2d.h"
 #include "ai/ped_ai_states.h"
 
 #pragma pack(push, 1)

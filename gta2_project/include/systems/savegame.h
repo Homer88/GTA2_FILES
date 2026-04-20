@@ -1,7 +1,7 @@
 #ifndef SAVEGAME_H
 #define SAVEGAME_H
 
-#include "../types.h"
+#include "core/types.h"
 #include "savegame_types.h"
 #include "forward_declarations.h"
 

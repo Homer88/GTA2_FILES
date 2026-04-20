@@ -2,7 +2,7 @@
 // Functions working with structure S46
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall S46__S154_FUN_00411a50(AudioManager *this,S46 *param_1)
 

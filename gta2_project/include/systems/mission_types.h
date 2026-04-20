@@ -1,7 +1,7 @@
 #ifndef MISSION_TYPES_H
 #define MISSION_TYPES_H
 
-#include "../types.h"
+#include "core/types.h"
 
 /**
  * Типы миссий в GTA 2

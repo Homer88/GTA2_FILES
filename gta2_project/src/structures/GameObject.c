@@ -2,7 +2,7 @@
 // Functions working with structure S6
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 S6 * __thiscall S6__Car_FUN_00421ec0(Car *this,S6 *param_1)
 

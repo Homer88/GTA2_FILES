@@ -2,7 +2,7 @@
 // Functions working with structure S113
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 byte __thiscall S113__S111_FUN_004a9ef0(Police *this,S113 *pS113)
 

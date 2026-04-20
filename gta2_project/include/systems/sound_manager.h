@@ -1,7 +1,7 @@
 #ifndef SOUND_MANAGER_H
 #define SOUND_MANAGER_H
 
-#include "../types.h"
+#include "core/types.h"
 
 /**
  * Типы звуков в GTA 2

@@ -2,7 +2,7 @@
 // Functions working with structure S166
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall S166__S166_FUN_004c6290(S166 *this)
 

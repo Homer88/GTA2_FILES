@@ -2,7 +2,7 @@
 // Functions working with structure S285
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall S285__FUN_00432c60(S285 *this)
 

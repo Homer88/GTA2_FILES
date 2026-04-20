@@ -2,7 +2,7 @@
 #define GAME_OBJECTS_H
 
 #include "types.h"
-#include "math_types/vector2d.h"
+#include "systems/vector2d.h"
 
 // ============================================================================
 // 1. PICKUP (Подбираемые предметы: аптечки, оружие, деньги, бонусы)

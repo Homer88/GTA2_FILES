@@ -4,7 +4,7 @@
 #include "types.h"
 #include "enums.h"
 #include "forward_declarations.h"
-#include "math_types/rect2d.h"  // Для BoundingBox (OBB)
+#include "systems/rect2d.h"  // Для BoundingBox (OBB)
 #include "collision.h"          // Для CollisionInfo
 
 // ============================================================================

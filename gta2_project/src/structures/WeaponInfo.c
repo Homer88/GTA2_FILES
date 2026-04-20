@@ -2,7 +2,7 @@
 // Functions working with structure S19
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall S19__S19_FUN_004c4d60(S19 *this)
 

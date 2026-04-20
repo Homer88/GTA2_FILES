@@ -1,7 +1,7 @@
 #ifndef RENDER_TYPES_H
 #define RENDER_TYPES_H
 
-#include "../types.h"
+#include "core/types.h"
 
 /**
  * Режимы рендеринга

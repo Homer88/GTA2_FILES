@@ -1,9 +1,9 @@
 #ifndef WEAPON_H
 #define WEAPON_H
 
-#include "../types.h"
+#include "core/types.h"
 #include "../enums.h"
-#include "math_types/vector2d.h"
+#include "systems/vector2d.h"
 
 /**
  * Типы оружия в GTA 2

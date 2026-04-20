@@ -2,7 +2,7 @@
 // Functions working with structure S169
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 undefined1 __thiscall S169__AreAnyPedActive(S169 *this)
 

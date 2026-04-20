@@ -1,7 +1,7 @@
 #ifndef RENDERER_H
 #define RENDERER_H
 
-#include "../types.h"
+#include "core/types.h"
 #include "render_types.h"
 #include "camera.h"
 #include "forward_declarations.h"

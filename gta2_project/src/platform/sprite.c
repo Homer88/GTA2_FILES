@@ -2,7 +2,7 @@
 // Generated from gta2.exe.c
 // Functions count: 41
 
-#include "../../include/common.h"
+#include "common.h"
 
 // Было: FUN_00401ad0
 void __thiscall SpriteS1__LinkToS3(SpriteS1 *this,S3 *pS3)

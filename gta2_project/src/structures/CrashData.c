@@ -2,7 +2,7 @@
 // Functions working with structure S119
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 byte __thiscall S119__S119_FUN_0044c870(S119 *this,Car *pCar)
 

@@ -2,7 +2,7 @@
 // Generated from gta2.exe.c
 // Functions count: 67
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall DataStream_ReadBlock(void *this,size_t param_1,size_t param_2,void *param_3)
 

@@ -2,7 +2,7 @@
 // Functions working with structure S140
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 S140 * __thiscall S140__S140(S140 *this)
 

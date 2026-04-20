@@ -2,7 +2,7 @@
 // Functions working with structure S27
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void * __thiscall S27__S27_FUN_004767a0(S27 *this)
 

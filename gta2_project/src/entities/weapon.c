@@ -2,7 +2,7 @@
 // Generated from gta2.exe.c
 // Functions count: 36
 
-#include "../../include/common.h"
+#include "common.h"
 
 int __thiscall Weapon::GetTypeWeapon(Weapon *this)
 

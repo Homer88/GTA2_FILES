@@ -2,7 +2,7 @@
 // Functions working with structure S39
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall S39__S39(S39 *this)
 

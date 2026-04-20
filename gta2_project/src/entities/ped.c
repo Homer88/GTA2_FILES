@@ -2,7 +2,7 @@
 // Generated from gta2.exe.c
 // Functions count: 243
 
-#include "../../include/common.h"
+#include "common.h"
 
 undefined1 __thiscall PedManager__HasActivePeds(S169 *this)
 

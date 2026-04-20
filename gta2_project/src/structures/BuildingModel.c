@@ -2,7 +2,7 @@
 // Functions working with structure S23
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall S23__S23_FUN_0045b0e0(S23 *this)
 

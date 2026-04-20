@@ -1,5 +1,5 @@
-#include "../include/camera.h"
-#include "../include/math_types/vector2d.h"
+#include "camera.h"
+#include "systems/vector2d.h"
 #include <math.h>
 #include <string.h>
 

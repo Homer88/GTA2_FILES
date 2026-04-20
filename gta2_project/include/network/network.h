@@ -2,7 +2,7 @@
 #define NETWORK_H
 
 #include "types.h"
-#include "math_types/vector2d.h"
+#include "systems/vector2d.h"
 
 // ============================================================================
 // 1. СЕТЕВЫЕ КОНСТАНТЫ И ТИПЫ

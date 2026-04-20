@@ -2,7 +2,7 @@
 // Functions working with structure S20
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 S20_01 * __thiscall S20__S20_FUN_004c4b40(S20 *this)
 

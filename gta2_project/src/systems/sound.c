@@ -2,7 +2,7 @@
 // Generated from gta2.exe.c
 // Functions count: 108
 
-#include "../../include/common.h"
+#include "common.h"
 
 // Было: FUN_00410500
 void __thiscall DMAudio::FUN_00410500(DMAudio *this)

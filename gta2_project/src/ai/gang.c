@@ -2,7 +2,7 @@
 // Generated from gta2.exe.c
 // Functions count: 21
 
-#include "../../include/common.h"
+#include "common.h"
 
 byte __thiscall Gang::Get_Pararam0x111(Gang *this)
 

@@ -2,7 +2,7 @@
 // Generated from gta2.exe.c
 // Functions count: 29
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall CameraOrPhysics::SetPararm(CameraOrPhysics *this)
 

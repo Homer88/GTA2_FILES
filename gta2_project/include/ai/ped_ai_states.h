@@ -1,7 +1,7 @@
 #ifndef PED_AI_STATES_H
 #define PED_AI_STATES_H
 
-#include "../types.h"
+#include "core/types.h"
 
 // PedState уже определен в enums.h, используем его напрямую
 

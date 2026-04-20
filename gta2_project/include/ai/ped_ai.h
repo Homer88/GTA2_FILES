@@ -3,7 +3,7 @@
 
 #include "../ped.h"
 #include "ped_ai_states.h"
-#include "../math_types/vector2d.h"
+#include "../systems/vector2d.h"
 
 /**
  * @brief Контекст ИИ пешехода

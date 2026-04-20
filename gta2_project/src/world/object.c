@@ -2,7 +2,7 @@
 // Generated from gta2.exe.c
 // Functions count: 52
 
-#include "../../include/common.h"
+#include "common.h"
 
 Car * __thiscall GameObject__GetVehicle(GameObject *this)
 

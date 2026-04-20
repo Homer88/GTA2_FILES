@@ -2,7 +2,7 @@
 // Functions working with structure S352
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 S352 * __thiscall S352__S352(S352 *this,int param_1,int param_2)
 

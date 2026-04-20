@@ -2,7 +2,7 @@
 // Functions working with structure S34
 // Generated from gta2.exe.c
 
-#include "../../include/common.h"
+#include "common.h"
 
 void __thiscall S34__S34(S34 *this)
 
