@@ -66,3 +66,6 @@ htmlcov/
 *.tar.xz
 *.tar.zst
 ```
+/d3ddll/Release
+/d3ddll/Release
+/dmavideo/Debug
