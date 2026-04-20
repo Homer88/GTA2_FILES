@@ -55,7 +55,7 @@
 | S168 | **PedGenerator** | ~0 байт | 0 |
 | S169 | **SpawnPoint** | ~2136 байт | 2124 |
 | S170 | **Teleporter** | ~10867 байт | 10828 |
-| S200 | **GameState** | ~3 байт | 3 |
+| S200 | **ObjectiveSlot** | ~16 байт | 4 |
 | S208 | **LevelInfo** | ~257 байт | 257 |
 | S281 | **AmbulanceInfo** | ~44 байт | 44 |
 | S282 | **FiretruckInfo** | ~4 байт | 1 |
@@ -72,6 +72,47 @@
 | S1000 | **ConfigData** | ~82 байт | 79 |
 | S1501 | **DebugInfo** | ~2048 байт | 2048 |
 
+## Структуры с осмысленными полями
+
+### Ped (Персонаж)
+Основная структура персонажа. Содержит:
+- `objective_queue[50]` - очередь целей/задач
+- `counter` - счетчик
+- `driver` - водитель (если пед в машине)
+- `linked_ped` - связанный пед
+- `car` - машина для анимации входа/выхода
+- `objective_target_car` - целевая машина для задачи
+- `target_car_for_enter` - машина для входа
+- `player` - игрок
+- `next_ped` - следующий пед в списке
+- `car_current` - текущая машина
+- `selected_weapon` - выбранное оружие
+- `weapon1`, `weapon2` - оружие
+- `gang` - банда
+- `last_char_punched` - последний ударенный персонаж
+- `position_x`, `position_y`, `position_z` - координаты
+- `sprite_s1` - спрайт
+- `id`, `ped_id` - идентификаторы
+- `invulnerability` - невосприимчивость
+- `police_star` - звезды полиции
+- `health` - здоровье
+- `objective_timer` - таймер задачи
+- `car_state_timer` - таймер состояния машины
+- `flags` - флаги (PedFlags)
+- `damage_state` - состояние повреждений
+- `exit_anim_state` - состояние анимации выхода
+- `search_type` - тип поиска
+- `index_ped` - индекс педа
+- `occupation` - профессия/занятие (ALL_PED)
+- `remap` - ремэппинг текстур (Remap)
+- `target_car_door` - целевая дверь машины
+- `animation_state` - состояние анимации
+- `action_state` - состояние действия
+- `current_action` - текущее действие
+- `graphic_type` - тип графики (GraphicType)
+- `gang_car_model` - модель машины банды
+- `current_state` - текущее состояние (PedState)
+- `saved_state` - сохраненное состояние (PedState)
 
 ## Неизвестные структуры
 
