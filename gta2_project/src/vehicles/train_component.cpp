@@ -1,87 +1,67 @@
 /**
  * @file train_component.cpp
- * @brief C++ wrappers for TrainComponent (S83) logic.
+ * @brief C++ обёртки для TrainComponent (GTA2)
  * 
- * Uses structures instead of classes as per project requirements.
- * Wrappers allow easy integration with C++ code while keeping core logic in C.
- * 
- * Source: gta2.exe/ida pro/gta2.exe.c
- * Old function names preserved in comments for IDA Pro mapping.
+ * Использует структуры вместо классов.
+ * old_name: sub_XXXXXX (соответствует адресам в IDA Pro)
  */
 
-#include "entities/vehicle_types.h"
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-// Forward declarations of C implementations
-void S83_Init(S83_TrainComponent* self);
-void S83_Update(S83_TrainComponent* self);
-void S83_SetTrainLength(S83_TrainComponent* self, int length);
-int S83_GetTrainLength(S83_TrainComponent* self);
-void S83_LinkToEngine(S83_TrainComponent* self, S81_PublicTransport* engine);
-S81_PublicTransport* S83_GetLinkedEngine(S83_TrainComponent* self);
-
-#ifdef __cplusplus
-}
-#endif
+#include "../../include/entities/vehicle_types.h"
 
 namespace GTA2 {
 namespace Vehicles {
 
+extern "C" {
+    // Объявления C функций
+    void TrainComponent_Init(TrainComponent* self, int is_engine);
+    void TrainComponent_Link(TrainComponent* self, TrainComponent* other);
+    void TrainComponent_UpdateChain(TrainComponent* head);
+    void TrainComponent_Unlink(TrainComponent* self);
+    int TrainComponent_GetLength(TrainComponent* head);
+}
+
+// ============================================================================
+// C++ WRAPPER FUNCTIONS
+// ============================================================================
+
 /**
- * @brief Initialize TrainComponent structure
- * old_name: FUN_00420000 (S83 constructor)
+ * @brief Инициализация TrainComponent (обёртка)
+ * old_name: sub_4C2000
  */
-void TrainComponent_Init(S83_TrainComponent* self) {
-    S83_Init(self);
+void TrainComponent_Init_Wrapper(TrainComponent* tc, int is_engine) {
+    TrainComponent_Init(tc, is_engine);
 }
 
 /**
- * @brief Update TrainComponent state
- * old_name: FUN_00420100 (S83 update)
+ * @brief Сцепка компонентов (обёртка)
+ * old_name: sub_4C2150
  */
-void TrainComponent_Update(S83_TrainComponent* self) {
-    S83_Update(self);
+void TrainComponent_Link_Wrapper(TrainComponent* tc, TrainComponent* other) {
+    TrainComponent_Link(tc, other);
 }
 
 /**
- * @brief Set train length (number of cars)
- * old_name: FUN_00420200
- * @param self Pointer to TrainComponent structure
- * @param length Number of cars in the train
+ * @brief Обновление цепочки (обёртка)
+ * old_name: sub_4C2280
  */
-void TrainComponent_SetTrainLength(S83_TrainComponent* self, int length) {
-    S83_SetTrainLength(self, length);
+void TrainComponent_UpdateChain_Wrapper(TrainComponent* head) {
+    TrainComponent_UpdateChain(head);
 }
 
 /**
- * @brief Get train length
- * old_name: FUN_00420300
- * @return Number of cars in the train
+ * @brief Расцепка (обёртка)
+ * old_name: sub_4C2450
  */
-int TrainComponent_GetTrainLength(S83_TrainComponent* self) {
-    return S83_GetTrainLength(self);
+void TrainComponent_Unlink_Wrapper(TrainComponent* tc) {
+    TrainComponent_Unlink(tc);
 }
 
 /**
- * @brief Link train component to engine (PublicTransport)
- * old_name: FUN_00420400
- * @param self Pointer to TrainComponent structure
- * @param engine Pointer to engine (PublicTransport)
+ * @brief Получение длины состава (обёртка)
+ * old_name: sub_4C2520
  */
-void TrainComponent_LinkToEngine(S83_TrainComponent* self, S81_PublicTransport* engine) {
-    S83_LinkToEngine(self, engine);
-}
-
-/**
- * @brief Get linked engine
- * old_name: FUN_00420500
- * @return Pointer to linked engine (PublicTransport), or NULL if not linked
- */
-S81_PublicTransport* TrainComponent_GetLinkedEngine(S83_TrainComponent* self) {
-    return S83_GetLinkedEngine(self);
+int TrainComponent_GetLength_Wrapper(TrainComponent* head) {
+    return TrainComponent_GetLength(head);
 }
 
 } // namespace Vehicles

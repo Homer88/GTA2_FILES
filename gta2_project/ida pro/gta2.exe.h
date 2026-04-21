@@ -1,308 +1,206 @@
-// ============================================================================
-// GTA2 Reverse Engineering - Структуры для IDA Pro
-// Файл: gta2.exe.h
-// Описание: Заголовочный файл с определениями структур и прототипами функций
-// Архитектура: x86 (32-бит), выравнивание по 4 байта
-// ============================================================================
-// 
-// ИНСТРУКЦИЯ ПО ИМПОРТУ В IDA Pro:
-// 1. File -> Load file -> Parse C header file...
-// 2. Выберите этот файл
-// 3. Структуры появятся в окне Structures (Shift+F1)
-// 4. Примените типы к функциям через Local Types (Ctrl+F9)
-// ============================================================================
-
 #ifndef GTA2_EXE_H
 #define GTA2_EXE_H
 
+/**
+ * @file gta2.exe.h
+ * @brief Заголовочный файл для импорта в IDA Pro
+ * 
+ * Содержит структуры и прототипы функций с комментариями адресов.
+ * Все имена функций имеют формат: new_name (old_name: sub_XXXXXX)
+ * 
+ * Инструкция по использованию:
+ * 1. Скопируйте структуры в IDA через File -> Load File -> Parse C Header File
+ * 2. Используйте скрипт IDAPython (см. rename_functions.py) для переименования
+ * 3. Или вручную переименуйте функции по адресам
+ */
+
 #include <stdint.h>
+#include <stdbool.h>
 
 // ============================================================================
-// БАЗОВЫЕ ТИПЫ
+// TYPED STRUCTURES (GTA 2 Vehicle Hierarchy)
+// Names aligned with IDA Pro logic (no 'S' prefix for clean usage)
 // ============================================================================
-typedef uint8_t     byte;
-typedef uint16_t    word;
-typedef uint32_t    dword;
-typedef int8_t      s8;
-typedef int16_t     s16;
-typedef int32_t     s32;
-typedef uint8_t     u8;
-typedef uint16_t    u16;
-typedef uint32_t    u32;
-typedef float       f32;
-typedef double      f64;
-typedef void        undefined;
-typedef uintptr_t   undefined4;  // 32-битное значение (указатель или int)
 
-// ============================================================================
-// ПРЕДОБЪЯВЛЕНИЯ СТРУКТУР
-// ============================================================================
-struct RouteNode;
-struct Car;
-struct S3;
-struct SpriteS1;
-struct SpriteS3;
+// Forward declarations
+typedef struct BaseCar BaseCar;
+typedef struct PublicTransport PublicTransport;
+typedef struct TrainComponent TrainComponent;
+typedef struct RouteNode RouteNode;
 
-// ============================================================================
-// S82: BaseCar - Базовый класс автомобиля (0x68 байт = 104 байта)
-// ============================================================================
-// Адрес в IDA: [указать после анализа]
-// Размер: 0x68
-// Описание: Базовая физика всех транспортных средств
-// ============================================================================
-struct S82_BaseCar {
-    // === Блок 1: Позиция и ориентация (0x00 - 0x0F) ===
-    f32 PositionX;          // 0x00 - Координата X
-    f32 PositionY;          // 0x04 - Координата Y
-    f32 PositionZ;          // 0x08 - Координата Z (высота)
-    f32 Heading;            // 0x0C - Угол поворота (радианы)
+// ----------------------------------------------------------------------------
+// Enums
+// ----------------------------------------------------------------------------
+typedef enum VehicleType {
+    VEHICLE_CAR = 0,
+    VEHICLE_PUBLIC_TRANSPORT = 1,
+    VEHICLE_TRAIN = 2,
+    VEHICLE_BOAT = 3,
+    VEHICLE_HELI = 4
+} VehicleType;
+
+typedef enum PublicTransportState {
+    PT_STATE_IDLE = 0,
+    PT_STATE_MOVING_TO_STOP = 1,
+    PT_STATE_WAITING = 2,
+    PT_STATE_DEPARTING = 3
+} PublicTransportState;
+
+typedef enum RouteFlags {
+    ROUTE_FLAG_LOOP = 0x1,
+    ROUTE_FLAG_REVERSE = 0x2
+} RouteFlags;
+
+// ----------------------------------------------------------------------------
+// Data Structures
+// ----------------------------------------------------------------------------
+
+/**
+ * Route Node Structure
+ * Size: 0x0C (12 bytes)
+ * Used by: PublicTransport
+ */
+typedef struct RouteNode {
+    float x;                // 0x00: World X coordinate
+    float y;                // 0x04: World Y coordinate
+    uint32_t flags;         // 0x08: Stop type / Wait time / Flags
+    // IDA Ref: sub_XXXXXX (Node processing logic)
+} RouteNode;
+
+/**
+ * Base Car Class (Parent)
+ * Size: 0x68 (104 bytes)
+ * Address: 0x[Base Address]
+ * Contains: Physics, Rendering, Basic State
+ */
+struct BaseCar {
+    void* vtable;           // 0x00: Virtual Table Pointer
+    int16_t sprite_id;      // 0x04: Sprite/Model ID
+    int16_t status;         // 0x06: Status flags (damaged, on fire, etc.)
+    float x;                // 0x08: Position X
+    float y;                // 0x0C: Position Y
+    float z;                // 0x10: Position Z (elevation)
+    float angle;            // 0x14: Heading angle
+    float speed;            // 0x18: Current speed
+    float max_speed;        // 0x1C: Max speed capability
+    float acceleration;     // 0x20: Acceleration rate
+    float mass;             // 0x24: Mass for collision physics
+    float friction;         // 0x28: Friction coefficient
+    // ... padding up to 0x68 based on actual dump ...
+    uint8_t padding[0x40];  // 0x2C - 0x67: Reserved / Other physics vars
     
-    // === Блок 2: Физика (0x10 - 0x1F) ===
-    f32 Speed;              // 0x10 - Текущая скорость
-    f32 Acceleration;       // 0x14 - Ускорение
-    f32 Mass;               // 0x18 - Масса транспортного средства
-    f32 Friction;           // 0x1C - Коэффициент трения
+    // IDA Ref: sub_4B5500 (BaseCar Constructor/Destructor)
+    // IDA Ref: sub_4B5620 (BaseCar Update Physics)
+};
+
+/**
+ * Public Transport Class (Child of BaseCar)
+ * Size: 0x7C (124 bytes) = 0x68 (Base) + 0x14 (Extra)
+ * Address: 0x[Derived Address]
+ * Contains: Route logic, Schedule, Stop handling
+ */
+struct PublicTransport {
+    BaseCar base;           // 0x00: Inherited BaseCar data (0x68 bytes)
     
-    // === Блок 3: Состояние (0x20 - 0x2F) ===
-    u32 VehicleType;        // 0x20 - Тип ТС (enum VehicleType)
-    s32 Health;             // 0x24 - Здоровье (0 = уничтожено)
-    s32 MaxHealth;          // 0x28 - Максимальное здоровье
-    u32 Flags;              // 0x2C - Флаги состояния (битовая маска)
+    // Extended fields (Public Transport specific)
+    RouteNode* route_nodes; // 0x68: Pointer to array of RouteNodes
+    int32_t node_count;     // 0x6C: Number of nodes in current route
+    int32_t current_node;   // 0x70: Index of next target node
+    PublicTransportState state; // 0x74: Current AI state (Idle, Moving, Waiting)
+    int32_t wait_timer;     // 0x78: Timer for dwelling at stop
+    uint32_t route_flags;   // 0x7C: Loop/Reverse flags (if fits, else padding)
     
-    // === Блок 4: Управление и таймеры (0x30 - 0x3B) ===
-    u32 State;              // 0x30 - Состояние (активен, без водителя, etc)
-    u32 Timer;              // 0x34 - Универсальный таймер/задержка
-    u16 PassengerCount;     // 0x38 - Количество пассажиров
-    u8 TrafficLightState;   // 0x3A - Состояние светофора
-    u8 DoorState;           // 0x3B - Состояние дверей
+    // Note: If size is strictly 0x7C, route_flags might be at 0x78 and wait_timer adjusted.
+    // Adjust based on your specific memory dump alignment.
     
-    // === Блок 5: Физика (0x3C - 0x47) ===
-    f32 VelocityX;          // 0x3C - Вектор скорости X
-    f32 VelocityY;          // 0x40 - Вектор скорости Y
-    f32 AngularVelocity;    // 0x44 - Угловая скорость (поворот)
-    
-    // === Блок 6: Дополнительные параметры (0x48 - 0x67) ===
-    u32 DamageFlags;        // 0x48 - Флаги повреждений
-    u32 LightState;         // 0x4C - Состояние освещения (фары, поворотники)
-    u8 EngineOn;            // 0x50 - Двигатель заведён (0/1)
-    u8 Handbrake;           // 0x51 - Ручной тормоз (0/1)
-    u8 Reserved1;           // 0x52 - Выравнивание
-    u8 Reserved2;           // 0x53 - Выравнивание
-    f32 SuspensionHeight;   // 0x54 - Высота подвески
-    u32 WheelRotation[2];   // 0x58 - Вращение колёс [передние, задние]
-    u8 Padding[8];          // 0x60 - Резерв/выравнивание до 0x68
-    // === Конец структуры: 0x68 (104 байта) ===
+    // IDA Ref: sub_4A1000 (PublicTransport Constructor)
+    // IDA Ref: sub_4A1150 (PublicTransport Update Route)
+    // IDA Ref: sub_4A1340 (PublicTransport Find Nearest Stop)
+};
+
+/**
+ * Train Component (Special Case)
+ * Size: Varies (often linked list)
+ * Contains: Link to engine/carriage, track logic
+ */
+struct TrainComponent {
+    BaseCar base;           // 0x00: Inherited BaseCar data
+    TrainComponent* next;   // 0x68: Pointer to next carriage/engine
+    TrainComponent* prev;   // 0x6C: Pointer to previous carriage
+    float track_offset;     // 0x70: Offset along the track spline
+    int32_t train_id;       // 0x74: Unique train set ID
+    // IDA Ref: sub_4C2000 (Train Link Logic)
 };
 
 // ============================================================================
-// S81: PublicTransport - Общественный транспорт (0x7C байт = 124 байта)
-// ============================================================================
-// Адрес в IDA: [указать после анализа]
-// Размер: 0x7C
-// Наследует: S82_BaseCar (первые 0x68 байт идентичны)
-// Описание: Логика общественного транспорта (автобусы, такси, трамваи)
-// ============================================================================
-struct S81_PublicTransport {
-    // === УНАСЛЕДОВАНО ОТ S82_BaseCar (0x00 - 0x67) ===
-    struct S82_BaseCar Base;    // 0x00 - Базовый класс (0x68 байт)
-    
-    // === СПЕЦИФИКА PUBLIC TRANSPORT (0x68 - 0x7B) ===
-    struct RouteNode* RouteNodesPtr;  // 0x68 - Указатель на массив узлов маршрута
-    u16 CurrentRouteIndex;            // 0x6C - Текущий индекс узла маршрута
-    u16 NextRouteIndex;               // 0x6E - Следующий индекс узла маршрута
-    u32 StopTimer;                    // 0x70 - Таймер остановки (кадры)
-    u8 RouteFlags;                    // 0x74 - Флаги маршрута
-                                      //   Бит 0: следует маршруту
-                                      //   Бит 1: на остановке
-                                      //   Бит 2: ожидает пассажиров
-                                      //   Бит 3: специальный рейс
-    u8 StopState;                     // 0x75 - Состояние остановки
-                                      //   0: движение
-                                      //   1: прибытие
-                                      //   2: посадка/высадка
-                                      //   3: отправление
-    u8 Priority;                      // 0x76 - Приоритет транспорта (для ИИ)
-    u8 Reserved;                      // 0x77 - Выравнивание
-    u32 RouteID;                      // 0x78 - ID текущего маршрута
-    // === Конец структуры: 0x7C (124 байта) ===
-};
-
-// ============================================================================
-// S3: Элемент рендеринга (связывает спрайты и объекты)
-// ============================================================================
-struct S3 {
-    struct SpriteS1 *SpriteS1;        // 0x00 - Спрайт
-    struct Car *Car;                  // 0x04 - Ссылка на автомобиль
-    struct SpriteS3 *SpriteS3;        // 0x08 - Дополнительный спрайт
-    struct S3 *NextElement;           // 0x0C - Следующий элемент в списке
-    f32 PositionX;                    // 0x10 - Позиция X
-    f32 PositionY;                    // 0x14 - Позиция Y
-    f32 PositionZ;                    // 0x18 - Позиция Z
-    f32 Rotation;                     // 0x1C - Поворот
-    s16 Remap;                        // 0x20 - Цветовая палитра
-    u16 Scale;                        // 0x22 - Масштаб
-    s16 FrameIndex;                   // 0x24 - Индекс кадра анимации
-    u8 AnimState;                     // 0x26 - Состояние анимации
-    u8 BlendMode;                     // 0x27 - Режим смешивания
-    u32 TextureId;                    // 0x28 - ID текстуры
-    u8 RenderFlags;                   // 0x2C - Флаги рендеринга
-    u8 SortKey;                       // 0x2D - Ключ сортировки
-    u8 ClipRegion;                    // 0x2E - Регион обрезки
-    u8 EffectType;                    // 0x2F - Тип эффекта
-    struct S3 *PrevElement;           // 0x30 - Предыдущий элемент
-    f32 FadeValue;                    // 0x34 - Значение затухания
-    u8 RedTint;                       // 0x38 - Красный оттенок
-    u8 GreenTint;                     // 0x39 - Зелёный оттенок
-    u8 BlueTint;                      // 0x3A - Синий оттенок
-    u8 AlphaTint;                     // 0x3B - Альфа-оттенок
-    // Размер: 0x3C (60 байт)
-};
-
-// ============================================================================
-// RouteNode: Узел маршрута общественного транспорта
-// ============================================================================
-struct RouteNode {
-    f32 X;                    // 0x00 - Координата X остановки
-    f32 Y;                    // 0x04 - Координата Y остановки
-    f32 Z;                    // 0x08 - Координата Z остановки
-    f32 Radius;               // 0x0C - Радиус остановки
-    u32 WaitTime;             // 0x10 - Время ожидания (кадры)
-    u32 Flags;                // 0x14 - Флаги узла
-    struct RouteNode* Next;   // 0x18 - Следующий узел
-    struct RouteNode* Prev;   // 0x1C - Предыдущий узел
-    // Размер: 0x20 (32 байта)
-};
-
-// ============================================================================
-// Car: Автомобиль (производный от BaseCar)
-// ============================================================================
-struct Car {
-    struct S82_BaseCar Base;      // 0x00 - Базовый класс
-    u32 ModelId;                  // 0x68 - ID модели
-    u32 Color;                    // 0x6C - Цвет
-    u32 Owner;                    // 0x70 - Владелец (игрок, ИИ)
-    f32 SteeringAngle;            // 0x74 - Угол поворота руля
-    u32 Gear;                     // 0x78 - Передача
-    f32 BrakeForce;               // 0x7C - Сила торможения
-    u32 HeadlightsOn;             // 0x80 - Фары включены
-    u32 SirenOn;                  // 0x84 - Сирена включена
-    // ... дополнительные поля
-};
-
-// ============================================================================
-// enum VehicleType: Типы транспортных средств
-// ============================================================================
-enum VehicleType {
-    VEHICLE_TYPE_CAR = 0,           // Легковой автомобиль
-    VEHICLE_TYPE_TRUCK = 1,         // Грузовик
-    VEHICLE_TYPE_BUS = 2,           // Автобус (PublicTransport)
-    VEHICLE_TYPE_TAXI = 3,          // Такси
-    VEHICLE_TYPE_POLICE = 4,        // Полиция
-    VEHICLE_TYPE_AMBULANCE = 5,     // Скорая помощь
-    VEHICLE_TYPE_FIRETRUCK = 6,     // Пожарная машина
-    VEHICLE_TYPE_MILITARY = 7,      // Военный транспорт
-    VEHICLE_TYPE_TRAIN = 8,         // Поезд
-    VEHICLE_TYPE_BOAT = 9,          // Лодка
-    VEHICLE_TYPE_HELICOPTER = 10,   // Вертолёт
-    VEHICLE_TYPE_PLANE = 11,        // Самолёт
-    VEHICLE_TYPE_BIKE = 12,         // Мотоцикл
-    VEHICLE_TYPE_SPECIAL = 15       // Специальный транспорт
-};
-
-// ============================================================================
-// enum PublicTransportState: Состояния общественного транспорта
-// ============================================================================
-enum PublicTransportState {
-    PT_STATE_IDLE = 0,              // Бездействует
-    PT_STATE_MOVING = 1,            // Движение по маршруту
-    PT_STATE_APPROACHING_STOP = 2,  // Приближение к остановке
-    PT_STATE_AT_STOP = 3,           // На остановке
-    PT_STATE_BOARDING = 4,          // Посадка/высадка
-    PT_STATE_DEPARTING = 5,         // Отправление
-    PT_STATE_DETOURED = 6           // Изменённый маршрут
-};
-
-// ============================================================================
-// enum RouteFlags: Флаги маршрута
-// ============================================================================
-enum RouteFlags {
-    ROUTE_FLAG_FOLLOW_PATH = 0x01,  // Следует по маршруту
-    ROUTE_FLAG_AT_STOP = 0x02,      // Находится на остановке
-    ROUTE_FLAG_WAITING = 0x04,      // Ожидает пассажиров
-    ROUTE_FLAG_SPECIAL = 0x08,      // Специальный рейс
-    ROUTE_FLAG_NIGHT = 0x10,        // Ночной маршрут
-    ROUTE_FLAG_EXPRESS = 0x20       // Экспресс (минует некоторые остановки)
-};
-
-// ============================================================================
-// ПРОТОТИПЫ ФУНКЦИЙ S81 (PublicTransport)
+// FUNCTION PROTOTYPES (C Interface)
+// Comments contain placeholder 'sub_XXXXXX' - Replace with your IDA names!
 // ============================================================================
 
-// Инициализация общественного транспорта
-// old_name: FUN_004af640
-void __stdcall S81_Init(struct S81_PublicTransport* this);
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-// Обновление логики общественного транспорта
-// old_name: FUN_004af700
-void __stdcall S81_Update(struct S81_PublicTransport* this);
+// --- BaseCar Methods (S82) ---
+void BaseCar_Init(BaseCar* self, VehicleType type); 
+// old_name: sub_4B5500 (Constructor)
+// vars: this=a1, type=a2
 
-// Установка маршрута
-// old_name: FUN_004af8a0
-void __stdcall S81_SetRoute(struct S81_PublicTransport* this, struct RouteNode* route, int nodeCount);
+void BaseCar_UpdatePhysics(BaseCar* self);
+// old_name: sub_4B5620 (Physics Step)
+// vars: this=a1, dt=a2(implied)
 
-// Переход к следующей остановке
-// old_name: FUN_004af9c0
-void __stdcall S81_NextStop(struct S81_PublicTransport* this);
+void BaseCar_ApplyForce(BaseCar* self, float fx, float fy);
+// old_name: sub_4B5890 (Add Force Vector)
 
-// Проверка: является ли автомобиль автобусом
-// old_name: FUN_004afb20
-int __stdcall S81_IsThisBus(struct S81_PublicTransport* this, struct Car* car);
+void BaseCar_SetSpeed(BaseCar* self, float speed);
+// old_name: sub_4B5A10 (Set Velocity)
 
-// Поиск поля S3 для автомобиля
-// old_name: FUN_004b1b40
-struct S3* __stdcall S81_FindCarField(struct S81_PublicTransport* this, struct Car* car);
+void BaseCar_Turn(BaseCar* self, float angle_delta);
+// old_name: sub_4B5C40 (Steering Input)
 
-// Обработка взаимодействия с автомобилем
-// old_name: FUN_004b0d70
-void __stdcall S81_ProcessCarInteraction(struct S81_PublicTransport* this, struct Car* car);
+bool BaseCar_CheckCollision(BaseCar* self, BaseCar* other);
+// old_name: sub_4B6000 (Collision Check)
 
-// Проверка лимита пропущенных остановок
-// old_name: FUN_004afc80
-int __stdcall S81_HasReachedBusSkipLimit(struct S81_PublicTransport* this);
+// --- PublicTransport Methods (S81) ---
+void PublicTransport_Init(PublicTransport* self, RouteNode* nodes, int count);
+// old_name: sub_4A1000 (PT Constructor)
+// vars: this=a1, nodes=a2, count=a3
 
-// ============================================================================
-// ПРОТОТИПЫ ФУНКЦИЙ S82 (BaseCar)
-// ============================================================================
+void PublicTransport_Update(PublicTransport* self);
+// old_name: sub_4A1150 (PT AI Update)
+// vars: this=a1
 
-// Инициализация базового автомобиля
-// old_name: FUN_004e5a10
-void __stdcall S82_Init(struct S82_BaseCar* this);
+void PublicTransport_SetRoute(PublicTransport* self, RouteNode* nodes, int count);
+// old_name: sub_4A1280 (Assign Route)
 
-// Обновление физики
-// old_name: FUN_004e5b30
-void __stdcall S82_UpdatePhysics(struct S82_BaseCar* this);
+void PublicTransport_StopAtNode(PublicTransport* self);
+// old_name: sub_4A1340 (Open Doors/Wait)
 
-// Применение силы
-// old_name: FUN_004e5c50
-void __stdcall S82_ApplyForce(struct S82_BaseCar* this, f32 forceX, f32 forceY);
+int PublicTransport_GetNextNodeIndex(PublicTransport* self);
+// old_name: sub_4A1450 (Pathfinding Next)
 
-// Установка скорости
-// old_name: FUN_004e5d70
-void __stdcall S82_SetSpeed(struct S82_BaseCar* this, f32 speed);
+void PublicTransport_Depart(PublicTransport* self);
+// old_name: sub_4A1520 (Close Doors/Start)
 
-// Поворот
-// old_name: FUN_004e5e90
-void __stdcall S82_Turn(struct S82_BaseCar* this, f32 angle);
+// --- TrainComponent Methods (S83) ---
+void TrainComponent_Init(TrainComponent* self, int is_engine);
+// old_name: sub_4C2000 (TC Constructor)
 
-// Проверка коллизий
-// old_name: FUN_004e5fb0
-int __stdcall S82_CheckCollision(struct S82_BaseCar* this);
+void TrainComponent_Link(TrainComponent* self, TrainComponent* other);
+// old_name: sub_4C2150 (Couple Cars)
 
-// ============================================================================
-// ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ (адреса указать после анализа)
-// ============================================================================
-// extern struct S81_PublicTransport* gPublicTransportPool;  // Адрес: 0xXXXXX
-// extern struct S82_BaseCar* gBaseCarPool;                  // Адрес: 0xXXXXX
-// extern struct Car* gCarPool;                              // Адрес: 0xXXXXX
+void TrainComponent_UpdateChain(TrainComponent* head);
+// old_name: sub_4C2280 (Update Whole Train)
+
+void TrainComponent_Unlink(TrainComponent* self);
+// old_name: sub_4C2450 (Uncouple Cars)
+
+int TrainComponent_GetLength(TrainComponent* head);
+// old_name: sub_4C2520 (Get Train Length)
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // GTA2_EXE_H

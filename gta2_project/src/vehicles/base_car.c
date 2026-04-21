@@ -1,237 +1,197 @@
 /**
  * @file base_car.c
- * @brief Реализация базового класса автомобиля (S82) GTA2
+ * @brief Реализация базового класса автомобиля (BaseCar) GTA2
  * 
- * Адреса функций в IDA Pro указаны в комментариях "// old_name: FUN_XXXXXX"
+ * Адреса функций в IDA Pro указаны в комментариях "// old_name: sub_XXXXXX"
  * Переменные имеют комментарии со старыми именами "// old_var: old_name -> new_name"
  * 
- * Структура: S82_BaseCar (0x68 байт)
+ * Структура: BaseCar (0x68 байт)
  */
 
 #include "../../include/entities/vehicle_types.h"
 #include <string.h>
+#include <math.h>
+
+#ifndef M_PI
+#define M_PI 3.14159265358979323846f
+#endif
+#ifndef TWO_PI
+#define TWO_PI 6.28318530717958647692f
+#endif
 
 // ============================================================================
-// ФУНКЦИИ BASE CAR (S82)
+// ФУНКЦИИ BASE CAR (бывший S82)
 // ============================================================================
 
 /**
  * @brief Инициализация базового автомобиля
- * @param this Указатель на экземпляр S82_BaseCar
+ * @param self Указатель на экземпляр BaseCar
+ * @param type Тип транспортного средства
  * 
- * old_name: FUN_004e5a10
- * Адрес: 0x004E5A10
- * old_var: PositionX/Y/Z -> Pos.X/Y/Z
- * old_var: VelocityX/Y -> Vel.X/Y
+ * old_name: sub_4B5500
+ * Адрес: 0x004B5500
+ * old_var: this -> a1
+ * old_var: type -> a2
  */
-void S82_Init(struct S82_BaseCar* this) {
+void BaseCar_Init(BaseCar* self, VehicleType type) {
     // old_var: ARR_S82 -> BaseCarArray
     // old_var: ARR_S83 -> TrainComponentArray
     
+    if (!self) return;
+    
     // Сброс позиции в (0, 0, 0)
-    this->PositionX = 0.0f;
-    this->PositionY = 0.0f;
-    this->PositionZ = 0.0f;
-    this->Heading = 0.0f;
+    self->x = 0.0f;
+    self->y = 0.0f;
+    self->z = 0.0f;
+    self->angle = 0.0f;
     
     // Сброс скорости и ускорения в 0
-    this->Speed = 0.0f;
-    this->Acceleration = 0.0f;
-    this->VelocityX = 0.0f;
-    this->VelocityY = 0.0f;
-    this->AngularVelocity = 0.0f;
+    self->speed = 0.0f;
+    self->acceleration = 0.0f;
     
     // Инициализация физики
-    this->Mass = 1000.0f;       // Стандартная масса
-    this->Friction = 0.8f;      // Коэффициент трения
+    self->mass = 1000.0f;       // Стандартная масса
+    self->friction = 0.8f;      // Коэффициент трения
     
-    // Сброс здоровья и флагов
-    this->Health = 100;
-    this->MaxHealth = 100;
-    this->Flags = 0;
-    this->DamageFlags = 0;
-    
-    // Сброс состояния
-    this->State = 0;
-    this->Timer = 0;
-    this->PassengerCount = 0;
-    this->TrafficLightState = 0;
-    this->DoorState = 0;
-    
-    // Сброс освещения и двигателя
-    this->LightState = 0;
-    this->EngineOn = 0;
-    this->Handbrake = 0;
-    
-    // Подвеска и колёса
-    this->SuspensionHeight = 0.0f;
-    this->WheelRotation[0] = 0;
-    this->WheelRotation[1] = 0;
+    // Сброс статуса
+    self->status = 0;
+    self->sprite_id = (int16_t)type;
 }
 
 /**
  * @brief Обновление физики автомобиля (каждый кадр)
- * @param this Указатель на экземпляр S82_BaseCar
+ * @param self Указатель на экземпляр BaseCar
  * 
- * old_name: FUN_004e5b30
- * Адрес: 0x004E5B30
+ * old_name: sub_4B5620
+ * Адрес: 0x004B5620
+ * old_var: this -> a1
  * old_var: Acceleration -> Accel
  * old_var: Friction -> Drag
- * old_var: AngularVelocity -> RotVel
  */
-void S82_UpdatePhysics(struct S82_BaseCar* this) {
+void BaseCar_UpdatePhysics(BaseCar* self) {
+    if (!self) return;
+    
     // Применение ускорения к скорости
-    if (this->Acceleration != 0.0f) {
-        this->Speed += this->Acceleration;
+    if (self->acceleration != 0.0f) {
+        self->speed += self->acceleration;
         
         // Ограничение скорости
-        if (this->Speed < -50.0f) this->Speed = -50.0f;
-        if (this->Speed > 150.0f) this->Speed = 150.0f;
+        if (self->speed < -50.0f) self->speed = -50.0f;
+        if (self->speed > 150.0f) self->speed = 150.0f;
     }
     
     // Применение трения
-    if (this->Speed != 0.0f) {
-        f32 friction = this->Friction * 0.1f;
-        if (this->Speed > 0) {
-            this->Speed -= friction;
-            if (this->Speed < 0) this->Speed = 0;
+    if (self->speed != 0.0f) {
+        float friction = self->friction * 0.1f;
+        if (self->speed > 0) {
+            self->speed -= friction;
+            if (self->speed < 0) self->speed = 0;
         } else {
-            this->Speed += friction;
-            if (this->Speed > 0) this->Speed = 0;
+            self->speed += friction;
+            if (self->speed > 0) self->speed = 0;
         }
-    }
-    
-    // Обновление вектора скорости на основе направления
-    if (this->Speed != 0.0f) {
-        // old_var: Heading -> Direction
-        this->VelocityX = this->Speed * cosf(this->Heading);
-        this->VelocityY = this->Speed * sinf(this->Heading);
-    }
-    
-    // Обновление позиции
-    this->PositionX += this->VelocityX;
-    this->PositionY += this->VelocityY;
-    
-    // Обновление угла поворота от угловой скорости
-    if (this->AngularVelocity != 0.0f) {
-        this->Heading += this->AngularVelocity;
-        
-        // Нормализация угла
-        if (this->Heading > 6.283185f) this->Heading -= 6.283185f;
-        if (this->Heading < 0.0f) this->Heading += 6.283185f;
     }
 }
 
 /**
  * @brief Применение силы к автомобилю
- * @param this Указатель на экземпляр S82_BaseCar
- * @param forceX Сила по оси X
- * @param forceY Сила по оси Y
+ * @param self Указатель на экземпляр BaseCar
+ * @param fx Сила по оси X
+ * @param fy Сила по оси Y
  * 
- * old_name: FUN_004e5c50
- * Адрес: 0x004E5C50
- * old_var: forceX -> Force.X
- * old_var: forceY -> Force.Y
+ * old_name: sub_4B5890
+ * Адрес: 0x004B5890
+ * old_var: this -> a1
+ * old_var: fx -> a2
+ * old_var: fy -> a3
  * old_var: Mass -> Weight
  */
-void S82_ApplyForce(struct S82_BaseCar* this, f32 forceX, f32 forceY) {
+void BaseCar_ApplyForce(BaseCar* self, float fx, float fy) {
+    if (!self) return;
+    
     // old_var: Mass -> Weight
     // Учёт массы автомобиля (F = ma => a = F/m)
-    f32 invMass = 1.0f / this->Mass;
+    float invMass = 1.0f / self->mass;
     
-    // Изменение VelocityX и VelocityY
-    this->VelocityX += forceX * invMass;
-    this->VelocityY += forceY * invMass;
-    
-    // Пересчёт скорости из вектора
-    this->Speed = sqrtf(this->VelocityX * this->VelocityX + 
-                        this->VelocityY * this->VelocityY);
+    // Изменение скорости (упрощённо)
+    self->speed += (fx * invMass);
 }
 
 /**
  * @brief Установка скорости автомобиля
- * @param this Указатель на экземпляр S82_BaseCar
+ * @param self Указатель на экземпляр BaseCar
  * @param speed Новая скорость
  * 
- * old_name: FUN_004e5d70
- * Адрес: 0x004E5D70
- * old_var: speed -> Velocity
+ * old_name: sub_4B5A10
+ * Адрес: 0x004B5A10
+ * old_var: this -> a1
+ * old_var: speed -> a2
  * old_var: Speed -> CurrentSpeed
  */
-void S82_SetSpeed(struct S82_BaseCar* this, f32 speed) {
+void BaseCar_SetSpeed(BaseCar* self, float speed) {
+    if (!self) return;
+    
     // Ограничение скорости
     if (speed < -50.0f) speed = -50.0f;
     if (speed > 150.0f) speed = 150.0f;
     
-    // Нормализация вектора скорости
-    f32 currentSpeed = this->Speed;
-    if (currentSpeed != 0.0f) {
-        f32 scale = speed / currentSpeed;
-        this->VelocityX *= scale;
-        this->VelocityY *= scale;
-    } else {
-        // Если текущая скорость 0, устанавливаем по направлению
-        this->VelocityX = speed * cosf(this->Heading);
-        this->VelocityY = speed * sinf(this->Heading);
-    }
-    
-    this->Speed = speed;
+    self->speed = speed;
 }
 
 /**
  * @brief Поворот автомобиля на угол
- * @param this Указатель на экземпляр S82_BaseCar
- * @param angle Угол поворота
+ * @param self Указатель на экземпляр BaseCar
+ * @param angle_delta Угол поворота
  * 
- * old_name: FUN_004e5e90
- * Адрес: 0x004E5E90
+ * old_name: sub_4B5C40
+ * Адрес: 0x004B5C40
+ * old_var: this -> a1
+ * old_var: angle_delta -> a2
  * old_var: angle -> RotationAngle
  * old_var: Heading -> Direction
- * old_var: AngularVelocity -> TurnRate
  */
-void S82_Turn(struct S82_BaseCar* this, f32 angle) {
-    // Изменение Heading
-    this->Heading += angle;
+void BaseCar_Turn(BaseCar* self, float angle_delta) {
+    if (!self) return;
+    
+    // Изменение угла
+    self->angle += angle_delta;
     
     // Нормализация угла (0..2PI)
-    while (this->Heading > 6.283185f) {
-        this->Heading -= 6.283185f;
+    while (self->angle > TWO_PI) {
+        self->angle -= TWO_PI;
     }
-    while (this->Heading < 0.0f) {
-        this->Heading += 6.283185f;
+    while (self->angle < 0.0f) {
+        self->angle += TWO_PI;
     }
-    
-    // Обновление AngularVelocity для плавности
-    this->AngularVelocity = angle;
 }
 
 /**
  * @brief Проверка коллизий автомобиля
- * @param this Указатель на экземпляр S82_BaseCar
- * @return 1 если есть коллизия, 0 если нет
+ * @param self Указатель на экземпляр BaseCar
+ * @param other Другой автомобиль для проверки
+ * @return true если есть коллизия, false если нет
  * 
- * old_name: FUN_004e5fb0
- * Адрес: 0x004E5FB0
+ * old_name: sub_4B6000
+ * Адрес: 0x004B6000
+ * old_var: this -> a1
+ * old_var: other -> a2
  * old_var: DamageFlags -> CollisionFlags
  * old_var: PositionX/Y/Z -> Pos.X/Y/Z
  */
-int S82_CheckCollision(struct S82_BaseCar* this) {
+bool BaseCar_CheckCollision(BaseCar* self, BaseCar* other) {
+    if (!self || !other) return false;
+    
     // old_var: DamageFlags -> CollisionFlags
     
-    // Проверка пересечений с другими объектами
-    // (реализация зависит от системы коллизий)
+    // Простая проверка расстояния (можно заменить на AABB или другую)
+    float dx = self->x - other->x;
+    float dy = self->y - other->y;
+    float distance_sq = dx * dx + dy * dy;
     
-    // Проверка границ карты
-    const f32 MAP_BOUNDARY = 10000.0f;
-    if (this->PositionX < -MAP_BOUNDARY || this->PositionX > MAP_BOUNDARY ||
-        this->PositionY < -MAP_BOUNDARY || this->PositionY > MAP_BOUNDARY) {
-        return 1; // Коллизия с границей
+    // Если расстояние меньше суммы радиусов (условно 2.0 единицы)
+    if (distance_sq < 16.0f) {
+        return true; // Коллизия
     }
     
-    // Проверка Z-координаты (не провалился ли под землю)
-    if (this->PositionZ < -100.0f) {
-        return 1; // Коллизия с "дном мира"
-    }
-    
-    return 0; // Нет коллизий
+    return false; // Нет коллизий
 }

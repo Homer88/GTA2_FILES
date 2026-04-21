@@ -1,110 +1,76 @@
 /**
  * @file public_transport.cpp
- * @brief C++ wrappers for PublicTransport (S81) logic.
+ * @brief C++ обёртки для PublicTransport (GTA2)
  * 
- * Uses structures instead of classes as per project requirements.
- * Wrappers allow easy integration with C++ code while keeping core logic in C.
- * 
- * Source: gta2.exe/ida pro/gta2.exe.c
- * Old function names preserved in comments for IDA Pro mapping.
+ * Использует структуры вместо классов.
+ * old_name: sub_XXXXXX (соответствует адресам в IDA Pro)
  */
 
-#include "entities/vehicle_types.h"
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-// Forward declarations of C implementations
-void S81_Init(S81_PublicTransport* self, VehicleType type);
-void S81_Update(S81_PublicTransport* self);
-void S81_SetRoute(S81_PublicTransport* self, RouteNode* nodes, int count);
-void S81_AddRouteNode(S81_PublicTransport* self, float x, float y, int waitTime);
-void S81_GetNextWaypoint(S81_PublicTransport* self, float* outX, float* outY);
-int S81_IsAtWaypoint(S81_PublicTransport* self);
-void S81_SetState(S81_PublicTransport* self, PublicTransportState state);
-PublicTransportState S81_GetState(S81_PublicTransport* self);
-
-#ifdef __cplusplus
-}
-#endif
+#include "../../include/entities/vehicle_types.h"
 
 namespace GTA2 {
 namespace Vehicles {
 
+extern "C" {
+    // Объявления C функций
+    void PublicTransport_Init(PublicTransport* self, RouteNode* nodes, int count);
+    void PublicTransport_Update(PublicTransport* self);
+    void PublicTransport_SetRoute(PublicTransport* self, RouteNode* nodes, int count);
+    void PublicTransport_StopAtNode(PublicTransport* self);
+    int PublicTransport_GetNextNodeIndex(PublicTransport* self);
+    void PublicTransport_Depart(PublicTransport* self);
+}
+
+// ============================================================================
+// C++ WRAPPER FUNCTIONS
+// ============================================================================
+
 /**
- * @brief Initialize PublicTransport structure
- * old_name: FUN_00410000 (S81 constructor)
+ * @brief Инициализация PublicTransport (обёртка)
+ * old_name: sub_4A1000
  */
-void PublicTransport_Init(S81_PublicTransport* self, VehicleType type) {
-    S81_Init(self, type);
+void PublicTransport_Init_Wrapper(PublicTransport* pt, RouteNode* nodes, int count) {
+    PublicTransport_Init(pt, nodes, count);
 }
 
 /**
- * @brief Update PublicTransport state and route logic
- * old_name: FUN_00410100 (S81 update)
+ * @brief Обновление логики (обёртка)
+ * old_name: sub_4A1150
  */
-void PublicTransport_Update(S81_PublicTransport* self) {
-    S81_Update(self);
+void PublicTransport_Update_Wrapper(PublicTransport* pt) {
+    PublicTransport_Update(pt);
 }
 
 /**
- * @brief Set route for PublicTransport
- * old_name: FUN_00410200
- * @param self Pointer to PublicTransport structure
- * @param nodes Array of route nodes
- * @param count Number of nodes in the route
+ * @brief Установка маршрута (обёртка)
+ * old_name: sub_4A1280
  */
-void PublicTransport_SetRoute(S81_PublicTransport* self, RouteNode* nodes, int count) {
-    S81_SetRoute(self, nodes, count);
+void PublicTransport_SetRoute_Wrapper(PublicTransport* pt, RouteNode* nodes, int count) {
+    PublicTransport_SetRoute(pt, nodes, count);
 }
 
 /**
- * @brief Add a route node to PublicTransport
- * old_name: FUN_00410300
- * @param self Pointer to PublicTransport structure
- * @param x X coordinate of the node
- * @param y Y coordinate of the node
- * @param waitTime Wait time at this node (in game ticks)
+ * @brief Остановка на узле (обёртка)
+ * old_name: sub_4A1340
  */
-void PublicTransport_AddRouteNode(S81_PublicTransport* self, float x, float y, int waitTime) {
-    S81_AddRouteNode(self, x, y, waitTime);
+void PublicTransport_StopAtNode_Wrapper(PublicTransport* pt) {
+    PublicTransport_StopAtNode(pt);
 }
 
 /**
- * @brief Get next waypoint coordinates
- * old_name: FUN_00410400
- * @param self Pointer to PublicTransport structure
- * @param outX Output X coordinate
- * @param outY Output Y coordinate
+ * @brief Получение индекса следующего узла (обёртка)
+ * old_name: sub_4A1450
  */
-void PublicTransport_GetNextWaypoint(S81_PublicTransport* self, float* outX, float* outY) {
-    S81_GetNextWaypoint(self, outX, outY);
+int PublicTransport_GetNextNodeIndex_Wrapper(PublicTransport* pt) {
+    return PublicTransport_GetNextNodeIndex(pt);
 }
 
 /**
- * @brief Check if PublicTransport is at waypoint
- * old_name: FUN_00410500
- * @return 1 if at waypoint, 0 otherwise
+ * @brief Отправление (обёртка)
+ * old_name: sub_4A1520
  */
-int PublicTransport_IsAtWaypoint(S81_PublicTransport* self) {
-    return S81_IsAtWaypoint(self);
-}
-
-/**
- * @brief Set PublicTransport state
- * old_name: FUN_00410600
- */
-void PublicTransport_SetState(S81_PublicTransport* self, PublicTransportState state) {
-    S81_SetState(self, state);
-}
-
-/**
- * @brief Get current PublicTransport state
- * old_name: FUN_00410700
- */
-PublicTransportState PublicTransport_GetState(S81_PublicTransport* self) {
-    return S81_GetState(self);
+void PublicTransport_Depart_Wrapper(PublicTransport* pt) {
+    PublicTransport_Depart(pt);
 }
 
 } // namespace Vehicles
