@@ -1,5 +1,5 @@
-```gitignore
-# Compiled and binary files
+```
+# Compiled and build artifacts
 *.o
 *.obj
 *.exe
@@ -18,28 +18,23 @@ __pycache__/
 target/
 .gradle/
 
-# Build artifacts
-build/
-dist/
-*.pyc
-*.class
-
-# Editor/IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
+# Logs and temp files
+*.log
 *.tmp
+*.swp
 
-# System files
-.DS_Store
-Thumbs.db
+# Environment
 .env
 .env.local
 *.env.*
 
-# Logs
-*.log
+# Editors
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
 
 # Coverage
 coverage/
@@ -65,8 +60,4 @@ htmlcov/
 *.Z
 *.lz
 *.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
 ```
