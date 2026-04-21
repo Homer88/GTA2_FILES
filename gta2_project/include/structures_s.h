@@ -62,6 +62,7 @@ typedef struct S160 S160, *PS160;
 typedef struct S153 S153, *PS153;
 typedef struct S168 S168, *PS168;
 typedef struct S170 S170, *PS170;
+typedef struct S81 S81, *PS81;
 typedef struct S82 S82, *PS82;
 typedef struct S83 S83, *PS83;
 typedef struct S28 S28, *PS28;
@@ -27466,6 +27467,55 @@ struct S82 {
     byte field16_0x32;            // RouteFlags
     byte field17_0x33;            // Reserved
     RouteNode* RouteNodesPtr;     // 0x34 - Указатель на массив узлов маршрута (было: RouteID)
+};
+
+struct S81 {
+    // === Базовый класс BaseCar (S82) - 0x00 до 0x37 ===
+    undefined4 field0_0x0;        // Position X (наследовано от S82)
+    undefined4 field1_0x4;        // Position Y (наследовано от S82)
+    undefined4 field2_0x8;        // Position Z (наследовано от S82)
+    undefined4 field3_0xc;        // Rotation/Heading (наследовано от S82)
+    undefined4 field4_0x10;       // Speed (наследовано от S82)
+    undefined4 field5_0x14;       // VehicleType (наследовано от S82)
+    undefined4 field6_0x18;       // Health (наследовано от S82)
+    undefined4 field7_0x1c;       // MaxHealth (наследовано от S82)
+    undefined4 field8_0x20;       // Flags (наследовано от S82)
+    undefined4 field9_0x24;       // State (наследовано от S82)
+    undefined4 field10_0x28;      // Timer/Delay (наследовано от S82)
+    undefined2 field11_0x2c;      // PassengerCount (наследовано от S82)
+    undefined1 field12_0x2e;      // TrafficLightState (наследовано от S82)
+    undefined1 field13_0x2f;      // DoorState (наследовано от S82)
+    byte field14_0x30;            // RouteIndex (наследовано от S82)
+    byte field15_0x31;            // StopTimer (наследовано от S82)
+    byte field16_0x32;            // RouteFlags (наследовано от S82)
+    byte field17_0x33;            // Reserved (наследовано от S82)
+    RouteNode* RouteNodesPtr;     // 0x34 - Указатель на массив узлов маршрута
+    
+    // === Специфика PublicTransport - 0x38 до 0x7B ===
+    undefined field19_0x38;
+    undefined field20_0x39;
+    undefined field21_0x3a;
+    undefined field22_0x3b;
+    undefined4 field23_0x3c;
+    undefined4 field24_0x40;
+    undefined4 field25_0x44;
+    undefined4 field26_0x48;
+    undefined4 field27_0x4c;
+    undefined4 field28_0x50;
+    undefined4 field29_0x54;
+    undefined4 field30_0x58;
+    undefined4 field31_0x5c;
+    undefined4 field32_0x60;
+    undefined4 field33_0x64;
+    // === Конец S82 (0x68 байт) ===
+    
+    // === Расширение PublicTransport (0x68 - 0x7B) ===
+    undefined4 field34_0x68;
+    undefined4 field35_0x6c;
+    undefined4 field36_0x70;
+    undefined4 field37_0x74;
+    undefined4 field38_0x78;
+    // === Конец S81 (0x7C байт) ===
 };
 
 struct S83 {
