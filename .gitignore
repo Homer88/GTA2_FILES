@@ -17,6 +17,7 @@ __pycache__/
 .pytest_cache/
 target/
 .gradle/
+!gta2.exe/
 
 # Logs and temp files
 *.log
