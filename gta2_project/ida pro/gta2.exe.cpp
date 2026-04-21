@@ -18,134 +18,134 @@
 namespace GTA2 {
 
 // ----------------------------------------------------------------------------
-// S81_PublicTransport::Init()
+// PublicTransport::Init()
 // Адрес: 0x004AF640
-// old_name: FUN_004af640
+// old_name: sub_004af640
 // ----------------------------------------------------------------------------
-void S81_Init_Wrapper(S81_PublicTransport* thiz) {
+void PublicTransport_Init_Wrapper(PublicTransport* thiz) {
     // Вызов C функции
-    S81_Init(thiz);
+    PublicTransport_Init(thiz);
 }
 
 // ----------------------------------------------------------------------------
-// S81_PublicTransport::Update()
+// PublicTransport::Update()
 // Адрес: 0x004AF700
-// old_name: FUN_004af700
+// old_name: sub_004af700
 // ----------------------------------------------------------------------------
-void S81_Update_Wrapper(S81_PublicTransport* thiz) {
-    S81_Update(thiz);
+void PublicTransport_Update_Wrapper(PublicTransport* thiz) {
+    PublicTransport_Update(thiz);
 }
 
 // ----------------------------------------------------------------------------
-// S81_PublicTransport::SetRoute()
+// PublicTransport::SetRoute()
 // Адрес: 0x004AF8A0
-// old_name: FUN_004af8a0
+// old_name: sub_004af8a0
 // ----------------------------------------------------------------------------
-void S81_SetRoute_Wrapper(S81_PublicTransport* thiz, RouteNode* route, int nodeCount) {
-    S81_SetRoute(thiz, route, nodeCount);
+void PublicTransport_SetRoute_Wrapper(PublicTransport* thiz, RouteNode* route, int nodeCount) {
+    PublicTransport_SetRoute(thiz, route, nodeCount);
 }
 
 // ----------------------------------------------------------------------------
-// S81_PublicTransport::NextStop()
+// PublicTransport::NextStop()
 // Адрес: 0x004AF9C0
-// old_name: FUN_004af9c0
+// old_name: sub_004af9c0
 // ----------------------------------------------------------------------------
-void S81_NextStop_Wrapper(S81_PublicTransport* thiz) {
-    S81_NextStop(thiz);
+void PublicTransport_NextStop_Wrapper(PublicTransport* thiz) {
+    PublicTransport_NextStop(thiz);
 }
 
 // ----------------------------------------------------------------------------
-// S81_PublicTransport::IsThisBus()
+// PublicTransport::IsThisBus()
 // Адрес: 0x004AFB20
-// old_name: FUN_004afb20
+// old_name: sub_004afb20
 // ----------------------------------------------------------------------------
-bool S81_IsThisBus_Wrapper(S81_PublicTransport* thiz, Car* car) {
-    return S81_IsThisBus(thiz, car) != 0;
+bool PublicTransport_IsThisBus_Wrapper(PublicTransport* thiz, Car* car) {
+    return PublicTransport_IsThisBus(thiz, car) != 0;
 }
 
 // ----------------------------------------------------------------------------
-// S81_PublicTransport::FindCarField()
+// PublicTransport::FindCarField()
 // Адрес: 0x004B1B40
-// old_name: FUN_004b1b40
+// old_name: sub_004b1b40
 // ----------------------------------------------------------------------------
-S3* S81_FindCarField_Wrapper(S81_PublicTransport* thiz, Car* car) {
-    return S81_FindCarField(thiz, car);
+S3* PublicTransport_FindCarField_Wrapper(PublicTransport* thiz, Car* car) {
+    return PublicTransport_FindCarField(thiz, car);
 }
 
 // ----------------------------------------------------------------------------
-// S81_PublicTransport::ProcessCarInteraction()
+// PublicTransport::ProcessCarInteraction()
 // Адрес: 0x004B0D70
-// old_name: FUN_004b0d70
+// old_name: sub_004b0d70
 // ----------------------------------------------------------------------------
-void S81_ProcessCarInteraction_Wrapper(S81_PublicTransport* thiz, Car* car) {
-    S81_ProcessCarInteraction(thiz, car);
+void PublicTransport_ProcessCarInteraction_Wrapper(PublicTransport* thiz, Car* car) {
+    PublicTransport_ProcessCarInteraction(thiz, car);
 }
 
 // ----------------------------------------------------------------------------
-// S81_PublicTransport::HasReachedBusSkipLimit()
+// PublicTransport::HasReachedBusSkipLimit()
 // Адрес: 0x004AFC80
-// old_name: FUN_004afc80
+// old_name: sub_004afc80
 // ----------------------------------------------------------------------------
-bool S81_HasReachedBusSkipLimit_Wrapper(S81_PublicTransport* thiz) {
-    return S81_HasReachedBusSkipLimit(thiz) != 0;
+bool PublicTransport_HasReachedBusSkipLimit_Wrapper(PublicTransport* thiz) {
+    return PublicTransport_HasReachedBusSkipLimit(thiz) != 0;
 }
 
 // ============================================================================
-// S82_BaseCar - C++ обёртки для базового класса автомобиля
+// BaseCar - C++ обёртки для базового класса автомобиля
 // ============================================================================
 
 // ----------------------------------------------------------------------------
-// S82_BaseCar::Init()
+// BaseCar::Init()
 // Адрес: 0x004E5A10
-// old_name: FUN_004e5a10
+// old_name: sub_004e5a10
 // ----------------------------------------------------------------------------
-void S82_Init_Wrapper(S82_BaseCar* thiz) {
-    S82_Init(thiz);
+void BaseCar_Init_Wrapper(BaseCar* thiz) {
+    BaseCar_Init(thiz);
 }
 
 // ----------------------------------------------------------------------------
-// S82_BaseCar::UpdatePhysics()
+// BaseCar::UpdatePhysics()
 // Адрес: 0x004E5B30
-// old_name: FUN_004e5b30
+// old_name: sub_004e5b30
 // ----------------------------------------------------------------------------
-void S82_UpdatePhysics_Wrapper(S82_BaseCar* thiz) {
-    S82_UpdatePhysics(thiz);
+void BaseCar_UpdatePhysics_Wrapper(BaseCar* thiz) {
+    BaseCar_UpdatePhysics(thiz);
 }
 
 // ----------------------------------------------------------------------------
-// S82_BaseCar::ApplyForce()
+// BaseCar::ApplyForce()
 // Адрес: 0x004E5C50
-// old_name: FUN_004e5c50
+// old_name: sub_004e5c50
 // ----------------------------------------------------------------------------
-void S82_ApplyForce_Wrapper(S82_BaseCar* thiz, f32 forceX, f32 forceY) {
-    S82_ApplyForce(thiz, forceX, forceY);
+void BaseCar_ApplyForce_Wrapper(BaseCar* thiz, f32 forceX, f32 forceY) {
+    BaseCar_ApplyForce(thiz, forceX, forceY);
 }
 
 // ----------------------------------------------------------------------------
-// S82_BaseCar::SetSpeed()
+// BaseCar::SetSpeed()
 // Адрес: 0x004E5D70
-// old_name: FUN_004e5d70
+// old_name: sub_004e5d70
 // ----------------------------------------------------------------------------
-void S82_SetSpeed_Wrapper(S82_BaseCar* thiz, f32 speed) {
-    S82_SetSpeed(thiz, speed);
+void BaseCar_SetSpeed_Wrapper(BaseCar* thiz, f32 speed) {
+    BaseCar_SetSpeed(thiz, speed);
 }
 
 // ----------------------------------------------------------------------------
-// S82_BaseCar::Turn()
+// BaseCar::Turn()
 // Адрес: 0x004E5E90
-// old_name: FUN_004e5e90
+// old_name: sub_004e5e90
 // ----------------------------------------------------------------------------
-void S82_Turn_Wrapper(S82_BaseCar* thiz, f32 angle) {
-    S82_Turn(thiz, angle);
+void BaseCar_Turn_Wrapper(BaseCar* thiz, f32 angle) {
+    BaseCar_Turn(thiz, angle);
 }
 
 // ----------------------------------------------------------------------------
-// S82_BaseCar::CheckCollision()
+// BaseCar::CheckCollision()
 // Адрес: 0x004E5FB0
-// old_name: FUN_004e5fb0
+// old_name: sub_004e5fb0
 // ----------------------------------------------------------------------------
-bool S82_CheckCollision_Wrapper(S82_BaseCar* thiz) {
-    return S82_CheckCollision(thiz) != 0;
+bool BaseCar_CheckCollision_Wrapper(BaseCar* thiz) {
+    return BaseCar_CheckCollision(thiz) != 0;
 }
 
 } // namespace GTA2
@@ -160,29 +160,29 @@ void example() {
     using namespace GTA2;
     
     // Создание общественного транспорта
-    S81_PublicTransport bus = {};
+    PublicTransport bus = {};
     
     // Инициализация
-    S81_Init_Wrapper(&bus);
+    PublicTransport_Init_Wrapper(&bus);
     
     // Установка маршрута
     RouteNode route[5] = {};
-    S81_SetRoute_Wrapper(&bus, route, 5);
+    PublicTransport_SetRoute_Wrapper(&bus, route, 5);
     
     // Обновление в игровом цикле
-    S81_Update_Wrapper(&bus);
+    PublicTransport_Update_Wrapper(&bus);
     
     // Проверка типа транспорта
     Car myCar = {};
-    if (S81_IsThisBus_Wrapper(&bus, &myCar)) {
+    if (PublicTransport_IsThisBus_Wrapper(&bus, &myCar)) {
         // Это автобус
     }
     
     // Базовая физика
-    S82_BaseCar* base = &bus.Base;
-    S82_Init_Wrapper(base);
-    S82_ApplyForce_Wrapper(base, 10.0f, 5.0f);
-    S82_UpdatePhysics_Wrapper(base);
+    BaseCar* base = &bus.Base;
+    BaseCar_Init_Wrapper(base);
+    BaseCar_ApplyForce_Wrapper(base, 10.0f, 5.0f);
+    BaseCar_UpdatePhysics_Wrapper(base);
 }
 */
 
