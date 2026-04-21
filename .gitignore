@@ -1,10 +1,12 @@
-```
+```gitignore
 # Compiled and build artifacts
 *.o
 *.obj
+*.exe
+*.dll
+*.so
+*.a
 *.out
-build/
-dist/
 
 # Dependencies
 node_modules/
@@ -16,21 +18,26 @@ __pycache__/
 target/
 .gradle/
 
+# Build directories
+build/
+dist/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
 # Logs and temp files
 *.log
 *.tmp
-*.swp
+
+# System files
+.DS_Store
+Thumbs.db
 
 # Environment
 .env
 .env.local
 *.env.*
-
-# Editors
-.vscode/
-.idea/
-
-# System files
-.DS_Store
-Thumbs.db
 ```
