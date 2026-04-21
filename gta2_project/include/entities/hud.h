@@ -1,9 +1,22 @@
 /**
  * @file hud.h
- * @brief Структуры и функции HUD (Heads-Up Display) - текст, деньги, здоровье, радар.
+ * @brief Заголовочный файл HUD интерфейса GTA 2
  * 
- * Оригинальный файл: gta2.exe
+ * Восстановлено на основе дизассемблера gta2.exe
  * Архитектура: x86 (32-bit)
+ * 
+ * Основные структуры определены в hud_structs.h:
+ * - Hud (0x2AF8 байт) - основная структура
+ * - HudArrow (0x848 байт) - стрелки и радар
+ * - HudMessage (0x1C8 байт) - большие сообщения
+ * - HudBrief (0x704 байт) - краткие сообщения
+ * - HudTimers (0x90 байт, old_name: S166) - таймеры
+ * - HudLocationName (0x94 байта, old_name: S86_8) - название местности
+ * - HudWantedLevel (0x64 байта, old_name: S86_4) - уровень розыска
+ * - HudCompass (0x10 байт, old_name: S86_5) - компас
+ * - HudChatInput (0x438 байт, old_name: S86_10) - чат
+ * - HudMultiplayerStats (old_name: S86_9) - статистика мультиплеера
+ * - HudTargetName (0x88 байт, old_name: Field27B8) - имя цели
  */
 
 #ifndef GTA2_HUD_H
@@ -11,6 +24,7 @@
 
 #include <stdint.h>
 #include <stdbool.h>
+#include "hud_structs.h"
 
 #ifdef __cplusplus
 extern "C" {

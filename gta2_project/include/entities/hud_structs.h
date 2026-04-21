@@ -33,8 +33,8 @@ extern "C" {
 
 struct ArrowTrace;
 struct S86_2_1;
-struct S167;
-struct S86_3;
+struct HudTimerElement;  // old_name: S167
+struct WantedStarElement;  // old_name: S86_3
 struct HudBrief_S2;
 
 // ============================================================================
@@ -150,27 +150,29 @@ typedef struct HudBrief {
 } HudBrief; // old_name: HudBrief, old_size: 0x704
 
 // ============================================================================
-// S167 / S166
+// S167 / HudTimers - ТАЙМЕРЫ И СЧЕТЧИКИ
 // ============================================================================
 
 /**
- * @brief S167 - элемент таймера/счетчика
+ * @brief HudTimerElement - элемент таймера/счетчика
  * Размер: 0xC (12 байт)
+ * old_name: S167
  */
-typedef struct S167 {
-    int32_t field_0;          // 0x00 - значение таймера
-    int32_t field_4;          // 0x04 - связанный звук/объект
-    int32_t field_8;          // 0x08
-} S167; // old_name: S167, old_size: 0xC
+typedef struct HudTimerElement {
+    int32_t value;              // 0x00 - значение таймера
+    int32_t soundOrObject;      // 0x04 - связанный звук/объект
+    int32_t field_8;            // 0x08
+} HudTimerElement; // old_name: S167, old_size: 0xC
 
 /**
- * @brief S166 - массив S167 (12 элементов)
+ * @brief HudTimers - массив таймеров (12 элементов)
  * Размер: 0x90 (144 байта)
  * Конструктор: S166::S166 (004CA660) - Construct(12, 4, ...)
+ * old_name: S166
  */
-typedef struct S166 {
-    S167 S167[12];            // 0x00 - 0x8F (12 * 0xC = 0x90)
-} S166; // old_name: S166, old_size: 0x90
+typedef struct HudTimers {
+    HudTimerElement timers[12]; // 0x00 - 0x8F (12 * 0xC = 0x90)
+} HudTimers; // old_name: S166, old_size: 0x90
 
 // ============================================================================
 // S86_3 / S86_4
@@ -178,25 +180,27 @@ typedef struct S166 {
 
 /**
  * @brief S86_3 - элемент звезд розыска
- * Размер: 0xC (12 байт)
+ * Размер: 0x10 (16 байт)
+ * old_name: S86_3
  */
-typedef struct S86_3 {
+typedef struct WantedStarElement {
     int32_t field_0;          // 0x00
-    int32_t field_2;          // 0x04
-    int32_t field_1;          // 0x08
-    int32_t field_4;          // 0x0C
-    int32_t field_8;          // 0x10 - инициализируется в -1
-} S86_3; // old_name: S86_3, old_size: 0x10
+    int32_t field_4;          // 0x04 (было field_2)
+    int32_t field_8;          // 0x08 (было field_1)
+    int32_t field_C;          // 0x0C (было field_4)
+    int32_t field_10;         // 0x10 - инициализируется в -1 (было field_8)
+} WantedStarElement; // old_name: S86_3, old_size: 0x10
 
 /**
- * @brief S86_4 - управление звездами полиции
+ * @brief HudWantedLevel - управление звездами полиции (уровень розыска)
  * Размер: 0x64 (100 байт)
  * Конструктор: S86_4::S86_4 (004C6EE0) - constructor(12, 6, ...)
+ * old_name: S86_4
  */
-typedef struct S86_4 {
-    S86_3 S83_3[6];           // 0x00 - 0x5F (6 * 0x10 = 0x60)
-    int32_t CopStars;         // 0x60 - текущие звезды
-} S86_4; // old_name: S86_4, old_size: 0x64
+typedef struct HudWantedLevel {
+    WantedStarElement stars[6]; // 0x00 - 0x5F (6 * 0x10 = 0x60)
+    int32_t copStars;           // 0x60 - текущие звезды розыска (было CopStars)
+} HudWantedLevel; // old_name: S86_4, old_size: 0x64
 
 // ============================================================================
 // S86_7 - ТЕКСТОВЫЙ БУФЕР
@@ -226,83 +230,90 @@ typedef struct S86_7 {
 // ============================================================================
 
 /**
- * @brief S86_8 - отображение названия местности/района
- * Размер: 0x98 (152 байта)
+ * @brief HudLocationName - отображение названия местности/района
+ * Размер: 0x94 (148 байт)
  * Конструктор: S86_8::S86_8 (004C6C70)
- * Поля: field_0, str, field_84, field_88, field_8C, field_90, field_94
+ * old_name: S86_8
  */
-typedef struct S86_8 {
-    int32_t field_0;          // 0x00 - таймер/счетчик (90 при активном)
-    wchar_t str[64];          // 0x04 - 0x83 - текст названия
-    int32_t field_84;         // 0x84 - ширина строки
-    int32_t field_88;         // 0x88 - указатель/флаг
-    int32_t field_8C;         // 0x8C - указатель на зону
-    int8_t field_90;          // 0x90 - направление мигания
-    int8_t field_94;          // 0x91 - прозрачность/альфа
-    int8_t padding[2];        // 0x92-0x93
-} S86_8; // old_name: S86_8, old_size: 0x94
+typedef struct HudLocationName {
+    int32_t timer;              // 0x00 - таймер/счетчик (90 при активном, было field_0)
+    wchar_t text[64];           // 0x04 - 0x83 - текст названия (было str)
+    int32_t textWidth;          // 0x84 - ширина строки (было field_84)
+    int32_t field_88;           // 0x88 - указатель/флаг
+    void* zonePtr;              // 0x8C - указатель на зону (было field_8C)
+    int8_t blinkDirection;      // 0x90 - направление мигания (было field_90)
+    int8_t alpha;               // 0x91 - прозрачность/альфа (было field_94)
+    int8_t padding[2];          // 0x92-0x93
+} HudLocationName; // old_name: S86_8, old_size: 0x94
 
 // ============================================================================
 // S86_5 - МИНИ-КАРТА/КОМПАС
 // ============================================================================
 
 /**
- * @brief S86_5 - компас/индикатор направления
+ * @brief HudCompass - компас/индикатор направления
  * Размер: 0x10 (16 байт)
  * Конструктор: S86_5::S86_5 (004C7350)
+ * old_name: S86_5
  */
-typedef struct S86_5 {
+typedef struct HudCompass {
     int32_t field_0;          // 0x00
     int32_t field_4;          // 0x04
     int32_t field_8;          // 0x08
-    int32_t field_C;          // 0x0C - связано с sub_4C9C20
-} S86_5; // old_name: S86_5, old_size: 0x10
+    int32_t direction;        // 0x0C - направление (было field_C, связано с sub_4C9C20)
+} HudCompass; // old_name: S86_5, old_size: 0x10
 
 // ============================================================================
 // S86_10 - ЧАТ/ВВОД
 // ============================================================================
 
 /**
- * @brief S86_10 - чат и ввод текста
+ * @brief HudChatInput - чат и ввод текста (мультиплеер)
  * Размер: 0x438 (1080 байт)
  * Конструктор: S86_10::S86_10 (004C7120)
+ * old_name: S86_10
  * Поля: field_0=0, field_1=45, field_2, field_3
  */
-typedef struct S86_10 {
-    int32_t field_0;          // 0x00 - индекс банка GANG
-    int32_t field_1;          // 0x04 - значение (45 по умолчанию)
-    int8_t field_2[0x434];    // 0x08 - 0x43B - буфер чата/ввода
+typedef struct HudChatInput {
+    int32_t gangBankIndex;      // 0x00 - индекс банка GANG (было field_0)
+    int32_t defaultValue;       // 0x04 - значение (45 по умолчанию, было field_1)
+    char inputBuffer[0x434];    // 0x08 - 0x43B - буфер чата/ввода (было field_2)
     int8_t padding[0x438 - 0x43C]; // 0x43C - 0x437
-} S86_10; // old_name: S86_10, old_size: 0x438
+} HudChatInput; // old_name: S86_10, old_size: 0x438
 
 // ============================================================================
 // S86_9 - НЕИЗВЕСТНАЯ СТРУКТУРА
 // ============================================================================
 
 /**
- * @brief S86_9 - неизвестная структура (возможно, связана с целями)
- * Размер: вычисляется из общего размера Hud
- * Инициализация: sub_4C6AC0 (устанавливает byte в 0)
+ * @brief HudMultiplayerStats - статистика мультиплеера (лента убийств)
+ * Размер: уточняется из общего размера Hud
+ * Конструктор: sub_4C6AC0 (устанавливает byte в 0)
+ * old_name: S86_9
+ * Примечание: возможно, связана с целями или killfeed в мультиплеере
  */
-typedef struct S86_9 {
-    int8_t field_0;           // 0x00 - флаг (инициализируется в 0)
-    int8_t padding[0x???];    // TODO: уточнить размер
-} S86_9;
+typedef struct HudMultiplayerStats {
+    int8_t active;              // 0x00 - флаг активности (инициализируется в 0)
+    int8_t padding[3];          // 0x01-0x03
+    // TODO: уточнить размер и поля при анализе использования
+} HudMultiplayerStats; // old_name: S86_9
 
 // ============================================================================
 // FIELD_27B8 STRUCTURE
 // ============================================================================
 
 /**
- * @brief field_27B8 - структура для отображения имени игрока/цели
- * Размер: предположительно 0x88 (136 байт)
+ * @brief HudTargetName - структура для отображения имени игрока/цели
+ * Размер: 0x88 (136 байт)
+ * old_name: Field27B8
  * Инициализация: sub_4C6A50 (byte = 0), sub_4C69F0 (заполнение)
+ * Смещение в Hud: 0x27B8
  */
-typedef struct Field27B8 {
-    int8_t field_0;           // 0x00 - счетчик/таймер (90 при активном)
-    wchar_t str[64];          // 0x01 - 0x81 - текст имени
-    int32_t field_84;         // 0x81 - ширина строки
-} Field27B8; // old_name: Field27B8, old_size: 0x88
+typedef struct HudTargetName {
+    int8_t active;              // 0x00 - счетчик/таймер (90 при активном, было field_0)
+    wchar_t text[64];           // 0x01 - 0x81 - текст имени (было str)
+    int32_t textWidth;          // 0x81 - ширина строки (было field_84)
+} HudTargetName; // old_name: Field27B8, old_size: 0x88
 
 // ============================================================================
 // MAIN HUD STRUCTURE
@@ -316,60 +327,60 @@ typedef struct Field27B8 {
  * 
  * Раскладка полей согласно конструктору:
  * 1. field_0 (от Hud::Hud1)
- * 2. S86_8
+ * 2. HudLocationName (S86_8)
  * 3. HudBrief
- * 4. S166
- * 5. S86_7
+ * 4. HudTimers (S166)
+ * 5. S86_7 (текстовый буфер)
  * 6. HudArrow
- * 7. S86_4
+ * 7. HudWantedLevel (S86_4)
  * 8. s (sub_4C6E70)
- * 9. field_27B8 (по смещению 0x27B8!)
- * 10. S86_5
+ * 9. HudTargetName (по смещению 0x27B8!)
+ * 10. HudCompass (S86_5)
  * 11. HudMessage
- * 12. S86_10
- * 13. S86_9
+ * 12. HudChatInput (S86_10)
+ * 13. HudMultiplayerStats (S86_9)
  * 14. TextSpeed
  */
 typedef struct Hud {
     // Базовое поле (от Hud::Hud1)
     int32_t field_0;          // 0x0000 - счетчик/таймер
     
-    // S86_8 - название местности
-    S86_8 S86_8;              // 0x0004 - 0x0097 (0x94 байта)
+    // HudLocationName - название местности
+    HudLocationName locationName;  // 0x0004 - 0x0097 (0x94 байта, old_name: S86_8)
     
     // HudBrief - краткие сообщения  
     HudBrief HudBrief;        // 0x0098 - 0x079B (0x704 байта)
     
-    // S166 - таймеры
-    S166 S166;                // 0x079C - 0x082B (0x90 байт)
+    // HudTimers - таймеры
+    HudTimers timers;         // 0x079C - 0x082B (0x90 байт, old_name: S166)
     
     // S86_7 - текстовый буфер
-    S86_7 S86_7;              // 0x082C - 0x1F2B (0x1700 байт)
+    S86_7 textBuffer;         // 0x082C - 0x1F2B (0x1700 байт)
     
     // HudArrow - стрелки/радар
     HudArrow HudArrow;        // 0x1F2C - 0x2773 (0x848 байт)
     
-    // S86_4 - звезды полиции
-    S86_4 struc_S86_4;        // 0x2774 - 0x27D7 (0x64 байта)
+    // HudWantedLevel - звезды полиции
+    HudWantedLevel wantedLevel;   // 0x2774 - 0x27D7 (0x64 байта, old_name: S86_4)
     
     // s - неизвестное поле
     int8_t s[0x10];           // 0x27D8 - 0x27E7 (предположительно)
     
-    // field_27B8 - имя цели/игрока (КРИТИЧЕСКОЕ СМЕЩЕНИЕ!)
-    // Примечание: имя field_27B8 указывает на смещение в оригинальной структуре
-    Field27B8 field_27B8;     // 0x27E8 - 0x286F (0x88 байт)
+    // HudTargetName - имя цели/игрока (КРИТИЧЕСКОЕ СМЕЩЕНИЕ!)
+    // Примечание: имя HudTargetName указывает на смещение в оригинальной структуре
+    HudTargetName targetName;     // 0x27E8 - 0x286F (0x88 байт, old_name: Field27B8)
     
-    // S86_5 - компас
-    S86_5 S86_5;              // 0x2870 - 0x287F (0x10 байт)
+    // HudCompass - компас
+    HudCompass compass;       // 0x2870 - 0x287F (0x10 байт, old_name: S86_5)
     
     // HudMessage - большие сообщения
     HudMessage HudMessage;    // 0x2880 - 0x2A47 (0x1C8 байт)
     
-    // S86_10 - чат
-    S86_10 S86_10;            // 0x2A48 - 0x2E7F (0x438 байт)
+    // HudChatInput - чат
+    HudChatInput chatInput;   // 0x2A48 - 0x2E7F (0x438 байт, old_name: S86_10)
     
-    // S86_9 - неизвестная структура
-    S86_9 S86_9;              // 0x2E80 - ???
+    // HudMultiplayerStats - статистика мультиплеера
+    HudMultiplayerStats multiplayerStats;  // 0x2E80 - ??? (old_name: S86_9)
     
     // TextSpeed - скорость текста
     int32_t TextSpeed;        // последнее поле
@@ -413,14 +424,15 @@ static_assert(sizeof(HudArrow) == 0x848, "HudArrow size mismatch");
 static_assert(sizeof(HudMessage) == 0x1C8, "HudMessage size mismatch");
 static_assert(sizeof(HudBrief_S2) == 0x24, "HudBrief_S2 size mismatch");
 static_assert(sizeof(HudBrief) == 0x704, "HudBrief size mismatch");
-static_assert(sizeof(S167) == 0xC, "S167 size mismatch");
-static_assert(sizeof(S166) == 0x90, "S166 size mismatch");
-static_assert(sizeof(S86_3) == 0x10, "S86_3 size mismatch");
-static_assert(sizeof(S86_4) == 0x64, "S86_4 size mismatch");
+static_assert(sizeof(HudTimerElement) == 0xC, "HudTimerElement size mismatch");
+static_assert(sizeof(HudTimers) == 0x90, "HudTimers size mismatch");
+static_assert(sizeof(WantedStarElement) == 0x10, "WantedStarElement size mismatch");
+static_assert(sizeof(HudWantedLevel) == 0x64, "HudWantedLevel size mismatch");
 static_assert(sizeof(S86_7) == 0x1700, "S86_7 size mismatch");
-static_assert(sizeof(S86_8) == 0x94, "S86_8 size mismatch");
-static_assert(sizeof(S86_5) == 0x10, "S86_5 size mismatch");
-static_assert(sizeof(S86_10) == 0x438, "S86_10 size mismatch");
-static_assert(sizeof(Field27B8) == 0x88, "Field27B8 size mismatch");
+static_assert(sizeof(HudLocationName) == 0x94, "HudLocationName size mismatch");
+static_assert(sizeof(HudCompass) == 0x10, "HudCompass size mismatch");
+static_assert(sizeof(HudChatInput) == 0x438, "HudChatInput size mismatch");
+static_assert(sizeof(HudTargetName) == 0x88, "HudTargetName size mismatch");
+static_assert(sizeof(HudMultiplayerStats) == 0x4, "HudMultiplayerStats size mismatch");
 static_assert(sizeof(Hud) == 0x2AF8, "Hud size mismatch");
 */

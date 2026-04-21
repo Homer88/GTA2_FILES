@@ -1,9 +1,4 @@
 ```
-# Compiled files
-*.o
-*.obj
-*.out
-
 # Build artifacts
 build/
 dist/
@@ -15,7 +10,7 @@ venv/
 __pycache__/
 *.egg-info/
 
-# Editors
+# IDE files
 .vscode/
 .idea/
 *.swp
@@ -24,20 +19,17 @@ __pycache__/
 # Logs
 *.log
 
-# Temp files
-*.tmp
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# Coverage
-coverage/
-htmlcov/
-*.coverage
-
-# System
+# OS generated files
 .DS_Store
 Thumbs.db
 
@@ -50,18 +42,4 @@ Thumbs.db
 *.xz
 *.7z
 *.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
 ```
