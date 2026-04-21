@@ -1,142 +1,82 @@
 /**
  * @file cars_prefabs.c
- * @brief Реализация C для менеджера префабов автомобилей
+ * @brief C-реализация менеджера префабов автомобилей GTA 2.
  * 
- * Старые имена функций из IDA:
- * - CarsPrefabs__GetCar -> GetCar
- * - CarsPrefabs__InsertCarAtFront -> InsertCarAtFront
- * - CarsPrefabs__GetCarsCount -> GetCarsCount
+ * Размер: 0xE0C4 (57540 байт)
+ * Конструктор: 0x004254F0
+ * Деструктор: 0x00426AA0
  */
 
 #include "entities/cars_prefabs.h"
 #include <stdlib.h>
 #include <string.h>
 
-// Глобальный экземпляр
+/* Глобальный экземпляр */
 CarsPrefabs* gCarsPrefabs = NULL;
 
 /**
- * @brief Конструктор CarsPrefabs (C-версия)
- * @address 0x004254F0
+ * @brief Конструктор CarsPrefabs.
+ * Адрес функции: 0x004254F0
  */
-void CarsPrefabs_ctor(CarsPrefabs* self) {
-    if (!self) return;
-    
-    // Инициализация полей
-    self->vtable = NULL;
-    self->carSysManager = NULL;
-    self->count = 0;
-    self->capacity = 0;
-    self->prefabsArray = NULL;
-    self->head = NULL;
-    self->tail = NULL;
-    self->flags = 0;
-    
-    // Вызов внутренних методов инициализации
-    // CarsPrefabs__sub_420F20(self);
-    // CarsPrefabs__sub_420F30(self);
-}
-
-/**
- * @brief Деструктор CarsPrefabs (C-версия)
- * @address 0x00426AA0
- */
-void CarsPrefabs_dtor(CarsPrefabs* self) {
-    if (!self) return;
-    
-    // Освобождение памяти массива префабов
-    if (self->prefabsArray) {
-        free(self->prefabsArray);
-        self->prefabsArray = NULL;
-    }
-    
-    // Сброс счетчиков
-    self->count = 0;
-    self->capacity = 0;
-}
-
-/**
- * @brief Получение префаба автомобиля по индексу
- * @address 0x00420F04 (CarsPrefabs__GetCar)
- */
-void* CarsPrefabs_GetCar(CarsPrefabs* self, uint32_t index) {
-    if (!self || !self->prefabsArray) {
+CarsPrefabs* CarsPrefabs__ctor(CarsPrefabs* this) {
+    if (!this) {
         return NULL;
     }
     
-    if (index >= self->count) {
-        return NULL;
-    }
+    /* Инициализация данных префабов */
+    memset(this->data, 0, sizeof(this->data));
     
-    return self->prefabsArray[index];
+    /* TODO: Добавить реальную логику инициализации из ассемблера */
+    
+    return this;
 }
 
 /**
- * @brief Добавление префаба в начало списка
- * @address 0x00401C7B (CarsPrefabs__InsertCarAtFront)
+ * @brief Деструктор CarsPrefabs.
+ * Адрес функции: 0x00426AA0
  */
-void CarsPrefabs_InsertCarAtFront(CarsPrefabs* self, void* prefab) {
-    if (!self || !prefab) {
+void CarsPrefabs__dtor(CarsPrefabs* this) {
+    if (!this) {
         return;
     }
     
-    // TODO: Реализация требует анализа ассемблера функции
-    // Предположительно добавляет префаб в начало связанного списка
+    /* TODO: Добавить реальную логику очистки из ассемблера */
 }
 
 /**
- * @brief Получение количества префабов
- * @address 0x00427D88 (CarsPrefabs__GetCarsCount)
+ * @brief Получение машины из префаба.
+ * Адрес функции: 0x00420F04
  */
-uint32_t CarsPrefabs_GetCarsCount(CarsPrefabs* self) {
-    if (!self) {
+void* CarsPrefabs__GetCar(CarsPrefabs* this, int index) {
+    if (!this || index < 0) {
+        return NULL;
+    }
+    
+    /* TODO: Реализовать логику получения машины из ассемблера */
+    return NULL;
+}
+
+/**
+ * @brief Вставка машины в начало списка.
+ * Адрес функции: 0x00401C7B
+ */
+void CarsPrefabs__InsertCarAtFront(CarsPrefabs* this, void* carData) {
+    if (!this || !carData) {
+        return;
+    }
+    
+    /* TODO: Реализовать логику вставки из ассемблера */
+}
+
+/**
+ * @brief Получение количества машин.
+ * Адрес функции: 0x00427D88
+ */
+int CarsPrefabs__GetCarsCount(CarsPrefabs* this) {
+    if (!this) {
         return 0;
     }
     
-    return self->count;
-}
-
-/**
- * @brief Внутренний метод инициализации #1
- * @address 0x00420F20
- */
-void CarsPrefabs_sub_420F20(CarsPrefabs* self) {
-    if (!self) return;
-    // TODO: Требует анализа ассемблера
-}
-
-/**
- * @brief Внутренний метод инициализации #2
- * @address 0x00420F30
- */
-void CarsPrefabs_sub_420F30(CarsPrefabs* self) {
-    if (!self) return;
-    // TODO: Требует анализа ассемблера
-}
-
-/**
- * @brief Метод работы с префабами #1
- * @address 0x00425400
- */
-void CarsPrefabs_sub_425400(CarsPrefabs* self) {
-    if (!self) return;
-    // TODO: Требует анализа ассемблера
-}
-
-/**
- * @brief Метод работы с префабами #2
- * @address 0x00425480
- */
-void CarsPrefabs_sub_425480(CarsPrefabs* self) {
-    if (!self) return;
-    // TODO: Требует анализа ассемблера
-}
-
-/**
- * @brief Метод работы с префабами #3
- * @address 0x004254A0
- */
-void CarsPrefabs_sub_4254A0(CarsPrefabs* self) {
-    if (!self) return;
-    // TODO: Требует анализа ассемблера
+    /* TODO: Реализовать логику подсчёта из ассемблера */
+    return 0;
 }

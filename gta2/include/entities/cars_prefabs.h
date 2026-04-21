@@ -1,123 +1,92 @@
 /**
  * @file cars_prefabs.h
- * @brief Структура префабов автомобилей (пул шаблонов машин)
+ * @brief Менеджер префабов (шаблонов) автомобилей GTA 2.
  * 
- * Анализ на основе gta2.exe.asm:
- * - Глобальный экземпляр: gCarsPrefabs по адресу 0x005E4874
- * - Конструктор: CarsPrefabs__CarsPrefabs (0x004254F0)
- * - Деструктор: CarsPrefabs__CarsPrefabs_des (0x00426AA0)
- * - Размер: определяется через анализ конструктора
+ * Адрес глобальной переменной: gCarsPrefabs (требует уточнения по map)
+ * Размер структуры: 0xE0C4 (57540 байт)
+ * Конструктор: 0x004254F0 (CarsPrefabs::CarsPrefabs)
+ * Деструктор: 0x00426AA0 (CarsPrefabs::CarsPrefabs_des)
  * 
- * Старое имя: S2 (ошибочное, использовалось как заглушка)
- * Реальное назначение: Менеджер префабов/шаблонов автомобилей
+ * Эта структура хранит шаблоны машин для спавна, включая их параметры,
+ * модели, цвета и другие предустановленные значения.
  */
 
-#ifndef GTA2_ENTITIES_CARS_PREFABS_H
-#define GTA2_ENTITIES_CARS_PREFABS_H
+#ifndef GTA2_CARS_PREFABS_H
+#define GTA2_CARS_PREFABS_H
 
-#include <cstdint>
-#include <cstddef>
+#include <stdint.h>
+#include <stddef.h>
 
-// Forward declarations
-struct Car;
-struct CarSystemManager;
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /**
- * @class CarsPrefabs
- * @brief Менеджер префабов автомобилей - хранит шаблоны и настройки для спавна машин
- * 
- * Эта структура управляет коллекцией префабов автомобилей, которые используются
- * системой для создания экземпляров машин в игре.
- * 
- * Известные методы:
- * - GetCar(index) - получение префаба по индексу
- * - InsertCarAtFront - добавление префаба в начало списка
- * - GetCarsCount() - получение количества префабов
- * - sub_420F20, sub_420F30 - внутренние методы инициализации
+ * @brief Глобальный экземпляр менеджера префабов.
  */
-struct CarsPrefabs {
-    // === Вероятная структура (требует уточнения по смещениям) ===
-    
-    /* 0x00 */ void* vtable;           // Таблица виртуальных методов
-    /* 0x04 */ CarSystemManager* carSysManager; // Ссылка на менеджер системы машин
-    /* 0x08 */ uint32_t count;         // Количество префабов в коллекции
-    /* 0x0C */ uint32_t capacity;      // Вместимость массива префабов
-    /* 0x10 */ void** prefabsArray;    // Массив указателей на префабы машин
-    /* 0x14 */ void* head;             // Голова связанного списка (если используется)
-    /* 0x18 */ void* tail;             // Хвост связанного списка
-    /* 0x1C */ uint32_t flags;         // Флаги состояния менеджера
-    
-    // === Методы ===
-    
-    /**
-     * @brief Конструктор CarsPrefabs
-     * @address 0x004254F0
-     */
-    CarsPrefabs();
-    
-    /**
-     * @brief Деструктор CarsPrefabs
-     * @address 0x00426AA0
-     */
-    ~CarsPrefabs();
-    
-    /**
-     * @brief Получение префаба автомобиля по индексу
-     * @address 0x00420F04 (CarsPrefabs__GetCar)
-     * @param index Индекс префаба в массиве
-     * @return Указатель на префаб или nullptr
-     */
-    void* GetCar(uint32_t index);
-    
-    /**
-     * @brief Добавление префаба в начало списка
-     * @address 0x00401C7B (CarsPrefabs__InsertCarAtFront)
-     * @param prefab Указатель на префаб для добавления
-     */
-    void InsertCarAtFront(void* prefab);
-    
-    /**
-     * @brief Получение количества префабов
-     * @address 0x00427D88 (CarsPrefabs__GetCarsCount)
-     * @return Количество префабов
-     */
-    uint32_t GetCarsCount() const;
-    
-    /**
-     * @brief Внутренний метод инициализации #1
-     * @address 0x00420F20
-     */
-    void sub_420F20();
-    
-    /**
-     * @brief Внутренний метод инициализации #2
-     * @address 0x00420F30
-     */
-    void sub_420F30();
-    
-    /**
-     * @brief Метод работы с префабами #1
-     * @address 0x00425400
-     */
-    void sub_425400();
-    
-    /**
-     * @brief Метод работы с префабами #2
-     * @address 0x00425480
-     */
-    void sub_425480();
-    
-    /**
-     * @brief Метод работы с префабами #3
-     * @address 0x004254A0
-     */
-    void sub_4254A0();
-};
-
-// Глобальный экземпляр
 extern CarsPrefabs* gCarsPrefabs;
 
-// Проверка размера структуры (требует уточнения после полного анализа)
-// static_assert(sizeof(CarsPrefabs) == 0x??, "CarsPrefabs size mismatch");
+/**
+ * @brief Структура менеджера префабов машин.
+ * Размер: 0xE0C4 (57540 байт)
+ */
+typedef struct CarsPrefabs {
+    /* 0x0000 */ uint8_t data[0xE0C4];   // Внутренние данные префабов
+                                        // Требуется дополнительный анализ для разбивки на поля
+} CarsPrefabs;
 
-#endif // GTA2_ENTITIES_CARS_PREFABS_H
+// Проверка размера структуры
+#ifdef __cplusplus
+static_assert(sizeof(CarsPrefabs) == 0xE0C4, "CarsPrefabs size must be 0xE0C4");
+#endif
+
+/**
+ * @brief Конструктор CarsPrefabs.
+ * @param this Указатель на экземпляр структуры.
+ * @return Указатель на инициализированный экземпляр.
+ * 
+ * Адрес функции: 0x004254F0
+ */
+CarsPrefabs* CarsPrefabs__ctor(CarsPrefabs* this);
+
+/**
+ * @brief Деструктор CarsPrefabs.
+ * @param this Указатель на экземпляр структуры.
+ * 
+ * Адрес функции: 0x00426AA0
+ */
+void CarsPrefabs__dtor(CarsPrefabs* this);
+
+/**
+ * @brief Получение машины из префаба.
+ * @param this Указатель на экземпляр.
+ * @param index Индекс машины.
+ * @return Указатель на данные машины или NULL.
+ * 
+ * Адрес функции: 0x00420F04 (CarsPrefabs::GetCar)
+ */
+void* CarsPrefabs__GetCar(CarsPrefabs* this, int index);
+
+/**
+ * @brief Вставка машины в начало списка.
+ * @param this Указатель на экземпляр.
+ * @param carData Данные машины.
+ * 
+ * Адрес функции: 0x00401C7B (CarsPrefabs::InsertCarAtFront)
+ */
+void CarsPrefabs__InsertCarAtFront(CarsPrefabs* this, void* carData);
+
+/**
+ * @brief Получение количества машин.
+ * @param this Указатель на экземпляр.
+ * @return Количество машин.
+ * 
+ * Адрес функции: 0x00427D88 (CarsPrefabs::GetCarsCount)
+ */
+int CarsPrefabs__GetCarsCount(CarsPrefabs* this);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif // GTA2_CARS_PREFABS_H

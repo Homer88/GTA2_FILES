@@ -1,263 +1,198 @@
 /**
  * @file car_system_manager.c
- * @brief Реализация C для менеджера системы автомобилей
+ * @brief C-реализация главного менеджера системы автомобилей GTA 2.
  * 
- * Старые имена функций из IDA:
- * - S2__S2 -> CarSystemManager_ctor (ошибочное имя)
- * - S2__S2_Des -> CarSystemManager_dtor (ошибочное имя)
- * - CarSystemManager__SpawnCar -> SpawnCar
- * - CarSystemManager__GetCar -> GetCar
- * 
- * КРИТИЧЕСКИ ВАЖНО:
- * - Размер структуры: 0xD264 (53860 байт)
- * - Это НЕ Vector3D, а крупный менеджер пула объектов
+ * Адрес конструктора: 0x004E3A00
+ * Размер структуры: 0x6C (108 байт)
  */
 
 #include "entities/car_system_manager.h"
 #include <stdlib.h>
 #include <string.h>
-#include <math.h>
 
-// Глобальный экземпляр
+/* Глобальный экземпляр */
 CarSystemManager* gCarSystemManager = NULL;
 
-/**
- * @brief Конструктор CarSystemManager (C-версия)
- * @address 0x00428FA0 (CarSystemManager__CarSystemManager)
- * 
- * СТАРОЕ ОШИБОЧНОЕ ИМЯ: S2__S2
- */
-void CarSystemManager_ctor(CarSystemManager* self) {
-    if (!self) return;
-    
-    // Полная инициализация памяти нулями
-    memset(self, 0, sizeof(CarSystemManager));
-    
-    // Инициализация базовых полей
-    self->vtable = NULL;
-    self->carsPool = NULL;
-    self->maxCars = CAR_SYSTEM_MAX_CARS;
-    self->activeCarsCount = 0;
-    self->prefabs = NULL;
-    self->freeListHead = NULL;
-    self->flags = 0;
-    self->trafficDensity = 50; // Значение по умолчанию
-    self->spawnRadius = 100.0f;
-    self->despawnRadius = 150.0f;
-    self->frameCounter = 0;
-    self->collisionData = NULL;
-    
-    // Выделение памяти для пула машин
-    self->carsPool = (Car**)calloc(self->maxCars, sizeof(Car*));
-}
+/* Внешние глобальные переменные */
+extern ActiveCarsPool* gActiveCarsPool;
+extern CarsPrefabs* gCarsPrefabs;
+extern CarAudioSettings* gCarAudioSettings;
+extern CarPhysicsWorld* gCarPhysicsWorld;
+extern CarColorsPalette* gCarColorsPalette;
+extern CarTransforms* gCarTransforms;
+
+/* Forward declarations */
+void CarSystemManager__PrepareArray(CarSystemManager* this);
+void S103__ctor(S103* this);
+void Turrel__SetSelect(Turrel* this);
+void sub_49EF00(void);
+void sub_42A500(void);
+
+/* Заглушка для MODEL_NUM_CAR_MODELS */
+#ifndef MODEL_NUM_CAR_MODELS
+#define MODEL_NUM_CAR_MODELS 0xFFFFFFFF
+#endif
+
+/* Заглушка для gDoFreeShopping */
+extern int gDoFreeShopping;
 
 /**
- * @brief Деструктор CarSystemManager (C-версия)
- * @address 0x00429250 (CarSystemManager__CarSystemManager_des)
- * 
- * СТАРОЕ ОШИБОЧНОЕ ИМЯ: S2__S2_Des
+ * @brief Подготовка внутреннего массива.
+ * Вызывается трижды в конструкторе для разных полей.
  */
-void CarSystemManager_dtor(CarSystemManager* self) {
-    if (!self) return;
-    
-    // Освобождение пула машин
-    if (self->carsPool) {
-        free(self->carsPool);
-        self->carsPool = NULL;
+void CarSystemManager__PrepareArray(CarSystemManager* this) {
+    if (!this) {
+        return;
     }
     
-    // Сброс всех счётчиков
-    self->activeCarsCount = 0;
-    self->maxCars = 0;
+    /* TODO: Реализовать логику подготовки массива из ассемблера */
+    /* Предположительно инициализирует указатели на массивы данных */
 }
 
 /**
- * @brief Спавн автомобиля
- * @address 0x00426AF0 (CarSystemManager__SpawnCar)
+ * @brief Конструктор CarSystemManager.
+ * Адрес функции: 0x004E3A00
  */
-Car* CarSystemManager_SpawnCar(CarSystemManager* self, uint32_t type, float x, float y, float z) {
-    if (!self) {
+CarSystemManager* CarSystemManager__ctor(CarSystemManager* this) {
+    if (!this) {
         return NULL;
     }
     
-    // Проверка границ координат
-    CarSystemManager_ClampValues(&x, -8192.0f, 8192.0f);
-    CarSystemManager_ClampValues(&y, -8192.0f, 8192.0f);
-    CarSystemManager_ClampValues(&z, -8192.0f, 8192.0f);
+    /* Инициализация внутренних массивов */
+    CarSystemManager__PrepareArray(this);
+    CarSystemManager__PrepareArray((CarSystemManager*)&this->field_14);
+    CarSystemManager__PrepareArray((CarSystemManager*)&this->field_18);
     
-    // Вызов внутреннего метода фактического спавна
-    return CarSystemManager_ActualSpawnCar(self, type, x, y, z);
-}
-
-/**
- * @brief Внутренний метод фактического спавна
- * @address 0x00426B10 (CarSystemManager__ActualSpawnCar)
- */
-Car* CarSystemManager_ActualSpawnCar(CarSystemManager* self, uint32_t type, float x, float y, float z) {
-    if (!self || !self->carsPool) {
-        return NULL;
-    }
-    
-    // Поиск свободного слота в пуле
-    for (uint32_t i = 0; i < self->maxCars; i++) {
-        if (self->carsPool[i] == NULL) {
-            // TODO: Здесь должно быть создание объекта Car
-            // self->carsPool[i] = Car_ctor(type, x, y, z);
-            self->activeCarsCount++;
-            return self->carsPool[i];
+    /* Инициализация глобального пула префабов если не создан */
+    if (!gCarsPrefabs) {
+        gCarsPrefabs = (CarsPrefabs*)malloc(57540); /* 0xE0C4 */
+        if (gCarsPrefabs) {
+            gCarsPrefabs = CarsPrefabs__ctor(gCarsPrefabs);
+        } else {
+            /* debug_log(0x20, "car.cpp", 8318); */
         }
     }
     
-    // Пул заполнен
-    return NULL;
+    /* Инициализация глобального пула активных машин если не создан */
+    if (!gActiveCarsPool) {
+        gActiveCarsPool = (ActiveCarsPool*)malloc(53860); /* 0xD264 */
+        if (gActiveCarsPool) {
+            gActiveCarsPool = ActiveCarsPool__ctor(gActiveCarsPool);
+        } else {
+            /* debug_log(0x20, "car.cpp", 8323); */
+        }
+    }
+    
+    /* Инициализация аудио настроек если не созданы */
+    if (!gCarAudioSettings) {
+        gCarAudioSettings = (CarAudioSettings*)malloc(20); /* 0x14 */
+        if (gCarAudioSettings) {
+            gCarAudioSettings = CarAudioSettings__ctor(gCarAudioSettings);
+        } else {
+            /* debug_log(0x20, "car.cpp", 8329); */
+        }
+    }
+    
+    /* Инициализация физического мира если не создан */
+    if (!gCarPhysicsWorld) {
+        gCarPhysicsWorld = (CarPhysicsWorld*)malloc(36724); /* 0x8F74 */
+        if (gCarPhysicsWorld) {
+            gCarPhysicsWorld = CarPhysicsWorld__ctor(gCarPhysicsWorld);
+        } else {
+            /* debug_log(0x20, "car.cpp", 8335); */
+        }
+    }
+    
+    /* Инициализация палитры цветов если не создана */
+    if (!gCarColorsPalette) {
+        gCarColorsPalette = (CarColorsPalette*)malloc(164); /* 0xA4 */
+        if (gCarColorsPalette) {
+            gCarColorsPalette = CarColorsPalette__ctor(gCarColorsPalette);
+        } else {
+            /* debug_log(0x20, "car.cpp", 8341); */
+        }
+    }
+    
+    /* Инициализация матриц трансформации если не созданы */
+    if (!gCarTransforms) {
+        gCarTransforms = (CarTransforms*)malloc(60); /* 0x3C */
+        if (gCarTransforms) {
+            gCarTransforms = CarTransforms__ctor(gCarTransforms);
+        } else {
+            /* debug_log(0x20, "car.cpp", 8375); */
+        }
+    }
+    
+    /* Инициализация полей структуры */
+    this->SpriteS1_0 = NULL; /* unk_5E4DB8 */
+    this->field_60 = 0;
+    this->flags = 0;
+    this->ID = 1;
+    this->Weapon = 0;
+    this->Count = 0;
+    this->field_1C = 0;
+    this->field_30 = 0; /* Предполагаемое смещение */
+    this->field_2C = 0; /* Предполагаемое смещение */
+    this->UnitCars = 0; /* Предполагаемое смещение */
+    this->field_38 = 0; /* Предполагаемое смещение */
+    this->MissionCars = 0; /* Предполагаемое смещение */
+    this->field_44 = 0; /* Предполагаемое смещение */
+    
+    /* Инициализация турелей */
+    extern Turrel* gTurrel;
+    extern Turrel* gTurrel_0;
+    Turrel__SetSelect(gTurrel);
+    Turrel__SetSelect(gTurrel_0);
+    
+    /* Вызов вспомогательных функций */
+    sub_49EF00();
+    sub_42A500();
+    
+    this->field_20 = 4;
+    this->field_24 = 1;
+    
+    /* Инициализация объекта игрока */
+    S103__ctor(&this->Player);
+    
+    this->field_54 = 0;
+    this->Count1 = 0;
+    this->CarType = MODEL_NUM_CAR_MODELS;
+    this->field_5C = 0;
+    this->Car = (Car*)MODEL_NUM_CAR_MODELS;
+    this->DoFreeShopping = gDoFreeShopping;
+    
+    return this;
 }
 
 /**
- * @brief Получение машины по индексу
- * @address 0x004BCA00 (CarSystemManager__GetCar)
+ * @brief Деструктор CarSystemManager.
  */
-Car* CarSystemManager_GetCar(CarSystemManager* self, uint32_t index) {
-    if (!self || !self->carsPool) {
-        return NULL;
-    }
-    
-    if (index >= self->maxCars) {
-        return NULL;
-    }
-    
-    return self->carsPool[index];
-}
-
-/**
- * @brief Добавление машины в систему
- * @address 0x00401C5C (CarSystemManager__AddCarToSystem)
- */
-void CarSystemManager_AddCarToSystem(CarSystemManager* self, Car* car) {
-    if (!self || !car) {
+void CarSystemManager__dtor(CarSystemManager* this) {
+    if (!this) {
         return;
     }
     
-    // TODO: Реализация требует анализа ассемблера
-    // Предположительно добавляет машину в пул или связанный список
+    /* TODO: Добавить реальную логику очистки из ассемблера */
 }
 
-/**
- * @brief Выбор типа трафика
- * @address 0x00420B60 (CarSystemManager__SelectTraffic)
- */
-uint32_t CarSystemManager_SelectTraffic(CarSystemManager* self, uint32_t areaType) {
-    if (!self) {
-        return 0;
-    }
-    
-    // TODO: Реализация требует анализа ассемблера
-    // Возвращает тип автомобиля на основе зоны и плотности трафика
-    return areaType;
-}
-
-/**
- * @brief Подготовка массива машин
- * @address 0x00447CB0 (CarSystemManager__PrepareArray)
- */
-void CarSystemManager_PrepareArray(CarSystemManager* self) {
-    if (!self) {
-        return;
-    }
-    
-    // TODO: Реализация требует анализа ассемблера
-    // Предположительно готовит массив для итерации
-}
-
-/**
- * @brief Ограничение значений
- * @address 0x00401C30 (CarSystemManager__ClampValues)
- */
-void CarSystemManager_ClampValues(float* value, float min, float max) {
-    if (!value) {
-        return;
-    }
-    
-    if (*value < min) {
-        *value = min;
-    } else if (*value > max) {
-        *value = max;
+/* Заглушки для внешних функций */
+void S103__ctor(S103* this) {
+    if (this) {
+        memset(this, 0, sizeof(S103));
     }
 }
 
-/**
- * @brief Установка индекса менеджера по умолчанию
- * @address 0x00426A70 (CarSystemManager__SetIndexDefautCarManager)
- */
-void CarSystemManager_SetIndexDefautCarManager(CarSystemManager* self, uint32_t index) {
-    if (!self) {
-        return;
-    }
-    
-    // TODO: Реализация требует анализа ассемблера
+void Turrel__SetSelect(Turrel* this) {
+    (void)this;
+    /* TODO: Реализовать логику из ассемблера */
 }
 
-/**
- * @brief Проверка на больше
- * @address 0x00426A90 (CarSystemManager__greater_than)
- */
-int CarSystemManager_greater_than(CarSystemManager* self, uint32_t a, uint32_t b) {
-    (void)self;
-    return a > b ? 1 : 0;
+void sub_49EF00(void) {
+    /* TODO: Реализовать логику из ассемблера */
 }
 
-/**
- * @brief Проверка на меньше или равно
- * @address 0x00426AE0 (CarSystemManager__less_or_equal)
- */
-int CarSystemManager_less_or_equal(CarSystemManager* self, uint32_t a, uint32_t b) {
-    (void)self;
-    return a <= b ? 1 : 0;
+void sub_42A500(void) {
+    /* TODO: Реализовать логику из ассемблера */
 }
 
-/**
- * @brief Проверка на неравенство
- * @address 0x0041E440 (CarSystemManager__NotEqual)
- */
-int CarSystemManager_NotEqual(CarSystemManager* self, uint32_t a, uint32_t b) {
-    (void)self;
-    return a != b ? 1 : 0;
-}
-
-/**
- * @brief Проверка на меньше
- * @address 0x0041E430 (CarSystemManager__less_than)
- */
-int CarSystemManager_less_than(CarSystemManager* self, uint32_t a, uint32_t b) {
-    (void)self;
-    return a < b ? 1 : 0;
-}
-
-// === Stub-функции для внутренних методов ===
-
-void CarSystemManager_sub_401C60(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_420A10(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_420C00(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_420C40(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_420CE0(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_4212D0(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_421960(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_421970(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_424980(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_424BD0(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_424E70(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_426A80(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_426AA0(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_426E40(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_427D60(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_428540(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_428EC0(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_428F70(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_42A120(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_42A4C0(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_447D30(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_4764A0(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_476610(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_476630(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_476640(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_476650(CarSystemManager* self) { (void)self; }
-void CarSystemManager_sub_4C39F0(CarSystemManager* self) { (void)self; }
+int gDoFreeShopping = 0;
