@@ -168,25 +168,141 @@ enum RouteFlags {
 // ----------------------------------------------------------------------------
 // Прототипы функций PublicTransport (S81)
 // ----------------------------------------------------------------------------
-// void S81_Init(struct S81_PublicTransport* this);
-// void S81_Update(struct S81_PublicTransport* this);
-// void S81_SetRoute(struct S81_PublicTransport* this, struct RouteNode* route, int nodeCount);
-// void S81_NextStop(struct S81_PublicTransport* this);
-// bool S81_IsThisBus(struct S81_PublicTransport* this, struct Car* car);
-// struct S3* S81_FindCarField(struct S81_PublicTransport* this, struct Car* car);
-// int S81_FUN_004af700(struct S81_PublicTransport* this, struct Car* car);
-// void S81_FUN_004b0d70(struct S81_PublicTransport* this, struct Car* car);
-// struct S3* S81_FUN_004b1b40(struct S81_PublicTransport* this, struct Car* car);
-// bool S81_HasReachedBusSkipLimit(struct S81_PublicTransport* this);
+
+// Инициализация общественного транспорта
+// old_name: FUN_0045dd20
+void S81_Init(struct S81_PublicTransport* this);
+
+// Поиск свободного слота в массиве ARR_S82
+// old_name: FUN_004af420
+int S81_FindFreeSlot(struct S81_PublicTransport* this);
+
+// Добавление транспортного средства в маршрут (поезд/трамвай)
+// old_name: FUN_004af460
+void S81_AddToRoute(struct S81_PublicTransport* this, u32* routeData);
+
+// Обновление маршрутов (циклический сдвиг)
+// old_name: FUN_004af4a0
+void S81_UpdateRoutes(struct S81_PublicTransport* this);
+
+// Обработка данных маршрута (узлы, пути)
+// old_name: FUN_004af500
+void S81_ProcessRouteData(struct S81_PublicTransport* this);
+
+// Проверка: является ли автомобиль этим автобусом/поездом
+// old_name: FUN_004af5a0
+bool S81_IsThisBus(struct S81_PublicTransport* this, struct Car* pCar);
+
+// Получение количества пропущенных ТС (лимит)
+// old_name: FUN_004af5a0 (частично)
+bool S81_HasReachedBusSkipLimit(struct S81_PublicTransport* this);
+
+// Увеличение счётчика пропусков
+// old_name: FUN_004af5e0
+void S81_IncrementSkipCount(struct S81_PublicTransport* this);
+
+// Сброс счётчика пропусков и очистка пассажира
+// old_name: FUN_004af5f0
+void S81_ResetSkipCount(struct S81_PublicTransport* this);
+
+// Поиск по индексу в ARR_S82
+// old_name: FUN_004af660
+struct S81_PublicTransport* S81_FindByIndex(struct S81_PublicTransport* this, int index);
+
+// Поиск автомобиля в компонентах поезда (возвращает S83*)
+// old_name: FUN_004af680
+int S81_FindCarInTrain(struct S81_PublicTransport* this, struct Car* pCar);
+
+// Обновление логики общественного транспорта (каждый кадр)
+// old_name: FUN_004af700
+void S81_Update(struct S81_PublicTransport* this);
+
+// Поиск автомобиля в массиве ARR_S83 (возвращает индекс или S83*)
+// old_name: FUN_004af700 (частично)
+int S81_FindCarIndex(struct S81_PublicTransport* this, struct Car* pCar);
+
+// Установка маршрута для общественного транспорта
+// old_name: FUN_004af8a0
+void S81_SetRoute(struct S81_PublicTransport* this, struct RouteNode* route, int nodeCount);
+
+// Переход к следующей остановке маршрута
+// old_name: FUN_004af9c0
+void S81_NextStop(struct S81_PublicTransport* this);
+
+// Проверка, является ли автомобиль автобусом (общественным транспортом)
+// old_name: FUN_004afb20
+int S81_IsThisBus_Global(struct S81_PublicTransport* this, struct Car* car);
+
+// Проверка, достигнут ли лимит пропущенных остановок
+// old_name: FUN_004afc80
+int S81_HasReachedBusSkipLimit_Check(struct S81_PublicTransport* this);
+
+// Отрисовка индикаторов маршрута (поезда/трамваи)
+// old_name: FUN_004afe20
+void S81_RenderRouteIndicators(struct S81_PublicTransport* this);
+
+// Инициализация маршрутов из карты (trak0-trak4, bus stops)
+// old_name: FUN_004b08a0
+void S81_InitializeRoutesFromMap(struct S81_PublicTransport* this);
+
+// Обработка взаимодействия с автомобилем (автобус/поезд)
+// old_name: FUN_004b0d70
+int S81_ProcessCarInteraction(struct S81_PublicTransport* this, struct Car* pCar);
+
+// Обновление состояния всех компонентов поезда/автобуса
+// old_name: FUN_004b1560
+void S81_UpdateAllComponents(struct S81_PublicTransport* this);
+
+// Поиск головного вагона/автобуса для данного автомобиля
+// old_name: FUN_004b1b40
+struct Car* S81_FindCarField(struct S81_PublicTransport* this, struct Car* pCar);
+
+// Проверка: являются ли два автомобиля частью одного поезда (разные вагоны)
+// old_name: FUN_004b1b80
+bool S81_AreSameTrain(struct S81_PublicTransport* this, struct Car* pCar1, struct Car* pCar2);
 
 // ----------------------------------------------------------------------------
 // Прототипы функций BaseCar (S82)
 // ----------------------------------------------------------------------------
-// void S82_Init(struct S82_BaseCar* this);
-// void S82_UpdatePhysics(struct S82_BaseCar* this);
-// void S82_ApplyForce(struct S82_BaseCar* this, f32 forceX, f32 forceY);
-// void S82_SetSpeed(struct S82_BaseCar* this, f32 speed);
-// void S82_Turn(struct S82_BaseCar* this, f32 angle);
-// bool S82_CheckCollision(struct S82_BaseCar* this);
+
+// Инициализация базового автомобиля
+// old_name: FUN_004e5a10
+void S82_Init(struct S82_BaseCar* this);
+
+// Обновление физики автомобиля (каждый кадр)
+// old_name: FUN_004e5b30
+void S82_UpdatePhysics(struct S82_BaseCar* this);
+
+// Применение силы к автомобилю
+// old_name: FUN_004e5c50
+void S82_ApplyForce(struct S82_BaseCar* this, f32 forceX, f32 forceY);
+
+// Установка скорости автомобиля
+// old_name: FUN_004e5d70
+void S82_SetSpeed(struct S82_BaseCar* this, f32 speed);
+
+// Поворот автомобиля на угол
+// old_name: FUN_004e5e90
+void S82_Turn(struct S82_BaseCar* this, f32 angle);
+
+// Проверка коллизий автомобиля
+// old_name: FUN_004e5fb0
+int S82_CheckCollision(struct S82_BaseCar* this);
+
+// ----------------------------------------------------------------------------
+// Прототипы функций TrainComponent (S83)
+// ----------------------------------------------------------------------------
+
+// Обновление состояния компонента поезда
+// old_name: FUN_004af9a0
+void S83_Update(struct S83_TrainComponent* this);
+
+// Связывание вагонов в состав поезда
+// old_name: FUN_004afa10
+void S83_LinkCarriages(struct S83_TrainComponent* this);
+
+// Отсоединение вагонов от поезда
+// old_name: FUN_004afa80
+void S83_UnlinkCarriages(struct S83_TrainComponent* this);
 
 #endif // VEHICLE_TYPES_H
