@@ -1,48 +1,30 @@
 /*
  * File: weapon.cpp
- * Description: C++ реализация структуры Weapon
- * Original Name: Weapon
- * Size: 48 bytes (0x30)
- * Constructor Address: 0x00426760
+ * Description: C++ обертка для Weapon
+ * Старое имя: Weapon
+ * Размер: 48 байт (0x30)
  */
 
 #include "../../include/entities/weapon.h"
-#include <cstring>
 
-// Конструктор C++
-Weapon::Weapon() {
-    Weapon_Constructor(this);
-}
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-// Деструктор C++
-Weapon::~Weapon() {
-    Weapon_Destructor(this);
-}
+// Объявление C функции
+CWeapon* Weapon_Constructor(CWeapon* this);
 
-// Методы-обертки
-void Weapon::SetOwner(void* ped, void* car) {
-    Weapon_SetOwner(this, ped, car);
+#ifdef __cplusplus
 }
+#endif
 
-void Weapon::Reload() {
-    Weapon_Reload(this);
-}
-
-int32_t Weapon::GetAmmo() const {
-    return m_Ammo;
-}
-
-void Weapon::SetAmmo(int32_t ammo) {
-    m_Ammo = ammo;
-}
-
-// Статический метод создания
-Weapon* Weapon::Create() {
-    Weapon* w = new Weapon();
-    return w;
-}
-
-// Статический метод удаления
-void Weapon::Destroy(Weapon* w) {
-    delete w;
-}
+#ifdef __cplusplus
+// Минимальная C++ обертка без выдуманных методов
+struct CWeaponCpp {
+    CWeapon base;
+    
+    CWeaponCpp() {
+        Weapon_Constructor(&base);
+    }
+};
+#endif
