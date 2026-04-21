@@ -1,8 +1,10 @@
 ```
-# Compiled and build artifacts
+# Compiled files
 *.o
 *.obj
 *.out
+
+# Build artifacts
 build/
 dist/
 
@@ -11,37 +13,37 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.Python
-env/
-venv/
-.venv/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Environment
 .env
 .env.local
-.env.*
+*.env.*
 
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
-*.tmp
-
-# Logs
-*.log
 
 # Coverage
-.coverage
 coverage/
 htmlcov/
+.coverage
 
-# Distribution / packaging
-.Python
-__pycache__/
-*.so
-.DS_Store
-Thumbs.db
+# Package managers
+node_modules/
+.npm/
+.yarn/
+.pnpm/
 
-# MyPy
-.mypy_cache/
-__init__.py
+# Python specific
+*.egg-info/
+.eggs/
+.wheelhouse/
+.tox/
+.coverage.*
+nosetests.xml
 ```
