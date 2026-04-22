@@ -1,1 +1,1 @@
-Nothing should be ignored based on the provided file changes. The only added file is a source code header file (.h), which should not be ignored.
+Nothing needs to be added to .gitignore since only a single source code file (Game.cpp) was added without any build artifacts, dependencies, or temporary files.
