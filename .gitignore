@@ -1,19 +1,37 @@
 ```
-# Build artifacts and generated files
-*.pyc
+# Compiled and build artifacts
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.out
+
+# Dependencies
+venv/
+.venv/
 __pycache__/
-structures_dump/
+.mypy_cache/
+.pytest_cache/
+node_modules/
+dist/
+build/
+target/
+.gradle/
 
 # Logs and temp files
 *.log
 *.tmp
+*.swp
+*.swo
 
-# Environment files
+# Environment
 .env
 .env.local
 *.env.*
 
-# Editors and IDEs
+# Editors
 .vscode/
 .idea/
 
@@ -21,31 +39,10 @@ structures_dump/
 .DS_Store
 Thumbs.db
 
-# Coverage reports
+# Coverage
 coverage/
 htmlcov/
 .coverage
-
-# Python specific
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
 
 # Compressed files
 *.zip
@@ -70,5 +67,4 @@ wheels/
 *.tar.bz2
 *.tar.xz
 *.tar.zst
-
 ```
