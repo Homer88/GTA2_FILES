@@ -11,6 +11,7 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 set(SOURCES
     src/entities.c
     src/ped.c
+    src/InitWindow.cpp
 )
 
 # Create library
@@ -28,3 +29,12 @@ endif()
 
 # Export compile commands for IDE integration
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+# ============================================
+# ТЕСТЫ
+# ============================================
+
+# Добавляем исполняемый файл для тестов InitWindow
+enable_language(CXX)
+add_executable(test_initwindow test_initwindow.cpp src/InitWindow.cpp)
+target_link_libraries(test_initwindow gta2_c)

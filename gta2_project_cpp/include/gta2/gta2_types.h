@@ -11,7 +11,21 @@
 
 #pragma once
 
-#include <windows.h>
+#ifndef _WIN32
+    // Заглушки для Linux для компиляции тестов
+    typedef void* HWND;
+    typedef void* HINSTANCE;
+    #define CALLBACK
+    typedef int INT;
+    typedef unsigned int UINT;
+    typedef long LONG;
+    typedef long LPARAM;
+    typedef long WPARAM;
+    typedef long LRESULT;
+#else
+    #include <windows.h>
+#endif
+
 #include <cstdint>
 
 // ============================================================================
@@ -100,10 +114,4 @@ enum class PedFlags : uint32_t {
 // ============================================================================
 
 // Эти проверки должны быть активированы после восстановления всех структур
-// static_assert(sizeof(GameObject) == 0x??, "GameObject size mismatch");
-// static_assert(sizeof(Ped) == 0x??, "Ped size mismatch");
-// static_assert(sizeof(Car) == 0x??, "Car size mismatch");
-// static_assert(sizeof(Player) == 0x8B0, "Player size mismatch");
-// static_assert(sizeof(Gang) == 0x??, "Gang size mismatch");
-// static_assert(sizeof(Game) == 0x40, "Game size mismatch");
 

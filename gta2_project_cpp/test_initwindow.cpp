@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cassert>
+#include <cstring>
 #include "include/gta2/InitWindow.h"
 
 using namespace GTA2;

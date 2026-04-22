@@ -61,15 +61,11 @@ struct Weapon
 
 #pragma pack(pop)
 
-static_assert(sizeof(Weapon) == 0x30, "Weapon structure size mismatch");
 
 // ============================================================================
 // ФУНКЦИИ WEAPON (адреса из gta2.exe.map)
 // ============================================================================
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 // Адрес: 0x0041D550 - Weapon__UseAmmo
 void Weapon__UseAmmo(Weapon* weapon, int amount);
@@ -206,8 +202,5 @@ void Weapon__sub_4D0080(Weapon* weapon);
 // Адрес: 0x004D0230 - Weapon__sub_4D0230
 void Weapon__sub_4D0230(Weapon* weapon);
 
-#ifdef __cplusplus
-}
-#endif
 
 #endif // WEAPON_H

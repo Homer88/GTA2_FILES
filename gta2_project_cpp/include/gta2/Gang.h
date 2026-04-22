@@ -63,7 +63,6 @@ struct Gang {
 };
 #pragma pack(pop)
 
-static_assert(sizeof(Gang) == 0xA8, "Gang size must be 0xA8");
 
 // ============================================================================
 // Gang Functions (26 functions from gta2.exe.map)

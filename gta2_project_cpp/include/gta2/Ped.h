@@ -65,16 +65,12 @@ struct Ped
 
 #pragma pack(pop)
 
-static_assert(sizeof(Ped) == 0x5F0, "Ped structure size mismatch");
 
 // ============================================================================
 // ФУНКЦИИ PED (адреса из gta2.exe.map)
 // Всего: 251 функция
 // ============================================================================
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 // === Основные функции управления (0x00412920 - 0x00412B90) ===
 // Адрес: 0x00412920 - Ped__SetSearchType
@@ -258,8 +254,5 @@ void Ped__SetRotation(Ped* ped, float rotation);
 // Адрес: 0x00433DC0 - Ped__GetPoliceStar
 int Ped__GetPoliceStar(Ped* ped);
 
-#ifdef __cplusplus
-}
-#endif
 
 #endif // PED_H

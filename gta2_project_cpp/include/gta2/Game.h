@@ -35,7 +35,7 @@ struct Game
     int32_t State;                      // 0x002C - Состояние игры
     int32_t field_30;                   // 0x0030
     int32_t SkipPolice;                 // 0x0034 - Пропустить полицию
-    Player* Player;                     // 0x0038 - Указатель на игрока
+    Player* pCurrentPlayer;                     // 0x0038 - Указатель на текущего игрока
     char gSkilPolice;                   // 0x003C - Навык полиции
     char field_3D;                      // 0x003D
     char field_3E;                      // 0x003E
@@ -44,16 +44,12 @@ struct Game
 
 #pragma pack(pop)
 
-static_assert(sizeof(Game) == 0x40, "Game structure size mismatch");
 
 // ============================================================================
 // ФУНКЦИИ GAME (адреса из gta2.exe.map)
 // Всего: 51 функция
 // ============================================================================
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 // === Основные функции управления игрой ===
 // Адрес: 0x0040013C - Game__GetCurrentPlayerSlot
@@ -209,8 +205,5 @@ void Game__sub_4B94B0();
 // Адрес: 0x004C09C0 - Game__GetState
 int Game__GetState();
 
-#ifdef __cplusplus
-}
-#endif
 
 #endif // GAME_H

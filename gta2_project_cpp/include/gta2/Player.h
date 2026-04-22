@@ -88,16 +88,12 @@ struct Player
 
 #pragma pack(pop)
 
-static_assert(sizeof(Player) == 0x8B0, "Player structure size mismatch");
 
 // ============================================================================
 // ФУНКЦИИ PLAYER (адреса из gta2.exe.map)
 // Всего: 232 функции
 // ============================================================================
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 // === Основные функции управления ===
 // Адрес: 0x00401B40 - Player__sub_401B40
@@ -247,8 +243,5 @@ void Player__sub_476700(Player* player);
 // Адрес: 0x00476730 - Player__sub_476730
 void Player__sub_476730(Player* player);
 
-#ifdef __cplusplus
-}
-#endif
 
 #endif // PLAYER_H

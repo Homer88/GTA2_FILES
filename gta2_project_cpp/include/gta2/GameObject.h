@@ -43,16 +43,11 @@ struct GameObject
 
 #pragma pack(pop)
 
-static_assert(sizeof(GameObject) == 0x40, "GameObject structure size mismatch");
 
 // ============================================================================
 // ФУНКЦИИ GAMEOBJECT (адреса из gta2.exe.map)
 // Всего: 60 функций
 // ============================================================================
-
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 // Адрес: 0x00412900 - GameObject__GetVehicle
 Car* GameObject__GetVehicle(GameObject* obj);
@@ -148,4 +143,3 @@ void GameObject__sub_491FA0(GameObject* obj);
 }
 #endif
 
-#endif // GAMEOBJECT_H

@@ -11,6 +11,7 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 set(SOURCES
     # Add .cpp files here when classes with vtable methods are confirmed
     GameObject.cpp
+    src/InitWindow.cpp
 )
 
 # Create library (empty for now - header only interface)
@@ -36,6 +37,10 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # Добавляем исполняемый файл для тестов GameObject
 add_executable(test_gameobject test_gameobject.cpp GameObject.cpp)
 target_link_libraries(test_gameobject gta2_cpp)
+
+# Добавляем исполняемый файл для тестов InitWindow
+add_executable(test_initwindow test_initwindow.cpp src/InitWindow.cpp)
+target_link_libraries(test_initwindow gta2_cpp)
 
 # Для Windows: если нужно линковаться с конкретными библиотеками (например, DirectX), раскомментируйте ниже
 # target_link_libraries(test_gameobject dinput dxguid)

@@ -129,6 +129,19 @@ test_gameobject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/build
 .PHONY : test_gameobject/fast
 
+#=============================================================================
+# Target rules for targets named test_initwindow
+
+# Build rule for target.
+test_initwindow: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_initwindow
+.PHONY : test_initwindow
+
+# fast build rule for target.
+test_initwindow/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_initwindow.dir/build.make CMakeFiles/test_initwindow.dir/build
+.PHONY : test_initwindow/fast
+
 GameObject.o: GameObject.cpp.o
 .PHONY : GameObject.o
 
@@ -152,6 +165,30 @@ GameObject.s: GameObject.cpp.s
 GameObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/GameObject.cpp.s
 .PHONY : GameObject.cpp.s
+
+src/InitWindow.o: src/InitWindow.cpp.o
+.PHONY : src/InitWindow.o
+
+# target to build an object file
+src/InitWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_initwindow.dir/build.make CMakeFiles/test_initwindow.dir/src/InitWindow.cpp.o
+.PHONY : src/InitWindow.cpp.o
+
+src/InitWindow.i: src/InitWindow.cpp.i
+.PHONY : src/InitWindow.i
+
+# target to preprocess a source file
+src/InitWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_initwindow.dir/build.make CMakeFiles/test_initwindow.dir/src/InitWindow.cpp.i
+.PHONY : src/InitWindow.cpp.i
+
+src/InitWindow.s: src/InitWindow.cpp.s
+.PHONY : src/InitWindow.s
+
+# target to generate assembly for a file
+src/InitWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_initwindow.dir/build.make CMakeFiles/test_initwindow.dir/src/InitWindow.cpp.s
+.PHONY : src/InitWindow.cpp.s
 
 test_gameobject.o: test_gameobject.cpp.o
 .PHONY : test_gameobject.o
@@ -177,6 +214,30 @@ test_gameobject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/test_gameobject.cpp.s
 .PHONY : test_gameobject.cpp.s
 
+test_initwindow.o: test_initwindow.cpp.o
+.PHONY : test_initwindow.o
+
+# target to build an object file
+test_initwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_initwindow.dir/build.make CMakeFiles/test_initwindow.dir/test_initwindow.cpp.o
+.PHONY : test_initwindow.cpp.o
+
+test_initwindow.i: test_initwindow.cpp.i
+.PHONY : test_initwindow.i
+
+# target to preprocess a source file
+test_initwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_initwindow.dir/build.make CMakeFiles/test_initwindow.dir/test_initwindow.cpp.i
+.PHONY : test_initwindow.cpp.i
+
+test_initwindow.s: test_initwindow.cpp.s
+.PHONY : test_initwindow.s
+
+# target to generate assembly for a file
+test_initwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_initwindow.dir/build.make CMakeFiles/test_initwindow.dir/test_initwindow.cpp.s
+.PHONY : test_initwindow.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +247,19 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test_gameobject"
+	@echo "... test_initwindow"
 	@echo "... GameObject.o"
 	@echo "... GameObject.i"
 	@echo "... GameObject.s"
+	@echo "... src/InitWindow.o"
+	@echo "... src/InitWindow.i"
+	@echo "... src/InitWindow.s"
 	@echo "... test_gameobject.o"
 	@echo "... test_gameobject.i"
 	@echo "... test_gameobject.s"
+	@echo "... test_initwindow.o"
+	@echo "... test_initwindow.i"
+	@echo "... test_initwindow.s"
 .PHONY : help
 
 
