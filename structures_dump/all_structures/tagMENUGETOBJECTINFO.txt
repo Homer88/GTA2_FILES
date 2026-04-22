@@ -1,0 +1,13 @@
+// Структура: tagMENUGETOBJECTINFO
+// Полей: 5
+// Строки в оригинале: 93051-93058
+struct tagMENUGETOBJECTINFO
+{
+
+  unsigned int dwFlags;
+  unsigned int uPos;
+  HMENU__ *hmenu;
+  void *riid;
+  void *pvObj;
+
+};

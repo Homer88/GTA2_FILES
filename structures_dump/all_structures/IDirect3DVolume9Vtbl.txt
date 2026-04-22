@@ -1,0 +1,27 @@
+// Структура: IDirect3DVolume9Vtbl
+// Полей: 19
+// Строки в оригинале: 26331-26352
+struct IDirect3DVolume9Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirect3DVolume9 *This, const IID *const riid, void **ppvObj);
+  ULONG (__stdcall *AddRef)(IDirect3DVolume9 *This);
+  ULONG (__stdcall *Release)(IDirect3DVolume9 *This);
+  HRESULT (__stdcall *GetDevice)(IDirect3DVolume9 *This, IDirect3DDevice9 **ppDevice);
+  HRESULT (__stdcall *SetPrivateData)(IDirect3DVolume9 *This, const GUID *const refguid, const void *pData, DWORD SizeOfData, DWORD Flags);
+  HRESULT (__stdcall *GetPrivateData)(IDirect3DVolume9 *This, const GUID *const refguid, void *pData, DWORD *pSizeOfData);
+  HRESULT (__stdcall *FreePrivateData)(IDirect3DVolume9 *This, const GUID *const refguid);
+  HRESULT (__stdcall *GetContainer)(IDirect3DVolume9 *This, const IID *const riid, void **ppContainer);
+  HRESULT (__stdcall *GetDesc)(IDirect3DVolume9 *This, D3DVOLUME_DESC *pDesc);
+  HRESULT (__stdcall *LockBox)(IDirect3DVolume9 *This, D3DLOCKED_BOX *pLockedVolume, const D3DBOX *pBox, DWORD Flags);
+  HRESULT (__stdcall *UnlockBox)(IDirect3DVolume9 *This);
+  LPCWSTR Name;
+  UINT Width;
+  UINT Height;
+  UINT Depth;
+  DWORD Usage;
+  D3DFORMAT Format;
+  D3DPOOL Pool;
+  UINT LockCount;
+
+};

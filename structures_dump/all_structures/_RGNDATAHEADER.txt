@@ -1,0 +1,13 @@
+// Структура: _RGNDATAHEADER
+// Полей: 5
+// Строки в оригинале: 24564-24571
+struct _RGNDATAHEADER
+{
+
+  DWORD dwSize;
+  DWORD iType;
+  DWORD nCount;
+  DWORD nRgnSize;
+  RECT rcBound;
+
+};

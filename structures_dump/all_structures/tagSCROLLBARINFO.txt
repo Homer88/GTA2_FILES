@@ -1,0 +1,15 @@
+// Структура: tagSCROLLBARINFO
+// Полей: 7
+// Строки в оригинале: 97181-97190
+struct tagSCROLLBARINFO
+{
+
+  unsigned int cbSize;
+  tagRECT rcScrollBar;
+  int dxyLineButton;
+  int xyThumbTop;
+  int xyThumbBottom;
+  int reserved;
+  unsigned int rgstate[6];
+
+};

@@ -1,0 +1,11 @@
+// Структура: IMAGE_COR_X86_RUNTIME_FUNCTION_ENTRY
+// Полей: 3
+// Строки в оригинале: 366330-366335
+struct IMAGE_COR_X86_RUNTIME_FUNCTION_ENTRY
+{
+
+  unsigned int BeginAddress;
+  unsigned int EndAddress;
+  unsigned int MIH;
+
+};

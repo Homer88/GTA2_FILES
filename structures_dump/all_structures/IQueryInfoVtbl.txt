@@ -1,0 +1,10 @@
+// Структура: IQueryInfoVtbl
+// Полей: 2
+// Строки в оригинале: 30527-30531
+struct IQueryInfoVtbl
+{
+
+  HRESULT (__stdcall *GetInfoTip)(IQueryInfo *This, DWORD dwFlags, PWSTR *ppwszTip);
+  HRESULT (__stdcall *GetInfoFlags)(IQueryInfo *This, DWORD *pdwFlags);
+
+};

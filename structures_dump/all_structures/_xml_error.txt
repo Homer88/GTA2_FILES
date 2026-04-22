@@ -1,0 +1,16 @@
+// Структура: _xml_error
+// Полей: 8
+// Строки в оригинале: 96942-96952
+struct _xml_error
+{
+
+  unsigned int _nLine;
+  wchar_t *_pchBuf;
+  unsigned int _cchBuf;
+  unsigned int _ich;
+  wchar_t *_pszFound;
+  wchar_t *_pszExpected;
+  unsigned int _reserved1;
+  unsigned int _reserved2;
+
+};

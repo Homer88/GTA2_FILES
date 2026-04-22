@@ -1,0 +1,13 @@
+// Структура: tagSTDOBJREF
+// Полей: 5
+// Строки в оригинале: 99008-99015
+struct tagSTDOBJREF
+{
+
+  unsigned int flags;
+  unsigned int cPublicRefs;
+  unsigned __int64 oxid;
+  unsigned __int64 oid;
+  _GUID ipid;
+
+};

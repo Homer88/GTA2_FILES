@@ -1,0 +1,10 @@
+// Структура: _PS_PROPERTY_SET
+// Полей: 2
+// Строки в оригинале: 16393-16397
+struct _PS_PROPERTY_SET
+{
+
+  _LIST_ENTRY ListHead;
+  unsigned int Lock;
+
+};

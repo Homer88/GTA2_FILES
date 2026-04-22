@@ -1,0 +1,10 @@
+// Структура: CONFIRM_CONFLICT_RESULT_INFO
+// Полей: 2
+// Строки в оригинале: 33627-33631
+struct CONFIRM_CONFLICT_RESULT_INFO
+{
+
+  LPWSTR pszNewName;
+  UINT iItemIndex;
+
+};

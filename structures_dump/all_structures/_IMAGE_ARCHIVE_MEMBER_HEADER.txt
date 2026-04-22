@@ -1,0 +1,15 @@
+// Структура: _IMAGE_ARCHIVE_MEMBER_HEADER
+// Полей: 7
+// Строки в оригинале: 88109-88118
+struct _IMAGE_ARCHIVE_MEMBER_HEADER
+{
+
+  unsigned __int8 Name[16];
+  unsigned __int8 Date[12];
+  unsigned __int8 UserID[6];
+  unsigned __int8 GroupID[6];
+  unsigned __int8 Mode[8];
+  unsigned __int8 Size[10];
+  unsigned __int8 EndHeader[2];
+
+};

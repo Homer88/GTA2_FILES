@@ -1,0 +1,18 @@
+// Структура: _RTL_PROCESS_LOCK_INFORMATION
+// Полей: 10
+// Строки в оригинале: 95474-95486
+struct _RTL_PROCESS_LOCK_INFORMATION
+{
+
+  void *Address;
+  unsigned __int16 Type;
+  unsigned __int16 CreatorBackTraceIndex;
+  void *OwningThread;
+  int LockCount;
+  unsigned int ContentionCount;
+  unsigned int EntryCount;
+  int RecursionCount;
+  unsigned int NumberOfWaitingShared;
+  unsigned int NumberOfWaitingExclusive;
+
+};

@@ -1,0 +1,10 @@
+// Структура: AENTRY
+// Полей: 2
+// Строки в оригинале: 220164-220168
+struct AENTRY
+{
+
+  unsigned int dwCollision;
+  void *pAllocation;
+
+};

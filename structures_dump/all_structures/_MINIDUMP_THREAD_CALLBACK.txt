@@ -1,0 +1,14 @@
+// Структура: _MINIDUMP_THREAD_CALLBACK
+// Полей: 6
+// Строки в оригинале: 122557-122565
+struct _MINIDUMP_THREAD_CALLBACK
+{
+
+  unsigned int ThreadId;
+  void *ThreadHandle;
+  _CONTEXT Context;
+  unsigned int SizeOfContext;
+  unsigned __int64 StackBase;
+  unsigned __int64 StackEnd;
+
+};

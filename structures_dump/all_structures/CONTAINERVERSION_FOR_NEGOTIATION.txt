@@ -1,0 +1,10 @@
+// Структура: CONTAINERVERSION_FOR_NEGOTIATION
+// Полей: 2
+// Строки в оригинале: 194027-194031
+struct CONTAINERVERSION_FOR_NEGOTIATION
+{
+
+  unsigned int version;
+  unsigned __int64 capabilityFlags;
+
+};

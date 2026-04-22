@@ -1,0 +1,13 @@
+// Структура: _NDR64_FIX_ARRAY_HEADER_FORMAT
+// Полей: 5
+// Строки в оригинале: 331477-331484
+struct _NDR64_FIX_ARRAY_HEADER_FORMAT
+{
+
+  unsigned __int8 FormatCode;
+  unsigned __int8 Alignment;
+  _NDR64_ARRAY_FLAGS Flags;
+  unsigned __int8 Reserved;
+  unsigned int TotalSize;
+
+};

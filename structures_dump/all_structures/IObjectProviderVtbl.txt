@@ -1,0 +1,12 @@
+// Структура: IObjectProviderVtbl
+// Полей: 4
+// Строки в оригинале: 36846-36852
+struct IObjectProviderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IObjectProvider *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IObjectProvider *This);
+  ULONG (__stdcall *Release)(IObjectProvider *This);
+  HRESULT (__stdcall *QueryObject)(IObjectProvider *This, const GUID *const guidObject, const IID *const riid, void **ppvOut);
+
+};

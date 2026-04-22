@@ -1,0 +1,15 @@
+// Структура: DWebBrowserEventsVtbl
+// Полей: 7
+// Строки в оригинале: 45209-45218
+struct DWebBrowserEventsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(DWebBrowserEvents *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(DWebBrowserEvents *This);
+  ULONG (__stdcall *Release)(DWebBrowserEvents *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(DWebBrowserEvents *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(DWebBrowserEvents *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(DWebBrowserEvents *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(DWebBrowserEvents *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+
+};

@@ -1,0 +1,15 @@
+// Структура: IEnumOleUndoUnitsVtbl
+// Полей: 7
+// Строки в оригинале: 33119-33128
+struct IEnumOleUndoUnitsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumOleUndoUnits *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumOleUndoUnits *This);
+  ULONG (__stdcall *Release)(IEnumOleUndoUnits *This);
+  HRESULT (__stdcall *Next)(IEnumOleUndoUnits *This, ULONG cElt, IOleUndoUnit **rgElt, ULONG *pcEltFetched);
+  HRESULT (__stdcall *Skip)(IEnumOleUndoUnits *This, ULONG cElt);
+  HRESULT (__stdcall *Reset)(IEnumOleUndoUnits *This);
+  HRESULT (__stdcall *Clone)(IEnumOleUndoUnits *This, IEnumOleUndoUnits **ppEnum);
+
+};

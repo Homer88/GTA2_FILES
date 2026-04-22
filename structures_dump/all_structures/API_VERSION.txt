@@ -1,0 +1,12 @@
+// Структура: API_VERSION
+// Полей: 4
+// Строки в оригинале: 123756-123762
+struct API_VERSION
+{
+
+  unsigned __int16 MajorVersion;
+  unsigned __int16 MinorVersion;
+  unsigned __int16 Revision;
+  unsigned __int16 Reserved;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IRegisteredTask
+// Полей: 1
+// Строки в оригинале: 44617-44620
+struct IRegisteredTask
+{
+
+  struct IRegisteredTaskVtbl *lpVtbl;
+
+};

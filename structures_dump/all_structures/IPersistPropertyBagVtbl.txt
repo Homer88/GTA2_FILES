@@ -1,0 +1,15 @@
+// Структура: IPersistPropertyBagVtbl
+// Полей: 7
+// Строки в оригинале: 41026-41035
+struct IPersistPropertyBagVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPersistPropertyBag *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPersistPropertyBag *This);
+  ULONG (__stdcall *Release)(IPersistPropertyBag *This);
+  HRESULT (__stdcall *GetClassID)(IPersistPropertyBag *This, CLSID *pClassID);
+  HRESULT (__stdcall *InitNew)(IPersistPropertyBag *This);
+  HRESULT (__stdcall *Load)(IPersistPropertyBag *This, IPropertyBag *pPropBag, IErrorLog *pErrorLog);
+  HRESULT (__stdcall *Save)(IPersistPropertyBag *This, IPropertyBag *pPropBag, BOOL fClearDirty, BOOL fSaveAllProperties);
+
+};

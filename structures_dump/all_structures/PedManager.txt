@@ -1,0 +1,14 @@
+// Структура: PedManager
+// Полей: 6
+// Строки в оригинале: 10149-10157
+struct PedManager
+{
+
+  Ped *FirstElement;
+  Ped *NextPed;
+  Ped Ped[200];
+  __int16 PedsInUse;
+  char field_203AA;
+  char field_203AB;
+
+};

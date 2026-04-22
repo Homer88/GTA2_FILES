@@ -1,0 +1,9 @@
+// Структура: _HAM_EXTERNAL_RESOURCE_MASK
+// Полей: 1
+// Строки в оригинале: 262199-262202
+struct _HAM_EXTERNAL_RESOURCE_MASK
+{
+
+  unsigned int Data[2];
+
+};

@@ -1,0 +1,13 @@
+// Структура: _HEAP_VIRTUAL_ALLOC_ENTRY
+// Полей: 5
+// Строки в оригинале: 21132-21139
+struct _HEAP_VIRTUAL_ALLOC_ENTRY
+{
+
+  _LIST_ENTRY Entry;
+  _HEAP_ENTRY_EXTRA ExtraStuff;
+  unsigned int CommitSize;
+  unsigned int ReserveSize;
+  _HEAP_ENTRY BusyBlock;
+
+};

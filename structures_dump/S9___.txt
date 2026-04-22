@@ -1,0 +1,9 @@
+// Structure: S9___
+// Lines: 5609 - 5613
+// Fields: 3
+
+struct S9___
+{
+  _BYTE gap0[531];
+  char field_0;
+};

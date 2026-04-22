@@ -1,0 +1,9 @@
+// Структура: IShellFolderViewDual3
+// Полей: 1
+// Строки в оригинале: 37014-37017
+struct IShellFolderViewDual3
+{
+
+  struct IShellFolderViewDual3Vtbl *lpVtbl;
+
+};

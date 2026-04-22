@@ -1,0 +1,15 @@
+// Структура: tagIPIDTmp
+// Полей: 7
+// Строки в оригинале: 248798-248807
+struct tagIPIDTmp
+{
+
+  unsigned int dwFlags;
+  unsigned int cStrongRefs;
+  unsigned int cWeakRefs;
+  unsigned int cPrivateRefs;
+  void *pv;
+  IUnknown *pStub;
+  OXIDEntry *pOXIDEntry;
+
+};

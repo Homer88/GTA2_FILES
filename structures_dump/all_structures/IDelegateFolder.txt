@@ -1,0 +1,9 @@
+// Структура: IDelegateFolder
+// Полей: 1
+// Строки в оригинале: 39842-39845
+struct IDelegateFolder
+{
+
+  struct IDelegateFolderVtbl *lpVtbl;
+
+};

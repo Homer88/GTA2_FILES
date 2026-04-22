@@ -1,0 +1,17 @@
+// Структура: tagGUITHREADINFO
+// Полей: 9
+// Строки в оригинале: 105592-105603
+struct tagGUITHREADINFO
+{
+
+  unsigned int cbSize;
+  unsigned int flags;
+  HWND__ *hwndActive;
+  HWND__ *hwndFocus;
+  HWND__ *hwndCapture;
+  HWND__ *hwndMenuOwner;
+  HWND__ *hwndMoveSize;
+  HWND__ *hwndCaret;
+  tagRECT rcCaret;
+
+};

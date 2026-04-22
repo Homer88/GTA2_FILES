@@ -1,0 +1,9 @@
+// Структура: _SecPkgContext_AuthorityA
+// Полей: 1
+// Строки в оригинале: 325758-325761
+struct _SecPkgContext_AuthorityA
+{
+
+  char *sAuthorityName;
+
+};

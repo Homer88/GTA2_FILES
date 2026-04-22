@@ -1,0 +1,18 @@
+// Структура: _IMAGEHLP_MODULE
+// Полей: 10
+// Строки в оригинале: 123725-123737
+struct _IMAGEHLP_MODULE
+{
+
+  unsigned int SizeOfStruct;
+  unsigned int BaseOfImage;
+  unsigned int ImageSize;
+  unsigned int TimeDateStamp;
+  unsigned int CheckSum;
+  unsigned int NumSyms;
+  SYM_TYPE SymType;
+  char ModuleName[32];
+  char ImageName[256];
+  char LoadedImageName[256];
+
+};

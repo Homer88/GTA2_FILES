@@ -1,0 +1,10 @@
+// Структура: tagKnownSystemIIDs
+// Полей: 2
+// Строки в оригинале: 246214-246218
+struct tagKnownSystemIIDs
+{
+
+  const _GUID *pIID;
+  unsigned int dwRpcIfFlags;
+
+};

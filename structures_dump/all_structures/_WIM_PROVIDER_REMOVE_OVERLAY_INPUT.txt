@@ -1,0 +1,9 @@
+// Структура: _WIM_PROVIDER_REMOVE_OVERLAY_INPUT
+// Полей: 1
+// Строки в оригинале: 82408-82411
+struct _WIM_PROVIDER_REMOVE_OVERLAY_INPUT
+{
+
+  _LARGE_INTEGER DataSourceId;
+
+};

@@ -1,0 +1,10 @@
+// Структура: tagCAL
+// Полей: 2
+// Строки в оригинале: 31526-31530
+struct tagCAL
+{
+
+  ULONG cElems;
+  LONG *pElems;
+
+};

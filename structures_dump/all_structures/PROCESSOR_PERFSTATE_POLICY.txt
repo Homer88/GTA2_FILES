@@ -1,0 +1,18 @@
+// Структура: PROCESSOR_PERFSTATE_POLICY
+// Полей: 10
+// Строки в оригинале: 112591-112603
+struct PROCESSOR_PERFSTATE_POLICY
+{
+
+  unsigned int Revision;
+  unsigned __int8 MaxThrottle;
+  unsigned __int8 MinThrottle;
+  unsigned __int8 BusyAdjThreshold;
+  $C47BD1C660AEEFA642E7C064709CE350 ___u4;
+  unsigned int TimeCheck;
+  unsigned int IncreaseTime;
+  unsigned int DecreaseTime;
+  unsigned int IncreasePercent;
+  unsigned int DecreasePercent;
+
+};

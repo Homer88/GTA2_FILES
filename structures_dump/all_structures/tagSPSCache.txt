@@ -1,0 +1,10 @@
+// Структура: tagSPSCache
+// Полей: 2
+// Строки в оригинале: 60474-60478
+struct tagSPSCache
+{
+
+  tagSPSChain clientPSChain;
+  tagSPSChain serverPSChain;
+
+};

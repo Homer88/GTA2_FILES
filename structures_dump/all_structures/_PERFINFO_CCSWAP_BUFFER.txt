@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_CCSWAP_BUFFER
+// Полей: 3
+// Строки в оригинале: 309147-309152
+struct _PERFINFO_CCSWAP_BUFFER
+{
+
+  __int64 FirstTimeStamp;
+  unsigned int TidTable[16];
+  char ThreadBasePriority[16];
+
+};

@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesCache
+// Полей: 1
+// Строки в оригинале: 28689-28692
+struct IOfflineFilesCache
+{
+
+  struct IOfflineFilesCacheVtbl *lpVtbl;
+
+};

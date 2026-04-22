@@ -1,0 +1,13 @@
+// Структура: IPreviewItemVtbl
+// Полей: 5
+// Строки в оригинале: 33496-33503
+struct IPreviewItemVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPreviewItem *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPreviewItem *This);
+  ULONG (__stdcall *Release)(IPreviewItem *This);
+  HRESULT (__stdcall *GetItemIDList)(IPreviewItem *This, LPITEMIDLIST *ppidl);
+  HRESULT (__stdcall *GetItem)(IPreviewItem *This, IShellItem **ppsi);
+
+};

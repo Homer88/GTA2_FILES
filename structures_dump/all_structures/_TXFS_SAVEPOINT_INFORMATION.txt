@@ -1,0 +1,11 @@
+// Структура: _TXFS_SAVEPOINT_INFORMATION
+// Полей: 3
+// Строки в оригинале: 94259-94264
+struct _TXFS_SAVEPOINT_INFORMATION
+{
+
+  void *KtmTransaction;
+  unsigned int ActionCode;
+  unsigned int SavepointId;
+
+};

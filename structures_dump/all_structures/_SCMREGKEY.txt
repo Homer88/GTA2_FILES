@@ -1,0 +1,11 @@
+// Структура: _SCMREGKEY
+// Полей: 3
+// Строки в оригинале: 78814-78819
+struct _SCMREGKEY
+{
+
+  unsigned __int64 dwEntryLoc;
+  unsigned int dwHash;
+  unsigned int dwScmId;
+
+};

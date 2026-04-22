@@ -1,0 +1,9 @@
+// Структура: IEnumExplorerCommand
+// Полей: 1
+// Строки в оригинале: 31090-31093
+struct IEnumExplorerCommand
+{
+
+  struct IEnumExplorerCommandVtbl *lpVtbl;
+
+};

@@ -1,0 +1,14 @@
+// Структура: S115
+// Полей: 6
+// Строки в оригинале: 8389-8397
+struct S115
+{
+
+  S116 *FirstElement;
+  int field_4;
+  S116 S116[3000];
+  __int16 field_1D4C8;
+  char field_1D4CA;
+  char field_0;
+
+};

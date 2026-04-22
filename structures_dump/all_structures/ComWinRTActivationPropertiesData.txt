@@ -1,0 +1,12 @@
+// Структура: ComWinRTActivationPropertiesData
+// Полей: 4
+// Строки в оригинале: 205932-205938
+struct ComWinRTActivationPropertiesData
+{
+
+  WinRTActivationPropertiesData winrtActivationPropertiesData;
+  UserContextPropertiesData userContextPropertiesData;
+  tagBLOB *rtbProcessMitigationPolcyBlob;
+  CONTAINERVERSION negotiatedContainerVersion;
+
+};

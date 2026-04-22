@@ -1,0 +1,12 @@
+// Структура: _HANDLE_TRACE_DB_ENTRY
+// Полей: 4
+// Строки в оригинале: 19295-19301
+struct _HANDLE_TRACE_DB_ENTRY
+{
+
+  _CLIENT_ID ClientId;
+  void *Handle;
+  unsigned int Type;
+  void *StackTrace[16];
+
+};

@@ -1,0 +1,10 @@
+// Структура: __crt_locale_pointers
+// Полей: 2
+// Строки в оригинале: 58963-58967
+struct __crt_locale_pointers
+{
+
+  struct __crt_locale_data *locinfo;
+  struct __crt_multibyte_data *mbcinfo;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _SSL_ECCKEY_BLOB
+// Полей: 2
+// Строки в оригинале: 98103-98107
+struct _SSL_ECCKEY_BLOB
+{
+
+  unsigned int dwCurveType;
+  unsigned int cbKey;
+
+};

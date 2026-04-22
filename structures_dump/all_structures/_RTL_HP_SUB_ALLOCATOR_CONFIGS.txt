@@ -1,0 +1,10 @@
+// Структура: _RTL_HP_SUB_ALLOCATOR_CONFIGS
+// Полей: 2
+// Строки в оригинале: 20801-20805
+struct _RTL_HP_SUB_ALLOCATOR_CONFIGS
+{
+
+  _RTL_HP_LFH_CONFIG LfhConfigs;
+  _RTL_HP_VS_CONFIG VsConfigs;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_CODEINTEGRITY_UNLOCK_INFORMATION
+// Полей: 2
+// Строки в оригинале: 85038-85042
+struct _SYSTEM_CODEINTEGRITY_UNLOCK_INFORMATION
+{
+
+  $EEA643EFAC66E557821DCFEA7C54D794 ___u0;
+  unsigned __int8 UnlockId[32];
+
+};

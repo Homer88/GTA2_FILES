@@ -1,0 +1,15 @@
+// Структура: ITaskHandlerVtbl
+// Полей: 7
+// Строки в оригинале: 32587-32596
+struct ITaskHandlerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITaskHandler *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITaskHandler *This);
+  ULONG (__stdcall *Release)(ITaskHandler *This);
+  HRESULT (__stdcall *Start)(ITaskHandler *This, IUnknown *pHandlerServices, BSTR data);
+  HRESULT (__stdcall *Stop)(ITaskHandler *This, HRESULT *pRetCode);
+  HRESULT (__stdcall *Pause)(ITaskHandler *This);
+  HRESULT (__stdcall *Resume)(ITaskHandler *This);
+
+};

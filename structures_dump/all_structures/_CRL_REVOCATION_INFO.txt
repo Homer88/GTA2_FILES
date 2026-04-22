@@ -1,0 +1,11 @@
+// Структура: _CRL_REVOCATION_INFO
+// Полей: 3
+// Строки в оригинале: 108479-108484
+struct _CRL_REVOCATION_INFO
+{
+
+  _CRL_ENTRY *pCrlEntry;
+  const _CRL_CONTEXT *pCrlContext;
+  const _CERT_CHAIN_CONTEXT *pCrlIssuerChain;
+
+};

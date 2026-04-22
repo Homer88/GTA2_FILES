@@ -1,0 +1,10 @@
+// Структура: _BCRYPT_ECC_CURVE_NAMES
+// Полей: 2
+// Строки в оригинале: 102019-102023
+struct _BCRYPT_ECC_CURVE_NAMES
+{
+
+  unsigned int dwEccCurveNames;
+  wchar_t **pEccCurveNames;
+
+};

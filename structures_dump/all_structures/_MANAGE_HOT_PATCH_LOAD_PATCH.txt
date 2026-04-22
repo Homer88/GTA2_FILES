@@ -1,0 +1,12 @@
+// Структура: _MANAGE_HOT_PATCH_LOAD_PATCH
+// Полей: 4
+// Строки в оригинале: 97052-97058
+struct _MANAGE_HOT_PATCH_LOAD_PATCH
+{
+
+  unsigned int Version;
+  _UNICODE_STRING PatchPath;
+  _MANAGE_HOT_PATCH_LOAD_PATCH::<unnamed_type_UserSid> UserSid;
+  _HOT_PATCH_IMAGE_INFO BaseInfo;
+
+};

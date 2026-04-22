@@ -1,0 +1,9 @@
+// Структура: ICreateObject
+// Полей: 1
+// Строки в оригинале: 40986-40989
+struct ICreateObject
+{
+
+  struct ICreateObjectVtbl *lpVtbl;
+
+};

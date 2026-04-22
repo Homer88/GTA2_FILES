@@ -1,0 +1,13 @@
+// Структура: _PERFINFO_CC_FLUSH_SECTION
+// Полей: 5
+// Строки в оригинале: 311512-311519
+struct _PERFINFO_CC_FLUSH_SECTION
+{
+
+  unsigned int WorkItemKey;
+  unsigned int FileObjectKey;
+  unsigned __int64 Offset;
+  unsigned int Length;
+  unsigned int MmFlushFlags;
+
+};

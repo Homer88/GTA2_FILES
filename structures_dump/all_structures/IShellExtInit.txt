@@ -1,0 +1,9 @@
+// Структура: IShellExtInit
+// Полей: 1
+// Строки в оригинале: 41020-41023
+struct IShellExtInit
+{
+
+  struct IShellExtInitVtbl *lpVtbl;
+
+};

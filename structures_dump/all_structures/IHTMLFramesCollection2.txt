@@ -1,0 +1,9 @@
+// Структура: IHTMLFramesCollection2
+// Полей: 1
+// Строки в оригинале: 38465-38468
+struct IHTMLFramesCollection2
+{
+
+  struct IHTMLFramesCollection2Vtbl *lpVtbl;
+
+};

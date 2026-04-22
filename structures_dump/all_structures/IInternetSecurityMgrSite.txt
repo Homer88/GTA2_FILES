@@ -1,0 +1,9 @@
+// Структура: IInternetSecurityMgrSite
+// Полей: 1
+// Строки в оригинале: 32460-32463
+struct IInternetSecurityMgrSite
+{
+
+  struct IInternetSecurityMgrSiteVtbl *lpVtbl;
+
+};

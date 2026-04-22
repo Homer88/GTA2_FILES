@@ -1,0 +1,12 @@
+// Структура: _TOKEN_CONTROL
+// Полей: 4
+// Строки в оригинале: 86893-86899
+struct _TOKEN_CONTROL
+{
+
+  _LUID TokenId;
+  _LUID AuthenticationId;
+  _LUID ModifiedId;
+  _TOKEN_SOURCE TokenSource;
+
+};

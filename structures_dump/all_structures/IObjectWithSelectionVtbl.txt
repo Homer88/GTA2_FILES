@@ -1,0 +1,13 @@
+// Структура: IObjectWithSelectionVtbl
+// Полей: 5
+// Строки в оригинале: 45851-45858
+struct IObjectWithSelectionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IObjectWithSelection *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IObjectWithSelection *This);
+  ULONG (__stdcall *Release)(IObjectWithSelection *This);
+  HRESULT (__stdcall *SetSelection)(IObjectWithSelection *This, IShellItemArray *psia);
+  HRESULT (__stdcall *GetSelection)(IObjectWithSelection *This, const IID *const riid, void **ppv);
+
+};

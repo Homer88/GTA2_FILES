@@ -1,0 +1,10 @@
+// Структура: _CRYPT_PROVIDER_REFS
+// Полей: 2
+// Строки в оригинале: 97780-97784
+struct _CRYPT_PROVIDER_REFS
+{
+
+  unsigned int cProviders;
+  _CRYPT_PROVIDER_REF **rgpProviders;
+
+};

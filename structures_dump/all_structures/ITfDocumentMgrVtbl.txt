@@ -1,0 +1,17 @@
+// Структура: ITfDocumentMgrVtbl
+// Полей: 9
+// Строки в оригинале: 30441-30452
+struct ITfDocumentMgrVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfDocumentMgr *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfDocumentMgr *This);
+  ULONG (__stdcall *Release)(ITfDocumentMgr *This);
+  HRESULT (__stdcall *CreateContext)(ITfDocumentMgr *This, TfClientId tidOwner, DWORD dwFlags, IUnknown *punk, ITfContext **ppic, TfEditCookie *pecTextStore);
+  HRESULT (__stdcall *Push)(ITfDocumentMgr *This, ITfContext *pic);
+  HRESULT (__stdcall *Pop)(ITfDocumentMgr *This, DWORD dwFlags);
+  HRESULT (__stdcall *GetTop)(ITfDocumentMgr *This, ITfContext **ppic);
+  HRESULT (__stdcall *GetBase)(ITfDocumentMgr *This, ITfContext **ppic);
+  HRESULT (__stdcall *EnumContexts)(ITfDocumentMgr *This, IEnumTfContexts **ppEnum);
+
+};

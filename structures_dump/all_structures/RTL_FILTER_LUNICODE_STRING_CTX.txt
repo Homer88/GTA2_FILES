@@ -1,0 +1,10 @@
+// Структура: RTL_FILTER_LUNICODE_STRING_CTX
+// Полей: 2
+// Строки в оригинале: 149165-149169
+struct RTL_FILTER_LUNICODE_STRING_CTX
+{
+
+  unsigned __int8 *WriteCursor;
+  unsigned __int8 *WriteEnd;
+
+};

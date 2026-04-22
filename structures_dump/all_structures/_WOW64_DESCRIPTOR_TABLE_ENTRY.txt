@@ -1,0 +1,10 @@
+// Структура: _WOW64_DESCRIPTOR_TABLE_ENTRY
+// Полей: 2
+// Строки в оригинале: 99685-99689
+struct _WOW64_DESCRIPTOR_TABLE_ENTRY
+{
+
+  unsigned int Selector;
+  _WOW64_LDT_ENTRY Descriptor;
+
+};

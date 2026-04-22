@@ -1,0 +1,9 @@
+// Структура: IRegistrationInfo
+// Полей: 1
+// Строки в оригинале: 44635-44638
+struct IRegistrationInfo
+{
+
+  struct IRegistrationInfoVtbl *lpVtbl;
+
+};

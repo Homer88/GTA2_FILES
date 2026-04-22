@@ -1,0 +1,13 @@
+// Структура: ISequentialStreamVtbl
+// Полей: 5
+// Строки в оригинале: 182635-182642
+struct ISequentialStreamVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISequentialStream *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISequentialStream *This);
+  ULONG (__stdcall *Release)(ISequentialStream *This);
+  HRESULT (__stdcall *Read)(ISequentialStream *This, void *pv, ULONG cb, ULONG *pcbRead);
+  HRESULT (__stdcall *Write)(ISequentialStream *This, const void *pv, ULONG cb, ULONG *pcbWritten);
+
+};

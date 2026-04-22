@@ -1,0 +1,18 @@
+// Структура: WNDCLASSA
+// Полей: 10
+// Строки в оригинале: 2051-2063
+struct WNDCLASSA
+{
+
+  UINT style;
+  WNDPROC lpfnWndProc;
+  int style_2;
+  int lpfnWndProc __offset(OFF32|AUTO);
+  HINSTANCE hInstance;
+  HICON hIcon;
+  HCURSOR hCursor;
+  HBRUSH hbrBackground;
+  LPCSTR lpszMenuName;
+  LPCSTR lpszClassName;
+
+};

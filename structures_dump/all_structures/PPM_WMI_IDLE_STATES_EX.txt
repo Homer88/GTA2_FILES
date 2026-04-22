@@ -1,0 +1,14 @@
+// Структура: PPM_WMI_IDLE_STATES_EX
+// Полей: 6
+// Строки в оригинале: 88497-88505
+struct PPM_WMI_IDLE_STATES_EX
+{
+
+  unsigned int Type;
+  unsigned int Count;
+  unsigned int TargetState;
+  unsigned int OldState;
+  void *TargetProcessors;
+  PPM_WMI_IDLE_STATE State[1];
+
+};

@@ -1,0 +1,9 @@
+// Структура: IProvideClassInfo
+// Полей: 1
+// Строки в оригинале: 39721-39724
+struct IProvideClassInfo
+{
+
+  struct IProvideClassInfoVtbl *lpVtbl;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IAccessibleObject
+// Полей: 1
+// Строки в оригинале: 41571-41574
+struct IAccessibleObject
+{
+
+  struct IAccessibleObjectVtbl *lpVtbl;
+
+};

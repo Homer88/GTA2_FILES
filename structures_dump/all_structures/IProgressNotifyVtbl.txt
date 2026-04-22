@@ -1,0 +1,12 @@
+// Структура: IProgressNotifyVtbl
+// Полей: 4
+// Строки в оригинале: 351387-351393
+struct IProgressNotifyVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IProgressNotify *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IProgressNotify *This);
+  ULONG (__stdcall *Release)(IProgressNotify *This);
+  HRESULT (__stdcall *OnProgress)(IProgressNotify *This, DWORD dwProgressCurrent, DWORD dwProgressMaximum, BOOL fAccurate, BOOL fOwner);
+
+};

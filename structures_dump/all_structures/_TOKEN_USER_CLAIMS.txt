@@ -1,0 +1,9 @@
+// Структура: _TOKEN_USER_CLAIMS
+// Полей: 1
+// Строки в оригинале: 106094-106097
+struct _TOKEN_USER_CLAIMS
+{
+
+  void *UserClaims;
+
+};

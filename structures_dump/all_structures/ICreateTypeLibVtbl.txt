@@ -1,0 +1,21 @@
+// Структура: ICreateTypeLibVtbl
+// Полей: 13
+// Строки в оригинале: 352540-352555
+struct ICreateTypeLibVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICreateTypeLib *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICreateTypeLib *This);
+  ULONG (__stdcall *Release)(ICreateTypeLib *This);
+  HRESULT (__stdcall *CreateTypeInfo)(ICreateTypeLib *This, LPOLESTR szName, TYPEKIND tkind, ICreateTypeInfo **ppCTInfo);
+  HRESULT (__stdcall *SetName)(ICreateTypeLib *This, LPOLESTR szName);
+  HRESULT (__stdcall *SetVersion)(ICreateTypeLib *This, WORD wMajorVerNum, WORD wMinorVerNum);
+  HRESULT (__stdcall *SetGuid)(ICreateTypeLib *This, const GUID *const guid);
+  HRESULT (__stdcall *SetDocString)(ICreateTypeLib *This, LPOLESTR szDoc);
+  HRESULT (__stdcall *SetHelpFileName)(ICreateTypeLib *This, LPOLESTR szHelpFileName);
+  HRESULT (__stdcall *SetHelpContext)(ICreateTypeLib *This, DWORD dwHelpContext);
+  HRESULT (__stdcall *SetLcid)(ICreateTypeLib *This, LCID lcid);
+  HRESULT (__stdcall *SetLibFlags)(ICreateTypeLib *This, UINT uLibFlags);
+  HRESULT (__stdcall *SaveAllChanges)(ICreateTypeLib *This);
+
+};

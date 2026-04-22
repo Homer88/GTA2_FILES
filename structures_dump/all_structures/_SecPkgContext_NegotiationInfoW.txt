@@ -1,0 +1,10 @@
+// Структура: _SecPkgContext_NegotiationInfoW
+// Полей: 2
+// Строки в оригинале: 323717-323721
+struct _SecPkgContext_NegotiationInfoW
+{
+
+  _SecPkgInfoW *PackageInfo;
+  unsigned int NegotiationState;
+
+};

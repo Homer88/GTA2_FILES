@@ -1,0 +1,11 @@
+// Структура: ThunkFrame
+// Полей: 3
+// Строки в оригинале: 338935-338940
+struct ThunkFrame
+{
+
+  unsigned int SavedEdx;
+  unsigned int SavedEcx;
+  unsigned int SavedTargetAddress;
+
+};

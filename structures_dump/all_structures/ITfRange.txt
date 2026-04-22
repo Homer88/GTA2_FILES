@@ -1,0 +1,9 @@
+// Структура: ITfRange
+// Полей: 1
+// Строки в оригинале: 30217-30220
+struct ITfRange
+{
+
+  struct ITfRangeVtbl *lpVtbl;
+
+};

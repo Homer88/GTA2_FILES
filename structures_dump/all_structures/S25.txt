@@ -1,0 +1,16 @@
+// Структура: S25
+// Полей: 8
+// Строки в оригинале: 7885-7895
+struct S25
+{
+
+  char a;
+  char field_1;
+  char field_2;
+  char field_3;
+  _BYTE gap4[302];
+  char field_132;
+  _BYTE gap133[224];
+  char field_0;
+
+};

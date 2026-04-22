@@ -1,0 +1,9 @@
+// Структура: ICatInformation
+// Полей: 1
+// Строки в оригинале: 40765-40768
+struct ICatInformation
+{
+
+  struct ICatInformationVtbl *lpVtbl;
+
+};

@@ -1,0 +1,13 @@
+// Структура: IExplorerCommandProviderVtbl
+// Полей: 5
+// Строки в оригинале: 33368-33375
+struct IExplorerCommandProviderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IExplorerCommandProvider *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IExplorerCommandProvider *This);
+  ULONG (__stdcall *Release)(IExplorerCommandProvider *This);
+  HRESULT (__stdcall *GetCommands)(IExplorerCommandProvider *This, IUnknown *punkSite, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetCommand)(IExplorerCommandProvider *This, const GUID *const rguidCommandId, const IID *const riid, void **ppv);
+
+};

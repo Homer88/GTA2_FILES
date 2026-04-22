@@ -1,0 +1,15 @@
+// Структура: FuncInfoV1
+// Полей: 7
+// Строки в оригинале: 2389-2398
+struct FuncInfoV1
+{
+
+  int magicNumber __hex;
+  int maxState __udec;
+  _UNKNOWN *pUnwindMap;
+  int nTryBlocks __udec;
+  _UNKNOWN *pTryBlockMap;
+  int nIPMapEntries __udec;
+  _UNKNOWN *pIPtoStateMap;
+
+};

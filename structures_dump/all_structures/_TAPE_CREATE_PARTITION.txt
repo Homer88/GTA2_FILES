@@ -1,0 +1,11 @@
+// Структура: _TAPE_CREATE_PARTITION
+// Полей: 3
+// Строки в оригинале: 124129-124134
+struct _TAPE_CREATE_PARTITION
+{
+
+  unsigned int Method;
+  unsigned int Count;
+  unsigned int Size;
+
+};

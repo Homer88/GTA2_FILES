@@ -1,0 +1,9 @@
+// Structure: S7_3
+// Lines: 5595 - 5599
+// Fields: 3
+
+struct S7_3
+{
+  _BYTE gap0[2687];
+  char field_0;
+};

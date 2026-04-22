@@ -1,0 +1,9 @@
+// Структура: _EVENT_EXTENDED_ITEM_EVENT_KEY
+// Полей: 1
+// Строки в оригинале: 311002-311005
+struct _EVENT_EXTENDED_ITEM_EVENT_KEY
+{
+
+  unsigned __int64 Key;
+
+};

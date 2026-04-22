@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_PROCESS_INSWAP
+// Полей: 2
+// Строки в оригинале: 311664-311668
+struct _PERFINFO_PROCESS_INSWAP
+{
+
+  unsigned int DirectoryTableBase;
+  unsigned int ProcessId;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _RTL_SMART_LBLOB_UCSCHAR_WRITING_CONTEXT
+// Полей: 3
+// Строки в оригинале: 148005-148010
+struct _RTL_SMART_LBLOB_UCSCHAR_WRITING_CONTEXT
+{
+
+  _RTL_SMART_LBLOB_WRITING_CONTEXT BlobWritingContext;
+  int (__fastcall *EncodingFunction)(unsigned int, _RTL_SMART_LBLOB_WRITING_CONTEXT *);
+  int (__fastcall *MultiEncodingFunction)(const unsigned int *, unsigned int, _RTL_SMART_LBLOB_WRITING_CONTEXT *);
+
+};

@@ -1,0 +1,43 @@
+// Структура: _NDR_CALLBACK_ROUTINES_TABLE
+// Полей: 35
+// Строки в оригинале: 264105-264142
+struct _NDR_CALLBACK_ROUTINES_TABLE
+{
+
+  void (__fastcall *NdrpServerMarshal)(_MIDL_STUB_MESSAGE *, int);
+  void (__stdcall *NdrpServerOutInit)(_MIDL_STUB_MESSAGE *);
+  void (__fastcall *NdrpSizing)(_MIDL_STUB_MESSAGE *, int);
+  void (__stdcall *NdrClientZeroOut)(_MIDL_STUB_MESSAGE *, const unsigned __int8 *, unsigned __int8 *);
+  int (__stdcall *I_RpcSetNDRSlot)(void *);
+  int (__stdcall *I_RpcGetAndSetNDRSlot)(void *, void **);
+  void *(__stdcall *I_RpcGetNDRSlot)();
+  void (__fastcall *NdrpClientMarshal)(_MIDL_STUB_MESSAGE *);
+  void (__fastcall *NdrpClientUnMarshal)(_MIDL_STUB_MESSAGE *, void *);
+  void (__stdcall *NdrpFreeMemoryList)(_MIDL_STUB_MESSAGE *);
+  void (__stdcall *NdrpFreeParams)(_MIDL_STUB_MESSAGE *, int, PARAM_DESCRIPTION *, unsigned __int8 *);
+  void (__fastcall *NdrpServerUnMarshal)(_MIDL_STUB_MESSAGE *);
+  int (__stdcall *NdrpPerformRpcInitialization)();
+  void (__stdcall *GlobalMutexClearExternal)();
+  void (__stdcall *GlobalMutexRequestExternal)();
+  void (__stdcall *PrintCurrentStackTrace)(unsigned int, unsigned int);
+  unsigned int (__stdcall *NdrpCheckMIDLRobust)(const _MIDL_SERVER_INFO_ *, unsigned int, int);
+  void (__stdcall *DbgPrintUUID)(_GUID *);
+  void (__stdcall *NdrpAddCorrelationData)(_MIDL_STUB_MESSAGE *, unsigned __int8 *, const unsigned __int8 *, int, int);
+  void (__stdcall *NdrpRecordCustomUnmarshal)(_MIDL_STUB_MESSAGE *, unsigned __int8 **, unsigned __int8 *, const unsigned __int8 *, unsigned __int8);
+  unsigned int (__stdcall *NdrpComputeConformance)(_MIDL_STUB_MESSAGE *, unsigned __int8 *, const unsigned __int8 *);
+  void (__stdcall *NdrpLogIIDMisMatchEvent)(_GUID *, _GUID *);
+  unsigned int (__stdcall *NdrTypeMemorySize)(_MIDL_STUB_MESSAGE *, const unsigned __int8 *);
+  void (__stdcall *NdrTypeConvert)(_MIDL_STUB_MESSAGE *, const unsigned __int8 *, unsigned __int8);
+  void (__stdcall *NdrTypeFree)(_MIDL_STUB_MESSAGE *, unsigned __int8 *, const unsigned __int8 *);
+  unsigned __int8 *(__stdcall *NdrTypeMarshall)(_MIDL_STUB_MESSAGE *, unsigned __int8 *, const unsigned __int8 *);
+  void (__stdcall *NdrTypeSize)(_MIDL_STUB_MESSAGE *, unsigned __int8 *, const unsigned __int8 *);
+  unsigned __int8 *(__stdcall *NdrTypeUnmarshall)(_MIDL_STUB_MESSAGE *, unsigned __int8 **, const unsigned __int8 *, unsigned __int8);
+  _tRpcVerifierSettings *(__stdcall *GetRpcVerifierSettings)();
+  int *gfRPCVerifierEnabled;
+  void *(__stdcall *AllocWrapper)(unsigned int);
+  void (__stdcall *FreeWrapper)(void *);
+  unsigned int (__stdcall *MulNdrpInitializeContextFromProc)(SYNTAX_TYPE, const unsigned __int8 *, _NDR_PROC_CONTEXT *, unsigned __int8 *, unsigned __int8);
+  const _RPC_SYNTAX_IDENTIFIER *Ndr20TransferSyntax;
+  const _RPC_SYNTAX_IDENTIFIER *Ndr64TransferSyntax;
+
+};

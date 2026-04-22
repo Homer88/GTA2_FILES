@@ -1,0 +1,10 @@
+// Структура: _KTIMER_EXPIRATION_TRACE
+// Полей: 2
+// Строки в оригинале: 13712-13716
+struct _KTIMER_EXPIRATION_TRACE
+{
+
+  unsigned __int64 InterruptTime;
+  _LARGE_INTEGER PerformanceCounter;
+
+};

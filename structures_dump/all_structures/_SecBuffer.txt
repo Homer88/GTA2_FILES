@@ -1,0 +1,11 @@
+// Структура: _SecBuffer
+// Полей: 3
+// Строки в оригинале: 323684-323689
+struct _SecBuffer
+{
+
+  unsigned int cbBuffer;
+  unsigned int BufferType;
+  void *pvBuffer;
+
+};

@@ -1,0 +1,14 @@
+// Структура: _PROCESS_HEAP_ENTRY
+// Полей: 6
+// Строки в оригинале: 81873-81881
+struct _PROCESS_HEAP_ENTRY
+{
+
+  void *lpData;
+  unsigned int cbData;
+  unsigned __int8 cbOverhead;
+  unsigned __int8 iRegionIndex;
+  unsigned __int16 wFlags;
+  $D9A892C6011E1AD47DE28C77710C4D5C ___u5;
+
+};

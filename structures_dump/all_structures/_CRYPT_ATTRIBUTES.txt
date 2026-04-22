@@ -1,0 +1,10 @@
+// Структура: _CRYPT_ATTRIBUTES
+// Полей: 2
+// Строки в оригинале: 84978-84982
+struct _CRYPT_ATTRIBUTES
+{
+
+  unsigned int cAttr;
+  _CRYPT_ATTRIBUTE *rgAttr;
+
+};

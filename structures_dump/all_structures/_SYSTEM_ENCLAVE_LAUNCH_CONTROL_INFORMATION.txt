@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_ENCLAVE_LAUNCH_CONTROL_INFORMATION
+// Полей: 1
+// Строки в оригинале: 105285-105288
+struct _SYSTEM_ENCLAVE_LAUNCH_CONTROL_INFORMATION
+{
+
+  unsigned __int8 EnclaveLaunchSigner[32];
+
+};

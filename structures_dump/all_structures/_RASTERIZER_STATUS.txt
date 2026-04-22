@@ -1,0 +1,11 @@
+// Структура: _RASTERIZER_STATUS
+// Полей: 3
+// Строки в оригинале: 99902-99907
+struct _RASTERIZER_STATUS
+{
+
+  __int16 nSize;
+  __int16 wFlags;
+  __int16 nLanguageID;
+
+};

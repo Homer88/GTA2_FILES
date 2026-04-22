@@ -1,0 +1,9 @@
+// Структура: _RTL_DISK_WRITE_CONSTRAINT_INFO
+// Полей: 1
+// Строки в оригинале: 93836-93839
+struct _RTL_DISK_WRITE_CONSTRAINT_INFO
+{
+
+  RTL_DISK_WRITE_CONSTRAINT_POLICY Policy;
+
+};

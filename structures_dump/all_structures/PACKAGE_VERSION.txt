@@ -1,0 +1,9 @@
+// Структура: PACKAGE_VERSION
+// Полей: 1
+// Строки в оригинале: 107970-107973
+struct PACKAGE_VERSION
+{
+
+  $59DAED80FD16943FFC17FBE9C54D70FD ___u0;
+
+};

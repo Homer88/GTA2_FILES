@@ -1,0 +1,15 @@
+// Структура: ITfContextViewVtbl
+// Полей: 7
+// Строки в оригинале: 30377-30386
+struct ITfContextViewVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfContextView *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfContextView *This);
+  ULONG (__stdcall *Release)(ITfContextView *This);
+  HRESULT (__stdcall *GetRangeFromPoint)(ITfContextView *This, TfEditCookie ec, const POINT *ppt, DWORD dwFlags, ITfRange **ppRange);
+  HRESULT (__stdcall *GetTextExt)(ITfContextView *This, TfEditCookie ec, ITfRange *pRange, RECT *prc, BOOL *pfClipped);
+  HRESULT (__stdcall *GetScreenExt)(ITfContextView *This, RECT *prc);
+  HRESULT (__stdcall *GetWnd)(ITfContextView *This, HWND *phwnd);
+
+};

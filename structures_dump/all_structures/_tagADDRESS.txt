@@ -1,0 +1,11 @@
+// Структура: _tagADDRESS
+// Полей: 3
+// Строки в оригинале: 121802-121807
+struct _tagADDRESS
+{
+
+  unsigned int Offset;
+  unsigned __int16 Segment;
+  ADDRESS_MODE Mode;
+
+};

@@ -1,0 +1,11 @@
+// Структура: tagCLIPDATA
+// Полей: 3
+// Строки в оригинале: 32101-32106
+struct tagCLIPDATA
+{
+
+  ULONG cbSize;
+  LONG ulClipFmt;
+  BYTE *pClipData;
+
+};

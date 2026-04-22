@@ -1,0 +1,11 @@
+// Структура: tagCOPYDATASTRUCT
+// Полей: 3
+// Строки в оригинале: 110685-110690
+struct tagCOPYDATASTRUCT
+{
+
+  unsigned int dwData;
+  unsigned int cbData;
+  void *lpData;
+
+};

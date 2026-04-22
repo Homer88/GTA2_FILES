@@ -1,0 +1,14 @@
+// Структура: _PARSE_MESSAGE_CONTEXT
+// Полей: 6
+// Строки в оригинале: 105820-105828
+struct _PARSE_MESSAGE_CONTEXT
+{
+
+  unsigned int fFlags;
+  unsigned int cwSavColumn;
+  unsigned int iwSrc;
+  unsigned int iwDst;
+  unsigned int iwDstSpace;
+  char *lpvArgStart;
+
+};

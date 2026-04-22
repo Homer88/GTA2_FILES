@@ -1,0 +1,9 @@
+// Структура: _ACL_REVISION_INFORMATION
+// Полей: 1
+// Строки в оригинале: 94351-94354
+struct _ACL_REVISION_INFORMATION
+{
+
+  unsigned int AclRevision;
+
+};

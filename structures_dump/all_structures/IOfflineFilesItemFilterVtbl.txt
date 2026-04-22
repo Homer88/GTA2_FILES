@@ -1,0 +1,14 @@
+// Структура: IOfflineFilesItemFilterVtbl
+// Полей: 6
+// Строки в оригинале: 27453-27461
+struct IOfflineFilesItemFilterVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesItemFilter *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesItemFilter *This);
+  ULONG (__stdcall *Release)(IOfflineFilesItemFilter *This);
+  HRESULT (__stdcall *GetFilterFlags)(IOfflineFilesItemFilter *This, ULONGLONG *pullFlags, ULONGLONG *pullMask);
+  HRESULT (__stdcall *GetTimeFilter)(IOfflineFilesItemFilter *This, FILETIME *pftTime, BOOL *pbEvalTimeOfDay, OFFLINEFILES_ITEM_TIME *pTimeType, OFFLINEFILES_COMPARE *pCompare);
+  HRESULT (__stdcall *GetPatternFilter)(IOfflineFilesItemFilter *This, LPWSTR pszPattern, ULONG cchPattern);
+
+};

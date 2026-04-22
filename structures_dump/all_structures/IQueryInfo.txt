@@ -1,0 +1,9 @@
+// Структура: IQueryInfo
+// Полей: 1
+// Строки в оригинале: 30536-30539
+struct IQueryInfo
+{
+
+  struct IQueryInfoVtbl *lpVtbl;
+
+};

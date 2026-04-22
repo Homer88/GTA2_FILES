@@ -1,0 +1,26 @@
+// Структура: _SHELLEXECUTEINFOA
+// Полей: 18
+// Строки в оригинале: 39901-39921
+struct _SHELLEXECUTEINFOA
+{
+
+  DWORD cbSize;
+  ULONG fMask;
+  HWND hwnd;
+  LPCSTR lpVerb;
+  LPCSTR lpFile;
+  LPCSTR lpParameters;
+  LPCSTR lpDirectory;
+  int nShow;
+  HINSTANCE hInstApp;
+  void *lpIDList;
+  LPCSTR lpClass;
+  HKEY hkeyClass;
+  DWORD dwHotKey;
+  #pragma pack(push, 1)
+  union
+  {
+    HANDLE hIcon;
+    HANDLE hMonitor;
+  
+};

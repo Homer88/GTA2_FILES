@@ -1,0 +1,11 @@
+// Структура: _SD_GLOBAL_CHANGE_INPUT
+// Полей: 3
+// Строки в оригинале: 110708-110713
+struct _SD_GLOBAL_CHANGE_INPUT
+{
+
+  unsigned int Flags;
+  unsigned int ChangeType;
+  $80FC3DB7FA1FF003886FEF66B7509535 ___u2;
+
+};

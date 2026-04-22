@@ -1,0 +1,9 @@
+// Структура: _RTL_IMAGE_MITIGATION_DYNAMIC_CODE_POLICY
+// Полей: 1
+// Строки в оригинале: 105264-105267
+struct _RTL_IMAGE_MITIGATION_DYNAMIC_CODE_POLICY
+{
+
+  _RTL_IMAGE_MITIGATION_POLICY BlockDynamicCode;
+
+};

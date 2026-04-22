@@ -1,0 +1,11 @@
+// Структура: tagLOCALESIGNATURE
+// Полей: 3
+// Строки в оригинале: 84208-84213
+struct tagLOCALESIGNATURE
+{
+
+  unsigned int lsUsb[4];
+  unsigned int lsCsbDefault[2];
+  unsigned int lsCsbSupported[2];
+
+};

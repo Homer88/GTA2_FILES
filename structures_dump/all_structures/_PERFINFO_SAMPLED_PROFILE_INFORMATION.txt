@@ -1,0 +1,13 @@
+// Структура: _PERFINFO_SAMPLED_PROFILE_INFORMATION
+// Полей: 5
+// Строки в оригинале: 310634-310641
+struct _PERFINFO_SAMPLED_PROFILE_INFORMATION
+{
+
+  void *InstructionPointer;
+  unsigned int ThreadId;
+  unsigned __int16 Count;
+  $66E518A6976E3E5BC7C47FA30107E8FE ___u3;
+  unsigned __int8 Rank;
+
+};

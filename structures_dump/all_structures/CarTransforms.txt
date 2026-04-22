@@ -1,0 +1,24 @@
+// Структура: CarTransforms
+// Полей: 16
+// Строки в оригинале: 5064-5082
+struct CarTransforms
+{
+
+  SpriteS1 *SpriteS1_;
+  GameObject *GameObject;
+  SpriteS3 *SpriteS3;
+  CarTransforms *NextElement;
+  int PositionX;
+  int PositionY;
+  int PositionZ;
+  int spriteId;
+  __int16 Remap;
+  __int16 field_22;
+  int field_24;
+  char field_28;
+  int sprite_type;
+  int field_30;
+  int field_34;
+  int field_38;
+
+};

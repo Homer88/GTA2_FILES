@@ -1,0 +1,15 @@
+// Структура: _EXCEPTION_RECORD64
+// Полей: 7
+// Строки в оригинале: 106675-106684
+struct _EXCEPTION_RECORD64
+{
+
+  int ExceptionCode;
+  unsigned int ExceptionFlags;
+  unsigned __int64 ExceptionRecord;
+  unsigned __int64 ExceptionAddress;
+  unsigned int NumberParameters;
+  unsigned int __unusedAlignment;
+  unsigned __int64 ExceptionInformation[15];
+
+};

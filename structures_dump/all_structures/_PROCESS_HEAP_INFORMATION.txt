@@ -1,0 +1,12 @@
+// Структура: _PROCESS_HEAP_INFORMATION
+// Полей: 4
+// Строки в оригинале: 89246-89252
+struct _PROCESS_HEAP_INFORMATION
+{
+
+  unsigned int ReserveSize;
+  unsigned int CommitSize;
+  unsigned int NumberOfHeaps;
+  unsigned int FirstHeapInformationOffset;
+
+};

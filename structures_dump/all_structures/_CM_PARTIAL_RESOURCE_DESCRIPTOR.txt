@@ -1,0 +1,12 @@
+// Структура: _CM_PARTIAL_RESOURCE_DESCRIPTOR
+// Полей: 4
+// Строки в оригинале: 18953-18959
+struct _CM_PARTIAL_RESOURCE_DESCRIPTOR
+{
+
+  unsigned __int8 Type;
+  unsigned __int8 ShareDisposition;
+  unsigned __int16 Flags;
+  _CM_PARTIAL_RESOURCE_DESCRIPTOR::$A9983313A6F24CB6C4584E37AD0D70EF u;
+
+};

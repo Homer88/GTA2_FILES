@@ -1,0 +1,15 @@
+// Структура: tagPOLYTEXTW
+// Полей: 7
+// Строки в оригинале: 87549-87558
+struct tagPOLYTEXTW
+{
+
+  int x;
+  int y;
+  unsigned int n;
+  const wchar_t *lpstr;
+  unsigned int uiFlags;
+  tagRECT rcl;
+  int *pdx;
+
+};

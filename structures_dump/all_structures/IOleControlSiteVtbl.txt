@@ -1,0 +1,18 @@
+// Структура: IOleControlSiteVtbl
+// Полей: 10
+// Строки в оригинале: 39946-39958
+struct IOleControlSiteVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleControlSite *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleControlSite *This);
+  ULONG (__stdcall *Release)(IOleControlSite *This);
+  HRESULT (__stdcall *OnControlInfoChanged)(IOleControlSite *This);
+  HRESULT (__stdcall *LockInPlaceActive)(IOleControlSite *This, BOOL fLock);
+  HRESULT (__stdcall *GetExtendedControl)(IOleControlSite *This, IDispatch **ppDisp);
+  HRESULT (__stdcall *TransformCoords)(IOleControlSite *This, POINTL *pPtlHimetric, POINTF *pPtfContainer, DWORD dwFlags);
+  HRESULT (__stdcall *TranslateAcceleratorA)(IOleControlSite *This, MSG *pMsg, DWORD grfModifiers);
+  HRESULT (__stdcall *OnFocus)(IOleControlSite *This, BOOL fGotFocus);
+  HRESULT (__stdcall *ShowPropertyFrame)(IOleControlSite *This);
+
+};

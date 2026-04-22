@@ -1,0 +1,12 @@
+// Структура: _THREAD_LAST_SYSCALL_INFORMATION
+// Полей: 4
+// Строки в оригинале: 112459-112465
+struct _THREAD_LAST_SYSCALL_INFORMATION
+{
+
+  void *FirstArgument;
+  unsigned __int16 SystemCallNumber;
+  unsigned __int16 Pad[1];
+  unsigned __int64 WaitTime;
+
+};

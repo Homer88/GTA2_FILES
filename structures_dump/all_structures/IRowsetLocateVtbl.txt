@@ -1,0 +1,20 @@
+// Структура: IRowsetLocateVtbl
+// Полей: 12
+// Строки в оригинале: 40111-40125
+struct IRowsetLocateVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRowsetLocate *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRowsetLocate *This);
+  ULONG (__stdcall *Release)(IRowsetLocate *This);
+  HRESULT (__stdcall *AddRefRows)(IRowsetLocate *This, DBCOUNTITEM cRows, const HROW rghRows[], DBREFCOUNT rgRefCounts[], DBROWSTATUS rgRowStatus[]);
+  HRESULT (__stdcall *GetData)(IRowsetLocate *This, HROW hRow, HACCESSOR hAccessor, void *pData);
+  HRESULT (__stdcall *GetNextRows)(IRowsetLocate *This, HCHAPTER hReserved, DBROWOFFSET lRowsOffset, DBROWCOUNT cRows, DBCOUNTITEM *pcRowsObtained, HROW **prghRows);
+  HRESULT (__stdcall *ReleaseRows)(IRowsetLocate *This, DBCOUNTITEM cRows, const HROW rghRows[], DBROWOPTIONS rgRowOptions[], DBREFCOUNT rgRefCounts[], DBROWSTATUS rgRowStatus[]);
+  HRESULT (__stdcall *RestartPosition)(IRowsetLocate *This, HCHAPTER hReserved);
+  HRESULT (__stdcall *Compare)(IRowsetLocate *This, HCHAPTER hReserved, DBBKMARK cbBookmark1, const BYTE *pBookmark1, DBBKMARK cbBookmark2, const BYTE *pBookmark2, DBCOMPARE *pComparison);
+  HRESULT (__stdcall *GetRowsAt)(IRowsetLocate *This, HWATCHREGION hReserved1, HCHAPTER hReserved2, DBBKMARK cbBookmark, const BYTE *pBookmark, DBROWOFFSET lRowsOffset, DBROWCOUNT cRows, DBCOUNTITEM *pcRowsObtained, HROW **prghRows);
+  HRESULT (__stdcall *GetRowsByBookmark)(IRowsetLocate *This, HCHAPTER hReserved, DBCOUNTITEM cRows, const DBBKMARK rgcbBookmarks[], const BYTE *rgpBookmarks[], HROW rghRows[], DBROWSTATUS rgRowStatus[]);
+  HRESULT (__stdcall *Hash)(IRowsetLocate *This, HCHAPTER hReserved, DBBKMARK cBookmarks, const DBBKMARK rgcbBookmarks[], const BYTE *rgpBookmarks[], DBHASHVALUE rgHashedValues[], DBROWSTATUS rgBookmarkStatus[]);
+
+};

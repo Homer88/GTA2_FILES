@@ -1,0 +1,11 @@
+// Структура: tagEMRRESIZEPALETTE
+// Полей: 3
+// Строки в оригинале: 87059-87064
+struct tagEMRRESIZEPALETTE
+{
+
+  tagEMR emr;
+  unsigned int ihPal;
+  unsigned int cEntries;
+
+};

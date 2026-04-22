@@ -1,0 +1,13 @@
+// Структура: _PERFINFO_PPM_IDLE_EXIT_LATENCY
+// Полей: 5
+// Строки в оригинале: 310005-310012
+struct _PERFINFO_PPM_IDLE_EXIT_LATENCY
+{
+
+  unsigned int Flags;
+  unsigned int PlatformState;
+  unsigned int ProcessorState;
+  unsigned int ReturnLatency;
+  unsigned int TotalLatency;
+
+};

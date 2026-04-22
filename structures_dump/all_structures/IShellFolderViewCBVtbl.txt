@@ -1,0 +1,9 @@
+// Структура: IShellFolderViewCBVtbl
+// Полей: 1
+// Строки в оригинале: 31041-31044
+struct IShellFolderViewCBVtbl
+{
+
+  HRESULT (__stdcall *MessageSFVCB)(IShellFolderViewCB *This, UINT uMsg, WPARAM wParam, LPARAM lParam);
+
+};

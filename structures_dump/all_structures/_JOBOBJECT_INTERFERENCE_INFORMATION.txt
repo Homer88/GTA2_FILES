@@ -1,0 +1,9 @@
+// Структура: _JOBOBJECT_INTERFERENCE_INFORMATION
+// Полей: 1
+// Строки в оригинале: 91351-91354
+struct _JOBOBJECT_INTERFERENCE_INFORMATION
+{
+
+  unsigned __int64 Count;
+
+};

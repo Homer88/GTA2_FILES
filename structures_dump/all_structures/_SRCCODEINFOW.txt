@@ -1,0 +1,15 @@
+// Структура: _SRCCODEINFOW
+// Полей: 7
+// Строки в оригинале: 122398-122407
+struct _SRCCODEINFOW
+{
+
+  unsigned int SizeOfStruct;
+  void *Key;
+  unsigned __int64 ModBase;
+  wchar_t Obj[261];
+  wchar_t FileName[261];
+  unsigned int LineNumber;
+  unsigned __int64 Address;
+
+};

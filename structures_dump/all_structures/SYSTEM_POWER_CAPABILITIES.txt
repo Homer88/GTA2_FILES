@@ -1,0 +1,41 @@
+// Структура: SYSTEM_POWER_CAPABILITIES
+// Полей: 33
+// Строки в оригинале: 22560-22595
+struct SYSTEM_POWER_CAPABILITIES
+{
+
+  unsigned __int8 PowerButtonPresent;
+  unsigned __int8 SleepButtonPresent;
+  unsigned __int8 LidPresent;
+  unsigned __int8 SystemS1;
+  unsigned __int8 SystemS2;
+  unsigned __int8 SystemS3;
+  unsigned __int8 SystemS4;
+  unsigned __int8 SystemS5;
+  unsigned __int8 HiberFilePresent;
+  unsigned __int8 FullWake;
+  unsigned __int8 VideoDimPresent;
+  unsigned __int8 ApmPresent;
+  unsigned __int8 UpsPresent;
+  unsigned __int8 ThermalControl;
+  unsigned __int8 ProcessorThrottle;
+  unsigned __int8 ProcessorMinThrottle;
+  unsigned __int8 ProcessorMaxThrottle;
+  unsigned __int8 FastSystemS4;
+  unsigned __int8 Hiberboot;
+  unsigned __int8 WakeAlarmPresent;
+  unsigned __int8 AoAc;
+  unsigned __int8 DiskSpinDown;
+  unsigned __int8 HiberFileType;
+  unsigned __int8 AoAcConnectivitySupported;
+  unsigned __int8 spare3[6];
+  unsigned __int8 SystemBatteriesPresent;
+  unsigned __int8 BatteriesAreShortTerm;
+  BATTERY_REPORTING_SCALE BatteryScale[3];
+  _SYSTEM_POWER_STATE AcOnLineWake;
+  _SYSTEM_POWER_STATE SoftLidWake;
+  _SYSTEM_POWER_STATE RtcWake;
+  _SYSTEM_POWER_STATE MinDeviceWakeState;
+  _SYSTEM_POWER_STATE DefaultLowLatencyWake;
+
+};

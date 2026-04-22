@@ -1,0 +1,11 @@
+// Структура: _wireSAFEARR_HAVEIID
+// Полей: 3
+// Строки в оригинале: 83754-83759
+struct _wireSAFEARR_HAVEIID
+{
+
+  unsigned int Size;
+  IUnknown **apUnknown;
+  _GUID iid;
+
+};

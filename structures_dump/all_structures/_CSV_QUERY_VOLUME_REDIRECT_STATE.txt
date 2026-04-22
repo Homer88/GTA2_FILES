@@ -1,0 +1,13 @@
+// Структура: _CSV_QUERY_VOLUME_REDIRECT_STATE
+// Полей: 5
+// Строки в оригинале: 110030-110037
+struct _CSV_QUERY_VOLUME_REDIRECT_STATE
+{
+
+  unsigned int MdsNodeId;
+  unsigned int DsNodeId;
+  unsigned __int8 IsDiskConnected;
+  unsigned __int8 ClusterEnableDirectIo;
+  _CSVFS_DISK_CONNECTIVITY DiskConnectivity;
+
+};

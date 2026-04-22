@@ -1,0 +1,15 @@
+// Структура: DShellWindowsEventsVtbl
+// Полей: 7
+// Строки в оригинале: 30120-30129
+struct DShellWindowsEventsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(DShellWindowsEvents *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(DShellWindowsEvents *This);
+  ULONG (__stdcall *Release)(DShellWindowsEvents *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(DShellWindowsEvents *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(DShellWindowsEvents *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(DShellWindowsEvents *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(DShellWindowsEvents *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+
+};

@@ -1,0 +1,12 @@
+// Структура: CMPGUID
+// Полей: 4
+// Строки в оригинале: 147556-147562
+struct CMPGUID
+{
+
+  unsigned int Data1;
+  unsigned int Data2;
+  unsigned int Data3;
+  unsigned int Data4;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _SAFER_IDENTIFICATION_HEADER
+// Полей: 4
+// Строки в оригинале: 81497-81503
+struct _SAFER_IDENTIFICATION_HEADER
+{
+
+  _SAFER_IDENTIFICATION_TYPES dwIdentificationType;
+  unsigned int cbStructSize;
+  _GUID IdentificationGuid;
+  _FILETIME lastModified;
+
+};

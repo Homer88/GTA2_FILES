@@ -1,0 +1,10 @@
+// Структура: tagTOGGLEKEYS
+// Полей: 2
+// Строки в оригинале: 110397-110401
+struct tagTOGGLEKEYS
+{
+
+  unsigned int cbSize;
+  unsigned int dwFlags;
+
+};

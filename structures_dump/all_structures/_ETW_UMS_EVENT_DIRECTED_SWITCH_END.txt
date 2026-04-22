@@ -1,0 +1,12 @@
+// Структура: _ETW_UMS_EVENT_DIRECTED_SWITCH_END
+// Полей: 4
+// Строки в оригинале: 310455-310461
+struct _ETW_UMS_EVENT_DIRECTED_SWITCH_END
+{
+
+  unsigned int ProcessId;
+  unsigned int ScheduledThreadId;
+  unsigned int PrimaryThreadId;
+  unsigned int SwitchFlags;
+
+};

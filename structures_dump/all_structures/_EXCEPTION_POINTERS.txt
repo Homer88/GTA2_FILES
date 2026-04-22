@@ -1,0 +1,10 @@
+// Структура: _EXCEPTION_POINTERS
+// Полей: 2
+// Строки в оригинале: 2260-2264
+struct _EXCEPTION_POINTERS
+{
+
+  _EXCEPTION_RECORD *ExceptionRecord;
+  _CONTEXT *ContextRecord;
+
+};

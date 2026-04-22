@@ -1,0 +1,14 @@
+// Структура: _wfinddata32i64_t
+// Полей: 6
+// Строки в оригинале: 109710-109718
+struct _wfinddata32i64_t
+{
+
+  unsigned int attrib;
+  int time_create;
+  int time_access;
+  int time_write;
+  __int64 size;
+  wchar_t name[260];
+
+};

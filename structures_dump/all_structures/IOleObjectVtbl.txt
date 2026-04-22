@@ -1,0 +1,32 @@
+// Структура: IOleObjectVtbl
+// Полей: 24
+// Строки в оригинале: 27495-27521
+struct IOleObjectVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleObject *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleObject *This);
+  ULONG (__stdcall *Release)(IOleObject *This);
+  HRESULT (__stdcall *SetClientSite)(IOleObject *This, IOleClientSite *pClientSite);
+  HRESULT (__stdcall *GetClientSite)(IOleObject *This, IOleClientSite **ppClientSite);
+  HRESULT (__stdcall *SetHostNames)(IOleObject *This, LPCOLESTR szContainerApp, LPCOLESTR szContainerObj);
+  HRESULT (__stdcall *Close)(IOleObject *This, DWORD dwSaveOption);
+  HRESULT (__stdcall *SetMoniker)(IOleObject *This, DWORD dwWhichMoniker, IMoniker *pmk);
+  HRESULT (__stdcall *GetMoniker)(IOleObject *This, DWORD dwAssign, DWORD dwWhichMoniker, IMoniker **ppmk);
+  HRESULT (__stdcall *InitFromData)(IOleObject *This, IDataObject *pDataObject, BOOL fCreation, DWORD dwReserved);
+  HRESULT (__stdcall *GetClipboardData)(IOleObject *This, DWORD dwReserved, IDataObject **ppDataObject);
+  HRESULT (__stdcall *DoVerb)(IOleObject *This, LONG iVerb, LPMSG lpmsg, IOleClientSite *pActiveSite, LONG lindex, HWND hwndParent, LPCRECT lprcPosRect);
+  HRESULT (__stdcall *EnumVerbs)(IOleObject *This, IEnumOLEVERB **ppEnumOleVerb);
+  HRESULT (__stdcall *Update)(IOleObject *This);
+  HRESULT (__stdcall *IsUpToDate)(IOleObject *This);
+  HRESULT (__stdcall *GetUserClassID)(IOleObject *This, CLSID *pClsid);
+  HRESULT (__stdcall *GetUserType)(IOleObject *This, DWORD dwFormOfType, LPOLESTR *pszUserType);
+  HRESULT (__stdcall *SetExtent)(IOleObject *This, DWORD dwDrawAspect, SIZEL *psizel);
+  HRESULT (__stdcall *GetExtent)(IOleObject *This, DWORD dwDrawAspect, SIZEL *psizel);
+  HRESULT (__stdcall *Advise)(IOleObject *This, IAdviseSink *pAdvSink, DWORD *pdwConnection);
+  HRESULT (__stdcall *Unadvise)(IOleObject *This, DWORD dwConnection);
+  HRESULT (__stdcall *EnumAdvise)(IOleObject *This, IEnumSTATDATA **ppenumAdvise);
+  HRESULT (__stdcall *GetMiscStatus)(IOleObject *This, DWORD dwAspect, DWORD *pdwStatus);
+  HRESULT (__stdcall *SetColorScheme)(IOleObject *This, LOGPALETTE *pLogpal);
+
+};

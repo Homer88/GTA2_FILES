@@ -1,0 +1,14 @@
+// Структура: tagWNODE_SINGLE_INSTANCE
+// Полей: 6
+// Строки в оригинале: 313008-313016
+struct tagWNODE_SINGLE_INSTANCE
+{
+
+  _WNODE_HEADER WnodeHeader;
+  unsigned int OffsetInstanceName;
+  unsigned int InstanceIndex;
+  unsigned int DataBlockOffset;
+  unsigned int SizeDataBlock;
+  unsigned __int8 VariableData[];
+
+};

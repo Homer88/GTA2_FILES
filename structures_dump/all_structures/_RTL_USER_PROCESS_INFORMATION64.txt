@@ -1,0 +1,13 @@
+// Структура: _RTL_USER_PROCESS_INFORMATION64
+// Полей: 5
+// Строки в оригинале: 82248-82255
+struct _RTL_USER_PROCESS_INFORMATION64
+{
+
+  unsigned int Length;
+  __int64 Process;
+  __int64 Thread;
+  _CLIENT_ID64 ClientId;
+  _SECTION_IMAGE_INFORMATION64 ImageInformation;
+
+};

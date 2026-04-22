@@ -1,0 +1,14 @@
+// Структура: READ_USN_JOURNAL_DATA_V0
+// Полей: 6
+// Строки в оригинале: 108933-108941
+struct READ_USN_JOURNAL_DATA_V0
+{
+
+  __int64 StartUsn;
+  unsigned int ReasonMask;
+  unsigned int ReturnOnlyOnClose;
+  unsigned __int64 Timeout;
+  unsigned __int64 BytesToWaitFor;
+  unsigned __int64 UsnJournalID;
+
+};

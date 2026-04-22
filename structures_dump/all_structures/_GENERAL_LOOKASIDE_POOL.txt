@@ -1,0 +1,24 @@
+// Структура: _GENERAL_LOOKASIDE_POOL
+// Полей: 16
+// Строки в оригинале: 13187-13205
+struct _GENERAL_LOOKASIDE_POOL
+{
+
+  $18B0EE5062E80657350C1CCE57AF90BF ___u0;
+  unsigned __int16 Depth;
+  unsigned __int16 MaximumDepth;
+  unsigned int TotalAllocates;
+  $9D02AA4AC86E49CEAF084B97B97744B1 ___u4;
+  unsigned int TotalFrees;
+  $4290DA71080BA5C562B380EC38D3C295 ___u6;
+  _POOL_TYPE Type;
+  unsigned int Tag;
+  unsigned int Size;
+  $A4932C8A1A5A64FA026442CF32984CB6 ___u10;
+  $711DBD903A2792B37D7E67CBD7CBBE93 ___u11;
+  _LIST_ENTRY ListEntry;
+  unsigned int LastTotalAllocates;
+  $BA67176EA55FA2D963EA02A98A2C99D2 ___u14;
+  unsigned int Future[2];
+
+};

@@ -1,0 +1,9 @@
+// Структура: _RTL_IMAGE_MITIGATION_STRICT_HANDLE_CHECK_POLICY
+// Полей: 1
+// Строки в оригинале: 93497-93500
+struct _RTL_IMAGE_MITIGATION_STRICT_HANDLE_CHECK_POLICY
+{
+
+  _RTL_IMAGE_MITIGATION_POLICY StrictHandleChecks;
+
+};

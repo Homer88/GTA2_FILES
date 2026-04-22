@@ -1,0 +1,10 @@
+// Структура: tagCInterfaceProxyHeader
+// Полей: 2
+// Строки в оригинале: 120572-120576
+struct tagCInterfaceProxyHeader
+{
+
+  const void *pStublessProxyInfo;
+  const _GUID *piid;
+
+};

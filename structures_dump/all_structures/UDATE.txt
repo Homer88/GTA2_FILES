@@ -1,0 +1,10 @@
+// Структура: UDATE
+// Полей: 2
+// Строки в оригинале: 109233-109237
+struct UDATE
+{
+
+  _SYSTEMTIME st;
+  unsigned __int16 wDayOfYear;
+
+};

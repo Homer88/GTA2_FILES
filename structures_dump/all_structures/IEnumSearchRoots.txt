@@ -1,0 +1,9 @@
+// Структура: IEnumSearchRoots
+// Полей: 1
+// Строки в оригинале: 44321-44324
+struct IEnumSearchRoots
+{
+
+  struct IEnumSearchRootsVtbl *lpVtbl;
+
+};

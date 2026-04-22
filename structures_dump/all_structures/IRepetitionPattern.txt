@@ -1,0 +1,9 @@
+// Структура: IRepetitionPattern
+// Полей: 1
+// Строки в оригинале: 45076-45079
+struct IRepetitionPattern
+{
+
+  struct IRepetitionPatternVtbl *lpVtbl;
+
+};

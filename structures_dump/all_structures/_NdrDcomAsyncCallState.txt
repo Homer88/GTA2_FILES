@@ -1,0 +1,13 @@
+// Структура: _NdrDcomAsyncCallState
+// Полей: 5
+// Строки в оригинале: 286231-286238
+struct _NdrDcomAsyncCallState
+{
+
+  unsigned int Signature;
+  unsigned int Lock;
+  void *pAsyncMsg;
+  _NdrDcomAsyncFlags Flags;
+  HRESULT Hr;
+
+};

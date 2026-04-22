@@ -1,0 +1,15 @@
+// Структура: PowerUp
+// Полей: 7
+// Строки в оригинале: 10131-10140
+struct PowerUp
+{
+
+  int field_0;
+  int field_4;
+  int field_8;
+  int arr_6000[6000];
+  _BYTE gap5DCC[47987];
+  char field_1193F;
+  int field_11940;
+
+};

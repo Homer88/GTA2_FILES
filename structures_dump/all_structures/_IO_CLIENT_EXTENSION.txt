@@ -1,0 +1,10 @@
+// Структура: _IO_CLIENT_EXTENSION
+// Полей: 2
+// Строки в оригинале: 18483-18487
+struct _IO_CLIENT_EXTENSION
+{
+
+  _IO_CLIENT_EXTENSION *NextExtension;
+  void *ClientIdentificationAddress;
+
+};

@@ -1,0 +1,12 @@
+// Структура: NLM_SIMULATED_PROFILE_INFO
+// Полей: 4
+// Строки в оригинале: 45953-45959
+struct NLM_SIMULATED_PROFILE_INFO
+{
+
+  WCHAR ProfileName[256];
+  NLM_CONNECTION_COST cost;
+  DWORD UsageInMegabytes;
+  DWORD DataLimitInMegabytes;
+
+};

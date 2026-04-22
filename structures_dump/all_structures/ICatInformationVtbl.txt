@@ -1,0 +1,17 @@
+// Структура: ICatInformationVtbl
+// Полей: 9
+// Строки в оригинале: 40751-40762
+struct ICatInformationVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICatInformation *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICatInformation *This);
+  ULONG (__stdcall *Release)(ICatInformation *This);
+  HRESULT (__stdcall *EnumCategories)(ICatInformation *This, LCID lcid, IEnumCATEGORYINFO **ppenumCategoryInfo);
+  HRESULT (__stdcall *GetCategoryDesc)(ICatInformation *This, REFCATID rcatid, LCID lcid, LPWSTR *pszDesc);
+  HRESULT (__stdcall *EnumClassesOfCategories)(ICatInformation *This, ULONG cImplemented, const CATID rgcatidImpl[], ULONG cRequired, const CATID rgcatidReq[], IEnumGUID **ppenumClsid);
+  HRESULT (__stdcall *IsClassOfCategories)(ICatInformation *This, const IID *const rclsid, ULONG cImplemented, const CATID rgcatidImpl[], ULONG cRequired, const CATID rgcatidReq[]);
+  HRESULT (__stdcall *EnumImplCategoriesOfClass)(ICatInformation *This, const IID *const rclsid, IEnumGUID **ppenumCatid);
+  HRESULT (__stdcall *EnumReqCategoriesOfClass)(ICatInformation *This, const IID *const rclsid, IEnumGUID **ppenumCatid);
+
+};

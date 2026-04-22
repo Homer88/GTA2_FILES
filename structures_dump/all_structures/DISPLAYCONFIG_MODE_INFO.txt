@@ -1,0 +1,12 @@
+// Структура: DISPLAYCONFIG_MODE_INFO
+// Полей: 4
+// Строки в оригинале: 111089-111095
+struct DISPLAYCONFIG_MODE_INFO
+{
+
+  DISPLAYCONFIG_MODE_INFO_TYPE infoType;
+  unsigned int id;
+  _LUID adapterId;
+  $B0CE704CB245851D97C0777AC66DDA6C ___u3;
+
+};

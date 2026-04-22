@@ -1,0 +1,15 @@
+// Структура: tagBITMAP
+// Полей: 7
+// Строки в оригинале: 84595-84604
+struct tagBITMAP
+{
+
+  int bmType;
+  int bmWidth;
+  int bmHeight;
+  int bmWidthBytes;
+  unsigned __int16 bmPlanes;
+  unsigned __int16 bmBitsPixel;
+  void *bmBits;
+
+};

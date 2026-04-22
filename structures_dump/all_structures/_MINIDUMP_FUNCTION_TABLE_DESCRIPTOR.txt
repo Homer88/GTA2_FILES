@@ -1,0 +1,13 @@
+// Структура: _MINIDUMP_FUNCTION_TABLE_DESCRIPTOR
+// Полей: 5
+// Строки в оригинале: 123996-124003
+struct _MINIDUMP_FUNCTION_TABLE_DESCRIPTOR
+{
+
+  unsigned __int64 MinimumAddress;
+  unsigned __int64 MaximumAddress;
+  unsigned __int64 BaseAddress;
+  unsigned int EntryCount;
+  unsigned int SizeOfAlignPad;
+
+};

@@ -1,0 +1,11 @@
+// Структура: tagCATEGORYINFO
+// Полей: 3
+// Строки в оригинале: 40792-40797
+struct tagCATEGORYINFO
+{
+
+  CATID catid;
+  LCID lcid;
+  OLECHAR szDescription[128];
+
+};

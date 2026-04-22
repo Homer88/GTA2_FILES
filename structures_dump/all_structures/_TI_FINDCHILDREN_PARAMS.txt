@@ -1,0 +1,11 @@
+// Структура: _TI_FINDCHILDREN_PARAMS
+// Полей: 3
+// Строки в оригинале: 123280-123285
+struct _TI_FINDCHILDREN_PARAMS
+{
+
+  unsigned int Count;
+  unsigned int Start;
+  unsigned int ChildId[1];
+
+};

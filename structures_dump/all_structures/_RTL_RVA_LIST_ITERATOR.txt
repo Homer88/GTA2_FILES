@@ -1,0 +1,11 @@
+// Структура: _RTL_RVA_LIST_ITERATOR
+// Полей: 3
+// Строки в оригинале: 93061-93066
+struct _RTL_RVA_LIST_ITERATOR
+{
+
+  unsigned int CurrentRva;
+  unsigned int CurrentRvaIndex;
+  unsigned int CompressedRvaDataOffset;
+
+};

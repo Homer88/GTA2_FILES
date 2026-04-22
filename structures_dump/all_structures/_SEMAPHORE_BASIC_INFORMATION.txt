@@ -1,0 +1,10 @@
+// Структура: _SEMAPHORE_BASIC_INFORMATION
+// Полей: 2
+// Строки в оригинале: 95727-95731
+struct _SEMAPHORE_BASIC_INFORMATION
+{
+
+  int CurrentCount;
+  int MaximumCount;
+
+};

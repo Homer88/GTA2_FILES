@@ -1,0 +1,41 @@
+// Структура: _DPH_HEAP_ROOT
+// Полей: 33
+// Строки в оригинале: 22515-22550
+struct _DPH_HEAP_ROOT
+{
+
+  unsigned int Signature;
+  unsigned int HeapFlags;
+  _RTL_CRITICAL_SECTION *HeapCritSect;
+  unsigned int nRemoteLockAcquired;
+  _DPH_HEAP_BLOCK *pVirtualStorageListHead;
+  _DPH_HEAP_BLOCK *pVirtualStorageListTail;
+  unsigned int nVirtualStorageRanges;
+  unsigned int nVirtualStorageBytes;
+  _RTL_AVL_TABLE BusyNodesTable;
+  _DPH_HEAP_BLOCK *NodeToAllocate;
+  unsigned int nBusyAllocations;
+  unsigned int nBusyAllocationBytesCommitted;
+  _DPH_HEAP_BLOCK *pFreeAllocationListHead;
+  _DPH_HEAP_BLOCK *pFreeAllocationListTail;
+  unsigned int nFreeAllocations;
+  unsigned int nFreeAllocationBytesCommitted;
+  _LIST_ENTRY AvailableAllocationHead;
+  unsigned int nAvailableAllocations;
+  unsigned int nAvailableAllocationBytesCommitted;
+  _DPH_HEAP_BLOCK *pUnusedNodeListHead;
+  _DPH_HEAP_BLOCK *pUnusedNodeListTail;
+  unsigned int nUnusedNodes;
+  unsigned int nBusyAllocationBytesAccessible;
+  _DPH_HEAP_BLOCK *pNodePoolListHead;
+  _DPH_HEAP_BLOCK *pNodePoolListTail;
+  unsigned int nNodePools;
+  unsigned int nNodePoolBytes;
+  _LIST_ENTRY NextHeap;
+  unsigned int ExtraFlags;
+  unsigned int Seed;
+  void *NormalHeap;
+  _RTL_TRACE_BLOCK *CreateStackTrace;
+  void *FirstThread;
+
+};

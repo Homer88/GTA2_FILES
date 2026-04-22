@@ -1,0 +1,28 @@
+// Структура: IShellFolder2Vtbl
+// Полей: 20
+// Строки в оригинале: 32390-32412
+struct IShellFolder2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellFolder2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellFolder2 *This);
+  ULONG (__stdcall *Release)(IShellFolder2 *This);
+  HRESULT (__stdcall *ParseDisplayName)(IShellFolder2 *This, HWND hwnd, IBindCtx *pbc, LPWSTR pszDisplayName, ULONG *pchEaten, LPITEMIDLIST *ppidl, ULONG *pdwAttributes);
+  HRESULT (__stdcall *EnumObjects)(IShellFolder2 *This, HWND hwnd, SHCONTF grfFlags, IEnumIDList **ppenumIDList);
+  HRESULT (__stdcall *BindToObject)(IShellFolder2 *This, LPCITEMIDLIST pidl, IBindCtx *pbc, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *BindToStorage)(IShellFolder2 *This, LPCITEMIDLIST pidl, IBindCtx *pbc, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *CompareIDs)(IShellFolder2 *This, LPARAM lParam, LPCITEMIDLIST pidl1, LPCITEMIDLIST pidl2);
+  HRESULT (__stdcall *CreateViewObject)(IShellFolder2 *This, HWND hwndOwner, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetAttributesOf)(IShellFolder2 *This, UINT cidl, LPCITEMIDLIST *apidl, SFGAOF *rgfInOut);
+  HRESULT (__stdcall *GetUIObjectOf)(IShellFolder2 *This, HWND hwndOwner, UINT cidl, LPCITEMIDLIST *apidl, const IID *const riid, UINT *rgfReserved, void **ppv);
+  HRESULT (__stdcall *GetDisplayNameOf)(IShellFolder2 *This, LPCITEMIDLIST pidl, SHGDNF uFlags, STRRET *pName);
+  HRESULT (__stdcall *SetNameOf)(IShellFolder2 *This, HWND hwnd, LPCITEMIDLIST pidl, LPCWSTR pszName, SHGDNF uFlags, LPITEMIDLIST *ppidlOut);
+  HRESULT (__stdcall *GetDefaultSearchGUID)(IShellFolder2 *This, GUID *pguid);
+  HRESULT (__stdcall *EnumSearches)(IShellFolder2 *This, IEnumExtraSearch **ppenum);
+  HRESULT (__stdcall *GetDefaultColumn)(IShellFolder2 *This, DWORD dwRes, ULONG *pSort, ULONG *pDisplay);
+  HRESULT (__stdcall *GetDefaultColumnState)(IShellFolder2 *This, UINT iColumn, SHCOLSTATEF *pcsFlags);
+  HRESULT (__stdcall *GetDetailsEx)(IShellFolder2 *This, LPCITEMIDLIST pidl, const SHCOLUMNID *pscid, VARIANT *pv);
+  HRESULT (__stdcall *GetDetailsOf)(IShellFolder2 *This, LPCITEMIDLIST pidl, UINT iColumn, SHELLDETAILS *psd);
+  HRESULT (__stdcall *MapColumnToSCID)(IShellFolder2 *This, UINT iColumn, SHCOLUMNID *pscid);
+
+};

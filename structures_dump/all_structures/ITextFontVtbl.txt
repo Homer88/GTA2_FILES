@@ -1,0 +1,70 @@
+// Структура: ITextFontVtbl
+// Полей: 62
+// Строки в оригинале: 45705-45769
+struct ITextFontVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITextFont *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITextFont *This);
+  ULONG (__stdcall *Release)(ITextFont *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(ITextFont *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(ITextFont *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(ITextFont *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(ITextFont *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *GetDuplicate)(ITextFont *This, ITextFont **ppFont);
+  HRESULT (__stdcall *SetDuplicate)(ITextFont *This, ITextFont *pFont);
+  HRESULT (__stdcall *CanChange)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *IsEqual)(ITextFont *This, ITextFont *pFont, int *pValue);
+  HRESULT (__stdcall *Reset)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetStyle)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetStyle)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetAllCaps)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetAllCaps)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetAnimation)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetAnimation)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetBackColor)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetBackColor)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetBold)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetBold)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetEmboss)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetEmboss)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetForeColor)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetForeColor)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetHidden)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetHidden)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetEngrave)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetEngrave)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetItalic)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetItalic)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetKerning)(ITextFont *This, float *pValue);
+  HRESULT (__stdcall *SetKerning)(ITextFont *This, float Value);
+  HRESULT (__stdcall *GetLanguageID)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetLanguageID)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetName)(ITextFont *This, BSTR *pbstr);
+  HRESULT (__stdcall *SetName)(ITextFont *This, BSTR bstr);
+  HRESULT (__stdcall *GetOutline)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetOutline)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetPosition)(ITextFont *This, float *pValue);
+  HRESULT (__stdcall *SetPosition)(ITextFont *This, float Value);
+  HRESULT (__stdcall *GetProtected)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetProtected)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetShadow)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetShadow)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetSize)(ITextFont *This, float *pValue);
+  HRESULT (__stdcall *SetSize)(ITextFont *This, float Value);
+  HRESULT (__stdcall *GetSmallCaps)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetSmallCaps)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetSpacing)(ITextFont *This, float *pValue);
+  HRESULT (__stdcall *SetSpacing)(ITextFont *This, float Value);
+  HRESULT (__stdcall *GetStrikeThrough)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetStrikeThrough)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetSubscript)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetSubscript)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetSuperscript)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetSuperscript)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetUnderline)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetUnderline)(ITextFont *This, int Value);
+  HRESULT (__stdcall *GetWeight)(ITextFont *This, int *pValue);
+  HRESULT (__stdcall *SetWeight)(ITextFont *This, int Value);
+
+};

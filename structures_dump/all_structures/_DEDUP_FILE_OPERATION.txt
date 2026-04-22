@@ -1,0 +1,9 @@
+// Структура: _DEDUP_FILE_OPERATION
+// Полей: 1
+// Строки в оригинале: 80439-80442
+struct _DEDUP_FILE_OPERATION
+{
+
+  unsigned int Code;
+
+};

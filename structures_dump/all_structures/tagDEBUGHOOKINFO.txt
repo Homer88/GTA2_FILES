@@ -1,0 +1,13 @@
+// Структура: tagDEBUGHOOKINFO
+// Полей: 5
+// Строки в оригинале: 88552-88559
+struct tagDEBUGHOOKINFO
+{
+
+  unsigned int idThread;
+  unsigned int idThreadInstaller;
+  int lParam;
+  unsigned int wParam;
+  int code;
+
+};

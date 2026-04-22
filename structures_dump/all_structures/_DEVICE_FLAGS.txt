@@ -1,0 +1,15 @@
+// Структура: _DEVICE_FLAGS
+// Полей: 7
+// Строки в оригинале: 99708-99717
+struct _DEVICE_FLAGS
+{
+
+  unsigned __int32 Failed : 1;
+  unsigned __int32 ReadOnly : 1;
+  unsigned __int32 Removable : 1;
+  unsigned __int32 ConsoleIn : 1;
+  unsigned __int32 ConsoleOut : 1;
+  unsigned __int32 Input : 1;
+  unsigned __int32 Output : 1;
+
+};

@@ -1,0 +1,14 @@
+// Структура: _LEARNING_MODE_OBJECT_INFORMATION
+// Полей: 6
+// Строки в оригинале: 99215-99223
+struct _LEARNING_MODE_OBJECT_INFORMATION
+{
+
+  _SINGLE_LIST_ENTRY ListEntry;
+  _LEARNING_MODE_LOG_LEVEL LogLevel;
+  _UNICODE_STRING *ObjectType;
+  _UNICODE_STRING *ObjectName;
+  void *RootDirectory;
+  _UNICODE_STRING FullObjectName;
+
+};

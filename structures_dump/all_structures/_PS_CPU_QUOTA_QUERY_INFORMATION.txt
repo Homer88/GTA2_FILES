@@ -1,0 +1,10 @@
+// Структура: _PS_CPU_QUOTA_QUERY_INFORMATION
+// Полей: 2
+// Строки в оригинале: 97117-97121
+struct _PS_CPU_QUOTA_QUERY_INFORMATION
+{
+
+  unsigned int SessionCount;
+  _PS_CPU_QUOTA_QUERY_ENTRY SessionInformation[1];
+
+};

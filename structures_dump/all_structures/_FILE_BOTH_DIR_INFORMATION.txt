@@ -1,0 +1,22 @@
+// Структура: _FILE_BOTH_DIR_INFORMATION
+// Полей: 14
+// Строки в оригинале: 99972-99988
+struct _FILE_BOTH_DIR_INFORMATION
+{
+
+  unsigned int NextEntryOffset;
+  unsigned int FileIndex;
+  _LARGE_INTEGER CreationTime;
+  _LARGE_INTEGER LastAccessTime;
+  _LARGE_INTEGER LastWriteTime;
+  _LARGE_INTEGER ChangeTime;
+  _LARGE_INTEGER EndOfFile;
+  _LARGE_INTEGER AllocationSize;
+  unsigned int FileAttributes;
+  unsigned int FileNameLength;
+  unsigned int EaSize;
+  char ShortNameLength;
+  wchar_t ShortName[12];
+  wchar_t FileName[1];
+
+};

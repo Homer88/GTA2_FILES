@@ -1,0 +1,19 @@
+// Структура: stat
+// Полей: 11
+// Строки в оригинале: 65299-65312
+struct stat
+{
+
+  unsigned int st_dev;
+  unsigned __int16 st_ino;
+  unsigned __int16 st_mode;
+  __int16 st_nlink;
+  __int16 st_uid;
+  __int16 st_gid;
+  unsigned int st_rdev;
+  int st_size;
+  int st_atime;
+  int st_mtime;
+  int st_ctime;
+
+};

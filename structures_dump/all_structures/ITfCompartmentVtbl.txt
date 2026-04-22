@@ -1,0 +1,13 @@
+// Структура: ITfCompartmentVtbl
+// Полей: 5
+// Строки в оригинале: 41678-41685
+struct ITfCompartmentVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfCompartment *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfCompartment *This);
+  ULONG (__stdcall *Release)(ITfCompartment *This);
+  HRESULT (__stdcall *SetValue)(ITfCompartment *This, TfClientId tid, const VARIANT *pvarValue);
+  HRESULT (__stdcall *GetValue)(ITfCompartment *This, VARIANT *pvarValue);
+
+};

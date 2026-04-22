@@ -1,0 +1,10 @@
+// Структура: tagOutgoingCallData
+// Полей: 2
+// Строки в оригинале: 62403-62407
+struct tagOutgoingCallData
+{
+
+  unsigned int dwServerPID;
+  unsigned int dwServerTID;
+
+};

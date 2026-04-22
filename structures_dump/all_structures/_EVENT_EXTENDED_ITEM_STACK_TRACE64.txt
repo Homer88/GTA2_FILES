@@ -1,0 +1,10 @@
+// Структура: _EVENT_EXTENDED_ITEM_STACK_TRACE64
+// Полей: 2
+// Строки в оригинале: 309106-309110
+struct _EVENT_EXTENDED_ITEM_STACK_TRACE64
+{
+
+  unsigned __int64 MatchId;
+  unsigned __int64 Address[1];
+
+};

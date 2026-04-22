@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_DRIVER_COMPLETE_REQUEST_RET
+// Полей: 2
+// Строки в оригинале: 311098-311102
+struct _PERFINFO_DRIVER_COMPLETE_REQUEST_RET
+{
+
+  void *Irp;
+  unsigned int UniqMatchId;
+
+};

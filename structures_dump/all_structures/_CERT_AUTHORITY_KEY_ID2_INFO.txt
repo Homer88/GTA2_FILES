@@ -1,0 +1,11 @@
+// Структура: _CERT_AUTHORITY_KEY_ID2_INFO
+// Полей: 3
+// Строки в оригинале: 108817-108822
+struct _CERT_AUTHORITY_KEY_ID2_INFO
+{
+
+  _CRYPTOAPI_BLOB KeyId;
+  _CERT_ALT_NAME_INFO AuthorityCertIssuer;
+  _CRYPTOAPI_BLOB AuthorityCertSerialNumber;
+
+};

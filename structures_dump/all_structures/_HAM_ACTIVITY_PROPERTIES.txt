@@ -1,0 +1,18 @@
+// Структура: _HAM_ACTIVITY_PROPERTIES
+// Полей: 10
+// Строки в оригинале: 262205-262217
+struct _HAM_ACTIVITY_PROPERTIES
+{
+
+  _HAM_ACTIVITY_PROPERTIES_FLAGS Flags;
+  _HAM_ACTIVITY_START_FLAGS StartFlags;
+  _HAM_ACTIVITY_REVOKE_FLAGS RevokeFlags;
+  wchar_t Description[64];
+  wchar_t ResourcePolicyName[64];
+  PDC_ACTIVITY_TYPE PdcActivityType;
+  unsigned int PdcExpectedDurationSeconds;
+  unsigned int CacheDurationMs;
+  _RM_RESOURCE_SET_PROPERTIES CustomResourceSetProperties;
+  _HAM_EXTERNAL_RESOURCE_MASK ExternalResourceMaskData;
+
+};

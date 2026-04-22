@@ -1,0 +1,16 @@
+// Структура: DISPLAYCONFIG_TARGET_DEVICE_NAME
+// Полей: 8
+// Строки в оригинале: 103712-103722
+struct DISPLAYCONFIG_TARGET_DEVICE_NAME
+{
+
+  DISPLAYCONFIG_DEVICE_INFO_HEADER header;
+  DISPLAYCONFIG_TARGET_DEVICE_NAME_FLAGS flags;
+  DISPLAYCONFIG_VIDEO_OUTPUT_TECHNOLOGY outputTechnology;
+  unsigned __int16 edidManufactureId;
+  unsigned __int16 edidProductCodeId;
+  unsigned int connectorInstance;
+  wchar_t monitorFriendlyDeviceName[64];
+  wchar_t monitorDevicePath[128];
+
+};

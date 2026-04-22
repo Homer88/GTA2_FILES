@@ -1,0 +1,12 @@
+// Структура: _ENCLAVE_INIT_INFO_SGX
+// Полей: 4
+// Строки в оригинале: 101968-101974
+struct _ENCLAVE_INIT_INFO_SGX
+{
+
+  unsigned __int8 SigStruct[1808];
+  unsigned __int8 Reserved1[240];
+  unsigned __int8 EInitToken[304];
+  unsigned __int8 Reserved2[1744];
+
+};

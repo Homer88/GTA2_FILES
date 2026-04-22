@@ -1,0 +1,13 @@
+// Структура: _WMI_JOB_REMOVE_PROCESS
+// Полей: 5
+// Строки в оригинале: 311965-311972
+struct _WMI_JOB_REMOVE_PROCESS
+{
+
+  _GUID ContainerId;
+  unsigned int JobId;
+  unsigned int UniqueProcessId;
+  unsigned int RemovalFlags;
+  int ExitStatus;
+
+};

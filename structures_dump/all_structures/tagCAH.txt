@@ -1,0 +1,10 @@
+// Структура: tagCAH
+// Полей: 2
+// Строки в оригинале: 31550-31554
+struct tagCAH
+{
+
+  ULONG cElems;
+  LARGE_INTEGER *pElems;
+
+};

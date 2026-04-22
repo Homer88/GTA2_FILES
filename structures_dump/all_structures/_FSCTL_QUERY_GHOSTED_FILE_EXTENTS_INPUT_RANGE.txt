@@ -1,0 +1,10 @@
+// Структура: _FSCTL_QUERY_GHOSTED_FILE_EXTENTS_INPUT_RANGE
+// Полей: 2
+// Строки в оригинале: 82784-82788
+struct _FSCTL_QUERY_GHOSTED_FILE_EXTENTS_INPUT_RANGE
+{
+
+  _LARGE_INTEGER FileOffset;
+  _LARGE_INTEGER ByteCount;
+
+};

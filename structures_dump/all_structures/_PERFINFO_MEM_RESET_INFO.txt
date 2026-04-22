@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_MEM_RESET_INFO
+// Полей: 3
+// Строки в оригинале: 310581-310586
+struct _PERFINFO_MEM_RESET_INFO
+{
+
+  void *BaseAddress;
+  unsigned int SizeInBytes;
+  $C07040B5F03B689D0804672EA63C2B87 ___u2;
+
+};

@@ -1,0 +1,11 @@
+// Структура: IMAGE_COR_VTABLEFIXUP
+// Полей: 3
+// Строки в оригинале: 336377-336382
+struct IMAGE_COR_VTABLEFIXUP
+{
+
+  unsigned int RVA;
+  unsigned __int16 Count;
+  unsigned __int16 Type;
+
+};

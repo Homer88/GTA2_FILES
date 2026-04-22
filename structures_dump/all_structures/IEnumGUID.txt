@@ -1,0 +1,9 @@
+// Структура: IEnumGUID
+// Полей: 1
+// Строки в оригинале: 39439-39442
+struct IEnumGUID
+{
+
+  struct IEnumGUIDVtbl *lpVtbl;
+
+};

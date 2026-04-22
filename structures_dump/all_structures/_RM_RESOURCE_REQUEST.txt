@@ -1,0 +1,11 @@
+// Структура: _RM_RESOURCE_REQUEST
+// Полей: 3
+// Строки в оригинале: 262104-262109
+struct _RM_RESOURCE_REQUEST
+{
+
+  unsigned __int64 ResourcesRequested[2];
+  $8D8B6B3968555C1E685BE2EA3AAD037B ___u1;
+  unsigned __int64 EstimationKey;
+
+};

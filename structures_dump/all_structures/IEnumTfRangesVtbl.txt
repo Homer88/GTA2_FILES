@@ -1,0 +1,15 @@
+// Структура: IEnumTfRangesVtbl
+// Полей: 7
+// Строки в оригинале: 30482-30491
+struct IEnumTfRangesVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumTfRanges *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumTfRanges *This);
+  ULONG (__stdcall *Release)(IEnumTfRanges *This);
+  HRESULT (__stdcall *Clone)(IEnumTfRanges *This, IEnumTfRanges **ppEnum);
+  HRESULT (__stdcall *Next)(IEnumTfRanges *This, ULONG ulCount, ITfRange **ppRange, ULONG *pcFetched);
+  HRESULT (__stdcall *Reset)(IEnumTfRanges *This);
+  HRESULT (__stdcall *Skip)(IEnumTfRanges *This, ULONG ulCount);
+
+};

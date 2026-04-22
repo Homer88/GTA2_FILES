@@ -1,0 +1,9 @@
+// Структура: _ASL_CRITICAL_SECTION
+// Полей: 1
+// Строки в оригинале: 311549-311552
+struct _ASL_CRITICAL_SECTION
+{
+
+  _RTL_CRITICAL_SECTION Lock;
+
+};

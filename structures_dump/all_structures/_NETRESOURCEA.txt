@@ -1,0 +1,16 @@
+// Структура: _NETRESOURCEA
+// Полей: 8
+// Строки в оригинале: 92654-92664
+struct _NETRESOURCEA
+{
+
+  unsigned int dwScope;
+  unsigned int dwType;
+  unsigned int dwDisplayType;
+  unsigned int dwUsage;
+  char *lpLocalName;
+  char *lpRemoteName;
+  char *lpComment;
+  char *lpProvider;
+
+};

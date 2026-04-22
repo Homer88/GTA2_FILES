@@ -1,0 +1,13 @@
+// Структура: _MIDL_INTERCEPTION_INFO
+// Полей: 5
+// Строки в оригинале: 106747-106754
+struct _MIDL_INTERCEPTION_INFO
+{
+
+  unsigned int Version;
+  const unsigned __int8 *ProcString;
+  const unsigned __int16 *ProcFormatOffsetTable;
+  unsigned int ProcCount;
+  const unsigned __int8 *TypeString;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IObjectArray
+// Полей: 1
+// Строки в оригинале: 32283-32286
+struct IObjectArray
+{
+
+  struct IObjectArrayVtbl *lpVtbl;
+
+};

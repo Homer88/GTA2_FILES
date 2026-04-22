@@ -1,0 +1,11 @@
+// Структура: _CONSOLE_SELECTION_INFO
+// Полей: 3
+// Строки в оригинале: 98386-98391
+struct _CONSOLE_SELECTION_INFO
+{
+
+  unsigned int dwFlags;
+  _COORD dwSelectionAnchor;
+  _SMALL_RECT srSelection;
+
+};

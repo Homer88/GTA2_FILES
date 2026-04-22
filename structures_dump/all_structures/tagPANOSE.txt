@@ -1,0 +1,18 @@
+// Структура: tagPANOSE
+// Полей: 10
+// Строки в оригинале: 81445-81457
+struct tagPANOSE
+{
+
+  unsigned __int8 bFamilyType;
+  unsigned __int8 bSerifStyle;
+  unsigned __int8 bWeight;
+  unsigned __int8 bProportion;
+  unsigned __int8 bContrast;
+  unsigned __int8 bStrokeVariation;
+  unsigned __int8 bArmStyle;
+  unsigned __int8 bLetterform;
+  unsigned __int8 bMidline;
+  unsigned __int8 bXHeight;
+
+};

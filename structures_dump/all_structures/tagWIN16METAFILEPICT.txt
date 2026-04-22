@@ -1,0 +1,12 @@
+// Структура: tagWIN16METAFILEPICT
+// Полей: 4
+// Строки в оригинале: 142125-142131
+struct tagWIN16METAFILEPICT
+{
+
+  __int16 mm;
+  __int16 xExt;
+  __int16 yExt;
+  unsigned __int16 hMF;
+
+};

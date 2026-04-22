@@ -1,0 +1,10 @@
+// Структура: _ETW_HEAP_EVENT_RUNDOWN_RANGE
+// Полей: 2
+// Строки в оригинале: 312626-312630
+struct _ETW_HEAP_EVENT_RUNDOWN_RANGE
+{
+
+  void *Address;
+  unsigned int Size;
+
+};

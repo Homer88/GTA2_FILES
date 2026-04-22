@@ -1,0 +1,11 @@
+// Структура: _LOOKUP_STREAM_FROM_CLUSTER_OUTPUT
+// Полей: 3
+// Строки в оригинале: 79821-79826
+struct _LOOKUP_STREAM_FROM_CLUSTER_OUTPUT
+{
+
+  unsigned int Offset;
+  unsigned int NumberOfMatches;
+  unsigned int BufferSizeRequired;
+
+};

@@ -1,0 +1,8 @@
+// Structure: HBRUSH__
+// Lines: 2084 - 2087
+// Fields: 2
+
+struct HBRUSH__
+{
+  int unused;
+};

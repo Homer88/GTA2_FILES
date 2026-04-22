@@ -1,0 +1,9 @@
+// Структура: IDirect3DIndexBuffer9
+// Полей: 1
+// Строки в оригинале: 25781-25784
+struct IDirect3DIndexBuffer9
+{
+
+  struct IDirect3DIndexBuffer9Vtbl *lpVtbl;
+
+};

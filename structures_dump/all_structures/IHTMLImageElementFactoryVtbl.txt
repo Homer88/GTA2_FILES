@@ -1,0 +1,16 @@
+// Структура: IHTMLImageElementFactoryVtbl
+// Полей: 8
+// Строки в оригинале: 38729-38739
+struct IHTMLImageElementFactoryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLImageElementFactory *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLImageElementFactory *This);
+  ULONG (__stdcall *Release)(IHTMLImageElementFactory *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLImageElementFactory *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLImageElementFactory *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLImageElementFactory *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLImageElementFactory *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *create)(IHTMLImageElementFactory *This, VARIANT width, VARIANT height, IHTMLImgElement **MIDL__IHTMLImageElementFactory0000);
+
+};

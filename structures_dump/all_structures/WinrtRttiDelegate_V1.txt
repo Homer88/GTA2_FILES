@@ -1,0 +1,10 @@
+// Структура: WinrtRttiDelegate_V1
+// Полей: 2
+// Строки в оригинале: 373848-373852
+struct WinrtRttiDelegate_V1
+{
+
+  WinrtRtti _Base;
+  const _GUID *Iid;
+
+};

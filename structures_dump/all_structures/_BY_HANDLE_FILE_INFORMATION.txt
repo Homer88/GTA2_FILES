@@ -1,0 +1,18 @@
+// Структура: _BY_HANDLE_FILE_INFORMATION
+// Полей: 10
+// Строки в оригинале: 84457-84469
+struct _BY_HANDLE_FILE_INFORMATION
+{
+
+  unsigned int dwFileAttributes;
+  _FILETIME ftCreationTime;
+  _FILETIME ftLastAccessTime;
+  _FILETIME ftLastWriteTime;
+  unsigned int dwVolumeSerialNumber;
+  unsigned int nFileSizeHigh;
+  unsigned int nFileSizeLow;
+  unsigned int nNumberOfLinks;
+  unsigned int nFileIndexHigh;
+  unsigned int nFileIndexLow;
+
+};

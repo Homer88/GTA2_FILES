@@ -1,0 +1,51 @@
+// Структура: _KPROCESS
+// Полей: 43
+// Строки в оригинале: 15462-15507
+struct _KPROCESS
+{
+
+  _DISPATCHER_HEADER Header;
+  _LIST_ENTRY ProfileListHead;
+  unsigned int DirectoryTableBase;
+  _KGDTENTRY LdtDescriptor;
+  _KIDTENTRY Int21Descriptor;
+  _LIST_ENTRY ThreadListHead;
+  unsigned int ProcessLock;
+  unsigned __int64 DeepFreezeStartTime;
+  _KAFFINITY_EX Affinity;
+  unsigned int AffinityPadding[12];
+  _LIST_ENTRY ReadyListHead;
+  _SINGLE_LIST_ENTRY SwapListEntry;
+  volatile _KAFFINITY_EX ActiveProcessors;
+  unsigned int ActiveProcessorsPadding[12];
+  $83C8EED418AE5B2F6DA8436897B1A801 ___u14;
+  unsigned int ActiveGroupsMask;
+  char BasePriority;
+  char QuantumReset;
+  char Visited;
+  _KEXECUTE_OPTIONS Flags;
+  unsigned __int16 ThreadSeed[20];
+  unsigned __int16 ThreadSeedPadding[12];
+  unsigned __int16 IdealProcessor[20];
+  unsigned __int16 IdealProcessorPadding[12];
+  unsigned __int16 IdealNode[20];
+  unsigned __int16 IdealNodePadding[12];
+  unsigned __int16 IdealGlobalNode;
+  unsigned __int16 Spare1;
+  unsigned __int16 IopmOffset;
+  _KSCHEDULING_GROUP *SchedulingGroup;
+  volatile _KSTACK_COUNT StackCount;
+  _LIST_ENTRY ProcessListEntry;
+  unsigned __int64 CycleTime;
+  unsigned __int64 ContextSwitches;
+  unsigned int FreezeCount;
+  unsigned int KernelTime;
+  unsigned int UserTime;
+  unsigned int ReadyTime;
+  void *VdmTrapcHandler;
+  unsigned int ProcessTimerDelay;
+  unsigned __int64 KernelWaitTime;
+  unsigned __int64 UserWaitTime;
+  unsigned int EndPadding[8];
+
+};

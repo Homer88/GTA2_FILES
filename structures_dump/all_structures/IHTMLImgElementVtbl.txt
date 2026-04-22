@@ -1,0 +1,63 @@
+// Структура: IHTMLImgElementVtbl
+// Полей: 55
+// Строки в оригинале: 38912-38969
+struct IHTMLImgElementVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLImgElement *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLImgElement *This);
+  ULONG (__stdcall *Release)(IHTMLImgElement *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLImgElement *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLImgElement *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLImgElement *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLImgElement *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *put_isMap)(IHTMLImgElement *This, VARIANT_BOOL v);
+  HRESULT (__stdcall *get_isMap)(IHTMLImgElement *This, VARIANT_BOOL *p);
+  HRESULT (__stdcall *put_useMap)(IHTMLImgElement *This, BSTR v);
+  HRESULT (__stdcall *get_useMap)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *get_mimeType)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *get_fileSize)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *get_fileCreatedDate)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *get_fileModifiedDate)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *get_fileUpdatedDate)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *get_protocol)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *get_href)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *get_nameProp)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *put_border)(IHTMLImgElement *This, VARIANT v);
+  HRESULT (__stdcall *get_border)(IHTMLImgElement *This, VARIANT *p);
+  HRESULT (__stdcall *put_vspace)(IHTMLImgElement *This, int v);
+  HRESULT (__stdcall *get_vspace)(IHTMLImgElement *This, int *p);
+  HRESULT (__stdcall *put_hspace)(IHTMLImgElement *This, int v);
+  HRESULT (__stdcall *get_hspace)(IHTMLImgElement *This, int *p);
+  HRESULT (__stdcall *put_alt)(IHTMLImgElement *This, BSTR v);
+  HRESULT (__stdcall *get_alt)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *put_src)(IHTMLImgElement *This, BSTR v);
+  HRESULT (__stdcall *get_src)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *put_lowsrc)(IHTMLImgElement *This, BSTR v);
+  HRESULT (__stdcall *get_lowsrc)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *put_vrml)(IHTMLImgElement *This, BSTR v);
+  HRESULT (__stdcall *get_vrml)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *put_dynsrc)(IHTMLImgElement *This, BSTR v);
+  HRESULT (__stdcall *get_dynsrc)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *get_readyState)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *get_complete)(IHTMLImgElement *This, VARIANT_BOOL *p);
+  HRESULT (__stdcall *put_loop)(IHTMLImgElement *This, VARIANT v);
+  HRESULT (__stdcall *get_loop)(IHTMLImgElement *This, VARIANT *p);
+  HRESULT (__stdcall *put_align)(IHTMLImgElement *This, BSTR v);
+  HRESULT (__stdcall *get_align)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *put_onload)(IHTMLImgElement *This, VARIANT v);
+  HRESULT (__stdcall *get_onload)(IHTMLImgElement *This, VARIANT *p);
+  HRESULT (__stdcall *put_onerror)(IHTMLImgElement *This, VARIANT v);
+  HRESULT (__stdcall *get_onerror)(IHTMLImgElement *This, VARIANT *p);
+  HRESULT (__stdcall *put_onabort)(IHTMLImgElement *This, VARIANT v);
+  HRESULT (__stdcall *get_onabort)(IHTMLImgElement *This, VARIANT *p);
+  HRESULT (__stdcall *put_name)(IHTMLImgElement *This, BSTR v);
+  HRESULT (__stdcall *get_name)(IHTMLImgElement *This, BSTR *p);
+  HRESULT (__stdcall *put_width)(IHTMLImgElement *This, int v);
+  HRESULT (__stdcall *get_width)(IHTMLImgElement *This, int *p);
+  HRESULT (__stdcall *put_height)(IHTMLImgElement *This, int v);
+  HRESULT (__stdcall *get_height)(IHTMLImgElement *This, int *p);
+  HRESULT (__stdcall *put_start)(IHTMLImgElement *This, BSTR v);
+  HRESULT (__stdcall *get_start)(IHTMLImgElement *This, BSTR *p);
+
+};

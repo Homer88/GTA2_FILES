@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_POWER_LOGGING_ENTRY
+// Полей: 2
+// Строки в оригинале: 96955-96959
+struct _SYSTEM_POWER_LOGGING_ENTRY
+{
+
+  unsigned int Reason;
+  unsigned int States;
+
+};

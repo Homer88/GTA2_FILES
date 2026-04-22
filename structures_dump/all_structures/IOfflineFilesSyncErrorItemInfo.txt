@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesSyncErrorItemInfo
+// Полей: 1
+// Строки в оригинале: 28158-28161
+struct IOfflineFilesSyncErrorItemInfo
+{
+
+  struct IOfflineFilesSyncErrorItemInfoVtbl *lpVtbl;
+
+};

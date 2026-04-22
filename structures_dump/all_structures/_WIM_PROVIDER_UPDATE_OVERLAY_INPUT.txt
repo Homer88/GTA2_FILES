@@ -1,0 +1,11 @@
+// Структура: _WIM_PROVIDER_UPDATE_OVERLAY_INPUT
+// Полей: 3
+// Строки в оригинале: 108629-108634
+struct _WIM_PROVIDER_UPDATE_OVERLAY_INPUT
+{
+
+  _LARGE_INTEGER DataSourceId;
+  unsigned int WimFileNameOffset;
+  unsigned int WimFileNameLength;
+
+};

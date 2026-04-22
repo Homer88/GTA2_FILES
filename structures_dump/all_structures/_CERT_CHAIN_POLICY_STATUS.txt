@@ -1,0 +1,13 @@
+// Структура: _CERT_CHAIN_POLICY_STATUS
+// Полей: 5
+// Строки в оригинале: 109504-109511
+struct _CERT_CHAIN_POLICY_STATUS
+{
+
+  unsigned int cbSize;
+  unsigned int dwError;
+  int lChainIndex;
+  int lElementIndex;
+  void *pvExtraPolicyStatus;
+
+};

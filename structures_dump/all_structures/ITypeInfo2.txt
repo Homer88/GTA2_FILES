@@ -1,0 +1,9 @@
+// Структура: ITypeInfo2
+// Полей: 1
+// Строки в оригинале: 29878-29881
+struct ITypeInfo2
+{
+
+  struct ITypeInfo2Vtbl *lpVtbl;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _RTL_CIRCULAR_LIST_HEAD
+// Полей: 1
+// Строки в оригинале: 102175-102178
+struct _RTL_CIRCULAR_LIST_HEAD
+{
+
+  _LIST_ENTRY *HeadEntry;
+
+};

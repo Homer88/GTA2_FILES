@@ -1,0 +1,11 @@
+// Структура: tagDUALSTRINGARRAY
+// Полей: 3
+// Строки в оригинале: 62043-62048
+struct tagDUALSTRINGARRAY
+{
+
+  unsigned __int16 wNumEntries;
+  unsigned __int16 wSecurityOffset;
+  unsigned __int16 aStringArray[1];
+
+};

@@ -1,0 +1,23 @@
+// Структура: _CRYPT_PROVIDER_CERT
+// Полей: 15
+// Строки в оригинале: 122052-122069
+struct _CRYPT_PROVIDER_CERT
+{
+
+  unsigned int cbStruct;
+  const _CERT_CONTEXT *pCert;
+  int fCommercial;
+  int fTrustedRoot;
+  int fSelfSigned;
+  int fTestCert;
+  unsigned int dwRevokedReason;
+  unsigned int dwConfidence;
+  unsigned int dwError;
+  _CTL_CONTEXT *pTrustListContext;
+  int fTrustListSignerCert;
+  const _CTL_CONTEXT *pCtlContext;
+  unsigned int dwCtlError;
+  int fIsCyclic;
+  _CERT_CHAIN_ELEMENT *pChainElement;
+
+};

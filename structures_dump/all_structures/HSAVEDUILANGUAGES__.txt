@@ -1,0 +1,9 @@
+// Структура: HSAVEDUILANGUAGES__
+// Полей: 1
+// Строки в оригинале: 111856-111859
+struct HSAVEDUILANGUAGES__
+{
+
+  int unused;
+
+};

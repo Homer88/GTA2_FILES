@@ -1,0 +1,10 @@
+// Структура: _PLUGPLAY_CONTROL_RETRIEVE_DOCK_DATA
+// Полей: 2
+// Строки в оригинале: 109457-109461
+struct _PLUGPLAY_CONTROL_RETRIEVE_DOCK_DATA
+{
+
+  unsigned int DeviceInstanceLength;
+  wchar_t *DeviceInstance;
+
+};

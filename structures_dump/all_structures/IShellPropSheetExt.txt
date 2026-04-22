@@ -1,0 +1,9 @@
+// Структура: IShellPropSheetExt
+// Полей: 1
+// Строки в оригинале: 41120-41123
+struct IShellPropSheetExt
+{
+
+  struct IShellPropSheetExtVtbl *lpVtbl;
+
+};

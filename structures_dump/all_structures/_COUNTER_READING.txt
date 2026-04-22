@@ -1,0 +1,12 @@
+// Структура: _COUNTER_READING
+// Полей: 4
+// Строки в оригинале: 15520-15526
+struct _COUNTER_READING
+{
+
+  _HARDWARE_COUNTER_TYPE Type;
+  unsigned int Index;
+  unsigned __int64 Start;
+  unsigned __int64 Total;
+
+};

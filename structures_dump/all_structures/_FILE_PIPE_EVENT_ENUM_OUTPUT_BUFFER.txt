@@ -1,0 +1,9 @@
+// Структура: _FILE_PIPE_EVENT_ENUM_OUTPUT_BUFFER
+// Полей: 1
+// Строки в оригинале: 100034-100037
+struct _FILE_PIPE_EVENT_ENUM_OUTPUT_BUFFER
+{
+
+  unsigned int EventTypes;
+
+};

@@ -1,0 +1,11 @@
+// Структура: RETRIEVAL_POINTERS_AND_REFCOUNT_BUFFER
+// Полей: 3
+// Строки в оригинале: 112003-112008
+struct RETRIEVAL_POINTERS_AND_REFCOUNT_BUFFER
+{
+
+  unsigned int ExtentCount;
+  _LARGE_INTEGER StartingVcn;
+  RETRIEVAL_POINTERS_AND_REFCOUNT_BUFFER::<unnamed_type_Extents> Extents[1];
+
+};

@@ -1,0 +1,12 @@
+// Структура: TangoMain
+// Полей: 4
+// Строки в оригинале: 8212-8218
+struct TangoMain
+{
+
+  Tango Tango_Arr[2];
+  __int16 field_50;
+  char field_52;
+  char field_0;
+
+};

@@ -1,0 +1,13 @@
+// Структура: tagDRAWTEXTPARAMS
+// Полей: 5
+// Строки в оригинале: 91366-91373
+struct tagDRAWTEXTPARAMS
+{
+
+  unsigned int cbSize;
+  int iTabLength;
+  int iLeftMargin;
+  int iRightMargin;
+  unsigned int uiLengthDrawn;
+
+};

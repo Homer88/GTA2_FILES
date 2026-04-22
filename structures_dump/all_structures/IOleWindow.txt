@@ -1,0 +1,9 @@
+// Структура: IOleWindow
+// Полей: 1
+// Строки в оригинале: 27719-27722
+struct IOleWindow
+{
+
+  struct IOleWindowVtbl *lpVtbl;
+
+};

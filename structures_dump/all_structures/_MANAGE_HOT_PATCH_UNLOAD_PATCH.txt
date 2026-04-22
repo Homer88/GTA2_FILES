@@ -1,0 +1,11 @@
+// Структура: _MANAGE_HOT_PATCH_UNLOAD_PATCH
+// Полей: 3
+// Строки в оригинале: 80121-80126
+struct _MANAGE_HOT_PATCH_UNLOAD_PATCH
+{
+
+  unsigned int Version;
+  _HOT_PATCH_IMAGE_INFO BaseInfo;
+  _MANAGE_HOT_PATCH_UNLOAD_PATCH::<unnamed_type_UserSid> UserSid;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _KCRM_PROTOCOL_BLOB
+// Полей: 5
+// Строки в оригинале: 87206-87213
+struct _KCRM_PROTOCOL_BLOB
+{
+
+  _GUID ProtocolId;
+  unsigned int StaticInfoLength;
+  unsigned int TransactionIdInfoLength;
+  unsigned int Unused1;
+  unsigned int Unused2;
+
+};

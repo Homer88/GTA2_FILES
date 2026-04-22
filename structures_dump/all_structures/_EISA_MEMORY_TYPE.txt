@@ -1,0 +1,15 @@
+// Структура: _EISA_MEMORY_TYPE
+// Полей: 7
+// Строки в оригинале: 81905-81914
+struct _EISA_MEMORY_TYPE
+{
+
+  unsigned __int8 ReadWrite : 1;
+  unsigned __int8 Cached : 1;
+  unsigned __int8 Reserved0 : 1;
+  unsigned __int8 Type : 2;
+  unsigned __int8 Shared : 1;
+  unsigned __int8 Reserved1 : 1;
+  unsigned __int8 MoreEntries : 1;
+
+};

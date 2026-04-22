@@ -1,0 +1,9 @@
+// Структура: IFileSystemBindData
+// Полей: 1
+// Строки в оригинале: 37583-37586
+struct IFileSystemBindData
+{
+
+  struct IFileSystemBindDataVtbl *lpVtbl;
+
+};

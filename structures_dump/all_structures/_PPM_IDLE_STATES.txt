@@ -1,0 +1,49 @@
+// Структура: _PPM_IDLE_STATES
+// Полей: 41
+// Строки в оригинале: 14819-14862
+struct _PPM_IDLE_STATES
+{
+
+  unsigned __int8 InterfaceVersion;
+  unsigned __int8 IdleOverride;
+  unsigned __int8 EstimateIdleDuration;
+  unsigned __int8 ExitLatencyTraceEnabled;
+  unsigned __int8 NonInterruptibleTransition;
+  unsigned __int8 UnaccountedTransition;
+  unsigned __int8 IdleDurationLimited;
+  unsigned __int8 IdleCheckLimited;
+  unsigned __int8 StrictVetoBias;
+  unsigned int ExitLatencyCountdown;
+  unsigned int TargetState;
+  unsigned int ActualState;
+  unsigned int OldState;
+  unsigned int OverrideIndex;
+  unsigned int ProcessorIdleCount;
+  unsigned int Type;
+  unsigned __int64 LevelId;
+  unsigned __int16 ReasonFlags;
+  volatile unsigned __int64 InitiateWakeStamp;
+  int PreviousStatus;
+  unsigned int PreviousCancelReason;
+  _KAFFINITY_EX PrimaryProcessorMask;
+  _KAFFINITY_EX SecondaryProcessorMask;
+  void (__fastcall *IdlePrepare)(_PROCESSOR_IDLE_PREPARE_INFO *);
+  int (__fastcall *IdlePreExecute)(void *, unsigned int, unsigned int, unsigned int, unsigned int *);
+  int (__fastcall *IdleExecute)(void *, unsigned __int64, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int *);
+  unsigned int (__fastcall *IdlePreselect)(void *, _PROCESSOR_IDLE_CONSTRAINTS *);
+  unsigned int (__fastcall *IdleTest)(void *, unsigned int, unsigned int);
+  unsigned int (__fastcall *IdleAvailabilityCheck)(void *, unsigned int);
+  void (__fastcall *IdleComplete)(void *, unsigned int, unsigned int, unsigned int, unsigned int *);
+  void (__fastcall *IdleCancel)(void *, unsigned int);
+  unsigned __int8 (__fastcall *IdleIsHalted)(void *);
+  unsigned __int8 (__fastcall *IdleInitiateWake)(void *);
+  _PROCESSOR_IDLE_PREPARE_INFO PrepareInfo;
+  _KAFFINITY_EX DeepIdleSnapshot;
+  _PERFINFO_PPM_STATE_SELECTION *Tracing;
+  _PERFINFO_PPM_STATE_SELECTION *CoordinatedTracing;
+  _PPM_SELECTION_MENU ProcessorMenu;
+  _PPM_SELECTION_MENU CoordinatedMenu;
+  _PPM_COORDINATED_SELECTION CoordinatedSelection;
+  _PPM_IDLE_STATE State[1];
+
+};

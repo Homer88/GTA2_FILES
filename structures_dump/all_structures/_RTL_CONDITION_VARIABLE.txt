@@ -1,0 +1,9 @@
+// Структура: _RTL_CONDITION_VARIABLE
+// Полей: 1
+// Строки в оригинале: 58734-58737
+struct _RTL_CONDITION_VARIABLE
+{
+
+  void *Ptr;
+
+};

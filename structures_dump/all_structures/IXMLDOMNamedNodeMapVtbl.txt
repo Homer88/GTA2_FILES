@@ -1,0 +1,25 @@
+// Структура: IXMLDOMNamedNodeMapVtbl
+// Полей: 17
+// Строки в оригинале: 43323-43342
+struct IXMLDOMNamedNodeMapVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IXMLDOMNamedNodeMap *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IXMLDOMNamedNodeMap *This);
+  ULONG (__stdcall *Release)(IXMLDOMNamedNodeMap *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IXMLDOMNamedNodeMap *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IXMLDOMNamedNodeMap *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IXMLDOMNamedNodeMap *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IXMLDOMNamedNodeMap *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *getNamedItem)(IXMLDOMNamedNodeMap *This, BSTR name, IXMLDOMNode **namedItem);
+  HRESULT (__stdcall *setNamedItem)(IXMLDOMNamedNodeMap *This, IXMLDOMNode *newItem, IXMLDOMNode **nameItem);
+  HRESULT (__stdcall *removeNamedItem)(IXMLDOMNamedNodeMap *This, BSTR name, IXMLDOMNode **namedItem);
+  HRESULT (__stdcall *get_item)(IXMLDOMNamedNodeMap *This, int index, IXMLDOMNode **listItem);
+  HRESULT (__stdcall *get_length)(IXMLDOMNamedNodeMap *This, int *listLength);
+  HRESULT (__stdcall *getQualifiedItem)(IXMLDOMNamedNodeMap *This, BSTR baseName, BSTR namespaceURI, IXMLDOMNode **qualifiedItem);
+  HRESULT (__stdcall *removeQualifiedItem)(IXMLDOMNamedNodeMap *This, BSTR baseName, BSTR namespaceURI, IXMLDOMNode **qualifiedItem);
+  HRESULT (__stdcall *nextNode)(IXMLDOMNamedNodeMap *This, IXMLDOMNode **nextItem);
+  HRESULT (__stdcall *reset)(IXMLDOMNamedNodeMap *This);
+  HRESULT (__stdcall *get__newEnum)(IXMLDOMNamedNodeMap *This, IUnknown **ppUnk);
+
+};

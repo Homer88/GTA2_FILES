@@ -1,0 +1,11 @@
+// Структура: _DB_HEADER
+// Полей: 3
+// Строки в оригинале: 309665-309670
+struct _DB_HEADER
+{
+
+  unsigned int dwMajorVersion;
+  unsigned int dwMinorVersion;
+  unsigned int dwMagic;
+
+};

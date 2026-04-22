@@ -1,0 +1,12 @@
+// Структура: _NDR64_EXPR_OPERATOR
+// Полей: 4
+// Строки в оригинале: 336256-336262
+struct _NDR64_EXPR_OPERATOR
+{
+
+  unsigned __int8 ExprType;
+  unsigned __int8 Operator;
+  unsigned __int8 CastType;
+  unsigned __int8 Reserved;
+
+};

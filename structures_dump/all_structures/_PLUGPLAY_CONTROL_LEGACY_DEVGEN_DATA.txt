@@ -1,0 +1,11 @@
+// Структура: _PLUGPLAY_CONTROL_LEGACY_DEVGEN_DATA
+// Полей: 3
+// Строки в оригинале: 108236-108241
+struct _PLUGPLAY_CONTROL_LEGACY_DEVGEN_DATA
+{
+
+  _UNICODE_STRING ServiceName;
+  wchar_t *DeviceInstance;
+  unsigned int DeviceInstanceLength;
+
+};

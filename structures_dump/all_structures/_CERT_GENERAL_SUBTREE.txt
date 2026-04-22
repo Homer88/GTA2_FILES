@@ -1,0 +1,12 @@
+// Структура: _CERT_GENERAL_SUBTREE
+// Полей: 4
+// Строки в оригинале: 95555-95561
+struct _CERT_GENERAL_SUBTREE
+{
+
+  _CERT_ALT_NAME_ENTRY Base;
+  unsigned int dwMinimum;
+  int fMaximum;
+  unsigned int dwMaximum;
+
+};

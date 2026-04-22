@@ -1,0 +1,10 @@
+// Структура: _Collvec
+// Полей: 2
+// Строки в оригинале: 362480-362484
+struct _Collvec
+{
+
+  unsigned int _Page;
+  wchar_t *_LocaleName;
+
+};

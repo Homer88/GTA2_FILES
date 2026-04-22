@@ -1,0 +1,11 @@
+// Структура: _BCRYPT_KEY_DATA_BLOB_HEADER
+// Полей: 3
+// Строки в оригинале: 102336-102341
+struct _BCRYPT_KEY_DATA_BLOB_HEADER
+{
+
+  unsigned int dwMagic;
+  unsigned int dwVersion;
+  unsigned int cbKeyData;
+
+};

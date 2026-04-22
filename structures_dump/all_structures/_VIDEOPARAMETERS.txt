@@ -1,0 +1,31 @@
+// Структура: _VIDEOPARAMETERS
+// Полей: 23
+// Строки в оригинале: 93525-93550
+struct _VIDEOPARAMETERS
+{
+
+  _GUID Guid;
+  unsigned int dwOffset;
+  unsigned int dwCommand;
+  unsigned int dwFlags;
+  unsigned int dwMode;
+  unsigned int dwTVStandard;
+  unsigned int dwAvailableModes;
+  unsigned int dwAvailableTVStandard;
+  unsigned int dwFlickerFilter;
+  unsigned int dwOverScanX;
+  unsigned int dwOverScanY;
+  unsigned int dwMaxUnscaledX;
+  unsigned int dwMaxUnscaledY;
+  unsigned int dwPositionX;
+  unsigned int dwPositionY;
+  unsigned int dwBrightness;
+  unsigned int dwContrast;
+  unsigned int dwCPType;
+  unsigned int dwCPCommand;
+  unsigned int dwCPStandard;
+  unsigned int dwCPKey;
+  unsigned int bCP_APSTriggerBits;
+  unsigned __int8 bOEMCopyProtection[256];
+
+};

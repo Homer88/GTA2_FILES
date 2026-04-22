@@ -1,0 +1,11 @@
+// Структура: tagCONTEXTHEADER
+// Полей: 3
+// Строки в оригинале: 193069-193074
+struct tagCONTEXTHEADER
+{
+
+  tagCTXVERSION Version;
+  tagCTXCOMMONHDR CmnHdr;
+  $2EB148CEF5183E02DED5598EB7E8546B ___u2;
+
+};

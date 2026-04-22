@@ -1,0 +1,18 @@
+// Структура: USN_RECORD_V4
+// Полей: 10
+// Строки в оригинале: 108111-108123
+struct USN_RECORD_V4
+{
+
+  USN_RECORD_COMMON_HEADER Header;
+  _FILE_ID_128 FileReferenceNumber;
+  _FILE_ID_128 ParentFileReferenceNumber;
+  __int64 Usn;
+  unsigned int Reason;
+  unsigned int SourceInfo;
+  unsigned int RemainingExtents;
+  unsigned __int16 NumberOfExtents;
+  unsigned __int16 ExtentSize;
+  USN_RECORD_EXTENT Extents[1];
+
+};

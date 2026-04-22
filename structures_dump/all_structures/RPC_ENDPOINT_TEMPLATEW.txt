@@ -1,0 +1,13 @@
+// Структура: RPC_ENDPOINT_TEMPLATEW
+// Полей: 5
+// Строки в оригинале: 90365-90372
+struct RPC_ENDPOINT_TEMPLATEW
+{
+
+  unsigned int Version;
+  wchar_t *ProtSeq;
+  wchar_t *Endpoint;
+  void *SecurityDescriptor;
+  unsigned int Backlog;
+
+};

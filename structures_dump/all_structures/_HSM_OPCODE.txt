@@ -1,0 +1,10 @@
+// Структура: _HSM_OPCODE
+// Полей: 2
+// Строки в оригинале: 98684-98688
+struct _HSM_OPCODE
+{
+
+  unsigned int Tag;
+  unsigned int Code;
+
+};

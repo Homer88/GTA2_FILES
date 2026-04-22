@@ -1,0 +1,15 @@
+// Структура: WireLocalThisPart1
+// Полей: 7
+// Строки в оригинале: 63857-63866
+struct WireLocalThisPart1
+{
+
+  unsigned int dwFlags;
+  unsigned int dwClientThread;
+  _GUID passthroughTraceActivity;
+  _GUID callId;
+  __MIDL_XmitDefs_0001 asyncRequestBlock;
+  unsigned int unique_pTouchedAstaArray;
+  unsigned int unique_containerPassthroughData;
+
+};

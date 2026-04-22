@@ -1,0 +1,14 @@
+// Структура: _CERT_SERVER_OCSP_RESPONSE_OPEN_PARA
+// Полей: 6
+// Строки в оригинале: 100721-100729
+struct _CERT_SERVER_OCSP_RESPONSE_OPEN_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int dwFlags;
+  unsigned int *pcbUsedSize;
+  wchar_t *pwszOcspDirectory;
+  void (__stdcall *pfnUpdateCallback)(const _CERT_CHAIN_CONTEXT *, const _CERT_SERVER_OCSP_RESPONSE_CONTEXT *, const _CRL_CONTEXT *, const _CRL_CONTEXT *, void *, unsigned int);
+  void *pvUpdateCallbackArg;
+
+};

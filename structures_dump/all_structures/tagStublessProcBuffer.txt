@@ -1,0 +1,12 @@
+// Структура: tagStublessProcBuffer
+// Полей: 4
+// Строки в оригинале: 286725-286731
+struct tagStublessProcBuffer
+{
+
+  unsigned __int8 pMethodsa[28][4];
+  tagStublessProcBuffer *pNext;
+  unsigned __int8 pAsm[16];
+  unsigned __int8 pMethodsb[28][4];
+
+};

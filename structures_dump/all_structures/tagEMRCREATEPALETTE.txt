@@ -1,0 +1,11 @@
+// Структура: tagEMRCREATEPALETTE
+// Полей: 3
+// Строки в оригинале: 99260-99265
+struct tagEMRCREATEPALETTE
+{
+
+  tagEMR emr;
+  unsigned int ihPal;
+  tagLOGPALETTE lgpl;
+
+};

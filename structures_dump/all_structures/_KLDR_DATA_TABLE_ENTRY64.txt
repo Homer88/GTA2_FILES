@@ -1,0 +1,26 @@
+// Структура: _KLDR_DATA_TABLE_ENTRY64
+// Полей: 18
+// Строки в оригинале: 96626-96646
+struct _KLDR_DATA_TABLE_ENTRY64
+{
+
+  LIST_ENTRY64 InLoadOrderLinks;
+  unsigned __int64 __Undefined1;
+  unsigned __int64 __Undefined2;
+  unsigned __int64 __Undefined3;
+  unsigned __int64 NonPagedDebugInfo;
+  unsigned __int64 DllBase;
+  unsigned __int64 EntryPoint;
+  unsigned int SizeOfImage;
+  _STRING64 FullDllName;
+  _STRING64 BaseDllName;
+  unsigned int Flags;
+  unsigned __int16 LoadCount;
+  unsigned __int16 __Undefined5;
+  unsigned __int64 __Undefined6;
+  unsigned int CheckSum;
+  unsigned int __padding1;
+  unsigned int TimeDateStamp;
+  unsigned int __padding2;
+
+};

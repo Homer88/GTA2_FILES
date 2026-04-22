@@ -1,0 +1,28 @@
+// Структура: _SYSTEM_PROCESSOR_POWER_INFORMATION
+// Полей: 20
+// Строки в оригинале: 83241-83263
+struct _SYSTEM_PROCESSOR_POWER_INFORMATION
+{
+
+  unsigned __int8 CurrentFrequency;
+  unsigned __int8 ThermalLimitFrequency;
+  unsigned __int8 ConstantThrottleFrequency;
+  unsigned __int8 DegradedThrottleFrequency;
+  unsigned __int8 LastBusyFrequency;
+  unsigned __int8 LastC3Frequency;
+  unsigned __int8 LastAdjustedBusyFrequency;
+  unsigned __int8 ProcessorMinThrottle;
+  unsigned __int8 ProcessorMaxThrottle;
+  unsigned int NumberOfFrequencies;
+  unsigned int PromotionCount;
+  unsigned int DemotionCount;
+  unsigned int ErrorCount;
+  unsigned int RetryCount;
+  unsigned __int64 CurrentFrequencyTime;
+  unsigned __int64 CurrentProcessorTime;
+  unsigned __int64 CurrentProcessorIdleTime;
+  unsigned __int64 LastProcessorTime;
+  unsigned __int64 LastProcessorIdleTime;
+  unsigned __int64 Energy;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _MINIDUMP_MEMORY64_LIST
+// Полей: 3
+// Строки в оригинале: 121707-121712
+struct _MINIDUMP_MEMORY64_LIST
+{
+
+  unsigned __int64 NumberOfMemoryRanges;
+  unsigned __int64 BaseRva;
+  _MINIDUMP_MEMORY_DESCRIPTOR64 MemoryRanges[];
+
+};

@@ -1,0 +1,42 @@
+// Структура: _SYSTEM_VDM_INSTEMUL_INFO
+// Полей: 34
+// Строки в оригинале: 81569-81605
+struct _SYSTEM_VDM_INSTEMUL_INFO
+{
+
+  unsigned int SegmentNotPresent;
+  unsigned int VdmOpcode0F;
+  unsigned int OpcodeESPrefix;
+  unsigned int OpcodeCSPrefix;
+  unsigned int OpcodeSSPrefix;
+  unsigned int OpcodeDSPrefix;
+  unsigned int OpcodeFSPrefix;
+  unsigned int OpcodeGSPrefix;
+  unsigned int OpcodeOPER32Prefix;
+  unsigned int OpcodeADDR32Prefix;
+  unsigned int OpcodeINSB;
+  unsigned int OpcodeINSW;
+  unsigned int OpcodeOUTSB;
+  unsigned int OpcodeOUTSW;
+  unsigned int OpcodePUSHF;
+  unsigned int OpcodePOPF;
+  unsigned int OpcodeINTnn;
+  unsigned int OpcodeINTO;
+  unsigned int OpcodeIRET;
+  unsigned int OpcodeINBimm;
+  unsigned int OpcodeINWimm;
+  unsigned int OpcodeOUTBimm;
+  unsigned int OpcodeOUTWimm;
+  unsigned int OpcodeINB;
+  unsigned int OpcodeINW;
+  unsigned int OpcodeOUTB;
+  unsigned int OpcodeOUTW;
+  unsigned int OpcodeLOCKPrefix;
+  unsigned int OpcodeREPNEPrefix;
+  unsigned int OpcodeREPPrefix;
+  unsigned int OpcodeHLT;
+  unsigned int OpcodeCLI;
+  unsigned int OpcodeSTI;
+  unsigned int BopCount;
+
+};

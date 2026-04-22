@@ -1,0 +1,11 @@
+// Структура: _D3DLOCKED_BOX
+// Полей: 3
+// Строки в оригинале: 26284-26289
+struct _D3DLOCKED_BOX
+{
+
+  INT RowPitch;
+  INT SlicePitch;
+  void *pBits;
+
+};

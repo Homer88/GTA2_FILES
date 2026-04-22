@@ -1,0 +1,10 @@
+// Структура: _IMAGE_DYNAMIC_RELOCATION32
+// Полей: 2
+// Строки в оригинале: 109820-109824
+struct _IMAGE_DYNAMIC_RELOCATION32
+{
+
+  unsigned int Symbol;
+  unsigned int BaseRelocSize;
+
+};

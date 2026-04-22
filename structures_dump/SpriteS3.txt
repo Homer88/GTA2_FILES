@@ -1,0 +1,11 @@
+// Structure: SpriteS3
+// Lines: 5178 - 5184
+// Fields: 5
+
+struct SpriteS3
+{
+  S39 S39_Arr48[48];
+  int field_3C0;
+  int Res;
+  int AdressArray;
+};

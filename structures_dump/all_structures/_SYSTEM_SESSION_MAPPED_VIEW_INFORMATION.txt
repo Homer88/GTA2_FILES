@@ -1,0 +1,13 @@
+// Структура: _SYSTEM_SESSION_MAPPED_VIEW_INFORMATION
+// Полей: 5
+// Строки в оригинале: 95250-95257
+struct _SYSTEM_SESSION_MAPPED_VIEW_INFORMATION
+{
+
+  unsigned int NextEntryOffset;
+  unsigned int SessionId;
+  unsigned int ViewFailures;
+  unsigned int NumberOfBytesAvailable;
+  unsigned int NumberOfBytesAvailableContiguous;
+
+};

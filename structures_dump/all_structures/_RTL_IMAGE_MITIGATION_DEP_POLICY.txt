@@ -1,0 +1,9 @@
+// Структура: _RTL_IMAGE_MITIGATION_DEP_POLICY
+// Полей: 1
+// Строки в оригинале: 98300-98303
+struct _RTL_IMAGE_MITIGATION_DEP_POLICY
+{
+
+  _RTL_IMAGE_MITIGATION_POLICY Dep;
+
+};

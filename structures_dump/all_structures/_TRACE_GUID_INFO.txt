@@ -1,0 +1,10 @@
+// Структура: _TRACE_GUID_INFO
+// Полей: 2
+// Строки в оригинале: 310487-310491
+struct _TRACE_GUID_INFO
+{
+
+  unsigned int InstanceCount;
+  unsigned int Reserved;
+
+};

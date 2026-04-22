@@ -1,0 +1,9 @@
+// Структура: IEnumTfProperties
+// Полей: 1
+// Строки в оригинале: 30350-30353
+struct IEnumTfProperties
+{
+
+  struct IEnumTfPropertiesVtbl *lpVtbl;
+
+};

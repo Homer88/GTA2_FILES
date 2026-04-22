@@ -1,0 +1,13 @@
+// Структура: _CERT_REVOCATION_CRL_INFO
+// Полей: 5
+// Строки в оригинале: 79921-79928
+struct _CERT_REVOCATION_CRL_INFO
+{
+
+  unsigned int cbSize;
+  const _CRL_CONTEXT *pBaseCrlContext;
+  const _CRL_CONTEXT *pDeltaCrlContext;
+  _CRL_ENTRY *pCrlEntry;
+  int fDeltaCrlEntry;
+
+};

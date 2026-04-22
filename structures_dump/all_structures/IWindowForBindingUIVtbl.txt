@@ -1,0 +1,12 @@
+// Структура: IWindowForBindingUIVtbl
+// Полей: 4
+// Строки в оригинале: 182471-182477
+struct IWindowForBindingUIVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWindowForBindingUI *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWindowForBindingUI *This);
+  ULONG (__stdcall *Release)(IWindowForBindingUI *This);
+  HRESULT (__stdcall *GetWindow)(IWindowForBindingUI *This, const GUID *const rguidReason, HWND *phwnd);
+
+};

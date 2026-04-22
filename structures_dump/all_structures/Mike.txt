@@ -1,0 +1,13 @@
+// Структура: Mike
+// Полей: 5
+// Строки в оригинале: 7677-7684
+struct Mike
+{
+
+  BuildingModel S23[5];
+  S24 S24[5];
+  _BYTE gap2A8[2000];
+  int field_A78;
+  int field_A7C;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _COVERAGE_UNLOADED_MODULE_ENTRY
+// Полей: 5
+// Строки в оригинале: 87904-87911
+struct _COVERAGE_UNLOADED_MODULE_ENTRY
+{
+
+  _LIST_ENTRY NextEntry;
+  _UNICODE_STRING BaseDllName;
+  _UNICODE_STRING FullDllName;
+  unsigned int CoverageSectionSize;
+  void *CoverageSection;
+
+};

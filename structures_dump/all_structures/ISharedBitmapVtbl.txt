@@ -1,0 +1,16 @@
+// Структура: ISharedBitmapVtbl
+// Полей: 8
+// Строки в оригинале: 38041-38051
+struct ISharedBitmapVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISharedBitmap *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISharedBitmap *This);
+  ULONG (__stdcall *Release)(ISharedBitmap *This);
+  HRESULT (__stdcall *GetSharedBitmap)(ISharedBitmap *This, HBITMAP *phbm);
+  HRESULT (__stdcall *GetSize)(ISharedBitmap *This, SIZE *pSize);
+  HRESULT (__stdcall *GetFormat)(ISharedBitmap *This, WTS_ALPHATYPE *pat);
+  HRESULT (__stdcall *InitializeBitmap)(ISharedBitmap *This, HBITMAP hbm, WTS_ALPHATYPE wtsAT);
+  HRESULT (__stdcall *Detach)(ISharedBitmap *This, HBITMAP *phbm);
+
+};

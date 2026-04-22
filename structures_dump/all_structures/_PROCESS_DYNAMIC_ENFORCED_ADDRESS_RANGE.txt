@@ -1,0 +1,11 @@
+// Структура: _PROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGE
+// Полей: 3
+// Строки в оригинале: 80720-80725
+struct _PROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGE
+{
+
+  unsigned int BaseAddress;
+  unsigned int Size;
+  unsigned int Flags;
+
+};

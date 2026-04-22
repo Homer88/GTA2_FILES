@@ -1,0 +1,9 @@
+// Структура: _WIM_PROVIDER_START_INTEGRITY
+// Полей: 1
+// Строки в оригинале: 86859-86862
+struct _WIM_PROVIDER_START_INTEGRITY
+{
+
+  _LARGE_INTEGER DataSourceId;
+
+};

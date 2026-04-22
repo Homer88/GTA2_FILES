@@ -1,0 +1,9 @@
+// Структура: ITaskFolder
+// Полей: 1
+// Строки в оригинале: 44512-44515
+struct ITaskFolder
+{
+
+  struct ITaskFolderVtbl *lpVtbl;
+
+};

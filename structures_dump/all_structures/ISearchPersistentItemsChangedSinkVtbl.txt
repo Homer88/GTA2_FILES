@@ -1,0 +1,14 @@
+// Структура: ISearchPersistentItemsChangedSinkVtbl
+// Полей: 6
+// Строки в оригинале: 44117-44125
+struct ISearchPersistentItemsChangedSinkVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISearchPersistentItemsChangedSink *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISearchPersistentItemsChangedSink *This);
+  ULONG (__stdcall *Release)(ISearchPersistentItemsChangedSink *This);
+  HRESULT (__stdcall *StartedMonitoringScope)(ISearchPersistentItemsChangedSink *This, LPCWSTR pszURL);
+  HRESULT (__stdcall *StoppedMonitoringScope)(ISearchPersistentItemsChangedSink *This, LPCWSTR pszURL);
+  HRESULT (__stdcall *OnItemsChanged)(ISearchPersistentItemsChangedSink *This, DWORD dwNumberOfChanges, SEARCH_ITEM_PERSISTENT_CHANGE DataChangeEntries[], HRESULT hrCompletionCodes[]);
+
+};

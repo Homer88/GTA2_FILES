@@ -1,0 +1,14 @@
+// Структура: tagStdUnmarshalData
+// Полей: 6
+// Строки в оригинале: 248941-248949
+struct tagStdUnmarshalData
+{
+
+  CStdIdentity *pStdID;
+  tagOBJREF *pobjref;
+  CObjectContext *pClientCtx;
+  int fCreateWrapper;
+  void **ppv;
+  int fLightNA;
+
+};

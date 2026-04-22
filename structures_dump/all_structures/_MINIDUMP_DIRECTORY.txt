@@ -1,0 +1,10 @@
+// Структура: _MINIDUMP_DIRECTORY
+// Полей: 2
+// Строки в оригинале: 122978-122982
+struct _MINIDUMP_DIRECTORY
+{
+
+  unsigned int StreamType;
+  _MINIDUMP_LOCATION_DESCRIPTOR Location;
+
+};

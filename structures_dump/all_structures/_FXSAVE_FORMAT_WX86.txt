@@ -1,0 +1,21 @@
+// Структура: _FXSAVE_FORMAT_WX86
+// Полей: 13
+// Строки в оригинале: 103370-103385
+struct _FXSAVE_FORMAT_WX86
+{
+
+  unsigned __int16 ControlWord;
+  unsigned __int16 StatusWord;
+  unsigned __int16 TagWord;
+  unsigned __int16 ErrorOpcode;
+  unsigned int ErrorOffset;
+  unsigned int ErrorSelector;
+  unsigned int DataOffset;
+  unsigned int DataSelector;
+  unsigned int MXCsr;
+  unsigned int MXCsr_Mask;
+  unsigned __int8 RegisterArea[128];
+  unsigned __int8 Reserved3[128];
+  unsigned __int8 Reserved4[224];
+
+};

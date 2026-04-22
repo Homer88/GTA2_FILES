@@ -1,0 +1,10 @@
+// Структура: _SPC_FINANCIAL_CRITERIA
+// Полей: 2
+// Строки в оригинале: 122266-122270
+struct _SPC_FINANCIAL_CRITERIA
+{
+
+  int fFinancialInfoAvailable;
+  int fMeetsCriteria;
+
+};

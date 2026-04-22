@@ -1,0 +1,13 @@
+// Структура: _MESSAGE_TRACE_USER
+// Полей: 5
+// Строки в оригинале: 312276-312283
+struct _MESSAGE_TRACE_USER
+{
+
+  _MESSAGE_TRACE_HEADER MessageHeader;
+  _GUID MessageGuid;
+  unsigned int MessageFlags;
+  unsigned int DataSize;
+  unsigned __int64 Data;
+
+};

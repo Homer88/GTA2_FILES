@@ -1,0 +1,18 @@
+// Структура: IProgressDialogVtbl
+// Полей: 10
+// Строки в оригинале: 32687-32699
+struct IProgressDialogVtbl
+{
+
+  HRESULT (__stdcall *StartProgressDialog)(IProgressDialog *This, HWND hwndParent, IUnknown *punkEnableModless, DWORD dwFlags, LPCVOID pvResevered);
+  HRESULT (__stdcall *StopProgressDialog)(IProgressDialog *This);
+  HRESULT (__stdcall *SetTitle)(IProgressDialog *This, PCWSTR pwzTitle);
+  HRESULT (__stdcall *SetAnimation)(IProgressDialog *This, HINSTANCE hInstAnimation, UINT idAnimation);
+  BOOL (__stdcall *HasUserCancelled)(IProgressDialog *This);
+  HRESULT (__stdcall *SetProgress)(IProgressDialog *This, DWORD dwCompleted, DWORD dwTotal);
+  HRESULT (__stdcall *SetProgress64)(IProgressDialog *This, ULONGLONG ullCompleted, ULONGLONG ullTotal);
+  HRESULT (__stdcall *SetLine)(IProgressDialog *This, DWORD dwLineNum, PCWSTR pwzString, BOOL fCompactPath, LPCVOID pvResevered);
+  HRESULT (__stdcall *SetCancelMsg)(IProgressDialog *This, PCWSTR pwzCancelMsg, LPCVOID pvResevered);
+  HRESULT (__stdcall *Timer)(IProgressDialog *This, DWORD dwTimerAction, LPCVOID pvResevered);
+
+};

@@ -1,0 +1,21 @@
+// Структура: _PERFINFO_CC_SCHEDULE_READ_AHEAD
+// Полей: 13
+// Строки в оригинале: 312797-312812
+struct _PERFINFO_CC_SCHEDULE_READ_AHEAD
+{
+
+  unsigned int WorkItemKey;
+  unsigned int FileObjectKey;
+  unsigned __int64 FileOffset;
+  unsigned int Length;
+  unsigned int ReadAheadUnit;
+  unsigned int ReadAheadLength;
+  unsigned __int64 ReadAheadOffset;
+  unsigned __int64 ReadAheadBeyondLastByte;
+  unsigned __int8 ReadPattern;
+  unsigned int SequentialReadCount;
+  unsigned int SharedCacheMapFlags;
+  unsigned __int32 ReadAheadSettingsChanged : 1;
+  unsigned __int32 ReadAheadActive : 1;
+
+};

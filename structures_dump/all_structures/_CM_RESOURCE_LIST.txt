@@ -1,0 +1,10 @@
+// Структура: _CM_RESOURCE_LIST
+// Полей: 2
+// Строки в оригинале: 18979-18983
+struct _CM_RESOURCE_LIST
+{
+
+  unsigned int Count;
+  _CM_FULL_RESOURCE_DESCRIPTOR List[1];
+
+};

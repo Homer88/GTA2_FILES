@@ -1,0 +1,12 @@
+// Структура: IThumbnailSettingsVtbl
+// Полей: 4
+// Строки в оригинале: 40576-40582
+struct IThumbnailSettingsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IThumbnailSettings *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IThumbnailSettings *This);
+  ULONG (__stdcall *Release)(IThumbnailSettings *This);
+  HRESULT (__stdcall *SetContext)(IThumbnailSettings *This, WTS_CONTEXTFLAGS dwContext);
+
+};

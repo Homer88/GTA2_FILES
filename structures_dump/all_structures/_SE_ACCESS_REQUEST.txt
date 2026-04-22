@@ -1,0 +1,16 @@
+// Структура: _SE_ACCESS_REQUEST
+// Полей: 8
+// Строки в оригинале: 106729-106739
+struct _SE_ACCESS_REQUEST
+{
+
+  unsigned int Size;
+  _SE_SECURITY_DESCRIPTOR *SeSecurityDescriptor;
+  unsigned int DesiredAccess;
+  unsigned int PreviouslyGrantedAccess;
+  void *PrincipalSelfSid;
+  _GENERIC_MAPPING *GenericMapping;
+  unsigned int ObjectTypeListCount;
+  _OBJECT_TYPE_LIST *ObjectTypeList;
+
+};

@@ -1,0 +1,14 @@
+// Структура: _NDR64_CONF_STRUCTURE_HEADER_FORMAT
+// Полей: 6
+// Строки в оригинале: 336359-336367
+struct _NDR64_CONF_STRUCTURE_HEADER_FORMAT
+{
+
+  unsigned __int8 FormatCode;
+  unsigned __int8 Alignment;
+  _NDR64_STRUCTURE_FLAGS Flags;
+  unsigned __int8 Reserve;
+  unsigned int MemorySize;
+  const void *ArrayDescription;
+
+};

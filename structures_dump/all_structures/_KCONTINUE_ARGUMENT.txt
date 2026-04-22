@@ -1,0 +1,11 @@
+// Структура: _KCONTINUE_ARGUMENT
+// Полей: 3
+// Строки в оригинале: 101960-101965
+struct _KCONTINUE_ARGUMENT
+{
+
+  _KCONTINUE_TYPE ContinueType;
+  unsigned int ContinueFlags;
+  unsigned int Reserved[2];
+
+};

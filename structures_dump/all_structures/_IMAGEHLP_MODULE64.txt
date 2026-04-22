@@ -1,0 +1,33 @@
+// Структура: _IMAGEHLP_MODULE64
+// Полей: 25
+// Строки в оригинале: 121649-121676
+struct _IMAGEHLP_MODULE64
+{
+
+  unsigned int SizeOfStruct;
+  unsigned __int64 BaseOfImage;
+  unsigned int ImageSize;
+  unsigned int TimeDateStamp;
+  unsigned int CheckSum;
+  unsigned int NumSyms;
+  SYM_TYPE SymType;
+  char ModuleName[32];
+  char ImageName[256];
+  char LoadedImageName[256];
+  char LoadedPdbName[256];
+  unsigned int CVSig;
+  char CVData[780];
+  unsigned int PdbSig;
+  _GUID PdbSig70;
+  unsigned int PdbAge;
+  int PdbUnmatched;
+  int DbgUnmatched;
+  int LineNumbers;
+  int GlobalSymbols;
+  int TypeInfo;
+  int SourceIndexed;
+  int Publics;
+  unsigned int MachineType;
+  unsigned int Reserved;
+
+};

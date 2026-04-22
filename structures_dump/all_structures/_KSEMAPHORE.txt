@@ -1,0 +1,10 @@
+// Структура: _KSEMAPHORE
+// Полей: 2
+// Строки в оригинале: 16275-16279
+struct _KSEMAPHORE
+{
+
+  _DISPATCHER_HEADER Header;
+  int Limit;
+
+};

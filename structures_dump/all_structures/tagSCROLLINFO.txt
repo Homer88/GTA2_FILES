@@ -1,0 +1,15 @@
+// Структура: tagSCROLLINFO
+// Полей: 7
+// Строки в оригинале: 95676-95685
+struct tagSCROLLINFO
+{
+
+  unsigned int cbSize;
+  unsigned int fMask;
+  int nMin;
+  int nMax;
+  unsigned int nPage;
+  int nPos;
+  int nTrackPos;
+
+};

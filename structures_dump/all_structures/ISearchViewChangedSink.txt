@@ -1,0 +1,9 @@
+// Структура: ISearchViewChangedSink
+// Полей: 1
+// Строки в оригинале: 44090-44093
+struct ISearchViewChangedSink
+{
+
+  struct ISearchViewChangedSinkVtbl *lpVtbl;
+
+};

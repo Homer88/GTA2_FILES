@@ -1,0 +1,27 @@
+// Структура: ISearchCrawlScopeManagerVtbl
+// Полей: 19
+// Строки в оригинале: 44233-44254
+struct ISearchCrawlScopeManagerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISearchCrawlScopeManager *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISearchCrawlScopeManager *This);
+  ULONG (__stdcall *Release)(ISearchCrawlScopeManager *This);
+  HRESULT (__stdcall *AddDefaultScopeRule)(ISearchCrawlScopeManager *This, LPCWSTR pszURL, BOOL fInclude, DWORD fFollowFlags);
+  HRESULT (__stdcall *AddRoot)(ISearchCrawlScopeManager *This, ISearchRoot *pSearchRoot);
+  HRESULT (__stdcall *RemoveRoot)(ISearchCrawlScopeManager *This, LPCWSTR pszURL);
+  HRESULT (__stdcall *EnumerateRoots)(ISearchCrawlScopeManager *This, IEnumSearchRoots **ppSearchRoots);
+  HRESULT (__stdcall *AddHierarchicalScope)(ISearchCrawlScopeManager *This, LPCWSTR pszURL, BOOL fInclude, BOOL fDefault, BOOL fOverrideChildren);
+  HRESULT (__stdcall *AddUserScopeRule)(ISearchCrawlScopeManager *This, LPCWSTR pszURL, BOOL fInclude, BOOL fOverrideChildren, DWORD fFollowFlags);
+  HRESULT (__stdcall *RemoveScopeRule)(ISearchCrawlScopeManager *This, LPCWSTR pszRule);
+  HRESULT (__stdcall *EnumerateScopeRules)(ISearchCrawlScopeManager *This, IEnumSearchScopeRules **ppSearchScopeRules);
+  HRESULT (__stdcall *HasParentScopeRule)(ISearchCrawlScopeManager *This, LPCWSTR pszURL, BOOL *pfHasParentRule);
+  HRESULT (__stdcall *HasChildScopeRule)(ISearchCrawlScopeManager *This, LPCWSTR pszURL, BOOL *pfHasChildRule);
+  HRESULT (__stdcall *IncludedInCrawlScope)(ISearchCrawlScopeManager *This, LPCWSTR pszURL, BOOL *pfIsIncluded);
+  HRESULT (__stdcall *IncludedInCrawlScopeEx)(ISearchCrawlScopeManager *This, LPCWSTR pszURL, BOOL *pfIsIncluded, CLUSION_REASON *pReason);
+  HRESULT (__stdcall *RevertToDefaultScopes)(ISearchCrawlScopeManager *This);
+  HRESULT (__stdcall *SaveAll)(ISearchCrawlScopeManager *This);
+  HRESULT (__stdcall *GetParentScopeVersionId)(ISearchCrawlScopeManager *This, LPCWSTR pszURL, LONG *plScopeId);
+  HRESULT (__stdcall *RemoveDefaultScopeRule)(ISearchCrawlScopeManager *This, LPCWSTR pszURL);
+
+};

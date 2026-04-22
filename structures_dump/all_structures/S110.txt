@@ -1,0 +1,26 @@
+// Структура: S110
+// Полей: 18
+// Строки в оригинале: 8837-8857
+struct S110
+{
+
+  Car *Car;
+  Ped *Ped;
+  S169 *NPC;
+  int field_C;
+  int field_10;
+  int field_14;
+  __int16 field_18;
+  __int16 field_1A;
+  __int16 field_1C;
+  char field_1E;
+  char field_1F;
+  int field_20;
+  int field_24;
+  int field_28;
+  char field_2C;
+  char field_2D;
+  char field_2E;
+  char field_0;
+
+};

@@ -1,0 +1,9 @@
+// Структура: __FITypedEventHandler_2_Windows__CApplicationModel__CActivation__CSplashScreen_IInspectable
+// Полей: 1
+// Строки в оригинале: 352736-352739
+struct __FITypedEventHandler_2_Windows__CApplicationModel__CActivation__CSplashScreen_IInspectable
+{
+
+  struct __FITypedEventHandler_2_Windows__CApplicationModel__CActivation__CSplashScreen_IInspectableVtbl *lpVtbl;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IPropertyStoreCapabilities
+// Полей: 1
+// Строки в оригинале: 45109-45112
+struct IPropertyStoreCapabilities
+{
+
+  struct IPropertyStoreCapabilitiesVtbl *lpVtbl;
+
+};

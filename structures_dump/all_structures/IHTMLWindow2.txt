@@ -1,0 +1,9 @@
+// Структура: IHTMLWindow2
+// Полей: 1
+// Строки в оригинале: 38477-38480
+struct IHTMLWindow2
+{
+
+  struct IHTMLWindow2Vtbl *lpVtbl;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _CERT_ID
+// Полей: 2
+// Строки в оригинале: 81178-81182
+struct _CERT_ID
+{
+
+  unsigned int dwIdChoice;
+  $CCCE6C5A3B6FC0872E8225F2155BFA75 ___u1;
+
+};

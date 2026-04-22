@@ -1,0 +1,16 @@
+// Структура: IFilterVtbl
+// Полей: 8
+// Строки в оригинале: 40458-40468
+struct IFilterVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFilter *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFilter *This);
+  ULONG (__stdcall *Release)(IFilter *This);
+  SCODE (__stdcall *Init)(IFilter *This, ULONG grfFlags, ULONG cAttributes, const FULLPROPSPEC *aAttributes, ULONG *pFlags);
+  SCODE (__stdcall *GetChunk)(IFilter *This, STAT_CHUNK *pStat);
+  SCODE (__stdcall *GetText)(IFilter *This, ULONG *pcwcBuffer, WCHAR *awcBuffer);
+  SCODE (__stdcall *GetValue)(IFilter *This, PROPVARIANT **ppPropValue);
+  SCODE (__stdcall *BindRegion)(IFilter *This, FILTERREGION origPos, const IID *const riid, void **ppunk);
+
+};

@@ -1,0 +1,14 @@
+// Структура: _SecPkgContext_NegoKeys
+// Полей: 6
+// Строки в оригинале: 325725-325733
+struct _SecPkgContext_NegoKeys
+{
+
+  unsigned int KeyType;
+  unsigned __int16 KeyLength;
+  unsigned __int8 *KeyValue;
+  unsigned int VerifyKeyType;
+  unsigned __int16 VerifyKeyLength;
+  unsigned __int8 *VerifyKeyValue;
+
+};

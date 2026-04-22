@@ -1,0 +1,9 @@
+// Структура: tagINPUT_TRANSFORM
+// Полей: 1
+// Строки в оригинале: 106659-106662
+struct tagINPUT_TRANSFORM
+{
+
+  $43107744D04858F1758EBB51A0AF70D7 ___u0;
+
+};

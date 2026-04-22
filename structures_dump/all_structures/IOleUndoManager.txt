@@ -1,0 +1,9 @@
+// Структура: IOleUndoManager
+// Полей: 1
+// Строки в оригинале: 33064-33067
+struct IOleUndoManager
+{
+
+  struct IOleUndoManagerVtbl *lpVtbl;
+
+};

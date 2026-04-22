@@ -1,0 +1,43 @@
+// Структура: _MM_DRIVER_VERIFIER_DATA
+// Полей: 35
+// Строки в оригинале: 22641-22678
+struct _MM_DRIVER_VERIFIER_DATA
+{
+
+  unsigned int Level;
+  volatile unsigned int RaiseIrqls;
+  volatile unsigned int AcquireSpinLocks;
+  volatile unsigned int SynchronizeExecutions;
+  volatile unsigned int AllocationsAttempted;
+  volatile unsigned int AllocationsSucceeded;
+  volatile unsigned int AllocationsSucceededSpecialPool;
+  unsigned int AllocationsWithNoTag;
+  unsigned int TrimRequests;
+  unsigned int Trims;
+  unsigned int AllocationsFailed;
+  volatile unsigned int AllocationsFailedDeliberately;
+  volatile unsigned int Loads;
+  volatile unsigned int Unloads;
+  unsigned int UnTrackedPool;
+  unsigned int UserTrims;
+  volatile unsigned int CurrentPagedPoolAllocations;
+  volatile unsigned int CurrentNonPagedPoolAllocations;
+  unsigned int PeakPagedPoolAllocations;
+  unsigned int PeakNonPagedPoolAllocations;
+  volatile unsigned int PagedBytes;
+  volatile unsigned int NonPagedBytes;
+  unsigned int PeakPagedBytes;
+  unsigned int PeakNonPagedBytes;
+  volatile unsigned int BurstAllocationsFailedDeliberately;
+  unsigned int SessionTrims;
+  volatile unsigned int OptionChanges;
+  volatile unsigned int VerifyMode;
+  _UNICODE_STRING PreviousBucketName;
+  volatile unsigned int ExecutePoolTypes;
+  volatile unsigned int ExecutePageProtections;
+  volatile unsigned int ExecutePageMappings;
+  volatile unsigned int ExecuteWriteSections;
+  volatile unsigned int SectionAlignmentFailures;
+  volatile unsigned int IATInExecutableSection;
+
+};

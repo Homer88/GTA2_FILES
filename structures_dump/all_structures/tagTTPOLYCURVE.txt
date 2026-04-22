@@ -1,0 +1,11 @@
+// Структура: tagTTPOLYCURVE
+// Полей: 3
+// Строки в оригинале: 85886-85891
+struct tagTTPOLYCURVE
+{
+
+  unsigned __int16 wType;
+  unsigned __int16 cpfx;
+  tagPOINTFX apfx[1];
+
+};

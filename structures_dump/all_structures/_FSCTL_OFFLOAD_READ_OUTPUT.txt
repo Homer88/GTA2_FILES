@@ -1,0 +1,12 @@
+// Структура: _FSCTL_OFFLOAD_READ_OUTPUT
+// Полей: 4
+// Строки в оригинале: 93042-93048
+struct _FSCTL_OFFLOAD_READ_OUTPUT
+{
+
+  unsigned int Size;
+  unsigned int Flags;
+  unsigned __int64 TransferLength;
+  unsigned __int8 Token[512];
+
+};

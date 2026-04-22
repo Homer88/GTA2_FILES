@@ -1,0 +1,15 @@
+// Структура: SPC_SIGINFO_
+// Полей: 7
+// Строки в оригинале: 123918-123927
+struct SPC_SIGINFO_
+{
+
+  unsigned int dwSipVersion;
+  _GUID gSIPGuid;
+  unsigned int dwReserved1;
+  unsigned int dwReserved2;
+  unsigned int dwReserved3;
+  unsigned int dwReserved4;
+  unsigned int dwReserved5;
+
+};

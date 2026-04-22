@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_LOGICAL_PROCESSOR_INFORMATION
+// Полей: 3
+// Строки в оригинале: 95103-95108
+struct _SYSTEM_LOGICAL_PROCESSOR_INFORMATION
+{
+
+  unsigned int ProcessorMask;
+  _LOGICAL_PROCESSOR_RELATIONSHIP Relationship;
+  $2A88C358488A1D4A7A1C7D36C3F981FC ___u2;
+
+};

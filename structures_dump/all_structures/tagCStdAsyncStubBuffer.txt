@@ -1,0 +1,19 @@
+// Структура: tagCStdAsyncStubBuffer
+// Полей: 11
+// Строки в оригинале: 286241-286254
+struct tagCStdAsyncStubBuffer
+{
+
+  void *lpForwardingVtbl;
+  IRpcStubBuffer *pBaseStubBuffer;
+  const IRpcStubBufferVtbl *lpVtbl;
+  int RefCount;
+  IUnknown *pvServerObject;
+  const ICallFactoryVtbl *pCallFactoryVtbl;
+  const _GUID *pAsyncIID;
+  IPSFactoryBuffer *pPSFactory;
+  const IReleaseMarshalBuffersVtbl *pRMBVtbl;
+  const ISynchronizeVtbl *pSynchronizeVtbl;
+  _NdrDcomAsyncCallState CallState;
+
+};

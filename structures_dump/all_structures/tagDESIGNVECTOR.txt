@@ -1,0 +1,11 @@
+// Структура: tagDESIGNVECTOR
+// Полей: 3
+// Строки в оригинале: 80288-80293
+struct tagDESIGNVECTOR
+{
+
+  unsigned int dvReserved;
+  unsigned int dvNumAxes;
+  int dvValues[16];
+
+};

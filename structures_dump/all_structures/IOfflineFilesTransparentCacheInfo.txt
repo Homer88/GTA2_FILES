@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesTransparentCacheInfo
+// Полей: 1
+// Строки в оригинале: 26968-26971
+struct IOfflineFilesTransparentCacheInfo
+{
+
+  struct IOfflineFilesTransparentCacheInfoVtbl *lpVtbl;
+
+};

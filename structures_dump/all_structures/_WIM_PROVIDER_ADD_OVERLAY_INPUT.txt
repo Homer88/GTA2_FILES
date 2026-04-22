@@ -1,0 +1,12 @@
+// Структура: _WIM_PROVIDER_ADD_OVERLAY_INPUT
+// Полей: 4
+// Строки в оригинале: 95169-95175
+struct _WIM_PROVIDER_ADD_OVERLAY_INPUT
+{
+
+  unsigned int WimType;
+  unsigned int WimIndex;
+  unsigned int WimFileNameOffset;
+  unsigned int WimFileNameLength;
+
+};

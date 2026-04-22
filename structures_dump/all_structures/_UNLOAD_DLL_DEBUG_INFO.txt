@@ -1,0 +1,9 @@
+// Структура: _UNLOAD_DLL_DEBUG_INFO
+// Полей: 1
+// Строки в оригинале: 104548-104551
+struct _UNLOAD_DLL_DEBUG_INFO
+{
+
+  void *lpBaseOfDll;
+
+};

@@ -1,0 +1,14 @@
+// Структура: tagRAWMOUSE
+// Полей: 6
+// Строки в оригинале: 85832-85840
+struct tagRAWMOUSE
+{
+
+  unsigned __int16 usFlags;
+  $3FAA4050B163117372A04D0D14E20705 ___u1;
+  unsigned int ulRawButtons;
+  int lLastX;
+  int lLastY;
+  unsigned int ulExtraInformation;
+
+};

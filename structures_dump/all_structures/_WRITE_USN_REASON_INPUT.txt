@@ -1,0 +1,10 @@
+// Структура: _WRITE_USN_REASON_INPUT
+// Полей: 2
+// Строки в оригинале: 95564-95568
+struct _WRITE_USN_REASON_INPUT
+{
+
+  unsigned int Flags;
+  unsigned int UsnReasonToWrite;
+
+};

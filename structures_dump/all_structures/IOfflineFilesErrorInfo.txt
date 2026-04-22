@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesErrorInfo
+// Полей: 1
+// Строки в оригинале: 28733-28736
+struct IOfflineFilesErrorInfo
+{
+
+  struct IOfflineFilesErrorInfoVtbl *lpVtbl;
+
+};

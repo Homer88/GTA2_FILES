@@ -1,0 +1,11 @@
+// Структура: _TIMEZONE_CHANGE_EVENT
+// Полей: 3
+// Строки в оригинале: 18436-18441
+struct _TIMEZONE_CHANGE_EVENT
+{
+
+  _KDPC Dpc;
+  _KTIMER Timer;
+  _WORK_QUEUE_ITEM WorkItem;
+
+};

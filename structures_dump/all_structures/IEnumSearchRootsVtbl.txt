@@ -1,0 +1,15 @@
+// Структура: IEnumSearchRootsVtbl
+// Полей: 7
+// Строки в оригинале: 44374-44383
+struct IEnumSearchRootsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumSearchRoots *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumSearchRoots *This);
+  ULONG (__stdcall *Release)(IEnumSearchRoots *This);
+  HRESULT (__stdcall *Next)(IEnumSearchRoots *This, ULONG celt, ISearchRoot **rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumSearchRoots *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumSearchRoots *This);
+  HRESULT (__stdcall *Clone)(IEnumSearchRoots *This, IEnumSearchRoots **ppenum);
+
+};

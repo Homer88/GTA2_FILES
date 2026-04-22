@@ -1,0 +1,10 @@
+// Структура: _MINIDUMP_USER_STREAM_INFORMATION
+// Полей: 2
+// Строки в оригинале: 123564-123568
+struct _MINIDUMP_USER_STREAM_INFORMATION
+{
+
+  unsigned int UserStreamCount;
+  _MINIDUMP_USER_STREAM *UserStreamArray;
+
+};

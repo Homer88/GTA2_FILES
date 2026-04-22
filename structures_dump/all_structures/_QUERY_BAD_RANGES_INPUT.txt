@@ -1,0 +1,11 @@
+// Структура: _QUERY_BAD_RANGES_INPUT
+// Полей: 3
+// Строки в оригинале: 108384-108389
+struct _QUERY_BAD_RANGES_INPUT
+{
+
+  unsigned int Flags;
+  unsigned int NumRanges;
+  _QUERY_BAD_RANGES_INPUT_RANGE Ranges[1];
+
+};

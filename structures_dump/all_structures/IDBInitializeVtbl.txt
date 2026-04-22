@@ -1,0 +1,13 @@
+// Структура: IDBInitializeVtbl
+// Полей: 5
+// Строки в оригинале: 37055-37062
+struct IDBInitializeVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDBInitialize *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDBInitialize *This);
+  ULONG (__stdcall *Release)(IDBInitialize *This);
+  HRESULT (__stdcall *Initialize)(IDBInitialize *This);
+  HRESULT (__stdcall *Uninitialize)(IDBInitialize *This);
+
+};

@@ -1,0 +1,12 @@
+// Структура: _PLUGPLAY_CONTROL_RELATED_DEVICE_DATA
+// Полей: 4
+// Строки в оригинале: 98571-98577
+struct _PLUGPLAY_CONTROL_RELATED_DEVICE_DATA
+{
+
+  _UNICODE_STRING TargetDeviceInstance;
+  unsigned int Relation;
+  wchar_t *RelatedDeviceInstance;
+  unsigned int RelatedDeviceInstanceLength;
+
+};

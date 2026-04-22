@@ -1,0 +1,25 @@
+// Структура: IPicture2Vtbl
+// Полей: 17
+// Строки в оригинале: 182397-182416
+struct IPicture2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPicture2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPicture2 *This);
+  ULONG (__stdcall *Release)(IPicture2 *This);
+  HRESULT (__stdcall *get_Handle)(IPicture2 *This, HHANDLE *pHandle);
+  HRESULT (__stdcall *get_hPal)(IPicture2 *This, HHANDLE *phPal);
+  HRESULT (__stdcall *get_Type)(IPicture2 *This, SHORT *pType);
+  HRESULT (__stdcall *get_Width)(IPicture2 *This, OLE_XSIZE_HIMETRIC *pWidth);
+  HRESULT (__stdcall *get_Height)(IPicture2 *This, OLE_YSIZE_HIMETRIC *pHeight);
+  HRESULT (__stdcall *Render)(IPicture2 *This, HDC hDC, LONG x, LONG y, LONG cx, LONG cy, OLE_XPOS_HIMETRIC xSrc, OLE_YPOS_HIMETRIC ySrc, OLE_XSIZE_HIMETRIC cxSrc, OLE_YSIZE_HIMETRIC cySrc, LPCRECT pRcWBounds);
+  HRESULT (__stdcall *set_hPal)(IPicture2 *This, HHANDLE hPal);
+  HRESULT (__stdcall *get_CurDC)(IPicture2 *This, HDC *phDC);
+  HRESULT (__stdcall *SelectPicture)(IPicture2 *This, HDC hDCIn, HDC *phDCOut, HHANDLE *phBmpOut);
+  HRESULT (__stdcall *get_KeepOriginalFormat)(IPicture2 *This, BOOL *pKeep);
+  HRESULT (__stdcall *put_KeepOriginalFormat)(IPicture2 *This, BOOL keep);
+  HRESULT (__stdcall *PictureChanged)(IPicture2 *This);
+  HRESULT (__stdcall *SaveAsFile)(IPicture2 *This, LPSTREAM pStream, BOOL fSaveMemCopy, LONG *pCbSize);
+  HRESULT (__stdcall *get_Attributes)(IPicture2 *This, DWORD *pDwAttr);
+
+};

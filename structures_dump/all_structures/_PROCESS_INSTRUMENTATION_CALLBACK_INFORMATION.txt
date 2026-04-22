@@ -1,0 +1,11 @@
+// Структура: _PROCESS_INSTRUMENTATION_CALLBACK_INFORMATION
+// Полей: 3
+// Строки в оригинале: 88620-88625
+struct _PROCESS_INSTRUMENTATION_CALLBACK_INFORMATION
+{
+
+  unsigned int Version;
+  unsigned int Reserved;
+  unsigned int Callback;
+
+};

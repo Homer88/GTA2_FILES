@@ -1,0 +1,9 @@
+// Структура: _FILE_IO_PRIORITY_HINT_INFORMATION
+// Полей: 1
+// Строки в оригинале: 100583-100586
+struct _FILE_IO_PRIORITY_HINT_INFORMATION
+{
+
+  _IO_PRIORITY_HINT PriorityHint;
+
+};

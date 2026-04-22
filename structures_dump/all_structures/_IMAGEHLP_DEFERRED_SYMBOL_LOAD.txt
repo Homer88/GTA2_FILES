@@ -1,0 +1,15 @@
+// Структура: _IMAGEHLP_DEFERRED_SYMBOL_LOAD
+// Полей: 7
+// Строки в оригинале: 122512-122521
+struct _IMAGEHLP_DEFERRED_SYMBOL_LOAD
+{
+
+  unsigned int SizeOfStruct;
+  unsigned int BaseOfImage;
+  unsigned int CheckSum;
+  unsigned int TimeDateStamp;
+  char FileName[260];
+  unsigned __int8 Reparse;
+  void *hFile;
+
+};

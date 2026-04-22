@@ -1,0 +1,12 @@
+// Структура: IMultiQIVtbl
+// Полей: 4
+// Строки в оригинале: 351575-351581
+struct IMultiQIVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IMultiQI *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IMultiQI *This);
+  ULONG (__stdcall *Release)(IMultiQI *This);
+  HRESULT (__stdcall *QueryMultipleInterfaces)(IMultiQI *This, ULONG cMQIs, MULTI_QI *pMQIs);
+
+};

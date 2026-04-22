@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_FIRMWARE_PARTITION_INFORMATION
+// Полей: 1
+// Строки в оригинале: 91414-91417
+struct _SYSTEM_FIRMWARE_PARTITION_INFORMATION
+{
+
+  _UNICODE_STRING FirmwarePartition;
+
+};

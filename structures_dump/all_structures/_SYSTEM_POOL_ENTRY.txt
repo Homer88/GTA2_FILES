@@ -1,0 +1,13 @@
+// Структура: _SYSTEM_POOL_ENTRY
+// Полей: 5
+// Строки в оригинале: 84519-84526
+struct _SYSTEM_POOL_ENTRY
+{
+
+  unsigned __int8 Allocated;
+  unsigned __int8 Spare0;
+  unsigned __int16 AllocatorBackTraceIndex;
+  unsigned int Size;
+  $C12A6AFDA0A9A59597CE4F2EEE635F70 ___u4;
+
+};

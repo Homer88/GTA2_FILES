@@ -1,0 +1,18 @@
+// Структура: ASSEMBLYMETADATA
+// Полей: 10
+// Строки в оригинале: 293173-293185
+struct ASSEMBLYMETADATA
+{
+
+  unsigned __int16 usMajorVersion;
+  unsigned __int16 usMinorVersion;
+  unsigned __int16 usBuildNumber;
+  unsigned __int16 usRevisionNumber;
+  wchar_t *szLocale;
+  unsigned int cbLocale;
+  unsigned int *rProcessor;
+  unsigned int ulProcessor;
+  OSINFO *rOS;
+  unsigned int ulOS;
+
+};

@@ -1,0 +1,14 @@
+// Структура: tagEMRPOLYPOLYLINE
+// Полей: 6
+// Строки в оригинале: 93077-93085
+struct tagEMRPOLYPOLYLINE
+{
+
+  tagEMR emr;
+  _RECTL rclBounds;
+  unsigned int nPolys;
+  unsigned int cptl;
+  unsigned int aPolyCounts[1];
+  _POINTL aptl[1];
+
+};

@@ -1,0 +1,10 @@
+// Структура: tagCAFLT
+// Полей: 2
+// Строки в оригинале: 31574-31578
+struct tagCAFLT
+{
+
+  ULONG cElems;
+  FLOAT *pElems;
+
+};

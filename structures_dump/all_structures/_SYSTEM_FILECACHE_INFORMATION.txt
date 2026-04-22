@@ -1,0 +1,17 @@
+// Структура: _SYSTEM_FILECACHE_INFORMATION
+// Полей: 9
+// Строки в оригинале: 108703-108714
+struct _SYSTEM_FILECACHE_INFORMATION
+{
+
+  unsigned int CurrentSize;
+  unsigned int PeakSize;
+  unsigned int PageFaultCount;
+  unsigned int MinimumWorkingSet;
+  unsigned int MaximumWorkingSet;
+  unsigned int CurrentSizeIncludingTransitionInPages;
+  unsigned int PeakSizeIncludingTransitionInPages;
+  unsigned int TransitionRePurposeCount;
+  unsigned int Flags;
+
+};

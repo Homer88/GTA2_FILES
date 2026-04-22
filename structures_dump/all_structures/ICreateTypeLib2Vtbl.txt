@@ -1,0 +1,25 @@
+// Структура: ICreateTypeLib2Vtbl
+// Полей: 17
+// Строки в оригинале: 352605-352624
+struct ICreateTypeLib2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICreateTypeLib2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICreateTypeLib2 *This);
+  ULONG (__stdcall *Release)(ICreateTypeLib2 *This);
+  HRESULT (__stdcall *CreateTypeInfo)(ICreateTypeLib2 *This, LPOLESTR szName, TYPEKIND tkind, ICreateTypeInfo **ppCTInfo);
+  HRESULT (__stdcall *SetName)(ICreateTypeLib2 *This, LPOLESTR szName);
+  HRESULT (__stdcall *SetVersion)(ICreateTypeLib2 *This, WORD wMajorVerNum, WORD wMinorVerNum);
+  HRESULT (__stdcall *SetGuid)(ICreateTypeLib2 *This, const GUID *const guid);
+  HRESULT (__stdcall *SetDocString)(ICreateTypeLib2 *This, LPOLESTR szDoc);
+  HRESULT (__stdcall *SetHelpFileName)(ICreateTypeLib2 *This, LPOLESTR szHelpFileName);
+  HRESULT (__stdcall *SetHelpContext)(ICreateTypeLib2 *This, DWORD dwHelpContext);
+  HRESULT (__stdcall *SetLcid)(ICreateTypeLib2 *This, LCID lcid);
+  HRESULT (__stdcall *SetLibFlags)(ICreateTypeLib2 *This, UINT uLibFlags);
+  HRESULT (__stdcall *SaveAllChanges)(ICreateTypeLib2 *This);
+  HRESULT (__stdcall *DeleteTypeInfo)(ICreateTypeLib2 *This, LPOLESTR szName);
+  HRESULT (__stdcall *SetCustData)(ICreateTypeLib2 *This, const GUID *const guid, VARIANT *pVarVal);
+  HRESULT (__stdcall *SetHelpStringContext)(ICreateTypeLib2 *This, ULONG dwHelpStringContext);
+  HRESULT (__stdcall *SetHelpStringDll)(ICreateTypeLib2 *This, LPOLESTR szFileName);
+
+};

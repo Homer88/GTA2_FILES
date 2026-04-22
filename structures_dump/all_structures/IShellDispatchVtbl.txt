@@ -1,0 +1,38 @@
+// Структура: IShellDispatchVtbl
+// Полей: 30
+// Строки в оригинале: 34681-34713
+struct IShellDispatchVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellDispatch *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellDispatch *This);
+  ULONG (__stdcall *Release)(IShellDispatch *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IShellDispatch *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IShellDispatch *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IShellDispatch *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IShellDispatch *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Application)(IShellDispatch *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_Parent)(IShellDispatch *This, IDispatch **ppid);
+  HRESULT (__stdcall *NameSpace)(IShellDispatch *This, VARIANT vDir, Folder **ppsdf);
+  HRESULT (__stdcall *BrowseForFolder)(IShellDispatch *This, int Hwnd, BSTR Title, int Options, VARIANT RootFolder, Folder **ppsdf);
+  HRESULT (__stdcall *Windows)(IShellDispatch *This, IDispatch **ppid);
+  HRESULT (__stdcall *Open)(IShellDispatch *This, VARIANT vDir);
+  HRESULT (__stdcall *Explore)(IShellDispatch *This, VARIANT vDir);
+  HRESULT (__stdcall *MinimizeAll)(IShellDispatch *This);
+  HRESULT (__stdcall *UndoMinimizeALL)(IShellDispatch *This);
+  HRESULT (__stdcall *FileRun)(IShellDispatch *This);
+  HRESULT (__stdcall *CascadeWindows)(IShellDispatch *This);
+  HRESULT (__stdcall *TileVertically)(IShellDispatch *This);
+  HRESULT (__stdcall *TileHorizontally)(IShellDispatch *This);
+  HRESULT (__stdcall *ShutdownWindows)(IShellDispatch *This);
+  HRESULT (__stdcall *Suspend)(IShellDispatch *This);
+  HRESULT (__stdcall *EjectPC)(IShellDispatch *This);
+  HRESULT (__stdcall *SetTime)(IShellDispatch *This);
+  HRESULT (__stdcall *TrayProperties)(IShellDispatch *This);
+  HRESULT (__stdcall *Help)(IShellDispatch *This);
+  HRESULT (__stdcall *FindFiles)(IShellDispatch *This);
+  HRESULT (__stdcall *FindComputer)(IShellDispatch *This);
+  HRESULT (__stdcall *RefreshMenu)(IShellDispatch *This);
+  HRESULT (__stdcall *ControlPanelItem)(IShellDispatch *This, BSTR bstrDir);
+
+};

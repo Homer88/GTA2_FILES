@@ -1,0 +1,10 @@
+// Структура: _WOF_EXTERNAL_INFO
+// Полей: 2
+// Строки в оригинале: 90027-90031
+struct _WOF_EXTERNAL_INFO
+{
+
+  unsigned int Version;
+  unsigned int Provider;
+
+};

@@ -1,0 +1,11 @@
+// Структура: tagSDBMSITRANSFORMINFO
+// Полей: 3
+// Строки в оригинале: 313877-313882
+struct tagSDBMSITRANSFORMINFO
+{
+
+  const wchar_t *lpszTransformName;
+  unsigned int trTransform;
+  unsigned int trFile;
+
+};

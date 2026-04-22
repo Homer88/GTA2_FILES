@@ -1,0 +1,10 @@
+// Структура: _REFS_DEALLOCATE_RANGES_RANGE
+// Полей: 2
+// Строки в оригинале: 80713-80717
+struct _REFS_DEALLOCATE_RANGES_RANGE
+{
+
+  unsigned __int64 StartOfRange;
+  unsigned __int64 CountOfRange;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _NLG_INFO
+// Полей: 4
+// Строки в оригинале: 338950-338956
+struct _NLG_INFO
+{
+
+  unsigned int dwSig;
+  unsigned int uoffDestination;
+  unsigned int dwCode;
+  unsigned int uoffFramePointer;
+
+};

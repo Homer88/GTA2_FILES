@@ -1,0 +1,14 @@
+// Структура: tagContextStackNode
+// Полей: 6
+// Строки в оригинале: 60421-60429
+struct tagContextStackNode
+{
+
+  tagContextStackNode *pNext;
+  struct CObjectContext *pSavedContext;
+  struct CObjectContext *pServerContext;
+  struct CCtxCall *pClientCall;
+  struct CCtxCall *pServerCall;
+  struct CPolicySet *pPS;
+
+};

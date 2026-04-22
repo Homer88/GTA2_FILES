@@ -1,0 +1,14 @@
+// Структура: _PLUGPLAY_CONTROL_CLASS_ASSOCIATION_DATA
+// Полей: 6
+// Строки в оригинале: 87087-87095
+struct _PLUGPLAY_CONTROL_CLASS_ASSOCIATION_DATA
+{
+
+  _UNICODE_STRING DeviceInstance;
+  _GUID *InterfaceGuid;
+  _UNICODE_STRING Reference;
+  unsigned __int8 Register;
+  wchar_t *SymLink;
+  unsigned int SymLinkLength;
+
+};

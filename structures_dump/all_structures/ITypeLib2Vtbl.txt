@@ -1,0 +1,25 @@
+// Структура: ITypeLib2Vtbl
+// Полей: 17
+// Строки в оригинале: 352642-352661
+struct ITypeLib2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITypeLib2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITypeLib2 *This);
+  ULONG (__stdcall *Release)(ITypeLib2 *This);
+  UINT (__stdcall *GetTypeInfoCount)(ITypeLib2 *This);
+  HRESULT (__stdcall *GetTypeInfo)(ITypeLib2 *This, UINT index, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetTypeInfoType)(ITypeLib2 *This, UINT index, TYPEKIND *pTKind);
+  HRESULT (__stdcall *GetTypeInfoOfGuid)(ITypeLib2 *This, const GUID *const guid, ITypeInfo **ppTinfo);
+  HRESULT (__stdcall *GetLibAttr)(ITypeLib2 *This, TLIBATTR **ppTLibAttr);
+  HRESULT (__stdcall *GetTypeComp)(ITypeLib2 *This, ITypeComp **ppTComp);
+  HRESULT (__stdcall *GetDocumentation)(ITypeLib2 *This, INT index, BSTR *pBstrName, BSTR *pBstrDocString, DWORD *pdwHelpContext, BSTR *pBstrHelpFile);
+  HRESULT (__stdcall *IsName)(ITypeLib2 *This, LPOLESTR szNameBuf, ULONG lHashVal, BOOL *pfName);
+  HRESULT (__stdcall *FindName)(ITypeLib2 *This, LPOLESTR szNameBuf, ULONG lHashVal, ITypeInfo **ppTInfo, MEMBERID *rgMemId, USHORT *pcFound);
+  void (__stdcall *ReleaseTLibAttr)(ITypeLib2 *This, TLIBATTR *pTLibAttr);
+  HRESULT (__stdcall *GetCustData)(ITypeLib2 *This, const GUID *const guid, VARIANT *pVarVal);
+  HRESULT (__stdcall *GetLibStatistics)(ITypeLib2 *This, ULONG *pcUniqueNames, ULONG *pcchUniqueNames);
+  HRESULT (__stdcall *GetDocumentation2)(ITypeLib2 *This, INT index, LCID lcid, BSTR *pbstrHelpString, DWORD *pdwHelpStringContext, BSTR *pbstrHelpStringDll);
+  HRESULT (__stdcall *GetAllCustData)(ITypeLib2 *This, CUSTDATA *pCustData);
+
+};

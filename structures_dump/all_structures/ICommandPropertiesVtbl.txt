@@ -1,0 +1,13 @@
+// Структура: ICommandPropertiesVtbl
+// Полей: 5
+// Строки в оригинале: 33660-33667
+struct ICommandPropertiesVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICommandProperties *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICommandProperties *This);
+  ULONG (__stdcall *Release)(ICommandProperties *This);
+  HRESULT (__stdcall *GetProperties)(ICommandProperties *This, const ULONG cPropertyIDSets, const DBPROPIDSET rgPropertyIDSets[], ULONG *pcPropertySets, DBPROPSET **prgPropertySets);
+  HRESULT (__stdcall *SetProperties)(ICommandProperties *This, ULONG cPropertySets, DBPROPSET rgPropertySets[]);
+
+};

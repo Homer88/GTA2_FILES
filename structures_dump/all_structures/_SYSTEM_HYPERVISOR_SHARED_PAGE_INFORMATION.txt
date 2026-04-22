@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_HYPERVISOR_SHARED_PAGE_INFORMATION
+// Полей: 1
+// Строки в оригинале: 97569-97572
+struct _SYSTEM_HYPERVISOR_SHARED_PAGE_INFORMATION
+{
+
+  void *HypervisorSharedUserVa;
+
+};

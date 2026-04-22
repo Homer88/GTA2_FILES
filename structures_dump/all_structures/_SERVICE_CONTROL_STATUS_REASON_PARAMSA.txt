@@ -1,0 +1,11 @@
+// Структура: _SERVICE_CONTROL_STATUS_REASON_PARAMSA
+// Полей: 3
+// Строки в оригинале: 105759-105764
+struct _SERVICE_CONTROL_STATUS_REASON_PARAMSA
+{
+
+  unsigned int dwReason;
+  char *pszComment;
+  _SERVICE_STATUS_PROCESS ServiceStatus;
+
+};

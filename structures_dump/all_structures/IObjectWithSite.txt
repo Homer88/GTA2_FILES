@@ -1,0 +1,9 @@
+// Структура: IObjectWithSite
+// Полей: 1
+// Строки в оригинале: 30058-30061
+struct IObjectWithSite
+{
+
+  struct IObjectWithSiteVtbl *lpVtbl;
+
+};

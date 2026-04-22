@@ -1,0 +1,9 @@
+// Структура: HWINEVENTHOOK__
+// Полей: 1
+// Строки в оригинале: 102181-102184
+struct HWINEVENTHOOK__
+{
+
+  int unused;
+
+};

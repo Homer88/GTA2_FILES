@@ -1,0 +1,10 @@
+// Structure: S65
+// Lines: 5187 - 5192
+// Fields: 4
+
+struct S65
+{
+  S65 *NextElement;
+  __int16 field_4;
+  __int16 field_6;
+};

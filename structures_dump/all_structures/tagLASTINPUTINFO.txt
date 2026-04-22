@@ -1,0 +1,10 @@
+// Структура: tagLASTINPUTINFO
+// Полей: 2
+// Строки в оригинале: 105957-105961
+struct tagLASTINPUTINFO
+{
+
+  unsigned int cbSize;
+  unsigned int dwTime;
+
+};

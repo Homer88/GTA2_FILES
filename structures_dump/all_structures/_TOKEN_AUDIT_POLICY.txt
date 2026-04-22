@@ -1,0 +1,9 @@
+// Структура: _TOKEN_AUDIT_POLICY
+// Полей: 1
+// Строки в оригинале: 108775-108778
+struct _TOKEN_AUDIT_POLICY
+{
+
+  unsigned __int8 PerUserPolicy[30];
+
+};

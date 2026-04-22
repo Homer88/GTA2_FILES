@@ -1,0 +1,12 @@
+// Структура: _ETW_PARTITION_INFO_EXTENSION_V2
+// Полей: 4
+// Строки в оригинале: 311655-311661
+struct _ETW_PARTITION_INFO_EXTENSION_V2
+{
+
+  unsigned __int16 EventVersion;
+  unsigned __int16 Reserved;
+  unsigned int PartitionType;
+  _LARGE_INTEGER QpcOffsetFromRoot;
+
+};

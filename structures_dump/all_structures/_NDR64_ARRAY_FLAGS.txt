@@ -1,0 +1,16 @@
+// Структура: _NDR64_ARRAY_FLAGS
+// Полей: 8
+// Строки в оригинале: 331145-331155
+struct _NDR64_ARRAY_FLAGS
+{
+
+  unsigned __int8 HasPointerInfo : 1;
+  unsigned __int8 HasElementInfo : 1;
+  unsigned __int8 IsMultiDimensional : 1;
+  unsigned __int8 IsArrayofStrings : 1;
+  unsigned __int8 Reserved1 : 1;
+  unsigned __int8 Reserved2 : 1;
+  unsigned __int8 Reserved3 : 1;
+  unsigned __int8 Reserved4 : 1;
+
+};

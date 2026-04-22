@@ -1,0 +1,12 @@
+// Структура: IInitializeWithStreamVtbl
+// Полей: 4
+// Строки в оригинале: 36362-36368
+struct IInitializeWithStreamVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IInitializeWithStream *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IInitializeWithStream *This);
+  ULONG (__stdcall *Release)(IInitializeWithStream *This);
+  HRESULT (__stdcall *Initialize)(IInitializeWithStream *This, IStream *pstream, DWORD grfMode);
+
+};

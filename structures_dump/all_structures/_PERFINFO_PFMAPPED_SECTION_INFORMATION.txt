@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_PFMAPPED_SECTION_INFORMATION
+// Полей: 3
+// Строки в оригинале: 311008-311013
+struct _PERFINFO_PFMAPPED_SECTION_INFORMATION
+{
+
+  void *RangeBase;
+  void *RangeEnd;
+  unsigned int CreatingProcessId;
+
+};

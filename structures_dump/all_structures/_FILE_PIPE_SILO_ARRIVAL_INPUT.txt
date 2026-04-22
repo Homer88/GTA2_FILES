@@ -1,0 +1,9 @@
+// Структура: _FILE_PIPE_SILO_ARRIVAL_INPUT
+// Полей: 1
+// Строки в оригинале: 103684-103687
+struct _FILE_PIPE_SILO_ARRIVAL_INPUT
+{
+
+  void *JobHandle;
+
+};

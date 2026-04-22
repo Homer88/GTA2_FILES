@@ -1,0 +1,10 @@
+// Структура: _CUSTOM_SYSTEM_EVENT_TRIGGER_CONFIG
+// Полей: 2
+// Строки в оригинале: 12854-12858
+struct _CUSTOM_SYSTEM_EVENT_TRIGGER_CONFIG
+{
+
+  unsigned int Size;
+  const wchar_t *TriggerId;
+
+};

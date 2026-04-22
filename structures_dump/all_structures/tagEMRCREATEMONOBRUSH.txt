@@ -1,0 +1,15 @@
+// Структура: tagEMRCREATEMONOBRUSH
+// Полей: 7
+// Строки в оригинале: 111805-111814
+struct tagEMRCREATEMONOBRUSH
+{
+
+  tagEMR emr;
+  unsigned int ihBrush;
+  unsigned int iUsage;
+  unsigned int offBmi;
+  unsigned int cbBmi;
+  unsigned int offBits;
+  unsigned int cbBits;
+
+};

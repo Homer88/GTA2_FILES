@@ -1,0 +1,14 @@
+// Структура: ICDBurnVtbl
+// Полей: 6
+// Строки в оригинале: 35794-35802
+struct ICDBurnVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICDBurn *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICDBurn *This);
+  ULONG (__stdcall *Release)(ICDBurn *This);
+  HRESULT (__stdcall *GetRecorderDriveLetter)(ICDBurn *This, LPWSTR pszDrive, UINT cch);
+  HRESULT (__stdcall *Burn)(ICDBurn *This, HWND hwnd);
+  HRESULT (__stdcall *HasRecordableDrive)(ICDBurn *This, BOOL *pfHasRecorder);
+
+};

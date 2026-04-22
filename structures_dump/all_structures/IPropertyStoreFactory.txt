@@ -1,0 +1,9 @@
+// Структура: IPropertyStoreFactory
+// Полей: 1
+// Строки в оригинале: 37532-37535
+struct IPropertyStoreFactory
+{
+
+  struct IPropertyStoreFactoryVtbl *lpVtbl;
+
+};

@@ -1,0 +1,22 @@
+// Структура: NTFS_VOLUME_DATA_BUFFER
+// Полей: 14
+// Строки в оригинале: 102262-102278
+struct NTFS_VOLUME_DATA_BUFFER
+{
+
+  _LARGE_INTEGER VolumeSerialNumber;
+  _LARGE_INTEGER NumberSectors;
+  _LARGE_INTEGER TotalClusters;
+  _LARGE_INTEGER FreeClusters;
+  _LARGE_INTEGER TotalReserved;
+  unsigned int BytesPerSector;
+  unsigned int BytesPerCluster;
+  unsigned int BytesPerFileRecordSegment;
+  unsigned int ClustersPerFileRecordSegment;
+  _LARGE_INTEGER MftValidDataLength;
+  _LARGE_INTEGER MftStartLcn;
+  _LARGE_INTEGER Mft2StartLcn;
+  _LARGE_INTEGER MftZoneStart;
+  _LARGE_INTEGER MftZoneEnd;
+
+};

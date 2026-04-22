@@ -1,0 +1,16 @@
+// Структура: IRunnableObjectVtbl
+// Полей: 8
+// Строки в оригинале: 182243-182253
+struct IRunnableObjectVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRunnableObject *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRunnableObject *This);
+  ULONG (__stdcall *Release)(IRunnableObject *This);
+  HRESULT (__stdcall *GetRunningClass)(IRunnableObject *This, LPCLSID lpClsid);
+  HRESULT (__stdcall *Run)(IRunnableObject *This, LPBINDCTX pbc);
+  BOOL (__stdcall *IsRunning)(IRunnableObject *This);
+  HRESULT (__stdcall *LockRunning)(IRunnableObject *This, BOOL fLock, BOOL fLastUnlockCloses);
+  HRESULT (__stdcall *SetContainedObject)(IRunnableObject *This, BOOL fContained);
+
+};

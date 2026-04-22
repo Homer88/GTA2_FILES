@@ -1,0 +1,18 @@
+// Структура: _MINIDUMP_THREAD_INFO
+// Полей: 10
+// Строки в оригинале: 122281-122293
+struct _MINIDUMP_THREAD_INFO
+{
+
+  unsigned int ThreadId;
+  unsigned int DumpFlags;
+  unsigned int DumpError;
+  unsigned int ExitStatus;
+  unsigned __int64 CreateTime;
+  unsigned __int64 ExitTime;
+  unsigned __int64 KernelTime;
+  unsigned __int64 UserTime;
+  unsigned __int64 StartAddress;
+  unsigned __int64 Affinity;
+
+};

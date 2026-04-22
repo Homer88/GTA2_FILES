@@ -1,0 +1,11 @@
+// Структура: _ZDB_HEADER
+// Полей: 3
+// Строки в оригинале: 309931-309936
+struct _ZDB_HEADER
+{
+
+  _DB_HEADER SdbHeader;
+  _ZDB_COMPRESSION_ALGORITHM CompressionMethod;
+  unsigned int dwExpandedSize;
+
+};

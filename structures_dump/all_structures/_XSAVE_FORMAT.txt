@@ -1,0 +1,24 @@
+// Структура: _XSAVE_FORMAT
+// Полей: 16
+// Строки в оригинале: 15190-15208
+struct _XSAVE_FORMAT
+{
+
+  unsigned __int16 ControlWord;
+  unsigned __int16 StatusWord;
+  unsigned __int8 TagWord;
+  unsigned __int8 Reserved1;
+  unsigned __int16 ErrorOpcode;
+  unsigned int ErrorOffset;
+  unsigned __int16 ErrorSelector;
+  unsigned __int16 Reserved2;
+  unsigned int DataOffset;
+  unsigned __int16 DataSelector;
+  unsigned __int16 Reserved3;
+  unsigned int MxCsr;
+  unsigned int MxCsr_Mask;
+  _M128A FloatRegisters[8];
+  _M128A XmmRegisters[8];
+  unsigned __int8 Reserved4[224];
+
+};

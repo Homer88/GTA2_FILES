@@ -1,0 +1,35 @@
+// Структура: _CM_MONITOR_DEVICE_DATA
+// Полей: 27
+// Строки в оригинале: 82265-82294
+struct _CM_MONITOR_DEVICE_DATA
+{
+
+  unsigned __int16 Version;
+  unsigned __int16 Revision;
+  unsigned __int16 HorizontalScreenSize;
+  unsigned __int16 VerticalScreenSize;
+  unsigned __int16 HorizontalResolution;
+  unsigned __int16 VerticalResolution;
+  unsigned __int16 HorizontalDisplayTimeLow;
+  unsigned __int16 HorizontalDisplayTime;
+  unsigned __int16 HorizontalDisplayTimeHigh;
+  unsigned __int16 HorizontalBackPorchLow;
+  unsigned __int16 HorizontalBackPorch;
+  unsigned __int16 HorizontalBackPorchHigh;
+  unsigned __int16 HorizontalFrontPorchLow;
+  unsigned __int16 HorizontalFrontPorch;
+  unsigned __int16 HorizontalFrontPorchHigh;
+  unsigned __int16 HorizontalSyncLow;
+  unsigned __int16 HorizontalSync;
+  unsigned __int16 HorizontalSyncHigh;
+  unsigned __int16 VerticalBackPorchLow;
+  unsigned __int16 VerticalBackPorch;
+  unsigned __int16 VerticalBackPorchHigh;
+  unsigned __int16 VerticalFrontPorchLow;
+  unsigned __int16 VerticalFrontPorch;
+  unsigned __int16 VerticalFrontPorchHigh;
+  unsigned __int16 VerticalSyncLow;
+  unsigned __int16 VerticalSync;
+  unsigned __int16 VerticalSyncHigh;
+
+};

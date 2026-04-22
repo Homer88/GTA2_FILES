@@ -1,0 +1,27 @@
+// Структура: IDirectInputJoyConfigVtbl
+// Полей: 19
+// Строки в оригинале: 29723-29744
+struct IDirectInputJoyConfigVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirectInputJoyConfig *This, const IID *const riid, LPVOID *ppvObj);
+  ULONG (__stdcall *AddRef)(IDirectInputJoyConfig *This);
+  ULONG (__stdcall *Release)(IDirectInputJoyConfig *This);
+  HRESULT (__stdcall *Acquire)(IDirectInputJoyConfig *This);
+  HRESULT (__stdcall *Unacquire)(IDirectInputJoyConfig *This);
+  HRESULT (__stdcall *SetCooperativeLevel)(IDirectInputJoyConfig *This, HWND, DWORD);
+  HRESULT (__stdcall *SendNotify)(IDirectInputJoyConfig *This);
+  HRESULT (__stdcall *EnumTypes)(IDirectInputJoyConfig *This, LPDIJOYTYPECALLBACK, LPVOID);
+  HRESULT (__stdcall *GetTypeInfo)(IDirectInputJoyConfig *This, LPCWSTR, LPDIJOYTYPEINFO, DWORD);
+  HRESULT (__stdcall *SetTypeInfo)(IDirectInputJoyConfig *This, LPCWSTR, LPCDIJOYTYPEINFO, DWORD);
+  HRESULT (__stdcall *DeleteType)(IDirectInputJoyConfig *This, LPCWSTR);
+  HRESULT (__stdcall *GetConfig)(IDirectInputJoyConfig *This, UINT, LPDIJOYCONFIG, DWORD);
+  HRESULT (__stdcall *SetConfig)(IDirectInputJoyConfig *This, UINT, LPCDIJOYCONFIG, DWORD);
+  HRESULT (__stdcall *DeleteConfig)(IDirectInputJoyConfig *This, UINT);
+  HRESULT (__stdcall *GetUserValues)(IDirectInputJoyConfig *This, LPDIJOYUSERVALUES, DWORD);
+  HRESULT (__stdcall *SetUserValues)(IDirectInputJoyConfig *This, LPCDIJOYUSERVALUES, DWORD);
+  HRESULT (__stdcall *AddNewHardware)(IDirectInputJoyConfig *This, HWND, const GUID *const);
+  HRESULT (__stdcall *OpenTypeKey)(IDirectInputJoyConfig *This, LPCWSTR, DWORD, PHKEY);
+  HRESULT (__stdcall *OpenConfigKey)(IDirectInputJoyConfig *This, UINT, DWORD, PHKEY);
+
+};

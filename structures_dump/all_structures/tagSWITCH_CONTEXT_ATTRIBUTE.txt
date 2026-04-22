@@ -1,0 +1,12 @@
+// Структура: tagSWITCH_CONTEXT_ATTRIBUTE
+// Полей: 4
+// Строки в оригинале: 311071-311077
+struct tagSWITCH_CONTEXT_ATTRIBUTE
+{
+
+  unsigned __int64 ulContextUpdateCounter;
+  int fAllowContextUpdate;
+  int fEnableTrace;
+  unsigned __int64 EtwHandle;
+
+};

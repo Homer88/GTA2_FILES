@@ -1,0 +1,14 @@
+// Структура: _NDR64_REPEAT_FORMAT
+// Полей: 6
+// Строки в оригинале: 331458-331466
+struct _NDR64_REPEAT_FORMAT
+{
+
+  unsigned __int8 FormatCode;
+  _NDR64_POINTER_REPEAT_FLAGS Flags;
+  unsigned __int16 Reserved;
+  unsigned int Increment;
+  unsigned int OffsetToArray;
+  unsigned int NumberOfPointers;
+
+};

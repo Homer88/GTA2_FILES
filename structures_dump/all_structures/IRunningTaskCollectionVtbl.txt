@@ -1,0 +1,18 @@
+// Структура: IRunningTaskCollectionVtbl
+// Полей: 10
+// Строки в оригинале: 44570-44582
+struct IRunningTaskCollectionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRunningTaskCollection *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRunningTaskCollection *This);
+  ULONG (__stdcall *Release)(IRunningTaskCollection *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IRunningTaskCollection *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IRunningTaskCollection *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IRunningTaskCollection *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IRunningTaskCollection *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Count)(IRunningTaskCollection *This, LONG *pCount);
+  HRESULT (__stdcall *get_Item)(IRunningTaskCollection *This, VARIANT index, IRunningTask **ppRunningTask);
+  HRESULT (__stdcall *get__NewEnum)(IRunningTaskCollection *This, IUnknown **ppEnum);
+
+};

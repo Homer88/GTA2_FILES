@@ -1,0 +1,11 @@
+// Структура: _GRADIENT_TRIANGLE
+// Полей: 3
+// Строки в оригинале: 107517-107522
+struct _GRADIENT_TRIANGLE
+{
+
+  unsigned int Vertex1;
+  unsigned int Vertex2;
+  unsigned int Vertex3;
+
+};

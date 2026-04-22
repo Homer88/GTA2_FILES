@@ -1,0 +1,12 @@
+// Структура: _RTL_VERIFIER_ALL_INFORMATION
+// Полей: 4
+// Строки в оригинале: 109393-109399
+struct _RTL_VERIFIER_ALL_INFORMATION
+{
+
+  unsigned int Size;
+  unsigned int OffsetPageHeapsInformation;
+  unsigned int OffsetRuntimeFlagsInformation;
+  unsigned int OffsetFaultInjectInformation;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _SYSTEM_VERIFIER_FAULTS_INFORMATION
+// Полей: 4
+// Строки в оригинале: 88773-88779
+struct _SYSTEM_VERIFIER_FAULTS_INFORMATION
+{
+
+  unsigned int Probability;
+  unsigned int MaxProbability;
+  _UNICODE_STRING PoolTags;
+  _UNICODE_STRING Applications;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _SERVICE_TRIGGER
+// Полей: 5
+// Строки в оригинале: 109537-109544
+struct _SERVICE_TRIGGER
+{
+
+  unsigned int dwTriggerType;
+  unsigned int dwAction;
+  _GUID *pTriggerSubtype;
+  unsigned int cDataItems;
+  _SERVICE_TRIGGER_SPECIFIC_DATA_ITEM *pDataItems;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IObjectWithProgID
+// Полей: 1
+// Строки в оригинале: 41449-41452
+struct IObjectWithProgID
+{
+
+  struct IObjectWithProgIDVtbl *lpVtbl;
+
+};

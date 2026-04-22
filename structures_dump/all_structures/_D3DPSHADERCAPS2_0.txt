@@ -1,0 +1,13 @@
+// Структура: _D3DPSHADERCAPS2_0
+// Полей: 5
+// Строки в оригинале: 24945-24952
+struct _D3DPSHADERCAPS2_0
+{
+
+  DWORD Caps;
+  INT DynamicFlowControlDepth;
+  INT NumTemps;
+  INT StaticFlowControlDepth;
+  INT NumInstructionSlots;
+
+};

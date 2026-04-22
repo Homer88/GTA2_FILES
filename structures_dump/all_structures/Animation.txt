@@ -1,0 +1,14 @@
+// Структура: Animation
+// Полей: 6
+// Строки в оригинале: 6853-6861
+struct Animation
+{
+
+  SoundInfo *FirstElement;
+  SoundInfo *S28_NextElement;
+  SoundInfo S28[8];
+  __int16 field_8E8;
+  char field_8EA;
+  char field_8EB;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IDisplayItem
+// Полей: 1
+// Строки в оригинале: 37548-37551
+struct IDisplayItem
+{
+
+  struct IDisplayItemVtbl *lpVtbl;
+
+};

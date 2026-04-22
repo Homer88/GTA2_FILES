@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_PPM_IDLE_STATE_ENTER
+// Полей: 3
+// Строки в оригинале: 309841-309846
+struct _PERFINFO_PPM_IDLE_STATE_ENTER
+{
+
+  unsigned int State;
+  $73C1C389500D41263E989AA1776B7B60 ___u1;
+  unsigned __int64 ExpectedDuration;
+
+};

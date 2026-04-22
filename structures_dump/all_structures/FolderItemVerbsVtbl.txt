@@ -1,0 +1,20 @@
+// Структура: FolderItemVerbsVtbl
+// Полей: 12
+// Строки в оригинале: 30840-30854
+struct FolderItemVerbsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(FolderItemVerbs *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(FolderItemVerbs *This);
+  ULONG (__stdcall *Release)(FolderItemVerbs *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(FolderItemVerbs *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(FolderItemVerbs *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(FolderItemVerbs *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(FolderItemVerbs *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Count)(FolderItemVerbs *This, int *plCount);
+  HRESULT (__stdcall *get_Application)(FolderItemVerbs *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_Parent)(FolderItemVerbs *This, IDispatch **ppid);
+  HRESULT (__stdcall *Item)(FolderItemVerbs *This, VARIANT index, FolderItemVerb **ppid);
+  HRESULT (__stdcall *_NewEnum)(FolderItemVerbs *This, IUnknown **ppunk);
+
+};

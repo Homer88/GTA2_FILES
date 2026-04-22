@@ -1,0 +1,9 @@
+// Структура: IObjectWithBackReferences
+// Полей: 1
+// Строки в оригинале: 41379-41382
+struct IObjectWithBackReferences
+{
+
+  struct IObjectWithBackReferencesVtbl *lpVtbl;
+
+};

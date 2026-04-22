@@ -1,0 +1,14 @@
+// Структура: tagPROPPAGEINFO
+// Полей: 6
+// Строки в оригинале: 122203-122211
+struct tagPROPPAGEINFO
+{
+
+  unsigned int cb;
+  wchar_t *pszTitle;
+  tagSIZE size;
+  wchar_t *pszDocString;
+  wchar_t *pszHelpFile;
+  unsigned int dwHelpContext;
+
+};

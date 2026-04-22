@@ -1,0 +1,11 @@
+// Структура: tagNMHDR
+// Полей: 3
+// Строки в оригинале: 104443-104448
+struct tagNMHDR
+{
+
+  HWND__ *hwndFrom;
+  unsigned int idFrom;
+  unsigned int code;
+
+};

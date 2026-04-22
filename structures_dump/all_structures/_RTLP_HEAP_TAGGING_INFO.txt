@@ -1,0 +1,13 @@
+// Структура: _RTLP_HEAP_TAGGING_INFO
+// Полей: 5
+// Строки в оригинале: 104089-104096
+struct _RTLP_HEAP_TAGGING_INFO
+{
+
+  unsigned __int16 Version;
+  unsigned __int16 Flags;
+  void *Process;
+  unsigned int EntriesCount;
+  _RTLP_TAG_INFO Entries[1];
+
+};

@@ -1,0 +1,19 @@
+// Структура: _ACTIVATION_CONTEXT_SECTION_KEYED_DATA_2600
+// Полей: 11
+// Строки в оригинале: 99147-99160
+struct _ACTIVATION_CONTEXT_SECTION_KEYED_DATA_2600
+{
+
+  unsigned int Size;
+  unsigned int DataFormatVersion;
+  void *Data;
+  unsigned int Length;
+  void *SectionGlobalData;
+  unsigned int SectionGlobalDataLength;
+  void *SectionBase;
+  unsigned int SectionTotalLength;
+  _ACTIVATION_CONTEXT *ActivationContext;
+  unsigned int AssemblyRosterIndex;
+  unsigned int Flags;
+
+};

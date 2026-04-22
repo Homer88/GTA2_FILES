@@ -1,0 +1,10 @@
+// Структура: tagTOUCH_HIT_TESTING_PROXIMITY_EVALUATION
+// Полей: 2
+// Строки в оригинале: 80366-80370
+struct tagTOUCH_HIT_TESTING_PROXIMITY_EVALUATION
+{
+
+  unsigned __int16 score;
+  tagPOINT adjustedPoint;
+
+};

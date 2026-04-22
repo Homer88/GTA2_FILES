@@ -1,0 +1,11 @@
+// Структура: _SE_LEARNING_MODE_USER_OBJECT_DATA
+// Полей: 3
+// Строки в оригинале: 103806-103811
+struct _SE_LEARNING_MODE_USER_OBJECT_DATA
+{
+
+  unsigned int Cookie;
+  _UNICODE_STRING *ObjectType;
+  _UNICODE_STRING *ObjectName;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _GLYPHMETRICSFLOAT
+// Полей: 5
+// Строки в оригинале: 82852-82859
+struct _GLYPHMETRICSFLOAT
+{
+
+  float gmfBlackBoxX;
+  float gmfBlackBoxY;
+  _POINTFLOAT gmfptGlyphOrigin;
+  float gmfCellIncX;
+  float gmfCellIncY;
+
+};

@@ -1,0 +1,20 @@
+// Структура: tagCREATESTRUCTW
+// Полей: 12
+// Строки в оригинале: 87639-87653
+struct tagCREATESTRUCTW
+{
+
+  void *lpCreateParams;
+  HINSTANCE__ *hInstance;
+  HMENU__ *hMenu;
+  HWND__ *hwndParent;
+  int cy;
+  int cx;
+  int y;
+  int x;
+  int style;
+  const wchar_t *lpszName;
+  const wchar_t *lpszClass;
+  unsigned int dwExStyle;
+
+};

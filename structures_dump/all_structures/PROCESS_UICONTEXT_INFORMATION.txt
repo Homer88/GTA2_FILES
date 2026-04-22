@@ -1,0 +1,10 @@
+// Структура: PROCESS_UICONTEXT_INFORMATION
+// Полей: 2
+// Строки в оригинале: 149637-149641
+struct PROCESS_UICONTEXT_INFORMATION
+{
+
+  PROCESS_UICONTEXT processUIContext;
+  PROCESS_UI_FLAGS flags;
+
+};

@@ -1,0 +1,15 @@
+// Структура: IWICBitmapLockVtbl
+// Полей: 7
+// Строки в оригинале: 42358-42367
+struct IWICBitmapLockVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICBitmapLock *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICBitmapLock *This);
+  ULONG (__stdcall *Release)(IWICBitmapLock *This);
+  HRESULT (__stdcall *GetSize)(IWICBitmapLock *This, UINT *puiWidth, UINT *puiHeight);
+  HRESULT (__stdcall *GetStride)(IWICBitmapLock *This, UINT *pcbStride);
+  HRESULT (__stdcall *GetDataPointer)(IWICBitmapLock *This, UINT *pcbBufferSize, WICInProcPointer *ppbData);
+  HRESULT (__stdcall *GetPixelFormat)(IWICBitmapLock *This, WICPixelFormatGUID *pPixelFormat);
+
+};

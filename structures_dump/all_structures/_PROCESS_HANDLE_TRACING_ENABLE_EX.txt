@@ -1,0 +1,10 @@
+// Структура: _PROCESS_HANDLE_TRACING_ENABLE_EX
+// Полей: 2
+// Строки в оригинале: 108007-108011
+struct _PROCESS_HANDLE_TRACING_ENABLE_EX
+{
+
+  unsigned int Flags;
+  unsigned int TotalSlots;
+
+};

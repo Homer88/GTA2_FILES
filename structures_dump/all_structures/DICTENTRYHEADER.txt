@@ -1,0 +1,10 @@
+// Структура: DICTENTRYHEADER
+// Полей: 2
+// Строки в оригинале: 147579-147583
+struct DICTENTRYHEADER
+{
+
+  unsigned int dwPropID;
+  unsigned int cb;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _SSL_HPKP_HEADER_EXTRA_CERT_CHAIN_POLICY_PARA
+// Полей: 4
+// Строки в оригинале: 85283-85289
+struct _SSL_HPKP_HEADER_EXTRA_CERT_CHAIN_POLICY_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int dwReserved;
+  wchar_t *pwszServerName;
+  char *rgpszHpkpValue[2];
+
+};

@@ -1,0 +1,28 @@
+// Структура: IShellLibraryVtbl
+// Полей: 20
+// Строки в оригинале: 41076-41098
+struct IShellLibraryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellLibrary *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellLibrary *This);
+  ULONG (__stdcall *Release)(IShellLibrary *This);
+  HRESULT (__stdcall *LoadLibraryFromItem)(IShellLibrary *This, IShellItem *psiLibrary, DWORD grfMode);
+  HRESULT (__stdcall *LoadLibraryFromKnownFolder)(IShellLibrary *This, const KNOWNFOLDERID *const kfidLibrary, DWORD grfMode);
+  HRESULT (__stdcall *AddFolder)(IShellLibrary *This, IShellItem *psiLocation);
+  HRESULT (__stdcall *RemoveFolder)(IShellLibrary *This, IShellItem *psiLocation);
+  HRESULT (__stdcall *GetFolders)(IShellLibrary *This, LIBRARYFOLDERFILTER lff, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *ResolveFolder)(IShellLibrary *This, IShellItem *psiFolderToResolve, DWORD dwTimeout, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetDefaultSaveFolder)(IShellLibrary *This, DEFAULTSAVEFOLDERTYPE dsft, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *SetDefaultSaveFolder)(IShellLibrary *This, DEFAULTSAVEFOLDERTYPE dsft, IShellItem *psi);
+  HRESULT (__stdcall *GetOptions)(IShellLibrary *This, LIBRARYOPTIONFLAGS *plofOptions);
+  HRESULT (__stdcall *SetOptions)(IShellLibrary *This, LIBRARYOPTIONFLAGS lofMask, LIBRARYOPTIONFLAGS lofOptions);
+  HRESULT (__stdcall *GetFolderType)(IShellLibrary *This, FOLDERTYPEID *pftid);
+  HRESULT (__stdcall *SetFolderType)(IShellLibrary *This, const FOLDERTYPEID *const ftid);
+  HRESULT (__stdcall *GetIcon)(IShellLibrary *This, LPWSTR *ppszIcon);
+  HRESULT (__stdcall *SetIcon)(IShellLibrary *This, LPCWSTR pszIcon);
+  HRESULT (__stdcall *Commit)(IShellLibrary *This);
+  HRESULT (__stdcall *Save)(IShellLibrary *This, IShellItem *psiFolderToSaveIn, LPCWSTR pszLibraryName, LIBRARYSAVEFLAGS lsf, IShellItem **ppsiSavedTo);
+  HRESULT (__stdcall *SaveInKnownFolder)(IShellLibrary *This, const KNOWNFOLDERID *const kfidToSaveIn, LPCWSTR pszLibraryName, LIBRARYSAVEFLAGS lsf, IShellItem **ppsiSavedTo);
+
+};

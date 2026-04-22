@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_ROOT_SILO_INFORMATION
+// Полей: 2
+// Строки в оригинале: 106915-106919
+struct _SYSTEM_ROOT_SILO_INFORMATION
+{
+
+  unsigned int NumberOfSilos;
+  unsigned int SiloIdList[1];
+
+};

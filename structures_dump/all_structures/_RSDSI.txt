@@ -1,0 +1,12 @@
+// Структура: _RSDSI
+// Полей: 4
+// Строки в оригинале: 285367-285373
+struct _RSDSI
+{
+
+  unsigned int dwSig;
+  _GUID guidSig;
+  unsigned int age;
+  char szPdb[780];
+
+};

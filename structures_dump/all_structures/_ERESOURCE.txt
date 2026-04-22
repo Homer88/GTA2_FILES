@@ -1,0 +1,21 @@
+// Структура: _ERESOURCE
+// Полей: 13
+// Строки в оригинале: 16631-16646
+struct _ERESOURCE
+{
+
+  _LIST_ENTRY SystemResourcesList;
+  _OWNER_ENTRY *OwnerTable;
+  __int16 ActiveCount;
+  $2E567C5A962EB36D2DAF6DCF872AEE7F ___u3;
+  void *SharedWaiters;
+  void *ExclusiveWaiters;
+  _OWNER_ENTRY OwnerEntry;
+  unsigned int ActiveEntries;
+  unsigned int ContentionCount;
+  unsigned int NumberOfSharedWaiters;
+  unsigned int NumberOfExclusiveWaiters;
+  $B8D4EB9E6E3D1A926634FE9A5064A2BB ___u11;
+  unsigned int SpinLock;
+
+};

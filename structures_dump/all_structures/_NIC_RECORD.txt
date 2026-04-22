@@ -1,0 +1,21 @@
+// Структура: _NIC_RECORD
+// Полей: 13
+// Строки в оригинале: 313380-313395
+struct _NIC_RECORD
+{
+
+  wchar_t NICName[256];
+  unsigned int Index;
+  unsigned int PhysicalAddrLen;
+  wchar_t PhysicalAddr[8];
+  unsigned int Size;
+  int IpAddress;
+  int SubnetMask;
+  int DhcpServer;
+  int Gateway;
+  int PrimaryWinsServer;
+  int SecondaryWinsServer;
+  int DnsServer[4];
+  unsigned int Data;
+
+};

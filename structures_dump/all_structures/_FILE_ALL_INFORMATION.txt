@@ -1,0 +1,17 @@
+// Структура: _FILE_ALL_INFORMATION
+// Полей: 9
+// Строки в оригинале: 94045-94056
+struct _FILE_ALL_INFORMATION
+{
+
+  _FILE_BASIC_INFORMATION BasicInformation;
+  _FILE_STANDARD_INFORMATION StandardInformation;
+  _FILE_INTERNAL_INFORMATION InternalInformation;
+  _FILE_EA_INFORMATION EaInformation;
+  _FILE_ACCESS_INFORMATION AccessInformation;
+  _FILE_POSITION_INFORMATION PositionInformation;
+  _FILE_MODE_INFORMATION ModeInformation;
+  _FILE_ALIGNMENT_INFORMATION AlignmentInformation;
+  _FILE_NAME_INFORMATION NameInformation;
+
+};

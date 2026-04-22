@@ -1,0 +1,11 @@
+// Структура: _CERT_BIOMETRIC_DATA
+// Полей: 3
+// Строки в оригинале: 94407-94412
+struct _CERT_BIOMETRIC_DATA
+{
+
+  unsigned int dwTypeOfBiometricDataChoice;
+  $23183F715972D75F676738B275E20F89 ___u1;
+  _CERT_HASHED_URL HashedUrl;
+
+};

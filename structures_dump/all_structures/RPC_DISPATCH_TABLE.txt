@@ -1,0 +1,11 @@
+// Структура: RPC_DISPATCH_TABLE
+// Полей: 3
+// Строки в оригинале: 86515-86520
+struct RPC_DISPATCH_TABLE
+{
+
+  unsigned int DispatchTableCount;
+  void (__stdcall **DispatchTable)(_RPC_MESSAGE *);
+  int Reserved;
+
+};

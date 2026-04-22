@@ -1,0 +1,10 @@
+// Структура: _wireSAFEARR_DISPATCH
+// Полей: 2
+// Строки в оригинале: 83733-83737
+struct _wireSAFEARR_DISPATCH
+{
+
+  unsigned int Size;
+  IDispatch **apDispatch;
+
+};

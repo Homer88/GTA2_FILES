@@ -1,0 +1,12 @@
+// Структура: DISPLAYCONFIG_TARGET_PREFERRED_MODE
+// Полей: 4
+// Строки в оригинале: 112881-112887
+struct DISPLAYCONFIG_TARGET_PREFERRED_MODE
+{
+
+  DISPLAYCONFIG_DEVICE_INFO_HEADER header;
+  unsigned int width;
+  unsigned int height;
+  DISPLAYCONFIG_TARGET_MODE targetMode;
+
+};

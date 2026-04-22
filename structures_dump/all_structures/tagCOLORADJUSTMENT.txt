@@ -1,0 +1,20 @@
+// Структура: tagCOLORADJUSTMENT
+// Полей: 12
+// Строки в оригинале: 93025-93039
+struct tagCOLORADJUSTMENT
+{
+
+  unsigned __int16 caSize;
+  unsigned __int16 caFlags;
+  unsigned __int16 caIlluminantIndex;
+  unsigned __int16 caRedGamma;
+  unsigned __int16 caGreenGamma;
+  unsigned __int16 caBlueGamma;
+  unsigned __int16 caReferenceBlack;
+  unsigned __int16 caReferenceWhite;
+  __int16 caContrast;
+  __int16 caBrightness;
+  __int16 caColorfulness;
+  __int16 caRedGreenTint;
+
+};

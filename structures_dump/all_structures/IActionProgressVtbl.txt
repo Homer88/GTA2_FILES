@@ -1,0 +1,17 @@
+// Структура: IActionProgressVtbl
+// Полей: 9
+// Строки в оригинале: 35608-35619
+struct IActionProgressVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IActionProgress *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IActionProgress *This);
+  ULONG (__stdcall *Release)(IActionProgress *This);
+  HRESULT (__stdcall *Begin)(IActionProgress *This, SPACTION action, SPBEGINF flags);
+  HRESULT (__stdcall *UpdateProgress)(IActionProgress *This, ULONGLONG ulCompleted, ULONGLONG ulTotal);
+  HRESULT (__stdcall *UpdateText)(IActionProgress *This, SPTEXT sptext, LPCWSTR pszText, BOOL fMayCompact);
+  HRESULT (__stdcall *QueryCancel)(IActionProgress *This, BOOL *pfCancelled);
+  HRESULT (__stdcall *ResetCancel)(IActionProgress *This);
+  HRESULT (__stdcall *End)(IActionProgress *This);
+
+};

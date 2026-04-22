@@ -1,0 +1,9 @@
+// Структура: _BCRYPT_KEY_BLOB
+// Полей: 1
+// Строки в оригинале: 97471-97474
+struct _BCRYPT_KEY_BLOB
+{
+
+  unsigned int Magic;
+
+};

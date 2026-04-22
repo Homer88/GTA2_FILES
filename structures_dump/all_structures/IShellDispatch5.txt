@@ -1,0 +1,9 @@
+// Структура: IShellDispatch5
+// Полей: 1
+// Строки в оригинале: 30742-30745
+struct IShellDispatch5
+{
+
+  struct IShellDispatch5Vtbl *lpVtbl;
+
+};

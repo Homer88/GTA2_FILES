@@ -1,0 +1,9 @@
+// Структура: IStream
+// Полей: 1
+// Строки в оригинале: 23937-23940
+struct IStream
+{
+
+  struct IStreamVtbl *lpVtbl;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IPhraseSink
+// Полей: 1
+// Строки в оригинале: 36646-36649
+struct IPhraseSink
+{
+
+  struct IPhraseSinkVtbl *lpVtbl;
+
+};

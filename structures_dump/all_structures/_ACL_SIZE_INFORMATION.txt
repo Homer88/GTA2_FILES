@@ -1,0 +1,11 @@
+// Структура: _ACL_SIZE_INFORMATION
+// Полей: 3
+// Строки в оригинале: 97257-97262
+struct _ACL_SIZE_INFORMATION
+{
+
+  unsigned int AceCount;
+  unsigned int AclBytesInUse;
+  unsigned int AclBytesFree;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _FILE_LEVEL_TRIM
+// Полей: 3
+// Строки в оригинале: 97719-97724
+struct _FILE_LEVEL_TRIM
+{
+
+  unsigned int Key;
+  unsigned int NumRanges;
+  _FILE_LEVEL_TRIM_RANGE Ranges[1];
+
+};

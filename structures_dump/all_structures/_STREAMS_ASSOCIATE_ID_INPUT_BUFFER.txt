@@ -1,0 +1,10 @@
+// Структура: _STREAMS_ASSOCIATE_ID_INPUT_BUFFER
+// Полей: 2
+// Строки в оригинале: 87710-87714
+struct _STREAMS_ASSOCIATE_ID_INPUT_BUFFER
+{
+
+  unsigned int Flags;
+  unsigned int StreamId;
+
+};

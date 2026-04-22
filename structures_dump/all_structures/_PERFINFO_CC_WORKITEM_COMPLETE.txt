@@ -1,0 +1,9 @@
+// Структура: _PERFINFO_CC_WORKITEM_COMPLETE
+// Полей: 1
+// Строки в оригинале: 310846-310849
+struct _PERFINFO_CC_WORKITEM_COMPLETE
+{
+
+  unsigned int WorkItemKey;
+
+};

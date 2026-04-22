@@ -1,0 +1,13 @@
+// Структура: RTL_ACE_DATA
+// Полей: 5
+// Строки в оригинале: 109093-109100
+struct RTL_ACE_DATA
+{
+
+  unsigned __int8 AceType;
+  unsigned __int8 InheritFlags;
+  unsigned __int8 AceFlags;
+  unsigned int Mask;
+  void **Sid;
+
+};

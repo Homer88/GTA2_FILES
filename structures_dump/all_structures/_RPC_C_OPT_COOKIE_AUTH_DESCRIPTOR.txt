@@ -1,0 +1,10 @@
+// Структура: _RPC_C_OPT_COOKIE_AUTH_DESCRIPTOR
+// Полей: 2
+// Строки в оригинале: 81820-81824
+struct _RPC_C_OPT_COOKIE_AUTH_DESCRIPTOR
+{
+
+  unsigned int BufferSize;
+  char *Buffer;
+
+};

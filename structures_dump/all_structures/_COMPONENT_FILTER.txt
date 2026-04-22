@@ -1,0 +1,9 @@
+// Структура: _COMPONENT_FILTER
+// Полей: 1
+// Строки в оригинале: 108825-108828
+struct _COMPONENT_FILTER
+{
+
+  unsigned int ComponentFlags;
+
+};

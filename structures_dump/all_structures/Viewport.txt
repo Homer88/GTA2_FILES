@@ -1,0 +1,11 @@
+// Структура: Viewport
+// Полей: 3
+// Строки в оригинале: 6871-6876
+struct Viewport
+{
+
+  int Data1;
+  __int16 Data2;
+  Viewport *NextElement;
+
+};

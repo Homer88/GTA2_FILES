@@ -1,0 +1,9 @@
+// Структура: IHTMLLocation
+// Полей: 1
+// Строки в оригинале: 38471-38474
+struct IHTMLLocation
+{
+
+  struct IHTMLLocationVtbl *lpVtbl;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _RTL_UMS_SCHEDULER_STARTUP_INFO
+// Полей: 4
+// Строки в оригинале: 108870-108876
+struct _RTL_UMS_SCHEDULER_STARTUP_INFO
+{
+
+  unsigned int UmsVersion;
+  _RTL_UMS_COMPLETION_LIST *CompletionList;
+  void (__stdcall *SchedulerProc)(_RTL_UMS_SCHEDULER_REASON, unsigned int, void *);
+  void *SchedulerParam;
+
+};

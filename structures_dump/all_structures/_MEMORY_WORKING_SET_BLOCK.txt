@@ -1,0 +1,13 @@
+// Структура: _MEMORY_WORKING_SET_BLOCK
+// Полей: 5
+// Строки в оригинале: 90297-90304
+struct _MEMORY_WORKING_SET_BLOCK
+{
+
+  unsigned __int32 Protection : 5;
+  unsigned __int32 ShareCount : 3;
+  unsigned __int32 Shared : 1;
+  unsigned __int32 Node : 3;
+  unsigned __int32 VirtualPage : 20;
+
+};

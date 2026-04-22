@@ -1,0 +1,21 @@
+// Структура: IRichEditOleCallbackVtbl
+// Полей: 13
+// Строки в оригинале: 32976-32991
+struct IRichEditOleCallbackVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRichEditOleCallback *This, const IID *const riid, LPVOID *lplpObj);
+  ULONG (__stdcall *AddRef)(IRichEditOleCallback *This);
+  ULONG (__stdcall *Release)(IRichEditOleCallback *This);
+  HRESULT (__stdcall *GetNewStorage)(IRichEditOleCallback *This, LPSTORAGE *lplpstg);
+  HRESULT (__stdcall *GetInPlaceContext)(IRichEditOleCallback *This, LPOLEINPLACEFRAME *lplpFrame, LPOLEINPLACEUIWINDOW *lplpDoc, LPOLEINPLACEFRAMEINFO lpFrameInfo);
+  HRESULT (__stdcall *ShowContainerUI)(IRichEditOleCallback *This, BOOL fShow);
+  HRESULT (__stdcall *QueryInsertObject)(IRichEditOleCallback *This, LPCLSID lpclsid, LPSTORAGE lpstg, LONG cp);
+  HRESULT (__stdcall *DeleteObject)(IRichEditOleCallback *This, LPOLEOBJECT lpoleobj);
+  HRESULT (__stdcall *QueryAcceptData)(IRichEditOleCallback *This, LPDATAOBJECT lpdataobj, CLIPFORMAT *lpcfFormat, DWORD reco, BOOL fReally, HANDLE hMetaPict);
+  HRESULT (__stdcall *ContextSensitiveHelp)(IRichEditOleCallback *This, BOOL fEnterMode);
+  HRESULT (__stdcall *GetClipboardData)(IRichEditOleCallback *This, CHARRANGE *lpchrg, DWORD reco, LPDATAOBJECT *lplpdataobj);
+  HRESULT (__stdcall *GetDragDropEffect)(IRichEditOleCallback *This, BOOL fDrag, DWORD grfKeyState, LPDWORD pdwEffect);
+  HRESULT (__stdcall *GetContextMenu)(IRichEditOleCallback *This, WORD seltype, LPOLEOBJECT lpoleobj, CHARRANGE *lpchrg, HMENU *lphmenu);
+
+};

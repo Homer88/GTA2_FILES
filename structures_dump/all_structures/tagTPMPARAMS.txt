@@ -1,0 +1,10 @@
+// Структура: tagTPMPARAMS
+// Полей: 2
+// Строки в оригинале: 110495-110499
+struct tagTPMPARAMS
+{
+
+  unsigned int cbSize;
+  tagRECT rcExclude;
+
+};

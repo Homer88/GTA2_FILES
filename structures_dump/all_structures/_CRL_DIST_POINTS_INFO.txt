@@ -1,0 +1,10 @@
+// Структура: _CRL_DIST_POINTS_INFO
+// Полей: 2
+// Строки в оригинале: 91457-91461
+struct _CRL_DIST_POINTS_INFO
+{
+
+  unsigned int cDistPoint;
+  _CRL_DIST_POINT *rgDistPoint;
+
+};

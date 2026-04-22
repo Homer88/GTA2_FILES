@@ -1,0 +1,23 @@
+// Структура: _CMSG_CONTENT_ENCRYPT_INFO
+// Полей: 15
+// Строки в оригинале: 87805-87822
+struct _CMSG_CONTENT_ENCRYPT_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int hCryptProv;
+  _CRYPT_ALGORITHM_IDENTIFIER ContentEncryptionAlgorithm;
+  void *pvEncryptionAuxInfo;
+  unsigned int cRecipients;
+  _CMSG_RECIPIENT_ENCODE_INFO *rgCmsRecipients;
+  void *(__stdcall *pfnAlloc)(unsigned int);
+  void (__stdcall *pfnFree)(void *);
+  unsigned int dwEncryptFlags;
+  $0F1490AD5F7A3D17ACD65F4EF8ACD5E5 ___u9;
+  unsigned int dwFlags;
+  int fCNG;
+  unsigned __int8 *pbCNGContentEncryptKeyObject;
+  unsigned __int8 *pbContentEncryptKey;
+  unsigned int cbContentEncryptKey;
+
+};

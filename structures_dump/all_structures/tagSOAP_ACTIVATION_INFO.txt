@@ -1,0 +1,15 @@
+// Структура: tagSOAP_ACTIVATION_INFO
+// Полей: 7
+// Строки в оригинале: 110890-110899
+struct tagSOAP_ACTIVATION_INFO
+{
+
+  int bSoapActivated;
+  int lMode;
+  wchar_t *bstrVRoot;
+  wchar_t *bstrMailTo;
+  wchar_t *bstrAssemblyName;
+  wchar_t *bstrTypeName;
+  wchar_t *bstrBaseUrl;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _PROCESS_CHILD_PROCESS_INFORMATION
+// Полей: 3
+// Строки в оригинале: 88152-88157
+struct _PROCESS_CHILD_PROCESS_INFORMATION
+{
+
+  unsigned __int8 ProhibitChildProcesses;
+  unsigned __int8 AlwaysAllowSecureChildProcess;
+  unsigned __int8 AuditProhibitChildProcesses;
+
+};

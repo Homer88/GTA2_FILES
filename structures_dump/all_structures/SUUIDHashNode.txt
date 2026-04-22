@@ -1,0 +1,10 @@
+// Структура: SUUIDHashNode
+// Полей: 2
+// Строки в оригинале: 62621-62625
+struct SUUIDHashNode
+{
+
+  SHashChain chain;
+  _GUID key;
+
+};

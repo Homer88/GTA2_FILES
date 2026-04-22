@@ -1,0 +1,11 @@
+// Структура: _WHEA_IPF_CMC_DESCRIPTOR
+// Полей: 3
+// Строки в оригинале: 19843-19848
+struct _WHEA_IPF_CMC_DESCRIPTOR
+{
+
+  unsigned __int16 Type;
+  unsigned __int8 Enabled;
+  unsigned __int8 Reserved;
+
+};

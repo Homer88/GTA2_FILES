@@ -1,0 +1,14 @@
+// Структура: _SERVERSILO_BASIC_INFORMATION
+// Полей: 6
+// Строки в оригинале: 93814-93822
+struct _SERVERSILO_BASIC_INFORMATION
+{
+
+  unsigned int ServiceSessionId;
+  _SERVERSILO_STATE State;
+  int ExitStatus;
+  unsigned __int8 IsDownlevelContainer;
+  void *ApiSetSchema;
+  void *HostApiSetSchema;
+
+};

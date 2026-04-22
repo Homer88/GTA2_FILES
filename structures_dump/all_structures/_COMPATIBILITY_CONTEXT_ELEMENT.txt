@@ -1,0 +1,11 @@
+// Структура: _COMPATIBILITY_CONTEXT_ELEMENT
+// Полей: 3
+// Строки в оригинале: 80339-80344
+struct _COMPATIBILITY_CONTEXT_ELEMENT
+{
+
+  _GUID Id;
+  ACTCTX_COMPATIBILITY_ELEMENT_TYPE Type;
+  unsigned __int64 MaxVersionTested;
+
+};

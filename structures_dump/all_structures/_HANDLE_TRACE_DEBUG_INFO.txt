@@ -1,0 +1,14 @@
+// Структура: _HANDLE_TRACE_DEBUG_INFO
+// Полей: 6
+// Строки в оригинале: 19304-19312
+struct _HANDLE_TRACE_DEBUG_INFO
+{
+
+  int RefCount;
+  unsigned int TableSize;
+  unsigned int BitMaskFlags;
+  _FAST_MUTEX CloseCompactionLock;
+  unsigned int CurrentStackIndex;
+  _HANDLE_TRACE_DB_ENTRY TraceDb[1];
+
+};

@@ -1,0 +1,14 @@
+// Структура: _JOBOBJECT_EXTENDED_LIMIT_INFORMATION
+// Полей: 6
+// Строки в оригинале: 80642-80650
+struct _JOBOBJECT_EXTENDED_LIMIT_INFORMATION
+{
+
+  _JOBOBJECT_BASIC_LIMIT_INFORMATION BasicLimitInformation;
+  _IO_COUNTERS IoInfo;
+  unsigned int ProcessMemoryLimit;
+  unsigned int JobMemoryLimit;
+  unsigned int PeakProcessMemoryUsed;
+  unsigned int PeakJobMemoryUsed;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _CERT_USAGE_MATCH
+// Полей: 2
+// Строки в оригинале: 80909-80913
+struct _CERT_USAGE_MATCH
+{
+
+  unsigned int dwType;
+  _CTL_USAGE Usage;
+
+};

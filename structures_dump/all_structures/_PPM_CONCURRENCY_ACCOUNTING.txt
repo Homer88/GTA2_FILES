@@ -1,0 +1,14 @@
+// Структура: _PPM_CONCURRENCY_ACCOUNTING
+// Полей: 6
+// Строки в оригинале: 15114-15122
+struct _PPM_CONCURRENCY_ACCOUNTING
+{
+
+  unsigned int Lock;
+  unsigned int Processors;
+  unsigned int ActiveProcessors;
+  unsigned __int64 LastUpdateTime;
+  unsigned __int64 TotalTime;
+  unsigned __int64 AccumulatedTime[1];
+
+};

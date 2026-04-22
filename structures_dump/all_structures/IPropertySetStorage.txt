@@ -1,0 +1,9 @@
+// Структура: IPropertySetStorage
+// Полей: 1
+// Строки в оригинале: 37845-37848
+struct IPropertySetStorage
+{
+
+  struct IPropertySetStorageVtbl *lpVtbl;
+
+};

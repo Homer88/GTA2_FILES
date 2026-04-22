@@ -1,0 +1,13 @@
+// Структура: tagCOLORCORRECTPALETTE
+// Полей: 5
+// Строки в оригинале: 96987-96994
+struct tagCOLORCORRECTPALETTE
+{
+
+  tagEMR emr;
+  unsigned int ihPalette;
+  unsigned int nFirstEntry;
+  unsigned int nPalEntries;
+  unsigned int nReserved;
+
+};

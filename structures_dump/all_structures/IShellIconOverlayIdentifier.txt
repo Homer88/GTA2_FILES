@@ -1,0 +1,9 @@
+// Структура: IShellIconOverlayIdentifier
+// Полей: 1
+// Строки в оригинале: 40331-40334
+struct IShellIconOverlayIdentifier
+{
+
+  struct IShellIconOverlayIdentifierVtbl *lpVtbl;
+
+};

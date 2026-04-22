@@ -1,0 +1,14 @@
+// Структура: _TRIVERTEX
+// Полей: 6
+// Строки в оригинале: 80385-80393
+struct _TRIVERTEX
+{
+
+  int x;
+  int y;
+  unsigned __int16 Red;
+  unsigned __int16 Green;
+  unsigned __int16 Blue;
+  unsigned __int16 Alpha;
+
+};

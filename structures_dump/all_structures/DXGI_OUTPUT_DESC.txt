@@ -1,0 +1,13 @@
+// Структура: DXGI_OUTPUT_DESC
+// Полей: 5
+// Строки в оригинале: 352182-352189
+struct DXGI_OUTPUT_DESC
+{
+
+  WCHAR DeviceName[32];
+  RECT DesktopCoordinates;
+  BOOL AttachedToDesktop;
+  DXGI_MODE_ROTATION Rotation;
+  HMONITOR Monitor;
+
+};

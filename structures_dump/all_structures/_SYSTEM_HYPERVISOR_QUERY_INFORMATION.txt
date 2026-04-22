@@ -1,0 +1,14 @@
+// Структура: _SYSTEM_HYPERVISOR_QUERY_INFORMATION
+// Полей: 6
+// Строки в оригинале: 92836-92844
+struct _SYSTEM_HYPERVISOR_QUERY_INFORMATION
+{
+
+  unsigned __int8 HypervisorConnected;
+  unsigned __int8 HypervisorDebuggingEnabled;
+  unsigned __int8 HypervisorPresent;
+  unsigned __int8 HypervisorSchedulerType;
+  unsigned __int8 Spare0[4];
+  unsigned __int64 EnabledEnlightenments;
+
+};

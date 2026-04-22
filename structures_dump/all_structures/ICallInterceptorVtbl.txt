@@ -1,0 +1,17 @@
+// Структура: ICallInterceptorVtbl
+// Полей: 9
+// Строки в оригинале: 182646-182657
+struct ICallInterceptorVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICallInterceptor *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICallInterceptor *This);
+  ULONG (__stdcall *Release)(ICallInterceptor *This);
+  HRESULT (__stdcall *CallIndirect)(ICallInterceptor *This, HRESULT *phrReturn, ULONG iMethod, void *pvArgs, ULONG *cbArgs);
+  HRESULT (__stdcall *GetMethodInfo)(ICallInterceptor *This, ULONG iMethod, CALLFRAMEINFO *pInfo, LPWSTR *pwszMethod);
+  HRESULT (__stdcall *GetStackSize)(ICallInterceptor *This, ULONG iMethod, ULONG *cbArgs);
+  HRESULT (__stdcall *GetIID)(ICallInterceptor *This, IID *piid, BOOL *pfDerivesFromIDispatch, ULONG *pcMethod, LPWSTR *pwszInterface);
+  HRESULT (__stdcall *RegisterSink)(ICallInterceptor *This, ICallFrameEvents *psink);
+  HRESULT (__stdcall *GetRegisteredSink)(ICallInterceptor *This, ICallFrameEvents **ppsink);
+
+};

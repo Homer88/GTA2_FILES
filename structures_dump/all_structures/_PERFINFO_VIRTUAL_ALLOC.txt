@@ -1,0 +1,12 @@
+// Структура: _PERFINFO_VIRTUAL_ALLOC
+// Полей: 4
+// Строки в оригинале: 313276-313282
+struct _PERFINFO_VIRTUAL_ALLOC
+{
+
+  void *CapturedBase;
+  unsigned int CapturedRegionSize;
+  unsigned int ProcessId;
+  unsigned int Flags;
+
+};

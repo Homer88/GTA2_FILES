@@ -1,0 +1,12 @@
+// Структура: _PS_PROCESS_WAKE_INFORMATION
+// Полей: 4
+// Строки в оригинале: 18129-18135
+struct _PS_PROCESS_WAKE_INFORMATION
+{
+
+  unsigned __int64 NotificationChannel;
+  unsigned int WakeCounters[7];
+  _JOBOBJECT_WAKE_FILTER WakeFilter;
+  unsigned int NoWakeCounter;
+
+};

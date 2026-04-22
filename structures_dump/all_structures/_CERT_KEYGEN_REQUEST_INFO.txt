@@ -1,0 +1,11 @@
+// Структура: _CERT_KEYGEN_REQUEST_INFO
+// Полей: 3
+// Строки в оригинале: 87921-87926
+struct _CERT_KEYGEN_REQUEST_INFO
+{
+
+  unsigned int dwVersion;
+  _CERT_PUBLIC_KEY_INFO SubjectPublicKeyInfo;
+  wchar_t *pwszChallengeString;
+
+};

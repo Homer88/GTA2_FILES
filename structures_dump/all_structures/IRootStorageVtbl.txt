@@ -1,0 +1,12 @@
+// Структура: IRootStorageVtbl
+// Полей: 4
+// Строки в оригинале: 351405-351411
+struct IRootStorageVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRootStorage *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRootStorage *This);
+  ULONG (__stdcall *Release)(IRootStorage *This);
+  HRESULT (__stdcall *SwitchToFile)(IRootStorage *This, LPOLESTR pszFile);
+
+};

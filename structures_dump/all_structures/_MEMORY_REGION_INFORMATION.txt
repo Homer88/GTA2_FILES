@@ -1,0 +1,15 @@
+// Структура: _MEMORY_REGION_INFORMATION
+// Полей: 7
+// Строки в оригинале: 112057-112066
+struct _MEMORY_REGION_INFORMATION
+{
+
+  void *AllocationBase;
+  unsigned int AllocationProtect;
+  $CDBB85AC3FF2AAF0363755E05C07160D ___u2;
+  unsigned int RegionSize;
+  unsigned int CommitSize;
+  unsigned int PartitionId;
+  unsigned int NodePreference;
+
+};

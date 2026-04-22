@@ -1,0 +1,13 @@
+// Структура: IInterfaceRelatedVtbl
+// Полей: 5
+// Строки в оригинале: 182611-182618
+struct IInterfaceRelatedVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IInterfaceRelated *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IInterfaceRelated *This);
+  ULONG (__stdcall *Release)(IInterfaceRelated *This);
+  HRESULT (__stdcall *SetIID)(IInterfaceRelated *This, const IID *const iid);
+  HRESULT (__stdcall *GetIID)(IInterfaceRelated *This, IID *piid);
+
+};

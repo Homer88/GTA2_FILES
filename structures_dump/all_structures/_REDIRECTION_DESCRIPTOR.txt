@@ -1,0 +1,11 @@
+// Структура: _REDIRECTION_DESCRIPTOR
+// Полей: 3
+// Строки в оригинале: 100487-100492
+struct _REDIRECTION_DESCRIPTOR
+{
+
+  unsigned int Version;
+  unsigned int FunctionCount;
+  const _REDIRECTION_FUNCTION_DESCRIPTOR *Redirections;
+
+};

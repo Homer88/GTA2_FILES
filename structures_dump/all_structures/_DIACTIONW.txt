@@ -1,0 +1,15 @@
+// Структура: _DIACTIONW
+// Полей: 7
+// Строки в оригинале: 29319-29328
+struct _DIACTIONW
+{
+
+  UINT_PTR uAppData;
+  DWORD dwSemantic;
+  DWORD dwFlags;
+  union
+  {
+    LPCWSTR lptszActionName;
+    UINT uResIdString;
+  
+};

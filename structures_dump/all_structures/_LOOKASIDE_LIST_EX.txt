@@ -1,0 +1,9 @@
+// Структура: _LOOKASIDE_LIST_EX
+// Полей: 1
+// Строки в оригинале: 14735-14738
+struct _LOOKASIDE_LIST_EX
+{
+
+  _GENERAL_LOOKASIDE_POOL L;
+
+};

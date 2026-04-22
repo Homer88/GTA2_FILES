@@ -1,0 +1,14 @@
+// Структура: _HEAP_INFORMATION
+// Полей: 6
+// Строки в оригинале: 89255-89263
+struct _HEAP_INFORMATION
+{
+
+  unsigned int Address;
+  unsigned int Mode;
+  unsigned int ReserveSize;
+  unsigned int CommitSize;
+  unsigned int FirstRegionInformationOffset;
+  unsigned int NextHeapInformationOffset;
+
+};

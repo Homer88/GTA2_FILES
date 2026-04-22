@@ -1,0 +1,15 @@
+// Структура: _KWAIT_BLOCK
+// Полей: 7
+// Строки в оригинале: 14287-14296
+struct _KWAIT_BLOCK
+{
+
+  _LIST_ENTRY WaitListEntry;
+  unsigned __int8 WaitType;
+  volatile unsigned __int8 BlockState;
+  unsigned __int16 WaitKey;
+  $7D6D3E8091A38D266708E3C61051575E ___u4;
+  void *Object;
+  void *SparePtr;
+
+};

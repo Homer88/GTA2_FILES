@@ -1,0 +1,12 @@
+// Структура: _SEC_NEGOTIATION_INFO
+// Полей: 4
+// Строки в оригинале: 325742-325748
+struct _SEC_NEGOTIATION_INFO
+{
+
+  unsigned int Size;
+  unsigned int NameLength;
+  wchar_t *Name;
+  void *Reserved;
+
+};

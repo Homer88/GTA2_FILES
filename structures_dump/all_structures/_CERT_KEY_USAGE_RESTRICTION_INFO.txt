@@ -1,0 +1,11 @@
+// Структура: _CERT_KEY_USAGE_RESTRICTION_INFO
+// Полей: 3
+// Строки в оригинале: 110521-110526
+struct _CERT_KEY_USAGE_RESTRICTION_INFO
+{
+
+  unsigned int cCertPolicyId;
+  _CERT_POLICY_ID *rgCertPolicyId;
+  _CRYPT_BIT_BLOB RestrictedKeyUsage;
+
+};

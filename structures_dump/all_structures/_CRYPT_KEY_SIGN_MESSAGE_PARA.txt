@@ -1,0 +1,15 @@
+// Структура: _CRYPT_KEY_SIGN_MESSAGE_PARA
+// Полей: 7
+// Строки в оригинале: 110956-110965
+struct _CRYPT_KEY_SIGN_MESSAGE_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int dwMsgAndCertEncodingType;
+  $2648935626D60F3A93F830EF5D884CB4 ___u2;
+  unsigned int dwKeySpec;
+  _CRYPT_ALGORITHM_IDENTIFIER HashAlgorithm;
+  void *pvHashAuxInfo;
+  _CRYPT_ALGORITHM_IDENTIFIER PubKeyAlgorithm;
+
+};

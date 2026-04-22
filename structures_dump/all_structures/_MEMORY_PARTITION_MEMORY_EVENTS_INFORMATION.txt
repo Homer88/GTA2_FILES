@@ -1,0 +1,14 @@
+// Структура: _MEMORY_PARTITION_MEMORY_EVENTS_INFORMATION
+// Полей: 6
+// Строки в оригинале: 80742-80750
+struct _MEMORY_PARTITION_MEMORY_EVENTS_INFORMATION
+{
+
+  _MEMORY_PARTITION_MEMORY_EVENTS_INFORMATION::<unnamed_type_Flags> Flags;
+  unsigned int HandleAttributes;
+  unsigned int DesiredAccess;
+  void *LowCommitCondition;
+  void *HighCommitCondition;
+  void *MaximumCommitCondition;
+
+};

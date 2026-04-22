@@ -1,0 +1,11 @@
+// Структура: SpriteEntry
+// Полей: 3
+// Строки в оригинале: 7956-7961
+struct SpriteEntry
+{
+
+  void *ptr;
+  __int16 W;
+  __int16 pad;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _PROCESS_INFORMATION
+// Полей: 4
+// Строки в оригинале: 59151-59157
+struct _PROCESS_INFORMATION
+{
+
+  void *hProcess;
+  void *hThread;
+  unsigned int dwProcessId;
+  unsigned int dwThreadId;
+
+};

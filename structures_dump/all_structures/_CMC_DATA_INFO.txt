@@ -1,0 +1,16 @@
+// Структура: _CMC_DATA_INFO
+// Полей: 8
+// Строки в оригинале: 105106-105116
+struct _CMC_DATA_INFO
+{
+
+  unsigned int cTaggedAttribute;
+  _CMC_TAGGED_ATTRIBUTE *rgTaggedAttribute;
+  unsigned int cTaggedRequest;
+  _CMC_TAGGED_REQUEST *rgTaggedRequest;
+  unsigned int cTaggedContentInfo;
+  _CMC_TAGGED_CONTENT_INFO *rgTaggedContentInfo;
+  unsigned int cTaggedOtherMsg;
+  _CMC_TAGGED_OTHER_MSG *rgTaggedOtherMsg;
+
+};

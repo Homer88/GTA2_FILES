@@ -1,0 +1,21 @@
+// Структура: tagVS_FIXEDFILEINFO
+// Полей: 13
+// Строки в оригинале: 107364-107379
+struct tagVS_FIXEDFILEINFO
+{
+
+  unsigned int dwSignature;
+  unsigned int dwStrucVersion;
+  unsigned int dwFileVersionMS;
+  unsigned int dwFileVersionLS;
+  unsigned int dwProductVersionMS;
+  unsigned int dwProductVersionLS;
+  unsigned int dwFileFlagsMask;
+  unsigned int dwFileFlags;
+  unsigned int dwFileOS;
+  unsigned int dwFileType;
+  unsigned int dwFileSubtype;
+  unsigned int dwFileDateMS;
+  unsigned int dwFileDateLS;
+
+};

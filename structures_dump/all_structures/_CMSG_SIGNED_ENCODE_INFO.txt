@@ -1,0 +1,15 @@
+// Структура: _CMSG_SIGNED_ENCODE_INFO
+// Полей: 7
+// Строки в оригинале: 94965-94974
+struct _CMSG_SIGNED_ENCODE_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int cSigners;
+  _CMSG_SIGNER_ENCODE_INFO *rgSigners;
+  unsigned int cCertEncoded;
+  _CRYPTOAPI_BLOB *rgCertEncoded;
+  unsigned int cCrlEncoded;
+  _CRYPTOAPI_BLOB *rgCrlEncoded;
+
+};

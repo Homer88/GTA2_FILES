@@ -1,0 +1,14 @@
+// Структура: ActivatableClassRegInputEntry
+// Полей: 6
+// Строки в оригинале: 192582-192590
+struct ActivatableClassRegInputEntry
+{
+
+  const wchar_t *activatableClassId;
+  const wchar_t *packageFullName;
+  unsigned __int64 oxid;
+  _GUID ipid;
+  unsigned int dwFlags;
+  unsigned int ulServiceId;
+
+};

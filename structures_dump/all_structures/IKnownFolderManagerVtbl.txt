@@ -1,0 +1,21 @@
+// Структура: IKnownFolderManagerVtbl
+// Полей: 13
+// Строки в оригинале: 36279-36294
+struct IKnownFolderManagerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IKnownFolderManager *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IKnownFolderManager *This);
+  ULONG (__stdcall *Release)(IKnownFolderManager *This);
+  HRESULT (__stdcall *FolderIdFromCsidl)(IKnownFolderManager *This, int nCsidl, KNOWNFOLDERID *pfid);
+  HRESULT (__stdcall *FolderIdToCsidl)(IKnownFolderManager *This, const KNOWNFOLDERID *const rfid, int *pnCsidl);
+  HRESULT (__stdcall *GetFolderIds)(IKnownFolderManager *This, KNOWNFOLDERID **ppKFId, UINT *pCount);
+  HRESULT (__stdcall *GetFolder)(IKnownFolderManager *This, const KNOWNFOLDERID *const rfid, IKnownFolder **ppkf);
+  HRESULT (__stdcall *GetFolderByName)(IKnownFolderManager *This, LPCWSTR pszCanonicalName, IKnownFolder **ppkf);
+  HRESULT (__stdcall *RegisterFolder)(IKnownFolderManager *This, const KNOWNFOLDERID *const rfid, const KNOWNFOLDER_DEFINITION *pKFD);
+  HRESULT (__stdcall *UnregisterFolder)(IKnownFolderManager *This, const KNOWNFOLDERID *const rfid);
+  HRESULT (__stdcall *FindFolderFromPath)(IKnownFolderManager *This, LPCWSTR pszPath, FFFP_MODE mode, IKnownFolder **ppkf);
+  HRESULT (__stdcall *FindFolderFromIDList)(IKnownFolderManager *This, LPCITEMIDLIST pidl, IKnownFolder **ppkf);
+  HRESULT (__stdcall *Redirect)(IKnownFolderManager *This, const KNOWNFOLDERID *const rfid, HWND hwnd, KF_REDIRECT_FLAGS flags, LPCWSTR pszTargetPath, UINT cFolders, const KNOWNFOLDERID *pExclusion, LPWSTR *ppszError);
+
+};

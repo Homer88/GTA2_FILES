@@ -1,0 +1,13 @@
+// Структура: IInternetSecurityMgrSiteVtbl
+// Полей: 5
+// Строки в оригинале: 32448-32455
+struct IInternetSecurityMgrSiteVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IInternetSecurityMgrSite *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IInternetSecurityMgrSite *This);
+  ULONG (__stdcall *Release)(IInternetSecurityMgrSite *This);
+  HRESULT (__stdcall *GetWindow)(IInternetSecurityMgrSite *This, HWND *phwnd);
+  HRESULT (__stdcall *EnableModeless)(IInternetSecurityMgrSite *This, BOOL fEnable);
+
+};

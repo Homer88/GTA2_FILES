@@ -1,0 +1,32 @@
+// Структура: IPropertyDescriptionVtbl
+// Полей: 24
+// Строки в оригинале: 37471-37497
+struct IPropertyDescriptionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyDescription *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyDescription *This);
+  ULONG (__stdcall *Release)(IPropertyDescription *This);
+  HRESULT (__stdcall *GetPropertyKey)(IPropertyDescription *This, PROPERTYKEY *pkey);
+  HRESULT (__stdcall *GetCanonicalName)(IPropertyDescription *This, LPWSTR *ppszName);
+  HRESULT (__stdcall *GetPropertyType)(IPropertyDescription *This, VARTYPE *pvartype);
+  HRESULT (__stdcall *GetDisplayName)(IPropertyDescription *This, LPWSTR *ppszName);
+  HRESULT (__stdcall *GetEditInvitation)(IPropertyDescription *This, LPWSTR *ppszInvite);
+  HRESULT (__stdcall *GetTypeFlags)(IPropertyDescription *This, PROPDESC_TYPE_FLAGS mask, PROPDESC_TYPE_FLAGS *ppdtFlags);
+  HRESULT (__stdcall *GetViewFlags)(IPropertyDescription *This, PROPDESC_VIEW_FLAGS *ppdvFlags);
+  HRESULT (__stdcall *GetDefaultColumnWidth)(IPropertyDescription *This, UINT *pcxChars);
+  HRESULT (__stdcall *GetDisplayType)(IPropertyDescription *This, PROPDESC_DISPLAYTYPE *pdisplaytype);
+  HRESULT (__stdcall *GetColumnState)(IPropertyDescription *This, SHCOLSTATEF *pcsFlags);
+  HRESULT (__stdcall *GetGroupingRange)(IPropertyDescription *This, PROPDESC_GROUPING_RANGE *pgr);
+  HRESULT (__stdcall *GetRelativeDescriptionType)(IPropertyDescription *This, PROPDESC_RELATIVEDESCRIPTION_TYPE *prdt);
+  HRESULT (__stdcall *GetRelativeDescription)(IPropertyDescription *This, const PROPVARIANT *const propvar1, const PROPVARIANT *const propvar2, LPWSTR *ppszDesc1, LPWSTR *ppszDesc2);
+  HRESULT (__stdcall *GetSortDescription)(IPropertyDescription *This, PROPDESC_SORTDESCRIPTION *psd);
+  HRESULT (__stdcall *GetSortDescriptionLabel)(IPropertyDescription *This, BOOL fDescending, LPWSTR *ppszDescription);
+  HRESULT (__stdcall *GetAggregationType)(IPropertyDescription *This, PROPDESC_AGGREGATION_TYPE *paggtype);
+  HRESULT (__stdcall *GetConditionType)(IPropertyDescription *This, PROPDESC_CONDITION_TYPE *pcontype, CONDITION_OPERATION *popDefault);
+  HRESULT (__stdcall *GetEnumTypeList)(IPropertyDescription *This, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *CoerceToCanonicalValue)(IPropertyDescription *This, PROPVARIANT *ppropvar);
+  HRESULT (__stdcall *FormatForDisplay)(IPropertyDescription *This, const PROPVARIANT *const propvar, PROPDESC_FORMAT_FLAGS pdfFlags, LPWSTR *ppszDisplay);
+  HRESULT (__stdcall *IsValueCanonical)(IPropertyDescription *This, const PROPVARIANT *const propvar);
+
+};

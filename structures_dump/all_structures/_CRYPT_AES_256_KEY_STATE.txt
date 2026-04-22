@@ -1,0 +1,13 @@
+// Структура: _CRYPT_AES_256_KEY_STATE
+// Полей: 5
+// Строки в оригинале: 99997-100004
+struct _CRYPT_AES_256_KEY_STATE
+{
+
+  unsigned __int8 Key[32];
+  unsigned __int8 IV[16];
+  unsigned __int8 EncryptionState[15][16];
+  unsigned __int8 DecryptionState[15][16];
+  unsigned __int8 Feedback[16];
+
+};

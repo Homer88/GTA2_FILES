@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_WORKINGSET_INFORMATION
+// Полей: 2
+// Строки в оригинале: 311821-311825
+struct _PERFINFO_WORKINGSET_INFORMATION
+{
+
+  unsigned int Count;
+  _PERFINFO_WORKINGSET_ENTRY WsEntry[1];
+
+};

@@ -1,0 +1,16 @@
+// Структура: IEnumSTATURLVtbl
+// Полей: 8
+// Строки в оригинале: 39767-39777
+struct IEnumSTATURLVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumSTATURL *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumSTATURL *This);
+  ULONG (__stdcall *Release)(IEnumSTATURL *This);
+  HRESULT (__stdcall *Next)(IEnumSTATURL *This, ULONG celt, LPSTATURL rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumSTATURL *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumSTATURL *This);
+  HRESULT (__stdcall *Clone)(IEnumSTATURL *This, IEnumSTATURL **ppenum);
+  HRESULT (__stdcall *SetFilter)(IEnumSTATURL *This, LPCOLESTR poszFilter, DWORD dwFlags);
+
+};

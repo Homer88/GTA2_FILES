@@ -1,0 +1,14 @@
+// Структура: ISynchronizeVtbl
+// Полей: 6
+// Строки в оригинале: 182212-182220
+struct ISynchronizeVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISynchronize *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISynchronize *This);
+  ULONG (__stdcall *Release)(ISynchronize *This);
+  HRESULT (__stdcall *Wait)(ISynchronize *This, DWORD dwFlags, DWORD dwMilliseconds);
+  HRESULT (__stdcall *Signal)(ISynchronize *This);
+  HRESULT (__stdcall *Reset)(ISynchronize *This);
+
+};

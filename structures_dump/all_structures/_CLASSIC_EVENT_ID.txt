@@ -1,0 +1,11 @@
+// Структура: _CLASSIC_EVENT_ID
+// Полей: 3
+// Строки в оригинале: 312915-312920
+struct _CLASSIC_EVENT_ID
+{
+
+  _GUID EventGuid;
+  unsigned __int8 Type;
+  unsigned __int8 Reserved[7];
+
+};

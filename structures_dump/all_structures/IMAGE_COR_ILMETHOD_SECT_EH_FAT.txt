@@ -1,0 +1,10 @@
+// Структура: IMAGE_COR_ILMETHOD_SECT_EH_FAT
+// Полей: 2
+// Строки в оригинале: 332149-332153
+struct IMAGE_COR_ILMETHOD_SECT_EH_FAT
+{
+
+  IMAGE_COR_ILMETHOD_SECT_FAT SectFat;
+  IMAGE_COR_ILMETHOD_SECT_EH_CLAUSE_FAT Clauses[1];
+
+};

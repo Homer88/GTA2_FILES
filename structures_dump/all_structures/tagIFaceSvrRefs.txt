@@ -1,0 +1,12 @@
+// Структура: tagIFaceSvrRefs
+// Полей: 4
+// Строки в оригинале: 244533-244539
+struct tagIFaceSvrRefs
+{
+
+  IRpcStubBuffer *pRpcStub;
+  IRpcProxyBuffer *pRpcProxy;
+  void *pServer;
+  CCtxChnl *pCtxChnl;
+
+};

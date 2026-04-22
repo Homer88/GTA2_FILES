@@ -1,0 +1,11 @@
+// Структура: _THREAD_TLS_INFORMATION
+// Полей: 3
+// Строки в оригинале: 97370-97375
+struct _THREAD_TLS_INFORMATION
+{
+
+  unsigned int Flags;
+  $CC9FA6ECD9764F60F1C3EBBB2474BC6E ___u1;
+  void *ThreadId;
+
+};

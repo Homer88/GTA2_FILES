@@ -1,0 +1,11 @@
+// Структура: joyreguservalues_tag
+// Полей: 3
+// Строки в оригинале: 29702-29707
+struct joyreguservalues_tag
+{
+
+  DWORD dwTimeOut;
+  JOYRANGE jrvRanges;
+  JOYPOS jpDeadZone;
+
+};

@@ -1,0 +1,11 @@
+// Структура: tagMULTI_QI
+// Полей: 3
+// Строки в оригинале: 59381-59386
+struct tagMULTI_QI
+{
+
+  const _GUID *pIID;
+  IUnknown *pItf;
+  HRESULT hr;
+
+};

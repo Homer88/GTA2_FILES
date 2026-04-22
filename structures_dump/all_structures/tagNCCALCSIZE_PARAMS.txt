@@ -1,0 +1,10 @@
+// Структура: tagNCCALCSIZE_PARAMS
+// Полей: 2
+// Строки в оригинале: 85857-85861
+struct tagNCCALCSIZE_PARAMS
+{
+
+  tagRECT rgrc[3];
+  tagWINDOWPOS *lppos;
+
+};

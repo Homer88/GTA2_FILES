@@ -1,0 +1,13 @@
+// Структура: IActionProgressDialogVtbl
+// Полей: 5
+// Строки в оригинале: 35526-35533
+struct IActionProgressDialogVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IActionProgressDialog *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IActionProgressDialog *This);
+  ULONG (__stdcall *Release)(IActionProgressDialog *This);
+  HRESULT (__stdcall *Initialize)(IActionProgressDialog *This, SPINITF flags, LPCWSTR pszTitle, LPCWSTR pszCancel);
+  HRESULT (__stdcall *Stop)(IActionProgressDialog *This);
+
+};

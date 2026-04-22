@@ -1,0 +1,17 @@
+// Структура: tagXCtxMarshalData
+// Полей: 9
+// Строки в оригинале: 242721-242732
+struct tagXCtxMarshalData
+{
+
+  unsigned int dwSignature;
+  _GUID guidDataSecret;
+  _GUID iid;
+  _GUID moxid;
+  CStdWrapper *pWrapper;
+  IFaceEntry *pEntry;
+  IUnknown *pServer;
+  CObjectContext *pServerCtx;
+  unsigned int dwMarshalFlags;
+
+};

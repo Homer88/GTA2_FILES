@@ -1,0 +1,17 @@
+// Структура: IWICMetadataQueryWriterVtbl
+// Полей: 9
+// Строки в оригинале: 42207-42218
+struct IWICMetadataQueryWriterVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICMetadataQueryWriter *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICMetadataQueryWriter *This);
+  ULONG (__stdcall *Release)(IWICMetadataQueryWriter *This);
+  HRESULT (__stdcall *GetContainerFormat)(IWICMetadataQueryWriter *This, GUID *pguidContainerFormat);
+  HRESULT (__stdcall *GetLocation)(IWICMetadataQueryWriter *This, UINT cchMaxLength, WCHAR *wzNamespace, UINT *pcchActualLength);
+  HRESULT (__stdcall *GetMetadataByName)(IWICMetadataQueryWriter *This, LPCWSTR wzName, PROPVARIANT *pvarValue);
+  HRESULT (__stdcall *GetEnumerator)(IWICMetadataQueryWriter *This, IEnumString **ppIEnumString);
+  HRESULT (__stdcall *SetMetadataByName)(IWICMetadataQueryWriter *This, LPCWSTR wzName, const PROPVARIANT *pvarValue);
+  HRESULT (__stdcall *RemoveMetadataByName)(IWICMetadataQueryWriter *This, LPCWSTR wzName);
+
+};

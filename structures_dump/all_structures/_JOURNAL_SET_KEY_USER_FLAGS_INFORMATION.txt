@@ -1,0 +1,14 @@
+// Структура: _JOURNAL_SET_KEY_USER_FLAGS_INFORMATION
+// Полей: 6
+// Строки в оригинале: 89384-89392
+struct _JOURNAL_SET_KEY_USER_FLAGS_INFORMATION
+{
+
+  _JOURNAL_CHANGE_INFORMATION_CLASS Action;
+  unsigned __int64 RecordNumber;
+  _LARGE_INTEGER TimeStamp;
+  _UNICODE_STRING KeyPathName;
+  unsigned int OldFlags;
+  unsigned int NewFlags;
+
+};

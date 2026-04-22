@@ -1,0 +1,11 @@
+// Структура: _NUMA_NODE_RELATIONSHIP
+// Полей: 3
+// Строки в оригинале: 93671-93676
+struct _NUMA_NODE_RELATIONSHIP
+{
+
+  unsigned int NodeNumber;
+  unsigned __int8 Reserved[20];
+  _GROUP_AFFINITY GroupMask;
+
+};

@@ -1,0 +1,11 @@
+// Структура: NEWHEADER
+// Полей: 3
+// Строки в оригинале: 147026-147031
+struct NEWHEADER
+{
+
+  unsigned __int16 Reserved;
+  unsigned __int16 ResType;
+  unsigned __int16 ResCount;
+
+};

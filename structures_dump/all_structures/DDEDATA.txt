@@ -1,0 +1,15 @@
+// Структура: DDEDATA
+// Полей: 7
+// Строки в оригинале: 125228-125237
+struct DDEDATA
+{
+
+  unsigned __int16 unused : 12;
+  unsigned __int16 fResponse : 1;
+  unsigned __int16 fRelease : 1;
+  unsigned __int16 reserved : 1;
+  unsigned __int16 fAckReq : 1;
+  __int16 cfFormat;
+  unsigned __int8 Value[1];
+
+};

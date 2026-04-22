@@ -1,0 +1,11 @@
+// Структура: _SPC_SP_OPUS_INFO
+// Полей: 3
+// Строки в оригинале: 122891-122896
+struct _SPC_SP_OPUS_INFO
+{
+
+  const wchar_t *pwszProgramName;
+  SPC_LINK_ *pMoreInfo;
+  SPC_LINK_ *pPublisherInfo;
+
+};

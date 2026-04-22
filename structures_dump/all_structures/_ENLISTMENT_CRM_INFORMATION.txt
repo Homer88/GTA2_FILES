@@ -1,0 +1,11 @@
+// Структура: _ENLISTMENT_CRM_INFORMATION
+// Полей: 3
+// Строки в оригинале: 105914-105919
+struct _ENLISTMENT_CRM_INFORMATION
+{
+
+  _GUID CrmTransactionManagerId;
+  _GUID CrmResourceManagerId;
+  _GUID CrmEnlistmentId;
+
+};

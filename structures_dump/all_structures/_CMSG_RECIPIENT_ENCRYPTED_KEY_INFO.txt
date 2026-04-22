@@ -1,0 +1,12 @@
+// Структура: _CMSG_RECIPIENT_ENCRYPTED_KEY_INFO
+// Полей: 4
+// Строки в оригинале: 98878-98884
+struct _CMSG_RECIPIENT_ENCRYPTED_KEY_INFO
+{
+
+  _CERT_ID RecipientId;
+  _CRYPTOAPI_BLOB EncryptedKey;
+  _FILETIME Date;
+  _CRYPT_ATTRIBUTE_TYPE_VALUE *pOtherAttr;
+
+};

@@ -1,0 +1,31 @@
+// Структура: _WMI_LOGGER_INFORMATION
+// Полей: 23
+// Строки в оригинале: 310387-310412
+struct _WMI_LOGGER_INFORMATION
+{
+
+  _WNODE_HEADER Wnode;
+  unsigned int BufferSize;
+  unsigned int MinimumBuffers;
+  unsigned int MaximumBuffers;
+  unsigned int MaximumFileSize;
+  unsigned int LogFileMode;
+  unsigned int FlushTimer;
+  unsigned int EnableFlags;
+  $7EC6A83B8D656AE9F5F2E75604DB27F7 ___u8;
+  $89A26F4DE5AC44EEF263CA58C0B246B1 ___u9;
+  $7DB621C03E55B72807E05D42E4B4CEF1 ___u10;
+  $1258CA17B92310EFFE020EA02BF5B4CF ___u11;
+  $8E5F1AD6D7BFF6FB790CA757322D19BA ___u12;
+  $E573395300D980C5DD30472CEE93049A ___u13;
+  unsigned int BuffersWritten;
+  $599657A511748522AC6664DCB41B187D ___u15;
+  unsigned int RealTimeBuffersLost;
+  $1DFE7F55855EEFCA74763432DD447600 ___u17;
+  $1152FB05DFA45EA15977B906C6A2A2ED ___u18;
+  $25DCFCC00F7C63896D5F745AE81C6477 ___u19;
+  unsigned int RealTimeConsumerCount;
+  unsigned int SequenceNumber;
+  $E8F02582B26B105669D8577CD6CE23EF ___u22;
+
+};

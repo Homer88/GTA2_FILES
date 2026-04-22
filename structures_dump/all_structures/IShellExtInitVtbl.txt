@@ -1,0 +1,12 @@
+// Структура: IShellExtInitVtbl
+// Полей: 4
+// Строки в оригинале: 41011-41017
+struct IShellExtInitVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellExtInit *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellExtInit *This);
+  ULONG (__stdcall *Release)(IShellExtInit *This);
+  HRESULT (__stdcall *Initialize)(IShellExtInit *This, LPCITEMIDLIST pidlFolder, IDataObject *pdtobj, HKEY hkeyProgID);
+
+};

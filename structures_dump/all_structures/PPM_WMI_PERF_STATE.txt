@@ -1,0 +1,22 @@
+// Структура: PPM_WMI_PERF_STATE
+// Полей: 14
+// Строки в оригинале: 97632-97648
+struct PPM_WMI_PERF_STATE
+{
+
+  unsigned int Frequency;
+  unsigned int Power;
+  unsigned __int8 PercentFrequency;
+  unsigned __int8 IncreaseLevel;
+  unsigned __int8 DecreaseLevel;
+  unsigned __int8 Type;
+  unsigned int IncreaseTime;
+  unsigned int DecreaseTime;
+  unsigned __int64 Control;
+  unsigned __int64 Status;
+  unsigned int HitCount;
+  unsigned int Reserved1;
+  unsigned __int64 Reserved2;
+  unsigned __int64 Reserved3;
+
+};

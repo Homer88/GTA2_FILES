@@ -1,0 +1,9 @@
+// Структура: IRawElementProviderSimple
+// Полей: 1
+// Строки в оригинале: 351891-351894
+struct IRawElementProviderSimple
+{
+
+  struct IRawElementProviderSimpleVtbl *lpVtbl;
+
+};

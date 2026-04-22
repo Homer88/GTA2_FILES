@@ -1,0 +1,13 @@
+// Структура: _ETW_HEAP_EVENT_ALLOC
+// Полей: 5
+// Строки в оригинале: 311975-311982
+struct _ETW_HEAP_EVENT_ALLOC
+{
+
+  _SYSTEM_TRACE_HEADER Header;
+  void *HeapHandle;
+  unsigned int Size;
+  void *Address;
+  unsigned int Source;
+
+};

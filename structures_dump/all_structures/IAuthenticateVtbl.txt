@@ -1,0 +1,12 @@
+// Структура: IAuthenticateVtbl
+// Полей: 4
+// Строки в оригинале: 40817-40823
+struct IAuthenticateVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IAuthenticate *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IAuthenticate *This);
+  ULONG (__stdcall *Release)(IAuthenticate *This);
+  HRESULT (__stdcall *Authenticate)(IAuthenticate *This, HWND *phwnd, LPWSTR *pszUsername, LPWSTR *pszPassword);
+
+};

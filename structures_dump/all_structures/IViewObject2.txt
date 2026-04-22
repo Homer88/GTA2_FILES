@@ -1,0 +1,9 @@
+// Структура: IViewObject2
+// Полей: 1
+// Строки в оригинале: 28803-28806
+struct IViewObject2
+{
+
+  struct IViewObject2Vtbl *lpVtbl;
+
+};

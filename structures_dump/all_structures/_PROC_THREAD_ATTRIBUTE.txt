@@ -1,0 +1,11 @@
+// Структура: _PROC_THREAD_ATTRIBUTE
+// Полей: 3
+// Строки в оригинале: 59095-59100
+struct _PROC_THREAD_ATTRIBUTE
+{
+
+  unsigned int Attribute;
+  unsigned int Size;
+  unsigned int Value;
+
+};

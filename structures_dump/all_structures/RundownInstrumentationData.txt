@@ -1,0 +1,15 @@
+// Структура: RundownInstrumentationData
+// Полей: 7
+// Строки в оригинале: 85004-85013
+struct RundownInstrumentationData
+{
+
+  _GUID iidOfCall;
+  unsigned int method;
+  _GUID ipid;
+  WhichTypeOfRundown whichTypeOfRundown;
+  _GUID implementedInterface1;
+  _GUID implementedInterface2;
+  _GUID implementedInterface3;
+
+};

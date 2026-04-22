@@ -1,0 +1,14 @@
+// Структура: _WMI_TCPIP
+// Полей: 6
+// Строки в оригинале: 311595-311603
+struct _WMI_TCPIP
+{
+
+  unsigned int Context;
+  unsigned int Size;
+  unsigned int DestAddr;
+  unsigned int SrcAddr;
+  unsigned __int16 DestPort;
+  unsigned __int16 SrcPort;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_SECUREBOOT_INFORMATION
+// Полей: 2
+// Строки в оригинале: 96111-96115
+struct _SYSTEM_SECUREBOOT_INFORMATION
+{
+
+  unsigned __int8 SecureBootEnabled;
+  unsigned __int8 SecureBootCapable;
+
+};

@@ -1,0 +1,22 @@
+// Структура: IOperationsProgressDialogVtbl
+// Полей: 14
+// Строки в оригинале: 32156-32172
+struct IOperationsProgressDialogVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOperationsProgressDialog *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOperationsProgressDialog *This);
+  ULONG (__stdcall *Release)(IOperationsProgressDialog *This);
+  HRESULT (__stdcall *StartProgressDialog)(IOperationsProgressDialog *This, HWND hwndOwner, OPPROGDLGF flags);
+  HRESULT (__stdcall *StopProgressDialog)(IOperationsProgressDialog *This);
+  HRESULT (__stdcall *SetOperation)(IOperationsProgressDialog *This, SPACTION action);
+  HRESULT (__stdcall *SetMode)(IOperationsProgressDialog *This, PDMODE mode);
+  HRESULT (__stdcall *UpdateProgress)(IOperationsProgressDialog *This, ULONGLONG ullPointsCurrent, ULONGLONG ullPointsTotal, ULONGLONG ullSizeCurrent, ULONGLONG ullSizeTotal, ULONGLONG ullItemsCurrent, ULONGLONG ullItemsTotal);
+  HRESULT (__stdcall *UpdateLocations)(IOperationsProgressDialog *This, IShellItem *psiSource, IShellItem *psiTarget, IShellItem *psiItem);
+  HRESULT (__stdcall *ResetTimer)(IOperationsProgressDialog *This);
+  HRESULT (__stdcall *PauseTimer)(IOperationsProgressDialog *This);
+  HRESULT (__stdcall *ResumeTimer)(IOperationsProgressDialog *This);
+  HRESULT (__stdcall *GetMilliseconds)(IOperationsProgressDialog *This, ULONGLONG *pullElapsed, ULONGLONG *pullRemaining);
+  HRESULT (__stdcall *GetOperationStatus)(IOperationsProgressDialog *This, PDOPSTATUS *popstatus);
+
+};

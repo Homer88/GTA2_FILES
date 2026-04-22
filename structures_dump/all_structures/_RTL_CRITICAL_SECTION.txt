@@ -1,0 +1,14 @@
+// Структура: _RTL_CRITICAL_SECTION
+// Полей: 6
+// Строки в оригинале: 3018-3026
+struct _RTL_CRITICAL_SECTION
+{
+
+  PRTL_CRITICAL_SECTION_DEBUG DebugInfo;
+  LONG LockCount;
+  LONG RecursionCount;
+  HANDLE OwningThread;
+  HANDLE LockSemaphore;
+  ULONG_PTR SpinCount;
+
+};

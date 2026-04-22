@@ -1,0 +1,15 @@
+// Структура: IEnumStringVtbl
+// Полей: 7
+// Строки в оригинале: 24084-24093
+struct IEnumStringVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumString *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumString *This);
+  ULONG (__stdcall *Release)(IEnumString *This);
+  HRESULT (__stdcall *Next)(IEnumString *This, ULONG celt, LPOLESTR *rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumString *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumString *This);
+  HRESULT (__stdcall *Clone)(IEnumString *This, IEnumString **ppenum);
+
+};

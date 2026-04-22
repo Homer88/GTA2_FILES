@@ -1,0 +1,17 @@
+// Структура: _NON_PAGED_DEBUG_INFO
+// Полей: 9
+// Строки в оригинале: 83011-83022
+struct _NON_PAGED_DEBUG_INFO
+{
+
+  unsigned __int16 Signature;
+  unsigned __int16 Flags;
+  unsigned int Size;
+  unsigned __int16 Machine;
+  unsigned __int16 Characteristics;
+  unsigned int TimeDateStamp;
+  unsigned int CheckSum;
+  unsigned int SizeOfImage;
+  unsigned __int64 ImageBase;
+
+};

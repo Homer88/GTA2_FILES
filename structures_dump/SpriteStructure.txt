@@ -1,0 +1,9 @@
+// Structure: SpriteStructure
+// Lines: 5637 - 5641
+// Fields: 3
+
+struct SpriteStructure
+{
+  _BYTE gap0[7];
+  char field_0;
+};

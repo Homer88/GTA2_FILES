@@ -1,0 +1,12 @@
+// Структура: _STREAMS_QUERY_PARAMETERS_OUTPUT_BUFFER
+// Полей: 4
+// Строки в оригинале: 103130-103136
+struct _STREAMS_QUERY_PARAMETERS_OUTPUT_BUFFER
+{
+
+  unsigned int OptimalWriteSize;
+  unsigned int StreamGranularitySize;
+  unsigned int StreamIdMin;
+  unsigned int StreamIdMax;
+
+};

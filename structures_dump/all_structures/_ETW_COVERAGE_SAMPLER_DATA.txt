@@ -1,0 +1,19 @@
+// Структура: _ETW_COVERAGE_SAMPLER_DATA
+// Полей: 11
+// Строки в оригинале: 311907-311920
+struct _ETW_COVERAGE_SAMPLER_DATA
+{
+
+  unsigned int HeaderSize;
+  unsigned int TotalSize;
+  unsigned int QuerySequence;
+  unsigned int OptionsOffset;
+  unsigned int OptionsSize;
+  unsigned int StatsOffset;
+  unsigned int StatsSize;
+  unsigned int SamplesOffset;
+  unsigned int SampleCount;
+  unsigned int ModulesOffset;
+  unsigned int ModuleCount;
+
+};

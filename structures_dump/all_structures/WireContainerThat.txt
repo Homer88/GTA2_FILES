@@ -1,0 +1,10 @@
+// Структура: WireContainerThat
+// Полей: 2
+// Строки в оригинале: 61303-61307
+struct WireContainerThat
+{
+
+  WireContainerThatPart1 part1;
+  WireContainerExtentArray ea;
+
+};

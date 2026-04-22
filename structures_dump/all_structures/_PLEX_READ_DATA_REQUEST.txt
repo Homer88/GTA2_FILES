@@ -1,0 +1,11 @@
+// Структура: _PLEX_READ_DATA_REQUEST
+// Полей: 3
+// Строки в оригинале: 80476-80481
+struct _PLEX_READ_DATA_REQUEST
+{
+
+  _LARGE_INTEGER ByteOffset;
+  unsigned int ByteLength;
+  unsigned int PlexNumber;
+
+};

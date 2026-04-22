@@ -1,0 +1,54 @@
+// Структура: _NTFS_STATISTICS
+// Полей: 46
+// Строки в оригинале: 89814-89862
+struct _NTFS_STATISTICS
+{
+
+  unsigned int LogFileFullExceptions;
+  unsigned int OtherExceptions;
+  unsigned int MftReads;
+  unsigned int MftReadBytes;
+  unsigned int MftWrites;
+  unsigned int MftWriteBytes;
+  _NTFS_STATISTICS::<unnamed_type_MftWritesUserLevel> MftWritesUserLevel;
+  unsigned __int16 MftWritesFlushForLogFileFull;
+  unsigned __int16 MftWritesLazyWriter;
+  unsigned __int16 MftWritesUserRequest;
+  unsigned int Mft2Writes;
+  unsigned int Mft2WriteBytes;
+  _NTFS_STATISTICS::<unnamed_type_Mft2WritesUserLevel> Mft2WritesUserLevel;
+  unsigned __int16 Mft2WritesFlushForLogFileFull;
+  unsigned __int16 Mft2WritesLazyWriter;
+  unsigned __int16 Mft2WritesUserRequest;
+  unsigned int RootIndexReads;
+  unsigned int RootIndexReadBytes;
+  unsigned int RootIndexWrites;
+  unsigned int RootIndexWriteBytes;
+  unsigned int BitmapReads;
+  unsigned int BitmapReadBytes;
+  unsigned int BitmapWrites;
+  unsigned int BitmapWriteBytes;
+  unsigned __int16 BitmapWritesFlushForLogFileFull;
+  unsigned __int16 BitmapWritesLazyWriter;
+  unsigned __int16 BitmapWritesUserRequest;
+  _NTFS_STATISTICS::<unnamed_type_BitmapWritesUserLevel> BitmapWritesUserLevel;
+  unsigned int MftBitmapReads;
+  unsigned int MftBitmapReadBytes;
+  unsigned int MftBitmapWrites;
+  unsigned int MftBitmapWriteBytes;
+  unsigned __int16 MftBitmapWritesFlushForLogFileFull;
+  unsigned __int16 MftBitmapWritesLazyWriter;
+  unsigned __int16 MftBitmapWritesUserRequest;
+  _NTFS_STATISTICS::<unnamed_type_MftBitmapWritesUserLevel> MftBitmapWritesUserLevel;
+  unsigned int UserIndexReads;
+  unsigned int UserIndexReadBytes;
+  unsigned int UserIndexWrites;
+  unsigned int UserIndexWriteBytes;
+  unsigned int LogFileReads;
+  unsigned int LogFileReadBytes;
+  unsigned int LogFileWrites;
+  unsigned int LogFileWriteBytes;
+  _NTFS_STATISTICS::<unnamed_type_Allocate> Allocate;
+  unsigned int DiskResourcesExhausted;
+
+};

@@ -1,0 +1,13 @@
+// Структура: IWICFastMetadataEncoderVtbl
+// Полей: 5
+// Строки в оригинале: 42181-42188
+struct IWICFastMetadataEncoderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICFastMetadataEncoder *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICFastMetadataEncoder *This);
+  ULONG (__stdcall *Release)(IWICFastMetadataEncoder *This);
+  HRESULT (__stdcall *Commit)(IWICFastMetadataEncoder *This);
+  HRESULT (__stdcall *GetMetadataQueryWriter)(IWICFastMetadataEncoder *This, IWICMetadataQueryWriter **ppIMetadataQueryWriter);
+
+};

@@ -1,0 +1,14 @@
+// Структура: _RTL_HEAP_WALK_ENTRY
+// Полей: 6
+// Строки в оригинале: 92354-92362
+struct _RTL_HEAP_WALK_ENTRY
+{
+
+  void *DataAddress;
+  unsigned int DataSize;
+  unsigned __int8 OverheadBytes;
+  unsigned __int8 SegmentIndex;
+  unsigned __int16 Flags;
+  $BA95030331D297BD0C3D82AA91EBB8CA ___u5;
+
+};

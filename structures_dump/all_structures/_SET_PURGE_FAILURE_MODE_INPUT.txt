@@ -1,0 +1,9 @@
+// Структура: _SET_PURGE_FAILURE_MODE_INPUT
+// Полей: 1
+// Строки в оригинале: 111389-111392
+struct _SET_PURGE_FAILURE_MODE_INPUT
+{
+
+  unsigned int Flags;
+
+};

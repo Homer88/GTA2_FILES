@@ -1,0 +1,20 @@
+// Структура: wil_details_StagingConfigFeature
+// Полей: 12
+// Строки в оригинале: 142247-142261
+struct wil_details_StagingConfigFeature
+{
+
+  unsigned int featureId;
+  unsigned __int32 changedInSession : 1;
+  unsigned __int32 isVariantConfig : 1;
+  unsigned __int32 unused1 : 6;
+  unsigned __int32 serviceState : 2;
+  unsigned __int32 userState : 2;
+  unsigned __int32 testState : 2;
+  unsigned __int32 unused2 : 2;
+  unsigned __int32 unused3 : 8;
+  unsigned __int32 variant : 6;
+  unsigned __int32 payloadKind : 2;
+  unsigned int payload;
+
+};

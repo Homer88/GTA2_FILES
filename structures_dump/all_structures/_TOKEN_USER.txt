@@ -1,0 +1,9 @@
+// Структура: _TOKEN_USER
+// Полей: 1
+// Строки в оригинале: 85627-85630
+struct _TOKEN_USER
+{
+
+  _SID_AND_ATTRIBUTES User;
+
+};

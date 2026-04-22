@@ -1,0 +1,12 @@
+// Структура: _SMALL_RECT
+// Полей: 4
+// Строки в оригинале: 87165-87171
+struct _SMALL_RECT
+{
+
+  __int16 Left;
+  __int16 Top;
+  __int16 Right;
+  __int16 Bottom;
+
+};

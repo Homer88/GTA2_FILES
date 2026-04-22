@@ -1,0 +1,12 @@
+// Структура: _EVENT_TRACE_SPINLOCK_INFORMATION_V1
+// Полей: 4
+// Строки в оригинале: 310976-310982
+struct _EVENT_TRACE_SPINLOCK_INFORMATION_V1
+{
+
+  _EVENT_TRACE_INFORMATION_CLASS EventTraceInformationClass;
+  unsigned int SpinLockSpinThreshold;
+  unsigned int SpinLockAcquireSampleRate;
+  unsigned int SpinLockContentionSampleRate;
+
+};

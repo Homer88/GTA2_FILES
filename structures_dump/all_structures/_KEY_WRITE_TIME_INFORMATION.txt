@@ -1,0 +1,9 @@
+// Структура: _KEY_WRITE_TIME_INFORMATION
+// Полей: 1
+// Строки в оригинале: 98739-98742
+struct _KEY_WRITE_TIME_INFORMATION
+{
+
+  _LARGE_INTEGER LastWriteTime;
+
+};

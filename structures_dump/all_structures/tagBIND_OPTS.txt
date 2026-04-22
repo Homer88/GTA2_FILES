@@ -1,0 +1,12 @@
+// Структура: tagBIND_OPTS
+// Полей: 4
+// Строки в оригинале: 24040-24046
+struct tagBIND_OPTS
+{
+
+  DWORD cbStruct;
+  DWORD grfFlags;
+  DWORD grfMode;
+  DWORD dwTickCountDeadline;
+
+};

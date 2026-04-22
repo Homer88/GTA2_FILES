@@ -1,0 +1,12 @@
+// Структура: _APP_MEMORY_INFORMATION
+// Полей: 4
+// Строки в оригинале: 90356-90362
+struct _APP_MEMORY_INFORMATION
+{
+
+  unsigned __int64 AvailableCommit;
+  unsigned __int64 PrivateCommitUsage;
+  unsigned __int64 PeakPrivateCommitUsage;
+  unsigned __int64 TotalCommitUsage;
+
+};

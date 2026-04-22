@@ -1,0 +1,10 @@
+// Структура: tagEMRSETTEXTCOLOR
+// Полей: 2
+// Строки в оригинале: 101415-101419
+struct tagEMRSETTEXTCOLOR
+{
+
+  tagEMR emr;
+  unsigned int crColor;
+
+};

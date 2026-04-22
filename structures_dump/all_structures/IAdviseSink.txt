@@ -1,0 +1,9 @@
+// Структура: IAdviseSink
+// Полей: 1
+// Строки в оригинале: 26999-27002
+struct IAdviseSink
+{
+
+  struct IAdviseSinkVtbl *lpVtbl;
+
+};

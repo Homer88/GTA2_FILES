@@ -1,0 +1,9 @@
+// Структура: IInitializeWithFile
+// Полей: 1
+// Строки в оригинале: 37824-37827
+struct IInitializeWithFile
+{
+
+  struct IInitializeWithFileVtbl *lpVtbl;
+
+};

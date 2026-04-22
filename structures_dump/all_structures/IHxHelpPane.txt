@@ -1,0 +1,9 @@
+// Структура: IHxHelpPane
+// Полей: 1
+// Строки в оригинале: 40348-40351
+struct IHxHelpPane
+{
+
+  struct IHxHelpPaneVtbl *lpVtbl;
+
+};

@@ -1,0 +1,9 @@
+// Структура: INewMenuClient
+// Полей: 1
+// Строки в оригинале: 33817-33820
+struct INewMenuClient
+{
+
+  struct INewMenuClientVtbl *lpVtbl;
+
+};

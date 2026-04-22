@@ -1,0 +1,28 @@
+// Структура: IDiscFormat2EraseVtbl
+// Полей: 20
+// Строки в оригинале: 33541-33563
+struct IDiscFormat2EraseVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDiscFormat2Erase *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDiscFormat2Erase *This);
+  ULONG (__stdcall *Release)(IDiscFormat2Erase *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IDiscFormat2Erase *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IDiscFormat2Erase *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IDiscFormat2Erase *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IDiscFormat2Erase *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *IsRecorderSupported)(IDiscFormat2Erase *This, IDiscRecorder2 *recorder, VARIANT_BOOL *value);
+  HRESULT (__stdcall *IsCurrentMediaSupported)(IDiscFormat2Erase *This, IDiscRecorder2 *recorder, VARIANT_BOOL *value);
+  HRESULT (__stdcall *get_MediaPhysicallyBlank)(IDiscFormat2Erase *This, VARIANT_BOOL *value);
+  HRESULT (__stdcall *get_MediaHeuristicallyBlank)(IDiscFormat2Erase *This, VARIANT_BOOL *value);
+  HRESULT (__stdcall *get_SupportedMediaTypes)(IDiscFormat2Erase *This, SAFEARRAY **value);
+  HRESULT (__stdcall *put_Recorder)(IDiscFormat2Erase *This, IDiscRecorder2 *value);
+  HRESULT (__stdcall *get_Recorder)(IDiscFormat2Erase *This, IDiscRecorder2 **value);
+  HRESULT (__stdcall *put_FullErase)(IDiscFormat2Erase *This, VARIANT_BOOL value);
+  HRESULT (__stdcall *get_FullErase)(IDiscFormat2Erase *This, VARIANT_BOOL *value);
+  HRESULT (__stdcall *get_CurrentPhysicalMediaType)(IDiscFormat2Erase *This, IMAPI_MEDIA_PHYSICAL_TYPE *value);
+  HRESULT (__stdcall *put_ClientName)(IDiscFormat2Erase *This, BSTR value);
+  HRESULT (__stdcall *get_ClientName)(IDiscFormat2Erase *This, BSTR *value);
+  HRESULT (__stdcall *EraseMedia)(IDiscFormat2Erase *This);
+
+};

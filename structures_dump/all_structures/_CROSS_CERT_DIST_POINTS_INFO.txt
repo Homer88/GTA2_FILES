@@ -1,0 +1,11 @@
+// Структура: _CROSS_CERT_DIST_POINTS_INFO
+// Полей: 3
+// Строки в оригинале: 110345-110350
+struct _CROSS_CERT_DIST_POINTS_INFO
+{
+
+  unsigned int dwSyncDeltaTime;
+  unsigned int cDistPoint;
+  _CERT_ALT_NAME_INFO *rgDistPoint;
+
+};

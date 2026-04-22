@@ -1,0 +1,10 @@
+// Структура: _FILE_ZERO_DATA_INFORMATION
+// Полей: 2
+// Строки в оригинале: 88326-88330
+struct _FILE_ZERO_DATA_INFORMATION
+{
+
+  _LARGE_INTEGER FileOffset;
+  _LARGE_INTEGER BeyondFinalZero;
+
+};

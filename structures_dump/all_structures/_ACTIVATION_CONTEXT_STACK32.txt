@@ -1,0 +1,13 @@
+// Структура: _ACTIVATION_CONTEXT_STACK32
+// Полей: 5
+// Строки в оригинале: 21957-21964
+struct _ACTIVATION_CONTEXT_STACK32
+{
+
+  unsigned int ActiveFrame;
+  LIST_ENTRY32 FrameListCache;
+  unsigned int Flags;
+  unsigned int NextCookieSequenceNumber;
+  unsigned int StackId;
+
+};

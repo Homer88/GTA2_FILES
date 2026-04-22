@@ -1,0 +1,11 @@
+// Структура: _RTL_HEAP_TAG_INFO
+// Полей: 3
+// Строки в оригинале: 100189-100194
+struct _RTL_HEAP_TAG_INFO
+{
+
+  unsigned int NumberOfAllocations;
+  unsigned int NumberOfFrees;
+  unsigned int BytesAllocated;
+
+};

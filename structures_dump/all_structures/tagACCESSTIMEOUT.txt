@@ -1,0 +1,11 @@
+// Структура: tagACCESSTIMEOUT
+// Полей: 3
+// Строки в оригинале: 101323-101328
+struct tagACCESSTIMEOUT
+{
+
+  unsigned int cbSize;
+  unsigned int dwFlags;
+  unsigned int iTimeOutMSec;
+
+};

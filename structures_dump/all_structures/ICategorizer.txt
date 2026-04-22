@@ -1,0 +1,9 @@
+// Структура: ICategorizer
+// Полей: 1
+// Строки в оригинале: 35479-35482
+struct ICategorizer
+{
+
+  struct ICategorizerVtbl *lpVtbl;
+
+};

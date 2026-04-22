@@ -1,0 +1,15 @@
+// Структура: _USER_MARSHAL_CB
+// Полей: 7
+// Строки в оригинале: 112023-112032
+struct _USER_MARSHAL_CB
+{
+
+  unsigned int Flags;
+  _MIDL_STUB_MESSAGE *pStubMsg;
+  const unsigned __int8 *pReserve;
+  unsigned int Signature;
+  _USER_MARSHAL_CB_TYPE CBType;
+  const unsigned __int8 *pFormat;
+  const unsigned __int8 *pTypeFormat;
+
+};

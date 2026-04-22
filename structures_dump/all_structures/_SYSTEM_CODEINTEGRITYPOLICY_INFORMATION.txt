@@ -1,0 +1,12 @@
+// Структура: _SYSTEM_CODEINTEGRITYPOLICY_INFORMATION
+// Полей: 4
+// Строки в оригинале: 97952-97958
+struct _SYSTEM_CODEINTEGRITYPOLICY_INFORMATION
+{
+
+  unsigned int Options;
+  unsigned int HVCIOptions;
+  unsigned __int64 Version;
+  _GUID PolicyGuid;
+
+};

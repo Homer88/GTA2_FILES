@@ -1,0 +1,11 @@
+// Структура: _RTLP_HEAP_SERIALIZED_MAPPING
+// Полей: 3
+// Строки в оригинале: 88628-88633
+struct _RTLP_HEAP_SERIALIZED_MAPPING
+{
+
+  unsigned int Allocation;
+  void *StackReference;
+  unsigned int Size;
+
+};

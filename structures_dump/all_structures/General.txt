@@ -1,0 +1,10 @@
+// Структура: General
+// Полей: 2
+// Строки в оригинале: 7401-7405
+struct General
+{
+
+  int Cycle;
+  int field_4;
+
+};

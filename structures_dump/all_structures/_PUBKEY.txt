@@ -1,0 +1,10 @@
+// Структура: _PUBKEY
+// Полей: 2
+// Строки в оригинале: 91640-91644
+struct _PUBKEY
+{
+
+  unsigned int magic;
+  unsigned int bitlen;
+
+};

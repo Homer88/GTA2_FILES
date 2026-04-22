@@ -1,0 +1,13 @@
+// Структура: _REASON_BUFFER
+// Полей: 5
+// Строки в оригинале: 94456-94463
+struct _REASON_BUFFER
+{
+
+  unsigned int Flags;
+  $FC40B3D98F5E28DAFA228EC673479E81 ___u1;
+  unsigned __int16 ResourceReasonId;
+  unsigned int StringCount;
+  unsigned int SubstitutionStringsOffset;
+
+};

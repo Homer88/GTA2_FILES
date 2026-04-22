@@ -1,0 +1,14 @@
+// Структура: _HEAP_RUNTIME_MEMORY_STATS
+// Полей: 6
+// Строки в оригинале: 20565-20573
+struct _HEAP_RUNTIME_MEMORY_STATS
+{
+
+  volatile unsigned int TotalReservedPages;
+  volatile unsigned int TotalCommittedPages;
+  unsigned int FreeCommittedPages;
+  unsigned int LfhFreeCommittedPages;
+  _HEAP_OPPORTUNISTIC_LARGE_PAGE_STATS LargePageStats[2];
+  _RTL_HP_SEG_ALLOC_POLICY LargePageUtilizationPolicy;
+
+};

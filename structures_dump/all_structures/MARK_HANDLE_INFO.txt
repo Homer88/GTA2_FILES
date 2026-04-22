@@ -1,0 +1,11 @@
+// Структура: MARK_HANDLE_INFO
+// Полей: 3
+// Строки в оригинале: 98313-98318
+struct MARK_HANDLE_INFO
+{
+
+  $124274EBC4FC1E36E517B2E36B56E09E ___u0;
+  void *VolumeHandle;
+  unsigned int HandleInfo;
+
+};

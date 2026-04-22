@@ -1,0 +1,9 @@
+// Структура: IPropertySystem
+// Полей: 1
+// Строки в оригинале: 42984-42987
+struct IPropertySystem
+{
+
+  struct IPropertySystemVtbl *lpVtbl;
+
+};

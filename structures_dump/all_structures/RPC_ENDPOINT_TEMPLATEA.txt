@@ -1,0 +1,13 @@
+// Структура: RPC_ENDPOINT_TEMPLATEA
+// Полей: 5
+// Строки в оригинале: 100415-100422
+struct RPC_ENDPOINT_TEMPLATEA
+{
+
+  unsigned int Version;
+  unsigned __int8 *ProtSeq;
+  unsigned __int8 *Endpoint;
+  void *SecurityDescriptor;
+  unsigned int Backlog;
+
+};

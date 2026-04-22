@@ -1,0 +1,9 @@
+// Структура: ICommDlgBrowser
+// Полей: 1
+// Строки в оригинале: 39809-39812
+struct ICommDlgBrowser
+{
+
+  struct ICommDlgBrowserVtbl *lpVtbl;
+
+};

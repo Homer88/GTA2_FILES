@@ -1,0 +1,12 @@
+// Структура: _APPINFO_PROCESS_INFORMATION
+// Полей: 4
+// Строки в оригинале: 147875-147881
+struct _APPINFO_PROCESS_INFORMATION
+{
+
+  unsigned int hProcess;
+  unsigned int hThread;
+  unsigned int dwProcessId;
+  unsigned int dwThreadId;
+
+};

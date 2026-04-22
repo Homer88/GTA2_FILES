@@ -1,0 +1,9 @@
+// Структура: _MUTANT_OWNER_INFORMATION
+// Полей: 1
+// Строки в оригинале: 93906-93909
+struct _MUTANT_OWNER_INFORMATION
+{
+
+  _CLIENT_ID ClientId;
+
+};

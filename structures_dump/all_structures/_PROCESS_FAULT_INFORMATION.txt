@@ -1,0 +1,10 @@
+// Структура: _PROCESS_FAULT_INFORMATION
+// Полей: 2
+// Строки в оригинале: 107828-107832
+struct _PROCESS_FAULT_INFORMATION
+{
+
+  unsigned int FaultFlags;
+  unsigned int AdditionalInfo;
+
+};

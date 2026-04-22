@@ -1,0 +1,10 @@
+// Структура: _tagpropertykey
+// Полей: 2
+// Строки в оригинале: 30618-30622
+struct _tagpropertykey
+{
+
+  GUID fmtid;
+  DWORD pid;
+
+};

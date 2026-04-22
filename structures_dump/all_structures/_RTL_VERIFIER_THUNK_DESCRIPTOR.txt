@@ -1,0 +1,11 @@
+// Структура: _RTL_VERIFIER_THUNK_DESCRIPTOR
+// Полей: 3
+// Строки в оригинале: 83519-83524
+struct _RTL_VERIFIER_THUNK_DESCRIPTOR
+{
+
+  char *ThunkName;
+  void *ThunkOldAddress;
+  void *ThunkNewAddress;
+
+};

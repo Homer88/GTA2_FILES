@@ -1,0 +1,9 @@
+// Структура: IDirect3DVertexDeclaration9
+// Полей: 1
+// Строки в оригинале: 25819-25822
+struct IDirect3DVertexDeclaration9
+{
+
+  struct IDirect3DVertexDeclaration9Vtbl *lpVtbl;
+
+};

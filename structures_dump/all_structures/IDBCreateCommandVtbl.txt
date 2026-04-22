@@ -1,0 +1,12 @@
+// Структура: IDBCreateCommandVtbl
+// Полей: 4
+// Строки в оригинале: 45833-45839
+struct IDBCreateCommandVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDBCreateCommand *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDBCreateCommand *This);
+  ULONG (__stdcall *Release)(IDBCreateCommand *This);
+  HRESULT (__stdcall *CreateCommand)(IDBCreateCommand *This, IUnknown *pUnkOuter, const IID *const riid, IUnknown **ppCommand);
+
+};

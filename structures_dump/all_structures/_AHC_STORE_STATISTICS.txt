@@ -1,0 +1,13 @@
+// Структура: _AHC_STORE_STATISTICS
+// Полей: 5
+// Строки в оригинале: 311993-312000
+struct _AHC_STORE_STATISTICS
+{
+
+  unsigned int LookupHits;
+  unsigned int LookupMisses;
+  unsigned int Inserted;
+  unsigned int Replaced;
+  unsigned int Updated;
+
+};

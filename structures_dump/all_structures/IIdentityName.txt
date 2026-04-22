@@ -1,0 +1,9 @@
+// Структура: IIdentityName
+// Полей: 1
+// Строки в оригинале: 37250-37253
+struct IIdentityName
+{
+
+  struct IIdentityNameVtbl *lpVtbl;
+
+};

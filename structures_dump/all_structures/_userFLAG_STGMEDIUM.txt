@@ -1,0 +1,11 @@
+// Структура: _userFLAG_STGMEDIUM
+// Полей: 3
+// Строки в оригинале: 111057-111062
+struct _userFLAG_STGMEDIUM
+{
+
+  int ContextFlags;
+  int fPassOwnership;
+  _userSTGMEDIUM Stgmed;
+
+};

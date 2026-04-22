@@ -1,0 +1,19 @@
+// Структура: IWICComponentInfoVtbl
+// Полей: 11
+// Строки в оригинале: 41964-41977
+struct IWICComponentInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICComponentInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICComponentInfo *This);
+  ULONG (__stdcall *Release)(IWICComponentInfo *This);
+  HRESULT (__stdcall *GetComponentType)(IWICComponentInfo *This, WICComponentType *pType);
+  HRESULT (__stdcall *GetCLSID)(IWICComponentInfo *This, CLSID *pclsid);
+  HRESULT (__stdcall *GetSigningStatus)(IWICComponentInfo *This, DWORD *pStatus);
+  HRESULT (__stdcall *GetAuthor)(IWICComponentInfo *This, UINT cchAuthor, WCHAR *wzAuthor, UINT *pcchActual);
+  HRESULT (__stdcall *GetVendorGUID)(IWICComponentInfo *This, GUID *pguidVendor);
+  HRESULT (__stdcall *GetVersion)(IWICComponentInfo *This, UINT cchVersion, WCHAR *wzVersion, UINT *pcchActual);
+  HRESULT (__stdcall *GetSpecVersion)(IWICComponentInfo *This, UINT cchSpecVersion, WCHAR *wzSpecVersion, UINT *pcchActual);
+  HRESULT (__stdcall *GetFriendlyName)(IWICComponentInfo *This, UINT cchFriendlyName, WCHAR *wzFriendlyName, UINT *pcchActual);
+
+};

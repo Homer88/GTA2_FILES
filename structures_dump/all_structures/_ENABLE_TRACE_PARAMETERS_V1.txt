@@ -1,0 +1,13 @@
+// Структура: _ENABLE_TRACE_PARAMETERS_V1
+// Полей: 5
+// Строки в оригинале: 312520-312527
+struct _ENABLE_TRACE_PARAMETERS_V1
+{
+
+  unsigned int Version;
+  unsigned int EnableProperty;
+  unsigned int ControlFlags;
+  _GUID SourceId;
+  _EVENT_FILTER_DESCRIPTOR *EnableFilterDesc;
+
+};

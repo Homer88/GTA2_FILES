@@ -1,0 +1,15 @@
+// Структура: _DPH_BLOCK_INFORMATION
+// Полей: 7
+// Строки в оригинале: 22629-22638
+struct _DPH_BLOCK_INFORMATION
+{
+
+  unsigned int StartStamp;
+  void *Heap;
+  unsigned int RequestedSize;
+  unsigned int ActualSize;
+  $BAB94E4273748A71A0FF83D235433C50 ___u4;
+  void *StackTrace;
+  unsigned int EndStamp;
+
+};

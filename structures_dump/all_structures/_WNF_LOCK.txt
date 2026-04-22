@@ -1,0 +1,9 @@
+// Структура: _WNF_LOCK
+// Полей: 1
+// Строки в оригинале: 17160-17163
+struct _WNF_LOCK
+{
+
+  _EX_PUSH_LOCK PushLock;
+
+};

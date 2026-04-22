@@ -1,0 +1,9 @@
+// Структура: IEnumOleUndoUnits
+// Полей: 1
+// Строки в оригинале: 33096-33099
+struct IEnumOleUndoUnits
+{
+
+  struct IEnumOleUndoUnitsVtbl *lpVtbl;
+
+};

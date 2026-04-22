@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_SESSIONCREATE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 311421-311425
+struct _PERFINFO_SESSIONCREATE_INFORMATION
+{
+
+  unsigned int UniqueSessionId;
+  unsigned int SessionId;
+
+};

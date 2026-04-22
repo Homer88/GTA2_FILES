@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_SPECULATION_CONTROL_INFORMATION
+// Полей: 2
+// Строки в оригинале: 101939-101943
+struct _SYSTEM_SPECULATION_CONTROL_INFORMATION
+{
+
+  _SYSTEM_SPECULATION_CONTROL_INFORMATION::<unnamed_type_SpeculationControlFlags> SpeculationControlFlags;
+  _SYSTEM_SPECULATION_CONTROL_INFORMATION::<unnamed_type_SpeculationControlFlags2> SpeculationControlFlags2;
+
+};

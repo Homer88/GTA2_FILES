@@ -1,0 +1,9 @@
+// Structure: _CLIENT_ID
+// Lines: 2457 - 2461
+// Fields: 3
+
+struct _CLIENT_ID
+{
+  HANDLE UniqueProcess;
+  HANDLE UniqueThread;
+};

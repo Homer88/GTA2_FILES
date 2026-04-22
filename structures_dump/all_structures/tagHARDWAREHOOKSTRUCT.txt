@@ -1,0 +1,12 @@
+// Структура: tagHARDWAREHOOKSTRUCT
+// Полей: 4
+// Строки в оригинале: 91872-91878
+struct tagHARDWAREHOOKSTRUCT
+{
+
+  HWND__ *hwnd;
+  unsigned int message;
+  unsigned int wParam;
+  int lParam;
+
+};

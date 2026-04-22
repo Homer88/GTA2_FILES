@@ -1,0 +1,11 @@
+// Структура: _SYSDBG_PHYSICAL
+// Полей: 3
+// Строки в оригинале: 103154-103159
+struct _SYSDBG_PHYSICAL
+{
+
+  _LARGE_INTEGER Address;
+  void *Buffer;
+  unsigned int Request;
+
+};

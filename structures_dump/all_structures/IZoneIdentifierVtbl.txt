@@ -1,0 +1,14 @@
+// Структура: IZoneIdentifierVtbl
+// Полей: 6
+// Строки в оригинале: 37607-37615
+struct IZoneIdentifierVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IZoneIdentifier *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IZoneIdentifier *This);
+  ULONG (__stdcall *Release)(IZoneIdentifier *This);
+  HRESULT (__stdcall *GetId)(IZoneIdentifier *This, DWORD *pdwZone);
+  HRESULT (__stdcall *SetId)(IZoneIdentifier *This, DWORD dwZone);
+  HRESULT (__stdcall *Remove)(IZoneIdentifier *This);
+
+};

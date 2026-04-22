@@ -1,0 +1,9 @@
+// Структура: IKnownFolderManager
+// Полей: 1
+// Строки в оригинале: 36297-36300
+struct IKnownFolderManager
+{
+
+  struct IKnownFolderManagerVtbl *lpVtbl;
+
+};

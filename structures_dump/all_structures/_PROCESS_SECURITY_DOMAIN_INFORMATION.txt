@@ -1,0 +1,9 @@
+// Структура: _PROCESS_SECURITY_DOMAIN_INFORMATION
+// Полей: 1
+// Строки в оригинале: 94686-94689
+struct _PROCESS_SECURITY_DOMAIN_INFORMATION
+{
+
+  unsigned __int64 SecurityDomain;
+
+};

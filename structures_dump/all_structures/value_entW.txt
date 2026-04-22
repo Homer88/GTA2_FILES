@@ -1,0 +1,12 @@
+// Структура: value_entW
+// Полей: 4
+// Строки в оригинале: 83100-83106
+struct value_entW
+{
+
+  wchar_t *ve_valuename;
+  unsigned int ve_valuelen;
+  unsigned int ve_valueptr;
+  unsigned int ve_type;
+
+};

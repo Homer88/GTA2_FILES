@@ -1,0 +1,14 @@
+// Структура: _tagCODEBASEHOLD
+// Полей: 6
+// Строки в оригинале: 80445-80453
+struct _tagCODEBASEHOLD
+{
+
+  unsigned int cbSize;
+  wchar_t *szDistUnit;
+  wchar_t *szCodeBase;
+  unsigned int dwVersionMS;
+  unsigned int dwVersionLS;
+  unsigned int dwStyle;
+
+};

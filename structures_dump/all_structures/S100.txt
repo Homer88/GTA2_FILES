@@ -1,0 +1,29 @@
+// Структура: S100
+// Полей: 21
+// Строки в оригинале: 9089-9112
+struct S100
+{
+
+  S101 S101[20];
+  char field_3C0;
+  char field_3C1;
+  char field_3C2;
+  char field_3C3;
+  char field_3C4;
+  char field_3C5;
+  char field_3C6;
+  char field_3C7;
+  char field_3C8;
+  char field_3C9;
+  char field_3CA;
+  char field_3CB;
+  char field_3CC;
+  char field_3CD;
+  char field_3CE;
+  char field_3CF;
+  char field_3D0;
+  char field_3D1;
+  char field_3D2;
+  char field_3D3;
+
+};

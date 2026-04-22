@@ -1,0 +1,12 @@
+// Структура: _NCRYPT_KEY_BLOB_HEADER
+// Полей: 4
+// Строки в оригинале: 80296-80302
+struct _NCRYPT_KEY_BLOB_HEADER
+{
+
+  unsigned int cbSize;
+  unsigned int dwMagic;
+  unsigned int cbAlgName;
+  unsigned int cbKeyData;
+
+};

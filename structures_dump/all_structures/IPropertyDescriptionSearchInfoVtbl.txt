@@ -1,0 +1,36 @@
+// Структура: IPropertyDescriptionSearchInfoVtbl
+// Полей: 28
+// Строки в оригинале: 45448-45478
+struct IPropertyDescriptionSearchInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyDescriptionSearchInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyDescriptionSearchInfo *This);
+  ULONG (__stdcall *Release)(IPropertyDescriptionSearchInfo *This);
+  HRESULT (__stdcall *GetPropertyKey)(IPropertyDescriptionSearchInfo *This, PROPERTYKEY *pkey);
+  HRESULT (__stdcall *GetCanonicalName)(IPropertyDescriptionSearchInfo *This, LPWSTR *ppszName);
+  HRESULT (__stdcall *GetPropertyType)(IPropertyDescriptionSearchInfo *This, VARTYPE *pvartype);
+  HRESULT (__stdcall *GetDisplayName)(IPropertyDescriptionSearchInfo *This, LPWSTR *ppszName);
+  HRESULT (__stdcall *GetEditInvitation)(IPropertyDescriptionSearchInfo *This, LPWSTR *ppszInvite);
+  HRESULT (__stdcall *GetTypeFlags)(IPropertyDescriptionSearchInfo *This, PROPDESC_TYPE_FLAGS mask, PROPDESC_TYPE_FLAGS *ppdtFlags);
+  HRESULT (__stdcall *GetViewFlags)(IPropertyDescriptionSearchInfo *This, PROPDESC_VIEW_FLAGS *ppdvFlags);
+  HRESULT (__stdcall *GetDefaultColumnWidth)(IPropertyDescriptionSearchInfo *This, UINT *pcxChars);
+  HRESULT (__stdcall *GetDisplayType)(IPropertyDescriptionSearchInfo *This, PROPDESC_DISPLAYTYPE *pdisplaytype);
+  HRESULT (__stdcall *GetColumnState)(IPropertyDescriptionSearchInfo *This, SHCOLSTATEF *pcsFlags);
+  HRESULT (__stdcall *GetGroupingRange)(IPropertyDescriptionSearchInfo *This, PROPDESC_GROUPING_RANGE *pgr);
+  HRESULT (__stdcall *GetRelativeDescriptionType)(IPropertyDescriptionSearchInfo *This, PROPDESC_RELATIVEDESCRIPTION_TYPE *prdt);
+  HRESULT (__stdcall *GetRelativeDescription)(IPropertyDescriptionSearchInfo *This, const PROPVARIANT *const propvar1, const PROPVARIANT *const propvar2, LPWSTR *ppszDesc1, LPWSTR *ppszDesc2);
+  HRESULT (__stdcall *GetSortDescription)(IPropertyDescriptionSearchInfo *This, PROPDESC_SORTDESCRIPTION *psd);
+  HRESULT (__stdcall *GetSortDescriptionLabel)(IPropertyDescriptionSearchInfo *This, BOOL fDescending, LPWSTR *ppszDescription);
+  HRESULT (__stdcall *GetAggregationType)(IPropertyDescriptionSearchInfo *This, PROPDESC_AGGREGATION_TYPE *paggtype);
+  HRESULT (__stdcall *GetConditionType)(IPropertyDescriptionSearchInfo *This, PROPDESC_CONDITION_TYPE *pcontype, CONDITION_OPERATION *popDefault);
+  HRESULT (__stdcall *GetEnumTypeList)(IPropertyDescriptionSearchInfo *This, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *CoerceToCanonicalValue)(IPropertyDescriptionSearchInfo *This, PROPVARIANT *ppropvar);
+  HRESULT (__stdcall *FormatForDisplay)(IPropertyDescriptionSearchInfo *This, const PROPVARIANT *const propvar, PROPDESC_FORMAT_FLAGS pdfFlags, LPWSTR *ppszDisplay);
+  HRESULT (__stdcall *IsValueCanonical)(IPropertyDescriptionSearchInfo *This, const PROPVARIANT *const propvar);
+  HRESULT (__stdcall *GetSearchInfoFlags)(IPropertyDescriptionSearchInfo *This, PROPDESC_SEARCHINFO_FLAGS *ppdsiFlags);
+  HRESULT (__stdcall *GetColumnIndexType)(IPropertyDescriptionSearchInfo *This, PROPDESC_COLUMNINDEX_TYPE *ppdciType);
+  HRESULT (__stdcall *GetProjectionString)(IPropertyDescriptionSearchInfo *This, LPWSTR *ppszProjection);
+  HRESULT (__stdcall *GetMaxSize)(IPropertyDescriptionSearchInfo *This, UINT *pcbMaxSize);
+
+};

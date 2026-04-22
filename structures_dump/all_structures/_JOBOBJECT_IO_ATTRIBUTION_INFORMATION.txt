@@ -1,0 +1,11 @@
+// Структура: _JOBOBJECT_IO_ATTRIBUTION_INFORMATION
+// Полей: 3
+// Строки в оригинале: 85219-85224
+struct _JOBOBJECT_IO_ATTRIBUTION_INFORMATION
+{
+
+  unsigned int ControlFlags;
+  _JOBOBJECT_IO_ATTRIBUTION_STATS ReadStats;
+  _JOBOBJECT_IO_ATTRIBUTION_STATS WriteStats;
+
+};

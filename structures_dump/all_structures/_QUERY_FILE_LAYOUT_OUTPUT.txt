@@ -1,0 +1,12 @@
+// Структура: _QUERY_FILE_LAYOUT_OUTPUT
+// Полей: 4
+// Строки в оригинале: 91740-91746
+struct _QUERY_FILE_LAYOUT_OUTPUT
+{
+
+  unsigned int FileEntryCount;
+  unsigned int FirstFileOffset;
+  unsigned int Flags;
+  unsigned int Reserved;
+
+};

@@ -1,0 +1,69 @@
+// Структура: tagVARIANT
+// Полей: 61
+// Строки в оригинале: 23344-23407
+struct tagVARIANT
+{
+
+  #pragma pack(push, 8)
+  union
+  {
+    #pragma pack(push, 8)
+    struct
+    {
+      VARTYPE vt;
+      WORD wReserved1;
+      WORD wReserved2;
+      WORD wReserved3;
+      #pragma pack(push, 8)
+      union
+      {
+        LONGLONG llVal;
+        LONG lVal;
+        BYTE bVal;
+        SHORT iVal;
+        FLOAT fltVal;
+        DOUBLE dblVal;
+        VARIANT_BOOL boolVal;
+        SCODE scode;
+        CY cyVal;
+        DATE date;
+        BSTR bstrVal;
+        IUnknown *punkVal;
+        IDispatch *pdispVal;
+        SAFEARRAY *parray;
+        BYTE *pbVal;
+        SHORT *piVal;
+        LONG *plVal;
+        LONGLONG *pllVal;
+        FLOAT *pfltVal;
+        DOUBLE *pdblVal;
+        VARIANT_BOOL *pboolVal;
+        SCODE *pscode;
+        CY *pcyVal;
+        DATE *pdate;
+        BSTR *pbstrVal;
+        IUnknown **ppunkVal;
+        IDispatch **ppdispVal;
+        SAFEARRAY **pparray;
+        VARIANT *pvarVal;
+        PVOID byref;
+        CHAR cVal;
+        USHORT uiVal;
+        ULONG ulVal;
+        ULONGLONG ullVal;
+        INT intVal;
+        UINT uintVal;
+        DECIMAL *pdecVal;
+        CHAR *pcVal;
+        USHORT *puiVal;
+        ULONG *pulVal;
+        ULONGLONG *pullVal;
+        INT *pintVal;
+        UINT *puintVal;
+        #pragma pack(push, 8)
+        struct
+        {
+          PVOID pvRecord;
+          IRecordInfo *pRecInfo;
+        
+};

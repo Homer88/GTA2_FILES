@@ -1,0 +1,12 @@
+// Структура: _PLUGPLAY_CONTROL_DEVICE_RELATIONS_DATA
+// Полей: 4
+// Строки в оригинале: 88121-88127
+struct _PLUGPLAY_CONTROL_DEVICE_RELATIONS_DATA
+{
+
+  _UNICODE_STRING DeviceInstance;
+  _PNP_QUERY_RELATION Operation;
+  unsigned int BufferLength;
+  wchar_t *Buffer;
+
+};

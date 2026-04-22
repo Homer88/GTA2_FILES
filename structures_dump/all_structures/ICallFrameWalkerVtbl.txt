@@ -1,0 +1,12 @@
+// Структура: ICallFrameWalkerVtbl
+// Полей: 4
+// Строки в оригинале: 182132-182138
+struct ICallFrameWalkerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICallFrameWalker *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICallFrameWalker *This);
+  ULONG (__stdcall *Release)(ICallFrameWalker *This);
+  HRESULT (__stdcall *OnWalkInterface)(ICallFrameWalker *This, const IID *const iid, PVOID *ppvInterface, BOOL fIn, BOOL fOut);
+
+};

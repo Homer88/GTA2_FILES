@@ -1,0 +1,12 @@
+// Структура: USN_TRACK_MODIFIED_RANGES
+// Полей: 4
+// Строки в оригинале: 111293-111299
+struct USN_TRACK_MODIFIED_RANGES
+{
+
+  unsigned int Flags;
+  unsigned int Unused;
+  unsigned __int64 ChunkSize;
+  __int64 FileSizeThreshold;
+
+};

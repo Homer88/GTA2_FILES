@@ -1,0 +1,16 @@
+// Структура: _RPC_SECURITY_QOS_V4_A
+// Полей: 8
+// Строки в оригинале: 109341-109351
+struct _RPC_SECURITY_QOS_V4_A
+{
+
+  unsigned int Version;
+  unsigned int Capabilities;
+  unsigned int IdentityTracking;
+  unsigned int ImpersonationType;
+  unsigned int AdditionalSecurityInfoType;
+  _RPC_SECURITY_QOS_V4_A::<unnamed_type_u> u;
+  void *Sid;
+  unsigned int EffectiveOnly;
+
+};

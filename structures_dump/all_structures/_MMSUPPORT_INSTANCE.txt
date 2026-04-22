@@ -1,0 +1,26 @@
+// Структура: _MMSUPPORT_INSTANCE
+// Полей: 18
+// Строки в оригинале: 17982-18002
+struct _MMSUPPORT_INSTANCE
+{
+
+  unsigned int NextPageColor;
+  unsigned int PageFaultCount;
+  unsigned int TrimmedPageCount;
+  struct _MMWSL_INSTANCE *VmWorkingSetList;
+  _LIST_ENTRY WorkingSetExpansionLinks;
+  unsigned int AgeDistribution[8];
+  _KGATE *ExitOutswapGate;
+  unsigned int MinimumWorkingSetSize;
+  unsigned int WorkingSetLeafSize;
+  unsigned int WorkingSetLeafPrivateSize;
+  unsigned int WorkingSetSize;
+  unsigned int WorkingSetPrivateSize;
+  unsigned int MaximumWorkingSetSize;
+  unsigned int PeakWorkingSetSize;
+  unsigned int HardFaultCount;
+  unsigned __int16 LastTrimStamp;
+  unsigned __int16 Unused0;
+  _MMSUPPORT_FLAGS Flags;
+
+};

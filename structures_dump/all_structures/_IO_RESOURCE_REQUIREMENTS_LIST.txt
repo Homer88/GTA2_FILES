@@ -1,0 +1,15 @@
+// Структура: _IO_RESOURCE_REQUIREMENTS_LIST
+// Полей: 7
+// Строки в оригинале: 18794-18803
+struct _IO_RESOURCE_REQUIREMENTS_LIST
+{
+
+  unsigned int ListSize;
+  _INTERFACE_TYPE InterfaceType;
+  unsigned int BusNumber;
+  unsigned int SlotNumber;
+  unsigned int Reserved[3];
+  unsigned int AlternativeLists;
+  _IO_RESOURCE_LIST List[1];
+
+};

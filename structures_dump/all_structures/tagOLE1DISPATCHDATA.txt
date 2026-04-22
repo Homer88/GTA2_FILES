@@ -1,0 +1,9 @@
+// Структура: tagOLE1DISPATCHDATA
+// Полей: 1
+// Строки в оригинале: 125215-125218
+struct tagOLE1DISPATCHDATA
+{
+
+  DDE_DISPATCH_FUNC wDispFunc;
+
+};

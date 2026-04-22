@@ -1,0 +1,10 @@
+// Структура: USN_RECORD_EXTENT
+// Полей: 2
+// Строки в оригинале: 95075-95079
+struct USN_RECORD_EXTENT
+{
+
+  __int64 Offset;
+  __int64 Length;
+
+};

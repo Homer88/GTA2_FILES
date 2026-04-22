@@ -1,0 +1,9 @@
+// Структура: IHTMLScreen
+// Полей: 1
+// Строки в оригинале: 38711-38714
+struct IHTMLScreen
+{
+
+  struct IHTMLScreenVtbl *lpVtbl;
+
+};

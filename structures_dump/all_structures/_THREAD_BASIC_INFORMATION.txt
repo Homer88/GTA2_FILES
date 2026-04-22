@@ -1,0 +1,14 @@
+// Структура: _THREAD_BASIC_INFORMATION
+// Полей: 6
+// Строки в оригинале: 82315-82323
+struct _THREAD_BASIC_INFORMATION
+{
+
+  int ExitStatus;
+  _TEB *TebBaseAddress;
+  _CLIENT_ID ClientId;
+  unsigned int AffinityMask;
+  int Priority;
+  int BasePriority;
+
+};

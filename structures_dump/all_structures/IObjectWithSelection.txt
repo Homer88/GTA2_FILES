@@ -1,0 +1,9 @@
+// Структура: IObjectWithSelection
+// Полей: 1
+// Строки в оригинале: 45861-45864
+struct IObjectWithSelection
+{
+
+  struct IObjectWithSelectionVtbl *lpVtbl;
+
+};

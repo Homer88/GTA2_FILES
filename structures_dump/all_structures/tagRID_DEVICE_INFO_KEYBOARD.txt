@@ -1,0 +1,14 @@
+// Структура: tagRID_DEVICE_INFO_KEYBOARD
+// Полей: 6
+// Строки в оригинале: 96878-96886
+struct tagRID_DEVICE_INFO_KEYBOARD
+{
+
+  unsigned int dwType;
+  unsigned int dwSubType;
+  unsigned int dwKeyboardMode;
+  unsigned int dwNumberOfFunctionKeys;
+  unsigned int dwNumberOfIndicators;
+  unsigned int dwNumberOfKeysTotal;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _CRYPTOAPI_BLOB
+// Полей: 2
+// Строки в оригинале: 59021-59025
+struct _CRYPTOAPI_BLOB
+{
+
+  unsigned int cbData;
+  unsigned __int8 *pbData;
+
+};

@@ -1,0 +1,11 @@
+// Структура: FMTCACHE
+// Полей: 3
+// Строки в оригинале: 141393-141398
+struct FMTCACHE
+{
+
+  tagFORMATETC fmt;
+  unsigned int dwAspects;
+  int fUseMe;
+
+};

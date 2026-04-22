@@ -1,0 +1,10 @@
+// Структура: _HEAP_FREE_ENTRY
+// Полей: 2
+// Строки в оригинале: 21156-21160
+struct _HEAP_FREE_ENTRY
+{
+
+  $D6B3DD13D901C27E2B044017167002DD ___u0;
+  _LIST_ENTRY FreeList;
+
+};

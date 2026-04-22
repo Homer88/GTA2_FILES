@@ -1,0 +1,23 @@
+// Структура: VehiclePool
+// Полей: 15
+// Строки в оригинале: 7697-7714
+struct VehiclePool
+{
+
+  VehiclePool *DATA;
+  VehiclePool *NextElement;
+  char field_8;
+  char field_9;
+  char field_A;
+  char field_B;
+  char field_C;
+  char field_D;
+  char field_E;
+  char field_F;
+  CarSystemManager *CarSystemManager;
+  char DATA1;
+  char field_15;
+  char field_16;
+  char field_17;
+
+};

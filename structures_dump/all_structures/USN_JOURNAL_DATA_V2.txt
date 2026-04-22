@@ -1,0 +1,20 @@
+// Структура: USN_JOURNAL_DATA_V2
+// Полей: 12
+// Строки в оригинале: 111195-111209
+struct USN_JOURNAL_DATA_V2
+{
+
+  unsigned __int64 UsnJournalID;
+  __int64 FirstUsn;
+  __int64 NextUsn;
+  __int64 LowestValidUsn;
+  __int64 MaxUsn;
+  unsigned __int64 MaximumSize;
+  unsigned __int64 AllocationDelta;
+  unsigned __int16 MinSupportedMajorVersion;
+  unsigned __int16 MaxSupportedMajorVersion;
+  unsigned int Flags;
+  unsigned __int64 RangeTrackChunkSize;
+  __int64 RangeTrackFileSizeThreshold;
+
+};

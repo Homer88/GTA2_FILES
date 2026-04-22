@@ -1,0 +1,15 @@
+// Структура: IEnumITfCompositionViewVtbl
+// Полей: 7
+// Строки в оригинале: 32362-32371
+struct IEnumITfCompositionViewVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumITfCompositionView *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumITfCompositionView *This);
+  ULONG (__stdcall *Release)(IEnumITfCompositionView *This);
+  HRESULT (__stdcall *Clone)(IEnumITfCompositionView *This, IEnumITfCompositionView **ppEnum);
+  HRESULT (__stdcall *Next)(IEnumITfCompositionView *This, ULONG ulCount, ITfCompositionView **rgCompositionView, ULONG *pcFetched);
+  HRESULT (__stdcall *Reset)(IEnumITfCompositionView *This);
+  HRESULT (__stdcall *Skip)(IEnumITfCompositionView *This, ULONG ulCount);
+
+};

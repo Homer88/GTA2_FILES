@@ -1,0 +1,12 @@
+// Структура: _NDR64_TRANSMIT_AS_FLAGS
+// Полей: 4
+// Строки в оригинале: 331179-331185
+struct _NDR64_TRANSMIT_AS_FLAGS
+{
+
+  unsigned __int8 PresentedTypeIsArray : 1;
+  unsigned __int8 PresentedTypeAlign4 : 1;
+  unsigned __int8 PresentedTypeAlign8 : 1;
+  unsigned __int8 Reserved : 5;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _RTL_RXACT_LOG
+// Полей: 3
+// Строки в оригинале: 85318-85323
+struct _RTL_RXACT_LOG
+{
+
+  unsigned int OperationCount;
+  unsigned int LogSize;
+  unsigned int LogSizeInUse;
+
+};

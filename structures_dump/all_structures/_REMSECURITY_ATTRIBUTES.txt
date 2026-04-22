@@ -1,0 +1,11 @@
+// Структура: _REMSECURITY_ATTRIBUTES
+// Полей: 3
+// Строки в оригинале: 83317-83322
+struct _REMSECURITY_ATTRIBUTES
+{
+
+  unsigned int nLength;
+  unsigned int lpSecurityDescriptor;
+  int bInheritHandle;
+
+};

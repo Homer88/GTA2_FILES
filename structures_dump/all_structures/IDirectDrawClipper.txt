@@ -1,0 +1,9 @@
+// Структура: IDirectDrawClipper
+// Полей: 1
+// Строки в оригинале: 24194-24197
+struct IDirectDrawClipper
+{
+
+  struct IDirectDrawClipperVtbl *lpVtbl;
+
+};

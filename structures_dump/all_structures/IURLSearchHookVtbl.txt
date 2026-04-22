@@ -1,0 +1,9 @@
+// Структура: IURLSearchHookVtbl
+// Полей: 1
+// Строки в оригинале: 35779-35782
+struct IURLSearchHookVtbl
+{
+
+  HRESULT (__stdcall *Translate)(IURLSearchHook *This, PWSTR pwszSearchURL, DWORD cchBufferSize);
+
+};

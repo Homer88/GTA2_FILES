@@ -1,0 +1,11 @@
+// Структура: _SE_SECURITY_DESCRIPTOR
+// Полей: 3
+// Строки в оригинале: 104385-104390
+struct _SE_SECURITY_DESCRIPTOR
+{
+
+  unsigned int Size;
+  unsigned int Flags;
+  void *SecurityDescriptor;
+
+};

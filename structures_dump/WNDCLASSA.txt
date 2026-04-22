@@ -1,0 +1,17 @@
+// Structure: WNDCLASSA
+// Lines: 2051 - 2063
+// Fields: 11
+
+struct WNDCLASSA
+{
+  UINT style;
+  WNDPROC lpfnWndProc;
+  int style_2;
+  int lpfnWndProc __offset(OFF32|AUTO);
+  HINSTANCE hInstance;
+  HICON hIcon;
+  HCURSOR hCursor;
+  HBRUSH hbrBackground;
+  LPCSTR lpszMenuName;
+  LPCSTR lpszClassName;
+};

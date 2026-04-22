@@ -1,0 +1,21 @@
+// Структура: _CERT_CHAIN_ENGINE_CONFIG
+// Полей: 13
+// Строки в оригинале: 82390-82405
+struct _CERT_CHAIN_ENGINE_CONFIG
+{
+
+  unsigned int cbSize;
+  void *hRestrictedRoot;
+  void *hRestrictedTrust;
+  void *hRestrictedOther;
+  unsigned int cAdditionalStore;
+  void **rghAdditionalStore;
+  unsigned int dwFlags;
+  unsigned int dwUrlRetrievalTimeout;
+  unsigned int MaximumCachedCertificates;
+  unsigned int CycleDetectionModulus;
+  void *hExclusiveRoot;
+  void *hExclusiveTrustedPeople;
+  unsigned int dwExclusiveFlags;
+
+};

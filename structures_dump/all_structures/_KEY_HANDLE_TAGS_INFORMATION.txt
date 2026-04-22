@@ -1,0 +1,9 @@
+// Структура: _KEY_HANDLE_TAGS_INFORMATION
+// Полей: 1
+// Строки в оригинале: 81047-81050
+struct _KEY_HANDLE_TAGS_INFORMATION
+{
+
+  unsigned int HandleTags;
+
+};

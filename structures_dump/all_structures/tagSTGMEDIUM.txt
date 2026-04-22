@@ -1,0 +1,19 @@
+// Структура: tagSTGMEDIUM
+// Полей: 11
+// Строки в оригинале: 27100-27113
+struct tagSTGMEDIUM
+{
+
+  DWORD tymed;
+  #pragma pack(push, 8)
+  union
+  {
+    HBITMAP hBitmap;
+    HMETAFILEPICT hMetaFilePict;
+    HENHMETAFILE hEnhMetaFile;
+    HGLOBAL hGlobal;
+    LPOLESTR lpszFileName;
+    IStream *pstm;
+    IStorage *pstg;
+  
+};

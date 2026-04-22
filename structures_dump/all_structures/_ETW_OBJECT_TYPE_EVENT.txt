@@ -1,0 +1,11 @@
+// Структура: _ETW_OBJECT_TYPE_EVENT
+// Полей: 3
+// Строки в оригинале: 308958-308963
+struct _ETW_OBJECT_TYPE_EVENT
+{
+
+  unsigned __int16 ObjectType;
+  unsigned __int16 Reserved;
+  wchar_t Name[1];
+
+};

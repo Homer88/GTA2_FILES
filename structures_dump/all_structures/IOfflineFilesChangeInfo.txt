@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesChangeInfo
+// Полей: 1
+// Строки в оригинале: 28314-28317
+struct IOfflineFilesChangeInfo
+{
+
+  struct IOfflineFilesChangeInfoVtbl *lpVtbl;
+
+};

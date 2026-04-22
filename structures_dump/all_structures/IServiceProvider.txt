@@ -1,0 +1,9 @@
+// Структура: IServiceProvider
+// Полей: 1
+// Строки в оригинале: 32800-32803
+struct IServiceProvider
+{
+
+  struct IServiceProviderVtbl *lpVtbl;
+
+};

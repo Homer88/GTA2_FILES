@@ -1,0 +1,14 @@
+// Структура: _LOAD_ASDATA_TABLE
+// Полей: 6
+// Строки в оригинале: 85605-85613
+struct _LOAD_ASDATA_TABLE
+{
+
+  void *Module;
+  wchar_t *FilePath;
+  unsigned int Size;
+  void *Handle;
+  int RefCount;
+  _ACTIVATION_CONTEXT *EntryPointActivationContext;
+
+};

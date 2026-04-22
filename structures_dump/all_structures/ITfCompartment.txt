@@ -1,0 +1,9 @@
+// Структура: ITfCompartment
+// Полей: 1
+// Строки в оригинале: 41672-41675
+struct ITfCompartment
+{
+
+  struct ITfCompartmentVtbl *lpVtbl;
+
+};

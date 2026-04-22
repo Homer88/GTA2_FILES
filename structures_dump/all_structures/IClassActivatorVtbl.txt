@@ -1,0 +1,12 @@
+// Структура: IClassActivatorVtbl
+// Полей: 4
+// Строки в оригинале: 182189-182195
+struct IClassActivatorVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IClassActivator *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IClassActivator *This);
+  ULONG (__stdcall *Release)(IClassActivator *This);
+  HRESULT (__stdcall *GetClassObject)(IClassActivator *This, const IID *const rclsid, DWORD dwClassContext, LCID locale, const IID *const riid, void **ppv);
+
+};

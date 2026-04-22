@@ -1,0 +1,9 @@
+// Структура: IHTMLTable
+// Полей: 1
+// Строки в оригинале: 35896-35899
+struct IHTMLTable
+{
+
+  struct IHTMLTableVtbl *lpVtbl;
+
+};

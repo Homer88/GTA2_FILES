@@ -1,0 +1,14 @@
+// Структура: _PIPEDESC_FLAGS
+// Полей: 6
+// Строки в оригинале: 86439-86447
+struct _PIPEDESC_FLAGS
+{
+
+  unsigned __int16 AuxOutBufferAllocated : 1;
+  unsigned __int16 NoBufferCallPending : 1;
+  unsigned __int16 Reserved : 1;
+  unsigned __int16 NoMoreBuffersToRead : 1;
+  unsigned __int16 LastPipeSend : 1;
+  unsigned __int16 InPipePush : 1;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _PS_MEMORY_RESERVE
+// Полей: 2
+// Строки в оригинале: 97477-97481
+struct _PS_MEMORY_RESERVE
+{
+
+  void *ReserveAddress;
+  unsigned int ReserveSize;
+
+};

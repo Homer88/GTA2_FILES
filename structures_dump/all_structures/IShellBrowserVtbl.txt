@@ -1,0 +1,26 @@
+// Структура: IShellBrowserVtbl
+// Полей: 18
+// Строки в оригинале: 33330-33350
+struct IShellBrowserVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellBrowser *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellBrowser *This);
+  ULONG (__stdcall *Release)(IShellBrowser *This);
+  HRESULT (__stdcall *GetWindow)(IShellBrowser *This, HWND *phwnd);
+  HRESULT (__stdcall *ContextSensitiveHelp)(IShellBrowser *This, BOOL fEnterMode);
+  HRESULT (__stdcall *InsertMenusSB)(IShellBrowser *This, HMENU hmenuShared, LPOLEMENUGROUPWIDTHS lpMenuWidths);
+  HRESULT (__stdcall *SetMenuSB)(IShellBrowser *This, HMENU hmenuShared, HOLEMENU holemenuRes, HWND hwndActiveObject);
+  HRESULT (__stdcall *RemoveMenusSB)(IShellBrowser *This, HMENU hmenuShared);
+  HRESULT (__stdcall *SetStatusTextSB)(IShellBrowser *This, LPCWSTR pszStatusText);
+  HRESULT (__stdcall *EnableModelessSB)(IShellBrowser *This, BOOL fEnable);
+  HRESULT (__stdcall *TranslateAcceleratorSB)(IShellBrowser *This, MSG *pmsg, WORD wID);
+  HRESULT (__stdcall *BrowseObject)(IShellBrowser *This, LPCITEMIDLIST pidl, UINT wFlags);
+  HRESULT (__stdcall *GetViewStateStream)(IShellBrowser *This, DWORD grfMode, IStream **ppStrm);
+  HRESULT (__stdcall *GetControlWindow)(IShellBrowser *This, UINT id, HWND *phwnd);
+  HRESULT (__stdcall *SendControlMsg)(IShellBrowser *This, UINT id, UINT uMsg, WPARAM wParam, LPARAM lParam, LRESULT *pret);
+  HRESULT (__stdcall *QueryActiveShellView)(IShellBrowser *This, IShellView **ppshv);
+  HRESULT (__stdcall *OnViewWindowActive)(IShellBrowser *This, IShellView *pshv);
+  HRESULT (__stdcall *SetToolbarItems)(IShellBrowser *This, LPTBBUTTONSB lpButtons, UINT nButtons, UINT uFlags);
+
+};

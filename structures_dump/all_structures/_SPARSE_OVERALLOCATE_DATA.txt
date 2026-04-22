@@ -1,0 +1,9 @@
+// Структура: _SPARSE_OVERALLOCATE_DATA
+// Полей: 1
+// Строки в оригинале: 96820-96823
+struct _SPARSE_OVERALLOCATE_DATA
+{
+
+  unsigned int SparseOverAllocateSize;
+
+};

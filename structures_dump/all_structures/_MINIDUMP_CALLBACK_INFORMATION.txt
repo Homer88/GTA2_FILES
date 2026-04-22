@@ -1,0 +1,10 @@
+// Структура: _MINIDUMP_CALLBACK_INFORMATION
+// Полей: 2
+// Строки в оригинале: 123434-123438
+struct _MINIDUMP_CALLBACK_INFORMATION
+{
+
+  int (__stdcall *CallbackRoutine)(void *, _MINIDUMP_CALLBACK_INPUT *, _MINIDUMP_CALLBACK_OUTPUT *);
+  void *CallbackParam;
+
+};

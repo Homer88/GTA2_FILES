@@ -1,0 +1,9 @@
+// Структура: IClassFactory
+// Полей: 1
+// Строки в оригинале: 28752-28755
+struct IClassFactory
+{
+
+  struct IClassFactoryVtbl *lpVtbl;
+
+};

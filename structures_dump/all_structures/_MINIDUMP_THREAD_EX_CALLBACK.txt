@@ -1,0 +1,16 @@
+// Структура: _MINIDUMP_THREAD_EX_CALLBACK
+// Полей: 8
+// Строки в оригинале: 122652-122662
+struct _MINIDUMP_THREAD_EX_CALLBACK
+{
+
+  unsigned int ThreadId;
+  void *ThreadHandle;
+  _CONTEXT Context;
+  unsigned int SizeOfContext;
+  unsigned __int64 StackBase;
+  unsigned __int64 StackEnd;
+  unsigned __int64 BackingStoreBase;
+  unsigned __int64 BackingStoreEnd;
+
+};

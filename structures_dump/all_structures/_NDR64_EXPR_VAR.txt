@@ -1,0 +1,12 @@
+// Структура: _NDR64_EXPR_VAR
+// Полей: 4
+// Строки в оригинале: 330926-330932
+struct _NDR64_EXPR_VAR
+{
+
+  unsigned __int8 ExprType;
+  unsigned __int8 VarType;
+  unsigned __int16 Reserved;
+  unsigned int Offset;
+
+};

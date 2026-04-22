@@ -1,0 +1,13 @@
+// Структура: WireLocalThatPart1
+// Полей: 5
+// Строки в оригинале: 63900-63907
+struct WireLocalThatPart1
+{
+
+  unsigned __int64 marshalingSetId;
+  unsigned int reserved;
+  unsigned int unique_pAsyncResponseBlock;
+  unsigned int unique_containerErrorInformation;
+  unsigned int unique_containerPassthroughData;
+
+};

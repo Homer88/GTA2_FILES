@@ -1,0 +1,11 @@
+// Структура: _AHC_SERVICE_INIT_PROCESS_DATA
+// Полей: 3
+// Строки в оригинале: 313095-313100
+struct _AHC_SERVICE_INIT_PROCESS_DATA
+{
+
+  void *ProcessHandle;
+  void *Data;
+  unsigned int DataSize;
+
+};

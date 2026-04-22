@@ -1,0 +1,9 @@
+// Структура: IWICBitmapLock
+// Полей: 1
+// Строки в оригинале: 42257-42260
+struct IWICBitmapLock
+{
+
+  struct IWICBitmapLockVtbl *lpVtbl;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IDirect3DSwapChain9
+// Полей: 1
+// Строки в оригинале: 25742-25745
+struct IDirect3DSwapChain9
+{
+
+  struct IDirect3DSwapChain9Vtbl *lpVtbl;
+
+};

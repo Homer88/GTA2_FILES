@@ -1,0 +1,12 @@
+// Структура: _CRYPT_PRIVATE_KEY_INFO
+// Полей: 4
+// Строки в оригинале: 84985-84991
+struct _CRYPT_PRIVATE_KEY_INFO
+{
+
+  unsigned int Version;
+  _CRYPT_ALGORITHM_IDENTIFIER Algorithm;
+  _CRYPTOAPI_BLOB PrivateKey;
+  _CRYPT_ATTRIBUTES *pAttributes;
+
+};

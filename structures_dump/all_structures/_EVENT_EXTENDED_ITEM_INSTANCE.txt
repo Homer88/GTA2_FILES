@@ -1,0 +1,11 @@
+// Структура: _EVENT_EXTENDED_ITEM_INSTANCE
+// Полей: 3
+// Строки в оригинале: 310693-310698
+struct _EVENT_EXTENDED_ITEM_INSTANCE
+{
+
+  unsigned int InstanceId;
+  unsigned int ParentInstanceId;
+  _GUID ParentGuid;
+
+};

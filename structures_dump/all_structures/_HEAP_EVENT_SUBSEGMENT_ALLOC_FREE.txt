@@ -1,0 +1,12 @@
+// Структура: _HEAP_EVENT_SUBSEGMENT_ALLOC_FREE
+// Полей: 4
+// Строки в оригинале: 312906-312912
+struct _HEAP_EVENT_SUBSEGMENT_ALLOC_FREE
+{
+
+  void *HeapHandle;
+  void *SubSegment;
+  unsigned int SubSegmentSize;
+  unsigned int BlockSize;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _CM_MCA_POS_DATA
+// Полей: 5
+// Строки в оригинале: 109757-109764
+struct _CM_MCA_POS_DATA
+{
+
+  unsigned __int16 AdapterId;
+  unsigned __int8 PosData1;
+  unsigned __int8 PosData2;
+  unsigned __int8 PosData3;
+  unsigned __int8 PosData4;
+
+};

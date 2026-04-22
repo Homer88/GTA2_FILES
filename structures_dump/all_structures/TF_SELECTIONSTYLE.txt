@@ -1,0 +1,10 @@
+// Структура: TF_SELECTIONSTYLE
+// Полей: 2
+// Строки в оригинале: 30305-30309
+struct TF_SELECTIONSTYLE
+{
+
+  TfActiveSelEnd ase;
+  BOOL fInterimChar;
+
+};

@@ -1,0 +1,55 @@
+// Структура: ITaskSettingsVtbl
+// Полей: 47
+// Строки в оригинале: 44856-44905
+struct ITaskSettingsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITaskSettings *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITaskSettings *This);
+  ULONG (__stdcall *Release)(ITaskSettings *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(ITaskSettings *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(ITaskSettings *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(ITaskSettings *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(ITaskSettings *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_AllowDemandStart)(ITaskSettings *This, VARIANT_BOOL *pAllowDemandStart);
+  HRESULT (__stdcall *put_AllowDemandStart)(ITaskSettings *This, VARIANT_BOOL allowDemandStart);
+  HRESULT (__stdcall *get_RestartInterval)(ITaskSettings *This, BSTR *pRestartInterval);
+  HRESULT (__stdcall *put_RestartInterval)(ITaskSettings *This, BSTR restartInterval);
+  HRESULT (__stdcall *get_RestartCount)(ITaskSettings *This, int *pRestartCount);
+  HRESULT (__stdcall *put_RestartCount)(ITaskSettings *This, int restartCount);
+  HRESULT (__stdcall *get_MultipleInstances)(ITaskSettings *This, TASK_INSTANCES_POLICY *pPolicy);
+  HRESULT (__stdcall *put_MultipleInstances)(ITaskSettings *This, TASK_INSTANCES_POLICY policy);
+  HRESULT (__stdcall *get_StopIfGoingOnBatteries)(ITaskSettings *This, VARIANT_BOOL *pStopIfOnBatteries);
+  HRESULT (__stdcall *put_StopIfGoingOnBatteries)(ITaskSettings *This, VARIANT_BOOL stopIfOnBatteries);
+  HRESULT (__stdcall *get_DisallowStartIfOnBatteries)(ITaskSettings *This, VARIANT_BOOL *pDisallowStart);
+  HRESULT (__stdcall *put_DisallowStartIfOnBatteries)(ITaskSettings *This, VARIANT_BOOL disallowStart);
+  HRESULT (__stdcall *get_AllowHardTerminate)(ITaskSettings *This, VARIANT_BOOL *pAllowHardTerminate);
+  HRESULT (__stdcall *put_AllowHardTerminate)(ITaskSettings *This, VARIANT_BOOL allowHardTerminate);
+  HRESULT (__stdcall *get_StartWhenAvailable)(ITaskSettings *This, VARIANT_BOOL *pStartWhenAvailable);
+  HRESULT (__stdcall *put_StartWhenAvailable)(ITaskSettings *This, VARIANT_BOOL startWhenAvailable);
+  HRESULT (__stdcall *get_XmlText)(ITaskSettings *This, BSTR *pText);
+  HRESULT (__stdcall *put_XmlText)(ITaskSettings *This, BSTR text);
+  HRESULT (__stdcall *get_RunOnlyIfNetworkAvailable)(ITaskSettings *This, VARIANT_BOOL *pRunOnlyIfNetworkAvailable);
+  HRESULT (__stdcall *put_RunOnlyIfNetworkAvailable)(ITaskSettings *This, VARIANT_BOOL runOnlyIfNetworkAvailable);
+  HRESULT (__stdcall *get_ExecutionTimeLimit)(ITaskSettings *This, BSTR *pExecutionTimeLimit);
+  HRESULT (__stdcall *put_ExecutionTimeLimit)(ITaskSettings *This, BSTR executionTimeLimit);
+  HRESULT (__stdcall *get_Enabled)(ITaskSettings *This, VARIANT_BOOL *pEnabled);
+  HRESULT (__stdcall *put_Enabled)(ITaskSettings *This, VARIANT_BOOL enabled);
+  HRESULT (__stdcall *get_DeleteExpiredTaskAfter)(ITaskSettings *This, BSTR *pExpirationDelay);
+  HRESULT (__stdcall *put_DeleteExpiredTaskAfter)(ITaskSettings *This, BSTR expirationDelay);
+  HRESULT (__stdcall *get_Priority)(ITaskSettings *This, int *pPriority);
+  HRESULT (__stdcall *put_Priority)(ITaskSettings *This, int priority);
+  HRESULT (__stdcall *get_Compatibility)(ITaskSettings *This, TASK_COMPATIBILITY *pCompatLevel);
+  HRESULT (__stdcall *put_Compatibility)(ITaskSettings *This, TASK_COMPATIBILITY compatLevel);
+  HRESULT (__stdcall *get_Hidden)(ITaskSettings *This, VARIANT_BOOL *pHidden);
+  HRESULT (__stdcall *put_Hidden)(ITaskSettings *This, VARIANT_BOOL hidden);
+  HRESULT (__stdcall *get_IdleSettings)(ITaskSettings *This, IIdleSettings **ppIdleSettings);
+  HRESULT (__stdcall *put_IdleSettings)(ITaskSettings *This, IIdleSettings *pIdleSettings);
+  HRESULT (__stdcall *get_RunOnlyIfIdle)(ITaskSettings *This, VARIANT_BOOL *pRunOnlyIfIdle);
+  HRESULT (__stdcall *put_RunOnlyIfIdle)(ITaskSettings *This, VARIANT_BOOL runOnlyIfIdle);
+  HRESULT (__stdcall *get_WakeToRun)(ITaskSettings *This, VARIANT_BOOL *pWake);
+  HRESULT (__stdcall *put_WakeToRun)(ITaskSettings *This, VARIANT_BOOL wake);
+  HRESULT (__stdcall *get_NetworkSettings)(ITaskSettings *This, INetworkSettings **ppNetworkSettings);
+  HRESULT (__stdcall *put_NetworkSettings)(ITaskSettings *This, INetworkSettings *pNetworkSettings);
+
+};

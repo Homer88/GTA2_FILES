@@ -1,0 +1,11 @@
+// Структура: tagEMRCREATECOLORSPACE
+// Полей: 3
+// Строки в оригинале: 105699-105704
+struct tagEMRCREATECOLORSPACE
+{
+
+  tagEMR emr;
+  unsigned int ihCS;
+  tagLOGCOLORSPACEA lcs;
+
+};

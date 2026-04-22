@@ -1,0 +1,10 @@
+// Структура: _SE_SET_FILE_CACHE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 100530-100534
+struct _SE_SET_FILE_CACHE_INFORMATION
+{
+
+  unsigned int Size;
+  _UNICODE_STRING CatalogDirectoryPath;
+
+};

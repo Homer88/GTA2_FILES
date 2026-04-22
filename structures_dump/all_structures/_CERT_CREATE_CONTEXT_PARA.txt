@@ -1,0 +1,13 @@
+// Структура: _CERT_CREATE_CONTEXT_PARA
+// Полей: 5
+// Строки в оригинале: 89170-89177
+struct _CERT_CREATE_CONTEXT_PARA
+{
+
+  unsigned int cbSize;
+  void (__stdcall *pfnFree)(void *);
+  void *pvFree;
+  int (__stdcall *pfnSort)(unsigned int, unsigned int, unsigned int, void *);
+  void *pvSort;
+
+};

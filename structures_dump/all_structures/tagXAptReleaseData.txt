@@ -1,0 +1,11 @@
+// Структура: tagXAptReleaseData
+// Полей: 3
+// Строки в оригинале: 250395-250400
+struct tagXAptReleaseData
+{
+
+  unsigned __int16 cIfs;
+  tagREMINTERFACEREF *pIfRefs;
+  CRemoteUnknown *pRemUnk;
+
+};

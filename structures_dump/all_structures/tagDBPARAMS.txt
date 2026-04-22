@@ -1,0 +1,11 @@
+// Структура: tagDBPARAMS
+// Полей: 3
+// Строки в оригинале: 37330-37335
+struct tagDBPARAMS
+{
+
+  void *pData;
+  DB_UPARAMS cParamSets;
+  HACCESSOR hAccessor;
+
+};

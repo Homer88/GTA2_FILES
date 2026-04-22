@@ -1,0 +1,13 @@
+// Структура: _TXFS_LIST_TRANSACTIONS_ENTRY
+// Полей: 5
+// Строки в оригинале: 102202-102209
+struct _TXFS_LIST_TRANSACTIONS_ENTRY
+{
+
+  _GUID TransactionId;
+  unsigned int TransactionState;
+  unsigned int Reserved1;
+  unsigned int Reserved2;
+  __int64 Reserved3;
+
+};

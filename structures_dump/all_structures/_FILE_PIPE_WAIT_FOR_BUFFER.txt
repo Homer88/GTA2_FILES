@@ -1,0 +1,12 @@
+// Структура: _FILE_PIPE_WAIT_FOR_BUFFER
+// Полей: 4
+// Строки в оригинале: 108637-108643
+struct _FILE_PIPE_WAIT_FOR_BUFFER
+{
+
+  _LARGE_INTEGER Timeout;
+  unsigned int NameLength;
+  unsigned __int8 TimeoutSpecified;
+  wchar_t Name[1];
+
+};

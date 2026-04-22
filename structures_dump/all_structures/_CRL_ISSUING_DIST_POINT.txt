@@ -1,0 +1,13 @@
+// Структура: _CRL_ISSUING_DIST_POINT
+// Полей: 5
+// Строки в оригинале: 112213-112220
+struct _CRL_ISSUING_DIST_POINT
+{
+
+  _CRL_DIST_POINT_NAME DistPointName;
+  int fOnlyContainsUserCerts;
+  int fOnlyContainsCACerts;
+  _CRYPT_BIT_BLOB OnlySomeReasonFlags;
+  int fIndirectCRL;
+
+};

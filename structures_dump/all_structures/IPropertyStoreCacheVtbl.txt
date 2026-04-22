@@ -1,0 +1,20 @@
+// Структура: IPropertyStoreCacheVtbl
+// Полей: 12
+// Строки в оригинале: 45403-45417
+struct IPropertyStoreCacheVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyStoreCache *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyStoreCache *This);
+  ULONG (__stdcall *Release)(IPropertyStoreCache *This);
+  HRESULT (__stdcall *GetCount)(IPropertyStoreCache *This, DWORD *cProps);
+  HRESULT (__stdcall *GetAt)(IPropertyStoreCache *This, DWORD iProp, PROPERTYKEY *pkey);
+  HRESULT (__stdcall *GetValue)(IPropertyStoreCache *This, const PROPERTYKEY *const key, PROPVARIANT *pv);
+  HRESULT (__stdcall *SetValue)(IPropertyStoreCache *This, const PROPERTYKEY *const key, const PROPVARIANT *const propvar);
+  HRESULT (__stdcall *Commit)(IPropertyStoreCache *This);
+  HRESULT (__stdcall *GetState)(IPropertyStoreCache *This, const PROPERTYKEY *const key, PSC_STATE *pstate);
+  HRESULT (__stdcall *GetValueAndState)(IPropertyStoreCache *This, const PROPERTYKEY *const key, PROPVARIANT *ppropvar, PSC_STATE *pstate);
+  HRESULT (__stdcall *SetState)(IPropertyStoreCache *This, const PROPERTYKEY *const key, PSC_STATE state);
+  HRESULT (__stdcall *SetValueAndState)(IPropertyStoreCache *This, const PROPERTYKEY *const key, const PROPVARIANT *ppropvar, PSC_STATE state);
+
+};

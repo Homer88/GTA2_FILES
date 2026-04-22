@@ -1,0 +1,15 @@
+// Структура: _WNODE_HEADER
+// Полей: 7
+// Строки в оригинале: 309243-309252
+struct _WNODE_HEADER
+{
+
+  unsigned int BufferSize;
+  unsigned int ProviderId;
+  $78C5DC376B2693BB2F493C5FF1312557 ___u2;
+  $F606AFBB508648AA09EE7F6681DAAC87 ___u3;
+  _GUID Guid;
+  unsigned int ClientContext;
+  unsigned int Flags;
+
+};

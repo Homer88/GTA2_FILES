@@ -1,0 +1,12 @@
+// Структура: WICRect
+// Полей: 4
+// Строки в оригинале: 40165-40171
+struct WICRect
+{
+
+  INT X;
+  INT Y;
+  INT Width;
+  INT Height;
+
+};

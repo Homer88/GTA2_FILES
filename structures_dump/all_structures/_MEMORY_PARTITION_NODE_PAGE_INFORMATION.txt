@@ -1,0 +1,17 @@
+// Структура: _MEMORY_PARTITION_NODE_PAGE_INFORMATION
+// Полей: 9
+// Строки в оригинале: 83432-83443
+struct _MEMORY_PARTITION_NODE_PAGE_INFORMATION
+{
+
+  unsigned __int64 TotalPageCount;
+  unsigned __int64 SmallFreePageCount;
+  unsigned __int64 SmallZeroPageCount;
+  unsigned __int64 MediumFreePageCount;
+  unsigned __int64 MediumZeroPageCount;
+  unsigned __int64 LargeFreePageCount;
+  unsigned __int64 LargeZeroPageCount;
+  unsigned __int64 HugeFreePageCount;
+  unsigned __int64 HugeZeroPageCount;
+
+};

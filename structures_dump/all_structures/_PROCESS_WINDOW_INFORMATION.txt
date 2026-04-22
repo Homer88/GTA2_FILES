@@ -1,0 +1,11 @@
+// Структура: _PROCESS_WINDOW_INFORMATION
+// Полей: 3
+// Строки в оригинале: 81393-81398
+struct _PROCESS_WINDOW_INFORMATION
+{
+
+  unsigned int WindowFlags;
+  unsigned __int16 WindowTitleLength;
+  wchar_t WindowTitle[1];
+
+};

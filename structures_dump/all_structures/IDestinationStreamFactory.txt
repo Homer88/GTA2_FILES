@@ -1,0 +1,9 @@
+// Структура: IDestinationStreamFactory
+// Полей: 1
+// Строки в оригинале: 34148-34151
+struct IDestinationStreamFactory
+{
+
+  struct IDestinationStreamFactoryVtbl *lpVtbl;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _ASSEMBLY_FILE_DETAILED_INFORMATION
+// Полей: 5
+// Строки в оригинале: 108162-108169
+struct _ASSEMBLY_FILE_DETAILED_INFORMATION
+{
+
+  unsigned int ulFlags;
+  unsigned int ulFilenameLength;
+  unsigned int ulPathLength;
+  const wchar_t *lpFileName;
+  const wchar_t *lpFilePath;
+
+};

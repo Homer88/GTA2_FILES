@@ -1,0 +1,12 @@
+// Структура: _MemoryInfo
+// Полей: 4
+// Строки в оригинале: 286351-286357
+struct _MemoryInfo
+{
+
+  unsigned __int16 MemorySize;
+  unsigned __int16 MemoryAlignment;
+  unsigned __int16 WireSize;
+  unsigned __int16 WireAlignment;
+
+};

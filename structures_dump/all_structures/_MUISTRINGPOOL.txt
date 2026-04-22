@@ -1,0 +1,15 @@
+// Структура: _MUISTRINGPOOL
+// Полей: 7
+// Строки в оригинале: 80787-80796
+struct _MUISTRINGPOOL
+{
+
+  unsigned int TotalSize;
+  unsigned __int16 MaxNumStrings;
+  unsigned __int16 NumStrings;
+  unsigned __int16 MaxNumCharsInPool;
+  unsigned __int16 NumCharsInPool;
+  __int16 *Strings;
+  wchar_t *Pool;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _ETW_CLOCK_STATE_CHANGE_EVENT
+// Полей: 5
+// Строки в оригинале: 310947-310954
+struct _ETW_CLOCK_STATE_CHANGE_EVENT
+{
+
+  unsigned __int8 NewState;
+  unsigned __int8 PrevState;
+  unsigned __int8 Reserved[6];
+  $4C7A390B89A95D82A860F49EBA2DFCA7 ___u3;
+  unsigned __int64 RequestedIncrement;
+
+};

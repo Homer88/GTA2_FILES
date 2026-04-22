@@ -1,0 +1,13 @@
+// Структура: ICurrentItemVtbl
+// Полей: 5
+// Строки в оригинале: 37020-37027
+struct ICurrentItemVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICurrentItem *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICurrentItem *This);
+  ULONG (__stdcall *Release)(ICurrentItem *This);
+  HRESULT (__stdcall *GetItemIDList)(ICurrentItem *This, LPITEMIDLIST *ppidl);
+  HRESULT (__stdcall *GetItem)(ICurrentItem *This, IShellItem **ppsi);
+
+};

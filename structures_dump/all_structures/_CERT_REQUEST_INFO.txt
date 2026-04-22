@@ -1,0 +1,13 @@
+// Структура: _CERT_REQUEST_INFO
+// Полей: 5
+// Строки в оригинале: 87067-87074
+struct _CERT_REQUEST_INFO
+{
+
+  unsigned int dwVersion;
+  _CRYPTOAPI_BLOB Subject;
+  _CERT_PUBLIC_KEY_INFO SubjectPublicKeyInfo;
+  unsigned int cAttribute;
+  _CRYPT_ATTRIBUTE *rgAttribute;
+
+};

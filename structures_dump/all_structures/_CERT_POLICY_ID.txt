@@ -1,0 +1,10 @@
+// Структура: _CERT_POLICY_ID
+// Полей: 2
+// Строки в оригинале: 95196-95200
+struct _CERT_POLICY_ID
+{
+
+  unsigned int cCertPolicyElementId;
+  char **rgpszCertPolicyElementId;
+
+};

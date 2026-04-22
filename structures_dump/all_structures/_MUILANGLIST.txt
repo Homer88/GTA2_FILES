@@ -1,0 +1,17 @@
+// Структура: _MUILANGLIST
+// Полей: 9
+// Строки в оригинале: 80846-80857
+struct _MUILANGLIST
+{
+
+  unsigned int TotalSize;
+  unsigned __int16 NumLanguages;
+  unsigned __int16 MaxNumLanguages;
+  unsigned __int8 bUseUseMachineConfigList;
+  _MUIREGISTRYINFO *RegInfo;
+  _MUILANGLISTNODE *Languages;
+  unsigned __int64 ullMask;
+  unsigned int uConsoleFlag;
+  wchar_t Checksum[10];
+
+};

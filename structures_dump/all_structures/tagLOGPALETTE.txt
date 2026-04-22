@@ -1,0 +1,11 @@
+// Структура: tagLOGPALETTE
+// Полей: 3
+// Строки в оригинале: 27549-27554
+struct tagLOGPALETTE
+{
+
+  WORD palVersion;
+  WORD palNumEntries;
+  PALETTEENTRY palPalEntry[1];
+
+};

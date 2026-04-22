@@ -1,0 +1,12 @@
+// Структура: DISPLAYCONFIG_PATH_SOURCE_INFO
+// Полей: 4
+// Строки в оригинале: 112146-112152
+struct DISPLAYCONFIG_PATH_SOURCE_INFO
+{
+
+  _LUID adapterId;
+  unsigned int id;
+  $2A62BB512A793996BC839C82321A1E00 ___u2;
+  unsigned int statusFlags;
+
+};

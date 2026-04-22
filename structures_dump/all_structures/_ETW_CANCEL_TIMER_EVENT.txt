@@ -1,0 +1,9 @@
+// Структура: _ETW_CANCEL_TIMER_EVENT
+// Полей: 1
+// Строки в оригинале: 311555-311558
+struct _ETW_CANCEL_TIMER_EVENT
+{
+
+  unsigned int TimerAddress;
+
+};

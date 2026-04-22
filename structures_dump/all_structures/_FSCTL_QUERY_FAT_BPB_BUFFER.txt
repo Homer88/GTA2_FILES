@@ -1,0 +1,9 @@
+// Структура: _FSCTL_QUERY_FAT_BPB_BUFFER
+// Полей: 1
+// Строки в оригинале: 104901-104904
+struct _FSCTL_QUERY_FAT_BPB_BUFFER
+{
+
+  unsigned __int8 First0x24BytesOfBootSector[36];
+
+};

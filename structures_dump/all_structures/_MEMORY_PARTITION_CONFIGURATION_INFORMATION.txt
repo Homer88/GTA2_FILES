@@ -1,0 +1,26 @@
+// Структура: _MEMORY_PARTITION_CONFIGURATION_INFORMATION
+// Полей: 18
+// Строки в оригинале: 107235-107255
+struct _MEMORY_PARTITION_CONFIGURATION_INFORMATION
+{
+
+  unsigned int Flags;
+  unsigned int NumaNode;
+  unsigned int Channel;
+  unsigned int NumberOfNumaNodes;
+  unsigned int ResidentAvailablePages;
+  unsigned int CommittedPages;
+  unsigned int CommitLimit;
+  unsigned int PeakCommitment;
+  unsigned int TotalNumberOfPages;
+  unsigned int AvailablePages;
+  unsigned int ZeroPages;
+  unsigned int FreePages;
+  unsigned int StandbyPages;
+  unsigned int StandbyPageCountByPriority[8];
+  unsigned int RepurposedPagesByPriority[8];
+  unsigned int MaximumCommitLimit;
+  unsigned int DonatedPagesToPartitions;
+  unsigned int PartitionId;
+
+};

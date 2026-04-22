@@ -1,0 +1,9 @@
+// Структура: _FILE_VALID_DATA_LENGTH_INFORMATION
+// Полей: 1
+// Строки в оригинале: 97914-97917
+struct _FILE_VALID_DATA_LENGTH_INFORMATION
+{
+
+  _LARGE_INTEGER ValidDataLength;
+
+};

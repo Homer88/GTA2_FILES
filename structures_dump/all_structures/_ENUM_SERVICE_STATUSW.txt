@@ -1,0 +1,11 @@
+// Структура: _ENUM_SERVICE_STATUSW
+// Полей: 3
+// Строки в оригинале: 79625-79630
+struct _ENUM_SERVICE_STATUSW
+{
+
+  wchar_t *lpServiceName;
+  wchar_t *lpDisplayName;
+  _SERVICE_STATUS ServiceStatus;
+
+};

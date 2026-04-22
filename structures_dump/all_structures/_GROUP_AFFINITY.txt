@@ -1,0 +1,11 @@
+// Структура: _GROUP_AFFINITY
+// Полей: 3
+// Строки в оригинале: 14355-14360
+struct _GROUP_AFFINITY
+{
+
+  unsigned int Mask;
+  unsigned __int16 Group;
+  unsigned __int16 Reserved[3];
+
+};

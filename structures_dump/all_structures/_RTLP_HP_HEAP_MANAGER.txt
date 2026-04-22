@@ -1,0 +1,13 @@
+// Структура: _RTLP_HP_HEAP_MANAGER
+// Полей: 5
+// Строки в оригинале: 20808-20815
+struct _RTLP_HP_HEAP_MANAGER
+{
+
+  _RTLP_HP_HEAP_GLOBALS *Globals;
+  _RTLP_HP_ALLOC_TRACKER AllocTracker;
+  _HEAP_VAMGR_CTX VaMgr;
+  _RTLP_HP_METADATA_HEAP_CTX MetadataHeaps[3];
+  _RTL_HP_SUB_ALLOCATOR_CONFIGS SubAllocConfigs;
+
+};

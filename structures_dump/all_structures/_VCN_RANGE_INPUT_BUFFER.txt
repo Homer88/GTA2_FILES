@@ -1,0 +1,10 @@
+// Структура: _VCN_RANGE_INPUT_BUFFER
+// Полей: 2
+// Строки в оригинале: 89548-89552
+struct _VCN_RANGE_INPUT_BUFFER
+{
+
+  _LARGE_INTEGER StartingVcn;
+  _LARGE_INTEGER ClusterCount;
+
+};

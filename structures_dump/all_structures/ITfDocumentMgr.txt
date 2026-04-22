@@ -1,0 +1,9 @@
+// Структура: ITfDocumentMgr
+// Полей: 1
+// Строки в оригинале: 30356-30359
+struct ITfDocumentMgr
+{
+
+  struct ITfDocumentMgrVtbl *lpVtbl;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IPropertyDescriptionAliasInfo
+// Полей: 1
+// Строки в оригинале: 39577-39580
+struct IPropertyDescriptionAliasInfo
+{
+
+  struct IPropertyDescriptionAliasInfoVtbl *lpVtbl;
+
+};

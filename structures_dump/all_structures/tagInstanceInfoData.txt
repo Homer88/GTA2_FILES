@@ -1,0 +1,12 @@
+// Структура: tagInstanceInfoData
+// Полей: 4
+// Строки в оригинале: 192807-192813
+struct tagInstanceInfoData
+{
+
+  wchar_t *fileName;
+  unsigned int mode;
+  tagMInterfacePointer *ifdROT;
+  tagMInterfacePointer *ifdStg;
+
+};

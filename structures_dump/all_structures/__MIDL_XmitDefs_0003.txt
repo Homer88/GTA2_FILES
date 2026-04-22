@@ -1,0 +1,15 @@
+// Структура: __MIDL_XmitDefs_0003
+// Полей: 7
+// Строки в оригинале: 314363-314372
+struct __MIDL_XmitDefs_0003
+{
+
+  unsigned int dwFlags;
+  unsigned int dwClientThread;
+  _GUID passthroughTraceActivity;
+  _GUID callId;
+  __MIDL_XmitDefs_0001 asyncRequestBlock;
+  const __MIDL_XmitDefs_0002 *pTouchedAstaArray;
+  const CONTAINERTHIS *containerPassthroughData;
+
+};

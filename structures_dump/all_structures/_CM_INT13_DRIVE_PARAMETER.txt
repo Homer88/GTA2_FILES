@@ -1,0 +1,13 @@
+// Структура: _CM_INT13_DRIVE_PARAMETER
+// Полей: 5
+// Строки в оригинале: 109563-109570
+struct _CM_INT13_DRIVE_PARAMETER
+{
+
+  unsigned __int16 DriveSelect;
+  __unaligned __declspec(align(1)) unsigned int MaxCylinders;
+  unsigned __int16 SectorsPerTrack;
+  unsigned __int16 MaxHeads;
+  unsigned __int16 NumberDrives;
+
+};

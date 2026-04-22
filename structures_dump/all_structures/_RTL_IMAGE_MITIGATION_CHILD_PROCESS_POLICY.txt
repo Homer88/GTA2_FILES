@@ -1,0 +1,9 @@
+// Структура: _RTL_IMAGE_MITIGATION_CHILD_PROCESS_POLICY
+// Полей: 1
+// Строки в оригинале: 94238-94241
+struct _RTL_IMAGE_MITIGATION_CHILD_PROCESS_POLICY
+{
+
+  _RTL_IMAGE_MITIGATION_POLICY DisallowChildProcessCreation;
+
+};

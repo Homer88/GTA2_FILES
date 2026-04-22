@@ -1,0 +1,9 @@
+// Структура: IExecuteCommand
+// Полей: 1
+// Строки в оригинале: 40536-40539
+struct IExecuteCommand
+{
+
+  struct IExecuteCommandVtbl *lpVtbl;
+
+};

@@ -1,0 +1,14 @@
+// Структура: _SEGMENT_HEAP_PERFORMANCE_COUNTER_INFORMATION
+// Полей: 6
+// Строки в оригинале: 89297-89305
+struct _SEGMENT_HEAP_PERFORMANCE_COUNTER_INFORMATION
+{
+
+  unsigned int SegmentReserveSize;
+  unsigned int SegmentCommitSize;
+  unsigned int SegmentCount;
+  unsigned int AllocatedSize;
+  unsigned int LargeAllocReserveSize;
+  unsigned int LargeAllocCommitSize;
+
+};

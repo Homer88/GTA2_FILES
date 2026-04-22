@@ -1,0 +1,9 @@
+// Структура: IInitializeWithPropertyStore
+// Полей: 1
+// Строки в оригинале: 36780-36783
+struct IInitializeWithPropertyStore
+{
+
+  struct IInitializeWithPropertyStoreVtbl *lpVtbl;
+
+};

@@ -1,0 +1,12 @@
+// Структура: IErrorLogVtbl
+// Полей: 4
+// Строки в оригинале: 35274-35280
+struct IErrorLogVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IErrorLog *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IErrorLog *This);
+  ULONG (__stdcall *Release)(IErrorLog *This);
+  HRESULT (__stdcall *AddError)(IErrorLog *This, LPCOLESTR pszPropName, EXCEPINFO *pExcepInfo);
+
+};

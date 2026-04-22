@@ -1,0 +1,14 @@
+// Структура: _CRYPT_OID_INFO
+// Полей: 6
+// Строки в оригинале: 102129-102137
+struct _CRYPT_OID_INFO
+{
+
+  unsigned int cbSize;
+  const char *pszOID;
+  const wchar_t *pwszName;
+  unsigned int dwGroupId;
+  $598610CC988E402B9A82B84B75BDDF21 ___u4;
+  _CRYPTOAPI_BLOB ExtraInfo;
+
+};

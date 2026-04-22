@@ -1,0 +1,11 @@
+// Структура: _UNIQUE_PROCESS_INFORMATION
+// Полей: 3
+// Строки в оригинале: 81651-81656
+struct _UNIQUE_PROCESS_INFORMATION
+{
+
+  unsigned __int64 DontUse : 9;
+  unsigned __int64 UniqueProcessKey : 48;
+  unsigned __int64 Reserved : 7;
+
+};

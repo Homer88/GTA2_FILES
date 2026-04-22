@@ -1,0 +1,9 @@
+// Структура: _ENCLAVE_LOAD_DATA_VBS_BASIC
+// Полей: 1
+// Строки в оригинале: 91249-91252
+struct _ENCLAVE_LOAD_DATA_VBS_BASIC
+{
+
+  unsigned int PageType;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _CERT_POLICY_INFO
+// Полей: 3
+// Строки в оригинале: 87460-87465
+struct _CERT_POLICY_INFO
+{
+
+  char *pszPolicyIdentifier;
+  unsigned int cPolicyQualifier;
+  _CERT_POLICY_QUALIFIER_INFO *rgPolicyQualifier;
+
+};

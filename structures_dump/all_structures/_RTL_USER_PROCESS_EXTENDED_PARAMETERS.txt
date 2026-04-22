@@ -1,0 +1,16 @@
+// Структура: _RTL_USER_PROCESS_EXTENDED_PARAMETERS
+// Полей: 8
+// Строки в оригинале: 104677-104687
+struct _RTL_USER_PROCESS_EXTENDED_PARAMETERS
+{
+
+  unsigned __int16 Version;
+  unsigned __int16 NodeNumber;
+  void *ProcessSecurityDescriptor;
+  void *ThreadSecurityDescriptor;
+  void *ParentProcess;
+  void *DebugPort;
+  void *TokenHandle;
+  void *JobHandle;
+
+};

@@ -1,0 +1,11 @@
+// Структура: tagSTATPROPSTG
+// Полей: 3
+// Строки в оригинале: 37974-37979
+struct tagSTATPROPSTG
+{
+
+  LPOLESTR lpwstrName;
+  PROPID propid;
+  VARTYPE vt;
+
+};

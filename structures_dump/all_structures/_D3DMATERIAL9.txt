@@ -1,0 +1,13 @@
+// Структура: _D3DMATERIAL9
+// Полей: 5
+// Строки в оригинале: 25521-25528
+struct _D3DMATERIAL9
+{
+
+  D3DCOLORVALUE Diffuse;
+  D3DCOLORVALUE Ambient;
+  D3DCOLORVALUE Specular;
+  D3DCOLORVALUE Emissive;
+  float Power;
+
+};

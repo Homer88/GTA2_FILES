@@ -1,0 +1,10 @@
+// Structure: _TEB_ACTIVE_FRAME
+// Lines: 2933 - 2938
+// Fields: 4
+
+struct _TEB_ACTIVE_FRAME
+{
+  unsigned int Flags;
+  _TEB_ACTIVE_FRAME *Previous;
+  const _TEB_ACTIVE_FRAME_CONTEXT *Context;
+};

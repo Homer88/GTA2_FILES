@@ -1,0 +1,13 @@
+// Структура: IPipeByteVtbl
+// Полей: 5
+// Строки в оригинале: 351638-351645
+struct IPipeByteVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPipeByte *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPipeByte *This);
+  ULONG (__stdcall *Release)(IPipeByte *This);
+  HRESULT (__stdcall *Pull)(IPipeByte *This, BYTE *buf, ULONG cRequest, ULONG *pcReturned);
+  HRESULT (__stdcall *Push)(IPipeByte *This, BYTE *buf, ULONG cSent);
+
+};

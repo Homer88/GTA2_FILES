@@ -1,0 +1,20 @@
+// Структура: _KDHELP
+// Полей: 12
+// Строки в оригинале: 121613-121627
+struct _KDHELP
+{
+
+  unsigned int Thread;
+  unsigned int ThCallbackStack;
+  unsigned int NextCallback;
+  unsigned int FramePointer;
+  unsigned int KiCallUserMode;
+  unsigned int KeUserCallbackDispatcher;
+  unsigned int SystemRangeStart;
+  unsigned int ThCallbackBStore;
+  unsigned int KiUserExceptionDispatcher;
+  unsigned int StackBase;
+  unsigned int StackLimit;
+  unsigned int Reserved[5];
+
+};

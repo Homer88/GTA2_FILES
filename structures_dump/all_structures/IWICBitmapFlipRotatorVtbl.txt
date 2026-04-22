@@ -1,0 +1,17 @@
+// Структура: IWICBitmapFlipRotatorVtbl
+// Полей: 9
+// Строки в оригинале: 42089-42100
+struct IWICBitmapFlipRotatorVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICBitmapFlipRotator *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICBitmapFlipRotator *This);
+  ULONG (__stdcall *Release)(IWICBitmapFlipRotator *This);
+  HRESULT (__stdcall *GetSize)(IWICBitmapFlipRotator *This, UINT *puiWidth, UINT *puiHeight);
+  HRESULT (__stdcall *GetPixelFormat)(IWICBitmapFlipRotator *This, WICPixelFormatGUID *pPixelFormat);
+  HRESULT (__stdcall *GetResolution)(IWICBitmapFlipRotator *This, double *pDpiX, double *pDpiY);
+  HRESULT (__stdcall *CopyPalette)(IWICBitmapFlipRotator *This, IWICPalette *pIPalette);
+  HRESULT (__stdcall *CopyPixels)(IWICBitmapFlipRotator *This, const WICRect *prc, UINT cbStride, UINT cbBufferSize, BYTE *pbBuffer);
+  HRESULT (__stdcall *Initialize)(IWICBitmapFlipRotator *This, IWICBitmapSource *pISource, WICBitmapTransformOptions options);
+
+};

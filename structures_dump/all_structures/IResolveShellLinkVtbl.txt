@@ -1,0 +1,12 @@
+// Структура: IResolveShellLinkVtbl
+// Полей: 4
+// Строки в оригинале: 35284-35290
+struct IResolveShellLinkVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IResolveShellLink *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IResolveShellLink *This);
+  ULONG (__stdcall *Release)(IResolveShellLink *This);
+  HRESULT (__stdcall *ResolveShellLink)(IResolveShellLink *This, IUnknown *punkLink, HWND hwnd, DWORD fFlags);
+
+};

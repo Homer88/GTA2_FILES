@@ -1,0 +1,53 @@
+// Структура: IDirectDrawSurface4Vtbl
+// Полей: 45
+// Строки в оригинале: 26527-26574
+struct IDirectDrawSurface4Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirectDrawSurface4 *This, const IID *const riid, LPVOID *ppvObj);
+  ULONG (__stdcall *AddRef)(IDirectDrawSurface4 *This);
+  ULONG (__stdcall *Release)(IDirectDrawSurface4 *This);
+  HRESULT (__stdcall *AddAttachedSurface)(IDirectDrawSurface4 *This, LPDIRECTDRAWSURFACE4);
+  HRESULT (__stdcall *AddOverlayDirtyRect)(IDirectDrawSurface4 *This, LPRECT);
+  HRESULT (__stdcall *Blt)(IDirectDrawSurface4 *This, LPRECT, LPDIRECTDRAWSURFACE4, LPRECT, DWORD, LPDDBLTFX);
+  HRESULT (__stdcall *BltBatch)(IDirectDrawSurface4 *This, LPDDBLTBATCH, DWORD, DWORD);
+  HRESULT (__stdcall *BltFast)(IDirectDrawSurface4 *This, DWORD, DWORD, LPDIRECTDRAWSURFACE4, LPRECT, DWORD);
+  HRESULT (__stdcall *DeleteAttachedSurface)(IDirectDrawSurface4 *This, DWORD, LPDIRECTDRAWSURFACE4);
+  HRESULT (__stdcall *EnumAttachedSurfaces)(IDirectDrawSurface4 *This, LPVOID, LPDDENUMSURFACESCALLBACK2);
+  HRESULT (__stdcall *EnumOverlayZOrders)(IDirectDrawSurface4 *This, DWORD, LPVOID, LPDDENUMSURFACESCALLBACK2);
+  HRESULT (__stdcall *Flip)(IDirectDrawSurface4 *This, LPDIRECTDRAWSURFACE4, DWORD);
+  HRESULT (__stdcall *GetAttachedSurface)(IDirectDrawSurface4 *This, LPDDSCAPS2, LPDIRECTDRAWSURFACE4 *);
+  HRESULT (__stdcall *GetBltStatus)(IDirectDrawSurface4 *This, DWORD);
+  HRESULT (__stdcall *GetCaps)(IDirectDrawSurface4 *This, LPDDSCAPS2);
+  HRESULT (__stdcall *GetClipper)(IDirectDrawSurface4 *This, LPDIRECTDRAWCLIPPER *);
+  HRESULT (__stdcall *GetColorKey)(IDirectDrawSurface4 *This, DWORD, LPDDCOLORKEY);
+  HRESULT (__stdcall *GetDC)(IDirectDrawSurface4 *This, HDC *);
+  HRESULT (__stdcall *GetFlipStatus)(IDirectDrawSurface4 *This, DWORD);
+  HRESULT (__stdcall *GetOverlayPosition)(IDirectDrawSurface4 *This, LPLONG, LPLONG);
+  HRESULT (__stdcall *GetPalette)(IDirectDrawSurface4 *This, LPDIRECTDRAWPALETTE *);
+  HRESULT (__stdcall *GetPixelFormat)(IDirectDrawSurface4 *This, LPDDPIXELFORMAT);
+  HRESULT (__stdcall *GetSurfaceDesc)(IDirectDrawSurface4 *This, LPDDSURFACEDESC2);
+  HRESULT (__stdcall *Initialize)(IDirectDrawSurface4 *This, LPDIRECTDRAW, LPDDSURFACEDESC2);
+  HRESULT (__stdcall *IsLost)(IDirectDrawSurface4 *This);
+  HRESULT (__stdcall *Lock)(IDirectDrawSurface4 *This, LPRECT, LPDDSURFACEDESC2, DWORD, HANDLE);
+  HRESULT (__stdcall *ReleaseDC)(IDirectDrawSurface4 *This, HDC);
+  HRESULT (__stdcall *Restore)(IDirectDrawSurface4 *This);
+  HRESULT (__stdcall *SetClipper)(IDirectDrawSurface4 *This, LPDIRECTDRAWCLIPPER);
+  HRESULT (__stdcall *SetColorKey)(IDirectDrawSurface4 *This, DWORD, LPDDCOLORKEY);
+  HRESULT (__stdcall *SetOverlayPosition)(IDirectDrawSurface4 *This, LONG, LONG);
+  HRESULT (__stdcall *SetPalette)(IDirectDrawSurface4 *This, LPDIRECTDRAWPALETTE);
+  HRESULT (__stdcall *Unlock)(IDirectDrawSurface4 *This, LPRECT);
+  HRESULT (__stdcall *UpdateOverlay)(IDirectDrawSurface4 *This, LPRECT, LPDIRECTDRAWSURFACE4, LPRECT, DWORD, LPDDOVERLAYFX);
+  HRESULT (__stdcall *UpdateOverlayDisplay)(IDirectDrawSurface4 *This, DWORD);
+  HRESULT (__stdcall *UpdateOverlayZOrder)(IDirectDrawSurface4 *This, DWORD, LPDIRECTDRAWSURFACE4);
+  HRESULT (__stdcall *GetDDInterface)(IDirectDrawSurface4 *This, LPVOID *);
+  HRESULT (__stdcall *PageLock)(IDirectDrawSurface4 *This, DWORD);
+  HRESULT (__stdcall *PageUnlock)(IDirectDrawSurface4 *This, DWORD);
+  HRESULT (__stdcall *SetSurfaceDesc)(IDirectDrawSurface4 *This, LPDDSURFACEDESC2, DWORD);
+  HRESULT (__stdcall *SetPrivateData)(IDirectDrawSurface4 *This, const GUID *const, LPVOID, DWORD, DWORD);
+  HRESULT (__stdcall *GetPrivateData)(IDirectDrawSurface4 *This, const GUID *const, LPVOID, LPDWORD);
+  HRESULT (__stdcall *FreePrivateData)(IDirectDrawSurface4 *This, const GUID *const);
+  HRESULT (__stdcall *GetUniquenessValue)(IDirectDrawSurface4 *This, LPDWORD);
+  HRESULT (__stdcall *ChangeUniquenessValue)(IDirectDrawSurface4 *This);
+
+};

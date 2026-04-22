@@ -1,0 +1,12 @@
+// Структура: IWeakReferenceVtbl
+// Полей: 4
+// Строки в оригинале: 29984-29990
+struct IWeakReferenceVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWeakReference *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWeakReference *This);
+  ULONG (__stdcall *Release)(IWeakReference *This);
+  HRESULT (__stdcall *Resolve)(IWeakReference *This, const IID *const riid, IInspectable **objectReference);
+
+};

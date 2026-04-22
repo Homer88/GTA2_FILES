@@ -1,0 +1,11 @@
+// Структура: joyreghwvalues_tag
+// Полей: 3
+// Строки в оригинале: 29662-29667
+struct joyreghwvalues_tag
+{
+
+  JOYRANGE jrvHardware;
+  DWORD dwPOVValues[4];
+  DWORD dwCalFlags;
+
+};

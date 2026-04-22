@@ -1,0 +1,10 @@
+// Структура: _SERVICE_TIMECHANGE_INFO
+// Полей: 2
+// Строки в оригинале: 91633-91637
+struct _SERVICE_TIMECHANGE_INFO
+{
+
+  _LARGE_INTEGER liNewTime;
+  _LARGE_INTEGER liOldTime;
+
+};

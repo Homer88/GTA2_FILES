@@ -1,0 +1,10 @@
+// Структура: tagEMRSETCOLORSPACE
+// Полей: 2
+// Строки в оригинале: 99320-99324
+struct tagEMRSETCOLORSPACE
+{
+
+  tagEMR emr;
+  unsigned int ihCS;
+
+};

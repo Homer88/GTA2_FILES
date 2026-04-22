@@ -1,0 +1,28 @@
+// Структура: tagRPC_CALL_ATTRIBUTES_V3_A
+// Полей: 20
+// Строки в оригинале: 107183-107205
+struct tagRPC_CALL_ATTRIBUTES_V3_A
+{
+
+  unsigned int Version;
+  unsigned int Flags;
+  unsigned int ServerPrincipalNameBufferLength;
+  unsigned __int8 *ServerPrincipalName;
+  unsigned int ClientPrincipalNameBufferLength;
+  unsigned __int8 *ClientPrincipalName;
+  unsigned int AuthenticationLevel;
+  unsigned int AuthenticationService;
+  int NullSession;
+  int KernelModeCaller;
+  unsigned int ProtocolSequence;
+  unsigned int IsClientLocal;
+  void *ClientPID;
+  unsigned int CallStatus;
+  tagRpcCallType CallType;
+  _RPC_CALL_LOCAL_ADDRESS_V1 *CallLocalAddress;
+  unsigned __int16 OpNum;
+  _GUID InterfaceUuid;
+  unsigned int ClientIdentifierBufferLength;
+  unsigned __int8 *ClientIdentifier;
+
+};

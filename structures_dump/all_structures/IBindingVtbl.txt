@@ -1,0 +1,17 @@
+// Структура: IBindingVtbl
+// Полей: 9
+// Строки в оригинале: 41750-41761
+struct IBindingVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IBinding *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IBinding *This);
+  ULONG (__stdcall *Release)(IBinding *This);
+  HRESULT (__stdcall *Abort)(IBinding *This);
+  HRESULT (__stdcall *Suspend)(IBinding *This);
+  HRESULT (__stdcall *Resume)(IBinding *This);
+  HRESULT (__stdcall *SetPriority)(IBinding *This, LONG nPriority);
+  HRESULT (__stdcall *GetPriority)(IBinding *This, LONG *pnPriority);
+  HRESULT (__stdcall *GetBindResult)(IBinding *This, CLSID *pclsidProtocol, DWORD *pdwResult, LPOLESTR *pszResult, DWORD *pdwReserved);
+
+};

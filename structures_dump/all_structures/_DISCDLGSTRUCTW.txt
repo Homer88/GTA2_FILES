@@ -1,0 +1,13 @@
+// Структура: _DISCDLGSTRUCTW
+// Полей: 5
+// Строки в оригинале: 93946-93953
+struct _DISCDLGSTRUCTW
+{
+
+  unsigned int cbStructure;
+  HWND__ *hwndOwner;
+  wchar_t *lpLocalName;
+  wchar_t *lpRemoteName;
+  unsigned int dwFlags;
+
+};

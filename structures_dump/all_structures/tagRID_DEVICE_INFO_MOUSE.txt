@@ -1,0 +1,12 @@
+// Структура: tagRID_DEVICE_INFO_MOUSE
+// Полей: 4
+// Строки в оригинале: 96869-96875
+struct tagRID_DEVICE_INFO_MOUSE
+{
+
+  unsigned int dwId;
+  unsigned int dwNumberOfButtons;
+  unsigned int dwSampleRate;
+  int fHasHorizontalWheel;
+
+};

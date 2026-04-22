@@ -1,0 +1,17 @@
+// Структура: _DRIVER_EXTENSION
+// Полей: 9
+// Строки в оригинале: 17342-17353
+struct _DRIVER_EXTENSION
+{
+
+  _DRIVER_OBJECT *DriverObject;
+  int (__stdcall *AddDevice)(_DRIVER_OBJECT *, _DEVICE_OBJECT *);
+  unsigned int Count;
+  _UNICODE_STRING ServiceKeyName;
+  _IO_CLIENT_EXTENSION *ClientDriverExtension;
+  _FS_FILTER_CALLBACKS *FsFilterCallbacks;
+  void *KseCallbacks;
+  void *DvCallbacks;
+  void *VerifierContext;
+
+};

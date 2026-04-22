@@ -1,0 +1,12 @@
+// Структура: _MonikerWriteStruct
+// Полей: 4
+// Строки в оригинале: 79419-79425
+struct _MonikerWriteStruct
+{
+
+  unsigned __int16 m_endServer;
+  unsigned __int16 m_w;
+  _GUID m_clsid;
+  unsigned int m_ole1;
+
+};

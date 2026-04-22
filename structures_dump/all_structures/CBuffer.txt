@@ -1,0 +1,10 @@
+// Структура: CBuffer
+// Полей: 2
+// Строки в оригинале: 150037-150041
+struct CBuffer
+{
+
+  unsigned __int8 *Cursor;
+  unsigned int BytesRemaining;
+
+};

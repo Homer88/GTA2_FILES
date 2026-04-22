@@ -1,0 +1,19 @@
+// Структура: _APPINFO_STARTUPINFO
+// Полей: 11
+// Строки в оригинале: 147859-147872
+struct _APPINFO_STARTUPINFO
+{
+
+  wchar_t *lpTitle;
+  unsigned int dwX;
+  unsigned int dwY;
+  unsigned int dwXSize;
+  unsigned int dwYSize;
+  unsigned int dwXCountChars;
+  unsigned int dwYCountChars;
+  unsigned int dwFillAttribute;
+  unsigned int dwFlags;
+  unsigned __int16 wShowWindow;
+  tagPOINT ptMonitor;
+
+};

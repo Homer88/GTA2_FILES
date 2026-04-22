@@ -1,0 +1,16 @@
+// Структура: _CERT_CHAIN_FIND_BY_ISSUER_PARA
+// Полей: 8
+// Строки в оригинале: 91670-91680
+struct _CERT_CHAIN_FIND_BY_ISSUER_PARA
+{
+
+  unsigned int cbSize;
+  const char *pszUsageIdentifier;
+  unsigned int dwKeySpec;
+  unsigned int dwAcquirePrivateKeyFlags;
+  unsigned int cIssuer;
+  _CRYPTOAPI_BLOB *rgIssuer;
+  int (__stdcall *pfnFindCallback)(const _CERT_CONTEXT *, void *);
+  void *pvFindArg;
+
+};

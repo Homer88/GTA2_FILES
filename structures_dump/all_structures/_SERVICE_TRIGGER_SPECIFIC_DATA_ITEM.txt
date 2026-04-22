@@ -1,0 +1,11 @@
+// Структура: _SERVICE_TRIGGER_SPECIFIC_DATA_ITEM
+// Полей: 3
+// Строки в оригинале: 101720-101725
+struct _SERVICE_TRIGGER_SPECIFIC_DATA_ITEM
+{
+
+  unsigned int dwDataType;
+  unsigned int cbData;
+  unsigned __int8 *pData;
+
+};

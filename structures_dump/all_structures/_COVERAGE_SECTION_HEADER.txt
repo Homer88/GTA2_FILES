@@ -1,0 +1,15 @@
+// Структура: _COVERAGE_SECTION_HEADER
+// Полей: 7
+// Строки в оригинале: 86621-86630
+struct _COVERAGE_SECTION_HEADER
+{
+
+  unsigned int Signature;
+  unsigned int CoverageType;
+  unsigned __int8 MD5Hash[16];
+  unsigned int CoverageSectionSize;
+  unsigned int CoverageVectorSize;
+  unsigned int CoverageVectorOffset;
+  unsigned int ExtraDataOffset;
+
+};

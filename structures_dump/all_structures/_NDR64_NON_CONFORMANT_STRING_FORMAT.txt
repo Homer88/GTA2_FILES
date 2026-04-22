@@ -1,0 +1,10 @@
+// Структура: _NDR64_NON_CONFORMANT_STRING_FORMAT
+// Полей: 2
+// Строки в оригинале: 331451-331455
+struct _NDR64_NON_CONFORMANT_STRING_FORMAT
+{
+
+  NDR64_STRING_HEADER_FORMAT Header;
+  unsigned int TotalSize;
+
+};

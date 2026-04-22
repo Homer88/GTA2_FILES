@@ -1,0 +1,15 @@
+// Структура: PACKAGE_ID
+// Полей: 7
+// Строки в оригинале: 112253-112262
+struct PACKAGE_ID
+{
+
+  unsigned int reserved;
+  unsigned int processorArchitecture;
+  PACKAGE_VERSION version;
+  wchar_t *name;
+  wchar_t *publisher;
+  wchar_t *resourceId;
+  wchar_t *publisherId;
+
+};

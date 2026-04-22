@@ -1,0 +1,9 @@
+// Структура: IPropertyDescriptionSearchInfo
+// Полей: 1
+// Строки в оригинале: 45481-45484
+struct IPropertyDescriptionSearchInfo
+{
+
+  struct IPropertyDescriptionSearchInfoVtbl *lpVtbl;
+
+};

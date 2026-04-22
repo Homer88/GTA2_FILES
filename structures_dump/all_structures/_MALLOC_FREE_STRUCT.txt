@@ -1,0 +1,10 @@
+// Структура: _MALLOC_FREE_STRUCT
+// Полей: 2
+// Строки в оригинале: 86323-86327
+struct _MALLOC_FREE_STRUCT
+{
+
+  void *(__stdcall *pfnAllocate)(unsigned int);
+  void (__stdcall *pfnFree)(void *);
+
+};

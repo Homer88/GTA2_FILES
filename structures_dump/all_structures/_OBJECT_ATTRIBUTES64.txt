@@ -1,0 +1,14 @@
+// Структура: _OBJECT_ATTRIBUTES64
+// Полей: 6
+// Строки в оригинале: 107258-107266
+struct _OBJECT_ATTRIBUTES64
+{
+
+  unsigned int Length;
+  unsigned __int64 RootDirectory;
+  unsigned __int64 ObjectName;
+  unsigned int Attributes;
+  unsigned __int64 SecurityDescriptor;
+  unsigned __int64 SecurityQualityOfService;
+
+};

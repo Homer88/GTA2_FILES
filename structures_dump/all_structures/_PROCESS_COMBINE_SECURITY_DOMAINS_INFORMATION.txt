@@ -1,0 +1,9 @@
+// Структура: _PROCESS_COMBINE_SECURITY_DOMAINS_INFORMATION
+// Полей: 1
+// Строки в оригинале: 92208-92211
+struct _PROCESS_COMBINE_SECURITY_DOMAINS_INFORMATION
+{
+
+  void *ProcessHandle;
+
+};

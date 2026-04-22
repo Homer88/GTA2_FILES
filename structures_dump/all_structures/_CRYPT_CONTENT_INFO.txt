@@ -1,0 +1,10 @@
+// Структура: _CRYPT_CONTENT_INFO
+// Полей: 2
+// Строки в оригинале: 106942-106946
+struct _CRYPT_CONTENT_INFO
+{
+
+  char *pszObjId;
+  _CRYPTOAPI_BLOB Content;
+
+};

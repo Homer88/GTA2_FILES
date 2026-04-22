@@ -1,0 +1,16 @@
+// Структура: IShellLinkDataListVtbl
+// Полей: 8
+// Строки в оригинале: 37123-37133
+struct IShellLinkDataListVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellLinkDataList *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellLinkDataList *This);
+  ULONG (__stdcall *Release)(IShellLinkDataList *This);
+  HRESULT (__stdcall *AddDataBlock)(IShellLinkDataList *This, void *pDataBlock);
+  HRESULT (__stdcall *CopyDataBlock)(IShellLinkDataList *This, DWORD dwSig, void **ppDataBlock);
+  HRESULT (__stdcall *RemoveDataBlock)(IShellLinkDataList *This, DWORD dwSig);
+  HRESULT (__stdcall *GetFlags)(IShellLinkDataList *This, DWORD *pdwFlags);
+  HRESULT (__stdcall *SetFlags)(IShellLinkDataList *This, DWORD dwFlags);
+
+};

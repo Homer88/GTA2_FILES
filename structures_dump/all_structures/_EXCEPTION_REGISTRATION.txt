@@ -1,0 +1,10 @@
+// Структура: _EXCEPTION_REGISTRATION
+// Полей: 2
+// Строки в оригинале: 338943-338947
+struct _EXCEPTION_REGISTRATION
+{
+
+  unsigned int prev;
+  unsigned int handler;
+
+};

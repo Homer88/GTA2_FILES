@@ -1,0 +1,9 @@
+// Структура: _CSV_IS_OWNED_BY_CSVFS
+// Полей: 1
+// Строки в оригинале: 95244-95247
+struct _CSV_IS_OWNED_BY_CSVFS
+{
+
+  unsigned __int8 OwnedByCSVFS;
+
+};

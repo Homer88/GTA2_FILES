@@ -1,0 +1,11 @@
+// Структура: _SPC_INDIRECT_DATA_CONTENT
+// Полей: 3
+// Строки в оригинале: 123419-123424
+struct _SPC_INDIRECT_DATA_CONTENT
+{
+
+  _CRYPT_ATTRIBUTE_TYPE_VALUE Data;
+  _CRYPT_ALGORITHM_IDENTIFIER DigestAlgorithm;
+  _CRYPTOAPI_BLOB Digest;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _CERT_FORTEZZA_DATA_PROP
+// Полей: 3
+// Строки в оригинале: 109933-109938
+struct _CERT_FORTEZZA_DATA_PROP
+{
+
+  unsigned __int8 SerialNumber[8];
+  int CertIndex;
+  unsigned __int8 CertLabel[36];
+
+};

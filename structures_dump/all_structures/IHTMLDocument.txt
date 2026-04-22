@@ -1,0 +1,9 @@
+// Структура: IHTMLDocument
+// Полей: 1
+// Строки в оригинале: 36926-36929
+struct IHTMLDocument
+{
+
+  struct IHTMLDocumentVtbl *lpVtbl;
+
+};

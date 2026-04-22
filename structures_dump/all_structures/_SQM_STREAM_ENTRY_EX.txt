@@ -1,0 +1,11 @@
+// Структура: _SQM_STREAM_ENTRY_EX
+// Полей: 3
+// Строки в оригинале: 125502-125507
+struct _SQM_STREAM_ENTRY_EX
+{
+
+  unsigned int cbStruct;
+  unsigned int dwType;
+  _SQM_STREAM_ENTRY_EX::<unnamed_type_val> val;
+
+};

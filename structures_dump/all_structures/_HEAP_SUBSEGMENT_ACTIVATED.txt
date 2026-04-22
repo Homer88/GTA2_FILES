@@ -1,0 +1,11 @@
+// Структура: _HEAP_SUBSEGMENT_ACTIVATED
+// Полей: 3
+// Строки в оригинале: 310192-310197
+struct _HEAP_SUBSEGMENT_ACTIVATED
+{
+
+  _SYSTEM_TRACE_HEADER Header;
+  void *HeapHandle;
+  void *SubSegment;
+
+};

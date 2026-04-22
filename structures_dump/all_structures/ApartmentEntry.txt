@@ -1,0 +1,11 @@
+// Структура: ApartmentEntry
+// Полей: 3
+// Строки в оригинале: 206170-206175
+struct ApartmentEntry
+{
+
+  SDWORDHashNode node;
+  unsigned int hCOMActivator;
+  unsigned int hWinRTActivator;
+
+};

@@ -1,0 +1,16 @@
+// Структура: _WHEA_EVENT_LOG_ENTRY_HEADER
+// Полей: 8
+// Строки в оригинале: 20108-20118
+struct _WHEA_EVENT_LOG_ENTRY_HEADER
+{
+
+  unsigned int Signature;
+  unsigned int Version;
+  unsigned int Length;
+  _WHEA_EVENT_LOG_ENTRY_TYPE Type;
+  unsigned int OwnerTag;
+  _WHEA_EVENT_LOG_ENTRY_ID Id;
+  _WHEA_EVENT_LOG_ENTRY_FLAGS Flags;
+  unsigned int PayloadLength;
+
+};

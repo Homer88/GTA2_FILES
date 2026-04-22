@@ -1,0 +1,17 @@
+// Структура: tagI_RpcProxyCallbackInterface
+// Полей: 9
+// Строки в оригинале: 87882-87893
+struct tagI_RpcProxyCallbackInterface
+{
+
+  int (__stdcall *IsValidMachineFn)(wchar_t *, wchar_t *, unsigned int);
+  int (__stdcall *GetClientAddressFn)(void *, char *, unsigned int *);
+  int (__stdcall *GetConnectionTimeoutFn)(unsigned int *);
+  int (__stdcall *PerformCalloutFn)(void *, _RDR_CALLOUT_STATE *, _RPC_HTTP_REDIRECTOR_STAGE);
+  void (__stdcall *FreeCalloutStateFn)(_RDR_CALLOUT_STATE *);
+  int (__stdcall *GetClientSessionAndResourceUUIDFn)(void *, int *, _GUID *, int *, _GUID *);
+  int (__stdcall *ProxyFilterIfFn)(void *, _GUID *, unsigned __int16, int *);
+  void (__stdcall *RpcProxyUpdatePerfCounterFn)(RpcProxyPerfCounters, int, unsigned int);
+  void (__stdcall *RpcProxyUpdatePerfCounterBackendServerFn)(wchar_t *, int);
+
+};

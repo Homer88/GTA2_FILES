@@ -1,0 +1,13 @@
+// Структура: _DEDUP_QUERY_FILE_HASHES_INPUT_BUFFER
+// Полей: 5
+// Строки в оригинале: 103411-103418
+struct _DEDUP_QUERY_FILE_HASHES_INPUT_BUFFER
+{
+
+  unsigned int Version;
+  unsigned int QueryFlags;
+  unsigned int HashAlgorithm;
+  _LARGE_INTEGER RangeOffsetInFile;
+  _LARGE_INTEGER RangeLength;
+
+};

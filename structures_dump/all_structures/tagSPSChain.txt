@@ -1,0 +1,10 @@
+// Структура: tagSPSChain
+// Полей: 2
+// Строки в оригинале: 60467-60471
+struct tagSPSChain
+{
+
+  tagSPSChain *pNext;
+  tagSPSChain *pPrev;
+
+};

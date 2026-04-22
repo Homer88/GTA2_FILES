@@ -1,0 +1,9 @@
+// Структура: IProfferService
+// Полей: 1
+// Строки в оригинале: 32793-32796
+struct IProfferService
+{
+
+  struct IProfferServiceVtbl *lpVtbl;
+
+};

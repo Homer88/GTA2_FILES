@@ -1,0 +1,12 @@
+// Структура: _SHNAMEMAPPINGW
+// Полей: 4
+// Строки в оригинале: 104335-104341
+struct _SHNAMEMAPPINGW
+{
+
+  wchar_t *pszOldPath;
+  wchar_t *pszNewPath;
+  int cchOldPath;
+  int cchNewPath;
+
+};

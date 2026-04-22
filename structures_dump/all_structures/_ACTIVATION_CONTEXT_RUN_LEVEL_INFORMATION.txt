@@ -1,0 +1,11 @@
+// Структура: _ACTIVATION_CONTEXT_RUN_LEVEL_INFORMATION
+// Полей: 3
+// Строки в оригинале: 98459-98464
+struct _ACTIVATION_CONTEXT_RUN_LEVEL_INFORMATION
+{
+
+  unsigned int ulFlags;
+  ACTCTX_REQUESTED_RUN_LEVEL RunLevel;
+  unsigned int UiAccess;
+
+};

@@ -1,0 +1,11 @@
+// Структура: RPC_IMPORT_CONTEXT_P
+// Полей: 3
+// Строки в оригинале: 104626-104631
+struct RPC_IMPORT_CONTEXT_P
+{
+
+  void *LookupContext;
+  void *ProposedHandle;
+  _RPC_BINDING_VECTOR *Bindings;
+
+};

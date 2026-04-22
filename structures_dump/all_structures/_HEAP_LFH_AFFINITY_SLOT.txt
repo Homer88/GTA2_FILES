@@ -1,0 +1,10 @@
+// Структура: _HEAP_LFH_AFFINITY_SLOT
+// Полей: 2
+// Строки в оригинале: 20715-20719
+struct _HEAP_LFH_AFFINITY_SLOT
+{
+
+  _HEAP_LFH_SUBSEGMENT_OWNER State;
+  _HEAP_LFH_FAST_REF ActiveSubsegment;
+
+};

@@ -1,0 +1,12 @@
+// Структура: IInitializeCommandVtbl
+// Полей: 4
+// Строки в оригинале: 40238-40244
+struct IInitializeCommandVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IInitializeCommand *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IInitializeCommand *This);
+  ULONG (__stdcall *Release)(IInitializeCommand *This);
+  HRESULT (__stdcall *Initialize)(IInitializeCommand *This, LPCWSTR pszCommandName, IPropertyBag *ppb);
+
+};

@@ -1,0 +1,9 @@
+// Структура: IObjectWithPropertyKey
+// Полей: 1
+// Строки в оригинале: 35589-35592
+struct IObjectWithPropertyKey
+{
+
+  struct IObjectWithPropertyKeyVtbl *lpVtbl;
+
+};

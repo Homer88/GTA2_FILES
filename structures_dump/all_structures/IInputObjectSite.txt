@@ -1,0 +1,9 @@
+// Структура: IInputObjectSite
+// Полей: 1
+// Строки в оригинале: 39592-39595
+struct IInputObjectSite
+{
+
+  struct IInputObjectSiteVtbl *lpVtbl;
+
+};

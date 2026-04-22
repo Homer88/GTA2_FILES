@@ -1,0 +1,10 @@
+// Структура: _CERT_POLICY_QUALIFIER_USER_NOTICE
+// Полей: 2
+// Строки в оригинале: 91655-91659
+struct _CERT_POLICY_QUALIFIER_USER_NOTICE
+{
+
+  _CERT_POLICY_QUALIFIER_NOTICE_REFERENCE *pNoticeReference;
+  wchar_t *pszDisplayText;
+
+};

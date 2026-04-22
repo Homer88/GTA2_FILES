@@ -1,0 +1,24 @@
+// Структура: IHTMLOpsProfileVtbl
+// Полей: 16
+// Строки в оригинале: 38999-39017
+struct IHTMLOpsProfileVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLOpsProfile *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLOpsProfile *This);
+  ULONG (__stdcall *Release)(IHTMLOpsProfile *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLOpsProfile *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLOpsProfile *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLOpsProfile *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLOpsProfile *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *addRequest)(IHTMLOpsProfile *This, BSTR name, VARIANT reserved, VARIANT_BOOL *success);
+  HRESULT (__stdcall *clearRequest)(IHTMLOpsProfile *This);
+  HRESULT (__stdcall *doRequest)(IHTMLOpsProfile *This, VARIANT usage, VARIANT fname, VARIANT domain, VARIANT path, VARIANT expire, VARIANT reserved);
+  HRESULT (__stdcall *getAttribute)(IHTMLOpsProfile *This, BSTR name, BSTR *value);
+  HRESULT (__stdcall *setAttribute)(IHTMLOpsProfile *This, BSTR name, BSTR value, VARIANT prefs, VARIANT_BOOL *success);
+  HRESULT (__stdcall *commitChanges)(IHTMLOpsProfile *This, VARIANT_BOOL *success);
+  HRESULT (__stdcall *addReadRequest)(IHTMLOpsProfile *This, BSTR name, VARIANT reserved, VARIANT_BOOL *success);
+  HRESULT (__stdcall *doReadRequest)(IHTMLOpsProfile *This, VARIANT usage, VARIANT fname, VARIANT domain, VARIANT path, VARIANT expire, VARIANT reserved);
+  HRESULT (__stdcall *doWriteRequest)(IHTMLOpsProfile *This, VARIANT_BOOL *success);
+
+};

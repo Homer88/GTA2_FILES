@@ -1,0 +1,9 @@
+// Структура: IPersistQuery
+// Полей: 1
+// Строки в оригинале: 35220-35223
+struct IPersistQuery
+{
+
+  struct IPersistQueryVtbl *lpVtbl;
+
+};

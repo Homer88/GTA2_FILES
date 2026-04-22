@@ -1,0 +1,11 @@
+// Структура: tagGESTURECONFIG
+// Полей: 3
+// Строки в оригинале: 102462-102467
+struct tagGESTURECONFIG
+{
+
+  unsigned int dwID;
+  unsigned int dwWant;
+  unsigned int dwBlock;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _PERFINFO_SPEC_CONTROL_RETPOLINE_EXIT
+// Полей: 1
+// Строки в оригинале: 312923-312926
+struct _PERFINFO_SPEC_CONTROL_RETPOLINE_EXIT
+{
+
+  unsigned int TargetAddress;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _TOKEN_MANDATORY_POLICY
+// Полей: 1
+// Строки в оригинале: 78345-78348
+struct _TOKEN_MANDATORY_POLICY
+{
+
+  unsigned int Policy;
+
+};

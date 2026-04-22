@@ -1,0 +1,10 @@
+// Структура: tagCACY
+// Полей: 2
+// Строки в оригинале: 31622-31626
+struct tagCACY
+{
+
+  ULONG cElems;
+  CY *pElems;
+
+};

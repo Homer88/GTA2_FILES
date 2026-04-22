@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_INTERRUPT_CPU_SET_INFORMATION
+// Полей: 3
+// Строки в оригинале: 97561-97566
+struct _SYSTEM_INTERRUPT_CPU_SET_INFORMATION
+{
+
+  unsigned int Gsiv;
+  unsigned __int16 Group;
+  unsigned __int64 CpuSets;
+
+};

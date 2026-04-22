@@ -1,0 +1,14 @@
+// Структура: wil_FeatureState
+// Полей: 6
+// Строки в оригинале: 142426-142434
+struct wil_FeatureState
+{
+
+  wil_FeatureEnabledState enabledState;
+  unsigned __int8 variant;
+  wil_FeatureVariantPayloadKind payloadKind;
+  unsigned int payload;
+  int hasNotification;
+  int isVariantConfiguration;
+
+};

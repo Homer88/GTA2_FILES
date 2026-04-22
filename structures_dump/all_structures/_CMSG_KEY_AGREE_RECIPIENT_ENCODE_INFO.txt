@@ -1,0 +1,20 @@
+// Структура: _CMSG_KEY_AGREE_RECIPIENT_ENCODE_INFO
+// Полей: 12
+// Строки в оригинале: 87745-87759
+struct _CMSG_KEY_AGREE_RECIPIENT_ENCODE_INFO
+{
+
+  unsigned int cbSize;
+  _CRYPT_ALGORITHM_IDENTIFIER KeyEncryptionAlgorithm;
+  void *pvKeyEncryptionAuxInfo;
+  _CRYPT_ALGORITHM_IDENTIFIER KeyWrapAlgorithm;
+  void *pvKeyWrapAuxInfo;
+  unsigned int hCryptProv;
+  unsigned int dwKeySpec;
+  unsigned int dwKeyChoice;
+  $9E654FDA943588C34A424A9B3F26B475 ___u8;
+  _CRYPTOAPI_BLOB UserKeyingMaterial;
+  unsigned int cRecipientEncryptedKeys;
+  _CMSG_RECIPIENT_ENCRYPTED_KEY_ENCODE_INFO **rgpRecipientEncryptedKeys;
+
+};

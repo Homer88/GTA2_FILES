@@ -1,0 +1,13 @@
+// Структура: _FILE_REGION_OUTPUT
+// Полей: 5
+// Строки в оригинале: 87049-87056
+struct _FILE_REGION_OUTPUT
+{
+
+  unsigned int Flags;
+  unsigned int TotalRegionEntryCount;
+  unsigned int RegionEntryCount;
+  unsigned int Reserved;
+  _FILE_REGION_INFO Region[1];
+
+};

@@ -1,0 +1,12 @@
+// Структура: _CERT_NAME_CONSTRAINTS_INFO
+// Полей: 4
+// Строки в оригинале: 101397-101403
+struct _CERT_NAME_CONSTRAINTS_INFO
+{
+
+  unsigned int cPermittedSubtree;
+  _CERT_GENERAL_SUBTREE *rgPermittedSubtree;
+  unsigned int cExcludedSubtree;
+  _CERT_GENERAL_SUBTREE *rgExcludedSubtree;
+
+};

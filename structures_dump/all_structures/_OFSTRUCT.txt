@@ -1,0 +1,14 @@
+// Структура: _OFSTRUCT
+// Полей: 6
+// Строки в оригинале: 83700-83708
+struct _OFSTRUCT
+{
+
+  unsigned __int8 cBytes;
+  unsigned __int8 fFixedDisk;
+  unsigned __int16 nErrCode;
+  unsigned __int16 Reserved1;
+  unsigned __int16 Reserved2;
+  char szPathName[128];
+
+};

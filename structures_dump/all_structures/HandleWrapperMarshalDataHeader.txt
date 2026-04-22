@@ -1,0 +1,11 @@
+// Структура: HandleWrapperMarshalDataHeader
+// Полей: 3
+// Строки в оригинале: 252327-252332
+struct HandleWrapperMarshalDataHeader
+{
+
+  unsigned __int8 WrapperType;
+  unsigned __int8 IdlType;
+  unsigned __int16 WasMarshaledInComCall;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _WMI_JOB_SET_QUERY_INFORMATION
+// Полей: 3
+// Строки в оригинале: 312938-312943
+struct _WMI_JOB_SET_QUERY_INFORMATION
+{
+
+  _GUID ContainerId;
+  unsigned int JobId;
+  unsigned int JobObjectInformationClass;
+
+};

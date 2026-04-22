@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesItem
+// Полей: 1
+// Строки в оригинале: 26882-26885
+struct IOfflineFilesItem
+{
+
+  struct IOfflineFilesItemVtbl *lpVtbl;
+
+};

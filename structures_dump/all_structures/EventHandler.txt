@@ -1,0 +1,25 @@
+// Структура: EventHandler
+// Полей: 17
+// Строки в оригинале: 5145-5164
+struct EventHandler
+{
+
+  EventHandler *NextElement;
+  SpriteS1 *SpriteS1;
+  EventHandler *pEventHandler;
+  S65 *S65;
+  Car *Car;
+  int field_14;
+  S63_1 *S63_1;
+  char field_1C;
+  char field_1D;
+  char field_1E;
+  char field_1F;
+  int field_20;
+  S202 *S202;
+  char field_28;
+  char field_29;
+  char field_2A;
+  char field_0;
+
+};

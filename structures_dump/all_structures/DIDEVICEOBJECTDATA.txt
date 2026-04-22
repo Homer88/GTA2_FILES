@@ -1,0 +1,13 @@
+// Структура: DIDEVICEOBJECTDATA
+// Полей: 5
+// Строки в оригинале: 6227-6234
+struct DIDEVICEOBJECTDATA
+{
+
+  DWORD dwOfs;
+  DWORD dwData;
+  DWORD dwTimeStamp;
+  DWORD dwSequence;
+  UINT_PTR uAppData;
+
+};

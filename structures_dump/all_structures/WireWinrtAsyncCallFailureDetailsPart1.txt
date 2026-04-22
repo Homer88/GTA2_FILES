@@ -1,0 +1,15 @@
+// Структура: WireWinrtAsyncCallFailureDetailsPart1
+// Полей: 7
+// Строки в оригинале: 269602-269611
+struct WireWinrtAsyncCallFailureDetailsPart1
+{
+
+  __MIDL_XmitDefs_0006 pointOfFailure;
+  HRESULT hrFailure;
+  unsigned int sizeOfMarshaledErrorInfo;
+  unsigned int reserved;
+  unsigned int unique;
+  unsigned int array_size;
+  unsigned __int8 marshaledErrorInfo[];
+
+};

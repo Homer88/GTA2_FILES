@@ -1,0 +1,10 @@
+// Структура: SActivatableClassIdHashNode
+// Полей: 2
+// Строки в оригинале: 64037-64041
+struct SActivatableClassIdHashNode
+{
+
+  SHashChain chain;
+  const wchar_t *activatableClassId;
+
+};

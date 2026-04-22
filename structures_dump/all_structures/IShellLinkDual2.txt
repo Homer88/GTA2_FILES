@@ -1,0 +1,9 @@
+// Структура: IShellLinkDual2
+// Полей: 1
+// Строки в оригинале: 35383-35386
+struct IShellLinkDual2
+{
+
+  struct IShellLinkDual2Vtbl *lpVtbl;
+
+};

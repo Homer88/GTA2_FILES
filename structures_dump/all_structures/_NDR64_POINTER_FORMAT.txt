@@ -1,0 +1,12 @@
+// Структура: _NDR64_POINTER_FORMAT
+// Полей: 4
+// Строки в оригинале: 331170-331176
+struct _NDR64_POINTER_FORMAT
+{
+
+  unsigned __int8 FormatCode;
+  unsigned __int8 Flags;
+  unsigned __int16 Reserved;
+  const void *Pointee;
+
+};

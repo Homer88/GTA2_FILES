@@ -1,0 +1,14 @@
+// Структура: _CRYPT_PROVUI_FUNCS
+// Полей: 6
+// Строки в оригинале: 122041-122049
+struct _CRYPT_PROVUI_FUNCS
+{
+
+  unsigned int cbStruct;
+  _CRYPT_PROVUI_DATA *psUIData;
+  int (__stdcall *pfnOnMoreInfoClick)(HWND__ *, _CRYPT_PROVIDER_DATA *);
+  int (__stdcall *pfnOnMoreInfoClickDefault)(HWND__ *, _CRYPT_PROVIDER_DATA *);
+  int (__stdcall *pfnOnAdvancedClick)(HWND__ *, _CRYPT_PROVIDER_DATA *);
+  int (__stdcall *pfnOnAdvancedClickDefault)(HWND__ *, _CRYPT_PROVIDER_DATA *);
+
+};

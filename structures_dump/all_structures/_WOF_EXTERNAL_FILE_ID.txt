@@ -1,0 +1,9 @@
+// Структура: _WOF_EXTERNAL_FILE_ID
+// Полей: 1
+// Строки в оригинале: 103814-103817
+struct _WOF_EXTERNAL_FILE_ID
+{
+
+  _FILE_ID_128 FileId;
+
+};

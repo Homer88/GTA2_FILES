@@ -1,0 +1,18 @@
+// Структура: IHTMLFiltersCollectionVtbl
+// Полей: 10
+// Строки в оригинале: 35145-35157
+struct IHTMLFiltersCollectionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLFiltersCollection *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLFiltersCollection *This);
+  ULONG (__stdcall *Release)(IHTMLFiltersCollection *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLFiltersCollection *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLFiltersCollection *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLFiltersCollection *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLFiltersCollection *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_length)(IHTMLFiltersCollection *This, int *p);
+  HRESULT (__stdcall *get__newEnum)(IHTMLFiltersCollection *This, IUnknown **p);
+  HRESULT (__stdcall *item)(IHTMLFiltersCollection *This, VARIANT *pvarIndex, VARIANT *pvarResult);
+
+};

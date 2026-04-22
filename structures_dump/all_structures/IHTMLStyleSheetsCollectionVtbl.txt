@@ -1,0 +1,18 @@
+// Структура: IHTMLStyleSheetsCollectionVtbl
+// Полей: 10
+// Строки в оригинале: 38639-38651
+struct IHTMLStyleSheetsCollectionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLStyleSheetsCollection *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLStyleSheetsCollection *This);
+  ULONG (__stdcall *Release)(IHTMLStyleSheetsCollection *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLStyleSheetsCollection *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLStyleSheetsCollection *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLStyleSheetsCollection *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLStyleSheetsCollection *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_length)(IHTMLStyleSheetsCollection *This, int *p);
+  HRESULT (__stdcall *get__newEnum)(IHTMLStyleSheetsCollection *This, IUnknown **p);
+  HRESULT (__stdcall *item)(IHTMLStyleSheetsCollection *This, VARIANT *pvarIndex, VARIANT *pvarResult);
+
+};

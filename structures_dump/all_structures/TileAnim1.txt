@@ -1,0 +1,14 @@
+// Структура: TileAnim1
+// Полей: 6
+// Строки в оригинале: 9951-9959
+struct TileAnim1
+{
+
+  TileAnim2 *TileAnim2;
+  TileAnim2 *NextS71;
+  TileAnim2 TileAnim2_Arr50[50];
+  __int16 field_4B8;
+  char field_4BA;
+  char field_0;
+
+};

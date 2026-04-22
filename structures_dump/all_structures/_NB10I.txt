@@ -1,0 +1,13 @@
+// Структура: _NB10I
+// Полей: 5
+// Строки в оригинале: 285376-285383
+struct _NB10I
+{
+
+  unsigned int dwSig;
+  unsigned int dwOffset;
+  unsigned int sig;
+  unsigned int age;
+  char szPdb[260];
+
+};

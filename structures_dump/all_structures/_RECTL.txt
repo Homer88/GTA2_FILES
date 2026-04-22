@@ -1,0 +1,12 @@
+// Структура: _RECTL
+// Полей: 4
+// Строки в оригинале: 28810-28816
+struct _RECTL
+{
+
+  LONG left;
+  LONG top;
+  LONG right;
+  LONG bottom;
+
+};

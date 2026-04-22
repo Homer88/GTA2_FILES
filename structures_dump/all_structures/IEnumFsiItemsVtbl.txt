@@ -1,0 +1,15 @@
+// Структура: IEnumFsiItemsVtbl
+// Полей: 7
+// Строки в оригинале: 32575-32584
+struct IEnumFsiItemsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumFsiItems *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumFsiItems *This);
+  ULONG (__stdcall *Release)(IEnumFsiItems *This);
+  HRESULT (__stdcall *Next)(IEnumFsiItems *This, ULONG celt, IFsiItem **rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumFsiItems *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumFsiItems *This);
+  HRESULT (__stdcall *Clone)(IEnumFsiItems *This, IEnumFsiItems **ppEnum);
+
+};

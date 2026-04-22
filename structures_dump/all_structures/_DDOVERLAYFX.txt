@@ -1,0 +1,17 @@
+// Структура: _DDOVERLAYFX
+// Полей: 9
+// Строки в оригинале: 24701-24712
+struct _DDOVERLAYFX
+{
+
+  DWORD dwSize;
+  DWORD dwAlphaEdgeBlendBitDepth;
+  DWORD dwAlphaEdgeBlend;
+  DWORD dwReserved;
+  DWORD dwAlphaDestConstBitDepth;
+  union
+  {
+    DWORD dwAlphaDestConst;
+    LPDIRECTDRAWSURFACE lpDDSAlphaDest;
+  
+};

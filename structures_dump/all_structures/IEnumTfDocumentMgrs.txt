@@ -1,0 +1,9 @@
+// Структура: IEnumTfDocumentMgrs
+// Полей: 1
+// Строки в оригинале: 41602-41605
+struct IEnumTfDocumentMgrs
+{
+
+  struct IEnumTfDocumentMgrsVtbl *lpVtbl;
+
+};

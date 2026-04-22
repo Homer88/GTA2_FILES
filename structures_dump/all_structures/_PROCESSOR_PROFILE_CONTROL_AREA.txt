@@ -1,0 +1,9 @@
+// Структура: _PROCESSOR_PROFILE_CONTROL_AREA
+// Полей: 1
+// Строки в оригинале: 15177-15180
+struct _PROCESSOR_PROFILE_CONTROL_AREA
+{
+
+  _PEBS_DS_SAVE_AREA PebsDsSaveArea;
+
+};

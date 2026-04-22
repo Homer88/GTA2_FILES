@@ -1,0 +1,9 @@
+// Структура: ITfRangeBackup
+// Полей: 1
+// Строки в оригинале: 30362-30365
+struct ITfRangeBackup
+{
+
+  struct ITfRangeBackupVtbl *lpVtbl;
+
+};

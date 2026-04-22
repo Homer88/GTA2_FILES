@@ -1,0 +1,16 @@
+// Структура: CM_Power_Data_s
+// Полей: 8
+// Строки в оригинале: 103859-103869
+struct CM_Power_Data_s
+{
+
+  unsigned int PD_Size;
+  _DEVICE_POWER_STATE PD_MostRecentPowerState;
+  unsigned int PD_Capabilities;
+  unsigned int PD_D1Latency;
+  unsigned int PD_D2Latency;
+  unsigned int PD_D3Latency;
+  _DEVICE_POWER_STATE PD_PowerStateMapping[7];
+  _SYSTEM_POWER_STATE PD_DeepestSystemWake;
+
+};

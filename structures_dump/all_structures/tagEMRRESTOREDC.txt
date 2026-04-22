@@ -1,0 +1,10 @@
+// Структура: tagEMRRESTOREDC
+// Полей: 2
+// Строки в оригинале: 96678-96682
+struct tagEMRRESTOREDC
+{
+
+  tagEMR emr;
+  int iRelative;
+
+};

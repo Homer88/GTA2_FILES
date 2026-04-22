@@ -1,0 +1,10 @@
+// Структура: __MIDL___MIDL_itf_wtypes_0000_0001_0001
+// Полей: 2
+// Строки в оригинале: 93131-93135
+struct __MIDL___MIDL_itf_wtypes_0000_0001_0001
+{
+
+  unsigned int tyspec;
+  __MIDL___MIDL_itf_wtypes_0000_0001_0001::__MIDL___MIDL_itf_wtypes_0000_0001_0005 tagged_union;
+
+};

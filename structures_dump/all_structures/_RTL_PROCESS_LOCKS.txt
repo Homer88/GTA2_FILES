@@ -1,0 +1,10 @@
+// Структура: _RTL_PROCESS_LOCKS
+// Полей: 2
+// Строки в оригинале: 95489-95493
+struct _RTL_PROCESS_LOCKS
+{
+
+  unsigned int NumberOfLocks;
+  _RTL_PROCESS_LOCK_INFORMATION Locks[1];
+
+};

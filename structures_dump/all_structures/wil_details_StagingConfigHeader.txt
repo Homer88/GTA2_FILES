@@ -1,0 +1,15 @@
+// Структура: wil_details_StagingConfigHeader
+// Полей: 7
+// Строки в оригинале: 142380-142389
+struct wil_details_StagingConfigHeader
+{
+
+  unsigned __int8 version;
+  unsigned __int8 versionMinor;
+  unsigned __int16 headerSizeBytes;
+  unsigned __int16 featureCount;
+  unsigned __int16 featureUsageTriggerCount;
+  wil_details_StagingConfigHeaderProperties sessionProperties;
+  wil_details_StagingConfigHeaderProperties properties;
+
+};

@@ -1,0 +1,15 @@
+// Структура: _COMPRESSED_DATA_INFO
+// Полей: 7
+// Строки в оригинале: 18543-18552
+struct _COMPRESSED_DATA_INFO
+{
+
+  unsigned __int16 CompressionFormatAndEngine;
+  unsigned __int8 CompressionUnitShift;
+  unsigned __int8 ChunkShift;
+  unsigned __int8 ClusterShift;
+  unsigned __int8 Reserved;
+  unsigned __int16 NumberOfChunks;
+  unsigned int CompressedChunkSizes[1];
+
+};

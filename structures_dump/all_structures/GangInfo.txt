@@ -1,0 +1,16 @@
+// Структура: GangInfo
+// Полей: 8
+// Строки в оригинале: 5654-5664
+struct GangInfo
+{
+
+  GangInfo *NextElement1;
+  _BYTE gap4[8];
+  S41 S41[4];
+  int NextElement;
+  _BYTE gap30[24];
+  char field_48;
+  _BYTE gap49[2];
+  char field_0;
+
+};

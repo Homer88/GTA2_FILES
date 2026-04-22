@@ -1,0 +1,9 @@
+// Структура: __WIL_RTL_SRWLOCK
+// Полей: 1
+// Строки в оригинале: 142449-142452
+struct __WIL_RTL_SRWLOCK
+{
+
+  void *Ptr;
+
+};

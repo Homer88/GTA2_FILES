@@ -1,0 +1,17 @@
+// Структура: __x_ABI_CWindows_CApplicationModel_CActivation_CISplashScreenVtbl
+// Полей: 9
+// Строки в оригинале: 352748-352759
+struct __x_ABI_CWindows_CApplicationModel_CActivation_CISplashScreenVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(__x_ABI_CWindows_CApplicationModel_CActivation_CISplashScreen *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(__x_ABI_CWindows_CApplicationModel_CActivation_CISplashScreen *This);
+  ULONG (__stdcall *Release)(__x_ABI_CWindows_CApplicationModel_CActivation_CISplashScreen *This);
+  HRESULT (__stdcall *GetIids)(__x_ABI_CWindows_CApplicationModel_CActivation_CISplashScreen *This, ULONG *iidCount, IID **iids);
+  HRESULT (__stdcall *GetRuntimeClassName)(__x_ABI_CWindows_CApplicationModel_CActivation_CISplashScreen *This, HSTRING *className);
+  HRESULT (__stdcall *GetTrustLevel)(__x_ABI_CWindows_CApplicationModel_CActivation_CISplashScreen *This, TrustLevel *trustLevel);
+  HRESULT (__stdcall *get_ImageLocation)(__x_ABI_CWindows_CApplicationModel_CActivation_CISplashScreen *This, __x_ABI_CWindows_CFoundation_CRect *value);
+  HRESULT (__stdcall *add_Dismissed)(__x_ABI_CWindows_CApplicationModel_CActivation_CISplashScreen *This, __FITypedEventHandler_2_Windows__CApplicationModel__CActivation__CSplashScreen_IInspectable *handler, EventRegistrationToken *cookie);
+  HRESULT (__stdcall *remove_Dismissed)(__x_ABI_CWindows_CApplicationModel_CActivation_CISplashScreen *This, EventRegistrationToken cookie);
+
+};

@@ -1,0 +1,9 @@
+// Structure: S2_111
+// Lines: 5276 - 5280
+// Fields: 3
+
+struct S2_111
+{
+  _BYTE gap0[19];
+  char field_0;
+};

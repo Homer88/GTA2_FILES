@@ -1,0 +1,12 @@
+// Структура: _PLUGPLAY_CONTROL_PROPERTY_DATA
+// Полей: 4
+// Строки в оригинале: 106757-106763
+struct _PLUGPLAY_CONTROL_PROPERTY_DATA
+{
+
+  _UNICODE_STRING DeviceInstance;
+  unsigned int PropertyType;
+  void *Buffer;
+  unsigned int BufferSize;
+
+};

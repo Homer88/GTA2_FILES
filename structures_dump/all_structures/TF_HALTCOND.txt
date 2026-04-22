@@ -1,0 +1,11 @@
+// Структура: TF_HALTCOND
+// Полей: 3
+// Строки в оригинале: 30209-30214
+struct TF_HALTCOND
+{
+
+  ITfRange *pHaltRange;
+  TfAnchor aHaltPos;
+  DWORD dwFlags;
+
+};

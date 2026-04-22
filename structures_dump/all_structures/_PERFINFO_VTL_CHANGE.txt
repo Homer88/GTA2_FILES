@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_VTL_CHANGE
+// Полей: 2
+// Строки в оригинале: 313781-313785
+struct _PERFINFO_VTL_CHANGE
+{
+
+  unsigned __int16 OperationCode;
+  unsigned __int16 ServiceCode;
+
+};

@@ -1,0 +1,16 @@
+// Структура: DDiscFormat2EraseEventsVtbl
+// Полей: 8
+// Строки в оригинале: 33634-33644
+struct DDiscFormat2EraseEventsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(DDiscFormat2EraseEvents *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(DDiscFormat2EraseEvents *This);
+  ULONG (__stdcall *Release)(DDiscFormat2EraseEvents *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(DDiscFormat2EraseEvents *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(DDiscFormat2EraseEvents *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(DDiscFormat2EraseEvents *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(DDiscFormat2EraseEvents *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *Update)(DDiscFormat2EraseEvents *This, IDispatch *object, LONG elapsedSeconds, LONG estimatedTotalSeconds);
+
+};

@@ -1,0 +1,10 @@
+// Структура: tagCBT_CREATEWNDW
+// Полей: 2
+// Строки в оригинале: 87656-87660
+struct tagCBT_CREATEWNDW
+{
+
+  tagCREATESTRUCTW *lpcs;
+  HWND__ *hwndInsertAfter;
+
+};

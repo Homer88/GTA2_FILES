@@ -1,0 +1,10 @@
+// Структура: _SecPkgContext_TargetInformation
+// Полей: 2
+// Строки в оригинале: 323652-323656
+struct _SecPkgContext_TargetInformation
+{
+
+  unsigned int MarshalledTargetInfoLength;
+  unsigned __int8 *MarshalledTargetInfo;
+
+};

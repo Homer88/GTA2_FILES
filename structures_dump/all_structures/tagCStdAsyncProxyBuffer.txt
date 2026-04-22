@@ -1,0 +1,21 @@
+// Структура: tagCStdAsyncProxyBuffer
+// Полей: 13
+// Строки в оригинале: 286506-286521
+struct tagCStdAsyncProxyBuffer
+{
+
+  const IRpcProxyBufferVtbl *lpVtbl /*VFT*/;
+  const void *pProxyVtbl;
+  int RefCount;
+  IUnknown *punkOuter;
+  IRpcChannelBuffer *pChannel;
+  _CStdProxyBufferMap map;
+  IRpcProxyBuffer *pBaseProxyBuffer;
+  IPSFactoryBuffer *pPSFactory;
+  _GUID iidBase;
+  const ICallFactoryVtbl *pCallFactoryVtbl;
+  const _GUID *pSyncIID;
+  const IReleaseMarshalBuffersVtbl *pRMBVtbl;
+  _NdrDcomAsyncCallState CallState;
+
+};

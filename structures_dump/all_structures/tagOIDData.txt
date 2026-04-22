@@ -1,0 +1,10 @@
+// Структура: tagOIDData
+// Полей: 2
+// Строки в оригинале: 192352-192356
+struct tagOIDData
+{
+
+  const _GUID *pmoid;
+  unsigned int aptID;
+
+};

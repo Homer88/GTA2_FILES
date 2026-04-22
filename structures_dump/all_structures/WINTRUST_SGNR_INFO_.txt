@@ -1,0 +1,13 @@
+// Структура: WINTRUST_SGNR_INFO_
+// Полей: 5
+// Строки в оригинале: 121868-121875
+struct WINTRUST_SGNR_INFO_
+{
+
+  unsigned int cbStruct;
+  const wchar_t *pcwszDisplayName;
+  _CMSG_SIGNER_INFO *psSignerInfo;
+  unsigned int chStores;
+  void **pahStores;
+
+};

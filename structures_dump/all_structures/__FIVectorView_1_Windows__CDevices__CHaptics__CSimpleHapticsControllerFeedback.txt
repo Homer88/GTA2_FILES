@@ -1,0 +1,9 @@
+// Структура: __FIVectorView_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback
+// Полей: 1
+// Строки в оригинале: 352278-352281
+struct __FIVectorView_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback
+{
+
+  struct __FIVectorView_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedbackVtbl *lpVtbl;
+
+};

@@ -1,0 +1,15 @@
+// Структура: _RTL_CRITICAL_SECTION_DEBUG64
+// Полей: 7
+// Строки в оригинале: 94073-94082
+struct _RTL_CRITICAL_SECTION_DEBUG64
+{
+
+  unsigned __int16 Type;
+  unsigned __int16 CreatorBackTraceIndex;
+  unsigned __int64 CriticalSection;
+  LIST_ENTRY64 ProcessLocksList;
+  unsigned int EntryCount;
+  unsigned int ContentionCount;
+  unsigned int Spare[2];
+
+};

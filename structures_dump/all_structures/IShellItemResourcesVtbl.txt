@@ -1,0 +1,21 @@
+// Структура: IShellItemResourcesVtbl
+// Полей: 13
+// Строки в оригинале: 40542-40557
+struct IShellItemResourcesVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellItemResources *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellItemResources *This);
+  ULONG (__stdcall *Release)(IShellItemResources *This);
+  HRESULT (__stdcall *GetAttributes)(IShellItemResources *This, DWORD *pdwAttributes);
+  HRESULT (__stdcall *GetSize)(IShellItemResources *This, ULONGLONG *pullSize);
+  HRESULT (__stdcall *GetTimes)(IShellItemResources *This, FILETIME *pftCreation, FILETIME *pftWrite, FILETIME *pftAccess);
+  HRESULT (__stdcall *SetTimes)(IShellItemResources *This, const FILETIME *pftCreation, const FILETIME *pftWrite, const FILETIME *pftAccess);
+  HRESULT (__stdcall *GetResourceDescription)(IShellItemResources *This, const SHELL_ITEM_RESOURCE *pcsir, LPWSTR *ppszDescription);
+  HRESULT (__stdcall *EnumResources)(IShellItemResources *This, IEnumResources **ppenumr);
+  HRESULT (__stdcall *SupportsResource)(IShellItemResources *This, const SHELL_ITEM_RESOURCE *pcsir);
+  HRESULT (__stdcall *OpenResource)(IShellItemResources *This, const SHELL_ITEM_RESOURCE *pcsir, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *CreateResource)(IShellItemResources *This, const SHELL_ITEM_RESOURCE *pcsir, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *MarkForDelete)(IShellItemResources *This);
+
+};

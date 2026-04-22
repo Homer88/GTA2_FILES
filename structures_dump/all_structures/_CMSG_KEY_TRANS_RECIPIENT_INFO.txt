@@ -1,0 +1,12 @@
+// Структура: _CMSG_KEY_TRANS_RECIPIENT_INFO
+// Полей: 4
+// Строки в оригинале: 92690-92696
+struct _CMSG_KEY_TRANS_RECIPIENT_INFO
+{
+
+  unsigned int dwVersion;
+  _CERT_ID RecipientId;
+  _CRYPT_ALGORITHM_IDENTIFIER KeyEncryptionAlgorithm;
+  _CRYPTOAPI_BLOB EncryptedKey;
+
+};

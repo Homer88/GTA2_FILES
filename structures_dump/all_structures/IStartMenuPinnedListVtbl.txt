@@ -1,0 +1,12 @@
+// Структура: IStartMenuPinnedListVtbl
+// Полей: 4
+// Строки в оригинале: 40253-40259
+struct IStartMenuPinnedListVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IStartMenuPinnedList *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IStartMenuPinnedList *This);
+  ULONG (__stdcall *Release)(IStartMenuPinnedList *This);
+  HRESULT (__stdcall *RemoveFromList)(IStartMenuPinnedList *This, IShellItem *pitem);
+
+};

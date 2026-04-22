@@ -1,0 +1,10 @@
+// Структура: _mpProp
+// Полей: 2
+// Строки в оригинале: 146761-146765
+struct _mpProp
+{
+
+  int dispid;
+  const wchar_t *szName;
+
+};

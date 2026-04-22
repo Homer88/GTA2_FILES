@@ -1,0 +1,31 @@
+// Структура: IMonikerVtbl
+// Полей: 23
+// Строки в оригинале: 23899-23924
+struct IMonikerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IMoniker *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IMoniker *This);
+  ULONG (__stdcall *Release)(IMoniker *This);
+  HRESULT (__stdcall *GetClassID)(IMoniker *This, CLSID *pClassID);
+  HRESULT (__stdcall *IsDirty)(IMoniker *This);
+  HRESULT (__stdcall *Load)(IMoniker *This, IStream *pStm);
+  HRESULT (__stdcall *Save)(IMoniker *This, IStream *pStm, BOOL fClearDirty);
+  HRESULT (__stdcall *GetSizeMax)(IMoniker *This, ULARGE_INTEGER *pcbSize);
+  HRESULT (__stdcall *BindToObject)(IMoniker *This, IBindCtx *pbc, IMoniker *pmkToLeft, const IID *const riidResult, void **ppvResult);
+  HRESULT (__stdcall *BindToStorage)(IMoniker *This, IBindCtx *pbc, IMoniker *pmkToLeft, const IID *const riid, void **ppvObj);
+  HRESULT (__stdcall *Reduce)(IMoniker *This, IBindCtx *pbc, DWORD dwReduceHowFar, IMoniker **ppmkToLeft, IMoniker **ppmkReduced);
+  HRESULT (__stdcall *ComposeWith)(IMoniker *This, IMoniker *pmkRight, BOOL fOnlyIfNotGeneric, IMoniker **ppmkComposite);
+  HRESULT (__stdcall *Enum)(IMoniker *This, BOOL fForward, IEnumMoniker **ppenumMoniker);
+  HRESULT (__stdcall *IsEqual)(IMoniker *This, IMoniker *pmkOtherMoniker);
+  HRESULT (__stdcall *Hash)(IMoniker *This, DWORD *pdwHash);
+  HRESULT (__stdcall *IsRunning)(IMoniker *This, IBindCtx *pbc, IMoniker *pmkToLeft, IMoniker *pmkNewlyRunning);
+  HRESULT (__stdcall *GetTimeOfLastChange)(IMoniker *This, IBindCtx *pbc, IMoniker *pmkToLeft, FILETIME *pFileTime);
+  HRESULT (__stdcall *Inverse)(IMoniker *This, IMoniker **ppmk);
+  HRESULT (__stdcall *CommonPrefixWith)(IMoniker *This, IMoniker *pmkOther, IMoniker **ppmkPrefix);
+  HRESULT (__stdcall *RelativePathTo)(IMoniker *This, IMoniker *pmkOther, IMoniker **ppmkRelPath);
+  HRESULT (__stdcall *GetDisplayName)(IMoniker *This, IBindCtx *pbc, IMoniker *pmkToLeft, LPOLESTR *ppszDisplayName);
+  HRESULT (__stdcall *ParseDisplayName)(IMoniker *This, IBindCtx *pbc, IMoniker *pmkToLeft, LPOLESTR pszDisplayName, ULONG *pchEaten, IMoniker **ppmkOut);
+  HRESULT (__stdcall *IsSystemMoniker)(IMoniker *This, DWORD *pdwMksys);
+
+};

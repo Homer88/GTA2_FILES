@@ -1,0 +1,9 @@
+// Структура: _PERFINFO_FILEOBJECT_INFORMATION
+// Полей: 1
+// Строки в оригинале: 313669-313672
+struct _PERFINFO_FILEOBJECT_INFORMATION
+{
+
+  void *FileObject;
+
+};

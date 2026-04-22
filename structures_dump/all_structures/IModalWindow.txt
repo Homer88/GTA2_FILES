@@ -1,0 +1,9 @@
+// Структура: IModalWindow
+// Полей: 1
+// Строки в оригинале: 32257-32260
+struct IModalWindow
+{
+
+  struct IModalWindowVtbl *lpVtbl;
+
+};

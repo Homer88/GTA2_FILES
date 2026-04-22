@@ -1,0 +1,18 @@
+// Структура: _NDR_DCOM_OI2_PROC_HEADER
+// Полей: 10
+// Строки в оригинале: 286630-286642
+struct _NDR_DCOM_OI2_PROC_HEADER
+{
+
+  unsigned __int8 HandleType;
+  INTERPRETER_FLAGS OldOiFlags;
+  unsigned __int16 RpcFlagsLow;
+  unsigned __int16 RpcFlagsHi;
+  unsigned __int16 ProcNum;
+  unsigned __int16 StackSize;
+  unsigned __int16 ClientBufferSize;
+  unsigned __int16 ServerBufferSize;
+  INTERPRETER_OPT_FLAGS Oi2Flags;
+  unsigned __int8 NumberParams;
+
+};

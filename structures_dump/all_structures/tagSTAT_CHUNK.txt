@@ -1,0 +1,16 @@
+// Структура: tagSTAT_CHUNK
+// Полей: 8
+// Строки в оригинале: 40508-40518
+struct tagSTAT_CHUNK
+{
+
+  ULONG idChunk;
+  CHUNK_BREAKTYPE breakType;
+  CHUNKSTATE flags;
+  LCID locale;
+  FULLPROPSPEC attribute;
+  ULONG idChunkSource;
+  ULONG cwcStartSource;
+  ULONG cwcLenSource;
+
+};

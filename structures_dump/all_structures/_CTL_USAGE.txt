@@ -1,0 +1,10 @@
+// Структура: _CTL_USAGE
+// Полей: 2
+// Строки в оригинале: 79943-79947
+struct _CTL_USAGE
+{
+
+  unsigned int cUsageIdentifier;
+  char **rgpszUsageIdentifier;
+
+};

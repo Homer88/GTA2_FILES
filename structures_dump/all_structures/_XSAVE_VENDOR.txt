@@ -1,0 +1,10 @@
+// Структура: _XSAVE_VENDOR
+// Полей: 2
+// Строки в оригинале: 88929-88933
+struct _XSAVE_VENDOR
+{
+
+  unsigned int VendorId[3];
+  _XSAVE_SUPPORTED_CPU SupportedCpu;
+
+};

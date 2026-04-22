@@ -1,0 +1,11 @@
+// Структура: CONFIRMSAFETY
+// Полей: 3
+// Строки в оригинале: 113523-113528
+struct CONFIRMSAFETY
+{
+
+  _GUID clsid;
+  IUnknown *pUnk;
+  unsigned int dwFlags;
+
+};

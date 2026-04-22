@@ -1,0 +1,11 @@
+// Структура: _KTIMER_TABLE
+// Полей: 3
+// Строки в оригинале: 13435-13440
+struct _KTIMER_TABLE
+{
+
+  _KTIMER *TimerExpiry[16];
+  _KTIMER_TABLE_ENTRY TimerEntries[1][256];
+  _KTIMER_TABLE_STATE TableState;
+
+};

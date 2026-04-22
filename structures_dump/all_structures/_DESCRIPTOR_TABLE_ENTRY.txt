@@ -1,0 +1,10 @@
+// Структура: _DESCRIPTOR_TABLE_ENTRY
+// Полей: 2
+// Строки в оригинале: 82365-82369
+struct _DESCRIPTOR_TABLE_ENTRY
+{
+
+  unsigned int Selector;
+  _LDT_ENTRY Descriptor;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _MEMORY_PARTITION_CREATE_LARGE_PAGES_INFORMATION
+// Полей: 5
+// Строки в оригинале: 105235-105242
+struct _MEMORY_PARTITION_CREATE_LARGE_PAGES_INFORMATION
+{
+
+  unsigned int Flags;
+  unsigned int NumaNode;
+  unsigned int LargePageSize;
+  unsigned int NumberOfLargePagesToCreate;
+  unsigned int NumberOfLargePagesCreated;
+
+};

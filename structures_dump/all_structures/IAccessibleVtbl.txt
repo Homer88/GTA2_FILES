@@ -1,0 +1,36 @@
+// Структура: IAccessibleVtbl
+// Полей: 28
+// Строки в оригинале: 29753-29783
+struct IAccessibleVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IAccessible *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IAccessible *This);
+  ULONG (__stdcall *Release)(IAccessible *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IAccessible *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IAccessible *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IAccessible *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IAccessible *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_accParent)(IAccessible *This, IDispatch **ppdispParent);
+  HRESULT (__stdcall *get_accChildCount)(IAccessible *This, int *pcountChildren);
+  HRESULT (__stdcall *get_accChild)(IAccessible *This, VARIANT varChild, IDispatch **ppdispChild);
+  HRESULT (__stdcall *get_accName)(IAccessible *This, VARIANT varChild, BSTR *pszName);
+  HRESULT (__stdcall *get_accValue)(IAccessible *This, VARIANT varChild, BSTR *pszValue);
+  HRESULT (__stdcall *get_accDescription)(IAccessible *This, VARIANT varChild, BSTR *pszDescription);
+  HRESULT (__stdcall *get_accRole)(IAccessible *This, VARIANT varChild, VARIANT *pvarRole);
+  HRESULT (__stdcall *get_accState)(IAccessible *This, VARIANT varChild, VARIANT *pvarState);
+  HRESULT (__stdcall *get_accHelp)(IAccessible *This, VARIANT varChild, BSTR *pszHelp);
+  HRESULT (__stdcall *get_accHelpTopic)(IAccessible *This, BSTR *pszHelpFile, VARIANT varChild, int *pidTopic);
+  HRESULT (__stdcall *get_accKeyboardShortcut)(IAccessible *This, VARIANT varChild, BSTR *pszKeyboardShortcut);
+  HRESULT (__stdcall *get_accFocus)(IAccessible *This, VARIANT *pvarChild);
+  HRESULT (__stdcall *get_accSelection)(IAccessible *This, VARIANT *pvarChildren);
+  HRESULT (__stdcall *get_accDefaultAction)(IAccessible *This, VARIANT varChild, BSTR *pszDefaultAction);
+  HRESULT (__stdcall *accSelect)(IAccessible *This, int flagsSelect, VARIANT varChild);
+  HRESULT (__stdcall *accLocation)(IAccessible *This, int *pxLeft, int *pyTop, int *pcxWidth, int *pcyHeight, VARIANT varChild);
+  HRESULT (__stdcall *accNavigate)(IAccessible *This, int navDir, VARIANT varStart, VARIANT *pvarEndUpAt);
+  HRESULT (__stdcall *accHitTest)(IAccessible *This, int xLeft, int yTop, VARIANT *pvarChild);
+  HRESULT (__stdcall *accDoDefaultAction)(IAccessible *This, VARIANT varChild);
+  HRESULT (__stdcall *put_accName)(IAccessible *This, VARIANT varChild, BSTR szName);
+  HRESULT (__stdcall *put_accValue)(IAccessible *This, VARIANT varChild, BSTR szValue);
+
+};

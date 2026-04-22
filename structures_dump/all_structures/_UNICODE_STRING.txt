@@ -1,0 +1,11 @@
+// Структура: _UNICODE_STRING
+// Полей: 3
+// Строки в оригинале: 2476-2481
+struct _UNICODE_STRING
+{
+
+  unsigned __int16 Length;
+  unsigned __int16 MaximumLength;
+  wchar_t *Buffer;
+
+};

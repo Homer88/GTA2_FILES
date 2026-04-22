@@ -1,0 +1,20 @@
+// Структура: _SEC_CHANNEL_BINDINGS_EX
+// Полей: 12
+// Строки в оригинале: 323659-323673
+struct _SEC_CHANNEL_BINDINGS_EX
+{
+
+  unsigned int magicNumber;
+  unsigned int flags;
+  unsigned int cbHeaderLength;
+  unsigned int cbStructureLength;
+  unsigned int dwInitiatorAddrType;
+  unsigned int cbInitiatorLength;
+  unsigned int dwInitiatorOffset;
+  unsigned int dwAcceptorAddrType;
+  unsigned int cbAcceptorLength;
+  unsigned int dwAcceptorOffset;
+  unsigned int cbApplicationDataLength;
+  unsigned int dwApplicationDataOffset;
+
+};

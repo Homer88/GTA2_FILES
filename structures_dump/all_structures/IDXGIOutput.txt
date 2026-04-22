@@ -1,0 +1,9 @@
+// Структура: IDXGIOutput
+// Полей: 1
+// Строки в оригинале: 352121-352124
+struct IDXGIOutput
+{
+
+  struct IDXGIOutputVtbl *lpVtbl;
+
+};

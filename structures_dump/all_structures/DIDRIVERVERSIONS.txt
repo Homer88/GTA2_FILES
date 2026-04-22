@@ -1,0 +1,12 @@
+// Структура: DIDRIVERVERSIONS
+// Полей: 4
+// Строки в оригинале: 28899-28905
+struct DIDRIVERVERSIONS
+{
+
+  DWORD dwSize;
+  DWORD dwFirmwareRevision;
+  DWORD dwHardwareRevision;
+  DWORD dwFFDriverVersion;
+
+};

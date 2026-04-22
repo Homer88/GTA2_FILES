@@ -1,0 +1,10 @@
+// Структура: DXGI_MAPPED_RECT
+// Полей: 2
+// Строки в оригинале: 352141-352145
+struct DXGI_MAPPED_RECT
+{
+
+  INT Pitch;
+  BYTE *pBits;
+
+};

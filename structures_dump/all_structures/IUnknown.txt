@@ -1,0 +1,9 @@
+// Структура: IUnknown
+// Полей: 1
+// Строки в оригинале: 6161-6164
+struct IUnknown
+{
+
+  struct IUnknownVtbl *lpVtbl;
+
+};

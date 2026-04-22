@@ -1,0 +1,10 @@
+// Структура: SYNTHESIZED_MAP
+// Полей: 2
+// Строки в оригинале: 139729-139733
+struct SYNTHESIZED_MAP
+{
+
+  unsigned __int16 cfSynthesized;
+  unsigned __int16 cfOrig;
+
+};

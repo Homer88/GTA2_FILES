@@ -1,0 +1,9 @@
+// Структура: _RTL_MODULE_BASIC_INFO
+// Полей: 1
+// Строки в оригинале: 81827-81830
+struct _RTL_MODULE_BASIC_INFO
+{
+
+  void *ImageBase;
+
+};

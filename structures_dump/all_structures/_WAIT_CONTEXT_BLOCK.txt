@@ -1,0 +1,15 @@
+// Структура: _WAIT_CONTEXT_BLOCK
+// Полей: 7
+// Строки в оригинале: 16505-16514
+struct _WAIT_CONTEXT_BLOCK
+{
+
+  $BBEF37D79868BF571E4192F286667ACC ___u0;
+  _IO_ALLOCATION_ACTION (__stdcall *DeviceRoutine)(_DEVICE_OBJECT *, _IRP *, void *, void *);
+  void *DeviceContext;
+  unsigned int NumberOfMapRegisters;
+  void *DeviceObject;
+  void *CurrentIrp;
+  _KDPC *BufferChainingDpc;
+
+};

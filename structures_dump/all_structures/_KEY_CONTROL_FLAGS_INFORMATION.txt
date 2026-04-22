@@ -1,0 +1,9 @@
+// Структура: _KEY_CONTROL_FLAGS_INFORMATION
+// Полей: 1
+// Строки в оригинале: 102196-102199
+struct _KEY_CONTROL_FLAGS_INFORMATION
+{
+
+  unsigned int ControlFlags;
+
+};

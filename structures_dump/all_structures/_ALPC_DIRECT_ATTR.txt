@@ -1,0 +1,9 @@
+// Структура: _ALPC_DIRECT_ATTR
+// Полей: 1
+// Строки в оригинале: 102281-102284
+struct _ALPC_DIRECT_ATTR
+{
+
+  void *Event;
+
+};

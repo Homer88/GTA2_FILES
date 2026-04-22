@@ -1,0 +1,11 @@
+// Структура: MOVE_FILE_RECORD_DATA
+// Полей: 3
+// Строки в оригинале: 96118-96123
+struct MOVE_FILE_RECORD_DATA
+{
+
+  void *FileHandle;
+  _LARGE_INTEGER SourceFileRecord;
+  _LARGE_INTEGER TargetFileRecord;
+
+};

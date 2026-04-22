@@ -1,0 +1,10 @@
+// Структура: _CRYPT_BLOB_ARRAY
+// Полей: 2
+// Строки в оригинале: 103227-103231
+struct _CRYPT_BLOB_ARRAY
+{
+
+  unsigned int cBlob;
+  _CRYPTOAPI_BLOB *rgBlob;
+
+};

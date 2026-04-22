@@ -1,0 +1,10 @@
+// Структура: _ACTIVATION_CONTEXT_COMPATIBILITY_INFORMATION
+// Полей: 2
+// Строки в оригинале: 80347-80351
+struct _ACTIVATION_CONTEXT_COMPATIBILITY_INFORMATION
+{
+
+  unsigned int ElementCount;
+  _COMPATIBILITY_CONTEXT_ELEMENT Elements[];
+
+};

@@ -1,0 +1,10 @@
+// Структура: tagScmRequestInfoData
+// Полей: 2
+// Строки в оригинале: 193304-193308
+struct tagScmRequestInfoData
+{
+
+  tagCustomPrivScmInfo *pScmInfo;
+  _customREMOTE_REQUEST_SCM_INFO *remoteRequest;
+
+};

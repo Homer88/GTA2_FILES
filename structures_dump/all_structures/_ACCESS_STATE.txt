@@ -1,0 +1,24 @@
+// Структура: _ACCESS_STATE
+// Полей: 16
+// Строки в оригинале: 19195-19213
+struct _ACCESS_STATE
+{
+
+  _LUID OperationID;
+  unsigned __int8 SecurityEvaluated;
+  unsigned __int8 GenerateAudit;
+  unsigned __int8 GenerateOnClose;
+  unsigned __int8 PrivilegesAllocated;
+  unsigned int Flags;
+  unsigned int RemainingDesiredAccess;
+  unsigned int PreviouslyGrantedAccess;
+  unsigned int OriginalDesiredAccess;
+  _SECURITY_SUBJECT_CONTEXT SubjectSecurityContext;
+  void *SecurityDescriptor;
+  void *AuxData;
+  _ACCESS_STATE::$21D042CF191E52B29C42D83612F1D8C8 Privileges;
+  unsigned __int8 AuditPrivileges;
+  _UNICODE_STRING ObjectName;
+  _UNICODE_STRING ObjectTypeName;
+
+};

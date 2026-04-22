@@ -1,0 +1,16 @@
+// Структура: _IMAGE_DELAYLOAD_DESCRIPTOR
+// Полей: 8
+// Строки в оригинале: 99579-99589
+struct _IMAGE_DELAYLOAD_DESCRIPTOR
+{
+
+  _IMAGE_DELAYLOAD_DESCRIPTOR::<unnamed_type_Attributes> Attributes;
+  unsigned int DllNameRVA;
+  unsigned int ModuleHandleRVA;
+  unsigned int ImportAddressTableRVA;
+  unsigned int ImportNameTableRVA;
+  unsigned int BoundImportAddressTableRVA;
+  unsigned int UnloadInformationTableRVA;
+  unsigned int TimeDateStamp;
+
+};

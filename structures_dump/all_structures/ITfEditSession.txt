@@ -1,0 +1,9 @@
+// Структура: ITfEditSession
+// Полей: 1
+// Строки в оригинале: 30288-30291
+struct ITfEditSession
+{
+
+  struct ITfEditSessionVtbl *lpVtbl;
+
+};

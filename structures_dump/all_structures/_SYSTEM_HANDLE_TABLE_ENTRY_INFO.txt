@@ -1,0 +1,15 @@
+// Структура: _SYSTEM_HANDLE_TABLE_ENTRY_INFO
+// Полей: 7
+// Строки в оригинале: 80484-80493
+struct _SYSTEM_HANDLE_TABLE_ENTRY_INFO
+{
+
+  unsigned __int16 UniqueProcessId;
+  unsigned __int16 CreatorBackTraceIndex;
+  unsigned __int8 ObjectTypeIndex;
+  unsigned __int8 HandleAttributes;
+  unsigned __int16 HandleValue;
+  void *Object;
+  unsigned int GrantedAccess;
+
+};

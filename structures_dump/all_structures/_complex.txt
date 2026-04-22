@@ -1,0 +1,10 @@
+// Структура: _complex
+// Полей: 2
+// Строки в оригинале: 92436-92440
+struct _complex
+{
+
+  long double x;
+  long double y;
+
+};

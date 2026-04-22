@@ -1,0 +1,10 @@
+// Структура: _PROCESS_EXCEPTION_PORT
+// Полей: 2
+// Строки в оригинале: 84891-84895
+struct _PROCESS_EXCEPTION_PORT
+{
+
+  void *ExceptionPortHandle;
+  unsigned int StateFlags;
+
+};

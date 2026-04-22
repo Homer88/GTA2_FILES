@@ -1,0 +1,12 @@
+// Структура: _SD_ENUM_SDS_OUTPUT
+// Полей: 4
+// Строки в оригинале: 95630-95636
+struct _SD_ENUM_SDS_OUTPUT
+{
+
+  unsigned __int64 NextOffset;
+  unsigned __int64 NumSDEntriesReturned;
+  unsigned __int64 NumSDBytesReturned;
+  _SD_ENUM_SDS_ENTRY SDEntry[1];
+
+};

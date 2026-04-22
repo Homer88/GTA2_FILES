@@ -1,0 +1,13 @@
+// Структура: __NCRYPT_PCP_HMAC_AUTH_SIGNATURE_INFO
+// Полей: 5
+// Строки в оригинале: 112635-112642
+struct __NCRYPT_PCP_HMAC_AUTH_SIGNATURE_INFO
+{
+
+  unsigned int dwVersion;
+  int iExpiration;
+  unsigned __int8 pabNonce[32];
+  unsigned __int8 pabPolicyRef[32];
+  unsigned __int8 pabHMAC[32];
+
+};

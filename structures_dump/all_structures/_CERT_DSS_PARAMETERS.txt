@@ -1,0 +1,11 @@
+// Структура: _CERT_DSS_PARAMETERS
+// Полей: 3
+// Строки в оригинале: 104360-104365
+struct _CERT_DSS_PARAMETERS
+{
+
+  _CRYPTOAPI_BLOB p;
+  _CRYPTOAPI_BLOB q;
+  _CRYPTOAPI_BLOB g;
+
+};

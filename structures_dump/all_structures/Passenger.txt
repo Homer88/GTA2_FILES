@@ -1,0 +1,10 @@
+// Структура: Passenger
+// Полей: 2
+// Строки в оригинале: 3621-3625
+struct Passenger
+{
+
+  Passenger *Passenger;
+  Passenger *PassengerPrev;
+
+};

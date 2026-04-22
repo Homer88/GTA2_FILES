@@ -1,0 +1,9 @@
+// Структура: _MAXVERSIONTESTED_INFO
+// Полей: 1
+// Строки в оригинале: 95611-95614
+struct _MAXVERSIONTESTED_INFO
+{
+
+  unsigned __int64 MaxVersionTested;
+
+};

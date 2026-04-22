@@ -1,0 +1,9 @@
+// Структура: IEnumTravelLogEntry
+// Полей: 1
+// Строки в оригинале: 38066-38069
+struct IEnumTravelLogEntry
+{
+
+  struct IEnumTravelLogEntryVtbl *lpVtbl;
+
+};

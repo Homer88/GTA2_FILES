@@ -1,0 +1,10 @@
+// Структура: _OFLONGSTRUCTW
+// Полей: 2
+// Строки в оригинале: 147517-147521
+struct _OFLONGSTRUCTW
+{
+
+  unsigned int nErrCode;
+  wchar_t szPathName[260];
+
+};

@@ -1,0 +1,9 @@
+// Структура: IHTMLMimeTypesCollection
+// Полей: 1
+// Строки в оригинале: 38882-38885
+struct IHTMLMimeTypesCollection
+{
+
+  struct IHTMLMimeTypesCollectionVtbl *lpVtbl;
+
+};

@@ -1,0 +1,11 @@
+// Структура: tagLICINFO
+// Полей: 3
+// Строки в оригинале: 123089-123094
+struct tagLICINFO
+{
+
+  int cbLicInfo;
+  int fRuntimeKeyAvail;
+  int fLicVerified;
+
+};

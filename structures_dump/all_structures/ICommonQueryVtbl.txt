@@ -1,0 +1,12 @@
+// Структура: ICommonQueryVtbl
+// Полей: 4
+// Строки в оригинале: 35182-35188
+struct ICommonQueryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICommonQuery *This, const IID *const riid, void **ppvObj);
+  ULONG (__stdcall *AddRef)(ICommonQuery *This);
+  ULONG (__stdcall *Release)(ICommonQuery *This);
+  HRESULT (__stdcall *OpenQueryWindow)(ICommonQuery *This, HWND hwndParent, LPOPENQUERYWINDOW pQueryWnd, IDataObject **ppDataObject);
+
+};

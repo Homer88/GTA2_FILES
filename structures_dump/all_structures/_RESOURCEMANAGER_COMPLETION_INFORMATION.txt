@@ -1,0 +1,10 @@
+// Структура: _RESOURCEMANAGER_COMPLETION_INFORMATION
+// Полей: 2
+// Строки в оригинале: 106766-106770
+struct _RESOURCEMANAGER_COMPLETION_INFORMATION
+{
+
+  void *IoCompletionPortHandle;
+  unsigned int CompletionKey;
+
+};

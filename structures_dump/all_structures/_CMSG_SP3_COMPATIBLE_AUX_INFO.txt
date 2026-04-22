@@ -1,0 +1,10 @@
+// Структура: _CMSG_SP3_COMPATIBLE_AUX_INFO
+// Полей: 2
+// Строки в оригинале: 86726-86730
+struct _CMSG_SP3_COMPATIBLE_AUX_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int dwFlags;
+
+};

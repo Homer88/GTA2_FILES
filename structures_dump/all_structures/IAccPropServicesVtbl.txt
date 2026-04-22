@@ -1,0 +1,26 @@
+// Структура: IAccPropServicesVtbl
+// Полей: 18
+// Строки в оригинале: 35416-35436
+struct IAccPropServicesVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IAccPropServices *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IAccPropServices *This);
+  ULONG (__stdcall *Release)(IAccPropServices *This);
+  HRESULT (__stdcall *SetPropValue)(IAccPropServices *This, const BYTE *pIDString, DWORD dwIDStringLen, MSAAPROPID idProp, VARIANT var);
+  HRESULT (__stdcall *SetPropServer)(IAccPropServices *This, const BYTE *pIDString, DWORD dwIDStringLen, const MSAAPROPID *paProps, int cProps, IAccPropServer *pServer, AnnoScope annoScope);
+  HRESULT (__stdcall *ClearProps)(IAccPropServices *This, const BYTE *pIDString, DWORD dwIDStringLen, const MSAAPROPID *paProps, int cProps);
+  HRESULT (__stdcall *SetHwndProp)(IAccPropServices *This, HWND hwnd, DWORD idObject, DWORD idChild, MSAAPROPID idProp, VARIANT var);
+  HRESULT (__stdcall *SetHwndPropStr)(IAccPropServices *This, HWND hwnd, DWORD idObject, DWORD idChild, MSAAPROPID idProp, LPCWSTR str);
+  HRESULT (__stdcall *SetHwndPropServer)(IAccPropServices *This, HWND hwnd, DWORD idObject, DWORD idChild, const MSAAPROPID *paProps, int cProps, IAccPropServer *pServer, AnnoScope annoScope);
+  HRESULT (__stdcall *ClearHwndProps)(IAccPropServices *This, HWND hwnd, DWORD idObject, DWORD idChild, const MSAAPROPID *paProps, int cProps);
+  HRESULT (__stdcall *ComposeHwndIdentityString)(IAccPropServices *This, HWND hwnd, DWORD idObject, DWORD idChild, BYTE **ppIDString, DWORD *pdwIDStringLen);
+  HRESULT (__stdcall *DecomposeHwndIdentityString)(IAccPropServices *This, const BYTE *pIDString, DWORD dwIDStringLen, HWND *phwnd, DWORD *pidObject, DWORD *pidChild);
+  HRESULT (__stdcall *SetHmenuProp)(IAccPropServices *This, HMENU hmenu, DWORD idChild, MSAAPROPID idProp, VARIANT var);
+  HRESULT (__stdcall *SetHmenuPropStr)(IAccPropServices *This, HMENU hmenu, DWORD idChild, MSAAPROPID idProp, LPCWSTR str);
+  HRESULT (__stdcall *SetHmenuPropServer)(IAccPropServices *This, HMENU hmenu, DWORD idChild, const MSAAPROPID *paProps, int cProps, IAccPropServer *pServer, AnnoScope annoScope);
+  HRESULT (__stdcall *ClearHmenuProps)(IAccPropServices *This, HMENU hmenu, DWORD idChild, const MSAAPROPID *paProps, int cProps);
+  HRESULT (__stdcall *ComposeHmenuIdentityString)(IAccPropServices *This, HMENU hmenu, DWORD idChild, BYTE **ppIDString, DWORD *pdwIDStringLen);
+  HRESULT (__stdcall *DecomposeHmenuIdentityString)(IAccPropServices *This, const BYTE *pIDString, DWORD dwIDStringLen, HMENU *phmenu, DWORD *pidChild);
+
+};

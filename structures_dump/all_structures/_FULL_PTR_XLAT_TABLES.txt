@@ -1,0 +1,12 @@
+// Структура: _FULL_PTR_XLAT_TABLES
+// Полей: 4
+// Строки в оригинале: 86120-86126
+struct _FULL_PTR_XLAT_TABLES
+{
+
+  void *RefIdToPointer;
+  void *PointerToRefId;
+  unsigned int NextRefId;
+  XLAT_SIDE XlatSide;
+
+};

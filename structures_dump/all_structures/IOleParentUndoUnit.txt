@@ -1,0 +1,9 @@
+// Структура: IOleParentUndoUnit
+// Полей: 1
+// Строки в оригинале: 33090-33093
+struct IOleParentUndoUnit
+{
+
+  struct IOleParentUndoUnitVtbl *lpVtbl;
+
+};

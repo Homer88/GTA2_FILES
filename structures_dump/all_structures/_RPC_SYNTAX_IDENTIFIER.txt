@@ -1,0 +1,10 @@
+// Структура: _RPC_SYNTAX_IDENTIFIER
+// Полей: 2
+// Строки в оригинале: 85942-85946
+struct _RPC_SYNTAX_IDENTIFIER
+{
+
+  _GUID SyntaxGUID;
+  _RPC_VERSION SyntaxVersion;
+
+};

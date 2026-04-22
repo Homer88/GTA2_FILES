@@ -1,0 +1,35 @@
+// Структура: IFileDialogVtbl
+// Полей: 27
+// Строки в оригинале: 34596-34625
+struct IFileDialogVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFileDialog *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFileDialog *This);
+  ULONG (__stdcall *Release)(IFileDialog *This);
+  HRESULT (__stdcall *Show)(IFileDialog *This, HWND hwndOwner);
+  HRESULT (__stdcall *SetFileTypes)(IFileDialog *This, UINT cFileTypes, const COMDLG_FILTERSPEC *rgFilterSpec);
+  HRESULT (__stdcall *SetFileTypeIndex)(IFileDialog *This, UINT iFileType);
+  HRESULT (__stdcall *GetFileTypeIndex)(IFileDialog *This, UINT *piFileType);
+  HRESULT (__stdcall *Advise)(IFileDialog *This, IFileDialogEvents *pfde, DWORD *pdwCookie);
+  HRESULT (__stdcall *Unadvise)(IFileDialog *This, DWORD dwCookie);
+  HRESULT (__stdcall *SetOptions)(IFileDialog *This, FILEOPENDIALOGOPTIONS fos);
+  HRESULT (__stdcall *GetOptions)(IFileDialog *This, FILEOPENDIALOGOPTIONS *pfos);
+  HRESULT (__stdcall *SetDefaultFolder)(IFileDialog *This, IShellItem *psi);
+  HRESULT (__stdcall *SetFolder)(IFileDialog *This, IShellItem *psi);
+  HRESULT (__stdcall *GetFolder)(IFileDialog *This, IShellItem **ppsi);
+  HRESULT (__stdcall *GetCurrentSelection)(IFileDialog *This, IShellItem **ppsi);
+  HRESULT (__stdcall *SetFileName)(IFileDialog *This, LPCWSTR pszName);
+  HRESULT (__stdcall *GetFileName)(IFileDialog *This, LPWSTR *pszName);
+  HRESULT (__stdcall *SetTitle)(IFileDialog *This, LPCWSTR pszTitle);
+  HRESULT (__stdcall *SetOkButtonLabel)(IFileDialog *This, LPCWSTR pszText);
+  HRESULT (__stdcall *SetFileNameLabel)(IFileDialog *This, LPCWSTR pszLabel);
+  HRESULT (__stdcall *GetResult)(IFileDialog *This, IShellItem **ppsi);
+  HRESULT (__stdcall *AddPlace)(IFileDialog *This, IShellItem *psi, FDAP fdap);
+  HRESULT (__stdcall *SetDefaultExtension)(IFileDialog *This, LPCWSTR pszDefaultExtension);
+  HRESULT (__stdcall *Close)(IFileDialog *This, HRESULT hr);
+  HRESULT (__stdcall *SetClientGuid)(IFileDialog *This, const GUID *const guid);
+  HRESULT (__stdcall *ClearClientData)(IFileDialog *This);
+  HRESULT (__stdcall *SetFilter)(IFileDialog *This, IShellItemFilter *pFilter);
+
+};

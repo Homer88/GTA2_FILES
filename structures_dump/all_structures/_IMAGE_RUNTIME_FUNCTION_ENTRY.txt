@@ -1,0 +1,11 @@
+// Структура: _IMAGE_RUNTIME_FUNCTION_ENTRY
+// Полей: 3
+// Строки в оригинале: 97014-97019
+struct _IMAGE_RUNTIME_FUNCTION_ENTRY
+{
+
+  unsigned int BeginAddress;
+  unsigned int EndAddress;
+  $2C177DDEB22292785570970034678B30 ___u2;
+
+};

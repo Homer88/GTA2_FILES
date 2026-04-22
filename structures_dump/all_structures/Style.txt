@@ -1,0 +1,42 @@
+// Структура: Style
+// Полей: 34
+// Строки в оригинале: 7443-7479
+struct Style
+{
+
+  __int16 field;
+  __int16 field_2;
+  unsigned __int16 field_4;
+  unsigned __int16 field_6;
+  unsigned __int16 PalitrePal;
+  char field_A;
+  char field_B;
+  int field_C;
+  S15_0002 *S15_0002;
+  S15_001 *field_14;
+  int field_18;
+  Car *Car;
+  int field_20;
+  int field_24;
+  FILE *field_28;
+  int field_2C;
+  int field_30;
+  int field_34;
+  int field_38;
+  int Tiles;
+  S1501 *S1501;
+  int field_44;
+  int field_48;
+  int field_4C;
+  int field_50;
+  int field_54;
+  int field_58;
+  S284 *pCar_5C;
+  int delx3;
+  char *recy;
+  __int16 n_recy;
+  bool ColourDepth;
+  char pad2;
+  int arr1024[1024];
+
+};

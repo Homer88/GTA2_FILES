@@ -1,0 +1,13 @@
+// Структура: _DDBLTBATCH
+// Полей: 5
+// Строки в оригинале: 24671-24678
+struct _DDBLTBATCH
+{
+
+  LPRECT lprDest;
+  LPDIRECTDRAWSURFACE lpDDSSrc;
+  LPRECT lprSrc;
+  DWORD dwFlags;
+  LPDDBLTFX lpDDBltFx;
+
+};

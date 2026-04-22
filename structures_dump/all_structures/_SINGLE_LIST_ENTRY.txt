@@ -1,0 +1,9 @@
+// Структура: _SINGLE_LIST_ENTRY
+// Полей: 1
+// Строки в оригинале: 12789-12792
+struct _SINGLE_LIST_ENTRY
+{
+
+  _SINGLE_LIST_ENTRY *Next;
+
+};

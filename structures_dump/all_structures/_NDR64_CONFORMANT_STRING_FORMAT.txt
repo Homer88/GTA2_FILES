@@ -1,0 +1,9 @@
+// Структура: _NDR64_CONFORMANT_STRING_FORMAT
+// Полей: 1
+// Строки в оригинале: 332527-332530
+struct _NDR64_CONFORMANT_STRING_FORMAT
+{
+
+  NDR64_STRING_HEADER_FORMAT Header;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _MEMORY_SHARED_COMMIT_INFORMATION
+// Полей: 1
+// Строки в оригинале: 94727-94730
+struct _MEMORY_SHARED_COMMIT_INFORMATION
+{
+
+  unsigned int CommitSize;
+
+};

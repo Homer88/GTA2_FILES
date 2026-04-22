@@ -1,0 +1,9 @@
+// Структура: _PERFINFO_CC_WORKITEM_DEQUEUE
+// Полей: 1
+// Строки в оригинале: 308785-308788
+struct _PERFINFO_CC_WORKITEM_DEQUEUE
+{
+
+  unsigned int WorkItemKey;
+
+};

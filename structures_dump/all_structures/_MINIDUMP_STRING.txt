@@ -1,0 +1,10 @@
+// Структура: _MINIDUMP_STRING
+// Полей: 2
+// Строки в оригинале: 123412-123416
+struct _MINIDUMP_STRING
+{
+
+  unsigned int Length;
+  wchar_t Buffer[];
+
+};

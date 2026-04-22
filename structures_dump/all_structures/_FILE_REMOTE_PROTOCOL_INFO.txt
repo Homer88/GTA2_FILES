@@ -1,0 +1,18 @@
+// Структура: _FILE_REMOTE_PROTOCOL_INFO
+// Полей: 10
+// Строки в оригинале: 108079-108091
+struct _FILE_REMOTE_PROTOCOL_INFO
+{
+
+  unsigned __int16 StructureVersion;
+  unsigned __int16 StructureSize;
+  unsigned int Protocol;
+  unsigned __int16 ProtocolMajorVersion;
+  unsigned __int16 ProtocolMinorVersion;
+  unsigned __int16 ProtocolRevision;
+  unsigned __int16 Reserved;
+  unsigned int Flags;
+  _FILE_REMOTE_PROTOCOL_INFO::<unnamed_type_GenericReserved> GenericReserved;
+  _FILE_REMOTE_PROTOCOL_INFO::<unnamed_type_ProtocolSpecific> ProtocolSpecific;
+
+};

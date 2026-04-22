@@ -1,0 +1,9 @@
+// Структура: ISyncMgrConflictResolutionItems
+// Полей: 1
+// Строки в оригинале: 33621-33624
+struct ISyncMgrConflictResolutionItems
+{
+
+  struct ISyncMgrConflictResolutionItemsVtbl *lpVtbl;
+
+};

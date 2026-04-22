@@ -1,0 +1,12 @@
+// Структура: _CRYPT_URL_INFO
+// Полей: 4
+// Строки в оригинале: 104012-104018
+struct _CRYPT_URL_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int dwSyncDeltaTime;
+  unsigned int cGroup;
+  unsigned int *rgcGroupEntry;
+
+};

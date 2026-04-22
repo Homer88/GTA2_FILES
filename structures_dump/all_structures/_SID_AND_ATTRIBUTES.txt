@@ -1,0 +1,10 @@
+// Структура: _SID_AND_ATTRIBUTES
+// Полей: 2
+// Строки в оригинале: 78068-78072
+struct _SID_AND_ATTRIBUTES
+{
+
+  void *Sid;
+  unsigned int Attributes;
+
+};

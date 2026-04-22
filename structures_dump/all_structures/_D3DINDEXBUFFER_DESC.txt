@@ -1,0 +1,13 @@
+// Структура: _D3DINDEXBUFFER_DESC
+// Полей: 5
+// Строки в оригинале: 26320-26327
+struct _D3DINDEXBUFFER_DESC
+{
+
+  D3DFORMAT Format;
+  D3DRESOURCETYPE Type;
+  DWORD Usage;
+  D3DPOOL Pool;
+  UINT Size;
+
+};

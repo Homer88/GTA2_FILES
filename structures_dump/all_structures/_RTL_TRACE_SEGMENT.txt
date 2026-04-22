@@ -1,0 +1,15 @@
+// Структура: _RTL_TRACE_SEGMENT
+// Полей: 7
+// Строки в оригинале: 22324-22333
+struct _RTL_TRACE_SEGMENT
+{
+
+  unsigned int Magic;
+  _RTL_TRACE_DATABASE *Database;
+  _RTL_TRACE_SEGMENT *NextSegment;
+  unsigned int TotalSize;
+  char *SegmentStart;
+  char *SegmentEnd;
+  char *SegmentFree;
+
+};

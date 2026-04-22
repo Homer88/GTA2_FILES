@@ -1,0 +1,10 @@
+// Структура: _STARTUPINFOEXA
+// Полей: 2
+// Строки в оригинале: 88643-88647
+struct _STARTUPINFOEXA
+{
+
+  _STARTUPINFOA StartupInfo;
+  _PROC_THREAD_ATTRIBUTE_LIST *lpAttributeList;
+
+};

@@ -1,0 +1,14 @@
+// Структура: WeaponDatabase
+// Полей: 6
+// Строки в оригинале: 7328-7336
+struct WeaponDatabase
+{
+
+  Weapon *sWeapon;
+  Weapon *NextWeapon;
+  Weapon sWeapon_Arr255[255];
+  __int16 field_2FD8;
+  char field_2FDA;
+  char field_2FDB;
+
+};

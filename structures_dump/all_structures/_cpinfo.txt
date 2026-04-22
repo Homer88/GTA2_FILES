@@ -1,0 +1,11 @@
+// Структура: _cpinfo
+// Полей: 3
+// Строки в оригинале: 2191-2196
+struct _cpinfo
+{
+
+  UINT MaxCharSize;
+  BYTE DefaultChar[2];
+  BYTE LeadByte[12];
+
+};

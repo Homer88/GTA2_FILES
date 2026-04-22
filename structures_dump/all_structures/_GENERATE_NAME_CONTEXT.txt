@@ -1,0 +1,15 @@
+// Структура: _GENERATE_NAME_CONTEXT
+// Полей: 7
+// Строки в оригинале: 89457-89466
+struct _GENERATE_NAME_CONTEXT
+{
+
+  unsigned __int16 Checksum;
+  unsigned __int8 ChecksumInserted;
+  unsigned __int8 NameLength;
+  wchar_t NameBuffer[8];
+  unsigned int ExtensionLength;
+  wchar_t ExtensionBuffer[4];
+  unsigned int LastIndexValue;
+
+};

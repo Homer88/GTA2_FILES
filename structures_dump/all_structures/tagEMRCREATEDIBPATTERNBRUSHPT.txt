@@ -1,0 +1,15 @@
+// Структура: tagEMRCREATEDIBPATTERNBRUSHPT
+// Полей: 7
+// Строки в оригинале: 80993-81002
+struct tagEMRCREATEDIBPATTERNBRUSHPT
+{
+
+  tagEMR emr;
+  unsigned int ihBrush;
+  unsigned int iUsage;
+  unsigned int offBmi;
+  unsigned int cbBmi;
+  unsigned int offBits;
+  unsigned int cbBits;
+
+};

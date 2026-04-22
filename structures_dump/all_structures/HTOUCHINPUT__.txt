@@ -1,0 +1,9 @@
+// Структура: HTOUCHINPUT__
+// Полей: 1
+// Строки в оригинале: 95902-95905
+struct HTOUCHINPUT__
+{
+
+  int unused;
+
+};

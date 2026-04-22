@@ -1,0 +1,16 @@
+// Структура: _NDR64_STRUCTURE_FLAGS
+// Полей: 8
+// Строки в оригинале: 330859-330869
+struct _NDR64_STRUCTURE_FLAGS
+{
+
+  unsigned __int8 HasPointerInfo : 1;
+  unsigned __int8 HasMemberInfo : 1;
+  unsigned __int8 HasConfArray : 1;
+  unsigned __int8 HasOrigPointerInfo : 1;
+  unsigned __int8 HasOrigMemberInfo : 1;
+  unsigned __int8 Reserved1 : 1;
+  unsigned __int8 Reserved2 : 1;
+  unsigned __int8 Reserved3 : 1;
+
+};

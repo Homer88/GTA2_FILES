@@ -1,0 +1,9 @@
+// Структура: _SINGLE_LIST_ENTRY32
+// Полей: 1
+// Строки в оригинале: 91734-91737
+struct _SINGLE_LIST_ENTRY32
+{
+
+  unsigned int Next;
+
+};

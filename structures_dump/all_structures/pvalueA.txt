@@ -1,0 +1,12 @@
+// Структура: pvalueA
+// Полей: 4
+// Строки в оригинале: 102010-102016
+struct pvalueA
+{
+
+  char *pv_valuename;
+  int pv_valuelen;
+  void *pv_value_context;
+  unsigned int pv_type;
+
+};

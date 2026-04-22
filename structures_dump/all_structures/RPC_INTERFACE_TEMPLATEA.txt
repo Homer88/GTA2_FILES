@@ -1,0 +1,19 @@
+// Структура: RPC_INTERFACE_TEMPLATEA
+// Полей: 11
+// Строки в оригинале: 80690-80703
+struct RPC_INTERFACE_TEMPLATEA
+{
+
+  unsigned int Version;
+  void *IfSpec;
+  _GUID *MgrTypeUuid;
+  void *MgrEpv;
+  unsigned int Flags;
+  unsigned int MaxCalls;
+  unsigned int MaxRpcSize;
+  int (__stdcall *IfCallback)(void *, void *);
+  _UUID_VECTOR *UuidVector;
+  unsigned __int8 *Annotation;
+  void *SecurityDescriptor;
+
+};

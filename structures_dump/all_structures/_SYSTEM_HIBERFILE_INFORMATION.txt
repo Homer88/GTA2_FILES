@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_HIBERFILE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 95669-95673
+struct _SYSTEM_HIBERFILE_INFORMATION
+{
+
+  unsigned int NumberOfMcbPairs;
+  _LARGE_INTEGER Mcb[1];
+
+};

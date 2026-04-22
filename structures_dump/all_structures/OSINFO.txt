@@ -1,0 +1,11 @@
+// Структура: OSINFO
+// Полей: 3
+// Строки в оригинале: 293165-293170
+struct OSINFO
+{
+
+  unsigned int dwOSPlatformId;
+  unsigned int dwOSMajorVersion;
+  unsigned int dwOSMinorVersion;
+
+};

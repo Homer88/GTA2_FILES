@@ -1,0 +1,13 @@
+// Структура: ITravelLogEntryVtbl
+// Полей: 5
+// Строки в оригинале: 38078-38085
+struct ITravelLogEntryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITravelLogEntry *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITravelLogEntry *This);
+  ULONG (__stdcall *Release)(ITravelLogEntry *This);
+  HRESULT (__stdcall *GetTitle)(ITravelLogEntry *This, LPWSTR *ppszTitle);
+  HRESULT (__stdcall *GetURL)(ITravelLogEntry *This, LPWSTR *ppszURL);
+
+};

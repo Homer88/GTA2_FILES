@@ -1,0 +1,14 @@
+// Структура: _IMAGE_RESOURCE_DIRECTORY
+// Полей: 6
+// Строки в оригинале: 105020-105028
+struct _IMAGE_RESOURCE_DIRECTORY
+{
+
+  unsigned int Characteristics;
+  unsigned int TimeDateStamp;
+  unsigned __int16 MajorVersion;
+  unsigned __int16 MinorVersion;
+  unsigned __int16 NumberOfNamedEntries;
+  unsigned __int16 NumberOfIdEntries;
+
+};

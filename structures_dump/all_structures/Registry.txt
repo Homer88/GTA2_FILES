@@ -1,0 +1,14 @@
+// Структура: Registry
+// Полей: 6
+// Строки в оригинале: 7432-7440
+struct Registry
+{
+
+  LPDWORD field_0;
+  int field_4;
+  char field_8;
+  char field_9;
+  char field_A;
+  char field_B;
+
+};

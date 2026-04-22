@@ -1,0 +1,86 @@
+// Структура: _MINIDUMP_SYSTEM_PERFORMANCE_INFORMATION
+// Полей: 78
+// Строки в оригинале: 123179-123259
+struct _MINIDUMP_SYSTEM_PERFORMANCE_INFORMATION
+{
+
+  unsigned __int64 IdleProcessTime;
+  unsigned __int64 IoReadTransferCount;
+  unsigned __int64 IoWriteTransferCount;
+  unsigned __int64 IoOtherTransferCount;
+  unsigned int IoReadOperationCount;
+  unsigned int IoWriteOperationCount;
+  unsigned int IoOtherOperationCount;
+  unsigned int AvailablePages;
+  unsigned int CommittedPages;
+  unsigned int CommitLimit;
+  unsigned int PeakCommitment;
+  unsigned int PageFaultCount;
+  unsigned int CopyOnWriteCount;
+  unsigned int TransitionCount;
+  unsigned int CacheTransitionCount;
+  unsigned int DemandZeroCount;
+  unsigned int PageReadCount;
+  unsigned int PageReadIoCount;
+  unsigned int CacheReadCount;
+  unsigned int CacheIoCount;
+  unsigned int DirtyPagesWriteCount;
+  unsigned int DirtyWriteIoCount;
+  unsigned int MappedPagesWriteCount;
+  unsigned int MappedWriteIoCount;
+  unsigned int PagedPoolPages;
+  unsigned int NonPagedPoolPages;
+  unsigned int PagedPoolAllocs;
+  unsigned int PagedPoolFrees;
+  unsigned int NonPagedPoolAllocs;
+  unsigned int NonPagedPoolFrees;
+  unsigned int FreeSystemPtes;
+  unsigned int ResidentSystemCodePage;
+  unsigned int TotalSystemDriverPages;
+  unsigned int TotalSystemCodePages;
+  unsigned int NonPagedPoolLookasideHits;
+  unsigned int PagedPoolLookasideHits;
+  unsigned int AvailablePagedPoolPages;
+  unsigned int ResidentSystemCachePage;
+  unsigned int ResidentPagedPoolPage;
+  unsigned int ResidentSystemDriverPage;
+  unsigned int CcFastReadNoWait;
+  unsigned int CcFastReadWait;
+  unsigned int CcFastReadResourceMiss;
+  unsigned int CcFastReadNotPossible;
+  unsigned int CcFastMdlReadNoWait;
+  unsigned int CcFastMdlReadWait;
+  unsigned int CcFastMdlReadResourceMiss;
+  unsigned int CcFastMdlReadNotPossible;
+  unsigned int CcMapDataNoWait;
+  unsigned int CcMapDataWait;
+  unsigned int CcMapDataNoWaitMiss;
+  unsigned int CcMapDataWaitMiss;
+  unsigned int CcPinMappedDataCount;
+  unsigned int CcPinReadNoWait;
+  unsigned int CcPinReadWait;
+  unsigned int CcPinReadNoWaitMiss;
+  unsigned int CcPinReadWaitMiss;
+  unsigned int CcCopyReadNoWait;
+  unsigned int CcCopyReadWait;
+  unsigned int CcCopyReadNoWaitMiss;
+  unsigned int CcCopyReadWaitMiss;
+  unsigned int CcMdlReadNoWait;
+  unsigned int CcMdlReadWait;
+  unsigned int CcMdlReadNoWaitMiss;
+  unsigned int CcMdlReadWaitMiss;
+  unsigned int CcReadAheadIos;
+  unsigned int CcLazyWriteIos;
+  unsigned int CcLazyWritePages;
+  unsigned int CcDataFlushes;
+  unsigned int CcDataPages;
+  unsigned int ContextSwitches;
+  unsigned int FirstLevelTbFills;
+  unsigned int SecondLevelTbFills;
+  unsigned int SystemCalls;
+  unsigned __int64 CcTotalDirtyPages;
+  unsigned __int64 CcDirtyPageThreshold;
+  __int64 ResidentAvailablePages;
+  unsigned __int64 SharedCommittedPages;
+
+};

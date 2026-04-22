@@ -1,0 +1,12 @@
+// Структура: ITfActiveLanguageProfileNotifySinkVtbl
+// Полей: 4
+// Строки в оригинале: 30105-30111
+struct ITfActiveLanguageProfileNotifySinkVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfActiveLanguageProfileNotifySink *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfActiveLanguageProfileNotifySink *This);
+  ULONG (__stdcall *Release)(ITfActiveLanguageProfileNotifySink *This);
+  HRESULT (__stdcall *OnActivated)(ITfActiveLanguageProfileNotifySink *This, const IID *const clsid, const GUID *const guidProfile, BOOL fActivated);
+
+};

@@ -1,0 +1,11 @@
+// Структура: _CRYPT_RC2_CBC_PARAMETERS
+// Полей: 3
+// Строки в оригинале: 101315-101320
+struct _CRYPT_RC2_CBC_PARAMETERS
+{
+
+  unsigned int dwVersion;
+  int fIV;
+  unsigned __int8 rgbIV[8];
+
+};

@@ -1,0 +1,11 @@
+// Структура: _ETW_CLOCK_CONFIGURATION_EVENT
+// Полей: 3
+// Строки в оригинале: 312020-312025
+struct _ETW_CLOCK_CONFIGURATION_EVENT
+{
+
+  unsigned int KnownType;
+  unsigned int Capabilities;
+  _PERFINFO_DYNAMIC_TICK_DISABLE_REASON DisableReason;
+
+};

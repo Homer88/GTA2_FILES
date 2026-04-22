@@ -1,0 +1,17 @@
+// Structure: cameraPosTarget
+// Lines: 3075 - 3087
+// Fields: 11
+
+struct cameraPosTarget
+{
+  int fild;
+  int field_4;
+  CameraOrPhysics *CameraOrPhysics;
+  Car *Car;
+  int field_10;
+  int field_14;
+  S32 *S32;
+  Player *Player;
+  int field_20;
+  int field_24;
+};

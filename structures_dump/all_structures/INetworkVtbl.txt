@@ -1,0 +1,28 @@
+// Структура: INetworkVtbl
+// Полей: 20
+// Строки в оригинале: 45995-46017
+struct INetworkVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(INetwork *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(INetwork *This);
+  ULONG (__stdcall *Release)(INetwork *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(INetwork *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(INetwork *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(INetwork *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(INetwork *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *GetName)(INetwork *This, BSTR *pszNetworkName);
+  HRESULT (__stdcall *SetName)(INetwork *This, BSTR szNetworkNewName);
+  HRESULT (__stdcall *GetDescription)(INetwork *This, BSTR *pszDescription);
+  HRESULT (__stdcall *SetDescription)(INetwork *This, BSTR szDescription);
+  HRESULT (__stdcall *GetNetworkId)(INetwork *This, GUID *pgdGuidNetworkId);
+  HRESULT (__stdcall *GetDomainType)(INetwork *This, NLM_DOMAIN_TYPE *pNetworkType);
+  HRESULT (__stdcall *GetNetworkConnections)(INetwork *This, IEnumNetworkConnections **ppEnumNetworkConnection);
+  HRESULT (__stdcall *GetTimeCreatedAndConnected)(INetwork *This, DWORD *pdwLowDateTimeCreated, DWORD *pdwHighDateTimeCreated, DWORD *pdwLowDateTimeConnected, DWORD *pdwHighDateTimeConnected);
+  HRESULT (__stdcall *get_IsConnectedToInternet)(INetwork *This, VARIANT_BOOL *pbIsConnected);
+  HRESULT (__stdcall *get_IsConnected)(INetwork *This, VARIANT_BOOL *pbIsConnected);
+  HRESULT (__stdcall *GetConnectivity)(INetwork *This, NLM_CONNECTIVITY *pConnectivity);
+  HRESULT (__stdcall *GetCategory)(INetwork *This, NLM_NETWORK_CATEGORY *pCategory);
+  HRESULT (__stdcall *SetCategory)(INetwork *This, NLM_NETWORK_CATEGORY NewCategory);
+
+};

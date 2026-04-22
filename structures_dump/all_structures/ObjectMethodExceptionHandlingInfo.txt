@@ -1,0 +1,13 @@
+// Структура: ObjectMethodExceptionHandlingInfo
+// Полей: 5
+// Строки в оригинале: 220034-220041
+struct ObjectMethodExceptionHandlingInfo
+{
+
+  void *pvObject;
+  _GUID iid;
+  unsigned int iMethod;
+  void *pVtableAddress;
+  const char *pszPossibleCause;
+
+};

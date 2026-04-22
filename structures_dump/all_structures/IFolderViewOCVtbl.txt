@@ -1,0 +1,16 @@
+// Структура: IFolderViewOCVtbl
+// Полей: 8
+// Строки в оригинале: 35160-35170
+struct IFolderViewOCVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFolderViewOC *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFolderViewOC *This);
+  ULONG (__stdcall *Release)(IFolderViewOC *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IFolderViewOC *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IFolderViewOC *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IFolderViewOC *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IFolderViewOC *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *SetFolderView)(IFolderViewOC *This, IDispatch *pdisp);
+
+};

@@ -1,0 +1,9 @@
+// Структура: HSTRING_BUFFER__
+// Полей: 1
+// Строки в оригинале: 65492-65495
+struct HSTRING_BUFFER__
+{
+
+  int unused;
+
+};

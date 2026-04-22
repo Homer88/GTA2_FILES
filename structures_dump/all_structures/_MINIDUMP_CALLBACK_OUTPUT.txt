@@ -1,0 +1,9 @@
+// Структура: _MINIDUMP_CALLBACK_OUTPUT
+// Полей: 1
+// Строки в оригинале: 122494-122497
+struct _MINIDUMP_CALLBACK_OUTPUT
+{
+
+  $306400649CFF360118AC17CF5BB23BAB ___u0;
+
+};

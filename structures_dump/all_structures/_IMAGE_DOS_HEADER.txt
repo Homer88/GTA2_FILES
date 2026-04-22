@@ -1,0 +1,27 @@
+// Структура: _IMAGE_DOS_HEADER
+// Полей: 19
+// Строки в оригинале: 12924-12945
+struct _IMAGE_DOS_HEADER
+{
+
+  unsigned __int16 e_magic;
+  unsigned __int16 e_cblp;
+  unsigned __int16 e_cp;
+  unsigned __int16 e_crlc;
+  unsigned __int16 e_cparhdr;
+  unsigned __int16 e_minalloc;
+  unsigned __int16 e_maxalloc;
+  unsigned __int16 e_ss;
+  unsigned __int16 e_sp;
+  unsigned __int16 e_csum;
+  unsigned __int16 e_ip;
+  unsigned __int16 e_cs;
+  unsigned __int16 e_lfarlc;
+  unsigned __int16 e_ovno;
+  unsigned __int16 e_res[4];
+  unsigned __int16 e_oemid;
+  unsigned __int16 e_oeminfo;
+  unsigned __int16 e_res2[10];
+  int e_lfanew;
+
+};

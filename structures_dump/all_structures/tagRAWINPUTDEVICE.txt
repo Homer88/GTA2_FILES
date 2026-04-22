@@ -1,0 +1,12 @@
+// Структура: tagRAWINPUTDEVICE
+// Полей: 4
+// Строки в оригинале: 93805-93811
+struct tagRAWINPUTDEVICE
+{
+
+  unsigned __int16 usUsagePage;
+  unsigned __int16 usUsage;
+  unsigned int dwFlags;
+  HWND__ *hwndTarget;
+
+};

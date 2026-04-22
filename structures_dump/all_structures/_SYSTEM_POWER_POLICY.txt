@@ -1,0 +1,36 @@
+// Структура: _SYSTEM_POWER_POLICY
+// Полей: 28
+// Строки в оригинале: 87007-87037
+struct _SYSTEM_POWER_POLICY
+{
+
+  unsigned int Revision;
+  POWER_ACTION_POLICY PowerButton;
+  POWER_ACTION_POLICY SleepButton;
+  POWER_ACTION_POLICY LidClose;
+  _SYSTEM_POWER_STATE LidOpenWake;
+  unsigned int Reserved;
+  POWER_ACTION_POLICY Idle;
+  unsigned int IdleTimeout;
+  unsigned __int8 IdleSensitivity;
+  unsigned __int8 DynamicThrottle;
+  unsigned __int8 Spare2[2];
+  _SYSTEM_POWER_STATE MinSleep;
+  _SYSTEM_POWER_STATE MaxSleep;
+  _SYSTEM_POWER_STATE ReducedLatencySleep;
+  unsigned int WinLogonFlags;
+  unsigned int Spare3;
+  unsigned int DozeS4Timeout;
+  unsigned int BroadcastCapacityResolution;
+  SYSTEM_POWER_LEVEL DischargePolicy[4];
+  unsigned int VideoTimeout;
+  unsigned __int8 VideoDimDisplay;
+  unsigned int VideoReserved[3];
+  unsigned int SpindownTimeout;
+  unsigned __int8 OptimizeForPower;
+  unsigned __int8 FanThrottleTolerance;
+  unsigned __int8 ForcedThrottle;
+  unsigned __int8 MinThrottle;
+  POWER_ACTION_POLICY OverThrottled;
+
+};

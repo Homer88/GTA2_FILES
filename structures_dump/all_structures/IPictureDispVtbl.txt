@@ -1,0 +1,15 @@
+// Структура: IPictureDispVtbl
+// Полей: 7
+// Строки в оригинале: 182320-182329
+struct IPictureDispVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPictureDisp *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPictureDisp *This);
+  ULONG (__stdcall *Release)(IPictureDisp *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IPictureDisp *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IPictureDisp *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IPictureDisp *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IPictureDisp *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+
+};

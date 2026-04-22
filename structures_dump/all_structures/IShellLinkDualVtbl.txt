@@ -1,0 +1,31 @@
+// Структура: IShellLinkDualVtbl
+// Полей: 23
+// Строки в оригинале: 42697-42722
+struct IShellLinkDualVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellLinkDual *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellLinkDual *This);
+  ULONG (__stdcall *Release)(IShellLinkDual *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IShellLinkDual *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IShellLinkDual *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IShellLinkDual *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IShellLinkDual *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Path)(IShellLinkDual *This, BSTR *pbs);
+  HRESULT (__stdcall *put_Path)(IShellLinkDual *This, BSTR bs);
+  HRESULT (__stdcall *get_Description)(IShellLinkDual *This, BSTR *pbs);
+  HRESULT (__stdcall *put_Description)(IShellLinkDual *This, BSTR bs);
+  HRESULT (__stdcall *get_WorkingDirectory)(IShellLinkDual *This, BSTR *pbs);
+  HRESULT (__stdcall *put_WorkingDirectory)(IShellLinkDual *This, BSTR bs);
+  HRESULT (__stdcall *get_Arguments)(IShellLinkDual *This, BSTR *pbs);
+  HRESULT (__stdcall *put_Arguments)(IShellLinkDual *This, BSTR bs);
+  HRESULT (__stdcall *get_Hotkey)(IShellLinkDual *This, int *piHK);
+  HRESULT (__stdcall *put_Hotkey)(IShellLinkDual *This, int iHK);
+  HRESULT (__stdcall *get_ShowCommand)(IShellLinkDual *This, int *piShowCommand);
+  HRESULT (__stdcall *put_ShowCommand)(IShellLinkDual *This, int iShowCommand);
+  HRESULT (__stdcall *Resolve)(IShellLinkDual *This, int fFlags);
+  HRESULT (__stdcall *GetIconLocation)(IShellLinkDual *This, BSTR *pbs, int *piIcon);
+  HRESULT (__stdcall *SetIconLocation)(IShellLinkDual *This, BSTR bs, int iIcon);
+  HRESULT (__stdcall *Save)(IShellLinkDual *This, VARIANT vWhere);
+
+};

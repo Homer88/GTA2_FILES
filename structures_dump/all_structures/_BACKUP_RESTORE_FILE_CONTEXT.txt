@@ -1,0 +1,53 @@
+// Структура: _BACKUP_RESTORE_FILE_CONTEXT
+// Полей: 45
+// Строки в оригинале: 313827-313874
+struct _BACKUP_RESTORE_FILE_CONTEXT
+{
+
+  const wchar_t *Name;
+  const wchar_t *Path;
+  const wchar_t *OsComponent;
+  const wchar_t *Size;
+  const wchar_t *Magic;
+  const wchar_t *PeHeaderHash;
+  const wchar_t *SizeOfImage;
+  const wchar_t *PeChecksum;
+  const wchar_t *LinkDate;
+  const wchar_t *LinkerVersion;
+  const wchar_t *BinFileVersion;
+  const wchar_t *BinProductVersion;
+  const wchar_t *BinaryType;
+  const wchar_t *Created;
+  const wchar_t *Modified;
+  const wchar_t *LastAccessed;
+  const wchar_t *VerLanguage;
+  const wchar_t *Id;
+  const wchar_t *SwitchBackContext;
+  const wchar_t *SigDisplayName;
+  const wchar_t *SigPublisherName;
+  const wchar_t *SigMoreInfoURL;
+  const wchar_t *FileVersion;
+  const wchar_t *CompanyName;
+  const wchar_t *FileDescription;
+  const wchar_t *InternalName;
+  const wchar_t *LegalCopyright;
+  const wchar_t *OriginalFileName;
+  const wchar_t *ProductName;
+  const wchar_t *ProductVersion;
+  const wchar_t *PeImageType;
+  const wchar_t *PeSubsystem;
+  const wchar_t *RunLevel;
+  const wchar_t *UiAccess;
+  const wchar_t *CrcChecksum;
+  const wchar_t *ClrVersion;
+  const wchar_t *BoeProgramId;
+  const wchar_t *BoeProgramName;
+  const wchar_t *BoeProgramPublisher;
+  const wchar_t *BoeProgramVersion;
+  const wchar_t *BoeProgramLanguage;
+  const wchar_t *FileSize;
+  const wchar_t *PeCharacteristics;
+  const wchar_t *Sha256;
+  const wchar_t *Aumid;
+
+};

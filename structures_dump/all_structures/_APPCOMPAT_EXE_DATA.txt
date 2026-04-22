@@ -1,0 +1,36 @@
+// Структура: _APPCOMPAT_EXE_DATA
+// Полей: 28
+// Строки в оригинале: 313416-313446
+struct _APPCOMPAT_EXE_DATA
+{
+
+  unsigned __int64 Reserved[65];
+  unsigned int cbSize;
+  unsigned int dwMagic;
+  int bLoadShimEngine;
+  unsigned __int16 uExeType;
+  tagSDBQUERYRESULT SdbQueryResult;
+  unsigned __int64 DbgLogChannels[128];
+  tagSWITCH_CONTEXT SwitchContext;
+  unsigned int dwParentProcessId;
+  wchar_t szParentImageName[260];
+  wchar_t szParentCompatLayers[256];
+  wchar_t szActiveCompatLayers[256];
+  unsigned int uImageFileSize;
+  unsigned int uImageCheckSum;
+  int bLatestOs;
+  int bPackageId;
+  int bSwitchBackManifest;
+  int bUacManifest;
+  int bLegacyInstaller;
+  unsigned int dwRunLevel;
+  unsigned __int64 qwWinRTFlags;
+  void *__ptr64 pHookCOM;
+  void *__ptr64 pComponentOnDemandEvent;
+  void *__ptr64 pQuirks;
+  unsigned int ulQuirksSize;
+  _SDB_CSTRUCT_COBALT_PROCFLAG CobaltProcFlags;
+  unsigned int FullMatchDbSizeCb;
+  unsigned int FullMatchDbOffset;
+
+};

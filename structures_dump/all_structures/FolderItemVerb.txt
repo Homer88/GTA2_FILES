@@ -1,0 +1,9 @@
+// Структура: FolderItemVerb
+// Полей: 1
+// Строки в оригинале: 30099-30102
+struct FolderItemVerb
+{
+
+  struct FolderItemVerbVtbl *lpVtbl;
+
+};

@@ -1,0 +1,36 @@
+// Структура: IUriVtbl
+// Полей: 28
+// Строки в оригинале: 33163-33193
+struct IUriVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IUri *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IUri *This);
+  ULONG (__stdcall *Release)(IUri *This);
+  HRESULT (__stdcall *GetPropertyBSTR)(IUri *This, Uri_PROPERTY uriProp, BSTR *pbstrProperty, DWORD dwFlags);
+  HRESULT (__stdcall *GetPropertyLength)(IUri *This, Uri_PROPERTY uriProp, DWORD *pcchProperty, DWORD dwFlags);
+  HRESULT (__stdcall *GetPropertyDWORD)(IUri *This, Uri_PROPERTY uriProp, DWORD *pdwProperty, DWORD dwFlags);
+  HRESULT (__stdcall *HasProperty)(IUri *This, Uri_PROPERTY uriProp, BOOL *pfHasProperty);
+  HRESULT (__stdcall *GetAbsoluteUri)(IUri *This, BSTR *pbstrAbsoluteUri);
+  HRESULT (__stdcall *GetAuthority)(IUri *This, BSTR *pbstrAuthority);
+  HRESULT (__stdcall *GetDisplayUri)(IUri *This, BSTR *pbstrDisplayString);
+  HRESULT (__stdcall *GetDomain)(IUri *This, BSTR *pbstrDomain);
+  HRESULT (__stdcall *GetExtension)(IUri *This, BSTR *pbstrExtension);
+  HRESULT (__stdcall *GetFragment)(IUri *This, BSTR *pbstrFragment);
+  HRESULT (__stdcall *GetHost)(IUri *This, BSTR *pbstrHost);
+  HRESULT (__stdcall *GetPassword)(IUri *This, BSTR *pbstrPassword);
+  HRESULT (__stdcall *GetPath)(IUri *This, BSTR *pbstrPath);
+  HRESULT (__stdcall *GetPathAndQuery)(IUri *This, BSTR *pbstrPathAndQuery);
+  HRESULT (__stdcall *GetQuery)(IUri *This, BSTR *pbstrQuery);
+  HRESULT (__stdcall *GetRawUri)(IUri *This, BSTR *pbstrRawUri);
+  HRESULT (__stdcall *GetSchemeName)(IUri *This, BSTR *pbstrSchemeName);
+  HRESULT (__stdcall *GetUserInfo)(IUri *This, BSTR *pbstrUserInfo);
+  HRESULT (__stdcall *GetUserNameA)(IUri *This, BSTR *pbstrUserName);
+  HRESULT (__stdcall *GetHostType)(IUri *This, DWORD *pdwHostType);
+  HRESULT (__stdcall *GetPort)(IUri *This, DWORD *pdwPort);
+  HRESULT (__stdcall *GetScheme)(IUri *This, DWORD *pdwScheme);
+  HRESULT (__stdcall *GetZone)(IUri *This, DWORD *pdwZone);
+  HRESULT (__stdcall *GetProperties)(IUri *This, LPDWORD pdwFlags);
+  HRESULT (__stdcall *IsEqual)(IUri *This, IUri *pUri, BOOL *pfEqual);
+
+};

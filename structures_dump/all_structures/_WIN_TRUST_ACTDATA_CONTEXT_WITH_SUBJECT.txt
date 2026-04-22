@@ -1,0 +1,11 @@
+// Структура: _WIN_TRUST_ACTDATA_CONTEXT_WITH_SUBJECT
+// Полей: 3
+// Строки в оригинале: 123803-123808
+struct _WIN_TRUST_ACTDATA_CONTEXT_WITH_SUBJECT
+{
+
+  void *hClientToken;
+  _GUID *SubjectType;
+  void *Subject;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _EXT_DELETE_PARAMETERS
+// Полей: 4
+// Строки в оригинале: 16166-16172
+struct _EXT_DELETE_PARAMETERS
+{
+
+  unsigned int Version;
+  unsigned int Reserved;
+  void (__stdcall *DeleteCallback)(void *);
+  void *DeleteContext;
+
+};

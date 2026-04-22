@@ -1,0 +1,12 @@
+// Структура: _DMA_CONFIGURATION_BYTE1
+// Полей: 4
+// Строки в оригинале: 89874-89880
+struct _DMA_CONFIGURATION_BYTE1
+{
+
+  unsigned __int8 Reserved0 : 2;
+  unsigned __int8 TransferSize : 2;
+  unsigned __int8 Timing : 2;
+  unsigned __int8 Reserved1 : 2;
+
+};

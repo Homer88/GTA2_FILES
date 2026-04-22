@@ -1,0 +1,9 @@
+// Структура: IEnumMoniker
+// Полей: 1
+// Строки в оригинале: 23953-23956
+struct IEnumMoniker
+{
+
+  struct IEnumMonikerVtbl *lpVtbl;
+
+};

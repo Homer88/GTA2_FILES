@@ -1,0 +1,24 @@
+// Структура: IShellFolderViewDualVtbl
+// Полей: 16
+// Строки в оригинале: 39392-39410
+struct IShellFolderViewDualVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellFolderViewDual *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellFolderViewDual *This);
+  ULONG (__stdcall *Release)(IShellFolderViewDual *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IShellFolderViewDual *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IShellFolderViewDual *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IShellFolderViewDual *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IShellFolderViewDual *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Application)(IShellFolderViewDual *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_Parent)(IShellFolderViewDual *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_Folder)(IShellFolderViewDual *This, Folder **ppid);
+  HRESULT (__stdcall *SelectedItems)(IShellFolderViewDual *This, FolderItems **ppid);
+  HRESULT (__stdcall *get_FocusedItem)(IShellFolderViewDual *This, FolderItem **ppid);
+  HRESULT (__stdcall *SelectItem)(IShellFolderViewDual *This, VARIANT *pvfi, int dwFlags);
+  HRESULT (__stdcall *PopupItemMenu)(IShellFolderViewDual *This, FolderItem *pfi, VARIANT vx, VARIANT vy, BSTR *pbs);
+  HRESULT (__stdcall *get_Script)(IShellFolderViewDual *This, IDispatch **ppDisp);
+  HRESULT (__stdcall *get_ViewOptions)(IShellFolderViewDual *This, int *plViewOptions);
+
+};

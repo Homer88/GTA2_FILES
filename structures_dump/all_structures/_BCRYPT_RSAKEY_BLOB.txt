@@ -1,0 +1,14 @@
+// Структура: _BCRYPT_RSAKEY_BLOB
+// Полей: 6
+// Строки в оригинале: 112388-112396
+struct _BCRYPT_RSAKEY_BLOB
+{
+
+  unsigned int Magic;
+  unsigned int BitLength;
+  unsigned int cbPublicExp;
+  unsigned int cbModulus;
+  unsigned int cbPrime1;
+  unsigned int cbPrime2;
+
+};

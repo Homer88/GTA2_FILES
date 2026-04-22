@@ -1,0 +1,12 @@
+// Структура: MenuItem
+// Полей: 4
+// Строки в оригинале: 5874-5880
+struct MenuItem
+{
+
+  __int16 X;
+  __int16 Y;
+  bool IndexMenuActions;
+  char field_5;
+
+};

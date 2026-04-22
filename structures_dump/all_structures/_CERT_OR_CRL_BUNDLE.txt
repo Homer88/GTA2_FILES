@@ -1,0 +1,10 @@
+// Структура: _CERT_OR_CRL_BUNDLE
+// Полей: 2
+// Строки в оригинале: 107533-107537
+struct _CERT_OR_CRL_BUNDLE
+{
+
+  unsigned int cItem;
+  _CERT_OR_CRL_BLOB *rgItem;
+
+};

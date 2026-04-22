@@ -1,0 +1,9 @@
+// Структура: _WINDOW_BUFFER_SIZE_RECORD
+// Полей: 1
+// Строки в оригинале: 91968-91971
+struct _WINDOW_BUFFER_SIZE_RECORD
+{
+
+  _COORD dwSize;
+
+};

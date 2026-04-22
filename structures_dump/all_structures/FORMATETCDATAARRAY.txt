@@ -1,0 +1,15 @@
+// Структура: FORMATETCDATAARRAY
+// Полей: 7
+// Строки в оригинале: 126117-126126
+struct FORMATETCDATAARRAY
+{
+
+  unsigned int _dwSig;
+  unsigned int _dwSize;
+  unsigned int _cRefs;
+  unsigned int _cFormats;
+  unsigned int _dwMiscArrayFlags;
+  int _fIs64BitArray;
+  FORMATETCDATA _FormatEtcData[1];
+
+};

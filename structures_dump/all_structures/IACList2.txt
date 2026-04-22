@@ -1,0 +1,9 @@
+// Структура: IACList2
+// Полей: 1
+// Строки в оригинале: 45387-45390
+struct IACList2
+{
+
+  struct IACList2Vtbl *lpVtbl;
+
+};

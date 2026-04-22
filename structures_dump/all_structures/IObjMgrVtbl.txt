@@ -1,0 +1,10 @@
+// Структура: IObjMgrVtbl
+// Полей: 2
+// Строки в оригинале: 36179-36183
+struct IObjMgrVtbl
+{
+
+  HRESULT (__stdcall *Append)(IObjMgr *This, IUnknown *punk);
+  HRESULT (__stdcall *Remove)(IObjMgr *This, IUnknown *punk);
+
+};

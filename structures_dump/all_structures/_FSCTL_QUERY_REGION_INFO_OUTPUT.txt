@@ -1,0 +1,16 @@
+// Структура: _FSCTL_QUERY_REGION_INFO_OUTPUT
+// Полей: 8
+// Строки в оригинале: 83393-83403
+struct _FSCTL_QUERY_REGION_INFO_OUTPUT
+{
+
+  unsigned int Version;
+  unsigned int Size;
+  unsigned int Flags;
+  unsigned int Reserved;
+  unsigned __int64 Alignment;
+  unsigned int TotalNumberOfRegions;
+  unsigned int NumberOfRegionsReturned;
+  _FILE_STORAGE_TIER_REGION Regions[1];
+
+};

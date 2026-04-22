@@ -1,0 +1,10 @@
+// Структура: _FILE_PIPE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 80260-80264
+struct _FILE_PIPE_INFORMATION
+{
+
+  unsigned int ReadMode;
+  unsigned int CompletionMode;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_PPM_STATE_SELECTION
+// Полей: 3
+// Строки в оригинале: 15763-15768
+struct _PERFINFO_PPM_STATE_SELECTION
+{
+
+  unsigned int SelectedState;
+  unsigned int VetoedStates;
+  unsigned int VetoReason[1];
+
+};

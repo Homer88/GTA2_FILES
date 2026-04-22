@@ -1,0 +1,12 @@
+// Структура: RECTS
+// Полей: 4
+// Строки в оригинале: 146994-147000
+struct RECTS
+{
+
+  __int16 left;
+  __int16 top;
+  __int16 right;
+  __int16 bottom;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _FILE_MEMORY_PARTITION_INFORMATION
+// Полей: 2
+// Строки в оригинале: 110367-110371
+struct _FILE_MEMORY_PARTITION_INFORMATION
+{
+
+  unsigned int OwnerPartitionHandle;
+  _FILE_MEMORY_PARTITION_INFORMATION::<unnamed_type_Flags> Flags;
+
+};

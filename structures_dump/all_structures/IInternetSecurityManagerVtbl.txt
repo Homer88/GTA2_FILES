@@ -1,0 +1,19 @@
+// Структура: IInternetSecurityManagerVtbl
+// Полей: 11
+// Строки в оригинале: 32606-32619
+struct IInternetSecurityManagerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IInternetSecurityManager *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IInternetSecurityManager *This);
+  ULONG (__stdcall *Release)(IInternetSecurityManager *This);
+  HRESULT (__stdcall *SetSecuritySite)(IInternetSecurityManager *This, IInternetSecurityMgrSite *pSite);
+  HRESULT (__stdcall *GetSecuritySite)(IInternetSecurityManager *This, IInternetSecurityMgrSite **ppSite);
+  HRESULT (__stdcall *MapUrlToZone)(IInternetSecurityManager *This, LPCWSTR pwszUrl, DWORD *pdwZone, DWORD dwFlags);
+  HRESULT (__stdcall *GetSecurityId)(IInternetSecurityManager *This, LPCWSTR pwszUrl, BYTE *pbSecurityId, DWORD *pcbSecurityId, DWORD_PTR dwReserved);
+  HRESULT (__stdcall *ProcessUrlAction)(IInternetSecurityManager *This, LPCWSTR pwszUrl, DWORD dwAction, BYTE *pPolicy, DWORD cbPolicy, BYTE *pContext, DWORD cbContext, DWORD dwFlags, DWORD dwReserved);
+  HRESULT (__stdcall *QueryCustomPolicy)(IInternetSecurityManager *This, LPCWSTR pwszUrl, const GUID *const guidKey, BYTE **ppPolicy, DWORD *pcbPolicy, BYTE *pContext, DWORD cbContext, DWORD dwReserved);
+  HRESULT (__stdcall *SetZoneMapping)(IInternetSecurityManager *This, DWORD dwZone, LPCWSTR lpszPattern, DWORD dwFlags);
+  HRESULT (__stdcall *GetZoneMappings)(IInternetSecurityManager *This, DWORD dwZone, IEnumString **ppenumString, DWORD dwFlags);
+
+};

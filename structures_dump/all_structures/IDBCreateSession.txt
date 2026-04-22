@@ -1,0 +1,9 @@
+// Структура: IDBCreateSession
+// Полей: 1
+// Строки в оригинале: 41004-41007
+struct IDBCreateSession
+{
+
+  struct IDBCreateSessionVtbl *lpVtbl;
+
+};

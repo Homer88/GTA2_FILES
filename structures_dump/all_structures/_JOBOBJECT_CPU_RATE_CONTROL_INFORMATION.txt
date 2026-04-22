@@ -1,0 +1,10 @@
+// Структура: _JOBOBJECT_CPU_RATE_CONTROL_INFORMATION
+// Полей: 2
+// Строки в оригинале: 97872-97876
+struct _JOBOBJECT_CPU_RATE_CONTROL_INFORMATION
+{
+
+  unsigned int ControlFlags;
+  $19BD47CAA5E63378492CD01A937FC354 ___u1;
+
+};

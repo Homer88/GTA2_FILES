@@ -1,0 +1,12 @@
+// Структура: _HEAP_EXTENDED_ENTRY
+// Полей: 4
+// Строки в оригинале: 20877-20883
+struct _HEAP_EXTENDED_ENTRY
+{
+
+  $5AC2157891305EE6902BBBDA85C0E84D ___u0;
+  unsigned __int16 UnusedBytesLength;
+  unsigned __int8 EntryOffset;
+  unsigned __int8 ExtendedBlockSignature;
+
+};

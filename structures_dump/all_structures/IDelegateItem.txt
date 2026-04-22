@@ -1,0 +1,9 @@
+// Структура: IDelegateItem
+// Полей: 1
+// Строки в оригинале: 31349-31352
+struct IDelegateItem
+{
+
+  struct IDelegateItemVtbl *lpVtbl;
+
+};

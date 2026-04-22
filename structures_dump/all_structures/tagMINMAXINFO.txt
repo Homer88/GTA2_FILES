@@ -1,0 +1,13 @@
+// Структура: tagMINMAXINFO
+// Полей: 5
+// Строки в оригинале: 84216-84223
+struct tagMINMAXINFO
+{
+
+  tagPOINT ptReserved;
+  tagPOINT ptMaxSize;
+  tagPOINT ptMaxPosition;
+  tagPOINT ptMinTrackSize;
+  tagPOINT ptMaxTrackSize;
+
+};

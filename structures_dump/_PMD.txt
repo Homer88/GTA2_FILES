@@ -1,0 +1,10 @@
+// Structure: _PMD
+// Lines: 5787 - 5792
+// Fields: 4
+
+struct _PMD
+{
+  int mdisp;
+  int pdisp;
+  int vdisp;
+};

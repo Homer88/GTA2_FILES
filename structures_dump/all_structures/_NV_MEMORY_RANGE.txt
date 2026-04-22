@@ -1,0 +1,10 @@
+// Структура: _NV_MEMORY_RANGE
+// Полей: 2
+// Строки в оригинале: 109736-109740
+struct _NV_MEMORY_RANGE
+{
+
+  void *BaseAddress;
+  unsigned int Length;
+
+};

@@ -1,0 +1,16 @@
+// Структура: SendMessageToClassicSTAParams
+// Полей: 8
+// Строки в оригинале: 240297-240307
+struct SendMessageToClassicSTAParams
+{
+
+  unsigned int dwThreadIdClassicSTA;
+  SendMessageToClassicSTAReason reason;
+  HWND__ *hWnd;
+  unsigned int Msg;
+  unsigned int wParam;
+  int lParam;
+  void *hEventSendMessageDone;
+  HRESULT hrSendMessage;
+
+};

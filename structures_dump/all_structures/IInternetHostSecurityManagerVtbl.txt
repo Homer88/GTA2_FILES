@@ -1,0 +1,14 @@
+// Структура: IInternetHostSecurityManagerVtbl
+// Полей: 6
+// Строки в оригинале: 38312-38320
+struct IInternetHostSecurityManagerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IInternetHostSecurityManager *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IInternetHostSecurityManager *This);
+  ULONG (__stdcall *Release)(IInternetHostSecurityManager *This);
+  HRESULT (__stdcall *GetSecurityId)(IInternetHostSecurityManager *This, BYTE *pbSecurityId, DWORD *pcbSecurityId, DWORD_PTR dwReserved);
+  HRESULT (__stdcall *ProcessUrlAction)(IInternetHostSecurityManager *This, DWORD dwAction, BYTE *pPolicy, DWORD cbPolicy, BYTE *pContext, DWORD cbContext, DWORD dwFlags, DWORD dwReserved);
+  HRESULT (__stdcall *QueryCustomPolicy)(IInternetHostSecurityManager *This, const GUID *const guidKey, BYTE **ppPolicy, DWORD *pcbPolicy, BYTE *pContext, DWORD cbContext, DWORD dwReserved);
+
+};

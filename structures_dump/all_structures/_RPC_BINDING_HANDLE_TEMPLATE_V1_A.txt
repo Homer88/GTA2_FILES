@@ -1,0 +1,15 @@
+// Структура: _RPC_BINDING_HANDLE_TEMPLATE_V1_A
+// Полей: 7
+// Строки в оригинале: 108565-108574
+struct _RPC_BINDING_HANDLE_TEMPLATE_V1_A
+{
+
+  unsigned int Version;
+  unsigned int Flags;
+  unsigned int ProtocolSequence;
+  unsigned __int8 *NetworkAddress;
+  unsigned __int8 *StringEndpoint;
+  _RPC_BINDING_HANDLE_TEMPLATE_V1_A::<unnamed_type_u1> u1;
+  _GUID ObjectUuid;
+
+};

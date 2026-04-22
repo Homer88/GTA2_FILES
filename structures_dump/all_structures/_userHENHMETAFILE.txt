@@ -1,0 +1,10 @@
+// Структура: _userHENHMETAFILE
+// Полей: 2
+// Строки в оригинале: 91281-91285
+struct _userHENHMETAFILE
+{
+
+  int fContext;
+  _userHENHMETAFILE::__MIDL_IWinTypes_0006 u;
+
+};

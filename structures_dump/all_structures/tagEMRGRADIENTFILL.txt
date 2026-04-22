@@ -1,0 +1,14 @@
+// Структура: tagEMRGRADIENTFILL
+// Полей: 6
+// Строки в оригинале: 105972-105980
+struct tagEMRGRADIENTFILL
+{
+
+  tagEMR emr;
+  _RECTL rclBounds;
+  unsigned int nVer;
+  unsigned int nTri;
+  unsigned int ulMode;
+  _TRIVERTEX Ver[1];
+
+};

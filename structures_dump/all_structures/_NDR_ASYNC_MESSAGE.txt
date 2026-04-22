@@ -1,0 +1,20 @@
+// Структура: _NDR_ASYNC_MESSAGE
+// Полей: 12
+// Строки в оригинале: 86248-86262
+struct _NDR_ASYNC_MESSAGE
+{
+
+  int Version;
+  int Signature;
+  _RPC_ASYNC_STATE *AsyncHandle;
+  _Flags Flags;
+  unsigned __int16 StubPhase;
+  unsigned int RefCount;
+  unsigned int ErrorCode;
+  _RPC_MESSAGE RpcMsg;
+  _MIDL_STUB_MESSAGE StubMsg;
+  unsigned int *pdwStubPhase;
+  _NDR_PROC_CONTEXT ProcContext;
+  unsigned __int8 AsyncGuard[16];
+
+};

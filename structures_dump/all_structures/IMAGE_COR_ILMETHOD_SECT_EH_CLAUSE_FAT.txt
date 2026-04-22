@@ -1,0 +1,14 @@
+// Структура: IMAGE_COR_ILMETHOD_SECT_EH_CLAUSE_FAT
+// Полей: 6
+// Строки в оригинале: 332138-332146
+struct IMAGE_COR_ILMETHOD_SECT_EH_CLAUSE_FAT
+{
+
+  CorExceptionFlag Flags;
+  unsigned int TryOffset;
+  unsigned int TryLength;
+  unsigned int HandlerOffset;
+  unsigned int HandlerLength;
+  $409BA26C4615E29011D1BC352864A895 ___u5;
+
+};

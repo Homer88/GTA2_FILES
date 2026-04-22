@@ -1,0 +1,15 @@
+// Структура: tagMENUINFO
+// Полей: 7
+// Строки в оригинале: 105739-105748
+struct tagMENUINFO
+{
+
+  unsigned int cbSize;
+  unsigned int fMask;
+  unsigned int dwStyle;
+  unsigned int cyMax;
+  HBRUSH__ *hbrBack;
+  unsigned int dwContextHelpID;
+  unsigned int dwMenuData;
+
+};

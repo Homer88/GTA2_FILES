@@ -1,0 +1,12 @@
+// Структура: _NCryptAlgorithmName
+// Полей: 4
+// Строки в оригинале: 111152-111158
+struct _NCryptAlgorithmName
+{
+
+  wchar_t *pszName;
+  unsigned int dwClass;
+  unsigned int dwAlgOperations;
+  unsigned int dwFlags;
+
+};

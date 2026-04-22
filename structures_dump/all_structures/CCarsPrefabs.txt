@@ -1,0 +1,10 @@
+// Структура: CCarsPrefabs
+// Полей: 2
+// Строки в оригинале: 7840-7844
+struct CCarsPrefabs
+{
+
+  GameEntity *GameEntity;
+  GameEntity CGameEntity[306];
+
+};

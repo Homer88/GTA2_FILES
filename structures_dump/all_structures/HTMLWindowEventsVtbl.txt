@@ -1,0 +1,15 @@
+// Структура: HTMLWindowEventsVtbl
+// Полей: 7
+// Строки в оригинале: 36229-36238
+struct HTMLWindowEventsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(HTMLWindowEvents *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(HTMLWindowEvents *This);
+  ULONG (__stdcall *Release)(HTMLWindowEvents *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(HTMLWindowEvents *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(HTMLWindowEvents *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(HTMLWindowEvents *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(HTMLWindowEvents *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+
+};

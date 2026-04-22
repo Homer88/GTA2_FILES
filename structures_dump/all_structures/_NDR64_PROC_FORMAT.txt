@@ -1,0 +1,16 @@
+// Структура: _NDR64_PROC_FORMAT
+// Полей: 8
+// Строки в оригинале: 86406-86416
+struct _NDR64_PROC_FORMAT
+{
+
+  unsigned int Flags;
+  unsigned int StackSize;
+  unsigned int ConstantClientBufferSize;
+  unsigned int ConstantServerBufferSize;
+  unsigned __int16 RpcFlags;
+  unsigned __int16 FloatDoubleMask;
+  unsigned __int16 NumberOfParams;
+  unsigned __int16 ExtensionSize;
+
+};

@@ -1,0 +1,18 @@
+// Структура: SYMSRV_INDEX_INFOW
+// Полей: 10
+// Строки в оригинале: 123788-123800
+struct SYMSRV_INDEX_INFOW
+{
+
+  unsigned int sizeofstruct;
+  wchar_t file[261];
+  int stripped;
+  unsigned int timestamp;
+  unsigned int size;
+  wchar_t dbgfile[261];
+  wchar_t pdbfile[261];
+  _GUID guid;
+  unsigned int sig;
+  unsigned int age;
+
+};

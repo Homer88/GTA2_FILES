@@ -1,0 +1,11 @@
+// Структура: _ETW_TP_EVENT_POOL_TH_MAX_SET
+// Полей: 3
+// Строки в оригинале: 310200-310205
+struct _ETW_TP_EVENT_POOL_TH_MAX_SET
+{
+
+  _SYSTEM_TRACE_HEADER Header;
+  void *PoolId;
+  unsigned int ThreadNum;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _GDI_TEB_BATCH
+// Полей: 3
+// Строки в оригинале: 2468-2473
+struct _GDI_TEB_BATCH
+{
+
+  unsigned int Offset;
+  unsigned int HDC;
+  unsigned int Buffer[310];
+
+};

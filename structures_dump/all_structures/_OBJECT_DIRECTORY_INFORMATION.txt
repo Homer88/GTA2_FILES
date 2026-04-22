@@ -1,0 +1,10 @@
+// Структура: _OBJECT_DIRECTORY_INFORMATION
+// Полей: 2
+// Строки в оригинале: 105319-105323
+struct _OBJECT_DIRECTORY_INFORMATION
+{
+
+  _UNICODE_STRING Name;
+  _UNICODE_STRING TypeName;
+
+};

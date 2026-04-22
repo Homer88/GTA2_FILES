@@ -1,0 +1,9 @@
+// Структура: IObjectCollection
+// Полей: 1
+// Строки в оригинале: 32277-32280
+struct IObjectCollection
+{
+
+  struct IObjectCollectionVtbl *lpVtbl;
+
+};

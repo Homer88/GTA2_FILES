@@ -1,0 +1,11 @@
+// Структура: _DESCRIPTOR
+// Полей: 3
+// Строки в оригинале: 13048-13053
+struct _DESCRIPTOR
+{
+
+  unsigned __int16 Pad;
+  unsigned __int16 Limit;
+  unsigned int Base;
+
+};

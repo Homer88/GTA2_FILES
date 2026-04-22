@@ -1,0 +1,15 @@
+// Структура: _RTL_RETPOLINE_BINARY_INFO
+// Полей: 7
+// Строки в оригинале: 90344-90353
+struct _RTL_RETPOLINE_BINARY_INFO
+{
+
+  int RetpolineStubsStartRva;
+  unsigned int CfgDispatchFunctionPtrRva;
+  unsigned int IATRva;
+  int *ImportRvas;
+  unsigned int *IAT;
+  void *ImageBase;
+  unsigned int (__stdcall *CheckFunction)(void *);
+
+};

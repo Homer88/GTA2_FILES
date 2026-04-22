@@ -1,0 +1,9 @@
+// Структура: INetwork
+// Полей: 1
+// Строки в оригинале: 45922-45925
+struct INetwork
+{
+
+  struct INetworkVtbl *lpVtbl;
+
+};

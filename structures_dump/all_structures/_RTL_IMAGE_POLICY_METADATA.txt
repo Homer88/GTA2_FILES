@@ -1,0 +1,11 @@
+// Структура: _RTL_IMAGE_POLICY_METADATA
+// Полей: 3
+// Строки в оригинале: 98598-98603
+struct _RTL_IMAGE_POLICY_METADATA
+{
+
+  const _IMAGE_POLICY_METADATA *PolicyMetadata;
+  unsigned int LBound;
+  unsigned int UBound;
+
+};

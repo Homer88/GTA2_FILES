@@ -1,0 +1,11 @@
+// Структура: _onexit_table_t
+// Полей: 3
+// Строки в оригинале: 58694-58699
+struct _onexit_table_t
+{
+
+  void (__cdecl **_first)();
+  void (__cdecl **_last)();
+  void (__cdecl **_end)();
+
+};

@@ -1,0 +1,13 @@
+// Структура: tagACTCTX_SECTION_KEYED_DATA_ASSEMBLY_METADATA
+// Полей: 5
+// Строки в оригинале: 83558-83565
+struct tagACTCTX_SECTION_KEYED_DATA_ASSEMBLY_METADATA
+{
+
+  void *lpInformation;
+  void *lpSectionBase;
+  unsigned int ulSectionLength;
+  void *lpSectionGlobalDataBase;
+  unsigned int ulSectionGlobalDataLength;
+
+};

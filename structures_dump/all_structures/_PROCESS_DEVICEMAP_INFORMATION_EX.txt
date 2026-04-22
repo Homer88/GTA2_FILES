@@ -1,0 +1,10 @@
+// Структура: _PROCESS_DEVICEMAP_INFORMATION_EX
+// Полей: 2
+// Строки в оригинале: 91561-91565
+struct _PROCESS_DEVICEMAP_INFORMATION_EX
+{
+
+  $2EACFD856DC46DF2860EE456F8B56645 ___u0;
+  unsigned int Flags;
+
+};

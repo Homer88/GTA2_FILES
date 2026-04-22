@@ -1,0 +1,9 @@
+// Структура: INameSpaceTreeControl
+// Полей: 1
+// Строки в оригинале: 35348-35351
+struct INameSpaceTreeControl
+{
+
+  struct INameSpaceTreeControlVtbl *lpVtbl;
+
+};

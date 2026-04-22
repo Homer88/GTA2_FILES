@@ -1,0 +1,10 @@
+// Структура: _CFG_CALL_TARGET_INFO
+// Полей: 2
+// Строки в оригинале: 95578-95582
+struct _CFG_CALL_TARGET_INFO
+{
+
+  unsigned int Offset;
+  unsigned int Flags;
+
+};

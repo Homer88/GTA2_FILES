@@ -1,0 +1,9 @@
+// Структура: _STREAMS_QUERY_ID_OUTPUT_BUFFER
+// Полей: 1
+// Строки в оригинале: 107835-107838
+struct _STREAMS_QUERY_ID_OUTPUT_BUFFER
+{
+
+  unsigned int StreamId;
+
+};

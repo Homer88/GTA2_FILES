@@ -1,0 +1,18 @@
+// Структура: tagHOOKAPIEX
+// Полей: 10
+// Строки в оригинале: 313019-313031
+struct tagHOOKAPIEX
+{
+
+  unsigned int dwHooksetId;
+  const char *pszRedirModule;
+  const char *pszRedirFunctionName;
+  void *pFinalModule;
+  void *pfnFinal;
+  int bStub;
+  void *pStubModule;
+  void *pfnStub;
+  tagHOOKAPI *pTopOfChain;
+  tagHOOKAPI *pNext;
+
+};

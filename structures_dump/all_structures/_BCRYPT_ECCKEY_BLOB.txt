@@ -1,0 +1,10 @@
+// Структура: _BCRYPT_ECCKEY_BLOB
+// Полей: 2
+// Строки в оригинале: 87914-87918
+struct _BCRYPT_ECCKEY_BLOB
+{
+
+  unsigned int dwMagic;
+  unsigned int cbKey;
+
+};

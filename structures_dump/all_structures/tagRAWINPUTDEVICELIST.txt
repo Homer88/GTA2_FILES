@@ -1,0 +1,10 @@
+// Структура: tagRAWINPUTDEVICELIST
+// Полей: 2
+// Строки в оригинале: 106063-106067
+struct tagRAWINPUTDEVICELIST
+{
+
+  void *hDevice;
+  unsigned int dwType;
+
+};

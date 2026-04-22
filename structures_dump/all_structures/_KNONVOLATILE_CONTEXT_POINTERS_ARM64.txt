@@ -1,0 +1,28 @@
+// Структура: _KNONVOLATILE_CONTEXT_POINTERS_ARM64
+// Полей: 20
+// Строки в оригинале: 102979-103001
+struct _KNONVOLATILE_CONTEXT_POINTERS_ARM64
+{
+
+  unsigned __int64 *X19;
+  unsigned __int64 *X20;
+  unsigned __int64 *X21;
+  unsigned __int64 *X22;
+  unsigned __int64 *X23;
+  unsigned __int64 *X24;
+  unsigned __int64 *X25;
+  unsigned __int64 *X26;
+  unsigned __int64 *X27;
+  unsigned __int64 *X28;
+  unsigned __int64 *Fp;
+  unsigned __int64 *Lr;
+  unsigned __int64 *D8;
+  unsigned __int64 *D9;
+  unsigned __int64 *D10;
+  unsigned __int64 *D11;
+  unsigned __int64 *D12;
+  unsigned __int64 *D13;
+  unsigned __int64 *D14;
+  unsigned __int64 *D15;
+
+};

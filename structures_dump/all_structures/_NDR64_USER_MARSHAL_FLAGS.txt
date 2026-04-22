@@ -1,0 +1,12 @@
+// Структура: _NDR64_USER_MARSHAL_FLAGS
+// Полей: 4
+// Строки в оригинале: 332435-332441
+struct _NDR64_USER_MARSHAL_FLAGS
+{
+
+  unsigned __int8 Reserved : 5;
+  unsigned __int8 IID : 1;
+  unsigned __int8 RefPointer : 1;
+  unsigned __int8 UniquePointer : 1;
+
+};

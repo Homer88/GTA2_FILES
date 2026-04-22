@@ -1,0 +1,10 @@
+// Структура: _ETW_STACK_CACHING_CONFIG
+// Полей: 2
+// Строки в оригинале: 309422-309426
+struct _ETW_STACK_CACHING_CONFIG
+{
+
+  unsigned int CacheSize;
+  unsigned int BucketCount;
+
+};

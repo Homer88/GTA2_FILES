@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_DPC_EXECUTION_INFORMATION
+// Полей: 2
+// Строки в оригинале: 311837-311841
+struct _PERFINFO_DPC_EXECUTION_INFORMATION
+{
+
+  void *DpcRoutine;
+  unsigned int Key;
+
+};

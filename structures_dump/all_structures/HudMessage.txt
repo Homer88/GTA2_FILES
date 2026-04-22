@@ -1,0 +1,15 @@
+// Структура: HudMessage
+// Полей: 7
+// Строки в оригинале: 7162-7171
+struct HudMessage
+{
+
+  char m_nTimeToShow;
+  char PlayerArena;
+  wchar_t gap[100];
+  wchar_t str[121];
+  int m_nStringWidth;
+  int m_nNumberLines;
+  int m_nType;
+
+};

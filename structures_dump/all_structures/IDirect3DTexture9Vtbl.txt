@@ -1,0 +1,41 @@
+// Структура: IDirect3DTexture9Vtbl
+// Полей: 33
+// Строки в оригинале: 25962-25997
+struct IDirect3DTexture9Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirect3DTexture9 *This, const IID *const riid, void **ppvObj);
+  ULONG (__stdcall *AddRef)(IDirect3DTexture9 *This);
+  ULONG (__stdcall *Release)(IDirect3DTexture9 *This);
+  HRESULT (__stdcall *GetDevice)(IDirect3DTexture9 *This, IDirect3DDevice9 **ppDevice);
+  HRESULT (__stdcall *SetPrivateData)(IDirect3DTexture9 *This, const GUID *const refguid, const void *pData, DWORD SizeOfData, DWORD Flags);
+  HRESULT (__stdcall *GetPrivateData)(IDirect3DTexture9 *This, const GUID *const refguid, void *pData, DWORD *pSizeOfData);
+  HRESULT (__stdcall *FreePrivateData)(IDirect3DTexture9 *This, const GUID *const refguid);
+  DWORD (__stdcall *SetPriority)(IDirect3DTexture9 *This, DWORD PriorityNew);
+  DWORD (__stdcall *GetPriority)(IDirect3DTexture9 *This);
+  void (__stdcall *PreLoad)(IDirect3DTexture9 *This);
+  D3DRESOURCETYPE (__stdcall *GetType)(IDirect3DTexture9 *This);
+  DWORD (__stdcall *SetLOD)(IDirect3DTexture9 *This, DWORD LODNew);
+  DWORD (__stdcall *GetLOD)(IDirect3DTexture9 *This);
+  DWORD (__stdcall *GetLevelCount)(IDirect3DTexture9 *This);
+  HRESULT (__stdcall *SetAutoGenFilterType)(IDirect3DTexture9 *This, D3DTEXTUREFILTERTYPE FilterType);
+  D3DTEXTUREFILTERTYPE (__stdcall *GetAutoGenFilterType)(IDirect3DTexture9 *This);
+  void (__stdcall *GenerateMipSubLevels)(IDirect3DTexture9 *This);
+  HRESULT (__stdcall *GetLevelDesc)(IDirect3DTexture9 *This, UINT Level, D3DSURFACE_DESC *pDesc);
+  HRESULT (__stdcall *GetSurfaceLevel)(IDirect3DTexture9 *This, UINT Level, IDirect3DSurface9 **ppSurfaceLevel);
+  HRESULT (__stdcall *LockRect)(IDirect3DTexture9 *This, UINT Level, D3DLOCKED_RECT *pLockedRect, const RECT *pRect, DWORD Flags);
+  HRESULT (__stdcall *UnlockRect)(IDirect3DTexture9 *This, UINT Level);
+  HRESULT (__stdcall *AddDirtyRect)(IDirect3DTexture9 *This, const RECT *pDirtyRect);
+  LPCWSTR Name;
+  UINT Width;
+  UINT Height;
+  UINT Levels;
+  DWORD Usage;
+  D3DFORMAT Format;
+  D3DPOOL Pool;
+  DWORD Priority;
+  DWORD LOD;
+  D3DTEXTUREFILTERTYPE FilterType;
+  UINT LockCount;
+
+};

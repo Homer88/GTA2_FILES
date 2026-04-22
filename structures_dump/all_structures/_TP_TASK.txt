@@ -1,0 +1,12 @@
+// Структура: _TP_TASK
+// Полей: 4
+// Строки в оригинале: 85768-85774
+struct _TP_TASK
+{
+
+  const _TP_TASK_CALLBACKS *Callbacks;
+  unsigned int NumaNode;
+  unsigned __int8 IdealProcessor;
+  _LIST_ENTRY ListEntry;
+
+};

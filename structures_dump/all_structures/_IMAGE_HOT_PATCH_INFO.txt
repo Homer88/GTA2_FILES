@@ -1,0 +1,15 @@
+// Структура: _IMAGE_HOT_PATCH_INFO
+// Полей: 7
+// Строки в оригинале: 105537-105546
+struct _IMAGE_HOT_PATCH_INFO
+{
+
+  unsigned int Version;
+  unsigned int Size;
+  unsigned int SequenceNumber;
+  unsigned int BaseImageList;
+  unsigned int BaseImageCount;
+  unsigned int BufferOffset;
+  unsigned int ExtraPatchSize;
+
+};

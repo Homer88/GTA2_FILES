@@ -1,0 +1,9 @@
+// Структура: _SERVICE_LAUNCH_PROTECTED_INFO
+// Полей: 1
+// Строки в оригинале: 83109-83112
+struct _SERVICE_LAUNCH_PROTECTED_INFO
+{
+
+  unsigned int dwLaunchProtected;
+
+};

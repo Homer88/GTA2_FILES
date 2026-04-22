@@ -1,0 +1,10 @@
+// Структура: _ETW_BUFFER_CONTEXT
+// Полей: 2
+// Строки в оригинале: 19563-19567
+struct _ETW_BUFFER_CONTEXT
+{
+
+  $27F7F2B25C025A328A80EE876FA1BAA3 ___u0;
+  unsigned __int16 LoggerId;
+
+};

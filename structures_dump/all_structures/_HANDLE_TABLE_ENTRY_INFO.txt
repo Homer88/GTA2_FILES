@@ -1,0 +1,10 @@
+// Структура: _HANDLE_TABLE_ENTRY_INFO
+// Полей: 2
+// Строки в оригинале: 19324-19328
+struct _HANDLE_TABLE_ENTRY_INFO
+{
+
+  unsigned int AuditMask;
+  unsigned int MaxRelativeAccessMask;
+
+};

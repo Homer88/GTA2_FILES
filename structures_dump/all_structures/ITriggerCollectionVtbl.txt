@@ -1,0 +1,21 @@
+// Структура: ITriggerCollectionVtbl
+// Полей: 13
+// Строки в оригинале: 44811-44826
+struct ITriggerCollectionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITriggerCollection *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITriggerCollection *This);
+  ULONG (__stdcall *Release)(ITriggerCollection *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(ITriggerCollection *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(ITriggerCollection *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(ITriggerCollection *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(ITriggerCollection *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Count)(ITriggerCollection *This, int *pCount);
+  HRESULT (__stdcall *get_Item)(ITriggerCollection *This, int index, ITrigger **ppTrigger);
+  HRESULT (__stdcall *get__NewEnum)(ITriggerCollection *This, IUnknown **ppEnum);
+  HRESULT (__stdcall *Create)(ITriggerCollection *This, TASK_TRIGGER_TYPE2 type, ITrigger **ppTrigger);
+  HRESULT (__stdcall *Remove)(ITriggerCollection *This, VARIANT index);
+  HRESULT (__stdcall *Clear)(ITriggerCollection *This);
+
+};

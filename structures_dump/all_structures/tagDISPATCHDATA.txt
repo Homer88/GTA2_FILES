@@ -1,0 +1,10 @@
+// Структура: tagDISPATCHDATA
+// Полей: 2
+// Строки в оригинале: 125221-125225
+struct tagDISPATCHDATA
+{
+
+  int scode;
+  void *pData;
+
+};

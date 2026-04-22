@@ -1,0 +1,11 @@
+// Структура: _POWER_THROTTLING_THREAD_STATE
+// Полей: 3
+// Строки в оригинале: 97745-97750
+struct _POWER_THROTTLING_THREAD_STATE
+{
+
+  unsigned int Version;
+  unsigned int ControlMask;
+  unsigned int StateMask;
+
+};

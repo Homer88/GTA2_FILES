@@ -1,0 +1,14 @@
+// Структура: _ADMINISTRATOR_POWER_POLICY
+// Полей: 6
+// Строки в оригинале: 82730-82738
+struct _ADMINISTRATOR_POWER_POLICY
+{
+
+  _SYSTEM_POWER_STATE MinSleep;
+  _SYSTEM_POWER_STATE MaxSleep;
+  unsigned int MinVideoTimeout;
+  unsigned int MaxVideoTimeout;
+  unsigned int MinSpindownTimeout;
+  unsigned int MaxSpindownTimeout;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _MEMORY_PARTITION_PAGE_RANGE
+// Полей: 2
+// Строки в оригинале: 99388-99392
+struct _MEMORY_PARTITION_PAGE_RANGE
+{
+
+  unsigned int StartPage;
+  unsigned int NumberOfPages;
+
+};

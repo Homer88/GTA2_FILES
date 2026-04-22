@@ -1,0 +1,11 @@
+// Структура: tagHARDWAREINPUT
+// Полей: 3
+// Строки в оригинале: 83962-83967
+struct tagHARDWAREINPUT
+{
+
+  unsigned int uMsg;
+  unsigned __int16 wParamL;
+  unsigned __int16 wParamH;
+
+};

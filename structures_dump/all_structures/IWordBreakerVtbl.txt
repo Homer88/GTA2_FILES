@@ -1,0 +1,15 @@
+// Структура: IWordBreakerVtbl
+// Полей: 7
+// Строки в оригинале: 36610-36619
+struct IWordBreakerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWordBreaker *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWordBreaker *This);
+  ULONG (__stdcall *Release)(IWordBreaker *This);
+  HRESULT (__stdcall *Init)(IWordBreaker *This, BOOL fQuery, ULONG ulMaxTokenSize, BOOL *pfLicense);
+  HRESULT (__stdcall *BreakText)(IWordBreaker *This, TEXT_SOURCE *pTextSource, IWordSink *pWordSink, IPhraseSink *pPhraseSink);
+  HRESULT (__stdcall *ComposePhrase)(IWordBreaker *This, const WCHAR *pwcNoun, ULONG cwcNoun, const WCHAR *pwcModifier, ULONG cwcModifier, ULONG ulAttachmentType, WCHAR *pwcPhrase, ULONG *pcwcPhrase);
+  HRESULT (__stdcall *GetLicenseToUse)(IWordBreaker *This, const WCHAR **ppwcsLicense);
+
+};

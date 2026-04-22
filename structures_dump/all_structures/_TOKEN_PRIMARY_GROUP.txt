@@ -1,0 +1,9 @@
+// Структура: _TOKEN_PRIMARY_GROUP
+// Полей: 1
+// Строки в оригинале: 78130-78133
+struct _TOKEN_PRIMARY_GROUP
+{
+
+  void *PrimaryGroup;
+
+};

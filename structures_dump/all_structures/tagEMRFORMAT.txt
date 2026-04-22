@@ -1,0 +1,12 @@
+// Структура: tagEMRFORMAT
+// Полей: 4
+// Строки в оригинале: 104459-104465
+struct tagEMRFORMAT
+{
+
+  unsigned int dSignature;
+  unsigned int nVersion;
+  unsigned int cbData;
+  unsigned int offData;
+
+};

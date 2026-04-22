@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_PROCESSOR_CYCLE_STATS_INFORMATION
+// Полей: 1
+// Строки в оригинале: 112126-112129
+struct _SYSTEM_PROCESSOR_CYCLE_STATS_INFORMATION
+{
+
+  unsigned __int64 Cycles[4][2];
+
+};

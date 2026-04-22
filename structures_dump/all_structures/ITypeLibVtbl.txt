@@ -1,0 +1,21 @@
+// Структура: ITypeLibVtbl
+// Полей: 13
+// Строки в оригинале: 23838-23853
+struct ITypeLibVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITypeLib *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITypeLib *This);
+  ULONG (__stdcall *Release)(ITypeLib *This);
+  UINT (__stdcall *GetTypeInfoCount)(ITypeLib *This);
+  HRESULT (__stdcall *GetTypeInfo)(ITypeLib *This, UINT index, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetTypeInfoType)(ITypeLib *This, UINT index, TYPEKIND *pTKind);
+  HRESULT (__stdcall *GetTypeInfoOfGuid)(ITypeLib *This, const GUID *const guid, ITypeInfo **ppTinfo);
+  HRESULT (__stdcall *GetLibAttr)(ITypeLib *This, TLIBATTR **ppTLibAttr);
+  HRESULT (__stdcall *GetTypeComp)(ITypeLib *This, ITypeComp **ppTComp);
+  HRESULT (__stdcall *GetDocumentation)(ITypeLib *This, INT index, BSTR *pBstrName, BSTR *pBstrDocString, DWORD *pdwHelpContext, BSTR *pBstrHelpFile);
+  HRESULT (__stdcall *IsName)(ITypeLib *This, LPOLESTR szNameBuf, ULONG lHashVal, BOOL *pfName);
+  HRESULT (__stdcall *FindName)(ITypeLib *This, LPOLESTR szNameBuf, ULONG lHashVal, ITypeInfo **ppTInfo, MEMBERID *rgMemId, USHORT *pcFound);
+  void (__stdcall *ReleaseTLibAttr)(ITypeLib *This, TLIBATTR *pTLibAttr);
+
+};

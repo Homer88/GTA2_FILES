@@ -1,0 +1,11 @@
+// Структура: _IMAGE_NT_HEADERS64
+// Полей: 3
+// Строки в оригинале: 92974-92979
+struct _IMAGE_NT_HEADERS64
+{
+
+  unsigned int Signature;
+  _IMAGE_FILE_HEADER FileHeader;
+  _IMAGE_OPTIONAL_HEADER64 OptionalHeader;
+
+};

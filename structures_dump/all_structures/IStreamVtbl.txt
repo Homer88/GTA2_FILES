@@ -1,0 +1,22 @@
+// Структура: IStreamVtbl
+// Полей: 14
+// Строки в оригинале: 23964-23980
+struct IStreamVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IStream *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IStream *This);
+  ULONG (__stdcall *Release)(IStream *This);
+  HRESULT (__stdcall *Read)(IStream *This, void *pv, ULONG cb, ULONG *pcbRead);
+  HRESULT (__stdcall *Write)(IStream *This, const void *pv, ULONG cb, ULONG *pcbWritten);
+  HRESULT (__stdcall *Seek)(IStream *This, LARGE_INTEGER dlibMove, DWORD dwOrigin, ULARGE_INTEGER *plibNewPosition);
+  HRESULT (__stdcall *SetSize)(IStream *This, ULARGE_INTEGER libNewSize);
+  HRESULT (__stdcall *CopyTo)(IStream *This, IStream *pstm, ULARGE_INTEGER cb, ULARGE_INTEGER *pcbRead, ULARGE_INTEGER *pcbWritten);
+  HRESULT (__stdcall *Commit)(IStream *This, DWORD grfCommitFlags);
+  HRESULT (__stdcall *Revert)(IStream *This);
+  HRESULT (__stdcall *LockRegion)(IStream *This, ULARGE_INTEGER libOffset, ULARGE_INTEGER cb, DWORD dwLockType);
+  HRESULT (__stdcall *UnlockRegion)(IStream *This, ULARGE_INTEGER libOffset, ULARGE_INTEGER cb, DWORD dwLockType);
+  HRESULT (__stdcall *Stat)(IStream *This, STATSTG *pstatstg, DWORD grfStatFlag);
+  HRESULT (__stdcall *Clone)(IStream *This, IStream **ppstm);
+
+};

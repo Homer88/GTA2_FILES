@@ -1,0 +1,15 @@
+// Структура: ITfReadOnlyPropertyVtbl
+// Полей: 7
+// Строки в оригинале: 30417-30426
+struct ITfReadOnlyPropertyVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfReadOnlyProperty *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfReadOnlyProperty *This);
+  ULONG (__stdcall *Release)(ITfReadOnlyProperty *This);
+  HRESULT (__stdcall *GetType)(ITfReadOnlyProperty *This, GUID *pguid);
+  HRESULT (__stdcall *EnumRanges)(ITfReadOnlyProperty *This, TfEditCookie ec, IEnumTfRanges **ppEnum, ITfRange *pTargetRange);
+  HRESULT (__stdcall *GetValue)(ITfReadOnlyProperty *This, TfEditCookie ec, ITfRange *pRange, VARIANT *pvarValue);
+  HRESULT (__stdcall *GetContext)(ITfReadOnlyProperty *This, ITfContext **ppContext);
+
+};

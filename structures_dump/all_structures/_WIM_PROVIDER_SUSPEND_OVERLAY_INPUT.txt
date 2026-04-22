@@ -1,0 +1,9 @@
+// Структура: _WIM_PROVIDER_SUSPEND_OVERLAY_INPUT
+// Полей: 1
+// Строки в оригинале: 96919-96922
+struct _WIM_PROVIDER_SUSPEND_OVERLAY_INPUT
+{
+
+  _LARGE_INTEGER DataSourceId;
+
+};

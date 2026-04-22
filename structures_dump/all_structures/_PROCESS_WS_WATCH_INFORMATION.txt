@@ -1,0 +1,10 @@
+// Структура: _PROCESS_WS_WATCH_INFORMATION
+// Полей: 2
+// Строки в оригинале: 103949-103953
+struct _PROCESS_WS_WATCH_INFORMATION
+{
+
+  void *FaultingPc;
+  void *FaultingVa;
+
+};

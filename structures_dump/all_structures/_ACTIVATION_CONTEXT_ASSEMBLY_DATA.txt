@@ -1,0 +1,14 @@
+// Структура: _ACTIVATION_CONTEXT_ASSEMBLY_DATA
+// Полей: 6
+// Строки в оригинале: 95151-95159
+struct _ACTIVATION_CONTEXT_ASSEMBLY_DATA
+{
+
+  unsigned int Size;
+  unsigned int Flags;
+  const wchar_t *AssemblyName;
+  unsigned int AssemblyNameLength;
+  unsigned int HashAlgorithm;
+  unsigned int PseudoKey;
+
+};

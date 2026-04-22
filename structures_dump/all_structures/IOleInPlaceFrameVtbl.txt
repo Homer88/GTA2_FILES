@@ -1,0 +1,23 @@
+// Структура: IOleInPlaceFrameVtbl
+// Полей: 15
+// Строки в оригинале: 28259-28276
+struct IOleInPlaceFrameVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleInPlaceFrame *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleInPlaceFrame *This);
+  ULONG (__stdcall *Release)(IOleInPlaceFrame *This);
+  HRESULT (__stdcall *GetWindow)(IOleInPlaceFrame *This, HWND *phwnd);
+  HRESULT (__stdcall *ContextSensitiveHelp)(IOleInPlaceFrame *This, BOOL fEnterMode);
+  HRESULT (__stdcall *GetBorder)(IOleInPlaceFrame *This, LPRECT lprectBorder);
+  HRESULT (__stdcall *RequestBorderSpace)(IOleInPlaceFrame *This, LPCBORDERWIDTHS pborderwidths);
+  HRESULT (__stdcall *SetBorderSpace)(IOleInPlaceFrame *This, LPCBORDERWIDTHS pborderwidths);
+  HRESULT (__stdcall *SetActiveObject)(IOleInPlaceFrame *This, IOleInPlaceActiveObject *pActiveObject, LPCOLESTR pszObjName);
+  HRESULT (__stdcall *InsertMenus)(IOleInPlaceFrame *This, HMENU hmenuShared, LPOLEMENUGROUPWIDTHS lpMenuWidths);
+  HRESULT (__stdcall *SetMenu)(IOleInPlaceFrame *This, HMENU hmenuShared, HOLEMENU holemenu, HWND hwndActiveObject);
+  HRESULT (__stdcall *RemoveMenus)(IOleInPlaceFrame *This, HMENU hmenuShared);
+  HRESULT (__stdcall *SetStatusText)(IOleInPlaceFrame *This, LPCOLESTR pszStatusText);
+  HRESULT (__stdcall *EnableModeless)(IOleInPlaceFrame *This, BOOL fEnable);
+  HRESULT (__stdcall *TranslateAcceleratorA)(IOleInPlaceFrame *This, LPMSG lpmsg, WORD wID);
+
+};

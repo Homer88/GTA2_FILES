@@ -1,0 +1,9 @@
+// Структура: IEnumFsiItems
+// Полей: 1
+// Строки в оригинале: 32531-32534
+struct IEnumFsiItems
+{
+
+  struct IEnumFsiItemsVtbl *lpVtbl;
+
+};

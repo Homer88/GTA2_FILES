@@ -1,0 +1,16 @@
+// Структура: _MUILANGINFO
+// Полей: 8
+// Строки в оригинале: 80764-80774
+struct _MUILANGINFO
+{
+
+  unsigned __int16 Flags;
+  unsigned __int16 Reserved;
+  unsigned __int16 LangId;
+  __int16 LangNameIndex;
+  unsigned __int16 FallbackTypes;
+  __int16 NeutralLangSpec;
+  __int16 FallbackSpecs[4];
+  __int16 AlternateCodePage[4];
+
+};

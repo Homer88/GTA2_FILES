@@ -1,0 +1,12 @@
+// Структура: IContextMenuSiteVtbl
+// Полей: 4
+// Строки в оригинале: 34628-34634
+struct IContextMenuSiteVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IContextMenuSite *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IContextMenuSite *This);
+  ULONG (__stdcall *Release)(IContextMenuSite *This);
+  HRESULT (__stdcall *DoContextMenuPopup)(IContextMenuSite *This, IUnknown *punkContextMenu, UINT fFlags, POINT pt);
+
+};

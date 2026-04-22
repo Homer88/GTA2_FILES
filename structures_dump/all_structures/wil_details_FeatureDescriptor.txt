@@ -1,0 +1,17 @@
+// Структура: wil_details_FeatureDescriptor
+// Полей: 9
+// Строки в оригинале: 142356-142367
+struct wil_details_FeatureDescriptor
+{
+
+  wil_details_FeatureStateCache *featureStateCache;
+  wil_details_FeatureReportingCache *featureReportingCache;
+  const FEATURE_LOGGED_TRAITS *featureLoggedTraits;
+  unsigned int featureId;
+  unsigned __int8 changeTime;
+  unsigned __int8 isAlwaysDisabled;
+  unsigned __int8 isAlwaysEnabled;
+  unsigned __int8 isEnabledByDefault;
+  const wil_details_FeatureDescriptor *const *requiresFeatures;
+
+};

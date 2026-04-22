@@ -1,0 +1,12 @@
+// Структура: _wireBRECORD
+// Полей: 4
+// Строки в оригинале: 83884-83890
+struct _wireBRECORD
+{
+
+  unsigned int fFlags;
+  unsigned int clSize;
+  IRecordInfo *pRecInfo;
+  unsigned __int8 *pRecord;
+
+};

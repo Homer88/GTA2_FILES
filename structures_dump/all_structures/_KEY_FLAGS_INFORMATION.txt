@@ -1,0 +1,11 @@
+// Структура: _KEY_FLAGS_INFORMATION
+// Полей: 3
+// Строки в оригинале: 91705-91710
+struct _KEY_FLAGS_INFORMATION
+{
+
+  unsigned int Wow64Flags;
+  unsigned int KeyFlags;
+  unsigned int ControlFlags;
+
+};

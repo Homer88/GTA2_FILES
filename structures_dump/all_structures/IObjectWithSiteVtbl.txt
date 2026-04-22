@@ -1,0 +1,13 @@
+// Структура: IObjectWithSiteVtbl
+// Полей: 5
+// Строки в оригинале: 30048-30055
+struct IObjectWithSiteVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IObjectWithSite *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IObjectWithSite *This);
+  ULONG (__stdcall *Release)(IObjectWithSite *This);
+  HRESULT (__stdcall *SetSite)(IObjectWithSite *This, IUnknown *pUnkSite);
+  HRESULT (__stdcall *GetSite)(IObjectWithSite *This, const IID *const riid, void **ppvSite);
+
+};

@@ -1,0 +1,12 @@
+// Структура: IProvideClassInfoVtbl
+// Полей: 4
+// Строки в оригинале: 39712-39718
+struct IProvideClassInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IProvideClassInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IProvideClassInfo *This);
+  ULONG (__stdcall *Release)(IProvideClassInfo *This);
+  HRESULT (__stdcall *GetClassInfoA)(IProvideClassInfo *This, ITypeInfo **ppTI);
+
+};

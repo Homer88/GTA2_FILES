@@ -1,0 +1,10 @@
+// Структура: _CM_ROM_BLOCK
+// Полей: 2
+// Строки в оригинале: 108487-108491
+struct _CM_ROM_BLOCK
+{
+
+  unsigned int Address;
+  unsigned int Size;
+
+};

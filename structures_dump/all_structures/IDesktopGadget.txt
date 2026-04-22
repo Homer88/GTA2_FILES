@@ -1,0 +1,9 @@
+// Структура: IDesktopGadget
+// Полей: 1
+// Строки в оригинале: 37291-37294
+struct IDesktopGadget
+{
+
+  struct IDesktopGadgetVtbl *lpVtbl;
+
+};

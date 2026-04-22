@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_PREFETCH_PATCH_INFORMATION
+// Полей: 1
+// Строки в оригинале: 82067-82070
+struct _SYSTEM_PREFETCH_PATCH_INFORMATION
+{
+
+  unsigned int PrefetchPatchCount;
+
+};

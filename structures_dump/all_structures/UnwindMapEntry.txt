@@ -1,0 +1,10 @@
+// Структура: UnwindMapEntry
+// Полей: 2
+// Строки в оригинале: 2401-2405
+struct UnwindMapEntry
+{
+
+  int toState __dec __tabform(NODUPS,1);
+  _UNKNOWN *action;
+
+};

@@ -1,0 +1,19 @@
+// Структура: _TAPE_GET_DRIVE_PARAMETERS
+// Полей: 11
+// Строки в оригинале: 124252-124265
+struct _TAPE_GET_DRIVE_PARAMETERS
+{
+
+  unsigned __int8 ECC;
+  unsigned __int8 Compression;
+  unsigned __int8 DataPadding;
+  unsigned __int8 ReportSetmarks;
+  unsigned int DefaultBlockSize;
+  unsigned int MaximumBlockSize;
+  unsigned int MinimumBlockSize;
+  unsigned int MaximumPartitionCount;
+  unsigned int FeaturesLow;
+  unsigned int FeaturesHigh;
+  unsigned int EOTWarningZoneSize;
+
+};

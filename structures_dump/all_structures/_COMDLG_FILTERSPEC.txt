@@ -1,0 +1,10 @@
+// Структура: _COMDLG_FILTERSPEC
+// Полей: 2
+// Строки в оригинале: 34481-34485
+struct _COMDLG_FILTERSPEC
+{
+
+  LPCWSTR pszName;
+  LPCWSTR pszSpec;
+
+};

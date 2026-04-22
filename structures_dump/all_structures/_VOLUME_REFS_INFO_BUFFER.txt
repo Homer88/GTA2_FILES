@@ -1,0 +1,87 @@
+// Структура: _VOLUME_REFS_INFO_BUFFER
+// Полей: 79
+// Строки в оригинале: 101803-101884
+struct _VOLUME_REFS_INFO_BUFFER
+{
+
+  _LARGE_INTEGER CacheSizeInBytes;
+  _LARGE_INTEGER AllocatedCacheInBytes;
+  _LARGE_INTEGER PopulatedCacheInBytes;
+  _LARGE_INTEGER InErrorCacheInBytes;
+  _LARGE_INTEGER MemoryUsedForCacheMetadata;
+  unsigned int CacheLineSize;
+  int CacheTransactionsOutstanding;
+  int CacheLinesFree;
+  int CacheLinesInError;
+  _LARGE_INTEGER CacheHitsInBytes;
+  _LARGE_INTEGER CacheMissesInBytes;
+  _LARGE_INTEGER CachePopulationUpdatesInBytes;
+  _LARGE_INTEGER CacheWriteThroughUpdatesInBytes;
+  _LARGE_INTEGER CacheInvalidationsInBytes;
+  _LARGE_INTEGER CacheOverReadsInBytes;
+  _LARGE_INTEGER MetadataWrittenBytes;
+  int CacheHitCounter;
+  int CacheMissCounter;
+  int CacheLineAllocationCounter;
+  int CacheInvalidationsCounter;
+  int CachePopulationUpdatesCounter;
+  int CacheWriteThroughUpdatesCounter;
+  int MaxCacheTransactionsOutstanding;
+  int DataWritesReallocationCount;
+  int DataInPlaceWriteCount;
+  int MetadataAllocationsFastTierCount;
+  int MetadataAllocationsSlowTierCount;
+  int DataAllocationsFastTierCount;
+  int DataAllocationsSlowTierCount;
+  int DestagesSlowTierToFastTier;
+  int DestagesFastTierToSlowTier;
+  int SlowTierDataFillRatio;
+  int FastTierDataFillRatio;
+  int SlowTierMetadataFillRatio;
+  int FastTierMetadataFillRatio;
+  int SlowToFastDestageReadLatency;
+  int SlowToFastDestageReadLatencyBase;
+  int SlowToFastDestageWriteLatency;
+  int SlowToFastDestageWriteLatencyBase;
+  int FastToSlowDestageReadLatency;
+  int FastToSlowDestageReadLatencyBase;
+  int FastToSlowDestageWriteLatency;
+  int FastToSlowDestageWriteLatencyBase;
+  int SlowTierContainerFillRatio;
+  int SlowTierContainerFillRatioBase;
+  int FastTierContainerFillRatio;
+  int FastTierContainerFillRatioBase;
+  int TreeUpdateLatency;
+  int TreeUpdateLatencyBase;
+  int CheckpointLatency;
+  int CheckpointLatencyBase;
+  int TreeUpdateCount;
+  int CheckpointCount;
+  int LogWriteCount;
+  int LogFillRatio;
+  int ReadCacheInvalidationsForOverwrite;
+  int ReadCacheInvalidationsForReuse;
+  int ReadCacheInvalidationsGeneral;
+  int ReadCacheChecksOnMount;
+  int ReadCacheIssuesOnMount;
+  int TrimLatency;
+  int TrimLatencyBase;
+  int DataCompactionCount;
+  int CompactionReadLatency;
+  int CompactionReadLatencyBase;
+  int CompactionWriteLatency;
+  int CompactionWriteLatencyBase;
+  _LARGE_INTEGER DataInPlaceWriteClusterCount;
+  int CompactionFailedDueToIneligibleContainer;
+  int CompactionFailedDueToMaxFragmentation;
+  int CompactedContainerFillRatio;
+  int CompactedContainerFillRatioBase;
+  int ContainerMoveRetryCount;
+  int ContainerMoveFailedDueToIneligibleContainer;
+  int CompactionFailureCount;
+  int ContainerMoveFailureCount;
+  _LARGE_INTEGER NumberOfDirtyMetadataPages;
+  int NumberOfDirtyTableListEntries;
+  int NumberOfDeleteQueueEntries;
+
+};

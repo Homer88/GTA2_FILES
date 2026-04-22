@@ -1,0 +1,9 @@
+// Структура: ISearchQueryHelper
+// Полей: 1
+// Строки в оригинале: 44102-44105
+struct ISearchQueryHelper
+{
+
+  struct ISearchQueryHelperVtbl *lpVtbl;
+
+};

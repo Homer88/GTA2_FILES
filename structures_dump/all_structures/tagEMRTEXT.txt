@@ -1,0 +1,14 @@
+// Структура: tagEMRTEXT
+// Полей: 6
+// Строки в оригинале: 91881-91889
+struct tagEMRTEXT
+{
+
+  _POINTL ptlReference;
+  unsigned int nChars;
+  unsigned int offString;
+  unsigned int fOptions;
+  _RECTL rcl;
+  unsigned int offDx;
+
+};

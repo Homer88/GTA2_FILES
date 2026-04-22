@@ -1,0 +1,14 @@
+// Структура: IPreviewHandlerVisualsVtbl
+// Полей: 6
+// Строки в оригинале: 36431-36439
+struct IPreviewHandlerVisualsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPreviewHandlerVisuals *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPreviewHandlerVisuals *This);
+  ULONG (__stdcall *Release)(IPreviewHandlerVisuals *This);
+  HRESULT (__stdcall *SetBackgroundColor)(IPreviewHandlerVisuals *This, COLORREF color);
+  HRESULT (__stdcall *SetFont)(IPreviewHandlerVisuals *This, const LOGFONTW *plf);
+  HRESULT (__stdcall *SetTextColor)(IPreviewHandlerVisuals *This, COLORREF color);
+
+};

@@ -1,0 +1,29 @@
+// Структура: IOfflineFilesCache2Vtbl
+// Полей: 21
+// Строки в оригинале: 28008-28031
+struct IOfflineFilesCache2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesCache2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesCache2 *This);
+  ULONG (__stdcall *Release)(IOfflineFilesCache2 *This);
+  HRESULT (__stdcall *Synchronize)(IOfflineFilesCache2 *This, HWND hwndParent, LPCWSTR *rgpszPaths, ULONG cPaths, BOOL bAsync, DWORD dwSyncControl, IOfflineFilesSyncConflictHandler *pISyncConflictHandler, IOfflineFilesSyncProgress *pIProgress, GUID *pSyncId);
+  HRESULT (__stdcall *DeleteItems)(IOfflineFilesCache2 *This, LPCWSTR *rgpszPaths, ULONG cPaths, DWORD dwFlags, BOOL bAsync, IOfflineFilesSimpleProgress *pIProgress);
+  HRESULT (__stdcall *DeleteItemsForUser)(IOfflineFilesCache2 *This, LPCWSTR pszUser, LPCWSTR *rgpszPaths, ULONG cPaths, DWORD dwFlags, BOOL bAsync, IOfflineFilesSimpleProgress *pIProgress);
+  HRESULT (__stdcall *Pin)(IOfflineFilesCache2 *This, HWND hwndParent, LPCWSTR *rgpszPaths, ULONG cPaths, BOOL bDeep, BOOL bAsync, DWORD dwPinControlFlags, IOfflineFilesSyncProgress *pIProgress);
+  HRESULT (__stdcall *Unpin)(IOfflineFilesCache2 *This, HWND hwndParent, LPCWSTR *rgpszPaths, ULONG cPaths, BOOL bDeep, BOOL bAsync, DWORD dwPinControlFlags, IOfflineFilesSyncProgress *pIProgress);
+  HRESULT (__stdcall *GetEncryptionStatus)(IOfflineFilesCache2 *This, BOOL *pbEncrypted, BOOL *pbPartial);
+  HRESULT (__stdcall *Encrypt)(IOfflineFilesCache2 *This, HWND hwndParent, BOOL bEncrypt, DWORD dwEncryptionControlFlags, BOOL bAsync, IOfflineFilesSyncProgress *pIProgress);
+  HRESULT (__stdcall *FindItem)(IOfflineFilesCache2 *This, LPCWSTR pszPath, DWORD dwQueryFlags, IOfflineFilesItem **ppItem);
+  HRESULT (__stdcall *FindItemEx)(IOfflineFilesCache2 *This, LPCWSTR pszPath, IOfflineFilesItemFilter *pIncludeFileFilter, IOfflineFilesItemFilter *pIncludeDirFilter, IOfflineFilesItemFilter *pExcludeFileFilter, IOfflineFilesItemFilter *pExcludeDirFilter, DWORD dwQueryFlags, IOfflineFilesItem **ppItem);
+  HRESULT (__stdcall *RenameItem)(IOfflineFilesCache2 *This, LPCWSTR pszPathOriginal, LPCWSTR pszPathNew, BOOL bReplaceIfExists);
+  HRESULT (__stdcall *GetLocation)(IOfflineFilesCache2 *This, LPWSTR *ppszPath);
+  HRESULT (__stdcall *GetDiskSpaceInformationA)(IOfflineFilesCache2 *This, ULONGLONG *pcbVolumeTotal, ULONGLONG *pcbLimit, ULONGLONG *pcbUsed, ULONGLONG *pcbUnpinnedLimit, ULONGLONG *pcbUnpinnedUsed);
+  HRESULT (__stdcall *SetDiskSpaceLimits)(IOfflineFilesCache2 *This, ULONGLONG cbLimit, ULONGLONG cbUnpinnedLimit);
+  HRESULT (__stdcall *ProcessAdminPinPolicy)(IOfflineFilesCache2 *This, IOfflineFilesSyncProgress *pPinProgress, IOfflineFilesSyncProgress *pUnpinProgress);
+  HRESULT (__stdcall *GetSettingObject)(IOfflineFilesCache2 *This, LPCWSTR pszSettingName, IOfflineFilesSetting **ppSetting);
+  HRESULT (__stdcall *EnumSettingObjects)(IOfflineFilesCache2 *This, IEnumOfflineFilesSettings **ppEnum);
+  HRESULT (__stdcall *IsPathCacheable)(IOfflineFilesCache2 *This, LPCWSTR pszPath, BOOL *pbCacheable, OFFLINEFILES_CACHING_MODE *pShareCachingMode);
+  HRESULT (__stdcall *RenameItemEx)(IOfflineFilesCache2 *This, LPCWSTR pszPathOriginal, LPCWSTR pszPathNew, BOOL bReplaceIfExists);
+
+};

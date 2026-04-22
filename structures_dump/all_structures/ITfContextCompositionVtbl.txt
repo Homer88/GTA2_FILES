@@ -1,0 +1,15 @@
+// Структура: ITfContextCompositionVtbl
+// Полей: 7
+// Строки в оригинале: 32299-32308
+struct ITfContextCompositionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfContextComposition *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfContextComposition *This);
+  ULONG (__stdcall *Release)(ITfContextComposition *This);
+  HRESULT (__stdcall *StartComposition)(ITfContextComposition *This, TfEditCookie ecWrite, ITfRange *pCompositionRange, ITfCompositionSink *pSink, ITfComposition **ppComposition);
+  HRESULT (__stdcall *EnumCompositions)(ITfContextComposition *This, IEnumITfCompositionView **ppEnum);
+  HRESULT (__stdcall *FindComposition)(ITfContextComposition *This, TfEditCookie ecRead, ITfRange *pTestRange, IEnumITfCompositionView **ppEnum);
+  HRESULT (__stdcall *TakeOwnership)(ITfContextComposition *This, TfEditCookie ecWrite, ITfCompositionView *pComposition, ITfCompositionSink *pSink, ITfComposition **ppComposition);
+
+};

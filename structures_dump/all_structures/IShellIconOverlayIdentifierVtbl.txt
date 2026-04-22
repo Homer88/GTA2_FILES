@@ -1,0 +1,14 @@
+// Структура: IShellIconOverlayIdentifierVtbl
+// Полей: 6
+// Строки в оригинале: 40320-40328
+struct IShellIconOverlayIdentifierVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellIconOverlayIdentifier *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellIconOverlayIdentifier *This);
+  ULONG (__stdcall *Release)(IShellIconOverlayIdentifier *This);
+  HRESULT (__stdcall *IsMemberOf)(IShellIconOverlayIdentifier *This, LPCWSTR pwszPath, DWORD dwAttrib);
+  HRESULT (__stdcall *GetOverlayInfo)(IShellIconOverlayIdentifier *This, LPWSTR pwszIconFile, int cchMax, int *pIndex, DWORD *pdwFlags);
+  HRESULT (__stdcall *GetPriority)(IShellIconOverlayIdentifier *This, int *pPriority);
+
+};

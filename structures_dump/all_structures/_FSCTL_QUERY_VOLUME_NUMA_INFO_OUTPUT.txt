@@ -1,0 +1,9 @@
+// Структура: _FSCTL_QUERY_VOLUME_NUMA_INFO_OUTPUT
+// Полей: 1
+// Строки в оригинале: 104309-104312
+struct _FSCTL_QUERY_VOLUME_NUMA_INFO_OUTPUT
+{
+
+  unsigned int NumaNode;
+
+};

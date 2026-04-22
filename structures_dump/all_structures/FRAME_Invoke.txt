@@ -1,0 +1,17 @@
+// Структура: FRAME_Invoke
+// Полей: 9
+// Строки в оригинале: 121362-121373
+struct FRAME_Invoke
+{
+
+  IDispatch *This;
+  int dispIdMember;
+  _GUID *piid;
+  unsigned int lcid;
+  unsigned __int16 wFlags;
+  tagDISPPARAMS *pDispParams;
+  tagVARIANT *pVarResult;
+  tagEXCEPINFO *pExcepInfo;
+  unsigned int *puArgErr;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _EVENTSFORLOGFILE
+// Полей: 4
+// Строки в оригинале: 85194-85200
+struct _EVENTSFORLOGFILE
+{
+
+  unsigned int ulSize;
+  wchar_t szLogicalLogFile[256];
+  unsigned int ulNumRecords;
+  _EVENTLOGRECORD pEventLogRecords[];
+
+};

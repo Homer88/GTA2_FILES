@@ -1,0 +1,9 @@
+// Структура: IXMLDOMElement
+// Полей: 1
+// Строки в оригинале: 43206-43209
+struct IXMLDOMElement
+{
+
+  struct IXMLDOMElementVtbl *lpVtbl;
+
+};

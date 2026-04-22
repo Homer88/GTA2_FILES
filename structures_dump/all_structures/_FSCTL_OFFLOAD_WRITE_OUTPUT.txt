@@ -1,0 +1,11 @@
+// Структура: _FSCTL_OFFLOAD_WRITE_OUTPUT
+// Полей: 3
+// Строки в оригинале: 96238-96243
+struct _FSCTL_OFFLOAD_WRITE_OUTPUT
+{
+
+  unsigned int Size;
+  unsigned int Flags;
+  unsigned __int64 LengthWritten;
+
+};

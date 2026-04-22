@@ -1,0 +1,27 @@
+// Структура: IDXGIOutputVtbl
+// Полей: 19
+// Строки в оригинале: 352148-352169
+struct IDXGIOutputVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDXGIOutput *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDXGIOutput *This);
+  ULONG (__stdcall *Release)(IDXGIOutput *This);
+  HRESULT (__stdcall *SetPrivateData)(IDXGIOutput *This, const GUID *const Name, UINT DataSize, const void *pData);
+  HRESULT (__stdcall *SetPrivateDataInterface)(IDXGIOutput *This, const GUID *const Name, const IUnknown *pUnknown);
+  HRESULT (__stdcall *GetPrivateData)(IDXGIOutput *This, const GUID *const Name, UINT *pDataSize, void *pData);
+  HRESULT (__stdcall *GetParent)(IDXGIOutput *This, const IID *const riid, void **ppParent);
+  HRESULT (__stdcall *GetDesc)(IDXGIOutput *This, DXGI_OUTPUT_DESC *pDesc);
+  HRESULT (__stdcall *GetDisplayModeList)(IDXGIOutput *This, DXGI_FORMAT EnumFormat, UINT Flags, UINT *pNumModes, DXGI_MODE_DESC *pDesc);
+  HRESULT (__stdcall *FindClosestMatchingMode)(IDXGIOutput *This, const DXGI_MODE_DESC *pModeToMatch, DXGI_MODE_DESC *pClosestMatch, IUnknown *pConcernedDevice);
+  HRESULT (__stdcall *WaitForVBlank)(IDXGIOutput *This);
+  HRESULT (__stdcall *TakeOwnership)(IDXGIOutput *This, IUnknown *pDevice, BOOL Exclusive);
+  void (__stdcall *ReleaseOwnership)(IDXGIOutput *This);
+  HRESULT (__stdcall *GetGammaControlCapabilities)(IDXGIOutput *This, DXGI_GAMMA_CONTROL_CAPABILITIES *pGammaCaps);
+  HRESULT (__stdcall *SetGammaControl)(IDXGIOutput *This, const DXGI_GAMMA_CONTROL *pArray);
+  HRESULT (__stdcall *GetGammaControl)(IDXGIOutput *This, DXGI_GAMMA_CONTROL *pArray);
+  HRESULT (__stdcall *SetDisplaySurface)(IDXGIOutput *This, IDXGISurface *pScanoutSurface);
+  HRESULT (__stdcall *GetDisplaySurfaceData)(IDXGIOutput *This, IDXGISurface *pDestination);
+  HRESULT (__stdcall *GetFrameStatistics)(IDXGIOutput *This, DXGI_FRAME_STATISTICS *pStats);
+
+};

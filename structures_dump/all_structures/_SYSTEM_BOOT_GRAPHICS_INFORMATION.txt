@@ -1,0 +1,15 @@
+// Структура: _SYSTEM_BOOT_GRAPHICS_INFORMATION
+// Полей: 7
+// Строки в оригинале: 80373-80382
+struct _SYSTEM_BOOT_GRAPHICS_INFORMATION
+{
+
+  _LARGE_INTEGER FrameBuffer;
+  unsigned int Width;
+  unsigned int Height;
+  unsigned int PixelStride;
+  unsigned int Flags;
+  _SYSTEM_PIXEL_FORMAT Format;
+  unsigned int DisplayRotation;
+
+};

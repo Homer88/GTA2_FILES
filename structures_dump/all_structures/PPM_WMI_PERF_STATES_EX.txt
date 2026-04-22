@@ -1,0 +1,29 @@
+// Структура: PPM_WMI_PERF_STATES_EX
+// Полей: 21
+// Строки в оригинале: 100439-100462
+struct PPM_WMI_PERF_STATES_EX
+{
+
+  unsigned int Count;
+  unsigned int MaxFrequency;
+  unsigned int CurrentState;
+  unsigned int MaxPerfState;
+  unsigned int MinPerfState;
+  unsigned int LowestPerfState;
+  unsigned int ThermalConstraint;
+  unsigned __int8 BusyAdjThreshold;
+  unsigned __int8 PolicyType;
+  unsigned __int8 Type;
+  unsigned __int8 Reserved;
+  unsigned int TimerInterval;
+  void *TargetProcessors;
+  unsigned int PStateHandler;
+  unsigned int PStateContext;
+  unsigned int TStateHandler;
+  unsigned int TStateContext;
+  unsigned int FeedbackHandler;
+  unsigned int Reserved1;
+  unsigned __int64 Reserved2;
+  PPM_WMI_PERF_STATE State[1];
+
+};

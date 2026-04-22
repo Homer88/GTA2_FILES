@@ -1,0 +1,13 @@
+// Структура: _PROCESS_ENERGY_TRACKING_STATE
+// Полей: 5
+// Строки в оригинале: 96201-96208
+struct _PROCESS_ENERGY_TRACKING_STATE
+{
+
+  unsigned int StateUpdateMask;
+  unsigned int StateDesiredValue;
+  unsigned int StateSequence;
+  unsigned __int32 UpdateTag : 1;
+  wchar_t Tag[64];
+
+};

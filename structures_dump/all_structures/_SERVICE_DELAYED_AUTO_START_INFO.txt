@@ -1,0 +1,9 @@
+// Структура: _SERVICE_DELAYED_AUTO_START_INFO
+// Полей: 1
+// Строки в оригинале: 93956-93959
+struct _SERVICE_DELAYED_AUTO_START_INFO
+{
+
+  int fDelayedAutostart;
+
+};

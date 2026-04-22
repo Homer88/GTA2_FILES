@@ -1,0 +1,20 @@
+// Структура: IDirect3DSwapChain9Vtbl
+// Полей: 12
+// Строки в оригинале: 25945-25959
+struct IDirect3DSwapChain9Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirect3DSwapChain9 *This, const IID *const riid, void **ppvObj);
+  ULONG (__stdcall *AddRef)(IDirect3DSwapChain9 *This);
+  ULONG (__stdcall *Release)(IDirect3DSwapChain9 *This);
+  HRESULT (__stdcall *Present)(IDirect3DSwapChain9 *This, const RECT *pSourceRect, const RECT *pDestRect, HWND hDestWindowOverride, const RGNDATA *pDirtyRegion, DWORD dwFlags);
+  HRESULT (__stdcall *GetFrontBufferData)(IDirect3DSwapChain9 *This, IDirect3DSurface9 *pDestSurface);
+  HRESULT (__stdcall *GetBackBuffer)(IDirect3DSwapChain9 *This, UINT iBackBuffer, D3DBACKBUFFER_TYPE Type, IDirect3DSurface9 **ppBackBuffer);
+  HRESULT (__stdcall *GetRasterStatus)(IDirect3DSwapChain9 *This, D3DRASTER_STATUS *pRasterStatus);
+  HRESULT (__stdcall *GetDisplayMode)(IDirect3DSwapChain9 *This, D3DDISPLAYMODE *pMode);
+  HRESULT (__stdcall *GetDevice)(IDirect3DSwapChain9 *This, IDirect3DDevice9 **ppDevice);
+  HRESULT (__stdcall *GetPresentParameters)(IDirect3DSwapChain9 *This, D3DPRESENT_PARAMETERS *pPresentationParameters);
+  D3DPRESENT_PARAMETERS PresentParameters;
+  D3DDISPLAYMODE DisplayMode;
+
+};

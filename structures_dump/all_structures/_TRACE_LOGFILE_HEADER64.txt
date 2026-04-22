@@ -1,0 +1,26 @@
+// Структура: _TRACE_LOGFILE_HEADER64
+// Полей: 18
+// Строки в оригинале: 309023-309043
+struct _TRACE_LOGFILE_HEADER64
+{
+
+  unsigned int BufferSize;
+  $ECD1D25D6CB9AE65B2533A490C60A39D ___u1;
+  unsigned int ProviderVersion;
+  unsigned int NumberOfProcessors;
+  _LARGE_INTEGER EndTime;
+  unsigned int TimerResolution;
+  unsigned int MaximumFileSize;
+  unsigned int LogFileMode;
+  unsigned int BuffersWritten;
+  $004128DC8C5BC606198F042E5AC84803 ___u9;
+  unsigned __int64 LoggerName;
+  unsigned __int64 LogFileName;
+  _TIME_ZONE_INFORMATION TimeZone;
+  _LARGE_INTEGER BootTime;
+  _LARGE_INTEGER PerfFreq;
+  _LARGE_INTEGER StartTime;
+  unsigned int ReservedFlags;
+  unsigned int BuffersLost;
+
+};

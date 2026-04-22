@@ -1,0 +1,15 @@
+// Структура: _REFS_SMR_VOLUME_GC_PARAMETERS
+// Полей: 7
+// Строки в оригинале: 95118-95127
+struct _REFS_SMR_VOLUME_GC_PARAMETERS
+{
+
+  unsigned int Version;
+  unsigned int Flags;
+  _REFS_SMR_VOLUME_GC_ACTION Action;
+  _REFS_SMR_VOLUME_GC_METHOD Method;
+  unsigned int IoGranularity;
+  unsigned int CompressionFormat;
+  unsigned __int64 Unused[8];
+
+};

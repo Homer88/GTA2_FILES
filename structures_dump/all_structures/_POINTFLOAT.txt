@@ -1,0 +1,10 @@
+// Структура: _POINTFLOAT
+// Полей: 2
+// Строки в оригинале: 82845-82849
+struct _POINTFLOAT
+{
+
+  float x;
+  float y;
+
+};

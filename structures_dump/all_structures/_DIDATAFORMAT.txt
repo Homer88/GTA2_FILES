@@ -1,0 +1,14 @@
+// Структура: _DIDATAFORMAT
+// Полей: 6
+// Строки в оригинале: 6240-6248
+struct _DIDATAFORMAT
+{
+
+  DWORD dwSize;
+  DWORD dwObjSize;
+  DWORD dwFlags;
+  DWORD dwDataSize;
+  DWORD dwNumObjs;
+  LPDIOBJECTDATAFORMAT rgodf;
+
+};

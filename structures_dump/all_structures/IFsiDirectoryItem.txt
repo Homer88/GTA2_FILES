@@ -1,0 +1,9 @@
+// Структура: IFsiDirectoryItem
+// Полей: 1
+// Строки в оригинале: 32511-32514
+struct IFsiDirectoryItem
+{
+
+  struct IFsiDirectoryItemVtbl *lpVtbl;
+
+};

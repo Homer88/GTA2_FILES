@@ -1,0 +1,14 @@
+// Структура: _numberfmtW
+// Полей: 6
+// Строки в оригинале: 102911-102919
+struct _numberfmtW
+{
+
+  unsigned int NumDigits;
+  unsigned int LeadingZero;
+  unsigned int Grouping;
+  wchar_t *lpDecimalSep;
+  wchar_t *lpThousandSep;
+  unsigned int NegativeOrder;
+
+};

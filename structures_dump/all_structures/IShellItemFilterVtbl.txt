@@ -1,0 +1,13 @@
+// Структура: IShellItemFilterVtbl
+// Полей: 5
+// Строки в оригинале: 34123-34130
+struct IShellItemFilterVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellItemFilter *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellItemFilter *This);
+  ULONG (__stdcall *Release)(IShellItemFilter *This);
+  HRESULT (__stdcall *IncludeItem)(IShellItemFilter *This, IShellItem *psi);
+  HRESULT (__stdcall *GetEnumFlagsForItem)(IShellItemFilter *This, IShellItem *psi, SHCONTF *pgrfFlags);
+
+};

@@ -1,0 +1,18 @@
+// Структура: IRunningObjectTableVtbl
+// Полей: 10
+// Строки в оригинале: 24067-24079
+struct IRunningObjectTableVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRunningObjectTable *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRunningObjectTable *This);
+  ULONG (__stdcall *Release)(IRunningObjectTable *This);
+  HRESULT (__stdcall *Register)(IRunningObjectTable *This, DWORD grfFlags, IUnknown *punkObject, IMoniker *pmkObjectName, DWORD *pdwRegister);
+  HRESULT (__stdcall *Revoke)(IRunningObjectTable *This, DWORD dwRegister);
+  HRESULT (__stdcall *IsRunning)(IRunningObjectTable *This, IMoniker *pmkObjectName);
+  HRESULT (__stdcall *GetObjectA)(IRunningObjectTable *This, IMoniker *pmkObjectName, IUnknown **ppunkObject);
+  HRESULT (__stdcall *NoteChangeTime)(IRunningObjectTable *This, DWORD dwRegister, FILETIME *pfiletime);
+  HRESULT (__stdcall *GetTimeOfLastChange)(IRunningObjectTable *This, IMoniker *pmkObjectName, FILETIME *pfiletime);
+  HRESULT (__stdcall *EnumRunning)(IRunningObjectTable *This, IEnumMoniker **ppenumMoniker);
+
+};

@@ -1,0 +1,11 @@
+// Структура: _SECTION_OBJECT_POINTERS
+// Полей: 3
+// Строки в оригинале: 18986-18991
+struct _SECTION_OBJECT_POINTERS
+{
+
+  void *DataSectionObject;
+  void *SharedCacheMap;
+  void *ImageSectionObject;
+
+};

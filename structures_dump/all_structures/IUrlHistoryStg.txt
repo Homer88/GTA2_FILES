@@ -1,0 +1,9 @@
+// Структура: IUrlHistoryStg
+// Полей: 1
+// Строки в оригинале: 39743-39746
+struct IUrlHistoryStg
+{
+
+  struct IUrlHistoryStgVtbl *lpVtbl;
+
+};

@@ -1,0 +1,10 @@
+// Структура: tagIDLDESC
+// Полей: 2
+// Строки в оригинале: 23572-23576
+struct tagIDLDESC
+{
+
+  ULONG_PTR dwReserved;
+  USHORT wIDLFlags;
+
+};

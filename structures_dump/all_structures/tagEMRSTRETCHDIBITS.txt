@@ -1,0 +1,24 @@
+// Структура: tagEMRSTRETCHDIBITS
+// Полей: 16
+// Строки в оригинале: 111240-111258
+struct tagEMRSTRETCHDIBITS
+{
+
+  tagEMR emr;
+  _RECTL rclBounds;
+  int xDest;
+  int yDest;
+  int xSrc;
+  int ySrc;
+  int cxSrc;
+  int cySrc;
+  unsigned int offBmiSrc;
+  unsigned int cbBmiSrc;
+  unsigned int offBitsSrc;
+  unsigned int cbBitsSrc;
+  unsigned int iUsageSrc;
+  unsigned int dwRop;
+  int cxDest;
+  int cyDest;
+
+};

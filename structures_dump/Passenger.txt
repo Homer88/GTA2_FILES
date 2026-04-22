@@ -1,0 +1,9 @@
+// Structure: Passenger
+// Lines: 3621 - 3625
+// Fields: 3
+
+struct Passenger
+{
+  Passenger *Passenger;
+  Passenger *PassengerPrev;
+};

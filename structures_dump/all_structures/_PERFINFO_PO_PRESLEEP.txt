@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_PO_PRESLEEP
+// Полей: 2
+// Строки в оригинале: 309979-309983
+struct _PERFINFO_PO_PRESLEEP
+{
+
+  _LARGE_INTEGER PerformanceCounter;
+  _LARGE_INTEGER PerformanceFrequency;
+
+};

@@ -1,0 +1,10 @@
+// Структура: WireThatPart1
+// Полей: 2
+// Строки в оригинале: 63886-63890
+struct WireThatPart1
+{
+
+  unsigned int flags;
+  unsigned int unique;
+
+};

@@ -1,0 +1,11 @@
+// Структура: DXGI_GAMMA_CONTROL
+// Полей: 3
+// Строки в оригинале: 352245-352250
+struct DXGI_GAMMA_CONTROL
+{
+
+  DXGI_RGB Scale;
+  DXGI_RGB Offset;
+  DXGI_RGB GammaCurve[1025];
+
+};

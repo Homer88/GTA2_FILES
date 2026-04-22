@@ -1,0 +1,12 @@
+// Структура: _IMAGE_RESOURCE_DATA_ENTRY
+// Полей: 4
+// Строки в оригинале: 97502-97508
+struct _IMAGE_RESOURCE_DATA_ENTRY
+{
+
+  unsigned int OffsetToData;
+  unsigned int Size;
+  unsigned int CodePage;
+  unsigned int Reserved;
+
+};

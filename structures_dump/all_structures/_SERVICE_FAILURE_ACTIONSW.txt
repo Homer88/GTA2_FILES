@@ -1,0 +1,13 @@
+// Структура: _SERVICE_FAILURE_ACTIONSW
+// Полей: 5
+// Строки в оригинале: 91583-91590
+struct _SERVICE_FAILURE_ACTIONSW
+{
+
+  unsigned int dwResetPeriod;
+  wchar_t *lpRebootMsg;
+  wchar_t *lpCommand;
+  unsigned int cActions;
+  _SC_ACTION *lpsaActions;
+
+};

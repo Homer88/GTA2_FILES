@@ -1,0 +1,10 @@
+// Структура: _FILE_PIPE_EVENT_SELECT_BUFFER
+// Полей: 2
+// Строки в оригинале: 105303-105307
+struct _FILE_PIPE_EVENT_SELECT_BUFFER
+{
+
+  unsigned int EventTypes;
+  unsigned __int64 EventHandle;
+
+};

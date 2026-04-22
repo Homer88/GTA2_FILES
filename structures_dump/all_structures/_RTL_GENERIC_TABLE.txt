@@ -1,0 +1,17 @@
+// Структура: _RTL_GENERIC_TABLE
+// Полей: 9
+// Строки в оригинале: 85304-85315
+struct _RTL_GENERIC_TABLE
+{
+
+  _RTL_SPLAY_LINKS *TableRoot;
+  _LIST_ENTRY InsertOrderList;
+  _LIST_ENTRY *OrderedPointer;
+  unsigned int WhichOrderedElement;
+  unsigned int NumberGenericTableElements;
+  _RTL_GENERIC_COMPARE_RESULTS (__stdcall *CompareRoutine)(_RTL_GENERIC_TABLE *, void *, void *);
+  void *(__stdcall *AllocateRoutine)(_RTL_GENERIC_TABLE *, unsigned int);
+  void (__stdcall *FreeRoutine)(_RTL_GENERIC_TABLE *, void *);
+  void *TableContext;
+
+};

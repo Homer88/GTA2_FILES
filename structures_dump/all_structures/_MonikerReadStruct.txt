@@ -1,0 +1,11 @@
+// Структура: _MonikerReadStruct
+// Полей: 3
+// Строки в оригинале: 79428-79433
+struct _MonikerReadStruct
+{
+
+  _GUID m_clsid;
+  unsigned int m_ole1;
+  unsigned int m_cbExtents;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _CONTEXT_HANDLE_ELEMENT
+// Полей: 4
+// Строки в оригинале: 263742-263748
+struct _CONTEXT_HANDLE_ELEMENT
+{
+
+  _CONTEXT_HANDLE_ELEMENT *Next;
+  $3FA64165D15A4602C29B2D9B0DA4A5E9 *pContext;
+  NDR_CONTEXT_HANDLE_ARG_DESC *pCtxtDesc;
+  unsigned __int8 *Key;
+
+};

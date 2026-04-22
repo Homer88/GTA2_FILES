@@ -1,0 +1,15 @@
+// Структура: _DIACTIONA
+// Полей: 7
+// Строки в оригинале: 29508-29517
+struct _DIACTIONA
+{
+
+  UINT_PTR uAppData;
+  DWORD dwSemantic;
+  DWORD dwFlags;
+  union
+  {
+    LPCSTR lptszActionName;
+    UINT uResIdString;
+  
+};

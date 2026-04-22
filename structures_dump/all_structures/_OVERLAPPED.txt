@@ -1,0 +1,13 @@
+// Структура: _OVERLAPPED
+// Полей: 5
+// Строки в оригинале: 63935-63942
+struct _OVERLAPPED
+{
+
+  unsigned int Internal;
+  unsigned int InternalHigh;
+  $A5A483E05FC9B52B872A8DCFA58CFF52 ___u2;
+  unsigned int OffsetHigh;
+  void *hEvent;
+
+};

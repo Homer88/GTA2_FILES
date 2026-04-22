@@ -1,0 +1,13 @@
+// Структура: IColumnsInfoVtbl
+// Полей: 5
+// Строки в оригинале: 36471-36478
+struct IColumnsInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IColumnsInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IColumnsInfo *This);
+  ULONG (__stdcall *Release)(IColumnsInfo *This);
+  HRESULT (__stdcall *GetColumnInfo)(IColumnsInfo *This, DBORDINAL *pcColumns, DBCOLUMNINFO **prgInfo, OLECHAR **ppStringsBuffer);
+  HRESULT (__stdcall *MapColumnIDs)(IColumnsInfo *This, DBORDINAL cColumnIDs, const DBID rgColumnIDs[], DBORDINAL rgColumns[]);
+
+};

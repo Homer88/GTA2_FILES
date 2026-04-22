@@ -1,0 +1,10 @@
+// Структура: _CRYPT_OBJID_TABLE
+// Полей: 2
+// Строки в оригинале: 105630-105634
+struct _CRYPT_OBJID_TABLE
+{
+
+  unsigned int dwAlgId;
+  const char *pszObjId;
+
+};

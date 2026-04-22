@@ -1,0 +1,23 @@
+// Структура: _NOTIFYICONDATAA
+// Полей: 15
+// Строки в оригинале: 102959-102976
+struct _NOTIFYICONDATAA
+{
+
+  unsigned int cbSize;
+  HWND__ *hWnd;
+  unsigned int uID;
+  unsigned int uFlags;
+  unsigned int uCallbackMessage;
+  HICON__ *hIcon;
+  char szTip[128];
+  unsigned int dwState;
+  unsigned int dwStateMask;
+  char szInfo[256];
+  $30417D6DC3305618FB171BBBD15A8541 ___u10;
+  char szInfoTitle[64];
+  unsigned int dwInfoFlags;
+  _GUID guidItem;
+  HICON__ *hBalloonIcon;
+
+};

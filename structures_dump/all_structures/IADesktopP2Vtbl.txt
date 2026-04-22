@@ -1,0 +1,15 @@
+// Структура: IADesktopP2Vtbl
+// Полей: 7
+// Строки в оригинале: 34196-34205
+struct IADesktopP2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IADesktopP2 *This, const IID *const riid, void **ppv);
+  ULONG (__stdcall *AddRef)(IADesktopP2 *This);
+  ULONG (__stdcall *Release)(IADesktopP2 *This);
+  HRESULT (__stdcall *ReReadWallpaper)(IADesktopP2 *This);
+  HRESULT (__stdcall *GetADObjectFlags)(IADesktopP2 *This, DWORD *pdwFlags, DWORD dwMask);
+  HRESULT (__stdcall *UpdateAllDesktopSubscriptions)(IADesktopP2 *This);
+  HRESULT (__stdcall *MakeDynamicChanges)(IADesktopP2 *This, IOleObject *pOleObj);
+
+};

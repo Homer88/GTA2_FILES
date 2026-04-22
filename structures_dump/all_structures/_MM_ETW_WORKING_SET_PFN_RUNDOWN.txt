@@ -1,0 +1,11 @@
+// Структура: _MM_ETW_WORKING_SET_PFN_RUNDOWN
+// Полей: 3
+// Строки в оригинале: 107294-107299
+struct _MM_ETW_WORKING_SET_PFN_RUNDOWN
+{
+
+  unsigned int ProcessId;
+  unsigned int EntryCount;
+  _MM_ETW_PAGE_INFO_EX WorkingSetInfo[1];
+
+};

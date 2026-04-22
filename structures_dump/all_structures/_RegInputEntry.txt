@@ -1,0 +1,13 @@
+// Структура: _RegInputEntry
+// Полей: 5
+// Строки в оригинале: 192164-192171
+struct _RegInputEntry
+{
+
+  _GUID clsid;
+  unsigned __int64 oxid;
+  _GUID ipid;
+  unsigned int dwFlags;
+  unsigned int ulServiceId;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _SEGMENT_HEAP_EXTRA
+// Полей: 5
+// Строки в оригинале: 20345-20352
+struct _SEGMENT_HEAP_EXTRA
+{
+
+  unsigned __int16 AllocationTag;
+  unsigned __int8 InterceptorIndex : 4;
+  unsigned __int8 UserFlags : 4;
+  unsigned __int8 ExtraSizeInUnits;
+  void *Settable;
+
+};

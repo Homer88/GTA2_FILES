@@ -1,0 +1,11 @@
+// Структура: _ASL_STRING_HASH_ELEMENT
+// Полей: 3
+// Строки в оригинале: 313249-313254
+struct _ASL_STRING_HASH_ELEMENT
+{
+
+  wchar_t *HashString;
+  unsigned int StringRef;
+  _ASL_STRING_HASH_ELEMENT *Next;
+
+};

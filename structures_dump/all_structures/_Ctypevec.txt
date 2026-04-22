@@ -1,0 +1,12 @@
+// Структура: _Ctypevec
+// Полей: 4
+// Строки в оригинале: 355961-355967
+struct _Ctypevec
+{
+
+  unsigned int _Page;
+  const __int16 *_Table;
+  int _Delfl;
+  wchar_t *_LocaleName;
+
+};

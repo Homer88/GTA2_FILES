@@ -1,0 +1,10 @@
+// Структура: _WMI_THREAD_INFORMATION
+// Полей: 2
+// Строки в оригинале: 309080-309084
+struct _WMI_THREAD_INFORMATION
+{
+
+  unsigned int ProcessId;
+  unsigned int ThreadId;
+
+};

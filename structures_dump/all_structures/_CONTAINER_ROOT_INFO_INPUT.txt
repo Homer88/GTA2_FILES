@@ -1,0 +1,9 @@
+// Структура: _CONTAINER_ROOT_INFO_INPUT
+// Полей: 1
+// Строки в оригинале: 98360-98363
+struct _CONTAINER_ROOT_INFO_INPUT
+{
+
+  unsigned int Flags;
+
+};

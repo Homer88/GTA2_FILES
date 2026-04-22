@@ -1,0 +1,14 @@
+// Структура: tagPROPBAG2
+// Полей: 6
+// Строки в оригинале: 42380-42388
+struct tagPROPBAG2
+{
+
+  DWORD dwType;
+  VARTYPE vt;
+  CLIPFORMAT cfType;
+  DWORD dwHint;
+  LPOLESTR pstrName;
+  CLSID clsid;
+
+};

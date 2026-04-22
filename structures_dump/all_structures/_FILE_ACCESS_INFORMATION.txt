@@ -1,0 +1,9 @@
+// Структура: _FILE_ACCESS_INFORMATION
+// Полей: 1
+// Строки в оригинале: 94020-94023
+struct _FILE_ACCESS_INFORMATION
+{
+
+  unsigned int AccessFlags;
+
+};

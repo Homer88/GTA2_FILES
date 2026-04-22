@@ -1,0 +1,10 @@
+// Структура: _ENCLAVE_CREATE_INFO_VBS_BASIC
+// Полей: 2
+// Строки в оригинале: 103113-103117
+struct _ENCLAVE_CREATE_INFO_VBS_BASIC
+{
+
+  unsigned int Flags;
+  unsigned __int8 OwnerID[32];
+
+};

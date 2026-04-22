@@ -1,0 +1,10 @@
+// Структура: _tagPROTOCOL_ARGUMENT
+// Полей: 2
+// Строки в оригинале: 108276-108280
+struct _tagPROTOCOL_ARGUMENT
+{
+
+  const wchar_t *szMethod;
+  const wchar_t *szTargetUrl;
+
+};

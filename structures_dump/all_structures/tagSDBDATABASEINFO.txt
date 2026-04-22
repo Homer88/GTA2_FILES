@@ -1,0 +1,14 @@
+// Структура: tagSDBDATABASEINFO
+// Полей: 6
+// Строки в оригинале: 313175-313183
+struct tagSDBDATABASEINFO
+{
+
+  unsigned int dwFlags;
+  unsigned int dwVersionMajor;
+  unsigned int dwVersionMinor;
+  wchar_t *pszDescription;
+  _GUID guidDB;
+  unsigned int dwRuntimePlatform;
+
+};

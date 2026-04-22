@@ -1,0 +1,11 @@
+// Структура: _SAFER_URLZONE_IDENTIFICATION
+// Полей: 3
+// Строки в оригинале: 104985-104990
+struct _SAFER_URLZONE_IDENTIFICATION
+{
+
+  _SAFER_IDENTIFICATION_HEADER header;
+  unsigned int UrlZoneId;
+  unsigned int dwSaferFlags;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _ETW_LBR_ENTRY
+// Полей: 3
+// Строки в оригинале: 309743-309748
+struct _ETW_LBR_ENTRY
+{
+
+  void *FromAddress;
+  void *ToAddress;
+  void *Reserved;
+
+};

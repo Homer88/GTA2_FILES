@@ -1,0 +1,15 @@
+// Структура: IConditionFactoryVtbl
+// Полей: 7
+// Строки в оригинале: 39614-39623
+struct IConditionFactoryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IConditionFactory *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IConditionFactory *This);
+  ULONG (__stdcall *Release)(IConditionFactory *This);
+  HRESULT (__stdcall *MakeNot)(IConditionFactory *This, ICondition *pcSub, BOOL fSimplify, ICondition **ppcResult);
+  HRESULT (__stdcall *MakeAndOr)(IConditionFactory *This, CONDITION_TYPE ct, IEnumUnknown *peuSubs, BOOL fSimplify, ICondition **ppcResult);
+  HRESULT (__stdcall *MakeLeaf)(IConditionFactory *This, LPCWSTR pszPropertyName, CONDITION_OPERATION cop, LPCWSTR pszValueType, const PROPVARIANT *ppropvar, IRichChunk *pPropertyNameTerm, IRichChunk *pOperationTerm, IRichChunk *pValueTerm, BOOL fExpand, ICondition **ppcResult);
+  HRESULT (__stdcall *Resolve)(IConditionFactory *This, ICondition *pc, STRUCTURED_QUERY_RESOLVE_OPTION sqro, const SYSTEMTIME *pstReferenceTime, ICondition **ppcResolved);
+
+};

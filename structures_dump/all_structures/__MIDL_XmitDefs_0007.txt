@@ -1,0 +1,13 @@
+// Структура: __MIDL_XmitDefs_0007
+// Полей: 5
+// Строки в оригинале: 314388-314395
+struct __MIDL_XmitDefs_0007
+{
+
+  __MIDL_XmitDefs_0006 pointOfFailure;
+  HRESULT hrFailure;
+  unsigned int sizeOfMarshaledErrorInfo;
+  unsigned int reserved;
+  unsigned __int8 *pMarshaledErrorInfo;
+
+};

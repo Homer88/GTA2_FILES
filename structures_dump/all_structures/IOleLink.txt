@@ -1,0 +1,9 @@
+// Структура: IOleLink
+// Полей: 1
+// Строки в оригинале: 28362-28365
+struct IOleLink
+{
+
+  struct IOleLinkVtbl *lpVtbl;
+
+};

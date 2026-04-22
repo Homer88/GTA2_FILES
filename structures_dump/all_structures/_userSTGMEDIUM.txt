@@ -1,0 +1,9 @@
+// Структура: _userSTGMEDIUM
+// Полей: 1
+// Строки в оригинале: 86720-86723
+struct _userSTGMEDIUM
+{
+
+  IUnknown *pUnkForRelease;
+
+};

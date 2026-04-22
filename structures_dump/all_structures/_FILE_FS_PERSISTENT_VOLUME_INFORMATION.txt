@@ -1,0 +1,12 @@
+// Структура: _FILE_FS_PERSISTENT_VOLUME_INFORMATION
+// Полей: 4
+// Строки в оригинале: 85412-85418
+struct _FILE_FS_PERSISTENT_VOLUME_INFORMATION
+{
+
+  unsigned int VolumeFlags;
+  unsigned int FlagMask;
+  unsigned int Version;
+  unsigned int Reserved;
+
+};

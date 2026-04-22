@@ -1,0 +1,9 @@
+// Структура: STARTING_LCN_INPUT_BUFFER
+// Полей: 1
+// Строки в оригинале: 101714-101717
+struct STARTING_LCN_INPUT_BUFFER
+{
+
+  _LARGE_INTEGER StartingLcn;
+
+};

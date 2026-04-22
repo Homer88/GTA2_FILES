@@ -1,0 +1,10 @@
+// Структура: _FILE_ATTRIBUTE_TAG_INFO
+// Полей: 2
+// Строки в оригинале: 103251-103255
+struct _FILE_ATTRIBUTE_TAG_INFO
+{
+
+  unsigned int FileAttributes;
+  unsigned int ReparseTag;
+
+};

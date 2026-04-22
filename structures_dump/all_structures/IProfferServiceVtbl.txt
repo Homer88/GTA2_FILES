@@ -1,0 +1,13 @@
+// Структура: IProfferServiceVtbl
+// Полей: 5
+// Строки в оригинале: 32783-32790
+struct IProfferServiceVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IProfferService *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IProfferService *This);
+  ULONG (__stdcall *Release)(IProfferService *This);
+  HRESULT (__stdcall *ProfferService)(IProfferService *This, const GUID *const guidService, IServiceProvider *psp, DWORD *pdwCookie);
+  HRESULT (__stdcall *RevokeService)(IProfferService *This, DWORD dwCookie);
+
+};

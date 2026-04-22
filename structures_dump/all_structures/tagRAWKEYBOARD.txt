@@ -1,0 +1,14 @@
+// Структура: tagRAWKEYBOARD
+// Полей: 6
+// Строки в оригинале: 93304-93312
+struct tagRAWKEYBOARD
+{
+
+  unsigned __int16 MakeCode;
+  unsigned __int16 Flags;
+  unsigned __int16 Reserved;
+  unsigned __int16 VKey;
+  unsigned int Message;
+  unsigned int ExtraInformation;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _SecPkgContext_AccessToken
+// Полей: 1
+// Строки в оригинале: 323700-323703
+struct _SecPkgContext_AccessToken
+{
+
+  void *AccessToken;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _FILE_REFERENCE_RANGE
+// Полей: 2
+// Строки в оригинале: 88514-88518
+struct _FILE_REFERENCE_RANGE
+{
+
+  unsigned __int64 StartingFileReferenceNumber;
+  unsigned __int64 EndingFileReferenceNumber;
+
+};

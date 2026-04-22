@@ -1,0 +1,12 @@
+// Структура: _SYSTEM_FEATURE_CONFIGURATION_UPDATE
+// Полей: 4
+// Строки в оригинале: 83667-83673
+struct _SYSTEM_FEATURE_CONFIGURATION_UPDATE
+{
+
+  unsigned __int64 PreviousChangeStamp;
+  _RTL_FEATURE_CONFIGURATION_TYPE ConfigurationType;
+  unsigned int UpdateCount;
+  _RTL_FEATURE_CONFIGURATION_UPDATE Updates[1];
+
+};

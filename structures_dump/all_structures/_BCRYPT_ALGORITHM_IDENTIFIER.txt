@@ -1,0 +1,11 @@
+// Структура: _BCRYPT_ALGORITHM_IDENTIFIER
+// Полей: 3
+// Строки в оригинале: 88168-88173
+struct _BCRYPT_ALGORITHM_IDENTIFIER
+{
+
+  wchar_t *pszName;
+  unsigned int dwClass;
+  unsigned int dwFlags;
+
+};

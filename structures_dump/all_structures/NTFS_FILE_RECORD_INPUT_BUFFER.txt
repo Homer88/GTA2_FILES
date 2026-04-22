@@ -1,0 +1,9 @@
+// Структура: NTFS_FILE_RECORD_INPUT_BUFFER
+// Полей: 1
+// Строки в оригинале: 109827-109830
+struct NTFS_FILE_RECORD_INPUT_BUFFER
+{
+
+  _LARGE_INTEGER FileReferenceNumber;
+
+};

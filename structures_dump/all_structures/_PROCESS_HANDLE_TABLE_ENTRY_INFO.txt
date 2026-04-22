@@ -1,0 +1,15 @@
+// Структура: _PROCESS_HANDLE_TABLE_ENTRY_INFO
+// Полей: 7
+// Строки в оригинале: 80583-80592
+struct _PROCESS_HANDLE_TABLE_ENTRY_INFO
+{
+
+  void *HandleValue;
+  unsigned int HandleCount;
+  unsigned int PointerCount;
+  unsigned int GrantedAccess;
+  unsigned int ObjectTypeIndex;
+  unsigned int HandleAttributes;
+  unsigned int Reserved;
+
+};

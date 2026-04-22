@@ -1,0 +1,13 @@
+// Структура: _ISRDPCSTATS_SEQUENCE
+// Полей: 5
+// Строки в оригинале: 15226-15233
+struct _ISRDPCSTATS_SEQUENCE
+{
+
+  unsigned int SequenceNumber;
+  unsigned __int64 IsrTime;
+  unsigned __int64 IsrCount;
+  unsigned __int64 DpcTime;
+  unsigned __int64 DpcCount;
+
+};

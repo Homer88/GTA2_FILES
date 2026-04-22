@@ -1,0 +1,9 @@
+// Структура: _FILE_PIPE_EVENT_ENUM_INPUT_BUFFER
+// Полей: 1
+// Строки в оригинале: 88262-88265
+struct _FILE_PIPE_EVENT_ENUM_INPUT_BUFFER
+{
+
+  unsigned __int64 EventHandle;
+
+};

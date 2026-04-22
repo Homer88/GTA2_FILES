@@ -1,0 +1,9 @@
+// Структура: ITaskbarList3
+// Полей: 1
+// Строки в оригинале: 41497-41500
+struct ITaskbarList3
+{
+
+  struct ITaskbarList3Vtbl *lpVtbl;
+
+};

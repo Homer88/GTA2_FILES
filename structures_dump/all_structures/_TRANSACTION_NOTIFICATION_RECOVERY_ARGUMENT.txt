@@ -1,0 +1,10 @@
+// Структура: _TRANSACTION_NOTIFICATION_RECOVERY_ARGUMENT
+// Полей: 2
+// Строки в оригинале: 97454-97458
+struct _TRANSACTION_NOTIFICATION_RECOVERY_ARGUMENT
+{
+
+  _GUID EnlistmentId;
+  _GUID UOW;
+
+};

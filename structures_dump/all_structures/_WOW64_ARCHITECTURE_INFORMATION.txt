@@ -1,0 +1,14 @@
+// Структура: _WOW64_ARCHITECTURE_INFORMATION
+// Полей: 6
+// Строки в оригинале: 111363-111371
+struct _WOW64_ARCHITECTURE_INFORMATION
+{
+
+  unsigned __int32 Machine : 16;
+  unsigned __int32 KernelMode : 1;
+  unsigned __int32 UserMode : 1;
+  unsigned __int32 Native : 1;
+  unsigned __int32 Process : 1;
+  unsigned __int32 ReservedZero0 : 12;
+
+};

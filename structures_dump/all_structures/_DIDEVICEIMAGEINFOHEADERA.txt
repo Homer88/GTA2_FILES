@@ -1,0 +1,17 @@
+// Структура: _DIDEVICEIMAGEINFOHEADERA
+// Полей: 9
+// Строки в оригинале: 29527-29538
+struct _DIDEVICEIMAGEINFOHEADERA
+{
+
+  DWORD dwSize;
+  DWORD dwSizeImageInfo;
+  DWORD dwcViews;
+  DWORD dwcButtons;
+  DWORD dwcAxes;
+  DWORD dwcPOVs;
+  DWORD dwBufferSize;
+  DWORD dwBufferUsed;
+  LPDIDEVICEIMAGEINFOA lprgImageInfoArray;
+
+};

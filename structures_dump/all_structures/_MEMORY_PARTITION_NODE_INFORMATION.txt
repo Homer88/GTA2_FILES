@@ -1,0 +1,11 @@
+// Структура: _MEMORY_PARTITION_NODE_INFORMATION
+// Полей: 3
+// Строки в оригинале: 94059-94064
+struct _MEMORY_PARTITION_NODE_INFORMATION
+{
+
+  unsigned int NumaNodeCount;
+  unsigned int Flags;
+  _MEMORY_PARTITION_NODE_PAGE_INFORMATION *NodePageInformation;
+
+};

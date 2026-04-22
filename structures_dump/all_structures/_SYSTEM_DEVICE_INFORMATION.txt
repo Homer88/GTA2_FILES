@@ -1,0 +1,14 @@
+// Структура: _SYSTEM_DEVICE_INFORMATION
+// Полей: 6
+// Строки в оригинале: 112273-112281
+struct _SYSTEM_DEVICE_INFORMATION
+{
+
+  unsigned int NumberOfDisks;
+  unsigned int NumberOfFloppies;
+  unsigned int NumberOfCdRoms;
+  unsigned int NumberOfTapes;
+  unsigned int NumberOfSerialPorts;
+  unsigned int NumberOfParallelPorts;
+
+};

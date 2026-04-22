@@ -1,0 +1,9 @@
+// Структура: _PROCESS_REVOKE_FILE_HANDLES_INFORMATION
+// Полей: 1
+// Строки в оригинале: 82507-82510
+struct _PROCESS_REVOKE_FILE_HANDLES_INFORMATION
+{
+
+  _UNICODE_STRING TargetDevicePath;
+
+};

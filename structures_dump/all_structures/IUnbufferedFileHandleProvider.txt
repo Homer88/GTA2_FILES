@@ -1,0 +1,9 @@
+// Структура: IUnbufferedFileHandleProvider
+// Полей: 1
+// Строки в оригинале: 352388-352391
+struct IUnbufferedFileHandleProvider
+{
+
+  struct IUnbufferedFileHandleProviderVtbl *lpVtbl;
+
+};

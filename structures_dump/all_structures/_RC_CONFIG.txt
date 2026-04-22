@@ -1,0 +1,35 @@
+// Структура: _RC_CONFIG
+// Полей: 27
+// Строки в оригинале: 100604-100633
+struct _RC_CONFIG
+{
+
+  unsigned int dwSignature;
+  unsigned int dwLength;
+  unsigned int dwRCConfigVersion;
+  unsigned int dwFilePathType;
+  unsigned int dwFileType;
+  unsigned int dwSystemAttributes;
+  unsigned int dwUltimateFallbackLocation;
+  unsigned int dwServiceCheckSum[4];
+  unsigned int dwChecksum[4];
+  unsigned int dwReserved1;
+  unsigned int dwReserved2;
+  unsigned int dwMUIFileNameOffset;
+  unsigned int dwMUIFileNameLength;
+  unsigned int dwMUIFilePathOffset;
+  unsigned int dwMUIFilePathLength;
+  unsigned int dwMainResNameTypesOffset;
+  unsigned int dwMainResNameTypesLength;
+  unsigned int dwMainResIDTypesOffset;
+  unsigned int dwMainResIDTypesLength;
+  unsigned int dwMUIResNameTypesOffset;
+  unsigned int dwMUIResNameTypesLength;
+  unsigned int dwMUIResIDTypesOffset;
+  unsigned int dwMUIResIDTypesLength;
+  unsigned int dwLanguageOffset;
+  unsigned int dwLanguageLength;
+  unsigned int dwUltimateFallbackLanguageOffset;
+  unsigned int dwUltimateFallbackLanguageLength;
+
+};

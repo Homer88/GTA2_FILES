@@ -1,0 +1,22 @@
+// Структура: ITravelLogVtbl
+// Полей: 14
+// Строки в оригинале: 39457-39473
+struct ITravelLogVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITravelLog *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITravelLog *This);
+  ULONG (__stdcall *Release)(ITravelLog *This);
+  HRESULT (__stdcall *AddEntry)(ITravelLog *This, IUnknown *punk, BOOL fIsLocalAnchor);
+  HRESULT (__stdcall *UpdateEntry)(ITravelLog *This, IUnknown *punk, BOOL fIsLocalAnchor);
+  HRESULT (__stdcall *UpdateExternal)(ITravelLog *This, IUnknown *punk, IUnknown *punkHLBrowseContext);
+  HRESULT (__stdcall *Travel)(ITravelLog *This, IUnknown *punk, int iOffset);
+  HRESULT (__stdcall *GetTravelEntry)(ITravelLog *This, IUnknown *punk, int iOffset, ITravelEntry **ppte);
+  HRESULT (__stdcall *FindTravelEntry)(ITravelLog *This, IUnknown *punk, LPCITEMIDLIST pidl, ITravelEntry **ppte);
+  HRESULT (__stdcall *GetToolTipText)(ITravelLog *This, IUnknown *punk, int iOffset, int idsTemplate, LPWSTR pwzText, DWORD cchText);
+  HRESULT (__stdcall *InsertMenuEntries)(ITravelLog *This, IUnknown *punk, HMENU hmenu, int nPos, int idFirst, int idLast, DWORD dwFlags);
+  HRESULT (__stdcall *Clone)(ITravelLog *This, ITravelLog **pptl);
+  DWORD (__stdcall *CountEntries)(ITravelLog *This, IUnknown *punk);
+  HRESULT (__stdcall *Revert)(ITravelLog *This);
+
+};

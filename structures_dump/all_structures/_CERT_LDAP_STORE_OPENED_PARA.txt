@@ -1,0 +1,10 @@
+// Структура: _CERT_LDAP_STORE_OPENED_PARA
+// Полей: 2
+// Строки в оригинале: 89989-89993
+struct _CERT_LDAP_STORE_OPENED_PARA
+{
+
+  void *pvLdapSessionHandle;
+  const wchar_t *pwszLdapUrl;
+
+};

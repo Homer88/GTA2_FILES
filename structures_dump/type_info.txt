@@ -1,0 +1,10 @@
+// Structure: type_info
+// Lines: 5778 - 5783
+// Fields: 4
+
+struct type_info
+{
+  _UNKNOWN *vfptr __off;
+  int _M_data;
+  char _M_d_name[] __strlit(C,"UTF-8");
+};

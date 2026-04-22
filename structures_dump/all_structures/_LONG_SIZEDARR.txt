@@ -1,0 +1,10 @@
+// Структура: _LONG_SIZEDARR
+// Полей: 2
+// Строки в оригинале: 83776-83780
+struct _LONG_SIZEDARR
+{
+
+  unsigned int clSize;
+  unsigned int *pData;
+
+};

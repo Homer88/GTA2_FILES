@@ -1,0 +1,13 @@
+// Структура: _ETW_AUTOBOOST_SET_PRIORITY_FLOOR_EVENT
+// Полей: 5
+// Строки в оригинале: 311378-311385
+struct _ETW_AUTOBOOST_SET_PRIORITY_FLOOR_EVENT
+{
+
+  void *Lock;
+  unsigned int ThreadId;
+  char NewCpuPriorityFloor;
+  char OldCpuPriority;
+  $3FF82BB0F2C0DDDC37AA92C378EC2227 ___u4;
+
+};

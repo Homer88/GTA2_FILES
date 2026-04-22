@@ -1,0 +1,12 @@
+// Структура: _DUPLICATE_EXTENTS_DATA
+// Полей: 4
+// Строки в оригинале: 80876-80882
+struct _DUPLICATE_EXTENTS_DATA
+{
+
+  void *FileHandle;
+  _LARGE_INTEGER SourceFileOffset;
+  _LARGE_INTEGER TargetFileOffset;
+  _LARGE_INTEGER ByteCount;
+
+};

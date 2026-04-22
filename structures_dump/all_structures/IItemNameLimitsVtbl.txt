@@ -1,0 +1,13 @@
+// Структура: IItemNameLimitsVtbl
+// Полей: 5
+// Строки в оригинале: 40679-40686
+struct IItemNameLimitsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IItemNameLimits *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IItemNameLimits *This);
+  ULONG (__stdcall *Release)(IItemNameLimits *This);
+  HRESULT (__stdcall *GetValidCharacters)(IItemNameLimits *This, LPWSTR *ppwszValidChars, LPWSTR *ppwszInvalidChars);
+  HRESULT (__stdcall *GetMaxLength)(IItemNameLimits *This, LPCWSTR pszName, int *piMaxNameLen);
+
+};

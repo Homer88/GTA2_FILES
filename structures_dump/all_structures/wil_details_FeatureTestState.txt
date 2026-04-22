@@ -1,0 +1,15 @@
+// Структура: wil_details_FeatureTestState
+// Полей: 7
+// Строки в оригинале: 142437-142446
+struct wil_details_FeatureTestState
+{
+
+  wil_details_FeatureTestStateKind kind;
+  unsigned int featureId;
+  wil_FeatureEnabledState state;
+  unsigned __int8 variant;
+  unsigned int payload;
+  wil_FeatureVariantPayloadKind payloadKind;
+  wil_details_FeatureTestState *next;
+
+};

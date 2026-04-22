@@ -1,0 +1,10 @@
+// Структура: _FILE_COMPLETION_INFORMATION
+// Полей: 2
+// Строки в оригинале: 88713-88717
+struct _FILE_COMPLETION_INFORMATION
+{
+
+  void *Port;
+  void *Key;
+
+};

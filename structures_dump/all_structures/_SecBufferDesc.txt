@@ -1,0 +1,11 @@
+// Структура: _SecBufferDesc
+// Полей: 3
+// Строки в оригинале: 323692-323697
+struct _SecBufferDesc
+{
+
+  unsigned int ulVersion;
+  unsigned int cBuffers;
+  _SecBuffer *pBuffers;
+
+};

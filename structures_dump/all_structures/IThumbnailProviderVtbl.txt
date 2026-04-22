@@ -1,0 +1,12 @@
+// Структура: IThumbnailProviderVtbl
+// Полей: 4
+// Строки в оригинале: 35636-35642
+struct IThumbnailProviderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IThumbnailProvider *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IThumbnailProvider *This);
+  ULONG (__stdcall *Release)(IThumbnailProvider *This);
+  HRESULT (__stdcall *GetThumbnail)(IThumbnailProvider *This, UINT cx, HBITMAP *phbmp, WTS_ALPHATYPE *pdwAlpha);
+
+};

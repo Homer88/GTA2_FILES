@@ -1,0 +1,21 @@
+// Структура: _CM_EISA_FUNCTION_INFORMATION
+// Полей: 13
+// Строки в оригинале: 94514-94529
+struct _CM_EISA_FUNCTION_INFORMATION
+{
+
+  unsigned int CompressedId;
+  unsigned __int8 IdSlotFlags1;
+  unsigned __int8 IdSlotFlags2;
+  unsigned __int8 MinorRevision;
+  unsigned __int8 MajorRevision;
+  unsigned __int8 Selections[26];
+  unsigned __int8 FunctionFlags;
+  unsigned __int8 TypeString[80];
+  _EISA_MEMORY_CONFIGURATION EisaMemory[9];
+  _EISA_IRQ_CONFIGURATION EisaIrq[7];
+  _EISA_DMA_CONFIGURATION EisaDma[4];
+  _EISA_PORT_CONFIGURATION EisaPort[20];
+  unsigned __int8 InitializationData[60];
+
+};

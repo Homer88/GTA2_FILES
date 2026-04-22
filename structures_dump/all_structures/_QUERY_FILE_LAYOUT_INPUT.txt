@@ -1,0 +1,13 @@
+// Структура: _QUERY_FILE_LAYOUT_INPUT
+// Полей: 5
+// Строки в оригинале: 97942-97949
+struct _QUERY_FILE_LAYOUT_INPUT
+{
+
+  $36D6AD47CBDA5D8E312F766B6852827F ___u0;
+  unsigned int Flags;
+  _QUERY_FILE_LAYOUT_FILTER_TYPE FilterType;
+  unsigned int Reserved;
+  _QUERY_FILE_LAYOUT_INPUT::<unnamed_type_Filter> Filter;
+
+};

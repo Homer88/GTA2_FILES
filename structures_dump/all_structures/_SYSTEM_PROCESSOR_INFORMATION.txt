@@ -1,0 +1,13 @@
+// Структура: _SYSTEM_PROCESSOR_INFORMATION
+// Полей: 5
+// Строки в оригинале: 98449-98456
+struct _SYSTEM_PROCESSOR_INFORMATION
+{
+
+  unsigned __int16 ProcessorArchitecture;
+  unsigned __int16 ProcessorLevel;
+  unsigned __int16 ProcessorRevision;
+  unsigned __int16 MaximumProcessors;
+  unsigned int ProcessorFeatureBits;
+
+};

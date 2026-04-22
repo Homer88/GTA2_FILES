@@ -1,0 +1,11 @@
+// Структура: _APPCATEGORYINFO
+// Полей: 3
+// Строки в оригинале: 91944-91949
+struct _APPCATEGORYINFO
+{
+
+  unsigned int Locale;
+  wchar_t *pszDescription;
+  _GUID AppCategoryId;
+
+};

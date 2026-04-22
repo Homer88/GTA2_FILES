@@ -1,0 +1,13 @@
+// Структура: IOleWindowVtbl
+// Полей: 5
+// Строки в оригинале: 27707-27714
+struct IOleWindowVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleWindow *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleWindow *This);
+  ULONG (__stdcall *Release)(IOleWindow *This);
+  HRESULT (__stdcall *GetWindow)(IOleWindow *This, HWND *phwnd);
+  HRESULT (__stdcall *ContextSensitiveHelp)(IOleWindow *This, BOOL fEnterMode);
+
+};

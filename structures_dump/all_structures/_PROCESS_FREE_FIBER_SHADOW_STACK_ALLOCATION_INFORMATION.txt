@@ -1,0 +1,9 @@
+// Структура: _PROCESS_FREE_FIBER_SHADOW_STACK_ALLOCATION_INFORMATION
+// Полей: 1
+// Строки в оригинале: 91927-91930
+struct _PROCESS_FREE_FIBER_SHADOW_STACK_ALLOCATION_INFORMATION
+{
+
+  void *Ssp;
+
+};

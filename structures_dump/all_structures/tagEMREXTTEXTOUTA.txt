@@ -1,0 +1,14 @@
+// Структура: tagEMREXTTEXTOUTA
+// Полей: 6
+// Строки в оригинале: 91892-91900
+struct tagEMREXTTEXTOUTA
+{
+
+  tagEMR emr;
+  _RECTL rclBounds;
+  unsigned int iGraphicsMode;
+  float exScale;
+  float eyScale;
+  tagEMRTEXT emrtext;
+
+};

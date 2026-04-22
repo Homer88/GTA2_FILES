@@ -1,0 +1,13 @@
+// Структура: _PERFINFO_IPI_SEND_DATA
+// Полей: 5
+// Строки в оригинале: 313307-313314
+struct _PERFINFO_IPI_SEND_DATA
+{
+
+  unsigned __int64 InitialTime;
+  void *WorkerRoutine;
+  unsigned int RequestType;
+  unsigned int IpiType;
+  unsigned int TargetCount;
+
+};

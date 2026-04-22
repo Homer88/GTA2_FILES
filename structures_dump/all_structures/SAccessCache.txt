@@ -1,0 +1,10 @@
+// Структура: SAccessCache
+// Полей: 2
+// Строки в оригинале: 241682-241686
+struct SAccessCache
+{
+
+  int fAccess;
+  _LUID lClient;
+
+};

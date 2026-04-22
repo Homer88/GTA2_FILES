@@ -1,0 +1,16 @@
+// Структура: IHTMLDocumentVtbl
+// Полей: 8
+// Строки в оригинале: 36913-36923
+struct IHTMLDocumentVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLDocument *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLDocument *This);
+  ULONG (__stdcall *Release)(IHTMLDocument *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLDocument *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLDocument *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLDocument *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLDocument *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Script)(IHTMLDocument *This, IDispatch **p);
+
+};

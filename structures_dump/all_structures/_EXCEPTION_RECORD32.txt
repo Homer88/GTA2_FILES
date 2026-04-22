@@ -1,0 +1,14 @@
+// Структура: _EXCEPTION_RECORD32
+// Полей: 6
+// Строки в оригинале: 85616-85624
+struct _EXCEPTION_RECORD32
+{
+
+  int ExceptionCode;
+  unsigned int ExceptionFlags;
+  unsigned int ExceptionRecord;
+  unsigned int ExceptionAddress;
+  unsigned int NumberParameters;
+  unsigned int ExceptionInformation[15];
+
+};

@@ -1,0 +1,9 @@
+// Структура: IMarshal
+// Полей: 1
+// Строки в оригинале: 30041-30044
+struct IMarshal
+{
+
+  struct IMarshalVtbl *lpVtbl;
+
+};

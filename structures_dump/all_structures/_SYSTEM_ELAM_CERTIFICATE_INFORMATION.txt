@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_ELAM_CERTIFICATE_INFORMATION
+// Полей: 1
+// Строки в оригинале: 92301-92304
+struct _SYSTEM_ELAM_CERTIFICATE_INFORMATION
+{
+
+  void *ElamDriverFile;
+
+};

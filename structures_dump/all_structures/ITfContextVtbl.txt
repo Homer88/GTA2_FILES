@@ -1,0 +1,26 @@
+// Структура: ITfContextVtbl
+// Полей: 18
+// Строки в оригинале: 30265-30285
+struct ITfContextVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfContext *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfContext *This);
+  ULONG (__stdcall *Release)(ITfContext *This);
+  HRESULT (__stdcall *RequestEditSession)(ITfContext *This, TfClientId tid, ITfEditSession *pes, DWORD dwFlags, HRESULT *phrSession);
+  HRESULT (__stdcall *InWriteSession)(ITfContext *This, TfClientId tid, BOOL *pfWriteSession);
+  HRESULT (__stdcall *GetSelection)(ITfContext *This, TfEditCookie ec, ULONG ulIndex, ULONG ulCount, TF_SELECTION *pSelection, ULONG *pcFetched);
+  HRESULT (__stdcall *SetSelection)(ITfContext *This, TfEditCookie ec, ULONG ulCount, const TF_SELECTION *pSelection);
+  HRESULT (__stdcall *GetStart)(ITfContext *This, TfEditCookie ec, ITfRange **ppStart);
+  HRESULT (__stdcall *GetEnd)(ITfContext *This, TfEditCookie ec, ITfRange **ppEnd);
+  HRESULT (__stdcall *GetActiveView)(ITfContext *This, ITfContextView **ppView);
+  HRESULT (__stdcall *EnumViews)(ITfContext *This, IEnumTfContextViews **ppEnum);
+  HRESULT (__stdcall *GetStatus)(ITfContext *This, TF_STATUS *pdcs);
+  HRESULT (__stdcall *GetProperty)(ITfContext *This, const GUID *const guidProp, ITfProperty **ppProp);
+  HRESULT (__stdcall *GetAppProperty)(ITfContext *This, const GUID *const guidProp, ITfReadOnlyProperty **ppProp);
+  HRESULT (__stdcall *TrackProperties)(ITfContext *This, const GUID **prgProp, ULONG cProp, const GUID **prgAppProp, ULONG cAppProp, ITfReadOnlyProperty **ppProperty);
+  HRESULT (__stdcall *EnumProperties)(ITfContext *This, IEnumTfProperties **ppEnum);
+  HRESULT (__stdcall *GetDocumentMgr)(ITfContext *This, ITfDocumentMgr **ppDm);
+  HRESULT (__stdcall *CreateRangeBackup)(ITfContext *This, TfEditCookie ec, ITfRange *pRange, ITfRangeBackup **ppBackup);
+
+};

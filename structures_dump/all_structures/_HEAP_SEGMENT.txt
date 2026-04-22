@@ -1,0 +1,22 @@
+// Структура: _HEAP_SEGMENT
+// Полей: 14
+// Строки в оригинале: 20950-20966
+struct _HEAP_SEGMENT
+{
+
+  _HEAP_ENTRY Entry;
+  unsigned int SegmentSignature;
+  unsigned int SegmentFlags;
+  _LIST_ENTRY SegmentListEntry;
+  _HEAP *Heap;
+  void *BaseAddress;
+  unsigned int NumberOfPages;
+  _HEAP_ENTRY *FirstEntry;
+  _HEAP_ENTRY *LastValidEntry;
+  unsigned int NumberOfUnCommittedPages;
+  unsigned int NumberOfUnCommittedRanges;
+  unsigned __int16 SegmentAllocatorBackTraceIndex;
+  unsigned __int16 Reserved;
+  _LIST_ENTRY UCRSegmentList;
+
+};

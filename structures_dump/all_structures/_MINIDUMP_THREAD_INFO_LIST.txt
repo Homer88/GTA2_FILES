@@ -1,0 +1,11 @@
+// Структура: _MINIDUMP_THREAD_INFO_LIST
+// Полей: 3
+// Строки в оригинале: 121759-121764
+struct _MINIDUMP_THREAD_INFO_LIST
+{
+
+  unsigned int SizeOfHeader;
+  unsigned int SizeOfEntry;
+  unsigned int NumberOfEntries;
+
+};

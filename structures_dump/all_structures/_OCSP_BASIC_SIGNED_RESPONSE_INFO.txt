@@ -1,0 +1,10 @@
+// Структура: _OCSP_BASIC_SIGNED_RESPONSE_INFO
+// Полей: 2
+// Строки в оригинале: 105125-105129
+struct _OCSP_BASIC_SIGNED_RESPONSE_INFO
+{
+
+  _CRYPTOAPI_BLOB ToBeSigned;
+  _OCSP_SIGNATURE_INFO SignatureInfo;
+
+};

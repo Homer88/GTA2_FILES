@@ -1,0 +1,10 @@
+// Структура: tagSTICKYKEYS
+// Полей: 2
+// Строки в оригинале: 105530-105534
+struct tagSTICKYKEYS
+{
+
+  unsigned int cbSize;
+  unsigned int dwFlags;
+
+};

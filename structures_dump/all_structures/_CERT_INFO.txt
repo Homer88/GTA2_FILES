@@ -1,0 +1,20 @@
+// Структура: _CERT_INFO
+// Полей: 12
+// Строки в оригинале: 59430-59444
+struct _CERT_INFO
+{
+
+  unsigned int dwVersion;
+  _CRYPTOAPI_BLOB SerialNumber;
+  _CRYPT_ALGORITHM_IDENTIFIER SignatureAlgorithm;
+  _CRYPTOAPI_BLOB Issuer;
+  _FILETIME NotBefore;
+  _FILETIME NotAfter;
+  _CRYPTOAPI_BLOB Subject;
+  _CERT_PUBLIC_KEY_INFO SubjectPublicKeyInfo;
+  _CRYPT_BIT_BLOB IssuerUniqueId;
+  _CRYPT_BIT_BLOB SubjectUniqueId;
+  unsigned int cExtension;
+  _CERT_EXTENSION *rgExtension;
+
+};

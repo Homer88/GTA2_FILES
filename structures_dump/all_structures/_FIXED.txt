@@ -1,0 +1,10 @@
+// Структура: _FIXED
+// Полей: 2
+// Строки в оригинале: 85872-85876
+struct _FIXED
+{
+
+  unsigned __int16 fract;
+  __int16 value;
+
+};

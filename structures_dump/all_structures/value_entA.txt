@@ -1,0 +1,12 @@
+// Структура: value_entA
+// Полей: 4
+// Строки в оригинале: 101555-101561
+struct value_entA
+{
+
+  char *ve_valuename;
+  unsigned int ve_valuelen;
+  unsigned int ve_valueptr;
+  unsigned int ve_type;
+
+};

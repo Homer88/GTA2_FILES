@@ -1,0 +1,16 @@
+// Structure: _FLOATING_SAVE_AREA
+// Lines: 2281 - 2292
+// Fields: 10
+
+struct _FLOATING_SAVE_AREA
+{
+  DWORD ControlWord;
+  DWORD StatusWord;
+  DWORD TagWord;
+  DWORD ErrorOffset;
+  DWORD ErrorSelector;
+  DWORD DataOffset;
+  DWORD DataSelector;
+  BYTE RegisterArea[80];
+  DWORD Spare0;
+};

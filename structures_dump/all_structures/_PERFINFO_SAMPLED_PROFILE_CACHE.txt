@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_SAMPLED_PROFILE_CACHE
+// Полей: 2
+// Строки в оригинале: 312507-312511
+struct _PERFINFO_SAMPLED_PROFILE_CACHE
+{
+
+  unsigned int Entries;
+  _PERFINFO_SAMPLED_PROFILE_INFORMATION Sample[20];
+
+};

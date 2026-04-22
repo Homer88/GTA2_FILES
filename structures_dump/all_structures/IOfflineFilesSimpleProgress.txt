@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesSimpleProgress
+// Полей: 1
+// Строки в оригинале: 27668-27671
+struct IOfflineFilesSimpleProgress
+{
+
+  struct IOfflineFilesSimpleProgressVtbl *lpVtbl;
+
+};

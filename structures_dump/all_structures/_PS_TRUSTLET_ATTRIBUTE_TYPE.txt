@@ -1,0 +1,9 @@
+// Структура: _PS_TRUSTLET_ATTRIBUTE_TYPE
+// Полей: 1
+// Строки в оригинале: 16035-16038
+struct _PS_TRUSTLET_ATTRIBUTE_TYPE
+{
+
+  $9FA03B873F64DDB3F1827FC300AF9E2D ___u0;
+
+};

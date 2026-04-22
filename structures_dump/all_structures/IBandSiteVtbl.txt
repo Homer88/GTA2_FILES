@@ -1,0 +1,19 @@
+// Структура: IBandSiteVtbl
+// Полей: 11
+// Строки в оригинале: 32850-32863
+struct IBandSiteVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IBandSite *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IBandSite *This);
+  ULONG (__stdcall *Release)(IBandSite *This);
+  HRESULT (__stdcall *AddBand)(IBandSite *This, IUnknown *punk);
+  HRESULT (__stdcall *EnumBands)(IBandSite *This, UINT uBand, DWORD *pdwBandID);
+  HRESULT (__stdcall *QueryBand)(IBandSite *This, DWORD dwBandID, IDeskBand **ppstb, DWORD *pdwState, LPWSTR pszName, int cchName);
+  HRESULT (__stdcall *SetBandState)(IBandSite *This, DWORD dwBandID, DWORD dwMask, DWORD dwState);
+  HRESULT (__stdcall *RemoveBand)(IBandSite *This, DWORD dwBandID);
+  HRESULT (__stdcall *GetBandObject)(IBandSite *This, DWORD dwBandID, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *SetBandSiteInfo)(IBandSite *This, const BANDSITEINFO *pbsinfo);
+  HRESULT (__stdcall *GetBandSiteInfo)(IBandSite *This, BANDSITEINFO *pbsinfo);
+
+};

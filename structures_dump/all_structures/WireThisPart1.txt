@@ -1,0 +1,13 @@
+// Структура: WireThisPart1
+// Полей: 5
+// Строки в оригинале: 63821-63828
+struct WireThisPart1
+{
+
+  tagCOMVERSION version;
+  unsigned int flags;
+  unsigned int reserved1;
+  _GUID cid;
+  unsigned int unique;
+
+};

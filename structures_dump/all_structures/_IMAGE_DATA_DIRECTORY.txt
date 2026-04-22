@@ -1,0 +1,10 @@
+// Структура: _IMAGE_DATA_DIRECTORY
+// Полей: 2
+// Строки в оригинале: 12873-12877
+struct _IMAGE_DATA_DIRECTORY
+{
+
+  unsigned int VirtualAddress;
+  unsigned int Size;
+
+};

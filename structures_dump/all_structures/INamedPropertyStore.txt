@@ -1,0 +1,9 @@
+// Структура: INamedPropertyStore
+// Полей: 1
+// Строки в оригинале: 35685-35688
+struct INamedPropertyStore
+{
+
+  struct INamedPropertyStoreVtbl *lpVtbl;
+
+};

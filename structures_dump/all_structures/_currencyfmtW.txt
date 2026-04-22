@@ -1,0 +1,16 @@
+// Структура: _currencyfmtW
+// Полей: 8
+// Строки в оригинале: 109767-109777
+struct _currencyfmtW
+{
+
+  unsigned int NumDigits;
+  unsigned int LeadingZero;
+  unsigned int Grouping;
+  wchar_t *lpDecimalSep;
+  wchar_t *lpThousandSep;
+  unsigned int NegativeOrder;
+  unsigned int PositiveOrder;
+  wchar_t *lpCurrencySymbol;
+
+};

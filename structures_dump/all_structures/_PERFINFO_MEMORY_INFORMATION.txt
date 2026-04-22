@@ -1,0 +1,16 @@
+// Структура: _PERFINFO_MEMORY_INFORMATION
+// Полей: 8
+// Строки в оригинале: 311146-311156
+struct _PERFINFO_MEMORY_INFORMATION
+{
+
+  unsigned int ZeroPageCount;
+  unsigned int FreePageCount;
+  unsigned int ModifiedPageCount;
+  unsigned int ModifiedNoWritePageCount;
+  unsigned int BadPageCount;
+  unsigned int PageCountByPriority[8];
+  unsigned int RepurposedPagesByPriority[8];
+  unsigned int ModifiedPageCountPageFile;
+
+};

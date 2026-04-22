@@ -1,0 +1,10 @@
+// Структура: _TP_TASK_CALLBACKS
+// Полей: 2
+// Строки в оригинале: 85761-85765
+struct _TP_TASK_CALLBACKS
+{
+
+  void (__stdcall *ExecuteCallback)(_TP_CALLBACK_INSTANCE *, _TP_TASK *);
+  void (__stdcall *Unposted)(_TP_TASK *, _TP_POOL *);
+
+};

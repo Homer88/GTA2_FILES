@@ -1,0 +1,12 @@
+// Структура: _RTTIBaseClassDescriptor
+// Полей: 4
+// Строки в оригинале: 5806-5812
+struct _RTTIBaseClassDescriptor
+{
+
+  _UNKNOWN *typeDescriptor __off;
+  int numContainedBases;
+  _PMD pmd;
+  int attributes;
+
+};

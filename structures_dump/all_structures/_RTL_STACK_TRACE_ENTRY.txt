@@ -1,0 +1,15 @@
+// Структура: _RTL_STACK_TRACE_ENTRY
+// Полей: 7
+// Строки в оригинале: 22390-22399
+struct _RTL_STACK_TRACE_ENTRY
+{
+
+  _RTL_STD_LIST_ENTRY HashChain;
+  unsigned __int16 TraceCount : 11;
+  unsigned __int16 BlockDepth : 5;
+  unsigned __int16 IndexHigh;
+  unsigned __int16 Index;
+  unsigned __int16 Depth;
+  $4490DC51D6F3819964AB943F51FB53F0 ___u6;
+
+};

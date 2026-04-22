@@ -1,0 +1,9 @@
+// Структура: _PERFINFO_SYSCALL_EXIT_DATA
+// Полей: 1
+// Строки в оригинале: 312248-312251
+struct _PERFINFO_SYSCALL_EXIT_DATA
+{
+
+  int ReturnValue;
+
+};

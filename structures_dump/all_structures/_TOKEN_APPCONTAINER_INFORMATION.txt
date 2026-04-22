@@ -1,0 +1,9 @@
+// Структура: _TOKEN_APPCONTAINER_INFORMATION
+// Полей: 1
+// Строки в оригинале: 78038-78041
+struct _TOKEN_APPCONTAINER_INFORMATION
+{
+
+  void *TokenAppContainer;
+
+};

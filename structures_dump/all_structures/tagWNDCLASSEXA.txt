@@ -1,0 +1,20 @@
+// Структура: tagWNDCLASSEXA
+// Полей: 12
+// Строки в оригинале: 81401-81415
+struct tagWNDCLASSEXA
+{
+
+  unsigned int cbSize;
+  unsigned int style;
+  int (__stdcall *lpfnWndProc)(HWND__ *, unsigned int, unsigned int, int);
+  int cbClsExtra;
+  int cbWndExtra;
+  HINSTANCE__ *hInstance;
+  HICON__ *hIcon;
+  HICON__ *hCursor;
+  HBRUSH__ *hbrBackground;
+  const char *lpszMenuName;
+  const char *lpszClassName;
+  HICON__ *hIconSm;
+
+};

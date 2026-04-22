@@ -1,0 +1,13 @@
+// Структура: _PROCESS_TLS_INFORMATION
+// Полей: 5
+// Строки в оригинале: 100747-100754
+struct _PROCESS_TLS_INFORMATION
+{
+
+  unsigned int Flags;
+  unsigned int OperationType;
+  unsigned int ThreadDataCount;
+  $B9909797EADE802962B26320BCE282F7 ___u3;
+  _THREAD_TLS_INFORMATION ThreadData[1];
+
+};

@@ -1,0 +1,9 @@
+// Структура: _PERFINFO_PO_CALIBRATED_PERFCOUNTER
+// Полей: 1
+// Строки в оригинале: 310784-310787
+struct _PERFINFO_PO_CALIBRATED_PERFCOUNTER
+{
+
+  _LARGE_INTEGER PerformanceCounter;
+
+};

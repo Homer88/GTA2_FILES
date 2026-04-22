@@ -1,0 +1,18 @@
+// Структура: IWICFormatConverterVtbl
+// Полей: 10
+// Строки в оригинале: 42023-42035
+struct IWICFormatConverterVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICFormatConverter *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICFormatConverter *This);
+  ULONG (__stdcall *Release)(IWICFormatConverter *This);
+  HRESULT (__stdcall *GetSize)(IWICFormatConverter *This, UINT *puiWidth, UINT *puiHeight);
+  HRESULT (__stdcall *GetPixelFormat)(IWICFormatConverter *This, WICPixelFormatGUID *pPixelFormat);
+  HRESULT (__stdcall *GetResolution)(IWICFormatConverter *This, double *pDpiX, double *pDpiY);
+  HRESULT (__stdcall *CopyPalette)(IWICFormatConverter *This, IWICPalette *pIPalette);
+  HRESULT (__stdcall *CopyPixels)(IWICFormatConverter *This, const WICRect *prc, UINT cbStride, UINT cbBufferSize, BYTE *pbBuffer);
+  HRESULT (__stdcall *Initialize)(IWICFormatConverter *This, IWICBitmapSource *pISource, REFWICPixelFormatGUID dstFormat, WICBitmapDitherType dither, IWICPalette *pIPalette, double alphaThresholdPercent, WICBitmapPaletteType paletteTranslate);
+  HRESULT (__stdcall *CanConvert)(IWICFormatConverter *This, REFWICPixelFormatGUID srcPixelFormat, REFWICPixelFormatGUID dstPixelFormat, BOOL *pfCanConvert);
+
+};

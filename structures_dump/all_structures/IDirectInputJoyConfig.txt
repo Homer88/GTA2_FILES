@@ -1,0 +1,9 @@
+// Структура: IDirectInputJoyConfig
+// Полей: 1
+// Строки в оригинале: 29747-29750
+struct IDirectInputJoyConfig
+{
+
+  struct IDirectInputJoyConfigVtbl *lpVtbl;
+
+};

@@ -1,0 +1,13 @@
+// Структура: tagPolicyEntry
+// Полей: 5
+// Строки в оригинале: 61459-61466
+struct tagPolicyEntry
+{
+
+  tagPolicyEntry *pNext;
+  tagPolicyEntry *pPrev;
+  unsigned int ctxEvent;
+  IPolicy *pPolicy;
+  _GUID policyID;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IOleControlSite
+// Полей: 1
+// Строки в оригинале: 39961-39964
+struct IOleControlSite
+{
+
+  struct IOleControlSiteVtbl *lpVtbl;
+
+};

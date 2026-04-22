@@ -1,0 +1,11 @@
+// Структура: tagATTRINFO
+// Полей: 3
+// Строки в оригинале: 311319-311324
+struct tagATTRINFO
+{
+
+  unsigned __int16 tAttrID;
+  unsigned int dwFlags;
+  $4AF71F44227310912B292B7127285EC3 ___u2;
+
+};

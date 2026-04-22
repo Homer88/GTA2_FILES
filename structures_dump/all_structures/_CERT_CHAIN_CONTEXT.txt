@@ -1,0 +1,18 @@
+// Структура: _CERT_CHAIN_CONTEXT
+// Полей: 10
+// Строки в оригинале: 80027-80039
+struct _CERT_CHAIN_CONTEXT
+{
+
+  unsigned int cbSize;
+  _CERT_TRUST_STATUS TrustStatus;
+  unsigned int cChain;
+  _CERT_SIMPLE_CHAIN **rgpChain;
+  unsigned int cLowerQualityChainContext;
+  const _CERT_CHAIN_CONTEXT **rgpLowerQualityChainContext;
+  int fHasRevocationFreshnessTime;
+  unsigned int dwRevocationFreshnessTime;
+  unsigned int dwCreateFlags;
+  _GUID ChainId;
+
+};

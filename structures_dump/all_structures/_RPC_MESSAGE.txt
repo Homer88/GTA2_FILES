@@ -1,0 +1,19 @@
+// Структура: _RPC_MESSAGE
+// Полей: 11
+// Строки в оригинале: 85949-85962
+struct _RPC_MESSAGE
+{
+
+  void *Handle;
+  unsigned int DataRepresentation;
+  void *Buffer;
+  unsigned int BufferLength;
+  unsigned int ProcNum;
+  _RPC_SYNTAX_IDENTIFIER *TransferSyntax;
+  void *RpcInterfaceInformation;
+  void *ReservedForRuntime;
+  void *ManagerEpv;
+  void *ImportContext;
+  unsigned int RpcFlags;
+
+};

@@ -1,0 +1,13 @@
+// Структура: IPropertyStoreFactoryVtbl
+// Полей: 5
+// Строки в оригинале: 37522-37529
+struct IPropertyStoreFactoryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyStoreFactory *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyStoreFactory *This);
+  ULONG (__stdcall *Release)(IPropertyStoreFactory *This);
+  HRESULT (__stdcall *GetPropertyStore)(IPropertyStoreFactory *This, GETPROPERTYSTOREFLAGS flags, IUnknown *pUnkFactory, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetPropertyStoreForKeys)(IPropertyStoreFactory *This, const PROPERTYKEY *rgKeys, UINT cKeys, GETPROPERTYSTOREFLAGS flags, const IID *const riid, void **ppv);
+
+};

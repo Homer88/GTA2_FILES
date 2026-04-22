@@ -1,0 +1,9 @@
+// Структура: IEnumSTATPROPSETSTG
+// Полей: 1
+// Строки в оригинале: 37861-37864
+struct IEnumSTATPROPSETSTG
+{
+
+  struct IEnumSTATPROPSETSTGVtbl *lpVtbl;
+
+};

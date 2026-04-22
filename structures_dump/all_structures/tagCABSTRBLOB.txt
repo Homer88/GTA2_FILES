@@ -1,0 +1,10 @@
+// Структура: tagCABSTRBLOB
+// Полей: 2
+// Строки в оригинале: 31694-31698
+struct tagCABSTRBLOB
+{
+
+  ULONG cElems;
+  BSTRBLOB *pElems;
+
+};

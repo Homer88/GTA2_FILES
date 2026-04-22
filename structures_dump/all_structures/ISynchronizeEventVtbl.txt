@@ -1,0 +1,13 @@
+// Структура: ISynchronizeEventVtbl
+// Полей: 5
+// Строки в оригинале: 351447-351454
+struct ISynchronizeEventVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISynchronizeEvent *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISynchronizeEvent *This);
+  ULONG (__stdcall *Release)(ISynchronizeEvent *This);
+  HRESULT (__stdcall *GetHandle)(ISynchronizeEvent *This, HANDLE *ph);
+  HRESULT (__stdcall *SetEventHandle)(ISynchronizeEvent *This, HANDLE *ph);
+
+};

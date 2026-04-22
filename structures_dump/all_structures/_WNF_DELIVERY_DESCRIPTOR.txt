@@ -1,0 +1,15 @@
+// Структура: _WNF_DELIVERY_DESCRIPTOR
+// Полей: 7
+// Строки в оригинале: 86708-86717
+struct _WNF_DELIVERY_DESCRIPTOR
+{
+
+  unsigned __int64 SubscriptionId;
+  _WNF_STATE_NAME StateName;
+  unsigned int ChangeStamp;
+  unsigned int StateDataSize;
+  unsigned int EventMask;
+  _WNF_TYPE_ID TypeId;
+  unsigned int StateDataOffset;
+
+};

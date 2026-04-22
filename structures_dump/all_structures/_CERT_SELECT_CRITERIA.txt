@@ -1,0 +1,11 @@
+// Структура: _CERT_SELECT_CRITERIA
+// Полей: 3
+// Строки в оригинале: 106042-106047
+struct _CERT_SELECT_CRITERIA
+{
+
+  unsigned int dwType;
+  unsigned int cPara;
+  void **ppPara;
+
+};

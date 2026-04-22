@@ -1,0 +1,12 @@
+// Структура: FRAME_GetTypeInfo
+// Полей: 4
+// Строки в оригинале: 124054-124060
+struct FRAME_GetTypeInfo
+{
+
+  IDispatch *This;
+  unsigned int iTInfo;
+  unsigned int lcid;
+  ITypeInfo **ppTInfo;
+
+};

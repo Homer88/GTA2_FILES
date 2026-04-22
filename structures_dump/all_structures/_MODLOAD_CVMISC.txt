@@ -1,0 +1,14 @@
+// Структура: _MODLOAD_CVMISC
+// Полей: 6
+// Строки в оригинале: 123684-123692
+struct _MODLOAD_CVMISC
+{
+
+  unsigned int oCV;
+  unsigned int cCV;
+  unsigned int oMisc;
+  unsigned int cMisc;
+  unsigned int dtImage;
+  unsigned int cImage;
+
+};

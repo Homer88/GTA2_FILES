@@ -1,0 +1,9 @@
+// Структура: _HV_DETAILS
+// Полей: 1
+// Строки в оригинале: 87188-87191
+struct _HV_DETAILS
+{
+
+  unsigned int Data[4];
+
+};

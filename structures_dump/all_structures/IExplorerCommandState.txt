@@ -1,0 +1,9 @@
+// Структура: IExplorerCommandState
+// Полей: 1
+// Строки в оригинале: 33416-33419
+struct IExplorerCommandState
+{
+
+  struct IExplorerCommandStateVtbl *lpVtbl;
+
+};

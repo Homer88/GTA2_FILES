@@ -1,0 +1,15 @@
+// Структура: _FILE_STORAGE_INFO
+// Полей: 7
+// Строки в оригинале: 96713-96722
+struct _FILE_STORAGE_INFO
+{
+
+  unsigned int LogicalBytesPerSector;
+  unsigned int PhysicalBytesPerSectorForAtomicity;
+  unsigned int PhysicalBytesPerSectorForPerformance;
+  unsigned int FileSystemEffectivePhysicalBytesPerSectorForAtomicity;
+  unsigned int Flags;
+  unsigned int ByteOffsetForSectorAlignment;
+  unsigned int ByteOffsetForPartitionAlignment;
+
+};

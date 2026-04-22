@@ -1,0 +1,11 @@
+// Структура: _IO_COMPLETION_CONTEXT
+// Полей: 3
+// Строки в оригинале: 18994-18999
+struct _IO_COMPLETION_CONTEXT
+{
+
+  void *Port;
+  void *Key;
+  int UsageCount;
+
+};

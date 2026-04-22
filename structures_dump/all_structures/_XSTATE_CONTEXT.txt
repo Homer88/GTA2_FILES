@@ -1,0 +1,15 @@
+// Структура: _XSTATE_CONTEXT
+// Полей: 7
+// Строки в оригинале: 15553-15562
+struct _XSTATE_CONTEXT
+{
+
+  unsigned __int64 Mask;
+  unsigned int Length;
+  unsigned int Reserved1;
+  _XSAVE_AREA *Area;
+  unsigned int Reserved2;
+  void *Buffer;
+  unsigned int Reserved3;
+
+};

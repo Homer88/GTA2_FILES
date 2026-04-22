@@ -1,0 +1,18 @@
+// Структура: tagWINDOWINFO
+// Полей: 10
+// Строки в оригинале: 97794-97806
+struct tagWINDOWINFO
+{
+
+  unsigned int cbSize;
+  tagRECT rcWindow;
+  tagRECT rcClient;
+  unsigned int dwStyle;
+  unsigned int dwExStyle;
+  unsigned int dwWindowStatus;
+  unsigned int cxWindowBorders;
+  unsigned int cyWindowBorders;
+  unsigned __int16 atomWindowType;
+  unsigned __int16 wCreatorVersion;
+
+};

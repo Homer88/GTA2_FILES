@@ -1,0 +1,14 @@
+// Структура: _HEAP_TAG_ENTRY
+// Полей: 6
+// Строки в оригинале: 21080-21088
+struct _HEAP_TAG_ENTRY
+{
+
+  unsigned int Allocs;
+  unsigned int Frees;
+  unsigned int Size;
+  unsigned __int16 TagIndex;
+  unsigned __int16 CreatorBackTraceIndex;
+  wchar_t TagName[24];
+
+};

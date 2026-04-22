@@ -1,0 +1,11 @@
+// Структура: tagFILTERREGION
+// Полей: 3
+// Строки в оригинале: 40447-40452
+struct tagFILTERREGION
+{
+
+  ULONG idChunk;
+  ULONG cwcStart;
+  ULONG cwcExtent;
+
+};

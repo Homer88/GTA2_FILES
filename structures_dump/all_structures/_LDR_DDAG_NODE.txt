@@ -1,0 +1,18 @@
+// Структура: _LDR_DDAG_NODE
+// Полей: 10
+// Строки в оригинале: 21184-21196
+struct _LDR_DDAG_NODE
+{
+
+  _LIST_ENTRY Modules;
+  _LDR_SERVICE_TAG_RECORD *ServiceTagList;
+  unsigned int LoadCount;
+  unsigned int LoadWhileUnloadingCount;
+  unsigned int LowestLink;
+  _LDRP_CSLIST Dependencies;
+  _LDRP_CSLIST IncomingDependencies;
+  _LDR_DDAG_STATE State;
+  _SINGLE_LIST_ENTRY CondenseLink;
+  unsigned int PreorderNumber;
+
+};

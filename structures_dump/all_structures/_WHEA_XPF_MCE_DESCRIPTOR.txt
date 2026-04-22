@@ -1,0 +1,15 @@
+// Структура: _WHEA_XPF_MCE_DESCRIPTOR
+// Полей: 7
+// Строки в оригинале: 19748-19757
+struct _WHEA_XPF_MCE_DESCRIPTOR
+{
+
+  unsigned __int16 Type;
+  unsigned __int8 Enabled;
+  unsigned __int8 NumberOfBanks;
+  _XPF_MCE_FLAGS Flags;
+  unsigned __int64 MCG_Capability;
+  unsigned __int64 MCG_GlobalControl;
+  _WHEA_XPF_MC_BANK_DESCRIPTOR Banks[32];
+
+};

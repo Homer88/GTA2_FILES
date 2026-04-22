@@ -1,0 +1,18 @@
+// Структура: tagUPDATELAYEREDWINDOWINFO
+// Полей: 10
+// Строки в оригинале: 91420-91432
+struct tagUPDATELAYEREDWINDOWINFO
+{
+
+  unsigned int cbSize;
+  HDC__ *hdcDst;
+  const tagPOINT *pptDst;
+  const tagSIZE *psize;
+  HDC__ *hdcSrc;
+  const tagPOINT *pptSrc;
+  unsigned int crKey;
+  const _BLENDFUNCTION *pblend;
+  unsigned int dwFlags;
+  const tagRECT *prcDirty;
+
+};

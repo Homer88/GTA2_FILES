@@ -1,0 +1,14 @@
+// Структура: _OSVERSIONINFOW
+// Полей: 6
+// Строки в оригинале: 80753-80761
+struct _OSVERSIONINFOW
+{
+
+  unsigned int dwOSVersionInfoSize;
+  unsigned int dwMajorVersion;
+  unsigned int dwMinorVersion;
+  unsigned int dwBuildNumber;
+  unsigned int dwPlatformId;
+  wchar_t szCSDVersion[128];
+
+};

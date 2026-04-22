@@ -1,0 +1,12 @@
+// Структура: _TRANSACTION_NOTIFICATION_PROPAGATE_ARGUMENT
+// Полей: 4
+// Строки в оригинале: 102033-102039
+struct _TRANSACTION_NOTIFICATION_PROPAGATE_ARGUMENT
+{
+
+  unsigned int PropagationCookie;
+  _GUID UOW;
+  _GUID TmIdentity;
+  unsigned int BufferLength;
+
+};

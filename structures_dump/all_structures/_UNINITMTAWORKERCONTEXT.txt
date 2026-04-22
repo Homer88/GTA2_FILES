@@ -1,0 +1,12 @@
+// Структура: _UNINITMTAWORKERCONTEXT
+// Полей: 4
+// Строки в оригинале: 219973-219979
+struct _UNINITMTAWORKERCONTEXT
+{
+
+  void *hUninitMTADoneEvent;
+  tagSOleTlsData *pSOleTlsData;
+  _TP_WORK *ptpWork;
+  UNINIT_MTA_WORKER_CONTEXT_FLAGS flags;
+
+};

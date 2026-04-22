@@ -1,0 +1,11 @@
+// Структура: _CMSG_SIGNED_AND_ENVELOPED_ENCODE_INFO
+// Полей: 3
+// Строки в оригинале: 104352-104357
+struct _CMSG_SIGNED_AND_ENVELOPED_ENCODE_INFO
+{
+
+  unsigned int cbSize;
+  _CMSG_SIGNED_ENCODE_INFO SignedInfo;
+  _CMSG_ENVELOPED_ENCODE_INFO EnvelopedInfo;
+
+};

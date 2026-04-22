@@ -1,0 +1,10 @@
+// Структура: localeinfo_struct
+// Полей: 2
+// Строки в оригинале: 148922-148926
+struct localeinfo_struct
+{
+
+  threadlocaleinfostruct *locinfo;
+  threadmbcinfostruct *mbcinfo;
+
+};

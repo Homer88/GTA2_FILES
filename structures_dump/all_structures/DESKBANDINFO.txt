@@ -1,0 +1,16 @@
+// Структура: DESKBANDINFO
+// Полей: 8
+// Строки в оригинале: 32906-32916
+struct DESKBANDINFO
+{
+
+  DWORD dwMask;
+  POINTL ptMinSize;
+  POINTL ptMaxSize;
+  POINTL ptIntegral;
+  POINTL ptActual;
+  WCHAR wszTitle[256];
+  DWORD dwModeFlags;
+  COLORREF crBkgnd;
+
+};

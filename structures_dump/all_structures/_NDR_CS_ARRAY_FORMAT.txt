@@ -1,0 +1,14 @@
+// Структура: _NDR_CS_ARRAY_FORMAT
+// Полей: 6
+// Строки в оригинале: 331250-331258
+struct _NDR_CS_ARRAY_FORMAT
+{
+
+  unsigned __int8 FormatCode;
+  unsigned __int8 Reserved;
+  unsigned __int16 UserTypeSize;
+  unsigned __int16 CSRoutineIndex;
+  unsigned __int16 Reserved2;
+  int DescriptionOffset;
+
+};

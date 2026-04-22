@@ -1,0 +1,13 @@
+// Structure: _RTL_CRITICAL_SECTION
+// Lines: 3018 - 3026
+// Fields: 7
+
+struct _RTL_CRITICAL_SECTION
+{
+  PRTL_CRITICAL_SECTION_DEBUG DebugInfo;
+  LONG LockCount;
+  LONG RecursionCount;
+  HANDLE OwningThread;
+  HANDLE LockSemaphore;
+  ULONG_PTR SpinCount;
+};

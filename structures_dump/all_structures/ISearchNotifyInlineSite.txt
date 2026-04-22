@@ -1,0 +1,9 @@
+// Структура: ISearchNotifyInlineSite
+// Полей: 1
+// Строки в оригинале: 44096-44099
+struct ISearchNotifyInlineSite
+{
+
+  struct ISearchNotifyInlineSiteVtbl *lpVtbl;
+
+};

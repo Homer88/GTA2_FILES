@@ -1,0 +1,12 @@
+// Структура: _ALPC_PORT_COMPLETION_LIST_INFORMATION
+// Полей: 4
+// Строки в оригинале: 108410-108416
+struct _ALPC_PORT_COMPLETION_LIST_INFORMATION
+{
+
+  void *Buffer;
+  unsigned int Size;
+  unsigned int ConcurrencyCount;
+  unsigned int AttributeFlags;
+
+};

@@ -1,0 +1,17 @@
+// Структура: _QUERY_SERVICE_CONFIGW
+// Полей: 9
+// Строки в оригинале: 101946-101957
+struct _QUERY_SERVICE_CONFIGW
+{
+
+  unsigned int dwServiceType;
+  unsigned int dwStartType;
+  unsigned int dwErrorControl;
+  wchar_t *lpBinaryPathName;
+  wchar_t *lpLoadOrderGroup;
+  unsigned int dwTagId;
+  wchar_t *lpDependencies;
+  wchar_t *lpServiceStartName;
+  wchar_t *lpDisplayName;
+
+};

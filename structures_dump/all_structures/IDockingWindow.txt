@@ -1,0 +1,9 @@
+// Структура: IDockingWindow
+// Полей: 1
+// Строки в оригинале: 40062-40065
+struct IDockingWindow
+{
+
+  struct IDockingWindowVtbl *lpVtbl;
+
+};

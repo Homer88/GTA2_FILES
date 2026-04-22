@@ -1,0 +1,16 @@
+// Структура: IResultsFolderVtbl
+// Полей: 8
+// Строки в оригинале: 32920-32930
+struct IResultsFolderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IResultsFolder *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IResultsFolder *This);
+  ULONG (__stdcall *Release)(IResultsFolder *This);
+  HRESULT (__stdcall *AddItem)(IResultsFolder *This, IShellItem *psi);
+  HRESULT (__stdcall *AddIDList)(IResultsFolder *This, LPCITEMIDLIST pidl, LPITEMIDLIST *ppidlAdded);
+  HRESULT (__stdcall *RemoveItem)(IResultsFolder *This, IShellItem *psi);
+  HRESULT (__stdcall *RemoveIDList)(IResultsFolder *This, LPCITEMIDLIST pidl);
+  HRESULT (__stdcall *RemoveAll)(IResultsFolder *This);
+
+};

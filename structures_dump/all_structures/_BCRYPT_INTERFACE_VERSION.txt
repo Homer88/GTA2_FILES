@@ -1,0 +1,10 @@
+// Структура: _BCRYPT_INTERFACE_VERSION
+// Полей: 2
+// Строки в оригинале: 84361-84365
+struct _BCRYPT_INTERFACE_VERSION
+{
+
+  unsigned __int16 MajorVersion;
+  unsigned __int16 MinorVersion;
+
+};

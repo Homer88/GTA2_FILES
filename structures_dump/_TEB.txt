@@ -1,0 +1,121 @@
+// Structure: _TEB
+// Lines: 2564 - 2680
+// Fields: 105
+
+struct _TEB
+{
+  struct _NT_TIB NtTib;
+  void *EnvironmentPointer;
+  struct _CLIENT_ID ClientId;
+  void *ActiveRpcHandle;
+  void *ThreadLocalStoragePointer;
+  struct _PEB *ProcessEnvironmentBlock;
+  unsigned int LastErrorValue;
+  unsigned int CountOfOwnedCriticalSections;
+  void *CsrClientThread;
+  void *Win32ThreadInfo;
+  unsigned int User32Reserved[26];
+  unsigned int UserReserved[5];
+  void *WOW32Reserved;
+  unsigned int CurrentLocale;
+  unsigned int FpSoftwareStatusRegister;
+  void *SystemReserved1[54];
+  int ExceptionCode;
+  struct _ACTIVATION_CONTEXT_STACK *ActivationContextStackPointer;
+  uint8_t SpareBytes[36];
+  unsigned int TxFsContext;
+  struct _GDI_TEB_BATCH GdiTebBatch;
+  struct _CLIENT_ID RealClientId;
+  void *GdiCachedProcessHandle;
+  unsigned int GdiClientPID;
+  unsigned int GdiClientTID;
+  void *GdiThreadLocalInfo;
+  unsigned int Win32ClientInfo[62];
+  void *glDispatchTable[233];
+  unsigned int glReserved1[29];
+  void *glReserved2;
+  void *glSectionInfo;
+  void *glSection;
+  void *glTable;
+  void *glCurrentRC;
+  void *glContext;
+  unsigned int LastStatusValue;
+  struct _UNICODE_STRING StaticUnicodeString;
+  wchar_t StaticUnicodeBuffer[261];
+  void *DeallocationStack;
+  void *TlsSlots[64];
+  struct _LIST_ENTRY TlsLinks;
+  void *Vdm;
+  void *ReservedForNtRpc;
+  void *DbgSsReserved[2];
+  unsigned int HardErrorMode;
+  void *Instrumentation[9];
+  struct _GUID ActivityId;
+  void *SubProcessTag;
+  void *EtwLocalData;
+  void *EtwTraceData;
+  void *WinSockData;
+  unsigned int GdiBatchCount;
+  union
+  {
+    struct _PROCESSOR_NUMBER CurrentIdealProcessor;
+    unsigned int IdealProcessorValue;
+    uint8_t ReservedPad0;
+  };
+  uint8_t ReservedPad1;
+  uint8_t ReservedPad2;
+  uint8_t IdealProcessor;
+  unsigned int GuaranteedStackBytes;
+  void *ReservedForPerf;
+  void *ReservedForOle;
+  unsigned int WaitingOnLoaderLock;
+  void *SavedPriorityState;
+  unsigned int SoftPatchPtr1;
+  void *ThreadPoolData;
+  void **TlsExpansionSlots;
+  unsigned int MuiGeneration;
+  unsigned int IsImpersonating;
+  void *NlsCache;
+  void *pShimData;
+  unsigned int HeapVirtualAffinity;
+  void *CurrentTransactionHandle;
+  struct _TEB_ACTIVE_FRAME *ActiveFrame;
+  void *FlsData;
+  void *PreferredLanguages;
+  void *UserPrefLanguages;
+  void *MergedPrefLanguages;
+  unsigned int MuiImpersonation;
+  union
+  {
+    volatile uint16_t CrossTebFlags;
+    struct
+    {
+      unsigned __int16 SpareCrossTebBits : 16;
+    };
+  };
+  union
+  {
+    uint16_t SameTebFlags;
+    struct
+    {
+      unsigned __int16 SafeThunkCall : 1;
+      unsigned __int16 InDebugPrint : 1;
+      unsigned __int16 HasFiberData : 1;
+      unsigned __int16 SkipThreadAttach : 1;
+      unsigned __int16 WerInShipAssertCode : 1;
+      unsigned __int16 RanProcessInit : 1;
+      unsigned __int16 ClonedThread : 1;
+      unsigned __int16 SuppressDebugMsg : 1;
+      unsigned __int16 DisableUserStackWalk : 1;
+      unsigned __int16 RtlExceptionAttached : 1;
+      unsigned __int16 InitialThread : 1;
+      unsigned __int16 SpareSameTebBits : 5;
+    };
+  };
+  void *TxnScopeEnterCallback;
+  void *TxnScopeExitCallback;
+  void *TxnScopeContext;
+  unsigned int LockCount;
+  unsigned int SpareUlong0;
+  void *ResourceRetValue;
+};

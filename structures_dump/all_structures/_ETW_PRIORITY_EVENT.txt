@@ -1,0 +1,13 @@
+// Структура: _ETW_PRIORITY_EVENT
+// Полей: 5
+// Строки в оригинале: 313359-313366
+struct _ETW_PRIORITY_EVENT
+{
+
+  unsigned int ThreadId;
+  char OldPriority;
+  char NewPriority;
+  char DynamicPriority;
+  char Reserved;
+
+};

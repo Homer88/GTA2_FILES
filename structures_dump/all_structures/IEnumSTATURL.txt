@@ -1,0 +1,9 @@
+// Структура: IEnumSTATURL
+// Полей: 1
+// Строки в оригинале: 39761-39764
+struct IEnumSTATURL
+{
+
+  struct IEnumSTATURLVtbl *lpVtbl;
+
+};

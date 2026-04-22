@@ -1,0 +1,12 @@
+// Структура: _JOURNAL_TRANSACTION_BOUNDARY_INFORMATION
+// Полей: 4
+// Строки в оригинале: 80510-80516
+struct _JOURNAL_TRANSACTION_BOUNDARY_INFORMATION
+{
+
+  _JOURNAL_CHANGE_INFORMATION_CLASS Action;
+  unsigned __int64 RecordNumber;
+  _LARGE_INTEGER TimeStamp;
+  _GUID TransactionID;
+
+};

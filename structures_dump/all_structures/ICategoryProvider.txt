@@ -1,0 +1,9 @@
+// Структура: ICategoryProvider
+// Полей: 1
+// Строки в оригинале: 39433-39436
+struct ICategoryProvider
+{
+
+  struct ICategoryProviderVtbl *lpVtbl;
+
+};

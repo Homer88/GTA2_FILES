@@ -1,0 +1,12 @@
+// Структура: _SAFER_HASH_IDENTIFICATION2
+// Полей: 4
+// Строки в оригинале: 81519-81525
+struct _SAFER_HASH_IDENTIFICATION2
+{
+
+  _SAFER_HASH_IDENTIFICATION hashIdentification;
+  unsigned int HashSize;
+  unsigned __int8 ImageHash[64];
+  unsigned int HashAlgorithm;
+
+};

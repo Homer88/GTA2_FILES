@@ -1,0 +1,16 @@
+// Структура: _MIDL_SERVER_INFO_
+// Полей: 8
+// Строки в оригинале: 92677-92687
+struct _MIDL_SERVER_INFO_
+{
+
+  const _MIDL_STUB_DESC *pStubDesc;
+  int (__stdcall *const *DispatchTable)();
+  const unsigned __int8 *ProcString;
+  const unsigned __int16 *FmtStringOffset;
+  void (__stdcall *const *ThunkTable)(_MIDL_STUB_MESSAGE *);
+  _RPC_SYNTAX_IDENTIFIER *pTransferSyntax;
+  unsigned int nCount;
+  _MIDL_SYNTAX_INFO *pSyntaxInfo;
+
+};

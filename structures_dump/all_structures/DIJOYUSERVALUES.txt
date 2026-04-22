@@ -1,0 +1,12 @@
+// Структура: DIJOYUSERVALUES
+// Полей: 4
+// Строки в оригинале: 29714-29720
+struct DIJOYUSERVALUES
+{
+
+  DWORD dwSize;
+  JOYREGUSERVALUES ruv;
+  WCHAR wszGlobalDriver[256];
+  WCHAR wszGameportEmulator[256];
+
+};

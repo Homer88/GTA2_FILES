@@ -1,0 +1,9 @@
+// Структура: _SecPkgContext_NegoPackageInfo
+// Полей: 1
+// Строки в оригинале: 323908-323911
+struct _SecPkgContext_NegoPackageInfo
+{
+
+  unsigned int PackageMask;
+
+};

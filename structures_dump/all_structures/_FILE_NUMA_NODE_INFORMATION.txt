@@ -1,0 +1,9 @@
+// Структура: _FILE_NUMA_NODE_INFORMATION
+// Полей: 1
+// Строки в оригинале: 95908-95911
+struct _FILE_NUMA_NODE_INFORMATION
+{
+
+  unsigned __int16 NodeNumber;
+
+};

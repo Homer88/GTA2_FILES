@@ -1,0 +1,10 @@
+// Структура: tagSTYLESTRUCT
+// Полей: 2
+// Строки в оригинале: 100291-100295
+struct tagSTYLESTRUCT
+{
+
+  unsigned int styleOld;
+  unsigned int styleNew;
+
+};

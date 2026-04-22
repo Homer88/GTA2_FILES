@@ -1,0 +1,10 @@
+// Структура: tagCAUB
+// Полей: 2
+// Строки в оригинале: 31490-31494
+struct tagCAUB
+{
+
+  ULONG cElems;
+  UCHAR *pElems;
+
+};

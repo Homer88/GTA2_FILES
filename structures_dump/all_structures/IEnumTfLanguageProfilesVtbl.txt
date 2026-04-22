@@ -1,0 +1,15 @@
+// Структура: IEnumTfLanguageProfilesVtbl
+// Полей: 7
+// Строки в оригинале: 40657-40666
+struct IEnumTfLanguageProfilesVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumTfLanguageProfiles *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumTfLanguageProfiles *This);
+  ULONG (__stdcall *Release)(IEnumTfLanguageProfiles *This);
+  HRESULT (__stdcall *Clone)(IEnumTfLanguageProfiles *This, IEnumTfLanguageProfiles **ppEnum);
+  HRESULT (__stdcall *Next)(IEnumTfLanguageProfiles *This, ULONG ulCount, TF_LANGUAGEPROFILE *pProfile, ULONG *pcFetch);
+  HRESULT (__stdcall *Reset)(IEnumTfLanguageProfiles *This);
+  HRESULT (__stdcall *Skip)(IEnumTfLanguageProfiles *This, ULONG ulCount);
+
+};

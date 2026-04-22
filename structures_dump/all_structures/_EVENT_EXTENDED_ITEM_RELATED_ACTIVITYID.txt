@@ -1,0 +1,9 @@
+// Структура: _EVENT_EXTENDED_ITEM_RELATED_ACTIVITYID
+// Полей: 1
+// Строки в оригинале: 309473-309476
+struct _EVENT_EXTENDED_ITEM_RELATED_ACTIVITYID
+{
+
+  _GUID RelatedActivityId;
+
+};

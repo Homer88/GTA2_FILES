@@ -1,0 +1,24 @@
+// Структура: _FS_FILTER_CALLBACKS
+// Полей: 16
+// Строки в оригинале: 18490-18508
+struct _FS_FILTER_CALLBACKS
+{
+
+  unsigned int SizeOfFsFilterCallbacks;
+  unsigned int Reserved;
+  int (__stdcall *PreAcquireForSectionSynchronization)(_FS_FILTER_CALLBACK_DATA *, void **);
+  void (__stdcall *PostAcquireForSectionSynchronization)(_FS_FILTER_CALLBACK_DATA *, int, void *);
+  int (__stdcall *PreReleaseForSectionSynchronization)(_FS_FILTER_CALLBACK_DATA *, void **);
+  void (__stdcall *PostReleaseForSectionSynchronization)(_FS_FILTER_CALLBACK_DATA *, int, void *);
+  int (__stdcall *PreAcquireForCcFlush)(_FS_FILTER_CALLBACK_DATA *, void **);
+  void (__stdcall *PostAcquireForCcFlush)(_FS_FILTER_CALLBACK_DATA *, int, void *);
+  int (__stdcall *PreReleaseForCcFlush)(_FS_FILTER_CALLBACK_DATA *, void **);
+  void (__stdcall *PostReleaseForCcFlush)(_FS_FILTER_CALLBACK_DATA *, int, void *);
+  int (__stdcall *PreAcquireForModifiedPageWriter)(_FS_FILTER_CALLBACK_DATA *, void **);
+  void (__stdcall *PostAcquireForModifiedPageWriter)(_FS_FILTER_CALLBACK_DATA *, int, void *);
+  int (__stdcall *PreReleaseForModifiedPageWriter)(_FS_FILTER_CALLBACK_DATA *, void **);
+  void (__stdcall *PostReleaseForModifiedPageWriter)(_FS_FILTER_CALLBACK_DATA *, int, void *);
+  int (__stdcall *PreQueryOpen)(_FS_FILTER_CALLBACK_DATA *, void **);
+  void (__stdcall *PostQueryOpen)(_FS_FILTER_CALLBACK_DATA *, int, void *);
+
+};

@@ -1,0 +1,11 @@
+// Структура: _EVENT_DATA_DESCRIPTOR
+// Полей: 3
+// Строки в оригинале: 19499-19504
+struct _EVENT_DATA_DESCRIPTOR
+{
+
+  unsigned __int64 Ptr;
+  unsigned int Size;
+  $1169B16CE27824063046708066BFC1CA ___u2;
+
+};

@@ -1,0 +1,18 @@
+// Структура: IPreviewHandlerVtbl
+// Полей: 10
+// Строки в оригинале: 40284-40296
+struct IPreviewHandlerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPreviewHandler *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPreviewHandler *This);
+  ULONG (__stdcall *Release)(IPreviewHandler *This);
+  HRESULT (__stdcall *SetWindow)(IPreviewHandler *This, HWND hwnd, const RECT *prc);
+  HRESULT (__stdcall *SetRect)(IPreviewHandler *This, const RECT *prc);
+  HRESULT (__stdcall *DoPreview)(IPreviewHandler *This);
+  HRESULT (__stdcall *Unload)(IPreviewHandler *This);
+  HRESULT (__stdcall *SetFocus)(IPreviewHandler *This);
+  HRESULT (__stdcall *QueryFocus)(IPreviewHandler *This, HWND *phwnd);
+  HRESULT (__stdcall *TranslateAcceleratorA)(IPreviewHandler *This, MSG *pmsg);
+
+};

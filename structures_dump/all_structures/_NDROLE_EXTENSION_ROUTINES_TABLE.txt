@@ -1,0 +1,32 @@
+// Структура: _NDROLE_EXTENSION_ROUTINES_TABLE
+// Полей: 24
+// Строки в оригинале: 286153-286179
+struct _NDROLE_EXTENSION_ROUTINES_TABLE
+{
+
+  void (__stdcall *NdrExtGetCallMethod)(void *, _MIDL_SERVER_INFO_ **, int (__stdcall *const **)());
+  void *(__stdcall *NdrExtGetServerObject)(void *);
+  void (__stdcall *NdrExtStubInitialize)(_RPC_MESSAGE *, _MIDL_STUB_MESSAGE *, const _MIDL_STUB_DESC *, void *);
+  void (__stdcall *NdrExtStubGetBuffer)(void *, void *, _MIDL_STUB_MESSAGE *);
+  HRESULT (__stdcall *NdrExtSetErrorStatus)(void *, unsigned int *, HRESULT);
+  HRESULT (__stdcall *NdrExtSetClientErrorStatus)(void *, HRESULT, int);
+  void (__stdcall *NdrExtInterfacePointerBufferSize)(_MIDL_STUB_MESSAGE *, unsigned __int8 *, const unsigned __int8 *);
+  void (__stdcall *NdrExtProxyInitialize)(void *, _RPC_MESSAGE *, _MIDL_STUB_MESSAGE *, const _MIDL_STUB_DESC *, unsigned int);
+  void (__stdcall *NdrExtFreeInterfacePointer)(unsigned __int8 *);
+  void (__stdcall *NdrExtInterfacePointerMemorySize)(_MIDL_STUB_MESSAGE *, const unsigned __int8 *);
+  unsigned __int8 *(__stdcall *NdrExtInterfacePointerMarshall)(_MIDL_STUB_MESSAGE *, unsigned __int8 *, const unsigned __int8 *);
+  void (__stdcall *NdrExtInterfacePointerUnmarshall)(_MIDL_STUB_MESSAGE *, unsigned __int8 **, const unsigned __int8 *);
+  void (__stdcall *NdrExtGetUDTFormat)(_MIDL_STUB_MESSAGE *, const unsigned __int8 *, void *);
+  void (__stdcall *NdrExtProxyGetBuffer)(void *, _MIDL_STUB_MESSAGE *);
+  void (__stdcall *NdrExtProxySendReceive)(void *, _MIDL_STUB_MESSAGE *);
+  void (__stdcall *NdrExtFreeBuffer)(void *, _MIDL_STUB_MESSAGE *);
+  HRESULT (__stdcall *NdrExtGetComProtocolVersion)(_MIDL_STUB_MESSAGE *, _RPC_VERSION *);
+  void (__stdcall *NdrExtSystemHandleMarshall)(_MIDL_STUB_MESSAGE *, void *, unsigned __int8, unsigned int, unsigned int *);
+  void (__stdcall *NdrExtSystemHandleUnmarshall)(_MIDL_STUB_MESSAGE *, unsigned int, unsigned __int8, unsigned int, void **);
+  void (__stdcall *NdrExtFreeSystemHandle)(_MIDL_STUB_MESSAGE *, unsigned __int8, void *);
+  void (__stdcall *NdrExtChkSystemHandleLeak)(_MIDL_STUB_MESSAGE *);
+  void (__stdcall *NdrExtCleanupAllSystemHandles)(_MIDL_STUB_MESSAGE *);
+  void (__stdcall *NdrExtInitializeCallObject)(void *, _MIDL_STUB_MESSAGE *);
+  int (__stdcall *NdrExtUseFixedWireRepForInterfacePointerArrayAndEmbeddedConformantStruct)(_MIDL_STUB_MESSAGE *);
+
+};

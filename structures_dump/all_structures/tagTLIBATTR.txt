@@ -1,0 +1,14 @@
+// Структура: tagTLIBATTR
+// Полей: 6
+// Строки в оригинале: 23880-23888
+struct tagTLIBATTR
+{
+
+  GUID guid;
+  LCID lcid;
+  SYSKIND syskind;
+  WORD wMajorVerNum;
+  WORD wMinorVerNum;
+  WORD wLibFlags;
+
+};

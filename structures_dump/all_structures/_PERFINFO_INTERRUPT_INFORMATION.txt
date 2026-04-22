@@ -1,0 +1,13 @@
+// Структура: _PERFINFO_INTERRUPT_INFORMATION
+// Полей: 5
+// Строки в оригинале: 312877-312884
+struct _PERFINFO_INTERRUPT_INFORMATION
+{
+
+  unsigned __int64 InitialTime;
+  void *ServiceRoutine;
+  unsigned __int8 ReturnValue;
+  __unaligned __declspec(align(1)) unsigned __int16 Vector;
+  unsigned __int8 Reserved;
+
+};

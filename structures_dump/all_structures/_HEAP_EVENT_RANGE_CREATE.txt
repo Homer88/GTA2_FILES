@@ -1,0 +1,11 @@
+// Структура: _HEAP_EVENT_RANGE_CREATE
+// Полей: 3
+// Строки в оригинале: 313224-313229
+struct _HEAP_EVENT_RANGE_CREATE
+{
+
+  void *HeapHandle;
+  unsigned int FirstRangeSize;
+  unsigned int Flags;
+
+};

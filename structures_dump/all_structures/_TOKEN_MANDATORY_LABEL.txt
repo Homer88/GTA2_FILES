@@ -1,0 +1,9 @@
+// Структура: _TOKEN_MANDATORY_LABEL
+// Полей: 1
+// Строки в оригинале: 78075-78078
+struct _TOKEN_MANDATORY_LABEL
+{
+
+  _SID_AND_ATTRIBUTES Label;
+
+};

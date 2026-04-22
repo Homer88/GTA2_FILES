@@ -1,0 +1,20 @@
+// Структура: tagSOUNDSENTRYW
+// Полей: 12
+// Строки в оригинале: 93088-93102
+struct tagSOUNDSENTRYW
+{
+
+  unsigned int cbSize;
+  unsigned int dwFlags;
+  unsigned int iFSTextEffect;
+  unsigned int iFSTextEffectMSec;
+  unsigned int iFSTextEffectColorBits;
+  unsigned int iFSGrafEffect;
+  unsigned int iFSGrafEffectMSec;
+  unsigned int iFSGrafEffectColor;
+  unsigned int iWindowsEffect;
+  unsigned int iWindowsEffectMSec;
+  wchar_t *lpszWindowsEffectDLL;
+  unsigned int iWindowsEffectOrdinal;
+
+};

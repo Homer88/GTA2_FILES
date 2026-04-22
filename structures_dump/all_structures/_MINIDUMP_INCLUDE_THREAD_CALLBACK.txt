@@ -1,0 +1,9 @@
+// Структура: _MINIDUMP_INCLUDE_THREAD_CALLBACK
+// Полей: 1
+// Строки в оригинале: 122680-122683
+struct _MINIDUMP_INCLUDE_THREAD_CALLBACK
+{
+
+  unsigned int ThreadId;
+
+};

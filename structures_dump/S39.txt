@@ -1,0 +1,13 @@
+// Structure: S39
+// Lines: 5167 - 5175
+// Fields: 7
+
+struct S39
+{
+  int field_0;
+  SpriteS3 *SpriteS3;
+  AudioSourceParams *field_8;
+  int field_C;
+  __int16 field_10;
+  __int16 field_12;
+};

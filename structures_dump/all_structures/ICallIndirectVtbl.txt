@@ -1,0 +1,15 @@
+// Структура: ICallIndirectVtbl
+// Полей: 7
+// Строки в оригинале: 182599-182608
+struct ICallIndirectVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICallIndirect *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICallIndirect *This);
+  ULONG (__stdcall *Release)(ICallIndirect *This);
+  HRESULT (__stdcall *CallIndirect)(ICallIndirect *This, HRESULT *phrReturn, ULONG iMethod, void *pvArgs, ULONG *cbArgs);
+  HRESULT (__stdcall *GetMethodInfo)(ICallIndirect *This, ULONG iMethod, CALLFRAMEINFO *pInfo, LPWSTR *pwszMethod);
+  HRESULT (__stdcall *GetStackSize)(ICallIndirect *This, ULONG iMethod, ULONG *cbArgs);
+  HRESULT (__stdcall *GetIID)(ICallIndirect *This, IID *piid, BOOL *pfDerivesFromIDispatch, ULONG *pcMethod, LPWSTR *pwszInterface);
+
+};

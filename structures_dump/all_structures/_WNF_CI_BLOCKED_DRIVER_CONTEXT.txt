@@ -1,0 +1,11 @@
+// Структура: _WNF_CI_BLOCKED_DRIVER_CONTEXT
+// Полей: 3
+// Строки в оригинале: 313620-313625
+struct _WNF_CI_BLOCKED_DRIVER_CONTEXT
+{
+
+  _GUID Guid;
+  unsigned __int16 ImagePathLength;
+  wchar_t ImagePath[1];
+
+};

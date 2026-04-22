@@ -1,0 +1,9 @@
+// Структура: _WIM_PROVIDER_CONTROL_INTEGRITY
+// Полей: 1
+// Строки в оригинале: 89636-89639
+struct _WIM_PROVIDER_CONTROL_INTEGRITY
+{
+
+  unsigned int ControlCode;
+
+};

@@ -1,0 +1,12 @@
+// Структура: tagStorageLayout
+// Полей: 4
+// Строки в оригинале: 103593-103599
+struct tagStorageLayout
+{
+
+  unsigned int LayoutType;
+  wchar_t *pwcsElementName;
+  _LARGE_INTEGER cOffset;
+  _LARGE_INTEGER cBytes;
+
+};

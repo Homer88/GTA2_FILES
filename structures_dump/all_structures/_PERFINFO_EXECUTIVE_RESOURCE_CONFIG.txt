@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_EXECUTIVE_RESOURCE_CONFIG
+// Полей: 3
+// Строки в оригинале: 313646-313651
+struct _PERFINFO_EXECUTIVE_RESOURCE_CONFIG
+{
+
+  unsigned int ReleaseSamplingRate;
+  unsigned int ContentionSamplingRate;
+  unsigned int NumberOfExcessiveTimeouts;
+
+};

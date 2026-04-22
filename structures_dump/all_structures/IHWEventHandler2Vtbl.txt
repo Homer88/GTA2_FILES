@@ -1,0 +1,15 @@
+// Структура: IHWEventHandler2Vtbl
+// Полей: 7
+// Строки в оригинале: 45175-45184
+struct IHWEventHandler2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHWEventHandler2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHWEventHandler2 *This);
+  ULONG (__stdcall *Release)(IHWEventHandler2 *This);
+  HRESULT (__stdcall *Initialize)(IHWEventHandler2 *This, LPCWSTR pszParams);
+  HRESULT (__stdcall *HandleEvent)(IHWEventHandler2 *This, LPCWSTR pszDeviceID, LPCWSTR pszAltDeviceID, LPCWSTR pszEventType);
+  HRESULT (__stdcall *HandleEventWithContent)(IHWEventHandler2 *This, LPCWSTR pszDeviceID, LPCWSTR pszAltDeviceID, LPCWSTR pszEventType, LPCWSTR pszContentTypeHandler, IDataObject *pdataobject);
+  HRESULT (__stdcall *HandleEventWithHWND)(IHWEventHandler2 *This, LPCWSTR pszDeviceID, LPCWSTR pszAltDeviceID, LPCWSTR pszEventType, HWND hwndOwner);
+
+};

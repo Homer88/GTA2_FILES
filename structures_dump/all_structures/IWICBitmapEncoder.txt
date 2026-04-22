@@ -1,0 +1,9 @@
+// Структура: IWICBitmapEncoder
+// Полей: 1
+// Строки в оригинале: 41848-41851
+struct IWICBitmapEncoder
+{
+
+  struct IWICBitmapEncoderVtbl *lpVtbl;
+
+};

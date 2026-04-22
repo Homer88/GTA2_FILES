@@ -1,0 +1,11 @@
+// Структура: _TRANSACTION_BASIC_INFORMATION
+// Полей: 3
+// Строки в оригинале: 84765-84770
+struct _TRANSACTION_BASIC_INFORMATION
+{
+
+  _GUID TransactionId;
+  unsigned int State;
+  unsigned int Outcome;
+
+};

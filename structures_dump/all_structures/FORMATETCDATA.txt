@@ -1,0 +1,12 @@
+// Структура: FORMATETCDATA
+// Полей: 4
+// Строки в оригинале: 126108-126114
+struct FORMATETCDATA
+{
+
+  tagFORMATETC _FormatEtc;
+  int fSaveOnFlush;
+  unsigned int dwReserved1;
+  unsigned int dwReserved2;
+
+};

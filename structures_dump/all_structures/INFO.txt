@@ -1,0 +1,12 @@
+// Структура: INFO
+// Полей: 4
+// Строки в оригинале: 125485-125491
+struct INFO
+{
+
+  int fUsed;
+  unsigned int dwConnection;
+  unsigned __int16 cf;
+  unsigned int grfAdvf;
+
+};

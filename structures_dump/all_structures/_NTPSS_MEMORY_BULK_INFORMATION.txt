@@ -1,0 +1,11 @@
+// Структура: _NTPSS_MEMORY_BULK_INFORMATION
+// Полей: 3
+// Строки в оригинале: 84035-84040
+struct _NTPSS_MEMORY_BULK_INFORMATION
+{
+
+  unsigned int QueryFlags;
+  unsigned int NumberOfEntries;
+  void *NextValidAddress;
+
+};

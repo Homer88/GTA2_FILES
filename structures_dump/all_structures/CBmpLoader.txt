@@ -1,0 +1,18 @@
+// Структура: CBmpLoader
+// Полей: 10
+// Строки в оригинале: 146979-146991
+struct CBmpLoader
+{
+
+  $6AE0522D3AEBBB3F5D746C80170034E8 ___u0;
+  $80038FDF163DE5545E46B546C71F2A90 ___u1;
+  int m_lSize;
+  int m_nWidth;
+  int m_nHeight;
+  int m_nTableSize;
+  int m_nTableEntries;
+  unsigned __int8 *m_pbBits;
+  int m_fWin;
+  int m_fVgaPal;
+
+};

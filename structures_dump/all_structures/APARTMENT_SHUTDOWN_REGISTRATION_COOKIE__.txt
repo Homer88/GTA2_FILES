@@ -1,0 +1,9 @@
+// Структура: APARTMENT_SHUTDOWN_REGISTRATION_COOKIE__
+// Полей: 1
+// Строки в оригинале: 62514-62517
+struct APARTMENT_SHUTDOWN_REGISTRATION_COOKIE__
+{
+
+  int unused;
+
+};

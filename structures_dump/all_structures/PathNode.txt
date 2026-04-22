@@ -1,0 +1,16 @@
+// Структура: PathNode
+// Полей: 8
+// Строки в оригинале: 10089-10099
+struct PathNode
+{
+
+  unsigned __int16 Index;
+  char field_2;
+  char field_3;
+  S58 S58[300];
+  byte buffer_0x4B0[1200];
+  __int16 field_8CA4;
+  char field_8CA6;
+  char field_0;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IOleAdviseHolder
+// Полей: 1
+// Строки в оригинале: 26991-26994
+struct IOleAdviseHolder
+{
+
+  struct IOleAdviseHolderVtbl *lpVtbl;
+
+};

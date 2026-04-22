@@ -1,0 +1,9 @@
+// Структура: IThumbnailSettings
+// Полей: 1
+// Строки в оригинале: 40585-40588
+struct IThumbnailSettings
+{
+
+  struct IThumbnailSettingsVtbl *lpVtbl;
+
+};

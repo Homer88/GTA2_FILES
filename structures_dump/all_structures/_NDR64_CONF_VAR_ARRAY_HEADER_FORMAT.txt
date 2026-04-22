@@ -1,0 +1,15 @@
+// Структура: _NDR64_CONF_VAR_ARRAY_HEADER_FORMAT
+// Полей: 7
+// Строки в оригинале: 332414-332423
+struct _NDR64_CONF_VAR_ARRAY_HEADER_FORMAT
+{
+
+  unsigned __int8 FormatCode;
+  unsigned __int8 Alignment;
+  _NDR64_ARRAY_FLAGS Flags;
+  unsigned __int8 Reserved;
+  unsigned int ElementSize;
+  const void *ConfDescriptor;
+  const void *VarDescriptor;
+
+};

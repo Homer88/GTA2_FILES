@@ -1,0 +1,15 @@
+// Структура: CM_COLUMNINFO
+// Полей: 7
+// Строки в оригинале: 36834-36843
+struct CM_COLUMNINFO
+{
+
+  DWORD cbSize;
+  DWORD dwMask;
+  DWORD dwState;
+  UINT uWidth;
+  UINT uDefaultWidth;
+  UINT uIdealWidth;
+  WCHAR wszName[80];
+
+};

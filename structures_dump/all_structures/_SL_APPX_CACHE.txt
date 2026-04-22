@@ -1,0 +1,13 @@
+// Структура: _SL_APPX_CACHE
+// Полей: 5
+// Строки в оригинале: 89979-89986
+struct _SL_APPX_CACHE
+{
+
+  unsigned int Version;
+  unsigned int Flags;
+  unsigned int DataSize;
+  unsigned __int64 DataCheckSum;
+  _SL_APPX_CACHE_VALUE_DESCRIPTOR Descriptors[1];
+
+};

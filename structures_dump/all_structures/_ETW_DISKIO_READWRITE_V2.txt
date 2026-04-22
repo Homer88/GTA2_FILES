@@ -1,0 +1,16 @@
+// Структура: _ETW_DISKIO_READWRITE_V2
+// Полей: 8
+// Строки в оригинале: 313506-313516
+struct _ETW_DISKIO_READWRITE_V2
+{
+
+  unsigned int DiskNumber;
+  unsigned int IrpFlags;
+  unsigned int Size;
+  unsigned int Reserved;
+  unsigned __int64 ByteOffset;
+  void *FileObject;
+  void *IrpAddr;
+  unsigned __int64 HighResResponseTime;
+
+};

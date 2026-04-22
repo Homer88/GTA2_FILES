@@ -1,0 +1,9 @@
+// Структура: _CONTAINER_VOLUME_STATE
+// Полей: 1
+// Строки в оригинале: 101604-101607
+struct _CONTAINER_VOLUME_STATE
+{
+
+  unsigned int Flags;
+
+};

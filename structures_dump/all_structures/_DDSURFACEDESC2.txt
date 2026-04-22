@@ -1,0 +1,16 @@
+// Структура: _DDSURFACEDESC2
+// Полей: 8
+// Строки в оригинале: 26478-26488
+struct _DDSURFACEDESC2
+{
+
+  DWORD dwSize;
+  DWORD dwFlags;
+  DWORD dwHeight;
+  DWORD dwWidth;
+  union
+  {
+    LONG lPitch;
+    DWORD dwLinearSize;
+  
+};

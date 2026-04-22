@@ -1,0 +1,42 @@
+// Структура: _WER_MODERN_APP_DIAG_DATA
+// Полей: 34
+// Строки в оригинале: 287541-287577
+struct _WER_MODERN_APP_DIAG_DATA
+{
+
+  _WER_EXTENDED_DIAG_DATA_HEADER Header;
+  unsigned int UIThread;
+  _FILETIME AppObjectRunStartTime;
+  _FILETIME AppObjectMainViewInitializeStartTime;
+  _FILETIME AppObjectMainViewInitializeEndTime;
+  _FILETIME AppObjectPrelaunchActivationStartTime;
+  _FILETIME AppObjectFirstActivationStartTime;
+  _FILETIME AppObjectActivationEventFiredTime;
+  int AppObjectActivationWasThrottled;
+  _FILETIME AppObjectLastSuspendStartTime;
+  int AppObjectSuspendWasThrottled;
+  unsigned int AppObjectActivationsInProgress;
+  unsigned int AppObjectMainASTASuspendDefferalCount;
+  unsigned int AppObjectMTASuspendDefferalCount;
+  _FILETIME AppObjectLastResumeStartTime;
+  int CoreWindowMainWindowActivated;
+  _FILETIME CoreWindowMainWindowActivatedTime;
+  int CoreWindowLastVisibilityChangedVisibleStatus;
+  _FILETIME CoreWindowLastVisibilityChangedNotificationTime;
+  _WER_WWA_DIAG_DATA WwaFramework;
+  unsigned int AppObjectSuspending;
+  unsigned __int64 LastAsyncOperationId;
+  wchar_t LastAsyncOperationName[256];
+  _FILETIME LastAsyncOperationStartTime;
+  $6966CBB45A78307D6FBD1C256751A84C ___u24;
+  unsigned int AppObjectNonMainASTASuspendDefferalCount;
+  _FILETIME AppObjectBackgroundTransitionStartTime;
+  _FILETIME AppObjectBackgroundTransitionDispatchStartTime;
+  int AppObjectVisibleViewCount;
+  int AppObjectLastLifecycleAction;
+  _FILETIME AppObjectLastLifecycleActionStartTime;
+  _FILETIME AppObjectLastGetWindowFactoryStartTime;
+  _FILETIME AppObjectLastForegroundActivationStartTime;
+  unsigned int AppObjectLastForegroundActivationThread;
+
+};

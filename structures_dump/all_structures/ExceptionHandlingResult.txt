@@ -1,0 +1,10 @@
+// Структура: ExceptionHandlingResult
+// Полей: 2
+// Строки в оригинале: 220002-220006
+struct ExceptionHandlingResult
+{
+
+  bool bException;
+  unsigned int dwExceptionCode;
+
+};

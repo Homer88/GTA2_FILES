@@ -1,0 +1,9 @@
+// Структура: _RTL_IMAGE_MITIGATION_SEHOP_POLICY
+// Полей: 1
+// Строки в оригинале: 94067-94070
+struct _RTL_IMAGE_MITIGATION_SEHOP_POLICY
+{
+
+  _RTL_IMAGE_MITIGATION_POLICY Sehop;
+
+};

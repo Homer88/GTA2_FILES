@@ -1,0 +1,12 @@
+// Структура: __FIAsyncOperationCompletedHandler_1_Windows__CUI__CPopups__CIUICommandVtbl
+// Полей: 4
+// Строки в оригинале: 37742-37748
+struct __FIAsyncOperationCompletedHandler_1_Windows__CUI__CPopups__CIUICommandVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(__FIAsyncOperationCompletedHandler_1_Windows__CUI__CPopups__CIUICommand *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(__FIAsyncOperationCompletedHandler_1_Windows__CUI__CPopups__CIUICommand *This);
+  ULONG (__stdcall *Release)(__FIAsyncOperationCompletedHandler_1_Windows__CUI__CPopups__CIUICommand *This);
+  HRESULT (__stdcall *Invoke)(__FIAsyncOperationCompletedHandler_1_Windows__CUI__CPopups__CIUICommand *This, __FIAsyncOperation_1_Windows__CUI__CPopups__CIUICommand *asyncInfo, AsyncStatus status);
+
+};

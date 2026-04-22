@@ -1,0 +1,10 @@
+// Структура: _WIN32_MEMORY_RANGE_ENTRY
+// Полей: 2
+// Строки в оригинале: 99274-99278
+struct _WIN32_MEMORY_RANGE_ENTRY
+{
+
+  void *VirtualAddress;
+  unsigned int NumberOfBytes;
+
+};

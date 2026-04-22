@@ -1,0 +1,12 @@
+// Структура: __MIDL_ICallFrame_0002
+// Полей: 4
+// Строки в оригинале: 120614-120620
+struct __MIDL_ICallFrame_0002
+{
+
+  unsigned __int8 fIn;
+  unsigned __int8 fOut;
+  unsigned int stackOffset;
+  unsigned int cbParam;
+
+};

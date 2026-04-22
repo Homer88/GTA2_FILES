@@ -1,0 +1,9 @@
+// Структура: IInternetZoneManager
+// Полей: 1
+// Строки в оригинале: 31248-31251
+struct IInternetZoneManager
+{
+
+  struct IInternetZoneManagerVtbl *lpVtbl;
+
+};

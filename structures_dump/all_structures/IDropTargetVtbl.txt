@@ -1,0 +1,15 @@
+// Структура: IDropTargetVtbl
+// Полей: 7
+// Строки в оригинале: 27685-27694
+struct IDropTargetVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDropTarget *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDropTarget *This);
+  ULONG (__stdcall *Release)(IDropTarget *This);
+  HRESULT (__stdcall *DragEnter)(IDropTarget *This, IDataObject *pDataObj, DWORD grfKeyState, POINTL pt, DWORD *pdwEffect);
+  HRESULT (__stdcall *DragOver)(IDropTarget *This, DWORD grfKeyState, POINTL pt, DWORD *pdwEffect);
+  HRESULT (__stdcall *DragLeave)(IDropTarget *This);
+  HRESULT (__stdcall *Drop)(IDropTarget *This, IDataObject *pDataObj, DWORD grfKeyState, POINTL pt, DWORD *pdwEffect);
+
+};

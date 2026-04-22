@@ -1,0 +1,12 @@
+// Структура: NDR64_PIPE_FLAGS
+// Полей: 4
+// Строки в оригинале: 336287-336293
+struct NDR64_PIPE_FLAGS
+{
+
+  unsigned __int8 Reserved1 : 5;
+  unsigned __int8 HasRange : 1;
+  unsigned __int8 BlockCopy : 1;
+  unsigned __int8 Reserved2 : 1;
+
+};

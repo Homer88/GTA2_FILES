@@ -1,0 +1,9 @@
+// Структура: IWICBitmapFlipRotator
+// Полей: 1
+// Строки в оригинале: 41872-41875
+struct IWICBitmapFlipRotator
+{
+
+  struct IWICBitmapFlipRotatorVtbl *lpVtbl;
+
+};

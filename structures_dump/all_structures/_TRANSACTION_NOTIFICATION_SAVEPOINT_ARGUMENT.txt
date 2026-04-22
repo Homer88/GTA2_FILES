@@ -1,0 +1,9 @@
+// Структура: _TRANSACTION_NOTIFICATION_SAVEPOINT_ARGUMENT
+// Полей: 1
+// Строки в оригинале: 105651-105654
+struct _TRANSACTION_NOTIFICATION_SAVEPOINT_ARGUMENT
+{
+
+  unsigned int SavepointId;
+
+};

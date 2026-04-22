@@ -1,0 +1,47 @@
+// Структура: IShellDispatch2Vtbl
+// Полей: 39
+// Строки в оригинале: 37643-37684
+struct IShellDispatch2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellDispatch2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellDispatch2 *This);
+  ULONG (__stdcall *Release)(IShellDispatch2 *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IShellDispatch2 *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IShellDispatch2 *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IShellDispatch2 *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IShellDispatch2 *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Application)(IShellDispatch2 *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_Parent)(IShellDispatch2 *This, IDispatch **ppid);
+  HRESULT (__stdcall *NameSpace)(IShellDispatch2 *This, VARIANT vDir, Folder **ppsdf);
+  HRESULT (__stdcall *BrowseForFolder)(IShellDispatch2 *This, int Hwnd, BSTR Title, int Options, VARIANT RootFolder, Folder **ppsdf);
+  HRESULT (__stdcall *Windows)(IShellDispatch2 *This, IDispatch **ppid);
+  HRESULT (__stdcall *Open)(IShellDispatch2 *This, VARIANT vDir);
+  HRESULT (__stdcall *Explore)(IShellDispatch2 *This, VARIANT vDir);
+  HRESULT (__stdcall *MinimizeAll)(IShellDispatch2 *This);
+  HRESULT (__stdcall *UndoMinimizeALL)(IShellDispatch2 *This);
+  HRESULT (__stdcall *FileRun)(IShellDispatch2 *This);
+  HRESULT (__stdcall *CascadeWindows)(IShellDispatch2 *This);
+  HRESULT (__stdcall *TileVertically)(IShellDispatch2 *This);
+  HRESULT (__stdcall *TileHorizontally)(IShellDispatch2 *This);
+  HRESULT (__stdcall *ShutdownWindows)(IShellDispatch2 *This);
+  HRESULT (__stdcall *Suspend)(IShellDispatch2 *This);
+  HRESULT (__stdcall *EjectPC)(IShellDispatch2 *This);
+  HRESULT (__stdcall *SetTime)(IShellDispatch2 *This);
+  HRESULT (__stdcall *TrayProperties)(IShellDispatch2 *This);
+  HRESULT (__stdcall *Help)(IShellDispatch2 *This);
+  HRESULT (__stdcall *FindFiles)(IShellDispatch2 *This);
+  HRESULT (__stdcall *FindComputer)(IShellDispatch2 *This);
+  HRESULT (__stdcall *RefreshMenu)(IShellDispatch2 *This);
+  HRESULT (__stdcall *ControlPanelItem)(IShellDispatch2 *This, BSTR bstrDir);
+  HRESULT (__stdcall *IsRestricted)(IShellDispatch2 *This, BSTR Group, BSTR Restriction, int *plRestrictValue);
+  HRESULT (__stdcall *ShellExecuteA)(IShellDispatch2 *This, BSTR File, VARIANT vArgs, VARIANT vDir, VARIANT vOperation, VARIANT vShow);
+  HRESULT (__stdcall *FindPrinter)(IShellDispatch2 *This, BSTR name, BSTR location, BSTR model);
+  HRESULT (__stdcall *GetSystemInformation)(IShellDispatch2 *This, BSTR name, VARIANT *pv);
+  HRESULT (__stdcall *ServiceStart)(IShellDispatch2 *This, BSTR ServiceName, VARIANT Persistent, VARIANT *pSuccess);
+  HRESULT (__stdcall *ServiceStop)(IShellDispatch2 *This, BSTR ServiceName, VARIANT Persistent, VARIANT *pSuccess);
+  HRESULT (__stdcall *IsServiceRunning)(IShellDispatch2 *This, BSTR ServiceName, VARIANT *pRunning);
+  HRESULT (__stdcall *CanStartStopService)(IShellDispatch2 *This, BSTR ServiceName, VARIANT *pCanStartStop);
+  HRESULT (__stdcall *ShowBrowserBar)(IShellDispatch2 *This, BSTR bstrClsid, VARIANT bShow, VARIANT *pSuccess);
+
+};

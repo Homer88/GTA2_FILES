@@ -1,0 +1,11 @@
+// Структура: _SE_APPID_TAGGING_CLAIM_NODE
+// Полей: 3
+// Строки в оригинале: 104344-104349
+struct _SE_APPID_TAGGING_CLAIM_NODE
+{
+
+  _UNICODE_STRING AppIdTaggingKey;
+  _UNICODE_STRING AppIdTaggingValue;
+  _SINGLE_LIST_ENTRY ListEntry;
+
+};

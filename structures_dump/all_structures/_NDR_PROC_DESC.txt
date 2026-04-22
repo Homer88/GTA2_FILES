@@ -1,0 +1,13 @@
+// Структура: _NDR_PROC_DESC
+// Полей: 5
+// Строки в оригинале: 86396-86403
+struct _NDR_PROC_DESC
+{
+
+  unsigned __int16 ClientBufferSize;
+  unsigned __int16 ServerBufferSize;
+  INTERPRETER_OPT_FLAGS Oi2Flags;
+  unsigned __int8 NumberParams;
+  NDR_PROC_HEADER_EXTS NdrExts;
+
+};

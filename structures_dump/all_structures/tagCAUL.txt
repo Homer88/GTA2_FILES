@@ -1,0 +1,10 @@
+// Структура: tagCAUL
+// Полей: 2
+// Строки в оригинале: 31538-31542
+struct tagCAUL
+{
+
+  ULONG cElems;
+  ULONG *pElems;
+
+};

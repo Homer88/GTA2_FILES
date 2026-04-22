@@ -1,0 +1,18 @@
+// Структура: WINTRUST_CATALOG_INFO_
+// Полей: 10
+// Строки в оригинале: 121853-121865
+struct WINTRUST_CATALOG_INFO_
+{
+
+  unsigned int cbStruct;
+  unsigned int dwCatalogVersion;
+  const wchar_t *pcwszCatalogFilePath;
+  const wchar_t *pcwszMemberTag;
+  const wchar_t *pcwszMemberFilePath;
+  void *hMemberFile;
+  unsigned __int8 *pbCalculatedFileHash;
+  unsigned int cbCalculatedFileHash;
+  const _CTL_CONTEXT *pcCatalogContext;
+  void *hCatAdmin;
+
+};

@@ -1,0 +1,10 @@
+// Структура: CarPhysicsWorld
+// Полей: 2
+// Строки в оригинале: 7862-7866
+struct CarPhysicsWorld
+{
+
+  EngineStruct *FirstElement;
+  EngineStruct EngineStruct[306];
+
+};

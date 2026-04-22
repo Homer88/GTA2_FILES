@@ -1,0 +1,11 @@
+// Структура: _CERT_TRUST_LIST_INFO
+// Полей: 3
+// Строки в оригинале: 80007-80012
+struct _CERT_TRUST_LIST_INFO
+{
+
+  unsigned int cbSize;
+  _CTL_ENTRY *pCtlEntry;
+  const _CTL_CONTEXT *pCtlContext;
+
+};

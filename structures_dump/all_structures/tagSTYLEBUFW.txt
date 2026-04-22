@@ -1,0 +1,10 @@
+// Структура: tagSTYLEBUFW
+// Полей: 2
+// Строки в оригинале: 82146-82150
+struct tagSTYLEBUFW
+{
+
+  unsigned int dwStyle;
+  wchar_t szDescription[32];
+
+};

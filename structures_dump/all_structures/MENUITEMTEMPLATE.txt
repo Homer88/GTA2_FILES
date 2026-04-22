@@ -1,0 +1,11 @@
+// Структура: MENUITEMTEMPLATE
+// Полей: 3
+// Строки в оригинале: 108551-108556
+struct MENUITEMTEMPLATE
+{
+
+  unsigned __int16 mtOption;
+  unsigned __int16 mtID;
+  wchar_t mtString[1];
+
+};

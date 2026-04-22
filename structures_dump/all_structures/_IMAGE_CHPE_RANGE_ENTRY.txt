@@ -1,0 +1,10 @@
+// Структура: _IMAGE_CHPE_RANGE_ENTRY
+// Полей: 2
+// Строки в оригинале: 92410-92414
+struct _IMAGE_CHPE_RANGE_ENTRY
+{
+
+  $D73B8CCCC5B40C3F521B772B7687B782 ___u0;
+  unsigned int Length;
+
+};

@@ -1,0 +1,11 @@
+// Структура: tagUSEROBJECTFLAGS
+// Полей: 3
+// Строки в оригинале: 99312-99317
+struct tagUSEROBJECTFLAGS
+{
+
+  int fInherit;
+  int fReserved;
+  unsigned int dwFlags;
+
+};

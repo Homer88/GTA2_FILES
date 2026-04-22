@@ -1,0 +1,13 @@
+// Структура: ITransferMediumItemVtbl
+// Полей: 5
+// Строки в оригинале: 33785-33792
+struct ITransferMediumItemVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITransferMediumItem *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITransferMediumItem *This);
+  ULONG (__stdcall *Release)(ITransferMediumItem *This);
+  HRESULT (__stdcall *GetItemIDList)(ITransferMediumItem *This, LPITEMIDLIST *ppidl);
+  HRESULT (__stdcall *GetItem)(ITransferMediumItem *This, IShellItem **ppsi);
+
+};

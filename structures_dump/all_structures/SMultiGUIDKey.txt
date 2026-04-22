@@ -1,0 +1,10 @@
+// Структура: SMultiGUIDKey
+// Полей: 2
+// Строки в оригинале: 64044-64048
+struct SMultiGUIDKey
+{
+
+  int cGUID;
+  _GUID *aGUID;
+
+};

@@ -1,0 +1,17 @@
+// Структура: IOleInPlaceObjectVtbl
+// Полей: 9
+// Строки в оригинале: 28551-28562
+struct IOleInPlaceObjectVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleInPlaceObject *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleInPlaceObject *This);
+  ULONG (__stdcall *Release)(IOleInPlaceObject *This);
+  HRESULT (__stdcall *GetWindow)(IOleInPlaceObject *This, HWND *phwnd);
+  HRESULT (__stdcall *ContextSensitiveHelp)(IOleInPlaceObject *This, BOOL fEnterMode);
+  HRESULT (__stdcall *InPlaceDeactivate)(IOleInPlaceObject *This);
+  HRESULT (__stdcall *UIDeactivate)(IOleInPlaceObject *This);
+  HRESULT (__stdcall *SetObjectRects)(IOleInPlaceObject *This, LPCRECT lprcPosRect, LPCRECT lprcClipRect);
+  HRESULT (__stdcall *ReactivateAndUndo)(IOleInPlaceObject *This);
+
+};

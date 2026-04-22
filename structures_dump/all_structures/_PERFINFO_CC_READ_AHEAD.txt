@@ -1,0 +1,14 @@
+// Структура: _PERFINFO_CC_READ_AHEAD
+// Полей: 6
+// Строки в оригинале: 313675-313683
+struct _PERFINFO_CC_READ_AHEAD
+{
+
+  unsigned int WorkItemKey;
+  unsigned __int64 FileOffset;
+  unsigned int Size;
+  unsigned int PagePriority;
+  unsigned int DetectedPattern;
+  unsigned int Reserved;
+
+};

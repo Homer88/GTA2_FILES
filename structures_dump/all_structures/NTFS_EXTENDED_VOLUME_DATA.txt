@@ -1,0 +1,18 @@
+// Структура: NTFS_EXTENDED_VOLUME_DATA
+// Полей: 10
+// Строки в оригинале: 98476-98488
+struct NTFS_EXTENDED_VOLUME_DATA
+{
+
+  unsigned int ByteCount;
+  unsigned __int16 MajorVersion;
+  unsigned __int16 MinorVersion;
+  unsigned int BytesPerPhysicalSector;
+  unsigned __int16 LfsMajorVersion;
+  unsigned __int16 LfsMinorVersion;
+  unsigned int MaxDeviceTrimExtentCount;
+  unsigned int MaxDeviceTrimByteCount;
+  unsigned int MaxVolumeTrimExtentCount;
+  unsigned int MaxVolumeTrimByteCount;
+
+};

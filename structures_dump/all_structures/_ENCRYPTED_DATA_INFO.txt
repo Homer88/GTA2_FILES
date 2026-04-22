@@ -1,0 +1,19 @@
+// Структура: _ENCRYPTED_DATA_INFO
+// Полей: 11
+// Строки в оригинале: 98911-98924
+struct _ENCRYPTED_DATA_INFO
+{
+
+  unsigned __int64 StartingFileOffset;
+  unsigned int OutputBufferOffset;
+  unsigned int BytesWithinFileSize;
+  unsigned int BytesWithinValidDataLength;
+  unsigned __int16 CompressionFormat;
+  unsigned __int8 DataUnitShift;
+  unsigned __int8 ChunkShift;
+  unsigned __int8 ClusterShift;
+  unsigned __int8 EncryptionFormat;
+  unsigned __int16 NumberOfDataBlocks;
+  unsigned int DataBlockSize[1];
+
+};

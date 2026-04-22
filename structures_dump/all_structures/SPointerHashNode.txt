@@ -1,0 +1,10 @@
+// Структура: SPointerHashNode
+// Полей: 2
+// Строки в оригинале: 59479-59483
+struct SPointerHashNode
+{
+
+  SHashChain chain;
+  void *key;
+
+};

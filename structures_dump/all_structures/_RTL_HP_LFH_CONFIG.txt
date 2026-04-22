@@ -1,0 +1,11 @@
+// Структура: _RTL_HP_LFH_CONFIG
+// Полей: 3
+// Строки в оригинале: 20652-20657
+struct _RTL_HP_LFH_CONFIG
+{
+
+  unsigned __int16 MaxBlockSize;
+  unsigned __int16 WitholdPageCrossingBlocks : 1;
+  unsigned __int16 DisableRandomization : 1;
+
+};

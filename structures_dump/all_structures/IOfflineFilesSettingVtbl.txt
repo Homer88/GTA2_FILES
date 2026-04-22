@@ -1,0 +1,20 @@
+// Структура: IOfflineFilesSettingVtbl
+// Полей: 12
+// Строки в оригинале: 27327-27341
+struct IOfflineFilesSettingVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesSetting *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesSetting *This);
+  ULONG (__stdcall *Release)(IOfflineFilesSetting *This);
+  HRESULT (__stdcall *GetName)(IOfflineFilesSetting *This, LPWSTR *ppszName);
+  HRESULT (__stdcall *GetValueType)(IOfflineFilesSetting *This, OFFLINEFILES_SETTING_VALUE_TYPE *pType);
+  HRESULT (__stdcall *GetPreference)(IOfflineFilesSetting *This, VARIANT *pvarValue, DWORD dwScope);
+  HRESULT (__stdcall *GetPreferenceScope)(IOfflineFilesSetting *This, DWORD *pdwScope);
+  HRESULT (__stdcall *SetPreference)(IOfflineFilesSetting *This, const VARIANT *pvarValue, DWORD dwScope);
+  HRESULT (__stdcall *DeletePreference)(IOfflineFilesSetting *This, DWORD dwScope);
+  HRESULT (__stdcall *GetPolicy)(IOfflineFilesSetting *This, VARIANT *pvarValue, DWORD dwScope);
+  HRESULT (__stdcall *GetPolicyScope)(IOfflineFilesSetting *This, DWORD *pdwScope);
+  HRESULT (__stdcall *GetValue)(IOfflineFilesSetting *This, VARIANT *pvarValue, BOOL *pbSetByPolicy);
+
+};

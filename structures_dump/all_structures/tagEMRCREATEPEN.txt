@@ -1,0 +1,11 @@
+// Структура: tagEMRCREATEPEN
+// Полей: 3
+// Строки в оригинале: 105190-105195
+struct tagEMRCREATEPEN
+{
+
+  tagEMR emr;
+  unsigned int ihPen;
+  tagLOGPEN lopn;
+
+};

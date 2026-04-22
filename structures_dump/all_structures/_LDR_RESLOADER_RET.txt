@@ -1,0 +1,11 @@
+// Структура: _LDR_RESLOADER_RET
+// Полей: 3
+// Строки в оригинале: 108471-108476
+struct _LDR_RESLOADER_RET
+{
+
+  void *Module;
+  void *DataEntry;
+  void *TargetModule;
+
+};

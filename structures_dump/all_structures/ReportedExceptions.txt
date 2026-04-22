@@ -1,0 +1,11 @@
+// Структура: ReportedExceptions
+// Полей: 3
+// Строки в оригинале: 246976-246981
+struct ReportedExceptions
+{
+
+  unsigned int dwExceptionCode;
+  unsigned int dwReportCount;
+  unsigned int dwMaxCount;
+
+};

@@ -1,0 +1,26 @@
+// Структура: IStorageVtbl
+// Полей: 18
+// Строки в оригинале: 27168-27188
+struct IStorageVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IStorage *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IStorage *This);
+  ULONG (__stdcall *Release)(IStorage *This);
+  HRESULT (__stdcall *CreateStream)(IStorage *This, const OLECHAR *pwcsName, DWORD grfMode, DWORD reserved1, DWORD reserved2, IStream **ppstm);
+  HRESULT (__stdcall *OpenStream)(IStorage *This, const OLECHAR *pwcsName, void *reserved1, DWORD grfMode, DWORD reserved2, IStream **ppstm);
+  HRESULT (__stdcall *CreateStorage)(IStorage *This, const OLECHAR *pwcsName, DWORD grfMode, DWORD reserved1, DWORD reserved2, IStorage **ppstg);
+  HRESULT (__stdcall *OpenStorage)(IStorage *This, const OLECHAR *pwcsName, IStorage *pstgPriority, DWORD grfMode, SNB snbExclude, DWORD reserved, IStorage **ppstg);
+  HRESULT (__stdcall *CopyTo)(IStorage *This, DWORD ciidExclude, const IID *rgiidExclude, SNB snbExclude, IStorage *pstgDest);
+  HRESULT (__stdcall *MoveElementTo)(IStorage *This, const OLECHAR *pwcsName, IStorage *pstgDest, const OLECHAR *pwcsNewName, DWORD grfFlags);
+  HRESULT (__stdcall *Commit)(IStorage *This, DWORD grfCommitFlags);
+  HRESULT (__stdcall *Revert)(IStorage *This);
+  HRESULT (__stdcall *EnumElements)(IStorage *This, DWORD reserved1, void *reserved2, DWORD reserved3, IEnumSTATSTG **ppenum);
+  HRESULT (__stdcall *DestroyElement)(IStorage *This, const OLECHAR *pwcsName);
+  HRESULT (__stdcall *RenameElement)(IStorage *This, const OLECHAR *pwcsOldName, const OLECHAR *pwcsNewName);
+  HRESULT (__stdcall *SetElementTimes)(IStorage *This, const OLECHAR *pwcsName, const FILETIME *pctime, const FILETIME *patime, const FILETIME *pmtime);
+  HRESULT (__stdcall *SetClass)(IStorage *This, const IID *const clsid);
+  HRESULT (__stdcall *SetStateBits)(IStorage *This, DWORD grfStateBits, DWORD grfMask);
+  HRESULT (__stdcall *Stat)(IStorage *This, STATSTG *pstatstg, DWORD grfStatFlag);
+
+};

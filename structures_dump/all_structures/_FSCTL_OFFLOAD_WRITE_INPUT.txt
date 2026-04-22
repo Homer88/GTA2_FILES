@@ -1,0 +1,14 @@
+// Структура: _FSCTL_OFFLOAD_WRITE_INPUT
+// Полей: 6
+// Строки в оригинале: 99377-99385
+struct _FSCTL_OFFLOAD_WRITE_INPUT
+{
+
+  unsigned int Size;
+  unsigned int Flags;
+  unsigned __int64 FileOffset;
+  unsigned __int64 CopyLength;
+  unsigned __int64 TransferOffset;
+  unsigned __int8 Token[512];
+
+};

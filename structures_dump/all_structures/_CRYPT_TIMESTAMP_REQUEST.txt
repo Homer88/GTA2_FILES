@@ -1,0 +1,16 @@
+// Структура: _CRYPT_TIMESTAMP_REQUEST
+// Полей: 8
+// Строки в оригинале: 110529-110539
+struct _CRYPT_TIMESTAMP_REQUEST
+{
+
+  unsigned int dwVersion;
+  _CRYPT_ALGORITHM_IDENTIFIER HashAlgorithm;
+  _CRYPTOAPI_BLOB HashedMessage;
+  char *pszTSAPolicyId;
+  _CRYPTOAPI_BLOB Nonce;
+  int fCertReq;
+  unsigned int cExtension;
+  _CERT_EXTENSION *rgExtension;
+
+};

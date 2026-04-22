@@ -1,0 +1,24 @@
+// Структура: S373
+// Полей: 16
+// Строки в оригинале: 9887-9905
+struct S373
+{
+
+  char NextElement;
+  char field_1;
+  char field_2;
+  char field_3;
+  char NextElement1;
+  char field_5;
+  char field_6;
+  char field_7;
+  char field_8;
+  char field_9;
+  char field_A;
+  char field_B;
+  char field_C;
+  char field_D;
+  char field_E;
+  char field_F;
+
+};

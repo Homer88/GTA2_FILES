@@ -1,0 +1,13 @@
+// Структура: _FAST_MUTEX
+// Полей: 5
+// Строки в оригинале: 16107-16114
+struct _FAST_MUTEX
+{
+
+  int Count;
+  void *Owner;
+  unsigned int Contention;
+  _KEVENT Event;
+  unsigned int OldIrql;
+
+};

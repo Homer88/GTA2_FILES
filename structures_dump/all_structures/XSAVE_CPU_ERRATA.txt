@@ -1,0 +1,10 @@
+// Структура: XSAVE_CPU_ERRATA
+// Полей: 2
+// Строки в оригинале: 88908-88912
+struct XSAVE_CPU_ERRATA
+{
+
+  unsigned int NumberOfErrata;
+  XSAVE_CPU_INFO Errata[1];
+
+};

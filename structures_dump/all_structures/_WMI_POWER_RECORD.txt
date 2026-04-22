@@ -1,0 +1,16 @@
+// Структура: _WMI_POWER_RECORD
+// Полей: 8
+// Строки в оригинале: 313588-313598
+struct _WMI_POWER_RECORD
+{
+
+  unsigned __int8 SystemS1;
+  unsigned __int8 SystemS2;
+  unsigned __int8 SystemS3;
+  unsigned __int8 SystemS4;
+  unsigned __int8 SystemS5;
+  unsigned __int8 AoAc;
+  char Pad2;
+  char Pad3;
+
+};

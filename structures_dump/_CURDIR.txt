@@ -1,0 +1,9 @@
+// Structure: _CURDIR
+// Lines: 2955 - 2959
+// Fields: 3
+
+struct _CURDIR
+{
+  struct _UNICODE_STRING DosPath;
+  void *Handle;
+};

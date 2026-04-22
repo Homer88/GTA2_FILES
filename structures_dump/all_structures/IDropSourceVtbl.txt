@@ -1,0 +1,13 @@
+// Структура: IDropSourceVtbl
+// Полей: 5
+// Строки в оригинале: 28494-28501
+struct IDropSourceVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDropSource *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDropSource *This);
+  ULONG (__stdcall *Release)(IDropSource *This);
+  HRESULT (__stdcall *QueryContinueDrag)(IDropSource *This, BOOL fEscapePressed, DWORD grfKeyState);
+  HRESULT (__stdcall *GiveFeedback)(IDropSource *This, DWORD dwEffect);
+
+};

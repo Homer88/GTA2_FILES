@@ -1,0 +1,11 @@
+// Структура: _RTL_PERTHREAD_CURDIR
+// Полей: 3
+// Строки в оригинале: 109327-109332
+struct _RTL_PERTHREAD_CURDIR
+{
+
+  _RTL_DRIVE_LETTER_CURDIR *CurrentDirectories;
+  _UNICODE_STRING *ImageName;
+  void *Environment;
+
+};

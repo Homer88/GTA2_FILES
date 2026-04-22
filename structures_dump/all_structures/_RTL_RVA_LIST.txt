@@ -1,0 +1,15 @@
+// Структура: _RTL_RVA_LIST
+// Полей: 7
+// Строки в оригинале: 84437-84446
+struct _RTL_RVA_LIST
+{
+
+  unsigned int RvaCount;
+  unsigned int StateBitsPerRva;
+  unsigned __int8 *CompressedBuffer;
+  unsigned int CompressedBufferSize;
+  _RTL_BITMAP RvaStateBitMap;
+  unsigned int *StateBitValueMap;
+  void *ExtensionBuffer;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IAsyncInfo
+// Полей: 1
+// Строки в оригинале: 30018-30021
+struct IAsyncInfo
+{
+
+  struct IAsyncInfoVtbl *lpVtbl;
+
+};

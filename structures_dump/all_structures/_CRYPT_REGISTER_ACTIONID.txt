@@ -1,0 +1,17 @@
+// Структура: _CRYPT_REGISTER_ACTIONID
+// Полей: 9
+// Строки в оригинале: 123441-123452
+struct _CRYPT_REGISTER_ACTIONID
+{
+
+  unsigned int cbStruct;
+  _CRYPT_TRUST_REG_ENTRY sInitProvider;
+  _CRYPT_TRUST_REG_ENTRY sObjectProvider;
+  _CRYPT_TRUST_REG_ENTRY sSignatureProvider;
+  _CRYPT_TRUST_REG_ENTRY sCertificateProvider;
+  _CRYPT_TRUST_REG_ENTRY sCertificatePolicyProvider;
+  _CRYPT_TRUST_REG_ENTRY sFinalPolicyProvider;
+  _CRYPT_TRUST_REG_ENTRY sTestPolicyProvider;
+  _CRYPT_TRUST_REG_ENTRY sCleanupProvider;
+
+};

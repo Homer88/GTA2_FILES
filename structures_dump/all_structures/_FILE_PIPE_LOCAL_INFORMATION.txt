@@ -1,0 +1,18 @@
+// Структура: _FILE_PIPE_LOCAL_INFORMATION
+// Полей: 10
+// Строки в оригинале: 106861-106873
+struct _FILE_PIPE_LOCAL_INFORMATION
+{
+
+  unsigned int NamedPipeType;
+  unsigned int NamedPipeConfiguration;
+  unsigned int MaximumInstances;
+  unsigned int CurrentInstances;
+  unsigned int InboundQuota;
+  unsigned int ReadDataAvailable;
+  unsigned int OutboundQuota;
+  unsigned int WriteQuotaAvailable;
+  unsigned int NamedPipeState;
+  unsigned int NamedPipeEnd;
+
+};

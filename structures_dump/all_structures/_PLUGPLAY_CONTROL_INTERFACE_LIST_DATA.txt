@@ -1,0 +1,13 @@
+// Структура: _PLUGPLAY_CONTROL_INTERFACE_LIST_DATA
+// Полей: 5
+// Строки в оригинале: 100653-100660
+struct _PLUGPLAY_CONTROL_INTERFACE_LIST_DATA
+{
+
+  _UNICODE_STRING DeviceInstance;
+  _GUID *InterfaceGuid;
+  wchar_t *InterfaceList;
+  unsigned int InterfaceListSize;
+  unsigned int Flags;
+
+};

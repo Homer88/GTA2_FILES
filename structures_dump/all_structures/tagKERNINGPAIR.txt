@@ -1,0 +1,11 @@
+// Структура: tagKERNINGPAIR
+// Полей: 3
+// Строки в оригинале: 105437-105442
+struct tagKERNINGPAIR
+{
+
+  unsigned __int16 wFirst;
+  unsigned __int16 wSecond;
+  int iKernAmount;
+
+};

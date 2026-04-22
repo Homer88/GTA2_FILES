@@ -1,0 +1,10 @@
+// Структура: tagCAPROPVARIANT
+// Полей: 2
+// Строки в оригинале: 31730-31734
+struct tagCAPROPVARIANT
+{
+
+  ULONG cElems;
+  PROPVARIANT *pElems;
+
+};

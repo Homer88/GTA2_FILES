@@ -1,0 +1,11 @@
+// Структура: _CERT_KEY_CONTEXT
+// Полей: 3
+// Строки в оригинале: 88765-88770
+struct _CERT_KEY_CONTEXT
+{
+
+  unsigned int cbSize;
+  $2648935626D60F3A93F830EF5D884CB4 ___u1;
+  unsigned int dwKeySpec;
+
+};

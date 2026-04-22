@@ -1,0 +1,9 @@
+// Структура: ITfActiveLanguageProfileNotifySink
+// Полей: 1
+// Строки в оригинале: 30114-30117
+struct ITfActiveLanguageProfileNotifySink
+{
+
+  struct ITfActiveLanguageProfileNotifySinkVtbl *lpVtbl;
+
+};

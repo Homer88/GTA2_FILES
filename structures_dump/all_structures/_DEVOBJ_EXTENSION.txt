@@ -1,0 +1,24 @@
+// Структура: _DEVOBJ_EXTENSION
+// Полей: 16
+// Строки в оригинале: 17074-17092
+struct _DEVOBJ_EXTENSION
+{
+
+  __int16 Type;
+  unsigned __int16 Size;
+  _DEVICE_OBJECT *DeviceObject;
+  unsigned int PowerFlags;
+  struct _DEVICE_OBJECT_POWER_EXTENSION *Dope;
+  unsigned int ExtensionFlags;
+  void *DeviceNode;
+  _DEVICE_OBJECT *AttachedTo;
+  int StartIoCount;
+  int StartIoKey;
+  unsigned int StartIoFlags;
+  _VPB *Vpb;
+  void *DependencyNode;
+  void *InterruptContext;
+  int InterruptCount;
+  void *VerifierContext;
+
+};

@@ -1,0 +1,17 @@
+// Структура: IAdviseSinkExVtbl
+// Полей: 9
+// Строки в оригинале: 352433-352444
+struct IAdviseSinkExVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IAdviseSinkEx *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IAdviseSinkEx *This);
+  ULONG (__stdcall *Release)(IAdviseSinkEx *This);
+  void (__stdcall *OnDataChange)(IAdviseSinkEx *This, FORMATETC *pFormatetc, STGMEDIUM *pStgmed);
+  void (__stdcall *OnViewChange)(IAdviseSinkEx *This, DWORD dwAspect, LONG lindex);
+  void (__stdcall *OnRename)(IAdviseSinkEx *This, IMoniker *pmk);
+  void (__stdcall *OnSave)(IAdviseSinkEx *This);
+  void (__stdcall *OnClose)(IAdviseSinkEx *This);
+  void (__stdcall *OnViewStatusChange)(IAdviseSinkEx *This, DWORD dwViewStatus);
+
+};

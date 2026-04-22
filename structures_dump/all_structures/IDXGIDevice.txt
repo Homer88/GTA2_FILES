@@ -1,0 +1,9 @@
+// Структура: IDXGIDevice
+// Полей: 1
+// Строки в оригинале: 351925-351928
+struct IDXGIDevice
+{
+
+  struct IDXGIDeviceVtbl *lpVtbl;
+
+};

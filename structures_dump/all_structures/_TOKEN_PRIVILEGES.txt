@@ -1,0 +1,10 @@
+// Структура: _TOKEN_PRIVILEGES
+// Полей: 2
+// Строки в оригинале: 86666-86670
+struct _TOKEN_PRIVILEGES
+{
+
+  unsigned int PrivilegeCount;
+  _LUID_AND_ATTRIBUTES Privileges[1];
+
+};

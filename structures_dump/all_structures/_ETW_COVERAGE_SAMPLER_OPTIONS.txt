@@ -1,0 +1,30 @@
+// Структура: _ETW_COVERAGE_SAMPLER_OPTIONS
+// Полей: 22
+// Строки в оригинале: 308815-308839
+struct _ETW_COVERAGE_SAMPLER_OPTIONS
+{
+
+  _ETW_COVERAGE_SAMPLER_OPTION_FLAGS Flags;
+  unsigned int HashSeed;
+  unsigned int ImageLruSize;
+  unsigned int SampleTableMinEntries;
+  unsigned int SampleTableMaxEntries;
+  unsigned int SampleTableMaxQueued;
+  unsigned int SampleBufferSize;
+  unsigned int SampleBufferMaxCountPerProc;
+  unsigned int CaptureBufferMaxCountPerProc;
+  unsigned int ApcMaxCountPerProc;
+  unsigned int ProfileSamplePeriodUS;
+  unsigned int ProfileSampleCountPerPeriod;
+  unsigned int CSwitchSamplePeriodUS;
+  unsigned int CSwitchSampleCountPerPeriod;
+  unsigned int RThreadSamplePeriodUS;
+  unsigned int RThreadSampleCountPerPeriod;
+  unsigned int PGFaultSamplePeriodUS;
+  unsigned int PGFaultSampleCountPerPeriod;
+  unsigned int StackDepth;
+  unsigned int StackCacheEntries;
+  wchar_t PathInclusionList[128];
+  wchar_t PathExclusionList[128];
+
+};

@@ -1,0 +1,9 @@
+// Структура: _PERFINFO_GROUPMASK
+// Полей: 1
+// Строки в оригинале: 19593-19596
+struct _PERFINFO_GROUPMASK
+{
+
+  unsigned int Masks[8];
+
+};

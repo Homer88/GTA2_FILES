@@ -1,0 +1,25 @@
+// Структура: IActionCollectionVtbl
+// Полей: 17
+// Строки в оригинале: 44954-44973
+struct IActionCollectionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IActionCollection *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IActionCollection *This);
+  ULONG (__stdcall *Release)(IActionCollection *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IActionCollection *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IActionCollection *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IActionCollection *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IActionCollection *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Count)(IActionCollection *This, int *pCount);
+  HRESULT (__stdcall *get_Item)(IActionCollection *This, int index, IAction **ppAction);
+  HRESULT (__stdcall *get__NewEnum)(IActionCollection *This, IUnknown **ppEnum);
+  HRESULT (__stdcall *get_XmlText)(IActionCollection *This, BSTR *pText);
+  HRESULT (__stdcall *put_XmlText)(IActionCollection *This, BSTR text);
+  HRESULT (__stdcall *Create)(IActionCollection *This, TASK_ACTION_TYPE type, IAction **ppAction);
+  HRESULT (__stdcall *Remove)(IActionCollection *This, VARIANT index);
+  HRESULT (__stdcall *Clear)(IActionCollection *This);
+  HRESULT (__stdcall *get_Context)(IActionCollection *This, BSTR *pContext);
+  HRESULT (__stdcall *put_Context)(IActionCollection *This, BSTR context);
+
+};

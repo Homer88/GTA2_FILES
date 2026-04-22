@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_FILE_OPERATION_END
+// Полей: 3
+// Строки в оригинале: 313661-313666
+struct _PERFINFO_FILE_OPERATION_END
+{
+
+  unsigned int Irp;
+  unsigned int ExtraInformation;
+  int Status;
+
+};

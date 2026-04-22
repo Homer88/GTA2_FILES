@@ -1,0 +1,12 @@
+// Структура: _CERT_POLICY_CONSTRAINTS_INFO
+// Полей: 4
+// Строки в оригинале: 104634-104640
+struct _CERT_POLICY_CONSTRAINTS_INFO
+{
+
+  int fRequireExplicitPolicy;
+  unsigned int dwRequireExplicitPolicySkipCerts;
+  int fInhibitPolicyMapping;
+  unsigned int dwInhibitPolicyMappingSkipCerts;
+
+};

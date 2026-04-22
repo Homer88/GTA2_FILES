@@ -1,0 +1,12 @@
+// Структура: CompObjHdr
+// Полей: 4
+// Строки в оригинале: 126450-126456
+struct CompObjHdr
+{
+
+  unsigned int m_dwFirstDword;
+  unsigned int m_dwOSVer;
+  unsigned int m_unused;
+  _GUID m_clsClass;
+
+};

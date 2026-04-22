@@ -1,0 +1,14 @@
+// Структура: _HEAP_EXTENDED_INFORMATION
+// Полей: 6
+// Строки в оригинале: 93919-93927
+struct _HEAP_EXTENDED_INFORMATION
+{
+
+  void *Process;
+  unsigned int Heap;
+  unsigned int Level;
+  int (__stdcall *CallbackRoutine)(_HEAP_INFORMATION_ITEM *, void *);
+  void *CallbackContext;
+  $D8EF6DDCD263AE3E5A836DD1E0C82331 ___u5;
+
+};

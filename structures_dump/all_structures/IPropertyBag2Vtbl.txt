@@ -1,0 +1,16 @@
+// Структура: IPropertyBag2Vtbl
+// Полей: 8
+// Строки в оригинале: 42345-42355
+struct IPropertyBag2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyBag2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyBag2 *This);
+  ULONG (__stdcall *Release)(IPropertyBag2 *This);
+  HRESULT (__stdcall *Read)(IPropertyBag2 *This, ULONG cProperties, PROPBAG2 *pPropBag, IErrorLog *pErrLog, VARIANT *pvarValue, HRESULT *phrError);
+  HRESULT (__stdcall *Write)(IPropertyBag2 *This, ULONG cProperties, PROPBAG2 *pPropBag, VARIANT *pvarValue);
+  HRESULT (__stdcall *CountProperties)(IPropertyBag2 *This, ULONG *pcProperties);
+  HRESULT (__stdcall *GetPropertyInfo)(IPropertyBag2 *This, ULONG iProperty, ULONG cProperties, PROPBAG2 *pPropBag, ULONG *pcProperties);
+  HRESULT (__stdcall *LoadObject)(IPropertyBag2 *This, LPCOLESTR pstrName, DWORD dwHint, IUnknown *pUnkObject, IErrorLog *pErrLog);
+
+};

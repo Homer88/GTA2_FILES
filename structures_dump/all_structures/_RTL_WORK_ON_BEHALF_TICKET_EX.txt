@@ -1,0 +1,11 @@
+// Структура: _RTL_WORK_ON_BEHALF_TICKET_EX
+// Полей: 3
+// Строки в оригинале: 95990-95995
+struct _RTL_WORK_ON_BEHALF_TICKET_EX
+{
+
+  _ALPC_WORK_ON_BEHALF_TICKET Ticket;
+  $26B49974871DCF3BF3CD0267B0A79E5E ___u1;
+  unsigned int Reserved2;
+
+};

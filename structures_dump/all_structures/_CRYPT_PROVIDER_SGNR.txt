@@ -1,0 +1,18 @@
+// Структура: _CRYPT_PROVIDER_SGNR
+// Полей: 10
+// Строки в оригинале: 121988-122000
+struct _CRYPT_PROVIDER_SGNR
+{
+
+  unsigned int cbStruct;
+  _FILETIME sftVerifyAsOf;
+  unsigned int csCertChain;
+  _CRYPT_PROVIDER_CERT *pasCertChain;
+  unsigned int dwSignerType;
+  _CMSG_SIGNER_INFO *psSigner;
+  unsigned int dwError;
+  unsigned int csCounterSigners;
+  _CRYPT_PROVIDER_SGNR *pasCounterSigners;
+  const _CERT_CHAIN_CONTEXT *pChainContext;
+
+};

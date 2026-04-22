@@ -1,0 +1,9 @@
+// Структура: IPersistPropertyBag
+// Полей: 1
+// Строки в оригинале: 41038-41041
+struct IPersistPropertyBag
+{
+
+  struct IPersistPropertyBagVtbl *lpVtbl;
+
+};

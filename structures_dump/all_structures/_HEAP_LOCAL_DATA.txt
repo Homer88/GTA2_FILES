@@ -1,0 +1,13 @@
+// Структура: _HEAP_LOCAL_DATA
+// Полей: 5
+// Строки в оригинале: 21385-21392
+struct _HEAP_LOCAL_DATA
+{
+
+  _SLIST_HEADER DeletedSubSegments;
+  _LFH_BLOCK_ZONE *volatile CrtZone;
+  _LFH_HEAP *LowFragHeap;
+  unsigned int Sequence;
+  unsigned int DeleteRateThreshold;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _RTL_RELATIVE_NAME_U
+// Полей: 3
+// Строки в оригинале: 105657-105662
+struct _RTL_RELATIVE_NAME_U
+{
+
+  _UNICODE_STRING RelativeName;
+  void *ContainingDirectory;
+  _RTLP_CURDIR_REF *CurDirRef;
+
+};

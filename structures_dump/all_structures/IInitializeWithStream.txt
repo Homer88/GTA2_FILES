@@ -1,0 +1,9 @@
+// Структура: IInitializeWithStream
+// Полей: 1
+// Строки в оригинале: 36371-36374
+struct IInitializeWithStream
+{
+
+  struct IInitializeWithStreamVtbl *lpVtbl;
+
+};

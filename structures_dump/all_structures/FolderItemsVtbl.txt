@@ -1,0 +1,20 @@
+// Структура: FolderItemsVtbl
+// Полей: 12
+// Строки в оригинале: 30788-30802
+struct FolderItemsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(FolderItems *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(FolderItems *This);
+  ULONG (__stdcall *Release)(FolderItems *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(FolderItems *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(FolderItems *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(FolderItems *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(FolderItems *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Count)(FolderItems *This, int *plCount);
+  HRESULT (__stdcall *get_Application)(FolderItems *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_Parent)(FolderItems *This, IDispatch **ppid);
+  HRESULT (__stdcall *Item)(FolderItems *This, VARIANT index, FolderItem **ppid);
+  HRESULT (__stdcall *_NewEnum)(FolderItems *This, IUnknown **ppunk);
+
+};

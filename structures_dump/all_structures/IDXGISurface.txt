@@ -1,0 +1,9 @@
+// Структура: IDXGISurface
+// Полей: 1
+// Строки в оригинале: 352084-352087
+struct IDXGISurface
+{
+
+  struct IDXGISurfaceVtbl *lpVtbl;
+
+};

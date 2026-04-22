@@ -1,0 +1,10 @@
+// Структура: _CRYPT_CONTEXTS
+// Полей: 2
+// Строки в оригинале: 84633-84637
+struct _CRYPT_CONTEXTS
+{
+
+  unsigned int cContexts;
+  wchar_t **rgpszContexts;
+
+};

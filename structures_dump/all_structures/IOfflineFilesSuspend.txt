@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesSuspend
+// Полей: 1
+// Строки в оригинале: 27735-27738
+struct IOfflineFilesSuspend
+{
+
+  struct IOfflineFilesSuspendVtbl *lpVtbl;
+
+};

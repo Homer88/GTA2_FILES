@@ -1,0 +1,11 @@
+// Структура: _ETW_COVERAGE_SAMPLER_QUERY_INFO
+// Полей: 3
+// Строки в оригинале: 311923-311928
+struct _ETW_COVERAGE_SAMPLER_QUERY_INFO
+{
+
+  _EVENT_TRACE_COVERAGE_SAMPLER_INFORMATION Common;
+  unsigned __int32 EmptyStackCache : 1;
+  _ETW_COVERAGE_SAMPLER_DATA Header;
+
+};

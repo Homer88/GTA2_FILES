@@ -1,0 +1,13 @@
+// Структура: _tagHIT_LOGGING_INFO
+// Полей: 5
+// Строки в оригинале: 84299-84306
+struct _tagHIT_LOGGING_INFO
+{
+
+  unsigned int dwStructSize;
+  char *lpszLoggedUrlName;
+  _SYSTEMTIME StartTime;
+  _SYSTEMTIME EndTime;
+  char *lpszExtendedInfo;
+
+};

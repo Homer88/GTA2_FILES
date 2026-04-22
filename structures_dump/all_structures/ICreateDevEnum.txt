@@ -1,0 +1,9 @@
+// Структура: ICreateDevEnum
+// Полей: 1
+// Строки в оригинале: 26364-26367
+struct ICreateDevEnum
+{
+
+  struct ICreateDevEnumVtbl *lpVtbl;
+
+};

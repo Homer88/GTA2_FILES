@@ -1,0 +1,10 @@
+// Структура: _TOKEN_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE
+// Полей: 2
+// Строки в оригинале: 78005-78009
+struct _TOKEN_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE
+{
+
+  void *pValue;
+  unsigned int ValueLength;
+
+};

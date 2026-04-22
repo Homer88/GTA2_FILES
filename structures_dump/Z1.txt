@@ -1,0 +1,9 @@
+// Structure: Z1
+// Lines: 5770 - 5774
+// Fields: 3
+
+struct Z1
+{
+  _BYTE gap0[131615];
+  char field_0;
+};

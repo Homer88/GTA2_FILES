@@ -1,0 +1,14 @@
+// Структура: _WMI_UDP
+// Полей: 6
+// Строки в оригинале: 309713-309721
+struct _WMI_UDP
+{
+
+  unsigned int PID;
+  unsigned __int16 Size;
+  unsigned int DestAddr;
+  unsigned int SrcAddr;
+  unsigned __int16 DestPort;
+  unsigned __int16 SrcPort;
+
+};

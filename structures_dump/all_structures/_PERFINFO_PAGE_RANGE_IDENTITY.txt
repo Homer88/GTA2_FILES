@@ -1,0 +1,13 @@
+// Структура: _PERFINFO_PAGE_RANGE_IDENTITY
+// Полей: 5
+// Строки в оригинале: 309543-309550
+struct _PERFINFO_PAGE_RANGE_IDENTITY
+{
+
+  unsigned __int64 UseDescription : 4;
+  unsigned __int64 UniqueKey : 48;
+  unsigned __int64 Reserved : 12;
+  $C226B732A3FF4E1F13EDC9D803F67592 ___u3;
+  unsigned int PageCount;
+
+};

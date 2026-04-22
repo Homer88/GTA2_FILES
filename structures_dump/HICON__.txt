@@ -1,0 +1,8 @@
+// Structure: HICON__
+// Lines: 2078 - 2081
+// Fields: 2
+
+struct HICON__
+{
+  int unused;
+};

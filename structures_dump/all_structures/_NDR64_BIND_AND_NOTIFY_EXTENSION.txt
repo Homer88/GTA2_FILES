@@ -1,0 +1,10 @@
+// Структура: _NDR64_BIND_AND_NOTIFY_EXTENSION
+// Полей: 2
+// Строки в оригинале: 336309-336313
+struct _NDR64_BIND_AND_NOTIFY_EXTENSION
+{
+
+  _NDR64_BIND_CONTEXT Binding;
+  unsigned __int16 NotifyIndex;
+
+};

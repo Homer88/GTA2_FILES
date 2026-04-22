@@ -1,0 +1,10 @@
+// Структура: _TRANSACTION_NOTIFICATION_TM_ONLINE_ARGUMENT
+// Полей: 2
+// Строки в оригинале: 88591-88595
+struct _TRANSACTION_NOTIFICATION_TM_ONLINE_ARGUMENT
+{
+
+  _GUID TmIdentity;
+  unsigned int Flags;
+
+};

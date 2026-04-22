@@ -1,0 +1,9 @@
+// Структура: IShellBrowser
+// Полей: 1
+// Строки в оригинале: 33280-33283
+struct IShellBrowser
+{
+
+  struct IShellBrowserVtbl *lpVtbl;
+
+};

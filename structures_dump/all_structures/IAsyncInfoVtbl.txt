@@ -1,0 +1,19 @@
+// Структура: IAsyncInfoVtbl
+// Полей: 11
+// Строки в оригинале: 30002-30015
+struct IAsyncInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IAsyncInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IAsyncInfo *This);
+  ULONG (__stdcall *Release)(IAsyncInfo *This);
+  HRESULT (__stdcall *GetIids)(IAsyncInfo *This, ULONG *iidCount, IID **iids);
+  HRESULT (__stdcall *GetRuntimeClassName)(IAsyncInfo *This, HSTRING *className);
+  HRESULT (__stdcall *GetTrustLevel)(IAsyncInfo *This, TrustLevel *trustLevel);
+  HRESULT (__stdcall *get_Id)(IAsyncInfo *This, unsigned __int32 *id);
+  HRESULT (__stdcall *get_Status)(IAsyncInfo *This, AsyncStatus *status);
+  HRESULT (__stdcall *get_ErrorCode)(IAsyncInfo *This, HRESULT *errorCode);
+  HRESULT (__stdcall *Cancel)(IAsyncInfo *This);
+  HRESULT (__stdcall *Close)(IAsyncInfo *This);
+
+};

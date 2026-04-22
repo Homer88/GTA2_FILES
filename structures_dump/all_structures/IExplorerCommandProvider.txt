@@ -1,0 +1,9 @@
+// Структура: IExplorerCommandProvider
+// Полей: 1
+// Строки в оригинале: 33378-33381
+struct IExplorerCommandProvider
+{
+
+  struct IExplorerCommandProviderVtbl *lpVtbl;
+
+};

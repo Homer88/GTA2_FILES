@@ -1,0 +1,9 @@
+// Структура: _BCRYPT_PROVIDER_NAME
+// Полей: 1
+// Строки в оригинале: 106814-106817
+struct _BCRYPT_PROVIDER_NAME
+{
+
+  wchar_t *pszProviderName;
+
+};

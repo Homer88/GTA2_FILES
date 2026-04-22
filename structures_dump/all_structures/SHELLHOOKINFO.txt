@@ -1,0 +1,10 @@
+// Структура: SHELLHOOKINFO
+// Полей: 2
+// Строки в оригинале: 81263-81267
+struct SHELLHOOKINFO
+{
+
+  HWND__ *hwnd;
+  tagRECT rc;
+
+};

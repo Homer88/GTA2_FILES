@@ -1,0 +1,12 @@
+// Структура: _PLUGPLAY_CONTROL_TARGET_RELATION_DATA
+// Полей: 4
+// Строки в оригинале: 106166-106172
+struct _PLUGPLAY_CONTROL_TARGET_RELATION_DATA
+{
+
+  void *UserFileHandle;
+  int Status;
+  unsigned int DeviceInstanceLen;
+  wchar_t *DeviceInstance;
+
+};

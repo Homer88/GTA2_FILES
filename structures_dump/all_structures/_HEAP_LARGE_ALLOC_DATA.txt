@@ -1,0 +1,10 @@
+// Структура: _HEAP_LARGE_ALLOC_DATA
+// Полей: 2
+// Строки в оригинале: 21924-21928
+struct _HEAP_LARGE_ALLOC_DATA
+{
+
+  _RTL_BALANCED_NODE TreeNode;
+  $F793D7B2B899B4DD2E6CE77E14BB3121 ___u1;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_HOT_PATCH_REGISTRY_VALUE
+// Полей: 2
+// Строки в оригинале: 101374-101378
+struct _SYSTEM_HOT_PATCH_REGISTRY_VALUE
+{
+
+  unsigned __int16 ImageNameLength;
+  wchar_t ImageName[1];
+
+};

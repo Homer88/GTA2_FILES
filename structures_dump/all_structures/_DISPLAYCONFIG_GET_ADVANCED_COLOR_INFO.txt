@@ -1,0 +1,12 @@
+// Структура: _DISPLAYCONFIG_GET_ADVANCED_COLOR_INFO
+// Полей: 4
+// Строки в оригинале: 113298-113304
+struct _DISPLAYCONFIG_GET_ADVANCED_COLOR_INFO
+{
+
+  DISPLAYCONFIG_DEVICE_INFO_HEADER header;
+  $D88FE60F98EEBA7E4625D20545AA1943 ___u1;
+  _DISPLAYCONFIG_COLOR_ENCODING colorEncoding;
+  unsigned int bitsPerColorChannel;
+
+};

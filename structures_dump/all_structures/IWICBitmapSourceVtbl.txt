@@ -1,0 +1,16 @@
+// Структура: IWICBitmapSourceVtbl
+// Полей: 8
+// Строки в оригинале: 40140-40150
+struct IWICBitmapSourceVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICBitmapSource *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICBitmapSource *This);
+  ULONG (__stdcall *Release)(IWICBitmapSource *This);
+  HRESULT (__stdcall *GetSize)(IWICBitmapSource *This, UINT *puiWidth, UINT *puiHeight);
+  HRESULT (__stdcall *GetPixelFormat)(IWICBitmapSource *This, WICPixelFormatGUID *pPixelFormat);
+  HRESULT (__stdcall *GetResolution)(IWICBitmapSource *This, double *pDpiX, double *pDpiY);
+  HRESULT (__stdcall *CopyPalette)(IWICBitmapSource *This, IWICPalette *pIPalette);
+  HRESULT (__stdcall *CopyPixels)(IWICBitmapSource *This, const WICRect *prc, UINT cbStride, UINT cbBufferSize, BYTE *pbBuffer);
+
+};

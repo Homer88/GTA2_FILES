@@ -1,0 +1,10 @@
+// Структура: _RIP_INFO
+// Полей: 2
+// Строки в оригинале: 91407-91411
+struct _RIP_INFO
+{
+
+  unsigned int dwError;
+  unsigned int dwType;
+
+};

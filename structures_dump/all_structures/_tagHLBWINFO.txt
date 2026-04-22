@@ -1,0 +1,13 @@
+// Структура: _tagHLBWINFO
+// Полей: 5
+// Строки в оригинале: 42822-42829
+struct _tagHLBWINFO
+{
+
+  ULONG cbSize;
+  DWORD grfHLBWIF;
+  RECT rcFramePos;
+  RECT rcDocPos;
+  HLTBINFO hltbinfo;
+
+};

@@ -1,0 +1,37 @@
+// Структура: ISearchCatalogManagerVtbl
+// Полей: 29
+// Строки в оригинале: 44050-44081
+struct ISearchCatalogManagerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISearchCatalogManager *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISearchCatalogManager *This);
+  ULONG (__stdcall *Release)(ISearchCatalogManager *This);
+  HRESULT (__stdcall *get_Name)(ISearchCatalogManager *This, LPWSTR *pszName);
+  HRESULT (__stdcall *GetParameter)(ISearchCatalogManager *This, LPCWSTR pszName, PROPVARIANT **ppValue);
+  HRESULT (__stdcall *SetParameter)(ISearchCatalogManager *This, LPCWSTR pszName, PROPVARIANT *pValue);
+  HRESULT (__stdcall *GetCatalogStatus)(ISearchCatalogManager *This, CatalogStatus *pStatus, CatalogPausedReason *pPausedReason);
+  HRESULT (__stdcall *Reset)(ISearchCatalogManager *This);
+  HRESULT (__stdcall *Reindex)(ISearchCatalogManager *This);
+  HRESULT (__stdcall *ReindexMatchingURLs)(ISearchCatalogManager *This, LPCWSTR pszPattern);
+  HRESULT (__stdcall *ReindexSearchRoot)(ISearchCatalogManager *This, LPCWSTR pszRootURL);
+  HRESULT (__stdcall *put_ConnectTimeout)(ISearchCatalogManager *This, DWORD dwConnectTimeout);
+  HRESULT (__stdcall *get_ConnectTimeout)(ISearchCatalogManager *This, DWORD *pdwConnectTimeout);
+  HRESULT (__stdcall *put_DataTimeout)(ISearchCatalogManager *This, DWORD dwDataTimeout);
+  HRESULT (__stdcall *get_DataTimeout)(ISearchCatalogManager *This, DWORD *pdwDataTimeout);
+  HRESULT (__stdcall *NumberOfItems)(ISearchCatalogManager *This, LONG *plCount);
+  HRESULT (__stdcall *NumberOfItemsToIndex)(ISearchCatalogManager *This, LONG *plIncrementalCount, LONG *plNotificationQueue, LONG *plHighPriorityQueue);
+  HRESULT (__stdcall *URLBeingIndexed)(ISearchCatalogManager *This, LPWSTR *pszUrl);
+  HRESULT (__stdcall *GetURLIndexingState)(ISearchCatalogManager *This, LPCWSTR pszURL, DWORD *pdwState);
+  HRESULT (__stdcall *GetPersistentItemsChangedSink)(ISearchCatalogManager *This, ISearchPersistentItemsChangedSink **ppISearchPersistentItemsChangedSink);
+  HRESULT (__stdcall *RegisterViewForNotification)(ISearchCatalogManager *This, LPCWSTR pszView, ISearchViewChangedSink *pViewChangedSink, DWORD *pdwCookie);
+  HRESULT (__stdcall *GetItemsChangedSink)(ISearchCatalogManager *This, ISearchNotifyInlineSite *pISearchNotifyInlineSite, const IID *const riid, void **ppv, GUID *pGUIDCatalogResetSignature, GUID *pGUIDCheckPointSignature, DWORD *pdwLastCheckPointNumber);
+  HRESULT (__stdcall *UnregisterViewForNotification)(ISearchCatalogManager *This, DWORD dwCookie);
+  HRESULT (__stdcall *SetExtensionClusion)(ISearchCatalogManager *This, LPCWSTR pszExtension, BOOL fExclude);
+  HRESULT (__stdcall *EnumerateExcludedExtensions)(ISearchCatalogManager *This, IEnumString **ppExtensions);
+  HRESULT (__stdcall *GetQueryHelper)(ISearchCatalogManager *This, ISearchQueryHelper **ppSearchQueryHelper);
+  HRESULT (__stdcall *put_DiacriticSensitivity)(ISearchCatalogManager *This, BOOL fDiacriticSensitive);
+  HRESULT (__stdcall *get_DiacriticSensitivity)(ISearchCatalogManager *This, BOOL *pfDiacriticSensitive);
+  HRESULT (__stdcall *GetCrawlScopeManager)(ISearchCatalogManager *This, ISearchCrawlScopeManager **ppCrawlScopeManager);
+
+};

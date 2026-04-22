@@ -1,0 +1,15 @@
+// Structure: _SYSTEMTIME
+// Lines: 2129 - 2139
+// Fields: 9
+
+struct _SYSTEMTIME
+{
+  WORD wYear;
+  WORD wMonth;
+  WORD wDayOfWeek;
+  WORD wDay;
+  WORD wHour;
+  WORD wMinute;
+  WORD wSecond;
+  WORD wMilliseconds;
+};

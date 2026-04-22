@@ -1,0 +1,9 @@
+// Структура: IXMLDOMText
+// Полей: 1
+// Строки в оригинале: 43507-43510
+struct IXMLDOMText
+{
+
+  struct IXMLDOMTextVtbl *lpVtbl;
+
+};

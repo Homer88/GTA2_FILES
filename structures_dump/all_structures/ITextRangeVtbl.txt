@@ -1,0 +1,66 @@
+// Структура: ITextRangeVtbl
+// Полей: 58
+// Строки в оригинале: 45630-45690
+struct ITextRangeVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITextRange *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITextRange *This);
+  ULONG (__stdcall *Release)(ITextRange *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(ITextRange *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(ITextRange *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(ITextRange *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(ITextRange *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *GetText)(ITextRange *This, BSTR *pbstr);
+  HRESULT (__stdcall *SetText)(ITextRange *This, BSTR bstr);
+  HRESULT (__stdcall *GetChar)(ITextRange *This, int *pChar);
+  HRESULT (__stdcall *SetChar)(ITextRange *This, int Char);
+  HRESULT (__stdcall *GetDuplicate)(ITextRange *This, ITextRange **ppRange);
+  HRESULT (__stdcall *GetFormattedText)(ITextRange *This, ITextRange **ppRange);
+  HRESULT (__stdcall *SetFormattedText)(ITextRange *This, ITextRange *pRange);
+  HRESULT (__stdcall *GetStart)(ITextRange *This, int *pcpFirst);
+  HRESULT (__stdcall *SetStart)(ITextRange *This, int cpFirst);
+  HRESULT (__stdcall *GetEnd)(ITextRange *This, int *pcpLim);
+  HRESULT (__stdcall *SetEnd)(ITextRange *This, int cpLim);
+  HRESULT (__stdcall *GetFont)(ITextRange *This, ITextFont **ppFont);
+  HRESULT (__stdcall *SetFont)(ITextRange *This, ITextFont *pFont);
+  HRESULT (__stdcall *GetPara)(ITextRange *This, ITextPara **ppPara);
+  HRESULT (__stdcall *SetPara)(ITextRange *This, ITextPara *pPara);
+  HRESULT (__stdcall *GetStoryLength)(ITextRange *This, int *pCount);
+  HRESULT (__stdcall *GetStoryType)(ITextRange *This, int *pValue);
+  HRESULT (__stdcall *Collapse)(ITextRange *This, int bStart);
+  HRESULT (__stdcall *Expand)(ITextRange *This, int Unit, int *pDelta);
+  HRESULT (__stdcall *GetIndex)(ITextRange *This, int Unit, int *pIndex);
+  HRESULT (__stdcall *SetIndex)(ITextRange *This, int Unit, int Index, int Extend);
+  HRESULT (__stdcall *SetRange)(ITextRange *This, int cpAnchor, int cpActive);
+  HRESULT (__stdcall *InRange)(ITextRange *This, ITextRange *pRange, int *pValue);
+  HRESULT (__stdcall *InStory)(ITextRange *This, ITextRange *pRange, int *pValue);
+  HRESULT (__stdcall *IsEqual)(ITextRange *This, ITextRange *pRange, int *pValue);
+  HRESULT (__stdcall *Select)(ITextRange *This);
+  HRESULT (__stdcall *StartOf)(ITextRange *This, int Unit, int Extend, int *pDelta);
+  HRESULT (__stdcall *EndOf)(ITextRange *This, int Unit, int Extend, int *pDelta);
+  HRESULT (__stdcall *Move)(ITextRange *This, int Unit, int Count, int *pDelta);
+  HRESULT (__stdcall *MoveStart)(ITextRange *This, int Unit, int Count, int *pDelta);
+  HRESULT (__stdcall *MoveEnd)(ITextRange *This, int Unit, int Count, int *pDelta);
+  HRESULT (__stdcall *MoveWhile)(ITextRange *This, VARIANT *Cset, int Count, int *pDelta);
+  HRESULT (__stdcall *MoveStartWhile)(ITextRange *This, VARIANT *Cset, int Count, int *pDelta);
+  HRESULT (__stdcall *MoveEndWhile)(ITextRange *This, VARIANT *Cset, int Count, int *pDelta);
+  HRESULT (__stdcall *MoveUntil)(ITextRange *This, VARIANT *Cset, int Count, int *pDelta);
+  HRESULT (__stdcall *MoveStartUntil)(ITextRange *This, VARIANT *Cset, int Count, int *pDelta);
+  HRESULT (__stdcall *MoveEndUntil)(ITextRange *This, VARIANT *Cset, int Count, int *pDelta);
+  HRESULT (__stdcall *FindTextA)(ITextRange *This, BSTR bstr, int Count, int Flags, int *pLength);
+  HRESULT (__stdcall *FindTextStart)(ITextRange *This, BSTR bstr, int Count, int Flags, int *pLength);
+  HRESULT (__stdcall *FindTextEnd)(ITextRange *This, BSTR bstr, int Count, int Flags, int *pLength);
+  HRESULT (__stdcall *Delete)(ITextRange *This, int Unit, int Count, int *pDelta);
+  HRESULT (__stdcall *Cut)(ITextRange *This, VARIANT *pVar);
+  HRESULT (__stdcall *Copy)(ITextRange *This, VARIANT *pVar);
+  HRESULT (__stdcall *Paste)(ITextRange *This, VARIANT *pVar, int Format);
+  HRESULT (__stdcall *CanPaste)(ITextRange *This, VARIANT *pVar, int Format, int *pValue);
+  HRESULT (__stdcall *CanEdit)(ITextRange *This, int *pValue);
+  HRESULT (__stdcall *ChangeCase)(ITextRange *This, int Type);
+  HRESULT (__stdcall *GetPoint)(ITextRange *This, int Type, int *px, int *py);
+  HRESULT (__stdcall *SetPoint)(ITextRange *This, int x, int y, int Type, int Extend);
+  HRESULT (__stdcall *ScrollIntoView)(ITextRange *This, int Value);
+  HRESULT (__stdcall *GetEmbeddedObject)(ITextRange *This, IUnknown **ppObject);
+
+};

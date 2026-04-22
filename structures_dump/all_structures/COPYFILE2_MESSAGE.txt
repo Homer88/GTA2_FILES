@@ -1,0 +1,11 @@
+// Структура: COPYFILE2_MESSAGE
+// Полей: 3
+// Строки в оригинале: 113212-113217
+struct COPYFILE2_MESSAGE
+{
+
+  _COPYFILE2_MESSAGE_TYPE Type;
+  unsigned int dwPadding;
+  COPYFILE2_MESSAGE::<unnamed_type_Info> Info;
+
+};

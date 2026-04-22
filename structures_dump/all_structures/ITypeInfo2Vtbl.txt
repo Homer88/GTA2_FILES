@@ -1,0 +1,45 @@
+// Структура: ITypeInfo2Vtbl
+// Полей: 37
+// Строки в оригинале: 29834-29873
+struct ITypeInfo2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITypeInfo2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITypeInfo2 *This);
+  ULONG (__stdcall *Release)(ITypeInfo2 *This);
+  HRESULT (__stdcall *GetTypeAttr)(ITypeInfo2 *This, TYPEATTR **ppTypeAttr);
+  HRESULT (__stdcall *GetTypeComp)(ITypeInfo2 *This, ITypeComp **ppTComp);
+  HRESULT (__stdcall *GetFuncDesc)(ITypeInfo2 *This, UINT index, FUNCDESC **ppFuncDesc);
+  HRESULT (__stdcall *GetVarDesc)(ITypeInfo2 *This, UINT index, VARDESC **ppVarDesc);
+  HRESULT (__stdcall *GetNames)(ITypeInfo2 *This, MEMBERID memid, BSTR *rgBstrNames, UINT cMaxNames, UINT *pcNames);
+  HRESULT (__stdcall *GetRefTypeOfImplType)(ITypeInfo2 *This, UINT index, HREFTYPE *pRefType);
+  HRESULT (__stdcall *GetImplTypeFlags)(ITypeInfo2 *This, UINT index, INT *pImplTypeFlags);
+  HRESULT (__stdcall *GetIDsOfNames)(ITypeInfo2 *This, LPOLESTR *rgszNames, UINT cNames, MEMBERID *pMemId);
+  HRESULT (__stdcall *Invoke)(ITypeInfo2 *This, PVOID pvInstance, MEMBERID memid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *GetDocumentation)(ITypeInfo2 *This, MEMBERID memid, BSTR *pBstrName, BSTR *pBstrDocString, DWORD *pdwHelpContext, BSTR *pBstrHelpFile);
+  HRESULT (__stdcall *GetDllEntry)(ITypeInfo2 *This, MEMBERID memid, INVOKEKIND invKind, BSTR *pBstrDllName, BSTR *pBstrName, WORD *pwOrdinal);
+  HRESULT (__stdcall *GetRefTypeInfo)(ITypeInfo2 *This, HREFTYPE hRefType, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *AddressOfMember)(ITypeInfo2 *This, MEMBERID memid, INVOKEKIND invKind, PVOID *ppv);
+  HRESULT (__stdcall *CreateInstance)(ITypeInfo2 *This, IUnknown *pUnkOuter, const IID *const riid, PVOID *ppvObj);
+  HRESULT (__stdcall *GetMops)(ITypeInfo2 *This, MEMBERID memid, BSTR *pBstrMops);
+  HRESULT (__stdcall *GetContainingTypeLib)(ITypeInfo2 *This, ITypeLib **ppTLib, UINT *pIndex);
+  void (__stdcall *ReleaseTypeAttr)(ITypeInfo2 *This, TYPEATTR *pTypeAttr);
+  void (__stdcall *ReleaseFuncDesc)(ITypeInfo2 *This, FUNCDESC *pFuncDesc);
+  void (__stdcall *ReleaseVarDesc)(ITypeInfo2 *This, VARDESC *pVarDesc);
+  HRESULT (__stdcall *GetTypeKind)(ITypeInfo2 *This, TYPEKIND *pTypeKind);
+  HRESULT (__stdcall *GetTypeFlags)(ITypeInfo2 *This, ULONG *pTypeFlags);
+  HRESULT (__stdcall *GetFuncIndexOfMemId)(ITypeInfo2 *This, MEMBERID memid, INVOKEKIND invKind, UINT *pFuncIndex);
+  HRESULT (__stdcall *GetVarIndexOfMemId)(ITypeInfo2 *This, MEMBERID memid, UINT *pVarIndex);
+  HRESULT (__stdcall *GetCustData)(ITypeInfo2 *This, const GUID *const guid, VARIANT *pVarVal);
+  HRESULT (__stdcall *GetFuncCustData)(ITypeInfo2 *This, UINT index, const GUID *const guid, VARIANT *pVarVal);
+  HRESULT (__stdcall *GetParamCustData)(ITypeInfo2 *This, UINT indexFunc, UINT indexParam, const GUID *const guid, VARIANT *pVarVal);
+  HRESULT (__stdcall *GetVarCustData)(ITypeInfo2 *This, UINT index, const GUID *const guid, VARIANT *pVarVal);
+  HRESULT (__stdcall *GetImplTypeCustData)(ITypeInfo2 *This, UINT index, const GUID *const guid, VARIANT *pVarVal);
+  HRESULT (__stdcall *GetDocumentation2)(ITypeInfo2 *This, MEMBERID memid, LCID lcid, BSTR *pbstrHelpString, DWORD *pdwHelpStringContext, BSTR *pbstrHelpStringDll);
+  HRESULT (__stdcall *GetAllCustData)(ITypeInfo2 *This, CUSTDATA *pCustData);
+  HRESULT (__stdcall *GetAllFuncCustData)(ITypeInfo2 *This, UINT index, CUSTDATA *pCustData);
+  HRESULT (__stdcall *GetAllParamCustData)(ITypeInfo2 *This, UINT indexFunc, UINT indexParam, CUSTDATA *pCustData);
+  HRESULT (__stdcall *GetAllVarCustData)(ITypeInfo2 *This, UINT index, CUSTDATA *pCustData);
+  HRESULT (__stdcall *GetAllImplTypeCustData)(ITypeInfo2 *This, UINT index, CUSTDATA *pCustData);
+
+};

@@ -1,0 +1,11 @@
+// Структура: _RTL_FEATURE_USAGE_DATA
+// Полей: 3
+// Строки в оригинале: 104451-104456
+struct _RTL_FEATURE_USAGE_DATA
+{
+
+  unsigned int FeatureId;
+  unsigned __int16 ReportingKind;
+  unsigned __int16 Reserved;
+
+};

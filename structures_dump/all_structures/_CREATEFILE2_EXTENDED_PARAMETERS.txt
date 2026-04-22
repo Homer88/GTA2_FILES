@@ -1,0 +1,14 @@
+// Структура: _CREATEFILE2_EXTENDED_PARAMETERS
+// Полей: 6
+// Строки в оригинале: 104593-104601
+struct _CREATEFILE2_EXTENDED_PARAMETERS
+{
+
+  unsigned int dwSize;
+  unsigned int dwFileAttributes;
+  unsigned int dwFileFlags;
+  unsigned int dwSecurityQosFlags;
+  _SECURITY_ATTRIBUTES *lpSecurityAttributes;
+  void *hTemplateFile;
+
+};

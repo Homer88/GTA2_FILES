@@ -1,0 +1,13 @@
+// Структура: _PERFINFO_PPM_PERF_STATE_CHANGE
+// Полей: 5
+// Строки в оригинале: 311136-311143
+struct _PERFINFO_PPM_PERF_STATE_CHANGE
+{
+
+  unsigned int Type;
+  unsigned int NewState;
+  unsigned int OldState;
+  int Result;
+  unsigned __int64 Processors;
+
+};

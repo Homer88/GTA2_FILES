@@ -1,0 +1,13 @@
+// Структура: _SCHANNEL_ALG
+// Полей: 5
+// Строки в оригинале: 84561-84568
+struct _SCHANNEL_ALG
+{
+
+  unsigned int dwUse;
+  unsigned int Algid;
+  unsigned int cBits;
+  unsigned int dwFlags;
+  unsigned int dwReserved;
+
+};

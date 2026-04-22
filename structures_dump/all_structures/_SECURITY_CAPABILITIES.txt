@@ -1,0 +1,12 @@
+// Структура: _SECURITY_CAPABILITIES
+// Полей: 4
+// Строки в оригинале: 98589-98595
+struct _SECURITY_CAPABILITIES
+{
+
+  void *AppContainerSid;
+  _SID_AND_ATTRIBUTES *Capabilities;
+  unsigned int CapabilityCount;
+  unsigned int Reserved;
+
+};

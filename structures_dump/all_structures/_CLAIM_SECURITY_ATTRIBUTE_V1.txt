@@ -1,0 +1,14 @@
+// Структура: _CLAIM_SECURITY_ATTRIBUTE_V1
+// Полей: 6
+// Строки в оригинале: 82815-82823
+struct _CLAIM_SECURITY_ATTRIBUTE_V1
+{
+
+  wchar_t *Name;
+  unsigned __int16 ValueType;
+  unsigned __int16 Reserved;
+  unsigned int Flags;
+  unsigned int ValueCount;
+  _CLAIM_SECURITY_ATTRIBUTE_V1::<unnamed_type_Values> Values;
+
+};

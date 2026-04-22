@@ -1,0 +1,9 @@
+// Структура: _HEAP_VS_UNUSED_BYTES_INFO
+// Полей: 1
+// Строки в оригинале: 21786-21789
+struct _HEAP_VS_UNUSED_BYTES_INFO
+{
+
+  $43A903C643D511365AB21F41778659E4 ___u0;
+
+};

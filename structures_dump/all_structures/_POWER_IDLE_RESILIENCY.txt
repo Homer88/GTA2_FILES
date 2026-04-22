@@ -1,0 +1,10 @@
+// Структура: _POWER_IDLE_RESILIENCY
+// Полей: 2
+// Строки в оригинале: 98653-98657
+struct _POWER_IDLE_RESILIENCY
+{
+
+  unsigned int CoalescingTimeout;
+  unsigned int IdleResiliencyPeriod;
+
+};

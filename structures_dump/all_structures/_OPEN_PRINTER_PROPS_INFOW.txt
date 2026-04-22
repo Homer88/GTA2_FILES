@@ -1,0 +1,13 @@
+// Структура: _OPEN_PRINTER_PROPS_INFOW
+// Полей: 5
+// Строки в оригинале: 96997-97004
+struct _OPEN_PRINTER_PROPS_INFOW
+{
+
+  unsigned int dwSize;
+  wchar_t *pszSheetName;
+  unsigned int uSheetIndex;
+  unsigned int dwFlags;
+  int bModal;
+
+};

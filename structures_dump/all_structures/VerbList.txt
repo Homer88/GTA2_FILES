@@ -1,0 +1,12 @@
+// Структура: VerbList
+// Полей: 4
+// Строки в оригинале: 141606-141612
+struct VerbList
+{
+
+  unsigned int cRef;
+  _GUID clsid;
+  unsigned int cVerbs;
+  tagOLEVERB oleverb[1];
+
+};

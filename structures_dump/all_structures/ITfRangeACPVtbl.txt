@@ -1,0 +1,35 @@
+// Структура: ITfRangeACPVtbl
+// Полей: 27
+// Строки в оригинале: 30171-30200
+struct ITfRangeACPVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfRangeACP *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfRangeACP *This);
+  ULONG (__stdcall *Release)(ITfRangeACP *This);
+  HRESULT (__stdcall *GetText)(ITfRangeACP *This, TfEditCookie ec, DWORD dwFlags, WCHAR *pchText, ULONG cchMax, ULONG *pcch);
+  HRESULT (__stdcall *SetText)(ITfRangeACP *This, TfEditCookie ec, DWORD dwFlags, const WCHAR *pchText, LONG cch);
+  HRESULT (__stdcall *GetFormattedText)(ITfRangeACP *This, TfEditCookie ec, IDataObject **ppDataObject);
+  HRESULT (__stdcall *GetEmbedded)(ITfRangeACP *This, TfEditCookie ec, const GUID *const rguidService, const IID *const riid, IUnknown **ppunk);
+  HRESULT (__stdcall *InsertEmbedded)(ITfRangeACP *This, TfEditCookie ec, DWORD dwFlags, IDataObject *pDataObject);
+  HRESULT (__stdcall *ShiftStart)(ITfRangeACP *This, TfEditCookie ec, LONG cchReq, LONG *pcch, const TF_HALTCOND *pHalt);
+  HRESULT (__stdcall *ShiftEnd)(ITfRangeACP *This, TfEditCookie ec, LONG cchReq, LONG *pcch, const TF_HALTCOND *pHalt);
+  HRESULT (__stdcall *ShiftStartToRange)(ITfRangeACP *This, TfEditCookie ec, ITfRange *pRange, TfAnchor aPos);
+  HRESULT (__stdcall *ShiftEndToRange)(ITfRangeACP *This, TfEditCookie ec, ITfRange *pRange, TfAnchor aPos);
+  HRESULT (__stdcall *ShiftStartRegion)(ITfRangeACP *This, TfEditCookie ec, TfShiftDir dir, BOOL *pfNoRegion);
+  HRESULT (__stdcall *ShiftEndRegion)(ITfRangeACP *This, TfEditCookie ec, TfShiftDir dir, BOOL *pfNoRegion);
+  HRESULT (__stdcall *IsEmpty)(ITfRangeACP *This, TfEditCookie ec, BOOL *pfEmpty);
+  HRESULT (__stdcall *Collapse)(ITfRangeACP *This, TfEditCookie ec, TfAnchor aPos);
+  HRESULT (__stdcall *IsEqualStart)(ITfRangeACP *This, TfEditCookie ec, ITfRange *pWith, TfAnchor aPos, BOOL *pfEqual);
+  HRESULT (__stdcall *IsEqualEnd)(ITfRangeACP *This, TfEditCookie ec, ITfRange *pWith, TfAnchor aPos, BOOL *pfEqual);
+  HRESULT (__stdcall *CompareStart)(ITfRangeACP *This, TfEditCookie ec, ITfRange *pWith, TfAnchor aPos, LONG *plResult);
+  HRESULT (__stdcall *CompareEnd)(ITfRangeACP *This, TfEditCookie ec, ITfRange *pWith, TfAnchor aPos, LONG *plResult);
+  HRESULT (__stdcall *AdjustForInsert)(ITfRangeACP *This, TfEditCookie ec, ULONG cchInsert, BOOL *pfInsertOk);
+  HRESULT (__stdcall *GetGravity)(ITfRangeACP *This, TfGravity *pgStart, TfGravity *pgEnd);
+  HRESULT (__stdcall *SetGravity)(ITfRangeACP *This, TfEditCookie ec, TfGravity gStart, TfGravity gEnd);
+  HRESULT (__stdcall *Clone)(ITfRangeACP *This, ITfRange **ppClone);
+  HRESULT (__stdcall *GetContext)(ITfRangeACP *This, ITfContext **ppContext);
+  HRESULT (__stdcall *GetExtent)(ITfRangeACP *This, LONG *pacpAnchor, LONG *pcch);
+  HRESULT (__stdcall *SetExtent)(ITfRangeACP *This, LONG acpAnchor, LONG cch);
+
+};

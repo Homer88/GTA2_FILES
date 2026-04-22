@@ -1,0 +1,10 @@
+// Структура: CATEGORY_INFO
+// Полей: 2
+// Строки в оригинале: 35500-35504
+struct CATEGORY_INFO
+{
+
+  CATEGORYINFO_FLAGS cif;
+  WCHAR wszName[260];
+
+};

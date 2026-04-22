@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_ACCESS_FILTER_ACE
+// Полей: 3
+// Строки в оригинале: 97511-97516
+struct _SYSTEM_ACCESS_FILTER_ACE
+{
+
+  _ACE_HEADER Header;
+  unsigned int Mask;
+  unsigned int SidStart;
+
+};

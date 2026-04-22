@@ -1,0 +1,17 @@
+// Структура: IOleClientSiteVtbl
+// Полей: 9
+// Строки в оригинале: 27558-27569
+struct IOleClientSiteVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleClientSite *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleClientSite *This);
+  ULONG (__stdcall *Release)(IOleClientSite *This);
+  HRESULT (__stdcall *SaveObject)(IOleClientSite *This);
+  HRESULT (__stdcall *GetMoniker)(IOleClientSite *This, DWORD dwAssign, DWORD dwWhichMoniker, IMoniker **ppmk);
+  HRESULT (__stdcall *GetContainer)(IOleClientSite *This, IOleContainer **ppContainer);
+  HRESULT (__stdcall *ShowObject)(IOleClientSite *This);
+  HRESULT (__stdcall *OnShowWindow)(IOleClientSite *This, BOOL fShow);
+  HRESULT (__stdcall *RequestNewObjectLayout)(IOleClientSite *This);
+
+};

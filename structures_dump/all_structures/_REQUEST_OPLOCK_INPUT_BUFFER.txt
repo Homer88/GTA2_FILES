@@ -1,0 +1,12 @@
+// Структура: _REQUEST_OPLOCK_INPUT_BUFFER
+// Полей: 4
+// Строки в оригинале: 97885-97891
+struct _REQUEST_OPLOCK_INPUT_BUFFER
+{
+
+  unsigned __int16 StructureVersion;
+  unsigned __int16 StructureLength;
+  unsigned int RequestedOplockLevel;
+  unsigned int Flags;
+
+};

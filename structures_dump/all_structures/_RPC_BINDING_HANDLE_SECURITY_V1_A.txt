@@ -1,0 +1,14 @@
+// Структура: _RPC_BINDING_HANDLE_SECURITY_V1_A
+// Полей: 6
+// Строки в оригинале: 98707-98715
+struct _RPC_BINDING_HANDLE_SECURITY_V1_A
+{
+
+  unsigned int Version;
+  unsigned __int8 *ServerPrincName;
+  unsigned int AuthnLevel;
+  unsigned int AuthnSvc;
+  _SEC_WINNT_AUTH_IDENTITY_A *AuthIdentity;
+  _RPC_SECURITY_QOS *SecurityQos;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _CTL_FIND_USAGE_PARA
+// Полей: 4
+// Строки в оригинале: 106242-106248
+struct _CTL_FIND_USAGE_PARA
+{
+
+  unsigned int cbSize;
+  _CTL_USAGE SubjectUsage;
+  _CRYPTOAPI_BLOB ListIdentifier;
+  _CERT_INFO *pSigner;
+
+};

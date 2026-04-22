@@ -1,0 +1,12 @@
+// Структура: tagSExtEntry
+// Полей: 4
+// Строки в оригинале: 114021-114027
+struct tagSExtEntry
+{
+
+  SExtHashNode m_node;
+  wchar_t *m_wszExt;
+  _GUID m_clsid;
+  wchar_t m_wszBuf[8];
+
+};

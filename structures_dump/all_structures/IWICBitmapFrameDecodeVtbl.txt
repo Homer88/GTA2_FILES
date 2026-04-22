@@ -1,0 +1,19 @@
+// Структура: IWICBitmapFrameDecodeVtbl
+// Полей: 11
+// Строки в оригинале: 42191-42204
+struct IWICBitmapFrameDecodeVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICBitmapFrameDecode *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICBitmapFrameDecode *This);
+  ULONG (__stdcall *Release)(IWICBitmapFrameDecode *This);
+  HRESULT (__stdcall *GetSize)(IWICBitmapFrameDecode *This, UINT *puiWidth, UINT *puiHeight);
+  HRESULT (__stdcall *GetPixelFormat)(IWICBitmapFrameDecode *This, WICPixelFormatGUID *pPixelFormat);
+  HRESULT (__stdcall *GetResolution)(IWICBitmapFrameDecode *This, double *pDpiX, double *pDpiY);
+  HRESULT (__stdcall *CopyPalette)(IWICBitmapFrameDecode *This, IWICPalette *pIPalette);
+  HRESULT (__stdcall *CopyPixels)(IWICBitmapFrameDecode *This, const WICRect *prc, UINT cbStride, UINT cbBufferSize, BYTE *pbBuffer);
+  HRESULT (__stdcall *GetMetadataQueryReader)(IWICBitmapFrameDecode *This, IWICMetadataQueryReader **ppIMetadataQueryReader);
+  HRESULT (__stdcall *GetColorContexts)(IWICBitmapFrameDecode *This, UINT cCount, IWICColorContext **ppIColorContexts, UINT *pcActualCount);
+  HRESULT (__stdcall *GetThumbnail)(IWICBitmapFrameDecode *This, IWICBitmapSource **ppIThumbnail);
+
+};

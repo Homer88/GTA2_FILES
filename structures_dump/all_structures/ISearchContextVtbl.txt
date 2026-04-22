@@ -1,0 +1,11 @@
+// Структура: ISearchContextVtbl
+// Полей: 3
+// Строки в оригинале: 43116-43121
+struct ISearchContextVtbl
+{
+
+  HRESULT (__stdcall *GetSearchUrl)(ISearchContext *This, BSTR *pbstrSearchUrl);
+  HRESULT (__stdcall *GetSearchText)(ISearchContext *This, BSTR *pbstrSearchText);
+  HRESULT (__stdcall *GetSearchStyle)(ISearchContext *This, DWORD *pdwSearchStyle);
+
+};

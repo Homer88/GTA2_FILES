@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesDirtyInfo
+// Полей: 1
+// Строки в оригинале: 28658-28661
+struct IOfflineFilesDirtyInfo
+{
+
+  struct IOfflineFilesDirtyInfoVtbl *lpVtbl;
+
+};

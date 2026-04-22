@@ -1,0 +1,12 @@
+// Структура: __NCRYPT_SUPPORTED_LENGTHS
+// Полей: 4
+// Строки в оригинале: 84882-84888
+struct __NCRYPT_SUPPORTED_LENGTHS
+{
+
+  unsigned int dwMinLength;
+  unsigned int dwMaxLength;
+  unsigned int dwIncrement;
+  unsigned int dwDefaultLength;
+
+};

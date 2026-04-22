@@ -1,0 +1,10 @@
+// Структура: tagCABOOL
+// Полей: 2
+// Строки в оригинале: 31598-31602
+struct tagCABOOL
+{
+
+  ULONG cElems;
+  VARIANT_BOOL *pElems;
+
+};

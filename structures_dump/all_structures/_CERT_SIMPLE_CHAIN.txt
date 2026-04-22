@@ -1,0 +1,15 @@
+// Структура: _CERT_SIMPLE_CHAIN
+// Полей: 7
+// Строки в оригинале: 80015-80024
+struct _CERT_SIMPLE_CHAIN
+{
+
+  unsigned int cbSize;
+  _CERT_TRUST_STATUS TrustStatus;
+  unsigned int cElement;
+  _CERT_CHAIN_ELEMENT **rgpElement;
+  _CERT_TRUST_LIST_INFO *pTrustListInfo;
+  int fHasRevocationFreshnessTime;
+  unsigned int dwRevocationFreshnessTime;
+
+};

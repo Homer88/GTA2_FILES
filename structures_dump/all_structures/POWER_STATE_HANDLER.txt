@@ -1,0 +1,13 @@
+// Структура: POWER_STATE_HANDLER
+// Полей: 5
+// Строки в оригинале: 108978-108985
+struct POWER_STATE_HANDLER
+{
+
+  POWER_STATE_HANDLER_TYPE Type;
+  unsigned __int8 RtcWake;
+  unsigned __int8 Spare[3];
+  int (__stdcall *Handler)(void *, int (__stdcall *)(void *), void *, int, volatile int *);
+  void *Context;
+
+};

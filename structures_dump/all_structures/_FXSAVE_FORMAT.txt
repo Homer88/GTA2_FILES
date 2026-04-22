@@ -1,0 +1,21 @@
+// Структура: _FXSAVE_FORMAT
+// Полей: 13
+// Строки в оригинале: 101169-101184
+struct _FXSAVE_FORMAT
+{
+
+  unsigned __int16 ControlWord;
+  unsigned __int16 StatusWord;
+  unsigned __int16 TagWord;
+  unsigned __int16 ErrorOpcode;
+  unsigned int ErrorOffset;
+  unsigned int ErrorSelector;
+  unsigned int DataOffset;
+  unsigned int DataSelector;
+  unsigned int MXCsr;
+  unsigned int MXCsrMask;
+  unsigned __int8 RegisterArea[128];
+  unsigned __int8 Reserved3[128];
+  unsigned __int8 Reserved4[192];
+
+};

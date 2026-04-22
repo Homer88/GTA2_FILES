@@ -1,0 +1,23 @@
+// Структура: _CRYPT_SIGN_MESSAGE_PARA
+// Полей: 15
+// Строки в оригинале: 95882-95899
+struct _CRYPT_SIGN_MESSAGE_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int dwMsgEncodingType;
+  const _CERT_CONTEXT *pSigningCert;
+  _CRYPT_ALGORITHM_IDENTIFIER HashAlgorithm;
+  void *pvHashAuxInfo;
+  unsigned int cMsgCert;
+  const _CERT_CONTEXT **rgpMsgCert;
+  unsigned int cMsgCrl;
+  const _CRL_CONTEXT **rgpMsgCrl;
+  unsigned int cAuthAttr;
+  _CRYPT_ATTRIBUTE *rgAuthAttr;
+  unsigned int cUnauthAttr;
+  _CRYPT_ATTRIBUTE *rgUnauthAttr;
+  unsigned int dwFlags;
+  unsigned int dwInnerContentType;
+
+};

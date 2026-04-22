@@ -1,0 +1,9 @@
+// Структура: IEnumObjects
+// Полей: 1
+// Строки в оригинале: 31282-31285
+struct IEnumObjects
+{
+
+  struct IEnumObjectsVtbl *lpVtbl;
+
+};

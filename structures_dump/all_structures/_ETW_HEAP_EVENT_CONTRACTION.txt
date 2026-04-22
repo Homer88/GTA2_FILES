@@ -1,0 +1,17 @@
+// Структура: _ETW_HEAP_EVENT_CONTRACTION
+// Полей: 9
+// Строки в оригинале: 312222-312233
+struct _ETW_HEAP_EVENT_CONTRACTION
+{
+
+  _SYSTEM_TRACE_HEADER Header;
+  void *HeapHandle;
+  unsigned int DeCommitSize;
+  void *DeCommitAddress;
+  unsigned int FreeSpace;
+  unsigned int CommittedSpace;
+  unsigned int ReservedSpace;
+  unsigned int NoOfUCRs;
+  unsigned int AllocatedSpace;
+
+};

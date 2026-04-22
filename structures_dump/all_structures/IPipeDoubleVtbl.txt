@@ -1,0 +1,13 @@
+// Структура: IPipeDoubleVtbl
+// Полей: 5
+// Строки в оригинале: 351483-351490
+struct IPipeDoubleVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPipeDouble *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPipeDouble *This);
+  ULONG (__stdcall *Release)(IPipeDouble *This);
+  HRESULT (__stdcall *Pull)(IPipeDouble *This, DOUBLE *buf, ULONG cRequest, ULONG *pcReturned);
+  HRESULT (__stdcall *Push)(IPipeDouble *This, DOUBLE *buf, ULONG cSent);
+
+};

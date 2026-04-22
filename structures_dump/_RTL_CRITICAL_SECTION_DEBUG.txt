@@ -1,0 +1,16 @@
+// Structure: _RTL_CRITICAL_SECTION_DEBUG
+// Lines: 3061 - 3072
+// Fields: 10
+
+struct _RTL_CRITICAL_SECTION_DEBUG
+{
+  WORD Type;
+  WORD CreatorBackTraceIndex;
+  struct _RTL_CRITICAL_SECTION *CriticalSection;
+  LIST_ENTRY ProcessLocksList;
+  DWORD EntryCount;
+  DWORD ContentionCount;
+  DWORD Flags;
+  WORD CreatorBackTraceIndexHigh;
+  WORD SpareWORD;
+};

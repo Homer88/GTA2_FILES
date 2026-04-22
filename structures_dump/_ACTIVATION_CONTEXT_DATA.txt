@@ -1,0 +1,15 @@
+// Structure: _ACTIVATION_CONTEXT_DATA
+// Lines: 3030 - 3040
+// Fields: 9
+
+struct _ACTIVATION_CONTEXT_DATA
+{
+  unsigned int Magic;
+  unsigned int HeaderSize;
+  unsigned int FormatVersion;
+  unsigned int TotalSize;
+  unsigned int DefaultTocOffset;
+  unsigned int ExtendedTocOffset;
+  unsigned int AssemblyRosterOffset;
+  unsigned int Flags;
+};

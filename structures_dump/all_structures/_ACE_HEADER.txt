@@ -1,0 +1,11 @@
+// Структура: _ACE_HEADER
+// Полей: 3
+// Строки в оригинале: 78234-78239
+struct _ACE_HEADER
+{
+
+  unsigned __int8 AceType;
+  unsigned __int8 AceFlags;
+  unsigned __int16 AceSize;
+
+};

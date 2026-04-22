@@ -1,0 +1,11 @@
+// Структура: _RTL_STACK_TRACE_DATABASE_CREATE
+// Полей: 3
+// Строки в оригинале: 88669-88674
+struct _RTL_STACK_TRACE_DATABASE_CREATE
+{
+
+  void *CommitBase;
+  unsigned int CommitSize;
+  unsigned int ReserveSize;
+
+};

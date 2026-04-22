@@ -1,0 +1,10 @@
+// Структура: DISPLAYCONFIG_2DREGION
+// Полей: 2
+// Строки в оригинале: 109884-109888
+struct DISPLAYCONFIG_2DREGION
+{
+
+  unsigned int cx;
+  unsigned int cy;
+
+};

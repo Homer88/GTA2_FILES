@@ -1,0 +1,26 @@
+// Структура: NDR_PIPE_STATE
+// Полей: 18
+// Строки в оригинале: 86450-86470
+struct NDR_PIPE_STATE
+{
+
+  int CurrentState;
+  int TotalElemsCount;
+  int OrigElemsInChunk;
+  int ElemsInChunk;
+  int ElemAlign;
+  int ElemWireSize;
+  int ElemMemSize;
+  int PartialBufferSize;
+  unsigned __int8 *PartialElem;
+  int PartialElemSize;
+  int PartialOffset;
+  __int32 EndOfPipe : 1;
+  __int32 EndOfPipePending : 1;
+  int LowChunkLimit;
+  int HighChunkLimit;
+  int fBlockCopy;
+  int ElemPad;
+  const unsigned __int8 *TypeFormat;
+
+};

@@ -1,0 +1,13 @@
+// Структура: __NCRYPT_UI_POLICY
+// Полей: 5
+// Строки в оригинале: 109609-109616
+struct __NCRYPT_UI_POLICY
+{
+
+  unsigned int dwVersion;
+  unsigned int dwFlags;
+  const wchar_t *pszCreationTitle;
+  const wchar_t *pszFriendlyName;
+  const wchar_t *pszDescription;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _SEC_FLAGS
+// Полей: 1
+// Строки в оригинале: 325736-325739
+struct _SEC_FLAGS
+{
+
+  unsigned __int64 Flags;
+
+};

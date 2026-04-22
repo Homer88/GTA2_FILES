@@ -1,0 +1,10 @@
+// Структура: _RTLP_TAG_INFO
+// Полей: 2
+// Строки в оригинале: 97850-97854
+struct _RTLP_TAG_INFO
+{
+
+  _GUID Id;
+  unsigned int CurrentAllocatedBytes;
+
+};

@@ -1,0 +1,10 @@
+// Структура: tagCAUUID
+// Полей: 2
+// Строки в оригинале: 43008-43012
+struct tagCAUUID
+{
+
+  ULONG cElems;
+  GUID *pElems;
+
+};

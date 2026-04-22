@@ -1,0 +1,9 @@
+// Структура: IItemNameLimits
+// Полей: 1
+// Строки в оригинале: 40689-40692
+struct IItemNameLimits
+{
+
+  struct IItemNameLimitsVtbl *lpVtbl;
+
+};

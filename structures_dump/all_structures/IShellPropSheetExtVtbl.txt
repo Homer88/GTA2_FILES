@@ -1,0 +1,13 @@
+// Структура: IShellPropSheetExtVtbl
+// Полей: 5
+// Строки в оригинале: 41110-41117
+struct IShellPropSheetExtVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellPropSheetExt *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellPropSheetExt *This);
+  ULONG (__stdcall *Release)(IShellPropSheetExt *This);
+  HRESULT (__stdcall *AddPages)(IShellPropSheetExt *This, LPFNSVADDPROPSHEETPAGE pfnAddPage, LPARAM lParam);
+  HRESULT (__stdcall *ReplacePage)(IShellPropSheetExt *This, EXPPS uPageID, LPFNSVADDPROPSHEETPAGE pfnReplaceWith, LPARAM lParam);
+
+};

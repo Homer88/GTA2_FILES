@@ -1,0 +1,9 @@
+// Структура: IResultsFolder
+// Полей: 1
+// Строки в оригинале: 32933-32936
+struct IResultsFolder
+{
+
+  struct IResultsFolderVtbl *lpVtbl;
+
+};

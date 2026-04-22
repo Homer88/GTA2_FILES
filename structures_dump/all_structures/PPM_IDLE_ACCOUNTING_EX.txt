@@ -1,0 +1,14 @@
+// Структура: PPM_IDLE_ACCOUNTING_EX
+// Полей: 6
+// Строки в оригинале: 109043-109051
+struct PPM_IDLE_ACCOUNTING_EX
+{
+
+  unsigned int StateCount;
+  unsigned int TotalTransitions;
+  unsigned int ResetCount;
+  unsigned int AbortCount;
+  unsigned __int64 StartTime;
+  PPM_IDLE_STATE_ACCOUNTING_EX State[1];
+
+};

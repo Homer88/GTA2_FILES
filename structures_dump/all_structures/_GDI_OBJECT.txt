@@ -1,0 +1,10 @@
+// Структура: _GDI_OBJECT
+// Полей: 2
+// Строки в оригинале: 92156-92160
+struct _GDI_OBJECT
+{
+
+  unsigned int ObjectType;
+  _GDI_OBJECT::__MIDL_IAdviseSink_0002 u;
+
+};

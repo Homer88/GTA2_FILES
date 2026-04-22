@@ -1,0 +1,10 @@
+// Структура: tagPROPERTYIDOFFSET
+// Полей: 2
+// Строки в оригинале: 147565-147569
+struct tagPROPERTYIDOFFSET
+{
+
+  unsigned int propertyID;
+  unsigned int dwOffset;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _PROCESSOR_NUMBER
+// Полей: 3
+// Строки в оригинале: 2491-2496
+struct _PROCESSOR_NUMBER
+{
+
+  WORD Group;
+  BYTE Number;
+  BYTE Reserved;
+
+};

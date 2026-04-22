@@ -1,0 +1,9 @@
+// Структура: tagHANDLETABLE
+// Полей: 1
+// Строки в оригинале: 103162-103165
+struct tagHANDLETABLE
+{
+
+  void *objectHandle[1];
+
+};

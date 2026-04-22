@@ -1,0 +1,10 @@
+// Структура: tagPOINTER_TYPE_INFO
+// Полей: 2
+// Строки в оригинале: 99444-99448
+struct tagPOINTER_TYPE_INFO
+{
+
+  unsigned int type;
+  $487600CEC8532B87393833EEA8D5F1EC ___u1;
+
+};

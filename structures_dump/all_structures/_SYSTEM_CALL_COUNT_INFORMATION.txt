@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_CALL_COUNT_INFORMATION
+// Полей: 2
+// Строки в оригинале: 95178-95182
+struct _SYSTEM_CALL_COUNT_INFORMATION
+{
+
+  unsigned int Length;
+  unsigned int NumberOfTables;
+
+};

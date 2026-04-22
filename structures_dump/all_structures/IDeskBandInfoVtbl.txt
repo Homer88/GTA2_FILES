@@ -1,0 +1,12 @@
+// Структура: IDeskBandInfoVtbl
+// Полей: 4
+// Строки в оригинале: 33966-33972
+struct IDeskBandInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDeskBandInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDeskBandInfo *This);
+  ULONG (__stdcall *Release)(IDeskBandInfo *This);
+  HRESULT (__stdcall *GetDefaultBandWidth)(IDeskBandInfo *This, DWORD dwBandID, DWORD dwViewMode, int *pnWidth);
+
+};

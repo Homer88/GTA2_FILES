@@ -1,0 +1,10 @@
+// Структура: tagCLIENTCREATESTRUCT
+// Полей: 2
+// Строки в оригинале: 85203-85207
+struct tagCLIENTCREATESTRUCT
+{
+
+  void *hWindowMenu;
+  unsigned int idFirstChild;
+
+};

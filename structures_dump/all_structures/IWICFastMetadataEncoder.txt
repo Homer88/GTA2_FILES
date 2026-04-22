@@ -1,0 +1,9 @@
+// Структура: IWICFastMetadataEncoder
+// Полей: 1
+// Строки в оригинале: 41908-41911
+struct IWICFastMetadataEncoder
+{
+
+  struct IWICFastMetadataEncoderVtbl *lpVtbl;
+
+};

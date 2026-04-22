@@ -1,0 +1,12 @@
+// Структура: _PERFINFO_FILE_SIMPLE_OPERATION
+// Полей: 4
+// Строки в оригинале: 310446-310452
+struct _PERFINFO_FILE_SIMPLE_OPERATION
+{
+
+  unsigned int Irp;
+  unsigned int FileObject;
+  unsigned int FileKey;
+  unsigned int IssuingThreadId;
+
+};

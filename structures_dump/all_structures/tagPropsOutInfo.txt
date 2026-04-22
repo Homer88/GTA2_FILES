@@ -1,0 +1,12 @@
+// Структура: tagPropsOutInfo
+// Полей: 4
+// Строки в оригинале: 194357-194363
+struct tagPropsOutInfo
+{
+
+  unsigned int cIfs;
+  _GUID *piid;
+  HRESULT *phresults;
+  tagMInterfacePointer **ppIntfData;
+
+};

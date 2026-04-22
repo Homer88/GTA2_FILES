@@ -1,0 +1,18 @@
+// Структура: ILockBytesVtbl
+// Полей: 10
+// Строки в оригинале: 182161-182173
+struct ILockBytesVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ILockBytes *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ILockBytes *This);
+  ULONG (__stdcall *Release)(ILockBytes *This);
+  HRESULT (__stdcall *ReadAt)(ILockBytes *This, ULARGE_INTEGER ulOffset, void *pv, ULONG cb, ULONG *pcbRead);
+  HRESULT (__stdcall *WriteAt)(ILockBytes *This, ULARGE_INTEGER ulOffset, const void *pv, ULONG cb, ULONG *pcbWritten);
+  HRESULT (__stdcall *Flush)(ILockBytes *This);
+  HRESULT (__stdcall *SetSize)(ILockBytes *This, ULARGE_INTEGER cb);
+  HRESULT (__stdcall *LockRegion)(ILockBytes *This, ULARGE_INTEGER libOffset, ULARGE_INTEGER cb, DWORD dwLockType);
+  HRESULT (__stdcall *UnlockRegion)(ILockBytes *This, ULARGE_INTEGER libOffset, ULARGE_INTEGER cb, DWORD dwLockType);
+  HRESULT (__stdcall *Stat)(ILockBytes *This, STATSTG *pstatstg, DWORD grfStatFlag);
+
+};

@@ -1,0 +1,12 @@
+// Структура: _NDR64_MEMPAD_FORMAT
+// Полей: 4
+// Строки в оригинале: 332663-332669
+struct _NDR64_MEMPAD_FORMAT
+{
+
+  unsigned __int8 FormatCode;
+  unsigned __int8 Reserve1;
+  unsigned __int16 MemPad;
+  unsigned int Reserved2;
+
+};

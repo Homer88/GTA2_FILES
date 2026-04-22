@@ -1,0 +1,10 @@
+// Структура: _PS_PKG_CLAIM
+// Полей: 2
+// Строки в оригинале: 66765-66769
+struct _PS_PKG_CLAIM
+{
+
+  unsigned int Flags;
+  unsigned __int32 Origin : 8;
+
+};

@@ -1,0 +1,11 @@
+// Структура: tagPICTDESC
+// Полей: 3
+// Строки в оригинале: 124179-124184
+struct tagPICTDESC
+{
+
+  unsigned int cbSizeofstruct;
+  unsigned int picType;
+  $43B9801583BFF2C2A5A9C5FB34E087A2 ___u2;
+
+};

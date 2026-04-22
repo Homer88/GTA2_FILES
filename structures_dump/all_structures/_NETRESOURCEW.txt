@@ -1,0 +1,16 @@
+// Структура: _NETRESOURCEW
+// Полей: 8
+// Строки в оригинале: 81140-81150
+struct _NETRESOURCEW
+{
+
+  unsigned int dwScope;
+  unsigned int dwType;
+  unsigned int dwDisplayType;
+  unsigned int dwUsage;
+  wchar_t *lpLocalName;
+  wchar_t *lpRemoteName;
+  wchar_t *lpComment;
+  wchar_t *lpProvider;
+
+};

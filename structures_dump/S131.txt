@@ -1,0 +1,10 @@
+// Structure: S131
+// Lines: 4750 - 4755
+// Fields: 4
+
+struct S131
+{
+  int Sound;
+  cameraPosTarget S132[80];
+  int Index;
+};

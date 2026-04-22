@@ -1,0 +1,9 @@
+// Структура: IActionProgress
+// Полей: 1
+// Строки в оригинале: 35622-35625
+struct IActionProgress
+{
+
+  struct IActionProgressVtbl *lpVtbl;
+
+};

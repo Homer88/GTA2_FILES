@@ -1,0 +1,9 @@
+// Структура: _SERVICE_START_REASON
+// Полей: 1
+// Строки в оригинале: 111229-111232
+struct _SERVICE_START_REASON
+{
+
+  unsigned int dwReason;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _CRYPT_SEQUENCE_OF_ANY
+// Полей: 2
+// Строки в оригинале: 103286-103290
+struct _CRYPT_SEQUENCE_OF_ANY
+{
+
+  unsigned int cValue;
+  _CRYPTOAPI_BLOB *rgValue;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IDirectInputEffect
+// Полей: 1
+// Строки в оригинале: 29015-29018
+struct IDirectInputEffect
+{
+
+  struct IDirectInputEffectVtbl *lpVtbl;
+
+};

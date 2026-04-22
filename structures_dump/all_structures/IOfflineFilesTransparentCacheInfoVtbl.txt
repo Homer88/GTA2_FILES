@@ -1,0 +1,12 @@
+// Структура: IOfflineFilesTransparentCacheInfoVtbl
+// Полей: 4
+// Строки в оригинале: 26959-26965
+struct IOfflineFilesTransparentCacheInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesTransparentCacheInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesTransparentCacheInfo *This);
+  ULONG (__stdcall *Release)(IOfflineFilesTransparentCacheInfo *This);
+  HRESULT (__stdcall *IsTransparentlyCached)(IOfflineFilesTransparentCacheInfo *This, BOOL *pbTransparentlyCached);
+
+};

@@ -1,0 +1,11 @@
+// Структура: _OCSP_RESPONSE_INFO
+// Полей: 3
+// Строки в оригинале: 102470-102475
+struct _OCSP_RESPONSE_INFO
+{
+
+  unsigned int dwStatus;
+  char *pszObjId;
+  _CRYPTOAPI_BLOB Value;
+
+};

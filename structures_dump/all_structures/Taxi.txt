@@ -1,0 +1,12 @@
+// Структура: Taxi
+// Полей: 4
+// Строки в оригинале: 9676-9682
+struct Taxi
+{
+
+  char field_0;
+  char field_1;
+  char field_2;
+  char field_3;
+
+};

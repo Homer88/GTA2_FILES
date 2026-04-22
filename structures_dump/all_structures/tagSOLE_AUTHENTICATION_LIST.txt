@@ -1,0 +1,10 @@
+// Структура: tagSOLE_AUTHENTICATION_LIST
+// Полей: 2
+// Строки в оригинале: 102871-102875
+struct tagSOLE_AUTHENTICATION_LIST
+{
+
+  unsigned int cAuthInfo;
+  tagSOLE_AUTHENTICATION_INFO *aAuthInfo;
+
+};

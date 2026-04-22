@@ -1,0 +1,9 @@
+// Структура: _RTL_IMAGE_MITIGATION_FONT_DISABLE_POLICY
+// Полей: 1
+// Строки в оригинале: 111075-111078
+struct _RTL_IMAGE_MITIGATION_FONT_DISABLE_POLICY
+{
+
+  _RTL_IMAGE_MITIGATION_POLICY DisableNonSystemFonts;
+
+};

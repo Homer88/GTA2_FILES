@@ -1,0 +1,10 @@
+// Структура: _AUTHENTICODE_EXTRA_CERT_CHAIN_POLICY_STATUS
+// Полей: 2
+// Строки в оригинале: 90003-90007
+struct _AUTHENTICODE_EXTRA_CERT_CHAIN_POLICY_STATUS
+{
+
+  unsigned int cbSize;
+  int fCommercial;
+
+};

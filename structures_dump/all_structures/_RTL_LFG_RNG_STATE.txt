@@ -1,0 +1,11 @@
+// Структура: _RTL_LFG_RNG_STATE
+// Полей: 3
+// Строки в оригинале: 99193-99198
+struct _RTL_LFG_RNG_STATE
+{
+
+  unsigned int SeedArray[55];
+  unsigned int Next;
+  unsigned int NextP;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _WIN_TRUST_ACTDATA_SUBJECT_ONLY
+// Полей: 2
+// Строки в оригинале: 121837-121841
+struct _WIN_TRUST_ACTDATA_SUBJECT_ONLY
+{
+
+  _GUID *SubjectType;
+  void *Subject;
+
+};

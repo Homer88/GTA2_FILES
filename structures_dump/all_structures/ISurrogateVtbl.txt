@@ -1,0 +1,13 @@
+// Структура: ISurrogateVtbl
+// Полей: 5
+// Строки в оригинале: 351356-351363
+struct ISurrogateVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISurrogate *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISurrogate *This);
+  ULONG (__stdcall *Release)(ISurrogate *This);
+  HRESULT (__stdcall *LoadDllServer)(ISurrogate *This, const IID *const Clsid);
+  HRESULT (__stdcall *FreeSurrogate)(ISurrogate *This);
+
+};

@@ -1,0 +1,11 @@
+// Структура: _FILE_STORAGE_TIER_REGION
+// Полей: 3
+// Строки в оригинале: 83385-83390
+struct _FILE_STORAGE_TIER_REGION
+{
+
+  _GUID TierId;
+  unsigned __int64 Offset;
+  unsigned __int64 Length;
+
+};

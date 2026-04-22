@@ -1,0 +1,13 @@
+// Структура: _OPEN_PRINTER_PROPS_INFOA
+// Полей: 5
+// Строки в оригинале: 85894-85901
+struct _OPEN_PRINTER_PROPS_INFOA
+{
+
+  unsigned int dwSize;
+  char *pszSheetName;
+  unsigned int uSheetIndex;
+  unsigned int dwFlags;
+  int bModal;
+
+};

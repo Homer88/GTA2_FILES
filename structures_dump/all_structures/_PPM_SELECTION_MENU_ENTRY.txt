@@ -1,0 +1,14 @@
+// Структура: _PPM_SELECTION_MENU_ENTRY
+// Полей: 6
+// Строки в оригинале: 15771-15779
+struct _PPM_SELECTION_MENU_ENTRY
+{
+
+  unsigned __int8 StrictDependency;
+  unsigned __int8 InitiatingState;
+  unsigned __int8 DependentState;
+  unsigned int StateIndex;
+  unsigned int Dependencies;
+  _PPM_SELECTION_DEPENDENCY *DependencyList;
+
+};

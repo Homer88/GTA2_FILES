@@ -1,0 +1,10 @@
+// Структура: DBGHELP_DATA_REPORT_STRUCT
+// Полей: 2
+// Строки в оригинале: 122568-122572
+struct DBGHELP_DATA_REPORT_STRUCT
+{
+
+  const wchar_t *pBinPathNonExist;
+  const wchar_t *pSymbolPathNonExist;
+
+};

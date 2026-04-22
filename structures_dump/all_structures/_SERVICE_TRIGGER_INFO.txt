@@ -1,0 +1,11 @@
+// Структура: _SERVICE_TRIGGER_INFO
+// Полей: 3
+// Строки в оригинале: 109680-109685
+struct _SERVICE_TRIGGER_INFO
+{
+
+  unsigned int cTriggers;
+  _SERVICE_TRIGGER *pTriggers;
+  unsigned __int8 *pReserved;
+
+};

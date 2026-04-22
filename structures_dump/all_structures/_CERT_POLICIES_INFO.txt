@@ -1,0 +1,10 @@
+// Структура: _CERT_POLICIES_INFO
+// Полей: 2
+// Строки в оригинале: 90323-90327
+struct _CERT_POLICIES_INFO
+{
+
+  unsigned int cPolicyInfo;
+  _CERT_POLICY_INFO *rgPolicyInfo;
+
+};

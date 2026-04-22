@@ -1,0 +1,9 @@
+// Structure: S4_d
+// Lines: 5290 - 5294
+// Fields: 3
+
+struct S4_d
+{
+  _BYTE gap0[879];
+  char field_0;
+};

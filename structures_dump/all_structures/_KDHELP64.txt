@@ -1,0 +1,25 @@
+// Структура: _KDHELP64
+// Полей: 17
+// Строки в оригинале: 122956-122975
+struct _KDHELP64
+{
+
+  unsigned __int64 Thread;
+  unsigned int ThCallbackStack;
+  unsigned int ThCallbackBStore;
+  unsigned int NextCallback;
+  unsigned int FramePointer;
+  unsigned __int64 KiCallUserMode;
+  unsigned __int64 KeUserCallbackDispatcher;
+  unsigned __int64 SystemRangeStart;
+  unsigned __int64 KiUserExceptionDispatcher;
+  unsigned __int64 StackBase;
+  unsigned __int64 StackLimit;
+  unsigned int BuildVersion;
+  unsigned int RetpolineStubFunctionTableSize;
+  unsigned __int64 RetpolineStubFunctionTable;
+  unsigned int RetpolineStubOffset;
+  unsigned int RetpolineStubSize;
+  unsigned __int64 Reserved0[2];
+
+};

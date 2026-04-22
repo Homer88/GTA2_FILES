@@ -1,0 +1,10 @@
+// Структура: _LINK_TRACKING_INFORMATION
+// Полей: 2
+// Строки в оригинале: 100408-100412
+struct _LINK_TRACKING_INFORMATION
+{
+
+  _LINK_TRACKING_INFORMATION_TYPE Type;
+  unsigned __int8 VolumeId[16];
+
+};

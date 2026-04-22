@@ -1,0 +1,11 @@
+// Структура: _RPC_POLICY
+// Полей: 3
+// Строки в оригинале: 105149-105154
+struct _RPC_POLICY
+{
+
+  unsigned int Length;
+  unsigned int EndpointFlags;
+  unsigned int NICFlags;
+
+};

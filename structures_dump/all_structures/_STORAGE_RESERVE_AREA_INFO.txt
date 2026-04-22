@@ -1,0 +1,12 @@
+// Структура: _STORAGE_RESERVE_AREA_INFO
+// Полей: 4
+// Строки в оригинале: 93510-93516
+struct _STORAGE_RESERVE_AREA_INFO
+{
+
+  _STORAGE_RESERVE_ID Id;
+  unsigned int Flags;
+  __int64 SpaceGuarantee;
+  __int64 SpaceUsed;
+
+};

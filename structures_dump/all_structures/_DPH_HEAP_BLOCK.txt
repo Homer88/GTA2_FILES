@@ -1,0 +1,20 @@
+// Структура: _DPH_HEAP_BLOCK
+// Полей: 12
+// Строки в оригинале: 22459-22473
+struct _DPH_HEAP_BLOCK
+{
+
+  $0CDAE2D7CBD3ECB728F0C42421822898 ___u0;
+  unsigned __int8 *pUserAllocation;
+  unsigned __int8 *pVirtualBlock;
+  unsigned int nVirtualBlockSize;
+  unsigned int nVirtualAccessSize;
+  unsigned int nUserRequestedSize;
+  unsigned int nUserActualSize;
+  void *UserValue;
+  unsigned int UserFlags;
+  _RTL_TRACE_BLOCK *StackTrace;
+  _LIST_ENTRY AdjacencyEntry;
+  unsigned __int8 *pVirtualRegion;
+
+};

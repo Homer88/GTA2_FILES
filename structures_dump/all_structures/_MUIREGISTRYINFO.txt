@@ -1,0 +1,32 @@
+// Структура: _MUIREGISTRYINFO
+// Полей: 24
+// Строки в оригинале: 80817-80843
+struct _MUIREGISTRYINFO
+{
+
+  unsigned int Owned;
+  unsigned __int16 InstallLanguageFallback[4];
+  unsigned int Generation;
+  unsigned int ProcessGeneration;
+  _MUILANGUAGES *Installed;
+  _MUISTRINGPOOL *Strings;
+  _MUILANGCFGLIST *MachineConfig;
+  _MUILANGCFGLIST *UserConfig;
+  _MUILANGLIST *MachinePreferred;
+  _MUILANGLIST *UserPreferred;
+  _MUILANGLIST *ProcessPreferred;
+  _MUILANGLIST *MergedUser;
+  _MUILANGLIST *MergedMachine;
+  _MUILANGLIST *MergedFallback;
+  _MUIREGISTRYINFO *PrevRegInfo;
+  unsigned int MUI_Locked;
+  unsigned int MUI_SE;
+  unsigned int MUI_NumberAllowed;
+  wchar_t *MUI_AllowedLanguage;
+  wchar_t *MUI_InstalledSKU;
+  unsigned int cbInstalledSKU;
+  unsigned int cbAllowedLanguage;
+  wchar_t *MUI_DisallowedLanguage;
+  unsigned int cbDisallowedLanguage;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IPersistStream
+// Полей: 1
+// Строки в оригинале: 36531-36534
+struct IPersistStream
+{
+
+  struct IPersistStreamVtbl *lpVtbl;
+
+};

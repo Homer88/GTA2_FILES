@@ -1,0 +1,9 @@
+// Структура: STARTING_VCN_INPUT_BUFFER
+// Полей: 1
+// Строки в оригинале: 92390-92393
+struct STARTING_VCN_INPUT_BUFFER
+{
+
+  _LARGE_INTEGER StartingVcn;
+
+};

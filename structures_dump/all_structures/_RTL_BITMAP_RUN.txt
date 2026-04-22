@@ -1,0 +1,10 @@
+// Структура: _RTL_BITMAP_RUN
+// Полей: 2
+// Строки в оригинале: 102151-102155
+struct _RTL_BITMAP_RUN
+{
+
+  unsigned int StartingIndex;
+  unsigned int NumberOfBits;
+
+};

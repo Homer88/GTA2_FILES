@@ -1,0 +1,10 @@
+// Структура: _KEY_VALUE_LAYER_INFORMATION
+// Полей: 2
+// Строки в оригинале: 104802-104806
+struct _KEY_VALUE_LAYER_INFORMATION
+{
+
+  unsigned __int32 IsTombstone : 1;
+  unsigned __int32 Reserved : 31;
+
+};

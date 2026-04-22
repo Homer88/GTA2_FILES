@@ -1,0 +1,15 @@
+// Структура: IEnumSearchScopeRulesVtbl
+// Полей: 7
+// Строки в оригинале: 44386-44395
+struct IEnumSearchScopeRulesVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumSearchScopeRules *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumSearchScopeRules *This);
+  ULONG (__stdcall *Release)(IEnumSearchScopeRules *This);
+  HRESULT (__stdcall *Next)(IEnumSearchScopeRules *This, ULONG celt, ISearchScopeRule **pprgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumSearchScopeRules *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumSearchScopeRules *This);
+  HRESULT (__stdcall *Clone)(IEnumSearchScopeRules *This, IEnumSearchScopeRules **ppenum);
+
+};

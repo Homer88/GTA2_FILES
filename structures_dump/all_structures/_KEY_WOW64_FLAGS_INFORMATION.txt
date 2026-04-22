@@ -1,0 +1,9 @@
+// Структура: _KEY_WOW64_FLAGS_INFORMATION
+// Полей: 1
+// Строки в оригинале: 99702-99705
+struct _KEY_WOW64_FLAGS_INFORMATION
+{
+
+  unsigned int UserFlags;
+
+};

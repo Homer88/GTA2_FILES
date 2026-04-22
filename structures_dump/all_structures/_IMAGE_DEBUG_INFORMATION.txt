@@ -1,0 +1,39 @@
+// Структура: _IMAGE_DEBUG_INFORMATION
+// Полей: 31
+// Строки в оригинале: 122840-122873
+struct _IMAGE_DEBUG_INFORMATION
+{
+
+  _LIST_ENTRY List;
+  unsigned int ReservedSize;
+  void *ReservedMappedBase;
+  unsigned __int16 ReservedMachine;
+  unsigned __int16 ReservedCharacteristics;
+  unsigned int ReservedCheckSum;
+  unsigned int ImageBase;
+  unsigned int SizeOfImage;
+  unsigned int ReservedNumberOfSections;
+  _IMAGE_SECTION_HEADER *ReservedSections;
+  unsigned int ReservedExportedNamesSize;
+  char *ReservedExportedNames;
+  unsigned int ReservedNumberOfFunctionTableEntries;
+  _IMAGE_FUNCTION_ENTRY *ReservedFunctionTableEntries;
+  unsigned int ReservedLowestFunctionStartingAddress;
+  unsigned int ReservedHighestFunctionEndingAddress;
+  unsigned int ReservedNumberOfFpoTableEntries;
+  _FPO_DATA *ReservedFpoTableEntries;
+  unsigned int SizeOfCoffSymbols;
+  _IMAGE_COFF_SYMBOLS_HEADER *CoffSymbols;
+  unsigned int ReservedSizeOfCodeViewSymbols;
+  void *ReservedCodeViewSymbols;
+  char *ImageFilePath;
+  char *ImageFileName;
+  char *ReservedDebugFilePath;
+  unsigned int ReservedTimeDateStamp;
+  int ReservedRomImage;
+  _IMAGE_DEBUG_DIRECTORY *ReservedDebugDirectory;
+  unsigned int ReservedNumberOfDebugDirectories;
+  unsigned int ReservedOriginalFunctionTableBaseAddress;
+  unsigned int Reserved[2];
+
+};

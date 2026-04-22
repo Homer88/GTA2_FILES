@@ -1,0 +1,16 @@
+// Структура: _WER_REPORT_INFORMATION
+// Полей: 8
+// Строки в оригинале: 285913-285923
+struct _WER_REPORT_INFORMATION
+{
+
+  unsigned int dwSize;
+  void *hProcess;
+  wchar_t wzConsentKey[64];
+  wchar_t wzFriendlyEventName[128];
+  wchar_t wzApplicationName[128];
+  wchar_t wzApplicationPath[260];
+  wchar_t wzDescription[512];
+  HWND__ *hwndParent;
+
+};

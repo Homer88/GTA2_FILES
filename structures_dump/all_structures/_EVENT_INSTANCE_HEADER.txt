@@ -1,0 +1,19 @@
+// Структура: _EVENT_INSTANCE_HEADER
+// Полей: 11
+// Строки в оригинале: 309384-309397
+struct _EVENT_INSTANCE_HEADER
+{
+
+  unsigned __int16 Size;
+  $251B56E8167482127E27E70460F9ECC7 ___u1;
+  $6DADDB28C14EDB39E9AAE8684C66CF3D ___u2;
+  unsigned int ThreadId;
+  unsigned int ProcessId;
+  _LARGE_INTEGER TimeStamp;
+  unsigned __int64 RegHandle;
+  unsigned int InstanceId;
+  unsigned int ParentInstanceId;
+  $05BBA6278120CBEDC3437352E2808494 ___u9;
+  unsigned __int64 ParentRegHandle;
+
+};

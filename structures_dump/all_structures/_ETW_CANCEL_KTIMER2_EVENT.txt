@@ -1,0 +1,9 @@
+// Структура: _ETW_CANCEL_KTIMER2_EVENT
+// Полей: 1
+// Строки в оригинале: 311179-311182
+struct _ETW_CANCEL_KTIMER2_EVENT
+{
+
+  unsigned int TimerKey;
+
+};

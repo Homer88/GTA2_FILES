@@ -1,0 +1,12 @@
+// Структура: __FIAsyncOperationWithProgressCompletedHandler_2_Windows__CStorage__CStreams__CIBuffer_UINT32Vtbl
+// Полей: 4
+// Строки в оригинале: 352333-352339
+struct __FIAsyncOperationWithProgressCompletedHandler_2_Windows__CStorage__CStreams__CIBuffer_UINT32Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(__FIAsyncOperationWithProgressCompletedHandler_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(__FIAsyncOperationWithProgressCompletedHandler_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *This);
+  ULONG (__stdcall *Release)(__FIAsyncOperationWithProgressCompletedHandler_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *This);
+  HRESULT (__stdcall *Invoke)(__FIAsyncOperationWithProgressCompletedHandler_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *This, __FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *asyncInfo, AsyncStatus status);
+
+};

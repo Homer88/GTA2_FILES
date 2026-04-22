@@ -1,0 +1,10 @@
+// Структура: _charrange
+// Полей: 2
+// Строки в оригинале: 33001-33005
+struct _charrange
+{
+
+  LONG cpMin;
+  LONG cpMax;
+
+};

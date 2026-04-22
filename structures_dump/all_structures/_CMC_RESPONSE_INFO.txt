@@ -1,0 +1,14 @@
+// Структура: _CMC_RESPONSE_INFO
+// Полей: 6
+// Строки в оригинале: 97321-97329
+struct _CMC_RESPONSE_INFO
+{
+
+  unsigned int cTaggedAttribute;
+  _CMC_TAGGED_ATTRIBUTE *rgTaggedAttribute;
+  unsigned int cTaggedContentInfo;
+  _CMC_TAGGED_CONTENT_INFO *rgTaggedContentInfo;
+  unsigned int cTaggedOtherMsg;
+  _CMC_TAGGED_OTHER_MSG *rgTaggedOtherMsg;
+
+};

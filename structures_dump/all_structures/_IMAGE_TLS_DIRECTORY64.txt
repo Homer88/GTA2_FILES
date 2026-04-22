@@ -1,0 +1,14 @@
+// Структура: _IMAGE_TLS_DIRECTORY64
+// Полей: 6
+// Строки в оригинале: 93794-93802
+struct _IMAGE_TLS_DIRECTORY64
+{
+
+  unsigned __int64 StartAddressOfRawData;
+  unsigned __int64 EndAddressOfRawData;
+  unsigned __int64 AddressOfIndex;
+  unsigned __int64 AddressOfCallBacks;
+  unsigned int SizeOfZeroFill;
+  $AF4F0D2A1F3D9F433FB41B76D9D1E819 ___u5;
+
+};

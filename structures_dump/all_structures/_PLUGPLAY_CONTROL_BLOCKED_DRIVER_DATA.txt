@@ -1,0 +1,11 @@
+// Структура: _PLUGPLAY_CONTROL_BLOCKED_DRIVER_DATA
+// Полей: 3
+// Строки в оригинале: 90034-90039
+struct _PLUGPLAY_CONTROL_BLOCKED_DRIVER_DATA
+{
+
+  unsigned int Flags;
+  unsigned int BufferLength;
+  void *Buffer;
+
+};

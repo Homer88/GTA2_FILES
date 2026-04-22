@@ -1,0 +1,15 @@
+// Структура: _TBBUTTON
+// Полей: 7
+// Строки в оригинале: 33356-33365
+struct _TBBUTTON
+{
+
+  int iBitmap;
+  int idCommand;
+  BYTE fsState;
+  BYTE fsStyle;
+  BYTE bReserved[2];
+  DWORD_PTR dwData;
+  INT_PTR iString;
+
+};

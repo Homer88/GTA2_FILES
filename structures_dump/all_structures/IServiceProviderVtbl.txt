@@ -1,0 +1,12 @@
+// Структура: IServiceProviderVtbl
+// Полей: 4
+// Строки в оригинале: 32808-32814
+struct IServiceProviderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IServiceProvider *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IServiceProvider *This);
+  ULONG (__stdcall *Release)(IServiceProvider *This);
+  HRESULT (__stdcall *QueryService)(IServiceProvider *This, const GUID *const guidService, const IID *const riid, void **ppvObject);
+
+};

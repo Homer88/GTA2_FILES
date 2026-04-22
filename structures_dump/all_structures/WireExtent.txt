@@ -1,0 +1,12 @@
+// Структура: WireExtent
+// Полей: 4
+// Строки в оригинале: 194548-194554
+struct WireExtent
+{
+
+  unsigned int rounded_size;
+  _GUID id;
+  unsigned int size;
+  unsigned __int8 data[];
+
+};

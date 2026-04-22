@@ -1,0 +1,10 @@
+// Структура: _CRYPT_DEFAULT_CONTEXT_MULTI_OID_PARA
+// Полей: 2
+// Строки в оригинале: 108370-108374
+struct _CRYPT_DEFAULT_CONTEXT_MULTI_OID_PARA
+{
+
+  unsigned int cOID;
+  char **rgpszOID;
+
+};

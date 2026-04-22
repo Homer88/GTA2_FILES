@@ -1,0 +1,9 @@
+// Структура: IStartMenuPinnedList
+// Полей: 1
+// Строки в оригинале: 40262-40265
+struct IStartMenuPinnedList
+{
+
+  struct IStartMenuPinnedListVtbl *lpVtbl;
+
+};

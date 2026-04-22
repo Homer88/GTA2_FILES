@@ -1,0 +1,10 @@
+// Структура: IMAGE_COR_FIXUPENTRY
+// Полей: 2
+// Строки в оригинале: 366480-366484
+struct IMAGE_COR_FIXUPENTRY
+{
+
+  unsigned int ulRVA;
+  unsigned int Count;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _SECURITY_ATTRIBUTES
+// Полей: 3
+// Строки в оригинале: 2183-2188
+struct _SECURITY_ATTRIBUTES
+{
+
+  DWORD nLength;
+  LPVOID lpSecurityDescriptor;
+  BOOL bInheritHandle;
+
+};

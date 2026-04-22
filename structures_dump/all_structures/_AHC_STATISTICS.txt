@@ -1,0 +1,11 @@
+// Структура: _AHC_STATISTICS
+// Полей: 3
+// Строки в оригинале: 312003-312008
+struct _AHC_STATISTICS
+{
+
+  unsigned int Size;
+  _AHC_MAIN_STATISTICS Main;
+  _AHC_STORE_STATISTICS Store;
+
+};

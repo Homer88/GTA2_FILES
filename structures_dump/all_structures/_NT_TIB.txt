@@ -1,0 +1,16 @@
+// Структура: _NT_TIB
+// Полей: 8
+// Строки в оригинале: 2415-2425
+struct _NT_TIB
+{
+
+  struct _EXCEPTION_REGISTRATION_RECORD *ExceptionList;
+  PVOID StackBase;
+  PVOID StackLimit;
+  PVOID SubSystemTib;
+  union
+  {
+    PVOID FiberData;
+    DWORD Version;
+  
+};

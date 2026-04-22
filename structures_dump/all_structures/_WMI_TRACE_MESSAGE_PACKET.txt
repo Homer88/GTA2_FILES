@@ -1,0 +1,10 @@
+// Структура: _WMI_TRACE_MESSAGE_PACKET
+// Полей: 2
+// Строки в оригинале: 308852-308856
+struct _WMI_TRACE_MESSAGE_PACKET
+{
+
+  unsigned __int16 MessageNumber;
+  unsigned __int16 OptionFlags;
+
+};

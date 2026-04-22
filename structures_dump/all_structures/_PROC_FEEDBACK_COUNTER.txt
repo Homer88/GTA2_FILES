@@ -1,0 +1,17 @@
+// Структура: _PROC_FEEDBACK_COUNTER
+// Полей: 9
+// Строки в оригинале: 14929-14940
+struct _PROC_FEEDBACK_COUNTER
+{
+
+  $EE3232F5FC5651FC540E7E6B44B6B002 ___u0;
+  unsigned __int64 LastActualCount;
+  unsigned __int64 LastReferenceCount;
+  unsigned int CachedValue;
+  __declspec(align(8)) unsigned __int8 Affinitized;
+  unsigned __int8 Differential;
+  unsigned __int8 DiscardIdleTime;
+  unsigned __int8 Scaling;
+  unsigned int Context;
+
+};

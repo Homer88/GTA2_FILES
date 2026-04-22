@@ -1,0 +1,10 @@
+// Структура: MD_PARAM
+// Полей: 2
+// Строки в оригинале: 120391-120395
+struct MD_PARAM
+{
+
+  int m_fCanShare;
+  int m_fMayHaveInterfacePointers;
+
+};

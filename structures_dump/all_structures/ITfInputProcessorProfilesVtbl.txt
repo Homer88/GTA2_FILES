@@ -1,0 +1,29 @@
+// Структура: ITfInputProcessorProfilesVtbl
+// Полей: 21
+// Строки в оригинале: 40613-40636
+struct ITfInputProcessorProfilesVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfInputProcessorProfiles *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfInputProcessorProfiles *This);
+  ULONG (__stdcall *Release)(ITfInputProcessorProfiles *This);
+  HRESULT (__stdcall *Register)(ITfInputProcessorProfiles *This, const IID *const rclsid);
+  HRESULT (__stdcall *Unregister)(ITfInputProcessorProfiles *This, const IID *const rclsid);
+  HRESULT (__stdcall *AddLanguageProfile)(ITfInputProcessorProfiles *This, const IID *const rclsid, LANGID langid, const GUID *const guidProfile, const WCHAR *pchDesc, ULONG cchDesc, const WCHAR *pchIconFile, ULONG cchFile, ULONG uIconIndex);
+  HRESULT (__stdcall *RemoveLanguageProfile)(ITfInputProcessorProfiles *This, const IID *const rclsid, LANGID langid, const GUID *const guidProfile);
+  HRESULT (__stdcall *EnumInputProcessorInfo)(ITfInputProcessorProfiles *This, IEnumGUID **ppEnum);
+  HRESULT (__stdcall *GetDefaultLanguageProfile)(ITfInputProcessorProfiles *This, LANGID langid, const GUID *const catid, CLSID *pclsid, GUID *pguidProfile);
+  HRESULT (__stdcall *SetDefaultLanguageProfile)(ITfInputProcessorProfiles *This, LANGID langid, const IID *const rclsid, const GUID *const guidProfiles);
+  HRESULT (__stdcall *ActivateLanguageProfile)(ITfInputProcessorProfiles *This, const IID *const rclsid, LANGID langid, const GUID *const guidProfiles);
+  HRESULT (__stdcall *GetActiveLanguageProfile)(ITfInputProcessorProfiles *This, const IID *const rclsid, LANGID *plangid, GUID *pguidProfile);
+  HRESULT (__stdcall *GetLanguageProfileDescription)(ITfInputProcessorProfiles *This, const IID *const rclsid, LANGID langid, const GUID *const guidProfile, BSTR *pbstrProfile);
+  HRESULT (__stdcall *GetCurrentLanguage)(ITfInputProcessorProfiles *This, LANGID *plangid);
+  HRESULT (__stdcall *ChangeCurrentLanguage)(ITfInputProcessorProfiles *This, LANGID langid);
+  HRESULT (__stdcall *GetLanguageList)(ITfInputProcessorProfiles *This, LANGID **ppLangId, ULONG *pulCount);
+  HRESULT (__stdcall *EnumLanguageProfiles)(ITfInputProcessorProfiles *This, LANGID langid, IEnumTfLanguageProfiles **ppEnum);
+  HRESULT (__stdcall *EnableLanguageProfile)(ITfInputProcessorProfiles *This, const IID *const rclsid, LANGID langid, const GUID *const guidProfile, BOOL fEnable);
+  HRESULT (__stdcall *IsEnabledLanguageProfile)(ITfInputProcessorProfiles *This, const IID *const rclsid, LANGID langid, const GUID *const guidProfile, BOOL *pfEnable);
+  HRESULT (__stdcall *EnableLanguageProfileByDefault)(ITfInputProcessorProfiles *This, const IID *const rclsid, LANGID langid, const GUID *const guidProfile, BOOL fEnable);
+  HRESULT (__stdcall *SubstituteKeyboardLayout)(ITfInputProcessorProfiles *This, const IID *const rclsid, LANGID langid, const GUID *const guidProfile, HKL hKL);
+
+};

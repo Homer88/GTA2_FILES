@@ -1,0 +1,12 @@
+// Структура: _CONSOLE_HISTORY_INFO
+// Полей: 4
+// Строки в оригинале: 104892-104898
+struct _CONSOLE_HISTORY_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int HistoryBufferSize;
+  unsigned int NumberOfHistoryBuffers;
+  unsigned int dwFlags;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _DISPATCHER_HEADER
+// Полей: 3
+// Строки в оригинале: 13375-13380
+struct _DISPATCHER_HEADER
+{
+
+  $44154D7BD77CBB5DF79CE9FA5462A884 ___u0;
+  int SignalState;
+  _LIST_ENTRY WaitListHead;
+
+};

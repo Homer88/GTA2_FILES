@@ -1,0 +1,9 @@
+// Структура: IWICComponentInfo
+// Полей: 1
+// Строки в оригинале: 41842-41845
+struct IWICComponentInfo
+{
+
+  struct IWICComponentInfoVtbl *lpVtbl;
+
+};

@@ -1,0 +1,13 @@
+// Структура: LockCookie
+// Полей: 5
+// Строки в оригинале: 114132-114139
+struct LockCookie
+{
+
+  unsigned int dwFlags;
+  unsigned int dwWriterSeqNum;
+  unsigned __int16 wReaderLevel;
+  unsigned __int16 wWriterLevel;
+  unsigned int dwThreadID;
+
+};

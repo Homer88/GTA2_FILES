@@ -1,0 +1,12 @@
+// Структура: DVTDINFO
+// Полей: 4
+// Строки в оригинале: 108094-108100
+struct DVTDINFO
+{
+
+  unsigned int cbConvertSize;
+  unsigned int cchDrvName;
+  unsigned int cchDevName;
+  unsigned int cchPortName;
+
+};

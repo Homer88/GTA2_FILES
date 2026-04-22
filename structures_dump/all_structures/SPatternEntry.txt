@@ -1,0 +1,13 @@
+// Структура: SPatternEntry
+// Полей: 5
+// Строки в оригинале: 65368-65375
+struct SPatternEntry
+{
+
+  _GUID clsid;
+  unsigned int ulEntryLen;
+  int lFileOffset;
+  unsigned int ulCb;
+  $51B8AC67E82C414CCD5269CA8620DDC1 ___u4;
+
+};

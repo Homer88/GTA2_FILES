@@ -1,0 +1,12 @@
+// Структура: _MIDL_TYPE_PICKLING_FLAGS
+// Полей: 4
+// Строки в оригинале: 332654-332660
+struct _MIDL_TYPE_PICKLING_FLAGS
+{
+
+  unsigned __int32 Oicf : 1;
+  unsigned __int32 HasNewCorrDesc : 1;
+  unsigned __int32 HasConformanceRange : 1;
+  unsigned __int32 Unused : 29;
+
+};

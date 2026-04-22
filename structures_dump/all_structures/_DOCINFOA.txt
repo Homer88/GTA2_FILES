@@ -1,0 +1,13 @@
+// Структура: _DOCINFOA
+// Полей: 5
+// Строки в оригинале: 108400-108407
+struct _DOCINFOA
+{
+
+  int cbSize;
+  const char *lpszDocName;
+  const char *lpszOutput;
+  const char *lpszDatatype;
+  unsigned int fwType;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_SAMPLED_PROFILE_CONFIG
+// Полей: 3
+// Строки в оригинале: 308895-308900
+struct _PERFINFO_SAMPLED_PROFILE_CONFIG
+{
+
+  unsigned int Source;
+  unsigned int NewInterval;
+  unsigned int OldInterval;
+
+};

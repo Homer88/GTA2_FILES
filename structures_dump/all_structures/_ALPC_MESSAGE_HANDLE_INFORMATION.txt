@@ -1,0 +1,13 @@
+// Структура: _ALPC_MESSAGE_HANDLE_INFORMATION
+// Полей: 5
+// Строки в оригинале: 109383-109390
+struct _ALPC_MESSAGE_HANDLE_INFORMATION
+{
+
+  unsigned int Index;
+  unsigned int Flags;
+  unsigned int Handle;
+  unsigned int ObjectType;
+  unsigned int GrantedAccess;
+
+};

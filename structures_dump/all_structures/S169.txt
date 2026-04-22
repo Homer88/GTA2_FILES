@@ -1,0 +1,23 @@
+// Структура: S169
+// Полей: 15
+// Строки в оригинале: 5038-5055
+struct S169
+{
+
+  Ped *Ped1[1];
+  Ped *Ped_Arr9[9];
+  char field_28;
+  char field_29;
+  char field_2A;
+  char field_2B;
+  Ped *Ped;
+  int field_30;
+  unsigned __int8 Index;
+  char field_35;
+  char field_36;
+  char field_37;
+  int field_38;
+  Ped *pPed;
+  int field_40;
+
+};

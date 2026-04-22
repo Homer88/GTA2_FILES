@@ -1,0 +1,13 @@
+// Структура: tagEMRANGLEARC
+// Полей: 5
+// Строки в оригинале: 97533-97540
+struct tagEMRANGLEARC
+{
+
+  tagEMR emr;
+  _POINTL ptlCenter;
+  unsigned int nRadius;
+  float eStartAngle;
+  float eSweepAngle;
+
+};

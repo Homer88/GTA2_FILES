@@ -1,0 +1,12 @@
+// Структура: _remoteMETAFILEPICT
+// Полей: 4
+// Строки в оригинале: 92058-92064
+struct _remoteMETAFILEPICT
+{
+
+  int mm;
+  int xExt;
+  int yExt;
+  _userHMETAFILE *hMF;
+
+};

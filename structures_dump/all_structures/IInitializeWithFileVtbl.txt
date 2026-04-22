@@ -1,0 +1,12 @@
+// Структура: IInitializeWithFileVtbl
+// Полей: 4
+// Строки в оригинале: 37815-37821
+struct IInitializeWithFileVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IInitializeWithFile *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IInitializeWithFile *This);
+  ULONG (__stdcall *Release)(IInitializeWithFile *This);
+  HRESULT (__stdcall *Initialize)(IInitializeWithFile *This, LPCWSTR pszFilePath, DWORD grfMode);
+
+};

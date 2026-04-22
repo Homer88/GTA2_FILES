@@ -1,0 +1,14 @@
+// Структура: tagHELPINFO
+// Полей: 6
+// Строки в оригинале: 85134-85142
+struct tagHELPINFO
+{
+
+  unsigned int cbSize;
+  int iContextType;
+  int iCtrlId;
+  void *hItemHandle;
+  unsigned int dwContextId;
+  tagPOINT MousePos;
+
+};

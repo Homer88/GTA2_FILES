@@ -1,0 +1,13 @@
+// Структура: IThumbnailCacheVtbl
+// Полей: 5
+// Строки в оригинале: 38019-38026
+struct IThumbnailCacheVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IThumbnailCache *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IThumbnailCache *This);
+  ULONG (__stdcall *Release)(IThumbnailCache *This);
+  HRESULT (__stdcall *GetThumbnail)(IThumbnailCache *This, IShellItem *pShellItem, UINT cxyRequestedThumbSize, WTS_FLAGS flags, ISharedBitmap **ppvThumb, WTS_CACHEFLAGS *pOutFlags, WTS_THUMBNAILID *pThumbnailID);
+  HRESULT (__stdcall *GetThumbnailByID)(IThumbnailCache *This, WTS_THUMBNAILID thumbnailID, UINT cxyRequestedThumbSize, ISharedBitmap **ppvThumb, WTS_CACHEFLAGS *pOutFlags);
+
+};

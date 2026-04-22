@@ -1,0 +1,10 @@
+// Структура: _MINIDUMP_THREAD_NAME_LIST
+// Полей: 2
+// Строки в оригинале: 123427-123431
+struct _MINIDUMP_THREAD_NAME_LIST
+{
+
+  unsigned int NumberOfThreadNames;
+  _MINIDUMP_THREAD_NAME ThreadNames[];
+
+};

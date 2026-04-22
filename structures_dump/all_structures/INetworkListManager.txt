@@ -1,0 +1,9 @@
+// Структура: INetworkListManager
+// Полей: 1
+// Строки в оригинале: 45910-45913
+struct INetworkListManager
+{
+
+  struct INetworkListManagerVtbl *lpVtbl;
+
+};

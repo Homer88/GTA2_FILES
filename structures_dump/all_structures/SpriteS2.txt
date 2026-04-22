@@ -1,0 +1,10 @@
+// Структура: SpriteS2
+// Полей: 2
+// Строки в оригинале: 5667-5671
+struct SpriteS2
+{
+
+  SpriteS3 *FirstElement;
+  GangInfo S40_ARR5031[5031];
+
+};

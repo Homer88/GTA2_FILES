@@ -1,0 +1,9 @@
+// Структура: _RTL_PHYSICAL_MEMORY_INFO
+// Полей: 1
+// Строки в оригинале: 99306-99309
+struct _RTL_PHYSICAL_MEMORY_INFO
+{
+
+  RTL_PHYSICAL_MEMORY_POLICY Policy;
+
+};

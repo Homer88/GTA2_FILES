@@ -1,0 +1,11 @@
+// Структура: _CERT_CHAIN
+// Полей: 3
+// Строки в оригинале: 103054-103059
+struct _CERT_CHAIN
+{
+
+  unsigned int cCerts;
+  _CRYPTOAPI_BLOB *certs;
+  _CRYPT_KEY_PROV_INFO keyLocatorInfo;
+
+};

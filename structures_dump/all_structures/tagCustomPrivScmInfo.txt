@@ -1,0 +1,13 @@
+// Структура: tagCustomPrivScmInfo
+// Полей: 5
+// Строки в оригинале: 193289-193296
+struct tagCustomPrivScmInfo
+{
+
+  int Apartment;
+  wchar_t *pwszWinstaDesktop;
+  unsigned __int64 ProcessSignature;
+  wchar_t *pEnvBlock;
+  unsigned int EnvBlockLength;
+
+};

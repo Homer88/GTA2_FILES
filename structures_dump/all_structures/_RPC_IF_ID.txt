@@ -1,0 +1,11 @@
+// Структура: _RPC_IF_ID
+// Полей: 3
+// Строки в оригинале: 104377-104382
+struct _RPC_IF_ID
+{
+
+  _GUID Uuid;
+  unsigned __int16 VersMajor;
+  unsigned __int16 VersMinor;
+
+};

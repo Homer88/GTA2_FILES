@@ -1,0 +1,9 @@
+// Структура: _TOKEN_LINKED_TOKEN
+// Полей: 1
+// Строки в оригинале: 59375-59378
+struct _TOKEN_LINKED_TOKEN
+{
+
+  void *LinkedToken;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _SHORT_SIZEDARR
+// Полей: 2
+// Строки в оригинале: 83769-83773
+struct _SHORT_SIZEDARR
+{
+
+  unsigned int clSize;
+  wchar_t *pData;
+
+};

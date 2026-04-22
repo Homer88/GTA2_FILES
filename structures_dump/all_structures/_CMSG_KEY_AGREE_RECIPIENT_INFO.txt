@@ -1,0 +1,15 @@
+// Структура: _CMSG_KEY_AGREE_RECIPIENT_INFO
+// Полей: 7
+// Строки в оригинале: 98887-98896
+struct _CMSG_KEY_AGREE_RECIPIENT_INFO
+{
+
+  unsigned int dwVersion;
+  unsigned int dwOriginatorChoice;
+  $CA195191285679223859A8CDCE3799DA ___u2;
+  _CRYPTOAPI_BLOB UserKeyingMaterial;
+  _CRYPT_ALGORITHM_IDENTIFIER KeyEncryptionAlgorithm;
+  unsigned int cRecipientEncryptedKeys;
+  _CMSG_RECIPIENT_ENCRYPTED_KEY_INFO **rgpRecipientEncryptedKeys;
+
+};

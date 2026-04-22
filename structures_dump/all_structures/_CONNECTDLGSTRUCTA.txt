@@ -1,0 +1,13 @@
+// Структура: _CONNECTDLGSTRUCTA
+// Полей: 5
+// Строки в оригинале: 92667-92674
+struct _CONNECTDLGSTRUCTA
+{
+
+  unsigned int cbStructure;
+  HWND__ *hwndOwner;
+  _NETRESOURCEA *lpConnRes;
+  unsigned int dwFlags;
+  unsigned int dwDevNum;
+
+};

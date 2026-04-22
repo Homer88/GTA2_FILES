@@ -1,0 +1,17 @@
+// Структура: tagALTTABINFO
+// Полей: 9
+// Строки в оригинале: 79553-79564
+struct tagALTTABINFO
+{
+
+  unsigned int cbSize;
+  int cItems;
+  int cColumns;
+  int cRows;
+  int iColFocus;
+  int iRowFocus;
+  int cxItem;
+  int cyItem;
+  tagPOINT ptStart;
+
+};

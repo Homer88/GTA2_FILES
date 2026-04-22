@@ -1,0 +1,11 @@
+// Структура: tagEMRSETPIXELV
+// Полей: 3
+// Строки в оригинале: 109780-109785
+struct tagEMRSETPIXELV
+{
+
+  tagEMR emr;
+  _POINTL ptlPixel;
+  unsigned int crColor;
+
+};

@@ -1,0 +1,19 @@
+// Структура: __FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32Vtbl
+// Полей: 11
+// Строки в оригинале: 352284-352297
+struct __FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(__FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(__FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *This);
+  ULONG (__stdcall *Release)(__FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *This);
+  HRESULT (__stdcall *GetIids)(__FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *This, ULONG *iidCount, IID **iids);
+  HRESULT (__stdcall *GetRuntimeClassName)(__FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *This, HSTRING *className);
+  HRESULT (__stdcall *GetTrustLevel)(__FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *This, TrustLevel *trustLevel);
+  HRESULT (__stdcall *put_Progress)(__FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *This, __FIAsyncOperationProgressHandler_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *handler);
+  HRESULT (__stdcall *get_Progress)(__FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *This, __FIAsyncOperationProgressHandler_2_Windows__CStorage__CStreams__CIBuffer_UINT32 **handler);
+  HRESULT (__stdcall *put_Completed)(__FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *This, __FIAsyncOperationWithProgressCompletedHandler_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *handler);
+  HRESULT (__stdcall *get_Completed)(__FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *This, __FIAsyncOperationWithProgressCompletedHandler_2_Windows__CStorage__CStreams__CIBuffer_UINT32 **handler);
+  HRESULT (__stdcall *GetResults)(__FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32 *This, __x_ABI_CWindows_CStorage_CStreams_CIBuffer **results);
+
+};

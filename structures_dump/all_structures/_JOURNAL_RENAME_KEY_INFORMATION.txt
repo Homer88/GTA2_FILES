@@ -1,0 +1,13 @@
+// Структура: _JOURNAL_RENAME_KEY_INFORMATION
+// Полей: 5
+// Строки в оригинале: 99768-99775
+struct _JOURNAL_RENAME_KEY_INFORMATION
+{
+
+  _JOURNAL_CHANGE_INFORMATION_CLASS Action;
+  unsigned __int64 RecordNumber;
+  _LARGE_INTEGER TimeStamp;
+  _UNICODE_STRING KeyPathName;
+  _UNICODE_STRING KeyKeyName;
+
+};

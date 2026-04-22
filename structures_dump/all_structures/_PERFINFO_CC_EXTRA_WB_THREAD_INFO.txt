@@ -1,0 +1,13 @@
+// Структура: _PERFINFO_CC_EXTRA_WB_THREAD_INFO
+// Полей: 5
+// Строки в оригинале: 310896-310903
+struct _PERFINFO_CC_EXTRA_WB_THREAD_INFO
+{
+
+  unsigned int ThreadAction;
+  unsigned int ActiveExtraWBThreads;
+  unsigned int TotalDirtyPages;
+  unsigned int DirtyPageThreshold;
+  unsigned int AvailablePages;
+
+};

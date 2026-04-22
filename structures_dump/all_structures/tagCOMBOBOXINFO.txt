@@ -1,0 +1,15 @@
+// Структура: tagCOMBOBOXINFO
+// Полей: 7
+// Строки в оригинале: 95203-95212
+struct tagCOMBOBOXINFO
+{
+
+  unsigned int cbSize;
+  tagRECT rcItem;
+  tagRECT rcButton;
+  unsigned int stateButton;
+  HWND__ *hwndCombo;
+  HWND__ *hwndItem;
+  HWND__ *hwndList;
+
+};

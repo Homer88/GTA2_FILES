@@ -1,0 +1,10 @@
+// Структура: _POWER_SESSION_RIT_STATE
+// Полей: 2
+// Строки в оригинале: 88985-88989
+struct _POWER_SESSION_RIT_STATE
+{
+
+  unsigned __int8 Active;
+  unsigned int LastInputTime;
+
+};

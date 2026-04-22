@@ -1,0 +1,9 @@
+// Структура: _TRANSACTIONMANAGER_LOG_INFORMATION
+// Полей: 1
+// Строки в оригинале: 92214-92217
+struct _TRANSACTIONMANAGER_LOG_INFORMATION
+{
+
+  _GUID LogIdentity;
+
+};

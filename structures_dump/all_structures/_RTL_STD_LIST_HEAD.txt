@@ -1,0 +1,10 @@
+// Структура: _RTL_STD_LIST_HEAD
+// Полей: 2
+// Строки в оригинале: 22402-22406
+struct _RTL_STD_LIST_HEAD
+{
+
+  _RTL_STD_LIST_ENTRY *Next;
+  _RTL_STACK_DATABASE_LOCK Lock;
+
+};

@@ -1,0 +1,15 @@
+// Структура: IOleUndoUnitVtbl
+// Полей: 7
+// Строки в оригинале: 33046-33055
+struct IOleUndoUnitVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleUndoUnit *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleUndoUnit *This);
+  ULONG (__stdcall *Release)(IOleUndoUnit *This);
+  HRESULT (__stdcall *Do)(IOleUndoUnit *This, IOleUndoManager *pUndoManager);
+  HRESULT (__stdcall *GetDescription)(IOleUndoUnit *This, BSTR *pBstr);
+  HRESULT (__stdcall *GetUnitType)(IOleUndoUnit *This, CLSID *pClsid, LONG *plID);
+  HRESULT (__stdcall *OnNextAdd)(IOleUndoUnit *This);
+
+};

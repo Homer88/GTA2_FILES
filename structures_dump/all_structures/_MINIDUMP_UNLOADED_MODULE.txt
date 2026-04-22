@@ -1,0 +1,13 @@
+// Структура: _MINIDUMP_UNLOADED_MODULE
+// Полей: 5
+// Строки в оригинале: 123891-123898
+struct _MINIDUMP_UNLOADED_MODULE
+{
+
+  unsigned __int64 BaseOfImage;
+  unsigned int SizeOfImage;
+  unsigned int CheckSum;
+  unsigned int TimeDateStamp;
+  unsigned int ModuleNameRva;
+
+};

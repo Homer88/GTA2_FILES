@@ -1,0 +1,35 @@
+// Структура: IHTMLLocationVtbl
+// Полей: 27
+// Строки в оригинале: 38525-38554
+struct IHTMLLocationVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLLocation *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLLocation *This);
+  ULONG (__stdcall *Release)(IHTMLLocation *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLLocation *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLLocation *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLLocation *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLLocation *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *put_href)(IHTMLLocation *This, BSTR v);
+  HRESULT (__stdcall *get_href)(IHTMLLocation *This, BSTR *p);
+  HRESULT (__stdcall *put_protocol)(IHTMLLocation *This, BSTR v);
+  HRESULT (__stdcall *get_protocol)(IHTMLLocation *This, BSTR *p);
+  HRESULT (__stdcall *put_host)(IHTMLLocation *This, BSTR v);
+  HRESULT (__stdcall *get_host)(IHTMLLocation *This, BSTR *p);
+  HRESULT (__stdcall *put_hostname)(IHTMLLocation *This, BSTR v);
+  HRESULT (__stdcall *get_hostname)(IHTMLLocation *This, BSTR *p);
+  HRESULT (__stdcall *put_port)(IHTMLLocation *This, BSTR v);
+  HRESULT (__stdcall *get_port)(IHTMLLocation *This, BSTR *p);
+  HRESULT (__stdcall *put_pathname)(IHTMLLocation *This, BSTR v);
+  HRESULT (__stdcall *get_pathname)(IHTMLLocation *This, BSTR *p);
+  HRESULT (__stdcall *put_search)(IHTMLLocation *This, BSTR v);
+  HRESULT (__stdcall *get_search)(IHTMLLocation *This, BSTR *p);
+  HRESULT (__stdcall *put_hash)(IHTMLLocation *This, BSTR v);
+  HRESULT (__stdcall *get_hash)(IHTMLLocation *This, BSTR *p);
+  HRESULT (__stdcall *reload)(IHTMLLocation *This, VARIANT_BOOL flag);
+  HRESULT (__stdcall *replace)(IHTMLLocation *This, BSTR bstr);
+  HRESULT (__stdcall *assign)(IHTMLLocation *This, BSTR bstr);
+  HRESULT (__stdcall *toString)(IHTMLLocation *This, BSTR *string);
+
+};

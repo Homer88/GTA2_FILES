@@ -1,0 +1,23 @@
+// Структура: tagDBBINDING
+// Полей: 15
+// Строки в оригинале: 37201-37218
+struct tagDBBINDING
+{
+
+  DBORDINAL iOrdinal;
+  DBBYTEOFFSET obValue;
+  DBBYTEOFFSET obLength;
+  DBBYTEOFFSET obStatus;
+  ITypeInfo *pTypeInfo;
+  DBOBJECT *pObject;
+  DBBINDEXT *pBindExt;
+  DBPART dwPart;
+  DBMEMOWNER dwMemOwner;
+  DBPARAMIO eParamIO;
+  DBLENGTH cbMaxLen;
+  DWORD dwFlags;
+  DBTYPE wType;
+  BYTE bPrecision;
+  BYTE bScale;
+
+};

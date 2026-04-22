@@ -1,0 +1,15 @@
+// Структура: _ETW_TP_EVENT_CALLBACK_CANCEL
+// Полей: 7
+// Строки в оригинале: 313317-313326
+struct _ETW_TP_EVENT_CALLBACK_CANCEL
+{
+
+  _SYSTEM_TRACE_HEADER Header;
+  void *PoolId;
+  void *TaskId;
+  void *Callback;
+  void *Context;
+  void *SubProcessTag;
+  unsigned int CancelCount;
+
+};

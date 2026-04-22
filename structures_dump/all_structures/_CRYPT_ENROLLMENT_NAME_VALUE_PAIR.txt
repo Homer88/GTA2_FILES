@@ -1,0 +1,10 @@
+// Структура: _CRYPT_ENROLLMENT_NAME_VALUE_PAIR
+// Полей: 2
+// Строки в оригинале: 103201-103205
+struct _CRYPT_ENROLLMENT_NAME_VALUE_PAIR
+{
+
+  wchar_t *pwszName;
+  wchar_t *pwszValue;
+
+};

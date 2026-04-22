@@ -1,0 +1,15 @@
+// Структура: IEnumTfPropertiesVtbl
+// Полей: 7
+// Строки в оригинале: 30429-30438
+struct IEnumTfPropertiesVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumTfProperties *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumTfProperties *This);
+  ULONG (__stdcall *Release)(IEnumTfProperties *This);
+  HRESULT (__stdcall *Clone)(IEnumTfProperties *This, IEnumTfProperties **ppEnum);
+  HRESULT (__stdcall *Next)(IEnumTfProperties *This, ULONG ulCount, ITfProperty **ppProp, ULONG *pcFetched);
+  HRESULT (__stdcall *Reset)(IEnumTfProperties *This);
+  HRESULT (__stdcall *Skip)(IEnumTfProperties *This, ULONG ulCount);
+
+};

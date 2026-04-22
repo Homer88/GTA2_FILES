@@ -1,0 +1,10 @@
+// Структура: RPC_STATS_VECTOR
+// Полей: 2
+// Строки в оригинале: 111960-111964
+struct RPC_STATS_VECTOR
+{
+
+  unsigned int Count;
+  unsigned int Stats[1];
+
+};

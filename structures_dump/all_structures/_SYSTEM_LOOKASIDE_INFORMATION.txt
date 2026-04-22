@@ -1,0 +1,17 @@
+// Структура: _SYSTEM_LOOKASIDE_INFORMATION
+// Полей: 9
+// Строки в оригинале: 89370-89381
+struct _SYSTEM_LOOKASIDE_INFORMATION
+{
+
+  unsigned __int16 CurrentDepth;
+  unsigned __int16 MaximumDepth;
+  unsigned int TotalAllocates;
+  unsigned int AllocateMisses;
+  unsigned int TotalFrees;
+  unsigned int FreeMisses;
+  unsigned int Type;
+  unsigned int Tag;
+  unsigned int Size;
+
+};

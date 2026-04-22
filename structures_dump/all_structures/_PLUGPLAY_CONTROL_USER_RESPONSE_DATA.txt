@@ -1,0 +1,12 @@
+// Структура: _PLUGPLAY_CONTROL_USER_RESPONSE_DATA
+// Полей: 4
+// Строки в оригинале: 104604-104610
+struct _PLUGPLAY_CONTROL_USER_RESPONSE_DATA
+{
+
+  unsigned int Response;
+  _PNP_VETO_TYPE VetoType;
+  wchar_t *VetoName;
+  unsigned int VetoNameLength;
+
+};

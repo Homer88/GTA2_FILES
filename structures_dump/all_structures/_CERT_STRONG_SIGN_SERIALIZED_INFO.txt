@@ -1,0 +1,11 @@
+// Структура: _CERT_STRONG_SIGN_SERIALIZED_INFO
+// Полей: 3
+// Строки в оригинале: 107407-107412
+struct _CERT_STRONG_SIGN_SERIALIZED_INFO
+{
+
+  unsigned int dwFlags;
+  wchar_t *pwszCNGSignHashAlgids;
+  wchar_t *pwszCNGPubKeyMinBitLengths;
+
+};

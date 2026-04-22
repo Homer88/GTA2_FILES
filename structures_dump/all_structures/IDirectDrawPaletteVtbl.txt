@@ -1,0 +1,15 @@
+// Структура: IDirectDrawPaletteVtbl
+// Полей: 7
+// Строки в оригинале: 24103-24112
+struct IDirectDrawPaletteVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirectDrawPalette *This, const IID *const riid, LPVOID *ppvObj);
+  ULONG (__stdcall *AddRef)(IDirectDrawPalette *This);
+  ULONG (__stdcall *Release)(IDirectDrawPalette *This);
+  HRESULT (__stdcall *GetCaps)(IDirectDrawPalette *This, LPDWORD);
+  HRESULT (__stdcall *GetEntries)(IDirectDrawPalette *This, DWORD, DWORD, DWORD, LPPALETTEENTRY);
+  HRESULT (__stdcall *Initialize)(IDirectDrawPalette *This, LPDIRECTDRAW, DWORD, LPPALETTEENTRY);
+  HRESULT (__stdcall *SetEntries)(IDirectDrawPalette *This, DWORD, DWORD, DWORD, LPPALETTEENTRY);
+
+};

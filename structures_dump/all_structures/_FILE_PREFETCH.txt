@@ -1,0 +1,11 @@
+// Структура: _FILE_PREFETCH
+// Полей: 3
+// Строки в оригинале: 103265-103270
+struct _FILE_PREFETCH
+{
+
+  unsigned int Type;
+  unsigned int Count;
+  unsigned __int64 Prefetch[1];
+
+};

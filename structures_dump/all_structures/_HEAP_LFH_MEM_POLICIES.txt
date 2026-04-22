@@ -1,0 +1,9 @@
+// Структура: _HEAP_LFH_MEM_POLICIES
+// Полей: 1
+// Строки в оригинале: 21329-21332
+struct _HEAP_LFH_MEM_POLICIES
+{
+
+  $447C0A58340FD1848F0CCBD4EBE4F629 ___u0;
+
+};

@@ -1,0 +1,15 @@
+// Структура: _HEAP_USERDATA_HEADER
+// Полей: 7
+// Строки в оригинале: 21519-21528
+struct _HEAP_USERDATA_HEADER
+{
+
+  $304DF3108EC34A24B2A1FBBF07839770 ___u0;
+  void *Reserved;
+  $18DB4908ECB2443CF8928406A5C4D0E3 ___u2;
+  unsigned int Signature;
+  _HEAP_USERDATA_OFFSETS EncodedOffsets;
+  _RTL_BITMAP BusyBitmap;
+  unsigned int BitmapData[1];
+
+};

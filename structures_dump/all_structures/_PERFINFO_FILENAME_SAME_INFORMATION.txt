@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_FILENAME_SAME_INFORMATION
+// Полей: 2
+// Строки в оригинале: 309200-309204
+struct _PERFINFO_FILENAME_SAME_INFORMATION
+{
+
+  void *OldFile;
+  void *NewFile;
+
+};

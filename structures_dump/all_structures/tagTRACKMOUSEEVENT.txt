@@ -1,0 +1,12 @@
+// Структура: tagTRACKMOUSEEVENT
+// Полей: 4
+// Строки в оригинале: 84848-84854
+struct tagTRACKMOUSEEVENT
+{
+
+  unsigned int cbSize;
+  unsigned int dwFlags;
+  HWND__ *hwndTrack;
+  unsigned int dwHoverTime;
+
+};

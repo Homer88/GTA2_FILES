@@ -1,0 +1,18 @@
+// Структура: _TP_CALLBACK_ENVIRON_V3
+// Полей: 10
+// Строки в оригинале: 12774-12786
+struct _TP_CALLBACK_ENVIRON_V3
+{
+
+  unsigned int Version;
+  struct _TP_POOL *Pool;
+  struct _TP_CLEANUP_GROUP *CleanupGroup;
+  void (__stdcall *CleanupGroupCancelCallback)(void *, void *);
+  void *RaceDll;
+  struct _ACTIVATION_CONTEXT *ActivationContext;
+  void (__stdcall *FinalizationCallback)(struct _TP_CALLBACK_INSTANCE *, void *);
+  _TP_CALLBACK_ENVIRON_V3::$18EC96EF2B8090D4B30ED63819DFD800 u;
+  _TP_CALLBACK_PRIORITY CallbackPriority;
+  unsigned int Size;
+
+};

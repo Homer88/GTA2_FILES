@@ -1,0 +1,17 @@
+// Структура: DIJOYTYPEINFO
+// Полей: 9
+// Строки в оригинале: 29618-29629
+struct DIJOYTYPEINFO
+{
+
+  DWORD dwSize;
+  JOYREGHWSETTINGS hws;
+  CLSID clsidConfig;
+  WCHAR wszDisplayName[256];
+  WCHAR wszCallout[260];
+  WCHAR wszHardwareId[256];
+  DWORD dwFlags1;
+  DWORD dwFlags2;
+  WCHAR wszMapFile[256];
+
+};

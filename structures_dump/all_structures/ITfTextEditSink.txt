@@ -1,0 +1,9 @@
+// Структура: ITfTextEditSink
+// Полей: 1
+// Строки в оригинале: 31317-31320
+struct ITfTextEditSink
+{
+
+  struct ITfTextEditSinkVtbl *lpVtbl;
+
+};

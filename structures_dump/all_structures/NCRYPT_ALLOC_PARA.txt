@@ -1,0 +1,11 @@
+// Структура: NCRYPT_ALLOC_PARA
+// Полей: 3
+// Строки в оригинале: 105990-105995
+struct NCRYPT_ALLOC_PARA
+{
+
+  unsigned int cbSize;
+  void *(__stdcall *pfnAlloc)(unsigned int);
+  void (__stdcall *pfnFree)(void *);
+
+};

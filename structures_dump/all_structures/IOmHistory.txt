@@ -1,0 +1,9 @@
+// Структура: IOmHistory
+// Полей: 1
+// Строки в оригинале: 38693-38696
+struct IOmHistory
+{
+
+  struct IOmHistoryVtbl *lpVtbl;
+
+};

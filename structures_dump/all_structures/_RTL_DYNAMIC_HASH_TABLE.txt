@@ -1,0 +1,17 @@
+// Структура: _RTL_DYNAMIC_HASH_TABLE
+// Полей: 9
+// Строки в оригинале: 12833-12844
+struct _RTL_DYNAMIC_HASH_TABLE
+{
+
+  unsigned int Flags;
+  unsigned int Shift;
+  unsigned int TableSize;
+  unsigned int Pivot;
+  unsigned int DivisorMask;
+  unsigned int NumEntries;
+  unsigned int NonEmptyBuckets;
+  unsigned int NumEnumerators;
+  void *Directory;
+
+};

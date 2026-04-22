@@ -1,0 +1,15 @@
+// Структура: IEnumSTATSTGVtbl
+// Полей: 7
+// Строки в оригинале: 27201-27210
+struct IEnumSTATSTGVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumSTATSTG *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumSTATSTG *This);
+  ULONG (__stdcall *Release)(IEnumSTATSTG *This);
+  HRESULT (__stdcall *Next)(IEnumSTATSTG *This, ULONG celt, STATSTG *rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumSTATSTG *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumSTATSTG *This);
+  HRESULT (__stdcall *Clone)(IEnumSTATSTG *This, IEnumSTATSTG **ppenum);
+
+};

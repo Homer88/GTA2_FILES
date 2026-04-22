@@ -1,0 +1,12 @@
+// Структура: _TXFS_LIST_TRANSACTION_LOCKED_FILES
+// Полей: 4
+// Строки в оригинале: 100799-100805
+struct _TXFS_LIST_TRANSACTION_LOCKED_FILES
+{
+
+  _GUID KtmTransaction;
+  unsigned __int64 NumberOfFiles;
+  unsigned __int64 BufferSizeRequired;
+  unsigned __int64 Offset;
+
+};

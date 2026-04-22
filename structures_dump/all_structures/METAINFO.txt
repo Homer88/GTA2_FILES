@@ -1,0 +1,15 @@
+// Структура: METAINFO
+// Полей: 7
+// Строки в оригинале: 146863-146872
+struct METAINFO
+{
+
+  METADC headDc;
+  int xwo;
+  int ywo;
+  int xwe;
+  int ywe;
+  int xro;
+  int yro;
+
+};

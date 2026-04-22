@@ -1,0 +1,10 @@
+// Структура: tagPOINTF
+// Полей: 2
+// Строки в оригинале: 39967-39971
+struct tagPOINTF
+{
+
+  FLOAT x;
+  FLOAT y;
+
+};

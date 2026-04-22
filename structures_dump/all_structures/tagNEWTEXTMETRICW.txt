@@ -1,0 +1,32 @@
+// Структура: tagNEWTEXTMETRICW
+// Полей: 24
+// Строки в оригинале: 85428-85454
+struct tagNEWTEXTMETRICW
+{
+
+  int tmHeight;
+  int tmAscent;
+  int tmDescent;
+  int tmInternalLeading;
+  int tmExternalLeading;
+  int tmAveCharWidth;
+  int tmMaxCharWidth;
+  int tmWeight;
+  int tmOverhang;
+  int tmDigitizedAspectX;
+  int tmDigitizedAspectY;
+  wchar_t tmFirstChar;
+  wchar_t tmLastChar;
+  wchar_t tmDefaultChar;
+  wchar_t tmBreakChar;
+  unsigned __int8 tmItalic;
+  unsigned __int8 tmUnderlined;
+  unsigned __int8 tmStruckOut;
+  unsigned __int8 tmPitchAndFamily;
+  unsigned __int8 tmCharSet;
+  unsigned int ntmFlags;
+  unsigned int ntmSizeEM;
+  unsigned int ntmCellHeight;
+  unsigned int ntmAvgWidth;
+
+};

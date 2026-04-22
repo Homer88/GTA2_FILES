@@ -1,0 +1,13 @@
+// Структура: tagICONMETRICSW
+// Полей: 5
+// Строки в оригинале: 81298-81305
+struct tagICONMETRICSW
+{
+
+  unsigned int cbSize;
+  int iHorzSpacing;
+  int iVertSpacing;
+  int iTitleWrap;
+  tagLOGFONTW lfFont;
+
+};

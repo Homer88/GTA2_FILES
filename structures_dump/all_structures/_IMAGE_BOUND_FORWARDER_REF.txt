@@ -1,0 +1,11 @@
+// Структура: _IMAGE_BOUND_FORWARDER_REF
+// Полей: 3
+// Строки в оригинале: 98404-98409
+struct _IMAGE_BOUND_FORWARDER_REF
+{
+
+  unsigned int TimeDateStamp;
+  unsigned __int16 OffsetModuleName;
+  unsigned __int16 Reserved;
+
+};

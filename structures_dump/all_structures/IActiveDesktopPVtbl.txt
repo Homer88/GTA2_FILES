@@ -1,0 +1,15 @@
+// Структура: IActiveDesktopPVtbl
+// Полей: 7
+// Строки в оригинале: 36787-36796
+struct IActiveDesktopPVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IActiveDesktopP *This, const IID *const riid, void **ppv);
+  ULONG (__stdcall *AddRef)(IActiveDesktopP *This);
+  ULONG (__stdcall *Release)(IActiveDesktopP *This);
+  HRESULT (__stdcall *SetSafeMode)(IActiveDesktopP *This, DWORD dwFlags);
+  HRESULT (__stdcall *EnsureUpdateHTML)(IActiveDesktopP *This);
+  HRESULT (__stdcall *SetScheme)(IActiveDesktopP *This, PCWSTR pwszSchemeName, DWORD dwFlags);
+  HRESULT (__stdcall *GetScheme)(IActiveDesktopP *This, PWSTR pwszSchemeName, DWORD *pdwcchBuffer, DWORD dwFlags);
+
+};

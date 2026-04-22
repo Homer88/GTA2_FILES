@@ -1,0 +1,15 @@
+// Структура: ANON_OBJECT_HEADER
+// Полей: 7
+// Строки в оригинале: 92866-92875
+struct ANON_OBJECT_HEADER
+{
+
+  unsigned __int16 Sig1;
+  unsigned __int16 Sig2;
+  unsigned __int16 Version;
+  unsigned __int16 Machine;
+  unsigned int TimeDateStamp;
+  _GUID ClassID;
+  unsigned int SizeOfData;
+
+};

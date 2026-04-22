@@ -1,0 +1,10 @@
+// Структура: _COVERAGE_MODULE_REQUEST
+// Полей: 2
+// Строки в оригинале: 89586-89590
+struct _COVERAGE_MODULE_REQUEST
+{
+
+  _COVERAGE_REQUEST_CODES RequestType;
+  _COVERAGE_MODULE_REQUEST::<unnamed_type_SearchInfo> SearchInfo;
+
+};

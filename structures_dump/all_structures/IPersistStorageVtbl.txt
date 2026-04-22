@@ -1,0 +1,18 @@
+// Структура: IPersistStorageVtbl
+// Полей: 10
+// Строки в оригинале: 35730-35742
+struct IPersistStorageVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPersistStorage *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPersistStorage *This);
+  ULONG (__stdcall *Release)(IPersistStorage *This);
+  HRESULT (__stdcall *GetClassID)(IPersistStorage *This, CLSID *pClassID);
+  HRESULT (__stdcall *IsDirty)(IPersistStorage *This);
+  HRESULT (__stdcall *InitNew)(IPersistStorage *This, IStorage *pStg);
+  HRESULT (__stdcall *Load)(IPersistStorage *This, IStorage *pStg);
+  HRESULT (__stdcall *Save)(IPersistStorage *This, IStorage *pStgSave, BOOL fSameAsLoad);
+  HRESULT (__stdcall *SaveCompleted)(IPersistStorage *This, IStorage *pStgNew);
+  HRESULT (__stdcall *HandsOffStorage)(IPersistStorage *This);
+
+};

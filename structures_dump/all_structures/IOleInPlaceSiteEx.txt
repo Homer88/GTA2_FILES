@@ -1,0 +1,9 @@
+// Структура: IOleInPlaceSiteEx
+// Полей: 1
+// Строки в оригинале: 45311-45314
+struct IOleInPlaceSiteEx
+{
+
+  struct IOleInPlaceSiteExVtbl *lpVtbl;
+
+};

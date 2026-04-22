@@ -1,0 +1,9 @@
+// Структура: _TOKEN_ELEVATION
+// Полей: 1
+// Строки в оригинале: 103353-103356
+struct _TOKEN_ELEVATION
+{
+
+  unsigned int TokenIsElevated;
+
+};

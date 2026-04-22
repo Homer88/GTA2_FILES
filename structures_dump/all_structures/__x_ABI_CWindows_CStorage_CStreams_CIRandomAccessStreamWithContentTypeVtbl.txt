@@ -1,0 +1,14 @@
+// Структура: __x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamWithContentTypeVtbl
+// Полей: 6
+// Строки в оригинале: 30898-30906
+struct __x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamWithContentTypeVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(__x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamWithContentType *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(__x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamWithContentType *This);
+  ULONG (__stdcall *Release)(__x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamWithContentType *This);
+  HRESULT (__stdcall *GetIids)(__x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamWithContentType *This, ULONG *iidCount, IID **iids);
+  HRESULT (__stdcall *GetRuntimeClassName)(__x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamWithContentType *This, HSTRING *className);
+  HRESULT (__stdcall *GetTrustLevel)(__x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamWithContentType *This, TrustLevel *trustLevel);
+
+};

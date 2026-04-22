@@ -1,0 +1,15 @@
+// Структура: _AHC_MAIN_STATISTICS
+// Полей: 7
+// Строки в оригинале: 311879-311888
+struct _AHC_MAIN_STATISTICS
+{
+
+  unsigned int Lookup;
+  unsigned int Remove;
+  unsigned int Update;
+  unsigned int Clear;
+  unsigned int SnapStatistics;
+  unsigned int SnapCache;
+  unsigned int LookupProcess;
+
+};

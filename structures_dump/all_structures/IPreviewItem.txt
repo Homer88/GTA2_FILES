@@ -1,0 +1,9 @@
+// Структура: IPreviewItem
+// Полей: 1
+// Строки в оригинале: 33506-33509
+struct IPreviewItem
+{
+
+  struct IPreviewItemVtbl *lpVtbl;
+
+};

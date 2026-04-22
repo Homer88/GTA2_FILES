@@ -1,0 +1,12 @@
+// Структура: _THREAD_ENERGY_VALUES
+// Полей: 4
+// Строки в оригинале: 16578-16584
+struct _THREAD_ENERGY_VALUES
+{
+
+  unsigned __int64 Cycles[4][2];
+  unsigned __int64 AttributedCycles[4][2];
+  unsigned __int64 WorkOnBehalfCycles[4][2];
+  _TIMELINE_BITMAP CpuTimeline;
+
+};

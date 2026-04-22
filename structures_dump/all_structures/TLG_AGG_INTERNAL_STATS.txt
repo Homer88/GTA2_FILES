@@ -1,0 +1,16 @@
+// Структура: TLG_AGG_INTERNAL_STATS
+// Полей: 8
+// Строки в оригинале: 150064-150074
+struct TLG_AGG_INTERNAL_STATS
+{
+
+  unsigned __int64 TotalEntriesFlushed;
+  unsigned __int64 NumFlushes;
+  unsigned int MaxEntriesStored;
+  unsigned int MaxEntriesFlushed;
+  unsigned int MinEntriesFlushed;
+  unsigned int NumBucketLimitReached;
+  unsigned int NumAllocationFailures;
+  unsigned int NumLargeEventFailures;
+
+};

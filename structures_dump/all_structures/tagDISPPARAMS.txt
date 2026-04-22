@@ -1,0 +1,12 @@
+// Структура: tagDISPPARAMS
+// Полей: 4
+// Строки в оригинале: 23014-23020
+struct tagDISPPARAMS
+{
+
+  VARIANTARG *rgvarg;
+  DISPID *rgdispidNamedArgs;
+  UINT cArgs;
+  UINT cNamedArgs;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IOleInPlaceObjectWindowless
+// Полей: 1
+// Строки в оригинале: 42894-42897
+struct IOleInPlaceObjectWindowless
+{
+
+  struct IOleInPlaceObjectWindowlessVtbl *lpVtbl;
+
+};

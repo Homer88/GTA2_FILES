@@ -1,0 +1,10 @@
+// Структура: _TP_POOL_STACK_INFORMATION
+// Полей: 2
+// Строки в оригинале: 96785-96789
+struct _TP_POOL_STACK_INFORMATION
+{
+
+  unsigned int StackReserve;
+  unsigned int StackCommit;
+
+};

@@ -1,0 +1,24 @@
+// Структура: INetworkListManagerVtbl
+// Полей: 16
+// Строки в оригинале: 45889-45907
+struct INetworkListManagerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(INetworkListManager *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(INetworkListManager *This);
+  ULONG (__stdcall *Release)(INetworkListManager *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(INetworkListManager *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(INetworkListManager *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(INetworkListManager *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(INetworkListManager *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *GetNetworks)(INetworkListManager *This, NLM_ENUM_NETWORK Flags, IEnumNetworks **ppEnumNetwork);
+  HRESULT (__stdcall *GetNetwork)(INetworkListManager *This, GUID gdNetworkId, INetwork **ppNetwork);
+  HRESULT (__stdcall *GetNetworkConnections)(INetworkListManager *This, IEnumNetworkConnections **ppEnum);
+  HRESULT (__stdcall *GetNetworkConnection)(INetworkListManager *This, GUID gdNetworkConnectionId, INetworkConnection **ppNetworkConnection);
+  HRESULT (__stdcall *get_IsConnectedToInternet)(INetworkListManager *This, VARIANT_BOOL *pbIsConnected);
+  HRESULT (__stdcall *get_IsConnected)(INetworkListManager *This, VARIANT_BOOL *pbIsConnected);
+  HRESULT (__stdcall *GetConnectivity)(INetworkListManager *This, NLM_CONNECTIVITY *pConnectivity);
+  HRESULT (__stdcall *SetSimulatedProfileInfo)(INetworkListManager *This, NLM_SIMULATED_PROFILE_INFO *pSimulatedInfo);
+  HRESULT (__stdcall *ClearSimulatedProfileInfo)(INetworkListManager *This);
+
+};

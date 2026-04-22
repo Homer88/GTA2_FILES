@@ -1,0 +1,10 @@
+// Структура: _GET_FILTER_FILE_IDENTIFIER_INPUT
+// Полей: 2
+// Строки в оригинале: 108863-108867
+struct _GET_FILTER_FILE_IDENTIFIER_INPUT
+{
+
+  unsigned __int16 AltitudeLength;
+  wchar_t Altitude[1];
+
+};

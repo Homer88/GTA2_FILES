@@ -1,0 +1,26 @@
+// Структура: IExplorerBrowserVtbl
+// Полей: 18
+// Строки в оригинале: 41410-41430
+struct IExplorerBrowserVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IExplorerBrowser *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IExplorerBrowser *This);
+  ULONG (__stdcall *Release)(IExplorerBrowser *This);
+  HRESULT (__stdcall *Initialize)(IExplorerBrowser *This, HWND hwndParent, const RECT *prc, const FOLDERSETTINGS *pfs);
+  HRESULT (__stdcall *Destroy)(IExplorerBrowser *This);
+  HRESULT (__stdcall *SetRect)(IExplorerBrowser *This, HDWP *phdwp, RECT rcBrowser);
+  HRESULT (__stdcall *SetPropertyBag)(IExplorerBrowser *This, LPCWSTR pszPropertyBag);
+  HRESULT (__stdcall *SetEmptyText)(IExplorerBrowser *This, LPCWSTR pszEmptyText);
+  HRESULT (__stdcall *SetFolderSettings)(IExplorerBrowser *This, const FOLDERSETTINGS *pfs);
+  HRESULT (__stdcall *Advise)(IExplorerBrowser *This, IExplorerBrowserEvents *psbe, DWORD *pdwCookie);
+  HRESULT (__stdcall *Unadvise)(IExplorerBrowser *This, DWORD dwCookie);
+  HRESULT (__stdcall *SetOptions)(IExplorerBrowser *This, EXPLORER_BROWSER_OPTIONS dwFlag);
+  HRESULT (__stdcall *GetOptions)(IExplorerBrowser *This, EXPLORER_BROWSER_OPTIONS *pdwFlag);
+  HRESULT (__stdcall *BrowseToIDList)(IExplorerBrowser *This, LPCITEMIDLIST pidl, UINT uFlags);
+  HRESULT (__stdcall *BrowseToObject)(IExplorerBrowser *This, IUnknown *punk, UINT uFlags);
+  HRESULT (__stdcall *FillFromObject)(IExplorerBrowser *This, IUnknown *punk, EXPLORER_BROWSER_FILL_FLAGS dwFlags);
+  HRESULT (__stdcall *RemoveAll)(IExplorerBrowser *This);
+  HRESULT (__stdcall *GetCurrentView)(IExplorerBrowser *This, const IID *const riid, void **ppv);
+
+};

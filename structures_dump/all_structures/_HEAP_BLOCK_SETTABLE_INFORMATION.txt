@@ -1,0 +1,11 @@
+// Структура: _HEAP_BLOCK_SETTABLE_INFORMATION
+// Полей: 3
+// Строки в оригинале: 84449-84454
+struct _HEAP_BLOCK_SETTABLE_INFORMATION
+{
+
+  unsigned int Settable;
+  unsigned __int16 TagIndex;
+  unsigned __int16 AllocatorBackTraceIndex;
+
+};

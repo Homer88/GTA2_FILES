@@ -1,0 +1,12 @@
+// Структура: _NDR64_RANGED_STRING_FORMAT
+// Полей: 4
+// Строки в оригинале: 332505-332511
+struct _NDR64_RANGED_STRING_FORMAT
+{
+
+  NDR64_STRING_HEADER_FORMAT Header;
+  unsigned int Reserved;
+  unsigned __int64 Min;
+  unsigned __int64 Max;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _POWER_SESSION_ALLOW_EXTERNAL_DMA_DEVICES
+// Полей: 1
+// Строки в оригинале: 103541-103544
+struct _POWER_SESSION_ALLOW_EXTERNAL_DMA_DEVICES
+{
+
+  unsigned __int8 IsAllowed;
+
+};

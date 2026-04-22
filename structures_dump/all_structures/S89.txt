@@ -1,0 +1,17 @@
+// Структура: S89
+// Полей: 9
+// Строки в оригинале: 8158-8169
+struct S89
+{
+
+  S89_2 *S89_2;
+  unsigned __int16 Count;
+  __int16 field_6;
+  int sprite_type;
+  int field_C;
+  char field_10;
+  char field_11;
+  char field_12;
+  char field_13;
+
+};

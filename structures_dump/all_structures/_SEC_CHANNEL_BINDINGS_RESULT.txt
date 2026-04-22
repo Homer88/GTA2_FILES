@@ -1,0 +1,9 @@
+// Структура: _SEC_CHANNEL_BINDINGS_RESULT
+// Полей: 1
+// Строки в оригинале: 325919-325922
+struct _SEC_CHANNEL_BINDINGS_RESULT
+{
+
+  unsigned int flags;
+
+};

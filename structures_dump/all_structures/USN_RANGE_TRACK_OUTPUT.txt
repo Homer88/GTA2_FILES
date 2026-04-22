@@ -1,0 +1,9 @@
+// Структура: USN_RANGE_TRACK_OUTPUT
+// Полей: 1
+// Строки в оригинале: 108944-108947
+struct USN_RANGE_TRACK_OUTPUT
+{
+
+  __int64 Usn;
+
+};

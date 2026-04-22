@@ -1,0 +1,12 @@
+// Структура: ICallFrameEventsVtbl
+// Полей: 4
+// Строки в оригинале: 182563-182569
+struct ICallFrameEventsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICallFrameEvents *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICallFrameEvents *This);
+  ULONG (__stdcall *Release)(ICallFrameEvents *This);
+  HRESULT (__stdcall *OnCall)(ICallFrameEvents *This, ICallFrame *pFrame);
+
+};

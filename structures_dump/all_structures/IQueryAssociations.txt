@@ -1,0 +1,9 @@
+// Структура: IQueryAssociations
+// Полей: 1
+// Строки в оригинале: 40970-40973
+struct IQueryAssociations
+{
+
+  struct IQueryAssociationsVtbl *lpVtbl;
+
+};

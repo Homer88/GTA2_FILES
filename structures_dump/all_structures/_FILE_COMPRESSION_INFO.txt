@@ -1,0 +1,14 @@
+// Структура: _FILE_COMPRESSION_INFO
+// Полей: 6
+// Строки в оригинале: 80148-80156
+struct _FILE_COMPRESSION_INFO
+{
+
+  _LARGE_INTEGER CompressedFileSize;
+  unsigned __int16 CompressionFormat;
+  unsigned __int8 CompressionUnitShift;
+  unsigned __int8 ChunkShift;
+  unsigned __int8 ClusterShift;
+  unsigned __int8 Reserved[3];
+
+};

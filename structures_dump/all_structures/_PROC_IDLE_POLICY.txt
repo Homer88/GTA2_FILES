@@ -1,0 +1,14 @@
+// Структура: _PROC_IDLE_POLICY
+// Полей: 6
+// Строки в оригинале: 13471-13479
+struct _PROC_IDLE_POLICY
+{
+
+  unsigned __int8 PromotePercent;
+  unsigned __int8 DemotePercent;
+  unsigned __int8 PromotePercentBase;
+  unsigned __int8 DemotePercentBase;
+  unsigned __int8 AllowScaling;
+  unsigned __int8 ForceLightIdle;
+
+};

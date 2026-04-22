@@ -1,0 +1,17 @@
+// Структура: IPersistStreamInitVtbl
+// Полей: 9
+// Строки в оригинале: 39635-39646
+struct IPersistStreamInitVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPersistStreamInit *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPersistStreamInit *This);
+  ULONG (__stdcall *Release)(IPersistStreamInit *This);
+  HRESULT (__stdcall *GetClassID)(IPersistStreamInit *This, CLSID *pClassID);
+  HRESULT (__stdcall *IsDirty)(IPersistStreamInit *This);
+  HRESULT (__stdcall *Load)(IPersistStreamInit *This, LPSTREAM pStm);
+  HRESULT (__stdcall *Save)(IPersistStreamInit *This, LPSTREAM pStm, BOOL fClearDirty);
+  HRESULT (__stdcall *GetSizeMax)(IPersistStreamInit *This, ULARGE_INTEGER *pCbSize);
+  HRESULT (__stdcall *InitNew)(IPersistStreamInit *This);
+
+};

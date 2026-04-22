@@ -1,0 +1,21 @@
+// Структура: _KSHARED_READY_QUEUE
+// Полей: 13
+// Строки в оригинале: 13719-13734
+struct _KSHARED_READY_QUEUE
+{
+
+  unsigned int Lock;
+  unsigned int ReadySummary;
+  _LIST_ENTRY ReadyListHead[32];
+  char RunningSummary[32];
+  unsigned __int8 Span;
+  unsigned __int8 LowProcIndex;
+  unsigned __int8 QueueIndex;
+  unsigned __int8 ProcCount;
+  unsigned __int8 ScanOwner;
+  unsigned __int8 Spare[3];
+  unsigned int Affinity;
+  unsigned int ReadyThreadCount;
+  unsigned __int64 ReadyQueueExpectedRunTime;
+
+};

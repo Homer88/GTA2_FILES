@@ -1,0 +1,10 @@
+// Структура: RPC_IF_ID_VECTOR
+// Полей: 2
+// Строки в оригинале: 112119-112123
+struct RPC_IF_ID_VECTOR
+{
+
+  unsigned int Count;
+  _RPC_IF_ID *IfId[1];
+
+};

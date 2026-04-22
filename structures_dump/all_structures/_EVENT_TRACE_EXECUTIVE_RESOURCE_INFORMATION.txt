@@ -1,0 +1,12 @@
+// Структура: _EVENT_TRACE_EXECUTIVE_RESOURCE_INFORMATION
+// Полей: 4
+// Строки в оригинале: 312547-312553
+struct _EVENT_TRACE_EXECUTIVE_RESOURCE_INFORMATION
+{
+
+  _EVENT_TRACE_INFORMATION_CLASS EventTraceInformationClass;
+  unsigned int ReleaseSamplingRate;
+  unsigned int ContentionSamplingRate;
+  unsigned int NumberOfExcessiveTimeouts;
+
+};

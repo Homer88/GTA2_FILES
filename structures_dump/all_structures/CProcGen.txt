@@ -1,0 +1,20 @@
+// Структура: CProcGen
+// Полей: 12
+// Строки в оригинале: 286290-286304
+struct CProcGen
+{
+
+  const unsigned __int8 *_pProcFormatString;
+  unsigned __int16 _offset;
+  unsigned __int16 _stackSize;
+  unsigned int _clientBufferSize;
+  unsigned int _serverBufferSize;
+  int _fClientMustSize;
+  int _fServerMustSize;
+  int _fClientCorrCheck;
+  int _fServerCorrCheck;
+  unsigned __int16 _usFloatArgMask;
+  unsigned __int16 _usFloatSlots;
+  CTypeGen *_pTypeGen;
+
+};

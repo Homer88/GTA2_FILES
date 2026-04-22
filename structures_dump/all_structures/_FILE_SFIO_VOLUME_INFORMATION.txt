@@ -1,0 +1,11 @@
+// Структура: _FILE_SFIO_VOLUME_INFORMATION
+// Полей: 3
+// Строки в оригинале: 84864-84869
+struct _FILE_SFIO_VOLUME_INFORMATION
+{
+
+  unsigned int MaximumRequestsPerPeriod;
+  unsigned int MinimumPeriod;
+  unsigned int MinimumTransferSize;
+
+};

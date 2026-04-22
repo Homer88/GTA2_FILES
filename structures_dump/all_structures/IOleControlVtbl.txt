@@ -1,0 +1,15 @@
+// Структура: IOleControlVtbl
+// Полей: 7
+// Строки в оригинале: 40071-40080
+struct IOleControlVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleControl *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleControl *This);
+  ULONG (__stdcall *Release)(IOleControl *This);
+  HRESULT (__stdcall *GetControlInfo)(IOleControl *This, CONTROLINFO *pCI);
+  HRESULT (__stdcall *OnMnemonic)(IOleControl *This, MSG *pMsg);
+  HRESULT (__stdcall *OnAmbientPropertyChange)(IOleControl *This, DISPID dispID);
+  HRESULT (__stdcall *FreezeEvents)(IOleControl *This, BOOL bFreeze);
+
+};

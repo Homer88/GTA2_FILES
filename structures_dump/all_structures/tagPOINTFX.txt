@@ -1,0 +1,10 @@
+// Структура: tagPOINTFX
+// Полей: 2
+// Строки в оригинале: 85879-85883
+struct tagPOINTFX
+{
+
+  _FIXED x;
+  _FIXED y;
+
+};

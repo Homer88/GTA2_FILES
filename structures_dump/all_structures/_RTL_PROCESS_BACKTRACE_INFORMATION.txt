@@ -1,0 +1,13 @@
+// Структура: _RTL_PROCESS_BACKTRACE_INFORMATION
+// Полей: 5
+// Строки в оригинале: 90254-90261
+struct _RTL_PROCESS_BACKTRACE_INFORMATION
+{
+
+  char *SymbolicBackTrace;
+  unsigned int TraceCount;
+  unsigned __int16 Index;
+  unsigned __int16 Depth;
+  void *BackTrace[32];
+
+};

@@ -1,0 +1,14 @@
+// Структура: _ETW_TP_EVENT_TIMER_EXPIRATION
+// Полей: 6
+// Строки в оригинале: 309724-309732
+struct _ETW_TP_EVENT_TIMER_EXPIRATION
+{
+
+  _SYSTEM_TRACE_HEADER Header;
+  __int64 DueTime;
+  void *SubQueue;
+  void *Timer;
+  unsigned int Period;
+  unsigned int WindowLength;
+
+};

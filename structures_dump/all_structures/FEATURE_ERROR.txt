@@ -1,0 +1,22 @@
+// Структура: FEATURE_ERROR
+// Полей: 14
+// Строки в оригинале: 142215-142231
+struct FEATURE_ERROR
+{
+
+  HRESULT hr;
+  unsigned __int16 lineNumber;
+  const char *file;
+  const char *process;
+  const char *modulePath;
+  unsigned int callerReturnAddressOffset;
+  const char *callerModule;
+  const char *message;
+  unsigned __int16 originLineNumber;
+  const char *originFile;
+  const char *originModule;
+  unsigned int originCallerReturnAddressOffset;
+  const char *originCallerModule;
+  const char *originName;
+
+};

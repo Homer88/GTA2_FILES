@@ -1,0 +1,10 @@
+// Структура: SHashChain
+// Полей: 2
+// Строки в оригинале: 59203-59207
+struct SHashChain
+{
+
+  SHashChain *pNext;
+  SHashChain *pPrev;
+
+};

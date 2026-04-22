@@ -1,0 +1,19 @@
+// Структура: _SEC_WINNT_AUTH_IDENTITY_EXW
+// Полей: 11
+// Строки в оригинале: 323786-323799
+struct _SEC_WINNT_AUTH_IDENTITY_EXW
+{
+
+  unsigned int Version;
+  unsigned int Length;
+  wchar_t *User;
+  unsigned int UserLength;
+  wchar_t *Domain;
+  unsigned int DomainLength;
+  wchar_t *Password;
+  unsigned int PasswordLength;
+  unsigned int Flags;
+  wchar_t *PackageList;
+  unsigned int PackageListLength;
+
+};

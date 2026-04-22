@@ -1,0 +1,21 @@
+// Структура: IDirectInputEffectVtbl
+// Полей: 13
+// Строки в оригинале: 29038-29053
+struct IDirectInputEffectVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirectInputEffect *This, const IID *const riid, LPVOID *ppvObj);
+  ULONG (__stdcall *AddRef)(IDirectInputEffect *This);
+  ULONG (__stdcall *Release)(IDirectInputEffect *This);
+  HRESULT (__stdcall *Initialize)(IDirectInputEffect *This, HINSTANCE, DWORD, const GUID *const);
+  HRESULT (__stdcall *GetEffectGuid)(IDirectInputEffect *This, LPGUID);
+  HRESULT (__stdcall *GetParameters)(IDirectInputEffect *This, LPDIEFFECT, DWORD);
+  HRESULT (__stdcall *SetParameters)(IDirectInputEffect *This, LPCDIEFFECT, DWORD);
+  HRESULT (__stdcall *Start)(IDirectInputEffect *This, DWORD, DWORD);
+  HRESULT (__stdcall *Stop)(IDirectInputEffect *This);
+  HRESULT (__stdcall *GetEffectStatus)(IDirectInputEffect *This, LPDWORD);
+  HRESULT (__stdcall *Download)(IDirectInputEffect *This);
+  HRESULT (__stdcall *Unload)(IDirectInputEffect *This);
+  HRESULT (__stdcall *Escape)(IDirectInputEffect *This, LPDIEFFESCAPE);
+
+};

@@ -1,0 +1,17 @@
+// Структура: IHTMLPluginsCollectionVtbl
+// Полей: 9
+// Строки в оригинале: 38985-38996
+struct IHTMLPluginsCollectionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLPluginsCollection *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLPluginsCollection *This);
+  ULONG (__stdcall *Release)(IHTMLPluginsCollection *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLPluginsCollection *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLPluginsCollection *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLPluginsCollection *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLPluginsCollection *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_length)(IHTMLPluginsCollection *This, int *p);
+  HRESULT (__stdcall *refresh)(IHTMLPluginsCollection *This, VARIANT_BOOL reload);
+
+};

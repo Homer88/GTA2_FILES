@@ -1,0 +1,19 @@
+// Структура: _MINIDUMP_MISC_INFO_2
+// Полей: 11
+// Строки в оригинале: 122420-122433
+struct _MINIDUMP_MISC_INFO_2
+{
+
+  unsigned int SizeOfInfo;
+  unsigned int Flags1;
+  unsigned int ProcessId;
+  unsigned int ProcessCreateTime;
+  unsigned int ProcessUserTime;
+  unsigned int ProcessKernelTime;
+  unsigned int ProcessorMaxMhz;
+  unsigned int ProcessorCurrentMhz;
+  unsigned int ProcessorMhzLimit;
+  unsigned int ProcessorMaxIdleState;
+  unsigned int ProcessorCurrentIdleState;
+
+};

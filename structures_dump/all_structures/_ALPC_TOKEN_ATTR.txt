@@ -1,0 +1,11 @@
+// Структура: _ALPC_TOKEN_ATTR
+// Полей: 3
+// Строки в оригинале: 107090-107095
+struct _ALPC_TOKEN_ATTR
+{
+
+  _LUID TokenId;
+  _LUID AuthenticationId;
+  _LUID ModifiedId;
+
+};

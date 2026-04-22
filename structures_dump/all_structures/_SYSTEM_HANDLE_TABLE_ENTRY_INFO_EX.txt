@@ -1,0 +1,16 @@
+// Структура: _SYSTEM_HANDLE_TABLE_ENTRY_INFO_EX
+// Полей: 8
+// Строки в оригинале: 80230-80240
+struct _SYSTEM_HANDLE_TABLE_ENTRY_INFO_EX
+{
+
+  void *Object;
+  unsigned int UniqueProcessId;
+  unsigned int HandleValue;
+  unsigned int GrantedAccess;
+  unsigned __int16 CreatorBackTraceIndex;
+  unsigned __int16 ObjectTypeIndex;
+  unsigned int HandleAttributes;
+  unsigned int Reserved;
+
+};

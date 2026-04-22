@@ -1,0 +1,21 @@
+// Структура: _PROPSHEETHEADERW_V2
+// Полей: 13
+// Строки в оригинале: 147375-147390
+struct _PROPSHEETHEADERW_V2
+{
+
+  unsigned int dwSize;
+  unsigned int dwFlags;
+  HWND__ *hwndParent;
+  HINSTANCE__ *hInstance;
+  $BA5A92E12A57E058C4050CCA18FACD72 ___u4;
+  const wchar_t *pszCaption;
+  unsigned int nPages;
+  $3072279289A7B460AE159FE944C0ACA7 ___u7;
+  $1E3029F2531B8488E746B79C1A8F2C72 ___u8;
+  int (__stdcall *pfnCallback)(HWND__ *, unsigned int, int);
+  $92EBD7EE478FE76385B35D49784FE276 ___u10;
+  HPALETTE__ *hplWatermark;
+  $D1954D16201605C6FD9B4C59A5B1DB65 ___u12;
+
+};

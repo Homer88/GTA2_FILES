@@ -1,0 +1,12 @@
+// Структура: tagMOUSEHOOKSTRUCT
+// Полей: 4
+// Строки в оригинале: 79756-79762
+struct tagMOUSEHOOKSTRUCT
+{
+
+  tagPOINT pt;
+  HWND__ *hwnd;
+  unsigned int wHitTestCode;
+  unsigned int dwExtraInfo;
+
+};

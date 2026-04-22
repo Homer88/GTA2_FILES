@@ -1,0 +1,17 @@
+// Структура: _FAT_STATISTICS
+// Полей: 9
+// Строки в оригинале: 86673-86684
+struct _FAT_STATISTICS
+{
+
+  unsigned int CreateHits;
+  unsigned int SuccessfulCreates;
+  unsigned int FailedCreates;
+  unsigned int NonCachedReads;
+  unsigned int NonCachedReadBytes;
+  unsigned int NonCachedWrites;
+  unsigned int NonCachedWriteBytes;
+  unsigned int NonCachedDiskReads;
+  unsigned int NonCachedDiskWrites;
+
+};

@@ -1,0 +1,9 @@
+// Структура: SAFER_LEVEL_HANDLE__
+// Полей: 1
+// Строки в оригинале: 111051-111054
+struct SAFER_LEVEL_HANDLE__
+{
+
+  int unused;
+
+};

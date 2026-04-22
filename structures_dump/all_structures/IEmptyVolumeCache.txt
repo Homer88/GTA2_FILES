@@ -1,0 +1,9 @@
+// Структура: IEmptyVolumeCache
+// Полей: 1
+// Строки в оригинале: 34659-34662
+struct IEmptyVolumeCache
+{
+
+  struct IEmptyVolumeCacheVtbl *lpVtbl;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _PPM_COORDINATED_SELECTION
+// Полей: 4
+// Строки в оригинале: 14779-14785
+struct _PPM_COORDINATED_SELECTION
+{
+
+  unsigned int MaximumStates;
+  unsigned int SelectedStates;
+  unsigned int DefaultSelection;
+  unsigned int *Selection;
+
+};

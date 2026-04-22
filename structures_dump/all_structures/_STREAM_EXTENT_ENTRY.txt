@@ -1,0 +1,10 @@
+// Структура: _STREAM_EXTENT_ENTRY
+// Полей: 2
+// Строки в оригинале: 82883-82887
+struct _STREAM_EXTENT_ENTRY
+{
+
+  unsigned int Flags;
+  _STREAM_EXTENT_ENTRY::<unnamed_type_ExtentInformation> ExtentInformation;
+
+};

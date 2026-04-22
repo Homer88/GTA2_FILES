@@ -1,0 +1,25 @@
+// Структура: IHlinkVtbl
+// Полей: 17
+// Строки в оригинале: 42790-42809
+struct IHlinkVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHlink *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHlink *This);
+  ULONG (__stdcall *Release)(IHlink *This);
+  HRESULT (__stdcall *SetHlinkSite)(IHlink *This, IHlinkSite *pihlSite, DWORD dwSiteData);
+  HRESULT (__stdcall *GetHlinkSite)(IHlink *This, IHlinkSite **ppihlSite, DWORD *pdwSiteData);
+  HRESULT (__stdcall *SetMonikerReference)(IHlink *This, DWORD grfHLSETF, IMoniker *pimkTarget, LPCWSTR pwzLocation);
+  HRESULT (__stdcall *GetMonikerReference)(IHlink *This, DWORD dwWhichRef, IMoniker **ppimkTarget, LPWSTR *ppwzLocation);
+  HRESULT (__stdcall *SetStringReference)(IHlink *This, DWORD grfHLSETF, LPCWSTR pwzTarget, LPCWSTR pwzLocation);
+  HRESULT (__stdcall *GetStringReference)(IHlink *This, DWORD dwWhichRef, LPWSTR *ppwzTarget, LPWSTR *ppwzLocation);
+  HRESULT (__stdcall *SetFriendlyName)(IHlink *This, LPCWSTR pwzFriendlyName);
+  HRESULT (__stdcall *GetFriendlyName)(IHlink *This, DWORD grfHLFNAMEF, LPWSTR *ppwzFriendlyName);
+  HRESULT (__stdcall *SetTargetFrameName)(IHlink *This, LPCWSTR pwzTargetFrameName);
+  HRESULT (__stdcall *GetTargetFrameName)(IHlink *This, LPWSTR *ppwzTargetFrameName);
+  HRESULT (__stdcall *GetMiscStatus)(IHlink *This, DWORD *pdwStatus);
+  HRESULT (__stdcall *Navigate)(IHlink *This, DWORD grfHLNF, LPBC pibc, IBindStatusCallback *pibsc, IHlinkBrowseContext *pihlbc);
+  HRESULT (__stdcall *SetAdditionalParams)(IHlink *This, LPCWSTR pwzAdditionalParams);
+  HRESULT (__stdcall *GetAdditionalParams)(IHlink *This, LPWSTR *ppwzAdditionalParams);
+
+};

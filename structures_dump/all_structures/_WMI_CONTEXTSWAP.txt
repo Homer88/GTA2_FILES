@@ -1,0 +1,20 @@
+// Структура: _WMI_CONTEXTSWAP
+// Полей: 12
+// Строки в оригинале: 312077-312091
+struct _WMI_CONTEXTSWAP
+{
+
+  unsigned int NewThreadId;
+  unsigned int OldThreadId;
+  char NewThreadPriority;
+  char OldThreadPriority;
+  $25A7163ABFE9A6605DB81E988122123D ___u4;
+  $DF8EE77609E27888DACBB437C52E817B ___u5;
+  unsigned __int8 OldThreadWaitReason;
+  $1D61393464252A0D072C3B5C6B986E54 ___u7;
+  unsigned __int8 OldThreadState;
+  unsigned __int8 OldThreadIdealProcessor;
+  unsigned int NewThreadWaitTime;
+  int OldThreadRemainingQuantum;
+
+};

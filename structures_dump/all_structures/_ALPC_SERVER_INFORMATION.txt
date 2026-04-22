@@ -1,0 +1,9 @@
+// Структура: _ALPC_SERVER_INFORMATION
+// Полей: 1
+// Строки в оригинале: 88001-88004
+struct _ALPC_SERVER_INFORMATION
+{
+
+  $4C31EBD23C6D2E46FA393920D802B26F ___u0;
+
+};

@@ -1,0 +1,9 @@
+// Структура: __x_ABI_CWindows_CUI_CPopups_CIUICommand
+// Полей: 1
+// Строки в оригинале: 37777-37780
+struct __x_ABI_CWindows_CUI_CPopups_CIUICommand
+{
+
+  struct __x_ABI_CWindows_CUI_CPopups_CIUICommandVtbl *lpVtbl;
+
+};

@@ -1,0 +1,12 @@
+// Структура: tagHDIBFILEHDR
+// Полей: 4
+// Строки в оригинале: 144411-144417
+struct tagHDIBFILEHDR
+{
+
+  unsigned int dwCompression;
+  unsigned int dwWidth;
+  unsigned int dwHeight;
+  unsigned int dwSize;
+
+};

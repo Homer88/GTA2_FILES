@@ -1,0 +1,13 @@
+// Структура: _ASSEMBLY_STORAGE_MAP_RESOLUTION_CALLBACK_DATA_GET_ROOT
+// Полей: 5
+// Строки в оригинале: 84829-84836
+struct _ASSEMBLY_STORAGE_MAP_RESOLUTION_CALLBACK_DATA_GET_ROOT
+{
+
+  void *ResolutionContext;
+  unsigned int RootIndex;
+  unsigned __int8 CancelResolution;
+  unsigned __int8 NoMoreEntries;
+  _UNICODE_STRING Root;
+
+};

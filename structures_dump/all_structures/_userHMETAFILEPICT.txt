@@ -1,0 +1,10 @@
+// Структура: _userHMETAFILEPICT
+// Полей: 2
+// Строки в оригинале: 92075-92079
+struct _userHMETAFILEPICT
+{
+
+  int fContext;
+  _userHMETAFILEPICT::__MIDL_IWinTypes_0005 u;
+
+};

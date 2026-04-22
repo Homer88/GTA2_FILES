@@ -1,0 +1,11 @@
+// Структура: _MMSUPPORT_FLAGS
+// Полей: 3
+// Строки в оригинале: 17974-17979
+struct _MMSUPPORT_FLAGS
+{
+
+  $0EA72D7EE5DC6279D30C0D296C8190B7 ___u0;
+  unsigned __int8 MemoryPriority;
+  $67F21FF1AC3F5A1748C5BF118DF29A2E ___u2;
+
+};

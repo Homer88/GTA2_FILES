@@ -1,0 +1,11 @@
+// Структура: _RTL_ACTIVATION_CONTEXT_STACK_FRAME
+// Полей: 3
+// Строки в оригинале: 3043-3048
+struct _RTL_ACTIVATION_CONTEXT_STACK_FRAME
+{
+
+  _RTL_ACTIVATION_CONTEXT_STACK_FRAME *Previous;
+  struct _ACTIVATION_CONTEXT *ActivationContext;
+  unsigned int Flags;
+
+};

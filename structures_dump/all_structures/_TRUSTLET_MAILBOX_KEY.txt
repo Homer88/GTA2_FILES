@@ -1,0 +1,9 @@
+// Структура: _TRUSTLET_MAILBOX_KEY
+// Полей: 1
+// Строки в оригинале: 16063-16066
+struct _TRUSTLET_MAILBOX_KEY
+{
+
+  unsigned __int64 SecretValue[2];
+
+};

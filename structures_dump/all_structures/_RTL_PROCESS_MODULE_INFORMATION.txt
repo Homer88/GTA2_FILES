@@ -1,0 +1,18 @@
+// Структура: _RTL_PROCESS_MODULE_INFORMATION
+// Полей: 10
+// Строки в оригинале: 95435-95447
+struct _RTL_PROCESS_MODULE_INFORMATION
+{
+
+  void *Section;
+  void *MappedBase;
+  void *ImageBase;
+  unsigned int ImageSize;
+  unsigned int Flags;
+  unsigned __int16 LoadOrderIndex;
+  unsigned __int16 InitOrderIndex;
+  unsigned __int16 LoadCount;
+  unsigned __int16 OffsetToFileName;
+  unsigned __int8 FullPathName[256];
+
+};

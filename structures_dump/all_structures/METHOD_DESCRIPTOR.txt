@@ -1,0 +1,11 @@
+// Структура: METHOD_DESCRIPTOR
+// Полей: 3
+// Строки в оригинале: 120751-120756
+struct METHOD_DESCRIPTOR
+{
+
+  wchar_t *m_szMethodName;
+  __int16 m_cParams;
+  wchar_t *m_paramVTs;
+
+};

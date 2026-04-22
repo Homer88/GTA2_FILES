@@ -1,0 +1,11 @@
+// Структура: _CRYPT_ECC_CMS_SHARED_INFO
+// Полей: 3
+// Строки в оригинале: 112265-112270
+struct _CRYPT_ECC_CMS_SHARED_INFO
+{
+
+  _CRYPT_ALGORITHM_IDENTIFIER Algorithm;
+  _CRYPTOAPI_BLOB EntityUInfo;
+  unsigned __int8 rgbSuppPubInfo[4];
+
+};

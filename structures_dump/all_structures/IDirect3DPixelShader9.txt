@@ -1,0 +1,9 @@
+// Структура: IDirect3DPixelShader9
+// Полей: 1
+// Строки в оригинале: 25844-25847
+struct IDirect3DPixelShader9
+{
+
+  struct IDirect3DPixelShader9Vtbl *lpVtbl;
+
+};

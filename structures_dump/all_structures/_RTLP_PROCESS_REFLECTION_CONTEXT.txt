@@ -1,0 +1,16 @@
+// Структура: _RTLP_PROCESS_REFLECTION_CONTEXT
+// Полей: 8
+// Строки в оригинале: 88700-88710
+struct _RTLP_PROCESS_REFLECTION_CONTEXT
+{
+
+  unsigned int ReflectionContextSize;
+  unsigned int ReflectionFlags;
+  int (__stdcall *ReflectionRoutine)(void *);
+  void *ReflectionParameter;
+  void *ReflectedProcessCreatedEvent;
+  void *ReflectedProcessHandlesDuplicatedEvent;
+  void *ReflectionStartEvent;
+  _RTLP_PROCESS_REFLECTION_REFLECTION_INFORMATION ReflectionInformation;
+
+};

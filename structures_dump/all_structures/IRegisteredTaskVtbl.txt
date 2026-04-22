@@ -1,0 +1,33 @@
+// Структура: IRegisteredTaskVtbl
+// Полей: 25
+// Строки в оригинале: 44696-44723
+struct IRegisteredTaskVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRegisteredTask *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRegisteredTask *This);
+  ULONG (__stdcall *Release)(IRegisteredTask *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IRegisteredTask *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IRegisteredTask *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IRegisteredTask *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IRegisteredTask *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Name)(IRegisteredTask *This, BSTR *pName);
+  HRESULT (__stdcall *get_Path)(IRegisteredTask *This, BSTR *pPath);
+  HRESULT (__stdcall *get_State)(IRegisteredTask *This, TASK_STATE *pState);
+  HRESULT (__stdcall *get_Enabled)(IRegisteredTask *This, VARIANT_BOOL *pEnabled);
+  HRESULT (__stdcall *put_Enabled)(IRegisteredTask *This, VARIANT_BOOL enabled);
+  HRESULT (__stdcall *Run)(IRegisteredTask *This, VARIANT params, IRunningTask **ppRunningTask);
+  HRESULT (__stdcall *RunEx)(IRegisteredTask *This, VARIANT params, LONG flags, LONG sessionID, BSTR user, IRunningTask **ppRunningTask);
+  HRESULT (__stdcall *GetInstances)(IRegisteredTask *This, LONG flags, IRunningTaskCollection **ppRunningTasks);
+  HRESULT (__stdcall *get_LastRunTime)(IRegisteredTask *This, DATE *pLastRunTime);
+  HRESULT (__stdcall *get_LastTaskResult)(IRegisteredTask *This, LONG *pLastTaskResult);
+  HRESULT (__stdcall *get_NumberOfMissedRuns)(IRegisteredTask *This, LONG *pNumberOfMissedRuns);
+  HRESULT (__stdcall *get_NextRunTime)(IRegisteredTask *This, DATE *pNextRunTime);
+  HRESULT (__stdcall *get_Definition)(IRegisteredTask *This, ITaskDefinition **ppDefinition);
+  HRESULT (__stdcall *get_Xml)(IRegisteredTask *This, BSTR *pXml);
+  HRESULT (__stdcall *GetSecurityDescriptor)(IRegisteredTask *This, LONG securityInformation, BSTR *pSddl);
+  HRESULT (__stdcall *SetSecurityDescriptor)(IRegisteredTask *This, BSTR sddl, LONG flags);
+  HRESULT (__stdcall *Stop)(IRegisteredTask *This, LONG flags);
+  HRESULT (__stdcall *GetRunTimes)(IRegisteredTask *This, const LPSYSTEMTIME pstStart, const LPSYSTEMTIME pstEnd, DWORD *pCount, LPSYSTEMTIME *pRunTimes);
+
+};

@@ -1,0 +1,9 @@
+// Структура: _AHC_SERVICE_LOOKUP_CDB
+// Полей: 1
+// Строки в оригинале: 310021-310024
+struct _AHC_SERVICE_LOOKUP_CDB
+{
+
+  _UNICODE_STRING Name;
+
+};

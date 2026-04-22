@@ -1,0 +1,10 @@
+// Структура: ICurrentWorkingDirectoryVtbl
+// Полей: 2
+// Строки в оригинале: 37590-37594
+struct ICurrentWorkingDirectoryVtbl
+{
+
+  HRESULT (__stdcall *GetDirectory)(ICurrentWorkingDirectory *This, PWSTR pwzPath, DWORD cchSize);
+  HRESULT (__stdcall *SetDirectory)(ICurrentWorkingDirectory *This, PCWSTR pwzPath);
+
+};

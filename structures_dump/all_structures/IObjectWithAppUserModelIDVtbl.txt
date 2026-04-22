@@ -1,0 +1,13 @@
+// Структура: IObjectWithAppUserModelIDVtbl
+// Полей: 5
+// Строки в оригинале: 36448-36455
+struct IObjectWithAppUserModelIDVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IObjectWithAppUserModelID *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IObjectWithAppUserModelID *This);
+  ULONG (__stdcall *Release)(IObjectWithAppUserModelID *This);
+  HRESULT (__stdcall *SetAppID)(IObjectWithAppUserModelID *This, LPCWSTR pszAppID);
+  HRESULT (__stdcall *GetAppID)(IObjectWithAppUserModelID *This, LPWSTR *ppszAppID);
+
+};

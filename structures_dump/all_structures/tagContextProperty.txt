@@ -1,0 +1,11 @@
+// Структура: tagContextProperty
+// Полей: 3
+// Строки в оригинале: 61051-61056
+struct tagContextProperty
+{
+
+  _GUID policyId;
+  unsigned int flags;
+  IUnknown *pUnk;
+
+};

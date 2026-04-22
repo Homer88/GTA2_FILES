@@ -1,0 +1,13 @@
+// Структура: IPropertyBagVtbl
+// Полей: 5
+// Строки в оригинале: 35254-35261
+struct IPropertyBagVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyBag *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyBag *This);
+  ULONG (__stdcall *Release)(IPropertyBag *This);
+  HRESULT (__stdcall *Read)(IPropertyBag *This, LPCOLESTR pszPropName, VARIANT *pVar, IErrorLog *pErrorLog);
+  HRESULT (__stdcall *Write)(IPropertyBag *This, LPCOLESTR pszPropName, VARIANT *pVar);
+
+};

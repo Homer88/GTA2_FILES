@@ -1,0 +1,10 @@
+// Структура: TF_SELECTION
+// Полей: 2
+// Строки в оригинале: 30312-30316
+struct TF_SELECTION
+{
+
+  ITfRange *range;
+  TF_SELECTIONSTYLE style;
+
+};

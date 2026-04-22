@@ -1,0 +1,19 @@
+// Структура: _RTL_HEAP_PARAMETERS
+// Полей: 11
+// Строки в оригинале: 92725-92738
+struct _RTL_HEAP_PARAMETERS
+{
+
+  unsigned int Length;
+  unsigned int SegmentReserve;
+  unsigned int SegmentCommit;
+  unsigned int DeCommitFreeBlockThreshold;
+  unsigned int DeCommitTotalFreeThreshold;
+  unsigned int MaximumAllocationSize;
+  unsigned int VirtualMemoryThreshold;
+  unsigned int InitialCommit;
+  unsigned int InitialReserve;
+  int (__stdcall *CommitRoutine)(void *, void **, unsigned int *);
+  unsigned int Reserved[2];
+
+};

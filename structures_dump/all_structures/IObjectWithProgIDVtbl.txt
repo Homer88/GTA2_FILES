@@ -1,0 +1,13 @@
+// Структура: IObjectWithProgIDVtbl
+// Полей: 5
+// Строки в оригинале: 41439-41446
+struct IObjectWithProgIDVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IObjectWithProgID *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IObjectWithProgID *This);
+  ULONG (__stdcall *Release)(IObjectWithProgID *This);
+  HRESULT (__stdcall *SetProgID)(IObjectWithProgID *This, LPCWSTR pszProgID);
+  HRESULT (__stdcall *GetProgID)(IObjectWithProgID *This, LPWSTR *ppszProgID);
+
+};

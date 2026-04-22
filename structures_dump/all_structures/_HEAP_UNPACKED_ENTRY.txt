@@ -1,0 +1,12 @@
+// Структура: _HEAP_UNPACKED_ENTRY
+// Полей: 4
+// Строки в оригинале: 20854-20860
+struct _HEAP_UNPACKED_ENTRY
+{
+
+  $D4BF37CC02B2A6C5FD6B256386C79F9B ___u0;
+  unsigned __int16 PreviousSize;
+  $D9B30C8FE5471008C581BB5D65D85096 ___u2;
+  unsigned __int8 UnusedBytes;
+
+};

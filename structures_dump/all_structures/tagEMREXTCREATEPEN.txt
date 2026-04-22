@@ -1,0 +1,15 @@
+// Структура: tagEMREXTCREATEPEN
+// Полей: 7
+// Строки в оригинале: 87484-87493
+struct tagEMREXTCREATEPEN
+{
+
+  tagEMR emr;
+  unsigned int ihPen;
+  unsigned int offBmi;
+  unsigned int cbBmi;
+  unsigned int offBits;
+  unsigned int cbBits;
+  tagEXTLOGPEN32 elp;
+
+};

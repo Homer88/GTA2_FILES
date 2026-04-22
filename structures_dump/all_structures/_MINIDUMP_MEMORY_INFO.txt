@@ -1,0 +1,17 @@
+// Структура: _MINIDUMP_MEMORY_INFO
+// Полей: 9
+// Строки в оригинале: 122436-122447
+struct _MINIDUMP_MEMORY_INFO
+{
+
+  unsigned __int64 BaseAddress;
+  unsigned __int64 AllocationBase;
+  unsigned int AllocationProtect;
+  unsigned int __alignment1;
+  unsigned __int64 RegionSize;
+  unsigned int State;
+  unsigned int Protect;
+  unsigned int Type;
+  unsigned int __alignment2;
+
+};

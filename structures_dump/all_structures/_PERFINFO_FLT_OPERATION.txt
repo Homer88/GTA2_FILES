@@ -1,0 +1,14 @@
+// Структура: _PERFINFO_FLT_OPERATION
+// Полей: 6
+// Строки в оригинале: 311060-311068
+struct _PERFINFO_FLT_OPERATION
+{
+
+  void *RoutineAddr;
+  void *FileObject;
+  void *FsContext;
+  void *IrpPtr;
+  void *CbdPtr;
+  int MajorFunction;
+
+};

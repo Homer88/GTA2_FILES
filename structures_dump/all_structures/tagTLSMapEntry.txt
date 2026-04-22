@@ -1,0 +1,10 @@
+// Структура: tagTLSMapEntry
+// Полей: 2
+// Строки в оригинале: 219832-219836
+struct tagTLSMapEntry
+{
+
+  unsigned int dwThreadId;
+  tagSOleTlsData *ptls;
+
+};

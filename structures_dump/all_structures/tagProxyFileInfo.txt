@@ -1,0 +1,19 @@
+// Структура: tagProxyFileInfo
+// Полей: 11
+// Строки в оригинале: 120592-120605
+struct tagProxyFileInfo
+{
+
+  tagCInterfaceProxyVtbl *const *pProxyVtblList;
+  tagCInterfaceStubVtbl *const *pStubVtblList;
+  const char *const *pNamesArray;
+  const _GUID **pDelegatedIIDs;
+  int (__stdcall *const pIIDLookupRtn)(const _GUID *, int *);
+  unsigned __int16 TableSize;
+  unsigned __int16 TableVersion;
+  const _GUID **pAsyncIIDLookup;
+  int Filler2;
+  int Filler3;
+  int Filler4;
+
+};

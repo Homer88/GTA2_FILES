@@ -1,0 +1,11 @@
+// Структура: _MINIDUMP_EXCEPTION_INFORMATION
+// Полей: 3
+// Строки в оригинале: 122258-122263
+struct _MINIDUMP_EXCEPTION_INFORMATION
+{
+
+  unsigned int ThreadId;
+  _EXCEPTION_POINTERS *ExceptionPointers;
+  int ClientPointers;
+
+};

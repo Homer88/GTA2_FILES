@@ -1,0 +1,9 @@
+// Структура: __x_ABI_CWindows_CApplicationModel_CActivation_CISplashScreen
+// Полей: 1
+// Строки в оригинале: 352742-352745
+struct __x_ABI_CWindows_CApplicationModel_CActivation_CISplashScreen
+{
+
+  struct __x_ABI_CWindows_CApplicationModel_CActivation_CISplashScreenVtbl *lpVtbl;
+
+};

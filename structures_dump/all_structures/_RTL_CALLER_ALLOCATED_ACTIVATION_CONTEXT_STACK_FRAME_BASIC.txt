@@ -1,0 +1,11 @@
+// Структура: _RTL_CALLER_ALLOCATED_ACTIVATION_CONTEXT_STACK_FRAME_BASIC
+// Полей: 3
+// Строки в оригинале: 82694-82699
+struct _RTL_CALLER_ALLOCATED_ACTIVATION_CONTEXT_STACK_FRAME_BASIC
+{
+
+  unsigned int Size;
+  unsigned int Format;
+  _RTL_ACTIVATION_CONTEXT_STACK_FRAME Frame;
+
+};

@@ -1,0 +1,17 @@
+// Структура: IWICColorContextVtbl
+// Полей: 9
+// Строки в оригинале: 42137-42148
+struct IWICColorContextVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICColorContext *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICColorContext *This);
+  ULONG (__stdcall *Release)(IWICColorContext *This);
+  HRESULT (__stdcall *InitializeFromFilename)(IWICColorContext *This, LPCWSTR wzFilename);
+  HRESULT (__stdcall *InitializeFromMemory)(IWICColorContext *This, const BYTE *pbBuffer, UINT cbBufferSize);
+  HRESULT (__stdcall *InitializeFromExifColorSpace)(IWICColorContext *This, UINT value);
+  HRESULT (__stdcall *GetType)(IWICColorContext *This, WICColorContextType *pType);
+  HRESULT (__stdcall *GetProfileBytes)(IWICColorContext *This, UINT cbBuffer, BYTE *pbBuffer, UINT *pcbActual);
+  HRESULT (__stdcall *GetExifColorSpace)(IWICColorContext *This, UINT *pValue);
+
+};

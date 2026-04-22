@@ -1,0 +1,14 @@
+// Структура: _LEAP_SECOND_DATA_REGISTRY_ENTRY
+// Полей: 6
+// Строки в оригинале: 92792-92800
+struct _LEAP_SECOND_DATA_REGISTRY_ENTRY
+{
+
+  __int16 Year;
+  __int16 Month;
+  __int16 Day;
+  __int16 Hour;
+  __int16 Flags;
+  __int16 Reserved;
+
+};

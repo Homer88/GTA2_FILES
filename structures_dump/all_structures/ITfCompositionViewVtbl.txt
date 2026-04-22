@@ -1,0 +1,13 @@
+// Структура: ITfCompositionViewVtbl
+// Полей: 5
+// Строки в оригинале: 32374-32381
+struct ITfCompositionViewVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfCompositionView *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfCompositionView *This);
+  ULONG (__stdcall *Release)(ITfCompositionView *This);
+  HRESULT (__stdcall *GetOwnerClsid)(ITfCompositionView *This, CLSID *pclsid);
+  HRESULT (__stdcall *GetRange)(ITfCompositionView *This, ITfRange **ppRange);
+
+};

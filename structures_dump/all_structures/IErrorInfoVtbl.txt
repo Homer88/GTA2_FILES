@@ -1,0 +1,16 @@
+// Структура: IErrorInfoVtbl
+// Полей: 8
+// Строки в оригинале: 182495-182505
+struct IErrorInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IErrorInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IErrorInfo *This);
+  ULONG (__stdcall *Release)(IErrorInfo *This);
+  HRESULT (__stdcall *GetGUID)(IErrorInfo *This, GUID *pGUID);
+  HRESULT (__stdcall *GetSource)(IErrorInfo *This, BSTR *pBstrSource);
+  HRESULT (__stdcall *GetDescription)(IErrorInfo *This, BSTR *pBstrDescription);
+  HRESULT (__stdcall *GetHelpFile)(IErrorInfo *This, BSTR *pBstrHelpFile);
+  HRESULT (__stdcall *GetHelpContext)(IErrorInfo *This, DWORD *pdwHelpContext);
+
+};

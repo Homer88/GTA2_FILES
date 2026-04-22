@@ -1,0 +1,10 @@
+// Структура: _DRIVER_VERIFIER_THUNK_PAIRS
+// Полей: 2
+// Строки в оригинале: 95943-95947
+struct _DRIVER_VERIFIER_THUNK_PAIRS
+{
+
+  unsigned int (__stdcall *PristineRoutine)(void *);
+  unsigned int (__stdcall *NewRoutine)(void *);
+
+};

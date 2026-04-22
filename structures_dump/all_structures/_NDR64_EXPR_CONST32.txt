@@ -1,0 +1,12 @@
+// Структура: _NDR64_EXPR_CONST32
+// Полей: 4
+// Строки в оригинале: 330943-330949
+struct _NDR64_EXPR_CONST32
+{
+
+  unsigned __int8 ExprType;
+  unsigned __int8 Reserved;
+  unsigned __int16 Reserved1;
+  unsigned int ConstValue;
+
+};

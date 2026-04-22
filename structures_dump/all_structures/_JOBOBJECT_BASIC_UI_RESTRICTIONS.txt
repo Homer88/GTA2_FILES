@@ -1,0 +1,9 @@
+// Структура: _JOBOBJECT_BASIC_UI_RESTRICTIONS
+// Полей: 1
+// Строки в оригинале: 103441-103444
+struct _JOBOBJECT_BASIC_UI_RESTRICTIONS
+{
+
+  unsigned int UIRestrictionsClass;
+
+};

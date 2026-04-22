@@ -1,0 +1,26 @@
+// Структура: tagEMRALPHABLEND
+// Полей: 18
+// Строки в оригинале: 84686-84706
+struct tagEMRALPHABLEND
+{
+
+  tagEMR emr;
+  _RECTL rclBounds;
+  int xDest;
+  int yDest;
+  int cxDest;
+  int cyDest;
+  unsigned int dwRop;
+  int xSrc;
+  int ySrc;
+  tagXFORM xformSrc;
+  unsigned int crBkColorSrc;
+  unsigned int iUsageSrc;
+  unsigned int offBmiSrc;
+  unsigned int cbBmiSrc;
+  unsigned int offBitsSrc;
+  unsigned int cbBitsSrc;
+  int cxSrc;
+  int cySrc;
+
+};

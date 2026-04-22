@@ -1,0 +1,10 @@
+// Структура: tagENUMTEXTMETRICW
+// Полей: 2
+// Строки в оригинале: 85471-85475
+struct tagENUMTEXTMETRICW
+{
+
+  tagNEWTEXTMETRICEXW etmNewTextMetricEx;
+  tagAXESLISTW etmAxesList;
+
+};

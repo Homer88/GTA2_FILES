@@ -1,0 +1,11 @@
+// Структура: _APPLICATIONLAUNCH_SETTING_VALUE
+// Полей: 3
+// Строки в оригинале: 108362-108367
+struct _APPLICATIONLAUNCH_SETTING_VALUE
+{
+
+  _LARGE_INTEGER ActivationTime;
+  unsigned int Flags;
+  unsigned int ButtonInstanceID;
+
+};

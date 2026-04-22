@@ -1,0 +1,12 @@
+// Структура: _KEY_VALUE_ENTRY
+// Полей: 4
+// Строки в оригинале: 89931-89937
+struct _KEY_VALUE_ENTRY
+{
+
+  _UNICODE_STRING *ValueName;
+  unsigned int DataLength;
+  unsigned int DataOffset;
+  unsigned int Type;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _RTL_HP_VS_CONFIG
+// Полей: 1
+// Строки в оригинале: 20630-20633
+struct _RTL_HP_VS_CONFIG
+{
+
+  _RTL_HP_VS_CONFIG::$6A45FF63D66E3C002CA27ED53B178FDD Flags;
+
+};

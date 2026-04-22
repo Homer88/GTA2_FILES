@@ -1,0 +1,35 @@
+// Структура: IOmNavigatorVtbl
+// Полей: 27
+// Строки в оригинале: 38758-38787
+struct IOmNavigatorVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOmNavigator *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOmNavigator *This);
+  ULONG (__stdcall *Release)(IOmNavigator *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IOmNavigator *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IOmNavigator *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IOmNavigator *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IOmNavigator *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_appCodeName)(IOmNavigator *This, BSTR *p);
+  HRESULT (__stdcall *get_appName)(IOmNavigator *This, BSTR *p);
+  HRESULT (__stdcall *get_appVersion)(IOmNavigator *This, BSTR *p);
+  HRESULT (__stdcall *get_userAgent)(IOmNavigator *This, BSTR *p);
+  HRESULT (__stdcall *javaEnabled)(IOmNavigator *This, VARIANT_BOOL *enabled);
+  HRESULT (__stdcall *taintEnabled)(IOmNavigator *This, VARIANT_BOOL *enabled);
+  HRESULT (__stdcall *get_mimeTypes)(IOmNavigator *This, IHTMLMimeTypesCollection **p);
+  HRESULT (__stdcall *get_plugins)(IOmNavigator *This, IHTMLPluginsCollection **p);
+  HRESULT (__stdcall *get_cookieEnabled)(IOmNavigator *This, VARIANT_BOOL *p);
+  HRESULT (__stdcall *get_opsProfile)(IOmNavigator *This, IHTMLOpsProfile **p);
+  HRESULT (__stdcall *toString)(IOmNavigator *This, BSTR *string);
+  HRESULT (__stdcall *get_cpuClass)(IOmNavigator *This, BSTR *p);
+  HRESULT (__stdcall *get_systemLanguage)(IOmNavigator *This, BSTR *p);
+  HRESULT (__stdcall *get_browserLanguage)(IOmNavigator *This, BSTR *p);
+  HRESULT (__stdcall *get_userLanguage)(IOmNavigator *This, BSTR *p);
+  HRESULT (__stdcall *get_platform)(IOmNavigator *This, BSTR *p);
+  HRESULT (__stdcall *get_appMinorVersion)(IOmNavigator *This, BSTR *p);
+  HRESULT (__stdcall *get_connectionSpeed)(IOmNavigator *This, int *p);
+  HRESULT (__stdcall *get_onLine)(IOmNavigator *This, VARIANT_BOOL *p);
+  HRESULT (__stdcall *get_userProfile)(IOmNavigator *This, IHTMLOpsProfile **p);
+
+};

@@ -1,0 +1,11 @@
+// Структура: _PLUGPLAY_NOTIFY_HDR
+// Полей: 3
+// Строки в оригинале: 82534-82539
+struct _PLUGPLAY_NOTIFY_HDR
+{
+
+  unsigned __int16 Version;
+  unsigned __int16 Size;
+  _GUID Event;
+
+};

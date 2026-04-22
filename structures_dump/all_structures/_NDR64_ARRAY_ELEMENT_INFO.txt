@@ -1,0 +1,10 @@
+// Структура: _NDR64_ARRAY_ELEMENT_INFO
+// Полей: 2
+// Строки в оригинале: 336296-336300
+struct _NDR64_ARRAY_ELEMENT_INFO
+{
+
+  unsigned int ElementMemSize;
+  const void *Element;
+
+};

@@ -1,0 +1,14 @@
+// Структура: _SL_KMEM_CACHE
+// Полей: 6
+// Строки в оригинале: 88280-88288
+struct _SL_KMEM_CACHE
+{
+
+  unsigned int TotalSize;
+  unsigned int SizeOfData;
+  unsigned int SignatureSize;
+  unsigned int Flags;
+  unsigned int Version;
+  _SL_KMEM_CACHE_VALUE_DESCRIPTOR Descriptors[1];
+
+};

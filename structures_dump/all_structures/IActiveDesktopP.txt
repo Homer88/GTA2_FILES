@@ -1,0 +1,9 @@
+// Структура: IActiveDesktopP
+// Полей: 1
+// Строки в оригинале: 36801-36804
+struct IActiveDesktopP
+{
+
+  struct IActiveDesktopPVtbl *lpVtbl;
+
+};

@@ -1,0 +1,10 @@
+// Структура: tagINPUT_MESSAGE_SOURCE
+// Полей: 2
+// Строки в оригинале: 86614-86618
+struct tagINPUT_MESSAGE_SOURCE
+{
+
+  tagINPUT_MESSAGE_DEVICE_TYPE deviceType;
+  tagINPUT_MESSAGE_ORIGIN_ID originId;
+
+};

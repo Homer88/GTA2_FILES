@@ -1,0 +1,9 @@
+// Структура: IFileSystemImage
+// Полей: 1
+// Строки в оригинале: 41196-41199
+struct IFileSystemImage
+{
+
+  struct IFileSystemImageVtbl *lpVtbl;
+
+};

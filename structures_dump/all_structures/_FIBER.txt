@@ -1,0 +1,21 @@
+// Структура: _FIBER
+// Полей: 13
+// Строки в оригинале: 84402-84417
+struct _FIBER
+{
+
+  void *FiberData;
+  _EXCEPTION_REGISTRATION_RECORD *ExceptionList;
+  void *StackBase;
+  void *StackLimit;
+  void *DeallocationStack;
+  _CONTEXT FiberContext;
+  _Wx86TIB *Wx86Tib;
+  _ACTIVATION_CONTEXT_STACK *ActivationContextStackPointer;
+  void *FlsData;
+  unsigned int GuaranteedStackBytes;
+  unsigned __int16 TebFlags;
+  unsigned __int16 ReservedPad;
+  unsigned int FiberCookie;
+
+};

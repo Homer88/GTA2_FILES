@@ -1,0 +1,13 @@
+// Структура: S41
+// Полей: 5
+// Строки в оригинале: 5644-5651
+struct S41
+{
+
+  char field_0;
+  char field_1;
+  char field_2;
+  char field_3;
+  EventHandler *S63;
+
+};

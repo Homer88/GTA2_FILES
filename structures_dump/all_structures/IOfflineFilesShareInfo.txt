@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesShareInfo
+// Полей: 1
+// Строки в оригинале: 28524-28527
+struct IOfflineFilesShareInfo
+{
+
+  struct IOfflineFilesShareInfoVtbl *lpVtbl;
+
+};

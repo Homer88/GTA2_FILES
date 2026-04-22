@@ -1,0 +1,13 @@
+// Структура: tagGESTURENOTIFYSTRUCT
+// Полей: 5
+// Строки в оригинале: 85740-85747
+struct tagGESTURENOTIFYSTRUCT
+{
+
+  unsigned int cbSize;
+  unsigned int dwFlags;
+  HWND__ *hwndTarget;
+  tagPOINTS ptsLocation;
+  unsigned int dwInstanceID;
+
+};

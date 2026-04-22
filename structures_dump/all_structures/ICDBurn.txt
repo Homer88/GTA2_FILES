@@ -1,0 +1,9 @@
+// Структура: ICDBurn
+// Полей: 1
+// Строки в оригинале: 35805-35808
+struct ICDBurn
+{
+
+  struct ICDBurnVtbl *lpVtbl;
+
+};

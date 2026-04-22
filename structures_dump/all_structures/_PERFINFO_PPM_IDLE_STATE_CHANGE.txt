@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_PPM_IDLE_STATE_CHANGE
+// Полей: 3
+// Строки в оригинале: 311615-311620
+struct _PERFINFO_PPM_IDLE_STATE_CHANGE
+{
+
+  unsigned int NewState;
+  unsigned int OldState;
+  unsigned __int64 Processors;
+
+};

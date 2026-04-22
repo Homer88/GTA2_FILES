@@ -1,0 +1,12 @@
+// Структура: _ALPC_HANDLE_ATTR32
+// Полей: 4
+// Строки в оригинале: 94440-94446
+struct _ALPC_HANDLE_ATTR32
+{
+
+  $5E9244B83DC2E54773CFCDDF3277D68D ___u0;
+  unsigned int Handle;
+  unsigned int ObjectType;
+  $A5265E49C8689A0E4D1474F97C022A10 ___u3;
+
+};

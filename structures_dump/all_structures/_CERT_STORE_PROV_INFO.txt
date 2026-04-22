@@ -1,0 +1,14 @@
+// Структура: _CERT_STORE_PROV_INFO
+// Полей: 6
+// Строки в оригинале: 82073-82081
+struct _CERT_STORE_PROV_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int cStoreProvFunc;
+  void **rgpvStoreProvFunc;
+  void *hStoreProv;
+  unsigned int dwStoreProvFlags;
+  void *hStoreProvFuncAddr2;
+
+};

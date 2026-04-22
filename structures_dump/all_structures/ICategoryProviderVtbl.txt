@@ -1,0 +1,17 @@
+// Структура: ICategoryProviderVtbl
+// Полей: 9
+// Строки в оригинале: 39419-39430
+struct ICategoryProviderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICategoryProvider *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICategoryProvider *This);
+  ULONG (__stdcall *Release)(ICategoryProvider *This);
+  HRESULT (__stdcall *CanCategorizeOnSCID)(ICategoryProvider *This, const SHCOLUMNID *pscid);
+  HRESULT (__stdcall *GetDefaultCategory)(ICategoryProvider *This, GUID *pguid, SHCOLUMNID *pscid);
+  HRESULT (__stdcall *GetCategoryForSCID)(ICategoryProvider *This, const SHCOLUMNID *pscid, GUID *pguid);
+  HRESULT (__stdcall *EnumCategories)(ICategoryProvider *This, IEnumGUID **penum);
+  HRESULT (__stdcall *GetCategoryName)(ICategoryProvider *This, const GUID *pguid, LPWSTR pszName, UINT cch);
+  HRESULT (__stdcall *CreateCategory)(ICategoryProvider *This, const GUID *pguid, const IID *const riid, void **ppv);
+
+};

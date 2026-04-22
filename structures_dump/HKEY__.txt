@@ -1,0 +1,8 @@
+// Structure: HKEY__
+// Lines: 5674 - 5677
+// Fields: 2
+
+struct HKEY__
+{
+  int unused;
+};

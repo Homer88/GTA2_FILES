@@ -1,0 +1,16 @@
+// Структура: INTERPRETER_FLAGS
+// Полей: 8
+// Строки в оригинале: 86158-86168
+struct INTERPRETER_FLAGS
+{
+
+  unsigned __int8 FullPtrUsed : 1;
+  unsigned __int8 RpcSsAllocUsed : 1;
+  unsigned __int8 ObjectProc : 1;
+  unsigned __int8 HasRpcFlags : 1;
+  unsigned __int8 IgnoreObjectException : 1;
+  unsigned __int8 HasCommOrFault : 1;
+  unsigned __int8 UseNewInitRoutines : 1;
+  unsigned __int8 Unused : 1;
+
+};

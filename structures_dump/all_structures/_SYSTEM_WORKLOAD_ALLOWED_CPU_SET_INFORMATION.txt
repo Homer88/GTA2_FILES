@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_WORKLOAD_ALLOWED_CPU_SET_INFORMATION
+// Полей: 2
+// Строки в оригинале: 96143-96147
+struct _SYSTEM_WORKLOAD_ALLOWED_CPU_SET_INFORMATION
+{
+
+  unsigned __int64 WorkloadClass;
+  unsigned __int64 CpuSets[1];
+
+};

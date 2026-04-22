@@ -1,0 +1,14 @@
+// Структура: _SecPkgInfoW
+// Полей: 6
+// Строки в оригинале: 323706-323714
+struct _SecPkgInfoW
+{
+
+  unsigned int fCapabilities;
+  unsigned __int16 wVersion;
+  unsigned __int16 wRPCID;
+  unsigned int cbMaxToken;
+  wchar_t *Name;
+  wchar_t *Comment;
+
+};

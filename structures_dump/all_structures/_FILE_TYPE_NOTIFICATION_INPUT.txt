@@ -1,0 +1,11 @@
+// Структура: _FILE_TYPE_NOTIFICATION_INPUT
+// Полей: 3
+// Строки в оригинале: 102608-102613
+struct _FILE_TYPE_NOTIFICATION_INPUT
+{
+
+  unsigned int Flags;
+  unsigned int NumFileTypeIDs;
+  _GUID FileTypeID[1];
+
+};

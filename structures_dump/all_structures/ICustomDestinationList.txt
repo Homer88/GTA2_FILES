@@ -1,0 +1,9 @@
+// Структура: ICustomDestinationList
+// Полей: 1
+// Строки в оригинале: 39386-39389
+struct ICustomDestinationList
+{
+
+  struct ICustomDestinationListVtbl *lpVtbl;
+
+};

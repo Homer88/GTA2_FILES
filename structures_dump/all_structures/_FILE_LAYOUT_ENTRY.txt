@@ -1,0 +1,17 @@
+// Структура: _FILE_LAYOUT_ENTRY
+// Полей: 9
+// Строки в оригинале: 108592-108603
+struct _FILE_LAYOUT_ENTRY
+{
+
+  unsigned int Version;
+  unsigned int NextFileOffset;
+  unsigned int Flags;
+  unsigned int FileAttributes;
+  unsigned __int64 FileReferenceNumber;
+  unsigned int FirstNameOffset;
+  unsigned int FirstStreamOffset;
+  unsigned int ExtraInfoOffset;
+  unsigned int ExtraInfoLength;
+
+};

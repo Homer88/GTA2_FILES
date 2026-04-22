@@ -1,0 +1,15 @@
+// Структура: ICategorizerVtbl
+// Полей: 7
+// Строки в оригинале: 35467-35476
+struct ICategorizerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICategorizer *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICategorizer *This);
+  ULONG (__stdcall *Release)(ICategorizer *This);
+  HRESULT (__stdcall *GetDescription)(ICategorizer *This, LPWSTR pszDesc, UINT cch);
+  HRESULT (__stdcall *GetCategory)(ICategorizer *This, UINT cidl, LPCITEMIDLIST *apidl, DWORD *rgCategoryIds);
+  HRESULT (__stdcall *GetCategoryInfo)(ICategorizer *This, DWORD dwCategoryId, CATEGORY_INFO *pci);
+  HRESULT (__stdcall *CompareCategory)(ICategorizer *This, CATSORT_FLAGS csfFlags, DWORD dwCategoryId1, DWORD dwCategoryId2);
+
+};

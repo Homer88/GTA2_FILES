@@ -1,0 +1,26 @@
+// Структура: IDocHostUIHandlerVtbl
+// Полей: 18
+// Строки в оригинале: 33927-33947
+struct IDocHostUIHandlerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDocHostUIHandler *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDocHostUIHandler *This);
+  ULONG (__stdcall *Release)(IDocHostUIHandler *This);
+  HRESULT (__stdcall *ShowContextMenu)(IDocHostUIHandler *This, DWORD dwID, POINT *ppt, IUnknown *pcmdtReserved, IDispatch *pdispReserved);
+  HRESULT (__stdcall *GetHostInfo)(IDocHostUIHandler *This, DOCHOSTUIINFO *pInfo);
+  HRESULT (__stdcall *ShowUI)(IDocHostUIHandler *This, DWORD dwID, IOleInPlaceActiveObject *pActiveObject, IOleCommandTarget *pCommandTarget, IOleInPlaceFrame *pFrame, IOleInPlaceUIWindow *pDoc);
+  HRESULT (__stdcall *HideUI)(IDocHostUIHandler *This);
+  HRESULT (__stdcall *UpdateUI)(IDocHostUIHandler *This);
+  HRESULT (__stdcall *EnableModeless)(IDocHostUIHandler *This, BOOL fEnable);
+  HRESULT (__stdcall *OnDocWindowActivate)(IDocHostUIHandler *This, BOOL fActivate);
+  HRESULT (__stdcall *OnFrameWindowActivate)(IDocHostUIHandler *This, BOOL fActivate);
+  HRESULT (__stdcall *ResizeBorder)(IDocHostUIHandler *This, LPCRECT prcBorder, IOleInPlaceUIWindow *pUIWindow, BOOL fRameWindow);
+  HRESULT (__stdcall *TranslateAcceleratorA)(IDocHostUIHandler *This, LPMSG lpMsg, const GUID *pguidCmdGroup, DWORD nCmdID);
+  HRESULT (__stdcall *GetOptionKeyPath)(IDocHostUIHandler *This, LPOLESTR *pchKey, DWORD dw);
+  HRESULT (__stdcall *GetDropTarget)(IDocHostUIHandler *This, IDropTarget *pDropTarget, IDropTarget **ppDropTarget);
+  HRESULT (__stdcall *GetExternal)(IDocHostUIHandler *This, IDispatch **ppDispatch);
+  HRESULT (__stdcall *TranslateUrl)(IDocHostUIHandler *This, DWORD dwTranslate, LPWSTR pchURLIn, LPWSTR *ppchURLOut);
+  HRESULT (__stdcall *FilterDataObject)(IDocHostUIHandler *This, IDataObject *pDO, IDataObject **ppDORet);
+
+};

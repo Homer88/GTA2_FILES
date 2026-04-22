@@ -1,0 +1,13 @@
+// Структура: _HEAP_BLOCK_INFORMATION
+// Полей: 5
+// Строки в оригинале: 89287-89294
+struct _HEAP_BLOCK_INFORMATION
+{
+
+  unsigned int Address;
+  unsigned int Flags;
+  unsigned int DataSize;
+  unsigned int OverheadSize;
+  unsigned int NextBlockInformationOffset;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _EDP_CRED_SVC_INFO_CXT
+// Полей: 2
+// Строки в оригинале: 127159-127163
+struct _EDP_CRED_SVC_INFO_CXT
+{
+
+  unsigned int cbSize;
+  $515C23630B21EEABEFD8F1FCD95FB0D0 ___u1;
+
+};

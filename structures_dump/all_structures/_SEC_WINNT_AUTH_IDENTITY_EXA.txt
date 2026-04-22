@@ -1,0 +1,19 @@
+// Структура: _SEC_WINNT_AUTH_IDENTITY_EXA
+// Полей: 11
+// Строки в оригинале: 323802-323815
+struct _SEC_WINNT_AUTH_IDENTITY_EXA
+{
+
+  unsigned int Version;
+  unsigned int Length;
+  unsigned __int8 *User;
+  unsigned int UserLength;
+  unsigned __int8 *Domain;
+  unsigned int DomainLength;
+  unsigned __int8 *Password;
+  unsigned int PasswordLength;
+  unsigned int Flags;
+  unsigned __int8 *PackageList;
+  unsigned int PackageListLength;
+
+};

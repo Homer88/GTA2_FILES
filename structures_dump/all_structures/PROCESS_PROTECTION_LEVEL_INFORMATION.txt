@@ -1,0 +1,9 @@
+// Структура: PROCESS_PROTECTION_LEVEL_INFORMATION
+// Полей: 1
+// Строки в оригинале: 108040-108043
+struct PROCESS_PROTECTION_LEVEL_INFORMATION
+{
+
+  unsigned int ProtectionLevel;
+
+};

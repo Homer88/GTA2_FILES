@@ -1,0 +1,10 @@
+// Структура: _PS_STD_HANDLE_INFO
+// Полей: 2
+// Строки в оригинале: 88535-88539
+struct _PS_STD_HANDLE_INFO
+{
+
+  $CC891602CAE0ED4E963E7272E464804B ___u0;
+  unsigned int StdHandleSubsystemType;
+
+};

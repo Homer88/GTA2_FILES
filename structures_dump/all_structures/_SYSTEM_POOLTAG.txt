@@ -1,0 +1,15 @@
+// Структура: _SYSTEM_POOLTAG
+// Полей: 7
+// Строки в оригинале: 91295-91304
+struct _SYSTEM_POOLTAG
+{
+
+  $BD358E6F1AB7428D2A19828FCF03B146 ___u0;
+  unsigned int PagedAllocs;
+  unsigned int PagedFrees;
+  unsigned int PagedUsed;
+  unsigned int NonPagedAllocs;
+  unsigned int NonPagedFrees;
+  unsigned int NonPagedUsed;
+
+};

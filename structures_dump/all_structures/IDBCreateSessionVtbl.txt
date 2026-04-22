@@ -1,0 +1,12 @@
+// Структура: IDBCreateSessionVtbl
+// Полей: 4
+// Строки в оригинале: 40993-40999
+struct IDBCreateSessionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDBCreateSession *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDBCreateSession *This);
+  ULONG (__stdcall *Release)(IDBCreateSession *This);
+  HRESULT (__stdcall *CreateSession)(IDBCreateSession *This, IUnknown *pUnkOuter, const IID *const riid, IUnknown **ppDBSession);
+
+};

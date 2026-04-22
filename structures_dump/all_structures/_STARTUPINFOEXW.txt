@@ -1,0 +1,10 @@
+// Структура: _STARTUPINFOEXW
+// Полей: 2
+// Строки в оригинале: 59114-59118
+struct _STARTUPINFOEXW
+{
+
+  _STARTUPINFOW StartupInfo;
+  _PROC_THREAD_ATTRIBUTE_LIST *lpAttributeList;
+
+};

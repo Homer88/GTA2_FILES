@@ -1,0 +1,10 @@
+// Структура: _ALPC_SERVER_SESSION_INFORMATION
+// Полей: 2
+// Строки в оригинале: 106972-106976
+struct _ALPC_SERVER_SESSION_INFORMATION
+{
+
+  unsigned int SessionId;
+  unsigned int ProcessId;
+
+};

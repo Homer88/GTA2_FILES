@@ -1,0 +1,12 @@
+// Структура: IUserAccountChangeCallbackVtbl
+// Полей: 4
+// Строки в оригинале: 39928-39934
+struct IUserAccountChangeCallbackVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IUserAccountChangeCallback *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IUserAccountChangeCallback *This);
+  ULONG (__stdcall *Release)(IUserAccountChangeCallback *This);
+  HRESULT (__stdcall *OnPictureChange)(IUserAccountChangeCallback *This, LPCWSTR pszUserName);
+
+};

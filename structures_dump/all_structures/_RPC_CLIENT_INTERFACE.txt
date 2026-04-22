@@ -1,0 +1,17 @@
+// Структура: _RPC_CLIENT_INTERFACE
+// Полей: 9
+// Строки в оригинале: 108508-108519
+struct _RPC_CLIENT_INTERFACE
+{
+
+  unsigned int Length;
+  _RPC_SYNTAX_IDENTIFIER InterfaceId;
+  _RPC_SYNTAX_IDENTIFIER TransferSyntax;
+  RPC_DISPATCH_TABLE *DispatchTable;
+  unsigned int RpcProtseqEndpointCount;
+  _RPC_PROTSEQ_ENDPOINT *RpcProtseqEndpoint;
+  unsigned int Reserved;
+  const void *InterpreterInfo;
+  unsigned int Flags;
+
+};

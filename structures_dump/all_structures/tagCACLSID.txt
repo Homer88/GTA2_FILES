@@ -1,0 +1,10 @@
+// Структура: tagCACLSID
+// Полей: 2
+// Строки в оригинале: 31658-31662
+struct tagCACLSID
+{
+
+  ULONG cElems;
+  CLSID *pElems;
+
+};

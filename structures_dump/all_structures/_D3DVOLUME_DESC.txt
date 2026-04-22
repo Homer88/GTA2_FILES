@@ -1,0 +1,15 @@
+// Структура: _D3DVOLUME_DESC
+// Полей: 7
+// Строки в оригинале: 26264-26273
+struct _D3DVOLUME_DESC
+{
+
+  D3DFORMAT Format;
+  D3DRESOURCETYPE Type;
+  DWORD Usage;
+  D3DPOOL Pool;
+  UINT Width;
+  UINT Height;
+  UINT Depth;
+
+};

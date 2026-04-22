@@ -1,0 +1,17 @@
+// Структура: _CRL_INFO
+// Полей: 9
+// Строки в оригинале: 79897-79908
+struct _CRL_INFO
+{
+
+  unsigned int dwVersion;
+  _CRYPT_ALGORITHM_IDENTIFIER SignatureAlgorithm;
+  _CRYPTOAPI_BLOB Issuer;
+  _FILETIME ThisUpdate;
+  _FILETIME NextUpdate;
+  unsigned int cCRLEntry;
+  _CRL_ENTRY *rgCRLEntry;
+  unsigned int cExtension;
+  _CERT_EXTENSION *rgExtension;
+
+};

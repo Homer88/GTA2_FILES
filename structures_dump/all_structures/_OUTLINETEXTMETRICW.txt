@@ -1,0 +1,40 @@
+// Структура: _OUTLINETEXTMETRICW
+// Полей: 32
+// Строки в оригинале: 81460-81494
+struct _OUTLINETEXTMETRICW
+{
+
+  unsigned int otmSize;
+  tagTEXTMETRICW otmTextMetrics;
+  unsigned __int8 otmFiller;
+  tagPANOSE otmPanoseNumber;
+  unsigned int otmfsSelection;
+  unsigned int otmfsType;
+  int otmsCharSlopeRise;
+  int otmsCharSlopeRun;
+  int otmItalicAngle;
+  unsigned int otmEMSquare;
+  int otmAscent;
+  int otmDescent;
+  unsigned int otmLineGap;
+  unsigned int otmsCapEmHeight;
+  unsigned int otmsXHeight;
+  tagRECT otmrcFontBox;
+  int otmMacAscent;
+  int otmMacDescent;
+  unsigned int otmMacLineGap;
+  unsigned int otmusMinimumPPEM;
+  tagPOINT otmptSubscriptSize;
+  tagPOINT otmptSubscriptOffset;
+  tagPOINT otmptSuperscriptSize;
+  tagPOINT otmptSuperscriptOffset;
+  unsigned int otmsStrikeoutSize;
+  int otmsStrikeoutPosition;
+  int otmsUnderscoreSize;
+  int otmsUnderscorePosition;
+  char *otmpFamilyName;
+  char *otmpFaceName;
+  char *otmpStyleName;
+  char *otmpFullName;
+
+};

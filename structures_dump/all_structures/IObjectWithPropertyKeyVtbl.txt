@@ -1,0 +1,13 @@
+// Структура: IObjectWithPropertyKeyVtbl
+// Полей: 5
+// Строки в оригинале: 35579-35586
+struct IObjectWithPropertyKeyVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IObjectWithPropertyKey *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IObjectWithPropertyKey *This);
+  ULONG (__stdcall *Release)(IObjectWithPropertyKey *This);
+  HRESULT (__stdcall *SetPropertyKey)(IObjectWithPropertyKey *This, const PROPERTYKEY *const key);
+  HRESULT (__stdcall *GetPropertyKey)(IObjectWithPropertyKey *This, PROPERTYKEY *pkey);
+
+};

@@ -1,0 +1,12 @@
+// Структура: tagMETAFILEPICT
+// Полей: 4
+// Строки в оригинале: 93848-93854
+struct tagMETAFILEPICT
+{
+
+  int mm;
+  int xExt;
+  int yExt;
+  HMETAFILE__ *hMF;
+
+};

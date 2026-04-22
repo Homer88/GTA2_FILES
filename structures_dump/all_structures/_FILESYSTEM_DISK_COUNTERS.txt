@@ -1,0 +1,10 @@
+// Структура: _FILESYSTEM_DISK_COUNTERS
+// Полей: 2
+// Строки в оригинале: 13689-13693
+struct _FILESYSTEM_DISK_COUNTERS
+{
+
+  unsigned __int64 FsBytesRead;
+  unsigned __int64 FsBytesWritten;
+
+};

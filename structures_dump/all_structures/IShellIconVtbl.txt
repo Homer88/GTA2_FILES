@@ -1,0 +1,12 @@
+// Структура: IShellIconVtbl
+// Полей: 4
+// Строки в оригинале: 40305-40311
+struct IShellIconVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellIcon *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellIcon *This);
+  ULONG (__stdcall *Release)(IShellIcon *This);
+  HRESULT (__stdcall *GetIconOf)(IShellIcon *This, LPCITEMIDLIST pidl, UINT flags, int *pIconIndex);
+
+};

@@ -1,0 +1,19 @@
+// Структура: _stat32
+// Полей: 11
+// Строки в оригинале: 65769-65782
+struct _stat32
+{
+
+  unsigned int st_dev;
+  unsigned __int16 st_ino;
+  unsigned __int16 st_mode;
+  __int16 st_nlink;
+  __int16 st_uid;
+  __int16 st_gid;
+  unsigned int st_rdev;
+  int st_size;
+  int st_atime;
+  int st_mtime;
+  int st_ctime;
+
+};

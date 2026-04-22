@@ -1,0 +1,13 @@
+// Структура: FCR
+// Полей: 5
+// Строки в оригинале: 146731-146738
+struct FCR
+{
+
+  FR frRequest;
+  FR frActual;
+  unsigned int cRefs;
+  HFONT__ *hfont;
+  tagTEXTMETRICW tm;
+
+};

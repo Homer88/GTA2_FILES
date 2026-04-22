@@ -1,0 +1,10 @@
+// Структура: DXGI_SAMPLE_DESC
+// Полей: 2
+// Строки в оригинале: 352062-352066
+struct DXGI_SAMPLE_DESC
+{
+
+  UINT Count;
+  UINT Quality;
+
+};

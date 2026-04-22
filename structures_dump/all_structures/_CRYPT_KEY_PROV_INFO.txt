@@ -1,0 +1,15 @@
+// Структура: _CRYPT_KEY_PROV_INFO
+// Полей: 7
+// Строки в оригинале: 86874-86883
+struct _CRYPT_KEY_PROV_INFO
+{
+
+  wchar_t *pwszContainerName;
+  wchar_t *pwszProvName;
+  unsigned int dwProvType;
+  unsigned int dwFlags;
+  unsigned int cProvParam;
+  _CRYPT_KEY_PROV_PARAM *rgProvParam;
+  unsigned int dwKeySpec;
+
+};

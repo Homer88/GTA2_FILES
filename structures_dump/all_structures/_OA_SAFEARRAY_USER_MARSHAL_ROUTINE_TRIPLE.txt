@@ -1,0 +1,11 @@
+// Структура: _OA_SAFEARRAY_USER_MARSHAL_ROUTINE_TRIPLE
+// Полей: 3
+// Строки в оригинале: 120633-120638
+struct _OA_SAFEARRAY_USER_MARSHAL_ROUTINE_TRIPLE
+{
+
+  unsigned int (__stdcall *pfnBufferSize)(unsigned int *, unsigned int, void *);
+  unsigned __int8 *(__stdcall *pfnMarshall)(unsigned int *, unsigned __int8 *, void *);
+  unsigned __int8 *(__stdcall *pfnUnmarshall)(unsigned int *, unsigned __int8 *, void *);
+
+};

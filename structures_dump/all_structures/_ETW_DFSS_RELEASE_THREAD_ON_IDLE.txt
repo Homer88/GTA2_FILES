@@ -1,0 +1,12 @@
+// Структура: _ETW_DFSS_RELEASE_THREAD_ON_IDLE
+// Полей: 4
+// Строки в оригинале: 312094-312100
+struct _ETW_DFSS_RELEASE_THREAD_ON_IDLE
+{
+
+  unsigned int CurrentGeneration;
+  unsigned int SessionSelectedToRun;
+  unsigned __int64 CycleBaseAllowance;
+  __int64 CyclesRemaining;
+
+};

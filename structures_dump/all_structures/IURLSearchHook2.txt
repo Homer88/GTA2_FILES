@@ -1,0 +1,9 @@
+// Структура: IURLSearchHook2
+// Полей: 1
+// Строки в оригинале: 43100-43103
+struct IURLSearchHook2
+{
+
+  struct IURLSearchHook2Vtbl *lpVtbl;
+
+};

@@ -1,0 +1,37 @@
+// Структура: S67
+// Полей: 29
+// Строки в оригинале: 10001-10032
+struct S67
+{
+
+  int field;
+  __int16 field_4;
+  char field_6;
+  char field_7;
+  S67 *NextElement;
+  int field_C;
+  int field_10;
+  char field_14;
+  char field_15;
+  char field_16;
+  char field_17;
+  int field_18;
+  int field_1C;
+  int field_20;
+  int field_24;
+  __int16 field_28;
+  __int16 field_2A;
+  __int16 field_2C;
+  char field_2E;
+  char field_2F;
+  char field_30;
+  char field_31;
+  char field_32;
+  char field_33;
+  int field_34;
+  byte field_38;
+  char field_39;
+  char field_3A;
+  char field_0;
+
+};

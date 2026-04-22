@@ -1,0 +1,11 @@
+// Структура: _WORK_QUEUE_ITEM
+// Полей: 3
+// Строки в оригинале: 16158-16163
+struct _WORK_QUEUE_ITEM
+{
+
+  _LIST_ENTRY List;
+  void (__stdcall *WorkerRoutine)(void *);
+  void *Parameter;
+
+};

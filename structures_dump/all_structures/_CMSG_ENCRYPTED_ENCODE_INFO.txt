@@ -1,0 +1,11 @@
+// Структура: _CMSG_ENCRYPTED_ENCODE_INFO
+// Полей: 3
+// Строки в оригинале: 101977-101982
+struct _CMSG_ENCRYPTED_ENCODE_INFO
+{
+
+  unsigned int cbSize;
+  _CRYPT_ALGORITHM_IDENTIFIER ContentEncryptionAlgorithm;
+  void *pvEncryptionAuxInfo;
+
+};

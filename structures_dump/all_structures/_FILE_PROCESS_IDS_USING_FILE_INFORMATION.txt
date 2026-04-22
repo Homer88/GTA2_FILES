@@ -1,0 +1,10 @@
+// Структура: _FILE_PROCESS_IDS_USING_FILE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 90397-90401
+struct _FILE_PROCESS_IDS_USING_FILE_INFORMATION
+{
+
+  unsigned int NumberOfProcessIdsInList;
+  unsigned int ProcessIdList[1];
+
+};

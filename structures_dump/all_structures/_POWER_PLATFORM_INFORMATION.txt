@@ -1,0 +1,9 @@
+// Структура: _POWER_PLATFORM_INFORMATION
+// Полей: 1
+// Строки в оригинале: 85922-85925
+struct _POWER_PLATFORM_INFORMATION
+{
+
+  unsigned __int8 AoAc;
+
+};

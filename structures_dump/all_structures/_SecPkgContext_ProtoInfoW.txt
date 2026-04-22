@@ -1,0 +1,11 @@
+// Структура: _SecPkgContext_ProtoInfoW
+// Полей: 3
+// Строки в оригинале: 325911-325916
+struct _SecPkgContext_ProtoInfoW
+{
+
+  wchar_t *sProtocolName;
+  unsigned int majorVersion;
+  unsigned int minorVersion;
+
+};

@@ -1,0 +1,27 @@
+// Структура: __MIDL_ILocalObjectExporter_0001
+// Полей: 19
+// Строки в оригинале: 220293-220314
+struct __MIDL_ILocalObjectExporter_0001
+{
+
+  unsigned int offsetofChannelPtrFromProxyPtr;
+  unsigned __int64 addressofOIDListHead;
+  unsigned int sizeofIPIDEntry;
+  unsigned int offsetofNextIPIDPointerInIPIDEntry;
+  unsigned int offsetofFlagsInIPIDEntry;
+  unsigned int offsetofIPIDInIPIDEntry;
+  unsigned int offsetofServerAddressInIPIDEntry;
+  unsigned int offsetofOIDFLinkInIPIDEntry;
+  unsigned int serverIPIDEntryFlag;
+  unsigned int invalidIPIDEntryFlags;
+  unsigned int sizeofOxidEntry;
+  unsigned int offsetofPidInOxidEntry;
+  unsigned int offsetofTidInOxidEntry;
+  unsigned int sizeofCClientChannel;
+  unsigned int offsetofCanonicalIRpcChannelBufferInCClientChannel;
+  unsigned int offsetofIPIDEntryInCClientChannel;
+  unsigned int offsetofOxidEntryInCClientChannel;
+  unsigned int offsetofSignatureInCClientChannel;
+  _GUID guidSignatureofCClientChannel;
+
+};

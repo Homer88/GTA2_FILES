@@ -1,0 +1,11 @@
+// Структура: _CRYPT_PROPERTY_REF
+// Полей: 3
+// Строки в оригинале: 97753-97758
+struct _CRYPT_PROPERTY_REF
+{
+
+  wchar_t *pszProperty;
+  unsigned int cbValue;
+  unsigned __int8 *pbValue;
+
+};

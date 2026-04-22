@@ -1,0 +1,12 @@
+// Структура: ICreateDevEnumVtbl
+// Полей: 4
+// Строки в оригинале: 26355-26361
+struct ICreateDevEnumVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICreateDevEnum *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICreateDevEnum *This);
+  ULONG (__stdcall *Release)(ICreateDevEnum *This);
+  HRESULT (__stdcall *CreateClassEnumerator)(ICreateDevEnum *This, const IID *const clsidDeviceClass, IEnumMoniker **ppEnumMoniker, DWORD dwFlags);
+
+};

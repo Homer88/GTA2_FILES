@@ -1,0 +1,11 @@
+// Структура: _ALPC_PROCESS_CONTEXT
+// Полей: 3
+// Строки в оригинале: 18028-18033
+struct _ALPC_PROCESS_CONTEXT
+{
+
+  _EX_PUSH_LOCK Lock;
+  _LIST_ENTRY ViewListHead;
+  volatile unsigned int PagedPoolQuotaCache;
+
+};

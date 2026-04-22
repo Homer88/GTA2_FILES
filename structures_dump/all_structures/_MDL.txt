@@ -1,0 +1,16 @@
+// Структура: _MDL
+// Полей: 8
+// Строки в оригинале: 17389-17399
+struct _MDL
+{
+
+  _MDL *Next;
+  __int16 Size;
+  __int16 MdlFlags;
+  _EPROCESS *Process;
+  void *MappedSystemVa;
+  void *StartVa;
+  unsigned int ByteCount;
+  unsigned int ByteOffset;
+
+};

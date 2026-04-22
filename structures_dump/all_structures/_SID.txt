@@ -1,0 +1,12 @@
+// Структура: _SID
+// Полей: 4
+// Строки в оригинале: 18592-18598
+struct _SID
+{
+
+  unsigned __int8 Revision;
+  unsigned __int8 SubAuthorityCount;
+  _SID_IDENTIFIER_AUTHORITY IdentifierAuthority;
+  unsigned int SubAuthority[1];
+
+};

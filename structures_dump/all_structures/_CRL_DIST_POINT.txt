@@ -1,0 +1,11 @@
+// Структура: _CRL_DIST_POINT
+// Полей: 3
+// Строки в оригинале: 91449-91454
+struct _CRL_DIST_POINT
+{
+
+  _CRL_DIST_POINT_NAME DistPointName;
+  _CRYPT_BIT_BLOB ReasonFlags;
+  _CERT_ALT_NAME_INFO CRLIssuer;
+
+};

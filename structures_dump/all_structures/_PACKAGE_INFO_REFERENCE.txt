@@ -1,0 +1,9 @@
+// Структура: _PACKAGE_INFO_REFERENCE
+// Полей: 1
+// Строки в оригинале: 106236-106239
+struct _PACKAGE_INFO_REFERENCE
+{
+
+  void *reserved;
+
+};

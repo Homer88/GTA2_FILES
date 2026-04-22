@@ -1,0 +1,11 @@
+// Структура: tagEMREXTCREATEFONTINDIRECTW
+// Полей: 3
+// Строки в оригинале: 82473-82478
+struct tagEMREXTCREATEFONTINDIRECTW
+{
+
+  tagEMR emr;
+  unsigned int ihFont;
+  tagEXTLOGFONTW elfw;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IRecordInfo
+// Полей: 1
+// Строки в оригинале: 23518-23521
+struct IRecordInfo
+{
+
+  struct IRecordInfoVtbl *lpVtbl;
+
+};

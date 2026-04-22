@@ -1,0 +1,30 @@
+// Структура: _NDR64_PROC_FLAGS
+// Полей: 22
+// Строки в оригинале: 332599-332623
+struct _NDR64_PROC_FLAGS
+{
+
+  unsigned __int32 HandleType : 3;
+  unsigned __int32 ProcType : 3;
+  unsigned __int32 IsInterpreted : 2;
+  unsigned __int32 IsObject : 1;
+  unsigned __int32 IsAsync : 1;
+  unsigned __int32 IsEncode : 1;
+  unsigned __int32 IsDecode : 1;
+  unsigned __int32 UsesFullPtrPackage : 1;
+  unsigned __int32 UsesRpcSmPackage : 1;
+  unsigned __int32 UsesPipes : 1;
+  unsigned __int32 HandlesExceptions : 2;
+  unsigned __int32 ServerMustSize : 1;
+  unsigned __int32 ClientMustSize : 1;
+  unsigned __int32 HasReturn : 1;
+  unsigned __int32 HasComplexReturn : 1;
+  unsigned __int32 ServerHasCorrelation : 1;
+  unsigned __int32 ClientHasCorrelation : 1;
+  unsigned __int32 HasNotify : 1;
+  unsigned __int32 HasOtherExtensions : 1;
+  unsigned __int32 HasBigByValueParam : 1;
+  unsigned __int32 HasArmParamLayout : 1;
+  unsigned __int32 Reserved : 5;
+
+};

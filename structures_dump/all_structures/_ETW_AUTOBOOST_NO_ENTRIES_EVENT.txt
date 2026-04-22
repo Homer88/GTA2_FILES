@@ -1,0 +1,10 @@
+// Структура: _ETW_AUTOBOOST_NO_ENTRIES_EVENT
+// Полей: 2
+// Строки в оригинале: 309770-309774
+struct _ETW_AUTOBOOST_NO_ENTRIES_EVENT
+{
+
+  void *Lock;
+  unsigned int ThreadId;
+
+};

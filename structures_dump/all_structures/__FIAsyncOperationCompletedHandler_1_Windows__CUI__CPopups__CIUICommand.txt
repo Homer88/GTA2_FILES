@@ -1,0 +1,9 @@
+// Структура: __FIAsyncOperationCompletedHandler_1_Windows__CUI__CPopups__CIUICommand
+// Полей: 1
+// Строки в оригинале: 37751-37754
+struct __FIAsyncOperationCompletedHandler_1_Windows__CUI__CPopups__CIUICommand
+{
+
+  struct __FIAsyncOperationCompletedHandler_1_Windows__CUI__CPopups__CIUICommandVtbl *lpVtbl;
+
+};

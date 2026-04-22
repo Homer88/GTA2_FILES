@@ -1,0 +1,29 @@
+// Структура: IShellView3Vtbl
+// Полей: 21
+// Строки в оригинале: 33235-33258
+struct IShellView3Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellView3 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellView3 *This);
+  ULONG (__stdcall *Release)(IShellView3 *This);
+  HRESULT (__stdcall *GetWindow)(IShellView3 *This, HWND *phwnd);
+  HRESULT (__stdcall *ContextSensitiveHelp)(IShellView3 *This, BOOL fEnterMode);
+  HRESULT (__stdcall *TranslateAcceleratorA)(IShellView3 *This, MSG *pmsg);
+  HRESULT (__stdcall *EnableModeless)(IShellView3 *This, BOOL fEnable);
+  HRESULT (__stdcall *UIActivate)(IShellView3 *This, UINT uState);
+  HRESULT (__stdcall *Refresh)(IShellView3 *This);
+  HRESULT (__stdcall *CreateViewWindow)(IShellView3 *This, IShellView *psvPrevious, LPCFOLDERSETTINGS pfs, IShellBrowser *psb, RECT *prcView, HWND *phWnd);
+  HRESULT (__stdcall *DestroyViewWindow)(IShellView3 *This);
+  HRESULT (__stdcall *GetCurrentInfo)(IShellView3 *This, LPFOLDERSETTINGS pfs);
+  HRESULT (__stdcall *AddPropertySheetPages)(IShellView3 *This, DWORD dwReserved, LPFNSVADDPROPSHEETPAGE pfn, LPARAM lparam);
+  HRESULT (__stdcall *SaveViewState)(IShellView3 *This);
+  HRESULT (__stdcall *SelectItem)(IShellView3 *This, LPCITEMIDLIST pidlItem, SVSIF uFlags);
+  HRESULT (__stdcall *GetItemObject)(IShellView3 *This, UINT uItem, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetView)(IShellView3 *This, SHELLVIEWID *pvid, ULONG uView);
+  HRESULT (__stdcall *CreateViewWindow2)(IShellView3 *This, LPSV2CVW2_PARAMS lpParams);
+  HRESULT (__stdcall *HandleRename)(IShellView3 *This, LPCITEMIDLIST pidlNew);
+  HRESULT (__stdcall *SelectAndPositionItem)(IShellView3 *This, LPCITEMIDLIST pidlItem, UINT uFlags, POINT *ppt);
+  HRESULT (__stdcall *CreateViewWindow3)(IShellView3 *This, IShellBrowser *psbOwner, IShellView *psvPrev, SV3CVW3_FLAGS dwViewFlags, FOLDERFLAGS dwMask, FOLDERFLAGS dwFlags, FOLDERVIEWMODE fvMode, const SHELLVIEWID *pvid, const RECT *prcView, HWND *phwndView);
+
+};

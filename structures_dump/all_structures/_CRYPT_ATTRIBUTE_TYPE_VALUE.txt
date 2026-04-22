@@ -1,0 +1,10 @@
+// Структура: _CRYPT_ATTRIBUTE_TYPE_VALUE
+// Полей: 2
+// Строки в оригинале: 82372-82376
+struct _CRYPT_ATTRIBUTE_TYPE_VALUE
+{
+
+  char *pszObjId;
+  _CRYPTOAPI_BLOB Value;
+
+};

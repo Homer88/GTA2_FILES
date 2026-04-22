@@ -1,0 +1,16 @@
+// Структура: IClassFactory2Vtbl
+// Полей: 8
+// Строки в оригинале: 352665-352675
+struct IClassFactory2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IClassFactory2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IClassFactory2 *This);
+  ULONG (__stdcall *Release)(IClassFactory2 *This);
+  HRESULT (__stdcall *CreateInstance)(IClassFactory2 *This, IUnknown *pUnkOuter, const IID *const riid, void **ppvObject);
+  HRESULT (__stdcall *LockServer)(IClassFactory2 *This, BOOL fLock);
+  HRESULT (__stdcall *GetLicInfo)(IClassFactory2 *This, LICINFO *pLicInfo);
+  HRESULT (__stdcall *RequestLicKey)(IClassFactory2 *This, DWORD dwReserved, BSTR *pBstrKey);
+  HRESULT (__stdcall *CreateInstanceLic)(IClassFactory2 *This, IUnknown *pUnkOuter, IUnknown *pUnkReserved, const IID *const riid, BSTR bstrKey, PVOID *ppvObj);
+
+};

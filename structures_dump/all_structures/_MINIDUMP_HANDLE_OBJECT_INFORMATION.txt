@@ -1,0 +1,11 @@
+// Структура: _MINIDUMP_HANDLE_OBJECT_INFORMATION
+// Полей: 3
+// Строки в оригинале: 124020-124025
+struct _MINIDUMP_HANDLE_OBJECT_INFORMATION
+{
+
+  unsigned int NextInfoRva;
+  unsigned int InfoType;
+  unsigned int SizeOfInfo;
+
+};

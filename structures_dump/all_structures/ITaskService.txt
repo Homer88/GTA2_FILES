@@ -1,0 +1,9 @@
+// Структура: ITaskService
+// Полей: 1
+// Строки в оригинале: 44506-44509
+struct ITaskService
+{
+
+  struct ITaskServiceVtbl *lpVtbl;
+
+};

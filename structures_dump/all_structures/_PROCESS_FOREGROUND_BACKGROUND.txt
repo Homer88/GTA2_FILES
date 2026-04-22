@@ -1,0 +1,9 @@
+// Структура: _PROCESS_FOREGROUND_BACKGROUND
+// Полей: 1
+// Строки в оригинале: 88508-88511
+struct _PROCESS_FOREGROUND_BACKGROUND
+{
+
+  unsigned __int8 Foreground;
+
+};

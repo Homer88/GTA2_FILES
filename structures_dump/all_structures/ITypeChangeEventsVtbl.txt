@@ -1,0 +1,13 @@
+// Структура: ITypeChangeEventsVtbl
+// Полей: 5
+// Строки в оригинале: 352701-352708
+struct ITypeChangeEventsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITypeChangeEvents *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITypeChangeEvents *This);
+  ULONG (__stdcall *Release)(ITypeChangeEvents *This);
+  HRESULT (__stdcall *RequestTypeChange)(ITypeChangeEvents *This, CHANGEKIND changeKind, ITypeInfo *pTInfoBefore, LPOLESTR pStrName, INT *pfCancel);
+  HRESULT (__stdcall *AfterTypeChange)(ITypeChangeEvents *This, CHANGEKIND changeKind, ITypeInfo *pTInfoAfter, LPOLESTR pStrName);
+
+};

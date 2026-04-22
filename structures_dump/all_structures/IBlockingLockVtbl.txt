@@ -1,0 +1,13 @@
+// Структура: IBlockingLockVtbl
+// Полей: 5
+// Строки в оригинале: 351416-351423
+struct IBlockingLockVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IBlockingLock *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IBlockingLock *This);
+  ULONG (__stdcall *Release)(IBlockingLock *This);
+  HRESULT (__stdcall *Lock)(IBlockingLock *This, DWORD dwTimeout);
+  HRESULT (__stdcall *Unlock)(IBlockingLock *This);
+
+};

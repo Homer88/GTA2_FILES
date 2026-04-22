@@ -1,0 +1,9 @@
+// Структура: _HEAP_USERDATA_OFFSETS
+// Полей: 1
+// Строки в оригинале: 21513-21516
+struct _HEAP_USERDATA_OFFSETS
+{
+
+  $AB260D6063D7713FD487D2FE95263683 ___u0;
+
+};

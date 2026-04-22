@@ -1,0 +1,17 @@
+// Структура: _CMINVOKECOMMANDINFO
+// Полей: 9
+// Строки в оригинале: 32668-32679
+struct _CMINVOKECOMMANDINFO
+{
+
+  DWORD cbSize;
+  DWORD fMask;
+  HWND hwnd;
+  LPCSTR lpVerb;
+  LPCSTR lpParameters;
+  LPCSTR lpDirectory;
+  int nShow;
+  DWORD dwHotKey;
+  HANDLE hIcon;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IFsiFileItem
+// Полей: 1
+// Строки в оригинале: 41214-41217
+struct IFsiFileItem
+{
+
+  struct IFsiFileItemVtbl *lpVtbl;
+
+};

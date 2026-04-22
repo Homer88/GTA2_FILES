@@ -1,0 +1,15 @@
+// Структура: _TIME_ZONE_INFORMATION
+// Полей: 7
+// Строки в оригинале: 2208-2217
+struct _TIME_ZONE_INFORMATION
+{
+
+  LONG Bias;
+  WCHAR StandardName[32];
+  SYSTEMTIME StandardDate;
+  LONG StandardBias;
+  WCHAR DaylightName[32];
+  SYSTEMTIME DaylightDate;
+  LONG DaylightBias;
+
+};

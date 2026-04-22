@@ -1,0 +1,24 @@
+// Структура: _MANAGEDAPPLICATION
+// Полей: 16
+// Строки в оригинале: 111777-111795
+struct _MANAGEDAPPLICATION
+{
+
+  wchar_t *pszPackageName;
+  wchar_t *pszPublisher;
+  unsigned int dwVersionHi;
+  unsigned int dwVersionLo;
+  unsigned int dwRevision;
+  _GUID GpoId;
+  wchar_t *pszPolicyName;
+  _GUID ProductId;
+  unsigned __int16 Language;
+  wchar_t *pszOwner;
+  wchar_t *pszCompany;
+  wchar_t *pszComments;
+  wchar_t *pszContact;
+  wchar_t *pszSupportUrl;
+  unsigned int dwPathType;
+  int bInstalled;
+
+};

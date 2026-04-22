@@ -1,0 +1,35 @@
+// Структура: S106
+// Полей: 27
+// Строки в оригинале: 8957-8986
+struct S106
+{
+
+  char field;
+  char field_1;
+  char field_2;
+  char field_3;
+  char field_4;
+  char field_5;
+  char field_6;
+  char field_7;
+  char field_8;
+  char field_9;
+  char field_A;
+  char field_B;
+  char field_C;
+  char field_D;
+  char field_E;
+  char field_F;
+  char field_10;
+  char field_11;
+  char field_12;
+  char field_13;
+  Car *Car;
+  int field_18;
+  Weapon *field_1C;
+  int field_20;
+  int field_24;
+  int field_28;
+  int Select;
+
+};

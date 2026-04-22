@@ -1,0 +1,9 @@
+// Структура: ITfThreadMgr
+// Полей: 1
+// Строки в оригинале: 41596-41599
+struct ITfThreadMgr
+{
+
+  struct ITfThreadMgrVtbl *lpVtbl;
+
+};

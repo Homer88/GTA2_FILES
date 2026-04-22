@@ -1,0 +1,9 @@
+// Структура: _FILE_STORAGE_RESERVE_ID_INFORMATION
+// Полей: 1
+// Строки в оригинале: 105524-105527
+struct _FILE_STORAGE_RESERVE_ID_INFORMATION
+{
+
+  _STORAGE_RESERVE_ID StorageReserveId;
+
+};

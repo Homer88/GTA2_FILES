@@ -1,0 +1,15 @@
+// Структура: _wireVARIANT
+// Полей: 7
+// Строки в оригинале: 83872-83881
+struct _wireVARIANT
+{
+
+  unsigned int clSize;
+  unsigned int rpcReserved;
+  unsigned __int16 vt;
+  unsigned __int16 wReserved1;
+  unsigned __int16 wReserved2;
+  unsigned __int16 wReserved3;
+  $92027AC7D06008BD5087C098E61CD91E ___u6;
+
+};

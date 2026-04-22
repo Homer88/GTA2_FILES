@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_ENERGY_ESTIMATION_CONFIG_INFORMATION
+// Полей: 1
+// Строки в оригинале: 95145-95148
+struct _SYSTEM_ENERGY_ESTIMATION_CONFIG_INFORMATION
+{
+
+  unsigned __int8 Enabled;
+
+};

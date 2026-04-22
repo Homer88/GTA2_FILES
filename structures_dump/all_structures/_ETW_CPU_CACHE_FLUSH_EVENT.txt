@@ -1,0 +1,15 @@
+// Структура: _ETW_CPU_CACHE_FLUSH_EVENT
+// Полей: 7
+// Строки в оригинале: 312163-312172
+struct _ETW_CPU_CACHE_FLUSH_EVENT
+{
+
+  void *Address;
+  unsigned int Bytes;
+  unsigned __int8 Clean;
+  unsigned __int8 FullFlush;
+  unsigned __int8 Rectangle;
+  unsigned __int8 Reserved0;
+  unsigned int Reserved1;
+
+};

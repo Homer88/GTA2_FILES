@@ -1,0 +1,11 @@
+// Структура: _OUTPUT_DEBUG_STRING_INFO
+// Полей: 3
+// Строки в оригинале: 104554-104559
+struct _OUTPUT_DEBUG_STRING_INFO
+{
+
+  char *lpDebugStringData;
+  unsigned __int16 fUnicode;
+  unsigned __int16 nDebugStringLength;
+
+};

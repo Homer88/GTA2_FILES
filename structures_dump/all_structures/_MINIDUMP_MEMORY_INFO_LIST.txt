@@ -1,0 +1,11 @@
+// Структура: _MINIDUMP_MEMORY_INFO_LIST
+// Полей: 3
+// Строки в оригинале: 122524-122529
+struct _MINIDUMP_MEMORY_INFO_LIST
+{
+
+  unsigned int SizeOfHeader;
+  unsigned int SizeOfEntry;
+  unsigned __int64 NumberOfEntries;
+
+};

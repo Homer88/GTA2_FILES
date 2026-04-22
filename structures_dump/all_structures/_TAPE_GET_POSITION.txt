@@ -1,0 +1,11 @@
+// Структура: _TAPE_GET_POSITION
+// Полей: 3
+// Строки в оригинале: 124289-124294
+struct _TAPE_GET_POSITION
+{
+
+  unsigned int Type;
+  unsigned int Partition;
+  _LARGE_INTEGER Offset;
+
+};

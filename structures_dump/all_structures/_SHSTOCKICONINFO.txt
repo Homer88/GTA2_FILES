@@ -1,0 +1,13 @@
+// Структура: _SHSTOCKICONINFO
+// Полей: 5
+// Строки в оригинале: 104975-104982
+struct _SHSTOCKICONINFO
+{
+
+  unsigned int cbSize;
+  HICON__ *hIcon;
+  int iSysImageIndex;
+  int iIcon;
+  wchar_t szPath[260];
+
+};

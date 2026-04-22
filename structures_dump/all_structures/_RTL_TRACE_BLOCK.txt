@@ -1,0 +1,16 @@
+// Структура: _RTL_TRACE_BLOCK
+// Полей: 8
+// Строки в оригинале: 22336-22346
+struct _RTL_TRACE_BLOCK
+{
+
+  unsigned int Magic;
+  unsigned int Count;
+  unsigned int Size;
+  unsigned int UserCount;
+  unsigned int UserSize;
+  void *UserContext;
+  _RTL_TRACE_BLOCK *Next;
+  void **Trace;
+
+};

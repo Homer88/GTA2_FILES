@@ -1,0 +1,18 @@
+// Структура: _HANDLE_TABLE
+// Полей: 10
+// Строки в оригинале: 19056-19068
+struct _HANDLE_TABLE
+{
+
+  unsigned int NextHandleNeedingPool;
+  int ExtraInfoPages;
+  volatile unsigned int TableCode;
+  _EPROCESS *QuotaProcess;
+  _LIST_ENTRY HandleTableList;
+  unsigned int UniqueProcessId;
+  $1E3B101C689729109DBCF2C7D8DBEF9F ___u6;
+  _EX_PUSH_LOCK HandleContentionEvent;
+  _EX_PUSH_LOCK HandleTableLock;
+  $B80B6A53C01DAB9F1EA709B5BFF4CABF ___u9;
+
+};

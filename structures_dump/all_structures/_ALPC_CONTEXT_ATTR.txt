@@ -1,0 +1,13 @@
+// Структура: _ALPC_CONTEXT_ATTR
+// Полей: 5
+// Строки в оригинале: 108717-108724
+struct _ALPC_CONTEXT_ATTR
+{
+
+  void *PortContext;
+  void *MessageContext;
+  unsigned int Sequence;
+  unsigned int MessageId;
+  unsigned int CallbackId;
+
+};

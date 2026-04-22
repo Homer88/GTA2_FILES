@@ -1,0 +1,20 @@
+// Структура: tagAPPHELP_DATA
+// Полей: 12
+// Строки в оригинале: 312530-312544
+struct tagAPPHELP_DATA
+{
+
+  unsigned int dwFlags;
+  unsigned int dwSeverity;
+  unsigned int dwHTMLHelpID;
+  wchar_t *szAppName;
+  unsigned int trExe;
+  wchar_t *szURL;
+  wchar_t *szLink;
+  wchar_t *szAppTitle;
+  wchar_t *szContact;
+  wchar_t *szDetails;
+  unsigned int dwData;
+  int bUnused;
+
+};

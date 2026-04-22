@@ -1,0 +1,16 @@
+// Структура: IRowsetVtbl
+// Полей: 8
+// Строки в оригинале: 40027-40037
+struct IRowsetVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRowset *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRowset *This);
+  ULONG (__stdcall *Release)(IRowset *This);
+  HRESULT (__stdcall *AddRefRows)(IRowset *This, DBCOUNTITEM cRows, const HROW rghRows[], DBREFCOUNT rgRefCounts[], DBROWSTATUS rgRowStatus[]);
+  HRESULT (__stdcall *GetData)(IRowset *This, HROW hRow, HACCESSOR hAccessor, void *pData);
+  HRESULT (__stdcall *GetNextRows)(IRowset *This, HCHAPTER hReserved, DBROWOFFSET lRowsOffset, DBROWCOUNT cRows, DBCOUNTITEM *pcRowsObtained, HROW **prghRows);
+  HRESULT (__stdcall *ReleaseRows)(IRowset *This, DBCOUNTITEM cRows, const HROW rghRows[], DBROWOPTIONS rgRowOptions[], DBREFCOUNT rgRefCounts[], DBROWSTATUS rgRowStatus[]);
+  HRESULT (__stdcall *RestartPosition)(IRowset *This, HCHAPTER hReserved);
+
+};

@@ -1,0 +1,15 @@
+// Структура: _EXCEPTION_LOG
+// Полей: 7
+// Строки в оригинале: 105808-105817
+struct _EXCEPTION_LOG
+{
+
+  _EXCEPTION_RECORD ExceptionRecord;
+  _CONTEXT ContextRecord;
+  _EXCEPTION_LOG_TYPE Type;
+  int Disposition;
+  unsigned int Thread;
+  unsigned int ControlPc;
+  void *Handler;
+
+};

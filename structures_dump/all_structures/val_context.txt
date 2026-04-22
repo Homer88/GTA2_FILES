@@ -1,0 +1,11 @@
+// Структура: val_context
+// Полей: 3
+// Строки в оригинале: 94805-94810
+struct val_context
+{
+
+  int valuelen;
+  void *value_context;
+  void *val_buff_ptr;
+
+};

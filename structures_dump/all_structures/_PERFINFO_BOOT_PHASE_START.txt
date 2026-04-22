@@ -1,0 +1,9 @@
+// Структура: _PERFINFO_BOOT_PHASE_START
+// Полей: 1
+// Строки в оригинале: 311561-311564
+struct _PERFINFO_BOOT_PHASE_START
+{
+
+  int Phase;
+
+};

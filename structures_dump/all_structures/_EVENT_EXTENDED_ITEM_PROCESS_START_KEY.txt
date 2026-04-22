@@ -1,0 +1,9 @@
+// Структура: _EVENT_EXTENDED_ITEM_PROCESS_START_KEY
+// Полей: 1
+// Строки в оригинале: 310215-310218
+struct _EVENT_EXTENDED_ITEM_PROCESS_START_KEY
+{
+
+  unsigned __int64 ProcessStartKey;
+
+};

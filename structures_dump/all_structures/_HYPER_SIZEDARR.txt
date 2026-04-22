@@ -1,0 +1,10 @@
+// Структура: _HYPER_SIZEDARR
+// Полей: 2
+// Строки в оригинале: 83783-83787
+struct _HYPER_SIZEDARR
+{
+
+  unsigned int clSize;
+  __int64 *pData;
+
+};

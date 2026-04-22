@@ -1,0 +1,10 @@
+// Структура: _FILE_LEVEL_TRIM_RANGE
+// Полей: 2
+// Строки в оригинале: 97712-97716
+struct _FILE_LEVEL_TRIM_RANGE
+{
+
+  unsigned __int64 Offset;
+  unsigned __int64 Length;
+
+};

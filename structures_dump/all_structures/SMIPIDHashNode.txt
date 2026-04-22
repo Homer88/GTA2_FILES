@@ -1,0 +1,10 @@
+// Структура: SMIPIDHashNode
+// Полей: 2
+// Строки в оригинале: 65425-65429
+struct SMIPIDHashNode
+{
+
+  SHashChain chain;
+  MIPID mipid;
+
+};

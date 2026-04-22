@@ -1,0 +1,32 @@
+// Структура: IWICBitmapEncoderInfoVtbl
+// Полей: 24
+// Строки в оригинале: 42294-42320
+struct IWICBitmapEncoderInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICBitmapEncoderInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICBitmapEncoderInfo *This);
+  ULONG (__stdcall *Release)(IWICBitmapEncoderInfo *This);
+  HRESULT (__stdcall *GetComponentType)(IWICBitmapEncoderInfo *This, WICComponentType *pType);
+  HRESULT (__stdcall *GetCLSID)(IWICBitmapEncoderInfo *This, CLSID *pclsid);
+  HRESULT (__stdcall *GetSigningStatus)(IWICBitmapEncoderInfo *This, DWORD *pStatus);
+  HRESULT (__stdcall *GetAuthor)(IWICBitmapEncoderInfo *This, UINT cchAuthor, WCHAR *wzAuthor, UINT *pcchActual);
+  HRESULT (__stdcall *GetVendorGUID)(IWICBitmapEncoderInfo *This, GUID *pguidVendor);
+  HRESULT (__stdcall *GetVersion)(IWICBitmapEncoderInfo *This, UINT cchVersion, WCHAR *wzVersion, UINT *pcchActual);
+  HRESULT (__stdcall *GetSpecVersion)(IWICBitmapEncoderInfo *This, UINT cchSpecVersion, WCHAR *wzSpecVersion, UINT *pcchActual);
+  HRESULT (__stdcall *GetFriendlyName)(IWICBitmapEncoderInfo *This, UINT cchFriendlyName, WCHAR *wzFriendlyName, UINT *pcchActual);
+  HRESULT (__stdcall *GetContainerFormat)(IWICBitmapEncoderInfo *This, GUID *pguidContainerFormat);
+  HRESULT (__stdcall *GetPixelFormats)(IWICBitmapEncoderInfo *This, UINT cFormats, GUID *pguidPixelFormats, UINT *pcActual);
+  HRESULT (__stdcall *GetColorManagementVersion)(IWICBitmapEncoderInfo *This, UINT cchColorManagementVersion, WCHAR *wzColorManagementVersion, UINT *pcchActual);
+  HRESULT (__stdcall *GetDeviceManufacturer)(IWICBitmapEncoderInfo *This, UINT cchDeviceManufacturer, WCHAR *wzDeviceManufacturer, UINT *pcchActual);
+  HRESULT (__stdcall *GetDeviceModels)(IWICBitmapEncoderInfo *This, UINT cchDeviceModels, WCHAR *wzDeviceModels, UINT *pcchActual);
+  HRESULT (__stdcall *GetMimeTypes)(IWICBitmapEncoderInfo *This, UINT cchMimeTypes, WCHAR *wzMimeTypes, UINT *pcchActual);
+  HRESULT (__stdcall *GetFileExtensions)(IWICBitmapEncoderInfo *This, UINT cchFileExtensions, WCHAR *wzFileExtensions, UINT *pcchActual);
+  HRESULT (__stdcall *DoesSupportAnimation)(IWICBitmapEncoderInfo *This, BOOL *pfSupportAnimation);
+  HRESULT (__stdcall *DoesSupportChromakey)(IWICBitmapEncoderInfo *This, BOOL *pfSupportChromakey);
+  HRESULT (__stdcall *DoesSupportLossless)(IWICBitmapEncoderInfo *This, BOOL *pfSupportLossless);
+  HRESULT (__stdcall *DoesSupportMultiframe)(IWICBitmapEncoderInfo *This, BOOL *pfSupportMultiframe);
+  HRESULT (__stdcall *MatchesMimeType)(IWICBitmapEncoderInfo *This, LPCWSTR wzMimeType, BOOL *pfMatches);
+  HRESULT (__stdcall *CreateInstance)(IWICBitmapEncoderInfo *This, IWICBitmapEncoder **ppIBitmapEncoder);
+
+};

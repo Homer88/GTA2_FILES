@@ -1,0 +1,10 @@
+// Структура: _DEVPROPKEY
+// Полей: 2
+// Строки в оригинале: 280341-280345
+struct _DEVPROPKEY
+{
+
+  _GUID fmtid;
+  unsigned int pid;
+
+};

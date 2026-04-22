@@ -1,0 +1,10 @@
+// Структура: _DSSSEED
+// Полей: 2
+// Строки в оригинале: 91851-91855
+struct _DSSSEED
+{
+
+  unsigned int counter;
+  unsigned __int8 seed[20];
+
+};

@@ -1,0 +1,14 @@
+// Структура: tagPAINTSTRUCT
+// Полей: 6
+// Строки в оригинале: 59359-59367
+struct tagPAINTSTRUCT
+{
+
+  HDC__ *hdc;
+  int fErase;
+  tagRECT rcPaint;
+  int fRestore;
+  int fIncUpdate;
+  unsigned __int8 rgbReserved[32];
+
+};

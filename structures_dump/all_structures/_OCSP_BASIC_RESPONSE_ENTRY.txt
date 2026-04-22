@@ -1,0 +1,15 @@
+// Структура: _OCSP_BASIC_RESPONSE_ENTRY
+// Полей: 7
+// Строки в оригинале: 91722-91731
+struct _OCSP_BASIC_RESPONSE_ENTRY
+{
+
+  _OCSP_CERT_ID CertId;
+  unsigned int dwCertStatus;
+  _OCSP_BASIC_REVOKED_INFO *pRevokedInfo;
+  _FILETIME ThisUpdate;
+  _FILETIME NextUpdate;
+  unsigned int cExtension;
+  _CERT_EXTENSION *rgExtension;
+
+};

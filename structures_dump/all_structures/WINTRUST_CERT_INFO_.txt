@@ -1,0 +1,15 @@
+// Структура: WINTRUST_CERT_INFO_
+// Полей: 7
+// Строки в оригинале: 121878-121887
+struct WINTRUST_CERT_INFO_
+{
+
+  unsigned int cbStruct;
+  const wchar_t *pcwszDisplayName;
+  _CERT_CONTEXT *psCertContext;
+  unsigned int chStores;
+  void **pahStores;
+  unsigned int dwFlags;
+  _FILETIME *psftVerifyAsOf;
+
+};

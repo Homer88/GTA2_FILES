@@ -1,0 +1,11 @@
+// Структура: _CERT_RDN_ATTR
+// Полей: 3
+// Строки в оригинале: 82443-82448
+struct _CERT_RDN_ATTR
+{
+
+  char *pszObjId;
+  unsigned int dwValueType;
+  _CRYPTOAPI_BLOB Value;
+
+};

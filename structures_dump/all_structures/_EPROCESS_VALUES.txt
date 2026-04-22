@@ -1,0 +1,21 @@
+// Структура: _EPROCESS_VALUES
+// Полей: 13
+// Строки в оригинале: 16694-16709
+struct _EPROCESS_VALUES
+{
+
+  unsigned __int64 KernelTime;
+  unsigned __int64 UserTime;
+  unsigned __int64 ReadyTime;
+  unsigned __int64 CycleTime;
+  unsigned __int64 ContextSwitches;
+  __int64 ReadOperationCount;
+  __int64 WriteOperationCount;
+  __int64 OtherOperationCount;
+  __int64 ReadTransferCount;
+  __int64 WriteTransferCount;
+  __int64 OtherTransferCount;
+  unsigned __int64 KernelWaitTime;
+  unsigned __int64 UserWaitTime;
+
+};

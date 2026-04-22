@@ -1,0 +1,38 @@
+// Структура: IDirectDraw7Vtbl
+// Полей: 30
+// Строки в оригинале: 26680-26712
+struct IDirectDraw7Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirectDraw7 *This, const IID *const riid, LPVOID *ppvObj);
+  ULONG (__stdcall *AddRef)(IDirectDraw7 *This);
+  ULONG (__stdcall *Release)(IDirectDraw7 *This);
+  HRESULT (__stdcall *Compact)(IDirectDraw7 *This);
+  HRESULT (__stdcall *CreateClipper)(IDirectDraw7 *This, DWORD, LPDIRECTDRAWCLIPPER *, IUnknown *);
+  HRESULT (__stdcall *CreatePalette)(IDirectDraw7 *This, DWORD, LPPALETTEENTRY, LPDIRECTDRAWPALETTE *, IUnknown *);
+  HRESULT (__stdcall *CreateSurface)(IDirectDraw7 *This, LPDDSURFACEDESC2, LPDIRECTDRAWSURFACE7 *, IUnknown *);
+  HRESULT (__stdcall *DuplicateSurface)(IDirectDraw7 *This, LPDIRECTDRAWSURFACE7, LPDIRECTDRAWSURFACE7 *);
+  HRESULT (__stdcall *EnumDisplayModes)(IDirectDraw7 *This, DWORD, LPDDSURFACEDESC2, LPVOID, LPDDENUMMODESCALLBACK2);
+  HRESULT (__stdcall *EnumSurfaces)(IDirectDraw7 *This, DWORD, LPDDSURFACEDESC2, LPVOID, LPDDENUMSURFACESCALLBACK7);
+  HRESULT (__stdcall *FlipToGDISurface)(IDirectDraw7 *This);
+  HRESULT (__stdcall *GetCaps)(IDirectDraw7 *This, LPDDCAPS, LPDDCAPS);
+  HRESULT (__stdcall *GetDisplayMode)(IDirectDraw7 *This, LPDDSURFACEDESC2);
+  HRESULT (__stdcall *GetFourCCCodes)(IDirectDraw7 *This, LPDWORD, LPDWORD);
+  HRESULT (__stdcall *GetGDISurface)(IDirectDraw7 *This, LPDIRECTDRAWSURFACE7 *);
+  HRESULT (__stdcall *GetMonitorFrequency)(IDirectDraw7 *This, LPDWORD);
+  HRESULT (__stdcall *GetScanLine)(IDirectDraw7 *This, LPDWORD);
+  HRESULT (__stdcall *GetVerticalBlankStatus)(IDirectDraw7 *This, LPBOOL);
+  HRESULT (__stdcall *Initialize)(IDirectDraw7 *This, GUID *);
+  HRESULT (__stdcall *RestoreDisplayMode)(IDirectDraw7 *This);
+  HRESULT (__stdcall *SetCooperativeLevel)(IDirectDraw7 *This, HWND, DWORD);
+  HRESULT (__stdcall *SetDisplayMode)(IDirectDraw7 *This, DWORD, DWORD, DWORD, DWORD, DWORD);
+  HRESULT (__stdcall *WaitForVerticalBlank)(IDirectDraw7 *This, DWORD, HANDLE);
+  HRESULT (__stdcall *GetAvailableVidMem)(IDirectDraw7 *This, LPDDSCAPS2, LPDWORD, LPDWORD);
+  HRESULT (__stdcall *GetSurfaceFromDC)(IDirectDraw7 *This, HDC, LPDIRECTDRAWSURFACE7 *);
+  HRESULT (__stdcall *RestoreAllSurfaces)(IDirectDraw7 *This);
+  HRESULT (__stdcall *TestCooperativeLevel)(IDirectDraw7 *This);
+  HRESULT (__stdcall *GetDeviceIdentifier)(IDirectDraw7 *This, LPDDDEVICEIDENTIFIER2, DWORD);
+  HRESULT (__stdcall *StartModeTest)(IDirectDraw7 *This, LPSIZE, DWORD, DWORD);
+  HRESULT (__stdcall *EvaluateMode)(IDirectDraw7 *This, DWORD, DWORD *);
+
+};

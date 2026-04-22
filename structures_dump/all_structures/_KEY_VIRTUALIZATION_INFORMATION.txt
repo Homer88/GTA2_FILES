@@ -1,0 +1,14 @@
+// Структура: _KEY_VIRTUALIZATION_INFORMATION
+// Полей: 6
+// Строки в оригинале: 95185-95193
+struct _KEY_VIRTUALIZATION_INFORMATION
+{
+
+  unsigned __int32 VirtualizationCandidate : 1;
+  unsigned __int32 VirtualizationEnabled : 1;
+  unsigned __int32 VirtualTarget : 1;
+  unsigned __int32 VirtualStore : 1;
+  unsigned __int32 VirtualSource : 1;
+  unsigned __int32 Reserved : 27;
+
+};

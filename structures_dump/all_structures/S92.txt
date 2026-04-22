@@ -1,0 +1,15 @@
+// Структура: S92
+// Полей: 7
+// Строки в оригинале: 9606-9615
+struct S92
+{
+
+  __int16 field_0;
+  __int16 field_2;
+  __int16 field_4;
+  char field_6;
+  char field_7;
+  S92 *S92_;
+  S92 *S92;
+
+};

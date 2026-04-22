@@ -1,0 +1,27 @@
+// Структура: IPrincipalVtbl
+// Полей: 19
+// Строки в оригинале: 44918-44939
+struct IPrincipalVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPrincipal *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPrincipal *This);
+  ULONG (__stdcall *Release)(IPrincipal *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IPrincipal *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IPrincipal *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IPrincipal *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IPrincipal *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Id)(IPrincipal *This, BSTR *pId);
+  HRESULT (__stdcall *put_Id)(IPrincipal *This, BSTR Id);
+  HRESULT (__stdcall *get_DisplayName)(IPrincipal *This, BSTR *pName);
+  HRESULT (__stdcall *put_DisplayName)(IPrincipal *This, BSTR name);
+  HRESULT (__stdcall *get_UserId)(IPrincipal *This, BSTR *pUser);
+  HRESULT (__stdcall *put_UserId)(IPrincipal *This, BSTR user);
+  HRESULT (__stdcall *get_LogonType)(IPrincipal *This, TASK_LOGON_TYPE *pLogon);
+  HRESULT (__stdcall *put_LogonType)(IPrincipal *This, TASK_LOGON_TYPE logon);
+  HRESULT (__stdcall *get_GroupId)(IPrincipal *This, BSTR *pGroup);
+  HRESULT (__stdcall *put_GroupId)(IPrincipal *This, BSTR group);
+  HRESULT (__stdcall *get_RunLevel)(IPrincipal *This, TASK_RUNLEVEL_TYPE *pRunLevel);
+  HRESULT (__stdcall *put_RunLevel)(IPrincipal *This, TASK_RUNLEVEL_TYPE runLevel);
+
+};

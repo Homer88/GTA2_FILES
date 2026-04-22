@@ -1,0 +1,12 @@
+// Структура: _FILE_QUERY_SPARING_BUFFER
+// Полей: 4
+// Строки в оригинале: 95694-95700
+struct _FILE_QUERY_SPARING_BUFFER
+{
+
+  unsigned int SparingUnitBytes;
+  unsigned __int8 SoftwareSparing;
+  unsigned int TotalSpareBlocks;
+  unsigned int FreeSpareBlocks;
+
+};

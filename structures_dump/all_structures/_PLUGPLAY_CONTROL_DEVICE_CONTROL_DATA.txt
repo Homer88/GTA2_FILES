@@ -1,0 +1,10 @@
+// Структура: _PLUGPLAY_CONTROL_DEVICE_CONTROL_DATA
+// Полей: 2
+// Строки в оригинале: 111286-111290
+struct _PLUGPLAY_CONTROL_DEVICE_CONTROL_DATA
+{
+
+  _UNICODE_STRING DeviceInstance;
+  unsigned int Flags;
+
+};

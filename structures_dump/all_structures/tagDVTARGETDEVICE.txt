@@ -1,0 +1,14 @@
+// Структура: tagDVTARGETDEVICE
+// Полей: 6
+// Строки в оригинале: 27132-27140
+struct tagDVTARGETDEVICE
+{
+
+  DWORD tdSize;
+  WORD tdDriverNameOffset;
+  WORD tdDeviceNameOffset;
+  WORD tdPortNameOffset;
+  WORD tdExtDevmodeOffset;
+  BYTE tdData[1];
+
+};

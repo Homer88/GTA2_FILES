@@ -1,0 +1,24 @@
+// Структура: REFS_VOLUME_DATA_BUFFER
+// Полей: 16
+// Строки в оригинале: 94784-94802
+struct REFS_VOLUME_DATA_BUFFER
+{
+
+  unsigned int ByteCount;
+  unsigned int MajorVersion;
+  unsigned int MinorVersion;
+  unsigned int BytesPerPhysicalSector;
+  _LARGE_INTEGER VolumeSerialNumber;
+  _LARGE_INTEGER NumberSectors;
+  _LARGE_INTEGER TotalClusters;
+  _LARGE_INTEGER FreeClusters;
+  _LARGE_INTEGER TotalReserved;
+  unsigned int BytesPerSector;
+  unsigned int BytesPerCluster;
+  _LARGE_INTEGER MaximumSizeOfResidentFile;
+  unsigned __int16 FastTierDataFillRatio;
+  unsigned __int16 SlowTierDataFillRatio;
+  unsigned int DestagesFastTierToSlowTierRate;
+  _LARGE_INTEGER Reserved[9];
+
+};

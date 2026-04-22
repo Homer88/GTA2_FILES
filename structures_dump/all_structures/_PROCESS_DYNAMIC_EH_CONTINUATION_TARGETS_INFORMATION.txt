@@ -1,0 +1,12 @@
+// Структура: _PROCESS_DYNAMIC_EH_CONTINUATION_TARGETS_INFORMATION
+// Полей: 4
+// Строки в оригинале: 111261-111267
+struct _PROCESS_DYNAMIC_EH_CONTINUATION_TARGETS_INFORMATION
+{
+
+  unsigned __int16 NumberOfTargets;
+  unsigned __int16 Reserved;
+  unsigned int Reserved2;
+  _PROCESS_DYNAMIC_EH_CONTINUATION_TARGET *Targets;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _SEC_SRTP_MASTER_KEY_IDENTIFIER
+// Полей: 2
+// Строки в оригинале: 323772-323776
+struct _SEC_SRTP_MASTER_KEY_IDENTIFIER
+{
+
+  unsigned __int8 MasterKeyIdentifierSize;
+  unsigned __int8 MasterKeyIdentifier[1];
+
+};

@@ -1,0 +1,10 @@
+// Структура: _wireSAFEARR_UNKNOWN
+// Полей: 2
+// Строки в оригинале: 83726-83730
+struct _wireSAFEARR_UNKNOWN
+{
+
+  unsigned int Size;
+  IUnknown **apUnknown;
+
+};

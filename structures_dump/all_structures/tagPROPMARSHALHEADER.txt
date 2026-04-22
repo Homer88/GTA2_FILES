@@ -1,0 +1,12 @@
+// Структура: tagPROPMARSHALHEADER
+// Полей: 4
+// Строки в оригинале: 246073-246079
+struct tagPROPMARSHALHEADER
+{
+
+  _GUID clsid;
+  _GUID policyId;
+  unsigned int flags;
+  unsigned int cb;
+
+};

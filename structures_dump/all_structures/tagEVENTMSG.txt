@@ -1,0 +1,13 @@
+// Структура: tagEVENTMSG
+// Полей: 5
+// Строки в оригинале: 91623-91630
+struct tagEVENTMSG
+{
+
+  unsigned int message;
+  unsigned int paramL;
+  unsigned int paramH;
+  unsigned int time;
+  HWND__ *hwnd;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IPropertyEnumTypeList
+// Полей: 1
+// Строки в оригинале: 34333-34336
+struct IPropertyEnumTypeList
+{
+
+  struct IPropertyEnumTypeListVtbl *lpVtbl;
+
+};

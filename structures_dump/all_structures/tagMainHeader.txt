@@ -1,0 +1,16 @@
+// Структура: tagMainHeader
+// Полей: 8
+// Строки в оригинале: 246143-246153
+struct tagMainHeader
+{
+
+  unsigned int Signature;
+  unsigned int Version;
+  unsigned int cPolicies;
+  unsigned int cbBuffer;
+  unsigned int cbSize;
+  int hr;
+  int hrServer;
+  int reserved;
+
+};

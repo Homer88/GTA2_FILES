@@ -1,0 +1,9 @@
+// Структура: ICommandProperties
+// Полей: 1
+// Строки в оригинале: 33672-33675
+struct ICommandProperties
+{
+
+  struct ICommandPropertiesVtbl *lpVtbl;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _MINIDUMP_USER_RECORD
+// Полей: 2
+// Строки в оригинале: 123273-123277
+struct _MINIDUMP_USER_RECORD
+{
+
+  unsigned int Type;
+  _MINIDUMP_LOCATION_DESCRIPTOR Memory;
+
+};

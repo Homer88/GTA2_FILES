@@ -1,0 +1,9 @@
+// Структура: IActionCollection
+// Полей: 1
+// Строки в оригинале: 44659-44662
+struct IActionCollection
+{
+
+  struct IActionCollectionVtbl *lpVtbl;
+
+};

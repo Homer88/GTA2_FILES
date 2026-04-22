@@ -1,0 +1,13 @@
+// Структура: _PPM_FFH_THROTTLE_STATE_INFO
+// Полей: 5
+// Строки в оригинале: 13519-13526
+struct _PPM_FFH_THROTTLE_STATE_INFO
+{
+
+  unsigned __int8 EnableLogging;
+  unsigned int MismatchCount;
+  unsigned __int8 Initialized;
+  unsigned __int64 LastValue;
+  _LARGE_INTEGER LastLogTickCount;
+
+};

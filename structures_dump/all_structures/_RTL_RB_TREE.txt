@@ -1,0 +1,10 @@
+// Структура: _RTL_RB_TREE
+// Полей: 2
+// Строки в оригинале: 13002-13006
+struct _RTL_RB_TREE
+{
+
+  _RTL_BALANCED_NODE *Root;
+  $4DEF09DE9C2368CF9E69082252EE37E8 ___u1;
+
+};

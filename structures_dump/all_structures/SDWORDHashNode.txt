@@ -1,0 +1,10 @@
+// Структура: SDWORDHashNode
+// Полей: 2
+// Строки в оригинале: 65480-65484
+struct SDWORDHashNode
+{
+
+  SHashChain chain;
+  unsigned int key;
+
+};

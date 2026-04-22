@@ -1,0 +1,11 @@
+// Структура: tagExtentInfo
+// Полей: 3
+// Строки в оригинале: 122904-122909
+struct tagExtentInfo
+{
+
+  unsigned int cb;
+  unsigned int dwExtentMode;
+  tagSIZE sizelProposed;
+
+};

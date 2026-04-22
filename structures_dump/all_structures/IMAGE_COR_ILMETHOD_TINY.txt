@@ -1,0 +1,9 @@
+// Структура: IMAGE_COR_ILMETHOD_TINY
+// Полей: 1
+// Строки в оригинале: 332377-332380
+struct IMAGE_COR_ILMETHOD_TINY
+{
+
+  unsigned __int8 Flags_CodeSize;
+
+};

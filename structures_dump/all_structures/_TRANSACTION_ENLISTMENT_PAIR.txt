@@ -1,0 +1,10 @@
+// Структура: _TRANSACTION_ENLISTMENT_PAIR
+// Полей: 2
+// Строки в оригинале: 94928-94932
+struct _TRANSACTION_ENLISTMENT_PAIR
+{
+
+  _GUID EnlistmentId;
+  _GUID ResourceManagerId;
+
+};

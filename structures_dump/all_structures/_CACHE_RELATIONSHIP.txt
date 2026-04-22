@@ -1,0 +1,15 @@
+// Структура: _CACHE_RELATIONSHIP
+// Полей: 7
+// Строки в оригинале: 106030-106039
+struct _CACHE_RELATIONSHIP
+{
+
+  unsigned __int8 Level;
+  unsigned __int8 Associativity;
+  unsigned __int16 LineSize;
+  unsigned int CacheSize;
+  _PROCESSOR_CACHE_TYPE Type;
+  unsigned __int8 Reserved[20];
+  _GROUP_AFFINITY GroupMask;
+
+};

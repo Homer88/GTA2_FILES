@@ -1,0 +1,9 @@
+// Структура: IContextMenu3
+// Полей: 1
+// Строки в оригинале: 33490-33493
+struct IContextMenu3
+{
+
+  struct IContextMenu3Vtbl *lpVtbl;
+
+};

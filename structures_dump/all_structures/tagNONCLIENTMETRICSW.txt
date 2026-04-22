@@ -1,0 +1,24 @@
+// Структура: tagNONCLIENTMETRICSW
+// Полей: 16
+// Строки в оригинале: 94371-94389
+struct tagNONCLIENTMETRICSW
+{
+
+  unsigned int cbSize;
+  int iBorderWidth;
+  int iScrollWidth;
+  int iScrollHeight;
+  int iCaptionWidth;
+  int iCaptionHeight;
+  tagLOGFONTW lfCaptionFont;
+  int iSmCaptionWidth;
+  int iSmCaptionHeight;
+  tagLOGFONTW lfSmCaptionFont;
+  int iMenuWidth;
+  int iMenuHeight;
+  tagLOGFONTW lfMenuFont;
+  tagLOGFONTW lfStatusFont;
+  tagLOGFONTW lfMessageFont;
+  int iPaddedBorderWidth;
+
+};

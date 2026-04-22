@@ -1,0 +1,49 @@
+// Структура: ICreateTypeInfo2Vtbl
+// Полей: 41
+// Строки в оригинале: 352448-352491
+struct ICreateTypeInfo2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICreateTypeInfo2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICreateTypeInfo2 *This);
+  ULONG (__stdcall *Release)(ICreateTypeInfo2 *This);
+  HRESULT (__stdcall *SetGuid)(ICreateTypeInfo2 *This, const GUID *const guid);
+  HRESULT (__stdcall *SetTypeFlags)(ICreateTypeInfo2 *This, UINT uTypeFlags);
+  HRESULT (__stdcall *SetDocString)(ICreateTypeInfo2 *This, LPOLESTR pStrDoc);
+  HRESULT (__stdcall *SetHelpContext)(ICreateTypeInfo2 *This, DWORD dwHelpContext);
+  HRESULT (__stdcall *SetVersion)(ICreateTypeInfo2 *This, WORD wMajorVerNum, WORD wMinorVerNum);
+  HRESULT (__stdcall *AddRefTypeInfo)(ICreateTypeInfo2 *This, ITypeInfo *pTInfo, HREFTYPE *phRefType);
+  HRESULT (__stdcall *AddFuncDesc)(ICreateTypeInfo2 *This, UINT index, FUNCDESC *pFuncDesc);
+  HRESULT (__stdcall *AddImplType)(ICreateTypeInfo2 *This, UINT index, HREFTYPE hRefType);
+  HRESULT (__stdcall *SetImplTypeFlags)(ICreateTypeInfo2 *This, UINT index, INT implTypeFlags);
+  HRESULT (__stdcall *SetAlignment)(ICreateTypeInfo2 *This, WORD cbAlignment);
+  HRESULT (__stdcall *SetSchema)(ICreateTypeInfo2 *This, LPOLESTR pStrSchema);
+  HRESULT (__stdcall *AddVarDesc)(ICreateTypeInfo2 *This, UINT index, VARDESC *pVarDesc);
+  HRESULT (__stdcall *SetFuncAndParamNames)(ICreateTypeInfo2 *This, UINT index, LPOLESTR *rgszNames, UINT cNames);
+  HRESULT (__stdcall *SetVarName)(ICreateTypeInfo2 *This, UINT index, LPOLESTR szName);
+  HRESULT (__stdcall *SetTypeDescAlias)(ICreateTypeInfo2 *This, TYPEDESC *pTDescAlias);
+  HRESULT (__stdcall *DefineFuncAsDllEntry)(ICreateTypeInfo2 *This, UINT index, LPOLESTR szDllName, LPOLESTR szProcName);
+  HRESULT (__stdcall *SetFuncDocString)(ICreateTypeInfo2 *This, UINT index, LPOLESTR szDocString);
+  HRESULT (__stdcall *SetVarDocString)(ICreateTypeInfo2 *This, UINT index, LPOLESTR szDocString);
+  HRESULT (__stdcall *SetFuncHelpContext)(ICreateTypeInfo2 *This, UINT index, DWORD dwHelpContext);
+  HRESULT (__stdcall *SetVarHelpContext)(ICreateTypeInfo2 *This, UINT index, DWORD dwHelpContext);
+  HRESULT (__stdcall *SetMops)(ICreateTypeInfo2 *This, UINT index, BSTR bstrMops);
+  HRESULT (__stdcall *SetTypeIdldesc)(ICreateTypeInfo2 *This, IDLDESC *pIdlDesc);
+  HRESULT (__stdcall *LayOut)(ICreateTypeInfo2 *This);
+  HRESULT (__stdcall *DeleteFuncDesc)(ICreateTypeInfo2 *This, UINT index);
+  HRESULT (__stdcall *DeleteFuncDescByMemId)(ICreateTypeInfo2 *This, MEMBERID memid, INVOKEKIND invKind);
+  HRESULT (__stdcall *DeleteVarDesc)(ICreateTypeInfo2 *This, UINT index);
+  HRESULT (__stdcall *DeleteVarDescByMemId)(ICreateTypeInfo2 *This, MEMBERID memid);
+  HRESULT (__stdcall *DeleteImplType)(ICreateTypeInfo2 *This, UINT index);
+  HRESULT (__stdcall *SetCustData)(ICreateTypeInfo2 *This, const GUID *const guid, VARIANT *pVarVal);
+  HRESULT (__stdcall *SetFuncCustData)(ICreateTypeInfo2 *This, UINT index, const GUID *const guid, VARIANT *pVarVal);
+  HRESULT (__stdcall *SetParamCustData)(ICreateTypeInfo2 *This, UINT indexFunc, UINT indexParam, const GUID *const guid, VARIANT *pVarVal);
+  HRESULT (__stdcall *SetVarCustData)(ICreateTypeInfo2 *This, UINT index, const GUID *const guid, VARIANT *pVarVal);
+  HRESULT (__stdcall *SetImplTypeCustData)(ICreateTypeInfo2 *This, UINT index, const GUID *const guid, VARIANT *pVarVal);
+  HRESULT (__stdcall *SetHelpStringContext)(ICreateTypeInfo2 *This, ULONG dwHelpStringContext);
+  HRESULT (__stdcall *SetFuncHelpStringContext)(ICreateTypeInfo2 *This, UINT index, ULONG dwHelpStringContext);
+  HRESULT (__stdcall *SetVarHelpStringContext)(ICreateTypeInfo2 *This, UINT index, ULONG dwHelpStringContext);
+  HRESULT (__stdcall *Invalidate)(ICreateTypeInfo2 *This);
+  HRESULT (__stdcall *SetName)(ICreateTypeInfo2 *This, LPOLESTR szName);
+
+};

@@ -1,0 +1,14 @@
+// Структура: _SYSTEM_POWER_STATUS
+// Полей: 6
+// Строки в оригинале: 94274-94282
+struct _SYSTEM_POWER_STATUS
+{
+
+  unsigned __int8 ACLineStatus;
+  unsigned __int8 BatteryFlag;
+  unsigned __int8 BatteryLifePercent;
+  unsigned __int8 SystemStatusFlag;
+  unsigned int BatteryLifeTime;
+  unsigned int BatteryFullLifeTime;
+
+};

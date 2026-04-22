@@ -1,0 +1,10 @@
+// Структура: _CERT_DH_PARAMETERS
+// Полей: 2
+// Строки в оригинале: 104613-104617
+struct _CERT_DH_PARAMETERS
+{
+
+  _CRYPTOAPI_BLOB p;
+  _CRYPTOAPI_BLOB g;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _IO_STATUS_BLOCK32
+// Полей: 2
+// Строки в оригинале: 105060-105064
+struct _IO_STATUS_BLOCK32
+{
+
+  int Status;
+  unsigned int Information;
+
+};

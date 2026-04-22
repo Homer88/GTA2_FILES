@@ -1,0 +1,12 @@
+// Структура: _DROPFILES
+// Полей: 4
+// Строки в оригинале: 140307-140313
+struct _DROPFILES
+{
+
+  unsigned int pFiles;
+  tagPOINT pt;
+  int fNC;
+  int fWide;
+
+};

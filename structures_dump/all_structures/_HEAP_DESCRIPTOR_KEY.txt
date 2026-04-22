@@ -1,0 +1,9 @@
+// Структура: _HEAP_DESCRIPTOR_KEY
+// Полей: 1
+// Строки в оригинале: 21807-21810
+struct _HEAP_DESCRIPTOR_KEY
+{
+
+  $55501EB0BDDCC7B7AC16A14D830DCD86 ___u0;
+
+};

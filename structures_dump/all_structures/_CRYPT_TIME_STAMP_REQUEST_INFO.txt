@@ -1,0 +1,13 @@
+// Структура: _CRYPT_TIME_STAMP_REQUEST_INFO
+// Полей: 5
+// Строки в оригинале: 102090-102097
+struct _CRYPT_TIME_STAMP_REQUEST_INFO
+{
+
+  char *pszTimeStampAlgorithm;
+  char *pszContentType;
+  _CRYPTOAPI_BLOB Content;
+  unsigned int cAttribute;
+  _CRYPT_ATTRIBUTE *rgAttribute;
+
+};

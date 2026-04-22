@@ -1,0 +1,27 @@
+// Структура: IRecordInfoVtbl
+// Полей: 19
+// Строки в оригинале: 23761-23782
+struct IRecordInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRecordInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRecordInfo *This);
+  ULONG (__stdcall *Release)(IRecordInfo *This);
+  HRESULT (__stdcall *RecordInit)(IRecordInfo *This, PVOID pvNew);
+  HRESULT (__stdcall *RecordClear)(IRecordInfo *This, PVOID pvExisting);
+  HRESULT (__stdcall *RecordCopy)(IRecordInfo *This, PVOID pvExisting, PVOID pvNew);
+  HRESULT (__stdcall *GetGuid)(IRecordInfo *This, GUID *pguid);
+  HRESULT (__stdcall *GetName)(IRecordInfo *This, BSTR *pbstrName);
+  HRESULT (__stdcall *GetSize)(IRecordInfo *This, ULONG *pcbSize);
+  HRESULT (__stdcall *GetTypeInfo)(IRecordInfo *This, ITypeInfo **ppTypeInfo);
+  HRESULT (__stdcall *GetField)(IRecordInfo *This, PVOID pvData, LPCOLESTR szFieldName, VARIANT *pvarField);
+  HRESULT (__stdcall *GetFieldNoCopy)(IRecordInfo *This, PVOID pvData, LPCOLESTR szFieldName, VARIANT *pvarField, PVOID *ppvDataCArray);
+  HRESULT (__stdcall *PutField)(IRecordInfo *This, ULONG wFlags, PVOID pvData, LPCOLESTR szFieldName, VARIANT *pvarField);
+  HRESULT (__stdcall *PutFieldNoCopy)(IRecordInfo *This, ULONG wFlags, PVOID pvData, LPCOLESTR szFieldName, VARIANT *pvarField);
+  HRESULT (__stdcall *GetFieldNames)(IRecordInfo *This, ULONG *pcNames, BSTR *rgBstrNames);
+  BOOL (__stdcall *IsMatchingType)(IRecordInfo *This, IRecordInfo *pRecordInfo);
+  PVOID (__stdcall *RecordCreate)(IRecordInfo *This);
+  HRESULT (__stdcall *RecordCreateCopy)(IRecordInfo *This, PVOID pvSource, PVOID *ppvDest);
+  HRESULT (__stdcall *RecordDestroy)(IRecordInfo *This, PVOID pvRecord);
+
+};

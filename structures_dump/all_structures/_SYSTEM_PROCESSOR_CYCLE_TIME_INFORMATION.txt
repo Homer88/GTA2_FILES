@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_PROCESSOR_CYCLE_TIME_INFORMATION
+// Полей: 1
+// Строки в оригинале: 101610-101613
+struct _SYSTEM_PROCESSOR_CYCLE_TIME_INFORMATION
+{
+
+  unsigned __int64 CycleTime;
+
+};

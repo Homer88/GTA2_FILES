@@ -1,0 +1,10 @@
+// Структура: _WGLSWAP
+// Полей: 2
+// Строки в оригинале: 105157-105161
+struct _WGLSWAP
+{
+
+  HDC__ *hdc;
+  unsigned int uiFlags;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IDispatch
+// Полей: 1
+// Строки в оригинале: 22995-22998
+struct IDispatch
+{
+
+  struct IDispatchVtbl *lpVtbl;
+
+};

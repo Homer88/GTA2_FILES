@@ -1,0 +1,9 @@
+// Структура: IObjMgr
+// Полей: 1
+// Строки в оригинале: 36188-36191
+struct IObjMgr
+{
+
+  struct IObjMgrVtbl *lpVtbl;
+
+};

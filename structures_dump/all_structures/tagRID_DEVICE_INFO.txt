@@ -1,0 +1,11 @@
+// Структура: tagRID_DEVICE_INFO
+// Полей: 3
+// Строки в оригинале: 96897-96902
+struct tagRID_DEVICE_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int dwType;
+  $9ACE508023E0A943AAFECB9BE0F07B3A ___u2;
+
+};

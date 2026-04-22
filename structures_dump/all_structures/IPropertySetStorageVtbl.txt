@@ -1,0 +1,15 @@
+// Структура: IPropertySetStorageVtbl
+// Полей: 7
+// Строки в оригинале: 37831-37840
+struct IPropertySetStorageVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertySetStorage *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertySetStorage *This);
+  ULONG (__stdcall *Release)(IPropertySetStorage *This);
+  HRESULT (__stdcall *Create)(IPropertySetStorage *This, const IID *const rfmtid, const CLSID *pclsid, DWORD grfFlags, DWORD grfMode, IPropertyStorage **ppprstg);
+  HRESULT (__stdcall *Open)(IPropertySetStorage *This, const IID *const rfmtid, DWORD grfMode, IPropertyStorage **ppprstg);
+  HRESULT (__stdcall *Delete)(IPropertySetStorage *This, const IID *const rfmtid);
+  HRESULT (__stdcall *Enum)(IPropertySetStorage *This, IEnumSTATPROPSETSTG **ppenum);
+
+};

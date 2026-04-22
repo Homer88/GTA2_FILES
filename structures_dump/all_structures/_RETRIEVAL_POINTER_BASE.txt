@@ -1,0 +1,9 @@
+// Структура: _RETRIEVAL_POINTER_BASE
+// Полей: 1
+// Строки в оригинале: 81116-81119
+struct _RETRIEVAL_POINTER_BASE
+{
+
+  _LARGE_INTEGER FileAreaOffset;
+
+};

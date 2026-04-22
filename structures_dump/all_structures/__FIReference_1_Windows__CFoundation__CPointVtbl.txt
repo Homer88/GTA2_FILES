@@ -1,0 +1,15 @@
+// Структура: __FIReference_1_Windows__CFoundation__CPointVtbl
+// Полей: 7
+// Строки в оригинале: 34339-34348
+struct __FIReference_1_Windows__CFoundation__CPointVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(__FIReference_1_Windows__CFoundation__CPoint *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(__FIReference_1_Windows__CFoundation__CPoint *This);
+  ULONG (__stdcall *Release)(__FIReference_1_Windows__CFoundation__CPoint *This);
+  HRESULT (__stdcall *GetIids)(__FIReference_1_Windows__CFoundation__CPoint *This, ULONG *iidCount, IID **iids);
+  HRESULT (__stdcall *GetRuntimeClassName)(__FIReference_1_Windows__CFoundation__CPoint *This, HSTRING *className);
+  HRESULT (__stdcall *GetTrustLevel)(__FIReference_1_Windows__CFoundation__CPoint *This, TrustLevel *trustLevel);
+  HRESULT (__stdcall *get_Value)(__FIReference_1_Windows__CFoundation__CPoint *This, struct __x_ABI_CWindows_CFoundation_CPoint *value);
+
+};

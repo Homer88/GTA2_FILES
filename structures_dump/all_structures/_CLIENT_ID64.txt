@@ -1,0 +1,10 @@
+// Структура: _CLIENT_ID64
+// Полей: 2
+// Строки в оригинале: 22161-22165
+struct _CLIENT_ID64
+{
+
+  unsigned __int64 UniqueProcess;
+  unsigned __int64 UniqueThread;
+
+};

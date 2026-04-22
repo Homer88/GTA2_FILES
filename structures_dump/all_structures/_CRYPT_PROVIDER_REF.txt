@@ -1,0 +1,15 @@
+// Структура: _CRYPT_PROVIDER_REF
+// Полей: 7
+// Строки в оригинале: 97768-97777
+struct _CRYPT_PROVIDER_REF
+{
+
+  unsigned int dwInterface;
+  wchar_t *pszFunction;
+  wchar_t *pszProvider;
+  unsigned int cProperties;
+  _CRYPT_PROPERTY_REF **rgpProperties;
+  _CRYPT_IMAGE_REF *pUM;
+  _CRYPT_IMAGE_REF *pKM;
+
+};

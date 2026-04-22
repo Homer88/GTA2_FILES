@@ -1,0 +1,31 @@
+// Структура: IDirectDrawVtbl
+// Полей: 23
+// Строки в оригинале: 24166-24191
+struct IDirectDrawVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirectDraw *This, const IID *const riid, LPVOID *ppvObj);
+  ULONG (__stdcall *AddRef)(IDirectDraw *This);
+  ULONG (__stdcall *Release)(IDirectDraw *This);
+  HRESULT (__stdcall *Compact)(IDirectDraw *This);
+  HRESULT (__stdcall *CreateClipper)(IDirectDraw *This, DWORD, LPDIRECTDRAWCLIPPER *, IUnknown *);
+  HRESULT (__stdcall *CreatePalette)(IDirectDraw *This, DWORD, LPPALETTEENTRY, LPDIRECTDRAWPALETTE *, IUnknown *);
+  HRESULT (__stdcall *CreateSurface)(IDirectDraw *This, LPDDSURFACEDESC, LPDIRECTDRAWSURFACE *, IUnknown *);
+  HRESULT (__stdcall *DuplicateSurface)(IDirectDraw *This, LPDIRECTDRAWSURFACE, LPDIRECTDRAWSURFACE *);
+  HRESULT (__stdcall *EnumDisplayModes)(IDirectDraw *This, DWORD, LPDDSURFACEDESC, LPVOID, LPDDENUMMODESCALLBACK);
+  HRESULT (__stdcall *EnumSurfaces)(IDirectDraw *This, DWORD, LPDDSURFACEDESC, LPVOID, LPDDENUMSURFACESCALLBACK);
+  HRESULT (__stdcall *FlipToGDISurface)(IDirectDraw *This);
+  HRESULT (__stdcall *GetCaps)(IDirectDraw *This, LPDDCAPS, LPDDCAPS);
+  HRESULT (__stdcall *GetDisplayMode)(IDirectDraw *This, LPDDSURFACEDESC);
+  HRESULT (__stdcall *GetFourCCCodes)(IDirectDraw *This, LPDWORD, LPDWORD);
+  HRESULT (__stdcall *GetGDISurface)(IDirectDraw *This, LPDIRECTDRAWSURFACE *);
+  HRESULT (__stdcall *GetMonitorFrequency)(IDirectDraw *This, LPDWORD);
+  HRESULT (__stdcall *GetScanLine)(IDirectDraw *This, LPDWORD);
+  HRESULT (__stdcall *GetVerticalBlankStatus)(IDirectDraw *This, LPBOOL);
+  HRESULT (__stdcall *Initialize)(IDirectDraw *This, GUID *);
+  HRESULT (__stdcall *RestoreDisplayMode)(IDirectDraw *This);
+  HRESULT (__stdcall *SetCooperativeLevel)(IDirectDraw *This, HWND, DWORD);
+  HRESULT (__stdcall *SetDisplayMode)(IDirectDraw *This, DWORD, DWORD, DWORD);
+  HRESULT (__stdcall *WaitForVerticalBlank)(IDirectDraw *This, DWORD, HANDLE);
+
+};

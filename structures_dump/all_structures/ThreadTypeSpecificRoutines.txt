@@ -1,0 +1,22 @@
+// Структура: ThreadTypeSpecificRoutines
+// Полей: 14
+// Строки в оригинале: 234247-234263
+struct ThreadTypeSpecificRoutines
+{
+
+  HRESULT (__stdcall *WaitForHandles)(unsigned int, unsigned int, unsigned int, void **, unsigned int *);
+  void (__stdcall *SignalMTAClient)(CChannelObject *);
+  void (__stdcall *SignalNAClient)(CChannelObject *);
+  HRESULT (__stdcall *CheckAndAdjustRpcFlagsInClientGetBuffer)(tagRPCOLEMESSAGE *, const _GUID *, bool);
+  HRESULT (__stdcall *CanMakeOutCall)(bool, bool, const _GUID *, tagRPCOLEMESSAGE *);
+  bool (__stdcall *CanMakeOutRemReleaseCall)();
+  HRESULT (__stdcall *SendReceive)(CSyncClientCall *, tagRPCOLEMESSAGE *, unsigned int *);
+  HRESULT (__stdcall *Send)(ClientCall *, tagRPCOLEMESSAGE *, unsigned int *);
+  HRESULT (__stdcall *Receive)(ClientCall *, tagRPCOLEMESSAGE *, unsigned int, unsigned int *);
+  void (__stdcall *BlockForAsyncCancel)(unsigned int);
+  HRESULT (__stdcall *DispatchCrossApartmentCall)(tagRPCOLEMESSAGE *, OXIDEntry *, CSyncClientCall *);
+  HRESULT (__stdcall *WaitForCall)(CSyncClientCall *, WaitForCallReason, unsigned int);
+  HRESULT (__stdcall *SendMessageToClassicSTA)(unsigned int, SendMessageToClassicSTAReason, HWND__ *, unsigned int, unsigned int, int);
+  HRESULT (__stdcall *HandleIncomingCall)(const _GUID *, unsigned __int16, unsigned int, void *);
+
+};

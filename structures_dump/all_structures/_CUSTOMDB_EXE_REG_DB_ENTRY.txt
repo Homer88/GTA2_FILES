@@ -1,0 +1,10 @@
+// Структура: _CUSTOMDB_EXE_REG_DB_ENTRY
+// Полей: 2
+// Строки в оригинале: 312983-312987
+struct _CUSTOMDB_EXE_REG_DB_ENTRY
+{
+
+  _GUID guidDB;
+  _ULARGE_INTEGER liTimeStamp;
+
+};

@@ -1,0 +1,14 @@
+// Структура: _numberfmtA
+// Полей: 6
+// Строки в оригинале: 88355-88363
+struct _numberfmtA
+{
+
+  unsigned int NumDigits;
+  unsigned int LeadingZero;
+  unsigned int Grouping;
+  char *lpDecimalSep;
+  char *lpThousandSep;
+  unsigned int NegativeOrder;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _SECURITY_SEED_AND_LENGTH
+// Полей: 2
+// Строки в оригинале: 81386-81390
+struct _SECURITY_SEED_AND_LENGTH
+{
+
+  unsigned __int8 Length;
+  unsigned __int8 Seed;
+
+};

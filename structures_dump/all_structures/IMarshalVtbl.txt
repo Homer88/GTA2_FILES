@@ -1,0 +1,17 @@
+// Структура: IMarshalVtbl
+// Полей: 9
+// Строки в оригинале: 30025-30036
+struct IMarshalVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IMarshal *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IMarshal *This);
+  ULONG (__stdcall *Release)(IMarshal *This);
+  HRESULT (__stdcall *GetUnmarshalClass)(IMarshal *This, const IID *const riid, void *pv, DWORD dwDestContext, void *pvDestContext, DWORD mshlflags, CLSID *pCid);
+  HRESULT (__stdcall *GetMarshalSizeMax)(IMarshal *This, const IID *const riid, void *pv, DWORD dwDestContext, void *pvDestContext, DWORD mshlflags, DWORD *pSize);
+  HRESULT (__stdcall *MarshalInterface)(IMarshal *This, IStream *pStm, const IID *const riid, void *pv, DWORD dwDestContext, void *pvDestContext, DWORD mshlflags);
+  HRESULT (__stdcall *UnmarshalInterface)(IMarshal *This, IStream *pStm, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *ReleaseMarshalData)(IMarshal *This, IStream *pStm);
+  HRESULT (__stdcall *DisconnectObject)(IMarshal *This, DWORD dwReserved);
+
+};

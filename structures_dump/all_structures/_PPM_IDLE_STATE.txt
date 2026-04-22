@@ -1,0 +1,23 @@
+// Структура: _PPM_IDLE_STATE
+// Полей: 15
+// Строки в оригинале: 14799-14816
+struct _PPM_IDLE_STATE
+{
+
+  _KAFFINITY_EX DomainMembers;
+  _UNICODE_STRING Name;
+  unsigned int Latency;
+  unsigned int BreakEvenDuration;
+  unsigned int Power;
+  unsigned int StateFlags;
+  _PPM_VETO_ACCOUNTING VetoAccounting;
+  unsigned __int8 StateType;
+  unsigned __int8 InterruptsEnabled;
+  unsigned __int8 Interruptible;
+  unsigned __int8 ContextRetained;
+  unsigned __int8 CacheCoherent;
+  unsigned __int8 WakesSpuriously;
+  unsigned __int8 PlatformOnly;
+  unsigned __int8 NoCState;
+
+};

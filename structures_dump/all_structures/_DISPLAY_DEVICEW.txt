@@ -1,0 +1,14 @@
+// Структура: _DISPLAY_DEVICEW
+// Полей: 6
+// Строки в оригинале: 80672-80680
+struct _DISPLAY_DEVICEW
+{
+
+  unsigned int cb;
+  wchar_t DeviceName[32];
+  wchar_t DeviceString[128];
+  unsigned int StateFlags;
+  wchar_t DeviceID[128];
+  wchar_t DeviceKey[128];
+
+};

@@ -1,0 +1,9 @@
+// Structure: tagPOINT
+// Lines: 2105 - 2109
+// Fields: 3
+
+struct tagPOINT
+{
+  LONG x;
+  LONG y;
+};

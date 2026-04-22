@@ -1,0 +1,13 @@
+// Структура: _ETW_UMS_EVENT_DISASSOCIATE
+// Полей: 5
+// Строки в оригинале: 313141-313148
+struct _ETW_UMS_EVENT_DISASSOCIATE
+{
+
+  unsigned int ProcessId;
+  unsigned int ScheduledThreadId;
+  unsigned int PrimaryThreadId;
+  unsigned int UmsApcControlFlags;
+  int Status;
+
+};

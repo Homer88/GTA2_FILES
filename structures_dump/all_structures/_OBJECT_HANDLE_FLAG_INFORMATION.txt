@@ -1,0 +1,10 @@
+// Структура: _OBJECT_HANDLE_FLAG_INFORMATION
+// Полей: 2
+// Строки в оригинале: 92829-92833
+struct _OBJECT_HANDLE_FLAG_INFORMATION
+{
+
+  unsigned __int8 Inherit;
+  unsigned __int8 ProtectFromClose;
+
+};

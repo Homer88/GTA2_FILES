@@ -1,0 +1,9 @@
+// Структура: __type_info_node
+// Полей: 1
+// Строки в оригинале: 58847-58850
+struct __type_info_node
+{
+
+  _SLIST_HEADER _Header;
+
+};

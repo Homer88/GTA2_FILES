@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_PROCESSOR_IDLE_CYCLE_TIME_INFORMATION
+// Полей: 1
+// Строки в оригинале: 99099-99102
+struct _SYSTEM_PROCESSOR_IDLE_CYCLE_TIME_INFORMATION
+{
+
+  unsigned __int64 CycleTime;
+
+};

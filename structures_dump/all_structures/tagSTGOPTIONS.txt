@@ -1,0 +1,12 @@
+// Структура: tagSTGOPTIONS
+// Полей: 4
+// Строки в оригинале: 66711-66717
+struct tagSTGOPTIONS
+{
+
+  unsigned __int16 usVersion;
+  unsigned __int16 reserved;
+  unsigned int ulSectorSize;
+  const wchar_t *pwcsTemplateFile;
+
+};

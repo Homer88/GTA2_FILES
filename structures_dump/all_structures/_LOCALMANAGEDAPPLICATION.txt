@@ -1,0 +1,12 @@
+// Структура: _LOCALMANAGEDAPPLICATION
+// Полей: 4
+// Строки в оригинале: 87929-87935
+struct _LOCALMANAGEDAPPLICATION
+{
+
+  wchar_t *pszDeploymentName;
+  wchar_t *pszPolicyName;
+  wchar_t *pszProductId;
+  unsigned int dwState;
+
+};

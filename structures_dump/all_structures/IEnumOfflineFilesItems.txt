@@ -1,0 +1,9 @@
+// Структура: IEnumOfflineFilesItems
+// Полей: 1
+// Строки в оригинале: 28187-28190
+struct IEnumOfflineFilesItems
+{
+
+  struct IEnumOfflineFilesItemsVtbl *lpVtbl;
+
+};

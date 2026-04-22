@@ -1,0 +1,9 @@
+// Structure: _LIST_ENTRY
+// Lines: 2484 - 2488
+// Fields: 3
+
+struct _LIST_ENTRY
+{
+  struct _LIST_ENTRY *Flink;
+  struct _LIST_ENTRY *Blink;
+};

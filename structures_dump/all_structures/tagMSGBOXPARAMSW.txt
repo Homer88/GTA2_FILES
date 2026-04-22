@@ -1,0 +1,18 @@
+// Структура: tagMSGBOXPARAMSW
+// Полей: 10
+// Строки в оригинале: 85145-85157
+struct tagMSGBOXPARAMSW
+{
+
+  unsigned int cbSize;
+  HWND__ *hwndOwner;
+  HINSTANCE__ *hInstance;
+  const wchar_t *lpszText;
+  const wchar_t *lpszCaption;
+  unsigned int dwStyle;
+  const wchar_t *lpszIcon;
+  unsigned int dwContextHelpId;
+  void (__stdcall *lpfnMsgBoxCallback)(tagHELPINFO *);
+  unsigned int dwLanguageId;
+
+};

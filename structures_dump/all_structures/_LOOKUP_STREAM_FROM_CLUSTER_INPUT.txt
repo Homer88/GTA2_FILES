@@ -1,0 +1,11 @@
+// Структура: _LOOKUP_STREAM_FROM_CLUSTER_INPUT
+// Полей: 3
+// Строки в оригинале: 82169-82174
+struct _LOOKUP_STREAM_FROM_CLUSTER_INPUT
+{
+
+  unsigned int Flags;
+  unsigned int NumberOfClusters;
+  _LARGE_INTEGER Cluster[1];
+
+};

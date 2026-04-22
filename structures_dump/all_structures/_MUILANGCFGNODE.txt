@@ -1,0 +1,12 @@
+// Структура: _MUILANGCFGNODE
+// Полей: 4
+// Строки в оригинале: 80799-80805
+struct _MUILANGCFGNODE
+{
+
+  __int16 LangSpec;
+  unsigned __int16 FallbackTypes;
+  unsigned __int16 Reserved;
+  __int16 FallbackSpecs[3];
+
+};

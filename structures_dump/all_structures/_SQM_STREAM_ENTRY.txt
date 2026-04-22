@@ -1,0 +1,10 @@
+// Структура: _SQM_STREAM_ENTRY
+// Полей: 2
+// Строки в оригинале: 125522-125526
+struct _SQM_STREAM_ENTRY
+{
+
+  unsigned int dwType;
+  _SQM_STREAM_ENTRY::<unnamed_type_val> val;
+
+};

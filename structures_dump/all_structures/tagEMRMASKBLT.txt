@@ -1,0 +1,31 @@
+// Структура: tagEMRMASKBLT
+// Полей: 23
+// Строки в оригинале: 96832-96857
+struct tagEMRMASKBLT
+{
+
+  tagEMR emr;
+  _RECTL rclBounds;
+  int xDest;
+  int yDest;
+  int cxDest;
+  int cyDest;
+  unsigned int dwRop;
+  int xSrc;
+  int ySrc;
+  tagXFORM xformSrc;
+  unsigned int crBkColorSrc;
+  unsigned int iUsageSrc;
+  unsigned int offBmiSrc;
+  unsigned int cbBmiSrc;
+  unsigned int offBitsSrc;
+  unsigned int cbBitsSrc;
+  int xMask;
+  int yMask;
+  unsigned int iUsageMask;
+  unsigned int offBmiMask;
+  unsigned int cbBmiMask;
+  unsigned int offBitsMask;
+  unsigned int cbBitsMask;
+
+};

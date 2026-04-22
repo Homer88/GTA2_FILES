@@ -1,0 +1,18 @@
+// Структура: _SYSDBG_LIVEDUMP_CONTROL
+// Полей: 10
+// Строки в оригинале: 79598-79610
+struct _SYSDBG_LIVEDUMP_CONTROL
+{
+
+  unsigned int Version;
+  unsigned int BugCheckCode;
+  unsigned int BugCheckParam1;
+  unsigned int BugCheckParam2;
+  unsigned int BugCheckParam3;
+  unsigned int BugCheckParam4;
+  void *DumpFileHandle;
+  void *CancelEventHandle;
+  _SYSDBG_LIVEDUMP_CONTROL_FLAGS Flags;
+  _SYSDBG_LIVEDUMP_CONTROL_ADDPAGES AddPagesControl;
+
+};

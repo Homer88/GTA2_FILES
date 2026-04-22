@@ -1,0 +1,27 @@
+// Структура: JOBOBJECT_IO_RATE_CONTROL_INFORMATION_NATIVE_V3
+// Полей: 19
+// Строки в оригинале: 96313-96334
+struct JOBOBJECT_IO_RATE_CONTROL_INFORMATION_NATIVE_V3
+{
+
+  __int64 MaxIops;
+  __int64 MaxBandwidth;
+  __int64 ReservationIops;
+  wchar_t *VolumeName;
+  unsigned int BaseIoSize;
+  JOB_OBJECT_IO_RATE_CONTROL_FLAGS ControlFlags;
+  unsigned __int16 VolumeNameLength;
+  __int64 CriticalReservationIops;
+  __int64 ReservationBandwidth;
+  __int64 CriticalReservationBandwidth;
+  __int64 MaxTimePercent;
+  __int64 ReservationTimePercent;
+  __int64 CriticalReservationTimePercent;
+  __int64 SoftMaxIops;
+  __int64 SoftMaxBandwidth;
+  __int64 SoftMaxTimePercent;
+  __int64 LimitExcessNotifyIops;
+  __int64 LimitExcessNotifyBandwidth;
+  __int64 LimitExcessNotifyTimePercent;
+
+};

@@ -1,0 +1,10 @@
+// Структура: tagBLOB
+// Полей: 2
+// Строки в оригинале: 31461-31465
+struct tagBLOB
+{
+
+  ULONG cbSize;
+  BYTE *pBlobData;
+
+};

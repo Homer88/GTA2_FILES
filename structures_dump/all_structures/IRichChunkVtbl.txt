@@ -1,0 +1,12 @@
+// Структура: IRichChunkVtbl
+// Полей: 4
+// Строки в оригинале: 34292-34298
+struct IRichChunkVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRichChunk *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRichChunk *This);
+  ULONG (__stdcall *Release)(IRichChunk *This);
+  HRESULT (__stdcall *GetData)(IRichChunk *This, ULONG *pFirstPos, ULONG *pLength, LPWSTR *ppsz, PROPVARIANT *pValue);
+
+};

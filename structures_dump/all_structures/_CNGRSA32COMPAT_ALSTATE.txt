@@ -1,0 +1,11 @@
+// Структура: _CNGRSA32COMPAT_ALSTATE
+// Полей: 3
+// Строки в оригинале: 148027-148032
+struct _CNGRSA32COMPAT_ALSTATE
+{
+
+  void *hBCryptHandle;
+  unsigned __int8 *pbAllocObject;
+  unsigned int cbAllocObject;
+
+};

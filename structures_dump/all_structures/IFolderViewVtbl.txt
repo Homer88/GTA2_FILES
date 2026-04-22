@@ -1,0 +1,25 @@
+// Структура: IFolderViewVtbl
+// Полей: 17
+// Строки в оригинале: 30644-30663
+struct IFolderViewVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFolderView *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFolderView *This);
+  ULONG (__stdcall *Release)(IFolderView *This);
+  HRESULT (__stdcall *GetCurrentViewMode)(IFolderView *This, UINT *pViewMode);
+  HRESULT (__stdcall *SetCurrentViewMode)(IFolderView *This, UINT ViewMode);
+  HRESULT (__stdcall *GetFolder)(IFolderView *This, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *Item)(IFolderView *This, int iItemIndex, LPITEMIDLIST *ppidl);
+  HRESULT (__stdcall *ItemCount)(IFolderView *This, UINT uFlags, int *pcItems);
+  HRESULT (__stdcall *Items)(IFolderView *This, UINT uFlags, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetSelectionMarkedItem)(IFolderView *This, int *piItem);
+  HRESULT (__stdcall *GetFocusedItem)(IFolderView *This, int *piItem);
+  HRESULT (__stdcall *GetItemPosition)(IFolderView *This, LPCITEMIDLIST pidl, POINT *ppt);
+  HRESULT (__stdcall *GetSpacing)(IFolderView *This, POINT *ppt);
+  HRESULT (__stdcall *GetDefaultSpacing)(IFolderView *This, POINT *ppt);
+  HRESULT (__stdcall *GetAutoArrange)(IFolderView *This);
+  HRESULT (__stdcall *SelectItem)(IFolderView *This, int iItem, DWORD dwFlags);
+  HRESULT (__stdcall *SelectAndPositionItems)(IFolderView *This, UINT cidl, LPCITEMIDLIST *apidl, POINT *apt, DWORD dwFlags);
+
+};

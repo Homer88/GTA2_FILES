@@ -1,0 +1,15 @@
+// Структура: tagPOINTER_TOUCH_INFO
+// Полей: 7
+// Строки в оригинале: 98798-98807
+struct tagPOINTER_TOUCH_INFO
+{
+
+  tagPOINTER_INFO pointerInfo;
+  unsigned int touchFlags;
+  unsigned int touchMask;
+  tagRECT rcContact;
+  tagRECT rcContactRaw;
+  unsigned int orientation;
+  unsigned int pressure;
+
+};

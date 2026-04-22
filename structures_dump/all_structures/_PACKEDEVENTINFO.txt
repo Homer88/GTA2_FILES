@@ -1,0 +1,11 @@
+// Структура: _PACKEDEVENTINFO
+// Полей: 3
+// Строки в оригинале: 89628-89633
+struct _PACKEDEVENTINFO
+{
+
+  unsigned int ulSize;
+  unsigned int ulNumEventsForLogFile;
+  unsigned int ulOffsets[];
+
+};

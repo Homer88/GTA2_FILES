@@ -1,0 +1,14 @@
+// Структура: IOleContainerVtbl
+// Полей: 6
+// Строки в оригинале: 27610-27618
+struct IOleContainerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleContainer *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleContainer *This);
+  ULONG (__stdcall *Release)(IOleContainer *This);
+  HRESULT (__stdcall *ParseDisplayName)(IOleContainer *This, IBindCtx *pbc, LPOLESTR pszDisplayName, ULONG *pchEaten, IMoniker **ppmkOut);
+  HRESULT (__stdcall *EnumObjects)(IOleContainer *This, DWORD grfFlags, IEnumUnknown **ppenum);
+  HRESULT (__stdcall *LockContainer)(IOleContainer *This, BOOL fLock);
+
+};

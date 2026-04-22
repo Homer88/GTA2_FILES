@@ -1,0 +1,13 @@
+// Структура: _IMAGE_ALPHA_RUNTIME_FUNCTION_ENTRY
+// Полей: 5
+// Строки в оригинале: 81728-81735
+struct _IMAGE_ALPHA_RUNTIME_FUNCTION_ENTRY
+{
+
+  unsigned int BeginAddress;
+  unsigned int EndAddress;
+  unsigned int ExceptionHandler;
+  unsigned int HandlerData;
+  unsigned int PrologEndAddress;
+
+};

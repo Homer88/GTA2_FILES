@@ -1,0 +1,9 @@
+// Структура: IActionProgressDialog
+// Полей: 1
+// Строки в оригинале: 35536-35539
+struct IActionProgressDialog
+{
+
+  struct IActionProgressDialogVtbl *lpVtbl;
+
+};

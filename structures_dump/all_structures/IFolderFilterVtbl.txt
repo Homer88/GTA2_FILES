@@ -1,0 +1,13 @@
+// Структура: IFolderFilterVtbl
+// Полей: 5
+// Строки в оригинале: 40402-40409
+struct IFolderFilterVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFolderFilter *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFolderFilter *This);
+  ULONG (__stdcall *Release)(IFolderFilter *This);
+  HRESULT (__stdcall *ShouldShow)(IFolderFilter *This, IShellFolder *psf, LPCITEMIDLIST pidlFolder, LPCITEMIDLIST pidlItem);
+  HRESULT (__stdcall *GetEnumFlags)(IFolderFilter *This, IShellFolder *psf, LPCITEMIDLIST pidlFolder, HWND *phwnd, DWORD *pgrfFlags);
+
+};

@@ -1,0 +1,10 @@
+// Структура: _CERT_ECC_SIGNATURE
+// Полей: 2
+// Строки в оригинале: 93315-93319
+struct _CERT_ECC_SIGNATURE
+{
+
+  _CRYPTOAPI_BLOB r;
+  _CRYPTOAPI_BLOB s;
+
+};

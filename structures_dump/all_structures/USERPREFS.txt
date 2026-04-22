@@ -1,0 +1,21 @@
+// Структура: USERPREFS
+// Полей: 13
+// Строки в оригинале: 141816-141831
+struct USERPREFS
+{
+
+  char signature[6];
+  unsigned __int16 version;
+  unsigned __int16 size;
+  char *sourceFilename;
+  void *sourceHandle;
+  char *destinationFilename;
+  unsigned __int8 penPatternAction;
+  unsigned __int8 nonSquarePenAction;
+  unsigned __int8 penModeAction;
+  unsigned __int8 textModeAction;
+  unsigned __int8 nonRectRegionAction;
+  int optimizePP;
+  unsigned __int16 reserved[6];
+
+};

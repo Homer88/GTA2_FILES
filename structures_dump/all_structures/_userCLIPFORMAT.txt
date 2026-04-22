@@ -1,0 +1,10 @@
+// Структура: _userCLIPFORMAT
+// Полей: 2
+// Строки в оригинале: 108269-108273
+struct _userCLIPFORMAT
+{
+
+  int fContext;
+  _userCLIPFORMAT::__MIDL_IWinTypes_0001 u;
+
+};

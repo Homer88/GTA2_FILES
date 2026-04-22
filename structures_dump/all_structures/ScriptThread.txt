@@ -1,0 +1,17 @@
+// Структура: ScriptThread
+// Полей: 9
+// Строки в оригинале: 9969-9980
+struct ScriptThread
+{
+
+  S68_1 field[1];
+  __declspec(align(4)) char field_4;
+  char field_5;
+  char field_6;
+  char field_7;
+  char Count;
+  char field_9;
+  _BYTE gapA[2029];
+  char field_0;
+
+};

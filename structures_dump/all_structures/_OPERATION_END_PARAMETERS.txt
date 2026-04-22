@@ -1,0 +1,11 @@
+// Структура: _OPERATION_END_PARAMETERS
+// Полей: 3
+// Строки в оригинале: 97085-97090
+struct _OPERATION_END_PARAMETERS
+{
+
+  unsigned int Version;
+  unsigned int OperationId;
+  unsigned int Flags;
+
+};

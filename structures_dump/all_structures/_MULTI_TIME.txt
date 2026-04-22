@@ -1,0 +1,11 @@
+// Структура: _MULTI_TIME
+// Полей: 3
+// Строки в оригинале: 96193-96198
+struct _MULTI_TIME
+{
+
+  _LARGE_INTEGER Qpc;
+  _LARGE_INTEGER HostQpc;
+  __int64 SystemTime;
+
+};

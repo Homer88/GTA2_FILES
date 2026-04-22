@@ -1,0 +1,32 @@
+// Структура: FolderItemVtbl
+// Полей: 24
+// Строки в оригинале: 30805-30831
+struct FolderItemVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(FolderItem *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(FolderItem *This);
+  ULONG (__stdcall *Release)(FolderItem *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(FolderItem *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(FolderItem *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(FolderItem *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(FolderItem *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Application)(FolderItem *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_Parent)(FolderItem *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_Name)(FolderItem *This, BSTR *pbs);
+  HRESULT (__stdcall *put_Name)(FolderItem *This, BSTR bs);
+  HRESULT (__stdcall *get_Path)(FolderItem *This, BSTR *pbs);
+  HRESULT (__stdcall *get_GetLink)(FolderItem *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_GetFolder)(FolderItem *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_IsLink)(FolderItem *This, VARIANT_BOOL *pb);
+  HRESULT (__stdcall *get_IsFolder)(FolderItem *This, VARIANT_BOOL *pb);
+  HRESULT (__stdcall *get_IsFileSystem)(FolderItem *This, VARIANT_BOOL *pb);
+  HRESULT (__stdcall *get_IsBrowsable)(FolderItem *This, VARIANT_BOOL *pb);
+  HRESULT (__stdcall *get_ModifyDate)(FolderItem *This, DATE *pdt);
+  HRESULT (__stdcall *put_ModifyDate)(FolderItem *This, DATE dt);
+  HRESULT (__stdcall *get_Size)(FolderItem *This, LONG *pul);
+  HRESULT (__stdcall *get_Type)(FolderItem *This, BSTR *pbs);
+  HRESULT (__stdcall *Verbs)(FolderItem *This, FolderItemVerbs **ppfic);
+  HRESULT (__stdcall *InvokeVerb)(FolderItem *This, VARIANT vVerb);
+
+};

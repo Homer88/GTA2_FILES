@@ -1,0 +1,23 @@
+// Структура: IIdleSettingsVtbl
+// Полей: 15
+// Строки в оригинале: 45025-45042
+struct IIdleSettingsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IIdleSettings *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IIdleSettings *This);
+  ULONG (__stdcall *Release)(IIdleSettings *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IIdleSettings *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IIdleSettings *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IIdleSettings *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IIdleSettings *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_IdleDuration)(IIdleSettings *This, BSTR *pDelay);
+  HRESULT (__stdcall *put_IdleDuration)(IIdleSettings *This, BSTR delay);
+  HRESULT (__stdcall *get_WaitTimeout)(IIdleSettings *This, BSTR *pTimeout);
+  HRESULT (__stdcall *put_WaitTimeout)(IIdleSettings *This, BSTR timeout);
+  HRESULT (__stdcall *get_StopOnIdleEnd)(IIdleSettings *This, VARIANT_BOOL *pStop);
+  HRESULT (__stdcall *put_StopOnIdleEnd)(IIdleSettings *This, VARIANT_BOOL stop);
+  HRESULT (__stdcall *get_RestartOnIdle)(IIdleSettings *This, VARIANT_BOOL *pRestart);
+  HRESULT (__stdcall *put_RestartOnIdle)(IIdleSettings *This, VARIANT_BOOL restart);
+
+};

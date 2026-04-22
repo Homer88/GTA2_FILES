@@ -1,0 +1,9 @@
+// Структура: ITfContextComposition
+// Полей: 1
+// Строки в оригинале: 32311-32314
+struct ITfContextComposition
+{
+
+  struct ITfContextCompositionVtbl *lpVtbl;
+
+};

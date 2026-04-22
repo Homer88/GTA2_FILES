@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_PORTABLE_WORKSPACE_EFI_LAUNCHER_INFORMATION
+// Полей: 1
+// Строки в оригинале: 112560-112563
+struct _SYSTEM_PORTABLE_WORKSPACE_EFI_LAUNCHER_INFORMATION
+{
+
+  unsigned __int8 EfiLauncherEnabled;
+
+};

@@ -1,0 +1,8 @@
+// Structure: HWND__
+// Lines: 2066 - 2069
+// Fields: 2
+
+struct HWND__
+{
+  int unused;
+};

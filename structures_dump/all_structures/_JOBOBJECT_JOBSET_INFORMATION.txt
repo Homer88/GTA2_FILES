@@ -1,0 +1,9 @@
+// Структура: _JOBOBJECT_JOBSET_INFORMATION
+// Полей: 1
+// Строки в оригинале: 90307-90310
+struct _JOBOBJECT_JOBSET_INFORMATION
+{
+
+  unsigned int MemberLevel;
+
+};

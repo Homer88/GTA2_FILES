@@ -1,0 +1,10 @@
+// Структура: _ACTRL_ALISTW
+// Полей: 2
+// Строки в оригинале: 229286-229290
+struct _ACTRL_ALISTW
+{
+
+  unsigned int cEntries;
+  _ACTRL_PROPERTY_ENTRYW *pPropertyAccessList;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _FILE_OBJECTID_INFORMATION
+// Полей: 3
+// Строки в оригинале: 88583-88588
+struct _FILE_OBJECTID_INFORMATION
+{
+
+  __int64 FileReference;
+  unsigned __int8 ObjectId[16];
+  $1D82EA173F7B66D2329ED009C6DE8A12 ___u2;
+
+};

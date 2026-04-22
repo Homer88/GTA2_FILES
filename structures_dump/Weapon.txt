@@ -1,0 +1,29 @@
+// Structure: Weapon
+// Lines: 4935 - 4959
+// Fields: 23
+
+struct Weapon
+{
+  unsigned __int16 Ammo;
+  char TimeToReload;
+  char field_3;
+  int SMG;
+  int field_8;
+  int field_C;
+  __int16 short;
+  char field_12;
+  char field_13;
+  Car *Car;
+  Weapon *NextWeapon;
+  WeaponType TypeWeapon;
+  char field_20;
+  char field_21;
+  char field_22;
+  char field_23;
+  Ped *Ped;
+  int SoundWeapon;
+  char field_2C;
+  char field_2D;
+  char field_2E;
+  char field_2F;
+};

@@ -1,0 +1,12 @@
+// Структура: _CRYPT_PROVIDER_DEFUSAGE
+// Полей: 4
+// Строки в оригинале: 122947-122953
+struct _CRYPT_PROVIDER_DEFUSAGE
+{
+
+  unsigned int cbStruct;
+  _GUID gActionID;
+  void *pDefPolicyCallbackData;
+  void *pDefSIPClientData;
+
+};

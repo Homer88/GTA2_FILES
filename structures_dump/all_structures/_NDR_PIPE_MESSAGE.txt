@@ -1,0 +1,15 @@
+// Структура: _NDR_PIPE_MESSAGE
+// Полей: 7
+// Строки в оригинале: 86530-86539
+struct _NDR_PIPE_MESSAGE
+{
+
+  unsigned __int16 Signature;
+  unsigned __int16 PipeId;
+  unsigned __int16 PipeStatus;
+  unsigned __int16 PipeFlags;
+  const unsigned __int8 *pTypeFormat;
+  _MIDL_STUB_MESSAGE *pStubMsg;
+  _GENERIC_PIPE_TYPE *pPipeObject;
+
+};

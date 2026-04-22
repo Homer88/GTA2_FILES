@@ -1,0 +1,15 @@
+// Структура: IExplorerBrowserEventsVtbl
+// Полей: 7
+// Строки в оригинале: 39281-39290
+struct IExplorerBrowserEventsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IExplorerBrowserEvents *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IExplorerBrowserEvents *This);
+  ULONG (__stdcall *Release)(IExplorerBrowserEvents *This);
+  HRESULT (__stdcall *OnNavigationPending)(IExplorerBrowserEvents *This, LPCITEMIDLIST pidlFolder);
+  HRESULT (__stdcall *OnViewCreated)(IExplorerBrowserEvents *This, IShellView *psv);
+  HRESULT (__stdcall *OnNavigationComplete)(IExplorerBrowserEvents *This, LPCITEMIDLIST pidlFolder);
+  HRESULT (__stdcall *OnNavigationFailed)(IExplorerBrowserEvents *This, LPCITEMIDLIST pidlFolder);
+
+};

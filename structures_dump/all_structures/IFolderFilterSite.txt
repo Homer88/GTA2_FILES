@@ -1,0 +1,9 @@
+// Структура: IFolderFilterSite
+// Полей: 1
+// Строки в оригинале: 40396-40399
+struct IFolderFilterSite
+{
+
+  struct IFolderFilterSiteVtbl *lpVtbl;
+
+};

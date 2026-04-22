@@ -1,0 +1,11 @@
+// Структура: _RTL_PROCESS_BACKTRACES_CONTROL
+// Полей: 3
+// Строки в оригинале: 88684-88689
+struct _RTL_PROCESS_BACKTRACES_CONTROL
+{
+
+  unsigned int ControlCode;
+  unsigned int ControlSize;
+  $741BD7A890E0A80D4B2CC6F820860FB9 ___u2;
+
+};

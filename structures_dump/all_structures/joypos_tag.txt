@@ -1,0 +1,14 @@
+// Структура: joypos_tag
+// Полей: 6
+// Строки в оригинале: 29633-29641
+struct joypos_tag
+{
+
+  DWORD dwX;
+  DWORD dwY;
+  DWORD dwZ;
+  DWORD dwR;
+  DWORD dwU;
+  DWORD dwV;
+
+};

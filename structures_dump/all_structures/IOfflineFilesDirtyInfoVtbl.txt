@@ -1,0 +1,13 @@
+// Структура: IOfflineFilesDirtyInfoVtbl
+// Полей: 5
+// Строки в оригинале: 28648-28655
+struct IOfflineFilesDirtyInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesDirtyInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesDirtyInfo *This);
+  ULONG (__stdcall *Release)(IOfflineFilesDirtyInfo *This);
+  HRESULT (__stdcall *LocalDirtyByteCount)(IOfflineFilesDirtyInfo *This, LARGE_INTEGER *pDirtyByteCount);
+  HRESULT (__stdcall *RemoteDirtyByteCount)(IOfflineFilesDirtyInfo *This, LARGE_INTEGER *pDirtyByteCount);
+
+};

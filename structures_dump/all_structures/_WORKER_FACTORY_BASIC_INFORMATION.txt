@@ -1,0 +1,32 @@
+// Структура: _WORKER_FACTORY_BASIC_INFORMATION
+// Полей: 24
+// Строки в оригинале: 94692-94718
+struct _WORKER_FACTORY_BASIC_INFORMATION
+{
+
+  _LARGE_INTEGER Timeout;
+  _LARGE_INTEGER RetryTimeout;
+  _LARGE_INTEGER IdleTimeout;
+  unsigned __int8 Paused;
+  unsigned __int8 TimerSet;
+  unsigned __int8 QueuedToExWorker;
+  unsigned __int8 MayCreate;
+  unsigned __int8 CreateInProgress;
+  unsigned __int8 InsertedIntoQueue;
+  unsigned __int8 Shutdown;
+  unsigned int BindingCount;
+  unsigned int ThreadMinimum;
+  unsigned int ThreadMaximum;
+  unsigned int PendingWorkerCount;
+  unsigned int WaitingWorkerCount;
+  unsigned int TotalWorkerCount;
+  unsigned int ReleaseCount;
+  __int64 InfiniteWaitGoal;
+  int (__stdcall *StartRoutine)(void *);
+  void *StartParameter;
+  void *ProcessId;
+  unsigned int StackReserve;
+  unsigned int StackCommit;
+  int LastThreadCreationStatus;
+
+};

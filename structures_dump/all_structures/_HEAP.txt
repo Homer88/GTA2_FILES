@@ -1,0 +1,53 @@
+// Структура: _HEAP
+// Полей: 45
+// Строки в оригинале: 21030-21077
+struct _HEAP
+{
+
+  $EF14D1AEF4CD5C1C6BAC41182E861C82 ___u0;
+  unsigned int Flags;
+  unsigned int ForceFlags;
+  unsigned int CompatibilityFlags;
+  unsigned int EncodeFlagMask;
+  _HEAP_ENTRY Encoding;
+  unsigned int Interceptor;
+  unsigned int VirtualMemoryThreshold;
+  unsigned int Signature;
+  unsigned int SegmentReserve;
+  unsigned int SegmentCommit;
+  unsigned int DeCommitFreeBlockThreshold;
+  unsigned int DeCommitTotalFreeThreshold;
+  unsigned int TotalFreeSize;
+  unsigned int MaximumAllocationSize;
+  unsigned __int16 ProcessHeapsListIndex;
+  unsigned __int16 HeaderValidateLength;
+  void *HeaderValidateCopy;
+  unsigned __int16 NextAvailableTagIndex;
+  unsigned __int16 MaximumTagIndex;
+  _HEAP_TAG_ENTRY *TagEntries;
+  _LIST_ENTRY UCRList;
+  unsigned int AlignRound;
+  unsigned int AlignMask;
+  _LIST_ENTRY VirtualAllocdBlocks;
+  _LIST_ENTRY SegmentList;
+  unsigned __int16 AllocatorBackTraceIndex;
+  unsigned int NonDedicatedListLength;
+  void *BlocksIndex;
+  void *UCRIndex;
+  _HEAP_PSEUDO_TAG_ENTRY *PseudoTagEntries;
+  _LIST_ENTRY FreeLists;
+  _HEAP_LOCK *LockVariable;
+  int (__stdcall *CommitRoutine)(void *, void **, unsigned int *);
+  _RTL_RUN_ONCE StackTraceInitVar;
+  _RTL_HEAP_MEMORY_LIMIT_DATA CommitLimitData;
+  void *FrontEndHeap;
+  unsigned __int16 FrontHeapLockCount;
+  unsigned __int8 FrontEndHeapType;
+  unsigned __int8 RequestedFrontEndHeapType;
+  wchar_t *FrontEndHeapUsageData;
+  unsigned __int16 FrontEndHeapMaximumIndex;
+  volatile unsigned __int8 FrontEndHeapStatusBitmap[257];
+  _HEAP_COUNTERS Counters;
+  _HEAP_TUNING_PARAMETERS TuningParameters;
+
+};

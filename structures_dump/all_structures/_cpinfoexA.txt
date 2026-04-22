@@ -1,0 +1,14 @@
+// Структура: _cpinfoexA
+// Полей: 6
+// Строки в оригинале: 81762-81770
+struct _cpinfoexA
+{
+
+  unsigned int MaxCharSize;
+  unsigned __int8 DefaultChar[2];
+  unsigned __int8 LeadByte[12];
+  wchar_t UnicodeDefaultChar;
+  unsigned int CodePage;
+  char CodePageName[260];
+
+};

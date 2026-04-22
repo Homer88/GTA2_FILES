@@ -1,0 +1,9 @@
+// Структура: IPersistFolder
+// Полей: 1
+// Строки в оригинале: 32641-32644
+struct IPersistFolder
+{
+
+  struct IPersistFolderVtbl *lpVtbl;
+
+};

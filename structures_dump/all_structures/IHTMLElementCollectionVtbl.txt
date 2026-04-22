@@ -1,0 +1,21 @@
+// Структура: IHTMLElementCollectionVtbl
+// Полей: 13
+// Строки в оригинале: 35754-35769
+struct IHTMLElementCollectionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLElementCollection *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLElementCollection *This);
+  ULONG (__stdcall *Release)(IHTMLElementCollection *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLElementCollection *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLElementCollection *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLElementCollection *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLElementCollection *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *toString)(IHTMLElementCollection *This, BSTR *String);
+  HRESULT (__stdcall *put_length)(IHTMLElementCollection *This, int v);
+  HRESULT (__stdcall *get_length)(IHTMLElementCollection *This, int *p);
+  HRESULT (__stdcall *get__newEnum)(IHTMLElementCollection *This, IUnknown **p);
+  HRESULT (__stdcall *item)(IHTMLElementCollection *This, VARIANT name, VARIANT index, IDispatch **pdisp);
+  HRESULT (__stdcall *tags)(IHTMLElementCollection *This, VARIANT tagName, IDispatch **pdisp);
+
+};

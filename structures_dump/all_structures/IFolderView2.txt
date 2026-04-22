@@ -1,0 +1,9 @@
+// Структура: IFolderView2
+// Полей: 1
+// Строки в оригинале: 31430-31433
+struct IFolderView2
+{
+
+  struct IFolderView2Vtbl *lpVtbl;
+
+};

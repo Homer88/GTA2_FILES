@@ -1,0 +1,9 @@
+// Структура: _EXIT_THREAD_DEBUG_INFO
+// Полей: 1
+// Строки в оригинале: 96363-96366
+struct _EXIT_THREAD_DEBUG_INFO
+{
+
+  unsigned int dwExitCode;
+
+};

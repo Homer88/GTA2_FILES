@@ -1,0 +1,15 @@
+// Структура: _NCRYPT_VSM_KEY_ATTESTATION_CLAIM_RESTRICTIONS
+// Полей: 7
+// Строки в оригинале: 99940-99949
+struct _NCRYPT_VSM_KEY_ATTESTATION_CLAIM_RESTRICTIONS
+{
+
+  unsigned int Version;
+  unsigned __int64 TrustletId;
+  unsigned int MinSvn;
+  unsigned int FlagsMask;
+  unsigned int FlagsExpected;
+  unsigned __int32 AllowDebugging : 1;
+  unsigned __int32 Reserved : 31;
+
+};

@@ -1,0 +1,23 @@
+// Структура: tagTVITEMEXW
+// Полей: 15
+// Строки в оригинале: 125028-125045
+struct tagTVITEMEXW
+{
+
+  unsigned int mask;
+  _TREEITEM *hItem;
+  unsigned int state;
+  unsigned int stateMask;
+  wchar_t *pszText;
+  int cchTextMax;
+  int iImage;
+  int iSelectedImage;
+  int cChildren;
+  int lParam;
+  int iIntegral;
+  unsigned int uStateEx;
+  HWND__ *hwnd;
+  int iExpandedImage;
+  int iReserved;
+
+};

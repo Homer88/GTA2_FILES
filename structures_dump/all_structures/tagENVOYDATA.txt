@@ -1,0 +1,11 @@
+// Структура: tagENVOYDATA
+// Полей: 3
+// Строки в оригинале: 246115-246120
+struct tagENVOYDATA
+{
+
+  _GUID contextId;
+  unsigned int ulJunk1;
+  unsigned int ulJunk2;
+
+};

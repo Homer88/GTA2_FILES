@@ -1,0 +1,19 @@
+// Структура: _VM_COUNTERS
+// Полей: 11
+// Строки в оригинале: 92709-92722
+struct _VM_COUNTERS
+{
+
+  unsigned int PeakVirtualSize;
+  unsigned int VirtualSize;
+  unsigned int PageFaultCount;
+  unsigned int PeakWorkingSetSize;
+  unsigned int WorkingSetSize;
+  unsigned int QuotaPeakPagedPoolUsage;
+  unsigned int QuotaPagedPoolUsage;
+  unsigned int QuotaPeakNonPagedPoolUsage;
+  unsigned int QuotaNonPagedPoolUsage;
+  unsigned int PagefileUsage;
+  unsigned int PeakPagefileUsage;
+
+};

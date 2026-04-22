@@ -1,0 +1,16 @@
+// Структура: IPropertyStoreVtbl
+// Полей: 8
+// Строки в оригинале: 34543-34553
+struct IPropertyStoreVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyStore *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyStore *This);
+  ULONG (__stdcall *Release)(IPropertyStore *This);
+  HRESULT (__stdcall *GetCount)(IPropertyStore *This, DWORD *cProps);
+  HRESULT (__stdcall *GetAt)(IPropertyStore *This, DWORD iProp, PROPERTYKEY *pkey);
+  HRESULT (__stdcall *GetValue)(IPropertyStore *This, const PROPERTYKEY *const key, PROPVARIANT *pv);
+  HRESULT (__stdcall *SetValue)(IPropertyStore *This, const PROPERTYKEY *const key, const PROPVARIANT *const propvar);
+  HRESULT (__stdcall *Commit)(IPropertyStore *This);
+
+};

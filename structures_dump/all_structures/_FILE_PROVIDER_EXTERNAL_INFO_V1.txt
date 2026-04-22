@@ -1,0 +1,11 @@
+// Структура: _FILE_PROVIDER_EXTERNAL_INFO_V1
+// Полей: 3
+// Строки в оригинале: 93704-93709
+struct _FILE_PROVIDER_EXTERNAL_INFO_V1
+{
+
+  unsigned int Version;
+  unsigned int Algorithm;
+  unsigned int Flags;
+
+};

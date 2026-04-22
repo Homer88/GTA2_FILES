@@ -1,0 +1,10 @@
+// Структура: tagCADATE
+// Полей: 2
+// Строки в оригинале: 31634-31638
+struct tagCADATE
+{
+
+  ULONG cElems;
+  DATE *pElems;
+
+};

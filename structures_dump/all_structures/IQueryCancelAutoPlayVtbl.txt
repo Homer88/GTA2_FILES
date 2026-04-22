@@ -1,0 +1,12 @@
+// Структура: IQueryCancelAutoPlayVtbl
+// Полей: 4
+// Строки в оригинале: 45131-45137
+struct IQueryCancelAutoPlayVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IQueryCancelAutoPlay *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IQueryCancelAutoPlay *This);
+  ULONG (__stdcall *Release)(IQueryCancelAutoPlay *This);
+  HRESULT (__stdcall *AllowAutoPlay)(IQueryCancelAutoPlay *This, LPCWSTR pszPath, DWORD dwContentType, LPCWSTR pszLabel, DWORD dwSerialNumber);
+
+};

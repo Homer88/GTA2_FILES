@@ -1,0 +1,10 @@
+// Структура: _SYSDBG_MSR
+// Полей: 2
+// Строки в оригинале: 97961-97965
+struct _SYSDBG_MSR
+{
+
+  unsigned int Msr;
+  unsigned __int64 Data;
+
+};

@@ -1,0 +1,9 @@
+// Structure: UnwindMapEntry
+// Lines: 2401 - 2405
+// Fields: 3
+
+struct UnwindMapEntry
+{
+  int toState __dec __tabform(NODUPS,1);
+  _UNKNOWN *action;
+};

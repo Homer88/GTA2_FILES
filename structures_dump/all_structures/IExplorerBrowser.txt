@@ -1,0 +1,9 @@
+// Структура: IExplorerBrowser
+// Полей: 1
+// Строки в оригинале: 41433-41436
+struct IExplorerBrowser
+{
+
+  struct IExplorerBrowserVtbl *lpVtbl;
+
+};

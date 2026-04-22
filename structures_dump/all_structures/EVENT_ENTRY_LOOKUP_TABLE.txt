@@ -1,0 +1,11 @@
+// Структура: EVENT_ENTRY_LOOKUP_TABLE
+// Полей: 3
+// Строки в оригинале: 150056-150061
+struct EVENT_ENTRY_LOOKUP_TABLE
+{
+
+  EVENT_ENTRY *EntryBuckets[32];
+  unsigned int NumEventEntries;
+  unsigned int NextBucketToFlush;
+
+};

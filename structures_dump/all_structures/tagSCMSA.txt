@@ -1,0 +1,11 @@
+// Структура: tagSCMSA
+// Полей: 3
+// Строки в оригинале: 227578-227583
+struct tagSCMSA
+{
+
+  unsigned __int16 wNumEntries;
+  unsigned __int16 wSecurityOffset;
+  wchar_t awszStringArray[62];
+
+};

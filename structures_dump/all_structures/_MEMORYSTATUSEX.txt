@@ -1,0 +1,17 @@
+// Структура: _MEMORYSTATUSEX
+// Полей: 9
+// Строки в оригинале: 83609-83620
+struct _MEMORYSTATUSEX
+{
+
+  unsigned int dwLength;
+  unsigned int dwMemoryLoad;
+  unsigned __int64 ullTotalPhys;
+  unsigned __int64 ullAvailPhys;
+  unsigned __int64 ullTotalPageFile;
+  unsigned __int64 ullAvailPageFile;
+  unsigned __int64 ullTotalVirtual;
+  unsigned __int64 ullAvailVirtual;
+  unsigned __int64 ullAvailExtendedVirtual;
+
+};

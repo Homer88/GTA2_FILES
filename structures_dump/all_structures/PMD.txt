@@ -1,0 +1,11 @@
+// Структура: PMD
+// Полей: 3
+// Строки в оригинале: 58853-58858
+struct PMD
+{
+
+  int mdisp;
+  int pdisp;
+  int vdisp;
+
+};

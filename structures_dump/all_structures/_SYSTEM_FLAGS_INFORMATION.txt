@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_FLAGS_INFORMATION
+// Полей: 1
+// Строки в оригинале: 110111-110114
+struct _SYSTEM_FLAGS_INFORMATION
+{
+
+  unsigned int Flags;
+
+};

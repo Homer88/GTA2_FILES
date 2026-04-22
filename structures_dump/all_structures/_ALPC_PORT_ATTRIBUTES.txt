@@ -1,0 +1,17 @@
+// Структура: _ALPC_PORT_ATTRIBUTES
+// Полей: 9
+// Строки в оригинале: 80052-80063
+struct _ALPC_PORT_ATTRIBUTES
+{
+
+  unsigned int Flags;
+  _SECURITY_QUALITY_OF_SERVICE SecurityQos;
+  unsigned int MaxMessageLength;
+  unsigned int MemoryBandwidth;
+  unsigned int MaxPoolUsage;
+  unsigned int MaxSectionSize;
+  unsigned int MaxViewSize;
+  unsigned int MaxTotalSectionSize;
+  unsigned int DupObjectTypes;
+
+};

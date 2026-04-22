@@ -1,0 +1,12 @@
+// Структура: IDummyHICONIncluderVtbl
+// Полей: 4
+// Строки в оригинале: 351428-351434
+struct IDummyHICONIncluderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDummyHICONIncluder *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDummyHICONIncluder *This);
+  ULONG (__stdcall *Release)(IDummyHICONIncluder *This);
+  HRESULT (__stdcall *Dummy)(IDummyHICONIncluder *This, HICON h1, HDC h2);
+
+};

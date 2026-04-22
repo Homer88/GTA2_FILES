@@ -1,0 +1,9 @@
+// Структура: IUri
+// Полей: 1
+// Строки в оригинале: 33198-33201
+struct IUri
+{
+
+  struct IUriVtbl *lpVtbl;
+
+};

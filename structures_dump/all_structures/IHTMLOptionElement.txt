@@ -1,0 +1,9 @@
+// Структура: IHTMLOptionElement
+// Полей: 1
+// Строки в оригинале: 38900-38903
+struct IHTMLOptionElement
+{
+
+  struct IHTMLOptionElementVtbl *lpVtbl;
+
+};

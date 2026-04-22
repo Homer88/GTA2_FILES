@@ -1,0 +1,11 @@
+// Структура: _ACCESS_DENIED_CALLBACK_ACE
+// Полей: 3
+// Строки в оригинале: 111725-111730
+struct _ACCESS_DENIED_CALLBACK_ACE
+{
+
+  _ACE_HEADER Header;
+  unsigned int Mask;
+  unsigned int SidStart;
+
+};

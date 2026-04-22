@@ -1,0 +1,17 @@
+// Структура: IViewObjectVtbl
+// Полей: 9
+// Строки в оригинале: 28820-28831
+struct IViewObjectVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IViewObject *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IViewObject *This);
+  ULONG (__stdcall *Release)(IViewObject *This);
+  HRESULT (__stdcall *Draw)(IViewObject *This, DWORD dwDrawAspect, LONG lindex, void *pvAspect, DVTARGETDEVICE *ptd, HDC hdcTargetDev, HDC hdcDraw, LPCRECTL lprcBounds, LPCRECTL lprcWBounds, BOOL (__stdcall *pfnContinue)(ULONG_PTR dwContinue), ULONG_PTR dwContinue);
+  HRESULT (__stdcall *GetColorSet)(IViewObject *This, DWORD dwDrawAspect, LONG lindex, void *pvAspect, DVTARGETDEVICE *ptd, HDC hicTargetDev, LOGPALETTE **ppColorSet);
+  HRESULT (__stdcall *Freeze)(IViewObject *This, DWORD dwDrawAspect, LONG lindex, void *pvAspect, DWORD *pdwFreeze);
+  HRESULT (__stdcall *Unfreeze)(IViewObject *This, DWORD dwFreeze);
+  HRESULT (__stdcall *SetAdvise)(IViewObject *This, DWORD aspects, DWORD advf, IAdviseSink *pAdvSink);
+  HRESULT (__stdcall *GetAdvise)(IViewObject *This, DWORD *pAspects, DWORD *pAdvf, IAdviseSink **ppAdvSink);
+
+};

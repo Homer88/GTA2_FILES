@@ -1,0 +1,12 @@
+// Структура: BSMINFO
+// Полей: 4
+// Строки в оригинале: 109198-109204
+struct BSMINFO
+{
+
+  unsigned int cbSize;
+  HDESK__ *hdesk;
+  HWND__ *hwnd;
+  _LUID luid;
+
+};

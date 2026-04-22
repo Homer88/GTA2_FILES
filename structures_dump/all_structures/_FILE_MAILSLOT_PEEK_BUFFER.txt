@@ -1,0 +1,11 @@
+// Структура: _FILE_MAILSLOT_PEEK_BUFFER
+// Полей: 3
+// Строки в оригинале: 108606-108611
+struct _FILE_MAILSLOT_PEEK_BUFFER
+{
+
+  unsigned int ReadDataAvailable;
+  unsigned int NumberOfMessages;
+  unsigned int MessageLength;
+
+};

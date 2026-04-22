@@ -1,0 +1,13 @@
+// Структура: IPipeLongVtbl
+// Полей: 5
+// Строки в оригинале: 351509-351516
+struct IPipeLongVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPipeLong *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPipeLong *This);
+  ULONG (__stdcall *Release)(IPipeLong *This);
+  HRESULT (__stdcall *Pull)(IPipeLong *This, LONG *buf, ULONG cRequest, ULONG *pcReturned);
+  HRESULT (__stdcall *Push)(IPipeLong *This, LONG *buf, ULONG cSent);
+
+};

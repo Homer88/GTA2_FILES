@@ -1,0 +1,10 @@
+// Структура: IShellIconOverlayVtbl
+// Полей: 2
+// Строки в оригинале: 36897-36901
+struct IShellIconOverlayVtbl
+{
+
+  HRESULT (__stdcall *GetOverlayIndex)(IShellIconOverlay *This, LPCITEMIDLIST pidl, int *pIndex);
+  HRESULT (__stdcall *GetOverlayIconIndex)(IShellIconOverlay *This, LPCITEMIDLIST pidl, int *pIconIndex);
+
+};

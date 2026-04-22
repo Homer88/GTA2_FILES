@@ -1,0 +1,20 @@
+// Структура: _SAFER_CODE_PROPERTIES_V1
+// Полей: 12
+// Строки в оригинале: 105497-105511
+struct _SAFER_CODE_PROPERTIES_V1
+{
+
+  unsigned int cbSize;
+  unsigned int dwCheckFlags;
+  const wchar_t *ImagePath;
+  void *hImageFileHandle;
+  unsigned int UrlZoneId;
+  unsigned __int8 ImageHash[64];
+  unsigned int dwImageHashSize;
+  _LARGE_INTEGER ImageSize;
+  unsigned int HashAlgorithm;
+  unsigned __int8 *pByteBlock;
+  HWND__ *hWndParent;
+  unsigned int dwWVTUIChoice;
+
+};

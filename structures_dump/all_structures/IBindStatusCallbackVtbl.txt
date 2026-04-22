@@ -1,0 +1,19 @@
+// Структура: IBindStatusCallbackVtbl
+// Полей: 11
+// Строки в оригинале: 41692-41705
+struct IBindStatusCallbackVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IBindStatusCallback *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IBindStatusCallback *This);
+  ULONG (__stdcall *Release)(IBindStatusCallback *This);
+  HRESULT (__stdcall *OnStartBinding)(IBindStatusCallback *This, DWORD dwReserved, IBinding *pib);
+  HRESULT (__stdcall *GetPriority)(IBindStatusCallback *This, LONG *pnPriority);
+  HRESULT (__stdcall *OnLowResource)(IBindStatusCallback *This, DWORD reserved);
+  HRESULT (__stdcall *OnProgress)(IBindStatusCallback *This, ULONG ulProgress, ULONG ulProgressMax, ULONG ulStatusCode, LPCWSTR szStatusText);
+  HRESULT (__stdcall *OnStopBinding)(IBindStatusCallback *This, HRESULT hresult, LPCWSTR szError);
+  HRESULT (__stdcall *GetBindInfo)(IBindStatusCallback *This, DWORD *grfBINDF, BINDINFO *pbindinfo);
+  HRESULT (__stdcall *OnDataAvailable)(IBindStatusCallback *This, DWORD grfBSCF, DWORD dwSize, FORMATETC *pformatetc, STGMEDIUM *pstgmed);
+  HRESULT (__stdcall *OnObjectAvailable)(IBindStatusCallback *This, const IID *const riid, IUnknown *punk);
+
+};

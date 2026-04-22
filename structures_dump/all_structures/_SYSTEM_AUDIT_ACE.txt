@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_AUDIT_ACE
+// Полей: 3
+// Строки в оригинале: 105606-105611
+struct _SYSTEM_AUDIT_ACE
+{
+
+  _ACE_HEADER Header;
+  unsigned int Mask;
+  unsigned int SidStart;
+
+};

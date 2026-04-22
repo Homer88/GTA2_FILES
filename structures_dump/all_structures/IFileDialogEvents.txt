@@ -1,0 +1,9 @@
+// Структура: IFileDialogEvents
+// Полей: 1
+// Строки в оригинале: 34488-34491
+struct IFileDialogEvents
+{
+
+  struct IFileDialogEventsVtbl *lpVtbl;
+
+};

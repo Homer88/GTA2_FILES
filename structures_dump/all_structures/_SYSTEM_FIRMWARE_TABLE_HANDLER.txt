@@ -1,0 +1,12 @@
+// Структура: _SYSTEM_FIRMWARE_TABLE_HANDLER
+// Полей: 4
+// Строки в оригинале: 82836-82842
+struct _SYSTEM_FIRMWARE_TABLE_HANDLER
+{
+
+  unsigned int ProviderSignature;
+  unsigned __int8 Register;
+  int (__cdecl *FirmwareTableHandler)(_SYSTEM_FIRMWARE_TABLE_INFORMATION *);
+  void *DriverObject;
+
+};

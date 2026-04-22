@@ -1,0 +1,15 @@
+// Структура: _SEC_WINNT_AUTH_IDENTITY_W
+// Полей: 7
+// Строки в оригинале: 81074-81083
+struct _SEC_WINNT_AUTH_IDENTITY_W
+{
+
+  wchar_t *User;
+  unsigned int UserLength;
+  wchar_t *Domain;
+  unsigned int DomainLength;
+  wchar_t *Password;
+  unsigned int PasswordLength;
+  unsigned int Flags;
+
+};

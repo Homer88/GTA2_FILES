@@ -1,0 +1,10 @@
+// Структура: _LDR_IMPORT_CALLBACK_INFO
+// Полей: 2
+// Строки в оригинале: 81368-81372
+struct _LDR_IMPORT_CALLBACK_INFO
+{
+
+  void (__stdcall *ImportCallbackRoutine)(void *, char *);
+  void *ImportCallbackParameter;
+
+};

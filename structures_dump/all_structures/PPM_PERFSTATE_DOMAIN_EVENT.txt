@@ -1,0 +1,12 @@
+// Структура: PPM_PERFSTATE_DOMAIN_EVENT
+// Полей: 4
+// Строки в оригинале: 85684-85690
+struct PPM_PERFSTATE_DOMAIN_EVENT
+{
+
+  unsigned int State;
+  unsigned int Latency;
+  unsigned int Speed;
+  unsigned __int64 Processors;
+
+};

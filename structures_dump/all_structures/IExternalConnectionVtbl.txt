@@ -1,0 +1,13 @@
+// Структура: IExternalConnectionVtbl
+// Полей: 5
+// Строки в оригинале: 182309-182316
+struct IExternalConnectionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IExternalConnection *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IExternalConnection *This);
+  ULONG (__stdcall *Release)(IExternalConnection *This);
+  DWORD (__stdcall *AddConnection)(IExternalConnection *This, DWORD extconn, DWORD reserved);
+  DWORD (__stdcall *ReleaseConnection)(IExternalConnection *This, DWORD extconn, DWORD reserved, BOOL fLastReleaseCloses);
+
+};

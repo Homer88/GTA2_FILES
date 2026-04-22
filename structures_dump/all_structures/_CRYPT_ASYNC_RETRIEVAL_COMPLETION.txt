@@ -1,0 +1,10 @@
+// Структура: _CRYPT_ASYNC_RETRIEVAL_COMPLETION
+// Полей: 2
+// Строки в оригинале: 80941-80945
+struct _CRYPT_ASYNC_RETRIEVAL_COMPLETION
+{
+
+  void (__stdcall *pfnCompletion)(void *, unsigned int, const char *, char *, void *);
+  void *pvCompletion;
+
+};

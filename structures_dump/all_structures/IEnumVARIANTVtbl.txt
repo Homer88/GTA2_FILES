@@ -1,0 +1,15 @@
+// Структура: IEnumVARIANTVtbl
+// Полей: 7
+// Строки в оригинале: 32538-32547
+struct IEnumVARIANTVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumVARIANT *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumVARIANT *This);
+  ULONG (__stdcall *Release)(IEnumVARIANT *This);
+  HRESULT (__stdcall *Next)(IEnumVARIANT *This, ULONG celt, VARIANT *rgVar, ULONG *pCeltFetched);
+  HRESULT (__stdcall *Skip)(IEnumVARIANT *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumVARIANT *This);
+  HRESULT (__stdcall *Clone)(IEnumVARIANT *This, IEnumVARIANT **ppEnum);
+
+};

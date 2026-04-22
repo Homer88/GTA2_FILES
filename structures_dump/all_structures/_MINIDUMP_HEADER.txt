@@ -1,0 +1,15 @@
+// Структура: _MINIDUMP_HEADER
+// Полей: 7
+// Строки в оригинале: 123144-123153
+struct _MINIDUMP_HEADER
+{
+
+  unsigned int Signature;
+  unsigned int Version;
+  unsigned int NumberOfStreams;
+  unsigned int StreamDirectoryRva;
+  unsigned int CheckSum;
+  $726A17CE83E57534AEAE47CF2E04B483 ___u5;
+  unsigned __int64 Flags;
+
+};

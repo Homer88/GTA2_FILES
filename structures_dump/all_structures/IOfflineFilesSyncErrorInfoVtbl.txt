@@ -1,0 +1,20 @@
+// Структура: IOfflineFilesSyncErrorInfoVtbl
+// Полей: 12
+// Строки в оригинале: 28134-28148
+struct IOfflineFilesSyncErrorInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesSyncErrorInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesSyncErrorInfo *This);
+  ULONG (__stdcall *Release)(IOfflineFilesSyncErrorInfo *This);
+  HRESULT (__stdcall *GetRawData)(IOfflineFilesSyncErrorInfo *This, BYTE_BLOB **ppBlob);
+  HRESULT (__stdcall *GetDescription)(IOfflineFilesSyncErrorInfo *This, LPWSTR *ppszDescription);
+  HRESULT (__stdcall *GetSyncOperation)(IOfflineFilesSyncErrorInfo *This, OFFLINEFILES_SYNC_OPERATION *pSyncOp);
+  HRESULT (__stdcall *GetItemChangeFlags)(IOfflineFilesSyncErrorInfo *This, DWORD *pdwItemChangeFlags);
+  HRESULT (__stdcall *InfoEnumerated)(IOfflineFilesSyncErrorInfo *This, BOOL *pbLocalEnumerated, BOOL *pbRemoteEnumerated, BOOL *pbOriginalEnumerated);
+  HRESULT (__stdcall *InfoAvailable)(IOfflineFilesSyncErrorInfo *This, BOOL *pbLocalInfo, BOOL *pbRemoteInfo, BOOL *pbOriginalInfo);
+  HRESULT (__stdcall *GetLocalInfo)(IOfflineFilesSyncErrorInfo *This, IOfflineFilesSyncErrorItemInfo **ppInfo);
+  HRESULT (__stdcall *GetRemoteInfo)(IOfflineFilesSyncErrorInfo *This, IOfflineFilesSyncErrorItemInfo **ppInfo);
+  HRESULT (__stdcall *GetOriginalInfo)(IOfflineFilesSyncErrorInfo *This, IOfflineFilesSyncErrorItemInfo **ppInfo);
+
+};

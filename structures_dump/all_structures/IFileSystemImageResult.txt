@@ -1,0 +1,9 @@
+// Структура: IFileSystemImageResult
+// Полей: 1
+// Строки в оригинале: 41208-41211
+struct IFileSystemImageResult
+{
+
+  struct IFileSystemImageResultVtbl *lpVtbl;
+
+};

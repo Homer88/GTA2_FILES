@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_SECUREBOOT_POLICY_INFORMATION
+// Полей: 3
+// Строки в оригинале: 91786-91791
+struct _SYSTEM_SECUREBOOT_POLICY_INFORMATION
+{
+
+  _GUID PolicyPublisher;
+  unsigned int PolicyVersion;
+  unsigned int PolicyOptions;
+
+};

@@ -1,0 +1,13 @@
+// Структура: BREAK_ON_STATUS_BUFFER
+// Полей: 5
+// Строки в оригинале: 111176-111183
+struct BREAK_ON_STATUS_BUFFER
+{
+
+  int NtStatus;
+  unsigned int Win32Error;
+  unsigned int ThreadId;
+  unsigned int ProcessId;
+  char ImageFileName[16];
+
+};

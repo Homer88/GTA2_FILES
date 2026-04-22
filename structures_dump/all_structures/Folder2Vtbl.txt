@@ -1,0 +1,30 @@
+// Структура: Folder2Vtbl
+// Полей: 22
+// Строки в оригинале: 40354-40378
+struct Folder2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(Folder2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(Folder2 *This);
+  ULONG (__stdcall *Release)(Folder2 *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(Folder2 *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(Folder2 *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(Folder2 *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(Folder2 *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Title)(Folder2 *This, BSTR *pbs);
+  HRESULT (__stdcall *get_Application)(Folder2 *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_Parent)(Folder2 *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_ParentFolder)(Folder2 *This, Folder **ppsf);
+  HRESULT (__stdcall *Items)(Folder2 *This, FolderItems **ppid);
+  HRESULT (__stdcall *ParseName)(Folder2 *This, BSTR bName, FolderItem **ppid);
+  HRESULT (__stdcall *NewFolder)(Folder2 *This, BSTR bName, VARIANT vOptions);
+  HRESULT (__stdcall *MoveHere)(Folder2 *This, VARIANT vItem, VARIANT vOptions);
+  HRESULT (__stdcall *CopyHere)(Folder2 *This, VARIANT vItem, VARIANT vOptions);
+  HRESULT (__stdcall *GetDetailsOf)(Folder2 *This, VARIANT vItem, int iColumn, BSTR *pbs);
+  HRESULT (__stdcall *get_Self)(Folder2 *This, FolderItem **ppfi);
+  HRESULT (__stdcall *get_OfflineStatus)(Folder2 *This, LONG *pul);
+  HRESULT (__stdcall *Synchronize)(Folder2 *This);
+  HRESULT (__stdcall *get_HaveToShowWebViewBarricade)(Folder2 *This, VARIANT_BOOL *pbHaveToShowWebViewBarricade);
+  HRESULT (__stdcall *DismissedWebViewBarricade)(Folder2 *This);
+
+};

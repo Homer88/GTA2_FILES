@@ -1,0 +1,10 @@
+// Структура: KEY_PID_ARRAY
+// Полей: 2
+// Строки в оригинале: 89733-89737
+struct KEY_PID_ARRAY
+{
+
+  void *PID;
+  _UNICODE_STRING KeyName;
+
+};

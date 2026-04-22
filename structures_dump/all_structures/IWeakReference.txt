@@ -1,0 +1,9 @@
+// Структура: IWeakReference
+// Полей: 1
+// Строки в оригинале: 29978-29981
+struct IWeakReference
+{
+
+  struct IWeakReferenceVtbl *lpVtbl;
+
+};

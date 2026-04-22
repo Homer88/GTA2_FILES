@@ -1,0 +1,12 @@
+// Структура: _SYSTEM_BASIC_PERFORMANCE_INFORMATION
+// Полей: 4
+// Строки в оригинале: 79812-79818
+struct _SYSTEM_BASIC_PERFORMANCE_INFORMATION
+{
+
+  unsigned int AvailablePages;
+  unsigned int CommittedPages;
+  unsigned int CommitLimit;
+  unsigned int PeakCommitment;
+
+};

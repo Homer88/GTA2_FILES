@@ -1,0 +1,11 @@
+// Структура: _CPS_URLS
+// Полей: 3
+// Строки в оригинале: 104659-104664
+struct _CPS_URLS
+{
+
+  wchar_t *pszURL;
+  _CRYPT_ALGORITHM_IDENTIFIER *pAlgorithm;
+  _CRYPTOAPI_BLOB *pDigest;
+
+};

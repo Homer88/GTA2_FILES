@@ -1,0 +1,11 @@
+// Структура: tagDBID
+// Полей: 3
+// Строки в оригинале: 33733-33738
+struct tagDBID
+{
+
+  union tagDBID::$8A6F84EEDBA9444E5F3B3798E7B3D46D uGuid;
+  DBKIND eKind;
+  union tagDBID::$5B368C6E7AF9DC89B9167B66073E3FEB uName;
+
+};

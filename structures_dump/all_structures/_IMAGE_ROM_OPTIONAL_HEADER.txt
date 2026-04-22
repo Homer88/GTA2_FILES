@@ -1,0 +1,21 @@
+// Структура: _IMAGE_ROM_OPTIONAL_HEADER
+// Полей: 13
+// Строки в оригинале: 101571-101586
+struct _IMAGE_ROM_OPTIONAL_HEADER
+{
+
+  unsigned __int16 Magic;
+  unsigned __int8 MajorLinkerVersion;
+  unsigned __int8 MinorLinkerVersion;
+  unsigned int SizeOfCode;
+  unsigned int SizeOfInitializedData;
+  unsigned int SizeOfUninitializedData;
+  unsigned int AddressOfEntryPoint;
+  unsigned int BaseOfCode;
+  unsigned int BaseOfData;
+  unsigned int BaseOfBss;
+  unsigned int GprMask;
+  unsigned int CprMask[4];
+  unsigned int GpValue;
+
+};

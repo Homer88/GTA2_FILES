@@ -1,0 +1,17 @@
+// Структура: _ISRDPCSTATS
+// Полей: 9
+// Строки в оригинале: 15236-15247
+struct _ISRDPCSTATS
+{
+
+  unsigned __int64 IsrTime;
+  unsigned __int64 IsrTimeStart;
+  unsigned __int64 IsrCount;
+  unsigned __int64 DpcTime;
+  unsigned __int64 DpcTimeStart;
+  unsigned __int64 DpcCount;
+  unsigned __int8 IsrActive;
+  unsigned __int8 Reserved[7];
+  _ISRDPCSTATS_SEQUENCE DpcWatchdog;
+
+};

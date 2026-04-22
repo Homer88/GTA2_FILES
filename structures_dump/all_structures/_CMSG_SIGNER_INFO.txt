@@ -1,0 +1,16 @@
+// Структура: _CMSG_SIGNER_INFO
+// Полей: 8
+// Строки в оригинале: 92220-92230
+struct _CMSG_SIGNER_INFO
+{
+
+  unsigned int dwVersion;
+  _CRYPTOAPI_BLOB Issuer;
+  _CRYPTOAPI_BLOB SerialNumber;
+  _CRYPT_ALGORITHM_IDENTIFIER HashAlgorithm;
+  _CRYPT_ALGORITHM_IDENTIFIER HashEncryptionAlgorithm;
+  _CRYPTOAPI_BLOB EncryptedHash;
+  _CRYPT_ATTRIBUTES AuthAttrs;
+  _CRYPT_ATTRIBUTES UnauthAttrs;
+
+};

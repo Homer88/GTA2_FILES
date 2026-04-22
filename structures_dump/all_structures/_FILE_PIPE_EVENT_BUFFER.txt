@@ -1,0 +1,13 @@
+// Структура: _FILE_PIPE_EVENT_BUFFER
+// Полей: 5
+// Строки в оригинале: 98752-98759
+struct _FILE_PIPE_EVENT_BUFFER
+{
+
+  unsigned int NamedPipeState;
+  unsigned int EntryType;
+  unsigned int ByteCount;
+  unsigned int KeyValue;
+  unsigned int NumberRequests;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _KEVENT
+// Полей: 1
+// Строки в оригинале: 14503-14506
+struct _KEVENT
+{
+
+  _DISPATCHER_HEADER Header;
+
+};

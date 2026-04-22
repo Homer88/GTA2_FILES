@@ -1,0 +1,11 @@
+// Структура: tagOLEPRESSTMHDR
+// Полей: 3
+// Строки в оригинале: 144420-144425
+struct tagOLEPRESSTMHDR
+{
+
+  unsigned int dwAspect;
+  unsigned int dwLindex;
+  unsigned int dwAdvf;
+
+};

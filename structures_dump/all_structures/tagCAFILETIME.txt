@@ -1,0 +1,10 @@
+// Структура: tagCAFILETIME
+// Полей: 2
+// Строки в оригинале: 31646-31650
+struct tagCAFILETIME
+{
+
+  ULONG cElems;
+  FILETIME *pElems;
+
+};

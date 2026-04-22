@@ -1,0 +1,9 @@
+// Структура: IShellFolderViewCB
+// Полей: 1
+// Строки в оригинале: 31049-31052
+struct IShellFolderViewCB
+{
+
+  struct IShellFolderViewCBVtbl *lpVtbl;
+
+};

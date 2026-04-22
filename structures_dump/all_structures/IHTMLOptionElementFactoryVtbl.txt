@@ -1,0 +1,16 @@
+// Структура: IHTMLOptionElementFactoryVtbl
+// Полей: 8
+// Строки в оригинале: 38849-38859
+struct IHTMLOptionElementFactoryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLOptionElementFactory *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLOptionElementFactory *This);
+  ULONG (__stdcall *Release)(IHTMLOptionElementFactory *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLOptionElementFactory *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLOptionElementFactory *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLOptionElementFactory *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLOptionElementFactory *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *create)(IHTMLOptionElementFactory *This, VARIANT text, VARIANT value, VARIANT defaultselected, VARIANT selected, IHTMLOptionElement **MIDL__IHTMLOptionElementFactory0000);
+
+};

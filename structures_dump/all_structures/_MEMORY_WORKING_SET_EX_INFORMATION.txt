@@ -1,0 +1,10 @@
+// Структура: _MEMORY_WORKING_SET_EX_INFORMATION
+// Полей: 2
+// Строки в оригинале: 107316-107320
+struct _MEMORY_WORKING_SET_EX_INFORMATION
+{
+
+  void *VirtualAddress;
+  _MEMORY_WORKING_SET_EX_INFORMATION::<unnamed_type_u1> u1;
+
+};

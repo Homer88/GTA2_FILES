@@ -1,0 +1,12 @@
+// Структура: StdDiscData
+// Полей: 4
+// Строки в оригинале: 248997-249003
+struct StdDiscData
+{
+
+  CStdMarshal *pStdMshl;
+  unsigned int dwType;
+  bool logEventIsActive;
+  CObjectContext *explicitServerContext;
+
+};

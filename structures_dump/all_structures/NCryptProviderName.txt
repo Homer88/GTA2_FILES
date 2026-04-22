@@ -1,0 +1,10 @@
+// Структура: NCryptProviderName
+// Полей: 2
+// Строки в оригинале: 112668-112672
+struct NCryptProviderName
+{
+
+  wchar_t *pszName;
+  wchar_t *pszComment;
+
+};

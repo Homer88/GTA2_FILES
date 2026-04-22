@@ -1,0 +1,9 @@
+// Структура: DShellWindowsEvents
+// Полей: 1
+// Строки в оригинале: 30132-30135
+struct DShellWindowsEvents
+{
+
+  struct DShellWindowsEventsVtbl *lpVtbl;
+
+};

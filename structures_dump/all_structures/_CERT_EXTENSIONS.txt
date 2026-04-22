@@ -1,0 +1,10 @@
+// Структура: _CERT_EXTENSIONS
+// Полей: 2
+// Строки в оригинале: 101564-101568
+struct _CERT_EXTENSIONS
+{
+
+  unsigned int cExtension;
+  _CERT_EXTENSION *rgExtension;
+
+};

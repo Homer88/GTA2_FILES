@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_BATTERY_LIFE_INFO
+// Полей: 2
+// Строки в оригинале: 312148-312152
+struct _PERFINFO_BATTERY_LIFE_INFO
+{
+
+  unsigned int RemainingCapacity;
+  unsigned int Rate;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IShellFolder2
+// Полей: 1
+// Строки в оригинале: 32415-32418
+struct IShellFolder2
+{
+
+  struct IShellFolder2Vtbl *lpVtbl;
+
+};

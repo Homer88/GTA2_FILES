@@ -1,0 +1,14 @@
+// Структура: _SecPkgInfoA
+// Полей: 6
+// Строки в оригинале: 323634-323642
+struct _SecPkgInfoA
+{
+
+  unsigned int fCapabilities;
+  unsigned __int16 wVersion;
+  unsigned __int16 wRPCID;
+  unsigned int cbMaxToken;
+  char *Name;
+  char *Comment;
+
+};

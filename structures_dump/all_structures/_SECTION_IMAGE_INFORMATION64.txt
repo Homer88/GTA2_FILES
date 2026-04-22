@@ -1,0 +1,23 @@
+// Структура: _SECTION_IMAGE_INFORMATION64
+// Полей: 15
+// Строки в оригинале: 82228-82245
+struct _SECTION_IMAGE_INFORMATION64
+{
+
+  unsigned __int64 TransferAddress;
+  unsigned int ZeroBits;
+  unsigned __int64 MaximumStackSize;
+  unsigned __int64 CommittedStackSize;
+  unsigned int SubSystemType;
+  $6EE723258773EDC3958816AEC7773017 ___u5;
+  $B90323FEC6965830037FD3A3AD562038 ___u6;
+  unsigned __int16 ImageCharacteristics;
+  unsigned __int16 DllCharacteristics;
+  unsigned __int16 Machine;
+  unsigned __int8 ImageContainsCode;
+  $35240A72543B23A0FCF1C663C232F2E4 ___u11;
+  unsigned int LoaderFlags;
+  unsigned int ImageFileSize;
+  unsigned int CheckSum;
+
+};

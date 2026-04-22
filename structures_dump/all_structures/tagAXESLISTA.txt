@@ -1,0 +1,11 @@
+// Структура: tagAXESLISTA
+// Полей: 3
+// Строки в оригинале: 91911-91916
+struct tagAXESLISTA
+{
+
+  unsigned int axlReserved;
+  unsigned int axlNumAxes;
+  tagAXISINFOA axlAxisInfo[16];
+
+};

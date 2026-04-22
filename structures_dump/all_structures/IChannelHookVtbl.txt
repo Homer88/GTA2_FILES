@@ -1,0 +1,17 @@
+// Структура: IChannelHookVtbl
+// Полей: 9
+// Строки в оригинале: 351467-351478
+struct IChannelHookVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IChannelHook *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IChannelHook *This);
+  ULONG (__stdcall *Release)(IChannelHook *This);
+  void (__stdcall *ClientGetSize)(IChannelHook *This, const GUID *const uExtent, const IID *const riid, ULONG *pDataSize);
+  void (__stdcall *ClientFillBuffer)(IChannelHook *This, const GUID *const uExtent, const IID *const riid, ULONG *pDataSize, void *pDataBuffer);
+  void (__stdcall *ClientNotify)(IChannelHook *This, const GUID *const uExtent, const IID *const riid, ULONG cbDataSize, void *pDataBuffer, DWORD lDataRep, HRESULT hrFault);
+  void (__stdcall *ServerNotify)(IChannelHook *This, const GUID *const uExtent, const IID *const riid, ULONG cbDataSize, void *pDataBuffer, DWORD lDataRep);
+  void (__stdcall *ServerGetSize)(IChannelHook *This, const GUID *const uExtent, const IID *const riid, HRESULT hrFault, ULONG *pDataSize);
+  void (__stdcall *ServerFillBuffer)(IChannelHook *This, const GUID *const uExtent, const IID *const riid, ULONG *pDataSize, void *pDataBuffer, HRESULT hrFault);
+
+};

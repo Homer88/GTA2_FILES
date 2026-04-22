@@ -1,0 +1,17 @@
+// Структура: _JOBOBJECT_EXTENDED_ACCOUNTING_INFORMATION_V2
+// Полей: 9
+// Строки в оригинале: 110876-110887
+struct _JOBOBJECT_EXTENDED_ACCOUNTING_INFORMATION_V2
+{
+
+  _JOBOBJECT_BASIC_ACCOUNTING_INFORMATION BasicInfo;
+  _IO_COUNTERS IoInfo;
+  _PROCESS_DISK_COUNTERS DiskIoInfo;
+  unsigned __int64 ContextSwitches;
+  _LARGE_INTEGER TotalCycleTime;
+  unsigned __int64 ReadyTime;
+  _PROCESS_ENERGY_VALUES EnergyValues;
+  unsigned __int64 KernelWaitTime;
+  unsigned __int64 UserWaitTime;
+
+};

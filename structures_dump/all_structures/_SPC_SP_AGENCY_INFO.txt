@@ -1,0 +1,12 @@
+// Структура: _SPC_SP_AGENCY_INFO
+// Полей: 4
+// Строки в оригинале: 123675-123681
+struct _SPC_SP_AGENCY_INFO
+{
+
+  SPC_LINK_ *pPolicyInformation;
+  wchar_t *pwszPolicyDisplayText;
+  _SPC_IMAGE *pLogoImage;
+  SPC_LINK_ *pLogoLink;
+
+};

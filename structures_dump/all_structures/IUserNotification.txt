@@ -1,0 +1,9 @@
+// Структура: IUserNotification
+// Полей: 1
+// Строки в оригинале: 39987-39990
+struct IUserNotification
+{
+
+  struct IUserNotificationVtbl *lpVtbl;
+
+};

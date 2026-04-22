@@ -1,0 +1,38 @@
+// Структура: _FILE_OBJECT
+// Полей: 30
+// Строки в оригинале: 17788-17820
+struct _FILE_OBJECT
+{
+
+  __int16 Type;
+  __int16 Size;
+  _DEVICE_OBJECT *DeviceObject;
+  _VPB *Vpb;
+  void *FsContext;
+  void *FsContext2;
+  _SECTION_OBJECT_POINTERS *SectionObjectPointer;
+  void *PrivateCacheMap;
+  int FinalStatus;
+  _FILE_OBJECT *RelatedFileObject;
+  unsigned __int8 LockOperation;
+  unsigned __int8 DeletePending;
+  unsigned __int8 ReadAccess;
+  unsigned __int8 WriteAccess;
+  unsigned __int8 DeleteAccess;
+  unsigned __int8 SharedRead;
+  unsigned __int8 SharedWrite;
+  unsigned __int8 SharedDelete;
+  unsigned int Flags;
+  _UNICODE_STRING FileName;
+  _LARGE_INTEGER CurrentByteOffset;
+  unsigned int Waiters;
+  unsigned int Busy;
+  void *LastLock;
+  _KEVENT Lock;
+  _KEVENT Event;
+  _IO_COMPLETION_CONTEXT *CompletionContext;
+  unsigned int IrpListLock;
+  _LIST_ENTRY IrpList;
+  void *FileObjectExtension;
+
+};

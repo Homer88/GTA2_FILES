@@ -1,0 +1,9 @@
+// Структура: IDirect3DStateBlock9
+// Полей: 1
+// Строки в оригинале: 25804-25807
+struct IDirect3DStateBlock9
+{
+
+  struct IDirect3DStateBlock9Vtbl *lpVtbl;
+
+};

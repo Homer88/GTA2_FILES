@@ -1,0 +1,30 @@
+// Структура: WireContainerThisPart1
+// Полей: 22
+// Строки в оригинале: 63635-63659
+struct WireContainerThisPart1
+{
+
+  unsigned int dcomVersionUnused;
+  unsigned int version;
+  unsigned __int64 capabilityFlags;
+  unsigned __int64 requestFlags;
+  _GUID causalityId;
+  _GUID unassignedSyncPassthroughGuid;
+  _GUID passthroughTraceActivity;
+  _GUID unassignedAlwaysPassthroughGuid_2;
+  _GUID callId;
+  _GUID reservedGuid_2;
+  _GUID reservedGuid_3;
+  _GUID reservedGuid_4;
+  unsigned __int64 unassignedSyncPassthroughUint64_1;
+  unsigned __int64 unassignedSyncPassthroughUint64_2;
+  unsigned __int64 unassignedAlwaysPassthroughUint64_1;
+  unsigned __int64 unassignedAlwaysPassthroughUint64_2;
+  unsigned __int64 reservedUint64_1;
+  unsigned __int64 reservedUint64_2;
+  unsigned __int64 reservedUint64_3;
+  unsigned __int64 reservedUint64_4;
+  unsigned int reservedUint32;
+  unsigned int unique;
+
+};

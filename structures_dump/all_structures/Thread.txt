@@ -1,0 +1,11 @@
+// Структура: Thread
+// Полей: 3
+// Строки в оригинале: 314706-314711
+struct Thread
+{
+
+  LockEntry *pHead;
+  LockEntry *pLastEmbeddedEnty;
+  LockEntry embeddedEntry[1];
+
+};

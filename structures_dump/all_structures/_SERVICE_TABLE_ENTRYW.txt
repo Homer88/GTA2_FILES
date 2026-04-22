@@ -1,0 +1,10 @@
+// Структура: _SERVICE_TABLE_ENTRYW
+// Полей: 2
+// Строки в оригинале: 110810-110814
+struct _SERVICE_TABLE_ENTRYW
+{
+
+  wchar_t *lpServiceName;
+  void (__stdcall *lpServiceProc)(unsigned int, wchar_t **);
+
+};

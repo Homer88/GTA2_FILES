@@ -1,0 +1,14 @@
+// Структура: WINTRUST_SIGNATURE_SETTINGS_
+// Полей: 6
+// Строки в оригинале: 121890-121898
+struct WINTRUST_SIGNATURE_SETTINGS_
+{
+
+  unsigned int cbStruct;
+  unsigned int dwIndex;
+  unsigned int dwFlags;
+  unsigned int cSecondarySigs;
+  unsigned int dwVerifiedSigIndex;
+  _CERT_STRONG_SIGN_PARA *pCryptoPolicy;
+
+};

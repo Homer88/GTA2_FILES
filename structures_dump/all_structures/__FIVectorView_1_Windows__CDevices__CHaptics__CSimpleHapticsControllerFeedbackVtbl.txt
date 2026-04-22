@@ -1,0 +1,18 @@
+// Структура: __FIVectorView_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedbackVtbl
+// Полей: 10
+// Строки в оригинале: 352263-352275
+struct __FIVectorView_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedbackVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(__FIVectorView_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(__FIVectorView_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This);
+  ULONG (__stdcall *Release)(__FIVectorView_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This);
+  HRESULT (__stdcall *GetIids)(__FIVectorView_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This, ULONG *iidCount, IID **iids);
+  HRESULT (__stdcall *GetRuntimeClassName)(__FIVectorView_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This, HSTRING *className);
+  HRESULT (__stdcall *GetTrustLevel)(__FIVectorView_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This, TrustLevel *trustLevel);
+  HRESULT (__stdcall *GetAt)(__FIVectorView_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This, unsigned int index, __x_ABI_CWindows_CDevices_CHaptics_CISimpleHapticsControllerFeedback **item);
+  HRESULT (__stdcall *get_Size)(__FIVectorView_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This, unsigned int *size);
+  HRESULT (__stdcall *IndexOf)(__FIVectorView_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This, __x_ABI_CWindows_CDevices_CHaptics_CISimpleHapticsControllerFeedback *item, unsigned int *index, boolean *found);
+  HRESULT (__stdcall *GetMany)(__FIVectorView_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This, unsigned int startIndex, unsigned int capacity, __x_ABI_CWindows_CDevices_CHaptics_CISimpleHapticsControllerFeedback **items, unsigned int *actual);
+
+};

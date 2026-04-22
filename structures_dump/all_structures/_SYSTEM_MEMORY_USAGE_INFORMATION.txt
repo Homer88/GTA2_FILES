@@ -1,0 +1,15 @@
+// Структура: _SYSTEM_MEMORY_USAGE_INFORMATION
+// Полей: 7
+// Строки в оригинале: 93562-93571
+struct _SYSTEM_MEMORY_USAGE_INFORMATION
+{
+
+  unsigned __int64 TotalPhysicalBytes;
+  unsigned __int64 AvailableBytes;
+  __int64 ResidentAvailableBytes;
+  unsigned __int64 CommittedBytes;
+  unsigned __int64 SharedCommittedBytes;
+  unsigned __int64 CommitLimitBytes;
+  unsigned __int64 PeakCommitmentBytes;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IShellLinkA
+// Полей: 1
+// Строки в оригинале: 30938-30941
+struct IShellLinkA
+{
+
+  struct IShellLinkAVtbl *lpVtbl;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_SESSION_PROCESS_INFORMATION
+// Полей: 3
+// Строки в оригинале: 103403-103408
+struct _SYSTEM_SESSION_PROCESS_INFORMATION
+{
+
+  unsigned int SessionId;
+  unsigned int SizeOfBuf;
+  void *Buffer;
+
+};

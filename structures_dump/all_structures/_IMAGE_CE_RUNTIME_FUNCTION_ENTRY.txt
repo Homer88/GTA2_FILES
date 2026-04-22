@@ -1,0 +1,13 @@
+// Структура: _IMAGE_CE_RUNTIME_FUNCTION_ENTRY
+// Полей: 5
+// Строки в оригинале: 97622-97629
+struct _IMAGE_CE_RUNTIME_FUNCTION_ENTRY
+{
+
+  unsigned int FuncStart;
+  unsigned __int32 PrologLen : 8;
+  unsigned __int32 FuncLen : 22;
+  unsigned __int32 ThirtyTwoBit : 1;
+  unsigned __int32 ExceptionFlag : 1;
+
+};

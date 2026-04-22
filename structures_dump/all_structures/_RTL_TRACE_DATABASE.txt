@@ -1,0 +1,22 @@
+// Структура: _RTL_TRACE_DATABASE
+// Полей: 14
+// Строки в оригинале: 22305-22321
+struct _RTL_TRACE_DATABASE
+{
+
+  unsigned int Magic;
+  unsigned int Flags;
+  unsigned int Tag;
+  _RTL_TRACE_SEGMENT *SegmentList;
+  unsigned int MaximumSize;
+  unsigned int CurrentSize;
+  void *Owner;
+  _RTL_CRITICAL_SECTION Lock;
+  unsigned int NoOfBuckets;
+  _RTL_TRACE_BLOCK **Buckets;
+  unsigned int (__stdcall *HashFunction)(unsigned int, void **);
+  unsigned int NoOfTraces;
+  unsigned int NoOfHits;
+  unsigned int HashCounter[16];
+
+};

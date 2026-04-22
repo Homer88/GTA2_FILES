@@ -1,0 +1,9 @@
+// Структура: IOleCommandTarget
+// Полей: 1
+// Строки в оригинале: 32761-32764
+struct IOleCommandTarget
+{
+
+  struct IOleCommandTargetVtbl *lpVtbl;
+
+};

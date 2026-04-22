@@ -1,0 +1,15 @@
+// Структура: _CRYPTNET_URL_CACHE_RESPONSE_INFO
+// Полей: 7
+// Строки в оригинале: 85654-85663
+struct _CRYPTNET_URL_CACHE_RESPONSE_INFO
+{
+
+  unsigned int cbSize;
+  unsigned __int16 wResponseType;
+  unsigned __int16 wResponseFlags;
+  _FILETIME LastModifiedTime;
+  unsigned int dwMaxAge;
+  const wchar_t *pwszETag;
+  unsigned int dwProxyId;
+
+};

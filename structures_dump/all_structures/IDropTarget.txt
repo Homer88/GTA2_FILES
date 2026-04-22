@@ -1,0 +1,9 @@
+// Структура: IDropTarget
+// Полей: 1
+// Строки в оригинале: 27699-27702
+struct IDropTarget
+{
+
+  struct IDropTargetVtbl *lpVtbl;
+
+};

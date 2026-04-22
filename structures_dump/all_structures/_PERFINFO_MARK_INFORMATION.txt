@@ -1,0 +1,9 @@
+// Структура: _PERFINFO_MARK_INFORMATION
+// Полей: 1
+// Строки в оригинале: 308966-308969
+struct _PERFINFO_MARK_INFORMATION
+{
+
+  char Name[1];
+
+};

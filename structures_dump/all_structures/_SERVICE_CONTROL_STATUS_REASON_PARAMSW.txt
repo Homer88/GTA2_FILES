@@ -1,0 +1,11 @@
+// Структура: _SERVICE_CONTROL_STATUS_REASON_PARAMSW
+// Полей: 3
+// Строки в оригинале: 81754-81759
+struct _SERVICE_CONTROL_STATUS_REASON_PARAMSW
+{
+
+  unsigned int dwReason;
+  wchar_t *pszComment;
+  _SERVICE_STATUS_PROCESS ServiceStatus;
+
+};

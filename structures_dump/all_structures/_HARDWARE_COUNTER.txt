@@ -1,0 +1,11 @@
+// Структура: _HARDWARE_COUNTER
+// Полей: 3
+// Строки в оригинале: 100283-100288
+struct _HARDWARE_COUNTER
+{
+
+  _HARDWARE_COUNTER_TYPE Type;
+  unsigned int Reserved;
+  unsigned __int64 Index;
+
+};

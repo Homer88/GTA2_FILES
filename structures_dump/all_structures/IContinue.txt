@@ -1,0 +1,9 @@
+// Структура: IContinue
+// Полей: 1
+// Строки в оригинале: 28381-28384
+struct IContinue
+{
+
+  struct IContinueVtbl *lpVtbl;
+
+};

@@ -1,0 +1,13 @@
+// Структура: WireExtentArray
+// Полей: 5
+// Строки в оригинале: 63831-63838
+struct WireExtentArray
+{
+
+  unsigned int size;
+  unsigned int reserved;
+  unsigned int unique;
+  unsigned int rounded_size;
+  unsigned int unique_flag[];
+
+};

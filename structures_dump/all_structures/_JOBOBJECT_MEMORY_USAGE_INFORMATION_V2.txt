@@ -1,0 +1,11 @@
+// Структура: _JOBOBJECT_MEMORY_USAGE_INFORMATION_V2
+// Полей: 3
+// Строки в оригинале: 109702-109707
+struct _JOBOBJECT_MEMORY_USAGE_INFORMATION_V2
+{
+
+  _JOBOBJECT_MEMORY_USAGE_INFORMATION BasicInfo;
+  unsigned __int64 JobSharedMemory;
+  unsigned __int64 Reserved[2];
+
+};

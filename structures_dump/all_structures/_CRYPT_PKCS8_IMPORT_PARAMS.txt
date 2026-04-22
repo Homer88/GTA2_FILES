@@ -1,0 +1,13 @@
+// Структура: _CRYPT_PKCS8_IMPORT_PARAMS
+// Полей: 5
+// Строки в оригинале: 84994-85001
+struct _CRYPT_PKCS8_IMPORT_PARAMS
+{
+
+  _CRYPTOAPI_BLOB PrivateKey;
+  int (__stdcall *pResolvehCryptProvFunc)(_CRYPT_PRIVATE_KEY_INFO *, unsigned int *, void *);
+  void *pVoidResolveFunc;
+  int (__stdcall *pDecryptPrivateKeyFunc)(_CRYPT_ALGORITHM_IDENTIFIER, _CRYPTOAPI_BLOB, unsigned __int8 *, unsigned int *, void *);
+  void *pVoidDecryptFunc;
+
+};

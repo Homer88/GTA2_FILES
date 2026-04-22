@@ -1,0 +1,10 @@
+// Структура: tagEMROFFSETCLIPRGN
+// Полей: 2
+// Строки в оригинале: 94855-94859
+struct tagEMROFFSETCLIPRGN
+{
+
+  tagEMR emr;
+  _POINTL ptlOffset;
+
+};

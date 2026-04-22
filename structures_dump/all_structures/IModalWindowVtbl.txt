@@ -1,0 +1,12 @@
+// Структура: IModalWindowVtbl
+// Полей: 4
+// Строки в оригинале: 32248-32254
+struct IModalWindowVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IModalWindow *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IModalWindow *This);
+  ULONG (__stdcall *Release)(IModalWindow *This);
+  HRESULT (__stdcall *Show)(IModalWindow *This, HWND hwndOwner);
+
+};

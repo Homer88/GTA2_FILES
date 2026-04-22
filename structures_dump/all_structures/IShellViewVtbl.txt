@@ -1,0 +1,24 @@
+// Структура: IShellViewVtbl
+// Полей: 16
+// Строки в оригинале: 33303-33321
+struct IShellViewVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellView *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellView *This);
+  ULONG (__stdcall *Release)(IShellView *This);
+  HRESULT (__stdcall *GetWindow)(IShellView *This, HWND *phwnd);
+  HRESULT (__stdcall *ContextSensitiveHelp)(IShellView *This, BOOL fEnterMode);
+  HRESULT (__stdcall *TranslateAcceleratorA)(IShellView *This, MSG *pmsg);
+  HRESULT (__stdcall *EnableModeless)(IShellView *This, BOOL fEnable);
+  HRESULT (__stdcall *UIActivate)(IShellView *This, UINT uState);
+  HRESULT (__stdcall *Refresh)(IShellView *This);
+  HRESULT (__stdcall *CreateViewWindow)(IShellView *This, IShellView *psvPrevious, LPCFOLDERSETTINGS pfs, IShellBrowser *psb, RECT *prcView, HWND *phWnd);
+  HRESULT (__stdcall *DestroyViewWindow)(IShellView *This);
+  HRESULT (__stdcall *GetCurrentInfo)(IShellView *This, LPFOLDERSETTINGS pfs);
+  HRESULT (__stdcall *AddPropertySheetPages)(IShellView *This, DWORD dwReserved, LPFNSVADDPROPSHEETPAGE pfn, LPARAM lparam);
+  HRESULT (__stdcall *SaveViewState)(IShellView *This);
+  HRESULT (__stdcall *SelectItem)(IShellView *This, LPCITEMIDLIST pidlItem, SVSIF uFlags);
+  HRESULT (__stdcall *GetItemObject)(IShellView *This, UINT uItem, const IID *const riid, void **ppv);
+
+};

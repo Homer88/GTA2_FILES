@@ -1,0 +1,11 @@
+// Структура: _CRYPT_VERIFY_CERT_SIGN_WEAK_HASH_INFO
+// Полей: 3
+// Строки в оригинале: 94392-94397
+struct _CRYPT_VERIFY_CERT_SIGN_WEAK_HASH_INFO
+{
+
+  unsigned int cCNGHashAlgid;
+  const wchar_t **rgpwszCNGHashAlgid;
+  unsigned int dwWeakIndex;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IParentAndItem
+// Полей: 1
+// Строки в оригинале: 30954-30957
+struct IParentAndItem
+{
+
+  struct IParentAndItemVtbl *lpVtbl;
+
+};

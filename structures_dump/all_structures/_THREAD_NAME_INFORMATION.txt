@@ -1,0 +1,9 @@
+// Структура: _THREAD_NAME_INFORMATION
+// Полей: 1
+// Строки в оригинале: 98294-98297
+struct _THREAD_NAME_INFORMATION
+{
+
+  _UNICODE_STRING ThreadName;
+
+};

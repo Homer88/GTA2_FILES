@@ -1,0 +1,12 @@
+// Структура: _RTL_HASH_TABLE
+// Полей: 4
+// Строки в оригинале: 15125-15131
+struct _RTL_HASH_TABLE
+{
+
+  unsigned int EntryCount;
+  unsigned __int32 MaskBitCount : 5;
+  unsigned __int32 BucketCount : 27;
+  _SINGLE_LIST_ENTRY *Buckets;
+
+};

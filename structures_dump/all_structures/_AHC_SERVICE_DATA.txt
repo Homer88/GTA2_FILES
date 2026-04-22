@@ -1,0 +1,19 @@
+// Структура: _AHC_SERVICE_DATA
+// Полей: 11
+// Строки в оригинале: 313103-313116
+struct _AHC_SERVICE_DATA
+{
+
+  _AHC_SERVICE_LOOKUP Lookup;
+  _AHC_SERVICE_UPDATE Update;
+  _AHC_SERVICE_DATACACHE Cache;
+  _AHC_SERVICE_LOOKUP_CDB LookupCdb;
+  _AHC_SERVICE_CLEAR Clear;
+  _AHC_SERVICE_REMOVE Remove;
+  _AHC_SERVICE_HWID_QUERY HwIdQuery;
+  _AHC_SERVICE_INIT_PROCESS_DATA InitData;
+  int DriverStatus;
+  void *ParamsOut;
+  unsigned int ParamsOutSize;
+
+};

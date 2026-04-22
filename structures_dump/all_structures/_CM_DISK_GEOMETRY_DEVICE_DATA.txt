@@ -1,0 +1,12 @@
+// Структура: _CM_DISK_GEOMETRY_DEVICE_DATA
+// Полей: 4
+// Строки в оригинале: 80900-80906
+struct _CM_DISK_GEOMETRY_DEVICE_DATA
+{
+
+  unsigned int BytesPerSector;
+  unsigned int NumberOfCylinders;
+  unsigned int SectorsPerTrack;
+  unsigned int NumberOfHeads;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _RGNDATA
+// Полей: 2
+// Строки в оригинале: 24577-24581
+struct _RGNDATA
+{
+
+  RGNDATAHEADER rdh;
+  char Buffer[1];
+
+};

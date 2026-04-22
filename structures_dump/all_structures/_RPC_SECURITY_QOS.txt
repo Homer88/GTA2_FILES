@@ -1,0 +1,12 @@
+// Структура: _RPC_SECURITY_QOS
+// Полей: 4
+// Строки в оригинале: 98698-98704
+struct _RPC_SECURITY_QOS
+{
+
+  unsigned int Version;
+  unsigned int Capabilities;
+  unsigned int IdentityTracking;
+  unsigned int ImpersonationType;
+
+};

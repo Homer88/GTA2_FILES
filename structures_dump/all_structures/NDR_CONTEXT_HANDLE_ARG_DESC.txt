@@ -1,0 +1,12 @@
+// Структура: NDR_CONTEXT_HANDLE_ARG_DESC
+// Полей: 4
+// Строки в оригинале: 263649-263655
+struct NDR_CONTEXT_HANDLE_ARG_DESC
+{
+
+  unsigned __int8 Fc;
+  NDR_CONTEXT_HANDLE_FLAGS Flags;
+  unsigned __int8 RundownRtnIndex;
+  unsigned __int8 ParamOrdinal;
+
+};

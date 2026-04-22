@@ -1,0 +1,13 @@
+// Структура: IUnbufferedFileHandleProviderVtbl
+// Полей: 5
+// Строки в оригинале: 352376-352383
+struct IUnbufferedFileHandleProviderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IUnbufferedFileHandleProvider *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IUnbufferedFileHandleProvider *This);
+  ULONG (__stdcall *Release)(IUnbufferedFileHandleProvider *This);
+  HRESULT (__stdcall *OpenUnbufferedFileHandle)(IUnbufferedFileHandleProvider *This, IUnbufferedFileHandleOplockCallback *oplockBreakCallback, DWORD_PTR *fileHandle);
+  HRESULT (__stdcall *CloseUnbufferedFileHandle)(IUnbufferedFileHandleProvider *This);
+
+};

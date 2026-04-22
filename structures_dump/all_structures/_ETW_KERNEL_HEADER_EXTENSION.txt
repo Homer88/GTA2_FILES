@@ -1,0 +1,10 @@
+// Структура: _ETW_KERNEL_HEADER_EXTENSION
+// Полей: 2
+// Строки в оригинале: 309429-309433
+struct _ETW_KERNEL_HEADER_EXTENSION
+{
+
+  _PERFINFO_GROUPMASK GroupMasks;
+  unsigned int Version;
+
+};

@@ -1,0 +1,12 @@
+// Структура: IAccPropServerVtbl
+// Полей: 4
+// Строки в оригинале: 35451-35457
+struct IAccPropServerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IAccPropServer *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IAccPropServer *This);
+  ULONG (__stdcall *Release)(IAccPropServer *This);
+  HRESULT (__stdcall *GetPropValue)(IAccPropServer *This, const BYTE *pIDString, DWORD dwIDStringLen, MSAAPROPID idProp, VARIANT *pvarValue, BOOL *pfHasProp);
+
+};

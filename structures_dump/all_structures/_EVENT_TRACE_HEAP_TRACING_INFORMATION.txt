@@ -1,0 +1,10 @@
+// Структура: _EVENT_TRACE_HEAP_TRACING_INFORMATION
+// Полей: 2
+// Строки в оригинале: 309658-309662
+struct _EVENT_TRACE_HEAP_TRACING_INFORMATION
+{
+
+  _EVENT_TRACE_INFORMATION_CLASS EventTraceInformationClass;
+  unsigned int ProcessId[1];
+
+};

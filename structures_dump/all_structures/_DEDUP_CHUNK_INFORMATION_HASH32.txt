@@ -1,0 +1,12 @@
+// Структура: _DEDUP_CHUNK_INFORMATION_HASH32
+// Полей: 4
+// Строки в оригинале: 111936-111942
+struct _DEDUP_CHUNK_INFORMATION_HASH32
+{
+
+  unsigned int ChunkFlags;
+  __int64 ChunkOffsetInFile;
+  __int64 ChunkSize;
+  unsigned __int8 HashVal[32];
+
+};

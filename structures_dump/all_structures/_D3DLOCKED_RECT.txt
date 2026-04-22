@@ -1,0 +1,10 @@
+// Структура: _D3DLOCKED_RECT
+// Полей: 2
+// Строки в оригинале: 26255-26259
+struct _D3DLOCKED_RECT
+{
+
+  INT Pitch;
+  void *pBits;
+
+};

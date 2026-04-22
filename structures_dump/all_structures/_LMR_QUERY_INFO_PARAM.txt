@@ -1,0 +1,9 @@
+// Структура: _LMR_QUERY_INFO_PARAM
+// Полей: 1
+// Строки в оригинале: 110410-110413
+struct _LMR_QUERY_INFO_PARAM
+{
+
+  _LMR_QUERY_INFO_CLASS Operation;
+
+};

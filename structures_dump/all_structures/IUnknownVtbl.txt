@@ -1,0 +1,11 @@
+// Структура: IUnknownVtbl
+// Полей: 3
+// Строки в оригинале: 6252-6257
+struct IUnknownVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IUnknown *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IUnknown *This);
+  ULONG (__stdcall *Release)(IUnknown *This);
+
+};

@@ -1,0 +1,14 @@
+// Структура: _EVENT_TRACE_COVERAGE_SAMPLER_INFORMATION
+// Полей: 6
+// Строки в оригинале: 310765-310773
+struct _EVENT_TRACE_COVERAGE_SAMPLER_INFORMATION
+{
+
+  _EVENT_TRACE_INFORMATION_CLASS EventTraceInformationClass;
+  unsigned __int8 CoverageSamplerInformationClass;
+  unsigned __int8 MajorVersion;
+  unsigned __int8 MinorVersion;
+  unsigned __int8 Reserved;
+  unsigned __int64 SamplerHandle;
+
+};

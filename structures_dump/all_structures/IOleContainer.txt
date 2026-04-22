@@ -1,0 +1,9 @@
+// Структура: IOleContainer
+// Полей: 1
+// Строки в оригинале: 27591-27594
+struct IOleContainer
+{
+
+  struct IOleContainerVtbl *lpVtbl;
+
+};

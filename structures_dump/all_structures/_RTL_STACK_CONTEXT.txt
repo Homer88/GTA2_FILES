@@ -1,0 +1,10 @@
+// Структура: _RTL_STACK_CONTEXT
+// Полей: 2
+// Строки в оригинале: 98096-98100
+struct _RTL_STACK_CONTEXT
+{
+
+  unsigned int NumberOfEntries;
+  _RTL_STACK_CONTEXT_ENTRY Entry[1];
+
+};

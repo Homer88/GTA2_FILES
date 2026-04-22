@@ -1,0 +1,9 @@
+// Структура: IEnumITfCompositionView
+// Полей: 1
+// Строки в оригинале: 32329-32332
+struct IEnumITfCompositionView
+{
+
+  struct IEnumITfCompositionViewVtbl *lpVtbl;
+
+};

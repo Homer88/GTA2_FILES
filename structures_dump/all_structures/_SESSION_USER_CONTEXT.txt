@@ -1,0 +1,11 @@
+// Структура: _SESSION_USER_CONTEXT
+// Полей: 3
+// Строки в оригинале: 241674-241679
+struct _SESSION_USER_CONTEXT
+{
+
+  unsigned __int64 ContextToken;
+  unsigned int SessionId;
+  unsigned int Reserved;
+
+};

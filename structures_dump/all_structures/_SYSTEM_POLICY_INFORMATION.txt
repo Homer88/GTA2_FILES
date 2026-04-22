@@ -1,0 +1,13 @@
+// Структура: _SYSTEM_POLICY_INFORMATION
+// Полей: 5
+// Строки в оригинале: 111564-111571
+struct _SYSTEM_POLICY_INFORMATION
+{
+
+  void *InputData;
+  void *OutputData;
+  unsigned int InputDataSize;
+  unsigned int OutputDataSize;
+  unsigned int Version;
+
+};

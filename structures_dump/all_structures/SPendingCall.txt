@@ -1,0 +1,11 @@
+// Структура: SPendingCall
+// Полей: 3
+// Строки в оригинале: 190163-190168
+struct SPendingCall
+{
+
+  SPendingCall *pNext;
+  SPendingCall *pPrev;
+  CChannelObject *pChnlObj;
+
+};

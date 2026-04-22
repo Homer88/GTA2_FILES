@@ -1,0 +1,10 @@
+// Структура: tagWTSSESSION_NOTIFICATION
+// Полей: 2
+// Строки в оригинале: 104315-104319
+struct tagWTSSESSION_NOTIFICATION
+{
+
+  unsigned int cbSize;
+  unsigned int dwSessionId;
+
+};

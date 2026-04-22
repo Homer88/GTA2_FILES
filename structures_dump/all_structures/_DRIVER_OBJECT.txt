@@ -1,0 +1,23 @@
+// Структура: _DRIVER_OBJECT
+// Полей: 15
+// Строки в оригинале: 16940-16957
+struct _DRIVER_OBJECT
+{
+
+  __int16 Type;
+  __int16 Size;
+  _DEVICE_OBJECT *DeviceObject;
+  unsigned int Flags;
+  void *DriverStart;
+  unsigned int DriverSize;
+  void *DriverSection;
+  _DRIVER_EXTENSION *DriverExtension;
+  _UNICODE_STRING DriverName;
+  _UNICODE_STRING *HardwareDatabase;
+  _FAST_IO_DISPATCH *FastIoDispatch;
+  int (__stdcall *DriverInit)(_DRIVER_OBJECT *, _UNICODE_STRING *);
+  void (__stdcall *DriverStartIo)(_DEVICE_OBJECT *, _IRP *);
+  void (__stdcall *DriverUnload)(_DRIVER_OBJECT *);
+  int (__stdcall *MajorFunction[28])(_DEVICE_OBJECT *, _IRP *);
+
+};

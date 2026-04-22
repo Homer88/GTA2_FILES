@@ -1,0 +1,27 @@
+// Структура: _Wx86TIB
+// Полей: 19
+// Строки в оригинале: 84378-84399
+struct _Wx86TIB
+{
+
+  unsigned int Size;
+  unsigned int InitialPc;
+  void *StackBase;
+  void *StackLimit;
+  void *DeallocationStack;
+  unsigned int LogFlags;
+  unsigned int InitialSp;
+  unsigned __int8 SimulationCount;
+  unsigned __int8 InCpuSimulation;
+  unsigned __int8 EmulateInitialPc;
+  unsigned __int8 Initialized;
+  _EXCEPTION_REGISTRATION_RECORD *ExceptionList;
+  void *CpuContext;
+  _CONTEXT *InitialExceptionContext;
+  void *pCallersRIID;
+  void *pCallersUnknown;
+  unsigned int Flags;
+  void *SelfRegDllName;
+  void *SelfRegDllHandle;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _CRYPT_PROVIDER_PRIVDATA
+// Полей: 4
+// Строки в оригинале: 122003-122009
+struct _CRYPT_PROVIDER_PRIVDATA
+{
+
+  unsigned int cbStruct;
+  _GUID gProviderID;
+  unsigned int cbProvData;
+  void *pvProvData;
+
+};

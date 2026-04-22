@@ -1,0 +1,11 @@
+// Структура: _PROCESS_HANDLE_TRACING_QUERY
+// Полей: 3
+// Строки в оригинале: 89756-89761
+struct _PROCESS_HANDLE_TRACING_QUERY
+{
+
+  void *Handle;
+  unsigned int TotalTraces;
+  _PROCESS_HANDLE_TRACING_ENTRY HandleTrace[1];
+
+};

@@ -1,0 +1,11 @@
+// Структура: _RESUME_PERFORMANCE
+// Полей: 3
+// Строки в оригинале: 97553-97558
+struct _RESUME_PERFORMANCE
+{
+
+  unsigned int PostTimeMs;
+  unsigned __int64 TotalResumeTimeMs;
+  unsigned __int64 ResumeCompleteTimestamp;
+
+};

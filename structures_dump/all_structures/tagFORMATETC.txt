@@ -1,0 +1,13 @@
+// Структура: tagFORMATETC
+// Полей: 5
+// Строки в оригинале: 27062-27069
+struct tagFORMATETC
+{
+
+  CLIPFORMAT cfFormat;
+  DVTARGETDEVICE *ptd;
+  DWORD dwAspect;
+  LONG lindex;
+  DWORD tymed;
+
+};

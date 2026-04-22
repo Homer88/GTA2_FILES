@@ -1,0 +1,16 @@
+// Структура: IDataObjectAsyncCapabilityVtbl
+// Полей: 8
+// Строки в оригинале: 37104-37114
+struct IDataObjectAsyncCapabilityVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDataObjectAsyncCapability *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDataObjectAsyncCapability *This);
+  ULONG (__stdcall *Release)(IDataObjectAsyncCapability *This);
+  HRESULT (__stdcall *SetAsyncMode)(IDataObjectAsyncCapability *This, BOOL fDoOpAsync);
+  HRESULT (__stdcall *GetAsyncMode)(IDataObjectAsyncCapability *This, BOOL *pfIsOpAsync);
+  HRESULT (__stdcall *StartOperation)(IDataObjectAsyncCapability *This, IBindCtx *pbcReserved);
+  HRESULT (__stdcall *InOperation)(IDataObjectAsyncCapability *This, BOOL *pfInAsyncOp);
+  HRESULT (__stdcall *EndOperation)(IDataObjectAsyncCapability *This, HRESULT hResult, IBindCtx *pbcReserved, DWORD dwEffects);
+
+};

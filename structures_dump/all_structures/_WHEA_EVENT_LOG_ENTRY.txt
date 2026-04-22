@@ -1,0 +1,9 @@
+// Структура: _WHEA_EVENT_LOG_ENTRY
+// Полей: 1
+// Строки в оригинале: 20121-20124
+struct _WHEA_EVENT_LOG_ENTRY
+{
+
+  _WHEA_EVENT_LOG_ENTRY_HEADER Header;
+
+};

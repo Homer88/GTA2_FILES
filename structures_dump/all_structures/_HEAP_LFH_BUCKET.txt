@@ -1,0 +1,17 @@
+// Структура: _HEAP_LFH_BUCKET
+// Полей: 9
+// Строки в оригинале: 20722-20733
+struct _HEAP_LFH_BUCKET
+{
+
+  _HEAP_LFH_SUBSEGMENT_OWNER State;
+  unsigned int TotalBlockCount;
+  unsigned int TotalSubsegmentCount;
+  unsigned int ReciprocalBlockSize;
+  unsigned __int8 Shift;
+  unsigned __int8 ContentionCount;
+  unsigned int AffinityMappingLock;
+  unsigned __int8 *ProcAffinityMapping;
+  _HEAP_LFH_AFFINITY_SLOT **AffinitySlots;
+
+};

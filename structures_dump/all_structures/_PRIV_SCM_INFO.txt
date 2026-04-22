@@ -1,0 +1,13 @@
+// Структура: _PRIV_SCM_INFO
+// Полей: 5
+// Строки в оригинале: 192598-192605
+struct _PRIV_SCM_INFO
+{
+
+  int lThreadID;
+  wchar_t *pwszWinstaDesktop;
+  unsigned __int64 ProcessSignature;
+  wchar_t *pEnvBlock;
+  unsigned int EnvBlockLength;
+
+};

@@ -1,0 +1,12 @@
+// Структура: IPropertyStoreCapabilitiesVtbl
+// Полей: 4
+// Строки в оригинале: 45100-45106
+struct IPropertyStoreCapabilitiesVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyStoreCapabilities *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyStoreCapabilities *This);
+  ULONG (__stdcall *Release)(IPropertyStoreCapabilities *This);
+  HRESULT (__stdcall *IsPropertyWritable)(IPropertyStoreCapabilities *This, const PROPERTYKEY *const key);
+
+};

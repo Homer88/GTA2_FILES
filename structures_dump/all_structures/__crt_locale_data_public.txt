@@ -1,0 +1,11 @@
+// Структура: __crt_locale_data_public
+// Полей: 3
+// Строки в оригинале: 112069-112074
+struct __crt_locale_data_public
+{
+
+  const unsigned __int16 *_locale_pctype;
+  int _locale_mb_cur_max;
+  unsigned int _locale_lc_codepage;
+
+};

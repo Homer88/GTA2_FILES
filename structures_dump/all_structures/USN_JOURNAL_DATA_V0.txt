@@ -1,0 +1,15 @@
+// Структура: USN_JOURNAL_DATA_V0
+// Полей: 7
+// Строки в оригинале: 108950-108959
+struct USN_JOURNAL_DATA_V0
+{
+
+  unsigned __int64 UsnJournalID;
+  __int64 FirstUsn;
+  __int64 NextUsn;
+  __int64 LowestValidUsn;
+  __int64 MaxUsn;
+  unsigned __int64 MaximumSize;
+  unsigned __int64 AllocationDelta;
+
+};

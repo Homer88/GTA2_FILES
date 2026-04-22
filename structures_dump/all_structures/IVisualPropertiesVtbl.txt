@@ -1,0 +1,19 @@
+// Структура: IVisualPropertiesVtbl
+// Полей: 11
+// Строки в оригинале: 34384-34397
+struct IVisualPropertiesVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IVisualProperties *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IVisualProperties *This);
+  ULONG (__stdcall *Release)(IVisualProperties *This);
+  HRESULT (__stdcall *SetWatermark)(IVisualProperties *This, HBITMAP hbmp, VPWATERMARKFLAGS vpwf);
+  HRESULT (__stdcall *SetColor)(IVisualProperties *This, VPCOLORFLAGS vpcf, COLORREF cr);
+  HRESULT (__stdcall *GetColor)(IVisualProperties *This, VPCOLORFLAGS vpcf, COLORREF *pcr);
+  HRESULT (__stdcall *SetItemHeight)(IVisualProperties *This, int cyItemInPixels);
+  HRESULT (__stdcall *GetItemHeight)(IVisualProperties *This, int *cyItemInPixels);
+  HRESULT (__stdcall *SetFont)(IVisualProperties *This, const LOGFONTW *plf, BOOL bRedraw);
+  HRESULT (__stdcall *GetFont)(IVisualProperties *This, LOGFONTW *plf);
+  HRESULT (__stdcall *SetTheme)(IVisualProperties *This, LPCWSTR pszSubAppName, LPCWSTR pszSubIdList);
+
+};

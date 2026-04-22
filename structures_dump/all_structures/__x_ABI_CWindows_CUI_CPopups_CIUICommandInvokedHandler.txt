@@ -1,0 +1,9 @@
+// Структура: __x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandler
+// Полей: 1
+// Строки в оригинале: 37800-37803
+struct __x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandler
+{
+
+  struct __x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandlerVtbl *lpVtbl;
+
+};

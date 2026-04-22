@@ -1,0 +1,10 @@
+// Структура: _PO_WAKE_SOURCE_HEADER
+// Полей: 2
+// Строки в оригинале: 84102-84106
+struct _PO_WAKE_SOURCE_HEADER
+{
+
+  PO_WAKE_SOURCE_TYPE Type;
+  unsigned int Size;
+
+};

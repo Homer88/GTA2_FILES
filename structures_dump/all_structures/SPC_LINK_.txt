@@ -1,0 +1,10 @@
+// Структура: SPC_LINK_
+// Полей: 2
+// Строки в оригинале: 122884-122888
+struct SPC_LINK_
+{
+
+  unsigned int dwLinkChoice;
+  $2811C6562EA97EA44495AD70D63747D8 ___u1;
+
+};

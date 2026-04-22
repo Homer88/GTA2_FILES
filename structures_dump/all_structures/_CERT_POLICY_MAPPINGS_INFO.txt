@@ -1,0 +1,10 @@
+// Структура: _CERT_POLICY_MAPPINGS_INFO
+// Полей: 2
+// Строки в оригинале: 99370-99374
+struct _CERT_POLICY_MAPPINGS_INFO
+{
+
+  unsigned int cPolicyMapping;
+  _CERT_POLICY_MAPPING *rgPolicyMapping;
+
+};

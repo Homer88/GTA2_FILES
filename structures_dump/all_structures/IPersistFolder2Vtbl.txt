@@ -1,0 +1,14 @@
+// Структура: IPersistFolder2Vtbl
+// Полей: 6
+// Строки в оригинале: 38088-38096
+struct IPersistFolder2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPersistFolder2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPersistFolder2 *This);
+  ULONG (__stdcall *Release)(IPersistFolder2 *This);
+  HRESULT (__stdcall *GetClassID)(IPersistFolder2 *This, CLSID *pClassID);
+  HRESULT (__stdcall *Initialize)(IPersistFolder2 *This, LPCITEMIDLIST pidl);
+  HRESULT (__stdcall *GetCurFolder)(IPersistFolder2 *This, LPITEMIDLIST *ppidl);
+
+};

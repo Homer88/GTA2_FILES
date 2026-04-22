@@ -1,0 +1,15 @@
+// Структура: _EVENT_TRACE_PROFILE_ADD_INFORMATION
+// Полей: 7
+// Строки в оригинале: 312468-312477
+struct _EVENT_TRACE_PROFILE_ADD_INFORMATION
+{
+
+  _EVENT_TRACE_INFORMATION_CLASS EventTraceInformationClass;
+  unsigned __int8 Version;
+  _EVENT_TRACE_PROFILE_ADD_INFORMATION_V2 V2;
+  unsigned int CpuInfoHierarchy[3];
+  unsigned int InitialInterval;
+  unsigned __int8 Persist;
+  wchar_t ProfileSourceDescription[1];
+
+};

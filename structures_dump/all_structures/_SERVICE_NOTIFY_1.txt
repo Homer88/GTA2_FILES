@@ -1,0 +1,13 @@
+// Структура: _SERVICE_NOTIFY_1
+// Полей: 5
+// Строки в оригинале: 110837-110844
+struct _SERVICE_NOTIFY_1
+{
+
+  unsigned int dwVersion;
+  void (__stdcall *pfnNotifyCallback)(void *);
+  void *pContext;
+  unsigned int dwNotificationStatus;
+  _SERVICE_STATUS_PROCESS ServiceStatus;
+
+};

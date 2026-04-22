@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_RESOURCE_ATTRIBUTE_ACE
+// Полей: 3
+// Строки в оригинале: 93335-93340
+struct _SYSTEM_RESOURCE_ATTRIBUTE_ACE
+{
+
+  _ACE_HEADER Header;
+  unsigned int Mask;
+  unsigned int SidStart;
+
+};

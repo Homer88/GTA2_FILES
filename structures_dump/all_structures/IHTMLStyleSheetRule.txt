@@ -1,0 +1,9 @@
+// Структура: IHTMLStyleSheetRule
+// Полей: 1
+// Строки в оригинале: 38906-38909
+struct IHTMLStyleSheetRule
+{
+
+  struct IHTMLStyleSheetRuleVtbl *lpVtbl;
+
+};

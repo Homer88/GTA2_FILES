@@ -1,0 +1,9 @@
+// Структура: IShellLinkW
+// Полей: 1
+// Строки в оригинале: 33871-33874
+struct IShellLinkW
+{
+
+  struct IShellLinkWVtbl *lpVtbl;
+
+};

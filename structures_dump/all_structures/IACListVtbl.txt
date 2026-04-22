@@ -1,0 +1,9 @@
+// Структура: IACListVtbl
+// Полей: 1
+// Строки в оригинале: 33893-33896
+struct IACListVtbl
+{
+
+  HRESULT (__stdcall *Expand)(IACList *This, PCWSTR pszExpand);
+
+};

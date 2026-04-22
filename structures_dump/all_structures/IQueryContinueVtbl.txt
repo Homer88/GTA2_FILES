@@ -1,0 +1,12 @@
+// Структура: IQueryContinueVtbl
+// Полей: 4
+// Строки в оригинале: 34103-34109
+struct IQueryContinueVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IQueryContinue *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IQueryContinue *This);
+  ULONG (__stdcall *Release)(IQueryContinue *This);
+  HRESULT (__stdcall *QueryContinue)(IQueryContinue *This);
+
+};

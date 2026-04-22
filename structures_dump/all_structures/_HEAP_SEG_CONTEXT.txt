@@ -1,0 +1,28 @@
+// Структура: _HEAP_SEG_CONTEXT
+// Полей: 20
+// Строки в оригинале: 20591-20613
+struct _HEAP_SEG_CONTEXT
+{
+
+  unsigned int SegmentMask;
+  unsigned __int8 UnitShift;
+  unsigned __int8 PagesPerUnitShift;
+  unsigned __int8 FirstDescriptorIndex;
+  unsigned __int8 CachedCommitSoftShift;
+  unsigned __int8 CachedCommitHighShift;
+  _HEAP_SEG_CONTEXT::$B1D2941913CB2E4AD911CE08050C73BE Flags;
+  unsigned int MaxAllocationSize;
+  __int16 OlpStatsOffset;
+  __int16 MemStatsOffset;
+  void *LfhContext;
+  void *VsContext;
+  RTL_HP_ENV_HANDLE EnvHandle;
+  void *Heap;
+  __declspec(align(32)) unsigned int SegmentLock;
+  _LIST_ENTRY SegmentListHead;
+  unsigned int SegmentCount;
+  _RTL_RB_TREE FreePageRanges;
+  unsigned int FreeSegmentListLock;
+  _SINGLE_LIST_ENTRY FreeSegmentList[2];
+
+};

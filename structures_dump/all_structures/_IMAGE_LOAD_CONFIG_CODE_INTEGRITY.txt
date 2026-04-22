@@ -1,0 +1,12 @@
+// Структура: _IMAGE_LOAD_CONFIG_CODE_INTEGRITY
+// Полей: 4
+// Строки в оригинале: 58636-58642
+struct _IMAGE_LOAD_CONFIG_CODE_INTEGRITY
+{
+
+  unsigned __int16 Flags;
+  unsigned __int16 Catalog;
+  unsigned int CatalogOffset;
+  unsigned int Reserved;
+
+};

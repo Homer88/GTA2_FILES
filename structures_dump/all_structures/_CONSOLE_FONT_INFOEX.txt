@@ -1,0 +1,14 @@
+// Структура: _CONSOLE_FONT_INFOEX
+// Полей: 6
+// Строки в оригинале: 106148-106156
+struct _CONSOLE_FONT_INFOEX
+{
+
+  unsigned int cbSize;
+  unsigned int nFont;
+  _COORD dwFontSize;
+  unsigned int FontFamily;
+  unsigned int FontWeight;
+  wchar_t FaceName[32];
+
+};

@@ -1,0 +1,22 @@
+// Структура: IXMLDOMParseErrorVtbl
+// Полей: 14
+// Строки в оригинале: 43952-43968
+struct IXMLDOMParseErrorVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IXMLDOMParseError *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IXMLDOMParseError *This);
+  ULONG (__stdcall *Release)(IXMLDOMParseError *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IXMLDOMParseError *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IXMLDOMParseError *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IXMLDOMParseError *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IXMLDOMParseError *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_errorCode)(IXMLDOMParseError *This, int *errorCode);
+  HRESULT (__stdcall *get_url)(IXMLDOMParseError *This, BSTR *urlString);
+  HRESULT (__stdcall *get_reason)(IXMLDOMParseError *This, BSTR *reasonString);
+  HRESULT (__stdcall *get_srcText)(IXMLDOMParseError *This, BSTR *sourceString);
+  HRESULT (__stdcall *get_line)(IXMLDOMParseError *This, int *lineNumber);
+  HRESULT (__stdcall *get_linepos)(IXMLDOMParseError *This, int *linePosition);
+  HRESULT (__stdcall *get_filepos)(IXMLDOMParseError *This, int *filePosition);
+
+};

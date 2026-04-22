@@ -1,0 +1,14 @@
+// Структура: IInspectableVtbl
+// Полей: 6
+// Строки в оригинале: 29940-29948
+struct IInspectableVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IInspectable *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IInspectable *This);
+  ULONG (__stdcall *Release)(IInspectable *This);
+  HRESULT (__stdcall *GetIids)(IInspectable *This, ULONG *iidCount, IID **iids);
+  HRESULT (__stdcall *GetRuntimeClassName)(IInspectable *This, HSTRING *className);
+  HRESULT (__stdcall *GetTrustLevel)(IInspectable *This, TrustLevel *trustLevel);
+
+};

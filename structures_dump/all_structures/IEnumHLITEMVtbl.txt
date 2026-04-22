@@ -1,0 +1,15 @@
+// Структура: IEnumHLITEMVtbl
+// Полей: 7
+// Строки в оригинале: 42847-42856
+struct IEnumHLITEMVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumHLITEM *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumHLITEM *This);
+  ULONG (__stdcall *Release)(IEnumHLITEM *This);
+  HRESULT (__stdcall *Next)(IEnumHLITEM *This, ULONG celt, HLITEM *rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumHLITEM *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumHLITEM *This);
+  HRESULT (__stdcall *Clone)(IEnumHLITEM *This, IEnumHLITEM **ppienumhlitem);
+
+};

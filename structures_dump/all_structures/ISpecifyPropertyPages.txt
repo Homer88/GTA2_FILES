@@ -1,0 +1,9 @@
+// Структура: ISpecifyPropertyPages
+// Полей: 1
+// Строки в оригинале: 43002-43005
+struct ISpecifyPropertyPages
+{
+
+  struct ISpecifyPropertyPagesVtbl *lpVtbl;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _RTTIClassHierarchyDescriptor
+// Полей: 4
+// Строки в оригинале: 5796-5802
+struct _RTTIClassHierarchyDescriptor
+{
+
+  int signature;
+  int attributes;
+  int numBaseClasses;
+  _UNKNOWN *baseClassArray __off;
+
+};

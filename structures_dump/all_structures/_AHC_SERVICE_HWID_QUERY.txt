@@ -1,0 +1,10 @@
+// Структура: _AHC_SERVICE_HWID_QUERY
+// Полей: 2
+// Строки в оригинале: 312344-312348
+struct _AHC_SERVICE_HWID_QUERY
+{
+
+  unsigned __int8 QueryResult;
+  _UNICODE_STRING HwId;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _SSerializationHeader
+// Полей: 2
+// Строки в оригинале: 193358-193362
+struct _SSerializationHeader
+{
+
+  unsigned int dwSize;
+  void *pvMarshalPtr;
+
+};

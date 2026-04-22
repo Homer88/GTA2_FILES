@@ -1,0 +1,24 @@
+// Структура: _SCRUB_DATA_OUTPUT
+// Полей: 16
+// Строки в оригинале: 101735-101753
+struct _SCRUB_DATA_OUTPUT
+{
+
+  unsigned int Size;
+  unsigned int Flags;
+  unsigned int Status;
+  unsigned __int64 ErrorFileOffset;
+  unsigned __int64 ErrorLength;
+  unsigned __int64 NumberOfBytesRepaired;
+  unsigned __int64 NumberOfBytesFailed;
+  unsigned __int64 InternalFileReference;
+  unsigned __int16 ResumeContextLength;
+  unsigned __int16 ParityExtentDataOffset;
+  unsigned int Reserved[9];
+  unsigned __int64 NumberOfMetadataBytesProcessed;
+  unsigned __int64 NumberOfDataBytesProcessed;
+  unsigned __int64 TotalNumberOfMetadataBytesInUse;
+  unsigned __int64 TotalNumberOfDataBytesInUse;
+  unsigned __int8 ResumeContext[816];
+
+};

@@ -1,0 +1,17 @@
+// Структура: ApartmentTypeSpecificRoutines
+// Полей: 9
+// Строки в оригинале: 231839-231850
+struct ApartmentTypeSpecificRoutines
+{
+
+  CComApartment *(__stdcall *GetCurrentComApartment)(COleTls *);
+  bool (__stdcall *IsInitializedAndNotUninitializing)();
+  HRESULT (__stdcall *CreateApartmentState)(void **);
+  void (__stdcall *ReleaseApartmentState)(void *);
+  unsigned int (__stdcall *GetServerReportedOxidFlags)();
+  void (__stdcall *SignalApartmentClient)(CAsyncCall *, CChannelObject *);
+  HRESULT (__stdcall *InvokeInApartment)(tagRPCOLEMESSAGE *, unsigned int, bool, IRpcStubBuffer *, CServerChannel *, tagIPIDEntry *, unsigned int *);
+  HRESULT (__stdcall *DeliverCrossThreadResponseToClient)(WinrtAsyncResponse *);
+  void (__stdcall *DeliverCrossThreadCancelToServer)(WinrtAsyncServerContinuationMessage *);
+
+};

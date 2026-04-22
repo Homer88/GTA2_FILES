@@ -1,0 +1,12 @@
+// Структура: ISupportErrorInfoVtbl
+// Полей: 4
+// Строки в оригинале: 182178-182184
+struct ISupportErrorInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISupportErrorInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISupportErrorInfo *This);
+  ULONG (__stdcall *Release)(ISupportErrorInfo *This);
+  HRESULT (__stdcall *InterfaceSupportsErrorInfo)(ISupportErrorInfo *This, const IID *const riid);
+
+};

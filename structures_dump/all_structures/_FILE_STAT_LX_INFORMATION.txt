@@ -1,0 +1,25 @@
+// Структура: _FILE_STAT_LX_INFORMATION
+// Полей: 17
+// Строки в оригинале: 98530-98549
+struct _FILE_STAT_LX_INFORMATION
+{
+
+  _LARGE_INTEGER FileId;
+  _LARGE_INTEGER CreationTime;
+  _LARGE_INTEGER LastAccessTime;
+  _LARGE_INTEGER LastWriteTime;
+  _LARGE_INTEGER ChangeTime;
+  _LARGE_INTEGER AllocationSize;
+  _LARGE_INTEGER EndOfFile;
+  unsigned int FileAttributes;
+  unsigned int ReparseTag;
+  unsigned int NumberOfLinks;
+  unsigned int EffectiveAccess;
+  unsigned int LxFlags;
+  unsigned int LxUid;
+  unsigned int LxGid;
+  unsigned int LxMode;
+  unsigned int LxDeviceIdMajor;
+  unsigned int LxDeviceIdMinor;
+
+};

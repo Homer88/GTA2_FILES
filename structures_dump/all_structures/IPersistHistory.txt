@@ -1,0 +1,9 @@
+// Структура: IPersistHistory
+// Полей: 1
+// Строки в оригинале: 32952-32955
+struct IPersistHistory
+{
+
+  struct IPersistHistoryVtbl *lpVtbl;
+
+};

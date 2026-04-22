@@ -1,0 +1,11 @@
+// Структура: _POWER_THROTTLING_PROCESS_STATE
+// Полей: 3
+// Строки в оригинале: 108848-108853
+struct _POWER_THROTTLING_PROCESS_STATE
+{
+
+  unsigned int Version;
+  unsigned int ControlMask;
+  unsigned int StateMask;
+
+};

@@ -1,0 +1,14 @@
+// Структура: IDirectWriterLockVtbl
+// Полей: 6
+// Строки в оригинале: 351562-351570
+struct IDirectWriterLockVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirectWriterLock *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDirectWriterLock *This);
+  ULONG (__stdcall *Release)(IDirectWriterLock *This);
+  HRESULT (__stdcall *WaitForWriteAccess)(IDirectWriterLock *This, DWORD dwTimeout);
+  HRESULT (__stdcall *ReleaseWriteAccess)(IDirectWriterLock *This);
+  HRESULT (__stdcall *HaveWriteAccess)(IDirectWriterLock *This);
+
+};

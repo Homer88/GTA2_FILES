@@ -1,0 +1,11 @@
+// Структура: _ACCESS_ALLOWED_ACE
+// Полей: 3
+// Строки в оригинале: 78242-78247
+struct _ACCESS_ALLOWED_ACE
+{
+
+  _ACE_HEADER Header;
+  unsigned int Mask;
+  unsigned int SidStart;
+
+};

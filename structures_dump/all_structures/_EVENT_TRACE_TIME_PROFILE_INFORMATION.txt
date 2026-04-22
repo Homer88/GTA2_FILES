@@ -1,0 +1,10 @@
+// Структура: _EVENT_TRACE_TIME_PROFILE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 313217-313221
+struct _EVENT_TRACE_TIME_PROFILE_INFORMATION
+{
+
+  _EVENT_TRACE_INFORMATION_CLASS EventTraceInformationClass;
+  unsigned int ProfileInterval;
+
+};

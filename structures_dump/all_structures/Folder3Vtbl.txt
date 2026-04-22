@@ -1,0 +1,32 @@
+// Структура: Folder3Vtbl
+// Полей: 24
+// Строки в оригинале: 42920-42946
+struct Folder3Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(Folder3 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(Folder3 *This);
+  ULONG (__stdcall *Release)(Folder3 *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(Folder3 *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(Folder3 *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(Folder3 *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(Folder3 *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Title)(Folder3 *This, BSTR *pbs);
+  HRESULT (__stdcall *get_Application)(Folder3 *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_Parent)(Folder3 *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_ParentFolder)(Folder3 *This, Folder **ppsf);
+  HRESULT (__stdcall *Items)(Folder3 *This, FolderItems **ppid);
+  HRESULT (__stdcall *ParseName)(Folder3 *This, BSTR bName, FolderItem **ppid);
+  HRESULT (__stdcall *NewFolder)(Folder3 *This, BSTR bName, VARIANT vOptions);
+  HRESULT (__stdcall *MoveHere)(Folder3 *This, VARIANT vItem, VARIANT vOptions);
+  HRESULT (__stdcall *CopyHere)(Folder3 *This, VARIANT vItem, VARIANT vOptions);
+  HRESULT (__stdcall *GetDetailsOf)(Folder3 *This, VARIANT vItem, int iColumn, BSTR *pbs);
+  HRESULT (__stdcall *get_Self)(Folder3 *This, FolderItem **ppfi);
+  HRESULT (__stdcall *get_OfflineStatus)(Folder3 *This, LONG *pul);
+  HRESULT (__stdcall *Synchronize)(Folder3 *This);
+  HRESULT (__stdcall *get_HaveToShowWebViewBarricade)(Folder3 *This, VARIANT_BOOL *pbHaveToShowWebViewBarricade);
+  HRESULT (__stdcall *DismissedWebViewBarricade)(Folder3 *This);
+  HRESULT (__stdcall *get_ShowWebViewBarricade)(Folder3 *This, VARIANT_BOOL *pbShowWebViewBarricade);
+  HRESULT (__stdcall *put_ShowWebViewBarricade)(Folder3 *This, VARIANT_BOOL bShowWebViewBarricade);
+
+};

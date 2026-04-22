@@ -1,0 +1,16 @@
+// Структура: _BCRYPT_ECCFULLKEY_BLOB
+// Полей: 8
+// Строки в оригинале: 109962-109972
+struct _BCRYPT_ECCFULLKEY_BLOB
+{
+
+  unsigned int dwMagic;
+  unsigned int dwVersion;
+  ECC_CURVE_TYPE_ENUM dwCurveType;
+  ECC_CURVE_ALG_ID_ENUM dwCurveGenerationAlgId;
+  unsigned int cbFieldLength;
+  unsigned int cbSubgroupOrder;
+  unsigned int cbCofactor;
+  unsigned int cbSeed;
+
+};

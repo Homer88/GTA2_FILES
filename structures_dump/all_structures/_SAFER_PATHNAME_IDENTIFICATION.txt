@@ -1,0 +1,12 @@
+// Структура: _SAFER_PATHNAME_IDENTIFICATION
+// Полей: 4
+// Строки в оригинале: 109990-109996
+struct _SAFER_PATHNAME_IDENTIFICATION
+{
+
+  _SAFER_IDENTIFICATION_HEADER header;
+  wchar_t Description[256];
+  wchar_t *ImageName;
+  unsigned int dwSaferFlags;
+
+};

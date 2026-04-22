@@ -1,0 +1,11 @@
+// Структура: _RPC_SEC_CONTEXT_KEY_INFO
+// Полей: 3
+// Строки в оригинале: 83623-83628
+struct _RPC_SEC_CONTEXT_KEY_INFO
+{
+
+  unsigned int EncryptAlgorithm;
+  unsigned int KeySize;
+  unsigned int SignatureAlgorithm;
+
+};

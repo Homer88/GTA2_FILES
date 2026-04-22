@@ -1,0 +1,10 @@
+// Структура: _XSAVE_FEATURE
+// Полей: 2
+// Строки в оригинале: 89521-89525
+struct _XSAVE_FEATURE
+{
+
+  unsigned int FeatureId;
+  $911EDC84528D40862EADC3DB6B16A335 ___u1;
+
+};

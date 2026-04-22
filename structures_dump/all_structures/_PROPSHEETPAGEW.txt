@@ -1,0 +1,22 @@
+// Структура: _PROPSHEETPAGEW
+// Полей: 14
+// Строки в оригинале: 147296-147312
+struct _PROPSHEETPAGEW
+{
+
+  unsigned int dwSize;
+  unsigned int dwFlags;
+  HINSTANCE__ *hInstance;
+  $7BABBAA5204467172A8A0B81AC4F7265 ___u3;
+  $BA5A92E12A57E058C4050CCA18FACD72 ___u4;
+  const wchar_t *pszTitle;
+  int (__stdcall *pfnDlgProc)(HWND__ *, unsigned int, unsigned int, int);
+  int lParam;
+  unsigned int (__stdcall *pfnCallback)(HWND__ *, unsigned int, _PROPSHEETPAGEW *);
+  unsigned int *pcRefParent;
+  const wchar_t *pszHeaderTitle;
+  const wchar_t *pszHeaderSubTitle;
+  void *hActCtx;
+  $D1954D16201605C6FD9B4C59A5B1DB65 ___u13;
+
+};

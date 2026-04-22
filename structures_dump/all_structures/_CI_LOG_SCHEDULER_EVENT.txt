@@ -1,0 +1,13 @@
+// Структура: _CI_LOG_SCHEDULER_EVENT
+// Полей: 5
+// Строки в оригинале: 310966-310973
+struct _CI_LOG_SCHEDULER_EVENT
+{
+
+  _EVENT_TRACE_HEADER Header;
+  unsigned int ProcessId;
+  unsigned int ThreadId;
+  unsigned int Priority;
+  unsigned int TaskIndex;
+
+};

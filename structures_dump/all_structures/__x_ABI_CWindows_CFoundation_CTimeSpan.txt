@@ -1,0 +1,9 @@
+// Структура: __x_ABI_CWindows_CFoundation_CTimeSpan
+// Полей: 1
+// Строки в оригинале: 351853-351856
+struct __x_ABI_CWindows_CFoundation_CTimeSpan
+{
+
+  INT64 Duration;
+
+};

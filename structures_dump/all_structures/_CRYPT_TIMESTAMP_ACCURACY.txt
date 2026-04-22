@@ -1,0 +1,11 @@
+// Структура: _CRYPT_TIMESTAMP_ACCURACY
+// Полей: 3
+// Строки в оригинале: 94986-94991
+struct _CRYPT_TIMESTAMP_ACCURACY
+{
+
+  unsigned int dwSeconds;
+  unsigned int dwMillis;
+  unsigned int dwMicros;
+
+};

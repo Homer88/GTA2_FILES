@@ -1,0 +1,15 @@
+// Структура: tagHELPWININFOW
+// Полей: 7
+// Строки в оригинале: 83910-83919
+struct tagHELPWININFOW
+{
+
+  int wStructSize;
+  int x;
+  int y;
+  int dx;
+  int dy;
+  int wMax;
+  wchar_t rgchMember[2];
+
+};

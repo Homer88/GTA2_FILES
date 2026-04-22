@@ -1,0 +1,14 @@
+// Структура: _FS_FILTER_CALLBACK_DATA
+// Полей: 6
+// Строки в оригинале: 19136-19144
+struct _FS_FILTER_CALLBACK_DATA
+{
+
+  unsigned int SizeOfFsFilterCallbackData;
+  unsigned __int8 Operation;
+  unsigned __int8 Reserved;
+  _DEVICE_OBJECT *DeviceObject;
+  _FILE_OBJECT *FileObject;
+  _FS_FILTER_PARAMETERS Parameters;
+
+};

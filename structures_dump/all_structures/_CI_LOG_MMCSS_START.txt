@@ -1,0 +1,9 @@
+// Структура: _CI_LOG_MMCSS_START
+// Полей: 1
+// Строки в оригинале: 309348-309351
+struct _CI_LOG_MMCSS_START
+{
+
+  _EVENT_TRACE_HEADER Header;
+
+};

@@ -1,0 +1,11 @@
+// Структура: tagServerInformation
+// Полей: 3
+// Строки в оригинале: 92847-92852
+struct tagServerInformation
+{
+
+  unsigned int dwServerPid;
+  unsigned int dwServerTid;
+  unsigned __int64 ui64ServerAddress;
+
+};

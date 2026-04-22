@@ -1,0 +1,17 @@
+// Структура: _NCRYPT_EXPORTED_ISOLATED_KEY_HEADER
+// Полей: 9
+// Строки в оригинале: 96905-96916
+struct _NCRYPT_EXPORTED_ISOLATED_KEY_HEADER
+{
+
+  unsigned int Version;
+  unsigned int KeyUsage;
+  unsigned __int32 PerBootKey : 1;
+  unsigned __int32 Reserved : 31;
+  unsigned int cbAlgName;
+  unsigned int cbNonce;
+  unsigned int cbAuthTag;
+  unsigned int cbWrappingKey;
+  unsigned int cbIsolatedKey;
+
+};

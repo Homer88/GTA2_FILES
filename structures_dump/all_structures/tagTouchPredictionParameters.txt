@@ -1,0 +1,12 @@
+// Структура: tagTouchPredictionParameters
+// Полей: 4
+// Строки в оригинале: 94244-94250
+struct tagTouchPredictionParameters
+{
+
+  unsigned int cbSize;
+  unsigned int dwLatency;
+  unsigned int dwSampleTime;
+  unsigned int bUseHWTimeStamp;
+
+};

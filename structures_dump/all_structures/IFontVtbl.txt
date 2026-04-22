@@ -1,0 +1,35 @@
+// Структура: IFontVtbl
+// Полей: 27
+// Строки в оригинале: 182419-182448
+struct IFontVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFont *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFont *This);
+  ULONG (__stdcall *Release)(IFont *This);
+  HRESULT (__stdcall *get_Name)(IFont *This, BSTR *pName);
+  HRESULT (__stdcall *put_Name)(IFont *This, BSTR name);
+  HRESULT (__stdcall *get_Size)(IFont *This, CY *pSize);
+  HRESULT (__stdcall *put_Size)(IFont *This, CY size);
+  HRESULT (__stdcall *get_Bold)(IFont *This, BOOL *pBold);
+  HRESULT (__stdcall *put_Bold)(IFont *This, BOOL bold);
+  HRESULT (__stdcall *get_Italic)(IFont *This, BOOL *pItalic);
+  HRESULT (__stdcall *put_Italic)(IFont *This, BOOL italic);
+  HRESULT (__stdcall *get_Underline)(IFont *This, BOOL *pUnderline);
+  HRESULT (__stdcall *put_Underline)(IFont *This, BOOL underline);
+  HRESULT (__stdcall *get_Strikethrough)(IFont *This, BOOL *pStrikethrough);
+  HRESULT (__stdcall *put_Strikethrough)(IFont *This, BOOL strikethrough);
+  HRESULT (__stdcall *get_Weight)(IFont *This, SHORT *pWeight);
+  HRESULT (__stdcall *put_Weight)(IFont *This, SHORT weight);
+  HRESULT (__stdcall *get_Charset)(IFont *This, SHORT *pCharset);
+  HRESULT (__stdcall *put_Charset)(IFont *This, SHORT charset);
+  HRESULT (__stdcall *get_hFont)(IFont *This, HFONT *phFont);
+  HRESULT (__stdcall *Clone)(IFont *This, IFont **ppFont);
+  HRESULT (__stdcall *IsEqual)(IFont *This, IFont *pFontOther);
+  HRESULT (__stdcall *SetRatio)(IFont *This, LONG cyLogical, LONG cyHimetric);
+  HRESULT (__stdcall *QueryTextMetrics)(IFont *This, TEXTMETRICOLE *pTM);
+  HRESULT (__stdcall *AddRefHfont)(IFont *This, HFONT hFont);
+  HRESULT (__stdcall *ReleaseHfont)(IFont *This, HFONT hFont);
+  HRESULT (__stdcall *SetHdc)(IFont *This, HDC hDC);
+
+};

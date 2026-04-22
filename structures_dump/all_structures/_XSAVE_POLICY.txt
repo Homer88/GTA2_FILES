@@ -1,0 +1,15 @@
+// Структура: _XSAVE_POLICY
+// Полей: 7
+// Строки в оригинале: 89528-89537
+struct _XSAVE_POLICY
+{
+
+  unsigned int Version;
+  unsigned int Size;
+  unsigned int Flags;
+  unsigned int MaxSaveAreaLength;
+  unsigned __int64 FeatureBitmask;
+  unsigned int NumberOfFeatures;
+  _XSAVE_FEATURE Features[1];
+
+};

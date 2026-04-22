@@ -1,0 +1,9 @@
+// Структура: IThumbnailCache
+// Полей: 1
+// Строки в оригинале: 38029-38032
+struct IThumbnailCache
+{
+
+  struct IThumbnailCacheVtbl *lpVtbl;
+
+};

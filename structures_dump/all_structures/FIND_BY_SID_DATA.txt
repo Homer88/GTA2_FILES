@@ -1,0 +1,10 @@
+// Структура: FIND_BY_SID_DATA
+// Полей: 2
+// Строки в оригинале: 99797-99801
+struct FIND_BY_SID_DATA
+{
+
+  unsigned int Restart;
+  _SID Sid;
+
+};

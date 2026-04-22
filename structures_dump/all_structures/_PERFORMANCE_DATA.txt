@@ -1,0 +1,17 @@
+// Структура: _PERFORMANCE_DATA
+// Полей: 9
+// Строки в оригинале: 82929-82940
+struct _PERFORMANCE_DATA
+{
+
+  unsigned __int16 Size;
+  unsigned __int8 Version;
+  unsigned __int8 HwCountersCount;
+  unsigned int ContextSwitchCount;
+  unsigned __int64 WaitReasonBitMap;
+  unsigned __int64 CycleTime;
+  unsigned int RetryCount;
+  unsigned int Reserved;
+  _HARDWARE_COUNTER_DATA HwCounters[16];
+
+};

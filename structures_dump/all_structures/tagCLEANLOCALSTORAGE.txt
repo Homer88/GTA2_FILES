@@ -1,0 +1,11 @@
+// Структура: tagCLEANLOCALSTORAGE
+// Полей: 3
+// Строки в оригинале: 111411-111416
+struct tagCLEANLOCALSTORAGE
+{
+
+  IUnknown *pInterface;
+  void *pStorage;
+  unsigned int flags;
+
+};

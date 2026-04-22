@@ -1,0 +1,12 @@
+// Структура: tagEMREOF
+// Полей: 4
+// Строки в оригинале: 94977-94983
+struct tagEMREOF
+{
+
+  tagEMR emr;
+  unsigned int nPalEntries;
+  unsigned int offPalEntries;
+  unsigned int nSizeLast;
+
+};

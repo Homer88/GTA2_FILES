@@ -1,0 +1,11 @@
+// Структура: tagSecurityInfoData
+// Полей: 3
+// Строки в оригинале: 193380-193385
+struct tagSecurityInfoData
+{
+
+  unsigned int dwAuthnFlags;
+  _COSERVERINFO *pServerInfo;
+  _COAUTHIDENTITY *pAuthIdentityInfo;
+
+};

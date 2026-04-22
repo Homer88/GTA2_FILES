@@ -1,0 +1,12 @@
+// Структура: _IMAGEHLP_DUPLICATE_SYMBOL64
+// Полей: 4
+// Строки в оригинале: 123977-123983
+struct _IMAGEHLP_DUPLICATE_SYMBOL64
+{
+
+  unsigned int SizeOfStruct;
+  unsigned int NumberOfDups;
+  _IMAGEHLP_SYMBOL64 *Symbol;
+  unsigned int SelectedSymbol;
+
+};

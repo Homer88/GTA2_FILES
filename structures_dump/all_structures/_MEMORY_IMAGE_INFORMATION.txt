@@ -1,0 +1,11 @@
+// Структура: _MEMORY_IMAGE_INFORMATION
+// Полей: 3
+// Строки в оригинале: 103781-103786
+struct _MEMORY_IMAGE_INFORMATION
+{
+
+  void *ImageBase;
+  unsigned int SizeOfImage;
+  $C6DA4FD4F5B3EB6248A45B01D8060123 ___u2;
+
+};

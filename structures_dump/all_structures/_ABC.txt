@@ -1,0 +1,11 @@
+// Структура: _ABC
+// Полей: 3
+// Строки в оригинале: 111928-111933
+struct _ABC
+{
+
+  int abcA;
+  unsigned int abcB;
+  int abcC;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _CRYPT_X942_OTHER_INFO
+// Полей: 4
+// Строки в оригинале: 111487-111493
+struct _CRYPT_X942_OTHER_INFO
+{
+
+  char *pszContentEncryptionObjId;
+  unsigned __int8 rgbCounter[4];
+  unsigned __int8 rgbKeyLength[4];
+  _CRYPTOAPI_BLOB PubInfo;
+
+};

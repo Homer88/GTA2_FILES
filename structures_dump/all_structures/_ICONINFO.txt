@@ -1,0 +1,13 @@
+// Структура: _ICONINFO
+// Полей: 5
+// Строки в оригинале: 113073-113080
+struct _ICONINFO
+{
+
+  int fIcon;
+  unsigned int xHotspot;
+  unsigned int yHotspot;
+  HBITMAP__ *hbmMask;
+  HBITMAP__ *hbmColor;
+
+};

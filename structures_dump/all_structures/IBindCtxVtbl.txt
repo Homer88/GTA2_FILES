@@ -1,0 +1,21 @@
+// Структура: IBindCtxVtbl
+// Полей: 13
+// Строки в оригинале: 23988-24003
+struct IBindCtxVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IBindCtx *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IBindCtx *This);
+  ULONG (__stdcall *Release)(IBindCtx *This);
+  HRESULT (__stdcall *RegisterObjectBound)(IBindCtx *This, IUnknown *punk);
+  HRESULT (__stdcall *RevokeObjectBound)(IBindCtx *This, IUnknown *punk);
+  HRESULT (__stdcall *ReleaseBoundObjects)(IBindCtx *This);
+  HRESULT (__stdcall *SetBindOptions)(IBindCtx *This, BIND_OPTS *pbindopts);
+  HRESULT (__stdcall *GetBindOptions)(IBindCtx *This, BIND_OPTS *pbindopts);
+  HRESULT (__stdcall *GetRunningObjectTable)(IBindCtx *This, IRunningObjectTable **pprot);
+  HRESULT (__stdcall *RegisterObjectParam)(IBindCtx *This, LPOLESTR pszKey, IUnknown *punk);
+  HRESULT (__stdcall *GetObjectParam)(IBindCtx *This, LPOLESTR pszKey, IUnknown **ppunk);
+  HRESULT (__stdcall *EnumObjectParam)(IBindCtx *This, IEnumString **ppenum);
+  HRESULT (__stdcall *RevokeObjectParam)(IBindCtx *This, LPOLESTR pszKey);
+
+};

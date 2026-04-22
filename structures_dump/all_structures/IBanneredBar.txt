@@ -1,0 +1,9 @@
+// Структура: IBanneredBar
+// Полей: 1
+// Строки в оригинале: 33835-33838
+struct IBanneredBar
+{
+
+  struct IBanneredBarVtbl *lpVtbl;
+
+};

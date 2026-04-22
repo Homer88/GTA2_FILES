@@ -1,0 +1,10 @@
+// Структура: _MINIDUMP_MODULE_LIST
+// Полей: 2
+// Строки в оригинале: 122137-122141
+struct _MINIDUMP_MODULE_LIST
+{
+
+  unsigned int NumberOfModules;
+  _MINIDUMP_MODULE Modules[];
+
+};

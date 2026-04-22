@@ -1,0 +1,11 @@
+// Структура: _CERT_HASHED_URL
+// Полей: 3
+// Строки в оригинале: 80933-80938
+struct _CERT_HASHED_URL
+{
+
+  _CRYPT_ALGORITHM_IDENTIFIER HashAlgorithm;
+  _CRYPTOAPI_BLOB Hash;
+  wchar_t *pwszUrl;
+
+};

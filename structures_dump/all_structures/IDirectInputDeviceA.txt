@@ -1,0 +1,9 @@
+// Структура: IDirectInputDeviceA
+// Полей: 1
+// Строки в оригинале: 6070-6073
+struct IDirectInputDeviceA
+{
+
+  struct IDirectInputDeviceAVtbl *lpVtbl;
+
+};

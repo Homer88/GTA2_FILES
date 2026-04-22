@@ -1,0 +1,9 @@
+// Structure: S10__a
+// Lines: 5616 - 5620
+// Fields: 3
+
+struct S10__a
+{
+  _BYTE gap0[794279];
+  char field_0;
+};

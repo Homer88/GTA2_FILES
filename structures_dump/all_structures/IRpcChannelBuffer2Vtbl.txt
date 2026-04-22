@@ -1,0 +1,17 @@
+// Структура: IRpcChannelBuffer2Vtbl
+// Полей: 9
+// Строки в оригинале: 182265-182276
+struct IRpcChannelBuffer2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRpcChannelBuffer2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRpcChannelBuffer2 *This);
+  ULONG (__stdcall *Release)(IRpcChannelBuffer2 *This);
+  HRESULT (__stdcall *GetBuffer)(IRpcChannelBuffer2 *This, RPCOLEMESSAGE *pMessage, const IID *const riid);
+  HRESULT (__stdcall *SendReceive)(IRpcChannelBuffer2 *This, RPCOLEMESSAGE *pMessage, ULONG *pStatus);
+  HRESULT (__stdcall *FreeBuffer)(IRpcChannelBuffer2 *This, RPCOLEMESSAGE *pMessage);
+  HRESULT (__stdcall *GetDestCtx)(IRpcChannelBuffer2 *This, DWORD *pdwDestContext, void **ppvDestContext);
+  HRESULT (__stdcall *IsConnected)(IRpcChannelBuffer2 *This);
+  HRESULT (__stdcall *GetProtocolVersion)(IRpcChannelBuffer2 *This, DWORD *pdwVersion);
+
+};

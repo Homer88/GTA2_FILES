@@ -1,0 +1,11 @@
+// Структура: _LDR_FAILURE_DATA
+// Полей: 3
+// Строки в оригинале: 99084-99089
+struct _LDR_FAILURE_DATA
+{
+
+  int Status;
+  wchar_t ImageName[32];
+  wchar_t AdditionalInfo[32];
+
+};

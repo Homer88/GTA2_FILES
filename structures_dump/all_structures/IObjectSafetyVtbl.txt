@@ -1,0 +1,13 @@
+// Структура: IObjectSafetyVtbl
+// Полей: 5
+// Строки в оригинале: 40800-40807
+struct IObjectSafetyVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IObjectSafety *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IObjectSafety *This);
+  ULONG (__stdcall *Release)(IObjectSafety *This);
+  HRESULT (__stdcall *GetInterfaceSafetyOptions)(IObjectSafety *This, const IID *const riid, DWORD *pdwSupportedOptions, DWORD *pdwEnabledOptions);
+  HRESULT (__stdcall *SetInterfaceSafetyOptions)(IObjectSafety *This, const IID *const riid, DWORD dwOptionSetMask, DWORD dwEnabledOptions);
+
+};

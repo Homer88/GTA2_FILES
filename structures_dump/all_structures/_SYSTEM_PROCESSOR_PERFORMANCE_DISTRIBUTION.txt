@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_PROCESSOR_PERFORMANCE_DISTRIBUTION
+// Полей: 2
+// Строки в оригинале: 108464-108468
+struct _SYSTEM_PROCESSOR_PERFORMANCE_DISTRIBUTION
+{
+
+  unsigned int ProcessorCount;
+  unsigned int Offsets[1];
+
+};

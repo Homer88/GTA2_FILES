@@ -1,0 +1,13 @@
+// Структура: _MANAGE_WRITES_TO_EXECUTABLE_MEMORY
+// Полей: 5
+// Строки в оригинале: 111589-111596
+struct _MANAGE_WRITES_TO_EXECUTABLE_MEMORY
+{
+
+  unsigned __int32 Version : 8;
+  unsigned __int32 ProcessEnableWriteExceptions : 1;
+  unsigned __int32 ThreadAllowWrites : 1;
+  unsigned __int32 Spare : 22;
+  void *KernelWriteToExecutableSignal;
+
+};

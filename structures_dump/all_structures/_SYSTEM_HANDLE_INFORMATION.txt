@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_HANDLE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 80496-80500
+struct _SYSTEM_HANDLE_INFORMATION
+{
+
+  unsigned int NumberOfHandles;
+  _SYSTEM_HANDLE_TABLE_ENTRY_INFO Handles[1];
+
+};

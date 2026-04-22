@@ -1,0 +1,11 @@
+// Структура: tagREMINTERFACEREF
+// Полей: 3
+// Строки в оригинале: 187888-187893
+struct tagREMINTERFACEREF
+{
+
+  _GUID ipid;
+  unsigned int cPublicRefs;
+  unsigned int cPrivateRefs;
+
+};

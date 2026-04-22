@@ -1,0 +1,12 @@
+// Структура: _CERT_LOGOTYPE_DATA
+// Полей: 4
+// Строки в оригинале: 81978-81984
+struct _CERT_LOGOTYPE_DATA
+{
+
+  unsigned int cLogotypeImage;
+  _CERT_LOGOTYPE_IMAGE *rgLogotypeImage;
+  unsigned int cLogotypeAudio;
+  _CERT_LOGOTYPE_AUDIO *rgLogotypeAudio;
+
+};

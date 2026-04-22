@@ -1,0 +1,9 @@
+// Структура: ITfEditRecord
+// Полей: 1
+// Строки в оригинале: 31323-31326
+struct ITfEditRecord
+{
+
+  struct ITfEditRecordVtbl *lpVtbl;
+
+};

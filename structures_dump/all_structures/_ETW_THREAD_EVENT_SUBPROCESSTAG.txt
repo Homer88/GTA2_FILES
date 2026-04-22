@@ -1,0 +1,11 @@
+// Структура: _ETW_THREAD_EVENT_SUBPROCESSTAG
+// Полей: 3
+// Строки в оригинале: 313805-313810
+struct _ETW_THREAD_EVENT_SUBPROCESSTAG
+{
+
+  _SYSTEM_TRACE_HEADER Header;
+  unsigned int OldTag;
+  unsigned int NewTag;
+
+};

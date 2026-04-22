@@ -1,0 +1,12 @@
+// Структура: WMIREGGUIDW
+// Полей: 4
+// Строки в оригинале: 309627-309633
+struct WMIREGGUIDW
+{
+
+  _GUID Guid;
+  unsigned int Flags;
+  unsigned int InstanceCount;
+  $0D323DB0EE3BF72923166D70E7162DC7 ___u3;
+
+};

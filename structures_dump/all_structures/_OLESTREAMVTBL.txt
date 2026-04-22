@@ -1,0 +1,10 @@
+// Структура: _OLESTREAMVTBL
+// Полей: 2
+// Строки в оригинале: 101473-101477
+struct _OLESTREAMVTBL
+{
+
+  unsigned int (__stdcall *Get)(_OLESTREAM *, void *, unsigned int);
+  unsigned int (__stdcall *Put)(_OLESTREAM *, const void *, unsigned int);
+
+};

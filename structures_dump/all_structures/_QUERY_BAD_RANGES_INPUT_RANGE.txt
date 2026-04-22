@@ -1,0 +1,10 @@
+// Структура: _QUERY_BAD_RANGES_INPUT_RANGE
+// Полей: 2
+// Строки в оригинале: 95162-95166
+struct _QUERY_BAD_RANGES_INPUT_RANGE
+{
+
+  unsigned __int64 StartOffset;
+  unsigned __int64 LengthInBytes;
+
+};

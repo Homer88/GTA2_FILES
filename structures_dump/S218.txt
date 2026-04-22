@@ -1,0 +1,9 @@
+// Structure: S218
+// Lines: 5763 - 5767
+// Fields: 3
+
+struct S218
+{
+  _BYTE gap0[256];
+  char field_0;
+};

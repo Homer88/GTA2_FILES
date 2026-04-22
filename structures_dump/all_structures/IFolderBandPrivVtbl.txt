@@ -1,0 +1,15 @@
+// Структура: IFolderBandPrivVtbl
+// Полей: 7
+// Строки в оригинале: 44416-44425
+struct IFolderBandPrivVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFolderBandPriv *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFolderBandPriv *This);
+  ULONG (__stdcall *Release)(IFolderBandPriv *This);
+  HRESULT (__stdcall *SetCascade)(IFolderBandPriv *This, BOOL fCascade);
+  HRESULT (__stdcall *SetAccelerators)(IFolderBandPriv *This, BOOL fAccelerators);
+  HRESULT (__stdcall *SetNoIcons)(IFolderBandPriv *This, BOOL fNoIcons);
+  HRESULT (__stdcall *SetNoText)(IFolderBandPriv *This, BOOL fNoText);
+
+};

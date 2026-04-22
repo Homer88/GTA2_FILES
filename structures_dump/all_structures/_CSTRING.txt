@@ -1,0 +1,11 @@
+// Структура: _CSTRING
+// Полей: 3
+// Строки в оригинале: 101389-101394
+struct _CSTRING
+{
+
+  unsigned __int16 Length;
+  unsigned __int16 MaximumLength;
+  const char *Buffer;
+
+};

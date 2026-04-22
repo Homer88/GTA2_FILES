@@ -1,0 +1,13 @@
+// Структура: _HEAP_REGION_INFORMATION
+// Полей: 5
+// Строки в оригинале: 89266-89273
+struct _HEAP_REGION_INFORMATION
+{
+
+  unsigned int Address;
+  unsigned int ReserveSize;
+  unsigned int CommitSize;
+  unsigned int FirstRangeInformationOffset;
+  unsigned int NextRegionInformationOffset;
+
+};

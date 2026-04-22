@@ -1,0 +1,11 @@
+// Структура: _MUILANGLISTNODE
+// Полей: 3
+// Строки в оригинале: 80860-80865
+struct _MUILANGLISTNODE
+{
+
+  unsigned __int16 LanguageType;
+  unsigned __int16 Reserved;
+  __int16 LanguageSpec;
+
+};

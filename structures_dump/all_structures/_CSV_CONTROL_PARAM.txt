@@ -1,0 +1,10 @@
+// Структура: _CSV_CONTROL_PARAM
+// Полей: 2
+// Строки в оригинале: 95111-95115
+struct _CSV_CONTROL_PARAM
+{
+
+  _CSV_CONTROL_OP Operation;
+  __int64 Unused;
+
+};

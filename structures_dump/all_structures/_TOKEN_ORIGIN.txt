@@ -1,0 +1,9 @@
+// Структура: _TOKEN_ORIGIN
+// Полей: 1
+// Строки в оригинале: 111419-111422
+struct _TOKEN_ORIGIN
+{
+
+  _LUID OriginatingLogonSession;
+
+};

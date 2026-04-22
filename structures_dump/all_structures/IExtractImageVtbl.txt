@@ -1,0 +1,13 @@
+// Структура: IExtractImageVtbl
+// Полей: 5
+// Строки в оригинале: 35507-35514
+struct IExtractImageVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IExtractImage *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IExtractImage *This);
+  ULONG (__stdcall *Release)(IExtractImage *This);
+  HRESULT (__stdcall *GetLocation)(IExtractImage *This, LPWSTR pszPathBuffer, DWORD cch, DWORD *pdwPriority, const SIZE *prgSize, DWORD dwRecClrDepth, DWORD *pdwFlags);
+  HRESULT (__stdcall *Extract)(IExtractImage *This, HBITMAP *phBmpThumbnail);
+
+};

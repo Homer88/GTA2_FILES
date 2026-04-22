@@ -1,0 +1,10 @@
+// Структура: _CAT_MEMBERINFO2
+// Полей: 2
+// Строки в оригинале: 123609-123613
+struct _CAT_MEMBERINFO2
+{
+
+  _GUID SubjectGuid;
+  unsigned int dwCertVersion;
+
+};

@@ -1,0 +1,23 @@
+// Структура: _NDR64_PARAM_FLAGS
+// Полей: 15
+// Строки в оригинале: 331221-331238
+struct _NDR64_PARAM_FLAGS
+{
+
+  unsigned __int16 MustSize : 1;
+  unsigned __int16 MustFree : 1;
+  unsigned __int16 IsPipe : 1;
+  unsigned __int16 IsIn : 1;
+  unsigned __int16 IsOut : 1;
+  unsigned __int16 IsReturn : 1;
+  unsigned __int16 IsBasetype : 1;
+  unsigned __int16 IsByValue : 1;
+  unsigned __int16 IsSimpleRef : 1;
+  unsigned __int16 IsDontCallFreeInst : 1;
+  unsigned __int16 SaveForAsyncFinish : 1;
+  unsigned __int16 IsPartialIgnore : 1;
+  unsigned __int16 IsForceAllocate : 1;
+  unsigned __int16 Reserved : 2;
+  unsigned __int16 UseCache : 1;
+
+};

@@ -1,0 +1,12 @@
+// Структура: __NCRYPT_PCP_TPM_FW_VERSION_INFO
+// Полей: 4
+// Строки в оригинале: 111186-111192
+struct __NCRYPT_PCP_TPM_FW_VERSION_INFO
+{
+
+  unsigned __int16 major1;
+  unsigned __int16 major2;
+  unsigned __int16 minor1;
+  unsigned __int16 minor2;
+
+};

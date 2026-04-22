@@ -1,0 +1,38 @@
+// Структура: _RTL_USER_PROCESS_PARAMETERS
+// Полей: 30
+// Строки в оригинале: 2979-3011
+struct _RTL_USER_PROCESS_PARAMETERS
+{
+
+  unsigned int MaximumLength;
+  unsigned int Length;
+  unsigned int Flags;
+  unsigned int DebugFlags;
+  void *ConsoleHandle;
+  unsigned int ConsoleFlags;
+  void *StandardInput;
+  void *StandardOutput;
+  void *StandardError;
+  struct _CURDIR CurrentDirectory;
+  struct _UNICODE_STRING DllPath;
+  struct _UNICODE_STRING ImagePathName;
+  struct _UNICODE_STRING CommandLine;
+  void *Environment;
+  unsigned int StartingX;
+  unsigned int StartingY;
+  unsigned int CountX;
+  unsigned int CountY;
+  unsigned int CountCharsX;
+  unsigned int CountCharsY;
+  unsigned int FillAttribute;
+  unsigned int WindowFlags;
+  unsigned int ShowWindowFlags;
+  struct _UNICODE_STRING WindowTitle;
+  struct _UNICODE_STRING DesktopInfo;
+  struct _UNICODE_STRING ShellInfo;
+  struct _UNICODE_STRING RuntimeData;
+  struct _RTL_DRIVE_LETTER_CURDIR CurrentDirectores[32];
+  volatile unsigned int EnvironmentSize;
+  volatile unsigned int EnvironmentVersion;
+
+};

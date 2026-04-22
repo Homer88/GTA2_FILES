@@ -1,0 +1,20 @@
+// Структура: IDXGIDeviceVtbl
+// Полей: 12
+// Строки в оригинале: 351908-351922
+struct IDXGIDeviceVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDXGIDevice *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDXGIDevice *This);
+  ULONG (__stdcall *Release)(IDXGIDevice *This);
+  HRESULT (__stdcall *SetPrivateData)(IDXGIDevice *This, const GUID *const Name, UINT DataSize, const void *pData);
+  HRESULT (__stdcall *SetPrivateDataInterface)(IDXGIDevice *This, const GUID *const Name, const IUnknown *pUnknown);
+  HRESULT (__stdcall *GetPrivateData)(IDXGIDevice *This, const GUID *const Name, UINT *pDataSize, void *pData);
+  HRESULT (__stdcall *GetParent)(IDXGIDevice *This, const IID *const riid, void **ppParent);
+  HRESULT (__stdcall *GetAdapter)(IDXGIDevice *This, IDXGIAdapter **pAdapter);
+  HRESULT (__stdcall *CreateSurface)(IDXGIDevice *This, const DXGI_SURFACE_DESC *pDesc, UINT NumSurfaces, DXGI_USAGE Usage, const DXGI_SHARED_RESOURCE *pSharedResource, IDXGISurface **ppSurface);
+  HRESULT (__stdcall *QueryResourceResidency)(IDXGIDevice *This, IUnknown *const *ppResources, DXGI_RESIDENCY *pResidencyStatus, UINT NumResources);
+  HRESULT (__stdcall *SetGPUThreadPriority)(IDXGIDevice *This, INT Priority);
+  HRESULT (__stdcall *GetGPUThreadPriority)(IDXGIDevice *This, INT *pPriority);
+
+};

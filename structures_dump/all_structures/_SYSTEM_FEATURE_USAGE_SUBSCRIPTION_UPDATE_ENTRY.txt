@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_FEATURE_USAGE_SUBSCRIPTION_UPDATE_ENTRY
+// Полей: 2
+// Строки в оригинале: 83086-83090
+struct _SYSTEM_FEATURE_USAGE_SUBSCRIPTION_UPDATE_ENTRY
+{
+
+  unsigned int Remove;
+  _RTL_FEATURE_USAGE_SUBSCRIPTION_DETAILS Details;
+
+};

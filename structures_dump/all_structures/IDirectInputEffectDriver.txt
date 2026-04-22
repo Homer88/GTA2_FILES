@@ -1,0 +1,9 @@
+// Структура: IDirectInputEffectDriver
+// Полей: 1
+// Строки в оригинале: 28893-28896
+struct IDirectInputEffectDriver
+{
+
+  struct IDirectInputEffectDriverVtbl *lpVtbl;
+
+};

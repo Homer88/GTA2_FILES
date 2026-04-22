@@ -1,0 +1,15 @@
+// Структура: _WIM_PROVIDER_OVERLAY_ENTRY
+// Полей: 7
+// Строки в оригинале: 105291-105300
+struct _WIM_PROVIDER_OVERLAY_ENTRY
+{
+
+  unsigned int NextEntryOffset;
+  _LARGE_INTEGER DataSourceId;
+  _GUID WimGuid;
+  unsigned int WimFileNameOffset;
+  unsigned int WimType;
+  unsigned int WimIndex;
+  unsigned int Flags;
+
+};

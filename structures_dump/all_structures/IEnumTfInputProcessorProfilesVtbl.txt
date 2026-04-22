@@ -1,0 +1,15 @@
+// Структура: IEnumTfInputProcessorProfilesVtbl
+// Полей: 7
+// Строки в оригинале: 40877-40886
+struct IEnumTfInputProcessorProfilesVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumTfInputProcessorProfiles *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumTfInputProcessorProfiles *This);
+  ULONG (__stdcall *Release)(IEnumTfInputProcessorProfiles *This);
+  HRESULT (__stdcall *Clone)(IEnumTfInputProcessorProfiles *This, IEnumTfInputProcessorProfiles **ppEnum);
+  HRESULT (__stdcall *Next)(IEnumTfInputProcessorProfiles *This, ULONG ulCount, TF_INPUTPROCESSORPROFILE *pProfile, ULONG *pcFetch);
+  HRESULT (__stdcall *Reset)(IEnumTfInputProcessorProfiles *This);
+  HRESULT (__stdcall *Skip)(IEnumTfInputProcessorProfiles *This, ULONG ulCount);
+
+};

@@ -1,0 +1,13 @@
+// Структура: _KSTACK_CONTROL
+// Полей: 5
+// Строки в оригинале: 16097-16104
+struct _KSTACK_CONTROL
+{
+
+  unsigned int StackBase;
+  $FA8942025E900FD3F6CCB6E6F722BFC6 ___u1;
+  _KTRAP_FRAME *PreviousTrapFrame;
+  void *PreviousExceptionList;
+  _KERNEL_STACK_SEGMENT Previous;
+
+};

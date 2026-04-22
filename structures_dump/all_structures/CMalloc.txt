@@ -1,0 +1,9 @@
+// Структура: CMalloc
+// Полей: 1
+// Строки в оригинале: 220158-220161
+struct CMalloc
+{
+
+  const IMallocVtbl *lpVtbl /*VFT*/;
+
+};

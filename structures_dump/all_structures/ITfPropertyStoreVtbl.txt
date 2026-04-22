@@ -1,0 +1,20 @@
+// Структура: ITfPropertyStoreVtbl
+// Полей: 12
+// Строки в оригинале: 30494-30508
+struct ITfPropertyStoreVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfPropertyStore *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfPropertyStore *This);
+  ULONG (__stdcall *Release)(ITfPropertyStore *This);
+  HRESULT (__stdcall *GetType)(ITfPropertyStore *This, GUID *pguid);
+  HRESULT (__stdcall *GetDataType)(ITfPropertyStore *This, DWORD *pdwReserved);
+  HRESULT (__stdcall *GetData)(ITfPropertyStore *This, VARIANT *pvarValue);
+  HRESULT (__stdcall *OnTextUpdated)(ITfPropertyStore *This, DWORD dwFlags, ITfRange *pRangeNew, BOOL *pfAccept);
+  HRESULT (__stdcall *Shrink)(ITfPropertyStore *This, ITfRange *pRangeNew, BOOL *pfFree);
+  HRESULT (__stdcall *Divide)(ITfPropertyStore *This, ITfRange *pRangeThis, ITfRange *pRangeNew, ITfPropertyStore **ppPropStore);
+  HRESULT (__stdcall *Clone)(ITfPropertyStore *This, ITfPropertyStore **pPropStore);
+  HRESULT (__stdcall *GetPropertyRangeCreator)(ITfPropertyStore *This, CLSID *pclsid);
+  HRESULT (__stdcall *Serialize)(ITfPropertyStore *This, IStream *pStream, ULONG *pcb);
+
+};

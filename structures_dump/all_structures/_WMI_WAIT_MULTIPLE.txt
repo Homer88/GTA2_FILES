@@ -1,0 +1,12 @@
+// Структура: _WMI_WAIT_MULTIPLE
+// Полей: 4
+// Строки в оригинале: 311606-311612
+struct _WMI_WAIT_MULTIPLE
+{
+
+  unsigned int ThreadId;
+  unsigned __int8 WaitType;
+  unsigned __int8 ObjectCount;
+  _WMI_WAIT_OBJECT_RECORD ObjectRecord[64];
+
+};

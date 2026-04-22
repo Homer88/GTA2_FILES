@@ -1,0 +1,12 @@
+// Структура: _MOUSE_EVENT_RECORD
+// Полей: 4
+// Строки в оригинале: 91959-91965
+struct _MOUSE_EVENT_RECORD
+{
+
+  _COORD dwMousePosition;
+  unsigned int dwButtonState;
+  unsigned int dwControlKeyState;
+  unsigned int dwEventFlags;
+
+};

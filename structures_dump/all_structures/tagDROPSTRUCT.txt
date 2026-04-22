@@ -1,0 +1,14 @@
+// Структура: tagDROPSTRUCT
+// Полей: 6
+// Строки в оригинале: 94085-94093
+struct tagDROPSTRUCT
+{
+
+  HWND__ *hwndSource;
+  HWND__ *hwndSink;
+  unsigned int wFmt;
+  unsigned int dwData;
+  tagPOINT ptDrop;
+  unsigned int dwControlData;
+
+};

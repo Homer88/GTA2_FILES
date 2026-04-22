@@ -1,0 +1,10 @@
+// Структура: _PROCESS_DYNAMIC_EH_CONTINUATION_TARGET
+// Полей: 2
+// Строки в оригинале: 110374-110378
+struct _PROCESS_DYNAMIC_EH_CONTINUATION_TARGET
+{
+
+  unsigned int TargetAddress;
+  unsigned int Flags;
+
+};

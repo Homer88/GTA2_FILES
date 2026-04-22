@@ -1,0 +1,11 @@
+// Структура: tagMULTIKEYHELPW
+// Полей: 3
+// Строки в оригинале: 89439-89444
+struct tagMULTIKEYHELPW
+{
+
+  unsigned int mkSize;
+  wchar_t mkKeylist;
+  wchar_t szKeyphrase[1];
+
+};

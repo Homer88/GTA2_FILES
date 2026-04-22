@@ -1,0 +1,9 @@
+// Структура: IInternetHostSecurityManager
+// Полей: 1
+// Строки в оригинале: 38325-38328
+struct IInternetHostSecurityManager
+{
+
+  struct IInternetHostSecurityManagerVtbl *lpVtbl;
+
+};

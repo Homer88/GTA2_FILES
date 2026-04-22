@@ -1,0 +1,12 @@
+// Структура: _MINIDUMP_HANDLE_DATA_STREAM
+// Полей: 4
+// Строки в оригинале: 123314-123320
+struct _MINIDUMP_HANDLE_DATA_STREAM
+{
+
+  unsigned int SizeOfHeader;
+  unsigned int SizeOfDescriptor;
+  unsigned int NumberOfDescriptors;
+  unsigned int Reserved;
+
+};

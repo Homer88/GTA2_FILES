@@ -1,0 +1,22 @@
+// Структура: _SILO_USER_SHARED_DATA
+// Полей: 14
+// Строки в оригинале: 18464-18480
+struct _SILO_USER_SHARED_DATA
+{
+
+  unsigned int ServiceSessionId;
+  unsigned int ActiveConsoleId;
+  __int64 ConsoleSessionForegroundProcessId;
+  _NT_PRODUCT_TYPE NtProductType;
+  unsigned int SuiteMask;
+  unsigned int SharedUserSessionId;
+  unsigned __int8 IsMultiSessionSku;
+  wchar_t NtSystemRoot[260];
+  unsigned __int16 UserModeGlobalLogger[16];
+  unsigned int TimeZoneId;
+  volatile int TimeZoneBiasStamp;
+  _KSYSTEM_TIME TimeZoneBias;
+  _LARGE_INTEGER TimeZoneBiasEffectiveStart;
+  _LARGE_INTEGER TimeZoneBiasEffectiveEnd;
+
+};

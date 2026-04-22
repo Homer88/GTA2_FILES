@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_IO_TIMER
+// Полей: 2
+// Строки в оригинале: 311414-311418
+struct _PERFINFO_IO_TIMER
+{
+
+  void *DeviceObject;
+  void *RoutineAddress;
+
+};

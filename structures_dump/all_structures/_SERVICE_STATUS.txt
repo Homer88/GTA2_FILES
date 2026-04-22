@@ -1,0 +1,15 @@
+// Структура: _SERVICE_STATUS
+// Полей: 7
+// Строки в оригинале: 79613-79622
+struct _SERVICE_STATUS
+{
+
+  unsigned int dwServiceType;
+  unsigned int dwCurrentState;
+  unsigned int dwControlsAccepted;
+  unsigned int dwWin32ExitCode;
+  unsigned int dwServiceSpecificExitCode;
+  unsigned int dwCheckPoint;
+  unsigned int dwWaitHint;
+
+};

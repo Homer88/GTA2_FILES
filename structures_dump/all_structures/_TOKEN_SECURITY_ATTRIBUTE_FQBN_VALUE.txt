@@ -1,0 +1,10 @@
+// Структура: _TOKEN_SECURITY_ATTRIBUTE_FQBN_VALUE
+// Полей: 2
+// Строки в оригинале: 77998-78002
+struct _TOKEN_SECURITY_ATTRIBUTE_FQBN_VALUE
+{
+
+  unsigned __int64 Version;
+  _UNICODE_STRING Name;
+
+};

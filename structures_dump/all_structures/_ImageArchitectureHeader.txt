@@ -1,0 +1,12 @@
+// Структура: _ImageArchitectureHeader
+// Полей: 4
+// Строки в оригинале: 106985-106991
+struct _ImageArchitectureHeader
+{
+
+  unsigned __int32 AmaskValue : 1;
+  unsigned __int32 : 7;
+  unsigned __int32 AmaskShift : 8;
+  unsigned int FirstEntryRVA;
+
+};

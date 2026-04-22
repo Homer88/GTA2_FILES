@@ -1,0 +1,40 @@
+// Структура: _SECURITY_FUNCTION_TABLE_A
+// Полей: 32
+// Строки в оригинале: 325764-325798
+struct _SECURITY_FUNCTION_TABLE_A
+{
+
+  unsigned int dwVersion;
+  int (__stdcall *EnumerateSecurityPackagesA)(unsigned int *, _SecPkgInfoA **);
+  int (__stdcall *QueryCredentialsAttributesA)(_SecHandle *, unsigned int, void *);
+  int (__stdcall *AcquireCredentialsHandleA)(char *, char *, unsigned int, void *, void *, void (__stdcall *)(void *, void *, unsigned int, void **, int *), void *, _SecHandle *, _LARGE_INTEGER *);
+  int (__stdcall *FreeCredentialsHandle)(_SecHandle *);
+  void *Reserved2;
+  int (__stdcall *InitializeSecurityContextA)(_SecHandle *, _SecHandle *, char *, unsigned int, unsigned int, unsigned int, _SecBufferDesc *, unsigned int, _SecHandle *, _SecBufferDesc *, unsigned int *, _LARGE_INTEGER *);
+  int (__stdcall *AcceptSecurityContext)(_SecHandle *, _SecHandle *, _SecBufferDesc *, unsigned int, unsigned int, _SecHandle *, _SecBufferDesc *, unsigned int *, _LARGE_INTEGER *);
+  int (__stdcall *CompleteAuthToken)(_SecHandle *, _SecBufferDesc *);
+  int (__stdcall *DeleteSecurityContext)(_SecHandle *);
+  int (__stdcall *ApplyControlToken)(_SecHandle *, _SecBufferDesc *);
+  int (__stdcall *QueryContextAttributesA)(_SecHandle *, unsigned int, void *);
+  int (__stdcall *ImpersonateSecurityContext)(_SecHandle *);
+  int (__stdcall *RevertSecurityContext)(_SecHandle *);
+  int (__stdcall *MakeSignature)(_SecHandle *, unsigned int, _SecBufferDesc *, unsigned int);
+  int (__stdcall *VerifySignature)(_SecHandle *, _SecBufferDesc *, unsigned int, unsigned int *);
+  int (__stdcall *FreeContextBuffer)(void *);
+  int (__stdcall *QuerySecurityPackageInfoA)(char *, _SecPkgInfoA **);
+  void *Reserved3;
+  void *Reserved4;
+  int (__stdcall *ExportSecurityContext)(_SecHandle *, unsigned int, _SecBuffer *, void **);
+  int (__stdcall *ImportSecurityContextA)(char *, _SecBuffer *, void *, _SecHandle *);
+  int (__stdcall *AddCredentialsA)(_SecHandle *, char *, char *, unsigned int, void *, void (__stdcall *)(void *, void *, unsigned int, void **, int *), void *, _LARGE_INTEGER *);
+  void *Reserved8;
+  int (__stdcall *QuerySecurityContextToken)(_SecHandle *, void **);
+  int (__stdcall *EncryptMessage)(_SecHandle *, unsigned int, _SecBufferDesc *, unsigned int);
+  int (__stdcall *DecryptMessage)(_SecHandle *, _SecBufferDesc *, unsigned int, unsigned int *);
+  int (__stdcall *SetContextAttributesA)(_SecHandle *, unsigned int, void *, unsigned int);
+  int (__stdcall *SetCredentialsAttributesA)(_SecHandle *, unsigned int, void *, unsigned int);
+  int (__stdcall *ChangeAccountPasswordA)(char *, char *, char *, char *, char *, unsigned __int8, unsigned int, _SecBufferDesc *);
+  int (__stdcall *QueryContextAttributesExA)(_SecHandle *, unsigned int, void *, unsigned int);
+  int (__stdcall *QueryCredentialsAttributesExA)(_SecHandle *, unsigned int, void *, unsigned int);
+
+};

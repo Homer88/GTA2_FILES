@@ -1,0 +1,12 @@
+// Структура: _PROV_ENUMALGS
+// Полей: 4
+// Строки в оригинале: 80539-80545
+struct _PROV_ENUMALGS
+{
+
+  unsigned int aiAlgid;
+  unsigned int dwBitLen;
+  unsigned int dwNameLen;
+  char szName[20];
+
+};

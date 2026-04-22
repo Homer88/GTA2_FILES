@@ -1,0 +1,10 @@
+// Структура: _SCOPE_TABLE_ARM64
+// Полей: 2
+// Строки в оригинале: 88968-88972
+struct _SCOPE_TABLE_ARM64
+{
+
+  unsigned int Count;
+  _SCOPE_TABLE_ARM64::<unnamed_type_ScopeRecord> ScopeRecord[1];
+
+};

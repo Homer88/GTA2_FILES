@@ -1,0 +1,10 @@
+// Структура: _WMI_DELAY_EXECUTION
+// Полей: 2
+// Строки в оригинале: 311690-311694
+struct _WMI_DELAY_EXECUTION
+{
+
+  unsigned int ThreadId;
+  unsigned __int64 Delta;
+
+};

@@ -1,0 +1,16 @@
+// Структура: _RTL_HANDLE_TABLE
+// Полей: 8
+// Строки в оригинале: 104029-104039
+struct _RTL_HANDLE_TABLE
+{
+
+  unsigned int MaximumNumberOfHandles;
+  unsigned int SizeOfHandleTableEntry;
+  unsigned int UseHeap;
+  unsigned int TableSize;
+  _RTL_HANDLE_TABLE_ENTRY *FreeHandles;
+  _RTL_HANDLE_TABLE_ENTRY *CommittedHandles;
+  _RTL_HANDLE_TABLE_ENTRY *UnCommittedHandles;
+  _RTL_HANDLE_TABLE_ENTRY *MaxReservedHandles;
+
+};

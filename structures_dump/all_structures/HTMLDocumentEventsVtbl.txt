@@ -1,0 +1,15 @@
+// Структура: HTMLDocumentEventsVtbl
+// Полей: 7
+// Строки в оригинале: 43032-43041
+struct HTMLDocumentEventsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(HTMLDocumentEvents *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(HTMLDocumentEvents *This);
+  ULONG (__stdcall *Release)(HTMLDocumentEvents *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(HTMLDocumentEvents *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(HTMLDocumentEvents *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(HTMLDocumentEvents *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(HTMLDocumentEvents *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+
+};

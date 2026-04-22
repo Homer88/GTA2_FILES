@@ -1,0 +1,9 @@
+// Структура: IWICImagingFactory
+// Полей: 1
+// Строки в оригинале: 41830-41833
+struct IWICImagingFactory
+{
+
+  struct IWICImagingFactoryVtbl *lpVtbl;
+
+};

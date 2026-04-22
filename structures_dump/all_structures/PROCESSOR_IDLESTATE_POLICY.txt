@@ -1,0 +1,12 @@
+// Структура: PROCESSOR_IDLESTATE_POLICY
+// Полей: 4
+// Строки в оригинале: 111455-111461
+struct PROCESSOR_IDLESTATE_POLICY
+{
+
+  unsigned __int16 Revision;
+  PROCESSOR_IDLESTATE_POLICY::<unnamed_type_Flags> Flags;
+  unsigned int PolicyCount;
+  PROCESSOR_IDLESTATE_INFO Policy[3];
+
+};

@@ -1,0 +1,10 @@
+// Структура: _BYTE_SIZEDARR
+// Полей: 2
+// Строки в оригинале: 83762-83766
+struct _BYTE_SIZEDARR
+{
+
+  unsigned int clSize;
+  unsigned __int8 *pData;
+
+};

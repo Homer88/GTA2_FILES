@@ -1,0 +1,9 @@
+// Структура: IShellItemImageFactory
+// Полей: 1
+// Строки в оригинале: 39792-39795
+struct IShellItemImageFactory
+{
+
+  struct IShellItemImageFactoryVtbl *lpVtbl;
+
+};

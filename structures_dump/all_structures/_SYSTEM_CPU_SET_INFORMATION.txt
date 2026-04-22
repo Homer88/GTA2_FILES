@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_CPU_SET_INFORMATION
+// Полей: 3
+// Строки в оригинале: 105870-105875
+struct _SYSTEM_CPU_SET_INFORMATION
+{
+
+  unsigned int Size;
+  _CPU_SET_INFORMATION_TYPE Type;
+  _SYSTEM_CPU_SET_INFORMATION::<anonymous-tag>::<unnamed_type_CpuSet> CpuSet;
+
+};

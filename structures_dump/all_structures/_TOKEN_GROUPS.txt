@@ -1,0 +1,10 @@
+// Структура: _TOKEN_GROUPS
+// Полей: 2
+// Строки в оригинале: 78357-78361
+struct _TOKEN_GROUPS
+{
+
+  unsigned int GroupCount;
+  _SID_AND_ATTRIBUTES Groups[1];
+
+};

@@ -1,0 +1,26 @@
+// Структура: IHTMLOptionElementVtbl
+// Полей: 18
+// Строки в оригинале: 39020-39040
+struct IHTMLOptionElementVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLOptionElement *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLOptionElement *This);
+  ULONG (__stdcall *Release)(IHTMLOptionElement *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLOptionElement *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLOptionElement *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLOptionElement *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLOptionElement *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *put_selected)(IHTMLOptionElement *This, VARIANT_BOOL v);
+  HRESULT (__stdcall *get_selected)(IHTMLOptionElement *This, VARIANT_BOOL *p);
+  HRESULT (__stdcall *put_value)(IHTMLOptionElement *This, BSTR v);
+  HRESULT (__stdcall *get_value)(IHTMLOptionElement *This, BSTR *p);
+  HRESULT (__stdcall *put_defaultSelected)(IHTMLOptionElement *This, VARIANT_BOOL v);
+  HRESULT (__stdcall *get_defaultSelected)(IHTMLOptionElement *This, VARIANT_BOOL *p);
+  HRESULT (__stdcall *put_index)(IHTMLOptionElement *This, LONG v);
+  HRESULT (__stdcall *get_index)(IHTMLOptionElement *This, LONG *p);
+  HRESULT (__stdcall *put_text)(IHTMLOptionElement *This, BSTR v);
+  HRESULT (__stdcall *get_text)(IHTMLOptionElement *This, BSTR *p);
+  HRESULT (__stdcall *get_form)(IHTMLOptionElement *This, IHTMLFormElement **p);
+
+};

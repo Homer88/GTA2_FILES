@@ -1,0 +1,20 @@
+// Структура: ORPC_DBG_ALL
+// Полей: 12
+// Строки в оригинале: 248112-248126
+struct ORPC_DBG_ALL
+{
+
+  unsigned __int8 *pSignature;
+  tagRPCOLEMESSAGE *pMessage;
+  const _GUID *refiid;
+  IRpcChannelBuffer *pChannel;
+  IUnknown *pUnkProxyMgr;
+  void *pInterface;
+  IUnknown *pUnkObject;
+  HRESULT hresult;
+  void *pvBuffer;
+  unsigned int cbBuffer;
+  unsigned int *lpcbBuffer;
+  void *reserved;
+
+};

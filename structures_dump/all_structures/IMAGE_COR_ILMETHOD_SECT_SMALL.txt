@@ -1,0 +1,10 @@
+// Структура: IMAGE_COR_ILMETHOD_SECT_SMALL
+// Полей: 2
+// Строки в оригинале: 332672-332676
+struct IMAGE_COR_ILMETHOD_SECT_SMALL
+{
+
+  unsigned __int8 Kind;
+  unsigned __int8 DataSize;
+
+};

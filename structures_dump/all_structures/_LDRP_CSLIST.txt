@@ -1,0 +1,9 @@
+// Структура: _LDRP_CSLIST
+// Полей: 1
+// Строки в оригинале: 21178-21181
+struct _LDRP_CSLIST
+{
+
+  _SINGLE_LIST_ENTRY *Tail;
+
+};

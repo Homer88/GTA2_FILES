@@ -1,0 +1,17 @@
+// Структура: _VPB
+// Полей: 9
+// Строки в оригинале: 17060-17071
+struct _VPB
+{
+
+  __int16 Type;
+  __int16 Size;
+  unsigned __int16 Flags;
+  unsigned __int16 VolumeLabelLength;
+  _DEVICE_OBJECT *DeviceObject;
+  _DEVICE_OBJECT *RealDevice;
+  unsigned int SerialNumber;
+  unsigned int ReferenceCount;
+  wchar_t VolumeLabel[32];
+
+};

@@ -1,0 +1,13 @@
+// Структура: tagEMRSCALEVIEWPORTEXTEX
+// Полей: 5
+// Строки в оригинале: 112544-112551
+struct tagEMRSCALEVIEWPORTEXTEX
+{
+
+  tagEMR emr;
+  int xNum;
+  int xDenom;
+  int yNum;
+  int yDenom;
+
+};

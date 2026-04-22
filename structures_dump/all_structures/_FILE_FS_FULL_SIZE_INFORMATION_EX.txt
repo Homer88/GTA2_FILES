@@ -1,0 +1,21 @@
+// Структура: _FILE_FS_FULL_SIZE_INFORMATION_EX
+// Полей: 13
+// Строки в оригинале: 98972-98987
+struct _FILE_FS_FULL_SIZE_INFORMATION_EX
+{
+
+  unsigned __int64 ActualTotalAllocationUnits;
+  unsigned __int64 ActualAvailableAllocationUnits;
+  unsigned __int64 ActualPoolUnavailableAllocationUnits;
+  unsigned __int64 CallerTotalAllocationUnits;
+  unsigned __int64 CallerAvailableAllocationUnits;
+  unsigned __int64 CallerPoolUnavailableAllocationUnits;
+  unsigned __int64 UsedAllocationUnits;
+  unsigned __int64 TotalReservedAllocationUnits;
+  unsigned __int64 VolumeStorageReserveAllocationUnits;
+  unsigned __int64 AvailableCommittedAllocationUnits;
+  unsigned __int64 PoolAvailableAllocationUnits;
+  unsigned int SectorsPerAllocationUnit;
+  unsigned int BytesPerSector;
+
+};

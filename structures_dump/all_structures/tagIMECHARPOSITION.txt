@@ -1,0 +1,13 @@
+// Структура: tagIMECHARPOSITION
+// Полей: 5
+// Строки в оригинале: 92774-92781
+struct tagIMECHARPOSITION
+{
+
+  unsigned int dwSize;
+  unsigned int dwCharPos;
+  tagPOINT pt;
+  unsigned int cLineHeight;
+  tagRECT rcDocument;
+
+};

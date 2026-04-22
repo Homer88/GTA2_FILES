@@ -1,0 +1,11 @@
+// Структура: IMAGE_COR_ILMETHOD_SECT_EH_SMALL
+// Полей: 3
+// Строки в оригинале: 332760-332765
+struct IMAGE_COR_ILMETHOD_SECT_EH_SMALL
+{
+
+  IMAGE_COR_ILMETHOD_SECT_SMALL SectSmall;
+  unsigned __int16 Reserved;
+  IMAGE_COR_ILMETHOD_SECT_EH_CLAUSE_SMALL Clauses[1];
+
+};

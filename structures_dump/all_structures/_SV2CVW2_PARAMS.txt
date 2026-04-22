@@ -1,0 +1,15 @@
+// Структура: _SV2CVW2_PARAMS
+// Полей: 7
+// Строки в оригинале: 33290-33299
+struct _SV2CVW2_PARAMS
+{
+
+  DWORD cbSize;
+  IShellView *psvPrev;
+  LPCFOLDERSETTINGS pfs;
+  IShellBrowser *psbOwner;
+  RECT *prcView;
+  const SHELLVIEWID *pvid;
+  HWND hwndView;
+
+};

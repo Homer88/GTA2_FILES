@@ -1,0 +1,9 @@
+// Структура: IDynamicHWHandler
+// Полей: 1
+// Строки в оригинале: 34815-34818
+struct IDynamicHWHandler
+{
+
+  struct IDynamicHWHandlerVtbl *lpVtbl;
+
+};

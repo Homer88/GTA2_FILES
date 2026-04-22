@@ -1,0 +1,18 @@
+// Структура: _TOKEN_STATISTICS
+// Полей: 10
+// Строки в оригинале: 99826-99838
+struct _TOKEN_STATISTICS
+{
+
+  _LUID TokenId;
+  _LUID AuthenticationId;
+  _LARGE_INTEGER ExpirationTime;
+  _TOKEN_TYPE TokenType;
+  _SECURITY_IMPERSONATION_LEVEL ImpersonationLevel;
+  unsigned int DynamicCharged;
+  unsigned int DynamicAvailable;
+  unsigned int GroupCount;
+  unsigned int PrivilegeCount;
+  _LUID ModifiedId;
+
+};

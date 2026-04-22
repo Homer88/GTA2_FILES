@@ -1,0 +1,26 @@
+// Структура: IWICStreamVtbl
+// Полей: 18
+// Строки в оригинале: 42106-42126
+struct IWICStreamVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICStream *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICStream *This);
+  ULONG (__stdcall *Release)(IWICStream *This);
+  HRESULT (__stdcall *Read)(IWICStream *This, void *pv, ULONG cb, ULONG *pcbRead);
+  HRESULT (__stdcall *Write)(IWICStream *This, const void *pv, ULONG cb, ULONG *pcbWritten);
+  HRESULT (__stdcall *Seek)(IWICStream *This, LARGE_INTEGER dlibMove, DWORD dwOrigin, ULARGE_INTEGER *plibNewPosition);
+  HRESULT (__stdcall *SetSize)(IWICStream *This, ULARGE_INTEGER libNewSize);
+  HRESULT (__stdcall *CopyTo)(IWICStream *This, IStream *pstm, ULARGE_INTEGER cb, ULARGE_INTEGER *pcbRead, ULARGE_INTEGER *pcbWritten);
+  HRESULT (__stdcall *Commit)(IWICStream *This, DWORD grfCommitFlags);
+  HRESULT (__stdcall *Revert)(IWICStream *This);
+  HRESULT (__stdcall *LockRegion)(IWICStream *This, ULARGE_INTEGER libOffset, ULARGE_INTEGER cb, DWORD dwLockType);
+  HRESULT (__stdcall *UnlockRegion)(IWICStream *This, ULARGE_INTEGER libOffset, ULARGE_INTEGER cb, DWORD dwLockType);
+  HRESULT (__stdcall *Stat)(IWICStream *This, STATSTG *pstatstg, DWORD grfStatFlag);
+  HRESULT (__stdcall *Clone)(IWICStream *This, IStream **ppstm);
+  HRESULT (__stdcall *InitializeFromIStream)(IWICStream *This, IStream *pIStream);
+  HRESULT (__stdcall *InitializeFromFilename)(IWICStream *This, LPCWSTR wzFileName, DWORD dwDesiredAccess);
+  HRESULT (__stdcall *InitializeFromMemory)(IWICStream *This, WICInProcPointer pbBuffer, DWORD cbBufferSize);
+  HRESULT (__stdcall *InitializeFromIStreamRegion)(IWICStream *This, IStream *pIStream, ULARGE_INTEGER ulOffset, ULARGE_INTEGER ulMaxSize);
+
+};

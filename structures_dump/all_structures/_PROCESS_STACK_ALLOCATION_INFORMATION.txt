@@ -1,0 +1,11 @@
+// Структура: _PROCESS_STACK_ALLOCATION_INFORMATION
+// Полей: 3
+// Строки в оригинале: 103208-103213
+struct _PROCESS_STACK_ALLOCATION_INFORMATION
+{
+
+  unsigned int ReserveSize;
+  unsigned int ZeroBits;
+  void *StackBase;
+
+};

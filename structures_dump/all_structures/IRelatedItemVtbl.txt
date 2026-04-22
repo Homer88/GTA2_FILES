@@ -1,0 +1,13 @@
+// Структура: IRelatedItemVtbl
+// Полей: 5
+// Строки в оригинале: 45193-45200
+struct IRelatedItemVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRelatedItem *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRelatedItem *This);
+  ULONG (__stdcall *Release)(IRelatedItem *This);
+  HRESULT (__stdcall *GetItemIDList)(IRelatedItem *This, LPITEMIDLIST *ppidl);
+  HRESULT (__stdcall *GetItem)(IRelatedItem *This, IShellItem **ppsi);
+
+};

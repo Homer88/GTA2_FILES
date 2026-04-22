@@ -1,0 +1,10 @@
+// Структура: _NDR_CORRELATION_INFO
+// Полей: 2
+// Строки в оригинале: 86283-86287
+struct _NDR_CORRELATION_INFO
+{
+
+  _NDR_CORRELATION_INFO_HEADER Header;
+  _NDR_CORRELATION_INFO_DATA Data[1];
+
+};

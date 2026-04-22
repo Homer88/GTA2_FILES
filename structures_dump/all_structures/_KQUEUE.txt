@@ -1,0 +1,13 @@
+// Структура: _KQUEUE
+// Полей: 5
+// Строки в оригинале: 15510-15517
+struct _KQUEUE
+{
+
+  _DISPATCHER_HEADER Header;
+  _LIST_ENTRY EntryListHead;
+  volatile unsigned int CurrentCount;
+  unsigned int MaximumCount;
+  _LIST_ENTRY ThreadListHead;
+
+};

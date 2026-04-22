@@ -1,0 +1,13 @@
+// Структура: IFolderViewOptionsVtbl
+// Полей: 5
+// Строки в оригинале: 33769-33776
+struct IFolderViewOptionsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFolderViewOptions *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFolderViewOptions *This);
+  ULONG (__stdcall *Release)(IFolderViewOptions *This);
+  HRESULT (__stdcall *SetFolderViewOptions)(IFolderViewOptions *This, FOLDERVIEWOPTIONS fvoMask, FOLDERVIEWOPTIONS fvoFlags);
+  HRESULT (__stdcall *GetFolderViewOptions)(IFolderViewOptions *This, FOLDERVIEWOPTIONS *pfvoFlags);
+
+};

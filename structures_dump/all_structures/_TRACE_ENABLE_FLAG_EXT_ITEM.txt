@@ -1,0 +1,10 @@
+// Структура: _TRACE_ENABLE_FLAG_EXT_ITEM
+// Полей: 2
+// Строки в оригинале: 312969-312973
+struct _TRACE_ENABLE_FLAG_EXT_ITEM
+{
+
+  unsigned __int16 Offset;
+  unsigned __int16 Type;
+
+};

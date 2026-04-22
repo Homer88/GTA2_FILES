@@ -1,0 +1,14 @@
+// Структура: _EVENT_FILTER_HEADER
+// Полей: 6
+// Строки в оригинале: 313763-313771
+struct _EVENT_FILTER_HEADER
+{
+
+  unsigned __int16 Id;
+  unsigned __int8 Version;
+  unsigned __int8 Reserved[5];
+  unsigned __int64 InstanceId;
+  unsigned int Size;
+  unsigned int NextOffset;
+
+};

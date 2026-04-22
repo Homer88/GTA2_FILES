@@ -1,0 +1,11 @@
+// Структура: tagENUMUILANG
+// Полей: 3
+// Строки в оригинале: 88333-88338
+struct tagENUMUILANG
+{
+
+  unsigned int NumOfEnumUILang;
+  unsigned int SizeOfEnumUIBuffer;
+  wchar_t *pEnumUIBuffer;
+
+};

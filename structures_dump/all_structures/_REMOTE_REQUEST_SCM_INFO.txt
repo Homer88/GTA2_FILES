@@ -1,0 +1,11 @@
+// Структура: _REMOTE_REQUEST_SCM_INFO
+// Полей: 3
+// Строки в оригинале: 192613-192618
+struct _REMOTE_REQUEST_SCM_INFO
+{
+
+  unsigned int ClientImpLevel;
+  unsigned __int16 cRequestedProtseqs;
+  wchar_t *pRequestedProtseqs;
+
+};

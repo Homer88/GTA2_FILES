@@ -1,0 +1,9 @@
+// Структура: CallerInfo
+// Полей: 1
+// Строки в оригинале: 190918-190921
+struct CallerInfo
+{
+
+  void *ReturnAddress;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IDBInitialize
+// Полей: 1
+// Строки в оригинале: 37067-37070
+struct IDBInitialize
+{
+
+  struct IDBInitializeVtbl *lpVtbl;
+
+};

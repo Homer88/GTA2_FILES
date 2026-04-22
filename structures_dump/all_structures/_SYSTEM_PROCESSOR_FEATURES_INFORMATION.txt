@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_PROCESSOR_FEATURES_INFORMATION
+// Полей: 2
+// Строки в оригинале: 84958-84962
+struct _SYSTEM_PROCESSOR_FEATURES_INFORMATION
+{
+
+  unsigned __int64 ProcessorFeatureBits;
+  unsigned __int64 Reserved[3];
+
+};

@@ -1,0 +1,15 @@
+// Структура: _RTL_UNLOAD_EVENT_TRACE32
+// Полей: 7
+// Строки в оригинале: 102212-102221
+struct _RTL_UNLOAD_EVENT_TRACE32
+{
+
+  unsigned int BaseAddress;
+  unsigned int SizeOfImage;
+  unsigned int Sequence;
+  unsigned int TimeDateStamp;
+  unsigned int CheckSum;
+  wchar_t ImageName[32];
+  unsigned int Version[2];
+
+};

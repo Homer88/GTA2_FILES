@@ -1,0 +1,14 @@
+// Структура: _PORT_VIEW
+// Полей: 6
+// Строки в оригинале: 84350-84358
+struct _PORT_VIEW
+{
+
+  unsigned int Length;
+  void *SectionHandle;
+  unsigned int SectionOffset;
+  unsigned int ViewSize;
+  void *ViewBase;
+  void *ViewRemoteBase;
+
+};

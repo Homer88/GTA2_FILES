@@ -1,0 +1,30 @@
+// Структура: _D3DMATRIX
+// Полей: 22
+// Строки в оригинале: 25475-25499
+struct _D3DMATRIX
+{
+
+  #pragma pack(push, 4)
+  union
+  {
+    #pragma pack(push, 4)
+    struct
+    {
+      float _11;
+      float _12;
+      float _13;
+      float _14;
+      float _21;
+      float _22;
+      float _23;
+      float _24;
+      float _31;
+      float _32;
+      float _33;
+      float _34;
+      float _41;
+      float _42;
+      float _43;
+      float _44;
+    
+};

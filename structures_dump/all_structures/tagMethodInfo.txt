@@ -1,0 +1,10 @@
+// Структура: tagMethodInfo
+// Полей: 2
+// Строки в оригинале: 120867-120871
+struct tagMethodInfo
+{
+
+  tagFUNCDESC *pFuncDesc;
+  ITypeInfo *pTypeInfo;
+
+};

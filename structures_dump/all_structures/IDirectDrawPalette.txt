@@ -1,0 +1,9 @@
+// Структура: IDirectDrawPalette
+// Полей: 1
+// Строки в оригинале: 24115-24118
+struct IDirectDrawPalette
+{
+
+  struct IDirectDrawPaletteVtbl *lpVtbl;
+
+};

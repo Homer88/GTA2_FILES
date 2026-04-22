@@ -1,0 +1,10 @@
+// Структура: _RPC_PROTSEQ_VECTORA
+// Полей: 2
+// Строки в оригинале: 108856-108860
+struct _RPC_PROTSEQ_VECTORA
+{
+
+  unsigned int Count;
+  unsigned __int8 *Protseq[1];
+
+};

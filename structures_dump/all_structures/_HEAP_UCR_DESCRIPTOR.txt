@@ -1,0 +1,12 @@
+// Структура: _HEAP_UCR_DESCRIPTOR
+// Полей: 4
+// Строки в оригинале: 22755-22761
+struct _HEAP_UCR_DESCRIPTOR
+{
+
+  _LIST_ENTRY ListEntry;
+  _LIST_ENTRY SegmentEntry;
+  void *Address;
+  unsigned int Size;
+
+};

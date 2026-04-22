@@ -1,0 +1,9 @@
+// Структура: IDiscRecorder2Ex
+// Полей: 1
+// Строки в оригинале: 36153-36156
+struct IDiscRecorder2Ex
+{
+
+  struct IDiscRecorder2ExVtbl *lpVtbl;
+
+};

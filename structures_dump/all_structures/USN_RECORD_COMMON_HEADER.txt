@@ -1,0 +1,11 @@
+// Структура: USN_RECORD_COMMON_HEADER
+// Полей: 3
+// Строки в оригинале: 108103-108108
+struct USN_RECORD_COMMON_HEADER
+{
+
+  unsigned int RecordLength;
+  unsigned __int16 MajorVersion;
+  unsigned __int16 MinorVersion;
+
+};

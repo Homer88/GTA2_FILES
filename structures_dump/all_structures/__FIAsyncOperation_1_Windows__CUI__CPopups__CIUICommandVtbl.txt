@@ -1,0 +1,17 @@
+// Структура: __FIAsyncOperation_1_Windows__CUI__CPopups__CIUICommandVtbl
+// Полей: 9
+// Строки в оригинале: 37763-37774
+struct __FIAsyncOperation_1_Windows__CUI__CPopups__CIUICommandVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(__FIAsyncOperation_1_Windows__CUI__CPopups__CIUICommand *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(__FIAsyncOperation_1_Windows__CUI__CPopups__CIUICommand *This);
+  ULONG (__stdcall *Release)(__FIAsyncOperation_1_Windows__CUI__CPopups__CIUICommand *This);
+  HRESULT (__stdcall *GetIids)(__FIAsyncOperation_1_Windows__CUI__CPopups__CIUICommand *This, ULONG *iidCount, IID **iids);
+  HRESULT (__stdcall *GetRuntimeClassName)(__FIAsyncOperation_1_Windows__CUI__CPopups__CIUICommand *This, HSTRING *className);
+  HRESULT (__stdcall *GetTrustLevel)(__FIAsyncOperation_1_Windows__CUI__CPopups__CIUICommand *This, TrustLevel *trustLevel);
+  HRESULT (__stdcall *put_Completed)(__FIAsyncOperation_1_Windows__CUI__CPopups__CIUICommand *This, __FIAsyncOperationCompletedHandler_1_Windows__CUI__CPopups__CIUICommand *handler);
+  HRESULT (__stdcall *get_Completed)(__FIAsyncOperation_1_Windows__CUI__CPopups__CIUICommand *This, __FIAsyncOperationCompletedHandler_1_Windows__CUI__CPopups__CIUICommand **handler);
+  HRESULT (__stdcall *GetResults)(__FIAsyncOperation_1_Windows__CUI__CPopups__CIUICommand *This, __x_ABI_CWindows_CUI_CPopups_CIUICommand **results);
+
+};

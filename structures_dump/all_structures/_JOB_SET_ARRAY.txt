@@ -1,0 +1,11 @@
+// Структура: _JOB_SET_ARRAY
+// Полей: 3
+// Строки в оригинале: 110868-110873
+struct _JOB_SET_ARRAY
+{
+
+  void *JobHandle;
+  unsigned int MemberLevel;
+  unsigned int Flags;
+
+};

@@ -1,0 +1,15 @@
+// Структура: _FILE_STANDARD_INFORMATION_EX
+// Полей: 7
+// Строки в оригинале: 95271-95280
+struct _FILE_STANDARD_INFORMATION_EX
+{
+
+  _LARGE_INTEGER AllocationSize;
+  _LARGE_INTEGER EndOfFile;
+  unsigned int NumberOfLinks;
+  unsigned __int8 DeletePending;
+  unsigned __int8 Directory;
+  unsigned __int8 AlternateStream;
+  unsigned __int8 MetadataAttribute;
+
+};

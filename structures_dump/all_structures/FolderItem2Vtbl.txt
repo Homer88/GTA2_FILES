@@ -1,0 +1,34 @@
+// Структура: FolderItem2Vtbl
+// Полей: 26
+// Строки в оригинале: 33009-33037
+struct FolderItem2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(FolderItem2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(FolderItem2 *This);
+  ULONG (__stdcall *Release)(FolderItem2 *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(FolderItem2 *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(FolderItem2 *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(FolderItem2 *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(FolderItem2 *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Application)(FolderItem2 *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_Parent)(FolderItem2 *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_Name)(FolderItem2 *This, BSTR *pbs);
+  HRESULT (__stdcall *put_Name)(FolderItem2 *This, BSTR bs);
+  HRESULT (__stdcall *get_Path)(FolderItem2 *This, BSTR *pbs);
+  HRESULT (__stdcall *get_GetLink)(FolderItem2 *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_GetFolder)(FolderItem2 *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_IsLink)(FolderItem2 *This, VARIANT_BOOL *pb);
+  HRESULT (__stdcall *get_IsFolder)(FolderItem2 *This, VARIANT_BOOL *pb);
+  HRESULT (__stdcall *get_IsFileSystem)(FolderItem2 *This, VARIANT_BOOL *pb);
+  HRESULT (__stdcall *get_IsBrowsable)(FolderItem2 *This, VARIANT_BOOL *pb);
+  HRESULT (__stdcall *get_ModifyDate)(FolderItem2 *This, DATE *pdt);
+  HRESULT (__stdcall *put_ModifyDate)(FolderItem2 *This, DATE dt);
+  HRESULT (__stdcall *get_Size)(FolderItem2 *This, LONG *pul);
+  HRESULT (__stdcall *get_Type)(FolderItem2 *This, BSTR *pbs);
+  HRESULT (__stdcall *Verbs)(FolderItem2 *This, FolderItemVerbs **ppfic);
+  HRESULT (__stdcall *InvokeVerb)(FolderItem2 *This, VARIANT vVerb);
+  HRESULT (__stdcall *InvokeVerbEx)(FolderItem2 *This, VARIANT vVerb, VARIANT vArgs);
+  HRESULT (__stdcall *ExtendedProperty)(FolderItem2 *This, BSTR bstrPropName, VARIANT *pvRet);
+
+};

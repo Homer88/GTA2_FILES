@@ -1,0 +1,9 @@
+// Структура: _TOKEN_SID_INFORMATION
+// Полей: 1
+// Строки в оригинале: 108886-108889
+struct _TOKEN_SID_INFORMATION
+{
+
+  void *Sid;
+
+};

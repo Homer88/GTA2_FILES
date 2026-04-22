@@ -1,0 +1,18 @@
+// Структура: IOfflineFilesFileItemVtbl
+// Полей: 10
+// Строки в оригинале: 28472-28484
+struct IOfflineFilesFileItemVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesFileItem *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesFileItem *This);
+  ULONG (__stdcall *Release)(IOfflineFilesFileItem *This);
+  HRESULT (__stdcall *GetItemType)(IOfflineFilesFileItem *This, OFFLINEFILES_ITEM_TYPE *pItemType);
+  HRESULT (__stdcall *GetPath)(IOfflineFilesFileItem *This, LPWSTR *ppszPath);
+  HRESULT (__stdcall *GetParentItem)(IOfflineFilesFileItem *This, IOfflineFilesItem **ppItem);
+  HRESULT (__stdcall *Refresh)(IOfflineFilesFileItem *This, DWORD dwQueryFlags);
+  HRESULT (__stdcall *IsMarkedForDeletion)(IOfflineFilesFileItem *This, BOOL *pbMarkedForDeletion);
+  HRESULT (__stdcall *IsSparse)(IOfflineFilesFileItem *This, BOOL *pbIsSparse);
+  HRESULT (__stdcall *IsEncrypted)(IOfflineFilesFileItem *This, BOOL *pbIsEncrypted);
+
+};

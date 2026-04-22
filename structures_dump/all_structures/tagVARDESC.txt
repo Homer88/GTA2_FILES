@@ -1,0 +1,15 @@
+// Структура: tagVARDESC
+// Полей: 7
+// Строки в оригинале: 23731-23740
+struct tagVARDESC
+{
+
+  MEMBERID memid;
+  LPOLESTR lpstrSchema;
+  #pragma pack(push, 8)
+  union
+  {
+    ULONG oInst;
+    VARIANT *lpvarValue;
+  
+};

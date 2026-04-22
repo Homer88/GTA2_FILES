@@ -1,0 +1,26 @@
+// Структура: IDirect3D9Vtbl
+// Полей: 18
+// Строки в оригинале: 24873-24893
+struct IDirect3D9Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirect3D9 *This, const IID *const riid, void **ppvObj);
+  ULONG (__stdcall *AddRef)(IDirect3D9 *This);
+  ULONG (__stdcall *Release)(IDirect3D9 *This);
+  HRESULT (__stdcall *RegisterSoftwareDevice)(IDirect3D9 *This, void *pInitializeFunction);
+  UINT (__stdcall *GetAdapterCount)(IDirect3D9 *This);
+  HRESULT (__stdcall *GetAdapterIdentifier)(IDirect3D9 *This, UINT Adapter, DWORD Flags, D3DADAPTER_IDENTIFIER9 *pIdentifier);
+  UINT (__stdcall *GetAdapterModeCount)(IDirect3D9 *This, UINT Adapter, D3DFORMAT Format);
+  HRESULT (__stdcall *EnumAdapterModes)(IDirect3D9 *This, UINT Adapter, D3DFORMAT Format, UINT Mode, D3DDISPLAYMODE *pMode);
+  HRESULT (__stdcall *GetAdapterDisplayMode)(IDirect3D9 *This, UINT Adapter, D3DDISPLAYMODE *pMode);
+  HRESULT (__stdcall *CheckDeviceType)(IDirect3D9 *This, UINT iAdapter, D3DDEVTYPE DevType, D3DFORMAT DisplayFormat, D3DFORMAT BackBufferFormat, BOOL bWindowed);
+  HRESULT (__stdcall *CheckDeviceFormat)(IDirect3D9 *This, UINT Adapter, D3DDEVTYPE DeviceType, D3DFORMAT AdapterFormat, DWORD Usage, D3DRESOURCETYPE RType, D3DFORMAT CheckFormat);
+  HRESULT (__stdcall *CheckDeviceMultiSampleType)(IDirect3D9 *This, UINT Adapter, D3DDEVTYPE DeviceType, D3DFORMAT SurfaceFormat, BOOL Windowed, D3DMULTISAMPLE_TYPE MultiSampleType, DWORD *pQualityLevels);
+  HRESULT (__stdcall *CheckDepthStencilMatch)(IDirect3D9 *This, UINT Adapter, D3DDEVTYPE DeviceType, D3DFORMAT AdapterFormat, D3DFORMAT RenderTargetFormat, D3DFORMAT DepthStencilFormat);
+  HRESULT (__stdcall *CheckDeviceFormatConversion)(IDirect3D9 *This, UINT Adapter, D3DDEVTYPE DeviceType, D3DFORMAT SourceFormat, D3DFORMAT TargetFormat);
+  HRESULT (__stdcall *GetDeviceCaps)(IDirect3D9 *This, UINT Adapter, D3DDEVTYPE DeviceType, D3DCAPS9 *pCaps);
+  HMONITOR (__stdcall *GetAdapterMonitor)(IDirect3D9 *This, UINT Adapter);
+  HRESULT (__stdcall *CreateDevice)(IDirect3D9 *This, UINT Adapter, D3DDEVTYPE DeviceType, HWND hFocusWindow, DWORD BehaviorFlags, D3DPRESENT_PARAMETERS *pPresentationParameters, IDirect3DDevice9 **ppReturnedDeviceInterface);
+  LPCWSTR Version;
+
+};

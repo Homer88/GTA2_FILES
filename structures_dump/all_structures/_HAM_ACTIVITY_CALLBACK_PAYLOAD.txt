@@ -1,0 +1,12 @@
+// Структура: _HAM_ACTIVITY_CALLBACK_PAYLOAD
+// Полей: 4
+// Строки в оригинале: 246051-246057
+struct _HAM_ACTIVITY_CALLBACK_PAYLOAD
+{
+
+  unsigned __int64 ActivityHandle;
+  unsigned __int64 Context;
+  _HAM_ACTIVITY_CALLBACK_SUBJECT Subject;
+  $EAB9F135CF0906D1B94C8F53F4E73CFE ___u3;
+
+};

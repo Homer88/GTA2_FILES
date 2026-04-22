@@ -1,0 +1,10 @@
+// Структура: _RTLP_HP_METADATA_HEAP_CTX
+// Полей: 2
+// Строки в оригинале: 20794-20798
+struct _RTLP_HP_METADATA_HEAP_CTX
+{
+
+  _SEGMENT_HEAP *Heap;
+  _RTL_RUN_ONCE InitOnce;
+
+};

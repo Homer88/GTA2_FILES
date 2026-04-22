@@ -1,0 +1,13 @@
+// Структура: _RTLP_HEAP_STACK_TRACE_SERIALIZATION_HEADER
+// Полей: 5
+// Строки в оригинале: 103554-103561
+struct _RTLP_HEAP_STACK_TRACE_SERIALIZATION_HEADER
+{
+
+  unsigned __int16 Version;
+  unsigned __int16 PointerSize;
+  unsigned int Heap;
+  unsigned int TotalCommit;
+  unsigned int TotalReserve;
+
+};

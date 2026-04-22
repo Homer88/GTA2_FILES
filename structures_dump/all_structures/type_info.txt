@@ -1,0 +1,11 @@
+// Структура: type_info
+// Полей: 3
+// Строки в оригинале: 5778-5783
+struct type_info
+{
+
+  _UNKNOWN *vfptr __off;
+  int _M_data;
+  char _M_d_name[] __strlit(C,"UTF-8");
+
+};

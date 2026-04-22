@@ -1,0 +1,10 @@
+// Структура: _SecPkgContext_DceInfo
+// Полей: 2
+// Строки в оригинале: 323604-323608
+struct _SecPkgContext_DceInfo
+{
+
+  unsigned int AuthzSvc;
+  void *pPac;
+
+};

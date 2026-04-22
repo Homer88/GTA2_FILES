@@ -1,0 +1,12 @@
+// Структура: _WMI_JOB_ASSIGN_PROCESS
+// Полей: 4
+// Строки в оригинале: 312645-312651
+struct _WMI_JOB_ASSIGN_PROCESS
+{
+
+  _GUID ContainerId;
+  unsigned int JobId;
+  unsigned int UniqueProcessId;
+  int Status;
+
+};

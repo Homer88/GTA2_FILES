@@ -1,0 +1,13 @@
+// Структура: _DOCINFOW
+// Полей: 5
+// Строки в оригинале: 98990-98997
+struct _DOCINFOW
+{
+
+  int cbSize;
+  const wchar_t *lpszDocName;
+  const wchar_t *lpszOutput;
+  const wchar_t *lpszDatatype;
+  unsigned int fwType;
+
+};

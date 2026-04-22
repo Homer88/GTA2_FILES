@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_MEMORY_NODE_INFORMATION
+// Полей: 3
+// Строки в оригинале: 310293-310298
+struct _PERFINFO_MEMORY_NODE_INFORMATION
+{
+
+  unsigned int PartitionId;
+  unsigned int Count;
+  _PERFINFO_MEMORY_NODE_ENTRY NodeEntry[1];
+
+};

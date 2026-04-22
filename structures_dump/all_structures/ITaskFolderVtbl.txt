@@ -1,0 +1,28 @@
+// Структура: ITaskFolderVtbl
+// Полей: 20
+// Строки в оригинале: 44545-44567
+struct ITaskFolderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITaskFolder *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITaskFolder *This);
+  ULONG (__stdcall *Release)(ITaskFolder *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(ITaskFolder *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(ITaskFolder *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(ITaskFolder *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(ITaskFolder *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Name)(ITaskFolder *This, BSTR *pName);
+  HRESULT (__stdcall *get_Path)(ITaskFolder *This, BSTR *pPath);
+  HRESULT (__stdcall *GetFolder)(ITaskFolder *This, BSTR path, ITaskFolder **ppFolder);
+  HRESULT (__stdcall *GetFolders)(ITaskFolder *This, LONG flags, ITaskFolderCollection **ppFolders);
+  HRESULT (__stdcall *CreateFolder)(ITaskFolder *This, BSTR subFolderName, VARIANT sddl, ITaskFolder **ppFolder);
+  HRESULT (__stdcall *DeleteFolder)(ITaskFolder *This, BSTR subFolderName, LONG flags);
+  HRESULT (__stdcall *GetTask)(ITaskFolder *This, BSTR path, IRegisteredTask **ppTask);
+  HRESULT (__stdcall *GetTasks)(ITaskFolder *This, LONG flags, IRegisteredTaskCollection **ppTasks);
+  HRESULT (__stdcall *DeleteTask)(ITaskFolder *This, BSTR name, LONG flags);
+  HRESULT (__stdcall *RegisterTask)(ITaskFolder *This, BSTR path, BSTR xmlText, LONG flags, VARIANT userId, VARIANT password, TASK_LOGON_TYPE logonType, VARIANT sddl, IRegisteredTask **ppTask);
+  HRESULT (__stdcall *RegisterTaskDefinition)(ITaskFolder *This, BSTR path, ITaskDefinition *pDefinition, LONG flags, VARIANT userId, VARIANT password, TASK_LOGON_TYPE logonType, VARIANT sddl, IRegisteredTask **ppTask);
+  HRESULT (__stdcall *GetSecurityDescriptor)(ITaskFolder *This, LONG securityInformation, BSTR *pSddl);
+  HRESULT (__stdcall *SetSecurityDescriptor)(ITaskFolder *This, BSTR sddl, LONG flags);
+
+};

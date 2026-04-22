@@ -1,0 +1,9 @@
+// Структура: _RTL_IMAGE_MITIGATION_HEAP_POLICY
+// Полей: 1
+// Строки в оригинале: 87974-87977
+struct _RTL_IMAGE_MITIGATION_HEAP_POLICY
+{
+
+  _RTL_IMAGE_MITIGATION_POLICY TerminateOnHeapErrors;
+
+};

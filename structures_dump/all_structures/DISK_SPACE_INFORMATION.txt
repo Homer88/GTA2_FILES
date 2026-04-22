@@ -1,0 +1,21 @@
+// Структура: DISK_SPACE_INFORMATION
+// Полей: 13
+// Строки в оригинале: 113779-113794
+struct DISK_SPACE_INFORMATION
+{
+
+  unsigned __int64 ActualTotalAllocationUnits;
+  unsigned __int64 ActualAvailableAllocationUnits;
+  unsigned __int64 ActualPoolUnavailableAllocationUnits;
+  unsigned __int64 CallerTotalAllocationUnits;
+  unsigned __int64 CallerAvailableAllocationUnits;
+  unsigned __int64 CallerPoolUnavailableAllocationUnits;
+  unsigned __int64 UsedAllocationUnits;
+  unsigned __int64 TotalReservedAllocationUnits;
+  unsigned __int64 VolumeStorageReserveAllocationUnits;
+  unsigned __int64 AvailableCommittedAllocationUnits;
+  unsigned __int64 PoolAvailableAllocationUnits;
+  unsigned int SectorsPerAllocationUnit;
+  unsigned int BytesPerSector;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _PROC_IDLE_SNAP
+// Полей: 2
+// Строки в оригинале: 13529-13533
+struct _PROC_IDLE_SNAP
+{
+
+  unsigned __int64 Time;
+  unsigned __int64 Idle;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _HEAP_ENTRY_EXTRA
+// Полей: 1
+// Строки в оригинале: 21126-21129
+struct _HEAP_ENTRY_EXTRA
+{
+
+  $8BE8C394E1D3BEDB5D839FDDFCCD2924 ___u0;
+
+};

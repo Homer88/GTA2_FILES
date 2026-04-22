@@ -1,0 +1,9 @@
+// Структура: IExtractImage
+// Полей: 1
+// Строки в оригинале: 35517-35520
+struct IExtractImage
+{
+
+  struct IExtractImageVtbl *lpVtbl;
+
+};

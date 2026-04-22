@@ -1,0 +1,12 @@
+// Структура: IInitializeWithItemVtbl
+// Полей: 4
+// Строки в оригинале: 39531-39537
+struct IInitializeWithItemVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IInitializeWithItem *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IInitializeWithItem *This);
+  ULONG (__stdcall *Release)(IInitializeWithItem *This);
+  HRESULT (__stdcall *Initialize)(IInitializeWithItem *This, IShellItem *psi, DWORD grfMode);
+
+};

@@ -1,0 +1,24 @@
+// Структура: _HEAP_FAILURE_INFORMATION
+// Полей: 16
+// Строки в оригинале: 20482-20500
+struct _HEAP_FAILURE_INFORMATION
+{
+
+  unsigned int Version;
+  unsigned int StructureSize;
+  _HEAP_FAILURE_TYPE FailureType;
+  void *HeapAddress;
+  void *Address;
+  void *Param1;
+  void *Param2;
+  void *Param3;
+  void *PreviousBlock;
+  void *NextBlock;
+  _FAKE_HEAP_ENTRY ExpectedDecodedEntry;
+  void *StackTrace[32];
+  unsigned __int8 HeapMajorVersion;
+  unsigned __int8 HeapMinorVersion;
+  _EXCEPTION_RECORD ExceptionRecord;
+  _CONTEXT ContextRecord;
+
+};

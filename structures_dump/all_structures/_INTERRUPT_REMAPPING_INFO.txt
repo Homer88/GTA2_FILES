@@ -1,0 +1,12 @@
+// Структура: _INTERRUPT_REMAPPING_INFO
+// Полей: 4
+// Строки в оригинале: 15810-15816
+struct _INTERRUPT_REMAPPING_INFO
+{
+
+  unsigned __int32 IrtIndex : 30;
+  unsigned __int32 FlagHalInternal : 1;
+  unsigned __int32 FlagTranslated : 1;
+  _INTERRUPT_REMAPPING_INFO::$1C1618235C97A58EA53FC9EB84285B7A u;
+
+};

@@ -1,0 +1,16 @@
+// Структура: IEmptyVolumeCacheVtbl
+// Полей: 8
+// Строки в оригинале: 34646-34656
+struct IEmptyVolumeCacheVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEmptyVolumeCache *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEmptyVolumeCache *This);
+  ULONG (__stdcall *Release)(IEmptyVolumeCache *This);
+  HRESULT (__stdcall *Initialize)(IEmptyVolumeCache *This, HKEY hkRegKey, LPCWSTR pcwszVolume, LPWSTR *ppwszDisplayName, LPWSTR *ppwszDescription, DWORD *pdwFlags);
+  HRESULT (__stdcall *GetSpaceUsed)(IEmptyVolumeCache *This, DWORDLONG *pdwlSpaceUsed, IEmptyVolumeCacheCallBack *picb);
+  HRESULT (__stdcall *Purge)(IEmptyVolumeCache *This, DWORDLONG dwlSpaceToFree, IEmptyVolumeCacheCallBack *picb);
+  HRESULT (__stdcall *ShowProperties)(IEmptyVolumeCache *This, HWND hwnd);
+  HRESULT (__stdcall *Deactivate)(IEmptyVolumeCache *This, DWORD *pdwFlags);
+
+};

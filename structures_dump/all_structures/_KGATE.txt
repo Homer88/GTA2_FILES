@@ -1,0 +1,9 @@
+// Структура: _KGATE
+// Полей: 1
+// Строки в оригинале: 13383-13386
+struct _KGATE
+{
+
+  _DISPATCHER_HEADER Header;
+
+};

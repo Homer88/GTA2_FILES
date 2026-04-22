@@ -1,0 +1,11 @@
+// Структура: _PROCESS_WS_WATCH_INFORMATION_EX
+// Полей: 3
+// Строки в оригинале: 106897-106902
+struct _PROCESS_WS_WATCH_INFORMATION_EX
+{
+
+  _PROCESS_WS_WATCH_INFORMATION BasicInfo;
+  unsigned int FaultingThreadId;
+  unsigned int Flags;
+
+};

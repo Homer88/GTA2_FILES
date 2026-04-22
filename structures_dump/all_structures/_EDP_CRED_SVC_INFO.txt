@@ -1,0 +1,11 @@
+// Структура: _EDP_CRED_SVC_INFO
+// Полей: 3
+// Строки в оригинале: 127259-127264
+struct _EDP_CRED_SVC_INFO
+{
+
+  unsigned int cbSize;
+  _EDP_CRED_SVC_INFO_TYPE eInfoType;
+  $F9A179C14BDC2437ADBEBA70668AD348 ___u2;
+
+};

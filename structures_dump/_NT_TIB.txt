@@ -1,0 +1,18 @@
+// Structure: _NT_TIB
+// Lines: 2415 - 2428
+// Fields: 10
+
+struct _NT_TIB
+{
+  struct _EXCEPTION_REGISTRATION_RECORD *ExceptionList;
+  PVOID StackBase;
+  PVOID StackLimit;
+  PVOID SubSystemTib;
+  union
+  {
+    PVOID FiberData;
+    DWORD Version;
+  };
+  PVOID ArbitraryUserPointer;
+  struct _NT_TIB *Self;
+};

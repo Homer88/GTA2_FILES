@@ -1,0 +1,13 @@
+// Структура: tagKEYBDINPUT
+// Полей: 5
+// Строки в оригинале: 99615-99622
+struct tagKEYBDINPUT
+{
+
+  unsigned __int16 wVk;
+  unsigned __int16 wScan;
+  unsigned int dwFlags;
+  unsigned int time;
+  unsigned int dwExtraInfo;
+
+};

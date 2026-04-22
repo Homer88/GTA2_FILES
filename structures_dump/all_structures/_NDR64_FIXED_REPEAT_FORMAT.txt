@@ -1,0 +1,11 @@
+// Структура: _NDR64_FIXED_REPEAT_FORMAT
+// Полей: 3
+// Строки в оригинале: 331469-331474
+struct _NDR64_FIXED_REPEAT_FORMAT
+{
+
+  _NDR64_REPEAT_FORMAT RepeatFormat;
+  unsigned int Iterations;
+  unsigned int Reserved;
+
+};

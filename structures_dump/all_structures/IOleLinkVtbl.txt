@@ -1,0 +1,22 @@
+// Структура: IOleLinkVtbl
+// Полей: 14
+// Строки в оригинале: 28341-28357
+struct IOleLinkVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleLink *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleLink *This);
+  ULONG (__stdcall *Release)(IOleLink *This);
+  HRESULT (__stdcall *SetUpdateOptions)(IOleLink *This, DWORD dwUpdateOpt);
+  HRESULT (__stdcall *GetUpdateOptions)(IOleLink *This, DWORD *pdwUpdateOpt);
+  HRESULT (__stdcall *SetSourceMoniker)(IOleLink *This, IMoniker *pmk, const IID *const rclsid);
+  HRESULT (__stdcall *GetSourceMoniker)(IOleLink *This, IMoniker **ppmk);
+  HRESULT (__stdcall *SetSourceDisplayName)(IOleLink *This, LPCOLESTR pszStatusText);
+  HRESULT (__stdcall *GetSourceDisplayName)(IOleLink *This, LPOLESTR *ppszDisplayName);
+  HRESULT (__stdcall *BindToSource)(IOleLink *This, DWORD bindflags, IBindCtx *pbc);
+  HRESULT (__stdcall *BindIfRunning)(IOleLink *This);
+  HRESULT (__stdcall *GetBoundSource)(IOleLink *This, IUnknown **ppunk);
+  HRESULT (__stdcall *UnbindSource)(IOleLink *This);
+  HRESULT (__stdcall *Update)(IOleLink *This, IBindCtx *pbc);
+
+};

@@ -1,0 +1,10 @@
+// Структура: _LFH_BLOCK_ZONE
+// Полей: 2
+// Строки в оригинале: 21275-21279
+struct _LFH_BLOCK_ZONE
+{
+
+  _LIST_ENTRY ListEntry;
+  volatile int NextIndex;
+
+};

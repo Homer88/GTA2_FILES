@@ -1,0 +1,16 @@
+// Структура: _PROCESSOR_IDLE_PREPARE_INFO
+// Полей: 8
+// Строки в оригинале: 14759-14769
+struct _PROCESSOR_IDLE_PREPARE_INFO
+{
+
+  void *Context;
+  __declspec(align(8)) _PROCESSOR_IDLE_CONSTRAINTS Constraints;
+  unsigned int DependencyCount;
+  unsigned int DependencyUsed;
+  _PROCESSOR_IDLE_DEPENDENCY *DependencyArray;
+  unsigned int PlatformIdleStateIndex;
+  unsigned int ProcessorIdleStateIndex;
+  unsigned int IdleSelectFailureMask;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IHlink
+// Полей: 1
+// Строки в оригинале: 42759-42762
+struct IHlink
+{
+
+  struct IHlinkVtbl *lpVtbl;
+
+};

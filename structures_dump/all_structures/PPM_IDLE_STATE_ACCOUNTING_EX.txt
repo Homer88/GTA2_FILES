@@ -1,0 +1,16 @@
+// Структура: PPM_IDLE_STATE_ACCOUNTING_EX
+// Полей: 8
+// Строки в оригинале: 102558-102568
+struct PPM_IDLE_STATE_ACCOUNTING_EX
+{
+
+  unsigned __int64 TotalTime;
+  unsigned int IdleTransitions;
+  unsigned int FailedTransitions;
+  unsigned int InvalidBucketIndex;
+  unsigned int MinTimeUs;
+  unsigned int MaxTimeUs;
+  unsigned int CancelledTransitions;
+  PPM_IDLE_STATE_BUCKET_EX IdleTimeBuckets[16];
+
+};

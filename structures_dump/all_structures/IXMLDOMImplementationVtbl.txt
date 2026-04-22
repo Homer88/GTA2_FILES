@@ -1,0 +1,16 @@
+// Структура: IXMLDOMImplementationVtbl
+// Полей: 8
+// Строки в оригинале: 43608-43618
+struct IXMLDOMImplementationVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IXMLDOMImplementation *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IXMLDOMImplementation *This);
+  ULONG (__stdcall *Release)(IXMLDOMImplementation *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IXMLDOMImplementation *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IXMLDOMImplementation *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IXMLDOMImplementation *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IXMLDOMImplementation *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *hasFeature)(IXMLDOMImplementation *This, BSTR feature, BSTR version, VARIANT_BOOL *hasFeature);
+
+};

@@ -1,0 +1,12 @@
+// Структура: _BCRYPT_MULTI_HASH_OPERATION
+// Полей: 4
+// Строки в оригинале: 101486-101492
+struct _BCRYPT_MULTI_HASH_OPERATION
+{
+
+  unsigned int iHash;
+  BCRYPT_HASH_OPERATION_TYPE hashOperation;
+  unsigned __int8 *pbBuffer;
+  unsigned int cbBuffer;
+
+};

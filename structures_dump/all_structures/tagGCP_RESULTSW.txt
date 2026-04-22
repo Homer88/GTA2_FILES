@@ -1,0 +1,17 @@
+// Структура: tagGCP_RESULTSW
+// Полей: 9
+// Строки в оригинале: 98934-98945
+struct tagGCP_RESULTSW
+{
+
+  unsigned int lStructSize;
+  wchar_t *lpOutString;
+  unsigned int *lpOrder;
+  int *lpDx;
+  int *lpCaretPos;
+  char *lpClass;
+  wchar_t *lpGlyphs;
+  unsigned int nGlyphs;
+  int nMaxFit;
+
+};

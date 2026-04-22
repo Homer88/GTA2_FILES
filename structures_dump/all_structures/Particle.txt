@@ -1,0 +1,13 @@
+// Структура: Particle
+// Полей: 5
+// Строки в оригинале: 9155-9162
+struct Particle
+{
+
+  Particle1 *FirstElement;
+  Particle1 *Particle1;
+  Particle1 Particle1_ARR[500];
+  __int16 field_9478;
+  __int16 field_947A;
+
+};

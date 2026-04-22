@@ -1,0 +1,12 @@
+// Структура: _CRL_ENTRY
+// Полей: 4
+// Строки в оригинале: 79888-79894
+struct _CRL_ENTRY
+{
+
+  _CRYPTOAPI_BLOB SerialNumber;
+  _FILETIME RevocationDate;
+  unsigned int cExtension;
+  _CERT_EXTENSION *rgExtension;
+
+};

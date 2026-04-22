@@ -1,0 +1,21 @@
+// Структура: _STORAGE_QUERY_DEPENDENT_VOLUME_LEV2_ENTRY
+// Полей: 13
+// Строки в оригинале: 80202-80217
+struct _STORAGE_QUERY_DEPENDENT_VOLUME_LEV2_ENTRY
+{
+
+  unsigned int EntryLength;
+  unsigned int DependencyTypeFlags;
+  unsigned int ProviderSpecificFlags;
+  _VIRTUAL_STORAGE_TYPE VirtualStorageType;
+  unsigned int AncestorLevel;
+  unsigned int HostVolumeNameOffset;
+  unsigned int HostVolumeNameSize;
+  unsigned int DependentVolumeNameOffset;
+  unsigned int DependentVolumeNameSize;
+  unsigned int RelativePathOffset;
+  unsigned int RelativePathSize;
+  unsigned int DependentDeviceNameOffset;
+  unsigned int DependentDeviceNameSize;
+
+};

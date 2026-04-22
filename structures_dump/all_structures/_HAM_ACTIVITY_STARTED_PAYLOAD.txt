@@ -1,0 +1,12 @@
+// Структура: _HAM_ACTIVITY_STARTED_PAYLOAD
+// Полей: 4
+// Строки в оригинале: 246019-246025
+struct _HAM_ACTIVITY_STARTED_PAYLOAD
+{
+
+  unsigned __int64 Generation;
+  unsigned __int64 PendStartPerfCounter;
+  $0B450BCA820F3A25980FA5E0808D5CD7 ___u2;
+  $E4BE56D6EF4065B84228CDE8F6BBC8F5 ___u3;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _IMAGEHLP_SYMBOL_SRC
+// Полей: 3
+// Строки в оригинале: 123946-123951
+struct _IMAGEHLP_SYMBOL_SRC
+{
+
+  unsigned int sizeofstruct;
+  unsigned int type;
+  char file[260];
+
+};

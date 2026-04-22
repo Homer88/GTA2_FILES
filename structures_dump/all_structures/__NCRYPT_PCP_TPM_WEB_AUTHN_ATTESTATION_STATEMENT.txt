@@ -1,0 +1,14 @@
+// Структура: __NCRYPT_PCP_TPM_WEB_AUTHN_ATTESTATION_STATEMENT
+// Полей: 6
+// Строки в оригинале: 92855-92863
+struct __NCRYPT_PCP_TPM_WEB_AUTHN_ATTESTATION_STATEMENT
+{
+
+  unsigned int Magic;
+  unsigned int Version;
+  unsigned int HeaderSize;
+  unsigned int cbCertifyInfo;
+  unsigned int cbSignature;
+  unsigned int cbTpmPublic;
+
+};

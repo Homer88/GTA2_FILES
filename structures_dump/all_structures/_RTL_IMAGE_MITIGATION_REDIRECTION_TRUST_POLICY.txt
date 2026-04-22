@@ -1,0 +1,9 @@
+// Структура: _RTL_IMAGE_MITIGATION_REDIRECTION_TRUST_POLICY
+// Полей: 1
+// Строки в оригинале: 108446-108449
+struct _RTL_IMAGE_MITIGATION_REDIRECTION_TRUST_POLICY
+{
+
+  _RTL_IMAGE_MITIGATION_POLICY BlockUntrustedRedirections;
+
+};

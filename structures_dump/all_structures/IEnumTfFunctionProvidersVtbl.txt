@@ -1,0 +1,15 @@
+// Структура: IEnumTfFunctionProvidersVtbl
+// Полей: 7
+// Строки в оригинале: 41649-41658
+struct IEnumTfFunctionProvidersVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumTfFunctionProviders *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumTfFunctionProviders *This);
+  ULONG (__stdcall *Release)(IEnumTfFunctionProviders *This);
+  HRESULT (__stdcall *Clone)(IEnumTfFunctionProviders *This, IEnumTfFunctionProviders **ppEnum);
+  HRESULT (__stdcall *Next)(IEnumTfFunctionProviders *This, ULONG ulCount, ITfFunctionProvider **ppCmdobj, ULONG *pcFetch);
+  HRESULT (__stdcall *Reset)(IEnumTfFunctionProviders *This);
+  HRESULT (__stdcall *Skip)(IEnumTfFunctionProviders *This, ULONG ulCount);
+
+};

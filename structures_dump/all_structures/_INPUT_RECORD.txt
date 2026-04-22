@@ -1,0 +1,10 @@
+// Структура: _INPUT_RECORD
+// Полей: 2
+// Строки в оригинале: 91996-92000
+struct _INPUT_RECORD
+{
+
+  unsigned __int16 EventType;
+  _INPUT_RECORD::<unnamed_type_Event> Event;
+
+};

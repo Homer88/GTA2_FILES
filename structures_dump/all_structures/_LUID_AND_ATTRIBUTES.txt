@@ -1,0 +1,10 @@
+// Структура: _LUID_AND_ATTRIBUTES
+// Полей: 2
+// Строки в оригинале: 19165-19169
+struct _LUID_AND_ATTRIBUTES
+{
+
+  _LUID Luid;
+  unsigned int Attributes;
+
+};

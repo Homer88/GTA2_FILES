@@ -1,0 +1,12 @@
+// Структура: _HEAP_VAMGR_CTX
+// Полей: 4
+// Строки в оригинале: 20521-20527
+struct _HEAP_VAMGR_CTX
+{
+
+  _HEAP_VAMGR_VASPACE VaSpace;
+  unsigned int AllocatorLock;
+  unsigned int AllocatorCount;
+  _HEAP_VAMGR_ALLOCATOR Allocators[255];
+
+};

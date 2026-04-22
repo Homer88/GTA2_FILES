@@ -1,0 +1,11 @@
+// Структура: _ETW_REFDEREF_OBJECT_EVENT
+// Полей: 3
+// Строки в оригинале: 312841-312846
+struct _ETW_REFDEREF_OBJECT_EVENT
+{
+
+  void *Object;
+  unsigned int Tag;
+  unsigned int Count;
+
+};

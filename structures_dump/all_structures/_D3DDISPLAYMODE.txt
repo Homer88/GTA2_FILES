@@ -1,0 +1,12 @@
+// Структура: _D3DDISPLAYMODE
+// Полей: 4
+// Строки в оригинале: 24920-24926
+struct _D3DDISPLAYMODE
+{
+
+  UINT Width;
+  UINT Height;
+  UINT RefreshRate;
+  D3DFORMAT Format;
+
+};

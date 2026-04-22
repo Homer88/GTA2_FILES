@@ -1,0 +1,10 @@
+// Структура: _OCSP_BASIC_REVOKED_INFO
+// Полей: 2
+// Строки в оригинале: 81548-81552
+struct _OCSP_BASIC_REVOKED_INFO
+{
+
+  _FILETIME RevocationDate;
+  unsigned int dwCrlReasonCode;
+
+};

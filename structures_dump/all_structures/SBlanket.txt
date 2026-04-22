@@ -1,0 +1,17 @@
+// Структура: SBlanket
+// Полей: 9
+// Строки в оригинале: 241363-241374
+struct SBlanket
+{
+
+  wchar_t *_pPrincipal;
+  unsigned int _lAuthnLevel;
+  unsigned int _lAuthnSvc;
+  void *_pAuthId;
+  unsigned int _lAuthzSvc;
+  _RPC_SECURITY_QOS_V5_W _sQos;
+  unsigned int _lCapabilities;
+  _SCHANNEL_CRED _sCred;
+  const _CERT_CONTEXT *_pCert;
+
+};

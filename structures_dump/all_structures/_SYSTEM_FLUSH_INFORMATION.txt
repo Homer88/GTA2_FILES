@@ -1,0 +1,12 @@
+// Структура: _SYSTEM_FLUSH_INFORMATION
+// Полей: 4
+// Строки в оригинале: 105310-105316
+struct _SYSTEM_FLUSH_INFORMATION
+{
+
+  unsigned int SupportedFlushMethods;
+  unsigned int ProcessorCacheFlushSize;
+  unsigned __int64 SystemFlushCapabilities;
+  unsigned __int64 Reserved[2];
+
+};

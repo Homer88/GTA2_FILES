@@ -1,0 +1,18 @@
+// Структура: _AHC_SERVICE_LOOKUP
+// Полей: 10
+// Строки в оригинале: 308743-308755
+struct _AHC_SERVICE_LOOKUP
+{
+
+  _AHC_INFO_CLASS InfoClass;
+  unsigned int HintFlags;
+  _UNICODE_STRING PackageAlias;
+  void *FileHandle;
+  void *ProcessHandle;
+  unsigned __int16 ExeType;
+  unsigned __int16 Padding;
+  _UNICODE_STRING ExeSignature;
+  const wchar_t *Environment;
+  unsigned int EnvironmentSize;
+
+};

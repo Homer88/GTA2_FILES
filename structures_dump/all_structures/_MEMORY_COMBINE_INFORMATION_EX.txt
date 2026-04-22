@@ -1,0 +1,11 @@
+// Структура: _MEMORY_COMBINE_INFORMATION_EX
+// Полей: 3
+// Строки в оригинале: 111519-111524
+struct _MEMORY_COMBINE_INFORMATION_EX
+{
+
+  void *Handle;
+  unsigned int PagesCombined;
+  unsigned int Flags;
+
+};

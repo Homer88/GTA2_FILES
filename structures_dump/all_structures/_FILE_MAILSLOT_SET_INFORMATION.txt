@@ -1,0 +1,9 @@
+// Структура: _FILE_MAILSLOT_SET_INFORMATION
+// Полей: 1
+// Строки в оригинале: 108452-108455
+struct _FILE_MAILSLOT_SET_INFORMATION
+{
+
+  _LARGE_INTEGER *ReadTimeout;
+
+};

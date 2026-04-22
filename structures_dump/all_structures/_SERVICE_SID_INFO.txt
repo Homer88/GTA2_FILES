@@ -1,0 +1,9 @@
+// Структура: _SERVICE_SID_INFO
+// Полей: 1
+// Строки в оригинале: 110782-110785
+struct _SERVICE_SID_INFO
+{
+
+  unsigned int dwServiceSidType;
+
+};

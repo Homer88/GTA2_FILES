@@ -1,0 +1,10 @@
+// Структура: _CERT_POLICY_QUALIFIER_INFO
+// Полей: 2
+// Строки в оригинале: 87453-87457
+struct _CERT_POLICY_QUALIFIER_INFO
+{
+
+  char *pszPolicyQualifierId;
+  _CRYPTOAPI_BLOB Qualifier;
+
+};

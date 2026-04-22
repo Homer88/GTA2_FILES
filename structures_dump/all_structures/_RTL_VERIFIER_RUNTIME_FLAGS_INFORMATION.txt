@@ -1,0 +1,12 @@
+// Структура: _RTL_VERIFIER_RUNTIME_FLAGS_INFORMATION
+// Полей: 4
+// Строки в оригинале: 107115-107121
+struct _RTL_VERIFIER_RUNTIME_FLAGS_INFORMATION
+{
+
+  unsigned int Size;
+  unsigned int ProviderFlags;
+  unsigned int DebugFlags;
+  unsigned int Spare;
+
+};

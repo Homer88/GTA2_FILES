@@ -1,0 +1,11 @@
+// Структура: tagLOGBRUSH
+// Полей: 3
+// Строки в оригинале: 81281-81286
+struct tagLOGBRUSH
+{
+
+  unsigned int lbStyle;
+  unsigned int lbColor;
+  unsigned int lbHatch;
+
+};

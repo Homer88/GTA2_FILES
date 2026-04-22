@@ -1,0 +1,9 @@
+// Структура: IStorage
+// Полей: 1
+// Строки в оригинале: 27157-27160
+struct IStorage
+{
+
+  struct IStorageVtbl *lpVtbl;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_CONSOLE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 111871-111875
+struct _SYSTEM_CONSOLE_INFORMATION
+{
+
+  unsigned __int32 DriverLoaded : 1;
+  unsigned __int32 Spare : 31;
+
+};

@@ -1,0 +1,11 @@
+// Структура: Door
+// Полей: 3
+// Строки в оригинале: 9879-9884
+struct Door
+{
+
+  HudElement S76[22];
+  __int16 field_4D0;
+  __int16 field_4D2;
+
+};

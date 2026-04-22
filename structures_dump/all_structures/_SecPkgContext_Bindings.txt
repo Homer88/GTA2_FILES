@@ -1,0 +1,10 @@
+// Структура: _SecPkgContext_Bindings
+// Полей: 2
+// Строки в оригинале: 323954-323958
+struct _SecPkgContext_Bindings
+{
+
+  unsigned int BindingsLength;
+  _SEC_CHANNEL_BINDINGS *Bindings;
+
+};

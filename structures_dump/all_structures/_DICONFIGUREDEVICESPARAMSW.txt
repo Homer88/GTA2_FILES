@@ -1,0 +1,16 @@
+// Структура: _DICONFIGUREDEVICESPARAMSW
+// Полей: 8
+// Строки в оригинале: 29241-29251
+struct _DICONFIGUREDEVICESPARAMSW
+{
+
+  DWORD dwSize;
+  DWORD dwcUsers;
+  LPWSTR lptszUserNames;
+  DWORD dwcFormats;
+  LPDIACTIONFORMATW lprgFormats;
+  HWND hwnd;
+  DICOLORSET dics;
+  IUnknown *lpUnkDDSTarget;
+
+};

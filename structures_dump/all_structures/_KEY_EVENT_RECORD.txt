@@ -1,0 +1,14 @@
+// Структура: _KEY_EVENT_RECORD
+// Полей: 6
+// Строки в оригинале: 85911-85919
+struct _KEY_EVENT_RECORD
+{
+
+  int bKeyDown;
+  unsigned __int16 wRepeatCount;
+  unsigned __int16 wVirtualKeyCode;
+  unsigned __int16 wVirtualScanCode;
+  _KEY_EVENT_RECORD::<unnamed_type_uChar> uChar;
+  unsigned int dwControlKeyState;
+
+};

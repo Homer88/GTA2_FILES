@@ -1,0 +1,10 @@
+// Структура: _PROCESS_LEAP_SECOND_INFORMATION
+// Полей: 2
+// Строки в оригинале: 84125-84129
+struct _PROCESS_LEAP_SECOND_INFORMATION
+{
+
+  unsigned int Flags;
+  unsigned int Reserved;
+
+};

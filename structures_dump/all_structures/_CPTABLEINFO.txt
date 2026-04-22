@@ -1,0 +1,20 @@
+// Структура: _CPTABLEINFO
+// Полей: 12
+// Строки в оригинале: 91197-91211
+struct _CPTABLEINFO
+{
+
+  unsigned __int16 CodePage;
+  unsigned __int16 MaximumCharacterSize;
+  unsigned __int16 DefaultChar;
+  unsigned __int16 UniDefaultChar;
+  unsigned __int16 TransDefaultChar;
+  unsigned __int16 TransUniDefaultChar;
+  unsigned __int16 DBCSCodePage;
+  unsigned __int8 LeadByte[12];
+  wchar_t *MultiByteTable;
+  void *WideCharTable;
+  wchar_t *DBCSRanges;
+  wchar_t *DBCSOffsets;
+
+};

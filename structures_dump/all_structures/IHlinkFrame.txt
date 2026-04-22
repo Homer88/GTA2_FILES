@@ -1,0 +1,9 @@
+// Структура: IHlinkFrame
+// Полей: 1
+// Строки в оригинале: 42747-42750
+struct IHlinkFrame
+{
+
+  struct IHlinkFrameVtbl *lpVtbl;
+
+};

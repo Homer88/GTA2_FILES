@@ -1,0 +1,12 @@
+// Структура: _SHNAMEMAPPINGA
+// Полей: 4
+// Строки в оригинале: 108646-108652
+struct _SHNAMEMAPPINGA
+{
+
+  char *pszOldPath;
+  char *pszNewPath;
+  int cchOldPath;
+  int cchNewPath;
+
+};

@@ -1,0 +1,12 @@
+// Структура: PreventRundownBias
+// Полей: 4
+// Строки в оригинале: 260290-260296
+struct PreventRundownBias
+{
+
+  PreventRundownBiasType type;
+  $3AB9210061A5C9FEB0B09F52A924D435 ___u1;
+  unsigned int dwAptIdBiasedStub;
+  _LIST_ENTRY listEntry;
+
+};

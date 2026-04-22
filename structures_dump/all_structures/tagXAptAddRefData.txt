@@ -1,0 +1,12 @@
+// Структура: tagXAptAddRefData
+// Полей: 4
+// Строки в оригинале: 250355-250361
+struct tagXAptAddRefData
+{
+
+  unsigned __int16 cIfs;
+  tagREMINTERFACEREF *pIfRefs;
+  HRESULT *pResults;
+  CRemoteUnknown *pRemUnk;
+
+};

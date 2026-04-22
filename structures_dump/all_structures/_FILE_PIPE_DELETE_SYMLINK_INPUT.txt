@@ -1,0 +1,10 @@
+// Структура: _FILE_PIPE_DELETE_SYMLINK_INPUT
+// Полей: 2
+// Строки в оригинале: 106716-106720
+struct _FILE_PIPE_DELETE_SYMLINK_INPUT
+{
+
+  unsigned __int16 NameOffset;
+  unsigned __int16 NameLength;
+
+};

@@ -1,0 +1,21 @@
+// Структура: IWICPaletteVtbl
+// Полей: 13
+// Строки в оригинале: 40200-40215
+struct IWICPaletteVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICPalette *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICPalette *This);
+  ULONG (__stdcall *Release)(IWICPalette *This);
+  HRESULT (__stdcall *InitializePredefined)(IWICPalette *This, WICBitmapPaletteType ePaletteType, BOOL fAddTransparentColor);
+  HRESULT (__stdcall *InitializeCustom)(IWICPalette *This, WICColor *pColors, UINT cCount);
+  HRESULT (__stdcall *InitializeFromBitmap)(IWICPalette *This, IWICBitmapSource *pISurface, UINT cCount, BOOL fAddTransparentColor);
+  HRESULT (__stdcall *InitializeFromPalette)(IWICPalette *This, IWICPalette *pIPalette);
+  HRESULT (__stdcall *GetType)(IWICPalette *This, WICBitmapPaletteType *pePaletteType);
+  HRESULT (__stdcall *GetColorCount)(IWICPalette *This, UINT *pcCount);
+  HRESULT (__stdcall *GetColors)(IWICPalette *This, UINT cCount, WICColor *pColors, UINT *pcActualColors);
+  HRESULT (__stdcall *IsBlackWhite)(IWICPalette *This, BOOL *pfIsBlackWhite);
+  HRESULT (__stdcall *IsGrayscale)(IWICPalette *This, BOOL *pfIsGrayscale);
+  HRESULT (__stdcall *HasAlpha)(IWICPalette *This, BOOL *pfHasAlpha);
+
+};

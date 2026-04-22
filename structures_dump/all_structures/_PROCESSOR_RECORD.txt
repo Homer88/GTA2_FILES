@@ -1,0 +1,14 @@
+// Структура: _PROCESSOR_RECORD
+// Полей: 6
+// Строки в оригинале: 312887-312895
+struct _PROCESSOR_RECORD
+{
+
+  unsigned int Index;
+  unsigned int FeatureSet;
+  unsigned int ProcessorSpeed;
+  wchar_t ProcessorName[64];
+  wchar_t ProcessorIdentifier[128];
+  wchar_t VendorIdentifier[16];
+
+};

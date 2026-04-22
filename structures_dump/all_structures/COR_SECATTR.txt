@@ -1,0 +1,11 @@
+// Структура: COR_SECATTR
+// Полей: 3
+// Строки в оригинале: 330987-330992
+struct COR_SECATTR
+{
+
+  unsigned int tkCtor;
+  const void *pCustomAttribute;
+  unsigned int cbCustomAttribute;
+
+};

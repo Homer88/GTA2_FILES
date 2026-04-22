@@ -1,0 +1,10 @@
+// Structure: Arsenal
+// Lines: 5137 - 5142
+// Fields: 4
+
+struct Arsenal
+{
+  void *Sprite;
+  __int16 Count;
+  __int16 field_6;
+};

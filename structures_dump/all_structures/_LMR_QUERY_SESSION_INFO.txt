@@ -1,0 +1,9 @@
+// Структура: _LMR_QUERY_SESSION_INFO
+// Полей: 1
+// Строки в оригинале: 103678-103681
+struct _LMR_QUERY_SESSION_INFO
+{
+
+  unsigned __int64 SessionId;
+
+};

@@ -1,0 +1,43 @@
+// Структура: _KTSS
+// Полей: 35
+// Строки в оригинале: 14127-14164
+struct _KTSS
+{
+
+  unsigned __int16 Backlink;
+  unsigned __int16 Reserved0;
+  unsigned int Esp0;
+  unsigned __int16 Ss0;
+  unsigned __int16 Reserved1;
+  unsigned int NotUsed1[4];
+  unsigned int CR3;
+  unsigned int Eip;
+  unsigned int EFlags;
+  unsigned int Eax;
+  unsigned int Ecx;
+  unsigned int Edx;
+  unsigned int Ebx;
+  unsigned int Esp;
+  unsigned int Ebp;
+  unsigned int Esi;
+  unsigned int Edi;
+  unsigned __int16 Es;
+  unsigned __int16 Reserved2;
+  unsigned __int16 Cs;
+  unsigned __int16 Reserved3;
+  unsigned __int16 Ss;
+  unsigned __int16 Reserved4;
+  unsigned __int16 Ds;
+  unsigned __int16 Reserved5;
+  unsigned __int16 Fs;
+  unsigned __int16 Reserved6;
+  unsigned __int16 Gs;
+  unsigned __int16 Reserved7;
+  unsigned __int16 LDT;
+  unsigned __int16 Reserved8;
+  unsigned __int16 Flags;
+  unsigned __int16 IoMapBase;
+  _KiIoAccessMap IoMaps[1];
+  unsigned __int8 IntDirectionMap[32];
+
+};

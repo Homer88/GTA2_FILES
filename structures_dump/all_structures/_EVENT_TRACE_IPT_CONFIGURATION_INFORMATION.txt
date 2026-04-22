@@ -1,0 +1,11 @@
+// Структура: _EVENT_TRACE_IPT_CONFIGURATION_INFORMATION
+// Полей: 3
+// Строки в оригинале: 310915-310920
+struct _EVENT_TRACE_IPT_CONFIGURATION_INFORMATION
+{
+
+  _EVENT_TRACE_INFORMATION_CLASS EventTraceInformationClass;
+  unsigned __int64 TraceHandle;
+  unsigned __int64 ConfigurationOptions;
+
+};
