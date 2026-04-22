@@ -74,6 +74,9 @@ enum class PedFlags : uint32_t {
 // 1. GameObject - базовый класс для всех объектов мира
 #include "GameObject.h"
 
+// 1.5 Passenger - должен быть перед Car
+#include "Passenger.h"
+
 // 2. Weapon - оружие (может использоваться Ped и Player)
 #include "Weapon.h"
 
@@ -91,6 +94,12 @@ enum class PedFlags : uint32_t {
 
 // 7. Game - основная структура управления игрой
 #include "Game.h"
+
+// 8. InitWindow - окно инициализации
+#include "InitWindow.h"
+
+// 9. Menu - система меню
+#include "Menu.h"
 
 // ============================================================================
 // ГЛОБАЛЬНЫЕ ЭКЗЕМПЛЯРЫ (адреса будут определены при линковке)

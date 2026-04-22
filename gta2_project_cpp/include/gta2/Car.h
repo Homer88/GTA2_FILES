@@ -34,7 +34,7 @@ enum class TRAFFIC_CAR_TYPE : uint8_t {};
 struct Car
 {
     void* vtable;                       // 0x0000 - Указатель на таблицу виртуальных методов
-    Passenger* Passenger;               // 0x0004 - Пассажиры
+    struct Passenger* Passengers;       // 0x0004 - Пассажиры (переименовано для избежания конфликта)
     CAR_LIGHTS_AND_DOORS_BITSTATE carLights; // 0x0008 - Состояние огней и дверей
     CarDoor* carDoors[4];                 // 0x000C - Двери автомобиля (4 шт)
     Car* LastCar;                       // 0x003C - Последний автомобиль

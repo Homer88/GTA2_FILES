@@ -288,6 +288,30 @@ src/InitWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/InitWindow.cpp.s
 .PHONY : src/InitWindow.cpp.s
 
+src/Menu.o: src/Menu.cpp.o
+.PHONY : src/Menu.o
+
+# target to build an object file
+src/Menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Menu.cpp.o
+.PHONY : src/Menu.cpp.o
+
+src/Menu.i: src/Menu.cpp.i
+.PHONY : src/Menu.i
+
+# target to preprocess a source file
+src/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Menu.cpp.i
+.PHONY : src/Menu.cpp.i
+
+src/Menu.s: src/Menu.cpp.s
+.PHONY : src/Menu.s
+
+# target to generate assembly for a file
+src/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Menu.cpp.s
+.PHONY : src/Menu.cpp.s
+
 src/Ped.o: src/Ped.cpp.o
 .PHONY : src/Ped.o
 
@@ -459,6 +483,9 @@ help:
 	@echo "... src/InitWindow.o"
 	@echo "... src/InitWindow.i"
 	@echo "... src/InitWindow.s"
+	@echo "... src/Menu.o"
+	@echo "... src/Menu.i"
+	@echo "... src/Menu.s"
 	@echo "... src/Ped.o"
 	@echo "... src/Ped.i"
 	@echo "... src/Ped.s"
