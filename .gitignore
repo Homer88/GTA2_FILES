@@ -9,85 +9,59 @@
 *.out
 
 # Dependencies
+node_modules/
 venv/
 .venv/
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-.venv.bak/
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Build directories
-build/
 dist/
-*.egg
-*.egg-info/
-.installed.cfg
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
+build/
+target/
+.gradle/
+
+# Logs and temp files
 *.log
-*.pot
-*.po
-*~
+*.tmp
+*.swp
+
+# Editors
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# System
 .DS_Store
 Thumbs.db
 
-# C++ specific
-*.o
-*.obj
-*.exe
-*.dll
-*.so
-*.a
-*.out
-*.ilk
-*.pdb
-*.lib
-*.exp
-*.iobj
-*.ipdb
-*.tlog
-*.lastbuildstate
-*.obj/
-*.ilk/
-*.pdb/
-*.idb/
-*.iobj/
-*.ipdb/
-*.tlog/
-*.lastbuildstate/
-
-# Debug and release builds
-Debug/
-Release/
-x64/
-x86/
-build/
-bin/
-obj/
-
-# IDE specific
-.vs/
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
-
-# Environment files
-.env
-.env.local
-*.env
-*.env.*
-.env*
-.env.*
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
 ```
