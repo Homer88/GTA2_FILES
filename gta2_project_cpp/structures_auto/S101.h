@@ -1,0 +1,61 @@
+// Auto-generated structure: S101
+// Source: S101.txt
+// Fields count: 40
+// Generated for GTA 2 project (DirectX 6.1)
+
+#pragma once
+
+#include <windows.h>
+
+// Forward declarations will be added later as needed
+
+#pragma pack(push, 1)
+
+struct S101
+{
+    char field;
+    char field_1;
+    char field_2;
+    char field_3;
+    char field_4;
+    char field_5;
+    char field_6;
+    char field_7;
+    char field_8;
+    char field_9;
+    char field_A;
+    char field_B;
+    char field_10;
+    char field_11;
+    char field_12;
+    char field_13;
+    char field_14;
+    char field_15;
+    char field_16;
+    char field_17;
+    char field_18;
+    char field_19;
+    char field_1A;
+    char field_1B;
+    char field_1C;
+    char field_1D;
+    char field_1E;
+    char field_1F;
+    char field_24;
+    char field_25;
+    char field_26;
+    char field_27;
+    char field_28;
+    char field_29;
+    char field_2A;
+    char field_2B;
+    char field_2C;
+    char field_2D;
+    char field_2E;
+    char field_0;
+};
+
+#pragma pack(pop)
+
+// Static size check (uncomment after verifying size)
+// static_assert(sizeof(S101) == EXPECTED_SIZE, "Size mismatch for S101");

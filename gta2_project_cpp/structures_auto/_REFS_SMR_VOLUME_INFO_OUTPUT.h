@@ -1,0 +1,28 @@
+// Auto-generated structure: _REFS_SMR_VOLUME_INFO_OUTPUT
+// Source: _REFS_SMR_VOLUME_INFO_OUTPUT.txt
+// Fields count: 7
+// Generated for GTA 2 project (DirectX 6.1)
+
+#pragma once
+
+#include <windows.h>
+
+// Forward declarations will be added later as needed
+
+#pragma pack(push, 1)
+
+struct _REFS_SMR_VOLUME_INFO_OUTPUT
+{
+    _LARGE_INTEGER SizeOfRandomlyWritableTier;
+    _LARGE_INTEGER FreeSpaceInRandomlyWritableTier;
+    _LARGE_INTEGER SizeofSMRTier;
+    _LARGE_INTEGER FreeSpaceInSMRTier;
+    _LARGE_INTEGER UsableFreeSpaceInSMRTier;
+    _REFS_SMR_VOLUME_GC_STATE VolumeGcState;
+    int VolumeGcLastStatus;
+};
+
+#pragma pack(pop)
+
+// Static size check (uncomment after verifying size)
+// static_assert(sizeof(_REFS_SMR_VOLUME_INFO_OUTPUT) == EXPECTED_SIZE, "Size mismatch for _REFS_SMR_VOLUME_INFO_OUTPUT");
