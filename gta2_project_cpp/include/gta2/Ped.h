@@ -73,6 +73,9 @@ struct Ped
 
 
 // === Основные функции управления (0x00412920 - 0x00412B90) ===
+#ifdef __cplusplus
+extern "C" {
+#endif
 // Адрес: 0x00412920 - Ped__SetSearchType
 void Ped__SetSearchType(Ped* ped, int searchType);
 
@@ -254,5 +257,9 @@ void Ped__SetRotation(Ped* ped, float rotation);
 // Адрес: 0x00433DC0 - Ped__GetPoliceStar
 int Ped__GetPoliceStar(Ped* ped);
 
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // PED_H

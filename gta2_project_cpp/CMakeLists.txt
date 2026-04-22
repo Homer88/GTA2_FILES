@@ -4,43 +4,99 @@ project(gta2_project_cpp CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Include directories
-include_directories(${CMAKE_SOURCE_DIR}/include)
+# ============================================
+# СТАТИЧЕСКАЯ БИБЛИОТЕКА ЯДРА GTA2
+# ============================================
 
-# Source files (placeholder - will be filled when methods are verified from ASM)
-set(SOURCES
-    # Add .cpp files here when classes with vtable methods are confirmed
-    GameObject.cpp
+set(GTA2_CORE_SOURCES
+    src/GameObject.cpp
+    src/Weapon.cpp
+    src/Gang.cpp
+    src/Car.cpp
+    src/Ped.cpp
+    src/Player.cpp
+    src/Game.cpp
     src/InitWindow.cpp
 )
 
-# Create library (empty for now - header only interface)
-add_library(gta2_cpp INTERFACE)
+set(GTA2_CORE_HEADERS
+    include/gta2/GameObject.h
+    include/gta2/Weapon.h
+    include/gta2/Gang.h
+    include/gta2/Car.h
+    include/gta2/Ped.h
+    include/gta2/Player.h
+    include/gta2/Game.h
+    include/gta2/InitWindow.h
+    include/gta2/gta2_types.h
+)
 
-target_include_directories(gta2_cpp INTERFACE ${CMAKE_SOURCE_DIR}/include)
+# Создаем статическую библиотеку
+add_library(gta2_core STATIC ${GTA2_CORE_SOURCES} ${GTA2_CORE_HEADERS})
+target_include_directories(gta2_core PUBLIC ${CMAKE_SOURCE_DIR}/include)
 
-# Compiler flags
+# Компиляторные флаги
 if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
-    target_compile_options(gta2_cpp INTERFACE
+    target_compile_options(gta2_core PRIVATE
         -Wall
         -Wextra
         -fno-strict-aliasing
     )
 endif()
 
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+# Для Windows: подключение WinAPI библиотек
+if(WIN32)
+    target_link_libraries(gta2_core PUBLIC user32 gdi32)
+endif()
 
 # ============================================
 # ТЕСТЫ
 # ============================================
 
-# Добавляем исполняемый файл для тестов GameObject
-add_executable(test_gameobject test_gameobject.cpp GameObject.cpp)
-target_link_libraries(test_gameobject gta2_cpp)
+# Тест структур данных (размеры, оффсеты)
+add_executable(test_structures test_all_structures.cpp)
+target_link_libraries(test_structures PRIVATE gta2_core)
 
-# Добавляем исполняемый файл для тестов InitWindow
-add_executable(test_initwindow test_initwindow.cpp src/InitWindow.cpp)
-target_link_libraries(test_initwindow gta2_cpp)
+# Тест InitWindow
+add_executable(test_initwindow test_initwindow.cpp)
+target_link_libraries(test_initwindow PRIVATE gta2_core)
 
-# Для Windows: если нужно линковаться с конкретными библиотеками (например, DirectX), раскомментируйте ниже
-# target_link_libraries(test_gameobject dinput dxguid)
+# ============================================
+# ОСНОВНОЕ ПРИЛОЖЕНИЕ (точка входа)
+# ============================================
+
+# Создаем main.cpp если нет
+if(NOT EXISTS "${CMAKE_SOURCE_DIR}/src/main.cpp")
+    file(WRITE "${CMAKE_SOURCE_DIR}/src/main.cpp" 
+"#include \"gta2/gta2_types.h\"
+#include \"gta2/InitWindow.h\"
+#include <iostream>
+
+int main(int argc, char* argv[]) {
+    std::cout << \"GTA2 Reversing Project\" << std::endl;
+    
+    // Парсинг параметров командной строки
+    gta2::InitParams params = gta2::ParseCommandLine(argc, argv);
+    
+    if (params.gameMode == gta2::GameMode::SinglePlayer) {
+        std::cout << \"Mode: Single Player\" << std::endl;
+    } else {
+        std::cout << \"Mode: Multiplayer (Server: \" << params.serverIP 
+                  << \":\" << params.port << \")\" << std::endl;
+    }
+    
+    return 0;
+}
+")
+endif()
+
+add_executable(gta2_runner src/main.cpp)
+target_link_libraries(gta2_runner PRIVATE gta2_core)
+
+# ============================================
+# ЭКСПОРТ КОМПИЛЯЦИОННЫХ ДАННЫХ
+# ============================================
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+message(STATUS "GTA2 Core Library: gta2_core (STATIC)")
+message(STATUS "Sources: ${GTA2_CORE_SOURCES}")

@@ -95,6 +95,9 @@ struct Car
 // ============================================================================
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 // Адрес: 0x00403800 - Car__sub_403800
 void Car__sub_403800(Car* car);
 
@@ -236,5 +239,8 @@ bool Car__is_trailer(Car* car);
 // Адрес: 0x004306C0 - Car__has_for_hire_lights
 bool Car__has_for_hire_lights(Car* car);
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif // CAR_H

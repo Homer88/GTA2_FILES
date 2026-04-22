@@ -1,4 +1,4 @@
-#include "Weapon.h"
+#include "gta2/Weapon.h"
 #include <cstring>
 
 // Weapon module implementation

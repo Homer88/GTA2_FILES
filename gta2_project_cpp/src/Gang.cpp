@@ -1,4 +1,4 @@
-#include "Gang.h"
+#include "gta2/Gang.h"
 #include <cstring>
 
 // Gang module implementation

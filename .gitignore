@@ -1,33 +1,39 @@
 ```
-# Build directories
+# Build artifacts
 build/
-cmake-build-*/
 CMakeFiles/
-CMakeCache.txt
 Makefile
-cmake_install.cmake
-compile_commands.json
+cmake-build-*/
 
-# Compiled objects
+# Compiled files
 *.o
 *.obj
 *.a
 *.lib
 *.so
-*.dylib
 *.dll
 *.exe
+*.out
 
-# IDE specific
+# Dependencies
+.externalNativeBuild/
+.cmake/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*~
+# OS
+.DS_Store
+Thumbs.db
 ```

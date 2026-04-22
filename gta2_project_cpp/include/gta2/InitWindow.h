@@ -188,3 +188,5 @@ namespace GTA2 {
     InitParams ParseCommandLine(int argc, char* argv[]);
 
 } // namespace GTA2
+
+#endif // INITWINDOW_H

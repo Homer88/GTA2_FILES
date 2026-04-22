@@ -49,6 +49,9 @@ struct GameObject
 // Всего: 60 функций
 // ============================================================================
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 // Адрес: 0x00412900 - GameObject__GetVehicle
 Car* GameObject__GetVehicle(GameObject* obj);
 

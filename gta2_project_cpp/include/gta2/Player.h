@@ -96,6 +96,9 @@ struct Player
 
 
 // === Основные функции управления ===
+#ifdef __cplusplus
+extern "C" {
+#endif
 // Адрес: 0x00401B40 - Player__sub_401B40
 void Player__sub_401B40(Player* player);
 
@@ -243,5 +246,9 @@ void Player__sub_476700(Player* player);
 // Адрес: 0x00476730 - Player__sub_476730
 void Player__sub_476730(Player* player);
 
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // PLAYER_H

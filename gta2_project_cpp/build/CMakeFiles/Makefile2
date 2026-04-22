@@ -63,8 +63,10 @@ CMAKE_BINARY_DIR = /workspace/gta2_project_cpp/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/test_gameobject.dir/all
+all: CMakeFiles/gta2_core.dir/all
+all: CMakeFiles/test_structures.dir/all
 all: CMakeFiles/test_initwindow.dir/all
+all: CMakeFiles/gta2_runner.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,49 +74,77 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/test_gameobject.dir/clean
+clean: CMakeFiles/gta2_core.dir/clean
+clean: CMakeFiles/test_structures.dir/clean
 clean: CMakeFiles/test_initwindow.dir/clean
+clean: CMakeFiles/gta2_runner.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_gameobject.dir
+# Target rules for target CMakeFiles/gta2_core.dir
 
 # All Build rule for target.
-CMakeFiles/test_gameobject.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=1,2,3 "Built target test_gameobject"
-.PHONY : CMakeFiles/test_gameobject.dir/all
+CMakeFiles/gta2_core.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target gta2_core"
+.PHONY : CMakeFiles/gta2_core.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_gameobject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/gta2_project_cpp/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_gameobject.dir/all
+CMakeFiles/gta2_core.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/gta2_project_cpp/build/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gta2_core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/gta2_project_cpp/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_gameobject.dir/rule
+.PHONY : CMakeFiles/gta2_core.dir/rule
 
 # Convenience name for target.
-test_gameobject: CMakeFiles/test_gameobject.dir/rule
-.PHONY : test_gameobject
+gta2_core: CMakeFiles/gta2_core.dir/rule
+.PHONY : gta2_core
 
 # clean rule for target.
-CMakeFiles/test_gameobject.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/clean
-.PHONY : CMakeFiles/test_gameobject.dir/clean
+CMakeFiles/gta2_core.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/clean
+.PHONY : CMakeFiles/gta2_core.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_structures.dir
+
+# All Build rule for target.
+CMakeFiles/test_structures.dir/all: CMakeFiles/gta2_core.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_structures.dir/build.make CMakeFiles/test_structures.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_structures.dir/build.make CMakeFiles/test_structures.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=14,15 "Built target test_structures"
+.PHONY : CMakeFiles/test_structures.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_structures.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/gta2_project_cpp/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_structures.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/gta2_project_cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_structures.dir/rule
+
+# Convenience name for target.
+test_structures: CMakeFiles/test_structures.dir/rule
+.PHONY : test_structures
+
+# clean rule for target.
+CMakeFiles/test_structures.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_structures.dir/build.make CMakeFiles/test_structures.dir/clean
+.PHONY : CMakeFiles/test_structures.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/test_initwindow.dir
 
 # All Build rule for target.
-CMakeFiles/test_initwindow.dir/all:
+CMakeFiles/test_initwindow.dir/all: CMakeFiles/gta2_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_initwindow.dir/build.make CMakeFiles/test_initwindow.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_initwindow.dir/build.make CMakeFiles/test_initwindow.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=4,5,6 "Built target test_initwindow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=12,13 "Built target test_initwindow"
 .PHONY : CMakeFiles/test_initwindow.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_initwindow.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/gta2_project_cpp/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/gta2_project_cpp/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_initwindow.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/gta2_project_cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_initwindow.dir/rule
@@ -127,6 +157,32 @@ test_initwindow: CMakeFiles/test_initwindow.dir/rule
 CMakeFiles/test_initwindow.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_initwindow.dir/build.make CMakeFiles/test_initwindow.dir/clean
 .PHONY : CMakeFiles/test_initwindow.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/gta2_runner.dir
+
+# All Build rule for target.
+CMakeFiles/gta2_runner.dir/all: CMakeFiles/gta2_core.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_runner.dir/build.make CMakeFiles/gta2_runner.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_runner.dir/build.make CMakeFiles/gta2_runner.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=10,11 "Built target gta2_runner"
+.PHONY : CMakeFiles/gta2_runner.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/gta2_runner.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/gta2_project_cpp/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gta2_runner.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/gta2_project_cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/gta2_runner.dir/rule
+
+# Convenience name for target.
+gta2_runner: CMakeFiles/gta2_runner.dir/rule
+.PHONY : gta2_runner
+
+# clean rule for target.
+CMakeFiles/gta2_runner.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_runner.dir/build.make CMakeFiles/gta2_runner.dir/clean
+.PHONY : CMakeFiles/gta2_runner.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

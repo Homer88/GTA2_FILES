@@ -52,6 +52,9 @@ struct Game
 
 
 // === Основные функции управления игрой ===
+#ifdef __cplusplus
+extern "C" {
+#endif
 // Адрес: 0x0040013C - Game__GetCurrentPlayerSlot
 int Game__GetCurrentPlayerSlot();
 
@@ -205,5 +208,8 @@ void Game__sub_4B94B0();
 // Адрес: 0x004C09C0 - Game__GetState
 int Game__GetState();
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif // GAME_H

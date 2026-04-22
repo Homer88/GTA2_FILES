@@ -1,4 +1,4 @@
-#include "GameObject.h"
+#include "gta2/GameObject.h"
 #include <cstring>
 
 // ============================================================================

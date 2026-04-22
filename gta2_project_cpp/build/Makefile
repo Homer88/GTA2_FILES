@@ -117,17 +117,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test_gameobject
+# Target rules for targets named gta2_core
 
 # Build rule for target.
-test_gameobject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_gameobject
-.PHONY : test_gameobject
+gta2_core: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gta2_core
+.PHONY : gta2_core
 
 # fast build rule for target.
-test_gameobject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/build
-.PHONY : test_gameobject/fast
+gta2_core/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/build
+.PHONY : gta2_core/fast
+
+#=============================================================================
+# Target rules for targets named test_structures
+
+# Build rule for target.
+test_structures: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_structures
+.PHONY : test_structures
+
+# fast build rule for target.
+test_structures/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_structures.dir/build.make CMakeFiles/test_structures.dir/build
+.PHONY : test_structures/fast
 
 #=============================================================================
 # Target rules for targets named test_initwindow
@@ -142,36 +155,121 @@ test_initwindow/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_initwindow.dir/build.make CMakeFiles/test_initwindow.dir/build
 .PHONY : test_initwindow/fast
 
-GameObject.o: GameObject.cpp.o
-.PHONY : GameObject.o
+#=============================================================================
+# Target rules for targets named gta2_runner
+
+# Build rule for target.
+gta2_runner: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gta2_runner
+.PHONY : gta2_runner
+
+# fast build rule for target.
+gta2_runner/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_runner.dir/build.make CMakeFiles/gta2_runner.dir/build
+.PHONY : gta2_runner/fast
+
+src/Car.o: src/Car.cpp.o
+.PHONY : src/Car.o
 
 # target to build an object file
-GameObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/GameObject.cpp.o
-.PHONY : GameObject.cpp.o
+src/Car.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Car.cpp.o
+.PHONY : src/Car.cpp.o
 
-GameObject.i: GameObject.cpp.i
-.PHONY : GameObject.i
+src/Car.i: src/Car.cpp.i
+.PHONY : src/Car.i
 
 # target to preprocess a source file
-GameObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/GameObject.cpp.i
-.PHONY : GameObject.cpp.i
+src/Car.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Car.cpp.i
+.PHONY : src/Car.cpp.i
 
-GameObject.s: GameObject.cpp.s
-.PHONY : GameObject.s
+src/Car.s: src/Car.cpp.s
+.PHONY : src/Car.s
 
 # target to generate assembly for a file
-GameObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/GameObject.cpp.s
-.PHONY : GameObject.cpp.s
+src/Car.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Car.cpp.s
+.PHONY : src/Car.cpp.s
+
+src/Game.o: src/Game.cpp.o
+.PHONY : src/Game.o
+
+# target to build an object file
+src/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Game.cpp.o
+.PHONY : src/Game.cpp.o
+
+src/Game.i: src/Game.cpp.i
+.PHONY : src/Game.i
+
+# target to preprocess a source file
+src/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
+
+src/Game.s: src/Game.cpp.s
+.PHONY : src/Game.s
+
+# target to generate assembly for a file
+src/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
+
+src/GameObject.o: src/GameObject.cpp.o
+.PHONY : src/GameObject.o
+
+# target to build an object file
+src/GameObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/GameObject.cpp.o
+.PHONY : src/GameObject.cpp.o
+
+src/GameObject.i: src/GameObject.cpp.i
+.PHONY : src/GameObject.i
+
+# target to preprocess a source file
+src/GameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/GameObject.cpp.i
+.PHONY : src/GameObject.cpp.i
+
+src/GameObject.s: src/GameObject.cpp.s
+.PHONY : src/GameObject.s
+
+# target to generate assembly for a file
+src/GameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/GameObject.cpp.s
+.PHONY : src/GameObject.cpp.s
+
+src/Gang.o: src/Gang.cpp.o
+.PHONY : src/Gang.o
+
+# target to build an object file
+src/Gang.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Gang.cpp.o
+.PHONY : src/Gang.cpp.o
+
+src/Gang.i: src/Gang.cpp.i
+.PHONY : src/Gang.i
+
+# target to preprocess a source file
+src/Gang.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Gang.cpp.i
+.PHONY : src/Gang.cpp.i
+
+src/Gang.s: src/Gang.cpp.s
+.PHONY : src/Gang.s
+
+# target to generate assembly for a file
+src/Gang.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Gang.cpp.s
+.PHONY : src/Gang.cpp.s
 
 src/InitWindow.o: src/InitWindow.cpp.o
 .PHONY : src/InitWindow.o
 
 # target to build an object file
 src/InitWindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_initwindow.dir/build.make CMakeFiles/test_initwindow.dir/src/InitWindow.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/InitWindow.cpp.o
 .PHONY : src/InitWindow.cpp.o
 
 src/InitWindow.i: src/InitWindow.cpp.i
@@ -179,7 +277,7 @@ src/InitWindow.i: src/InitWindow.cpp.i
 
 # target to preprocess a source file
 src/InitWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_initwindow.dir/build.make CMakeFiles/test_initwindow.dir/src/InitWindow.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/InitWindow.cpp.i
 .PHONY : src/InitWindow.cpp.i
 
 src/InitWindow.s: src/InitWindow.cpp.s
@@ -187,32 +285,128 @@ src/InitWindow.s: src/InitWindow.cpp.s
 
 # target to generate assembly for a file
 src/InitWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_initwindow.dir/build.make CMakeFiles/test_initwindow.dir/src/InitWindow.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/InitWindow.cpp.s
 .PHONY : src/InitWindow.cpp.s
 
-test_gameobject.o: test_gameobject.cpp.o
-.PHONY : test_gameobject.o
+src/Ped.o: src/Ped.cpp.o
+.PHONY : src/Ped.o
 
 # target to build an object file
-test_gameobject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/test_gameobject.cpp.o
-.PHONY : test_gameobject.cpp.o
+src/Ped.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Ped.cpp.o
+.PHONY : src/Ped.cpp.o
 
-test_gameobject.i: test_gameobject.cpp.i
-.PHONY : test_gameobject.i
+src/Ped.i: src/Ped.cpp.i
+.PHONY : src/Ped.i
 
 # target to preprocess a source file
-test_gameobject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/test_gameobject.cpp.i
-.PHONY : test_gameobject.cpp.i
+src/Ped.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Ped.cpp.i
+.PHONY : src/Ped.cpp.i
 
-test_gameobject.s: test_gameobject.cpp.s
-.PHONY : test_gameobject.s
+src/Ped.s: src/Ped.cpp.s
+.PHONY : src/Ped.s
 
 # target to generate assembly for a file
-test_gameobject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/test_gameobject.cpp.s
-.PHONY : test_gameobject.cpp.s
+src/Ped.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Ped.cpp.s
+.PHONY : src/Ped.cpp.s
+
+src/Player.o: src/Player.cpp.o
+.PHONY : src/Player.o
+
+# target to build an object file
+src/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Player.cpp.o
+.PHONY : src/Player.cpp.o
+
+src/Player.i: src/Player.cpp.i
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
+
+src/Weapon.o: src/Weapon.cpp.o
+.PHONY : src/Weapon.o
+
+# target to build an object file
+src/Weapon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Weapon.cpp.o
+.PHONY : src/Weapon.cpp.o
+
+src/Weapon.i: src/Weapon.cpp.i
+.PHONY : src/Weapon.i
+
+# target to preprocess a source file
+src/Weapon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Weapon.cpp.i
+.PHONY : src/Weapon.cpp.i
+
+src/Weapon.s: src/Weapon.cpp.s
+.PHONY : src/Weapon.s
+
+# target to generate assembly for a file
+src/Weapon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Weapon.cpp.s
+.PHONY : src/Weapon.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_runner.dir/build.make CMakeFiles/gta2_runner.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_runner.dir/build.make CMakeFiles/gta2_runner.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_runner.dir/build.make CMakeFiles/gta2_runner.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+test_all_structures.o: test_all_structures.cpp.o
+.PHONY : test_all_structures.o
+
+# target to build an object file
+test_all_structures.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_structures.dir/build.make CMakeFiles/test_structures.dir/test_all_structures.cpp.o
+.PHONY : test_all_structures.cpp.o
+
+test_all_structures.i: test_all_structures.cpp.i
+.PHONY : test_all_structures.i
+
+# target to preprocess a source file
+test_all_structures.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_structures.dir/build.make CMakeFiles/test_structures.dir/test_all_structures.cpp.i
+.PHONY : test_all_structures.cpp.i
+
+test_all_structures.s: test_all_structures.cpp.s
+.PHONY : test_all_structures.s
+
+# target to generate assembly for a file
+test_all_structures.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_structures.dir/build.make CMakeFiles/test_structures.dir/test_all_structures.cpp.s
+.PHONY : test_all_structures.cpp.s
 
 test_initwindow.o: test_initwindow.cpp.o
 .PHONY : test_initwindow.o
@@ -246,17 +440,40 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test_gameobject"
+	@echo "... gta2_core"
+	@echo "... gta2_runner"
 	@echo "... test_initwindow"
-	@echo "... GameObject.o"
-	@echo "... GameObject.i"
-	@echo "... GameObject.s"
+	@echo "... test_structures"
+	@echo "... src/Car.o"
+	@echo "... src/Car.i"
+	@echo "... src/Car.s"
+	@echo "... src/Game.o"
+	@echo "... src/Game.i"
+	@echo "... src/Game.s"
+	@echo "... src/GameObject.o"
+	@echo "... src/GameObject.i"
+	@echo "... src/GameObject.s"
+	@echo "... src/Gang.o"
+	@echo "... src/Gang.i"
+	@echo "... src/Gang.s"
 	@echo "... src/InitWindow.o"
 	@echo "... src/InitWindow.i"
 	@echo "... src/InitWindow.s"
-	@echo "... test_gameobject.o"
-	@echo "... test_gameobject.i"
-	@echo "... test_gameobject.s"
+	@echo "... src/Ped.o"
+	@echo "... src/Ped.i"
+	@echo "... src/Ped.s"
+	@echo "... src/Player.o"
+	@echo "... src/Player.i"
+	@echo "... src/Player.s"
+	@echo "... src/Weapon.o"
+	@echo "... src/Weapon.i"
+	@echo "... src/Weapon.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... test_all_structures.o"
+	@echo "... test_all_structures.i"
+	@echo "... test_all_structures.s"
 	@echo "... test_initwindow.o"
 	@echo "... test_initwindow.i"
 	@echo "... test_initwindow.s"
