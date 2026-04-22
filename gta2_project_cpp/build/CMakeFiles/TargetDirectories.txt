@@ -1,2 +1,3 @@
+/workspace/gta2_project_cpp/build/CMakeFiles/test_gameobject.dir
 /workspace/gta2_project_cpp/build/CMakeFiles/edit_cache.dir
 /workspace/gta2_project_cpp/build/CMakeFiles/rebuild_cache.dir
