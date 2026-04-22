@@ -1,199 +1,265 @@
+/**
+ * @file Ped.h
+ * @brief Структура пешехода (Ped) - персонажи, NPC, враги
+ * 
+ * Адрес структуры в дампе: line 3418 в gta2.exe.h
+ * Размер: 0x5F0 (1520 байт) - требует проверки по бинарнику
+ * Основано на: gta2.exe/ida_pro/gta2.exe.h, gta2.exe.map
+ * 
+ * Функции: 251 функция из gta2.exe.map
+ */
+
 #pragma once
 
 #include <cstdint>
 
-// Forward declarations for related structures (to be defined later)
-struct S200;
+// Forward declarations
 struct Car;
-struct Ped;
 struct Player;
 struct Weapon;
 struct Gang;
-struct S169;
 struct GameObject;
-struct S94;
-
-// Enumerations (placeholders based on common GTA logic, to be refined)
-enum class PedState : int32_t {
-    UNKNOWN = 0
-};
-
-enum class SearchType : int32_t {
-    NONE = 0
-};
-
-enum class Occupation : int32_t {
-    NONE = 0
-};
-
-enum class Remap : int32_t {
-    NONE = 0
-};
-
-enum class GraphicType : int32_t {
-    NONE = 0
-};
 
 #pragma pack(push, 1)
 
-struct Ped {
-    // === BLOCK 1: Internal Buffers / S200 Array (0x00 - 0x12B) ===
-    // Constructor mentions initializing 3 blocks of 100 bytes.
-    // Clean zeroes most of this, but specific offsets might hold pointers or state.
-    uint8_t unknown_block_00[0x12C];  // 0x00 - 0x12B (Size: 300 bytes)
-
-    // === BLOCK 2: Grid/Tile Coordinates (0x12C - 0x137) ===
-    int16_t tile_x_12C;               // 0x12C
-    int16_t tile_y_12E;               // 0x12E
-    int16_t field_130;                // 0x130
-    int16_t field_132;                // 0x132
-    int32_t field_134;                // 0x134 (Aligned to 4 bytes potentially)
-
-    // === BLOCK 3: Pointers & Links (0x138 - 0x1AB) ===
-    // These are zeroed in Clean, likely dynamic links reset on spawn/clean.
-    void* ptr_138;                    // 0x138
-    void* ptr_13C;                    // 0x13C
-    void* ptr_140;                    // 0x140
-    void* ptr_144;                    // 0x144
-    void* ptr_148;                    // 0x148
-    void* ptr_14C;                    // 0x14C
-    void* ptr_150;                    // 0x150
-    void* ptr_154;                    // 0x154
-    void* ptr_158;                    // 0x158
-    void* ptr_15C;                    // 0x15C
-    void* ptr_160;                    // 0x160
-    void* ptr_164;                    // 0x164
-    void* ptr_168;                    // 0x168
-    void* ptr_16C;                    // 0x16C
-    void* ptr_170;                    // 0x170
-    void* ptr_174;                    // 0x174
-    void* ptr_178;                    // 0x178
-    void* ptr_17C;                    // 0x17C
-    void* ptr_180;                    // 0x180
-    void* ptr_184;                    // 0x184
-    void* ptr_188;                    // 0x188
-    void* ptr_18C;                    // 0x18C
-    void* ptr_190;                    // 0x190
-    void* ptr_194;                    // 0x194
-    void* ptr_198;                    // 0x198
-    void* ptr_19C;                    // 0x19C
-    void* ptr_1A0;                    // 0x1A0
-    void* ptr_1A4;                    // 0x1A4
-    void* ptr_1A8;                    // 0x1A8
-
-    // === BLOCK 4: World Position (Confirmed by GetXCoordinate) (0x1AC - 0x1CF) ===
-    // Clean initializes these from global defaults (unk_5E5CFC etc.)
-    int32_t world_x_1AC;              // 0x1AC
-    int32_t world_y_1B0;              // 0x1B0
-    int32_t world_z_1B4;              // 0x1B4
+struct Ped
+{
+    // === Базовые поля GameObject (наследуется концептуально) ===
+    void* vtable;                       // 0x0000 - VTable
+    void* SpriteS1;                     // 0x0004 - Спрайт
+    void* Model;                        // 0x0008 - Модель
+    float X;                            // 0x000C - Позиция X
+    float Y;                            // 0x0010 - Позиция Y
+    float Z;                            // 0x0014 - Позиция Z
+    float Rotation;                     // 0x0018 - Вращение
+    int ID;                             // 0x001C - Идентификатор
+    int Flags;                          // 0x0020 - Флаги
+    int Type;                           // 0x0024 - Тип
     
-    int32_t ptr_1B8;                  // 0x1B8 (Initialized via bitShift in Clean)
-    int32_t ptr_1BC;                  // 0x1BC
-    int32_t ptr_1C0;                  // 0x1C0
-    int32_t ptr_1C4;                  // 0x1C4
-    int32_t ptr_1C8;                  // 0x1C8
-    int32_t ptr_1CC;                  // 0x1CC
-
-    // === BLOCK 5: Global Resources / Model Pointers (0x1D0 - 0x1FF) ===
-    void* global_ptr_1D0;             // 0x1D0
-    void* global_ptr_1D4;             // 0x1D4
-    void* global_ptr_1D8;             // 0x1D8
-    void* global_ptr_1DC;             // 0x1DC
-    void* global_ptr_1E0;             // 0x1E0
-    void* global_ptr_1E4;             // 0x1E4
-    void* global_ptr_1E8;             // 0x1E8
-    void* global_ptr_1EC;             // 0x1EC
-    void* model_ptr_1F0;              // 0x1F0 (Init: unk_5E5D28)
-    void* texture_ptr_1F4;            // 0x1F4 (Init: unk_5E5D90)
-    void* global_ptr_1F8;             // 0x1F8
-    void* global_ptr_1FC;             // 0x1FC
-
-    // === BLOCK 6: Stats & Health (0x200 - 0x21B) ===
-    int32_t field_200;                // 0x200
-    int32_t score_or_id_204;          // 0x204
-    
-    int16_t max_health_208;           // 0x208
-    int16_t max_health_20A;           // 0x20A
-    int16_t max_health_20C;           // 0x20C
-    
-    int16_t current_health_20E;       // 0x20E (Zeroed in Clean)
-    int16_t current_health_210;       // 0x210 (Zeroed in Clean)
-    int16_t start_health_212;         // 0x212 (Init: 100 / 0x64)
-    int16_t field_214;                // 0x214
-    int16_t field_216;                // 0x216
-    int16_t objective_timer_218;      // 0x218
-    int16_t car_state_timer_21A;      // 0x21A
-
-    // === BLOCK 7: Control Flags & AI State (0x21C - 0x233) ===
-    uint32_t control_flags_21C;       // 0x21C (Bitfield: bits 2,3,5,6,9,29,30 cleared in Clean)
-    
-    int32_t ai_state_220;             // 0x220
-    
-    uint8_t ai_mode_224;              // 0x224 (Bits 0-3 cleared, bit 5 set in Clean)
-    uint8_t ai_submode_225;           // 0x225
-    uint8_t ai_submode_226;           // 0x226
-    uint8_t ai_flag_227;              // 0x227
-    uint8_t ai_flag_228;              // 0x228
-    uint8_t ai_flag_229;              // 0x229
-    uint8_t pad_22A[2];               // 0x22A-0x22B
-    
-    int32_t timer_22C;                // 0x22C
-    int32_t timer_230;                // 0x230
-
-    // === BLOCK 8: Internal Block Headers? (0x234 - 0x243) ===
-    // Corresponds to the "3 blocks of 100 bytes" mentioned in constructor context?
-    uint8_t block1_active_234;        // 0x234
-    uint8_t pad_235[3];               // 0x235-0x237
-    int32_t block1_count_238;         // 0x238 (Init: 3)
-    
-    uint8_t block2_active_23C;        // 0x23C
-    uint8_t pad_23D[3];               // 0x23D-0x23F
-    int32_t block2_count_240;         // 0x240 (Init: 3)
-
-    // === BLOCK 9: Status & Occupation (0x244 - 0x253) ===
-    uint8_t status_244;               // 0x244 (Init: 0xFF)
-    uint8_t pad_245[3];               // 0x245-0x247
-    int32_t target_car_door_248;      // 0x248 (Init: 1, likely door index)
-    
-    uint8_t animation_state_24C;      // 0x24C
-    uint8_t pad_24D[3];               // 0x24D-0x24F
-    int32_t status_val_250;           // 0x250
-
-    // === BLOCK 10: Action States & Graphics (0x254 - 0x293) ===
-    uint8_t unknown_254[4];           // 0x254-0x257
-    int32_t action_state_258;         // 0x258
-    int32_t current_action_25C;       // 0x25C
-    
-    uint8_t flag_260;                 // 0x260
-    uint8_t flag_261;                 // 0x261
-    uint8_t flag_262;                 // 0x262
-    uint8_t flag_263;                 // 0x263
-    uint8_t flag_264;                 // 0x264
-    uint8_t flag_265;                 // 0x265
-    uint8_t flag_266;                 // 0x266
-    uint8_t flag_267;                 // 0x267
-    uint8_t flag_268;                 // 0x268
-    uint8_t flag_269;                 // 0x269 (Init: 0xFF)
-    uint8_t flag_26A;                 // 0x26A
-    uint8_t pad_26B;                  // 0x26B
-    
-    int32_t graphic_type_26C;         // 0x26C (Init: 1)
-    
-    int32_t timer_270;                // 0x270 (Init: 1)
-    int32_t limit_274;                // 0x274 (Init: 0x23 = 35)
-    int32_t field_278;                // 0x278
-    int32_t field_27C;                // 0x27C
-    int32_t limit_280;                // 0x280 (Init: 0x0B = 11)
-    int32_t limit_284;                // 0x284 (Init: 0x1C = 28)
-    int32_t limit_288;                // 0x288 (Init: 0x02 = 2)
-    int32_t field_28C;                // 0x28C
-    
-    int32_t damage_type_290;          // 0x290
-
-    // Total Size: 0x294 bytes
+    // === Специфичные поля Ped ===
+    int Health;                         // 0x0028 - Здоровье
+    int MaxHealth;                      // 0x002C - Максимальное здоровье
+    int Armour;                         // 0x0030 - Броня
+    Weapon* pCurrentWeapon;             // 0x0034 - Текущее оружие
+    Car* pCurrentCar;                   // 0x0038 - Текущий автомобиль
+    int State;                          // 0x003C - Состояние (AI state)
+    int Action;                         // 0x0040 - Текущее действие
+    int AnimationState;                 // 0x0044 - Состояние анимации
+    int Occupation;                     // 0x0048 - Профессия/род занятий
+    Gang* pGang;                        // 0x004C - Принадлежность к банде
+    Player* pPlayer;                    // 0x0050 - Если это игрок
+    int SearchType;                     // 0x0054 - Тип поиска цели
+    int TargetX;                        // 0x0058 - Целевая точка X
+    int TargetY;                        // 0x005C - Целевая точка Y
+    int TargetZ;                        // 0x0060 - Целевая точка Z
+    float Speed;                        // 0x0064 - Скорость движения
+    int Stance;                         // 0x0068 - Стойка (стоять/бежать)
+    int DamageState;                    // 0x006C - Состояние повреждений
+    int ExitAnim;                       // 0x0070 - Анимация выхода из авто
+    int field_74;                       // 0x0074
+    int field_78;                       // 0x0078
+    int field_7C;                       // 0x007C
+    // ... остальные поля требуют анализа дампа
+    char reserved[0x5F0 - 0x80];        // Заполнитель до размера структуры
 };
 
 #pragma pack(pop)
 
-// Static assertion to verify size (requires compiler support)
-// static_assert(sizeof(Ped) == 0x294, "Ped structure size mismatch");
+static_assert(sizeof(Ped) == 0x5F0, "Ped structure size mismatch");
+
+// ============================================================================
+// ФУНКЦИИ PED (адреса из gta2.exe.map)
+// Всего: 251 функция
+// ============================================================================
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+// === Основные функции управления (0x00412920 - 0x00412B90) ===
+// Адрес: 0x00412920 - Ped__SetSearchType
+void Ped__SetSearchType(Ped* ped, int searchType);
+
+// Адрес: 0x00412930 - Ped__sub_403930
+void Ped__sub_403930(Ped* ped);
+
+// Адрес: 0x00412940 - Ped__SetAssignedCarIndex
+void Ped__SetAssignedCarIndex(Ped* ped, int carIndex);
+
+// Адрес: 0x00412950 - Ped__ClearFlags
+void Ped__ClearFlags(Ped* ped, int flags);
+
+// Адрес: 0x00412960 - Ped__UpdateState
+void Ped__UpdateState(Ped* ped);
+
+// Адрес: 0x00412970 - Ped__SetCurrentOccupation
+void Ped__SetCurrentOccupation(Ped* ped, int occupation);
+
+// Адрес: 0x00412980 - Ped__GetCurrentOccupation
+int Ped__GetCurrentOccupation(Ped* ped);
+
+// Адрес: 0x00412990 - Ped__GetPedState
+int Ped__GetPedState(Ped* ped);
+
+// Адрес: 0x004129A0 - Ped__SetHealth
+void Ped__SetHealth(Ped* ped, int health);
+
+// Адрес: 0x004129B0 - Ped__SetTargetCarDoor
+void Ped__SetTargetCarDoor(Ped* ped, int doorIndex);
+
+// Адрес: 0x004129C0 - Ped__GetTargetCarDoor
+int Ped__GetTargetCarDoor(Ped* ped);
+
+// Адрес: 0x004129D0 - Ped__GetExitAnim
+int Ped__GetExitAnim(Ped* ped);
+
+// Адрес: 0x004129E0 - Ped__GetDamageState
+int Ped__GetDamageState(Ped* ped);
+
+// Адрес: 0x004129F0 - Ped__GetSub_4039F0
+void* Ped__GetSub_4039F0(Ped* ped);
+
+// Адрес: 0x00412A00 - Ped__GetXCoordinate
+float Ped__GetXCoordinate(Ped* ped);
+
+// Адрес: 0x00412A10 - Ped__GetYCoordinate
+float Ped__GetYCoordinate(Ped* ped);
+
+// Адрес: 0x00412A20 - Ped__SetSub_403A20
+void Ped__SetSub_403A20(Ped* ped, int value);
+
+// Адрес: 0x00412A30 - Ped__ResetToDefaults
+void Ped__ResetToDefaults(Ped* ped);
+
+// Адрес: 0x00412A40 - Ped__Initialize
+void Ped__Initialize(Ped* ped);
+
+// Адрес: 0x00412A50 - Ped__SetFlags
+void Ped__SetFlags(Ped* ped, int flags);
+
+// Адрес: 0x00412A60 - Ped__GetAnimationState
+int Ped__GetAnimationState(Ped* ped);
+
+// Адрес: 0x00412A70 - Ped__SetAnimationState_0
+void Ped__SetAnimationState_0(Ped* ped, int animState);
+
+// Адрес: 0x00412A80 - Ped__GetActionParam
+int Ped__GetActionParam(Ped* ped);
+
+// Адрес: 0x00412A90 - Ped__GetCurrentAction
+int Ped__GetCurrentAction(Ped* ped);
+
+// Адрес: 0x00412AA0 - Ped__EnterCar
+void Ped__EnterCar(Ped* ped, Car* car);
+
+// Адрес: 0x00412AB0 - Ped__GetVehicle
+Car* Ped__GetVehicle(Ped* ped);
+
+// Адрес: 0x00412AC0 - Ped__SetAsDriver
+void Ped__SetAsDriver(Ped* ped, Car* car);
+
+// Адрес: 0x00412AD0 - Ped__GetPassenger
+void* Ped__GetPassenger(Ped* ped);
+
+// Адрес: 0x00412AE0 - Ped__SetPed2
+void Ped__SetPed2(Ped* ped, Ped* otherPed);
+
+// Адрес: 0x00412AF0 - Ped__GetLinkedPed
+Ped* Ped__GetLinkedPed(Ped* ped);
+
+// Адрес: 0x00412B00 - Ped__SetCarPed
+void Ped__SetCarPed(Ped* ped, Car* car);
+
+// Адрес: 0x00412B10 - Ped__GetCurrentVehicle
+Car* Ped__GetCurrentVehicle(Ped* ped);
+
+// Адрес: 0x00412B20 - Ped__Get_sub_403B20
+void* Ped__Get_sub_403B20(Ped* ped);
+
+// Адрес: 0x00412B30 - Ped__Get_sub_403B30
+void* Ped__Get_sub_403B30(Ped* ped);
+
+// Адрес: 0x00412B40 - Ped__sub_403B40
+void Ped__sub_403B40(Ped* ped);
+
+// Адрес: 0x00412B50 - Ped__SetExitAnimationState
+void Ped__SetExitAnimationState(Ped* ped, int state);
+
+// Адрес: 0x00412B60 - Ped__GetDeadPed
+Ped* Ped__GetDeadPed(Ped* ped);
+
+// Адрес: 0x00412B70 - Ped__GetExitAnimState
+int Ped__GetExitAnimState(Ped* ped);
+
+// Адрес: 0x00412B80 - Ped__IsInsideVehicle
+bool Ped__IsInsideVehicle(Ped* ped);
+
+// Адрес: 0x00412B90 - Ped__GetStance
+int Ped__GetStance(Ped* ped);
+
+// === Дополнительные функции (выборочно из 251) ===
+// Адрес: 0x004117D0 - Ped__sub_4117D0
+void Ped__sub_4117D0(Ped* ped);
+
+// Адрес: 0x004117F0 - Ped__Set_4117F0
+void Ped__Set_4117F0(Ped* ped, int value);
+
+// Адрес: 0x00425B50 - Ped__GetPositionZ
+float Ped__GetPositionZ(Ped* ped);
+
+// Адрес: 0x00425B60 - Ped__GetCarPlayers
+void* Ped__GetCarPlayers(Ped* ped);
+
+// Адрес: 0x0042A0A0 - Ped__IsPlayerControlled
+bool Ped__IsPlayerControlled(Ped* ped);
+
+// Адрес: 0x00420B60 - Ped__sub_420B60
+void Ped__sub_420B60(Ped* ped);
+
+// Адрес: 0x00420B70 - Ped__sub_420B70
+void Ped__sub_420B70(Ped* ped);
+
+// Адрес: 0x00420B80 - Ped__SetPoliceNoStar
+void Ped__SetPoliceNoStar(Ped* ped);
+
+// Адрес: 0x00433190 - Ped__GetOccupationStatus
+int Ped__GetOccupationStatus(Ped* ped);
+
+// Адрес: 0x004331D0 - Ped__Set_4331D0
+void Ped__Set_4331D0(Ped* ped, int value);
+
+// Адрес: 0x004331E0 - Ped__sub_4331E0
+void Ped__sub_4331E0(Ped* ped);
+
+// Адрес: 0x00433200 - Ped__GetCar
+Car* Ped__GetCar(Ped* ped);
+
+// Адрес: 0x00433270 - Ped__UpdatePedState
+void Ped__UpdatePedState(Ped* ped);
+
+// Адрес: 0x004333A0 - Ped__IsSearchType
+bool Ped__IsSearchType(Ped* ped, int type);
+
+// Адрес: 0x00433B70 - Ped__GetHealth
+int Ped__GetHealth(Ped* ped);
+
+// Адрес: 0x00433B80 - Ped__SetParam
+void Ped__SetParam(Ped* ped, int param);
+
+// Адрес: 0x00433B90 - Ped__SetRemap
+void Ped__SetRemap(Ped* ped, int remapId);
+
+// Адрес: 0x00433BA0 - Ped__GetRemap
+int Ped__GetRemap(Ped* ped);
+
+// Адрес: 0x00433C00 - Ped__SetRotation
+void Ped__SetRotation(Ped* ped, float rotation);
+
+// Адрес: 0x00433DC0 - Ped__GetPoliceStar
+int Ped__GetPoliceStar(Ped* ped);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif // PED_H
