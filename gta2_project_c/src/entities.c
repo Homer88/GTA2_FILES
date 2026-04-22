@@ -9,43 +9,61 @@
 /* ============================================================================
  * Passenger Constructor
  * MAP: Passenger__Passenger = 0x42FE90
- * Size: 0x10 bytes
+ * Constructor size: 7 bytes - simple initialization
+ * Struct size: 0x08 bytes (linked list node)
+ * 
+ * From IDA: Initializes linked list pointers
  * ============================================================================ */
 void Passenger__Passenger(struct Passenger* this) {
     if (!this) return;
     
-    this->PedPtr = NULL;
-    this->SeatIndex = -1;
-    this->StateFlags = 0;
-    this->ActionTimer = 0;
-    this->ActionState = 0;
-    memset(this->Reserved, 0, sizeof(this->Reserved));
+    /* Initialize as single-element circular list or NULL */
+    this->Next = NULL;
+    this->Prev = NULL;
 }
 
 /* ============================================================================
  * Passenger Destructor  
  * MAP: Passenger__Passenger_des = 0x42FEA0
+ * Size: 7 bytes - minimal cleanup
  * ============================================================================ */
 void Passenger__Passenger_des(struct Passenger* this) {
     if (!this) return;
-    /* Destructor body - cleanup if needed */
-    /* No dynamic allocation in Passenger structure itself */
+    /* Destructor body - no dynamic allocation in Passenger */
 }
 
 /* ============================================================================
  * CarDoor Constructor
- * MAP: CarDoor__sub_41F680 = 0x41F680
+ * MAP: CarDoor__CarDoor = 0x421310 (constructor, 0x20 bytes)
+ *       CarDoor__CarDoor_Des = 0x421330 (destructor, 8 bytes)
+ * Struct size: 0x10 bytes
+ * 
+ * From IDA gta2.exe.h:
+ *   - AnimationFrame[4]: byte array for animation state
+ *   - doorState: int for door state machine
+ *   - PedInDoor: pointer to ped
+ *   - field_C + 3 reserved bytes
  * ============================================================================ */
 void CarDoor__CarDoor(struct CarDoor* this) {
     if (!this) return;
     
-    this->AnimationFrame = 0;
-    this->DoorState = 0;  /* Closed */
+    /* Initialize animation frame array */
+    this->AnimationFrame[0] = 0;
+    this->AnimationFrame[1] = 0;
+    this->AnimationFrame[2] = 0;
+    this->AnimationFrame[3] = 0;
+    
+    /* Initialize door state (0 = closed) */
+    this->DoorState = 0;
+    
+    /* No ped in door initially */
     this->PedInDoor = NULL;
-    this->DoorTimer = 0;
-    this->AnimationFlags = 0;
-    this->TotalFrames = 0;
-    this->Padding = 0;
+    
+    /* Clear remaining fields */
+    this->Field_C = 0;
+    this->Reserved1 = 0;
+    this->Reserved2 = 0;
+    this->Reserved3 = 0;
 }
 
 /* ============================================================================

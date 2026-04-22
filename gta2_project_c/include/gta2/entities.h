@@ -23,31 +23,39 @@ struct Turret {
 // ============================================================================
 // Passenger structure
 // From MAP: Passenger__Passenger = 0x42FE90, Passenger__Passenger_des = 0x42FEA0
-// Constructor size: 0x42FEA0 - 0x42FE90 = 0x10 bytes
+// Constructor size: 7 bytes code (0x42FEA0 - 0x42FE90) - very simple init
+// Global: gPassenger at 0x5E5EE0 (pointer to Passenger list head)
+// 
+// From gta2.exe.h (IDA): Linked list structure for passenger management
+// Size: 0x08 bytes (2 pointers)
 // ============================================================================
 struct Passenger {
-    struct Ped* PedPtr;     // 0x0 - Pointer to ped entity
-    s32 SeatIndex;          // 0x4 - Seat index (-1 = empty, 0 = driver, 1+ = passengers)
-    u8 StateFlags;          // 0x5 - State flags (bit 0: alive, bit 1: entering, bit 2: exiting)
-    u16 ActionTimer;        // 0x6 - Timer or animation frame for entering/exiting
-    u8 ActionState;         // 0x8 - Action state (0=sitting, 1=boarding, 2=exiting)
-    u8 Reserved[3];         // 0x9 - Alignment to 0xC
+    struct Passenger* Next;     // 0x0 - Next passenger in linked list
+    struct Passenger* Prev;     // 0x4 - Previous passenger in linked list
 };
+// static_assert(sizeof(struct Passenger) == 0x08, "Passenger size mismatch");
 
 // ============================================================================
 // CarDoor structure  
-// From MAP: CarDoor__sub_41F680, CarDoor__sub_41F6C0 exist
-// Typical size: 0x10 bytes based on constructor patterns
+// From MAP: 
+//   CarDoor__CarDoor = 0x421310 (constructor, 0x20 bytes code from IDA)
+//   CarDoor__CarDoor_Des = 0x421330 (destructor, 8 bytes code)
+//   CarDoor__SetPedInDoor = 0x421380 (10 bytes)
+//   CarDoor__GetPedInDoor = 0x4351B0 (4 bytes - likely inline getter)
+// 
+// From gta2.exe.h (IDA): Confirmed structure
+// Size: 0x10 bytes
 // ============================================================================
 struct CarDoor {
-    s32 AnimationFrame;     // 0x0 - Current animation frame / delay timer
-    s32 DoorState;          // 0x4 - State: 0=closed, 1=open, 2=opening, 3=closing, 4=transition, 5=delay, 6=forced closed
+    u8 AnimationFrame[4];   // 0x0 - Animation frame data (array of 4 bytes)
+    s32 DoorState;          // 0x4 - State: 0=closed, 1=open, 2=opening, 3=closing, etc.
     struct Ped* PedInDoor;  // 0x8 - Ped entering/exiting through door
-    u8 DoorTimer;           // 0xC - Delay timer before opening (decreases in state 5)
-    u8 AnimationFlags;      // 0xD - Animation flags (bit 0: active, bit 1: reverse direction)
-    u8 TotalFrames;         // 0xE - Total animation frames
-    u8 Padding;             // 0xF - Alignment
+    u8 Field_C;             // 0xC - Unknown byte (timer/flags)
+    u8 Reserved1;           // 0xD - Reserved
+    u8 Reserved2;           // 0xE - Reserved
+    u8 Reserved3;           // 0xF - Reserved
 };
+// static_assert(sizeof(struct CarDoor) == 0x10, "CarDoor size mismatch");
 
 // ============================================================================
 // EngineStruct - Engine parameters
