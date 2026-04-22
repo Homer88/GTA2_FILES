@@ -153,6 +153,30 @@ src/entities.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_c.dir/build.make CMakeFiles/gta2_c.dir/src/entities.c.s
 .PHONY : src/entities.c.s
 
+src/ped.o: src/ped.c.o
+.PHONY : src/ped.o
+
+# target to build an object file
+src/ped.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_c.dir/build.make CMakeFiles/gta2_c.dir/src/ped.c.o
+.PHONY : src/ped.c.o
+
+src/ped.i: src/ped.c.i
+.PHONY : src/ped.i
+
+# target to preprocess a source file
+src/ped.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_c.dir/build.make CMakeFiles/gta2_c.dir/src/ped.c.i
+.PHONY : src/ped.c.i
+
+src/ped.s: src/ped.c.s
+.PHONY : src/ped.s
+
+# target to generate assembly for a file
+src/ped.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_c.dir/build.make CMakeFiles/gta2_c.dir/src/ped.c.s
+.PHONY : src/ped.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... src/entities.o"
 	@echo "... src/entities.i"
 	@echo "... src/entities.s"
+	@echo "... src/ped.o"
+	@echo "... src/ped.i"
+	@echo "... src/ped.s"
 .PHONY : help
 
 

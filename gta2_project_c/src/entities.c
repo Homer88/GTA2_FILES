@@ -10,16 +10,20 @@
  * Passenger Constructor
  * MAP: Passenger__Passenger = 0x42FE90
  * Constructor size: 7 bytes - simple initialization
- * Struct size: 0x08 bytes (linked list node)
+ * Struct size: 0x0C bytes (Next pointer + PedPtr + State + padding)
  * 
- * From IDA: Initializes linked list pointers
+ * Updated structure: Next, PedPtr, State, Padding[3]
  * ============================================================================ */
 void Passenger__Passenger(struct Passenger* this) {
     if (!this) return;
     
-    /* Initialize as single-element circular list or NULL */
+    /* Initialize linked list and ped pointer */
     this->Next = NULL;
-    this->Prev = NULL;
+    this->PedPtr = NULL;
+    this->State = 0;
+    this->Padding[0] = 0;
+    this->Padding[1] = 0;
+    this->Padding[2] = 0;
 }
 
 /* ============================================================================

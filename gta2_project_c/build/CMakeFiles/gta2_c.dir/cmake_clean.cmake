@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gta2_c.dir/src/entities.c.o"
   "CMakeFiles/gta2_c.dir/src/entities.c.o.d"
+  "CMakeFiles/gta2_c.dir/src/ped.c.o"
+  "CMakeFiles/gta2_c.dir/src/ped.c.o.d"
   "libgta2_c.a"
   "libgta2_c.pdb"
 )

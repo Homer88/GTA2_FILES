@@ -1,2 +1,2 @@
-/usr/bin/ar qc libgta2_c.a CMakeFiles/gta2_c.dir/src/entities.c.o
+/usr/bin/ar qc libgta2_c.a CMakeFiles/gta2_c.dir/src/entities.c.o CMakeFiles/gta2_c.dir/src/ped.c.o
 /usr/bin/ranlib libgta2_c.a

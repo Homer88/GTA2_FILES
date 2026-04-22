@@ -27,13 +27,155 @@ struct Turret {
 // Global: gPassenger at 0x5E5EE0 (pointer to Passenger list head)
 // 
 // From gta2.exe.h (IDA): Linked list structure for passenger management
-// Size: 0x08 bytes (2 pointers)
+// Size: 0x0C bytes (2 pointers + state)
 // ============================================================================
 struct Passenger {
     struct Passenger* Next;     // 0x0 - Next passenger in linked list
-    struct Passenger* Prev;     // 0x4 - Previous passenger in linked list
+    struct Ped* PedPtr;         // 0x4 - Pointer to Ped in this passenger slot
+    u8 State;                   // 0x8 - Passenger state (active/inactive)
+    u8 Padding[3];              // 0x9 - Alignment
 };
-// static_assert(sizeof(struct Passenger) == 0x08, "Passenger size mismatch");
+// static_assert(sizeof(struct Passenger) == 0x0C, "Passenger size mismatch");
+
+// ============================================================================
+// Ped Objective enum
+// ============================================================================
+enum PedObjective {
+    PED_OBJ_NONE = 0,
+    PED_OBJ_WANDER = 1,
+    PED_OBJ_FOLLOW = 2,
+    PED_OBJ_FLEE = 3,
+    PED_OBJ_ATTACK = 4,
+    PED_OBJ_ENTER_CAR = 5,
+    PED_OBJ_EXIT_CAR = 6,
+    PED_OBJ_DRIVE_CAR = 7,
+    PED_OBJ_SHOOT = 8,
+    PED_OBJ_RUN_TO = 9,
+    PED_OBJ_WAIT = 10,
+    PED_OBJ_DEAD = 11
+};
+
+// ============================================================================
+// Ped State enum
+// ============================================================================
+enum PedState {
+    PED_STATE_IDLE = 0,
+    PED_STATE_WALK = 1,
+    PED_STATE_RUN = 2,
+    PED_STATE_SPRINT = 3,
+    PED_STATE_CROUCH = 4,
+    PED_STATE_JUMP = 5,
+    PED_STATE_FALL = 6,
+    PED_STATE_IN_CAR = 7,
+    PED_STATE_ENTERING_CAR = 8,
+    PED_STATE_EXITING_CAR = 9,
+    PED_STATE_AIM = 10,
+    PED_STATE_SHOOT = 11,
+    PED_STATE_RELOAD = 12,
+    PED_STATE_DEAD = 13,
+    PED_STATE_DYING = 14,
+    PED_STATE_STUNNED = 15
+};
+
+// ============================================================================
+// Ped Group structure
+// From MAP: Ped__PedGroupCreate, Ped__PedGroupChangeLeader
+// ============================================================================
+struct PedGroup {
+    struct Ped* Leader;         // 0x0 - Group leader
+    struct Ped* Members[4];     // 0x4 - Group members (max 4)
+    u8 MemberCount;             // 0x14 - Number of members
+    u8 Formation;               // 0x15 - Formation type
+    u16 Reserved;               // 0x16 - Alignment
+};
+
+// ============================================================================
+// Ped structure
+// From MAP: 
+//   Ped__Ped = 0x49E70 (constructor)
+//   Ped__Ped_des = 0x44660 (destructor)
+//   231+ methods including: SetSearchType, SetCarId, SetOccupation, 
+//   GetPositionX/Y, EnterCarAsPassenger, GiveWeapon, etc.
+// Global: gPed at 0x0EF794, gPed1 at 0x0E7DE0
+// 
+// CONFIRMED SIZE from constructor analysis:
+//   Construct(this->Ped, 0x294, 200, Ped::Ped, Ped::Ped_des);
+//   Size: 0x294 bytes (660 bytes)
+//   NextPed field offset: 0xA5 (165 bytes) - from loop: pNextPed += 165
+// ============================================================================
+struct Ped {
+    // === Block 1: Links and Identification (0x00 - 0x0F) ===
+    struct Ped* Next;           // 0x0 - Next ped in linked list
+    struct Ped* Previous;       // 0x4 - Previous ped in linked list
+    s32 ObjectID;               // 0x8 - Unique object ID
+    s32 CarID;                  // 0xC - Current car ID (if in vehicle)
+    
+    // === Block 2: Position and Movement (0x10 - 0x2F) ===
+    f32 PositionX;              // 0x10 - World X coordinate
+    f32 PositionY;              // 0x14 - World Y coordinate
+    f32 VelocityX;              // 0x18 - Velocity X
+    f32 VelocityY;              // 0x1C - Velocity Y
+    f32 Direction;              // 0x20 - Facing direction (radians)
+    enum PedState State;        // 0x24 - Current state
+    enum PedObjective Objective;// 0x28 - Current objective
+    u8 SubState;                // 0x2C - Sub-state for animations
+    u8 MovementFlags;           // 0x2D - Movement flags
+    u16 Reserved1;              // 0x2E - Alignment
+    
+    // === Block 3: Health and Stats (0x30 - 0x4F) ===
+    s16 Health;                 // 0x30 - Health (0-100)
+    s16 MaxHealth;              // 0x32 - Maximum health
+    u8 Armour;                  // 0x34 - Armour level
+    u8 WantedLevel;             // 0x35 - Police wanted level (0-6)
+    u8 Occupation;              // 0x36 - Occupation type (civilian, cop, gang)
+    u8 SearchType;              // 0x37 - Search behavior type
+    s32 Money;                  // 0x38 - Money value
+    u32 Flags;                  // 0x3C - General flags (bitmask)
+    
+    // === Block 4: Vehicle Interaction (0x40 - 0x5F) ===
+    struct Car* CurrentCar;     // 0x40 - Pointer to current car
+    struct CarDoor* TargetDoor; // 0x44 - Target door for entering/exiting
+    struct Ped* DriverPed;      // 0x48 - Driver if passenger
+    struct Ped* PassengerPed;   // 0x4C - Passenger if driver
+    u8 SeatIndex;               // 0x50 - Seat index in car
+    u8 DoorInteractionState;    // 0x51 - Door interaction state
+    u16 Reserved2;              // 0x52 - Alignment
+    f32 EnterExitTimer;         // 0x54 - Timer for enter/exit animation
+    
+    // === Block 5: Combat and Weapons (0x58 - 0x77) ===
+    void* Weapon;               // 0x58 - Current weapon pointer
+    struct Ped* TargetPed;      // 0x5C - Target ped for combat
+    struct Ped* Attacker;       // 0x60 - Last attacker
+    f32 AimDirection;           // 0x64 - Aim direction
+    u8 WeaponReady;             // 0x68 - Weapon ready flag
+    u8 AttackFlags;             // 0x69 - Attack flags
+    u8 ReloadState;             // 0x6A - Reload state
+    u8 Reserved3;               // 0x6B - Alignment
+    s32 ShootTimer;             // 0x6C - Shooting cooldown timer
+    s32 ReloadTimer;            // 0x70 - Reload timer
+    
+    // === Block 6: Group AI (0x74 - 0x9F) ===
+    struct PedGroup* Group;     // 0x74 - Group membership
+    struct Ped* Leader;         // 0x78 - Leader if in group
+    struct Ped* FollowTarget;   // 0x7C - Ped to follow
+    f32 FollowDistance;         // 0x80 - Distance to maintain when following
+    u8 GroupRole;               // 0x84 - Role in group (leader/member)
+    u8 AIFlags;                 // 0x85 - AI behavior flags
+    u16 Reserved4;              // 0x86 - Alignment
+    s32 ObjectiveTimer;         // 0x88 - Timer for current objective
+    s32 WaitTimer;              // 0x8C - Wait timer
+    u8 Reserved5[20];           // 0x90 - Padding to reach NextPed at 0xA5
+    
+    // === CRITICAL: NextPed field at offset 0xA5 (165 bytes) ===
+    // Confirmed from constructor loop: pNextPed += 165
+    struct Ped* NextPed;        // 0xA5 - Next ped in manager's array
+    
+    // === Remaining fields (0xA9 - 0x293) - TO BE ANALYZED FROM ASM ===
+    // Total remaining: 0x294 - 0xA9 = 0x1EB (491 bytes)
+    u8 UnknownData[491];        // 0xA9-0x293 - Placeholder for unanalyzed fields
+};
+static_assert(sizeof(struct Ped) == 0x294, "Ped size must be 0x294 bytes");
+static_assert(offsetof(struct Ped, NextPed) == 0xA5, "NextPed must be at offset 0xA5");
 
 // ============================================================================
 // CarDoor structure  

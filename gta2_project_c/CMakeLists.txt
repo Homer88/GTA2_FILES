@@ -10,6 +10,7 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 # Source files
 set(SOURCES
     src/entities.c
+    src/ped.c
 )
 
 # Create library

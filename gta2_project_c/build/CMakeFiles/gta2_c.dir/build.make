@@ -83,17 +83,33 @@ CMakeFiles/gta2_c.dir/src/entities.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gta2_c.dir/src/entities.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/gta2_project_c/src/entities.c -o CMakeFiles/gta2_c.dir/src/entities.c.s
 
+CMakeFiles/gta2_c.dir/src/ped.c.o: CMakeFiles/gta2_c.dir/flags.make
+CMakeFiles/gta2_c.dir/src/ped.c.o: /workspace/gta2_project_c/src/ped.c
+CMakeFiles/gta2_c.dir/src/ped.c.o: CMakeFiles/gta2_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/gta2_project_c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/gta2_c.dir/src/ped.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gta2_c.dir/src/ped.c.o -MF CMakeFiles/gta2_c.dir/src/ped.c.o.d -o CMakeFiles/gta2_c.dir/src/ped.c.o -c /workspace/gta2_project_c/src/ped.c
+
+CMakeFiles/gta2_c.dir/src/ped.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gta2_c.dir/src/ped.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/gta2_project_c/src/ped.c > CMakeFiles/gta2_c.dir/src/ped.c.i
+
+CMakeFiles/gta2_c.dir/src/ped.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gta2_c.dir/src/ped.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/gta2_project_c/src/ped.c -o CMakeFiles/gta2_c.dir/src/ped.c.s
+
 # Object files for target gta2_c
 gta2_c_OBJECTS = \
-"CMakeFiles/gta2_c.dir/src/entities.c.o"
+"CMakeFiles/gta2_c.dir/src/entities.c.o" \
+"CMakeFiles/gta2_c.dir/src/ped.c.o"
 
 # External object files for target gta2_c
 gta2_c_EXTERNAL_OBJECTS =
 
 libgta2_c.a: CMakeFiles/gta2_c.dir/src/entities.c.o
+libgta2_c.a: CMakeFiles/gta2_c.dir/src/ped.c.o
 libgta2_c.a: CMakeFiles/gta2_c.dir/build.make
 libgta2_c.a: CMakeFiles/gta2_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/gta2_project_c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libgta2_c.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/gta2_project_c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libgta2_c.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/gta2_c.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gta2_c.dir/link.txt --verbose=$(VERBOSE)
 
