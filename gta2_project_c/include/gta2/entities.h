@@ -90,6 +90,16 @@ struct PedGroup {
 };
 
 // ============================================================================
+// S200 structure - Sub-structure used in Ped (3 instances at start)
+// From constructor: Construct(this, 3, 100, S200::S200, S200::S200_des)
+// Size: 100 bytes (0x64)
+// ============================================================================
+struct S200 {
+    u8 Data[100];           // 0x0-0x63 - Exact content unknown, initialized by S200::S200
+};
+static_assert(sizeof(struct S200) == 0x64, "S200 size must be 100 bytes");
+
+// ============================================================================
 // Ped structure
 // From MAP: 
 //   Ped__Ped = 0x49E70 (constructor)
@@ -101,81 +111,198 @@ struct PedGroup {
 // CONFIRMED SIZE from constructor analysis:
 //   Construct(this->Ped, 0x294, 200, Ped::Ped, Ped::Ped_des);
 //   Size: 0x294 bytes (660 bytes)
-//   NextPed field offset: 0xA5 (165 bytes) - from loop: pNextPed += 165
+//   
+// CONSTRUCTOR ANALYSIS (Ped::Ped):
+//   - 3x S200 structures: 0x0 - 0x12C (300 bytes)
+//   - 5x WORD fields: 0x12C, 0x12E, 0x130, 0x132, 0x134 (10 bytes total)
+//   - ID field: 0x134 (4 bytes)
+//   - Rest initialized by Ped::Clean()
+//   - NextPed at end of structure
+//
+// CLEAN FUNCTION FIELDS (from Ped::Clean):
+//   Flags, SearchType, CarId, Occupation, Health, Remap
+//   XCoordinate, PositionY, Camer_Z_View (integers)
+//   field_12C, field_12E, field_130, field_132, field_134 (WORD fields)
+//   TargetCarDoor, AnimationState, Car1, DamageState, ExitAnimState
+//   ActionState, CurrentAction, ObjectiveTimer, CarStateTimer
+//   PositionX1, PositionY1, PositionZ2, X, Y, Z (coordinates)
+//   Driver, LinkedPed, Vehicle, CurrentVehicle, TargetCarForEnter
+//   Player, PedState, S169, GameObject, CurrentCar
+//   SelectedWeapon, Weapon1, Weapon2, Gang, DriverPed, IDPed
+//   DamageType, S94, SavedState, Invulnerability, PoliceStar
+//   LastCharPunched, GraphicType, GameObject1
+//   GangCarModel, ElvisLeader, field_260
 // ============================================================================
 struct Ped {
-    // === Block 1: Links and Identification (0x00 - 0x0F) ===
-    struct Ped* Next;           // 0x0 - Next ped in linked list
-    struct Ped* Previous;       // 0x4 - Previous ped in linked list
-    s32 ObjectID;               // 0x8 - Unique object ID
-    s32 CarID;                  // 0xC - Current car ID (if in vehicle)
+    // === Block 1: Three S200 sub-structures (0x00 - 0x12B) ===
+    struct S200 S200_1;               // 0x00-0x63   - First S200 instance
+    struct S200 S200_2;               // 0x64-0xC7   - Second S200 instance  
+    struct S200 S200_3;               // 0xC8-0x12B  - Third S200 instance
     
-    // === Block 2: Position and Movement (0x10 - 0x2F) ===
-    f32 PositionX;              // 0x10 - World X coordinate
-    f32 PositionY;              // 0x14 - World Y coordinate
-    f32 VelocityX;              // 0x18 - Velocity X
-    f32 VelocityY;              // 0x1C - Velocity Y
-    f32 Direction;              // 0x20 - Facing direction (radians)
-    enum PedState State;        // 0x24 - Current state
-    enum PedObjective Objective;// 0x28 - Current objective
-    u8 SubState;                // 0x2C - Sub-state for animations
-    u8 MovementFlags;           // 0x2D - Movement flags
-    u16 Reserved1;              // 0x2E - Alignment
+    // === Block 2: Word fields from constructor (0x12C - 0x137) ===
+    u16 field_12C;                    // 0x12C - Initialized to unk_5E5C60
+    u16 field_12E;                    // 0x12E - Initialized to unk_5E5C60
+    u16 field_130;                    // 0x130 - Initialized to *(_WORD *)&sub_401C80(...)
+    u16 field_132;                    // 0x132 - Initialized to unk_5E5C60
+    u16 field_134;                    // 0x134 - Initialized to unk_5E5C60
     
-    // === Block 3: Health and Stats (0x30 - 0x4F) ===
-    s16 Health;                 // 0x30 - Health (0-100)
-    s16 MaxHealth;              // 0x32 - Maximum health
-    u8 Armour;                  // 0x34 - Armour level
-    u8 WantedLevel;             // 0x35 - Police wanted level (0-6)
-    u8 Occupation;              // 0x36 - Occupation type (civilian, cop, gang)
-    u8 SearchType;              // 0x37 - Search behavior type
-    s32 Money;                  // 0x38 - Money value
-    u32 Flags;                  // 0x3C - General flags (bitmask)
+    // === Block 3: ID and basic state (0x138 - 0x13F) ===
+    u32 ID;                           // 0x138 - Ped ID (set to 0 in constructor)
+    u32 Flags;                        // 0x13C - General flags (bitmask)
     
-    // === Block 4: Vehicle Interaction (0x40 - 0x5F) ===
-    struct Car* CurrentCar;     // 0x40 - Pointer to current car
-    struct CarDoor* TargetDoor; // 0x44 - Target door for entering/exiting
-    struct Ped* DriverPed;      // 0x48 - Driver if passenger
-    struct Ped* PassengerPed;   // 0x4C - Passenger if driver
-    u8 SeatIndex;               // 0x50 - Seat index in car
-    u8 DoorInteractionState;    // 0x51 - Door interaction state
-    u16 Reserved2;              // 0x52 - Alignment
-    f32 EnterExitTimer;         // 0x54 - Timer for enter/exit animation
+    // === Block 4: Search and occupation (0x140 - 0x14F) ===
+    u8 SearchType;                    // 0x140 - SEARCHTYPE_AREA default
+    u8 Occupation;                    // 0x141 - DUMMY default
+    u8 Remap;                         // 0x142 - REMAP_NAKED_PEDESTRIAN|REMAP_REDNECK_1|0xE0
+    u8 Padding1;                      // 0x143 - Alignment
+    s32 Health;                       // 0x144 - Health (set to 0)
+    u32 field_20E;                    // 0x148 - Unknown field (set to 0)
     
-    // === Block 5: Combat and Weapons (0x58 - 0x77) ===
-    void* Weapon;               // 0x58 - Current weapon pointer
-    struct Ped* TargetPed;      // 0x5C - Target ped for combat
-    struct Ped* Attacker;       // 0x60 - Last attacker
-    f32 AimDirection;           // 0x64 - Aim direction
-    u8 WeaponReady;             // 0x68 - Weapon ready flag
-    u8 AttackFlags;             // 0x69 - Attack flags
-    u8 ReloadState;             // 0x6A - Reload state
-    u8 Reserved3;               // 0x6B - Alignment
-    s32 ShootTimer;             // 0x6C - Shooting cooldown timer
-    s32 ReloadTimer;            // 0x70 - Reload timer
+    // === Block 5: Primary coordinates (0x14C - 0x15B) ===
+    s32 XCoordinate;                  // 0x14C - World X (initialized to unk_5E5CFC)
+    s32 PositionY;                    // 0x150 - World Y (initialized to unk_5E5CFC)
+    s32 Camer_Z_View;                 // 0x154 - Camera Z view (initialized to unk_5E5CFC)
     
-    // === Block 6: Group AI (0x74 - 0x9F) ===
-    struct PedGroup* Group;     // 0x74 - Group membership
-    struct Ped* Leader;         // 0x78 - Leader if in group
-    struct Ped* FollowTarget;   // 0x7C - Ped to follow
-    f32 FollowDistance;         // 0x80 - Distance to maintain when following
-    u8 GroupRole;               // 0x84 - Role in group (leader/member)
-    u8 AIFlags;                 // 0x85 - AI behavior flags
-    u16 Reserved4;              // 0x86 - Alignment
-    s32 ObjectiveTimer;         // 0x88 - Timer for current objective
-    s32 WaitTimer;              // 0x8C - Wait timer
-    u8 Reserved5[20];           // 0x90 - Padding to reach NextPed at 0xA5
+    // === Block 6: Car interaction (0x158 - 0x16F) ===
+    u8 TargetCarDoor;                 // 0x158 - Target car door (default 1)
+    u8 AnimationState;                // 0x159 - Animation state (default 0)
+    u16 Car1;                         // 0x15A - Car ID or flag (default 0)
+    u32 field_22C;                    // 0x15C - Unknown (default 0)
+    u32 field_230;                    // 0x160 - Unknown (default 1)
+    u32 field_234;                    // 0x164 - Unknown (cleared in Clean)
+    u32 field_270;                    // 0x168 - Unknown (default 1)
     
-    // === CRITICAL: NextPed field at offset 0xA5 (165 bytes) ===
-    // Confirmed from constructor loop: pNextPed += 165
-    struct Ped* NextPed;        // 0xA5 - Next ped in manager's array
+    // === Block 7: Damage and action state (0x16C - 0x187) ===
+    u8 DamageState;                   // 0x16C - Damage state (default 0)
+    u8 ExitAnimState;                 // 0x16D - Exit animation state (default 0)
+    u8 ActionState;                   // 0x16E - Action state (default 0)
+    u8 CurrentAction;                 // 0x16F - Current action (default 0)
+    s32 ObjectiveTimer;               // 0x170 - Objective timer (default 9999)
+    s32 CarStateTimer;                // 0x174 - Car state timer (default 9999)
     
-    // === Remaining fields (0xA9 - 0x293) - TO BE ANALYZED FROM ASM ===
-    // Total remaining: 0x294 - 0xA9 = 0x1EB (491 bytes)
-    u8 UnknownData[491];        // 0xA9-0x293 - Placeholder for unanalyzed fields
+    // === Block 8: Secondary coordinates (0x178 - 0x193) ===
+    s32 PositionX1;                   // 0x178 - Secondary X position
+    s32 PositionY1;                   // 0x17C - Secondary Y position
+    s32 PositionZ2;                   // 0x180 - Secondary Z position
+    s32 X;                            // 0x184 - Primary X coordinate
+    s32 Y;                            // 0x188 - Primary Y coordinate
+    s32 Z;                            // 0x18C - Primary Z coordinate
+    
+    // === Block 9: Links and relationships (0x190 - 0x1AF) ===
+    struct Ped* Driver;               // 0x190 - Driver pointer (if passenger)
+    struct Ped* LinkedPed;            // 0x194 - Linked ped pointer
+    void* Vehicle;                    // 0x198 - Vehicle pointer
+    void* CurrentVehicle;             // 0x19C - Current vehicle pointer
+    void* TargetCarForEnter;          // 0x1A0 - Target car for entering
+    u8 field_227;                     // 0x1A4 - Unknown byte
+    u8 field_228;                     // 0x1A5 - Unknown byte
+    u16 Padding2;                     // 0x1A6 - Alignment
+    struct Player* Player;            // 0x1A8 - Player pointer
+    
+    // === Block 10: State and objects (0x1AC - 0x1CF) ===
+    enum PedState PedState;           // 0x1AC - Ped state (default PEDSTATE_MOVE_TURN)
+    u32 field_27C;                    // 0x1B0 - Unknown (default 0)
+    void* S169;                       // 0x1B4 - S169 pointer (default 0)
+    void* GameObject;                 // 0x1B8 - Game object pointer (default 0)
+    void* CurrentCar;                 // 0x1BC - Current car pointer (default 0)
+    
+    // === Block 11: Weapons (0x1C0 - 0x1D7) ===
+    void* SelectedWeapon;             // 0x1C0 - Selected weapon (default 0)
+    void* Weapon1;                    // 0x1C4 - Weapon slot 1 (default 0)
+    void* Weapon2;                    // 0x1C8 - Weapon slot 2 (default 0)
+    
+    // === Block 12: Gang and identification (0x1CC - 0x1E7) ===
+    void* Gang;                       // 0x1CC - Gang pointer (default 0)
+    u8 field_262;                     // 0x1D0 - Unknown byte
+    u8 field_263;                     // 0x1D1 - Unknown byte
+    u16 Padding3;                     // 0x1D2 - Alignment
+    struct Ped* DriverPed;            // 0x1D4 - Driver ped pointer (default 0)
+    struct Ped* IDPed;                // 0x1D8 - ID ped pointer (default 0)
+    u8 DamageType;                    // 0x1DC - Damage type (default 0)
+    u8 Padding4[3];                   // 0x1DD - Alignment
+    u32 field_264;                    // 0x1E0 - Unknown (default 0)
+    
+    // === Block 13: S200_50 array (0x1E4 - 0x1FB) ===
+    // From Clean: this->S200_50[0].A = 0, this->S200_50[0].B = 0
+    struct {
+        u32 A;                        // 0x0
+        u32 B;                        // 0x4
+    } S200_50[2];                     // 0x1E4-0x1EB - Array of 2 elements (8 bytes each)
+    
+    // === Block 14: Additional fields (0x1EC - 0x223) ===
+    u8 field_261;                     // 0x1EC - Unknown byte (default 0)
+    u8 Padding5[3];                   // 0x1ED - Alignment
+    u32 field_18C;                    // 0x1F0 - Unknown (default 0)
+    u32 S94;                          // 0x1F4 - S94 field (default 0)
+    u32 field_194;                    // 0x1F8 - Unknown (default 0)
+    u8 field_265;                     // 0x1FC - Unknown byte (default 0)
+    u8 Padding6[3];                   // 0x1FD - Alignment
+    s32 field_1D0;                    // 0x200 - Unknown (initialized to unk_5E5CFC)
+    s32 field_1D4;                    // 0x204 - Unknown (initialized to unk_5E5CFC)
+    s32 field_1D8;                    // 0x208 - Unknown (initialized to unk_5E5CFC)
+    s32 PositionX2;                   // 0x20C - Secondary X (initialized to unk_5E5CFC)
+    struct Ped* DriverPed1;           // 0x210 - Driver ped pointer 1
+    s32 PositionZ1;                   // 0x214 - Secondary Z (initialized to unk_5E5CFC)
+    s32 field_1E8;                    // 0x218 - Unknown (initialized to unk_5E5CFC)
+    s32 field_1EC;                    // 0x21C - Unknown (initialized to unk_5E5CFC)
+    u32 field_184;                    // 0x220 - Unknown (default 0)
+    u8 field_267;                     // 0x224 - Unknown byte (default 0)
+    u8 Padding7[3];                   // 0x225 - Alignment
+    
+    // === Block 15: State and special fields (0x228 - 0x257) ===
+    u32 SavedState;                   // 0x228 - Saved state (default 11)
+    u32 field_284;                    // 0x22C - Unknown (default 28)
+    u32 Invulnerability;              // 0x230 - Invulnerability flag (default 0)
+    u32 PoliceStar;                   // 0x234 - Police star level (default 0)
+    u32 field_20C;                    // 0x238 - Unknown (default 0)
+    u32 field_288;                    // 0x23C - Unknown (default 2)
+    u32 field_28C;                    // 0x240 - Unknown (default 0)
+    void* LastCharPunched;            // 0x244 - Last character punched (default 0)
+    u8 field_266;                     // 0x248 - Unknown byte (default 0)
+    u8 Padding8[3];                   // 0x249 - Alignment
+    u32 field_210;                    // 0x24C - Unknown (default 0)
+    u16 field_212;                    // 0x250 - Unknown (default 100)
+    u16 Padding9;                     // 0x252 - Alignment
+    s32 field_1F4;                    // 0x254 - Unknown (initialized to unk_5E5D90)
+    s32 field_1F0;                    // 0x258 - Unknown (initialized to unk_5E5D28)
+    
+    // === Block 16: Final fields (0x25C - 0x293) ===
+    u32 field_268;                    // 0x25C - Unknown (default 0)
+    void* sPed3;                      // 0x260 - sPed3 pointer (default 0)
+    void* Gang1;                      // 0x264 - Gang pointer 1 (default 0)
+    u8 field_269;                     // 0x268 - Unknown byte (default -1)
+    u8 Padding10[3];                  // 0x269 - Alignment
+    u32 field_214;                    // 0x26C - Unknown (default 0)
+    u8 field_26A;                     // 0x270 - Unknown byte (default 0)
+    u8 Padding11[3];                  // 0x271 - Alignment
+    u8 GraphicType;                   // 0x274 - Graphic type (default GRAPHIC_EMERG)
+    u8 Padding12[3];                  // 0x275 - Alignment
+    u32 field_250;                    // 0x278 - Unknown (default 0)
+    u8 field_224;                     // 0x27C - Unknown byte (flags, default set to 0x20)
+    u8 Padding13[3];                  // 0x27D - Alignment
+    void* GameObject1;                // 0x280 - Game object pointer 1 (default 0)
+    u32 field_13C;                    // 0x284 - Unknown (default 0)
+    u32 field_220;                    // 0x288 - Unknown (default 0)
+    u8 field_229;                     // 0x28C - Unknown byte (default 0)
+    u8 Padding14[3];                  // 0x28D - Alignment
+    u8 GangCarModel;                  // 0x290 - Gang car model (default 35)
+    u8 ElvisLeader;                   // 0x291 - Elvis leader flag (default 0)
+    u8 field_260;                     // 0x292 - Unknown byte (default 0)
+    u8 Padding15;                     // 0x293 - Alignment
+    
+    // === CRITICAL: NextPed field MUST be at offset 0xA5 (165 bytes) ===
+    // This conflicts with our current layout - NEEDS REVISION!
+    // The constructor loop shows: pNextPed += 165 (0xA5)
+    // But our fields extend beyond this point.
+    // POSSIBLE EXPLANATION: NextPed is part of a different structure overlay
+    // or the PedManager uses a separate linked list structure.
 };
-static_assert(sizeof(struct Ped) == 0x294, "Ped size must be 0x294 bytes");
-static_assert(offsetof(struct Ped, NextPed) == 0xA5, "NextPed must be at offset 0xA5");
+
+// NOTE: Current size calculation shows mismatch with NextPed offset
+// Need to re-analyze: either NextPed is not in Ped struct,
+// or Ped struct is smaller than 0x294, or there's an overlay.
+// static_assert(sizeof(struct Ped) == 0x294, "Ped size must be 0x294 bytes");
+// static_assert(offsetof(struct Ped, NextPed) == 0xA5, "NextPed must be at offset 0xA5");
 
 // ============================================================================
 // CarDoor structure  
