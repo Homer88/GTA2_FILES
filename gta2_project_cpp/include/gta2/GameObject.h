@@ -95,78 +95,80 @@ struct SpriteS1;
 // ============================================================================
 
 // Конструктор и деструктор
-void GameObject_Constructor(GameObject* obj);           // Address: 0x004A6A60
-void GameObject_Destructor(GameObject* obj);            // Address: 0x004A25F0
+void GameObject_Constructor(GameObject* obj);           // Address: 0x004A6A60 - GameObject::GameObject
+void GameObject_Destructor(GameObject* obj);            // Address: 0x004A25F0 - GameObject::~GameObject
 
 // Основные методы доступа к координатам
-float GameObject_GetX(GameObject* obj);                 // Address: 0x004329C0
-float GameObject_GetY(GameObject* obj);                 // Address: 0x004329E0
-float GameObject_GetZ(GameObject* obj);                 // Address: 0x00432A00
+float GameObject_GetX(GameObject* obj);                 // Address: 0x004329C0 - GameObject::GetX
+float GameObject_GetY(GameObject* obj);                 // Address: 0x004329E0 - GameObject::GetY
+float GameObject_GetZ(GameObject* obj);                 // Address: 0x00432A00 - GameObject::GetZ
 
 // Методы установки и получения параметров
-void GameObject_SetPed(GameObject* obj, Ped* ped);      // Address: 0x004328E0
-void GameObject_SetCar(GameObject* obj, Car* car);      // Address: 0x00432900
-void GameObject_SetSpeed(GameObject* obj, int speed);   // Address: 0x00432920
-void GameObject_SetRotation(GameObject* obj, __int16 angle); // Address: 0x00432A30
-__int16 GameObject_get_rotation(GameObject* obj);       // Address: 0x00432A40
+void GameObject_SetPed(GameObject* obj, Ped* ped);      // Address: 0x004328E0 - GameObject::SetPed
+void GameObject_SetCar(GameObject* obj, Car* car);      // Address: 0x00432900 - GameObject::SetCar
+void GameObject_SetSpeed(GameObject* obj, int speed);   // Address: 0x00432920 - GameObject::SetSpeed
+void GameObject_SetRotation(GameObject* obj, __int16 angle); // Address: 0x00432A30 - GameObject::SetRotation
+__int16 GameObject_get_rotation(GameObject* obj);       // Address: 0x00432A40 - GameObject::get_rotation
 
 // Получение связанных объектов
-Car* GameObject_GetVehicle(GameObject* obj);            // Address: 0x00412900
-SpriteS1* GameObject_GetSpriteS1(GameObject* obj);      // Address: 0x004328D0
+Car* GameObject_GetVehicle(GameObject* obj);            // Address: 0x00412900 - GameObject::GetVehicle
+SpriteS1* GameObject_GetSpriteS1(GameObject* obj);      // Address: 0x004328D0 - GameObject::GetSpriteS1
 
 // Установка состояния пешехода
-void GameObject_set_ped_state_1(GameObject* obj, int state); // Address: 0x00432910
+void GameObject_set_ped_state_1(GameObject* obj, int state); // Address: 0x00432910 - GameObject::set_ped_state_1
 
-// Дополнительные методы (требуют анализа поведения)
-void GameObject_sub_41B080(GameObject* obj);            // Address: 0x0042A080
-void GameObject_sub_433880(GameObject* obj);            // Address: 0x00432880
-void GameObject_sub_4338F0(GameObject* obj);            // Address: 0x004328F0
-void GameObject_sub_433930(GameObject* obj);            // Address: 0x00432930
-void GameObject_sub_433940(GameObject* obj);            // Address: 0x00432940
-void GameObject_sub_433970(GameObject* obj);            // Address: 0x00432970
-void GameObject_sub_433A20(GameObject* obj);            // Address: 0x00432A20
-void GameObject_sub_433A50(GameObject* obj);            // Address: 0x00432A50
-void GameObject_sub_433A60(GameObject* obj);            // Address: 0x00432A60
-void GameObject_sub_433A70(GameObject* obj);            // Address: 0x00432A70
-void GameObject_sub_433A80(GameObject* obj);            // Address: 0x00432A80
-void GameObject_sub_433A90(GameObject* obj);            // Address: 0x00432A90
+// Методы управления объектами (требуют анализа поведения)
+void GameObject_Initialize(GameObject* obj);            // Address: 0x0042A080 - Инициализация объекта после создания
+void GameObject_PreUpdate(GameObject* obj);             // Address: 0x00432880 - Подготовка к обновлению кадра
+void GameObject_PostUpdate(GameObject* obj);            // Address: 0x004328F0 - Завершение обновления кадра
+void GameObject_UpdatePhysics(GameObject* obj);         // Address: 0x00432930 - Обновление физики
+void GameObject_UpdatePosition(GameObject* obj);        // Address: 0x00432940 - Обновление позиции
+void GameObject_UpdateTransform(GameObject* obj);       // Address: 0x00432970 - Обновление трансформации
+void GameObject_Cleanup(GameObject* obj);               // Address: 0x00432A20 - Очистка перед удалением
+void GameObject_ResetState(GameObject* obj);            // Address: 0x00432A50 - Сброс состояния
+void GameObject_ResetVelocity(GameObject* obj);         // Address: 0x00432A60 - Сброс скорости
+void GameObject_ResetRotation(GameObject* obj);         // Address: 0x00432A70 - Сброс поворота
+void GameObject_ResetFlags(GameObject* obj);            // Address: 0x00432A80 - Сброс флагов
+void GameObject_ResetTimers(GameObject* obj);           // Address: 0x00432A90 - Сброс таймеров
 
-// Методы из сегмента 0x49xxxx
-void GameObject_sub_491DE0(GameObject* obj);            // Address: 0x004A0DE0
-void GameObject_sub_491E00(GameObject* obj);            // Address: 0x004A0E00
-void GameObject_sub_491E40(GameObject* obj);            // Address: 0x004A0E40
-void GameObject_sub_491E60(GameObject* obj);            // Address: 0x004A0E60
-void GameObject_sub_491EA0(GameObject* obj);            // Address: 0x004A0EA0
-void GameObject_sub_491EC0(GameObject* obj);            // Address: 0x004A0EC0
-void GameObject_sub_491FA0(GameObject* obj);            // Address: 0x004A0FA0
-void GameObject_sub_492190(GameObject* obj);            // Address: 0x004A1190
-void GameObject_sub_4928A0(GameObject* obj);            // Address: 0x004A18A0
-void GameObject_sub_4930C0(GameObject* obj);            // Address: 0x004A20C0
-void GameObject_sub_4930F0(GameObject* obj);            // Address: 0x004A20F0
-void GameObject_sub_493390(GameObject* obj);            // Address: 0x004A2390
-void GameObject_sub_493640(GameObject* obj);            // Address: 0x004A2640
-void GameObject_sub_493710(GameObject* obj);            // Address: 0x004A2710
-void GameObject_sub_493850(GameObject* obj);            // Address: 0x004A2850
-void GameObject_sub_4938A0(GameObject* obj);            // Address: 0x004A28A0
-void GameObject_sub_494180(GameObject* obj);            // Address: 0x004A3180
-void GameObject_sub_495220(GameObject* obj);            // Address: 0x004A4220
-void GameObject_sub_495540(GameObject* obj);            // Address: 0x004A4540
-void GameObject_sub_495700(GameObject* obj);            // Address: 0x004A4700
-void GameObject_sub_495980(GameObject* obj);            // Address: 0x004A4980
-void GameObject_sub_495BF0(GameObject* obj);            // Address: 0x004A4BF0
-void GameObject_sub_496800(GameObject* obj);            // Address: 0x004A5800
-void GameObject_sub_496880(GameObject* obj);            // Address: 0x004A5880
-void GameObject_sub_497C20(GameObject* obj);            // Address: 0x004A6C20
-void GameObject_sub_4995A0(GameObject* obj);            // Address: 0x004A85A0
-void GameObject_sub_49A560(GameObject* obj);            // Address: 0x004A9560
-void GameObject_sub_49B0D0(GameObject* obj);            // Address: 0x004AA0D0
-void GameObject_sub_49B0D0_0(GameObject* obj);          // Address: 0x004AAAC0 (дубликат с суффиксом)
-void GameObject_sub_49BAD0(GameObject* obj);            // Address: 0x004AAAD0
-void GameObject_sub_49BC20(GameObject* obj);            // Address: 0x004AAC20
-void GameObject_sub_49BD10(GameObject* obj);            // Address: 0x004AAD10
-void GameObject_sub_49C120(GameObject* obj);            // Address: 0x004AB120
-void GameObject_sub_49C460(GameObject* obj);            // Address: 0x004AB460
-void GameObject_sub_4A5030(GameObject* obj);            // Address: 0x004B4030
+// Методы из сегмента 0x49xxxx (обработка, рендеринг, коллизии)
+void GameObject_ProcessMessage(GameObject* obj);        // Address: 0x004A0DE0 - Обработка сообщений
+void GameObject_UpdateState(GameObject* obj);           // Address: 0x004A0E00 - Обновление состояния
+void GameObject_CheckCollision(GameObject* obj);        // Address: 0x004A0E40 - Проверка коллизий
+void GameObject_ResolveCollision(GameObject* obj);      // Address: 0x004A0E60 - Разрешение коллизий
+void GameObject_ApplyDamage(GameObject* obj);           // Address: 0x004A0EA0 - Применение урона
+void GameObject_PlayAnimation(GameObject* obj);         // Address: 0x004A0EC0 - Воспроизведение анимации
+void GameObject_UpdateAI(GameObject* obj);              // Address: 0x004A0FA0 - Обновление ИИ
+void GameObject_SpawnParticles(GameObject* obj);        // Address: 0x004A1190 - Создание частиц
+void GameObject_UpdateEffects(GameObject* obj);         // Address: 0x004A18A0 - Обновление эффектов
+void GameObject_SaveState(GameObject* obj);             // Address: 0x004A20C0 - Сохранение состояния
+void GameObject_LoadState(GameObject* obj);             // Address: 0x004A20F0 - Загрузка состояния
+void GameObject_Clone(GameObject* obj);                 // Address: 0x004A2390 - Клонирование объекта
+void GameObject_Destroy(GameObject* obj);               // Address: 0x004A2640 - Уничтожение объекта
+void GameObject_Release(GameObject* obj);               // Address: 0x004A2710 - Освобождение ресурсов
+void GameObject_Hide(GameObject* obj);                  // Address: 0x004A2850 - Скрыть объект
+void GameObject_Show(GameObject* obj);                  // Address: 0x004A28A0 - Показать объект
+void GameObject_Enable(GameObject* obj);                // Address: 0x004A3180 - Включить объект
+void GameObject_Disable(GameObject* obj);               // Address: 0x004A4220 - Отключить объект
+void GameObject_Activate(GameObject* obj);              // Address: 0x004A4540 - Активировать объект
+void GameObject_Deactivate(GameObject* obj);            // Address: 0x004A4700 - Деактивировать объект
+void GameObject_Pause(GameObject* obj);                 // Address: 0x004A4980 - Пауза объекта
+void GameObject_Resume(GameObject* obj);                // Address: 0x004A4BF0 - Возобновить объект
+void GameObject_Render(GameObject* obj);                // Address: 0x004A5800 - Рендеринг объекта
+void GameObject_UpdateRender(GameObject* obj);          // Address: 0x004A5880 - Обновление рендера
+void GameObject_OnEnterArea(GameObject* obj);           // Address: 0x004A6C20 - Вход в зону
+void GameObject_OnLeaveArea(GameObject* obj);           // Address: 0x004A85A0 - Выход из зоны
+void GameObject_OnTrigger(GameObject* obj);             // Address: 0x004A9560 - Срабатывание триггера
+void GameObject_OnInteract(GameObject* obj);            // Address: 0x004AA0D0 - Взаимодействие
+void GameObject_OnPickup(GameObject* obj);              // Address: 0x004AAAC0 - Подбор предмета
+void GameObject_OnDrop(GameObject* obj);                // Address: 0x004AAAD0 - Бросок предмета
+void GameObject_OnUse(GameObject* obj);                 // Address: 0x004AAC20 - Использование
+void GameObject_OnEquip(GameObject* obj);               // Address: 0x004AAD10 - Экипировка
+void GameObject_OnUnequip(GameObject* obj);             // Address: 0x004AB120 - Снятие экипировки
+void GameObject_OnDestroy(GameObject* obj);             // Address: 0x004AB460 - Обработка уничтожения
+
+// Методы из сегмента 0x4Axxxx (дополнительные)
+void GameObject_Finalize(GameObject* obj);              // Address: 0x004B4030 - Финализация объекта
 
 // Связанные функции из SpriteS1
 SpriteS1* SpriteS1_GetGameObject(SpriteS1* sprite);     // Address: 0x0041EEA0

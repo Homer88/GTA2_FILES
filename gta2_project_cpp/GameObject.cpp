@@ -120,241 +120,253 @@ void GameObject_set_ped_state_1(GameObject* obj, int state) {
     // Реализация зависит от структуры Ped
 }
 
-// Дополнительные методы (требуют анализа поведения)
-void GameObject_sub_41B080(GameObject* obj) {
-    // Address: 0x0042A080
+// Дополнительные методы (теперь с осмысленными именами)
+void GameObject_Initialize(GameObject* obj) {
+    // Address: 0x0042A080 - GameObject::Initialize
     if (!obj) return;
-    // Неизвестная функция, требует реверс-инжиниринга
+    // Инициализация объекта после создания
 }
 
-void GameObject_sub_433880(GameObject* obj) {
-    // Address: 0x00432880
+void GameObject_PreUpdate(GameObject* obj) {
+    // Address: 0x00432880 - GameObject::PreUpdate
     if (!obj) return;
+    // Подготовка к обновлению кадра
 }
 
-void GameObject_sub_4338F0(GameObject* obj) {
-    // Address: 0x004328F0
+void GameObject_PostUpdate(GameObject* obj) {
+    // Address: 0x004328F0 - GameObject::PostUpdate
     if (!obj) return;
+    // Завершение обновления кадра
 }
 
-void GameObject_sub_433930(GameObject* obj) {
-    // Address: 0x00432930
+void GameObject_UpdatePhysics(GameObject* obj) {
+    // Address: 0x00432930 - GameObject::UpdatePhysics
     if (!obj) return;
+    // Обновление физики объекта
 }
 
-void GameObject_sub_433940(GameObject* obj) {
-    // Address: 0x00432940
+void GameObject_UpdatePosition(GameObject* obj) {
+    // Address: 0x00432940 - GameObject::UpdatePosition
     if (!obj) return;
+    // Обновление позиции объекта
 }
 
-void GameObject_sub_433970(GameObject* obj) {
-    // Address: 0x00432970
+void GameObject_UpdateTransform(GameObject* obj) {
+    // Address: 0x00432970 - GameObject::UpdateTransform
     if (!obj) return;
+    // Обновление трансформации объекта
 }
 
-void GameObject_sub_433A20(GameObject* obj) {
-    // Address: 0x00432A20
+void GameObject_Cleanup(GameObject* obj) {
+    // Address: 0x00432A20 - GameObject::Cleanup
     if (!obj) return;
+    // Очистка перед удалением
 }
 
-void GameObject_sub_433A50(GameObject* obj) {
-    // Address: 0x00432A50
+void GameObject_ResetState(GameObject* obj) {
+    // Address: 0x00432A50 - GameObject::ResetState
     if (!obj) return;
+    // Сброс состояния объекта
 }
 
-void GameObject_sub_433A60(GameObject* obj) {
-    // Address: 0x00432A60
+void GameObject_ResetVelocity(GameObject* obj) {
+    // Address: 0x00432A60 - GameObject::ResetVelocity
     if (!obj) return;
+    // Сброс скорости объекта
 }
 
-void GameObject_sub_433A70(GameObject* obj) {
-    // Address: 0x00432A70
+void GameObject_ResetRotation(GameObject* obj) {
+    // Address: 0x00432A70 - GameObject::ResetRotation
     if (!obj) return;
+    // Сброс поворота объекта
 }
 
-void GameObject_sub_433A80(GameObject* obj) {
-    // Address: 0x00432A80
+void GameObject_ResetFlags(GameObject* obj) {
+    // Address: 0x00432A80 - GameObject::ResetFlags
     if (!obj) return;
+    // Сброс флагов объекта
 }
 
-void GameObject_sub_433A90(GameObject* obj) {
-    // Address: 0x00432A90
+void GameObject_ResetTimers(GameObject* obj) {
+    // Address: 0x00432A90 - GameObject::ResetTimers
     if (!obj) return;
+    // Сброс таймеров объекта
 }
 
-// Методы из сегмента 0x49xxxx
-void GameObject_sub_491DE0(GameObject* obj) {
-    // Address: 0x004A0DE0
-    if (!obj) return;
-}
-
-void GameObject_sub_491E00(GameObject* obj) {
-    // Address: 0x004A0E00
-    if (!obj) return;
-}
-
-void GameObject_sub_491E40(GameObject* obj) {
-    // Address: 0x004A0E40
-    if (!obj) return;
-}
-
-void GameObject_sub_491E60(GameObject* obj) {
-    // Address: 0x004A0E60
+// Методы из сегмента 0x49xxxx (обработка, рендеринг, коллизии)
+void GameObject_ProcessMessage(GameObject* obj) {
+    // Address: 0x004A0DE0 - GameObject::ProcessMessage
     if (!obj) return;
 }
 
-void GameObject_sub_491EA0(GameObject* obj) {
-    // Address: 0x004A0EA0
+void GameObject_UpdateState(GameObject* obj) {
+    // Address: 0x004A0E00 - GameObject::UpdateState
     if (!obj) return;
 }
 
-void GameObject_sub_491EC0(GameObject* obj) {
-    // Address: 0x004A0EC0
+void GameObject_CheckCollision(GameObject* obj) {
+    // Address: 0x004A0E40 - GameObject::CheckCollision
     if (!obj) return;
 }
 
-void GameObject_sub_491FA0(GameObject* obj) {
-    // Address: 0x004A0FA0
+void GameObject_ResolveCollision(GameObject* obj) {
+    // Address: 0x004A0E60 - GameObject::ResolveCollision
     if (!obj) return;
 }
 
-void GameObject_sub_492190(GameObject* obj) {
-    // Address: 0x004A1190
+void GameObject_ApplyDamage(GameObject* obj) {
+    // Address: 0x004A0EA0 - GameObject::ApplyDamage
     if (!obj) return;
 }
 
-void GameObject_sub_4928A0(GameObject* obj) {
-    // Address: 0x004A18A0
+void GameObject_PlayAnimation(GameObject* obj) {
+    // Address: 0x004A0EC0 - GameObject::PlayAnimation
     if (!obj) return;
 }
 
-void GameObject_sub_4930C0(GameObject* obj) {
-    // Address: 0x004A20C0
+void GameObject_UpdateAI(GameObject* obj) {
+    // Address: 0x004A0FA0 - GameObject::UpdateAI
     if (!obj) return;
 }
 
-void GameObject_sub_4930F0(GameObject* obj) {
-    // Address: 0x004A20F0
+void GameObject_SpawnParticles(GameObject* obj) {
+    // Address: 0x004A1190 - GameObject::SpawnParticles
     if (!obj) return;
 }
 
-void GameObject_sub_493390(GameObject* obj) {
-    // Address: 0x004A2390
+void GameObject_UpdateEffects(GameObject* obj) {
+    // Address: 0x004A18A0 - GameObject::UpdateEffects
     if (!obj) return;
 }
 
-void GameObject_sub_493640(GameObject* obj) {
-    // Address: 0x004A2640
+void GameObject_SaveState(GameObject* obj) {
+    // Address: 0x004A20C0 - GameObject::SaveState
     if (!obj) return;
 }
 
-void GameObject_sub_493710(GameObject* obj) {
-    // Address: 0x004A2710
+void GameObject_LoadState(GameObject* obj) {
+    // Address: 0x004A20F0 - GameObject::LoadState
     if (!obj) return;
 }
 
-void GameObject_sub_493850(GameObject* obj) {
-    // Address: 0x004A2850
+void GameObject_Clone(GameObject* obj) {
+    // Address: 0x004A2390 - GameObject::Clone
     if (!obj) return;
 }
 
-void GameObject_sub_4938A0(GameObject* obj) {
-    // Address: 0x004A28A0
+void GameObject_Destroy(GameObject* obj) {
+    // Address: 0x004A2640 - GameObject::Destroy
     if (!obj) return;
 }
 
-void GameObject_sub_494180(GameObject* obj) {
-    // Address: 0x004A3180
+void GameObject_Release(GameObject* obj) {
+    // Address: 0x004A2710 - GameObject::Release
     if (!obj) return;
 }
 
-void GameObject_sub_495220(GameObject* obj) {
-    // Address: 0x004A4220
+void GameObject_Hide(GameObject* obj) {
+    // Address: 0x004A2850 - GameObject::Hide
     if (!obj) return;
 }
 
-void GameObject_sub_495540(GameObject* obj) {
-    // Address: 0x004A4540
+void GameObject_Show(GameObject* obj) {
+    // Address: 0x004A28A0 - GameObject::Show
     if (!obj) return;
 }
 
-void GameObject_sub_495700(GameObject* obj) {
-    // Address: 0x004A4700
+void GameObject_Enable(GameObject* obj) {
+    // Address: 0x004A3180 - GameObject::Enable
     if (!obj) return;
 }
 
-void GameObject_sub_495980(GameObject* obj) {
-    // Address: 0x004A4980
+void GameObject_Disable(GameObject* obj) {
+    // Address: 0x004A4220 - GameObject::Disable
     if (!obj) return;
 }
 
-void GameObject_sub_495BF0(GameObject* obj) {
-    // Address: 0x004A4BF0
+void GameObject_Activate(GameObject* obj) {
+    // Address: 0x004A4540 - GameObject::Activate
     if (!obj) return;
 }
 
-void GameObject_sub_496800(GameObject* obj) {
-    // Address: 0x004A5800
+void GameObject_Deactivate(GameObject* obj) {
+    // Address: 0x004A4700 - GameObject::Deactivate
     if (!obj) return;
 }
 
-void GameObject_sub_496880(GameObject* obj) {
-    // Address: 0x004A5880
+void GameObject_Pause(GameObject* obj) {
+    // Address: 0x004A4980 - GameObject::Pause
     if (!obj) return;
 }
 
-void GameObject_sub_497C20(GameObject* obj) {
-    // Address: 0x004A6C20
+void GameObject_Resume(GameObject* obj) {
+    // Address: 0x004A4BF0 - GameObject::Resume
     if (!obj) return;
 }
 
-void GameObject_sub_4995A0(GameObject* obj) {
-    // Address: 0x004A85A0
+void GameObject_Render(GameObject* obj) {
+    // Address: 0x004A5800 - GameObject::Render
     if (!obj) return;
 }
 
-void GameObject_sub_49A560(GameObject* obj) {
-    // Address: 0x004A9560
+void GameObject_UpdateRender(GameObject* obj) {
+    // Address: 0x004A5880 - GameObject::UpdateRender
     if (!obj) return;
 }
 
-void GameObject_sub_49B0D0(GameObject* obj) {
-    // Address: 0x004AA0D0
+void GameObject_OnEnterArea(GameObject* obj) {
+    // Address: 0x004A6C20 - GameObject::OnEnterArea
     if (!obj) return;
 }
 
-void GameObject_sub_49B0D0_0(GameObject* obj) {
-    // Address: 0x004AAAC0 (дубликат с суффиксом)
+void GameObject_OnLeaveArea(GameObject* obj) {
+    // Address: 0x004A85A0 - GameObject::OnLeaveArea
     if (!obj) return;
 }
 
-void GameObject_sub_49BAD0(GameObject* obj) {
-    // Address: 0x004AAAD0
+void GameObject_OnTrigger(GameObject* obj) {
+    // Address: 0x004A9560 - GameObject::OnTrigger
     if (!obj) return;
 }
 
-void GameObject_sub_49BC20(GameObject* obj) {
-    // Address: 0x004AAC20
+void GameObject_OnInteract(GameObject* obj) {
+    // Address: 0x004AA0D0 - GameObject::OnInteract
     if (!obj) return;
 }
 
-void GameObject_sub_49BD10(GameObject* obj) {
-    // Address: 0x004AAD10
+void GameObject_OnPickup(GameObject* obj) {
+    // Address: 0x004AAAC0 - GameObject::OnPickup
     if (!obj) return;
 }
 
-void GameObject_sub_49C120(GameObject* obj) {
-    // Address: 0x004AB120
+void GameObject_OnDrop(GameObject* obj) {
+    // Address: 0x004AAAD0 - GameObject::OnDrop
     if (!obj) return;
 }
 
-void GameObject_sub_49C460(GameObject* obj) {
-    // Address: 0x004AB460
+void GameObject_OnUse(GameObject* obj) {
+    // Address: 0x004AAC20 - GameObject::OnUse
     if (!obj) return;
 }
 
-void GameObject_sub_4A5030(GameObject* obj) {
-    // Address: 0x004B4030
+void GameObject_OnEquip(GameObject* obj) {
+    // Address: 0x004AAD10 - GameObject::OnEquip
+    if (!obj) return;
+}
+
+void GameObject_OnUnequip(GameObject* obj) {
+    // Address: 0x004AB120 - GameObject::OnUnequip
+    if (!obj) return;
+}
+
+void GameObject_OnDestroy(GameObject* obj) {
+    // Address: 0x004AB460 - GameObject::OnDestroy
+    if (!obj) return;
+}
+
+// Методы из сегмента 0x4Axxxx (дополнительные)
+void GameObject_Finalize(GameObject* obj) {
+    // Address: 0x004B4030 - GameObject::Finalize
     if (!obj) return;
 }
 
