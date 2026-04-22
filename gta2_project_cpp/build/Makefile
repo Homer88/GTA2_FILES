@@ -116,6 +116,67 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named test_gameobject
+
+# Build rule for target.
+test_gameobject: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_gameobject
+.PHONY : test_gameobject
+
+# fast build rule for target.
+test_gameobject/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/build
+.PHONY : test_gameobject/fast
+
+GameObject.o: GameObject.cpp.o
+.PHONY : GameObject.o
+
+# target to build an object file
+GameObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/GameObject.cpp.o
+.PHONY : GameObject.cpp.o
+
+GameObject.i: GameObject.cpp.i
+.PHONY : GameObject.i
+
+# target to preprocess a source file
+GameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/GameObject.cpp.i
+.PHONY : GameObject.cpp.i
+
+GameObject.s: GameObject.cpp.s
+.PHONY : GameObject.s
+
+# target to generate assembly for a file
+GameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/GameObject.cpp.s
+.PHONY : GameObject.cpp.s
+
+test_gameobject.o: test_gameobject.cpp.o
+.PHONY : test_gameobject.o
+
+# target to build an object file
+test_gameobject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/test_gameobject.cpp.o
+.PHONY : test_gameobject.cpp.o
+
+test_gameobject.i: test_gameobject.cpp.i
+.PHONY : test_gameobject.i
+
+# target to preprocess a source file
+test_gameobject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/test_gameobject.cpp.i
+.PHONY : test_gameobject.cpp.i
+
+test_gameobject.s: test_gameobject.cpp.s
+.PHONY : test_gameobject.s
+
+# target to generate assembly for a file
+test_gameobject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gameobject.dir/build.make CMakeFiles/test_gameobject.dir/test_gameobject.cpp.s
+.PHONY : test_gameobject.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test_gameobject"
+	@echo "... GameObject.o"
+	@echo "... GameObject.i"
+	@echo "... GameObject.s"
+	@echo "... test_gameobject.o"
+	@echo "... test_gameobject.i"
+	@echo "... test_gameobject.s"
 .PHONY : help
 
 

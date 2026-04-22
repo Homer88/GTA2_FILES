@@ -1,5 +1,5 @@
 #pragma once
-#include "gta2_forward.h"
+#include "gta2_types.h"
 
 #pragma pack(push, 1)
 
@@ -29,7 +29,7 @@ struct GameObject {
     char field_2E;                   // 0x002E
     char field_2F;                   // 0x002F
     int field_30;                    // 0x0030
-    __int16 short;                   // 0x0034
+    __int16 field_34;                  // 0x0034
     char field_36;                   // 0x0036
     char field_37;                   // 0x0037
     int Speed;                       // 0x0038 - Текущая скорость
@@ -67,8 +67,8 @@ struct GameObject {
     GameObject* GameObject;          // 0x0078 - Ссылка на родительский/связанный GameObject
     Ped* Ped;                        // 0x007C - Ссылка на пешехода
     SpriteS1* SpriteS1;              // 0x0080 - Ссылка на спрайт
-    Car* GetVehicle;                 // 0x0084 - Полученный автомобиль
-    Car* Car;                        // 0x0088 - Основная ссылка на автомобиль
+    Car* GetVehiclePtr;              // 0x0084 - Полученный автомобиль
+    Car* CarPtr;                     // 0x0088 - Основная ссылка на автомобиль
     int field_8C;                    // 0x008C
     int Speed1;                      // 0x0090 - Дополнительная скорость
     int field_94;                    // 0x0094

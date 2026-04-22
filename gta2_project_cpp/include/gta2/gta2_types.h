@@ -11,7 +11,9 @@
 
 #pragma once
 
-#include <windows.h>
+#ifdef _WIN32
+    #include <windows.h>
+#endif
 #include <cstdint>
 
 // ============================================================================
@@ -154,5 +156,14 @@ enum class FW : int16_t {
 };
 
 enum class WeaponType : int32_t {};
+
+// Типы для совместимости с MSVC
+typedef short __int16;
+typedef int __int32;
+#ifdef _MSC_VER
+typedef __int64 __int64;
+#else
+typedef long long __int64;
+#endif
 
 #endif // GTA2_TYPES_H

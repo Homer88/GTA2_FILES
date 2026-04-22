@@ -10,6 +10,7 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 # Source files (placeholder - will be filled when methods are verified from ASM)
 set(SOURCES
     # Add .cpp files here when classes with vtable methods are confirmed
+    GameObject.cpp
 )
 
 # Create library (empty for now - header only interface)
@@ -27,3 +28,14 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
 endif()
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+# ============================================
+# ТЕСТЫ
+# ============================================
+
+# Добавляем исполняемый файл для тестов GameObject
+add_executable(test_gameobject test_gameobject.cpp GameObject.cpp)
+target_link_libraries(test_gameobject gta2_cpp)
+
+# Для Windows: если нужно линковаться с конкретными библиотеками (например, DirectX), раскомментируйте ниже
+# target_link_libraries(test_gameobject dinput dxguid)
