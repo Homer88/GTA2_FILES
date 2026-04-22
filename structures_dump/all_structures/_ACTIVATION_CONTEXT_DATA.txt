@@ -1,0 +1,16 @@
+// Структура: _ACTIVATION_CONTEXT_DATA
+// Полей: 8
+// Строки в оригинале: 3030-3040
+struct _ACTIVATION_CONTEXT_DATA
+{
+
+  unsigned int Magic;
+  unsigned int HeaderSize;
+  unsigned int FormatVersion;
+  unsigned int TotalSize;
+  unsigned int DefaultTocOffset;
+  unsigned int ExtendedTocOffset;
+  unsigned int AssemblyRosterOffset;
+  unsigned int Flags;
+
+};

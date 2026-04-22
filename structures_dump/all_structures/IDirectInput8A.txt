@@ -1,0 +1,9 @@
+// Структура: IDirectInput8A
+// Полей: 1
+// Строки в оригинале: 29414-29417
+struct IDirectInput8A
+{
+
+  struct IDirectInput8AVtbl *lpVtbl;
+
+};

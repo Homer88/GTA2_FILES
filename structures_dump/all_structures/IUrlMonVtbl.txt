@@ -1,0 +1,12 @@
+// Структура: IUrlMonVtbl
+// Полей: 4
+// Строки в оригинале: 182232-182238
+struct IUrlMonVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IUrlMon *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IUrlMon *This);
+  ULONG (__stdcall *Release)(IUrlMon *This);
+  HRESULT (__stdcall *AsyncGetClassBits)(IUrlMon *This, const IID *const rclsid, LPCWSTR pszTYPE, LPCWSTR pszExt, DWORD dwFileVersionMS, DWORD dwFileVersionLS, LPCWSTR pszCodeBase, IBindCtx *pbc, DWORD dwClassContext, const IID *const riid, DWORD flags);
+
+};

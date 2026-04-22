@@ -1,0 +1,15 @@
+// Структура: Timing
+// Полей: 7
+// Строки в оригинале: 7944-7953
+struct Timing
+{
+
+  int field;
+  int timeGetTime;
+  int field_8;
+  int field_C;
+  int timeGetTime_1;
+  int Sec_100;
+  Radar S36[5];
+
+};

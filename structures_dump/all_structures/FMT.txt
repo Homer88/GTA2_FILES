@@ -1,0 +1,10 @@
+// Структура: FMT
+// Полей: 2
+// Строки в оригинале: 141411-141415
+struct FMT
+{
+
+  unsigned __int16 cf;
+  unsigned int dw;
+
+};

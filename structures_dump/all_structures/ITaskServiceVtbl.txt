@@ -1,0 +1,24 @@
+// Структура: ITaskServiceVtbl
+// Полей: 16
+// Строки в оригинале: 44485-44503
+struct ITaskServiceVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITaskService *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITaskService *This);
+  ULONG (__stdcall *Release)(ITaskService *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(ITaskService *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(ITaskService *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(ITaskService *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(ITaskService *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *GetFolder)(ITaskService *This, BSTR path, ITaskFolder **ppFolder);
+  HRESULT (__stdcall *GetRunningTasks)(ITaskService *This, LONG flags, IRunningTaskCollection **ppRunningTasks);
+  HRESULT (__stdcall *NewTask)(ITaskService *This, DWORD flags, ITaskDefinition **ppDefinition);
+  HRESULT (__stdcall *Connect)(ITaskService *This, VARIANT serverName, VARIANT user, VARIANT domain, VARIANT password);
+  HRESULT (__stdcall *get_Connected)(ITaskService *This, VARIANT_BOOL *pConnected);
+  HRESULT (__stdcall *get_TargetServer)(ITaskService *This, BSTR *pServer);
+  HRESULT (__stdcall *get_ConnectedUser)(ITaskService *This, BSTR *pUser);
+  HRESULT (__stdcall *get_ConnectedDomain)(ITaskService *This, BSTR *pDomain);
+  HRESULT (__stdcall *get_HighestVersion)(ITaskService *This, DWORD *pVersion);
+
+};

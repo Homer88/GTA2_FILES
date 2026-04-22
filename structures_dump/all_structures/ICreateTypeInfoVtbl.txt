@@ -1,0 +1,34 @@
+// Структура: ICreateTypeInfoVtbl
+// Полей: 26
+// Строки в оригинале: 352496-352524
+struct ICreateTypeInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICreateTypeInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICreateTypeInfo *This);
+  ULONG (__stdcall *Release)(ICreateTypeInfo *This);
+  HRESULT (__stdcall *SetGuid)(ICreateTypeInfo *This, const GUID *const guid);
+  HRESULT (__stdcall *SetTypeFlags)(ICreateTypeInfo *This, UINT uTypeFlags);
+  HRESULT (__stdcall *SetDocString)(ICreateTypeInfo *This, LPOLESTR pStrDoc);
+  HRESULT (__stdcall *SetHelpContext)(ICreateTypeInfo *This, DWORD dwHelpContext);
+  HRESULT (__stdcall *SetVersion)(ICreateTypeInfo *This, WORD wMajorVerNum, WORD wMinorVerNum);
+  HRESULT (__stdcall *AddRefTypeInfo)(ICreateTypeInfo *This, ITypeInfo *pTInfo, HREFTYPE *phRefType);
+  HRESULT (__stdcall *AddFuncDesc)(ICreateTypeInfo *This, UINT index, FUNCDESC *pFuncDesc);
+  HRESULT (__stdcall *AddImplType)(ICreateTypeInfo *This, UINT index, HREFTYPE hRefType);
+  HRESULT (__stdcall *SetImplTypeFlags)(ICreateTypeInfo *This, UINT index, INT implTypeFlags);
+  HRESULT (__stdcall *SetAlignment)(ICreateTypeInfo *This, WORD cbAlignment);
+  HRESULT (__stdcall *SetSchema)(ICreateTypeInfo *This, LPOLESTR pStrSchema);
+  HRESULT (__stdcall *AddVarDesc)(ICreateTypeInfo *This, UINT index, VARDESC *pVarDesc);
+  HRESULT (__stdcall *SetFuncAndParamNames)(ICreateTypeInfo *This, UINT index, LPOLESTR *rgszNames, UINT cNames);
+  HRESULT (__stdcall *SetVarName)(ICreateTypeInfo *This, UINT index, LPOLESTR szName);
+  HRESULT (__stdcall *SetTypeDescAlias)(ICreateTypeInfo *This, TYPEDESC *pTDescAlias);
+  HRESULT (__stdcall *DefineFuncAsDllEntry)(ICreateTypeInfo *This, UINT index, LPOLESTR szDllName, LPOLESTR szProcName);
+  HRESULT (__stdcall *SetFuncDocString)(ICreateTypeInfo *This, UINT index, LPOLESTR szDocString);
+  HRESULT (__stdcall *SetVarDocString)(ICreateTypeInfo *This, UINT index, LPOLESTR szDocString);
+  HRESULT (__stdcall *SetFuncHelpContext)(ICreateTypeInfo *This, UINT index, DWORD dwHelpContext);
+  HRESULT (__stdcall *SetVarHelpContext)(ICreateTypeInfo *This, UINT index, DWORD dwHelpContext);
+  HRESULT (__stdcall *SetMops)(ICreateTypeInfo *This, UINT index, BSTR bstrMops);
+  HRESULT (__stdcall *SetTypeIdldesc)(ICreateTypeInfo *This, IDLDESC *pIdlDesc);
+  HRESULT (__stdcall *LayOut)(ICreateTypeInfo *This);
+
+};

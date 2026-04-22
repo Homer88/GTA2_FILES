@@ -1,0 +1,15 @@
+// Структура: _RTL_ENCLAVE_LAUNCH_TOKEN
+// Полей: 7
+// Строки в оригинале: 99592-99601
+struct _RTL_ENCLAVE_LAUNCH_TOKEN
+{
+
+  unsigned __int8 Measurement[32];
+  unsigned __int8 AuthorId[32];
+  unsigned __int8 FamilyId[16];
+  unsigned __int8 ImageId[16];
+  unsigned __int64 EnclaveSize;
+  unsigned int EnclaveSvn;
+  unsigned int PolicyFlags;
+
+};

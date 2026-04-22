@@ -1,0 +1,9 @@
+// Структура: _FILE_MODE_INFORMATION
+// Полей: 1
+// Строки в оригинале: 94032-94035
+struct _FILE_MODE_INFORMATION
+{
+
+  unsigned int Mode;
+
+};

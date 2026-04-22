@@ -1,0 +1,12 @@
+// Структура: DXGI_SURFACE_DESC
+// Полей: 4
+// Строки в оригинале: 352069-352075
+struct DXGI_SURFACE_DESC
+{
+
+  UINT Width;
+  UINT Height;
+  DXGI_FORMAT Format;
+  DXGI_SAMPLE_DESC SampleDesc;
+
+};

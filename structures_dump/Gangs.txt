@@ -1,0 +1,8 @@
+// Structure: Gangs
+// Lines: 4241 - 4244
+// Fields: 2
+
+struct Gangs
+{
+  Gang Gang[10];
+};

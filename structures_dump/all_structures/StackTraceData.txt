@@ -1,0 +1,11 @@
+// Структура: StackTraceData
+// Полей: 3
+// Строки в оригинале: 192297-192302
+struct StackTraceData
+{
+
+  const unsigned int BackTraceHash;
+  const unsigned __int16 FrameCount;
+  void *const Frames[1];
+
+};

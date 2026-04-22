@@ -1,0 +1,11 @@
+// Структура: _EVENT_FILTER_DESCRIPTOR
+// Полей: 3
+// Строки в оригинале: 59339-59344
+struct _EVENT_FILTER_DESCRIPTOR
+{
+
+  unsigned __int64 Ptr;
+  unsigned int Size;
+  unsigned int Type;
+
+};

@@ -1,0 +1,14 @@
+// Структура: WireErrorInformationExtentV1
+// Полей: 6
+// Строки в оригинале: 314484-314492
+struct WireErrorInformationExtentV1
+{
+
+  unsigned int helpContext;
+  _GUID iid;
+  unsigned int unique_source;
+  unsigned int unique_description;
+  unsigned int unique_helpFile;
+  unsigned int reservedForVersioning[8];
+
+};

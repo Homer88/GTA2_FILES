@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_VERIFIER_ISSUE
+// Полей: 3
+// Строки в оригинале: 85864-85869
+struct _SYSTEM_VERIFIER_ISSUE
+{
+
+  unsigned int IssueType;
+  void *Address;
+  unsigned int Parameters[2];
+
+};

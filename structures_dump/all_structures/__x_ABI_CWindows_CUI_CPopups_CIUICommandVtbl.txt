@@ -1,0 +1,20 @@
+// Структура: __x_ABI_CWindows_CUI_CPopups_CIUICommandVtbl
+// Полей: 12
+// Строки в оригинале: 37783-37797
+struct __x_ABI_CWindows_CUI_CPopups_CIUICommandVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(__x_ABI_CWindows_CUI_CPopups_CIUICommand *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(__x_ABI_CWindows_CUI_CPopups_CIUICommand *This);
+  ULONG (__stdcall *Release)(__x_ABI_CWindows_CUI_CPopups_CIUICommand *This);
+  HRESULT (__stdcall *GetIids)(__x_ABI_CWindows_CUI_CPopups_CIUICommand *This, ULONG *iidCount, IID **iids);
+  HRESULT (__stdcall *GetRuntimeClassName)(__x_ABI_CWindows_CUI_CPopups_CIUICommand *This, HSTRING *className);
+  HRESULT (__stdcall *GetTrustLevel)(__x_ABI_CWindows_CUI_CPopups_CIUICommand *This, TrustLevel *trustLevel);
+  HRESULT (__stdcall *get_Label)(__x_ABI_CWindows_CUI_CPopups_CIUICommand *This, HSTRING *value);
+  HRESULT (__stdcall *put_Label)(__x_ABI_CWindows_CUI_CPopups_CIUICommand *This, HSTRING value);
+  HRESULT (__stdcall *get_Invoked)(__x_ABI_CWindows_CUI_CPopups_CIUICommand *This, __x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandler **value);
+  HRESULT (__stdcall *put_Invoked)(__x_ABI_CWindows_CUI_CPopups_CIUICommand *This, __x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandler *value);
+  HRESULT (__stdcall *get_Id)(__x_ABI_CWindows_CUI_CPopups_CIUICommand *This, IInspectable **value);
+  HRESULT (__stdcall *put_Id)(__x_ABI_CWindows_CUI_CPopups_CIUICommand *This, IInspectable *value);
+
+};

@@ -1,0 +1,10 @@
+// Структура: _KiIoAccessMap
+// Полей: 2
+// Строки в оригинале: 14120-14124
+struct _KiIoAccessMap
+{
+
+  unsigned __int8 DirectionMap[32];
+  unsigned __int8 IoMap[8196];
+
+};

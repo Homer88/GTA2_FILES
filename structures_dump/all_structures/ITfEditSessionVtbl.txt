@@ -1,0 +1,12 @@
+// Структура: ITfEditSessionVtbl
+// Полей: 4
+// Строки в оригинале: 30368-30374
+struct ITfEditSessionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfEditSession *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfEditSession *This);
+  ULONG (__stdcall *Release)(ITfEditSession *This);
+  HRESULT (__stdcall *DoEditSession)(ITfEditSession *This, TfEditCookie ec);
+
+};

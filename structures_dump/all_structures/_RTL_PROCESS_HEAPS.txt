@@ -1,0 +1,10 @@
+// Структура: _RTL_PROCESS_HEAPS
+// Полей: 2
+// Строки в оригинале: 95467-95471
+struct _RTL_PROCESS_HEAPS
+{
+
+  unsigned int NumberOfHeaps;
+  _RTL_HEAP_INFORMATION Heaps[1];
+
+};

@@ -1,0 +1,17 @@
+// Структура: _PROV_ENUMALGS_EX
+// Полей: 9
+// Строки в оригинале: 110331-110342
+struct _PROV_ENUMALGS_EX
+{
+
+  unsigned int aiAlgid;
+  unsigned int dwDefaultLen;
+  unsigned int dwMinLen;
+  unsigned int dwMaxLen;
+  unsigned int dwProtocols;
+  unsigned int dwNameLen;
+  char szName[20];
+  unsigned int dwLongNameLen;
+  char szLongName[40];
+
+};

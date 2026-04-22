@@ -1,0 +1,17 @@
+// Структура: ICatRegisterVtbl
+// Полей: 9
+// Строки в оригинале: 182538-182549
+struct ICatRegisterVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICatRegister *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICatRegister *This);
+  ULONG (__stdcall *Release)(ICatRegister *This);
+  HRESULT (__stdcall *RegisterCategories)(ICatRegister *This, ULONG cCategories, CATEGORYINFO rgCategoryInfo[]);
+  HRESULT (__stdcall *UnRegisterCategories)(ICatRegister *This, ULONG cCategories, CATID rgcatid[]);
+  HRESULT (__stdcall *RegisterClassImplCategories)(ICatRegister *This, const IID *const rclsid, ULONG cCategories, CATID rgcatid[]);
+  HRESULT (__stdcall *UnRegisterClassImplCategories)(ICatRegister *This, const IID *const rclsid, ULONG cCategories, CATID rgcatid[]);
+  HRESULT (__stdcall *RegisterClassReqCategories)(ICatRegister *This, const IID *const rclsid, ULONG cCategories, CATID rgcatid[]);
+  HRESULT (__stdcall *UnRegisterClassReqCategories)(ICatRegister *This, const IID *const rclsid, ULONG cCategories, CATID rgcatid[]);
+
+};

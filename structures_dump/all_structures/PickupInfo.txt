@@ -1,0 +1,24 @@
+// Структура: PickupInfo
+// Полей: 16
+// Строки в оригинале: 10110-10128
+struct PickupInfo
+{
+
+  SpriteS1 *SpriteS1;
+  char field_4;
+  char field_5;
+  char field_6;
+  char field_7;
+  int arr_4095[4095];
+  char field_4004;
+  char field_4005;
+  char field_4006;
+  char field_4007;
+  char field_4008;
+  char field_4009;
+  char field_400A;
+  char field_400B;
+  _BYTE gap400C[16372];
+  int field_8000;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _MINIDUMP_LOCATION_DESCRIPTOR
+// Полей: 2
+// Строки в оригинале: 122115-122119
+struct _MINIDUMP_LOCATION_DESCRIPTOR
+{
+
+  unsigned int DataSize;
+  unsigned int Rva;
+
+};

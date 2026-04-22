@@ -1,0 +1,12 @@
+// Структура: _STORAGE_QUERY_DEPENDENT_VOLUME_LEV1_ENTRY
+// Полей: 4
+// Строки в оригинале: 80193-80199
+struct _STORAGE_QUERY_DEPENDENT_VOLUME_LEV1_ENTRY
+{
+
+  unsigned int EntryLength;
+  unsigned int DependencyTypeFlags;
+  unsigned int ProviderSpecificFlags;
+  _VIRTUAL_STORAGE_TYPE VirtualStorageType;
+
+};

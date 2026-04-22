@@ -1,0 +1,10 @@
+// Структура: _WIN_SPUB_TRUSTED_PUBLISHER_DATA
+// Полей: 2
+// Строки в оригинале: 121795-121799
+struct _WIN_SPUB_TRUSTED_PUBLISHER_DATA
+{
+
+  void *hClientToken;
+  _WIN_CERTIFICATE *lpCertificate;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _MEMORY_SCRUB_INFORMATION
+// Полей: 2
+// Строки в оригинале: 110996-111000
+struct _MEMORY_SCRUB_INFORMATION
+{
+
+  void *Handle;
+  unsigned int PagesScrubbed;
+
+};

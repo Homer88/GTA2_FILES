@@ -1,0 +1,11 @@
+// Структура: _ETW_IDEAL_PROCESSOR_EVENT
+// Полей: 3
+// Строки в оригинале: 309798-309803
+struct _ETW_IDEAL_PROCESSOR_EVENT
+{
+
+  unsigned int ThreadId;
+  unsigned int OldIdealProcessor;
+  unsigned int NewIdealProcessor;
+
+};

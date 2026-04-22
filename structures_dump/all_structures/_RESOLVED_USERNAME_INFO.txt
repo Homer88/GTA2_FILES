@@ -1,0 +1,10 @@
+// Структура: _RESOLVED_USERNAME_INFO
+// Полей: 2
+// Строки в оригинале: 125090-125094
+struct _RESOLVED_USERNAME_INFO
+{
+
+  int bResolved;
+  wchar_t *pszResolvedName;
+
+};

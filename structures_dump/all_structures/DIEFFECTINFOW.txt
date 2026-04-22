@@ -1,0 +1,14 @@
+// Структура: DIEFFECTINFOW
+// Полей: 6
+// Строки в оригинале: 29335-29343
+struct DIEFFECTINFOW
+{
+
+  DWORD dwSize;
+  GUID guid;
+  DWORD dwEffType;
+  DWORD dwStaticParams;
+  DWORD dwDynamicParams;
+  WCHAR tszName[260];
+
+};

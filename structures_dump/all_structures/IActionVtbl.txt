@@ -1,0 +1,18 @@
+// Структура: IActionVtbl
+// Полей: 10
+// Строки в оригинале: 45061-45073
+struct IActionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IAction *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IAction *This);
+  ULONG (__stdcall *Release)(IAction *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IAction *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IAction *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IAction *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IAction *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Id)(IAction *This, BSTR *pId);
+  HRESULT (__stdcall *put_Id)(IAction *This, BSTR Id);
+  HRESULT (__stdcall *get_Type)(IAction *This, TASK_ACTION_TYPE *pType);
+
+};

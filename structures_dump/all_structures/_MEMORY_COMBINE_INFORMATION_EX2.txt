@@ -1,0 +1,12 @@
+// Структура: _MEMORY_COMBINE_INFORMATION_EX2
+// Полей: 4
+// Строки в оригинале: 98285-98291
+struct _MEMORY_COMBINE_INFORMATION_EX2
+{
+
+  void *Handle;
+  unsigned int PagesCombined;
+  unsigned int Flags;
+  void *ProcessHandle;
+
+};

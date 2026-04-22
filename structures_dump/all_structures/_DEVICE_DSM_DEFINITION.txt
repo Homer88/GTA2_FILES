@@ -1,0 +1,15 @@
+// Структура: _DEVICE_DSM_DEFINITION
+// Полей: 7
+// Строки в оригинале: 149365-149374
+struct _DEVICE_DSM_DEFINITION
+{
+
+  unsigned int Action;
+  unsigned __int8 SingleRange;
+  unsigned int ParameterBlockAlignment;
+  unsigned int ParameterBlockLength;
+  unsigned __int8 HasOutput;
+  unsigned int OutputBlockAlignment;
+  unsigned int OutputBlockLength;
+
+};

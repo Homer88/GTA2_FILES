@@ -1,0 +1,12 @@
+// Структура: tagLocationInfoData
+// Полей: 4
+// Строки в оригинале: 192532-192538
+struct tagLocationInfoData
+{
+
+  wchar_t *machineName;
+  unsigned int processId;
+  unsigned int apartmentId;
+  unsigned int contextId;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _ABCFLOAT
+// Полей: 3
+// Строки в оригинале: 89431-89436
+struct _ABCFLOAT
+{
+
+  float abcfA;
+  float abcfB;
+  float abcfC;
+
+};

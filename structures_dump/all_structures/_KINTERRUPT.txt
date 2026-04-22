@@ -1,0 +1,42 @@
+// Структура: _KINTERRUPT
+// Полей: 34
+// Строки в оригинале: 15250-15286
+struct _KINTERRUPT
+{
+
+  __int16 Type;
+  __int16 Size;
+  _LIST_ENTRY InterruptListEntry;
+  unsigned __int8 (__stdcall *ServiceRoutine)(_KINTERRUPT *, void *);
+  unsigned __int8 (__stdcall *MessageServiceRoutine)(_KINTERRUPT *, void *, unsigned int);
+  unsigned int MessageIndex;
+  void *ServiceContext;
+  unsigned int SpinLock;
+  unsigned int TickCount;
+  unsigned int *ActualLock;
+  void (__stdcall *DispatchAddress)();
+  unsigned int Vector;
+  unsigned __int8 Irql;
+  unsigned __int8 SynchronizeIrql;
+  unsigned __int8 FloatingSave;
+  unsigned __int8 Connected;
+  unsigned int Number;
+  unsigned __int8 ShareVector;
+  unsigned __int8 EmulateActiveBoth;
+  unsigned __int16 ActiveCount;
+  int InternalState;
+  _KINTERRUPT_MODE Mode;
+  _KINTERRUPT_POLARITY Polarity;
+  unsigned int ServiceCount;
+  unsigned int DispatchCount;
+  _KEVENT *PassiveEvent;
+  _KTRAP_FRAME *TrapFrame;
+  void *DisconnectData;
+  _KTHREAD *volatile ServiceThread;
+  _INTERRUPT_CONNECTION_DATA *ConnectionData;
+  void *IntTrackEntry;
+  _ISRDPCSTATS IsrDpcStats;
+  void *RedirectObject;
+  void *PhysicalDeviceObject;
+
+};

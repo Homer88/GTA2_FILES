@@ -1,0 +1,9 @@
+// Структура: IEnumExtraSearch
+// Полей: 1
+// Строки в оригинале: 32421-32424
+struct IEnumExtraSearch
+{
+
+  struct IEnumExtraSearchVtbl *lpVtbl;
+
+};

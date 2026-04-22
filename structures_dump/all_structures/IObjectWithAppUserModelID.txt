@@ -1,0 +1,9 @@
+// Структура: IObjectWithAppUserModelID
+// Полей: 1
+// Строки в оригинале: 36458-36461
+struct IObjectWithAppUserModelID
+{
+
+  struct IObjectWithAppUserModelIDVtbl *lpVtbl;
+
+};

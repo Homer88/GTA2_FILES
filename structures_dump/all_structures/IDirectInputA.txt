@@ -1,0 +1,9 @@
+// Структура: IDirectInputA
+// Полей: 1
+// Строки в оригинале: 6064-6067
+struct IDirectInputA
+{
+
+  struct IDirectInputAVtbl *lpVtbl;
+
+};

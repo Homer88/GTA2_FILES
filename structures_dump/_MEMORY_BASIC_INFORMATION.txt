@@ -1,0 +1,14 @@
+// Structure: _MEMORY_BASIC_INFORMATION
+// Lines: 2333 - 2342
+// Fields: 8
+
+struct _MEMORY_BASIC_INFORMATION
+{
+  PVOID BaseAddress;
+  PVOID AllocationBase;
+  DWORD AllocationProtect;
+  SIZE_T RegionSize;
+  DWORD State;
+  DWORD Protect;
+  DWORD Type;
+};

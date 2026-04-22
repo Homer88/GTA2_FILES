@@ -1,0 +1,12 @@
+// Структура: _SecPkgContext_ApplicationProtocol
+// Полей: 4
+// Строки в оригинале: 325878-325884
+struct _SecPkgContext_ApplicationProtocol
+{
+
+  _SEC_APPLICATION_PROTOCOL_NEGOTIATION_STATUS ProtoNegoStatus;
+  _SEC_APPLICATION_PROTOCOL_NEGOTIATION_EXT ProtoNegoExt;
+  unsigned __int8 ProtocolIdSize;
+  unsigned __int8 ProtocolId[255];
+
+};

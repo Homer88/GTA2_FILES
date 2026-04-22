@@ -1,0 +1,11 @@
+// Структура: _CERT_KEY_ATTRIBUTES_INFO
+// Полей: 3
+// Строки в оригинале: 93719-93724
+struct _CERT_KEY_ATTRIBUTES_INFO
+{
+
+  _CRYPTOAPI_BLOB KeyId;
+  _CRYPT_BIT_BLOB IntendedKeyUsage;
+  _CERT_PRIVATE_KEY_VALIDITY *pPrivateKeyUsagePeriod;
+
+};

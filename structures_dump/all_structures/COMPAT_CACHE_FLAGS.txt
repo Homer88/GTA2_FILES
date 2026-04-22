@@ -1,0 +1,10 @@
+// Структура: COMPAT_CACHE_FLAGS
+// Полей: 2
+// Строки в оригинале: 313134-313138
+struct COMPAT_CACHE_FLAGS
+{
+
+  _RTL_MEMORY_STREAM_PARAM Header;
+  unsigned int Value;
+
+};

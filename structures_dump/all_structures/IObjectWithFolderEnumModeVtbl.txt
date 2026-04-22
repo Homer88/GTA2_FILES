@@ -1,0 +1,13 @@
+// Структура: IObjectWithFolderEnumModeVtbl
+// Полей: 5
+// Строки в оригинале: 34179-34186
+struct IObjectWithFolderEnumModeVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IObjectWithFolderEnumMode *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IObjectWithFolderEnumMode *This);
+  ULONG (__stdcall *Release)(IObjectWithFolderEnumMode *This);
+  HRESULT (__stdcall *SetMode)(IObjectWithFolderEnumMode *This, FOLDER_ENUM_MODE feMode);
+  HRESULT (__stdcall *GetMode)(IObjectWithFolderEnumMode *This, FOLDER_ENUM_MODE *pfeMode);
+
+};

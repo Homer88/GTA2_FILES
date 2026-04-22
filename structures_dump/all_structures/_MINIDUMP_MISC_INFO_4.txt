@@ -1,0 +1,26 @@
+// Структура: _MINIDUMP_MISC_INFO_4
+// Полей: 18
+// Строки в оригинале: 123954-123974
+struct _MINIDUMP_MISC_INFO_4
+{
+
+  unsigned int SizeOfInfo;
+  unsigned int Flags1;
+  unsigned int ProcessId;
+  unsigned int ProcessCreateTime;
+  unsigned int ProcessUserTime;
+  unsigned int ProcessKernelTime;
+  unsigned int ProcessorMaxMhz;
+  unsigned int ProcessorCurrentMhz;
+  unsigned int ProcessorMhzLimit;
+  unsigned int ProcessorMaxIdleState;
+  unsigned int ProcessorCurrentIdleState;
+  unsigned int ProcessIntegrityLevel;
+  unsigned int ProcessExecuteFlags;
+  unsigned int ProtectedProcess;
+  unsigned int TimeZoneId;
+  _TIME_ZONE_INFORMATION TimeZone;
+  wchar_t BuildString[260];
+  wchar_t DbgBldStr[40];
+
+};

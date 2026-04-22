@@ -1,0 +1,13 @@
+// Структура: _CMC_ADD_EXTENSIONS_INFO
+// Полей: 5
+// Строки в оригинале: 99930-99937
+struct _CMC_ADD_EXTENSIONS_INFO
+{
+
+  unsigned int dwCmcDataReference;
+  unsigned int cCertReference;
+  unsigned int *rgdwCertReference;
+  unsigned int cExtension;
+  _CERT_EXTENSION *rgExtension;
+
+};

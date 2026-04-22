@@ -1,0 +1,12 @@
+// Структура: _SEALING_SIGNATURE_ATTRIBUTE
+// Полей: 4
+// Строки в оригинале: 122072-122078
+struct _SEALING_SIGNATURE_ATTRIBUTE
+{
+
+  unsigned int version;
+  unsigned int signerIndex;
+  _CRYPT_ALGORITHM_IDENTIFIER signatureAlgorithm;
+  _CRYPTOAPI_BLOB encryptedDigest;
+
+};

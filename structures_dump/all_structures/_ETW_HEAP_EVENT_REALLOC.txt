@@ -1,0 +1,15 @@
+// Структура: _ETW_HEAP_EVENT_REALLOC
+// Полей: 7
+// Строки в оригинале: 313257-313266
+struct _ETW_HEAP_EVENT_REALLOC
+{
+
+  _SYSTEM_TRACE_HEADER Header;
+  void *HeapHandle;
+  void *NewAddress;
+  void *OldAddress;
+  unsigned int NewSize;
+  unsigned int OldSize;
+  unsigned int Source;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _JOBOBJECT_WAKE_FILTER
+// Полей: 2
+// Строки в оригинале: 16680-16684
+struct _JOBOBJECT_WAKE_FILTER
+{
+
+  unsigned int HighEdgeFilter;
+  unsigned int LowEdgeFilter;
+
+};

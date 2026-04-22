@@ -1,0 +1,12 @@
+// Структура: _IMAGE_EPILOGUE_DYNAMIC_RELOCATION_HEADER
+// Полей: 4
+// Строки в оригинале: 88015-88021
+struct _IMAGE_EPILOGUE_DYNAMIC_RELOCATION_HEADER
+{
+
+  unsigned int EpilogueCount;
+  unsigned __int8 EpilogueByteCount;
+  unsigned __int8 BranchDescriptorElementSize;
+  unsigned __int16 BranchDescriptorCount;
+
+};

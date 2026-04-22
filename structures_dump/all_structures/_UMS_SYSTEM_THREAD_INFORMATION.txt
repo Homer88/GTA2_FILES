@@ -1,0 +1,10 @@
+// Структура: _UMS_SYSTEM_THREAD_INFORMATION
+// Полей: 2
+// Строки в оригинале: 89963-89967
+struct _UMS_SYSTEM_THREAD_INFORMATION
+{
+
+  unsigned int UmsVersion;
+  $9641916C14A1908A79AB911F21DC0643 ___u1;
+
+};

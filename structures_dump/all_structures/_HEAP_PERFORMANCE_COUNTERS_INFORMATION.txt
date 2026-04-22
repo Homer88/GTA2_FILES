@@ -1,0 +1,26 @@
+// Структура: _HEAP_PERFORMANCE_COUNTERS_INFORMATION
+// Полей: 18
+// Строки в оригинале: 89308-89328
+struct _HEAP_PERFORMANCE_COUNTERS_INFORMATION
+{
+
+  unsigned int Size;
+  unsigned int Version;
+  unsigned int HeapIndex;
+  unsigned int LastHeapIndex;
+  unsigned int BaseAddress;
+  unsigned int ReserveSize;
+  unsigned int CommitSize;
+  unsigned int SegmentCount;
+  unsigned int LargeUCRMemory;
+  unsigned int UCRLength;
+  unsigned int AllocatedSpace;
+  unsigned int FreeSpace;
+  unsigned int FreeListLength;
+  unsigned int Contention;
+  unsigned int VirtualBlocks;
+  unsigned int CommitRate;
+  unsigned int DecommitRate;
+  _SEGMENT_HEAP_PERFORMANCE_COUNTER_INFORMATION SegmentHeapPerfInformation;
+
+};

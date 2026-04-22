@@ -1,0 +1,15 @@
+// Структура: IFontEventsDispVtbl
+// Полей: 7
+// Строки в оригинале: 182296-182305
+struct IFontEventsDispVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFontEventsDisp *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFontEventsDisp *This);
+  ULONG (__stdcall *Release)(IFontEventsDisp *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IFontEventsDisp *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IFontEventsDisp *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IFontEventsDisp *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IFontEventsDisp *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+
+};

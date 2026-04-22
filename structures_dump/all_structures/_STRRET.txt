@@ -1,0 +1,15 @@
+// Структура: _STRRET
+// Полей: 7
+// Строки в оригинале: 31013-31022
+struct _STRRET
+{
+
+  UINT uType;
+  #pragma pack(push, 8)
+  union
+  {
+    LPWSTR pOleStr;
+    UINT uOffset;
+    char cStr[260];
+  
+};

@@ -1,0 +1,9 @@
+// Структура: IProgressItem
+// Полей: 1
+// Строки в оригинале: 41330-41333
+struct IProgressItem
+{
+
+  struct IProgressItemVtbl *lpVtbl;
+
+};

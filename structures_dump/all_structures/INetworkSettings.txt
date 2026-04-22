@@ -1,0 +1,9 @@
+// Структура: INetworkSettings
+// Полей: 1
+// Строки в оригинале: 44988-44991
+struct INetworkSettings
+{
+
+  struct INetworkSettingsVtbl *lpVtbl;
+
+};

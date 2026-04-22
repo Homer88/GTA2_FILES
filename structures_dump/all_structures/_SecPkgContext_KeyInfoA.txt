@@ -1,0 +1,13 @@
+// Структура: _SecPkgContext_KeyInfoA
+// Полей: 5
+// Строки в оригинале: 325832-325839
+struct _SecPkgContext_KeyInfoA
+{
+
+  char *sSignatureAlgorithmName;
+  char *sEncryptAlgorithmName;
+  unsigned int KeySize;
+  unsigned int SignatureAlgorithm;
+  unsigned int EncryptAlgorithm;
+
+};

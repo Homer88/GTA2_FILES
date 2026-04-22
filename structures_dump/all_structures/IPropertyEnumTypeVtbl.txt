@@ -1,0 +1,16 @@
+// Структура: IPropertyEnumTypeVtbl
+// Полей: 8
+// Строки в оригинале: 34787-34797
+struct IPropertyEnumTypeVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyEnumType *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyEnumType *This);
+  ULONG (__stdcall *Release)(IPropertyEnumType *This);
+  HRESULT (__stdcall *GetEnumType)(IPropertyEnumType *This, PROPENUMTYPE *penumtype);
+  HRESULT (__stdcall *GetValue)(IPropertyEnumType *This, PROPVARIANT *ppropvar);
+  HRESULT (__stdcall *GetRangeMinValue)(IPropertyEnumType *This, PROPVARIANT *ppropvarMin);
+  HRESULT (__stdcall *GetRangeSetValue)(IPropertyEnumType *This, PROPVARIANT *ppropvarSet);
+  HRESULT (__stdcall *GetDisplayText)(IPropertyEnumType *This, LPWSTR *ppszDisplay);
+
+};

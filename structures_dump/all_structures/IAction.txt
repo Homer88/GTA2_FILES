@@ -1,0 +1,9 @@
+// Структура: IAction
+// Полей: 1
+// Строки в оригинале: 44994-44997
+struct IAction
+{
+
+  struct IActionVtbl *lpVtbl;
+
+};

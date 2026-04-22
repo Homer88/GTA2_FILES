@@ -1,0 +1,10 @@
+// Структура: __MIDL_XmitDefs_0008
+// Полей: 2
+// Строки в оригинале: 314405-314409
+struct __MIDL_XmitDefs_0008
+{
+
+  __MIDL_XmitDefs_0004 outcome;
+  $2F3D88592F34D551AF15B348A8576F5C ___u1;
+
+};

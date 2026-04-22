@@ -1,0 +1,10 @@
+// Структура: _CRYPT_ENCRYPTED_PRIVATE_KEY_INFO
+// Полей: 2
+// Строки в оригинале: 105878-105882
+struct _CRYPT_ENCRYPTED_PRIVATE_KEY_INFO
+{
+
+  _CRYPT_ALGORITHM_IDENTIFIER EncryptionAlgorithm;
+  _CRYPTOAPI_BLOB EncryptedPrivateKey;
+
+};

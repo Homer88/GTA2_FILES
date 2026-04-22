@@ -1,0 +1,18 @@
+// Структура: _BACKUP_RESTORE_APP_CONTEXT
+// Полей: 10
+// Строки в оригинале: 312254-312266
+struct _BACKUP_RESTORE_APP_CONTEXT
+{
+
+  const wchar_t *Name;
+  const wchar_t *FullName;
+  const wchar_t *Publisher;
+  const wchar_t *Version;
+  const wchar_t *Language;
+  const wchar_t *RootDir;
+  const wchar_t *ArpKey;
+  unsigned int BackupLabel;
+  const wchar_t *RestoreAction;
+  void *AppFiles;
+
+};

@@ -1,0 +1,14 @@
+// Структура: _NDR_CORRELATION_FLAGS
+// Полей: 6
+// Строки в оригинале: 286603-286611
+struct _NDR_CORRELATION_FLAGS
+{
+
+  unsigned __int8 Early : 1;
+  unsigned __int8 Split : 1;
+  unsigned __int8 IsIidIs : 1;
+  unsigned __int8 DontCheck : 1;
+  unsigned __int8 Ranged : 1;
+  unsigned __int8 Unused : 3;
+
+};

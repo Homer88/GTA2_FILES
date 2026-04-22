@@ -1,0 +1,10 @@
+// Структура: CThreadStack
+// Полей: 2
+// Строки в оригинале: 263126-263130
+struct CThreadStack
+{
+
+  unsigned int m_dwCurrentPageSize;
+  unsigned int m_CurrentProcessDefaultStackCommit;
+
+};

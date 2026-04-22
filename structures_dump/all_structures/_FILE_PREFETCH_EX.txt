@@ -1,0 +1,12 @@
+// Структура: _FILE_PREFETCH_EX
+// Полей: 4
+// Строки в оригинале: 108808-108814
+struct _FILE_PREFETCH_EX
+{
+
+  unsigned int Type;
+  unsigned int Count;
+  void *Context;
+  unsigned __int64 Prefetch[1];
+
+};

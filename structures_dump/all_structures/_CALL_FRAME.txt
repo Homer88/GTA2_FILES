@@ -1,0 +1,12 @@
+// Структура: _CALL_FRAME
+// Полей: 4
+// Строки в оригинале: 102417-102423
+struct _CALL_FRAME
+{
+
+  void *ReturnAddress;
+  void *Param1;
+  void *Param2;
+  void *CompatibilityArea;
+
+};

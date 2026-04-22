@@ -1,0 +1,10 @@
+// Структура: _BOOT_ENTRY_LIST
+// Полей: 2
+// Строки в оригинале: 106846-106850
+struct _BOOT_ENTRY_LIST
+{
+
+  unsigned int NextEntryOffset;
+  _BOOT_ENTRY BootEntry;
+
+};

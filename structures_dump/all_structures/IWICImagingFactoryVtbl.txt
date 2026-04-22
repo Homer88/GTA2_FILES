@@ -1,0 +1,36 @@
+// Структура: IWICImagingFactoryVtbl
+// Полей: 28
+// Строки в оригинале: 41797-41827
+struct IWICImagingFactoryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICImagingFactory *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICImagingFactory *This);
+  ULONG (__stdcall *Release)(IWICImagingFactory *This);
+  HRESULT (__stdcall *CreateDecoderFromFilename)(IWICImagingFactory *This, LPCWSTR wzFilename, const GUID *pguidVendor, DWORD dwDesiredAccess, WICDecodeOptions metadataOptions, IWICBitmapDecoder **ppIDecoder);
+  HRESULT (__stdcall *CreateDecoderFromStream)(IWICImagingFactory *This, IStream *pIStream, const GUID *pguidVendor, WICDecodeOptions metadataOptions, IWICBitmapDecoder **ppIDecoder);
+  HRESULT (__stdcall *CreateDecoderFromFileHandle)(IWICImagingFactory *This, ULONG_PTR hFile, const GUID *pguidVendor, WICDecodeOptions metadataOptions, IWICBitmapDecoder **ppIDecoder);
+  HRESULT (__stdcall *CreateComponentInfo)(IWICImagingFactory *This, const IID *const clsidComponent, IWICComponentInfo **ppIInfo);
+  HRESULT (__stdcall *CreateDecoder)(IWICImagingFactory *This, const GUID *const guidContainerFormat, const GUID *pguidVendor, IWICBitmapDecoder **ppIDecoder);
+  HRESULT (__stdcall *CreateEncoder)(IWICImagingFactory *This, const GUID *const guidContainerFormat, const GUID *pguidVendor, IWICBitmapEncoder **ppIEncoder);
+  HRESULT (__stdcall *CreatePalette)(IWICImagingFactory *This, IWICPalette **ppIPalette);
+  HRESULT (__stdcall *CreateFormatConverter)(IWICImagingFactory *This, IWICFormatConverter **ppIFormatConverter);
+  HRESULT (__stdcall *CreateBitmapScaler)(IWICImagingFactory *This, IWICBitmapScaler **ppIBitmapScaler);
+  HRESULT (__stdcall *CreateBitmapClipper)(IWICImagingFactory *This, IWICBitmapClipper **ppIBitmapClipper);
+  HRESULT (__stdcall *CreateBitmapFlipRotator)(IWICImagingFactory *This, IWICBitmapFlipRotator **ppIBitmapFlipRotator);
+  HRESULT (__stdcall *CreateStream)(IWICImagingFactory *This, IWICStream **ppIWICStream);
+  HRESULT (__stdcall *CreateColorContext)(IWICImagingFactory *This, IWICColorContext **ppIWICColorContext);
+  HRESULT (__stdcall *CreateColorTransformer)(IWICImagingFactory *This, IWICColorTransform **ppIWICColorTransform);
+  HRESULT (__stdcall *CreateBitmap)(IWICImagingFactory *This, UINT uiWidth, UINT uiHeight, REFWICPixelFormatGUID pixelFormat, WICBitmapCreateCacheOption option, IWICBitmap **ppIBitmap);
+  HRESULT (__stdcall *CreateBitmapFromSource)(IWICImagingFactory *This, IWICBitmapSource *pIBitmapSource, WICBitmapCreateCacheOption option, IWICBitmap **ppIBitmap);
+  HRESULT (__stdcall *CreateBitmapFromSourceRect)(IWICImagingFactory *This, IWICBitmapSource *pIBitmapSource, UINT x, UINT y, UINT width, UINT height, IWICBitmap **ppIBitmap);
+  HRESULT (__stdcall *CreateBitmapFromMemory)(IWICImagingFactory *This, UINT uiWidth, UINT uiHeight, REFWICPixelFormatGUID pixelFormat, UINT cbStride, UINT cbBufferSize, BYTE *pbBuffer, IWICBitmap **ppIBitmap);
+  HRESULT (__stdcall *CreateBitmapFromHBITMAP)(IWICImagingFactory *This, HBITMAP hBitmap, HPALETTE hPalette, WICBitmapAlphaChannelOption options, IWICBitmap **ppIBitmap);
+  HRESULT (__stdcall *CreateBitmapFromHICON)(IWICImagingFactory *This, HICON hIcon, IWICBitmap **ppIBitmap);
+  HRESULT (__stdcall *CreateComponentEnumerator)(IWICImagingFactory *This, DWORD componentTypes, DWORD options, IEnumUnknown **ppIEnumUnknown);
+  HRESULT (__stdcall *CreateFastMetadataEncoderFromDecoder)(IWICImagingFactory *This, IWICBitmapDecoder *pIDecoder, IWICFastMetadataEncoder **ppIFastEncoder);
+  HRESULT (__stdcall *CreateFastMetadataEncoderFromFrameDecode)(IWICImagingFactory *This, IWICBitmapFrameDecode *pIFrameDecoder, IWICFastMetadataEncoder **ppIFastEncoder);
+  HRESULT (__stdcall *CreateQueryWriter)(IWICImagingFactory *This, const GUID *const guidMetadataFormat, const GUID *pguidVendor, IWICMetadataQueryWriter **ppIQueryWriter);
+  HRESULT (__stdcall *CreateQueryWriterFromReader)(IWICImagingFactory *This, IWICMetadataQueryReader *pIQueryReader, const GUID *pguidVendor, IWICMetadataQueryWriter **ppIQueryWriter);
+
+};

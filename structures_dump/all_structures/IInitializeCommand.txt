@@ -1,0 +1,9 @@
+// Структура: IInitializeCommand
+// Полей: 1
+// Строки в оригинале: 40247-40250
+struct IInitializeCommand
+{
+
+  struct IInitializeCommandVtbl *lpVtbl;
+
+};

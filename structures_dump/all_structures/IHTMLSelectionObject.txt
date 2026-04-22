@@ -1,0 +1,9 @@
+// Структура: IHTMLSelectionObject
+// Полей: 1
+// Строки в оригинале: 38459-38462
+struct IHTMLSelectionObject
+{
+
+  struct IHTMLSelectionObjectVtbl *lpVtbl;
+
+};

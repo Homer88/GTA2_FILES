@@ -1,0 +1,9 @@
+// Структура: IShellExecuteHookA
+// Полей: 1
+// Строки в оригинале: 39884-39887
+struct IShellExecuteHookA
+{
+
+  struct IShellExecuteHookAVtbl *lpVtbl;
+
+};

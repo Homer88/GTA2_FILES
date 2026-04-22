@@ -1,0 +1,11 @@
+// Структура: _ETW_KQUEUE_DEQUEUE_EVENT
+// Полей: 3
+// Строки в оригинале: 311465-311470
+struct _ETW_KQUEUE_DEQUEUE_EVENT
+{
+
+  unsigned int ThreadId;
+  unsigned int EntryCount;
+  void *Entries[1];
+
+};

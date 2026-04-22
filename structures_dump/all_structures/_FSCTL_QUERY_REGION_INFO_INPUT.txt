@@ -1,0 +1,13 @@
+// Структура: _FSCTL_QUERY_REGION_INFO_INPUT
+// Полей: 5
+// Строки в оригинале: 99692-99699
+struct _FSCTL_QUERY_REGION_INFO_INPUT
+{
+
+  unsigned int Version;
+  unsigned int Size;
+  unsigned int Flags;
+  unsigned int NumberOfTierIds;
+  _GUID TierIds[1];
+
+};

@@ -1,0 +1,11 @@
+// Структура: SStringHashNode
+// Полей: 3
+// Строки в оригинале: 62151-62156
+struct SStringHashNode
+{
+
+  SHashChain chain;
+  unsigned int dwHash;
+  tagDUALSTRINGARRAY *psaKey;
+
+};

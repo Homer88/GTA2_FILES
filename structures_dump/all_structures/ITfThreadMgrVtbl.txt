@@ -1,0 +1,22 @@
+// Структура: ITfThreadMgrVtbl
+// Полей: 14
+// Строки в оригинале: 41577-41593
+struct ITfThreadMgrVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfThreadMgr *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfThreadMgr *This);
+  ULONG (__stdcall *Release)(ITfThreadMgr *This);
+  HRESULT (__stdcall *Activate)(ITfThreadMgr *This, TfClientId *ptid);
+  HRESULT (__stdcall *Deactivate)(ITfThreadMgr *This);
+  HRESULT (__stdcall *CreateDocumentMgr)(ITfThreadMgr *This, ITfDocumentMgr **ppdim);
+  HRESULT (__stdcall *EnumDocumentMgrs)(ITfThreadMgr *This, IEnumTfDocumentMgrs **ppEnum);
+  HRESULT (__stdcall *GetFocus)(ITfThreadMgr *This, ITfDocumentMgr **ppdimFocus);
+  HRESULT (__stdcall *SetFocus)(ITfThreadMgr *This, ITfDocumentMgr *pdimFocus);
+  HRESULT (__stdcall *AssociateFocus)(ITfThreadMgr *This, HWND hwnd, ITfDocumentMgr *pdimNew, ITfDocumentMgr **ppdimPrev);
+  HRESULT (__stdcall *IsThreadFocus)(ITfThreadMgr *This, BOOL *pfThreadFocus);
+  HRESULT (__stdcall *GetFunctionProvider)(ITfThreadMgr *This, const IID *const clsid, ITfFunctionProvider **ppFuncProv);
+  HRESULT (__stdcall *EnumFunctionProviders)(ITfThreadMgr *This, IEnumTfFunctionProviders **ppEnum);
+  HRESULT (__stdcall *GetGlobalCompartment)(ITfThreadMgr *This, ITfCompartmentMgr **ppCompMgr);
+
+};

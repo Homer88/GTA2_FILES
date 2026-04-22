@@ -1,0 +1,12 @@
+// Структура: CVStruct
+// Полей: 4
+// Строки в оригинале: 332740-332746
+struct CVStruct
+{
+
+  __int16 Major;
+  __int16 Minor;
+  __int16 Sub;
+  __int16 Build;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _CM_PNP_BIOS_DEVICE_NODE
+// Полей: 5
+// Строки в оригинале: 109874-109881
+struct _CM_PNP_BIOS_DEVICE_NODE
+{
+
+  unsigned __int16 Size;
+  unsigned __int8 Node;
+  __unaligned __declspec(align(1)) unsigned int ProductId;
+  unsigned __int8 DeviceType[3];
+  unsigned __int16 DeviceAttributes;
+
+};

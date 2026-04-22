@@ -1,0 +1,11 @@
+// Структура: _QUERY_SERVICE_LOCK_STATUSA
+// Полей: 3
+// Строки в оригинале: 89677-89682
+struct _QUERY_SERVICE_LOCK_STATUSA
+{
+
+  unsigned int fIsLocked;
+  char *lpLockOwner;
+  unsigned int dwLockDuration;
+
+};

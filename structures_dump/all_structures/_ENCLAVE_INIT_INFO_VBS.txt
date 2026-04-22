@@ -1,0 +1,10 @@
+// Структура: _ENCLAVE_INIT_INFO_VBS
+// Полей: 2
+// Строки в оригинале: 87356-87360
+struct _ENCLAVE_INIT_INFO_VBS
+{
+
+  unsigned int Length;
+  unsigned int ThreadCount;
+
+};

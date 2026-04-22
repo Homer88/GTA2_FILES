@@ -1,0 +1,12 @@
+// Структура: IDynamicHWHandlerVtbl
+// Полей: 4
+// Строки в оригинале: 34806-34812
+struct IDynamicHWHandlerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDynamicHWHandler *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDynamicHWHandler *This);
+  ULONG (__stdcall *Release)(IDynamicHWHandler *This);
+  HRESULT (__stdcall *GetDynamicInfo)(IDynamicHWHandler *This, LPCWSTR pszDeviceID, DWORD dwContentType, LPWSTR *ppszAction);
+
+};

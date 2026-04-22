@@ -1,0 +1,11 @@
+// Структура: _KEY_TYPE_SUBTYPE
+// Полей: 3
+// Строки в оригинале: 89477-89482
+struct _KEY_TYPE_SUBTYPE
+{
+
+  unsigned int dwKeySpec;
+  _GUID Type;
+  _GUID Subtype;
+
+};

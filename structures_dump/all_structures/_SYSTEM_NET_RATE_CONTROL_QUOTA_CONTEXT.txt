@@ -1,0 +1,12 @@
+// Структура: _SYSTEM_NET_RATE_CONTROL_QUOTA_CONTEXT
+// Полей: 4
+// Строки в оригинале: 112379-112385
+struct _SYSTEM_NET_RATE_CONTROL_QUOTA_CONTEXT
+{
+
+  _SYSTEM_NET_RATE_CONTROL_CONTEXT_HEADER Header;
+  unsigned __int64 OverQuotaHistory;
+  unsigned int IntervalLength;
+  unsigned int NumberOfIntervals;
+
+};

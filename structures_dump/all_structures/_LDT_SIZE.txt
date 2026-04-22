@@ -1,0 +1,9 @@
+// Структура: _LDT_SIZE
+// Полей: 1
+// Строки в оригинале: 110831-110834
+struct _LDT_SIZE
+{
+
+  unsigned int Length;
+
+};

@@ -1,0 +1,9 @@
+// Структура: ITextStoryRanges
+// Полей: 1
+// Строки в оригинале: 45530-45533
+struct ITextStoryRanges
+{
+
+  struct ITextStoryRangesVtbl *lpVtbl;
+
+};

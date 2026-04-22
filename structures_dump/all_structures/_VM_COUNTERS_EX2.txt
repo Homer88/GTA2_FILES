@@ -1,0 +1,11 @@
+// Структура: _VM_COUNTERS_EX2
+// Полей: 3
+// Строки в оригинале: 98676-98681
+struct _VM_COUNTERS_EX2
+{
+
+  _VM_COUNTERS_EX CountersEx;
+  unsigned int PrivateWorkingSetSize;
+  unsigned __int64 SharedCommitUsage;
+
+};

@@ -1,0 +1,23 @@
+// Структура: IOleUndoManagerVtbl
+// Полей: 15
+// Строки в оригинале: 33070-33087
+struct IOleUndoManagerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleUndoManager *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleUndoManager *This);
+  ULONG (__stdcall *Release)(IOleUndoManager *This);
+  HRESULT (__stdcall *Open)(IOleUndoManager *This, IOleParentUndoUnit *pPUU);
+  HRESULT (__stdcall *Close)(IOleUndoManager *This, IOleParentUndoUnit *pPUU, BOOL fCommit);
+  HRESULT (__stdcall *Add)(IOleUndoManager *This, IOleUndoUnit *pUU);
+  HRESULT (__stdcall *GetOpenParentState)(IOleUndoManager *This, DWORD *pdwState);
+  HRESULT (__stdcall *DiscardFrom)(IOleUndoManager *This, IOleUndoUnit *pUU);
+  HRESULT (__stdcall *UndoTo)(IOleUndoManager *This, IOleUndoUnit *pUU);
+  HRESULT (__stdcall *RedoTo)(IOleUndoManager *This, IOleUndoUnit *pUU);
+  HRESULT (__stdcall *EnumUndoable)(IOleUndoManager *This, IEnumOleUndoUnits **ppEnum);
+  HRESULT (__stdcall *EnumRedoable)(IOleUndoManager *This, IEnumOleUndoUnits **ppEnum);
+  HRESULT (__stdcall *GetLastUndoDescription)(IOleUndoManager *This, BSTR *pBstr);
+  HRESULT (__stdcall *GetLastRedoDescription)(IOleUndoManager *This, BSTR *pBstr);
+  HRESULT (__stdcall *Enable)(IOleUndoManager *This, BOOL fEnable);
+
+};

@@ -1,0 +1,14 @@
+// Структура: ARRAY_INFO
+// Полей: 6
+// Строки в оригинале: 86068-86076
+struct ARRAY_INFO
+{
+
+  int Dimension;
+  unsigned int *BufferConformanceMark;
+  unsigned int *BufferVarianceMark;
+  unsigned int *MaxCountArray;
+  unsigned int *OffsetArray;
+  unsigned int *ActualCountArray;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _GRADIENT_RECT
+// Полей: 2
+// Строки в оригинале: 110924-110928
+struct _GRADIENT_RECT
+{
+
+  unsigned int UpperLeft;
+  unsigned int LowerRight;
+
+};

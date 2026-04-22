@@ -1,0 +1,9 @@
+// Структура: _PROCESS_HANDLE_TRACING_ENABLE
+// Полей: 1
+// Строки в оригинале: 104042-104045
+struct _PROCESS_HANDLE_TRACING_ENABLE
+{
+
+  unsigned int Flags;
+
+};

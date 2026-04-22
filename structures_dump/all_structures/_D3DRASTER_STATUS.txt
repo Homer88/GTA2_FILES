@@ -1,0 +1,10 @@
+// Структура: _D3DRASTER_STATUS
+// Полей: 2
+// Строки в оригинале: 25749-25753
+struct _D3DRASTER_STATUS
+{
+
+  BOOL InVBlank;
+  UINT ScanLine;
+
+};

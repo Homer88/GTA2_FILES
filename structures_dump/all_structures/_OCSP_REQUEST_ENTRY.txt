@@ -1,0 +1,11 @@
+// Структура: _OCSP_REQUEST_ENTRY
+// Полей: 3
+// Строки в оригинале: 95325-95330
+struct _OCSP_REQUEST_ENTRY
+{
+
+  _OCSP_CERT_ID CertId;
+  unsigned int cExtension;
+  _CERT_EXTENSION *rgExtension;
+
+};

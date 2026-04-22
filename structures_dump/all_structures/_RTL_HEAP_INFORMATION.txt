@@ -1,0 +1,21 @@
+// Структура: _RTL_HEAP_INFORMATION
+// Полей: 13
+// Строки в оригинале: 85238-85253
+struct _RTL_HEAP_INFORMATION
+{
+
+  void *BaseAddress;
+  unsigned int Flags;
+  unsigned __int16 EntryOverhead;
+  unsigned __int16 CreatorBackTraceIndex;
+  unsigned int BytesAllocated;
+  unsigned int BytesCommitted;
+  unsigned int NumberOfTags;
+  unsigned int NumberOfEntries;
+  unsigned int NumberOfPseudoTags;
+  unsigned int PseudoTagGranularity;
+  unsigned int Reserved[5];
+  _RTL_HEAP_TAG *Tags;
+  _RTL_HEAP_ENTRY *Entries;
+
+};

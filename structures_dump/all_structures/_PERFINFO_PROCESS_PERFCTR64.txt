@@ -1,0 +1,23 @@
+// Структура: _PERFINFO_PROCESS_PERFCTR64
+// Полей: 15
+// Строки в оригинале: 312202-312219
+struct _PERFINFO_PROCESS_PERFCTR64
+{
+
+  unsigned int ProcessId;
+  unsigned int PageFaultCount;
+  unsigned int HandleCount;
+  unsigned int Reserved;
+  unsigned __int64 PeakVirtualSize;
+  unsigned __int64 PeakWorkingSetSize;
+  unsigned __int64 PeakPagefileUsage;
+  unsigned __int64 QuotaPeakPagedPoolUsage;
+  unsigned __int64 QuotaPeakNonPagedPoolUsage;
+  unsigned __int64 VirtualSize;
+  unsigned __int64 WorkingSetSize;
+  unsigned __int64 PagefileUsage;
+  unsigned __int64 QuotaPagedPoolUsage;
+  unsigned __int64 QuotaNonPagedPoolUsage;
+  unsigned __int64 PrivatePageCount;
+
+};

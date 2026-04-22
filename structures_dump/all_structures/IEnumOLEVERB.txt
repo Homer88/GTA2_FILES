@@ -1,0 +1,9 @@
+// Структура: IEnumOLEVERB
+// Полей: 1
+// Строки в оригинале: 27542-27545
+struct IEnumOLEVERB
+{
+
+  struct IEnumOLEVERBVtbl *lpVtbl;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _BLENDFUNCTION
+// Полей: 4
+// Строки в оригинале: 84472-84478
+struct _BLENDFUNCTION
+{
+
+  unsigned __int8 BlendOp;
+  unsigned __int8 BlendFlags;
+  unsigned __int8 SourceConstantAlpha;
+  unsigned __int8 AlphaFormat;
+
+};

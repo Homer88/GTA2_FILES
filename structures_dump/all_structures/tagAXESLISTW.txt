@@ -1,0 +1,11 @@
+// Структура: tagAXESLISTW
+// Полей: 3
+// Строки в оригинале: 84781-84786
+struct tagAXESLISTW
+{
+
+  unsigned int axlReserved;
+  unsigned int axlNumAxes;
+  tagAXISINFOW axlAxisInfo[16];
+
+};

@@ -1,0 +1,12 @@
+// Структура: tagTEXT_SOURCE
+// Полей: 4
+// Строки в оригинале: 36631-36637
+struct tagTEXT_SOURCE
+{
+
+  PFNFILLTEXTBUFFER pfnFillTextBuffer;
+  const WCHAR *awcBuffer;
+  ULONG iEnd;
+  ULONG iCur;
+
+};

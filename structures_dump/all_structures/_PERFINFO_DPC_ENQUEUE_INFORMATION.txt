@@ -1,0 +1,14 @@
+// Структура: _PERFINFO_DPC_ENQUEUE_INFORMATION
+// Полей: 6
+// Строки в оригинале: 313341-313349
+struct _PERFINFO_DPC_ENQUEUE_INFORMATION
+{
+
+  unsigned int Key;
+  int DpcQueueDepth;
+  unsigned int DpcCount;
+  unsigned int TargetProcessorIndex;
+  unsigned __int8 Importance;
+  unsigned __int8 Reserved[3];
+
+};

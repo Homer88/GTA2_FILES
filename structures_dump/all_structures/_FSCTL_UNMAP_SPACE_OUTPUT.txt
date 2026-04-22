@@ -1,0 +1,9 @@
+// Структура: _FSCTL_UNMAP_SPACE_OUTPUT
+// Полей: 1
+// Строки в оригинале: 106573-106576
+struct _FSCTL_UNMAP_SPACE_OUTPUT
+{
+
+  _LARGE_INTEGER BytesUnmapped;
+
+};

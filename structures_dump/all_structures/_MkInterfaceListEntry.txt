@@ -1,0 +1,10 @@
+// Структура: _MkInterfaceListEntry
+// Полей: 2
+// Строки в оригинале: 78829-78833
+struct _MkInterfaceListEntry
+{
+
+  tagInterfaceData *pIFD;
+  int fRegisteredByAppContainer;
+
+};

@@ -1,0 +1,15 @@
+// Структура: _SECURITY_DESCRIPTOR_RELATIVE
+// Полей: 7
+// Строки в оригинале: 105008-105017
+struct _SECURITY_DESCRIPTOR_RELATIVE
+{
+
+  unsigned __int8 Revision;
+  unsigned __int8 Sbz1;
+  unsigned __int16 Control;
+  unsigned int Owner;
+  unsigned int Group;
+  unsigned int Sacl;
+  unsigned int Dacl;
+
+};

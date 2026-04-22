@@ -1,0 +1,10 @@
+// Структура: _WMI_TRACE_PACKET
+// Полей: 2
+// Строки в оригинале: 308586-308590
+struct _WMI_TRACE_PACKET
+{
+
+  unsigned __int16 Size;
+  $A2D4C3B2EB6B5962EB6926768FA33950 ___u1;
+
+};

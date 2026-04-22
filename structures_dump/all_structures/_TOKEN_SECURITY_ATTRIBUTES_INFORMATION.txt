@@ -1,0 +1,12 @@
+// Структура: _TOKEN_SECURITY_ATTRIBUTES_INFORMATION
+// Полей: 4
+// Строки в оригинале: 78208-78214
+struct _TOKEN_SECURITY_ATTRIBUTES_INFORMATION
+{
+
+  unsigned __int16 Version;
+  unsigned __int16 Reserved;
+  unsigned int AttributeCount;
+  _TOKEN_SECURITY_ATTRIBUTES_INFORMATION::<unnamed_type_Attribute> Attribute;
+
+};

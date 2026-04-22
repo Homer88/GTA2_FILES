@@ -1,0 +1,13 @@
+// Структура: _CERT_POLICY95_QUALIFIER1
+// Полей: 5
+// Строки в оригинале: 104667-104674
+struct _CERT_POLICY95_QUALIFIER1
+{
+
+  wchar_t *pszPracticesReference;
+  char *pszNoticeIdentifier;
+  char *pszNSINoticeIdentifier;
+  unsigned int cCPSURLs;
+  _CPS_URLS *rgCPSURLs;
+
+};

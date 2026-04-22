@@ -1,0 +1,9 @@
+// Структура: _PERFINFO_PO_SESSION_CALLOUT_RET
+// Полей: 1
+// Строки в оригинале: 310612-310615
+struct _PERFINFO_PO_SESSION_CALLOUT_RET
+{
+
+  int Status;
+
+};

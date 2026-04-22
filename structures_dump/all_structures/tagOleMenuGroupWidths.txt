@@ -1,0 +1,9 @@
+// Структура: tagOleMenuGroupWidths
+// Полей: 1
+// Строки в оригинале: 28293-28296
+struct tagOleMenuGroupWidths
+{
+
+  LONG width[6];
+
+};

@@ -1,0 +1,9 @@
+// Структура: _TOKEN_DEVICE_CLAIMS
+// Полей: 1
+// Строки в оригинале: 94253-94256
+struct _TOKEN_DEVICE_CLAIMS
+{
+
+  void *DeviceClaims;
+
+};

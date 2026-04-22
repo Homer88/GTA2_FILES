@@ -1,0 +1,10 @@
+// Структура: _PROCESS_HANDLE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 106430-106434
+struct _PROCESS_HANDLE_INFORMATION
+{
+
+  unsigned int HandleCount;
+  unsigned int HandleCountHighWatermark;
+
+};

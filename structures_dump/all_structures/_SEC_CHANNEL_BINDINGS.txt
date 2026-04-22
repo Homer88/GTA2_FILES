@@ -1,0 +1,16 @@
+// Структура: _SEC_CHANNEL_BINDINGS
+// Полей: 8
+// Строки в оригинале: 323895-323905
+struct _SEC_CHANNEL_BINDINGS
+{
+
+  unsigned int dwInitiatorAddrType;
+  unsigned int cbInitiatorLength;
+  unsigned int dwInitiatorOffset;
+  unsigned int dwAcceptorAddrType;
+  unsigned int cbAcceptorLength;
+  unsigned int dwAcceptorOffset;
+  unsigned int cbApplicationDataLength;
+  unsigned int dwApplicationDataOffset;
+
+};

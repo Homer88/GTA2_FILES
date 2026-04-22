@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_IPI_RECEIVE_DATA
+// Полей: 3
+// Строки в оригинале: 312833-312838
+struct _PERFINFO_IPI_RECEIVE_DATA
+{
+
+  unsigned __int64 InitialTime;
+  void *WorkerRoutine;
+  unsigned int RequestType;
+
+};

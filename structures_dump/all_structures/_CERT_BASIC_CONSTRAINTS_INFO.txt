@@ -1,0 +1,13 @@
+// Структура: _CERT_BASIC_CONSTRAINTS_INFO
+// Полей: 5
+// Строки в оригинале: 86832-86839
+struct _CERT_BASIC_CONSTRAINTS_INFO
+{
+
+  _CRYPT_BIT_BLOB SubjectType;
+  int fPathLenConstraint;
+  unsigned int dwPathLenConstraint;
+  unsigned int cSubtreesConstraint;
+  _CRYPTOAPI_BLOB *rgSubtreesConstraint;
+
+};

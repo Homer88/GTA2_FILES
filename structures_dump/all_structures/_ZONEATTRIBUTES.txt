@@ -1,0 +1,16 @@
+// Структура: _ZONEATTRIBUTES
+// Полей: 8
+// Строки в оригинале: 31256-31266
+struct _ZONEATTRIBUTES
+{
+
+  ULONG cbSize;
+  WCHAR szDisplayName[260];
+  WCHAR szDescription[200];
+  WCHAR szIconPath[260];
+  DWORD dwTemplateMinLevel;
+  DWORD dwTemplateRecommended;
+  DWORD dwTemplateCurrentLevel;
+  DWORD dwFlags;
+
+};

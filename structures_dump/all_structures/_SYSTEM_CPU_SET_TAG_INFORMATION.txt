@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_CPU_SET_TAG_INFORMATION
+// Полей: 2
+// Строки в оригинале: 87967-87971
+struct _SYSTEM_CPU_SET_TAG_INFORMATION
+{
+
+  unsigned __int64 Tag;
+  unsigned __int64 CpuSets[1];
+
+};

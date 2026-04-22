@@ -1,0 +1,9 @@
+// Структура: IXMLDOMNodeList
+// Полей: 1
+// Строки в оригинале: 43222-43225
+struct IXMLDOMNodeList
+{
+
+  struct IXMLDOMNodeListVtbl *lpVtbl;
+
+};

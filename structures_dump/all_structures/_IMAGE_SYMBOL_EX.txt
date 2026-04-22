@@ -1,0 +1,14 @@
+// Структура: _IMAGE_SYMBOL_EX
+// Полей: 6
+// Строки в оригинале: 100272-100280
+struct _IMAGE_SYMBOL_EX
+{
+
+  _IMAGE_SYMBOL_EX::<unnamed_type_N> N;
+  unsigned int Value;
+  int SectionNumber;
+  unsigned __int16 Type;
+  unsigned __int8 StorageClass;
+  unsigned __int8 NumberOfAuxSymbols;
+
+};

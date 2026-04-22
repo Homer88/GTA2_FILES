@@ -1,0 +1,14 @@
+// Структура: _CMSG_MAIL_LIST_RECIPIENT_INFO
+// Полей: 6
+// Строки в оригинале: 82379-82387
+struct _CMSG_MAIL_LIST_RECIPIENT_INFO
+{
+
+  unsigned int dwVersion;
+  _CRYPTOAPI_BLOB KeyId;
+  _CRYPT_ALGORITHM_IDENTIFIER KeyEncryptionAlgorithm;
+  _CRYPTOAPI_BLOB EncryptedKey;
+  _FILETIME Date;
+  _CRYPT_ATTRIBUTE_TYPE_VALUE *pOtherAttr;
+
+};

@@ -1,0 +1,9 @@
+// Структура: ISearchFolderItemFactory
+// Полей: 1
+// Строки в оригинале: 45371-45374
+struct ISearchFolderItemFactory
+{
+
+  struct ISearchFolderItemFactoryVtbl *lpVtbl;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _MINIDUMP_VM_PRE_READ_CALLBACK
+// Полей: 3
+// Строки в оригинале: 122715-122720
+struct _MINIDUMP_VM_PRE_READ_CALLBACK
+{
+
+  unsigned __int64 Offset;
+  void *Buffer;
+  unsigned int Size;
+
+};

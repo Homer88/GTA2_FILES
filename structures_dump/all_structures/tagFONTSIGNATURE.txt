@@ -1,0 +1,10 @@
+// Структура: tagFONTSIGNATURE
+// Полей: 2
+// Строки в оригинале: 85457-85461
+struct tagFONTSIGNATURE
+{
+
+  unsigned int fsUsb[4];
+  unsigned int fsCsb[2];
+
+};

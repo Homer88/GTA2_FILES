@@ -1,0 +1,10 @@
+// Структура: _HEAP_VS_CHUNK_HEADER
+// Полей: 2
+// Строки в оригинале: 21732-21736
+struct _HEAP_VS_CHUNK_HEADER
+{
+
+  _HEAP_VS_CHUNK_HEADER_SIZE Sizes;
+  $B5CB72D13F6798CFCC0337737B34801B ___u1;
+
+};

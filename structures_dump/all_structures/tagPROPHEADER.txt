@@ -1,0 +1,13 @@
+// Структура: tagPROPHEADER
+// Полей: 5
+// Строки в оригинале: 146562-146569
+struct tagPROPHEADER
+{
+
+  unsigned __int16 wByteOrder;
+  unsigned __int16 wFormat;
+  unsigned int dwOSVer;
+  _GUID clsID;
+  unsigned int cSections;
+
+};

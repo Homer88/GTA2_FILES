@@ -1,0 +1,11 @@
+// Структура: _RELATIVE_MODULE_ADDRESS
+// Полей: 3
+// Строки в оригинале: 310740-310745
+struct _RELATIVE_MODULE_ADDRESS
+{
+
+  unsigned int address;
+  unsigned __int8 reserved[3];
+  wchar_t moduleName[32];
+
+};

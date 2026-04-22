@@ -1,0 +1,16 @@
+// Структура: _IMAGE_COFF_SYMBOLS_HEADER
+// Полей: 8
+// Строки в оригинале: 98059-98069
+struct _IMAGE_COFF_SYMBOLS_HEADER
+{
+
+  unsigned int NumberOfSymbols;
+  unsigned int LvaToFirstSymbol;
+  unsigned int NumberOfLinenumbers;
+  unsigned int LvaToFirstLinenumber;
+  unsigned int RvaToFirstByteOfCode;
+  unsigned int RvaToLastByteOfCode;
+  unsigned int RvaToFirstByteOfData;
+  unsigned int RvaToLastByteOfData;
+
+};

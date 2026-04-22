@@ -1,0 +1,19 @@
+// Структура: _EVENT_HEADER
+// Полей: 11
+// Строки в оригинале: 19533-19546
+struct _EVENT_HEADER
+{
+
+  unsigned __int16 Size;
+  unsigned __int16 HeaderType;
+  unsigned __int16 Flags;
+  unsigned __int16 EventProperty;
+  unsigned int ThreadId;
+  unsigned int ProcessId;
+  _LARGE_INTEGER TimeStamp;
+  _GUID ProviderId;
+  _EVENT_DESCRIPTOR EventDescriptor;
+  $6E709DBACD7AA7154A977BFDE9183C26 ___u9;
+  _GUID ActivityId;
+
+};

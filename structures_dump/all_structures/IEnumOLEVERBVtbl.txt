@@ -1,0 +1,15 @@
+// Структура: IEnumOLEVERBVtbl
+// Полей: 7
+// Строки в оригинале: 27577-27586
+struct IEnumOLEVERBVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumOLEVERB *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumOLEVERB *This);
+  ULONG (__stdcall *Release)(IEnumOLEVERB *This);
+  HRESULT (__stdcall *Next)(IEnumOLEVERB *This, ULONG celt, LPOLEVERB rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumOLEVERB *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumOLEVERB *This);
+  HRESULT (__stdcall *Clone)(IEnumOLEVERB *This, IEnumOLEVERB **ppenum);
+
+};

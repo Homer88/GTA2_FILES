@@ -1,0 +1,9 @@
+// Structure: S11__a
+// Lines: 5623 - 5627
+// Fields: 3
+
+struct S11__a
+{
+  _BYTE gap0[603];
+  char field_0;
+};

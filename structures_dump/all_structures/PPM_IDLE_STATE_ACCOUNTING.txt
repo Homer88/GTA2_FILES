@@ -1,0 +1,13 @@
+// Структура: PPM_IDLE_STATE_ACCOUNTING
+// Полей: 5
+// Строки в оригинале: 105947-105954
+struct PPM_IDLE_STATE_ACCOUNTING
+{
+
+  unsigned int IdleTransitions;
+  unsigned int FailedTransitions;
+  unsigned int InvalidBucketIndex;
+  unsigned __int64 TotalTime;
+  unsigned int IdleTimeBuckets[6];
+
+};

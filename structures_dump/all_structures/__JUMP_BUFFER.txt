@@ -1,0 +1,19 @@
+// Структура: __JUMP_BUFFER
+// Полей: 11
+// Строки в оригинале: 119860-119873
+struct __JUMP_BUFFER
+{
+
+  unsigned int Ebp;
+  unsigned int Ebx;
+  unsigned int Edi;
+  unsigned int Esi;
+  unsigned int Esp;
+  unsigned int Eip;
+  unsigned int Registration;
+  unsigned int TryLevel;
+  unsigned int Cookie;
+  unsigned int UnwindFunc;
+  unsigned int UnwindData[6];
+
+};

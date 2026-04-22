@@ -1,0 +1,15 @@
+// Структура: tagMOUSEKEYS
+// Полей: 7
+// Строки в оригинале: 110716-110725
+struct tagMOUSEKEYS
+{
+
+  unsigned int cbSize;
+  unsigned int dwFlags;
+  unsigned int iMaxSpeed;
+  unsigned int iTimeToMaxSpeed;
+  unsigned int iCtrlSpeed;
+  unsigned int dwReserved1;
+  unsigned int dwReserved2;
+
+};

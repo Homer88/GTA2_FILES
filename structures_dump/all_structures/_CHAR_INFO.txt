@@ -1,0 +1,10 @@
+// Структура: _CHAR_INFO
+// Полей: 2
+// Строки в оригинале: 100238-100242
+struct _CHAR_INFO
+{
+
+  _CHAR_INFO::<unnamed_type_Char> Char;
+  unsigned __int16 Attributes;
+
+};

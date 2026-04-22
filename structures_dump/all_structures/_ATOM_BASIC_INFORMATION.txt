@@ -1,0 +1,12 @@
+// Структура: _ATOM_BASIC_INFORMATION
+// Полей: 4
+// Строки в оригинале: 93375-93381
+struct _ATOM_BASIC_INFORMATION
+{
+
+  unsigned __int16 UsageCount;
+  unsigned __int16 Flags;
+  unsigned __int16 NameLength;
+  wchar_t Name[1];
+
+};

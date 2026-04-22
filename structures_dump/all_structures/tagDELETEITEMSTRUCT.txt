@@ -1,0 +1,13 @@
+// Структура: tagDELETEITEMSTRUCT
+// Полей: 5
+// Строки в оригинале: 105514-105521
+struct tagDELETEITEMSTRUCT
+{
+
+  unsigned int CtlType;
+  unsigned int CtlID;
+  unsigned int itemID;
+  HWND__ *hwndItem;
+  unsigned int itemData;
+
+};

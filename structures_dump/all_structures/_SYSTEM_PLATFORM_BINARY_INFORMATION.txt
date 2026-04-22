@@ -1,0 +1,13 @@
+// Структура: _SYSTEM_PLATFORM_BINARY_INFORMATION
+// Полей: 5
+// Строки в оригинале: 112468-112475
+struct _SYSTEM_PLATFORM_BINARY_INFORMATION
+{
+
+  unsigned __int64 PhysicalAddress;
+  void *HandoffBuffer;
+  void *CommandLineBuffer;
+  unsigned int HandoffBufferSize;
+  unsigned int CommandLineBufferSize;
+
+};

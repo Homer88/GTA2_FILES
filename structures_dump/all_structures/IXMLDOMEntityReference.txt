@@ -1,0 +1,9 @@
+// Структура: IXMLDOMEntityReference
+// Полей: 1
+// Строки в оригинале: 43539-43542
+struct IXMLDOMEntityReference
+{
+
+  struct IXMLDOMEntityReferenceVtbl *lpVtbl;
+
+};

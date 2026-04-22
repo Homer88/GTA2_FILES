@@ -1,0 +1,17 @@
+// Структура: _RTL_CRITICAL_SECTION_DEBUG
+// Полей: 9
+// Строки в оригинале: 3061-3072
+struct _RTL_CRITICAL_SECTION_DEBUG
+{
+
+  WORD Type;
+  WORD CreatorBackTraceIndex;
+  struct _RTL_CRITICAL_SECTION *CriticalSection;
+  LIST_ENTRY ProcessLocksList;
+  DWORD EntryCount;
+  DWORD ContentionCount;
+  DWORD Flags;
+  WORD CreatorBackTraceIndexHigh;
+  WORD SpareWORD;
+
+};

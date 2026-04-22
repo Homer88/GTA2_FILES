@@ -1,0 +1,11 @@
+// Структура: joyrange_tag
+// Полей: 3
+// Строки в оригинале: 29649-29654
+struct joyrange_tag
+{
+
+  JOYPOS jpMin;
+  JOYPOS jpMax;
+  JOYPOS jpCenter;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _TXFS_READ_BACKUP_INFORMATION_OUT
+// Полей: 1
+// Строки в оригинале: 93864-93867
+struct _TXFS_READ_BACKUP_INFORMATION_OUT
+{
+
+  $C891887A7CD7AB76B4DD76E3CCDB4FA9 ___u0;
+
+};

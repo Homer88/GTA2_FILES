@@ -1,0 +1,12 @@
+// Структура: tagSTREAM_SID
+// Полей: 4
+// Строки в оригинале: 273054-273060
+struct tagSTREAM_SID
+{
+
+  unsigned __int8 Revision;
+  unsigned __int8 SubAuthorityCount;
+  tagSSID_IDENTIFIER_AUTHORITY IdentifierAuthority;
+  unsigned int SubAuthority[1];
+
+};

@@ -1,0 +1,10 @@
+// Структура: _wireSAFEARRAY_UNION
+// Полей: 2
+// Строки в оригинале: 83805-83809
+struct _wireSAFEARRAY_UNION
+{
+
+  unsigned int sfType;
+  _wireSAFEARRAY_UNION::__MIDL_IOleAutomationTypes_0001 u;
+
+};

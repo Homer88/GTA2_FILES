@@ -1,0 +1,9 @@
+// Структура: IShellIcon
+// Полей: 1
+// Строки в оригинале: 40314-40317
+struct IShellIcon
+{
+
+  struct IShellIconVtbl *lpVtbl;
+
+};

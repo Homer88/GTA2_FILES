@@ -1,0 +1,19 @@
+// Структура: tagSDBQUERYRESULT
+// Полей: 11
+// Строки в оригинале: 312766-312779
+struct tagSDBQUERYRESULT
+{
+
+  unsigned int atrExes[16];
+  unsigned int adwExeFlags[16];
+  unsigned int atrLayers[8];
+  unsigned int dwLayerFlags;
+  unsigned int trAppHelp;
+  unsigned int dwExeCount;
+  unsigned int dwLayerCount;
+  _GUID guidID;
+  unsigned int dwExtraFlags;
+  unsigned int dwCustomSDBMap;
+  _GUID rgGuidDB[16];
+
+};

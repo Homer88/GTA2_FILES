@@ -1,0 +1,17 @@
+// Структура: IOleInPlaceUIWindowVtbl
+// Полей: 9
+// Строки в оригинале: 26908-26919
+struct IOleInPlaceUIWindowVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleInPlaceUIWindow *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleInPlaceUIWindow *This);
+  ULONG (__stdcall *Release)(IOleInPlaceUIWindow *This);
+  HRESULT (__stdcall *GetWindow)(IOleInPlaceUIWindow *This, HWND *phwnd);
+  HRESULT (__stdcall *ContextSensitiveHelp)(IOleInPlaceUIWindow *This, BOOL fEnterMode);
+  HRESULT (__stdcall *GetBorder)(IOleInPlaceUIWindow *This, LPRECT lprectBorder);
+  HRESULT (__stdcall *RequestBorderSpace)(IOleInPlaceUIWindow *This, LPCBORDERWIDTHS pborderwidths);
+  HRESULT (__stdcall *SetBorderSpace)(IOleInPlaceUIWindow *This, LPCBORDERWIDTHS pborderwidths);
+  HRESULT (__stdcall *SetActiveObject)(IOleInPlaceUIWindow *This, IOleInPlaceActiveObject *pActiveObject, LPCOLESTR pszObjName);
+
+};

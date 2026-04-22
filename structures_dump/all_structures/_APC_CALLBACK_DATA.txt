@@ -1,0 +1,12 @@
+// Структура: _APC_CALLBACK_DATA
+// Полей: 4
+// Строки в оригинале: 91357-91363
+struct _APC_CALLBACK_DATA
+{
+
+  unsigned int Parameter;
+  _CONTEXT *ContextRecord;
+  unsigned int Reserved0;
+  unsigned int Reserved1;
+
+};

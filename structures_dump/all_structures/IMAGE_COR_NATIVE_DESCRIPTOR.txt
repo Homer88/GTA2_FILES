@@ -1,0 +1,10 @@
+// Структура: IMAGE_COR_NATIVE_DESCRIPTOR
+// Полей: 2
+// Строки в оригинале: 365987-365991
+struct IMAGE_COR_NATIVE_DESCRIPTOR
+{
+
+  unsigned int GCInfo;
+  unsigned int EHInfo;
+
+};

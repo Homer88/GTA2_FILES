@@ -1,0 +1,26 @@
+// Структура: _IMAGEHLP_GET_TYPE_INFO_PARAMS
+// Полей: 18
+// Строки в оригинале: 123105-123125
+struct _IMAGEHLP_GET_TYPE_INFO_PARAMS
+{
+
+  unsigned int SizeOfStruct;
+  unsigned int Flags;
+  unsigned int NumIds;
+  unsigned int *TypeIds;
+  unsigned __int64 TagFilter;
+  unsigned int NumReqs;
+  _IMAGEHLP_SYMBOL_TYPE_INFO *ReqKinds;
+  unsigned int *ReqOffsets;
+  unsigned int *ReqSizes;
+  unsigned int ReqStride;
+  unsigned int BufferSize;
+  void *Buffer;
+  unsigned int EntriesMatched;
+  unsigned int EntriesFilled;
+  unsigned __int64 TagsFound;
+  unsigned __int64 AllReqsValid;
+  unsigned int NumReqsValid;
+  unsigned __int64 *ReqsValid;
+
+};

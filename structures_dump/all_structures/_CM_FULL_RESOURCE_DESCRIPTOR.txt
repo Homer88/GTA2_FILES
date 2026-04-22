@@ -1,0 +1,11 @@
+// Структура: _CM_FULL_RESOURCE_DESCRIPTOR
+// Полей: 3
+// Строки в оригинале: 18971-18976
+struct _CM_FULL_RESOURCE_DESCRIPTOR
+{
+
+  _INTERFACE_TYPE InterfaceType;
+  unsigned int BusNumber;
+  _CM_PARTIAL_RESOURCE_LIST PartialResourceList;
+
+};

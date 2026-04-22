@@ -1,0 +1,65 @@
+// Структура: _NTFS_STATISTICS_EX
+// Полей: 57
+// Строки в оригинале: 96430-96489
+struct _NTFS_STATISTICS_EX
+{
+
+  unsigned int LogFileFullExceptions;
+  unsigned int OtherExceptions;
+  unsigned __int64 MftReads;
+  unsigned __int64 MftReadBytes;
+  unsigned __int64 MftWrites;
+  unsigned __int64 MftWriteBytes;
+  _NTFS_STATISTICS_EX::<unnamed_type_MftWritesUserLevel> MftWritesUserLevel;
+  unsigned int MftWritesFlushForLogFileFull;
+  unsigned int MftWritesLazyWriter;
+  unsigned int MftWritesUserRequest;
+  unsigned __int64 Mft2Writes;
+  unsigned __int64 Mft2WriteBytes;
+  _NTFS_STATISTICS_EX::<unnamed_type_Mft2WritesUserLevel> Mft2WritesUserLevel;
+  unsigned int Mft2WritesFlushForLogFileFull;
+  unsigned int Mft2WritesLazyWriter;
+  unsigned int Mft2WritesUserRequest;
+  unsigned __int64 RootIndexReads;
+  unsigned __int64 RootIndexReadBytes;
+  unsigned __int64 RootIndexWrites;
+  unsigned __int64 RootIndexWriteBytes;
+  unsigned __int64 BitmapReads;
+  unsigned __int64 BitmapReadBytes;
+  unsigned __int64 BitmapWrites;
+  unsigned __int64 BitmapWriteBytes;
+  unsigned int BitmapWritesFlushForLogFileFull;
+  unsigned int BitmapWritesLazyWriter;
+  unsigned int BitmapWritesUserRequest;
+  _NTFS_STATISTICS_EX::<unnamed_type_BitmapWritesUserLevel> BitmapWritesUserLevel;
+  unsigned __int64 MftBitmapReads;
+  unsigned __int64 MftBitmapReadBytes;
+  unsigned __int64 MftBitmapWrites;
+  unsigned __int64 MftBitmapWriteBytes;
+  unsigned int MftBitmapWritesFlushForLogFileFull;
+  unsigned int MftBitmapWritesLazyWriter;
+  unsigned int MftBitmapWritesUserRequest;
+  _NTFS_STATISTICS_EX::<unnamed_type_MftBitmapWritesUserLevel> MftBitmapWritesUserLevel;
+  unsigned __int64 UserIndexReads;
+  unsigned __int64 UserIndexReadBytes;
+  unsigned __int64 UserIndexWrites;
+  unsigned __int64 UserIndexWriteBytes;
+  unsigned __int64 LogFileReads;
+  unsigned __int64 LogFileReadBytes;
+  unsigned __int64 LogFileWrites;
+  unsigned __int64 LogFileWriteBytes;
+  _NTFS_STATISTICS_EX::<unnamed_type_Allocate> Allocate;
+  unsigned int DiskResourcesExhausted;
+  unsigned __int64 VolumeTrimCount;
+  unsigned __int64 VolumeTrimTime;
+  unsigned __int64 VolumeTrimByteCount;
+  unsigned __int64 FileLevelTrimCount;
+  unsigned __int64 FileLevelTrimTime;
+  unsigned __int64 FileLevelTrimByteCount;
+  unsigned __int64 VolumeTrimSkippedCount;
+  unsigned __int64 VolumeTrimSkippedByteCount;
+  unsigned __int64 NtfsFillStatInfoFromMftRecordCalledCount;
+  unsigned __int64 NtfsFillStatInfoFromMftRecordBailedBecauseOfAttributeListCount;
+  unsigned __int64 NtfsFillStatInfoFromMftRecordBailedBecauseOfNonResReparsePointCount;
+
+};

@@ -1,0 +1,9 @@
+// Структура: __FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32
+// Полей: 1
+// Строки в оригинале: 352300-352303
+struct __FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32
+{
+
+  struct __FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_UINT32Vtbl *lpVtbl;
+
+};

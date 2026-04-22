@@ -1,0 +1,11 @@
+// Структура: NDR64_STRING_HEADER_FORMAT
+// Полей: 3
+// Строки в оригинале: 331443-331448
+struct NDR64_STRING_HEADER_FORMAT
+{
+
+  unsigned __int8 FormatCode;
+  _NDR64_STRING_FLAGS Flags;
+  unsigned __int16 ElementSize;
+
+};

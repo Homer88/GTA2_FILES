@@ -1,0 +1,10 @@
+// Структура: _RESOLVED_USERNAME_LIST
+// Полей: 2
+// Строки в оригинале: 125097-125101
+struct _RESOLVED_USERNAME_LIST
+{
+
+  unsigned int cItems;
+  _RESOLVED_USERNAME_INFO rgUserNameInfo[1];
+
+};

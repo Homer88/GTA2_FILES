@@ -1,0 +1,11 @@
+// Структура: _HEAP_VAMGR_VASPACE
+// Полей: 3
+// Строки в оригинале: 20387-20392
+struct _HEAP_VAMGR_VASPACE
+{
+
+  _RTLP_HP_ADDRESS_SPACE_TYPE AddressSpaceType;
+  unsigned int BaseAddress;
+  $00540E99D82B11E087477D0D8104B339 ___u2;
+
+};

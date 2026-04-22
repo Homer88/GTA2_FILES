@@ -1,0 +1,12 @@
+// Структура: _KENTROPY_TIMING_STATE
+// Полей: 4
+// Строки в оригинале: 13696-13702
+struct _KENTROPY_TIMING_STATE
+{
+
+  unsigned int EntropyCount;
+  unsigned int Buffer[64];
+  _KDPC Dpc;
+  unsigned int LastDeliveredBuffer;
+
+};

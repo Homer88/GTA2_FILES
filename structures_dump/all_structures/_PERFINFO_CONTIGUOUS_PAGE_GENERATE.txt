@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_CONTIGUOUS_PAGE_GENERATE
+// Полей: 2
+// Строки в оригинале: 310726-310730
+struct _PERFINFO_CONTIGUOUS_PAGE_GENERATE
+{
+
+  unsigned __int64 ThreadId;
+  unsigned __int64 NumberOfBytes;
+
+};

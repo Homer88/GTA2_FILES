@@ -1,0 +1,16 @@
+// Структура: tagFONTDESC
+// Полей: 8
+// Строки в оригинале: 124276-124286
+struct tagFONTDESC
+{
+
+  unsigned int cbSizeofstruct;
+  wchar_t *lpstrName;
+  tagCY cySize;
+  __int16 sWeight;
+  __int16 sCharset;
+  int fItalic;
+  int fUnderline;
+  int fStrikethrough;
+
+};

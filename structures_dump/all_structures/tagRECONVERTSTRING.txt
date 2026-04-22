@@ -1,0 +1,16 @@
+// Структура: tagRECONVERTSTRING
+// Полей: 8
+// Строки в оригинале: 94177-94187
+struct tagRECONVERTSTRING
+{
+
+  unsigned int dwSize;
+  unsigned int dwVersion;
+  unsigned int dwStrLen;
+  unsigned int dwStrOffset;
+  unsigned int dwCompStrLen;
+  unsigned int dwCompStrOffset;
+  unsigned int dwTargetStrLen;
+  unsigned int dwTargetStrOffset;
+
+};

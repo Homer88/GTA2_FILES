@@ -1,0 +1,12 @@
+// Структура: _PERFINFO_PO_SESSION_CALLOUT
+// Полей: 4
+// Строки в оригинале: 311327-311333
+struct _PERFINFO_PO_SESSION_CALLOUT
+{
+
+  POWER_ACTION SystemAction;
+  _SYSTEM_POWER_STATE MinSystemState;
+  unsigned int Flags;
+  unsigned int PowerStateTask;
+
+};

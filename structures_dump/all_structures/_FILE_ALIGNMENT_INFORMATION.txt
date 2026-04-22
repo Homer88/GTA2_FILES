@@ -1,0 +1,9 @@
+// Структура: _FILE_ALIGNMENT_INFORMATION
+// Полей: 1
+// Строки в оригинале: 91338-91341
+struct _FILE_ALIGNMENT_INFORMATION
+{
+
+  unsigned int AlignmentRequirement;
+
+};

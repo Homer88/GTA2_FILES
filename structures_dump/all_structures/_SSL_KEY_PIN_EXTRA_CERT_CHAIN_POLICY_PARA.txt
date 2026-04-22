@@ -1,0 +1,11 @@
+// Структура: _SSL_KEY_PIN_EXTRA_CERT_CHAIN_POLICY_PARA
+// Полей: 3
+// Строки в оригинале: 89155-89160
+struct _SSL_KEY_PIN_EXTRA_CERT_CHAIN_POLICY_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int dwReserved;
+  const wchar_t *pwszServerName;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IDirect3DDevice9
+// Полей: 1
+// Строки в оригинале: 25076-25079
+struct IDirect3DDevice9
+{
+
+  struct IDirect3DDevice9Vtbl *lpVtbl;
+
+};

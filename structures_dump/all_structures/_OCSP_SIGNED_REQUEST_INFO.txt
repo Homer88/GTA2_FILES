@@ -1,0 +1,10 @@
+// Структура: _OCSP_SIGNED_REQUEST_INFO
+// Полей: 2
+// Строки в оригинале: 87432-87436
+struct _OCSP_SIGNED_REQUEST_INFO
+{
+
+  _CRYPTOAPI_BLOB ToBeSigned;
+  _OCSP_SIGNATURE_INFO *pOptionalSignatureInfo;
+
+};

@@ -1,0 +1,17 @@
+// Структура: tagCStdStubBuffer2
+// Полей: 9
+// Строки в оригинале: 286205-286216
+struct tagCStdStubBuffer2
+{
+
+  const void *lpForwardingVtbl;
+  IRpcStubBuffer *pBaseStubBuffer;
+  const IRpcStubBufferVtbl *lpVtbl;
+  int RefCount;
+  IUnknown *pvServerObject;
+  const ICallFactoryVtbl *pCallFactoryVtbl;
+  const _GUID *pAsyncIID;
+  IPSFactoryBuffer *pPSFactory;
+  const IReleaseMarshalBuffersVtbl *pRMBVtbl;
+
+};

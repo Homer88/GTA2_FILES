@@ -1,0 +1,10 @@
+// Структура: _MTA_USAGE_INCREMENTOR
+// Полей: 2
+// Строки в оригинале: 219864-219868
+struct _MTA_USAGE_INCREMENTOR
+{
+
+  unsigned int ulTime;
+  unsigned int dwThreadId;
+
+};

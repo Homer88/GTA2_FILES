@@ -1,0 +1,10 @@
+// Структура: POWER_STATE_NOTIFY_HANDLER
+// Полей: 2
+// Строки в оригинале: 107811-107815
+struct POWER_STATE_NOTIFY_HANDLER
+{
+
+  int (__stdcall *Handler)(POWER_STATE_HANDLER_TYPE, void *, unsigned __int8);
+  void *Context;
+
+};

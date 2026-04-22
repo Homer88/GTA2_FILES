@@ -1,0 +1,10 @@
+// Структура: _TRANSACTION_NOTIFICATION_MARSHAL_ARGUMENT
+// Полей: 2
+// Строки в оригинале: 104468-104472
+struct _TRANSACTION_NOTIFICATION_MARSHAL_ARGUMENT
+{
+
+  unsigned int MarshalCookie;
+  _GUID UOW;
+
+};

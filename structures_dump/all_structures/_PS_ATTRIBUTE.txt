@@ -1,0 +1,12 @@
+// Структура: _PS_ATTRIBUTE
+// Полей: 4
+// Строки в оригинале: 98667-98673
+struct _PS_ATTRIBUTE
+{
+
+  unsigned int Attribute;
+  unsigned int Size;
+  $271843F7A9209B54DFA4BBDD7956CF72 ___u2;
+  unsigned int *ReturnLength;
+
+};

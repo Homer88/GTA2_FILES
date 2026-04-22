@@ -1,0 +1,59 @@
+// Структура: PoliceRoadblock
+// Полей: 51
+// Строки в оригинале: 8860-8913
+struct PoliceRoadblock
+{
+
+  char field;
+  char field_1;
+  char field_2;
+  char field_3;
+  int field_4;
+  char field_8;
+  char field_9;
+  char field_A;
+  char field_B;
+  __int16 field_C;
+  char field_E;
+  char field_F;
+  Car *Car;
+  Car *Car1;
+  Car *Car2;
+  Car *Car3;
+  Car *Car4;
+  Car *Car5;
+  EventHandler *S63;
+  EventHandler *S63_1;
+  EventHandler *S63_2;
+  EventHandler *S63_3;
+  EventHandler *S63_4;
+  EventHandler *S63_5;
+  EventHandler *S63_6;
+  EventHandler *S63_7;
+  EventHandler *S63_8;
+  EventHandler *S63_9;
+  EventHandler *S63_10;
+  EventHandler *field_54;
+  int field_58;
+  int field_5C;
+  int field_60;
+  int field_64;
+  int field_68;
+  int field_6C;
+  int field_70;
+  int field_74;
+  int field_78;
+  int field_7C;
+  int field_80;
+  int field_84;
+  Ped *Ped;
+  Ped *Ped1;
+  Ped *Ped2;
+  Ped *Ped3;
+  Ped *Ped4;
+  Ped *Ped5;
+  AudioSourceParams *S9;
+  _BYTE gapA4[571];
+  char field_0;
+
+};

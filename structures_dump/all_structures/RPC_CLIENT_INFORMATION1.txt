@@ -1,0 +1,12 @@
+// Структура: RPC_CLIENT_INFORMATION1
+// Полей: 4
+// Строки в оригинале: 111862-111868
+struct RPC_CLIENT_INFORMATION1
+{
+
+  unsigned __int8 *UserName;
+  unsigned __int8 *ComputerName;
+  unsigned __int16 Privilege;
+  unsigned int AuthFlags;
+
+};

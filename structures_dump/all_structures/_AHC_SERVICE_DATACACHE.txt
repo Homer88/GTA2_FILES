@@ -1,0 +1,18 @@
+// Структура: _AHC_SERVICE_DATACACHE
+// Полей: 10
+// Строки в оригинале: 309400-309412
+struct _AHC_SERVICE_DATACACHE
+{
+
+  void *FileHandle;
+  unsigned __int16 ExeType;
+  unsigned __int16 Padding;
+  unsigned int HintFlags;
+  void *ProcessHandle;
+  _UNICODE_STRING FileName;
+  _UNICODE_STRING Environment;
+  _UNICODE_STRING PackageAlias;
+  unsigned int CustomDataSize;
+  unsigned __int8 *CustomData;
+
+};

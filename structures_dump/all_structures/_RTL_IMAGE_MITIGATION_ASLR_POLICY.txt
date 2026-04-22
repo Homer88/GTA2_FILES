@@ -1,0 +1,11 @@
+// Структура: _RTL_IMAGE_MITIGATION_ASLR_POLICY
+// Полей: 3
+// Строки в оригинале: 105031-105036
+struct _RTL_IMAGE_MITIGATION_ASLR_POLICY
+{
+
+  _RTL_IMAGE_MITIGATION_POLICY ForceRelocateImages;
+  _RTL_IMAGE_MITIGATION_POLICY BottomUpRandomization;
+  _RTL_IMAGE_MITIGATION_POLICY HighEntropyRandomization;
+
+};

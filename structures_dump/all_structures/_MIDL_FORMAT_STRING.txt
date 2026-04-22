@@ -1,0 +1,10 @@
+// Структура: _MIDL_FORMAT_STRING
+// Полей: 2
+// Строки в оригинале: 100096-100100
+struct _MIDL_FORMAT_STRING
+{
+
+  __int16 Pad;
+  unsigned __int8 Format[];
+
+};

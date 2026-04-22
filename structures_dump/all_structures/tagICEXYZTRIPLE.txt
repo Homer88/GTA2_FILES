@@ -1,0 +1,11 @@
+// Структура: tagICEXYZTRIPLE
+// Полей: 3
+// Строки в оригинале: 93149-93154
+struct tagICEXYZTRIPLE
+{
+
+  tagCIEXYZ ciexyzRed;
+  tagCIEXYZ ciexyzGreen;
+  tagCIEXYZ ciexyzBlue;
+
+};

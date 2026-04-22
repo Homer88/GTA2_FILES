@@ -1,0 +1,9 @@
+// Структура: IShellFolderBand
+// Полей: 1
+// Строки в оригинале: 36407-36410
+struct IShellFolderBand
+{
+
+  struct IShellFolderBandVtbl *lpVtbl;
+
+};

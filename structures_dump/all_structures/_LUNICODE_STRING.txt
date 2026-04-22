@@ -1,0 +1,11 @@
+// Структура: _LUNICODE_STRING
+// Полей: 3
+// Строки в оригинале: 95236-95241
+struct _LUNICODE_STRING
+{
+
+  unsigned int Length;
+  unsigned int MaximumLength;
+  wchar_t *Buffer;
+
+};

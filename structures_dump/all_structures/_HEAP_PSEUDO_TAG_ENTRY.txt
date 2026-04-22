@@ -1,0 +1,11 @@
+// Структура: _HEAP_PSEUDO_TAG_ENTRY
+// Полей: 3
+// Строки в оригинале: 21091-21096
+struct _HEAP_PSEUDO_TAG_ENTRY
+{
+
+  unsigned int Allocs;
+  unsigned int Frees;
+  unsigned int Size;
+
+};

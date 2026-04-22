@@ -1,0 +1,16 @@
+// Структура: IHTMLMimeTypesCollectionVtbl
+// Полей: 8
+// Строки в оригинале: 38972-38982
+struct IHTMLMimeTypesCollectionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLMimeTypesCollection *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLMimeTypesCollection *This);
+  ULONG (__stdcall *Release)(IHTMLMimeTypesCollection *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLMimeTypesCollection *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLMimeTypesCollection *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLMimeTypesCollection *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLMimeTypesCollection *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_length)(IHTMLMimeTypesCollection *This, int *p);
+
+};

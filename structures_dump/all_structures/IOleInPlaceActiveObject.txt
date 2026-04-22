@@ -1,0 +1,9 @@
+// Структура: IOleInPlaceActiveObject
+// Полей: 1
+// Строки в оригинале: 26932-26935
+struct IOleInPlaceActiveObject
+{
+
+  struct IOleInPlaceActiveObjectVtbl *lpVtbl;
+
+};

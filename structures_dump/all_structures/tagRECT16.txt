@@ -1,0 +1,12 @@
+// Структура: tagRECT16
+// Полей: 4
+// Строки в оригинале: 125303-125309
+struct tagRECT16
+{
+
+  __int16 left;
+  __int16 top;
+  __int16 right;
+  __int16 bottom;
+
+};

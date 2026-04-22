@@ -1,0 +1,13 @@
+// Структура: tagEMRSETPALETTEENTRIES
+// Полей: 5
+// Строки в оригинале: 93467-93474
+struct tagEMRSETPALETTEENTRIES
+{
+
+  tagEMR emr;
+  unsigned int ihPal;
+  unsigned int iStart;
+  unsigned int cEntries;
+  tagPALETTEENTRY aPalEntries[1];
+
+};

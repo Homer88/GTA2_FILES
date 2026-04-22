@@ -1,0 +1,12 @@
+// Структура: IShellItemImageFactoryVtbl
+// Полей: 4
+// Строки в оригинале: 39783-39789
+struct IShellItemImageFactoryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellItemImageFactory *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellItemImageFactory *This);
+  ULONG (__stdcall *Release)(IShellItemImageFactory *This);
+  HRESULT (__stdcall *GetImage)(IShellItemImageFactory *This, SIZE size, SIIGBF flags, HBITMAP *phbm);
+
+};

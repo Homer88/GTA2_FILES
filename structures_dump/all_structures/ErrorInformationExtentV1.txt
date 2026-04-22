@@ -1,0 +1,14 @@
+// Структура: ErrorInformationExtentV1
+// Полей: 6
+// Строки в оригинале: 314156-314164
+struct ErrorInformationExtentV1
+{
+
+  unsigned int helpContext;
+  _GUID iid;
+  wchar_t *source;
+  wchar_t *description;
+  wchar_t *helpFile;
+  unsigned int reservedForVersioning[8];
+
+};

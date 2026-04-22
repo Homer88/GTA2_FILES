@@ -1,0 +1,39 @@
+// Структура: _IMAGE_OPTIONAL_HEADER
+// Полей: 31
+// Строки в оригинале: 12880-12913
+struct _IMAGE_OPTIONAL_HEADER
+{
+
+  unsigned __int16 Magic;
+  unsigned __int8 MajorLinkerVersion;
+  unsigned __int8 MinorLinkerVersion;
+  unsigned int SizeOfCode;
+  unsigned int SizeOfInitializedData;
+  unsigned int SizeOfUninitializedData;
+  unsigned int AddressOfEntryPoint;
+  unsigned int BaseOfCode;
+  unsigned int BaseOfData;
+  unsigned int ImageBase;
+  unsigned int SectionAlignment;
+  unsigned int FileAlignment;
+  unsigned __int16 MajorOperatingSystemVersion;
+  unsigned __int16 MinorOperatingSystemVersion;
+  unsigned __int16 MajorImageVersion;
+  unsigned __int16 MinorImageVersion;
+  unsigned __int16 MajorSubsystemVersion;
+  unsigned __int16 MinorSubsystemVersion;
+  unsigned int Win32VersionValue;
+  unsigned int SizeOfImage;
+  unsigned int SizeOfHeaders;
+  unsigned int CheckSum;
+  unsigned __int16 Subsystem;
+  unsigned __int16 DllCharacteristics;
+  unsigned int SizeOfStackReserve;
+  unsigned int SizeOfStackCommit;
+  unsigned int SizeOfHeapReserve;
+  unsigned int SizeOfHeapCommit;
+  unsigned int LoaderFlags;
+  unsigned int NumberOfRvaAndSizes;
+  _IMAGE_DATA_DIRECTORY DataDirectory[16];
+
+};

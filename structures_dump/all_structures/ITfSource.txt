@@ -1,0 +1,9 @@
+// Структура: ITfSource
+// Полей: 1
+// Строки в оригинале: 33918-33921
+struct ITfSource
+{
+
+  struct ITfSourceVtbl *lpVtbl;
+
+};

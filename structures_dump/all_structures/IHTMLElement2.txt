@@ -1,0 +1,9 @@
+// Структура: IHTMLElement2
+// Полей: 1
+// Строки в оригинале: 42535-42538
+struct IHTMLElement2
+{
+
+  struct IHTMLElement2Vtbl *lpVtbl;
+
+};

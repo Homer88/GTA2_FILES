@@ -1,0 +1,11 @@
+// Структура: _TEB_ACTIVE_FRAME
+// Полей: 3
+// Строки в оригинале: 2933-2938
+struct _TEB_ACTIVE_FRAME
+{
+
+  unsigned int Flags;
+  _TEB_ACTIVE_FRAME *Previous;
+  const _TEB_ACTIVE_FRAME_CONTEXT *Context;
+
+};

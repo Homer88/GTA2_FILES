@@ -1,0 +1,9 @@
+// Структура: _SERVICE_REQUIRED_PRIVILEGES_INFOW
+// Полей: 1
+// Строки в оригинале: 89120-89123
+struct _SERVICE_REQUIRED_PRIVILEGES_INFOW
+{
+
+  wchar_t *pmszRequiredPrivileges;
+
+};

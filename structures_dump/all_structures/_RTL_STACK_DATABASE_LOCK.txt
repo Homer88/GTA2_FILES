@@ -1,0 +1,9 @@
+// Структура: _RTL_STACK_DATABASE_LOCK
+// Полей: 1
+// Строки в оригинале: 22371-22374
+struct _RTL_STACK_DATABASE_LOCK
+{
+
+  _RTL_SRWLOCK Lock;
+
+};

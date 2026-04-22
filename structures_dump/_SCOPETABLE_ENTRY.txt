@@ -1,0 +1,10 @@
+// Structure: _SCOPETABLE_ENTRY
+// Lines: 2220 - 2225
+// Fields: 4
+
+struct _SCOPETABLE_ENTRY
+{
+  int EnclosingLevel;
+  void *FilterFunc;
+  void *HandlerFunc;
+};

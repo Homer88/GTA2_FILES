@@ -1,0 +1,17 @@
+// Структура: IPersistFileVtbl
+// Полей: 9
+// Строки в оригинале: 35812-35823
+struct IPersistFileVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPersistFile *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPersistFile *This);
+  ULONG (__stdcall *Release)(IPersistFile *This);
+  HRESULT (__stdcall *GetClassID)(IPersistFile *This, CLSID *pClassID);
+  HRESULT (__stdcall *IsDirty)(IPersistFile *This);
+  HRESULT (__stdcall *Load)(IPersistFile *This, LPCOLESTR pszFileName, DWORD dwMode);
+  HRESULT (__stdcall *Save)(IPersistFile *This, LPCOLESTR pszFileName, BOOL fRemember);
+  HRESULT (__stdcall *SaveCompleted)(IPersistFile *This, LPCOLESTR pszFileName);
+  HRESULT (__stdcall *GetCurFile)(IPersistFile *This, LPOLESTR *ppszFileName);
+
+};

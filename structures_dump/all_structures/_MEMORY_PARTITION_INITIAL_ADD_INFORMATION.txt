@@ -1,0 +1,12 @@
+// Структура: _MEMORY_PARTITION_INITIAL_ADD_INFORMATION
+// Полей: 4
+// Строки в оригинале: 99395-99401
+struct _MEMORY_PARTITION_INITIAL_ADD_INFORMATION
+{
+
+  unsigned int Flags;
+  unsigned int NumberOfRanges;
+  unsigned int NumberOfPagesAdded;
+  _MEMORY_PARTITION_PAGE_RANGE PartitionRanges[1];
+
+};

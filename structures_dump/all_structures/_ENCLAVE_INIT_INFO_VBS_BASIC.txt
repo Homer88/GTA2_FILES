@@ -1,0 +1,14 @@
+// Структура: _ENCLAVE_INIT_INFO_VBS_BASIC
+// Полей: 6
+// Строки в оригинале: 84806-84814
+struct _ENCLAVE_INIT_INFO_VBS_BASIC
+{
+
+  unsigned __int8 FamilyId[16];
+  unsigned __int8 ImageId[16];
+  unsigned __int64 EnclaveSize;
+  unsigned int EnclaveSvn;
+  unsigned int Reserved;
+  $CD149B68642948FA2C54F72F5474F3EE ___u5;
+
+};

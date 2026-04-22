@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_POOL_ZEROING_INFORMATION
+// Полей: 1
+// Строки в оригинале: 99991-99994
+struct _SYSTEM_POOL_ZEROING_INFORMATION
+{
+
+  unsigned __int8 PoolZeroingSupportPresent;
+
+};

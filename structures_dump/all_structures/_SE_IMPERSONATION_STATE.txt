@@ -1,0 +1,12 @@
+// Структура: _SE_IMPERSONATION_STATE
+// Полей: 4
+// Строки в оригинале: 103622-103628
+struct _SE_IMPERSONATION_STATE
+{
+
+  void *Token;
+  unsigned __int8 CopyOnOpen;
+  unsigned __int8 EffectiveOnly;
+  _SECURITY_IMPERSONATION_LEVEL Level;
+
+};

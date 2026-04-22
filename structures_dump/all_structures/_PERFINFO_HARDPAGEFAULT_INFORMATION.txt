@@ -1,0 +1,13 @@
+// Структура: _PERFINFO_HARDPAGEFAULT_INFORMATION
+// Полей: 5
+// Строки в оригинале: 310930-310937
+struct _PERFINFO_HARDPAGEFAULT_INFORMATION
+{
+
+  _LARGE_INTEGER ReadOffset;
+  void *VirtualAddress;
+  void *FileObject;
+  unsigned int ThreadId;
+  unsigned int ByteCount;
+
+};

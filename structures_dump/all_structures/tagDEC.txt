@@ -1,0 +1,15 @@
+// Структура: tagDEC
+// Полей: 7
+// Строки в оригинале: 23246-23255
+struct tagDEC
+{
+
+  USHORT wReserved;
+  union
+  {
+    struct
+    {
+      BYTE scale;
+      BYTE sign;
+    
+};

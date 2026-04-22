@@ -1,0 +1,17 @@
+// Структура: tagDRAWITEMSTRUCT
+// Полей: 9
+// Строки в оригинале: 86687-86698
+struct tagDRAWITEMSTRUCT
+{
+
+  unsigned int CtlType;
+  unsigned int CtlID;
+  unsigned int itemID;
+  unsigned int itemAction;
+  unsigned int itemState;
+  HWND__ *hwndItem;
+  HDC__ *hDC;
+  tagRECT rcItem;
+  unsigned int itemData;
+
+};

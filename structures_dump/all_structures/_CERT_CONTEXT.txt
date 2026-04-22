@@ -1,0 +1,13 @@
+// Структура: _CERT_CONTEXT
+// Полей: 5
+// Строки в оригинале: 62540-62547
+struct _CERT_CONTEXT
+{
+
+  unsigned int dwCertEncodingType;
+  unsigned __int8 *pbCertEncoded;
+  unsigned int cbCertEncoded;
+  _CERT_INFO *pCertInfo;
+  void *hCertStore;
+
+};

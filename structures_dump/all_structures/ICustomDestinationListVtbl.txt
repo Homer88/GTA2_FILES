@@ -1,0 +1,20 @@
+// Структура: ICustomDestinationListVtbl
+// Полей: 12
+// Строки в оригинале: 39369-39383
+struct ICustomDestinationListVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICustomDestinationList *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICustomDestinationList *This);
+  ULONG (__stdcall *Release)(ICustomDestinationList *This);
+  HRESULT (__stdcall *SetAppID)(ICustomDestinationList *This, LPCWSTR pszAppID);
+  HRESULT (__stdcall *BeginList)(ICustomDestinationList *This, UINT *pcMinSlots, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *AppendCategory)(ICustomDestinationList *This, LPCWSTR pszCategory, IObjectArray *poa);
+  HRESULT (__stdcall *AppendKnownCategory)(ICustomDestinationList *This, KNOWNDESTCATEGORY category);
+  HRESULT (__stdcall *AddUserTasks)(ICustomDestinationList *This, IObjectArray *poa);
+  HRESULT (__stdcall *CommitList)(ICustomDestinationList *This);
+  HRESULT (__stdcall *GetRemovedDestinations)(ICustomDestinationList *This, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *DeleteList)(ICustomDestinationList *This, LPCWSTR pszAppID);
+  HRESULT (__stdcall *AbortList)(ICustomDestinationList *This);
+
+};

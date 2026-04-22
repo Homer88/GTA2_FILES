@@ -1,0 +1,12 @@
+// Структура: _RTL_BUFFER
+// Полей: 4
+// Строки в оригинале: 79678-79684
+struct _RTL_BUFFER
+{
+
+  unsigned __int8 *Buffer;
+  unsigned __int8 *StaticBuffer;
+  unsigned int Size;
+  unsigned int StaticSize;
+
+};

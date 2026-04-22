@@ -1,0 +1,9 @@
+// Структура: IPrincipal
+// Полей: 1
+// Строки в оригинале: 44653-44656
+struct IPrincipal
+{
+
+  struct IPrincipalVtbl *lpVtbl;
+
+};

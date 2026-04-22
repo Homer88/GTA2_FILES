@@ -1,0 +1,12 @@
+// Структура: __NCRYPT_KEY_ACCESS_POLICY_BLOB
+// Полей: 4
+// Строки в оригинале: 93990-93996
+struct __NCRYPT_KEY_ACCESS_POLICY_BLOB
+{
+
+  unsigned int dwVersion;
+  unsigned int dwPolicyFlags;
+  unsigned int cbUserSid;
+  unsigned int cbApplicationSid;
+
+};

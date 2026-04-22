@@ -1,0 +1,9 @@
+// Структура: _QUERY_PERFORMANCE_COUNTER_FLAGS
+// Полей: 1
+// Строки в оригинале: 87849-87852
+struct _QUERY_PERFORMANCE_COUNTER_FLAGS
+{
+
+  $EC6777536FCF82562EC2F0AD0D774C70 ___u0;
+
+};

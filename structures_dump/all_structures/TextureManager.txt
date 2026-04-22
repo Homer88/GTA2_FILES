@@ -1,0 +1,19 @@
+// Структура: TextureManager
+// Полей: 11
+// Строки в оригинале: 8172-8185
+struct TextureManager
+{
+
+  void *BufferTexture4M[1024];
+  char field_1000;
+  bool TexturesInitialised;
+  char field_1002;
+  char field_1003;
+  GLuint *Buffer_Arr48[48];
+  S88 Arr_96_S88[96];
+  GLuint *Texture;
+  S89 S89[7];
+  __int16 field_15D4;
+  __int16 PalitrePal;
+
+};

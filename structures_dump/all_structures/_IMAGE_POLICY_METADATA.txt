@@ -1,0 +1,12 @@
+// Структура: _IMAGE_POLICY_METADATA
+// Полей: 4
+// Строки в оригинале: 94472-94478
+struct _IMAGE_POLICY_METADATA
+{
+
+  unsigned __int8 Version;
+  unsigned __int8 Reserved0[7];
+  unsigned __int64 ApplicationId;
+  _IMAGE_POLICY_ENTRY Policies[];
+
+};

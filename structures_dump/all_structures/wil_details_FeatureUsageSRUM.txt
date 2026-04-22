@@ -1,0 +1,11 @@
+// Структура: wil_details_FeatureUsageSRUM
+// Полей: 3
+// Строки в оригинале: 142506-142511
+struct wil_details_FeatureUsageSRUM
+{
+
+  unsigned int featureId;
+  unsigned __int16 serviceReportingKind;
+  unsigned int usageCount;
+
+};

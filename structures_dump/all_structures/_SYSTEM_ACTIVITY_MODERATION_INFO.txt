@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_ACTIVITY_MODERATION_INFO
+// Полей: 3
+// Строки в оригинале: 93982-93987
+struct _SYSTEM_ACTIVITY_MODERATION_INFO
+{
+
+  _UNICODE_STRING Identifier;
+  _SYSTEM_ACTIVITY_MODERATION_STATE ModerationState;
+  _SYSTEM_ACTIVITY_MODERATION_APP_TYPE AppType;
+
+};

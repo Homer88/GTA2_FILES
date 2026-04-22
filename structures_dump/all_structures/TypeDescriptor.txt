@@ -1,0 +1,11 @@
+// Структура: TypeDescriptor
+// Полей: 3
+// Строки в оригинале: 58861-58866
+struct TypeDescriptor
+{
+
+  unsigned int hash;
+  void *spare;
+  char name[];
+
+};

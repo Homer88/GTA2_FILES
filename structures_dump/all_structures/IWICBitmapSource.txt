@@ -1,0 +1,9 @@
+// Структура: IWICBitmapSource
+// Полей: 1
+// Строки в оригинале: 40153-40156
+struct IWICBitmapSource
+{
+
+  struct IWICBitmapSourceVtbl *lpVtbl;
+
+};

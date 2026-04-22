@@ -1,0 +1,10 @@
+// Структура: _ASSEMBLY_STORAGE_MAP_RESOLUTION_CALLBACK_DATA_RESOLUTION_SUCCESSFUL
+// Полей: 2
+// Строки в оригинале: 79529-79533
+struct _ASSEMBLY_STORAGE_MAP_RESOLUTION_CALLBACK_DATA_RESOLUTION_SUCCESSFUL
+{
+
+  void *ResolutionContext;
+  unsigned int RootIndexUsed;
+
+};

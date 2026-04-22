@@ -1,0 +1,24 @@
+// Структура: tagQACONTAINER
+// Полей: 16
+// Строки в оригинале: 122819-122837
+struct tagQACONTAINER
+{
+
+  unsigned int cbSize;
+  IOleClientSite *pClientSite;
+  IAdviseSinkEx *pAdviseSink;
+  IPropertyNotifySink *pPropertyNotifySink;
+  IUnknown *pUnkEventSink;
+  unsigned int dwAmbientFlags;
+  unsigned int colorFore;
+  unsigned int colorBack;
+  IFont *pFont;
+  IOleUndoManager *pUndoMgr;
+  unsigned int dwAppearance;
+  int lcid;
+  HPALETTE__ *hpal;
+  IBindHost *pBindHost;
+  IOleControlSite *pOleControlSite;
+  IServiceProvider *pServiceProvider;
+
+};

@@ -1,0 +1,20 @@
+// Структура: _CRYPT_RETRIEVE_AUX_INFO
+// Полей: 12
+// Строки в оригинале: 106272-106286
+struct _CRYPT_RETRIEVE_AUX_INFO
+{
+
+  unsigned int cbSize;
+  _FILETIME *pLastSyncTime;
+  unsigned int dwMaxUrlRetrievalByteCount;
+  _CRYPTNET_URL_CACHE_PRE_FETCH_INFO *pPreFetchInfo;
+  _CRYPTNET_URL_CACHE_FLUSH_INFO *pFlushInfo;
+  _CRYPTNET_URL_CACHE_RESPONSE_INFO **ppResponseInfo;
+  wchar_t *pwszCacheFileNamePrefix;
+  _FILETIME *pftCacheResync;
+  int fProxyCacheRetrieval;
+  unsigned int dwHttpStatusCode;
+  wchar_t **ppwszErrorResponseHeaders;
+  _CRYPTOAPI_BLOB **ppErrorContentBlob;
+
+};

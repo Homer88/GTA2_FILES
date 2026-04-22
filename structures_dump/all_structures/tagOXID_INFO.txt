@@ -1,0 +1,16 @@
+// Структура: tagOXID_INFO
+// Полей: 8
+// Строки в оригинале: 108756-108766
+struct tagOXID_INFO
+{
+
+  unsigned int dwTid;
+  unsigned int dwPid;
+  unsigned int dwAuthnHint;
+  tagCOMVERSION version;
+  _GUID ipidRemUnknown;
+  unsigned int dwFlags;
+  tagDUALSTRINGARRAY *psa;
+  _GUID guidProcessIdentifier;
+
+};

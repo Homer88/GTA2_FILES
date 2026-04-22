@@ -1,0 +1,30 @@
+// Структура: _EVENT_TRACE_PROPERTIES_V2
+// Полей: 22
+// Строки в оригинале: 313715-313739
+struct _EVENT_TRACE_PROPERTIES_V2
+{
+
+  _WNODE_HEADER Wnode;
+  unsigned int BufferSize;
+  unsigned int MinimumBuffers;
+  unsigned int MaximumBuffers;
+  unsigned int MaximumFileSize;
+  unsigned int LogFileMode;
+  unsigned int FlushTimer;
+  unsigned int EnableFlags;
+  $7EC6A83B8D656AE9F5F2E75604DB27F7 ___u8;
+  unsigned int NumberOfBuffers;
+  unsigned int FreeBuffers;
+  unsigned int EventsLost;
+  unsigned int BuffersWritten;
+  unsigned int LogBuffersLost;
+  unsigned int RealTimeBuffersLost;
+  void *LoggerThreadId;
+  unsigned int LogFileNameOffset;
+  unsigned int LoggerNameOffset;
+  $A35F26A649F69F49FDB1D419E80B94E1 ___u18;
+  unsigned int FilterDescCount;
+  _EVENT_FILTER_DESCRIPTOR *FilterDesc;
+  $8EF47BC6180DE0C3967B63B76EF450E1 ___u21;
+
+};

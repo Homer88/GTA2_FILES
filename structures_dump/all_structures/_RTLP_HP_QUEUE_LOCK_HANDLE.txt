@@ -1,0 +1,11 @@
+// Структура: _RTLP_HP_QUEUE_LOCK_HANDLE
+// Полей: 3
+// Строки в оригинале: 21690-21695
+struct _RTLP_HP_QUEUE_LOCK_HANDLE
+{
+
+  unsigned int Reserved1;
+  unsigned int LockPtr;
+  unsigned int HandleData;
+
+};

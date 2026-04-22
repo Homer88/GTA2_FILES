@@ -1,0 +1,14 @@
+// Структура: IOpenControlPanelVtbl
+// Полей: 6
+// Строки в оригинале: 43059-43067
+struct IOpenControlPanelVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOpenControlPanel *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOpenControlPanel *This);
+  ULONG (__stdcall *Release)(IOpenControlPanel *This);
+  HRESULT (__stdcall *Open)(IOpenControlPanel *This, LPCWSTR pszName, LPCWSTR pszPage, IUnknown *punkSite);
+  HRESULT (__stdcall *GetPath)(IOpenControlPanel *This, LPCWSTR pszName, LPWSTR pszPath, UINT cchPath);
+  HRESULT (__stdcall *GetCurrentView)(IOpenControlPanel *This, CPVIEW *pView);
+
+};

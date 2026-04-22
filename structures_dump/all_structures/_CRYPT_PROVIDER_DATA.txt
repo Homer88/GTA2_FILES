@@ -1,0 +1,41 @@
+// Структура: _CRYPT_PROVIDER_DATA
+// Полей: 33
+// Строки в оригинале: 121929-121964
+struct _CRYPT_PROVIDER_DATA
+{
+
+  unsigned int cbStruct;
+  _WINTRUST_DATA *pWintrustData;
+  int fOpenedFile;
+  HWND__ *hWndParent;
+  _GUID *pgActionID;
+  unsigned int hProv;
+  unsigned int dwError;
+  unsigned int dwRegSecuritySettings;
+  unsigned int dwRegPolicySettings;
+  _CRYPT_PROVIDER_FUNCTIONS *psPfns;
+  unsigned int cdwTrustStepErrors;
+  unsigned int *padwTrustStepErrors;
+  unsigned int chStores;
+  void **pahStores;
+  unsigned int dwEncoding;
+  void *hMsg;
+  unsigned int csSigners;
+  _CRYPT_PROVIDER_SGNR *pasSigners;
+  unsigned int csProvPrivData;
+  _CRYPT_PROVIDER_PRIVDATA *pasProvPrivData;
+  unsigned int dwSubjectChoice;
+  _PROVDATA_SIP *pPDSip;
+  char *pszUsageOID;
+  int fRecallWithState;
+  _FILETIME sftSystemTime;
+  char *pszCTLSignerUsageOID;
+  unsigned int dwProvFlags;
+  unsigned int dwFinalError;
+  _CERT_USAGE_MATCH *pRequestUsage;
+  unsigned int dwTrustPubSettings;
+  unsigned int dwUIStateFlags;
+  _CRYPT_PROVIDER_SIGSTATE *pSigState;
+  WINTRUST_SIGNATURE_SETTINGS_ *pSigSettings;
+
+};

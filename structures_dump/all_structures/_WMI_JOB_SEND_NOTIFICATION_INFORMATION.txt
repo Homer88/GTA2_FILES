@@ -1,0 +1,11 @@
+// Структура: _WMI_JOB_SEND_NOTIFICATION_INFORMATION
+// Полей: 3
+// Строки в оригинале: 311682-311687
+struct _WMI_JOB_SEND_NOTIFICATION_INFORMATION
+{
+
+  _GUID ContainerId;
+  unsigned int JobId;
+  unsigned int NotificationId;
+
+};

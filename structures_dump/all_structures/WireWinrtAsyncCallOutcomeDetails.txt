@@ -1,0 +1,11 @@
+// Структура: WireWinrtAsyncCallOutcomeDetails
+// Полей: 3
+// Строки в оригинале: 269621-269626
+struct WireWinrtAsyncCallOutcomeDetails
+{
+
+  __MIDL_XmitDefs_0004 outcome;
+  __MIDL_XmitDefs_0004 switchIs;
+  $B99553EC67E25BFA23EEFAE453FB9934 ___u2;
+
+};

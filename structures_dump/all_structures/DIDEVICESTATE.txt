@@ -1,0 +1,11 @@
+// Структура: DIDEVICESTATE
+// Полей: 3
+// Строки в оригинале: 28919-28924
+struct DIDEVICESTATE
+{
+
+  DWORD dwSize;
+  DWORD dwState;
+  DWORD dwLoad;
+
+};

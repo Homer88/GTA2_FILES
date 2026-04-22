@@ -1,0 +1,11 @@
+// Структура: PROCESSOR_IDLE_TIMES
+// Полей: 3
+// Строки в оригинале: 80653-80658
+struct PROCESSOR_IDLE_TIMES
+{
+
+  unsigned __int64 StartTime;
+  unsigned __int64 EndTime;
+  unsigned int Reserved[4];
+
+};

@@ -1,0 +1,10 @@
+// Структура: WinRTActivationPropertiesData
+// Полей: 2
+// Строки в оригинале: 194015-194019
+struct WinRTActivationPropertiesData
+{
+
+  HSTRING__ *activatableClassId;
+  HSTRING__ *packageFullName;
+
+};

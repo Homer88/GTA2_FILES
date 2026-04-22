@@ -1,0 +1,12 @@
+// Структура: _ETW_WAKE_COUNTER_EVENT
+// Полей: 4
+// Строки в оригинале: 310837-310843
+struct _ETW_WAKE_COUNTER_EVENT
+{
+
+  void *Object;
+  unsigned int Tag;
+  unsigned int ProcessId;
+  int Count;
+
+};

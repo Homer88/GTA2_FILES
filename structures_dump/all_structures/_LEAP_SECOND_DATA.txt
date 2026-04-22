@@ -1,0 +1,11 @@
+// Структура: _LEAP_SECOND_DATA
+// Полей: 3
+// Строки в оригинале: 21163-21168
+struct _LEAP_SECOND_DATA
+{
+
+  unsigned __int8 Enabled;
+  unsigned int Count;
+  _LARGE_INTEGER Data[1];
+
+};

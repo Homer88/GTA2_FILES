@@ -1,0 +1,13 @@
+// Структура: _PUBLIC_OBJECT_BASIC_INFORMATION
+// Полей: 5
+// Строки в оригинале: 80176-80183
+struct _PUBLIC_OBJECT_BASIC_INFORMATION
+{
+
+  unsigned int Attributes;
+  unsigned int GrantedAccess;
+  unsigned int HandleCount;
+  unsigned int PointerCount;
+  unsigned int Reserved[10];
+
+};

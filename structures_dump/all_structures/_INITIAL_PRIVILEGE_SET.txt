@@ -1,0 +1,11 @@
+// Структура: _INITIAL_PRIVILEGE_SET
+// Полей: 3
+// Строки в оригинале: 19172-19177
+struct _INITIAL_PRIVILEGE_SET
+{
+
+  unsigned int PrivilegeCount;
+  unsigned int Control;
+  _LUID_AND_ATTRIBUTES Privilege[3];
+
+};

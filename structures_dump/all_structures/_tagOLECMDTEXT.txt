@@ -1,0 +1,12 @@
+// Структура: _tagOLECMDTEXT
+// Полей: 4
+// Строки в оригинале: 32774-32780
+struct _tagOLECMDTEXT
+{
+
+  DWORD cmdtextf;
+  ULONG cwActual;
+  ULONG cwBuf;
+  wchar_t rgwz[1];
+
+};

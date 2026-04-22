@@ -1,0 +1,10 @@
+// Структура: _SEARCH_ITEM_INDEXING_STATUS
+// Полей: 2
+// Строки в оригинале: 44301-44305
+struct _SEARCH_ITEM_INDEXING_STATUS
+{
+
+  DWORD dwDocID;
+  HRESULT hrIndexingStatus;
+
+};

@@ -1,0 +1,15 @@
+// Структура: IEnumFORMATETCVtbl
+// Полей: 7
+// Строки в оригинале: 27273-27282
+struct IEnumFORMATETCVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumFORMATETC *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumFORMATETC *This);
+  ULONG (__stdcall *Release)(IEnumFORMATETC *This);
+  HRESULT (__stdcall *Next)(IEnumFORMATETC *This, ULONG celt, FORMATETC *rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumFORMATETC *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumFORMATETC *This);
+  HRESULT (__stdcall *Clone)(IEnumFORMATETC *This, IEnumFORMATETC **ppenum);
+
+};

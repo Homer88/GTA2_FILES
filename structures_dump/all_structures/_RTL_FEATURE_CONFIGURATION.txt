@@ -1,0 +1,16 @@
+// Структура: _RTL_FEATURE_CONFIGURATION
+// Полей: 8
+// Строки в оригинале: 98321-98331
+struct _RTL_FEATURE_CONFIGURATION
+{
+
+  unsigned int FeatureId;
+  unsigned __int32 Priority : 4;
+  unsigned __int32 EnabledState : 2;
+  unsigned __int32 IsWexpConfiguration : 1;
+  unsigned __int32 HasSubscriptions : 1;
+  unsigned __int32 Variant : 6;
+  unsigned __int32 VariantPayloadKind : 2;
+  unsigned int VariantPayload;
+
+};

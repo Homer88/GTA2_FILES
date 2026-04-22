@@ -1,0 +1,9 @@
+// Структура: _TRANSACTION_LIST_ENTRY
+// Полей: 1
+// Строки в оригинале: 88291-88294
+struct _TRANSACTION_LIST_ENTRY
+{
+
+  _GUID UOW;
+
+};

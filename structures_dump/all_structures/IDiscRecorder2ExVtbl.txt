@@ -1,0 +1,29 @@
+// Структура: IDiscRecorder2ExVtbl
+// Полей: 21
+// Строки в оригинале: 36127-36150
+struct IDiscRecorder2ExVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDiscRecorder2Ex *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDiscRecorder2Ex *This);
+  ULONG (__stdcall *Release)(IDiscRecorder2Ex *This);
+  HRESULT (__stdcall *SendCommandNoData)(IDiscRecorder2Ex *This, BYTE *Cdb, ULONG CdbSize, BYTE SenseBuffer[18], ULONG Timeout);
+  HRESULT (__stdcall *SendCommandSendDataToDevice)(IDiscRecorder2Ex *This, BYTE *Cdb, ULONG CdbSize, BYTE SenseBuffer[18], ULONG Timeout, BYTE *Buffer, ULONG_IMAPI2_NONZERO BufferSize);
+  HRESULT (__stdcall *SendCommandGetDataFromDevice)(IDiscRecorder2Ex *This, BYTE *Cdb, ULONG CdbSize, BYTE SenseBuffer[18], ULONG Timeout, BYTE *Buffer, ULONG_IMAPI2_NONZERO BufferSize, ULONG_IMAPI2_NOT_NEGATIVE *BufferFetched);
+  HRESULT (__stdcall *ReadDvdStructure)(IDiscRecorder2Ex *This, ULONG format, ULONG address, ULONG layer, ULONG agid, BYTE **data, ULONG_IMAPI2_DVD_STRUCTURE *count);
+  HRESULT (__stdcall *SendDvdStructure)(IDiscRecorder2Ex *This, ULONG format, BYTE *data, ULONG_IMAPI2_DVD_STRUCTURE count);
+  HRESULT (__stdcall *GetAdapterDescriptor)(IDiscRecorder2Ex *This, BYTE **data, ULONG_IMAPI2_ADAPTER_DESCRIPTOR *byteSize);
+  HRESULT (__stdcall *GetDeviceDescriptor)(IDiscRecorder2Ex *This, BYTE **data, ULONG_IMAPI2_DEVICE_DESCRIPTOR *byteSize);
+  HRESULT (__stdcall *GetDiscInformation)(IDiscRecorder2Ex *This, BYTE **discInformation, ULONG_IMAPI2_DISC_INFORMATION *byteSize);
+  HRESULT (__stdcall *GetTrackInformation)(IDiscRecorder2Ex *This, ULONG address, IMAPI_READ_TRACK_ADDRESS_TYPE addressType, BYTE **trackInformation, ULONG_IMAPI2_TRACK_INFORMATION *byteSize);
+  HRESULT (__stdcall *GetFeaturePage)(IDiscRecorder2Ex *This, IMAPI_FEATURE_PAGE_TYPE requestedFeature, BOOLEAN currentFeatureOnly, BYTE **featureData, ULONG_IMAPI2_FEATURE_PAGE *byteSize);
+  HRESULT (__stdcall *GetModePage)(IDiscRecorder2Ex *This, IMAPI_MODE_PAGE_TYPE requestedModePage, IMAPI_MODE_PAGE_REQUEST_TYPE requestType, BYTE **modePageData, ULONG_IMAPI2_MODE_PAGE *byteSize);
+  HRESULT (__stdcall *SetModePage)(IDiscRecorder2Ex *This, IMAPI_MODE_PAGE_REQUEST_TYPE requestType, BYTE *data, ULONG_IMAPI2_MODE_PAGE byteSize);
+  HRESULT (__stdcall *GetSupportedFeaturePages)(IDiscRecorder2Ex *This, BOOLEAN currentFeatureOnly, IMAPI_FEATURE_PAGE_TYPE **featureData, ULONG_IMAPI2_ALL_FEATURE_PAGES *byteSize);
+  HRESULT (__stdcall *GetSupportedProfiles)(IDiscRecorder2Ex *This, BOOLEAN currentOnly, IMAPI_PROFILE_TYPE **profileTypes, ULONG_IMAPI2_ALL_PROFILES *validProfiles);
+  HRESULT (__stdcall *GetSupportedModePages)(IDiscRecorder2Ex *This, IMAPI_MODE_PAGE_REQUEST_TYPE requestType, IMAPI_MODE_PAGE_TYPE **modePageTypes, ULONG_IMAPI2_ALL_MODE_PAGES *validPages);
+  HRESULT (__stdcall *GetByteAlignmentMask)(IDiscRecorder2Ex *This, ULONG *value);
+  HRESULT (__stdcall *GetMaximumNonPageAlignedTransferSize)(IDiscRecorder2Ex *This, ULONG *value);
+  HRESULT (__stdcall *GetMaximumPageAlignedTransferSize)(IDiscRecorder2Ex *This, ULONG *value);
+
+};

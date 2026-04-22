@@ -1,0 +1,10 @@
+// Структура: _CRYPT_PKCS12_PBE_PARAMS
+// Полей: 2
+// Строки в оригинале: 109852-109856
+struct _CRYPT_PKCS12_PBE_PARAMS
+{
+
+  int iIterations;
+  unsigned int cbSalt;
+
+};

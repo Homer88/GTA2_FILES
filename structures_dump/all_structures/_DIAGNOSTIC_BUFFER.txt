@@ -1,0 +1,14 @@
+// Структура: _DIAGNOSTIC_BUFFER
+// Полей: 6
+// Строки в оригинале: 95415-95423
+struct _DIAGNOSTIC_BUFFER
+{
+
+  unsigned int Size;
+  _REQUESTER_TYPE CallerType;
+  $AAF8897CEB946256847D2953FBB2D9F6 ___u2;
+  $79850556B0FB9F12BC5738C5A1497B95 ___u3;
+  unsigned int ServiceTag;
+  unsigned int ReasonOffset;
+
+};

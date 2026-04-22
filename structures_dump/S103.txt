@@ -1,0 +1,9 @@
+// Structure: S103
+// Lines: 4171 - 4175
+// Fields: 3
+
+struct S103
+{
+  S104 S104[10];
+  int Idex;
+};

@@ -1,0 +1,11 @@
+// Структура: tagCOMPOSITIONFORM
+// Полей: 3
+// Строки в оригинале: 88007-88012
+struct tagCOMPOSITIONFORM
+{
+
+  unsigned int dwStyle;
+  tagPOINT ptCurrentPos;
+  tagRECT rcArea;
+
+};

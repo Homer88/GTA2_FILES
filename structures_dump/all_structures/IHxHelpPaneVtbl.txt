@@ -1,0 +1,14 @@
+// Структура: IHxHelpPaneVtbl
+// Полей: 6
+// Строки в оригинале: 40337-40345
+struct IHxHelpPaneVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHxHelpPane *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHxHelpPane *This);
+  ULONG (__stdcall *Release)(IHxHelpPane *This);
+  HRESULT (__stdcall *DisplayTask)(IHxHelpPane *This, BSTR bstrUrl);
+  HRESULT (__stdcall *DisplayContents)(IHxHelpPane *This, BSTR bstrUrl);
+  HRESULT (__stdcall *DisplaySearchResults)(IHxHelpPane *This, BSTR bstrSearchQuery);
+
+};

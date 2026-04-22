@@ -1,0 +1,9 @@
+// Структура: RTL_HP_ENV_HANDLE
+// Полей: 1
+// Строки в оригинале: 20530-20533
+struct RTL_HP_ENV_HANDLE
+{
+
+  void *h[2];
+
+};

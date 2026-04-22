@@ -1,0 +1,11 @@
+// Структура: _CSV_QUERY_VETO_FILE_DIRECT_IO_OUTPUT
+// Полей: 3
+// Строки в оригинале: 80885-80890
+struct _CSV_QUERY_VETO_FILE_DIRECT_IO_OUTPUT
+{
+
+  unsigned __int64 VetoedFromAltitudeIntegral;
+  unsigned __int64 VetoedFromAltitudeDecimal;
+  wchar_t Reason[256];
+
+};

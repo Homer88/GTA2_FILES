@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_FEATURE_CONFIGURATION_QUERY
+// Полей: 2
+// Строки в оригинале: 104110-104114
+struct _SYSTEM_FEATURE_CONFIGURATION_QUERY
+{
+
+  _RTL_FEATURE_CONFIGURATION_TYPE ConfigurationType;
+  unsigned int FeatureId;
+
+};

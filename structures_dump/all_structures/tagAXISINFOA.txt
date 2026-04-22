@@ -1,0 +1,11 @@
+// Структура: tagAXISINFOA
+// Полей: 3
+// Строки в оригинале: 89642-89647
+struct tagAXISINFOA
+{
+
+  int axMinValue;
+  int axMaxValue;
+  unsigned __int8 axAxisName[16];
+
+};

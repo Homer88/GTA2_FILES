@@ -1,0 +1,10 @@
+// Structure: _UNICODE_STRING
+// Lines: 2476 - 2481
+// Fields: 4
+
+struct _UNICODE_STRING
+{
+  unsigned __int16 Length;
+  unsigned __int16 MaximumLength;
+  wchar_t *Buffer;
+};

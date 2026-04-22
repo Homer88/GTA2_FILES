@@ -1,0 +1,10 @@
+// Структура: tagDBOBJECT
+// Полей: 2
+// Строки в оригинале: 37223-37227
+struct tagDBOBJECT
+{
+
+  DWORD dwFlags;
+  IID iid;
+
+};

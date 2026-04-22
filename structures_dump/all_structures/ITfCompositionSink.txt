@@ -1,0 +1,9 @@
+// Структура: ITfCompositionSink
+// Полей: 1
+// Строки в оригинале: 32317-32320
+struct ITfCompositionSink
+{
+
+  struct ITfCompositionSinkVtbl *lpVtbl;
+
+};

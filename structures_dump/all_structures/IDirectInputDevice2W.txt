@@ -1,0 +1,9 @@
+// Структура: IDirectInputDevice2W
+// Полей: 1
+// Строки в оригинале: 29824-29827
+struct IDirectInputDevice2W
+{
+
+  struct IDirectInputDevice2WVtbl *lpVtbl;
+
+};

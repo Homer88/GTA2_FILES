@@ -1,0 +1,35 @@
+// Структура: S119
+// Полей: 27
+// Строки в оригинале: 8336-8365
+struct S119
+{
+
+  Car *Car;
+  Car *pCar;
+  int ID;
+  int field_C;
+  int field_10;
+  int field_14;
+  S103 *S103_1;
+  int field_1C;
+  S103 *S103_2;
+  int field_24;
+  S103 *S103;
+  int Player;
+  S103 *S103_3;
+  char field_34;
+  char field_35;
+  char field_36;
+  char field_37;
+  int field_38;
+  char field_3C;
+  char field_3D;
+  char field_3E;
+  char field_3F;
+  char field_40;
+  char field_41;
+  char field_42;
+  char field_43;
+  Car *Car1;
+
+};

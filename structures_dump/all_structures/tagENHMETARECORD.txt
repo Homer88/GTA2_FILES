@@ -1,0 +1,11 @@
+// Структура: tagENHMETARECORD
+// Полей: 3
+// Строки в оригинале: 102409-102414
+struct tagENHMETARECORD
+{
+
+  unsigned int iType;
+  unsigned int nSize;
+  unsigned int dParm[1];
+
+};

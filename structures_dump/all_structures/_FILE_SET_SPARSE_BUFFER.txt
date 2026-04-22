@@ -1,0 +1,9 @@
+// Структура: _FILE_SET_SPARSE_BUFFER
+// Полей: 1
+// Строки в оригинале: 105549-105552
+struct _FILE_SET_SPARSE_BUFFER
+{
+
+  unsigned __int8 SetSparse;
+
+};

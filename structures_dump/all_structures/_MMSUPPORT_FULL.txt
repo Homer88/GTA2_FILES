@@ -1,0 +1,10 @@
+// Структура: _MMSUPPORT_FULL
+// Полей: 2
+// Строки в оригинале: 18021-18025
+struct _MMSUPPORT_FULL
+{
+
+  _MMSUPPORT_INSTANCE Instance;
+  _MMSUPPORT_SHARED Shared;
+
+};

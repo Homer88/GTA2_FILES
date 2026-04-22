@@ -1,0 +1,12 @@
+// Структура: _CM_COMPONENT_INFORMATION
+// Полей: 4
+// Строки в оригинале: 99720-99726
+struct _CM_COMPONENT_INFORMATION
+{
+
+  _DEVICE_FLAGS Flags;
+  unsigned int Version;
+  unsigned int Key;
+  unsigned int AffinityMask;
+
+};

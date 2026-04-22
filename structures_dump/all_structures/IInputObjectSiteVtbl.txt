@@ -1,0 +1,12 @@
+// Структура: IInputObjectSiteVtbl
+// Полей: 4
+// Строки в оригинале: 39583-39589
+struct IInputObjectSiteVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IInputObjectSite *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IInputObjectSite *This);
+  ULONG (__stdcall *Release)(IInputObjectSite *This);
+  HRESULT (__stdcall *OnFocusChangeIS)(IInputObjectSite *This, IUnknown *punkObj, BOOL fSetFocus);
+
+};

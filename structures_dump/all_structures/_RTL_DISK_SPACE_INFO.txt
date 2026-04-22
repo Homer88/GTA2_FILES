@@ -1,0 +1,9 @@
+// Структура: _RTL_DISK_SPACE_INFO
+// Полей: 1
+// Строки в оригинале: 106979-106982
+struct _RTL_DISK_SPACE_INFO
+{
+
+  RTL_DISK_SPACE_POLICY Policy;
+
+};

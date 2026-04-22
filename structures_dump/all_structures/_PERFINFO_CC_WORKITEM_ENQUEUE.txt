@@ -1,0 +1,14 @@
+// Структура: _PERFINFO_CC_WORKITEM_ENQUEUE
+// Полей: 6
+// Строки в оригинале: 313369-313377
+struct _PERFINFO_CC_WORKITEM_ENQUEUE
+{
+
+  unsigned int WorkItemKey;
+  unsigned int FileObjectKey;
+  unsigned __int8 QueueType;
+  unsigned __int8 WorkItemType;
+  unsigned __int8 Requeue;
+  unsigned __int8 Reserved;
+
+};

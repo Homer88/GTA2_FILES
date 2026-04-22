@@ -1,0 +1,13 @@
+// Структура: _MIDL_WINRT_TYPE_SERIALIZATION_INFO
+// Полей: 5
+// Строки в оригинале: 101128-101135
+struct _MIDL_WINRT_TYPE_SERIALIZATION_INFO
+{
+
+  unsigned int Version;
+  const unsigned __int8 *TypeFormatString;
+  unsigned __int16 FormatStringSize;
+  unsigned __int16 TypeOffset;
+  const _MIDL_STUB_DESC *StubDesc;
+
+};

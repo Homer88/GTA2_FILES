@@ -1,0 +1,9 @@
+// Структура: CO_DEVICE_CATALOG_COOKIE__
+// Полей: 1
+// Строки в оригинале: 85016-85019
+struct CO_DEVICE_CATALOG_COOKIE__
+{
+
+  int unused;
+
+};

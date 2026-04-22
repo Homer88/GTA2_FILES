@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_PAGEFILE_INFORMATION_EX
+// Полей: 3
+// Строки в оригинале: 80565-80570
+struct _SYSTEM_PAGEFILE_INFORMATION_EX
+{
+
+  _SYSTEM_PAGEFILE_INFORMATION Info;
+  unsigned int MinimumSize;
+  unsigned int MaximumSize;
+
+};

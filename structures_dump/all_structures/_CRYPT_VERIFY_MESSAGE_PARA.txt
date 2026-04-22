@@ -1,0 +1,13 @@
+// Структура: _CRYPT_VERIFY_MESSAGE_PARA
+// Полей: 5
+// Строки в оригинале: 96369-96376
+struct _CRYPT_VERIFY_MESSAGE_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int dwMsgAndCertEncodingType;
+  unsigned int hCryptProv;
+  const _CERT_CONTEXT *(__stdcall *pfnGetSignerCertificate)(void *, unsigned int, _CERT_INFO *, void *);
+  void *pvGetArg;
+
+};

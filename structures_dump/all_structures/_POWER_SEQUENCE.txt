@@ -1,0 +1,11 @@
+// Структура: _POWER_SEQUENCE
+// Полей: 3
+// Строки в оригинале: 18806-18811
+struct _POWER_SEQUENCE
+{
+
+  unsigned int SequenceD1;
+  unsigned int SequenceD2;
+  unsigned int SequenceD3;
+
+};

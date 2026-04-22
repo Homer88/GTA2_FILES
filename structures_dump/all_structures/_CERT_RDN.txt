@@ -1,0 +1,10 @@
+// Структура: _CERT_RDN
+// Полей: 2
+// Строки в оригинале: 82451-82455
+struct _CERT_RDN
+{
+
+  unsigned int cRDNAttr;
+  _CERT_RDN_ATTR *rgRDNAttr;
+
+};

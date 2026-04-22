@@ -1,0 +1,15 @@
+// Структура: _flags
+// Полей: 7
+// Строки в оригинале: 14647-14656
+struct _flags
+{
+
+  unsigned __int8 Removable : 1;
+  unsigned __int8 GroupAssigned : 1;
+  unsigned __int8 GroupCommitted : 1;
+  unsigned __int8 GroupAssignmentFixed : 1;
+  unsigned __int8 ProcessorOnly : 1;
+  unsigned __int8 SmtSetsPresent : 1;
+  unsigned __int8 Fill : 2;
+
+};

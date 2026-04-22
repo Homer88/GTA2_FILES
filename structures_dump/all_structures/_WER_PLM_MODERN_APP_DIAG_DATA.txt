@@ -1,0 +1,19 @@
+// Структура: _WER_PLM_MODERN_APP_DIAG_DATA
+// Полей: 11
+// Строки в оригинале: 287511-287524
+struct _WER_PLM_MODERN_APP_DIAG_DATA
+{
+
+  _FILETIME AppStartupTime;
+  _FILETIME AppTimeoutReportSubmissionTime;
+  unsigned __int64 AppIOInBytesRead;
+  unsigned __int64 AppIOInBytesWrite;
+  unsigned __int64 SystemIONonLowPriorityIdleTimeInMs;
+  unsigned __int64 SystemIOAllPriorityIdleTimeInMs;
+  unsigned __int64 AppCPUUsageTimeInMs;
+  unsigned __int64 AppCPUReadyTimeInMs;
+  unsigned int AppThrottledDurationInMs;
+  char AppTimeoutDescription[128];
+  _WER_PLM_MODERN_APP_DIAG_DATA::<unnamed_type_Flags> Flags;
+
+};

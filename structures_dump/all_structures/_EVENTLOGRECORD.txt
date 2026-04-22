@@ -1,0 +1,24 @@
+// Структура: _EVENTLOGRECORD
+// Полей: 16
+// Строки в оригинале: 85173-85191
+struct _EVENTLOGRECORD
+{
+
+  unsigned int Length;
+  unsigned int Reserved;
+  unsigned int RecordNumber;
+  unsigned int TimeGenerated;
+  unsigned int TimeWritten;
+  unsigned int EventID;
+  unsigned __int16 EventType;
+  unsigned __int16 NumStrings;
+  unsigned __int16 EventCategory;
+  unsigned __int16 ReservedFlags;
+  unsigned int ClosingRecordNumber;
+  unsigned int StringOffset;
+  unsigned int UserSidLength;
+  unsigned int UserSidOffset;
+  unsigned int DataLength;
+  unsigned int DataOffset;
+
+};

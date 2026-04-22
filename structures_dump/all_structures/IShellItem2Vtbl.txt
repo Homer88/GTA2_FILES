@@ -1,0 +1,29 @@
+// Структура: IShellItem2Vtbl
+// Полей: 21
+// Строки в оригинале: 39499-39522
+struct IShellItem2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellItem2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellItem2 *This);
+  ULONG (__stdcall *Release)(IShellItem2 *This);
+  HRESULT (__stdcall *BindToHandler)(IShellItem2 *This, IBindCtx *pbc, const GUID *const bhid, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetParent)(IShellItem2 *This, IShellItem **ppsi);
+  HRESULT (__stdcall *GetDisplayName)(IShellItem2 *This, SIGDN sigdnName, LPWSTR *ppszName);
+  HRESULT (__stdcall *GetAttributes)(IShellItem2 *This, SFGAOF sfgaoMask, SFGAOF *psfgaoAttribs);
+  HRESULT (__stdcall *Compare)(IShellItem2 *This, IShellItem *psi, SICHINTF hint, int *piOrder);
+  HRESULT (__stdcall *GetPropertyStore)(IShellItem2 *This, GETPROPERTYSTOREFLAGS flags, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetPropertyStoreWithCreateObject)(IShellItem2 *This, GETPROPERTYSTOREFLAGS flags, IUnknown *punkCreateObject, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetPropertyStoreForKeys)(IShellItem2 *This, const PROPERTYKEY *rgKeys, UINT cKeys, GETPROPERTYSTOREFLAGS flags, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetPropertyDescriptionList)(IShellItem2 *This, const PROPERTYKEY *const keyType, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *Update)(IShellItem2 *This, IBindCtx *pbc);
+  HRESULT (__stdcall *GetProperty)(IShellItem2 *This, const PROPERTYKEY *const key, PROPVARIANT *ppropvar);
+  HRESULT (__stdcall *GetCLSID)(IShellItem2 *This, const PROPERTYKEY *const key, CLSID *pclsid);
+  HRESULT (__stdcall *GetFileTime)(IShellItem2 *This, const PROPERTYKEY *const key, FILETIME *pft);
+  HRESULT (__stdcall *GetInt32)(IShellItem2 *This, const PROPERTYKEY *const key, int *pi);
+  HRESULT (__stdcall *GetString)(IShellItem2 *This, const PROPERTYKEY *const key, LPWSTR *ppsz);
+  HRESULT (__stdcall *GetUInt32)(IShellItem2 *This, const PROPERTYKEY *const key, ULONG *pui);
+  HRESULT (__stdcall *GetUInt64)(IShellItem2 *This, const PROPERTYKEY *const key, ULONGLONG *pull);
+  HRESULT (__stdcall *GetBool)(IShellItem2 *This, const PROPERTYKEY *const key, BOOL *pf);
+
+};

@@ -1,0 +1,10 @@
+// Структура: _ImageArchitectureEntry
+// Полей: 2
+// Строки в оригинале: 103428-103432
+struct _ImageArchitectureEntry
+{
+
+  unsigned int FixupInstRVA;
+  unsigned int NewInst;
+
+};

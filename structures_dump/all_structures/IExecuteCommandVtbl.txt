@@ -1,0 +1,18 @@
+// Структура: IExecuteCommandVtbl
+// Полей: 10
+// Строки в оригинале: 40521-40533
+struct IExecuteCommandVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IExecuteCommand *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IExecuteCommand *This);
+  ULONG (__stdcall *Release)(IExecuteCommand *This);
+  HRESULT (__stdcall *SetKeyState)(IExecuteCommand *This, DWORD grfKeyState);
+  HRESULT (__stdcall *SetParameters)(IExecuteCommand *This, LPCWSTR pszParameters);
+  HRESULT (__stdcall *SetPosition)(IExecuteCommand *This, POINT pt);
+  HRESULT (__stdcall *SetShowWindow)(IExecuteCommand *This, int nShow);
+  HRESULT (__stdcall *SetNoShowUI)(IExecuteCommand *This, BOOL fNoShowUI);
+  HRESULT (__stdcall *SetDirectory)(IExecuteCommand *This, LPCWSTR pszDirectory);
+  HRESULT (__stdcall *Execute)(IExecuteCommand *This);
+
+};

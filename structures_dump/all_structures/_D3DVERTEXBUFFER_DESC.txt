@@ -1,0 +1,14 @@
+// Структура: _D3DVERTEXBUFFER_DESC
+// Полей: 6
+// Строки в оригинале: 26307-26315
+struct _D3DVERTEXBUFFER_DESC
+{
+
+  D3DFORMAT Format;
+  D3DRESOURCETYPE Type;
+  DWORD Usage;
+  D3DPOOL Pool;
+  UINT Size;
+  DWORD FVF;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _TypeDescriptor
+// Полей: 3
+// Строки в оригинале: 82026-82031
+struct _TypeDescriptor
+{
+
+  const void *pVFTable;
+  void *spare;
+  char name[];
+
+};

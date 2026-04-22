@@ -1,0 +1,10 @@
+// Структура: _PS_DYNAMIC_ENFORCED_ADDRESS_RANGES
+// Полей: 2
+// Строки в оригинале: 18233-18237
+struct _PS_DYNAMIC_ENFORCED_ADDRESS_RANGES
+{
+
+  _RTL_AVL_TREE Tree;
+  _EX_PUSH_LOCK Lock;
+
+};

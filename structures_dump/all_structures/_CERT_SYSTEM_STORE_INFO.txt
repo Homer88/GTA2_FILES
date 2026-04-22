@@ -1,0 +1,9 @@
+// Структура: _CERT_SYSTEM_STORE_INFO
+// Полей: 1
+// Строки в оригинале: 88248-88251
+struct _CERT_SYSTEM_STORE_INFO
+{
+
+  unsigned int cbSize;
+
+};

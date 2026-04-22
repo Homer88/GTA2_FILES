@@ -1,0 +1,9 @@
+// Структура: IXMLDOMImplementation
+// Полей: 1
+// Строки в оригинале: 43491-43494
+struct IXMLDOMImplementation
+{
+
+  struct IXMLDOMImplementationVtbl *lpVtbl;
+
+};

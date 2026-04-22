@@ -1,0 +1,9 @@
+// Структура: RETRIEVAL_POINTER_COUNT
+// Полей: 1
+// Строки в оригинале: 98208-98211
+struct RETRIEVAL_POINTER_COUNT
+{
+
+  unsigned int ExtentCount;
+
+};

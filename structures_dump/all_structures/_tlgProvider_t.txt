@@ -1,0 +1,15 @@
+// Структура: _tlgProvider_t
+// Полей: 7
+// Строки в оригинале: 59347-59356
+struct _tlgProvider_t
+{
+
+  unsigned int LevelPlus1;
+  const unsigned __int16 *ProviderMetadataPtr;
+  unsigned __int64 KeywordAny;
+  unsigned __int64 KeywordAll;
+  unsigned __int64 RegHandle;
+  void (__stdcall *EnableCallback)(const _GUID *, unsigned int, unsigned __int8, unsigned __int64, unsigned __int64, _EVENT_FILTER_DESCRIPTOR *, void *);
+  void *CallbackContext;
+
+};

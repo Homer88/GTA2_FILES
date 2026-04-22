@@ -1,0 +1,9 @@
+// Структура: _EVENTLOG_FULL_INFORMATION
+// Полей: 1
+// Строки в оригинале: 91683-91686
+struct _EVENTLOG_FULL_INFORMATION
+{
+
+  unsigned int dwFull;
+
+};

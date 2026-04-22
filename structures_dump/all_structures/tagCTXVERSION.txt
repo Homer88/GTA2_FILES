@@ -1,0 +1,10 @@
+// Структура: tagCTXVERSION
+// Полей: 2
+// Строки в оригинале: 193048-193052
+struct tagCTXVERSION
+{
+
+  __int16 ThisVersion;
+  __int16 MinVersion;
+
+};

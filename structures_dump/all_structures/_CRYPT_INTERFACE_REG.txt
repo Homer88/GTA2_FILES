@@ -1,0 +1,12 @@
+// Структура: _CRYPT_INTERFACE_REG
+// Полей: 4
+// Строки в оригинале: 87330-87336
+struct _CRYPT_INTERFACE_REG
+{
+
+  unsigned int dwInterface;
+  unsigned int dwFlags;
+  unsigned int cFunctions;
+  wchar_t **rgpszFunctions;
+
+};

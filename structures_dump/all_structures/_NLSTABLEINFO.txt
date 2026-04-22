@@ -1,0 +1,12 @@
+// Структура: _NLSTABLEINFO
+// Полей: 4
+// Строки в оригинале: 91214-91220
+struct _NLSTABLEINFO
+{
+
+  _CPTABLEINFO OemTableInfo;
+  _CPTABLEINFO AnsiTableInfo;
+  wchar_t *UpperCaseTable;
+  wchar_t *LowerCaseTable;
+
+};

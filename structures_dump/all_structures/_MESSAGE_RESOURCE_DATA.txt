@@ -1,0 +1,10 @@
+// Структура: _MESSAGE_RESOURCE_DATA
+// Полей: 2
+// Строки в оригинале: 101788-101792
+struct _MESSAGE_RESOURCE_DATA
+{
+
+  unsigned int NumberOfBlocks;
+  _MESSAGE_RESOURCE_BLOCK Blocks[1];
+
+};

@@ -1,0 +1,9 @@
+// Структура: IRowset
+// Полей: 1
+// Строки в оригинале: 40042-40045
+struct IRowset
+{
+
+  struct IRowsetVtbl *lpVtbl;
+
+};

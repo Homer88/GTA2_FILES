@@ -1,0 +1,10 @@
+// Структура: _tagOLECMD
+// Полей: 2
+// Строки в оригинале: 32767-32771
+struct _tagOLECMD
+{
+
+  ULONG cmdID;
+  DWORD cmdf;
+
+};

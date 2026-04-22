@@ -1,0 +1,19 @@
+// Структура: IDXGISurfaceVtbl
+// Полей: 11
+// Строки в оригинале: 352105-352118
+struct IDXGISurfaceVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDXGISurface *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDXGISurface *This);
+  ULONG (__stdcall *Release)(IDXGISurface *This);
+  HRESULT (__stdcall *SetPrivateData)(IDXGISurface *This, const GUID *const Name, UINT DataSize, const void *pData);
+  HRESULT (__stdcall *SetPrivateDataInterface)(IDXGISurface *This, const GUID *const Name, const IUnknown *pUnknown);
+  HRESULT (__stdcall *GetPrivateData)(IDXGISurface *This, const GUID *const Name, UINT *pDataSize, void *pData);
+  HRESULT (__stdcall *GetParent)(IDXGISurface *This, const IID *const riid, void **ppParent);
+  HRESULT (__stdcall *GetDevice)(IDXGISurface *This, const IID *const riid, void **ppDevice);
+  HRESULT (__stdcall *GetDesc)(IDXGISurface *This, DXGI_SURFACE_DESC *pDesc);
+  HRESULT (__stdcall *Map)(IDXGISurface *This, DXGI_MAPPED_RECT *pLockedRect, UINT MapFlags);
+  HRESULT (__stdcall *Unmap)(IDXGISurface *This);
+
+};

@@ -1,0 +1,13 @@
+// Структура: _DEFINE_STORAGE_RESERVE_INPUT
+// Полей: 5
+// Строки в оригинале: 87412-87419
+struct _DEFINE_STORAGE_RESERVE_INPUT
+{
+
+  unsigned int Version;
+  unsigned int Flags;
+  unsigned int AreaDefinitionOffset;
+  unsigned int AreaDefinitionCount;
+  _STORAGE_RESERVE_AREA_DEFINITION AreaDefinition[1];
+
+};

@@ -1,0 +1,10 @@
+// Структура: _STORAGE_QUERY_DEPENDENT_VOLUME_REQUEST
+// Полей: 2
+// Строки в оригинале: 82711-82715
+struct _STORAGE_QUERY_DEPENDENT_VOLUME_REQUEST
+{
+
+  unsigned int RequestLevel;
+  unsigned int RequestFlags;
+
+};

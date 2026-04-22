@@ -1,0 +1,9 @@
+// Структура: SERVICE_TRIGGER_CUSTOM_STATE_ID
+// Полей: 1
+// Строки в оригинале: 104515-104518
+struct SERVICE_TRIGGER_CUSTOM_STATE_ID
+{
+
+  unsigned int Data[2];
+
+};

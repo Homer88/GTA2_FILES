@@ -1,0 +1,9 @@
+// Структура: _FILE_FS_VOLUME_FLAGS_INFORMATION
+// Полей: 1
+// Строки в оригинале: 108256-108259
+struct _FILE_FS_VOLUME_FLAGS_INFORMATION
+{
+
+  unsigned int Flags;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _SILOOBJECT_ROOT_DIRECTORY
+// Полей: 1
+// Строки в оригинале: 108230-108233
+struct _SILOOBJECT_ROOT_DIRECTORY
+{
+
+  $4DE04AC7FEB0BC3FC95D8E43847BD7CB ___u0;
+
+};

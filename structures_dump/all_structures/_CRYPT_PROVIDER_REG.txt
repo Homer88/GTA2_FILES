@@ -1,0 +1,12 @@
+// Структура: _CRYPT_PROVIDER_REG
+// Полей: 4
+// Строки в оригинале: 87347-87353
+struct _CRYPT_PROVIDER_REG
+{
+
+  unsigned int cAliases;
+  wchar_t **rgpszAliases;
+  _CRYPT_IMAGE_REG *pUM;
+  _CRYPT_IMAGE_REG *pKM;
+
+};

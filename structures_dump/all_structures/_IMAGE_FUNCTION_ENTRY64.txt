@@ -1,0 +1,11 @@
+// Структура: _IMAGE_FUNCTION_ENTRY64
+// Полей: 3
+// Строки в оригинале: 87150-87155
+struct _IMAGE_FUNCTION_ENTRY64
+{
+
+  unsigned __int64 StartingAddress;
+  unsigned __int64 EndingAddress;
+  $E0927F6BE2F1645595F211B37EFD8766 ___u2;
+
+};

@@ -1,0 +1,14 @@
+// Структура: _CMC_STATUS_INFO
+// Полей: 6
+// Строки в оригинале: 97491-97499
+struct _CMC_STATUS_INFO
+{
+
+  unsigned int dwStatus;
+  unsigned int cBodyList;
+  unsigned int *rgdwBodyList;
+  wchar_t *pwszStatusString;
+  unsigned int dwOtherInfoChoice;
+  $FA2F8ACACFA07D9343E35F9CA8D75CEE ___u5;
+
+};

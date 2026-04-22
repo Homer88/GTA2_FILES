@@ -1,0 +1,12 @@
+// Структура: tagOBJREF
+// Полей: 4
+// Строки в оригинале: 99075-99081
+struct tagOBJREF
+{
+
+  unsigned int signature;
+  unsigned int flags;
+  _GUID iid;
+  tagOBJREF::<unnamed_type_u_objref> u_objref;
+
+};

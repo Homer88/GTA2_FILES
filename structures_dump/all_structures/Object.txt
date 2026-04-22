@@ -1,0 +1,14 @@
+// Структура: Object
+// Полей: 6
+// Строки в оригинале: 7912-7920
+struct Object
+{
+
+  EventHandler *field_0;
+  EventHandler *field_4;
+  EventHandler S63[3825];
+  __int16 field_29174;
+  char field_29176;
+  char field_29177;
+
+};

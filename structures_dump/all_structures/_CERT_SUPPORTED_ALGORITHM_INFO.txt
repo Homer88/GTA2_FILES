@@ -1,0 +1,11 @@
+// Структура: _CERT_SUPPORTED_ALGORITHM_INFO
+// Полей: 3
+// Строки в оригинале: 111278-111283
+struct _CERT_SUPPORTED_ALGORITHM_INFO
+{
+
+  _CRYPT_ALGORITHM_IDENTIFIER Algorithm;
+  _CRYPT_BIT_BLOB IntendedKeyUsage;
+  _CERT_POLICIES_INFO IntendedCertPolicies;
+
+};

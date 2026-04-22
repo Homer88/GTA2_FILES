@@ -1,0 +1,9 @@
+// Структура: IBindStatusCallback
+// Полей: 1
+// Строки в оригинале: 41710-41713
+struct IBindStatusCallback
+{
+
+  struct IBindStatusCallbackVtbl *lpVtbl;
+
+};

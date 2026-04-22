@@ -1,0 +1,12 @@
+// Структура: _INVERTED_FUNCTION_TABLE_ENTRY
+// Полей: 4
+// Строки в оригинале: 96617-96623
+struct _INVERTED_FUNCTION_TABLE_ENTRY
+{
+
+  void *FunctionTable;
+  void *ImageBase;
+  unsigned int SizeOfImage;
+  unsigned int SizeOfTable;
+
+};

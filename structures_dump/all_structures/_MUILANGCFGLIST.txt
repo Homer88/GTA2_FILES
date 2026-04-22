@@ -1,0 +1,12 @@
+// Структура: _MUILANGCFGLIST
+// Полей: 4
+// Строки в оригинале: 80808-80814
+struct _MUILANGCFGLIST
+{
+
+  unsigned int TotalSize;
+  unsigned __int16 NumLanguages;
+  unsigned __int16 MaxNumLanguages;
+  _MUILANGCFGNODE *LanguageConfigs;
+
+};

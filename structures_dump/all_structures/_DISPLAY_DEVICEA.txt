@@ -1,0 +1,14 @@
+// Структура: _DISPLAY_DEVICEA
+// Полей: 6
+// Строки в оригинале: 104280-104288
+struct _DISPLAY_DEVICEA
+{
+
+  unsigned int cb;
+  char DeviceName[32];
+  char DeviceString[128];
+  unsigned int StateFlags;
+  char DeviceID[128];
+  char DeviceKey[128];
+
+};

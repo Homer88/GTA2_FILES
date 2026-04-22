@@ -1,0 +1,10 @@
+// Структура: _MEMORY_RANGE_ENTRY
+// Полей: 2
+// Строки в оригинале: 107302-107306
+struct _MEMORY_RANGE_ENTRY
+{
+
+  void *VirtualAddress;
+  unsigned int NumberOfBytes;
+
+};

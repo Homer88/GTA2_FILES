@@ -1,0 +1,9 @@
+// Структура: IAccessor
+// Полей: 1
+// Строки в оригинале: 37175-37178
+struct IAccessor
+{
+
+  struct IAccessorVtbl *lpVtbl;
+
+};

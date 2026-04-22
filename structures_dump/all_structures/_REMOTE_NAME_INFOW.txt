@@ -1,0 +1,11 @@
+// Структура: _REMOTE_NAME_INFOW
+// Полей: 3
+// Строки в оригинале: 100161-100166
+struct _REMOTE_NAME_INFOW
+{
+
+  wchar_t *lpUniversalName;
+  wchar_t *lpConnectionName;
+  wchar_t *lpRemainingPath;
+
+};

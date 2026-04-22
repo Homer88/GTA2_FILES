@@ -1,0 +1,19 @@
+// Структура: IPropertyUIVtbl
+// Полей: 11
+// Строки в оригинале: 35557-35570
+struct IPropertyUIVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyUI *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyUI *This);
+  ULONG (__stdcall *Release)(IPropertyUI *This);
+  HRESULT (__stdcall *ParsePropertyName)(IPropertyUI *This, LPCWSTR pszName, FMTID *pfmtid, PROPID *ppid, ULONG *pchEaten);
+  HRESULT (__stdcall *GetCannonicalName)(IPropertyUI *This, const IID *const fmtid, PROPID pid, LPWSTR pwszText, DWORD cchText);
+  HRESULT (__stdcall *GetDisplayName)(IPropertyUI *This, const IID *const fmtid, PROPID pid, PROPERTYUI_NAME_FLAGS flags, LPWSTR pwszText, DWORD cchText);
+  HRESULT (__stdcall *GetPropertyDescription)(IPropertyUI *This, const IID *const fmtid, PROPID pid, LPWSTR pwszText, DWORD cchText);
+  HRESULT (__stdcall *GetDefaultWidth)(IPropertyUI *This, const IID *const fmtid, PROPID pid, ULONG *pcxChars);
+  HRESULT (__stdcall *GetFlags)(IPropertyUI *This, const IID *const fmtid, PROPID pid, PROPERTYUI_FLAGS *pflags);
+  HRESULT (__stdcall *FormatForDisplay)(IPropertyUI *This, const IID *const fmtid, PROPID pid, const PROPVARIANT *ppropvar, PROPERTYUI_FORMAT_FLAGS puiff, LPWSTR pwszText, DWORD cchText);
+  HRESULT (__stdcall *GetHelpInfo)(IPropertyUI *This, const IID *const fmtid, PROPID pid, LPWSTR pwszHelpFile, DWORD cch, UINT *puHelpID);
+
+};

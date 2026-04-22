@@ -1,0 +1,23 @@
+// Структура: IMallocSpyVtbl
+// Полей: 15
+// Строки в оригинале: 351616-351633
+struct IMallocSpyVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IMallocSpy *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IMallocSpy *This);
+  ULONG (__stdcall *Release)(IMallocSpy *This);
+  SIZE_T (__stdcall *PreAlloc)(IMallocSpy *This, SIZE_T cbRequest);
+  void *(__stdcall *PostAlloc)(IMallocSpy *This, void *pActual);
+  void *(__stdcall *PreFree)(IMallocSpy *This, void *pRequest, BOOL fSpyed);
+  void (__stdcall *PostFree)(IMallocSpy *This, BOOL fSpyed);
+  SIZE_T (__stdcall *PreRealloc)(IMallocSpy *This, void *pRequest, SIZE_T cbRequest, void **ppNewRequest, BOOL fSpyed);
+  void *(__stdcall *PostRealloc)(IMallocSpy *This, void *pActual, BOOL fSpyed);
+  void *(__stdcall *PreGetSize)(IMallocSpy *This, void *pRequest, BOOL fSpyed);
+  SIZE_T (__stdcall *PostGetSize)(IMallocSpy *This, SIZE_T cbActual, BOOL fSpyed);
+  void *(__stdcall *PreDidAlloc)(IMallocSpy *This, void *pRequest, BOOL fSpyed);
+  int (__stdcall *PostDidAlloc)(IMallocSpy *This, void *pRequest, BOOL fSpyed, int fActual);
+  void (__stdcall *PreHeapMinimize)(IMallocSpy *This);
+  void (__stdcall *PostHeapMinimize)(IMallocSpy *This);
+
+};

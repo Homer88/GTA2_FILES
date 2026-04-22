@@ -1,0 +1,14 @@
+// Структура: _PPM_VETO_ACCOUNTING
+// Полей: 6
+// Строки в оригинале: 14788-14796
+struct _PPM_VETO_ACCOUNTING
+{
+
+  volatile int VetoPresent;
+  _LIST_ENTRY VetoListHead;
+  unsigned __int8 CsAccountingBlocks;
+  unsigned __int8 BlocksDrips;
+  unsigned int PreallocatedVetoCount;
+  _PPM_VETO_ENTRY *PreallocatedVetoList;
+
+};

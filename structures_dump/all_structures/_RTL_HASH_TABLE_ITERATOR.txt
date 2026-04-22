@@ -1,0 +1,11 @@
+// Структура: _RTL_HASH_TABLE_ITERATOR
+// Полей: 3
+// Строки в оригинале: 21545-21550
+struct _RTL_HASH_TABLE_ITERATOR
+{
+
+  _RTL_HASH_TABLE *Hash;
+  _RTL_HASH_ENTRY *HashEntry;
+  _SINGLE_LIST_ENTRY *Bucket;
+
+};

@@ -1,0 +1,11 @@
+// Структура: ARM_PARAMS
+// Полей: 3
+// Строки в оригинале: 331411-331416
+struct ARM_PARAMS
+{
+
+  unsigned __int16 NumEntries;
+  char Slots;
+  char Entry[1];
+
+};

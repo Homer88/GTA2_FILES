@@ -1,0 +1,9 @@
+// Структура: IQueryCancelAutoPlay
+// Полей: 1
+// Строки в оригинале: 45140-45143
+struct IQueryCancelAutoPlay
+{
+
+  struct IQueryCancelAutoPlayVtbl *lpVtbl;
+
+};

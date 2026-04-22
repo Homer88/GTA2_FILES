@@ -1,0 +1,9 @@
+// Структура: IOleInPlaceUIWindow
+// Полей: 1
+// Строки в оригинале: 26924-26927
+struct IOleInPlaceUIWindow
+{
+
+  struct IOleInPlaceUIWindowVtbl *lpVtbl;
+
+};

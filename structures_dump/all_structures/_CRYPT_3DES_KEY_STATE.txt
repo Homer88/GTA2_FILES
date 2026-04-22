@@ -1,0 +1,11 @@
+// Структура: _CRYPT_3DES_KEY_STATE
+// Полей: 3
+// Строки в оригинале: 99233-99238
+struct _CRYPT_3DES_KEY_STATE
+{
+
+  unsigned __int8 Key[24];
+  unsigned __int8 IV[8];
+  unsigned __int8 Feedback[8];
+
+};

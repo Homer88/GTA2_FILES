@@ -1,0 +1,26 @@
+// Структура: IDirectInputDeviceAVtbl
+// Полей: 18
+// Строки в оригинале: 6137-6157
+struct IDirectInputDeviceAVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirectInputDeviceA *This, const IID *const riid, LPVOID *ppvObj);
+  ULONG (__stdcall *AddRef)(IDirectInputDeviceA *This);
+  ULONG (__stdcall *Release)(IDirectInputDeviceA *This);
+  HRESULT (__stdcall *GetCapabilities)(IDirectInputDeviceA *This, LPDIDEVCAPS);
+  HRESULT (__stdcall *EnumObjects)(IDirectInputDeviceA *This, LPDIENUMDEVICEOBJECTSCALLBACKA, LPVOID, DWORD);
+  HRESULT (__stdcall *GetProperty)(IDirectInputDeviceA *This, const GUID *const, LPDIPROPHEADER);
+  HRESULT (__stdcall *SetProperty)(IDirectInputDeviceA *This, const GUID *const, LPCDIPROPHEADER);
+  HRESULT (__stdcall *Acquire)(IDirectInputDeviceA *This);
+  HRESULT (__stdcall *Unacquire)(IDirectInputDeviceA *This);
+  HRESULT (__stdcall *GetDeviceState)(IDirectInputDeviceA *This, DWORD, LPVOID);
+  HRESULT (__stdcall *GetDeviceData)(IDirectInputDeviceA *This, DWORD, LPDIDEVICEOBJECTDATA, LPDWORD, DWORD);
+  HRESULT (__stdcall *SetDataFormat)(IDirectInputDeviceA *This, LPCDIDATAFORMAT);
+  HRESULT (__stdcall *SetEventNotification)(IDirectInputDeviceA *This, HANDLE);
+  HRESULT (__stdcall *SetCooperativeLevel)(IDirectInputDeviceA *This, HWND, DWORD);
+  HRESULT (__stdcall *GetObjectInfo)(IDirectInputDeviceA *This, LPDIDEVICEOBJECTINSTANCEA, DWORD, DWORD);
+  HRESULT (__stdcall *GetDeviceInfo)(IDirectInputDeviceA *This, LPDIDEVICEINSTANCEA);
+  HRESULT (__stdcall *RunControlPanel)(IDirectInputDeviceA *This, HWND, DWORD);
+  HRESULT (__stdcall *Initialize)(IDirectInputDeviceA *This, HINSTANCE, DWORD, const GUID *const);
+
+};

@@ -1,0 +1,15 @@
+// Структура: _SYSTEM_TIMEOFDAY_INFORMATION
+// Полей: 7
+// Строки в оригинале: 84023-84032
+struct _SYSTEM_TIMEOFDAY_INFORMATION
+{
+
+  _LARGE_INTEGER BootTime;
+  _LARGE_INTEGER CurrentTime;
+  _LARGE_INTEGER TimeZoneBias;
+  unsigned int TimeZoneId;
+  unsigned int Reserved;
+  unsigned __int64 BootTimeBias;
+  unsigned __int64 SleepTimeBias;
+
+};

@@ -1,0 +1,20 @@
+// Структура: FRAME_RemoteInvoke
+// Полей: 12
+// Строки в оригинале: 121320-121334
+struct FRAME_RemoteInvoke
+{
+
+  IDispatch *This;
+  int dispIdMember;
+  _GUID *piid;
+  unsigned int lcid;
+  unsigned int dwFlags;
+  tagDISPPARAMS *pDispParams;
+  tagVARIANT *pVarResult;
+  tagEXCEPINFO *pExcepInfo;
+  unsigned int *puArgErr;
+  unsigned int cVarRef;
+  unsigned int *rgVarRefIdx;
+  tagVARIANT *rgVarRef;
+
+};

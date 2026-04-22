@@ -1,0 +1,10 @@
+// Структура: PedPool
+// Полей: 2
+// Строки в оригинале: 10160-10164
+struct PedPool
+{
+
+  GameObject *FirstGameObject;
+  GameObject GameObject[400];
+
+};

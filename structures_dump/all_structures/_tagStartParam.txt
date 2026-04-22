@@ -1,0 +1,11 @@
+// Структура: _tagStartParam
+// Полей: 3
+// Строки в оригинале: 97067-97072
+struct _tagStartParam
+{
+
+  _GUID iid;
+  IBindCtx *pIBindCtx;
+  IUnknown *pItf;
+
+};

@@ -1,0 +1,12 @@
+// Структура: tagENUMLOGFONTEXA
+// Полей: 4
+// Строки в оригинале: 87468-87474
+struct tagENUMLOGFONTEXA
+{
+
+  tagLOGFONTA elfLogFont;
+  unsigned __int8 elfFullName[64];
+  unsigned __int8 elfStyle[32];
+  unsigned __int8 elfScript[32];
+
+};

@@ -1,0 +1,9 @@
+// Структура: tagIncomingCallData
+// Полей: 1
+// Строки в оригинале: 62410-62413
+struct tagIncomingCallData
+{
+
+  unsigned int dwClientPID;
+
+};

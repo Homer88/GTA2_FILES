@@ -1,0 +1,10 @@
+// Структура: tagANIMATIONINFO
+// Полей: 2
+// Строки в оригинале: 111798-111802
+struct tagANIMATIONINFO
+{
+
+  unsigned int cbSize;
+  int iMinAnimate;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _UUID_VECTOR
+// Полей: 2
+// Строки в оригинале: 80683-80687
+struct _UUID_VECTOR
+{
+
+  unsigned int Count;
+  _GUID *Uuid[1];
+
+};

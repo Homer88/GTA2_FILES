@@ -1,0 +1,9 @@
+// Структура: IObjectProvider
+// Полей: 1
+// Строки в оригинале: 36855-36858
+struct IObjectProvider
+{
+
+  struct IObjectProviderVtbl *lpVtbl;
+
+};

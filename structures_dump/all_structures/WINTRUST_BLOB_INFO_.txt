@@ -1,0 +1,15 @@
+// Структура: WINTRUST_BLOB_INFO_
+// Полей: 7
+// Строки в оригинале: 121767-121776
+struct WINTRUST_BLOB_INFO_
+{
+
+  unsigned int cbStruct;
+  _GUID gSubject;
+  const wchar_t *pcwszDisplayName;
+  unsigned int cbMemObject;
+  unsigned __int8 *pbMemObject;
+  unsigned int cbMemSignedMsg;
+  unsigned __int8 *pbMemSignedMsg;
+
+};

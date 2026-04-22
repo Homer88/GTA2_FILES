@@ -1,0 +1,19 @@
+// Структура: ITfPropertyVtbl
+// Полей: 11
+// Строки в оригинале: 30401-30414
+struct ITfPropertyVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfProperty *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfProperty *This);
+  ULONG (__stdcall *Release)(ITfProperty *This);
+  HRESULT (__stdcall *GetType)(ITfProperty *This, GUID *pguid);
+  HRESULT (__stdcall *EnumRanges)(ITfProperty *This, TfEditCookie ec, IEnumTfRanges **ppEnum, ITfRange *pTargetRange);
+  HRESULT (__stdcall *GetValue)(ITfProperty *This, TfEditCookie ec, ITfRange *pRange, VARIANT *pvarValue);
+  HRESULT (__stdcall *GetContext)(ITfProperty *This, ITfContext **ppContext);
+  HRESULT (__stdcall *FindRange)(ITfProperty *This, TfEditCookie ec, ITfRange *pRange, ITfRange **ppRange, TfAnchor aPos);
+  HRESULT (__stdcall *SetValueStore)(ITfProperty *This, TfEditCookie ec, ITfRange *pRange, ITfPropertyStore *pPropStore);
+  HRESULT (__stdcall *SetValue)(ITfProperty *This, TfEditCookie ec, ITfRange *pRange, const VARIANT *pvarValue);
+  HRESULT (__stdcall *Clear)(ITfProperty *This, TfEditCookie ec, ITfRange *pRange);
+
+};

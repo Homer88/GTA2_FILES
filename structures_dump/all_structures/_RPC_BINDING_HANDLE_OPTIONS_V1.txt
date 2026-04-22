@@ -1,0 +1,12 @@
+// Структура: _RPC_BINDING_HANDLE_OPTIONS_V1
+// Полей: 4
+// Строки в оригинале: 86902-86908
+struct _RPC_BINDING_HANDLE_OPTIONS_V1
+{
+
+  unsigned int Version;
+  unsigned int Flags;
+  unsigned int ComTimeout;
+  unsigned int CallTimeout;
+
+};

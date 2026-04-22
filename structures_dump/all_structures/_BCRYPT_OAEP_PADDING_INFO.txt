@@ -1,0 +1,11 @@
+// Структура: _BCRYPT_OAEP_PADDING_INFO
+// Полей: 3
+// Строки в оригинале: 96802-96807
+struct _BCRYPT_OAEP_PADDING_INFO
+{
+
+  const wchar_t *pszAlgId;
+  unsigned __int8 *pbLabel;
+  unsigned int cbLabel;
+
+};

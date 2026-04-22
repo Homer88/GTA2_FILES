@@ -1,0 +1,10 @@
+// Структура: _MEMORY_WORKING_SET_INFORMATION
+// Полей: 2
+// Строки в оригинале: 107269-107273
+struct _MEMORY_WORKING_SET_INFORMATION
+{
+
+  unsigned int NumberOfEntries;
+  _MEMORY_WORKING_SET_BLOCK WorkingSetInfo[1];
+
+};

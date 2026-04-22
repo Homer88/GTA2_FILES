@@ -1,0 +1,9 @@
+// Структура: WinrtAsyncChannelUnmarshalerInfo
+// Полей: 1
+// Строки в оригинале: 270298-270301
+struct WinrtAsyncChannelUnmarshalerInfo
+{
+
+  _GUID asyncOperationId;
+
+};

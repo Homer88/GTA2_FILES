@@ -1,0 +1,9 @@
+// Структура: IOleObject
+// Полей: 1
+// Строки в оригинале: 27526-27529
+struct IOleObject
+{
+
+  struct IOleObjectVtbl *lpVtbl;
+
+};

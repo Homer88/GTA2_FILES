@@ -1,0 +1,14 @@
+// Структура: EDP_REQUEST_ACCESS_OPTIONS
+// Полей: 6
+// Строки в оригинале: 127097-127105
+struct EDP_REQUEST_ACCESS_OPTIONS
+{
+
+  unsigned int processIdForClipboardConsentCache;
+  const wchar_t *dialogBlockedBodyText;
+  const wchar_t *dialogOverrideBodyText;
+  EDP_REQUEST_ACCESS_OVERRIDE overrideOption;
+  EDP_TELEMETRY_CALLER telemetryCaller;
+  EDP_SOURCE_ENTERPRISEID_OPTION sourceEnterpriseIdOption;
+
+};

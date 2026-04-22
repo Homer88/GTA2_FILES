@@ -1,0 +1,24 @@
+// Структура: tagEMRBITBLT
+// Полей: 16
+// Строки в оригинале: 110664-110682
+struct tagEMRBITBLT
+{
+
+  tagEMR emr;
+  _RECTL rclBounds;
+  int xDest;
+  int yDest;
+  int cxDest;
+  int cyDest;
+  unsigned int dwRop;
+  int xSrc;
+  int ySrc;
+  tagXFORM xformSrc;
+  unsigned int crBkColorSrc;
+  unsigned int iUsageSrc;
+  unsigned int offBmiSrc;
+  unsigned int cbBmiSrc;
+  unsigned int offBitsSrc;
+  unsigned int cbBitsSrc;
+
+};

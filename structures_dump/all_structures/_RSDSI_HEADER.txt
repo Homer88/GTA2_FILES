@@ -1,0 +1,11 @@
+// Структура: _RSDSI_HEADER
+// Полей: 3
+// Строки в оригинале: 285395-285400
+struct _RSDSI_HEADER
+{
+
+  unsigned int dwSig;
+  _GUID guidSig;
+  unsigned int age;
+
+};

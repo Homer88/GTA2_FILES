@@ -1,0 +1,13 @@
+// Структура: DDEPOKE
+// Полей: 5
+// Строки в оригинале: 125261-125268
+struct DDEPOKE
+{
+
+  unsigned __int16 unused : 13;
+  unsigned __int16 fRelease : 1;
+  unsigned __int16 fReserved : 2;
+  __int16 cfFormat;
+  unsigned __int8 Value[1];
+
+};

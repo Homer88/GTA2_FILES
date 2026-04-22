@@ -1,0 +1,11 @@
+// Структура: _SECTIONBASICINFO
+// Полей: 3
+// Строки в оригинале: 107394-107399
+struct _SECTIONBASICINFO
+{
+
+  void *BaseAddress;
+  unsigned int AllocationAttributes;
+  _LARGE_INTEGER MaximumSize;
+
+};

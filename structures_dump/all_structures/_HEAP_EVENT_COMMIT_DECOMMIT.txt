@@ -1,0 +1,12 @@
+// Структура: _HEAP_EVENT_COMMIT_DECOMMIT
+// Полей: 4
+// Строки в оригинале: 311540-311546
+struct _HEAP_EVENT_COMMIT_DECOMMIT
+{
+
+  void *HeapHandle;
+  void *Block;
+  unsigned int Size;
+  unsigned int Caller;
+
+};

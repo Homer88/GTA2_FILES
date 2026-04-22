@@ -1,0 +1,14 @@
+// Структура: _RTL_VERIFIER_PROVIDER_HELPER_TABLE
+// Полей: 6
+// Строки в оригинале: 111824-111832
+struct _RTL_VERIFIER_PROVIDER_HELPER_TABLE
+{
+
+  unsigned int Length;
+  void *(__stdcall *VerifierEngLogStackTrace)(unsigned int);
+  void (__stdcall *VerifierEngReleaseStackTrace)(void *);
+  void *(__stdcall *VerifierEngGetStackTraceAddressEx)(unsigned __int16, unsigned __int16);
+  _RTL_VERIFIER_PROVIDER_HELPER_TABLE::_RTL_VERIFIER_PROVIDER_HELPER_TABLE_UNUSED_STRUCT UnusedStruct;
+  void (__stdcall *VerifierEngSetHeapPathCaller)(void *);
+
+};

@@ -1,0 +1,19 @@
+// Структура: IPersistQueryVtbl
+// Полей: 11
+// Строки в оригинале: 35237-35250
+struct IPersistQueryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPersistQuery *This, const IID *const riid, void **ppvObj);
+  ULONG (__stdcall *AddRef)(IPersistQuery *This);
+  ULONG (__stdcall *Release)(IPersistQuery *This);
+  HRESULT (__stdcall *GetClassID)(IPersistQuery *This, CLSID *pClassID);
+  HRESULT (__stdcall *WriteString)(IPersistQuery *This, LPCWSTR pSection, LPCWSTR pValueName, LPCWSTR pValue);
+  HRESULT (__stdcall *ReadString)(IPersistQuery *This, LPCWSTR pSection, LPCWSTR pValueName, LPWSTR pBuffer, INT cchBuffer);
+  HRESULT (__stdcall *WriteInt)(IPersistQuery *This, LPCWSTR pSection, LPCWSTR pValueName, INT value);
+  HRESULT (__stdcall *ReadInt)(IPersistQuery *This, LPCWSTR pSection, LPCWSTR pValueName, LPINT pValue);
+  HRESULT (__stdcall *WriteStruct)(IPersistQuery *This, LPCWSTR pSection, LPCWSTR pValueName, LPVOID pStruct, DWORD cbStruct);
+  HRESULT (__stdcall *ReadStruct)(IPersistQuery *This, LPCWSTR pSection, LPCWSTR pValueName, LPVOID pStruct, DWORD cbStruct);
+  HRESULT (__stdcall *Clear)(IPersistQuery *This);
+
+};

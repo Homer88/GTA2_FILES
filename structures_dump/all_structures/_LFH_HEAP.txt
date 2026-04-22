@@ -1,0 +1,27 @@
+// Структура: _LFH_HEAP
+// Полей: 19
+// Строки в оригинале: 21453-21474
+struct _LFH_HEAP
+{
+
+  _RTL_SRWLOCK Lock;
+  _LIST_ENTRY SubSegmentZones;
+  void *Heap;
+  void *NextSegmentInfoArrayAddress;
+  void *FirstUncommittedAddress;
+  void *ReservedAddressLimit;
+  unsigned int SegmentCreate;
+  unsigned int SegmentDelete;
+  volatile unsigned int MinimumCacheDepth;
+  volatile unsigned int CacheShiftThreshold;
+  volatile unsigned int SizeInCache;
+  volatile _HEAP_BUCKET_RUN_INFO RunInfo;
+  _USER_MEMORY_CACHE_ENTRY UserBlockCache[12];
+  _HEAP_LFH_MEM_POLICIES MemoryPolicies;
+  _HEAP_BUCKET Buckets[129];
+  _HEAP_LOCAL_SEGMENT_INFO *SegmentInfoArrays[129];
+  _HEAP_LOCAL_SEGMENT_INFO *AffinitizedInfoArrays[129];
+  _SEGMENT_HEAP *SegmentAllocator;
+  _HEAP_LOCAL_DATA LocalData[1];
+
+};

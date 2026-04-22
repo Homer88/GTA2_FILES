@@ -1,0 +1,11 @@
+// Структура: _RTL_QUERY_DEBUG_VIRTUAL_PROCESS
+// Полей: 3
+// Строки в оригинале: 107035-107040
+struct _RTL_QUERY_DEBUG_VIRTUAL_PROCESS
+{
+
+  void *Context;
+  int (__stdcall *ReadMemoryRoutine)(void *, void *, void *, unsigned int, unsigned int *);
+  int (__stdcall *QueryInformationRoutine)(void *, _PROCESSINFOCLASS, void *, unsigned int, unsigned int *);
+
+};

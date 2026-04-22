@@ -1,0 +1,17 @@
+// Структура: IWICBitmapClipperVtbl
+// Полей: 9
+// Строки в оригинале: 42063-42074
+struct IWICBitmapClipperVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICBitmapClipper *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICBitmapClipper *This);
+  ULONG (__stdcall *Release)(IWICBitmapClipper *This);
+  HRESULT (__stdcall *GetSize)(IWICBitmapClipper *This, UINT *puiWidth, UINT *puiHeight);
+  HRESULT (__stdcall *GetPixelFormat)(IWICBitmapClipper *This, WICPixelFormatGUID *pPixelFormat);
+  HRESULT (__stdcall *GetResolution)(IWICBitmapClipper *This, double *pDpiX, double *pDpiY);
+  HRESULT (__stdcall *CopyPalette)(IWICBitmapClipper *This, IWICPalette *pIPalette);
+  HRESULT (__stdcall *CopyPixels)(IWICBitmapClipper *This, const WICRect *prc, UINT cbStride, UINT cbBufferSize, BYTE *pbBuffer);
+  HRESULT (__stdcall *Initialize)(IWICBitmapClipper *This, IWICBitmapSource *pISource, const WICRect *prc);
+
+};

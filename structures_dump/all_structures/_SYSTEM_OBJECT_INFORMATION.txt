@@ -1,0 +1,20 @@
+// Структура: _SYSTEM_OBJECT_INFORMATION
+// Полей: 12
+// Строки в оригинале: 101527-101541
+struct _SYSTEM_OBJECT_INFORMATION
+{
+
+  unsigned int NextEntryOffset;
+  void *Object;
+  void *CreatorUniqueProcess;
+  unsigned __int16 CreatorBackTraceIndex;
+  unsigned __int16 Flags;
+  int PointerCount;
+  int HandleCount;
+  unsigned int PagedPoolCharge;
+  unsigned int NonPagedPoolCharge;
+  void *ExclusiveProcessId;
+  void *SecurityDescriptor;
+  _OBJECT_NAME_INFORMATION NameInfo;
+
+};

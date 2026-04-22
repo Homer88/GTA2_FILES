@@ -1,0 +1,12 @@
+// Структура: tagRAWINPUTHEADER
+// Полей: 4
+// Строки в оригинале: 93396-93402
+struct tagRAWINPUTHEADER
+{
+
+  unsigned int dwType;
+  unsigned int dwSize;
+  void *hDevice;
+  unsigned int wParam;
+
+};

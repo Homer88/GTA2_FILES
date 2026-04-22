@@ -1,0 +1,13 @@
+// Структура: _PROCESSOR_RELATIONSHIP
+// Полей: 5
+// Строки в оригинале: 90313-90320
+struct _PROCESSOR_RELATIONSHIP
+{
+
+  unsigned __int8 Flags;
+  unsigned __int8 EfficiencyClass;
+  unsigned __int8 Reserved[20];
+  unsigned __int16 GroupCount;
+  _GROUP_AFFINITY GroupMask[1];
+
+};

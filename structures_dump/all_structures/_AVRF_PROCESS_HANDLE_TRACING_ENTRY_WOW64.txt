@@ -1,0 +1,12 @@
+// Структура: _AVRF_PROCESS_HANDLE_TRACING_ENTRY_WOW64
+// Полей: 4
+// Строки в оригинале: 83683-83689
+struct _AVRF_PROCESS_HANDLE_TRACING_ENTRY_WOW64
+{
+
+  unsigned __int64 Handle;
+  _AVRF_CLIENT_ID_WOW64 ClientId;
+  unsigned int Type;
+  unsigned __int64 Stacks[16];
+
+};

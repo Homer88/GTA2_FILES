@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_PROCESSOR_POLICY_INFORMATION
+// Полей: 3
+// Строки в оригинале: 89540-89545
+struct _SYSTEM_PROCESSOR_POLICY_INFORMATION
+{
+
+  unsigned int Length;
+  unsigned int PolicyId;
+  _XSAVE_POLICY Policy;
+
+};

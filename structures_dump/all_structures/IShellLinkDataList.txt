@@ -1,0 +1,9 @@
+// Структура: IShellLinkDataList
+// Полей: 1
+// Строки в оригинале: 37136-37139
+struct IShellLinkDataList
+{
+
+  struct IShellLinkDataListVtbl *lpVtbl;
+
+};

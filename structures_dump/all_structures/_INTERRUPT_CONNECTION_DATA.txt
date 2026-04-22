@@ -1,0 +1,10 @@
+// Структура: _INTERRUPT_CONNECTION_DATA
+// Полей: 2
+// Строки в оригинале: 15914-15918
+struct _INTERRUPT_CONNECTION_DATA
+{
+
+  unsigned int Count;
+  _INTERRUPT_VECTOR_DATA Vectors[1];
+
+};

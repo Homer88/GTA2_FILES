@@ -1,0 +1,12 @@
+// Структура: _SYSTEM_VSM_PROTECTION_INFORMATION
+// Полей: 4
+// Строки в оригинале: 102187-102193
+struct _SYSTEM_VSM_PROTECTION_INFORMATION
+{
+
+  unsigned __int8 DmaProtectionsAvailable;
+  unsigned __int8 DmaProtectionsInUse;
+  unsigned __int8 HardwareMbecAvailable;
+  unsigned __int8 ApicVirtualizationAvailable;
+
+};

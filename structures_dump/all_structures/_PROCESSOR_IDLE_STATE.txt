@@ -1,0 +1,14 @@
+// Структура: _PROCESSOR_IDLE_STATE
+// Полей: 6
+// Строки в оригинале: 80661-80669
+struct _PROCESSOR_IDLE_STATE
+{
+
+  unsigned __int8 StateType;
+  unsigned int StateFlags;
+  unsigned int HardwareLatency;
+  unsigned int Power;
+  unsigned int Context;
+  int (__fastcall *Handler)(unsigned int, PROCESSOR_IDLE_TIMES *);
+
+};

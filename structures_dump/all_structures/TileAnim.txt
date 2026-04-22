@@ -1,0 +1,10 @@
+// Структура: TileAnim
+// Полей: 2
+// Строки в оригинале: 9928-9932
+struct TileAnim
+{
+
+  char field_0;
+  char field_1;
+
+};

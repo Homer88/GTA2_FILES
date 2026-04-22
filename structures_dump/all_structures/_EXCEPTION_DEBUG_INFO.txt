@@ -1,0 +1,10 @@
+// Структура: _EXCEPTION_DEBUG_INFO
+// Полей: 2
+// Строки в оригинале: 104541-104545
+struct _EXCEPTION_DEBUG_INFO
+{
+
+  _EXCEPTION_RECORD ExceptionRecord;
+  unsigned int dwFirstChance;
+
+};

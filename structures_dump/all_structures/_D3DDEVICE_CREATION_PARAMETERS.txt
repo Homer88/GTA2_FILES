@@ -1,0 +1,12 @@
+// Структура: _D3DDEVICE_CREATION_PARAMETERS
+// Полей: 4
+// Строки в оригинале: 25399-25405
+struct _D3DDEVICE_CREATION_PARAMETERS
+{
+
+  UINT AdapterOrdinal;
+  D3DDEVTYPE DeviceType;
+  HWND hFocusWindow;
+  DWORD BehaviorFlags;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _TRACE_PROVIDER_INSTANCE_INFO
+// Полей: 4
+// Строки в оригинале: 310985-310991
+struct _TRACE_PROVIDER_INSTANCE_INFO
+{
+
+  unsigned int NextOffset;
+  unsigned int EnableCount;
+  unsigned int Pid;
+  unsigned int Flags;
+
+};

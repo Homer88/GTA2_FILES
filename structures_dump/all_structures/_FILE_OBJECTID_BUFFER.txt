@@ -1,0 +1,10 @@
+// Структура: _FILE_OBJECTID_BUFFER
+// Полей: 2
+// Строки в оригинале: 104993-104997
+struct _FILE_OBJECTID_BUFFER
+{
+
+  unsigned __int8 ObjectId[16];
+  $1D82EA173F7B66D2329ED009C6DE8A12 ___u1;
+
+};

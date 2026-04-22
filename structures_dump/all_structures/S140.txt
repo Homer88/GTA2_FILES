@@ -1,0 +1,14 @@
+// Структура: S140
+// Полей: 6
+// Строки в оригинале: 5941-5949
+struct S140
+{
+
+  char fild;
+  char field_1;
+  _WORD field_2;
+  unsigned __int16 field_4;
+  _WORD Selecet;
+  wchar_t str[50];
+
+};

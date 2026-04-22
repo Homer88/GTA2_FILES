@@ -1,0 +1,10 @@
+// Структура: tagSQIResult
+// Полей: 2
+// Строки в оригинале: 193178-193182
+struct tagSQIResult
+{
+
+  void *pv;
+  HRESULT hr;
+
+};

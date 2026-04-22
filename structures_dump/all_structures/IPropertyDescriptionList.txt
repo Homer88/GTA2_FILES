@@ -1,0 +1,9 @@
+// Структура: IPropertyDescriptionList
+// Полей: 1
+// Строки в оригинале: 34500-34503
+struct IPropertyDescriptionList
+{
+
+  struct IPropertyDescriptionListVtbl *lpVtbl;
+
+};

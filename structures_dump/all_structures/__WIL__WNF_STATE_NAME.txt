@@ -1,0 +1,9 @@
+// Структура: __WIL__WNF_STATE_NAME
+// Полей: 1
+// Строки в оригинале: 142201-142204
+struct __WIL__WNF_STATE_NAME
+{
+
+  unsigned int Data[2];
+
+};

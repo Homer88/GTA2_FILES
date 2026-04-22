@@ -1,0 +1,36 @@
+// Структура: _DCB
+// Полей: 28
+// Строки в оригинале: 84640-84670
+struct _DCB
+{
+
+  unsigned int DCBlength;
+  unsigned int BaudRate;
+  unsigned __int32 fBinary : 1;
+  unsigned __int32 fParity : 1;
+  unsigned __int32 fOutxCtsFlow : 1;
+  unsigned __int32 fOutxDsrFlow : 1;
+  unsigned __int32 fDtrControl : 2;
+  unsigned __int32 fDsrSensitivity : 1;
+  unsigned __int32 fTXContinueOnXoff : 1;
+  unsigned __int32 fOutX : 1;
+  unsigned __int32 fInX : 1;
+  unsigned __int32 fErrorChar : 1;
+  unsigned __int32 fNull : 1;
+  unsigned __int32 fRtsControl : 2;
+  unsigned __int32 fAbortOnError : 1;
+  unsigned __int32 fDummy2 : 17;
+  unsigned __int16 wReserved;
+  unsigned __int16 XonLim;
+  unsigned __int16 XoffLim;
+  unsigned __int8 ByteSize;
+  unsigned __int8 Parity;
+  unsigned __int8 StopBits;
+  char XonChar;
+  char XoffChar;
+  char ErrorChar;
+  char EofChar;
+  char EvtChar;
+  unsigned __int16 wReserved1;
+
+};

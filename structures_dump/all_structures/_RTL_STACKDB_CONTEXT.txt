@@ -1,0 +1,15 @@
+// Структура: _RTL_STACKDB_CONTEXT
+// Полей: 7
+// Строки в оригинале: 21568-21577
+struct _RTL_STACKDB_CONTEXT
+{
+
+  _RTL_HASH_TABLE StackSegmentTable;
+  _RTL_HASH_TABLE StackEntryTable;
+  _RTL_SRWLOCK StackEntryTableLock;
+  _RTL_SRWLOCK SegmentTableLock;
+  void *(__stdcall *Allocate)(unsigned int, void *);
+  void (__stdcall *Free)(void *, void *);
+  void *AllocatorContext;
+
+};

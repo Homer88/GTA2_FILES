@@ -1,0 +1,9 @@
+// Структура: ITypeComp
+// Полей: 1
+// Строки в оригинале: 23609-23612
+struct ITypeComp
+{
+
+  struct ITypeCompVtbl *lpVtbl;
+
+};

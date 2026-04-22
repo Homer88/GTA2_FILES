@@ -1,0 +1,15 @@
+// Структура: IEnumSTATDATAVtbl
+// Полей: 7
+// Строки в оригинале: 27042-27051
+struct IEnumSTATDATAVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumSTATDATA *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumSTATDATA *This);
+  ULONG (__stdcall *Release)(IEnumSTATDATA *This);
+  HRESULT (__stdcall *Next)(IEnumSTATDATA *This, ULONG celt, STATDATA *rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumSTATDATA *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumSTATDATA *This);
+  HRESULT (__stdcall *Clone)(IEnumSTATDATA *This, IEnumSTATDATA **ppenum);
+
+};

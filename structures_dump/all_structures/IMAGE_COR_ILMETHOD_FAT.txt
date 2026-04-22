@@ -1,0 +1,13 @@
+// Структура: IMAGE_COR_ILMETHOD_FAT
+// Полей: 5
+// Строки в оригинале: 332710-332717
+struct IMAGE_COR_ILMETHOD_FAT
+{
+
+  unsigned __int32 Flags : 12;
+  unsigned __int32 Size : 4;
+  unsigned __int32 MaxStack : 16;
+  unsigned int CodeSize;
+  unsigned int LocalVarSigTok;
+
+};

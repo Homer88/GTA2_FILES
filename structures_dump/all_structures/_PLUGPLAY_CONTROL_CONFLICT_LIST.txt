@@ -1,0 +1,14 @@
+// Структура: _PLUGPLAY_CONTROL_CONFLICT_LIST
+// Полей: 6
+// Строки в оригинале: 93633-93641
+struct _PLUGPLAY_CONTROL_CONFLICT_LIST
+{
+
+  unsigned int Reserved1;
+  unsigned int Reserved2;
+  unsigned int ConflictsCounted;
+  unsigned int ConflictsListed;
+  unsigned int RequiredBufferSize;
+  _PLUGPLAY_CONTROL_CONFLICT_ENTRY ConflictEntry[1];
+
+};

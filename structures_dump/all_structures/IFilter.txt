@@ -1,0 +1,9 @@
+// Структура: IFilter
+// Полей: 1
+// Строки в оригинале: 40471-40474
+struct IFilter
+{
+
+  struct IFilterVtbl *lpVtbl;
+
+};

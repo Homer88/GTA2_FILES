@@ -1,0 +1,9 @@
+// Структура: IEnumTfContextViews
+// Полей: 1
+// Строки в оригинале: 30325-30328
+struct IEnumTfContextViews
+{
+
+  struct IEnumTfContextViewsVtbl *lpVtbl;
+
+};

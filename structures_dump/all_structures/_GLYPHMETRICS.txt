@@ -1,0 +1,13 @@
+// Структура: _GLYPHMETRICS
+// Полей: 5
+// Строки в оригинале: 88542-88549
+struct _GLYPHMETRICS
+{
+
+  unsigned int gmBlackBoxX;
+  unsigned int gmBlackBoxY;
+  tagPOINT gmptGlyphOrigin;
+  __int16 gmCellIncX;
+  __int16 gmCellIncY;
+
+};

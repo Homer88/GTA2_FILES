@@ -1,0 +1,10 @@
+// Структура: tagCOMVERSION
+// Полей: 2
+// Строки в оригинале: 61477-61481
+struct tagCOMVERSION
+{
+
+  unsigned __int16 MajorVersion;
+  unsigned __int16 MinorVersion;
+
+};

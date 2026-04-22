@@ -1,0 +1,12 @@
+// Структура: CNGRSA32COMPAT_MDSTATE
+// Полей: 4
+// Строки в оригинале: 148913-148919
+struct CNGRSA32COMPAT_MDSTATE
+{
+
+  void *hMDHash;
+  unsigned __int8 digest[16];
+  unsigned __int8 *pbHashObject;
+  unsigned int cbHashObject;
+
+};

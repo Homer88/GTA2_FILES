@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_ALARM_ACE
+// Полей: 3
+// Строки в оригинале: 85374-85379
+struct _SYSTEM_ALARM_ACE
+{
+
+  _ACE_HEADER Header;
+  unsigned int Mask;
+  unsigned int SidStart;
+
+};

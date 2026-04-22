@@ -1,0 +1,11 @@
+// Структура: _REDIRECTION_FUNCTION_DESCRIPTOR
+// Полей: 3
+// Строки в оригинале: 81324-81329
+struct _REDIRECTION_FUNCTION_DESCRIPTOR
+{
+
+  const char *DllName;
+  const char *FunctionName;
+  void *RedirectionTarget;
+
+};

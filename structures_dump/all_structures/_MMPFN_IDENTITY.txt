@@ -1,0 +1,11 @@
+// Структура: _MMPFN_IDENTITY
+// Полей: 3
+// Строки в оригинале: 81692-81697
+struct _MMPFN_IDENTITY
+{
+
+  _MMPFN_IDENTITY::<unnamed_type_u1> u1;
+  unsigned int PageFrameIndex;
+  _MMPFN_IDENTITY::<unnamed_type_u2> u2;
+
+};

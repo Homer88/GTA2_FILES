@@ -1,0 +1,9 @@
+// Структура: IHTMLEventObj
+// Полей: 1
+// Строки в оригинале: 38705-38708
+struct IHTMLEventObj
+{
+
+  struct IHTMLEventObjVtbl *lpVtbl;
+
+};

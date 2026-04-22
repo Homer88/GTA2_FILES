@@ -1,0 +1,9 @@
+// Структура: ISharedBitmap
+// Полей: 1
+// Строки в оригинале: 38035-38038
+struct ISharedBitmap
+{
+
+  struct ISharedBitmapVtbl *lpVtbl;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IEnumUnknown
+// Полей: 1
+// Строки в оригинале: 27623-27626
+struct IEnumUnknown
+{
+
+  struct IEnumUnknownVtbl *lpVtbl;
+
+};

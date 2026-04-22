@@ -1,0 +1,18 @@
+// Структура: ITransferAdviseSinkVtbl
+// Полей: 10
+// Строки в оригинале: 36935-36947
+struct ITransferAdviseSinkVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITransferAdviseSink *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITransferAdviseSink *This);
+  ULONG (__stdcall *Release)(ITransferAdviseSink *This);
+  HRESULT (__stdcall *UpdateProgress)(ITransferAdviseSink *This, ULONGLONG ullSizeCurrent, ULONGLONG ullSizeTotal, int nFilesCurrent, int nFilesTotal, int nFoldersCurrent, int nFoldersTotal);
+  HRESULT (__stdcall *UpdateTransferState)(ITransferAdviseSink *This, TRANSFER_ADVISE_STATE ts);
+  HRESULT (__stdcall *ConfirmOverwrite)(ITransferAdviseSink *This, IShellItem *psiSource, IShellItem *psiDestParent, LPCWSTR pszName);
+  HRESULT (__stdcall *ConfirmEncryptionLoss)(ITransferAdviseSink *This, IShellItem *psiSource);
+  HRESULT (__stdcall *FileFailure)(ITransferAdviseSink *This, IShellItem *psi, LPCWSTR pszItem, HRESULT hrError, LPWSTR pszRename, ULONG cchRename);
+  HRESULT (__stdcall *SubStreamFailure)(ITransferAdviseSink *This, IShellItem *psi, LPCWSTR pszStreamName, HRESULT hrError);
+  HRESULT (__stdcall *PropertyFailure)(ITransferAdviseSink *This, IShellItem *psi, const PROPERTYKEY *pkey, HRESULT hrError);
+
+};

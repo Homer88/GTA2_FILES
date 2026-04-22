@@ -1,0 +1,10 @@
+// Структура: _KEY_TRUST_INFORMATION
+// Полей: 2
+// Строки в оригинале: 80893-80897
+struct _KEY_TRUST_INFORMATION
+{
+
+  unsigned __int32 TrustedKey : 1;
+  unsigned __int32 Reserved : 31;
+
+};

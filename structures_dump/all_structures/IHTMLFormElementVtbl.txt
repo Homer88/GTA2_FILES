@@ -1,0 +1,39 @@
+// Структура: IHTMLFormElementVtbl
+// Полей: 31
+// Строки в оригинале: 39071-39104
+struct IHTMLFormElementVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLFormElement *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLFormElement *This);
+  ULONG (__stdcall *Release)(IHTMLFormElement *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLFormElement *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLFormElement *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLFormElement *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLFormElement *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *put_action)(IHTMLFormElement *This, BSTR v);
+  HRESULT (__stdcall *get_action)(IHTMLFormElement *This, BSTR *p);
+  HRESULT (__stdcall *put_dir)(IHTMLFormElement *This, BSTR v);
+  HRESULT (__stdcall *get_dir)(IHTMLFormElement *This, BSTR *p);
+  HRESULT (__stdcall *put_encoding)(IHTMLFormElement *This, BSTR v);
+  HRESULT (__stdcall *get_encoding)(IHTMLFormElement *This, BSTR *p);
+  HRESULT (__stdcall *put_method)(IHTMLFormElement *This, BSTR v);
+  HRESULT (__stdcall *get_method)(IHTMLFormElement *This, BSTR *p);
+  HRESULT (__stdcall *get_elements)(IHTMLFormElement *This, IDispatch **p);
+  HRESULT (__stdcall *put_target)(IHTMLFormElement *This, BSTR v);
+  HRESULT (__stdcall *get_target)(IHTMLFormElement *This, BSTR *p);
+  HRESULT (__stdcall *put_name)(IHTMLFormElement *This, BSTR v);
+  HRESULT (__stdcall *get_name)(IHTMLFormElement *This, BSTR *p);
+  HRESULT (__stdcall *put_onsubmit)(IHTMLFormElement *This, VARIANT v);
+  HRESULT (__stdcall *get_onsubmit)(IHTMLFormElement *This, VARIANT *p);
+  HRESULT (__stdcall *put_onreset)(IHTMLFormElement *This, VARIANT v);
+  HRESULT (__stdcall *get_onreset)(IHTMLFormElement *This, VARIANT *p);
+  HRESULT (__stdcall *submit)(IHTMLFormElement *This);
+  HRESULT (__stdcall *reset)(IHTMLFormElement *This);
+  HRESULT (__stdcall *put_length)(IHTMLFormElement *This, int v);
+  HRESULT (__stdcall *get_length)(IHTMLFormElement *This, int *p);
+  HRESULT (__stdcall *get__newEnum)(IHTMLFormElement *This, IUnknown **p);
+  HRESULT (__stdcall *item)(IHTMLFormElement *This, VARIANT name, VARIANT index, IDispatch **pdisp);
+  HRESULT (__stdcall *tags)(IHTMLFormElement *This, VARIANT tagName, IDispatch **pdisp);
+
+};

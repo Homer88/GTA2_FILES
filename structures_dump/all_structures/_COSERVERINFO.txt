@@ -1,0 +1,12 @@
+// Структура: _COSERVERINFO
+// Полей: 4
+// Строки в оригинале: 78749-78755
+struct _COSERVERINFO
+{
+
+  unsigned int dwReserved1;
+  wchar_t *pwszName;
+  _COAUTHINFO *pAuthInfo;
+  unsigned int dwReserved2;
+
+};

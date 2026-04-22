@@ -1,0 +1,8 @@
+// Structure: HINSTANCE__
+// Lines: 2072 - 2075
+// Fields: 2
+
+struct HINSTANCE__
+{
+  int unused;
+};

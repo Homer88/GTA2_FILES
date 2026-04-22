@@ -1,0 +1,10 @@
+// Структура: _CRYPT_SMIME_CAPABILITIES
+// Полей: 2
+// Строки в оригинале: 100146-100150
+struct _CRYPT_SMIME_CAPABILITIES
+{
+
+  unsigned int cCapability;
+  _CRYPT_SMIME_CAPABILITY *rgCapability;
+
+};

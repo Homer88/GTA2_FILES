@@ -1,0 +1,11 @@
+// Структура: _CMSG_STREAM_INFO
+// Полей: 3
+// Строки в оригинале: 107043-107048
+struct _CMSG_STREAM_INFO
+{
+
+  unsigned int cbContent;
+  int (__stdcall *pfnStreamOutput)(const void *, unsigned __int8 *, unsigned int, int);
+  void *pvArg;
+
+};

@@ -1,0 +1,116 @@
+// Auto-generated structure: S801
+// Source: S801.txt
+// Fields count: 95
+// Generated for GTA 2 project (DirectX 6.1)
+
+#pragma once
+
+#include <windows.h>
+
+// Forward declarations will be added later as needed
+
+#pragma pack(push, 1)
+
+struct S801
+{
+    char field_0;
+    char field_3B;
+    _BYTE gap3C;
+    char field_3D;
+    char field_3E;
+    char field_3F;
+    char field_40;
+    char field_41;
+    char field_42;
+    char field_43;
+    char field_44;
+    char field_45;
+    char field_46;
+    char field_47;
+    char field_48;
+    char field_49;
+    char field_4A;
+    char field_4B;
+    char field_4C;
+    char field_4D;
+    char field_4E;
+    char field_4F;
+    char field_50;
+    char field_51;
+    char field_52;
+    char field_53;
+    char field_54;
+    char field_99;
+    char field_9A;
+    char field_9B;
+    char field_9C;
+    char field_9D;
+    char field_9E;
+    char field_9F;
+    char field_A0;
+    char field_A1;
+    char field_A2;
+    char field_A3;
+    char field_A4;
+    char field_A5;
+    char field_A6;
+    char field_A7;
+    char field_A8;
+    char field_A9;
+    char field_AA;
+    char field_AB;
+    char field_AC;
+    char field_AD;
+    char field_AE;
+    char field_AF;
+    char field_B0;
+    char field_B1;
+    char field_B2;
+    char field_B3;
+    char field_B4;
+    char field_B5;
+    char field_B6;
+    char field_B7;
+    char field_B8;
+    char field_B9;
+    char field_BA;
+    char field_BB;
+    char field_BC;
+    char field_BD;
+    char field_BE;
+    char field_BF;
+    char field_C0;
+    char field_C1;
+    char field_C2;
+    char field_C3;
+    char field_C4;
+    char field_C5;
+    char field_C6;
+    char field_C7;
+    char field_C8;
+    char field_C9;
+    char field_CA;
+    char field_CB;
+    char field_CC;
+    char field_CD;
+    char field_CE;
+    char field_CF;
+    char field_D0;
+    char field_D1;
+    char field_D2;
+    char field_D3;
+    char field_D4;
+    char field_D5;
+    char field_D6;
+    char field_D7;
+    char field_D8;
+    char field_D9;
+    char field_DA;
+    char field_DB;
+    char field_100;
+};
+
+#pragma pack(pop)
+
+// Static size check (uncomment after verifying size)
+// static_assert(sizeof(S801) == EXPECTED_SIZE, "Size mismatch for S801");

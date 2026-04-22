@@ -1,0 +1,17 @@
+// Структура: CInternalPageAllocator
+// Полей: 9
+// Строки в оригинале: 59486-59497
+struct CInternalPageAllocator
+{
+
+  unsigned int _cPages;
+  tagPageEntry **_pPageListStart;
+  tagPageEntry **_pPageListEnd;
+  unsigned int _dwFlags;
+  tagPageEntry _ListHead;
+  int _cEntries;
+  unsigned int _cbPerEntry;
+  unsigned __int16 _cEntriesPerPage;
+  COleStaticMutexSem *_pLock;
+
+};

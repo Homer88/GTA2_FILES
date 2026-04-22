@@ -1,0 +1,9 @@
+// Структура: _OLESTREAM
+// Полей: 1
+// Строки в оригинале: 101480-101483
+struct _OLESTREAM
+{
+
+  _OLESTREAMVTBL *lpstbl;
+
+};

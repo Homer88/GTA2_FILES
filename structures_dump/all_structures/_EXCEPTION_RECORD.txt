@@ -1,0 +1,14 @@
+// Структура: _EXCEPTION_RECORD
+// Полей: 6
+// Строки в оригинале: 2270-2278
+struct _EXCEPTION_RECORD
+{
+
+  DWORD ExceptionCode;
+  DWORD ExceptionFlags;
+  struct _EXCEPTION_RECORD *ExceptionRecord;
+  PVOID ExceptionAddress;
+  DWORD NumberParameters;
+  ULONG_PTR ExceptionInformation[15];
+
+};

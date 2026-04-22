@@ -1,0 +1,13 @@
+// Структура: SYSTEM_POWER_LEVEL
+// Полей: 5
+// Строки в оригинале: 86997-87004
+struct SYSTEM_POWER_LEVEL
+{
+
+  unsigned __int8 Enable;
+  unsigned __int8 Spare[3];
+  unsigned int BatteryLevel;
+  POWER_ACTION_POLICY PowerPolicy;
+  _SYSTEM_POWER_STATE MinSystemState;
+
+};

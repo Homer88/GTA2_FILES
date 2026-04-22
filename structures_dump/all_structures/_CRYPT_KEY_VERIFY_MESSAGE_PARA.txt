@@ -1,0 +1,11 @@
+// Структура: _CRYPT_KEY_VERIFY_MESSAGE_PARA
+// Полей: 3
+// Строки в оригинале: 101616-101621
+struct _CRYPT_KEY_VERIFY_MESSAGE_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int dwMsgEncodingType;
+  unsigned int hCryptProv;
+
+};

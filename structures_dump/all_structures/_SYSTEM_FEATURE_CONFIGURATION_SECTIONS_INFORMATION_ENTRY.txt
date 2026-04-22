@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_FEATURE_CONFIGURATION_SECTIONS_INFORMATION_ENTRY
+// Полей: 3
+// Строки в оригинале: 100153-100158
+struct _SYSTEM_FEATURE_CONFIGURATION_SECTIONS_INFORMATION_ENTRY
+{
+
+  unsigned __int64 ChangeStamp;
+  void *Section;
+  unsigned int Size;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _WORKER_FACTORY_DEFERRED_WORK
+// Полей: 4
+// Строки в оригинале: 103584-103590
+struct _WORKER_FACTORY_DEFERRED_WORK
+{
+
+  _PORT_MESSAGE *AlpcSendMessage;
+  void *AlpcSendMessagePort;
+  unsigned int AlpcSendMessageFlags;
+  unsigned int Flags;
+
+};

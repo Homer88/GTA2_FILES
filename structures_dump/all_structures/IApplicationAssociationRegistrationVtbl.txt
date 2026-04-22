@@ -1,0 +1,17 @@
+// Структура: IApplicationAssociationRegistrationVtbl
+// Полей: 9
+// Строки в оригинале: 32198-32209
+struct IApplicationAssociationRegistrationVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IApplicationAssociationRegistration *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IApplicationAssociationRegistration *This);
+  ULONG (__stdcall *Release)(IApplicationAssociationRegistration *This);
+  HRESULT (__stdcall *QueryCurrentDefault)(IApplicationAssociationRegistration *This, LPCWSTR pszQuery, ASSOCIATIONTYPE atQueryType, ASSOCIATIONLEVEL alQueryLevel, LPWSTR *ppszAssociation);
+  HRESULT (__stdcall *QueryAppIsDefault)(IApplicationAssociationRegistration *This, LPCWSTR pszQuery, ASSOCIATIONTYPE atQueryType, ASSOCIATIONLEVEL alQueryLevel, LPCWSTR pszAppRegistryName, BOOL *pfDefault);
+  HRESULT (__stdcall *QueryAppIsDefaultAll)(IApplicationAssociationRegistration *This, ASSOCIATIONLEVEL alQueryLevel, LPCWSTR pszAppRegistryName, BOOL *pfDefault);
+  HRESULT (__stdcall *SetAppAsDefault)(IApplicationAssociationRegistration *This, LPCWSTR pszAppRegistryName, LPCWSTR pszSet, ASSOCIATIONTYPE atSetType);
+  HRESULT (__stdcall *SetAppAsDefaultAll)(IApplicationAssociationRegistration *This, LPCWSTR pszAppRegistryName);
+  HRESULT (__stdcall *ClearUserAssociations)(IApplicationAssociationRegistration *This);
+
+};

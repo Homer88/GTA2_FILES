@@ -1,0 +1,22 @@
+// Структура: _RDR_CALLOUT_STATE
+// Полей: 14
+// Строки в оригинале: 87863-87879
+struct _RDR_CALLOUT_STATE
+{
+
+  int LastError;
+  void *LastEEInfo;
+  _RPC_HTTP_REDIRECTOR_STAGE LastCalledStage;
+  wchar_t *ServerName;
+  wchar_t *ServerPort;
+  wchar_t *RemoteUser;
+  wchar_t *AuthType;
+  unsigned __int8 ResourceTypePresent;
+  unsigned __int8 SessionIdPresent;
+  unsigned __int8 InterfacePresent;
+  _GUID ResourceType;
+  _GUID SessionId;
+  _RPC_SYNTAX_IDENTIFIER Interface;
+  void *CertContext;
+
+};

@@ -1,0 +1,14 @@
+// Структура: tagElement
+// Полей: 6
+// Строки в оригинале: 276329-276337
+struct tagElement
+{
+
+  tagElement *pNext;
+  unsigned int iHashValue;
+  unsigned __int16 fValueFlags;
+  unsigned __int16 cbKey;
+  IUnknown *pUnknown;
+  unsigned __int8 abKey[];
+
+};

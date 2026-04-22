@@ -1,0 +1,13 @@
+// Структура: _PROCESS_FIBER_SHADOW_STACK_ALLOCATION_INFORMATION
+// Полей: 5
+// Строки в оригинале: 95734-95741
+struct _PROCESS_FIBER_SHADOW_STACK_ALLOCATION_INFORMATION
+{
+
+  unsigned int ReserveSize;
+  unsigned int CommitSize;
+  unsigned int PreferredNode;
+  unsigned int Reserved;
+  void *Ssp;
+
+};

@@ -1,0 +1,9 @@
+// Структура: ICopyHookWVtbl
+// Полей: 1
+// Строки в оригинале: 34822-34825
+struct ICopyHookWVtbl
+{
+
+  UINT (__stdcall *CopyCallback)(ICopyHookW *This, HWND hwnd, UINT wFunc, UINT wFlags, PCWSTR pszSrcFile, DWORD dwSrcAttribs, PCWSTR pszDestFile, DWORD dwDestAttribs);
+
+};

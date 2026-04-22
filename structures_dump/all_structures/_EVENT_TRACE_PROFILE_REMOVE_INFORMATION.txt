@@ -1,0 +1,11 @@
+// Структура: _EVENT_TRACE_PROFILE_REMOVE_INFORMATION
+// Полей: 3
+// Строки в оригинале: 313559-313564
+struct _EVENT_TRACE_PROFILE_REMOVE_INFORMATION
+{
+
+  _EVENT_TRACE_INFORMATION_CLASS EventTraceInformationClass;
+  _KPROFILE_SOURCE ProfileSource;
+  unsigned int CpuInfoHierarchy[3];
+
+};

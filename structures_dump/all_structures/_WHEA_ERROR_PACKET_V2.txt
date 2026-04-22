@@ -1,0 +1,24 @@
+// Структура: _WHEA_ERROR_PACKET_V2
+// Полей: 16
+// Строки в оригинале: 20148-20166
+struct _WHEA_ERROR_PACKET_V2
+{
+
+  unsigned int Signature;
+  unsigned int Version;
+  unsigned int Length;
+  _WHEA_ERROR_PACKET_FLAGS Flags;
+  _WHEA_ERROR_TYPE ErrorType;
+  _WHEA_ERROR_SEVERITY ErrorSeverity;
+  unsigned int ErrorSourceId;
+  _WHEA_ERROR_SOURCE_TYPE ErrorSourceType;
+  _GUID NotifyType;
+  unsigned __int64 Context;
+  _WHEA_ERROR_PACKET_DATA_FORMAT DataFormat;
+  unsigned int Reserved1;
+  unsigned int DataOffset;
+  unsigned int DataLength;
+  unsigned int PshedDataOffset;
+  unsigned int PshedDataLength;
+
+};

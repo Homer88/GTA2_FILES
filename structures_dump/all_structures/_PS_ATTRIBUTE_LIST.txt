@@ -1,0 +1,10 @@
+// Структура: _PS_ATTRIBUTE_LIST
+// Полей: 2
+// Строки в оригинале: 98835-98839
+struct _PS_ATTRIBUTE_LIST
+{
+
+  unsigned int TotalLength;
+  _PS_ATTRIBUTE Attributes[1];
+
+};

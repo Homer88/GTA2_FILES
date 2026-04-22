@@ -1,0 +1,15 @@
+// Структура: IEnumGUIDVtbl
+// Полей: 7
+// Строки в оригинале: 39445-39454
+struct IEnumGUIDVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumGUID *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumGUID *This);
+  ULONG (__stdcall *Release)(IEnumGUID *This);
+  HRESULT (__stdcall *Next)(IEnumGUID *This, ULONG celt, GUID *rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumGUID *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumGUID *This);
+  HRESULT (__stdcall *Clone)(IEnumGUID *This, IEnumGUID **ppenum);
+
+};

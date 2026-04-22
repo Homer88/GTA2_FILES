@@ -1,0 +1,10 @@
+// Структура: _RTLP_HP_ALLOC_TRACKER
+// Полей: 2
+// Строки в оригинале: 20468-20472
+struct _RTLP_HP_ALLOC_TRACKER
+{
+
+  unsigned int BaseAddress;
+  $C1189B1125FD95F987DE1D1180088027 ___u1;
+
+};

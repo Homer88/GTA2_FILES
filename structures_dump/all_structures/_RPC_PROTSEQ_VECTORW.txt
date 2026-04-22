@@ -1,0 +1,10 @@
+// Структура: _RPC_PROTSEQ_VECTORW
+// Полей: 2
+// Строки в оригинале: 110989-110993
+struct _RPC_PROTSEQ_VECTORW
+{
+
+  unsigned int Count;
+  wchar_t *Protseq[1];
+
+};

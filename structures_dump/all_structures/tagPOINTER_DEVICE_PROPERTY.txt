@@ -1,0 +1,16 @@
+// Структура: tagPOINTER_DEVICE_PROPERTY
+// Полей: 8
+// Строки в оригинале: 110098-110108
+struct tagPOINTER_DEVICE_PROPERTY
+{
+
+  int logicalMin;
+  int logicalMax;
+  int physicalMin;
+  int physicalMax;
+  unsigned int unit;
+  unsigned int unitExponent;
+  unsigned __int16 usagePageId;
+  unsigned __int16 usageId;
+
+};

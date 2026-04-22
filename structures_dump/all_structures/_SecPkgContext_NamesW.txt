@@ -1,0 +1,9 @@
+// Структура: _SecPkgContext_NamesW
+// Полей: 1
+// Строки в оригинале: 323986-323989
+struct _SecPkgContext_NamesW
+{
+
+  wchar_t *sUserName;
+
+};

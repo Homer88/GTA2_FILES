@@ -1,0 +1,11 @@
+// Структура: tagSWindowData
+// Полей: 3
+// Строки в оригинале: 62810-62815
+struct tagSWindowData
+{
+
+  HWND__ *hWnd;
+  unsigned int wFirstMsg;
+  unsigned int wLastMsg;
+
+};

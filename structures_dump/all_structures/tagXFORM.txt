@@ -1,0 +1,14 @@
+// Структура: tagXFORM
+// Полей: 6
+// Строки в оригинале: 83928-83936
+struct tagXFORM
+{
+
+  float eM11;
+  float eM12;
+  float eM21;
+  float eM22;
+  float eDx;
+  float eDy;
+
+};

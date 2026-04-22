@@ -1,0 +1,12 @@
+// Структура: _SYSTEM_MEMORY_TOPOLOGY_INFORMATION
+// Полей: 4
+// Строки в оригинале: 93600-93606
+struct _SYSTEM_MEMORY_TOPOLOGY_INFORMATION
+{
+
+  unsigned __int64 NumberOfRuns;
+  unsigned int NumberOfNodes;
+  unsigned int NumberOfChannels;
+  _PHYSICAL_CHANNEL_RUN Run[1];
+
+};

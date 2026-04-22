@@ -1,0 +1,10 @@
+// Структура: __PUBLIC_OBJECT_TYPE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 104957-104961
+struct __PUBLIC_OBJECT_TYPE_INFORMATION
+{
+
+  _UNICODE_STRING TypeName;
+  unsigned int Reserved[22];
+
+};

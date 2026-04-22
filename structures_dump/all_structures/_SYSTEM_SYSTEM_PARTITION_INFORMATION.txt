@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_SYSTEM_PARTITION_INFORMATION
+// Полей: 1
+// Строки в оригинале: 91866-91869
+struct _SYSTEM_SYSTEM_PARTITION_INFORMATION
+{
+
+  _UNICODE_STRING SystemPartition;
+
+};

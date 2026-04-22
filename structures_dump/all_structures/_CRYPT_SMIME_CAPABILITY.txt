@@ -1,0 +1,10 @@
+// Структура: _CRYPT_SMIME_CAPABILITY
+// Полей: 2
+// Строки в оригинале: 79741-79745
+struct _CRYPT_SMIME_CAPABILITY
+{
+
+  char *pszObjId;
+  _CRYPTOAPI_BLOB Parameters;
+
+};

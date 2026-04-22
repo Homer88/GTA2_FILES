@@ -1,0 +1,10 @@
+// Структура: tagCUSTDATAITEM
+// Полей: 2
+// Строки в оригинале: 29898-29902
+struct tagCUSTDATAITEM
+{
+
+  GUID guid;
+  VARIANTARG varValue;
+
+};

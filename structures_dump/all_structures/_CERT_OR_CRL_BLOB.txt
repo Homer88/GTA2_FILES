@@ -1,0 +1,11 @@
+// Структура: _CERT_OR_CRL_BLOB
+// Полей: 3
+// Строки в оригинале: 107525-107530
+struct _CERT_OR_CRL_BLOB
+{
+
+  unsigned int dwChoice;
+  unsigned int cbEncoded;
+  unsigned __int8 *pbEncoded;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_PROCESS_ID_INFORMATION
+// Полей: 2
+// Строки в оригинале: 100040-100044
+struct _SYSTEM_PROCESS_ID_INFORMATION
+{
+
+  void *ProcessId;
+  _UNICODE_STRING ImageName;
+
+};

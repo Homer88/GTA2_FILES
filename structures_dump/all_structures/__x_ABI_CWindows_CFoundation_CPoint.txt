@@ -1,0 +1,10 @@
+// Структура: __x_ABI_CWindows_CFoundation_CPoint
+// Полей: 2
+// Строки в оригинале: 34357-34361
+struct __x_ABI_CWindows_CFoundation_CPoint
+{
+
+  FLOAT X;
+  FLOAT Y;
+
+};

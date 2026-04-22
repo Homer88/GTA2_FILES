@@ -1,0 +1,11 @@
+// Структура: _HEAP_BUCKET
+// Полей: 3
+// Строки в оригинале: 21349-21354
+struct _HEAP_BUCKET
+{
+
+  unsigned __int16 BlockUnits;
+  unsigned __int8 SizeIndex;
+  $D089E51CC817E8A374CC35016611C54B ___u2;
+
+};

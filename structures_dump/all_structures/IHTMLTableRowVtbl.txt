@@ -1,0 +1,32 @@
+// Структура: IHTMLTableRowVtbl
+// Полей: 24
+// Строки в оригинале: 36861-36887
+struct IHTMLTableRowVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLTableRow *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLTableRow *This);
+  ULONG (__stdcall *Release)(IHTMLTableRow *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLTableRow *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLTableRow *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLTableRow *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLTableRow *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *put_align)(IHTMLTableRow *This, BSTR v);
+  HRESULT (__stdcall *get_align)(IHTMLTableRow *This, BSTR *p);
+  HRESULT (__stdcall *put_vAlign)(IHTMLTableRow *This, BSTR v);
+  HRESULT (__stdcall *get_vAlign)(IHTMLTableRow *This, BSTR *p);
+  HRESULT (__stdcall *put_bgColor)(IHTMLTableRow *This, VARIANT v);
+  HRESULT (__stdcall *get_bgColor)(IHTMLTableRow *This, VARIANT *p);
+  HRESULT (__stdcall *put_borderColor)(IHTMLTableRow *This, VARIANT v);
+  HRESULT (__stdcall *get_borderColor)(IHTMLTableRow *This, VARIANT *p);
+  HRESULT (__stdcall *put_borderColorLight)(IHTMLTableRow *This, VARIANT v);
+  HRESULT (__stdcall *get_borderColorLight)(IHTMLTableRow *This, VARIANT *p);
+  HRESULT (__stdcall *put_borderColorDark)(IHTMLTableRow *This, VARIANT v);
+  HRESULT (__stdcall *get_borderColorDark)(IHTMLTableRow *This, VARIANT *p);
+  HRESULT (__stdcall *get_rowIndex)(IHTMLTableRow *This, int *p);
+  HRESULT (__stdcall *get_sectionRowIndex)(IHTMLTableRow *This, int *p);
+  HRESULT (__stdcall *get_cells)(IHTMLTableRow *This, IHTMLElementCollection **p);
+  HRESULT (__stdcall *insertCell)(IHTMLTableRow *This, int index, IDispatch **row);
+  HRESULT (__stdcall *deleteCell)(IHTMLTableRow *This, int index);
+
+};

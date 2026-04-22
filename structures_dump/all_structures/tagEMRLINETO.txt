@@ -1,0 +1,10 @@
+// Структура: tagEMRLINETO
+// Полей: 2
+// Строки в оригинале: 98201-98205
+struct tagEMRLINETO
+{
+
+  tagEMR emr;
+  _POINTL ptl;
+
+};

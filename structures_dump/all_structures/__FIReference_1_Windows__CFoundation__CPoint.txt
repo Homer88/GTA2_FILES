@@ -1,0 +1,9 @@
+// Структура: __FIReference_1_Windows__CFoundation__CPoint
+// Полей: 1
+// Строки в оригинале: 34351-34354
+struct __FIReference_1_Windows__CFoundation__CPoint
+{
+
+  struct __FIReference_1_Windows__CFoundation__CPointVtbl *lpVtbl;
+
+};

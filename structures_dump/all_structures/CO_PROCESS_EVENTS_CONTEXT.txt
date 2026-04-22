@@ -1,0 +1,9 @@
+// Структура: CO_PROCESS_EVENTS_CONTEXT
+// Полей: 1
+// Строки в оригинале: 240291-240294
+struct CO_PROCESS_EVENTS_CONTEXT
+{
+
+  unsigned int Internal[16];
+
+};

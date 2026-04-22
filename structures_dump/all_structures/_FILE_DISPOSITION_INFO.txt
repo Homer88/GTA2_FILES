@@ -1,0 +1,9 @@
+// Структура: _FILE_DISPOSITION_INFO
+// Полей: 1
+// Строки в оригинале: 105119-105122
+struct _FILE_DISPOSITION_INFO
+{
+
+  unsigned __int8 DeleteFileW;
+
+};

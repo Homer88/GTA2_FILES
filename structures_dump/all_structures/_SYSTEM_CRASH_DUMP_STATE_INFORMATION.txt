@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_CRASH_DUMP_STATE_INFORMATION
+// Полей: 1
+// Строки в оригинале: 100183-100186
+struct _SYSTEM_CRASH_DUMP_STATE_INFORMATION
+{
+
+  _SYSTEM_CRASH_DUMP_CONFIGURATION_CLASS CrashDumpConfigurationClass;
+
+};

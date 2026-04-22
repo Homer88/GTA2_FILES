@@ -1,0 +1,12 @@
+// Структура: _OCSP_SIGNATURE_INFO
+// Полей: 4
+// Строки в оригинале: 79703-79709
+struct _OCSP_SIGNATURE_INFO
+{
+
+  _CRYPT_ALGORITHM_IDENTIFIER SignatureAlgorithm;
+  _CRYPT_BIT_BLOB Signature;
+  unsigned int cCertEncoded;
+  _CRYPTOAPI_BLOB *rgCertEncoded;
+
+};

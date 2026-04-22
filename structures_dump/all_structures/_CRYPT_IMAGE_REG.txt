@@ -1,0 +1,11 @@
+// Структура: _CRYPT_IMAGE_REG
+// Полей: 3
+// Строки в оригинале: 87339-87344
+struct _CRYPT_IMAGE_REG
+{
+
+  wchar_t *pszImage;
+  unsigned int cInterfaces;
+  _CRYPT_INTERFACE_REG **rgpInterfaces;
+
+};

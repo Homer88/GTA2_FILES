@@ -1,0 +1,17 @@
+// Структура: _Flags
+// Полей: 9
+// Строки в оригинале: 86136-86147
+struct _Flags
+{
+
+  unsigned __int16 ValidCallPending : 1;
+  unsigned __int16 ErrorPending : 1;
+  unsigned __int16 BadStubData : 1;
+  unsigned __int16 RuntimeCleanedUp : 1;
+  unsigned __int16 ClientHandleCreated : 1;
+  unsigned __int16 HandlelessObjCall : 1;
+  unsigned __int16 HasBigByValueArg : 1;
+  unsigned __int16 ClientDcomPipeCall : 1;
+  unsigned __int16 Unused : 8;
+
+};

@@ -1,0 +1,36 @@
+// Структура: IDiscRecorder2Vtbl
+// Полей: 28
+// Строки в оригинале: 33578-33608
+struct IDiscRecorder2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDiscRecorder2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDiscRecorder2 *This);
+  ULONG (__stdcall *Release)(IDiscRecorder2 *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IDiscRecorder2 *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IDiscRecorder2 *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IDiscRecorder2 *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IDiscRecorder2 *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *EjectMedia)(IDiscRecorder2 *This);
+  HRESULT (__stdcall *CloseTray)(IDiscRecorder2 *This);
+  HRESULT (__stdcall *AcquireExclusiveAccess)(IDiscRecorder2 *This, VARIANT_BOOL force, BSTR MIDL__IDiscRecorder20000);
+  HRESULT (__stdcall *ReleaseExclusiveAccess)(IDiscRecorder2 *This);
+  HRESULT (__stdcall *DisableMcn)(IDiscRecorder2 *This);
+  HRESULT (__stdcall *EnableMcn)(IDiscRecorder2 *This);
+  HRESULT (__stdcall *InitializeDiscRecorder)(IDiscRecorder2 *This, BSTR recorderUniqueId);
+  HRESULT (__stdcall *get_ActiveDiscRecorder)(IDiscRecorder2 *This, BSTR *value);
+  HRESULT (__stdcall *get_VendorId)(IDiscRecorder2 *This, BSTR *value);
+  HRESULT (__stdcall *get_ProductId)(IDiscRecorder2 *This, BSTR *value);
+  HRESULT (__stdcall *get_ProductRevision)(IDiscRecorder2 *This, BSTR *value);
+  HRESULT (__stdcall *get_VolumeName)(IDiscRecorder2 *This, BSTR *value);
+  HRESULT (__stdcall *get_VolumePathNames)(IDiscRecorder2 *This, SAFEARRAY **value);
+  HRESULT (__stdcall *get_DeviceCanLoadMedia)(IDiscRecorder2 *This, VARIANT_BOOL *value);
+  HRESULT (__stdcall *get_LegacyDeviceNumber)(IDiscRecorder2 *This, LONG *legacyDeviceNumber);
+  HRESULT (__stdcall *get_SupportedFeaturePages)(IDiscRecorder2 *This, SAFEARRAY **value);
+  HRESULT (__stdcall *get_CurrentFeaturePages)(IDiscRecorder2 *This, SAFEARRAY **value);
+  HRESULT (__stdcall *get_SupportedProfiles)(IDiscRecorder2 *This, SAFEARRAY **value);
+  HRESULT (__stdcall *get_CurrentProfiles)(IDiscRecorder2 *This, SAFEARRAY **value);
+  HRESULT (__stdcall *get_SupportedModePages)(IDiscRecorder2 *This, SAFEARRAY **value);
+  HRESULT (__stdcall *get_ExclusiveAccessOwner)(IDiscRecorder2 *This, BSTR *value);
+
+};

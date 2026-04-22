@@ -1,0 +1,13 @@
+// Структура: _WNF_CMPT_BLOCKED_APP_CONTEXT
+// Полей: 5
+// Строки в оригинале: 309444-309451
+struct _WNF_CMPT_BLOCKED_APP_CONTEXT
+{
+
+  wchar_t AppName[50];
+  wchar_t VendorName[50];
+  unsigned int dwBlock;
+  unsigned int dwFwLinkNumber;
+  unsigned int dwKbNumber;
+
+};

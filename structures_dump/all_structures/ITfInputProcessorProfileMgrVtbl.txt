@@ -1,0 +1,19 @@
+// Структура: ITfInputProcessorProfileMgrVtbl
+// Полей: 11
+// Строки в оригинале: 40835-40848
+struct ITfInputProcessorProfileMgrVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfInputProcessorProfileMgr *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfInputProcessorProfileMgr *This);
+  ULONG (__stdcall *Release)(ITfInputProcessorProfileMgr *This);
+  HRESULT (__stdcall *ActivateProfile)(ITfInputProcessorProfileMgr *This, DWORD dwProfileType, LANGID langid, const IID *const clsid, const GUID *const guidProfile, HKL hkl, DWORD dwFlags);
+  HRESULT (__stdcall *DeactivateProfile)(ITfInputProcessorProfileMgr *This, DWORD dwProfileType, LANGID langid, const IID *const clsid, const GUID *const guidProfile, HKL hkl, DWORD dwFlags);
+  HRESULT (__stdcall *GetProfile)(ITfInputProcessorProfileMgr *This, DWORD dwProfileType, LANGID langid, const IID *const clsid, const GUID *const guidProfile, HKL hkl, TF_INPUTPROCESSORPROFILE *pProfile);
+  HRESULT (__stdcall *EnumProfiles)(ITfInputProcessorProfileMgr *This, LANGID langid, IEnumTfInputProcessorProfiles **ppEnum);
+  HRESULT (__stdcall *ReleaseInputProcessor)(ITfInputProcessorProfileMgr *This, const IID *const rclsid, DWORD dwFlags);
+  HRESULT (__stdcall *RegisterProfile)(ITfInputProcessorProfileMgr *This, const IID *const rclsid, LANGID langid, const GUID *const guidProfile, const WCHAR *pchDesc, ULONG cchDesc, const WCHAR *pchIconFile, ULONG cchFile, ULONG uIconIndex, HKL hklsubstitute, DWORD dwPreferredLayout, BOOL bEnabledByDefault, DWORD dwFlags);
+  HRESULT (__stdcall *UnregisterProfile)(ITfInputProcessorProfileMgr *This, const IID *const rclsid, LANGID langid, const GUID *const guidProfile, DWORD dwFlags);
+  HRESULT (__stdcall *GetActiveProfile)(ITfInputProcessorProfileMgr *This, const GUID *const catid, TF_INPUTPROCESSORPROFILE *pProfile);
+
+};

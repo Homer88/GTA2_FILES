@@ -1,0 +1,10 @@
+// Структура: _BOOT_AREA_INFO
+// Полей: 2
+// Строки в оригинале: 82753-82757
+struct _BOOT_AREA_INFO
+{
+
+  unsigned int BootSectorCount;
+  _BOOT_AREA_INFO::<unnamed_type_BootSectors> BootSectors[2];
+
+};

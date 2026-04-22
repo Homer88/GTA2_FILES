@@ -1,0 +1,11 @@
+// Структура: _HEAP_EVENT_RANGE
+// Полей: 3
+// Строки в оригинале: 310776-310781
+struct _HEAP_EVENT_RANGE
+{
+
+  void *HeapHandle;
+  void *Address;
+  unsigned int Size;
+
+};

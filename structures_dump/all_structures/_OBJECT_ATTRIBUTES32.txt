@@ -1,0 +1,14 @@
+// Структура: _OBJECT_ATTRIBUTES32
+// Полей: 6
+// Строки в оригинале: 83115-83123
+struct _OBJECT_ATTRIBUTES32
+{
+
+  unsigned int Length;
+  unsigned int RootDirectory;
+  unsigned int ObjectName;
+  unsigned int Attributes;
+  unsigned int SecurityDescriptor;
+  unsigned int SecurityQualityOfService;
+
+};

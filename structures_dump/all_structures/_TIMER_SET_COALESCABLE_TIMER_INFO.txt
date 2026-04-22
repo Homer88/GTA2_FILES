@@ -1,0 +1,15 @@
+// Структура: _TIMER_SET_COALESCABLE_TIMER_INFO
+// Полей: 7
+// Строки в оригинале: 91839-91848
+struct _TIMER_SET_COALESCABLE_TIMER_INFO
+{
+
+  _LARGE_INTEGER DueTime;
+  void (__stdcall *TimerApcRoutine)(void *, unsigned int, int);
+  void *TimerContext;
+  _COUNTED_REASON_CONTEXT *WakeContext;
+  unsigned int Period;
+  unsigned int TolerableDelay;
+  unsigned __int8 *PreviousState;
+
+};

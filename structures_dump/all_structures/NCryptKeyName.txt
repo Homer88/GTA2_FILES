@@ -1,0 +1,12 @@
+// Структура: NCryptKeyName
+// Полей: 4
+// Строки в оригинале: 112675-112681
+struct NCryptKeyName
+{
+
+  wchar_t *pszName;
+  wchar_t *pszAlgid;
+  unsigned int dwLegacyKeySpec;
+  unsigned int dwFlags;
+
+};

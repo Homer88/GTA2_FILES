@@ -1,0 +1,9 @@
+// Структура: _SERVICE_REQUIRED_PRIVILEGES_INFOA
+// Полей: 1
+// Строки в оригинале: 91689-91692
+struct _SERVICE_REQUIRED_PRIVILEGES_INFOA
+{
+
+  char *pmszRequiredPrivileges;
+
+};

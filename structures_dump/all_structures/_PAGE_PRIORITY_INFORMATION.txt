@@ -1,0 +1,9 @@
+// Структура: _PAGE_PRIORITY_INFORMATION
+// Полей: 1
+// Строки в оригинале: 108172-108175
+struct _PAGE_PRIORITY_INFORMATION
+{
+
+  unsigned int PagePriority;
+
+};

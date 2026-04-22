@@ -1,0 +1,12 @@
+// Структура: tagOLEVERB
+// Полей: 4
+// Строки в оригинале: 27599-27605
+struct tagOLEVERB
+{
+
+  LONG lVerb;
+  LPOLESTR lpszVerbName;
+  DWORD fuFlags;
+  DWORD grfAttribs;
+
+};

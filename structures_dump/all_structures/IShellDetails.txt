@@ -1,0 +1,9 @@
+// Структура: IShellDetails
+// Полей: 1
+// Строки в оригинале: 32231-32234
+struct IShellDetails
+{
+
+  struct IShellDetailsVtbl *lpVtbl;
+
+};

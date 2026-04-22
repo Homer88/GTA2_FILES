@@ -1,0 +1,10 @@
+// Структура: _WinrtTypeSerializationInfo_UINT32_MIDL_TYPE_FORMAT_STRING
+// Полей: 2
+// Строки в оригинале: 373918-373922
+struct _WinrtTypeSerializationInfo_UINT32_MIDL_TYPE_FORMAT_STRING
+{
+
+  __int16 Pad;
+  unsigned __int8 Format[4];
+
+};

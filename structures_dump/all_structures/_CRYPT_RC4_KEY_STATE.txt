@@ -1,0 +1,12 @@
+// Структура: _CRYPT_RC4_KEY_STATE
+// Полей: 4
+// Строки в оригинале: 84014-84020
+struct _CRYPT_RC4_KEY_STATE
+{
+
+  unsigned __int8 Key[16];
+  unsigned __int8 SBox[256];
+  unsigned __int8 i;
+  unsigned __int8 j;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _CTL_ANY_SUBJECT_INFO
+// Полей: 2
+// Строки в оригинале: 97787-97791
+struct _CTL_ANY_SUBJECT_INFO
+{
+
+  _CRYPT_ALGORITHM_IDENTIFIER SubjectAlgorithm;
+  _CRYPTOAPI_BLOB SubjectIdentifier;
+
+};

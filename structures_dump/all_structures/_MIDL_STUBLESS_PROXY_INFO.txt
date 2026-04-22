@@ -1,0 +1,14 @@
+// Структура: _MIDL_STUBLESS_PROXY_INFO
+// Полей: 6
+// Строки в оригинале: 106922-106930
+struct _MIDL_STUBLESS_PROXY_INFO
+{
+
+  const _MIDL_STUB_DESC *pStubDesc;
+  const unsigned __int8 *ProcFormatString;
+  const unsigned __int16 *FormatStringOffset;
+  _RPC_SYNTAX_IDENTIFIER *pTransferSyntax;
+  unsigned int nCount;
+  _MIDL_SYNTAX_INFO *pSyntaxInfo;
+
+};

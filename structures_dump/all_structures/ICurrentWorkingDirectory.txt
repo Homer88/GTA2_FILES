@@ -1,0 +1,9 @@
+// Структура: ICurrentWorkingDirectory
+// Полей: 1
+// Строки в оригинале: 37599-37602
+struct ICurrentWorkingDirectory
+{
+
+  struct ICurrentWorkingDirectoryVtbl *lpVtbl;
+
+};

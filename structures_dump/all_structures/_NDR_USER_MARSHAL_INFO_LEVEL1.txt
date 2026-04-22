@@ -1,0 +1,14 @@
+// Структура: _NDR_USER_MARSHAL_INFO_LEVEL1
+// Полей: 6
+// Строки в оригинале: 95585-95593
+struct _NDR_USER_MARSHAL_INFO_LEVEL1
+{
+
+  void *Buffer;
+  unsigned int BufferSize;
+  void *(__stdcall *pfnAllocate)(unsigned int);
+  void (__stdcall *pfnFree)(void *);
+  IRpcChannelBuffer *pRpcChannelBuffer;
+  unsigned int Reserved[5];
+
+};

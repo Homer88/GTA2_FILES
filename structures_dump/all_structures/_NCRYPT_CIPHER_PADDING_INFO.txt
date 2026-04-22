@@ -1,0 +1,14 @@
+// Структура: _NCRYPT_CIPHER_PADDING_INFO
+// Полей: 6
+// Строки в оригинале: 112684-112692
+struct _NCRYPT_CIPHER_PADDING_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int dwFlags;
+  unsigned __int8 *pbIV;
+  unsigned int cbIV;
+  unsigned __int8 *pbOtherInfo;
+  unsigned int cbOtherInfo;
+
+};

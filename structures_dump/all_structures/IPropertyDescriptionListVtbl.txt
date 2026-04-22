@@ -1,0 +1,13 @@
+// Структура: IPropertyDescriptionListVtbl
+// Полей: 5
+// Строки в оригинале: 34556-34563
+struct IPropertyDescriptionListVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyDescriptionList *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyDescriptionList *This);
+  ULONG (__stdcall *Release)(IPropertyDescriptionList *This);
+  HRESULT (__stdcall *GetCount)(IPropertyDescriptionList *This, UINT *pcElem);
+  HRESULT (__stdcall *GetAt)(IPropertyDescriptionList *This, UINT iElem, const IID *const riid, void **ppv);
+
+};

@@ -1,0 +1,13 @@
+// Структура: _SHFILEINFOW
+// Полей: 5
+// Строки в оригинале: 82305-82312
+struct _SHFILEINFOW
+{
+
+  HICON__ *hIcon;
+  int iIcon;
+  unsigned int dwAttributes;
+  wchar_t szDisplayName[260];
+  wchar_t szTypeName[80];
+
+};

@@ -1,0 +1,54 @@
+// Структура: _tRpcVerifierSettings
+// Полей: 46
+// Строки в оригинале: 263665-263713
+struct _tRpcVerifierSettings
+{
+
+  int fFaultInjectImpersonateClient;
+  unsigned int ProbFaultInjectImpersonateClient;
+  unsigned int DelayFaultInjectImpersonateClient;
+  int fCorruptionInjectServerReceives;
+  int fCorruptionInjectClientReceives;
+  int fCorruptionInjectSends;
+  int fCorruptionInjectNdrSends;
+  int fCorruptionInjectNdrReturns;
+  int fCorruptionInjectNdr;
+  unsigned int ProbRpcHeaderCorruption;
+  unsigned int ProbDataCorruption;
+  unsigned int ProbSecureDataCorruption;
+  tCorruptionPattern CorruptionPattern;
+  tCorruptionSizeType CorruptionSizeType;
+  unsigned int CorruptionSize;
+  tCorruptionDistributionType CorruptionDistributionType;
+  unsigned int ProbBufferTruncation;
+  unsigned int MaxBufferTruncationSize;
+  int fFaultInjectTransports;
+  unsigned int ProbFaultInjectTransports;
+  unsigned int DelayFaultInjectTransports;
+  int fSendReplay;
+  unsigned int SentBufferListSize;
+  unsigned int ReplayFrequency;
+  int fPauseInject;
+  tDelayType PauseInjectIntervalType;
+  unsigned int PauseInjectIntervalLength;
+  tDelayType PauseInjectPauseType;
+  unsigned int PauseInjectPauseLength;
+  int fPauseInjectExternalAPIs;
+  unsigned int ProbPauseInjectExternalAPIs;
+  unsigned int PauseInjectExternalAPIsMaxWait;
+  int IsHighPrivilege;
+  int fSupressAppVerifierBreaks;
+  void (__stdcall *TestCorruptionInjectCallback)(tBufferType, unsigned int *, unsigned __int8 **);
+  void (__stdcall *NdrCorruptionCallback)(void *);
+  unsigned int NDRVerifierMaxExtensionFactor;
+  unsigned int NDRVerifierMaxExtensionBufferLength;
+  unsigned int DelayCorruption;
+  void (__stdcall *InitializeRpcShim)();
+  void (__stdcall *CorruptionInject)(tBufferType, unsigned int *, unsigned __int8 **);
+  void (__stdcall *NDRSendCorruptionInject)(_RPC_MESSAGE *);
+  void (__stdcall *NDRReturnCorruptionInject)(_MIDL_STUB_MESSAGE *);
+  int (__stdcall *RegisterThreadForPauseInjection)(void *);
+  void (__stdcall *UnregisterThreadForPauseInjection)(void *);
+  void (__stdcall *CloseAlpcPort)(void *);
+
+};

@@ -1,0 +1,9 @@
+// Структура: DDiscFormat2EraseEvents
+// Полей: 1
+// Строки в оригинале: 33647-33650
+struct DDiscFormat2EraseEvents
+{
+
+  struct DDiscFormat2EraseEventsVtbl *lpVtbl;
+
+};

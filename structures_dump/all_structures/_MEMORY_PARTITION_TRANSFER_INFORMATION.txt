@@ -1,0 +1,11 @@
+// Структура: _MEMORY_PARTITION_TRANSFER_INFORMATION
+// Полей: 3
+// Строки в оригинале: 95655-95660
+struct _MEMORY_PARTITION_TRANSFER_INFORMATION
+{
+
+  unsigned int NumberOfPages;
+  unsigned int NumaNode;
+  unsigned int Flags;
+
+};

@@ -1,0 +1,13 @@
+// Структура: IViewStateIdentityItemVtbl
+// Полей: 5
+// Строки в оригинале: 45115-45122
+struct IViewStateIdentityItemVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IViewStateIdentityItem *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IViewStateIdentityItem *This);
+  ULONG (__stdcall *Release)(IViewStateIdentityItem *This);
+  HRESULT (__stdcall *GetItemIDList)(IViewStateIdentityItem *This, LPITEMIDLIST *ppidl);
+  HRESULT (__stdcall *GetItem)(IViewStateIdentityItem *This, IShellItem **ppsi);
+
+};

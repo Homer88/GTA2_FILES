@@ -1,0 +1,31 @@
+// Структура: _HEAP_COUNTERS
+// Полей: 23
+// Строки в оригинале: 20995-21020
+struct _HEAP_COUNTERS
+{
+
+  unsigned int TotalMemoryReserved;
+  unsigned int TotalMemoryCommitted;
+  unsigned int TotalMemoryLargeUCR;
+  unsigned int TotalSizeInVirtualBlocks;
+  unsigned int TotalSegments;
+  unsigned int TotalUCRs;
+  unsigned int CommittOps;
+  unsigned int DeCommitOps;
+  unsigned int LockAcquires;
+  unsigned int LockCollisions;
+  unsigned int CommitRate;
+  unsigned int DecommittRate;
+  unsigned int CommitFailures;
+  unsigned int InBlockCommitFailures;
+  unsigned int PollIntervalCounter;
+  unsigned int DecommitsSinceLastCheck;
+  unsigned int HeapPollInterval;
+  unsigned int AllocAndFreeOps;
+  unsigned int AllocationIndicesActive;
+  unsigned int InBlockDeccommits;
+  unsigned int InBlockDeccomitSize;
+  unsigned int HighWatermarkSize;
+  unsigned int LastPolledSize;
+
+};

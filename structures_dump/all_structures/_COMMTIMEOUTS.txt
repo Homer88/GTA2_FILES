@@ -1,0 +1,13 @@
+// Структура: _COMMTIMEOUTS
+// Полей: 5
+// Строки в оригинале: 82952-82959
+struct _COMMTIMEOUTS
+{
+
+  unsigned int ReadIntervalTimeout;
+  unsigned int ReadTotalTimeoutMultiplier;
+  unsigned int ReadTotalTimeoutConstant;
+  unsigned int WriteTotalTimeoutMultiplier;
+  unsigned int WriteTotalTimeoutConstant;
+
+};

@@ -1,0 +1,21 @@
+// Структура: IShellFolderVtbl
+// Полей: 13
+// Строки в оригинале: 30978-30993
+struct IShellFolderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellFolder *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellFolder *This);
+  ULONG (__stdcall *Release)(IShellFolder *This);
+  HRESULT (__stdcall *ParseDisplayName)(IShellFolder *This, HWND hwnd, IBindCtx *pbc, LPWSTR pszDisplayName, ULONG *pchEaten, LPITEMIDLIST *ppidl, ULONG *pdwAttributes);
+  HRESULT (__stdcall *EnumObjects)(IShellFolder *This, HWND hwnd, SHCONTF grfFlags, IEnumIDList **ppenumIDList);
+  HRESULT (__stdcall *BindToObject)(IShellFolder *This, LPCITEMIDLIST pidl, IBindCtx *pbc, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *BindToStorage)(IShellFolder *This, LPCITEMIDLIST pidl, IBindCtx *pbc, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *CompareIDs)(IShellFolder *This, LPARAM lParam, LPCITEMIDLIST pidl1, LPCITEMIDLIST pidl2);
+  HRESULT (__stdcall *CreateViewObject)(IShellFolder *This, HWND hwndOwner, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetAttributesOf)(IShellFolder *This, UINT cidl, LPCITEMIDLIST *apidl, SFGAOF *rgfInOut);
+  HRESULT (__stdcall *GetUIObjectOf)(IShellFolder *This, HWND hwndOwner, UINT cidl, LPCITEMIDLIST *apidl, const IID *const riid, UINT *rgfReserved, void **ppv);
+  HRESULT (__stdcall *GetDisplayNameOf)(IShellFolder *This, LPCITEMIDLIST pidl, SHGDNF uFlags, STRRET *pName);
+  HRESULT (__stdcall *SetNameOf)(IShellFolder *This, HWND hwnd, LPCITEMIDLIST pidl, LPCWSTR pszName, SHGDNF uFlags, LPITEMIDLIST *ppidlOut);
+
+};

@@ -1,0 +1,18 @@
+// Структура: _RTL_SPARSE_BITMAP_PARAMETER
+// Полей: 10
+// Строки в оригинале: 101766-101778
+struct _RTL_SPARSE_BITMAP_PARAMETER
+{
+
+  unsigned __int64 BitCountMax;
+  unsigned int MetadataSizePerBit;
+  unsigned int BitsPerRange;
+  unsigned int RangeCountMax;
+  void *(__stdcall *AllocateRoutine)(unsigned int);
+  void (__stdcall *FreeRoutine)(void *);
+  unsigned __int32 DefaultBitsSet : 1;
+  unsigned __int32 SparseRangeArray : 1;
+  unsigned __int32 NoInternalLocking : 1;
+  unsigned __int32 SpareFlags : 29;
+
+};

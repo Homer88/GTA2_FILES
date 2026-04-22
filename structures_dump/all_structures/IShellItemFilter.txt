@@ -1,0 +1,9 @@
+// Структура: IShellItemFilter
+// Полей: 1
+// Строки в оригинале: 34133-34136
+struct IShellItemFilter
+{
+
+  struct IShellItemFilterVtbl *lpVtbl;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _SEC_DTLS_MTU
+// Полей: 1
+// Строки в оригинале: 323973-323976
+struct _SEC_DTLS_MTU
+{
+
+  unsigned __int16 PathMTU;
+
+};

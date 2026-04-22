@@ -1,0 +1,12 @@
+// Структура: _JOB_RATE_CONTROL_HEADER
+// Полей: 4
+// Строки в оригинале: 16785-16791
+struct _JOB_RATE_CONTROL_HEADER
+{
+
+  void *RateControlQuotaReference;
+  _RTL_BITMAP OverQuotaHistory;
+  unsigned __int8 *BitMapBuffer;
+  unsigned int BitMapBufferSize;
+
+};

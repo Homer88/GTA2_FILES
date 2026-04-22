@@ -1,0 +1,10 @@
+// Структура: _TRACE_VERSION_INFO
+// Полей: 2
+// Строки в оригинале: 312782-312786
+struct _TRACE_VERSION_INFO
+{
+
+  unsigned int EtwTraceProcessingVersion;
+  unsigned int Reserved;
+
+};

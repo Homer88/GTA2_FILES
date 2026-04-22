@@ -1,0 +1,19 @@
+// Структура: _FILE_STAT_INFORMATION
+// Полей: 11
+// Строки в оригинале: 109311-109324
+struct _FILE_STAT_INFORMATION
+{
+
+  _LARGE_INTEGER FileId;
+  _LARGE_INTEGER CreationTime;
+  _LARGE_INTEGER LastAccessTime;
+  _LARGE_INTEGER LastWriteTime;
+  _LARGE_INTEGER ChangeTime;
+  _LARGE_INTEGER AllocationSize;
+  _LARGE_INTEGER EndOfFile;
+  unsigned int FileAttributes;
+  unsigned int ReparseTag;
+  unsigned int NumberOfLinks;
+  unsigned int EffectiveAccess;
+
+};

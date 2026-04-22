@@ -1,0 +1,20 @@
+// Структура: tagCStdProxyBuffer2
+// Полей: 12
+// Строки в оригинале: 286327-286341
+struct tagCStdProxyBuffer2
+{
+
+  const IRpcProxyBufferVtbl *lpVtbl /*VFT*/;
+  const void *pProxyVtbl;
+  int RefCount;
+  IUnknown *punkOuter;
+  IRpcChannelBuffer *pChannel;
+  IUnknown *pBaseProxy;
+  IRpcProxyBuffer *pBaseProxyBuffer;
+  IPSFactoryBuffer *pPSFactory;
+  _GUID iidBase;
+  const ICallFactoryVtbl *pCallFactoryVtbl;
+  const _GUID *pAsyncIID;
+  const IReleaseMarshalBuffersVtbl *pRMBVtbl;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _FP_IEEE_RECORD
+// Полей: 3
+// Строки в оригинале: 102445-102450
+struct _FP_IEEE_RECORD
+{
+
+  _FP_IEEE_VALUE Operand1;
+  _FP_IEEE_VALUE Operand2;
+  _FP_IEEE_VALUE Result;
+
+};

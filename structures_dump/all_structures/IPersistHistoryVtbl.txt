@@ -1,0 +1,16 @@
+// Структура: IPersistHistoryVtbl
+// Полей: 8
+// Строки в оригинале: 32939-32949
+struct IPersistHistoryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPersistHistory *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPersistHistory *This);
+  ULONG (__stdcall *Release)(IPersistHistory *This);
+  HRESULT (__stdcall *GetClassID)(IPersistHistory *This, CLSID *pClassID);
+  HRESULT (__stdcall *LoadHistory)(IPersistHistory *This, IStream *pStream, IBindCtx *pbc);
+  HRESULT (__stdcall *SaveHistory)(IPersistHistory *This, IStream *pStream);
+  HRESULT (__stdcall *SetPositionCookie)(IPersistHistory *This, DWORD dwPositioncookie);
+  HRESULT (__stdcall *GetPositionCookie)(IPersistHistory *This, DWORD *pdwPositioncookie);
+
+};

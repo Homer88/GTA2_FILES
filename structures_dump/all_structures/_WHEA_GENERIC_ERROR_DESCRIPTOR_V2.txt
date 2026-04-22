@@ -1,0 +1,26 @@
+// Структура: _WHEA_GENERIC_ERROR_DESCRIPTOR_V2
+// Полей: 18
+// Строки в оригинале: 20003-20023
+struct _WHEA_GENERIC_ERROR_DESCRIPTOR_V2
+{
+
+  unsigned __int16 Type;
+  unsigned __int8 Reserved;
+  unsigned __int8 Enabled;
+  unsigned int ErrStatusBlockLength;
+  unsigned int RelatedErrorSourceId;
+  unsigned __int8 ErrStatusAddressSpaceID;
+  unsigned __int8 ErrStatusAddressBitWidth;
+  unsigned __int8 ErrStatusAddressBitOffset;
+  unsigned __int8 ErrStatusAddressAccessSize;
+  _LARGE_INTEGER ErrStatusAddress;
+  _WHEA_NOTIFICATION_DESCRIPTOR Notify;
+  unsigned __int8 ReadAckAddressSpaceID;
+  unsigned __int8 ReadAckAddressBitWidth;
+  unsigned __int8 ReadAckAddressBitOffset;
+  unsigned __int8 ReadAckAddressAccessSize;
+  _LARGE_INTEGER ReadAckAddress;
+  unsigned __int64 ReadAckPreserveMask;
+  unsigned __int64 ReadAckWriteMask;
+
+};

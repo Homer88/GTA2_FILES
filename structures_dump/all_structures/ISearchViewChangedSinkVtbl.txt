@@ -1,0 +1,12 @@
+// Структура: ISearchViewChangedSinkVtbl
+// Полей: 4
+// Строки в оригинале: 44134-44140
+struct ISearchViewChangedSinkVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISearchViewChangedSink *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISearchViewChangedSink *This);
+  ULONG (__stdcall *Release)(ISearchViewChangedSink *This);
+  HRESULT (__stdcall *OnChange)(ISearchViewChangedSink *This, ITEMID *pdwDocID, SEARCH_ITEM_CHANGE *pChange, BOOL *pfInView);
+
+};

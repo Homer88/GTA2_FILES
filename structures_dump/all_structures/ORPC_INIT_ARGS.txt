@@ -1,0 +1,12 @@
+// Структура: ORPC_INIT_ARGS
+// Полей: 4
+// Строки в оригинале: 248148-248154
+struct ORPC_INIT_ARGS
+{
+
+  IOrpcDebugNotify *lpIntfOrpcDebug;
+  void *pvPSN;
+  unsigned int dwReserved1;
+  unsigned int dwReserved2;
+
+};

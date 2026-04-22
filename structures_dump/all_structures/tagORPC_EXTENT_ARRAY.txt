@@ -1,0 +1,11 @@
+// Структура: tagORPC_EXTENT_ARRAY
+// Полей: 3
+// Строки в оригинале: 90220-90225
+struct tagORPC_EXTENT_ARRAY
+{
+
+  unsigned int size;
+  unsigned int reserved;
+  tagORPC_EXTENT **extent;
+
+};

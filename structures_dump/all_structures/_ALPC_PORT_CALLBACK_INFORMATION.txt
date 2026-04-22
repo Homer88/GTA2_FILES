@@ -1,0 +1,10 @@
+// Структура: _ALPC_PORT_CALLBACK_INFORMATION
+// Полей: 2
+// Строки в оригинале: 103340-103344
+struct _ALPC_PORT_CALLBACK_INFORMATION
+{
+
+  void *CallbackObject;
+  void *Context;
+
+};

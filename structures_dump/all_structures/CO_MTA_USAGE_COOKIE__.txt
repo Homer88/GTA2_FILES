@@ -1,0 +1,9 @@
+// Структура: CO_MTA_USAGE_COOKIE__
+// Полей: 1
+// Строки в оригинале: 106050-106053
+struct CO_MTA_USAGE_COOKIE__
+{
+
+  int unused;
+
+};

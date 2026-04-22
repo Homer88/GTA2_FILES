@@ -1,0 +1,16 @@
+// Структура: _ETW_WNF_EVENT_CALLBACK
+// Полей: 8
+// Строки в оригинале: 312605-312615
+struct _ETW_WNF_EVENT_CALLBACK
+{
+
+  _SYSTEM_TRACE_HEADER Header;
+  _LARGE_INTEGER StateName;
+  void *Subscription;
+  void *NameSub;
+  void *Callback;
+  unsigned int ChangeStamp;
+  unsigned int DeliveryFlags;
+  unsigned int Return;
+
+};

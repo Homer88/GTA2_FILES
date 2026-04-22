@@ -1,0 +1,35 @@
+// Структура: MapRelatedStruct
+// Полей: 27
+// Строки в оригинале: 7530-7559
+struct MapRelatedStruct
+{
+
+  Map *Map;
+  S16_01 S16_01;
+  FILE *Buffer_ZONE;
+  int count;
+  int field_330;
+  int field_334;
+  FILE *Buffer_MOBJ;
+  FILE *Buffer_LGHT;
+  FILE *Buffer_ANIM;
+  int field_344;
+  int field_348;
+  int field_34C;
+  int field_350;
+  int field_354;
+  int field_358;
+  int field_35C;
+  int field_360;
+  ushort field_364;
+  __int16 field_366;
+  char Len;
+  char field_369;
+  char field_36A;
+  char field_36B;
+  char field_36C;
+  char field_36D;
+  char field_36E;
+  char field_36F;
+
+};

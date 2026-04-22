@@ -1,0 +1,10 @@
+// Структура: _ROOT_INFO_LUID
+// Полей: 2
+// Строки в оригинале: 104302-104306
+struct _ROOT_INFO_LUID
+{
+
+  unsigned int LowPart;
+  int HighPart;
+
+};

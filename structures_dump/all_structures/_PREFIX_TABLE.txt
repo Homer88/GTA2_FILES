@@ -1,0 +1,11 @@
+// Структура: _PREFIX_TABLE
+// Полей: 3
+// Строки в оригинале: 111574-111579
+struct _PREFIX_TABLE
+{
+
+  __int16 NodeTypeCode;
+  __int16 NameLength;
+  _PREFIX_TABLE_ENTRY *NextPrefixTree;
+
+};

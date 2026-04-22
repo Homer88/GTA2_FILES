@@ -1,0 +1,12 @@
+// Структура: _RTL_SPARSE_BITMAP_RUN
+// Полей: 4
+// Строки в оригинале: 101406-101412
+struct _RTL_SPARSE_BITMAP_RUN
+{
+
+  unsigned int StartingIndexLow;
+  unsigned int StartingIndexHigh;
+  unsigned int Length;
+  void *Metadata;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _DECRYPTION_STATUS_BUFFER
+// Полей: 1
+// Строки в оригинале: 87617-87620
+struct _DECRYPTION_STATUS_BUFFER
+{
+
+  unsigned __int8 NoEncryptedStreams;
+
+};

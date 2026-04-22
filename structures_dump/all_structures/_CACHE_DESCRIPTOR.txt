@@ -1,0 +1,13 @@
+// Структура: _CACHE_DESCRIPTOR
+// Полей: 5
+// Строки в оригинале: 13619-13626
+struct _CACHE_DESCRIPTOR
+{
+
+  unsigned __int8 Level;
+  unsigned __int8 Associativity;
+  unsigned __int16 LineSize;
+  unsigned int Size;
+  _PROCESSOR_CACHE_TYPE Type;
+
+};

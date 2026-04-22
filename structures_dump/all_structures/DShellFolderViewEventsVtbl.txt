@@ -1,0 +1,15 @@
+// Структура: DShellFolderViewEventsVtbl
+// Полей: 7
+// Строки в оригинале: 39993-40002
+struct DShellFolderViewEventsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(DShellFolderViewEvents *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(DShellFolderViewEvents *This);
+  ULONG (__stdcall *Release)(DShellFolderViewEvents *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(DShellFolderViewEvents *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(DShellFolderViewEvents *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(DShellFolderViewEvents *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(DShellFolderViewEvents *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+
+};

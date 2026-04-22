@@ -1,0 +1,10 @@
+// Структура: _PORT_DATA_INFORMATION
+// Полей: 2
+// Строки в оригинале: 100176-100180
+struct _PORT_DATA_INFORMATION
+{
+
+  unsigned int CountDataEntries;
+  _PORT_DATA_ENTRY DataEntries[1];
+
+};

@@ -1,0 +1,10 @@
+// Структура: FONTFACEDATA
+// Полей: 2
+// Строки в оригинале: 146628-146632
+struct FONTFACEDATA
+{
+
+  unsigned int dwCharSet;
+  unsigned int dwPreferredCharSet;
+
+};

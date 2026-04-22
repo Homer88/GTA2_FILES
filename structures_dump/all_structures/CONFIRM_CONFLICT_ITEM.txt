@@ -1,0 +1,14 @@
+// Структура: CONFIRM_CONFLICT_ITEM
+// Полей: 6
+// Строки в оригинале: 44474-44482
+struct CONFIRM_CONFLICT_ITEM
+{
+
+  IShellItem2 *pShellItem;
+  LPWSTR pszOriginalName;
+  LPWSTR pszAlternateName;
+  LPWSTR pszLocationShort;
+  LPWSTR pszLocationFull;
+  SYNCMGR_CONFLICT_ITEM_TYPE nType;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _IMAGE_ROM_HEADERS
+// Полей: 2
+// Строки в оригинале: 101589-101593
+struct _IMAGE_ROM_HEADERS
+{
+
+  _IMAGE_FILE_HEADER FileHeader;
+  _IMAGE_ROM_OPTIONAL_HEADER OptionalHeader;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _DISPLAYCONFIG_SDR_WHITE_LEVEL
+// Полей: 2
+// Строки в оригинале: 109633-109637
+struct _DISPLAYCONFIG_SDR_WHITE_LEVEL
+{
+
+  DISPLAYCONFIG_DEVICE_INFO_HEADER header;
+  unsigned int SDRWhiteLevel;
+
+};

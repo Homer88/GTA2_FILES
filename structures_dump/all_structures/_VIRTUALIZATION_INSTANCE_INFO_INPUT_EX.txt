@@ -1,0 +1,13 @@
+// Структура: _VIRTUALIZATION_INSTANCE_INFO_INPUT_EX
+// Полей: 5
+// Строки в оригинале: 100130-100137
+struct _VIRTUALIZATION_INSTANCE_INFO_INPUT_EX
+{
+
+  unsigned __int16 HeaderSize;
+  unsigned int Flags;
+  unsigned int NotificationInfoSize;
+  unsigned __int16 NotificationInfoOffset;
+  unsigned __int16 ProviderMajorVersion;
+
+};

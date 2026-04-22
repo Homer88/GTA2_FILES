@@ -1,0 +1,18 @@
+// Структура: _THREAD_PERFORMANCE_DATA
+// Полей: 10
+// Строки в оригинале: 15921-15933
+struct _THREAD_PERFORMANCE_DATA
+{
+
+  unsigned __int16 Size;
+  unsigned __int16 Version;
+  _PROCESSOR_NUMBER ProcessorNumber;
+  unsigned int ContextSwitches;
+  unsigned int HwCountersCount;
+  volatile unsigned __int64 UpdateCount;
+  unsigned __int64 WaitReasonBitMap;
+  unsigned __int64 HardwareCounters;
+  _COUNTER_READING CycleTime;
+  _COUNTER_READING HwCounters[16];
+
+};

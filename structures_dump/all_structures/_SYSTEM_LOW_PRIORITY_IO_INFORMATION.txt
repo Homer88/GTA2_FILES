@@ -1,0 +1,18 @@
+// Структура: _SYSTEM_LOW_PRIORITY_IO_INFORMATION
+// Полей: 10
+// Строки в оригинале: 97242-97254
+struct _SYSTEM_LOW_PRIORITY_IO_INFORMATION
+{
+
+  unsigned int LowPriReadOperations;
+  unsigned int LowPriWriteOperations;
+  unsigned int KernelBumpedToNormalOperations;
+  unsigned int LowPriPagingReadOperations;
+  unsigned int KernelPagingReadsBumpedToNormal;
+  unsigned int LowPriPagingWriteOperations;
+  unsigned int KernelPagingWritesBumpedToNormal;
+  unsigned int BoostedIrpCount;
+  unsigned int BoostedPagingIrpCount;
+  unsigned int BlanketBoostCount;
+
+};

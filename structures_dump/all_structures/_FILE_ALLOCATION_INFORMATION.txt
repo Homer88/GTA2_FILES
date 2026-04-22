@@ -1,0 +1,9 @@
+// Структура: _FILE_ALLOCATION_INFORMATION
+// Полей: 1
+// Строки в оригинале: 109627-109630
+struct _FILE_ALLOCATION_INFORMATION
+{
+
+  _LARGE_INTEGER AllocationSize;
+
+};

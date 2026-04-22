@@ -1,0 +1,12 @@
+// Структура: IAccessibleObjectVtbl
+// Полей: 4
+// Строки в оригинале: 41562-41568
+struct IAccessibleObjectVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IAccessibleObject *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IAccessibleObject *This);
+  ULONG (__stdcall *Release)(IAccessibleObject *This);
+  HRESULT (__stdcall *SetAccessibleName)(IAccessibleObject *This, LPCWSTR pszName);
+
+};

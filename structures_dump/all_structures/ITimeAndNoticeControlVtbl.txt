@@ -1,0 +1,12 @@
+// Структура: ITimeAndNoticeControlVtbl
+// Полей: 4
+// Строки в оригинале: 351529-351535
+struct ITimeAndNoticeControlVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITimeAndNoticeControl *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITimeAndNoticeControl *This);
+  ULONG (__stdcall *Release)(ITimeAndNoticeControl *This);
+  HRESULT (__stdcall *SuppressChanges)(ITimeAndNoticeControl *This, DWORD res1, DWORD res2);
+
+};

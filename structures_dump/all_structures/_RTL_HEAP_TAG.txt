@@ -1,0 +1,14 @@
+// Структура: _RTL_HEAP_TAG
+// Полей: 6
+// Строки в оригинале: 85227-85235
+struct _RTL_HEAP_TAG
+{
+
+  unsigned int NumberOfAllocations;
+  unsigned int NumberOfFrees;
+  unsigned int BytesAllocated;
+  unsigned __int16 TagIndex;
+  unsigned __int16 CreatorBackTraceIndex;
+  wchar_t TagName[24];
+
+};

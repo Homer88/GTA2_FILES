@@ -1,0 +1,14 @@
+// Структура: IPointerInactiveVtbl
+// Полей: 6
+// Строки в оригинале: 352573-352581
+struct IPointerInactiveVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPointerInactive *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPointerInactive *This);
+  ULONG (__stdcall *Release)(IPointerInactive *This);
+  HRESULT (__stdcall *GetActivationPolicy)(IPointerInactive *This, DWORD *pdwPolicy);
+  HRESULT (__stdcall *OnInactiveMouseMove)(IPointerInactive *This, LPCRECT pRectBounds, LONG x, LONG y, DWORD grfKeyState);
+  HRESULT (__stdcall *OnInactiveSetCursor)(IPointerInactive *This, LPCRECT pRectBounds, LONG x, LONG y, DWORD dwMouseMsg, BOOL fSetAlways);
+
+};

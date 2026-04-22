@@ -1,0 +1,24 @@
+// Структура: S116
+// Полей: 16
+// Строки в оригинале: 8368-8386
+struct S116
+{
+
+  int Next;
+  int field_4;
+  void *field_8;
+  int Next1;
+  int field_10;
+  char field_14;
+  char field_15;
+  char field_16;
+  char field_17;
+  char field_18;
+  char field_19;
+  char field_1A;
+  char field_1B;
+  S116 *NextElement;
+  int field_20;
+  int field_24;
+
+};

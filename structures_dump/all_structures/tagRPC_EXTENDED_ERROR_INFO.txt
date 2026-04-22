@@ -1,0 +1,18 @@
+// Структура: tagRPC_EXTENDED_ERROR_INFO
+// Полей: 10
+// Строки в оригинале: 112094-112106
+struct tagRPC_EXTENDED_ERROR_INFO
+{
+
+  unsigned int Version;
+  wchar_t *ComputerName;
+  unsigned int ProcessID;
+  tagRPC_EXTENDED_ERROR_INFO::<unnamed_type_u> u;
+  unsigned int GeneratingComponent;
+  unsigned int Status;
+  unsigned __int16 DetectionLocation;
+  unsigned __int16 Flags;
+  int NumberOfParameters;
+  tagRPC_EE_INFO_PARAM Parameters[4];
+
+};

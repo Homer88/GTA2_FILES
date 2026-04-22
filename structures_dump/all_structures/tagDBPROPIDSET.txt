@@ -1,0 +1,11 @@
+// Структура: tagDBPROPIDSET
+// Полей: 3
+// Строки в оригинале: 33683-33688
+struct tagDBPROPIDSET
+{
+
+  DBPROPID *rgPropertyIDs;
+  ULONG cPropertyIDs;
+  GUID guidPropertySet;
+
+};

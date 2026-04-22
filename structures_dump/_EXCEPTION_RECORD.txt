@@ -1,0 +1,13 @@
+// Structure: _EXCEPTION_RECORD
+// Lines: 2270 - 2278
+// Fields: 7
+
+struct _EXCEPTION_RECORD
+{
+  DWORD ExceptionCode;
+  DWORD ExceptionFlags;
+  struct _EXCEPTION_RECORD *ExceptionRecord;
+  PVOID ExceptionAddress;
+  DWORD NumberParameters;
+  ULONG_PTR ExceptionInformation[15];
+};

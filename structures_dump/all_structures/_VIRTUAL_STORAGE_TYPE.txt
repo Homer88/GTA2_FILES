@@ -1,0 +1,10 @@
+// Структура: _VIRTUAL_STORAGE_TYPE
+// Полей: 2
+// Строки в оригинале: 80186-80190
+struct _VIRTUAL_STORAGE_TYPE
+{
+
+  unsigned int DeviceId;
+  _GUID VendorId;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _DELAYLOAD_PROC_DESCRIPTOR
+// Полей: 2
+// Строки в оригинале: 147782-147786
+struct _DELAYLOAD_PROC_DESCRIPTOR
+{
+
+  unsigned int ImportDescribedByName;
+  _DELAYLOAD_PROC_DESCRIPTOR::$E9447005C1B6039AFEEB2C7749A88877 Description;
+
+};

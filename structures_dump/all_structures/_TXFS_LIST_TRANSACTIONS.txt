@@ -1,0 +1,10 @@
+// Структура: _TXFS_LIST_TRANSACTIONS
+// Полей: 2
+// Строки в оригинале: 93656-93660
+struct _TXFS_LIST_TRANSACTIONS
+{
+
+  unsigned __int64 NumberOfTransactions;
+  unsigned __int64 BufferSizeRequired;
+
+};

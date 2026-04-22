@@ -1,0 +1,40 @@
+// Структура: IDirectInputDevice8WVtbl
+// Полей: 32
+// Строки в оригинале: 29275-29309
+struct IDirectInputDevice8WVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirectInputDevice8W *This, const IID *const riid, LPVOID *ppvObj);
+  ULONG (__stdcall *AddRef)(IDirectInputDevice8W *This);
+  ULONG (__stdcall *Release)(IDirectInputDevice8W *This);
+  HRESULT (__stdcall *GetCapabilities)(IDirectInputDevice8W *This, LPDIDEVCAPS);
+  HRESULT (__stdcall *EnumObjects)(IDirectInputDevice8W *This, LPDIENUMDEVICEOBJECTSCALLBACKW, LPVOID, DWORD);
+  HRESULT (__stdcall *GetProperty)(IDirectInputDevice8W *This, const GUID *const, LPDIPROPHEADER);
+  HRESULT (__stdcall *SetProperty)(IDirectInputDevice8W *This, const GUID *const, LPCDIPROPHEADER);
+  HRESULT (__stdcall *Acquire)(IDirectInputDevice8W *This);
+  HRESULT (__stdcall *Unacquire)(IDirectInputDevice8W *This);
+  HRESULT (__stdcall *GetDeviceState)(IDirectInputDevice8W *This, DWORD, LPVOID);
+  HRESULT (__stdcall *GetDeviceData)(IDirectInputDevice8W *This, DWORD, LPDIDEVICEOBJECTDATA, LPDWORD, DWORD);
+  HRESULT (__stdcall *SetDataFormat)(IDirectInputDevice8W *This, LPCDIDATAFORMAT);
+  HRESULT (__stdcall *SetEventNotification)(IDirectInputDevice8W *This, HANDLE);
+  HRESULT (__stdcall *SetCooperativeLevel)(IDirectInputDevice8W *This, HWND, DWORD);
+  HRESULT (__stdcall *GetObjectInfo)(IDirectInputDevice8W *This, LPDIDEVICEOBJECTINSTANCEW, DWORD, DWORD);
+  HRESULT (__stdcall *GetDeviceInfo)(IDirectInputDevice8W *This, LPDIDEVICEINSTANCEW);
+  HRESULT (__stdcall *RunControlPanel)(IDirectInputDevice8W *This, HWND, DWORD);
+  HRESULT (__stdcall *Initialize)(IDirectInputDevice8W *This, HINSTANCE, DWORD, const GUID *const);
+  HRESULT (__stdcall *CreateEffect)(IDirectInputDevice8W *This, const GUID *const, LPCDIEFFECT, LPDIRECTINPUTEFFECT *, LPUNKNOWN);
+  HRESULT (__stdcall *EnumEffects)(IDirectInputDevice8W *This, LPDIENUMEFFECTSCALLBACKW, LPVOID, DWORD);
+  HRESULT (__stdcall *GetEffectInfo)(IDirectInputDevice8W *This, LPDIEFFECTINFOW, const GUID *const);
+  HRESULT (__stdcall *GetForceFeedbackState)(IDirectInputDevice8W *This, LPDWORD);
+  HRESULT (__stdcall *SendForceFeedbackCommand)(IDirectInputDevice8W *This, DWORD);
+  HRESULT (__stdcall *EnumCreatedEffectObjects)(IDirectInputDevice8W *This, LPDIENUMCREATEDEFFECTOBJECTSCALLBACK, LPVOID, DWORD);
+  HRESULT (__stdcall *Escape)(IDirectInputDevice8W *This, LPDIEFFESCAPE);
+  HRESULT (__stdcall *Poll)(IDirectInputDevice8W *This);
+  HRESULT (__stdcall *SendDeviceData)(IDirectInputDevice8W *This, DWORD, LPCDIDEVICEOBJECTDATA, LPDWORD, DWORD);
+  HRESULT (__stdcall *EnumEffectsInFile)(IDirectInputDevice8W *This, LPCWSTR, LPDIENUMEFFECTSINFILECALLBACK, LPVOID, DWORD);
+  HRESULT (__stdcall *WriteEffectToFile)(IDirectInputDevice8W *This, LPCWSTR, DWORD, LPDIFILEEFFECT, DWORD);
+  HRESULT (__stdcall *BuildActionMap)(IDirectInputDevice8W *This, LPDIACTIONFORMATW, LPCWSTR, DWORD);
+  HRESULT (__stdcall *SetActionMap)(IDirectInputDevice8W *This, LPDIACTIONFORMATW, LPCWSTR, DWORD);
+  HRESULT (__stdcall *GetImageInfo)(IDirectInputDevice8W *This, LPDIDEVICEIMAGEINFOHEADERW);
+
+};

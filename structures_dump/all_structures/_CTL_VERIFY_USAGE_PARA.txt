@@ -1,0 +1,14 @@
+// Структура: _CTL_VERIFY_USAGE_PARA
+// Полей: 6
+// Строки в оригинале: 103216-103224
+struct _CTL_VERIFY_USAGE_PARA
+{
+
+  unsigned int cbSize;
+  _CRYPTOAPI_BLOB ListIdentifier;
+  unsigned int cCtlStore;
+  void **rghCtlStore;
+  unsigned int cSignerStore;
+  void **rghSignerStore;
+
+};

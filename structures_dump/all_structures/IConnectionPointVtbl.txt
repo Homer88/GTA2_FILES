@@ -1,0 +1,16 @@
+// Структура: IConnectionPointVtbl
+// Полей: 8
+// Строки в оригинале: 36714-36724
+struct IConnectionPointVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IConnectionPoint *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IConnectionPoint *This);
+  ULONG (__stdcall *Release)(IConnectionPoint *This);
+  HRESULT (__stdcall *GetConnectionInterface)(IConnectionPoint *This, IID *pIID);
+  HRESULT (__stdcall *GetConnectionPointContainer)(IConnectionPoint *This, IConnectionPointContainer **ppCPC);
+  HRESULT (__stdcall *Advise)(IConnectionPoint *This, IUnknown *pUnkSink, DWORD *pdwCookie);
+  HRESULT (__stdcall *Unadvise)(IConnectionPoint *This, DWORD dwCookie);
+  HRESULT (__stdcall *EnumConnections)(IConnectionPoint *This, IEnumConnections **ppEnum);
+
+};

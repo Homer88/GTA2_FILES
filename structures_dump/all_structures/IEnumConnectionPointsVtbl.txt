@@ -1,0 +1,15 @@
+// Структура: IEnumConnectionPointsVtbl
+// Полей: 7
+// Строки в оригинале: 36690-36699
+struct IEnumConnectionPointsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumConnectionPoints *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumConnectionPoints *This);
+  ULONG (__stdcall *Release)(IEnumConnectionPoints *This);
+  HRESULT (__stdcall *Next)(IEnumConnectionPoints *This, ULONG cConnections, LPCONNECTIONPOINT *ppCP, ULONG *pcFetched);
+  HRESULT (__stdcall *Skip)(IEnumConnectionPoints *This, ULONG cConnections);
+  HRESULT (__stdcall *Reset)(IEnumConnectionPoints *This);
+  HRESULT (__stdcall *Clone)(IEnumConnectionPoints *This, IEnumConnectionPoints **ppEnum);
+
+};

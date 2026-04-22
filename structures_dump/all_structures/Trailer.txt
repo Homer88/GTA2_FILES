@@ -1,0 +1,12 @@
+// Структура: Trailer
+// Полей: 4
+// Строки в оригинале: 7869-7875
+struct Trailer
+{
+
+  int field_0;
+  Trailer *NextElement;
+  Car *Car;
+  int field_C;
+
+};

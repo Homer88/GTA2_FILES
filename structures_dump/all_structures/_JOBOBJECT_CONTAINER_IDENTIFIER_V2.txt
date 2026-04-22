@@ -1,0 +1,11 @@
+// Структура: _JOBOBJECT_CONTAINER_IDENTIFIER_V2
+// Полей: 3
+// Строки в оригинале: 96649-96654
+struct _JOBOBJECT_CONTAINER_IDENTIFIER_V2
+{
+
+  _GUID ContainerId;
+  _GUID ContainerTelemetryId;
+  unsigned int JobId;
+
+};

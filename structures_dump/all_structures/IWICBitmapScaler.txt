@@ -1,0 +1,9 @@
+// Структура: IWICBitmapScaler
+// Полей: 1
+// Строки в оригинале: 41860-41863
+struct IWICBitmapScaler
+{
+
+  struct IWICBitmapScalerVtbl *lpVtbl;
+
+};

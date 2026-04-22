@@ -1,0 +1,14 @@
+// Структура: MEMSTM
+// Полей: 6
+// Строки в оригинале: 283939-283947
+struct MEMSTM
+{
+
+  unsigned int cb;
+  unsigned int cRef;
+  unsigned __int8 *m_pBuf;
+  void *hGlobal;
+  int fDeleteOnRelease;
+  int possibleLeakCondition;
+
+};

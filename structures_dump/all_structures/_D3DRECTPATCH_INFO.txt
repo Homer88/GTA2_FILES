@@ -1,0 +1,15 @@
+// Структура: _D3DRECTPATCH_INFO
+// Полей: 7
+// Строки в оригинале: 25876-25885
+struct _D3DRECTPATCH_INFO
+{
+
+  UINT StartVertexOffsetWidth;
+  UINT StartVertexOffsetHeight;
+  UINT Width;
+  UINT Height;
+  UINT Stride;
+  D3DBASISTYPE Basis;
+  D3DDEGREETYPE Degree;
+
+};

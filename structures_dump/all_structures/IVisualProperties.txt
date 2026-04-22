@@ -1,0 +1,9 @@
+// Структура: IVisualProperties
+// Полей: 1
+// Строки в оригинале: 34400-34403
+struct IVisualProperties
+{
+
+  struct IVisualPropertiesVtbl *lpVtbl;
+
+};

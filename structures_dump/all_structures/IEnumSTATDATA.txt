@@ -1,0 +1,9 @@
+// Структура: IEnumSTATDATA
+// Полей: 1
+// Строки в оригинале: 27007-27010
+struct IEnumSTATDATA
+{
+
+  struct IEnumSTATDATAVtbl *lpVtbl;
+
+};

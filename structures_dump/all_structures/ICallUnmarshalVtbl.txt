@@ -1,0 +1,13 @@
+// Структура: ICallUnmarshalVtbl
+// Полей: 5
+// Строки в оригинале: 182660-182667
+struct ICallUnmarshalVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICallUnmarshal *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICallUnmarshal *This);
+  ULONG (__stdcall *Release)(ICallUnmarshal *This);
+  HRESULT (__stdcall *Unmarshal)(ICallUnmarshal *This, ULONG iMethod, PVOID pBuffer, ULONG cbBuffer, BOOL fForceBufferCopy, RPCOLEDATAREP dataRep, CALLFRAME_MARSHALCONTEXT *pcontext, ULONG *pcbUnmarshalled, ICallFrame **ppFrame);
+  HRESULT (__stdcall *ReleaseMarshalData)(ICallUnmarshal *This, ULONG iMethod, PVOID pBuffer, ULONG cbBuffer, ULONG ibFirstRelease, RPCOLEDATAREP dataRep, CALLFRAME_MARSHALCONTEXT *pcontext);
+
+};

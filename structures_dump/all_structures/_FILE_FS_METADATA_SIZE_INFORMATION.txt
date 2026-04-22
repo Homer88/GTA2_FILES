@@ -1,0 +1,11 @@
+// Структура: _FILE_FS_METADATA_SIZE_INFORMATION
+// Полей: 3
+// Строки в оригинале: 96096-96101
+struct _FILE_FS_METADATA_SIZE_INFORMATION
+{
+
+  _LARGE_INTEGER TotalMetadataAllocationUnits;
+  unsigned int SectorsPerAllocationUnit;
+  unsigned int BytesPerSector;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _STRING64
+// Полей: 3
+// Строки в оригинале: 22187-22192
+struct _STRING64
+{
+
+  unsigned __int16 Length;
+  unsigned __int16 MaximumLength;
+  unsigned __int64 Buffer;
+
+};

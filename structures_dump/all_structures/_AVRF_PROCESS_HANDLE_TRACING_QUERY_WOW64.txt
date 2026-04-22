@@ -1,0 +1,11 @@
+// Структура: _AVRF_PROCESS_HANDLE_TRACING_QUERY_WOW64
+// Полей: 3
+// Строки в оригинале: 83692-83697
+struct _AVRF_PROCESS_HANDLE_TRACING_QUERY_WOW64
+{
+
+  unsigned __int64 Handle;
+  unsigned int TotalTraces;
+  _AVRF_PROCESS_HANDLE_TRACING_ENTRY_WOW64 HandleTrace[1];
+
+};

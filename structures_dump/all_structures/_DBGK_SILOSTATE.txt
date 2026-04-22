@@ -1,0 +1,12 @@
+// Структура: _DBGK_SILOSTATE
+// Полей: 4
+// Строки в оригинале: 17178-17184
+struct _DBGK_SILOSTATE
+{
+
+  _EX_PUSH_LOCK ErrorPortLock;
+  struct _DBGKP_ERROR_PORT *ErrorPort;
+  _EPROCESS *ErrorProcess;
+  _KEVENT *ErrorPortRegisteredEvent;
+
+};

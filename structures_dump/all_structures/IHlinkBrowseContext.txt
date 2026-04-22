@@ -1,0 +1,9 @@
+// Структура: IHlinkBrowseContext
+// Полей: 1
+// Строки в оригинале: 42753-42756
+struct IHlinkBrowseContext
+{
+
+  struct IHlinkBrowseContextVtbl *lpVtbl;
+
+};

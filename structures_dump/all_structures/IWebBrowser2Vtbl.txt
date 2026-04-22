@@ -1,0 +1,79 @@
+// Структура: IWebBrowser2Vtbl
+// Полей: 71
+// Строки в оригинале: 38229-38302
+struct IWebBrowser2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWebBrowser2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWebBrowser2 *This);
+  ULONG (__stdcall *Release)(IWebBrowser2 *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IWebBrowser2 *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IWebBrowser2 *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IWebBrowser2 *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IWebBrowser2 *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *GoBack)(IWebBrowser2 *This);
+  HRESULT (__stdcall *GoForward)(IWebBrowser2 *This);
+  HRESULT (__stdcall *GoHome)(IWebBrowser2 *This);
+  HRESULT (__stdcall *GoSearch)(IWebBrowser2 *This);
+  HRESULT (__stdcall *Navigate)(IWebBrowser2 *This, BSTR URL, VARIANT *Flags, VARIANT *TargetFrameName, VARIANT *PostData, VARIANT *Headers);
+  HRESULT (__stdcall *Refresh)(IWebBrowser2 *This);
+  HRESULT (__stdcall *Refresh2)(IWebBrowser2 *This, VARIANT *Level);
+  HRESULT (__stdcall *Stop)(IWebBrowser2 *This);
+  HRESULT (__stdcall *get_Application)(IWebBrowser2 *This, IDispatch **ppDisp);
+  HRESULT (__stdcall *get_Parent)(IWebBrowser2 *This, IDispatch **ppDisp);
+  HRESULT (__stdcall *get_Container)(IWebBrowser2 *This, IDispatch **ppDisp);
+  HRESULT (__stdcall *get_Document)(IWebBrowser2 *This, IDispatch **ppDisp);
+  HRESULT (__stdcall *get_TopLevelContainer)(IWebBrowser2 *This, VARIANT_BOOL *pBool);
+  HRESULT (__stdcall *get_Type)(IWebBrowser2 *This, BSTR *Type);
+  HRESULT (__stdcall *get_Left)(IWebBrowser2 *This, int *pl);
+  HRESULT (__stdcall *put_Left)(IWebBrowser2 *This, int Left);
+  HRESULT (__stdcall *get_Top)(IWebBrowser2 *This, int *pl);
+  HRESULT (__stdcall *put_Top)(IWebBrowser2 *This, int Top);
+  HRESULT (__stdcall *get_Width)(IWebBrowser2 *This, int *pl);
+  HRESULT (__stdcall *put_Width)(IWebBrowser2 *This, int Width);
+  HRESULT (__stdcall *get_Height)(IWebBrowser2 *This, int *pl);
+  HRESULT (__stdcall *put_Height)(IWebBrowser2 *This, int Height);
+  HRESULT (__stdcall *get_LocationName)(IWebBrowser2 *This, BSTR *LocationName);
+  HRESULT (__stdcall *get_LocationURL)(IWebBrowser2 *This, BSTR *LocationURL);
+  HRESULT (__stdcall *get_Busy)(IWebBrowser2 *This, VARIANT_BOOL *pBool);
+  HRESULT (__stdcall *Quit)(IWebBrowser2 *This);
+  HRESULT (__stdcall *ClientToWindow)(IWebBrowser2 *This, int *pcx, int *pcy);
+  HRESULT (__stdcall *PutProperty)(IWebBrowser2 *This, BSTR Property, VARIANT vtValue);
+  HRESULT (__stdcall *GetProperty)(IWebBrowser2 *This, BSTR Property, VARIANT *pvtValue);
+  HRESULT (__stdcall *get_Name)(IWebBrowser2 *This, BSTR *Name);
+  HRESULT (__stdcall *get_HWND)(IWebBrowser2 *This, SHANDLE_PTR *pHWND);
+  HRESULT (__stdcall *get_FullName)(IWebBrowser2 *This, BSTR *FullName);
+  HRESULT (__stdcall *get_Path)(IWebBrowser2 *This, BSTR *Path);
+  HRESULT (__stdcall *get_Visible)(IWebBrowser2 *This, VARIANT_BOOL *pBool);
+  HRESULT (__stdcall *put_Visible)(IWebBrowser2 *This, VARIANT_BOOL Value);
+  HRESULT (__stdcall *get_StatusBar)(IWebBrowser2 *This, VARIANT_BOOL *pBool);
+  HRESULT (__stdcall *put_StatusBar)(IWebBrowser2 *This, VARIANT_BOOL Value);
+  HRESULT (__stdcall *get_StatusText)(IWebBrowser2 *This, BSTR *StatusText);
+  HRESULT (__stdcall *put_StatusText)(IWebBrowser2 *This, BSTR StatusText);
+  HRESULT (__stdcall *get_ToolBar)(IWebBrowser2 *This, int *Value);
+  HRESULT (__stdcall *put_ToolBar)(IWebBrowser2 *This, int Value);
+  HRESULT (__stdcall *get_MenuBar)(IWebBrowser2 *This, VARIANT_BOOL *Value);
+  HRESULT (__stdcall *put_MenuBar)(IWebBrowser2 *This, VARIANT_BOOL Value);
+  HRESULT (__stdcall *get_FullScreen)(IWebBrowser2 *This, VARIANT_BOOL *pbFullScreen);
+  HRESULT (__stdcall *put_FullScreen)(IWebBrowser2 *This, VARIANT_BOOL bFullScreen);
+  HRESULT (__stdcall *Navigate2)(IWebBrowser2 *This, VARIANT *URL, VARIANT *Flags, VARIANT *TargetFrameName, VARIANT *PostData, VARIANT *Headers);
+  HRESULT (__stdcall *QueryStatusWB)(IWebBrowser2 *This, OLECMDID cmdID, OLECMDF *pcmdf);
+  HRESULT (__stdcall *ExecWB)(IWebBrowser2 *This, OLECMDID cmdID, OLECMDEXECOPT cmdexecopt, VARIANT *pvaIn, VARIANT *pvaOut);
+  HRESULT (__stdcall *ShowBrowserBar)(IWebBrowser2 *This, VARIANT *pvaClsid, VARIANT *pvarShow, VARIANT *pvarSize);
+  HRESULT (__stdcall *get_ReadyState)(IWebBrowser2 *This, READYSTATE *plReadyState);
+  HRESULT (__stdcall *get_Offline)(IWebBrowser2 *This, VARIANT_BOOL *pbOffline);
+  HRESULT (__stdcall *put_Offline)(IWebBrowser2 *This, VARIANT_BOOL bOffline);
+  HRESULT (__stdcall *get_Silent)(IWebBrowser2 *This, VARIANT_BOOL *pbSilent);
+  HRESULT (__stdcall *put_Silent)(IWebBrowser2 *This, VARIANT_BOOL bSilent);
+  HRESULT (__stdcall *get_RegisterAsBrowser)(IWebBrowser2 *This, VARIANT_BOOL *pbRegister);
+  HRESULT (__stdcall *put_RegisterAsBrowser)(IWebBrowser2 *This, VARIANT_BOOL bRegister);
+  HRESULT (__stdcall *get_RegisterAsDropTarget)(IWebBrowser2 *This, VARIANT_BOOL *pbRegister);
+  HRESULT (__stdcall *put_RegisterAsDropTarget)(IWebBrowser2 *This, VARIANT_BOOL bRegister);
+  HRESULT (__stdcall *get_TheaterMode)(IWebBrowser2 *This, VARIANT_BOOL *pbRegister);
+  HRESULT (__stdcall *put_TheaterMode)(IWebBrowser2 *This, VARIANT_BOOL bRegister);
+  HRESULT (__stdcall *get_AddressBar)(IWebBrowser2 *This, VARIANT_BOOL *Value);
+  HRESULT (__stdcall *put_AddressBar)(IWebBrowser2 *This, VARIANT_BOOL Value);
+  HRESULT (__stdcall *get_Resizable)(IWebBrowser2 *This, VARIANT_BOOL *Value);
+  HRESULT (__stdcall *put_Resizable)(IWebBrowser2 *This, VARIANT_BOOL Value);
+
+};

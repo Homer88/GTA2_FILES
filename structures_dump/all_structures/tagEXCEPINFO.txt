@@ -1,0 +1,17 @@
+// Структура: tagEXCEPINFO
+// Полей: 9
+// Строки в оригинале: 23421-23432
+struct tagEXCEPINFO
+{
+
+  WORD wCode;
+  WORD wReserved;
+  BSTR bstrSource;
+  BSTR bstrDescription;
+  BSTR bstrHelpFile;
+  DWORD dwHelpContext;
+  PVOID pvReserved;
+  HRESULT (__stdcall *pfnDeferredFillIn)(struct tagEXCEPINFO *);
+  SCODE scode;
+
+};

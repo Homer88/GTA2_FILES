@@ -1,0 +1,10 @@
+// Структура: _timespec32
+// Полей: 2
+// Строки в оригинале: 192738-192742
+struct _timespec32
+{
+
+  int tv_sec;
+  int tv_nsec;
+
+};

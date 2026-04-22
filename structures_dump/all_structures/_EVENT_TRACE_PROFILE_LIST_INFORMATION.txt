@@ -1,0 +1,11 @@
+// Структура: _EVENT_TRACE_PROFILE_LIST_INFORMATION
+// Полей: 3
+// Строки в оригинале: 309098-309103
+struct _EVENT_TRACE_PROFILE_LIST_INFORMATION
+{
+
+  _EVENT_TRACE_INFORMATION_CLASS EventTraceInformationClass;
+  unsigned int Spare;
+  _PROFILE_SOURCE_INFO Profile[1];
+
+};

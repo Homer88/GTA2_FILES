@@ -1,0 +1,13 @@
+// Структура: _SYSTEM_INTERRUPT_STEERING_INFORMATION_INPUT
+// Полей: 5
+// Строки в оригинале: 111065-111072
+struct _SYSTEM_INTERRUPT_STEERING_INFORMATION_INPUT
+{
+
+  unsigned int Gsiv;
+  unsigned __int8 ControllerInterrupt;
+  unsigned __int8 EdgeInterrupt;
+  unsigned __int8 IsPrimaryInterrupt;
+  _GROUP_AFFINITY TargetAffinity;
+
+};

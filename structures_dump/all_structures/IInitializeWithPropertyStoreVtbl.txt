@@ -1,0 +1,12 @@
+// Структура: IInitializeWithPropertyStoreVtbl
+// Полей: 4
+// Строки в оригинале: 36771-36777
+struct IInitializeWithPropertyStoreVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IInitializeWithPropertyStore *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IInitializeWithPropertyStore *This);
+  ULONG (__stdcall *Release)(IInitializeWithPropertyStore *This);
+  HRESULT (__stdcall *Initialize)(IInitializeWithPropertyStore *This, IPropertyStore *pps);
+
+};

@@ -1,0 +1,10 @@
+// Структура: IMMAPP_APPLICATION_VIEW_DATA
+// Полей: 2
+// Строки в оригинале: 149678-149682
+struct IMMAPP_APPLICATION_VIEW_DATA
+{
+
+  APPLICATION_VIEW_DATA current;
+  APPLICATION_VIEW_DATA deferred;
+
+};

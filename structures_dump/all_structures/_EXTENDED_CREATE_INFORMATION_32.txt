@@ -1,0 +1,11 @@
+// Структура: _EXTENDED_CREATE_INFORMATION_32
+// Полей: 3
+// Строки в оригинале: 112451-112456
+struct _EXTENDED_CREATE_INFORMATION_32
+{
+
+  __int64 ExtendedCreateFlags;
+  void *EaBuffer;
+  unsigned int EaLength;
+
+};

@@ -1,0 +1,9 @@
+// Structure: S12__d
+// Lines: 5630 - 5634
+// Fields: 3
+
+struct S12__d
+{
+  _BYTE gap0[83];
+  char field_0;
+};

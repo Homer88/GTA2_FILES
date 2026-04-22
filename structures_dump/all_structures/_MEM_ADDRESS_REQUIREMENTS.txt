@@ -1,0 +1,11 @@
+// Структура: _MEM_ADDRESS_REQUIREMENTS
+// Полей: 3
+// Строки в оригинале: 99404-99409
+struct _MEM_ADDRESS_REQUIREMENTS
+{
+
+  void *LowestStartingAddress;
+  void *HighestEndingAddress;
+  unsigned int Alignment;
+
+};

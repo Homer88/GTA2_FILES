@@ -1,0 +1,10 @@
+// Структура: _CERT_OTHER_NAME
+// Полей: 2
+// Строки в оригинале: 88841-88845
+struct _CERT_OTHER_NAME
+{
+
+  char *pszObjId;
+  _CRYPTOAPI_BLOB Value;
+
+};

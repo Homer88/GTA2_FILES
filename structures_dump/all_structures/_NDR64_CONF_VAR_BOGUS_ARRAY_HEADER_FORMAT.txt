@@ -1,0 +1,12 @@
+// Структура: _NDR64_CONF_VAR_BOGUS_ARRAY_HEADER_FORMAT
+// Полей: 4
+// Строки в оригинале: 331369-331375
+struct _NDR64_CONF_VAR_BOGUS_ARRAY_HEADER_FORMAT
+{
+
+  _NDR64_BOGUS_ARRAY_HEADER_FORMAT FixedArrayFormat;
+  const void *ConfDescription;
+  const void *VarDescription;
+  const void *OffsetDescription;
+
+};

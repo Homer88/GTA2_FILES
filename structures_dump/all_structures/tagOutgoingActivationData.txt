@@ -1,0 +1,9 @@
+// Структура: tagOutgoingActivationData
+// Полей: 1
+// Строки в оригинале: 62416-62419
+struct tagOutgoingActivationData
+{
+
+  _GUID guidServer;
+
+};

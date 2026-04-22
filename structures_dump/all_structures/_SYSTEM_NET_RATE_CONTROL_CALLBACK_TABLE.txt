@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_NET_RATE_CONTROL_CALLBACK_TABLE
+// Полей: 1
+// Строки в оригинале: 97236-97239
+struct _SYSTEM_NET_RATE_CONTROL_CALLBACK_TABLE
+{
+
+  int (__stdcall *NetRateControlDispatch)(_SYSTEM_NET_RATE_CONTROL_CONTEXT_HEADER *);
+
+};

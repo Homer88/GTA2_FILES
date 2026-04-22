@@ -1,0 +1,20 @@
+// Структура: tagMENUITEMINFOW
+// Полей: 12
+// Строки в оригинале: 79536-79550
+struct tagMENUITEMINFOW
+{
+
+  unsigned int cbSize;
+  unsigned int fMask;
+  unsigned int fType;
+  unsigned int fState;
+  unsigned int wID;
+  HMENU__ *hSubMenu;
+  HBITMAP__ *hbmpChecked;
+  HBITMAP__ *hbmpUnchecked;
+  unsigned int dwItemData;
+  wchar_t *dwTypeData;
+  unsigned int cch;
+  HBITMAP__ *hbmpItem;
+
+};

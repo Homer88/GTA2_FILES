@@ -1,0 +1,14 @@
+// Структура: _SCRUB_DATA_INPUT
+// Полей: 6
+// Строки в оригинале: 110320-110328
+struct _SCRUB_DATA_INPUT
+{
+
+  unsigned int Size;
+  unsigned int Flags;
+  unsigned int MaximumIos;
+  unsigned int ObjectId[4];
+  unsigned int Reserved[25];
+  unsigned __int8 ResumeContext[816];
+
+};

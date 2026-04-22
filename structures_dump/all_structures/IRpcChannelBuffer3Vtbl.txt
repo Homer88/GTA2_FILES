@@ -1,0 +1,24 @@
+// Структура: IRpcChannelBuffer3Vtbl
+// Полей: 16
+// Строки в оригинале: 182333-182351
+struct IRpcChannelBuffer3Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRpcChannelBuffer3 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRpcChannelBuffer3 *This);
+  ULONG (__stdcall *Release)(IRpcChannelBuffer3 *This);
+  HRESULT (__stdcall *GetBuffer)(IRpcChannelBuffer3 *This, RPCOLEMESSAGE *pMessage, const IID *const riid);
+  HRESULT (__stdcall *SendReceive)(IRpcChannelBuffer3 *This, RPCOLEMESSAGE *pMessage, ULONG *pStatus);
+  HRESULT (__stdcall *FreeBuffer)(IRpcChannelBuffer3 *This, RPCOLEMESSAGE *pMessage);
+  HRESULT (__stdcall *GetDestCtx)(IRpcChannelBuffer3 *This, DWORD *pdwDestContext, void **ppvDestContext);
+  HRESULT (__stdcall *IsConnected)(IRpcChannelBuffer3 *This);
+  HRESULT (__stdcall *GetProtocolVersion)(IRpcChannelBuffer3 *This, DWORD *pdwVersion);
+  HRESULT (__stdcall *Send)(IRpcChannelBuffer3 *This, RPCOLEMESSAGE *pMsg, ULONG *pulStatus);
+  HRESULT (__stdcall *Receive)(IRpcChannelBuffer3 *This, RPCOLEMESSAGE *pMsg, ULONG ulSize, ULONG *pulStatus);
+  HRESULT (__stdcall *Cancel)(IRpcChannelBuffer3 *This, RPCOLEMESSAGE *pMsg);
+  HRESULT (__stdcall *GetCallContext)(IRpcChannelBuffer3 *This, RPCOLEMESSAGE *pMsg, const IID *const riid, void **pInterface);
+  HRESULT (__stdcall *GetDestCtxEx)(IRpcChannelBuffer3 *This, RPCOLEMESSAGE *pMsg, DWORD *pdwDestContext, void **ppvDestContext);
+  HRESULT (__stdcall *GetState)(IRpcChannelBuffer3 *This, RPCOLEMESSAGE *pMsg, DWORD *pState);
+  HRESULT (__stdcall *RegisterAsync)(IRpcChannelBuffer3 *This, RPCOLEMESSAGE *pMsg, IAsyncManager *pAsyncMgr);
+
+};

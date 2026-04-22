@@ -1,0 +1,14 @@
+// Структура: _SEP_SILOSTATE
+// Полей: 6
+// Строки в оригинале: 17133-17141
+struct _SEP_SILOSTATE
+{
+
+  struct _SEP_LOGON_SESSION_REFERENCES *SystemLogonSession;
+  struct _SEP_LOGON_SESSION_REFERENCES *AnonymousLogonSession;
+  void *AnonymousLogonToken;
+  void *AnonymousLogonTokenNoEveryone;
+  _UNICODE_STRING *UncSystemPaths;
+  struct _CI_NGEN_PATHS *NgenPaths;
+
+};

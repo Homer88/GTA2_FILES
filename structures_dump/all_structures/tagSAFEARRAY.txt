@@ -1,0 +1,14 @@
+// Структура: tagSAFEARRAY
+// Полей: 6
+// Строки в оригинале: 23505-23513
+struct tagSAFEARRAY
+{
+
+  USHORT cDims;
+  USHORT fFeatures;
+  ULONG cbElements;
+  ULONG cLocks;
+  PVOID pvData;
+  SAFEARRAYBOUND rgsabound[1];
+
+};

@@ -1,0 +1,25 @@
+// Структура: JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2
+// Полей: 17
+// Строки в оригинале: 112702-112721
+struct JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2
+{
+
+  unsigned int LimitFlags;
+  unsigned int ViolationLimitFlags;
+  unsigned __int64 IoReadBytes;
+  unsigned __int64 IoReadBytesLimit;
+  unsigned __int64 IoWriteBytes;
+  unsigned __int64 IoWriteBytesLimit;
+  _LARGE_INTEGER PerJobUserTime;
+  _LARGE_INTEGER PerJobUserTimeLimit;
+  unsigned __int64 JobMemory;
+  $864EEC0230CCEC23B20243BD24DC1C56 ___u9;
+  $E01A779CB478B53DA14CDF81FF477A8F ___u10;
+  $997BC949B47EE0BFB92FEA80C808F29F ___u11;
+  unsigned __int64 JobLowMemoryLimit;
+  _JOBOBJECT_RATE_CONTROL_TOLERANCE IoRateControlTolerance;
+  _JOBOBJECT_RATE_CONTROL_TOLERANCE IoRateControlToleranceLimit;
+  _JOBOBJECT_RATE_CONTROL_TOLERANCE NetRateControlTolerance;
+  _JOBOBJECT_RATE_CONTROL_TOLERANCE NetRateControlToleranceLimit;
+
+};

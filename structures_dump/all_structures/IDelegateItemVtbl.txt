@@ -1,0 +1,13 @@
+// Структура: IDelegateItemVtbl
+// Полей: 5
+// Строки в оригинале: 31339-31346
+struct IDelegateItemVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDelegateItem *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDelegateItem *This);
+  ULONG (__stdcall *Release)(IDelegateItem *This);
+  HRESULT (__stdcall *GetItemIDList)(IDelegateItem *This, LPITEMIDLIST *ppidl);
+  HRESULT (__stdcall *GetItem)(IDelegateItem *This, IShellItem **ppsi);
+
+};

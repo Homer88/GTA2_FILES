@@ -1,0 +1,11 @@
+// Структура: _WNF_EDP_TAGGED_APP_LAUNCHED_DATA
+// Полей: 3
+// Строки в оригинале: 127108-127113
+struct _WNF_EDP_TAGGED_APP_LAUNCHED_DATA
+{
+
+  _EDP_TAGGED_APP_MODE Mode;
+  _UNICODE_STRING AppFilePath;
+  _UNICODE_STRING EnterpriseId;
+
+};

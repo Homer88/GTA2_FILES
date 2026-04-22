@@ -1,0 +1,23 @@
+// Структура: IPropertyStorageVtbl
+// Полей: 15
+// Строки в оригинале: 37875-37892
+struct IPropertyStorageVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyStorage *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyStorage *This);
+  ULONG (__stdcall *Release)(IPropertyStorage *This);
+  HRESULT (__stdcall *ReadMultiple)(IPropertyStorage *This, ULONG cpspec, const PROPSPEC rgpspec[], PROPVARIANT rgpropvar[]);
+  HRESULT (__stdcall *WriteMultiple)(IPropertyStorage *This, ULONG cpspec, const PROPSPEC rgpspec[], const PROPVARIANT rgpropvar[], PROPID propidNameFirst);
+  HRESULT (__stdcall *DeleteMultiple)(IPropertyStorage *This, ULONG cpspec, const PROPSPEC rgpspec[]);
+  HRESULT (__stdcall *ReadPropertyNames)(IPropertyStorage *This, ULONG cpropid, const PROPID rgpropid[], LPOLESTR rglpwstrName[]);
+  HRESULT (__stdcall *WritePropertyNames)(IPropertyStorage *This, ULONG cpropid, const PROPID rgpropid[], const LPOLESTR rglpwstrName[]);
+  HRESULT (__stdcall *DeletePropertyNames)(IPropertyStorage *This, ULONG cpropid, const PROPID rgpropid[]);
+  HRESULT (__stdcall *Commit)(IPropertyStorage *This, DWORD grfCommitFlags);
+  HRESULT (__stdcall *Revert)(IPropertyStorage *This);
+  HRESULT (__stdcall *Enum)(IPropertyStorage *This, IEnumSTATPROPSTG **ppenum);
+  HRESULT (__stdcall *SetTimes)(IPropertyStorage *This, const FILETIME *pctime, const FILETIME *patime, const FILETIME *pmtime);
+  HRESULT (__stdcall *SetClass)(IPropertyStorage *This, const IID *const clsid);
+  HRESULT (__stdcall *Stat)(IPropertyStorage *This, STATPROPSETSTG *pstatpsstg);
+
+};

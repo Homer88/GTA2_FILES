@@ -1,0 +1,9 @@
+// Структура: IZoneIdentifier
+// Полей: 1
+// Строки в оригинале: 37620-37623
+struct IZoneIdentifier
+{
+
+  struct IZoneIdentifierVtbl *lpVtbl;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _CONSOLE_SCREEN_BUFFER_INFO
+// Полей: 5
+// Строки в оригинале: 106905-106912
+struct _CONSOLE_SCREEN_BUFFER_INFO
+{
+
+  _COORD dwSize;
+  _COORD dwCursorPosition;
+  unsigned __int16 wAttributes;
+  _SMALL_RECT srWindow;
+  _COORD dwMaximumWindowSize;
+
+};

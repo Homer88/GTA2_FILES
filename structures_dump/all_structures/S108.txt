@@ -1,0 +1,26 @@
+// Структура: S108
+// Полей: 18
+// Строки в оригинале: 8922-8942
+struct S108
+{
+
+  int field;
+  int field_4;
+  int field_8;
+  Player *Player;
+  ushort a2;
+  SHORT field_12;
+  ushort field_14;
+  char field_16;
+  char field_17;
+  int Cycle;
+  ushort field_1C;
+  ushort field_1E;
+  char field_20;
+  char field_21;
+  char field_22;
+  char field_23;
+  int field_24;
+  int field_28;
+
+};

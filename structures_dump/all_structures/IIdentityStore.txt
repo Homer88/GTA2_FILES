@@ -1,0 +1,9 @@
+// Структура: IIdentityStore
+// Полей: 1
+// Строки в оригинале: 45169-45172
+struct IIdentityStore
+{
+
+  struct IIdentityStoreVtbl *lpVtbl;
+
+};

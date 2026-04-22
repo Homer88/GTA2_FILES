@@ -1,0 +1,12 @@
+// Структура: tagSTATDATA
+// Полей: 4
+// Строки в оригинале: 27121-27127
+struct tagSTATDATA
+{
+
+  FORMATETC formatetc;
+  DWORD advf;
+  IAdviseSink *pAdvSink;
+  DWORD dwConnection;
+
+};

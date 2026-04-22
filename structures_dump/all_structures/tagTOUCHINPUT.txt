@@ -1,0 +1,18 @@
+// Структура: tagTOUCHINPUT
+// Полей: 10
+// Строки в оригинале: 102232-102244
+struct tagTOUCHINPUT
+{
+
+  int x;
+  int y;
+  void *hSource;
+  unsigned int dwID;
+  unsigned int dwFlags;
+  unsigned int dwMask;
+  unsigned int dwTime;
+  unsigned int dwExtraInfo;
+  unsigned int cxContact;
+  unsigned int cyContact;
+
+};

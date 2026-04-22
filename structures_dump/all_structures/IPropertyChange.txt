@@ -1,0 +1,9 @@
+// Структура: IPropertyChange
+// Полей: 1
+// Строки в оригинале: 35712-35715
+struct IPropertyChange
+{
+
+  struct IPropertyChangeVtbl *lpVtbl;
+
+};

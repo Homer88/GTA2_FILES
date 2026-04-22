@@ -1,0 +1,10 @@
+// Структура: _CERT_ALT_NAME_ENTRY
+// Полей: 2
+// Строки в оригинале: 88860-88864
+struct _CERT_ALT_NAME_ENTRY
+{
+
+  unsigned int dwAltNameChoice;
+  $FC579412C7EF7FA2E398C28FDD3FBF42 ___u1;
+
+};

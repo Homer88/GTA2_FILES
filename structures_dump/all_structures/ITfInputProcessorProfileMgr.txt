@@ -1,0 +1,9 @@
+// Структура: ITfInputProcessorProfileMgr
+// Полей: 1
+// Строки в оригинале: 40851-40854
+struct ITfInputProcessorProfileMgr
+{
+
+  struct ITfInputProcessorProfileMgrVtbl *lpVtbl;
+
+};

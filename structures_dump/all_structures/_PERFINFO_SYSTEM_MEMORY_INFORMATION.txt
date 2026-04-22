@@ -1,0 +1,12 @@
+// Структура: _PERFINFO_SYSTEM_MEMORY_INFORMATION
+// Полей: 4
+// Строки в оригинале: 310957-310963
+struct _PERFINFO_SYSTEM_MEMORY_INFORMATION
+{
+
+  unsigned int PagedPoolCommitPageCount;
+  unsigned int NonPagedPoolPageCount;
+  unsigned int MdlPageCount;
+  unsigned int CommitPageCount;
+
+};

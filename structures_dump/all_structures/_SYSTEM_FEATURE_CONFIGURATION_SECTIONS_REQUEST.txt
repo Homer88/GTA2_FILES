@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_FEATURE_CONFIGURATION_SECTIONS_REQUEST
+// Полей: 1
+// Строки в оригинале: 104083-104086
+struct _SYSTEM_FEATURE_CONFIGURATION_SECTIONS_REQUEST
+{
+
+  unsigned __int64 PreviousChangeStamps[3];
+
+};

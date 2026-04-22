@@ -1,0 +1,20 @@
+// Структура: _WMI_SPINLOCK
+// Полей: 12
+// Строки в оригинале: 311638-311652
+struct _WMI_SPINLOCK
+{
+
+  void *SpinLockAddress;
+  void *CallerAddress;
+  unsigned __int64 AcquireTime;
+  unsigned __int64 ReleaseTime;
+  unsigned int WaitTimeInCycles;
+  unsigned int SpinCount;
+  unsigned int ThreadId;
+  unsigned int InterruptCount;
+  unsigned __int8 Irql;
+  unsigned __int8 AcquireDepth;
+  $016904E514E6ED07FDA8A7A4917A18A0 ___u10;
+  unsigned __int8 Reserved[5];
+
+};

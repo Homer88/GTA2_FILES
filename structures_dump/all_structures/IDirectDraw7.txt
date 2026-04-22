@@ -1,0 +1,9 @@
+// Структура: IDirectDraw7
+// Полей: 1
+// Строки в оригинале: 26715-26718
+struct IDirectDraw7
+{
+
+  struct IDirectDraw7Vtbl *lpVtbl;
+
+};

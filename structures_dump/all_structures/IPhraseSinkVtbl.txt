@@ -1,0 +1,13 @@
+// Структура: IPhraseSinkVtbl
+// Полей: 5
+// Строки в оригинале: 36677-36684
+struct IPhraseSinkVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPhraseSink *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPhraseSink *This);
+  ULONG (__stdcall *Release)(IPhraseSink *This);
+  HRESULT (__stdcall *PutSmallPhrase)(IPhraseSink *This, const WCHAR *pwcNoun, ULONG cwcNoun, const WCHAR *pwcModifier, ULONG cwcModifier, ULONG ulAttachmentType);
+  HRESULT (__stdcall *PutPhrase)(IPhraseSink *This, const WCHAR *pwcPhrase, ULONG cwcPhrase);
+
+};

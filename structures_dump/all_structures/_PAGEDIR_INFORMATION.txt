@@ -1,0 +1,11 @@
+// Структура: _PAGEDIR_INFORMATION
+// Полей: 3
+// Строки в оригинале: 81643-81648
+struct _PAGEDIR_INFORMATION
+{
+
+  unsigned __int64 DontUse : 9;
+  unsigned __int64 PageDirectoryBase : 48;
+  unsigned __int64 Reserved : 7;
+
+};

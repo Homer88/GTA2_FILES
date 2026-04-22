@@ -1,0 +1,14 @@
+// Структура: _RTL_MEMORY_STREAM
+// Полей: 6
+// Строки в оригинале: 309267-309275
+struct _RTL_MEMORY_STREAM
+{
+
+  void *HeapHandle;
+  unsigned int Size;
+  unsigned int Capacity;
+  unsigned int GrowBy;
+  unsigned int Position;
+  void *Buffer;
+
+};

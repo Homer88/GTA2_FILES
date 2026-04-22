@@ -1,0 +1,15 @@
+// Структура: IEnumExplorerCommandVtbl
+// Полей: 7
+// Строки в оригинале: 31141-31150
+struct IEnumExplorerCommandVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumExplorerCommand *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumExplorerCommand *This);
+  ULONG (__stdcall *Release)(IEnumExplorerCommand *This);
+  HRESULT (__stdcall *Next)(IEnumExplorerCommand *This, ULONG celt, IExplorerCommand **pUICommand, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumExplorerCommand *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumExplorerCommand *This);
+  HRESULT (__stdcall *Clone)(IEnumExplorerCommand *This, IEnumExplorerCommand **ppenum);
+
+};

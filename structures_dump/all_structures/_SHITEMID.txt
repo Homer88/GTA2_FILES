@@ -1,0 +1,10 @@
+// Структура: _SHITEMID
+// Полей: 2
+// Строки в оригинале: 30673-30677
+struct _SHITEMID
+{
+
+  USHORT cb;
+  BYTE abID[1];
+
+};

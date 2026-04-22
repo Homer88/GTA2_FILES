@@ -1,0 +1,12 @@
+// Структура: _ETW_TP_EVENT_TIMER_SET_NTTIMER
+// Полей: 4
+// Строки в оригинале: 309849-309855
+struct _ETW_TP_EVENT_TIMER_SET_NTTIMER
+{
+
+  _SYSTEM_TRACE_HEADER Header;
+  __int64 DueTime;
+  void *SubQueue;
+  unsigned int TolerableDelay;
+
+};

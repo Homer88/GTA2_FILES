@@ -1,0 +1,9 @@
+// Структура: Folder3
+// Полей: 1
+// Строки в оригинале: 42949-42952
+struct Folder3
+{
+
+  struct Folder3Vtbl *lpVtbl;
+
+};

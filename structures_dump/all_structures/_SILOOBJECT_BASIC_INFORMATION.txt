@@ -1,0 +1,13 @@
+// Структура: _SILOOBJECT_BASIC_INFORMATION
+// Полей: 5
+// Строки в оригинале: 83599-83606
+struct _SILOOBJECT_BASIC_INFORMATION
+{
+
+  unsigned int SiloId;
+  unsigned int SiloParentId;
+  unsigned int NumberOfProcesses;
+  unsigned __int8 IsInServerSilo;
+  unsigned __int8 Reserved[3];
+
+};

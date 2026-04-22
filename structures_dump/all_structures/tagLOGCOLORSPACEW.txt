@@ -1,0 +1,18 @@
+// Структура: tagLOGCOLORSPACEW
+// Полей: 10
+// Строки в оригинале: 101249-101261
+struct tagLOGCOLORSPACEW
+{
+
+  unsigned int lcsSignature;
+  unsigned int lcsVersion;
+  unsigned int lcsSize;
+  int lcsCSType;
+  int lcsIntent;
+  tagICEXYZTRIPLE lcsEndpoints;
+  unsigned int lcsGammaRed;
+  unsigned int lcsGammaGreen;
+  unsigned int lcsGammaBlue;
+  wchar_t lcsFilename[260];
+
+};

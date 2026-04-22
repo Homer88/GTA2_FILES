@@ -1,0 +1,9 @@
+// Структура: IDiscFormat2DataEventArgs
+// Полей: 1
+// Строки в оригинале: 45266-45269
+struct IDiscFormat2DataEventArgs
+{
+
+  struct IDiscFormat2DataEventArgsVtbl *lpVtbl;
+
+};

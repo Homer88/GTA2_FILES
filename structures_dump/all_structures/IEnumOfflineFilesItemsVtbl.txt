@@ -1,0 +1,15 @@
+// Структура: IEnumOfflineFilesItemsVtbl
+// Полей: 7
+// Строки в оригинале: 28175-28184
+struct IEnumOfflineFilesItemsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumOfflineFilesItems *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumOfflineFilesItems *This);
+  ULONG (__stdcall *Release)(IEnumOfflineFilesItems *This);
+  HRESULT (__stdcall *Next)(IEnumOfflineFilesItems *This, ULONG celt, IOfflineFilesItem **rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumOfflineFilesItems *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumOfflineFilesItems *This);
+  HRESULT (__stdcall *Clone)(IEnumOfflineFilesItems *This, IEnumOfflineFilesItems **ppenum);
+
+};

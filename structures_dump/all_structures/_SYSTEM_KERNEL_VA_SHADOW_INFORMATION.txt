@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_KERNEL_VA_SHADOW_INFORMATION
+// Полей: 1
+// Строки в оригинале: 94914-94917
+struct _SYSTEM_KERNEL_VA_SHADOW_INFORMATION
+{
+
+  _SYSTEM_KERNEL_VA_SHADOW_INFORMATION::<unnamed_type_KvaShadowFlags> KvaShadowFlags;
+
+};

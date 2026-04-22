@@ -1,0 +1,9 @@
+// Структура: _SecPkgContext_LastClientTokenStatus
+// Полей: 1
+// Строки в оригинале: 323948-323951
+struct _SecPkgContext_LastClientTokenStatus
+{
+
+  _SECPKG_ATTR_LCT_STATUS LastClientTokenStatus;
+
+};

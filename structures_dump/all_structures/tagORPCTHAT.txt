@@ -1,0 +1,10 @@
+// Структура: tagORPCTHAT
+// Полей: 2
+// Строки в оригинале: 110023-110027
+struct tagORPCTHAT
+{
+
+  unsigned int flags;
+  tagORPC_EXTENT_ARRAY *extensions;
+
+};

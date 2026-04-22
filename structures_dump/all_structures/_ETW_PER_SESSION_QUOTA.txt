@@ -1,0 +1,12 @@
+// Структура: _ETW_PER_SESSION_QUOTA
+// Полей: 4
+// Строки в оригинале: 311278-311284
+struct _ETW_PER_SESSION_QUOTA
+{
+
+  unsigned int SessionId;
+  unsigned int CpuShareWeight;
+  __int64 CapturedWeightData;
+  unsigned __int64 CyclesAccumulated;
+
+};

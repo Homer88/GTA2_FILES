@@ -1,0 +1,13 @@
+// Структура: _nlsversioninfoex
+// Полей: 5
+// Строки в оригинале: 102616-102623
+struct _nlsversioninfoex
+{
+
+  unsigned int dwNLSVersionInfoSize;
+  unsigned int dwNLSVersion;
+  unsigned int dwDefinedVersion;
+  unsigned int dwEffectiveId;
+  _GUID guidCustomVersion;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _CRYPT_PKCS8_EXPORT_PARAMS
+// Полей: 5
+// Строки в оригинале: 91494-91501
+struct _CRYPT_PKCS8_EXPORT_PARAMS
+{
+
+  unsigned int hCryptProv;
+  unsigned int dwKeySpec;
+  char *pszPrivateKeyObjId;
+  int (__stdcall *pEncryptPrivateKeyFunc)(_CRYPT_ALGORITHM_IDENTIFIER *, _CRYPTOAPI_BLOB *, unsigned __int8 *, unsigned int *, void *);
+  void *pVoidEncryptFunc;
+
+};

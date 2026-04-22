@@ -1,0 +1,9 @@
+// Структура: ITravelLog
+// Полей: 1
+// Строки в оригинале: 39476-39479
+struct ITravelLog
+{
+
+  struct ITravelLogVtbl *lpVtbl;
+
+};

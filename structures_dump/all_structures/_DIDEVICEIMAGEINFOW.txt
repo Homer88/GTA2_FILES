@@ -1,0 +1,17 @@
+// Структура: _DIDEVICEIMAGEINFOW
+// Полей: 9
+// Строки в оригинале: 29372-29383
+struct _DIDEVICEIMAGEINFOW
+{
+
+  WCHAR tszImagePath[260];
+  DWORD dwFlags;
+  DWORD dwViewID;
+  RECT rcOverlay;
+  DWORD dwObjID;
+  DWORD dwcValidPts;
+  POINT rgptCalloutLine[5];
+  RECT rcCalloutRect;
+  DWORD dwTextAlign;
+
+};

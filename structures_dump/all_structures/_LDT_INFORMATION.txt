@@ -1,0 +1,11 @@
+// Структура: _LDT_INFORMATION
+// Полей: 3
+// Строки в оригинале: 93367-93372
+struct _LDT_INFORMATION
+{
+
+  unsigned int Start;
+  unsigned int Length;
+  _LDT_ENTRY LdtEntries[1];
+
+};

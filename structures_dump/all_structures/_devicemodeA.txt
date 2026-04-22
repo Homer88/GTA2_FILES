@@ -1,0 +1,37 @@
+// Структура: _devicemodeA
+// Полей: 29
+// Строки в оригинале: 96583-96614
+struct _devicemodeA
+{
+
+  unsigned __int8 dmDeviceName[32];
+  unsigned __int16 dmSpecVersion;
+  unsigned __int16 dmDriverVersion;
+  unsigned __int16 dmSize;
+  unsigned __int16 dmDriverExtra;
+  unsigned int dmFields;
+  $01332EF3986C63FD10A1DC608561C6A6 ___u6;
+  $B4A62F0854534D7F678B5AD62D37ED81 ___u7;
+  $5A3AD9138B9D5F1A1F846ADB6BC33DD0 ___u8;
+  __int16 dmColor;
+  __int16 dmDuplex;
+  __int16 dmYResolution;
+  __int16 dmTTOption;
+  __int16 dmCollate;
+  unsigned __int8 dmFormName[32];
+  unsigned __int16 dmLogPixels;
+  unsigned int dmBitsPerPel;
+  unsigned int dmPelsWidth;
+  unsigned int dmPelsHeight;
+  $309666D137CBB19809FA597AD348B415 ___u19;
+  unsigned int dmDisplayFrequency;
+  unsigned int dmICMMethod;
+  unsigned int dmICMIntent;
+  unsigned int dmMediaType;
+  unsigned int dmDitherType;
+  unsigned int dmReserved1;
+  unsigned int dmReserved2;
+  unsigned int dmPanningWidth;
+  unsigned int dmPanningHeight;
+
+};

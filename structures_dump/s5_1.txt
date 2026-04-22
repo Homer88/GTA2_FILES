@@ -1,0 +1,9 @@
+// Structure: s5_1
+// Lines: 5297 - 5301
+// Fields: 3
+
+struct s5_1
+{
+  _BYTE gap0[12035];
+  char field_0;
+};

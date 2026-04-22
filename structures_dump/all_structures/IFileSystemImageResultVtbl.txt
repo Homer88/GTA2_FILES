@@ -1,0 +1,20 @@
+// Структура: IFileSystemImageResultVtbl
+// Полей: 12
+// Строки в оригинале: 41260-41274
+struct IFileSystemImageResultVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFileSystemImageResult *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFileSystemImageResult *This);
+  ULONG (__stdcall *Release)(IFileSystemImageResult *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IFileSystemImageResult *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IFileSystemImageResult *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IFileSystemImageResult *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IFileSystemImageResult *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_ImageStream)(IFileSystemImageResult *This, IStream **pVal);
+  HRESULT (__stdcall *get_ProgressItems)(IFileSystemImageResult *This, IProgressItems **pVal);
+  HRESULT (__stdcall *get_TotalBlocks)(IFileSystemImageResult *This, LONG *pVal);
+  HRESULT (__stdcall *get_BlockSize)(IFileSystemImageResult *This, LONG *pVal);
+  HRESULT (__stdcall *get_DiscId)(IFileSystemImageResult *This, BSTR *pVal);
+
+};

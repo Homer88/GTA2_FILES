@@ -1,0 +1,12 @@
+// Структура: _RTL_VERIFIER_DLL_DESCRIPTOR
+// Полей: 4
+// Строки в оригинале: 83527-83533
+struct _RTL_VERIFIER_DLL_DESCRIPTOR
+{
+
+  wchar_t *DllName;
+  unsigned int DllFlags;
+  void *DllAddress;
+  _RTL_VERIFIER_THUNK_DESCRIPTOR *DllThunks;
+
+};

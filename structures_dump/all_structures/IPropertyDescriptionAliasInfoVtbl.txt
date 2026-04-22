@@ -1,0 +1,34 @@
+// Структура: IPropertyDescriptionAliasInfoVtbl
+// Полей: 26
+// Строки в оригинале: 39546-39574
+struct IPropertyDescriptionAliasInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyDescriptionAliasInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyDescriptionAliasInfo *This);
+  ULONG (__stdcall *Release)(IPropertyDescriptionAliasInfo *This);
+  HRESULT (__stdcall *GetPropertyKey)(IPropertyDescriptionAliasInfo *This, PROPERTYKEY *pkey);
+  HRESULT (__stdcall *GetCanonicalName)(IPropertyDescriptionAliasInfo *This, LPWSTR *ppszName);
+  HRESULT (__stdcall *GetPropertyType)(IPropertyDescriptionAliasInfo *This, VARTYPE *pvartype);
+  HRESULT (__stdcall *GetDisplayName)(IPropertyDescriptionAliasInfo *This, LPWSTR *ppszName);
+  HRESULT (__stdcall *GetEditInvitation)(IPropertyDescriptionAliasInfo *This, LPWSTR *ppszInvite);
+  HRESULT (__stdcall *GetTypeFlags)(IPropertyDescriptionAliasInfo *This, PROPDESC_TYPE_FLAGS mask, PROPDESC_TYPE_FLAGS *ppdtFlags);
+  HRESULT (__stdcall *GetViewFlags)(IPropertyDescriptionAliasInfo *This, PROPDESC_VIEW_FLAGS *ppdvFlags);
+  HRESULT (__stdcall *GetDefaultColumnWidth)(IPropertyDescriptionAliasInfo *This, UINT *pcxChars);
+  HRESULT (__stdcall *GetDisplayType)(IPropertyDescriptionAliasInfo *This, PROPDESC_DISPLAYTYPE *pdisplaytype);
+  HRESULT (__stdcall *GetColumnState)(IPropertyDescriptionAliasInfo *This, SHCOLSTATEF *pcsFlags);
+  HRESULT (__stdcall *GetGroupingRange)(IPropertyDescriptionAliasInfo *This, PROPDESC_GROUPING_RANGE *pgr);
+  HRESULT (__stdcall *GetRelativeDescriptionType)(IPropertyDescriptionAliasInfo *This, PROPDESC_RELATIVEDESCRIPTION_TYPE *prdt);
+  HRESULT (__stdcall *GetRelativeDescription)(IPropertyDescriptionAliasInfo *This, const PROPVARIANT *const propvar1, const PROPVARIANT *const propvar2, LPWSTR *ppszDesc1, LPWSTR *ppszDesc2);
+  HRESULT (__stdcall *GetSortDescription)(IPropertyDescriptionAliasInfo *This, PROPDESC_SORTDESCRIPTION *psd);
+  HRESULT (__stdcall *GetSortDescriptionLabel)(IPropertyDescriptionAliasInfo *This, BOOL fDescending, LPWSTR *ppszDescription);
+  HRESULT (__stdcall *GetAggregationType)(IPropertyDescriptionAliasInfo *This, PROPDESC_AGGREGATION_TYPE *paggtype);
+  HRESULT (__stdcall *GetConditionType)(IPropertyDescriptionAliasInfo *This, PROPDESC_CONDITION_TYPE *pcontype, CONDITION_OPERATION *popDefault);
+  HRESULT (__stdcall *GetEnumTypeList)(IPropertyDescriptionAliasInfo *This, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *CoerceToCanonicalValue)(IPropertyDescriptionAliasInfo *This, PROPVARIANT *ppropvar);
+  HRESULT (__stdcall *FormatForDisplay)(IPropertyDescriptionAliasInfo *This, const PROPVARIANT *const propvar, PROPDESC_FORMAT_FLAGS pdfFlags, LPWSTR *ppszDisplay);
+  HRESULT (__stdcall *IsValueCanonical)(IPropertyDescriptionAliasInfo *This, const PROPVARIANT *const propvar);
+  HRESULT (__stdcall *GetSortByAlias)(IPropertyDescriptionAliasInfo *This, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetAdditionalSortByAliases)(IPropertyDescriptionAliasInfo *This, const IID *const riid, void **ppv);
+
+};

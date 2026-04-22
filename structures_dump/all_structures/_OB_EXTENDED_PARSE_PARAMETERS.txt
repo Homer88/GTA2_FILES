@@ -1,0 +1,11 @@
+// Структура: _OB_EXTENDED_PARSE_PARAMETERS
+// Полей: 3
+// Строки в оригинале: 19370-19375
+struct _OB_EXTENDED_PARSE_PARAMETERS
+{
+
+  unsigned __int16 Length;
+  unsigned int RestrictedAccessMask;
+  _EJOB *Silo;
+
+};

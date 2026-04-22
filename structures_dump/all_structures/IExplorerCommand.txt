@@ -1,0 +1,9 @@
+// Структура: IExplorerCommand
+// Полей: 1
+// Строки в оригинале: 31078-31081
+struct IExplorerCommand
+{
+
+  struct IExplorerCommandVtbl *lpVtbl;
+
+};

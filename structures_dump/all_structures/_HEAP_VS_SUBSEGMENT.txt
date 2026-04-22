@@ -1,0 +1,14 @@
+// Структура: _HEAP_VS_SUBSEGMENT
+// Полей: 6
+// Строки в оригинале: 21759-21767
+struct _HEAP_VS_SUBSEGMENT
+{
+
+  _LIST_ENTRY ListEntry;
+  unsigned __int64 CommitBitmap;
+  unsigned int CommitLock;
+  unsigned __int16 Size;
+  unsigned __int16 Signature : 15;
+  unsigned __int16 FullCommit : 1;
+
+};

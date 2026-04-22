@@ -1,0 +1,18 @@
+// Структура: IMPORT_OBJECT_HEADER
+// Полей: 10
+// Строки в оригинале: 113090-113102
+struct IMPORT_OBJECT_HEADER
+{
+
+  unsigned __int16 Sig1;
+  unsigned __int16 Sig2;
+  unsigned __int16 Version;
+  unsigned __int16 Machine;
+  unsigned int TimeDateStamp;
+  unsigned int SizeOfData;
+  $4CFA15F5CE489CDF0BD78DFB308FEF36 ___u6;
+  unsigned __int16 Type : 2;
+  unsigned __int16 NameType : 3;
+  unsigned __int16 Reserved : 11;
+
+};

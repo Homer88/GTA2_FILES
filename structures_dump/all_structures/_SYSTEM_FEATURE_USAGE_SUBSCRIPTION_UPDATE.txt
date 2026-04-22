@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_FEATURE_USAGE_SUBSCRIPTION_UPDATE
+// Полей: 2
+// Строки в оригинале: 83093-83097
+struct _SYSTEM_FEATURE_USAGE_SUBSCRIPTION_UPDATE
+{
+
+  unsigned int UpdateCount;
+  _SYSTEM_FEATURE_USAGE_SUBSCRIPTION_UPDATE_ENTRY Updates[1];
+
+};

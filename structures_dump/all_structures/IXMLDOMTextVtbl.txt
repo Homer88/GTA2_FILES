@@ -1,0 +1,60 @@
+// Структура: IXMLDOMTextVtbl
+// Полей: 52
+// Строки в оригинале: 43673-43727
+struct IXMLDOMTextVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IXMLDOMText *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IXMLDOMText *This);
+  ULONG (__stdcall *Release)(IXMLDOMText *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IXMLDOMText *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IXMLDOMText *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IXMLDOMText *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IXMLDOMText *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_nodeName)(IXMLDOMText *This, BSTR *name);
+  HRESULT (__stdcall *get_nodeValue)(IXMLDOMText *This, VARIANT *value);
+  HRESULT (__stdcall *put_nodeValue)(IXMLDOMText *This, VARIANT value);
+  HRESULT (__stdcall *get_nodeType)(IXMLDOMText *This, DOMNodeType *type);
+  HRESULT (__stdcall *get_parentNode)(IXMLDOMText *This, IXMLDOMNode **parent);
+  HRESULT (__stdcall *get_childNodes)(IXMLDOMText *This, IXMLDOMNodeList **childList);
+  HRESULT (__stdcall *get_firstChild)(IXMLDOMText *This, IXMLDOMNode **firstChild);
+  HRESULT (__stdcall *get_lastChild)(IXMLDOMText *This, IXMLDOMNode **lastChild);
+  HRESULT (__stdcall *get_previousSibling)(IXMLDOMText *This, IXMLDOMNode **previousSibling);
+  HRESULT (__stdcall *get_nextSibling)(IXMLDOMText *This, IXMLDOMNode **nextSibling);
+  HRESULT (__stdcall *get_attributes)(IXMLDOMText *This, IXMLDOMNamedNodeMap **attributeMap);
+  HRESULT (__stdcall *insertBefore)(IXMLDOMText *This, IXMLDOMNode *newChild, VARIANT refChild, IXMLDOMNode **outNewChild);
+  HRESULT (__stdcall *replaceChild)(IXMLDOMText *This, IXMLDOMNode *newChild, IXMLDOMNode *oldChild, IXMLDOMNode **outOldChild);
+  HRESULT (__stdcall *removeChild)(IXMLDOMText *This, IXMLDOMNode *childNode, IXMLDOMNode **oldChild);
+  HRESULT (__stdcall *appendChild)(IXMLDOMText *This, IXMLDOMNode *newChild, IXMLDOMNode **outNewChild);
+  HRESULT (__stdcall *hasChildNodes)(IXMLDOMText *This, VARIANT_BOOL *hasChild);
+  HRESULT (__stdcall *get_ownerDocument)(IXMLDOMText *This, IXMLDOMDocument **XMLDOMDocument);
+  HRESULT (__stdcall *cloneNode)(IXMLDOMText *This, VARIANT_BOOL deep, IXMLDOMNode **cloneRoot);
+  HRESULT (__stdcall *get_nodeTypeString)(IXMLDOMText *This, BSTR *nodeType);
+  HRESULT (__stdcall *get_text)(IXMLDOMText *This, BSTR *text);
+  HRESULT (__stdcall *put_text)(IXMLDOMText *This, BSTR text);
+  HRESULT (__stdcall *get_specified)(IXMLDOMText *This, VARIANT_BOOL *isSpecified);
+  HRESULT (__stdcall *get_definition)(IXMLDOMText *This, IXMLDOMNode **definitionNode);
+  HRESULT (__stdcall *get_nodeTypedValue)(IXMLDOMText *This, VARIANT *typedValue);
+  HRESULT (__stdcall *put_nodeTypedValue)(IXMLDOMText *This, VARIANT typedValue);
+  HRESULT (__stdcall *get_dataType)(IXMLDOMText *This, VARIANT *dataTypeName);
+  HRESULT (__stdcall *put_dataType)(IXMLDOMText *This, BSTR dataTypeName);
+  HRESULT (__stdcall *get_xml)(IXMLDOMText *This, BSTR *xmlString);
+  HRESULT (__stdcall *transformNode)(IXMLDOMText *This, IXMLDOMNode *stylesheet, BSTR *xmlString);
+  HRESULT (__stdcall *selectNodes)(IXMLDOMText *This, BSTR queryString, IXMLDOMNodeList **resultList);
+  HRESULT (__stdcall *selectSingleNode)(IXMLDOMText *This, BSTR queryString, IXMLDOMNode **resultNode);
+  HRESULT (__stdcall *get_parsed)(IXMLDOMText *This, VARIANT_BOOL *isParsed);
+  HRESULT (__stdcall *get_namespaceURI)(IXMLDOMText *This, BSTR *namespaceURI);
+  HRESULT (__stdcall *get_prefix)(IXMLDOMText *This, BSTR *prefixString);
+  HRESULT (__stdcall *get_baseName)(IXMLDOMText *This, BSTR *nameString);
+  HRESULT (__stdcall *transformNodeToObject)(IXMLDOMText *This, IXMLDOMNode *stylesheet, VARIANT outputObject);
+  HRESULT (__stdcall *get_data)(IXMLDOMText *This, BSTR *data);
+  HRESULT (__stdcall *put_data)(IXMLDOMText *This, BSTR data);
+  HRESULT (__stdcall *get_length)(IXMLDOMText *This, int *dataLength);
+  HRESULT (__stdcall *substringData)(IXMLDOMText *This, int offset, int count, BSTR *data);
+  HRESULT (__stdcall *appendData)(IXMLDOMText *This, BSTR data);
+  HRESULT (__stdcall *insertData)(IXMLDOMText *This, int offset, BSTR data);
+  HRESULT (__stdcall *deleteData)(IXMLDOMText *This, int offset, int count);
+  HRESULT (__stdcall *replaceData)(IXMLDOMText *This, int offset, int count, BSTR data);
+  HRESULT (__stdcall *splitText)(IXMLDOMText *This, int offset, IXMLDOMText **rightHandTextNode);
+
+};

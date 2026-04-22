@@ -1,0 +1,9 @@
+// Структура: IShellWindows
+// Полей: 1
+// Строки в оригинале: 32841-32844
+struct IShellWindows
+{
+
+  struct IShellWindowsVtbl *lpVtbl;
+
+};

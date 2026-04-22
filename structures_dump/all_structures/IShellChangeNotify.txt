@@ -1,0 +1,9 @@
+// Структура: IShellChangeNotify
+// Полей: 1
+// Строки в оригинале: 40277-40280
+struct IShellChangeNotify
+{
+
+  struct IShellChangeNotifyVtbl *lpVtbl;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _MINIDUMP_USER_STREAM
+// Полей: 3
+// Строки в оригинале: 122366-122371
+struct _MINIDUMP_USER_STREAM
+{
+
+  unsigned int Type;
+  unsigned int BufferSize;
+  void *Buffer;
+
+};

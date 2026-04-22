@@ -1,0 +1,17 @@
+// Структура: IMallocVtbl
+// Полей: 9
+// Строки в оригинале: 39857-39868
+struct IMallocVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IMalloc *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IMalloc *This);
+  ULONG (__stdcall *Release)(IMalloc *This);
+  void *(__stdcall *Alloc)(IMalloc *This, SIZE_T cb);
+  void *(__stdcall *Realloc)(IMalloc *This, void *pv, SIZE_T cb);
+  void (__stdcall *Free)(IMalloc *This, void *pv);
+  SIZE_T (__stdcall *GetSize)(IMalloc *This, void *pv);
+  int (__stdcall *DidAlloc)(IMalloc *This, void *pv);
+  void (__stdcall *HeapMinimize)(IMalloc *This);
+
+};

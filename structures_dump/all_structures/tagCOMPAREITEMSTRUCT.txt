@@ -1,0 +1,16 @@
+// Структура: tagCOMPAREITEMSTRUCT
+// Полей: 8
+// Строки в оригинале: 93609-93619
+struct tagCOMPAREITEMSTRUCT
+{
+
+  unsigned int CtlType;
+  unsigned int CtlID;
+  HWND__ *hwndItem;
+  unsigned int itemID1;
+  unsigned int itemData1;
+  unsigned int itemID2;
+  unsigned int itemData2;
+  unsigned int dwLocaleId;
+
+};

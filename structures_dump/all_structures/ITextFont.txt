@@ -1,0 +1,9 @@
+// Структура: ITextFont
+// Полей: 1
+// Строки в оригинале: 45693-45696
+struct ITextFont
+{
+
+  struct ITextFontVtbl *lpVtbl;
+
+};

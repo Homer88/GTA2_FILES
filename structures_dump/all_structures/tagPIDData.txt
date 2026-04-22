@@ -1,0 +1,10 @@
+// Структура: tagPIDData
+// Полей: 2
+// Строки в оригинале: 194674-194678
+struct tagPIDData
+{
+
+  IUnknown *pServer;
+  CObjectContext *pServerCtx;
+
+};

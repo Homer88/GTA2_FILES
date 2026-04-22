@@ -1,0 +1,17 @@
+// Структура: IDeskBandVtbl
+// Полей: 9
+// Строки в оригинале: 32888-32899
+struct IDeskBandVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDeskBand *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDeskBand *This);
+  ULONG (__stdcall *Release)(IDeskBand *This);
+  HRESULT (__stdcall *GetWindow)(IDeskBand *This, HWND *phwnd);
+  HRESULT (__stdcall *ContextSensitiveHelp)(IDeskBand *This, BOOL fEnterMode);
+  HRESULT (__stdcall *ShowDW)(IDeskBand *This, BOOL fShow);
+  HRESULT (__stdcall *CloseDW)(IDeskBand *This, DWORD dwReserved);
+  HRESULT (__stdcall *ResizeBorderDW)(IDeskBand *This, LPCRECT prcBorder, IUnknown *punkToolbarSite, BOOL fReserved);
+  HRESULT (__stdcall *GetBandInfo)(IDeskBand *This, DWORD dwBandID, DWORD dwViewMode, DESKBANDINFO *pdbi);
+
+};

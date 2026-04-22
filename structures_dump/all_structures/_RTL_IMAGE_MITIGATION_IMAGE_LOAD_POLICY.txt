@@ -1,0 +1,11 @@
+// Структура: _RTL_IMAGE_MITIGATION_IMAGE_LOAD_POLICY
+// Полей: 3
+// Строки в оригинале: 94103-94108
+struct _RTL_IMAGE_MITIGATION_IMAGE_LOAD_POLICY
+{
+
+  _RTL_IMAGE_MITIGATION_POLICY BlockRemoteImageLoads;
+  _RTL_IMAGE_MITIGATION_POLICY BlockLowLabelImageLoads;
+  _RTL_IMAGE_MITIGATION_POLICY PreferSystem32;
+
+};

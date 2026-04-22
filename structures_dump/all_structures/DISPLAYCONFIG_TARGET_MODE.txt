@@ -1,0 +1,9 @@
+// Структура: DISPLAYCONFIG_TARGET_MODE
+// Полей: 1
+// Строки в оригинале: 109927-109930
+struct DISPLAYCONFIG_TARGET_MODE
+{
+
+  DISPLAYCONFIG_VIDEO_SIGNAL_INFO targetVideoSignalInfo;
+
+};

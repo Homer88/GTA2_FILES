@@ -1,0 +1,9 @@
+// Структура: IEnumString
+// Полей: 1
+// Строки в оригинале: 24059-24062
+struct IEnumString
+{
+
+  struct IEnumStringVtbl *lpVtbl;
+
+};

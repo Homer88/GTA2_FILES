@@ -1,0 +1,15 @@
+// Структура: _RPC_SECURITY_QOS_V3_W
+// Полей: 7
+// Строки в оригинале: 93256-93265
+struct _RPC_SECURITY_QOS_V3_W
+{
+
+  unsigned int Version;
+  unsigned int Capabilities;
+  unsigned int IdentityTracking;
+  unsigned int ImpersonationType;
+  unsigned int AdditionalSecurityInfoType;
+  _RPC_SECURITY_QOS_V3_W::<unnamed_type_u> u;
+  void *Sid;
+
+};

@@ -1,0 +1,16 @@
+// Структура: _DELAYLOAD_INFO
+// Полей: 8
+// Строки в оригинале: 147789-147799
+struct _DELAYLOAD_INFO
+{
+
+  unsigned int Size;
+  const _IMAGE_DELAYLOAD_DESCRIPTOR *DelayloadDescriptor;
+  _IMAGE_THUNK_DATA32 *ThunkAddress;
+  const char *TargetDllName;
+  _DELAYLOAD_PROC_DESCRIPTOR TargetApiDescriptor;
+  void *TargetModuleBase;
+  void *Unused;
+  unsigned int LastError;
+
+};

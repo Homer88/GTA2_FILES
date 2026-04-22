@@ -1,0 +1,13 @@
+// Структура: _CMS_DH_KEY_INFO
+// Полей: 5
+// Строки в оригинале: 92255-92262
+struct _CMS_DH_KEY_INFO
+{
+
+  unsigned int dwVersion;
+  unsigned int Algid;
+  char *pszContentEncObjId;
+  _CRYPTOAPI_BLOB PubInfo;
+  void *pReserved;
+
+};

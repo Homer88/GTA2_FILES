@@ -1,0 +1,63 @@
+// Структура: ITextParaVtbl
+// Полей: 55
+// Строки в оригинале: 45772-45829
+struct ITextParaVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITextPara *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITextPara *This);
+  ULONG (__stdcall *Release)(ITextPara *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(ITextPara *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(ITextPara *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(ITextPara *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(ITextPara *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *GetDuplicate)(ITextPara *This, ITextPara **ppPara);
+  HRESULT (__stdcall *SetDuplicate)(ITextPara *This, ITextPara *pPara);
+  HRESULT (__stdcall *CanChange)(ITextPara *This, int *pValue);
+  HRESULT (__stdcall *IsEqual)(ITextPara *This, ITextPara *pPara, int *pValue);
+  HRESULT (__stdcall *Reset)(ITextPara *This, int Value);
+  HRESULT (__stdcall *GetStyle)(ITextPara *This, int *pValue);
+  HRESULT (__stdcall *SetStyle)(ITextPara *This, int Value);
+  HRESULT (__stdcall *GetAlignment)(ITextPara *This, int *pValue);
+  HRESULT (__stdcall *SetAlignment)(ITextPara *This, int Value);
+  HRESULT (__stdcall *GetHyphenation)(ITextPara *This, int *pValue);
+  HRESULT (__stdcall *SetHyphenation)(ITextPara *This, int Value);
+  HRESULT (__stdcall *GetFirstLineIndent)(ITextPara *This, float *pValue);
+  HRESULT (__stdcall *GetKeepTogether)(ITextPara *This, int *pValue);
+  HRESULT (__stdcall *SetKeepTogether)(ITextPara *This, int Value);
+  HRESULT (__stdcall *GetKeepWithNext)(ITextPara *This, int *pValue);
+  HRESULT (__stdcall *SetKeepWithNext)(ITextPara *This, int Value);
+  HRESULT (__stdcall *GetLeftIndent)(ITextPara *This, float *pValue);
+  HRESULT (__stdcall *GetLineSpacing)(ITextPara *This, float *pValue);
+  HRESULT (__stdcall *GetLineSpacingRule)(ITextPara *This, int *pValue);
+  HRESULT (__stdcall *GetListAlignment)(ITextPara *This, int *pValue);
+  HRESULT (__stdcall *SetListAlignment)(ITextPara *This, int Value);
+  HRESULT (__stdcall *GetListLevelIndex)(ITextPara *This, int *pValue);
+  HRESULT (__stdcall *SetListLevelIndex)(ITextPara *This, int Value);
+  HRESULT (__stdcall *GetListStart)(ITextPara *This, int *pValue);
+  HRESULT (__stdcall *SetListStart)(ITextPara *This, int Value);
+  HRESULT (__stdcall *GetListTab)(ITextPara *This, float *pValue);
+  HRESULT (__stdcall *SetListTab)(ITextPara *This, float Value);
+  HRESULT (__stdcall *GetListType)(ITextPara *This, int *pValue);
+  HRESULT (__stdcall *SetListType)(ITextPara *This, int Value);
+  HRESULT (__stdcall *GetNoLineNumber)(ITextPara *This, int *pValue);
+  HRESULT (__stdcall *SetNoLineNumber)(ITextPara *This, int Value);
+  HRESULT (__stdcall *GetPageBreakBefore)(ITextPara *This, int *pValue);
+  HRESULT (__stdcall *SetPageBreakBefore)(ITextPara *This, int Value);
+  HRESULT (__stdcall *GetRightIndent)(ITextPara *This, float *pValue);
+  HRESULT (__stdcall *SetRightIndent)(ITextPara *This, float Value);
+  HRESULT (__stdcall *SetIndents)(ITextPara *This, float First, float Left, float Right);
+  HRESULT (__stdcall *SetLineSpacing)(ITextPara *This, int Rule, float Spacing);
+  HRESULT (__stdcall *GetSpaceAfter)(ITextPara *This, float *pValue);
+  HRESULT (__stdcall *SetSpaceAfter)(ITextPara *This, float Value);
+  HRESULT (__stdcall *GetSpaceBefore)(ITextPara *This, float *pValue);
+  HRESULT (__stdcall *SetSpaceBefore)(ITextPara *This, float Value);
+  HRESULT (__stdcall *GetWidowControl)(ITextPara *This, int *pValue);
+  HRESULT (__stdcall *SetWidowControl)(ITextPara *This, int Value);
+  HRESULT (__stdcall *GetTabCount)(ITextPara *This, int *pCount);
+  HRESULT (__stdcall *AddTab)(ITextPara *This, float tbPos, int tbAlign, int tbLeader);
+  HRESULT (__stdcall *ClearAllTabs)(ITextPara *This);
+  HRESULT (__stdcall *DeleteTab)(ITextPara *This, float tbPos);
+  HRESULT (__stdcall *GetTab)(ITextPara *This, int iTab, float *ptbPos, int *ptbAlign, int *ptbLeader);
+
+};

@@ -1,0 +1,10 @@
+// Структура: _ALPC_WORK_ON_BEHALF_TICKET
+// Полей: 2
+// Строки в оригинале: 95394-95398
+struct _ALPC_WORK_ON_BEHALF_TICKET
+{
+
+  unsigned int ThreadId;
+  unsigned int ThreadCreationTimeLow;
+
+};

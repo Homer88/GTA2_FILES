@@ -1,0 +1,14 @@
+// Структура: ICommDlgBrowserVtbl
+// Полей: 6
+// Строки в оригинале: 39798-39806
+struct ICommDlgBrowserVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICommDlgBrowser *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICommDlgBrowser *This);
+  ULONG (__stdcall *Release)(ICommDlgBrowser *This);
+  HRESULT (__stdcall *OnDefaultCommand)(ICommDlgBrowser *This, IShellView *ppshv);
+  HRESULT (__stdcall *OnStateChange)(ICommDlgBrowser *This, IShellView *ppshv, ULONG uChange);
+  HRESULT (__stdcall *IncludeObject)(ICommDlgBrowser *This, IShellView *ppshv, LPCITEMIDLIST pidl);
+
+};

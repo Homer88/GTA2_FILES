@@ -1,0 +1,15 @@
+// Структура: IEnumExtraSearchVtbl
+// Полей: 7
+// Строки в оригинале: 32427-32436
+struct IEnumExtraSearchVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumExtraSearch *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumExtraSearch *This);
+  ULONG (__stdcall *Release)(IEnumExtraSearch *This);
+  HRESULT (__stdcall *Next)(IEnumExtraSearch *This, ULONG celt, EXTRASEARCH *rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumExtraSearch *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumExtraSearch *This);
+  HRESULT (__stdcall *Clone)(IEnumExtraSearch *This, IEnumExtraSearch **ppenum);
+
+};

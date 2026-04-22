@@ -1,0 +1,23 @@
+// Структура: _CPU_CONFIG_RECORD
+// Полей: 15
+// Строки в оригинале: 310056-310073
+struct _CPU_CONFIG_RECORD
+{
+
+  unsigned int ProcessorSpeed;
+  unsigned int NumberOfProcessors;
+  unsigned int MemorySize;
+  unsigned int PageSize;
+  unsigned int AllocationGranularity;
+  wchar_t ComputerName[256];
+  wchar_t DomainName[134];
+  unsigned int HyperThreadingFlag;
+  unsigned int HighestUserAddress;
+  unsigned __int16 ProcessorArchitecture;
+  unsigned __int16 ProcessorLevel;
+  unsigned __int16 ProcessorRevision;
+  unsigned __int8 NxEnabled;
+  unsigned __int8 PaeEnabled;
+  unsigned int MemorySpeed;
+
+};

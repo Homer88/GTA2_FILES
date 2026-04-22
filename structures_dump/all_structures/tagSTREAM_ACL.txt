@@ -1,0 +1,11 @@
+// Структура: tagSTREAM_ACL
+// Полей: 3
+// Строки в оригинале: 273074-273079
+struct tagSTREAM_ACL
+{
+
+  unsigned int ulNumOfDenyEntries;
+  unsigned int ulNumOfGrantEntries;
+  tagSTREAM_ACE *pACL;
+
+};

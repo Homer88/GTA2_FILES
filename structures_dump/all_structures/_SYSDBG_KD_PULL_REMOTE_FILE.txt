@@ -1,0 +1,9 @@
+// Структура: _SYSDBG_KD_PULL_REMOTE_FILE
+// Полей: 1
+// Строки в оригинале: 105039-105042
+struct _SYSDBG_KD_PULL_REMOTE_FILE
+{
+
+  _UNICODE_STRING ImageFileName;
+
+};

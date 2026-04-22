@@ -1,0 +1,12 @@
+// Структура: ISpecifyPropertyPagesVtbl
+// Полей: 4
+// Строки в оригинале: 42993-42999
+struct ISpecifyPropertyPagesVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISpecifyPropertyPages *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISpecifyPropertyPages *This);
+  ULONG (__stdcall *Release)(ISpecifyPropertyPages *This);
+  HRESULT (__stdcall *GetPages)(ISpecifyPropertyPages *This, CAUUID *pPages);
+
+};

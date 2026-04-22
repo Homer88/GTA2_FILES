@@ -1,0 +1,9 @@
+// Структура: _MEMORY_PARTITION_ATTRIBUTE_INFORMATION
+// Полей: 1
+// Строки в оригинале: 82741-82744
+struct _MEMORY_PARTITION_ATTRIBUTE_INFORMATION
+{
+
+  unsigned __int64 Flags;
+
+};

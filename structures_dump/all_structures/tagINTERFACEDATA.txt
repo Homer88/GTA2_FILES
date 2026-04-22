@@ -1,0 +1,10 @@
+// Структура: tagINTERFACEDATA
+// Полей: 2
+// Строки в оригинале: 106566-106570
+struct tagINTERFACEDATA
+{
+
+  tagMETHODDATA *pmethdata;
+  unsigned int cMembers;
+
+};

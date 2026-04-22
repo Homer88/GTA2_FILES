@@ -1,0 +1,12 @@
+// Структура: tagSDBBMACHINEINFO
+// Полей: 4
+// Строки в оригинале: 310478-310484
+struct tagSDBBMACHINEINFO
+{
+
+  tagSDBDEVICEINFO *AcpiInfo;
+  tagSDBDEVICEINFO *OemInfo;
+  tagSDBDEVICEINFO *BiosInfo;
+  tagSDBDEVICEINFO *CpuInfo;
+
+};

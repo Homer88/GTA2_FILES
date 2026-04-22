@@ -1,0 +1,10 @@
+// Структура: tagOBJREFDATA
+// Полей: 2
+// Строки в оригинале: 99051-99055
+struct tagOBJREFDATA
+{
+
+  unsigned int nElms;
+  tagDATAELEMENT **ppElmArray;
+
+};

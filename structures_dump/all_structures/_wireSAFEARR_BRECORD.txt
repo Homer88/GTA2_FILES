@@ -1,0 +1,10 @@
+// Структура: _wireSAFEARR_BRECORD
+// Полей: 2
+// Строки в оригинале: 83747-83751
+struct _wireSAFEARR_BRECORD
+{
+
+  unsigned int Size;
+  _wireBRECORD **aRecord;
+
+};

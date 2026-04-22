@@ -1,0 +1,9 @@
+// Структура: IHTMLFiltersCollection
+// Полей: 1
+// Строки в оригинале: 34948-34951
+struct IHTMLFiltersCollection
+{
+
+  struct IHTMLFiltersCollectionVtbl *lpVtbl;
+
+};

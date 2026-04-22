@@ -1,0 +1,12 @@
+// Структура: _IO_SECURITY_CONTEXT
+// Полей: 4
+// Строки в оригинале: 18555-18561
+struct _IO_SECURITY_CONTEXT
+{
+
+  _SECURITY_QUALITY_OF_SERVICE *SecurityQos;
+  _ACCESS_STATE *AccessState;
+  unsigned int DesiredAccess;
+  unsigned int FullCreateOptions;
+
+};

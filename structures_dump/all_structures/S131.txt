@@ -1,0 +1,11 @@
+// Структура: S131
+// Полей: 3
+// Строки в оригинале: 4750-4755
+struct S131
+{
+
+  int Sound;
+  cameraPosTarget S132[80];
+  int Index;
+
+};

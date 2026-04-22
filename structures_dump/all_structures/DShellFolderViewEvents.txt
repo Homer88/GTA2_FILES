@@ -1,0 +1,9 @@
+// Структура: DShellFolderViewEvents
+// Полей: 1
+// Строки в оригинале: 40005-40008
+struct DShellFolderViewEvents
+{
+
+  struct DShellFolderViewEventsVtbl *lpVtbl;
+
+};

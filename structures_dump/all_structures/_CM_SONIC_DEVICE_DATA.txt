@@ -1,0 +1,12 @@
+// Структура: _CM_SONIC_DEVICE_DATA
+// Полей: 4
+// Строки в оригинале: 102166-102172
+struct _CM_SONIC_DEVICE_DATA
+{
+
+  unsigned __int16 Version;
+  unsigned __int16 Revision;
+  unsigned __int16 DataConfigurationRegister;
+  unsigned __int8 EthernetAddress[8];
+
+};

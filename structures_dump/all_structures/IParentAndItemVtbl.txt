@@ -1,0 +1,13 @@
+// Структура: IParentAndItemVtbl
+// Полей: 5
+// Строки в оригинале: 30944-30951
+struct IParentAndItemVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IParentAndItem *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IParentAndItem *This);
+  ULONG (__stdcall *Release)(IParentAndItem *This);
+  HRESULT (__stdcall *SetParentAndItem)(IParentAndItem *This, LPCITEMIDLIST pidlParent, IShellFolder *psf, LPCITEMIDLIST pidlChild);
+  HRESULT (__stdcall *GetParentAndItem)(IParentAndItem *This, LPITEMIDLIST *ppidlParent, IShellFolder **ppsf, LPITEMIDLIST *ppidlChild);
+
+};

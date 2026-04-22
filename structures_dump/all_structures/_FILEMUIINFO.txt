@@ -1,0 +1,21 @@
+// Структура: _FILEMUIINFO
+// Полей: 13
+// Строки в оригинале: 108144-108159
+struct _FILEMUIINFO
+{
+
+  unsigned int dwSize;
+  unsigned int dwVersion;
+  unsigned int dwFileType;
+  unsigned __int8 pChecksum[16];
+  unsigned __int8 pServiceChecksum[16];
+  unsigned int dwLanguageNameOffset;
+  unsigned int dwTypeIDMainSize;
+  unsigned int dwTypeIDMainOffset;
+  unsigned int dwTypeNameMainOffset;
+  unsigned int dwTypeIDMUISize;
+  unsigned int dwTypeIDMUIOffset;
+  unsigned int dwTypeNameMUIOffset;
+  unsigned __int8 abBuffer[8];
+
+};

@@ -1,0 +1,48 @@
+// Структура: _NDR_FWD_ROUTINES
+// Полей: 40
+// Строки в оригинале: 286108-286150
+struct _NDR_FWD_ROUTINES
+{
+
+  unsigned int (__stdcall *CStdStubBuffer_AddRef)(IRpcStubBuffer *);
+  HRESULT (__stdcall *CStdStubBuffer_Connect)(IRpcStubBuffer *, IUnknown *);
+  unsigned int (__stdcall *CStdStubBuffer_CountRefs)(IRpcStubBuffer *);
+  HRESULT (__stdcall *CStdStubBuffer_DebugServerQueryInterface)(IRpcStubBuffer *, void **);
+  void (__stdcall *CStdStubBuffer_DebugServerRelease)(IRpcStubBuffer *, void *);
+  void (__stdcall *CStdStubBuffer_Disconnect)(IRpcStubBuffer *);
+  HRESULT (__stdcall *CStdStubBuffer_Invoke)(IRpcStubBuffer *, tagRPCOLEMESSAGE *, IRpcChannelBuffer *);
+  IRpcStubBuffer *(__stdcall *CStdStubBuffer_IsIIDSupported)(IRpcStubBuffer *, const _GUID *);
+  HRESULT (__stdcall *CStdStubBuffer_QueryInterface)(IRpcStubBuffer *, const _GUID *, void **);
+  HRESULT (__stdcall *CreateProxyFromTypeInfo)(ITypeInfo *, IUnknown *, const _GUID *, IRpcProxyBuffer **, void **);
+  HRESULT (__stdcall *CreateStubFromTypeInfo)(ITypeInfo *, const _GUID *, IUnknown *, IRpcStubBuffer **);
+  HRESULT (__stdcall *DllGetClassObject)(const _GUID *, const _GUID *, void **);
+  HRESULT (__stdcall *DllRegisterServer)();
+  unsigned int (__stdcall *IUnknown_AddRef_Proxy)(IUnknown *);
+  HRESULT (__stdcall *IUnknown_QueryInterface_Proxy)(IUnknown *, const _GUID *, void **);
+  unsigned int (__stdcall *IUnknown_Release_Proxy)(IUnknown *);
+  unsigned int (__stdcall *NdrCStdStubBuffer2_Release)(IRpcStubBuffer *, IPSFactoryBuffer *);
+  unsigned int (__stdcall *NdrCStdStubBuffer_Release)(IRpcStubBuffer *, IPSFactoryBuffer *);
+  int (__stdcall *NdrCreateServerInterfaceFromStub)(IRpcStubBuffer *, _RPC_SERVER_INTERFACE *);
+  _CLIENT_CALL_RETURN (__stdcall *NdrpDcomAsyncClientCall)(const _MIDL_STUB_DESC *, const unsigned __int8 *, unsigned __int8 *, unsigned __int8);
+  HRESULT (__stdcall *NdrDcomAsyncStubCall)(IRpcStubBuffer *, IRpcChannelBuffer *, _RPC_MESSAGE *, unsigned int *);
+  _CLIENT_CALL_RETURN (__cdecl *Ndr64pDcomAsyncClientCall)(_MIDL_STUBLESS_PROXY_INFO *, unsigned int, void *, unsigned __int8 *);
+  HRESULT (__stdcall *Ndr64DcomAsyncStubCall)(IRpcStubBuffer *, IRpcChannelBuffer *, _RPC_MESSAGE *, unsigned int *);
+  HRESULT (__stdcall *NdrDllCanUnloadNow)(tagCStdPSFactoryBuffer *);
+  HRESULT (__stdcall *NdrDllGetClassObject)(const _GUID *, const _GUID *, void **, const tagProxyFileInfo **, const _GUID *, tagCStdPSFactoryBuffer *);
+  HRESULT (__stdcall *NdrDllRegisterProxy)(HINSTANCE__ *, const tagProxyFileInfo **, const _GUID *);
+  HRESULT (__stdcall *NdrDllUnregisterProxy)(HINSTANCE__ *, const tagProxyFileInfo **, const _GUID *);
+  HRESULT (__stdcall *NdrGetBaseInterfaceFromStub)(IRpcStubBuffer *, IRpcStubBuffer **, _GUID *);
+  void *(__stdcall *NdrOleAllocate)(unsigned int);
+  void (__stdcall *NdrOleFree)(void *);
+  void (__stdcall *NdrStubForwardingFunction)(IRpcStubBuffer *, IRpcChannelBuffer *, _RPC_MESSAGE *, unsigned int *);
+  void (__stdcall *NdrStubInitializeMarshall)(_RPC_MESSAGE *, _MIDL_STUB_MESSAGE *, IRpcChannelBuffer *);
+  HRESULT (__stdcall *NdrpCreateProxy)(const _GUID *, IUnknown *, IRpcProxyBuffer **, void **);
+  HRESULT (__stdcall *NdrpCreateStub)(const _GUID *, IUnknown *, IRpcStubBuffer **);
+  HRESULT (__stdcall *NdrpGetProcFormatString)(void *, ITypeInfo *, tagFUNCDESC *, unsigned __int16, const unsigned __int8 *, wchar_t *);
+  HRESULT (__stdcall *NdrpGetTypeFormatString)(void *, const unsigned __int8 **, wchar_t *);
+  HRESULT (__stdcall *NdrpGetTypeGenCookie)(void **);
+  HRESULT (__stdcall *NdrpReleaseTypeFormatString)(const unsigned __int8 *);
+  HRESULT (__stdcall *NdrpReleaseTypeGenCookie)(void *);
+  HRESULT (__stdcall *NdrpVarVtOfTypeDesc)(ITypeInfo *, tagTYPEDESC *, wchar_t *);
+
+};

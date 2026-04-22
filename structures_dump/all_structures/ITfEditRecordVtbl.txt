@@ -1,0 +1,13 @@
+// Структура: ITfEditRecordVtbl
+// Полей: 5
+// Строки в оригинале: 31329-31336
+struct ITfEditRecordVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfEditRecord *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfEditRecord *This);
+  ULONG (__stdcall *Release)(ITfEditRecord *This);
+  HRESULT (__stdcall *GetSelectionStatus)(ITfEditRecord *This, BOOL *pfChanged);
+  HRESULT (__stdcall *GetTextAndPropertyUpdates)(ITfEditRecord *This, DWORD dwFlags, const GUID **prgProperties, ULONG cProperties, IEnumTfRanges **ppEnum);
+
+};

@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesFileSysInfo
+// Полей: 1
+// Строки в оригинале: 28717-28720
+struct IOfflineFilesFileSysInfo
+{
+
+  struct IOfflineFilesFileSysInfoVtbl *lpVtbl;
+
+};

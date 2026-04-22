@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_ENTROPY_TIMING_INFORMATION
+// Полей: 3
+// Строки в оригинале: 86757-86762
+struct _SYSTEM_ENTROPY_TIMING_INFORMATION
+{
+
+  void (__stdcall *EntropyRoutine)(void *, unsigned int);
+  void (__stdcall *InitializationRoutine)(void *, unsigned int, void *);
+  void *InitializationContext;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _CRYPT_CONTEXT_FUNCTIONS
+// Полей: 2
+// Строки в оригинале: 110657-110661
+struct _CRYPT_CONTEXT_FUNCTIONS
+{
+
+  unsigned int cFunctions;
+  wchar_t **rgpszFunctions;
+
+};

@@ -1,0 +1,14 @@
+// Структура: EHExceptionRecord
+// Полей: 6
+// Строки в оригинале: 58926-58934
+struct EHExceptionRecord
+{
+
+  unsigned int ExceptionCode;
+  unsigned int ExceptionFlags;
+  _EXCEPTION_RECORD *ExceptionRecord;
+  void *ExceptionAddress;
+  unsigned int NumberParameters;
+  EHExceptionRecord::EHParameters params;
+
+};

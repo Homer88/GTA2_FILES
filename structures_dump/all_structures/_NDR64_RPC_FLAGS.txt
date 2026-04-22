@@ -1,0 +1,19 @@
+// Структура: _NDR64_RPC_FLAGS
+// Полей: 11
+// Строки в оригинале: 331378-331391
+struct _NDR64_RPC_FLAGS
+{
+
+  unsigned __int16 Idempotent : 1;
+  unsigned __int16 Broadcast : 1;
+  unsigned __int16 Maybe : 1;
+  unsigned __int16 Reserved0 : 1;
+  unsigned __int16 HasGuarantee : 1;
+  unsigned __int16 Reserved1 : 3;
+  unsigned __int16 Message : 1;
+  unsigned __int16 Reserved2 : 4;
+  unsigned __int16 InputSynchronous : 1;
+  unsigned __int16 Asynchronous : 1;
+  unsigned __int16 WinrtRemoteAsync : 1;
+
+};

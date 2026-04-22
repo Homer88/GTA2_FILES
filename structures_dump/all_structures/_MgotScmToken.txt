@@ -1,0 +1,10 @@
+// Структура: _MgotScmToken
+// Полей: 2
+// Строки в оригинале: 206192-206196
+struct _MgotScmToken
+{
+
+  _GUID clsid;
+  _SCMREGKEY srkRegKey;
+
+};

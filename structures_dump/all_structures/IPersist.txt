@@ -1,0 +1,9 @@
+// Структура: IPersist
+// Полей: 1
+// Строки в оригинале: 36259-36262
+struct IPersist
+{
+
+  struct IPersistVtbl *lpVtbl;
+
+};

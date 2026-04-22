@@ -1,0 +1,14 @@
+// Структура: tagSTREAM_ACE
+// Полей: 6
+// Строки в оригинале: 273063-273071
+struct tagSTREAM_ACE
+{
+
+  unsigned int grfAccessPermissions;
+  _ACCESS_MODE grfAccessMode;
+  _TRUSTEE_TYPE TrusteeType;
+  _TRUSTEE_FORM TrusteeForm;
+  wchar_t *pTrusteeName;
+  tagSTREAM_SID *pSID;
+
+};

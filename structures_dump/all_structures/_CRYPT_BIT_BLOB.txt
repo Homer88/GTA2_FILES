@@ -1,0 +1,11 @@
+// Структура: _CRYPT_BIT_BLOB
+// Полей: 3
+// Строки в оригинале: 59035-59040
+struct _CRYPT_BIT_BLOB
+{
+
+  unsigned int cbData;
+  unsigned __int8 *pbData;
+  unsigned int cUnusedBits;
+
+};

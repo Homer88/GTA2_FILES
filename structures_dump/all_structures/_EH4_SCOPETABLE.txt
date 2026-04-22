@@ -1,0 +1,13 @@
+// Структура: _EH4_SCOPETABLE
+// Полей: 5
+// Строки в оригинале: 22952-22959
+struct _EH4_SCOPETABLE
+{
+
+  DWORD GSCookieOffset;
+  DWORD GSCookieXOROffset;
+  DWORD EHCookieOffset;
+  DWORD EHCookieXOROffset;
+  struct _EH4_SCOPETABLE_RECORD ScopeRecord[];
+
+};

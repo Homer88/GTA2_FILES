@@ -1,0 +1,13 @@
+// Структура: _IMAGEINFO
+// Полей: 5
+// Строки в оригинале: 124996-125003
+struct _IMAGEINFO
+{
+
+  HBITMAP__ *hbmImage;
+  HBITMAP__ *hbmMask;
+  int Unused1;
+  int Unused2;
+  tagRECT rcImage;
+
+};

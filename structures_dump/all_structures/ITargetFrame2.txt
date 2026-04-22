@@ -1,0 +1,9 @@
+// Структура: ITargetFrame2
+// Полей: 1
+// Строки в оригинале: 39706-39709
+struct ITargetFrame2
+{
+
+  struct ITargetFrame2Vtbl *lpVtbl;
+
+};

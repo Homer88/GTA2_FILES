@@ -1,0 +1,9 @@
+// Структура: _SecPkgContext_SubjectAttributes
+// Полей: 1
+// Строки в оригинале: 325826-325829
+struct _SecPkgContext_SubjectAttributes
+{
+
+  void *AttributeInfo;
+
+};

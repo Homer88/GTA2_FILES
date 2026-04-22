@@ -1,0 +1,20 @@
+// Структура: _VM_COUNTERS_EX
+// Полей: 12
+// Строки в оригинале: 97100-97114
+struct _VM_COUNTERS_EX
+{
+
+  unsigned int PeakVirtualSize;
+  unsigned int VirtualSize;
+  unsigned int PageFaultCount;
+  unsigned int PeakWorkingSetSize;
+  unsigned int WorkingSetSize;
+  unsigned int QuotaPeakPagedPoolUsage;
+  unsigned int QuotaPagedPoolUsage;
+  unsigned int QuotaPeakNonPagedPoolUsage;
+  unsigned int QuotaNonPagedPoolUsage;
+  unsigned int PagefileUsage;
+  unsigned int PeakPagefileUsage;
+  unsigned int PrivateUsage;
+
+};

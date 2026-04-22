@@ -1,0 +1,20 @@
+// Структура: _SYSTEM_CONTEXT_SWITCH_INFORMATION
+// Полей: 12
+// Строки в оригинале: 107098-107112
+struct _SYSTEM_CONTEXT_SWITCH_INFORMATION
+{
+
+  unsigned int ContextSwitches;
+  unsigned int FindAny;
+  unsigned int FindLast;
+  unsigned int FindIdeal;
+  unsigned int IdleAny;
+  unsigned int IdleCurrent;
+  unsigned int IdleLast;
+  unsigned int IdleIdeal;
+  unsigned int PreemptAny;
+  unsigned int PreemptCurrent;
+  unsigned int PreemptLast;
+  unsigned int SwitchToIdle;
+
+};

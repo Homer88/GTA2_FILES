@@ -1,0 +1,9 @@
+// Структура: IDirectInputW
+// Полей: 1
+// Строки в оригинале: 29153-29156
+struct IDirectInputW
+{
+
+  struct IDirectInputWVtbl *lpVtbl;
+
+};

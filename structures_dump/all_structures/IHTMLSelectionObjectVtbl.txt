@@ -1,0 +1,19 @@
+// Структура: IHTMLSelectionObjectVtbl
+// Полей: 11
+// Строки в оригинале: 38495-38508
+struct IHTMLSelectionObjectVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLSelectionObject *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLSelectionObject *This);
+  ULONG (__stdcall *Release)(IHTMLSelectionObject *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLSelectionObject *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLSelectionObject *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLSelectionObject *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLSelectionObject *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *createRange)(IHTMLSelectionObject *This, IDispatch **range);
+  HRESULT (__stdcall *empty)(IHTMLSelectionObject *This);
+  HRESULT (__stdcall *clear)(IHTMLSelectionObject *This);
+  HRESULT (__stdcall *get_type)(IHTMLSelectionObject *This, BSTR *p);
+
+};

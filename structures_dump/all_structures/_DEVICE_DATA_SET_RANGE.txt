@@ -1,0 +1,10 @@
+// Структура: _DEVICE_DATA_SET_RANGE
+// Полей: 2
+// Строки в оригинале: 149358-149362
+struct _DEVICE_DATA_SET_RANGE
+{
+
+  __int64 StartingOffset;
+  unsigned __int64 LengthInBytes;
+
+};

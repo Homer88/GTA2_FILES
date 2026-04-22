@@ -1,0 +1,12 @@
+// Структура: _EISA_PORT_DESCRIPTOR
+// Полей: 4
+// Строки в оригинале: 94498-94504
+struct _EISA_PORT_DESCRIPTOR
+{
+
+  unsigned __int8 NumberPorts : 5;
+  unsigned __int8 Reserved : 1;
+  unsigned __int8 Shared : 1;
+  unsigned __int8 MoreEntries : 1;
+
+};

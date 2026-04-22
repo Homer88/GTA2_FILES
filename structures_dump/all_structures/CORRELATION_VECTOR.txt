@@ -1,0 +1,10 @@
+// Структура: CORRELATION_VECTOR
+// Полей: 2
+// Строки в оригинале: 110931-110935
+struct CORRELATION_VECTOR
+{
+
+  char Version;
+  char Vector[129];
+
+};

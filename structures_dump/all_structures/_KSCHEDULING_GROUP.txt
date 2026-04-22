@@ -1,0 +1,22 @@
+// Структура: _KSCHEDULING_GROUP
+// Полей: 14
+// Строки в оригинале: 15334-15350
+struct _KSCHEDULING_GROUP
+{
+
+  _KSCHEDULING_GROUP_POLICY Policy;
+  unsigned int RelativeWeight;
+  unsigned int ChildMinRate;
+  unsigned int ChildMinWeight;
+  unsigned int ChildTotalWeight;
+  unsigned __int64 QueryHistoryTimeStamp;
+  __int64 NotificationCycles;
+  __int64 MaxQuotaLimitCycles;
+  volatile __int64 MaxQuotaCyclesRemaining;
+  $B760B20EFBE44B6EF8EF675B6DE00E60 ___u9;
+  _KDPC *NotificationDpc;
+  _LIST_ENTRY ChildList;
+  _KSCHEDULING_GROUP *Parent;
+  __declspec(align(64)) _KSCB PerProcessor[1];
+
+};

@@ -1,0 +1,10 @@
+// Структура: _TEB_ACTIVE_FRAME_EX
+// Полей: 2
+// Строки в оригинале: 99849-99853
+struct _TEB_ACTIVE_FRAME_EX
+{
+
+  _TEB_ACTIVE_FRAME BasicFrame;
+  void *ExtensionIdentifier;
+
+};

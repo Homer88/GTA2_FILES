@@ -1,0 +1,16 @@
+// Структура: ICreateErrorInfoVtbl
+// Полей: 8
+// Строки в оригинале: 182510-182520
+struct ICreateErrorInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICreateErrorInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICreateErrorInfo *This);
+  ULONG (__stdcall *Release)(ICreateErrorInfo *This);
+  HRESULT (__stdcall *SetGUID)(ICreateErrorInfo *This, const GUID *const rguid);
+  HRESULT (__stdcall *SetSource)(ICreateErrorInfo *This, LPOLESTR szSource);
+  HRESULT (__stdcall *SetDescription)(ICreateErrorInfo *This, LPOLESTR szDescription);
+  HRESULT (__stdcall *SetHelpFile)(ICreateErrorInfo *This, LPOLESTR szHelpFile);
+  HRESULT (__stdcall *SetHelpContext)(ICreateErrorInfo *This, DWORD dwHelpContext);
+
+};

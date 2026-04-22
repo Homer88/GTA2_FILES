@@ -1,0 +1,13 @@
+// Структура: _KTIMER
+// Полей: 5
+// Строки в оригинале: 13609-13616
+struct _KTIMER
+{
+
+  _DISPATCHER_HEADER Header;
+  _ULARGE_INTEGER DueTime;
+  _LIST_ENTRY TimerListEntry;
+  _KDPC *Dpc;
+  unsigned int Period;
+
+};

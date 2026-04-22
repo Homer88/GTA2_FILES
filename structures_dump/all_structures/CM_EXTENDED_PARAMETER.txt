@@ -1,0 +1,11 @@
+// Структура: CM_EXTENDED_PARAMETER
+// Полей: 3
+// Строки в оригинале: 85597-85602
+struct CM_EXTENDED_PARAMETER
+{
+
+  unsigned __int64 Type : 8;
+  unsigned __int64 Reserved : 56;
+  $A58CEE478161D7A91FFFC53E170C1E70 ___u2;
+
+};

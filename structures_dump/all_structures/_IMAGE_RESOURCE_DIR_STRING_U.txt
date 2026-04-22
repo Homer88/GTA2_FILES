@@ -1,0 +1,10 @@
+// Структура: _IMAGE_RESOURCE_DIR_STRING_U
+// Полей: 2
+// Строки в оригинале: 91600-91604
+struct _IMAGE_RESOURCE_DIR_STRING_U
+{
+
+  unsigned __int16 Length;
+  wchar_t NameString[1];
+
+};

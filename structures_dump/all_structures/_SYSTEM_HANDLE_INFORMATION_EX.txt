@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_HANDLE_INFORMATION_EX
+// Полей: 3
+// Строки в оригинале: 80243-80248
+struct _SYSTEM_HANDLE_INFORMATION_EX
+{
+
+  unsigned int NumberOfHandles;
+  unsigned int Reserved;
+  _SYSTEM_HANDLE_TABLE_ENTRY_INFO_EX Handles[1];
+
+};

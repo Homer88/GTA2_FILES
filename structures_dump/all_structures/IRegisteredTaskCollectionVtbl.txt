@@ -1,0 +1,18 @@
+// Структура: IRegisteredTaskCollectionVtbl
+// Полей: 10
+// Строки в оригинале: 44726-44738
+struct IRegisteredTaskCollectionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRegisteredTaskCollection *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRegisteredTaskCollection *This);
+  ULONG (__stdcall *Release)(IRegisteredTaskCollection *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IRegisteredTaskCollection *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IRegisteredTaskCollection *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IRegisteredTaskCollection *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IRegisteredTaskCollection *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Count)(IRegisteredTaskCollection *This, LONG *pCount);
+  HRESULT (__stdcall *get_Item)(IRegisteredTaskCollection *This, VARIANT index, IRegisteredTask **ppRegisteredTask);
+  HRESULT (__stdcall *get__NewEnum)(IRegisteredTaskCollection *This, IUnknown **ppEnum);
+
+};

@@ -1,0 +1,10 @@
+// Структура: _tagHLTBINFO
+// Полей: 2
+// Строки в оригинале: 42812-42816
+struct _tagHLTBINFO
+{
+
+  ULONG uDockType;
+  RECT rcTbPos;
+
+};

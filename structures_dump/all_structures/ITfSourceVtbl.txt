@@ -1,0 +1,13 @@
+// Структура: ITfSourceVtbl
+// Полей: 5
+// Строки в оригинале: 33908-33915
+struct ITfSourceVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfSource *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfSource *This);
+  ULONG (__stdcall *Release)(ITfSource *This);
+  HRESULT (__stdcall *AdviseSink)(ITfSource *This, const IID *const riid, IUnknown *punk, DWORD *pdwCookie);
+  HRESULT (__stdcall *UnadviseSink)(ITfSource *This, DWORD dwCookie);
+
+};

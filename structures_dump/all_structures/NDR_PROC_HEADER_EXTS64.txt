@@ -1,0 +1,14 @@
+// Структура: NDR_PROC_HEADER_EXTS64
+// Полей: 6
+// Строки в оригинале: 332643-332651
+struct NDR_PROC_HEADER_EXTS64
+{
+
+  unsigned __int8 Size;
+  INTERPRETER_OPT_FLAGS2 Flags2;
+  unsigned __int16 ClientCorrHint;
+  unsigned __int16 ServerCorrHint;
+  unsigned __int16 NotifyIndex;
+  unsigned __int16 FloatArgMask;
+
+};

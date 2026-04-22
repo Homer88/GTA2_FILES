@@ -1,0 +1,9 @@
+// Структура: IExtractIconA
+// Полей: 1
+// Строки в оригинале: 31301-31304
+struct IExtractIconA
+{
+
+  struct IExtractIconAVtbl *lpVtbl;
+
+};

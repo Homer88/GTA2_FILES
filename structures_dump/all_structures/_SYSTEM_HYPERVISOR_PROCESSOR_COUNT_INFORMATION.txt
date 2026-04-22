@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_HYPERVISOR_PROCESSOR_COUNT_INFORMATION
+// Полей: 2
+// Строки в оригинале: 85928-85932
+struct _SYSTEM_HYPERVISOR_PROCESSOR_COUNT_INFORMATION
+{
+
+  unsigned int NumberOfLogicalProcessors;
+  unsigned int NumberOfCores;
+
+};

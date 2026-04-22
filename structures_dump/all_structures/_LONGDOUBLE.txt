@@ -1,0 +1,9 @@
+// Структура: _LONGDOUBLE
+// Полей: 1
+// Строки в оригинале: 112363-112366
+struct _LONGDOUBLE
+{
+
+  long double x;
+
+};

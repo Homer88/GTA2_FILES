@@ -1,0 +1,15 @@
+// Структура: _REPAIR_COPIES_INPUT
+// Полей: 7
+// Строки в оригинале: 105796-105805
+struct _REPAIR_COPIES_INPUT
+{
+
+  unsigned int Size;
+  unsigned int Flags;
+  _LARGE_INTEGER FileOffset;
+  unsigned int Length;
+  unsigned int SourceCopy;
+  unsigned int NumberOfRepairCopies;
+  unsigned int RepairCopies[1];
+
+};

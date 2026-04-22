@@ -1,0 +1,13 @@
+// Структура: IOfflineFilesItemContainerVtbl
+// Полей: 5
+// Строки в оригинале: 28574-28581
+struct IOfflineFilesItemContainerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesItemContainer *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesItemContainer *This);
+  ULONG (__stdcall *Release)(IOfflineFilesItemContainer *This);
+  HRESULT (__stdcall *EnumItems)(IOfflineFilesItemContainer *This, DWORD dwQueryFlags, IEnumOfflineFilesItems **ppenum);
+  HRESULT (__stdcall *EnumItemsEx)(IOfflineFilesItemContainer *This, IOfflineFilesItemFilter *pIncludeFileFilter, IOfflineFilesItemFilter *pIncludeDirFilter, IOfflineFilesItemFilter *pExcludeFileFilter, IOfflineFilesItemFilter *pExcludeDirFilter, DWORD dwEnumFlags, DWORD dwQueryFlags, IEnumOfflineFilesItems **ppenum);
+
+};

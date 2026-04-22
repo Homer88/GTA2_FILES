@@ -1,0 +1,12 @@
+// Структура: _SYSTEM_ACPI_AUDIT_INFORMATION
+// Полей: 4
+// Строки в оригинале: 91314-91320
+struct _SYSTEM_ACPI_AUDIT_INFORMATION
+{
+
+  unsigned int RsdpCount;
+  unsigned __int32 SameRsdt : 1;
+  unsigned __int32 SlicPresent : 1;
+  unsigned __int32 SlicDifferent : 1;
+
+};

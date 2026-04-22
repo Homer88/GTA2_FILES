@@ -1,0 +1,16 @@
+// Структура: _SYSTEMTIME
+// Полей: 8
+// Строки в оригинале: 2129-2139
+struct _SYSTEMTIME
+{
+
+  WORD wYear;
+  WORD wMonth;
+  WORD wDayOfWeek;
+  WORD wDay;
+  WORD wHour;
+  WORD wMinute;
+  WORD wSecond;
+  WORD wMilliseconds;
+
+};

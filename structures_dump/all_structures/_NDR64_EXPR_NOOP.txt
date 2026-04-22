@@ -1,0 +1,11 @@
+// Структура: _NDR64_EXPR_NOOP
+// Полей: 3
+// Строки в оригинале: 336316-336321
+struct _NDR64_EXPR_NOOP
+{
+
+  unsigned __int8 ExprType;
+  unsigned __int8 Size;
+  unsigned __int16 Reserved;
+
+};

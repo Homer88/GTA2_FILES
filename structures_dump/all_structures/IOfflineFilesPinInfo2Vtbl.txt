@@ -1,0 +1,17 @@
+// Структура: IOfflineFilesPinInfo2Vtbl
+// Полей: 9
+// Строки в оригинале: 28530-28541
+struct IOfflineFilesPinInfo2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesPinInfo2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesPinInfo2 *This);
+  ULONG (__stdcall *Release)(IOfflineFilesPinInfo2 *This);
+  HRESULT (__stdcall *IsPinned)(IOfflineFilesPinInfo2 *This, BOOL *pbPinned);
+  HRESULT (__stdcall *IsPinnedForUser)(IOfflineFilesPinInfo2 *This, BOOL *pbPinnedForUser, BOOL *pbInherit);
+  HRESULT (__stdcall *IsPinnedForUserByPolicy)(IOfflineFilesPinInfo2 *This, BOOL *pbPinnedForUser, BOOL *pbInherit);
+  HRESULT (__stdcall *IsPinnedForComputer)(IOfflineFilesPinInfo2 *This, BOOL *pbPinnedForComputer, BOOL *pbInherit);
+  HRESULT (__stdcall *IsPinnedForFolderRedirection)(IOfflineFilesPinInfo2 *This, BOOL *pbPinnedForFolderRedirection, BOOL *pbInherit);
+  HRESULT (__stdcall *IsPartlyPinned)(IOfflineFilesPinInfo2 *This, BOOL *pbPartlyPinned);
+
+};

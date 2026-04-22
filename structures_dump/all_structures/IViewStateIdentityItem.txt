@@ -1,0 +1,9 @@
+// Структура: IViewStateIdentityItem
+// Полей: 1
+// Строки в оригинале: 45125-45128
+struct IViewStateIdentityItem
+{
+
+  struct IViewStateIdentityItemVtbl *lpVtbl;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _CONSOLE_FONT_INFO
+// Полей: 2
+// Строки в оригинале: 98620-98624
+struct _CONSOLE_FONT_INFO
+{
+
+  unsigned int nFont;
+  _COORD dwFontSize;
+
+};

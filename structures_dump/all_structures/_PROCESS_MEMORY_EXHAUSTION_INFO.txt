@@ -1,0 +1,12 @@
+// Структура: _PROCESS_MEMORY_EXHAUSTION_INFO
+// Полей: 4
+// Строки в оригинале: 104368-104374
+struct _PROCESS_MEMORY_EXHAUSTION_INFO
+{
+
+  unsigned __int16 Version;
+  unsigned __int16 Reserved;
+  _PROCESS_MEMORY_EXHAUSTION_TYPE Type;
+  unsigned int Value;
+
+};

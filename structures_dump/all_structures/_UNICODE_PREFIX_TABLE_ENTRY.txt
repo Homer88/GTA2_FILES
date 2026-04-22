@@ -1,0 +1,14 @@
+// Структура: _UNICODE_PREFIX_TABLE_ENTRY
+// Полей: 6
+// Строки в оригинале: 88999-89007
+struct _UNICODE_PREFIX_TABLE_ENTRY
+{
+
+  __int16 NodeTypeCode;
+  __int16 NameLength;
+  _UNICODE_PREFIX_TABLE_ENTRY *NextPrefixTree;
+  _UNICODE_PREFIX_TABLE_ENTRY *CaseMatch;
+  _RTL_SPLAY_LINKS Links;
+  _UNICODE_STRING *Prefix;
+
+};

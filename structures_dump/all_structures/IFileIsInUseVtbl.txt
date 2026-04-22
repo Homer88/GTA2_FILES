@@ -1,0 +1,16 @@
+// Структура: IFileIsInUseVtbl
+// Полей: 8
+// Строки в оригинале: 352414-352424
+struct IFileIsInUseVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFileIsInUse *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFileIsInUse *This);
+  ULONG (__stdcall *Release)(IFileIsInUse *This);
+  HRESULT (__stdcall *GetAppName)(IFileIsInUse *This, LPWSTR *ppszName);
+  HRESULT (__stdcall *GetUsage)(IFileIsInUse *This, FILE_USAGE_TYPE *pfut);
+  HRESULT (__stdcall *GetCapabilities)(IFileIsInUse *This, DWORD *pdwCapFlags);
+  HRESULT (__stdcall *GetSwitchToHWND)(IFileIsInUse *This, HWND *phwnd);
+  HRESULT (__stdcall *CloseFile)(IFileIsInUse *This);
+
+};

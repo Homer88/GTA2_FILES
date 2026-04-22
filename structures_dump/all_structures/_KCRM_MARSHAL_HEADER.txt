@@ -1,0 +1,12 @@
+// Структура: _KCRM_MARSHAL_HEADER
+// Полей: 4
+// Строки в оригинале: 98580-98586
+struct _KCRM_MARSHAL_HEADER
+{
+
+  unsigned int VersionMajor;
+  unsigned int VersionMinor;
+  unsigned int NumProtocols;
+  unsigned int Unused;
+
+};

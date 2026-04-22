@@ -1,0 +1,15 @@
+// Структура: _CRYPT_ENCRYPT_MESSAGE_PARA
+// Полей: 7
+// Строки в оригинале: 86918-86927
+struct _CRYPT_ENCRYPT_MESSAGE_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int dwMsgEncodingType;
+  unsigned int hCryptProv;
+  _CRYPT_ALGORITHM_IDENTIFIER ContentEncryptionAlgorithm;
+  void *pvEncryptionAuxInfo;
+  unsigned int dwFlags;
+  unsigned int dwInnerContentType;
+
+};

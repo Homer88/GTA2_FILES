@@ -1,0 +1,10 @@
+// Структура: _SPC_PE_IMAGE_DATA
+// Полей: 2
+// Строки в оригинале: 123641-123645
+struct _SPC_PE_IMAGE_DATA
+{
+
+  _CRYPT_BIT_BLOB Flags;
+  SPC_LINK_ *pFile;
+
+};

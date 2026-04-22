@@ -1,0 +1,11 @@
+// Структура: _LUTF8_STRING
+// Полей: 3
+// Строки в оригинале: 87896-87901
+struct _LUTF8_STRING
+{
+
+  unsigned int Length;
+  unsigned int MaximumLength;
+  unsigned __int8 *Buffer;
+
+};

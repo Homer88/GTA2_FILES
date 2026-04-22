@@ -1,0 +1,31 @@
+// Структура: _OBJECT_TYPE_INFORMATION
+// Полей: 23
+// Строки в оригинале: 92468-92493
+struct _OBJECT_TYPE_INFORMATION
+{
+
+  _UNICODE_STRING TypeName;
+  unsigned int TotalNumberOfObjects;
+  unsigned int TotalNumberOfHandles;
+  unsigned int TotalPagedPoolUsage;
+  unsigned int TotalNonPagedPoolUsage;
+  unsigned int TotalNamePoolUsage;
+  unsigned int TotalHandleTableUsage;
+  unsigned int HighWaterNumberOfObjects;
+  unsigned int HighWaterNumberOfHandles;
+  unsigned int HighWaterPagedPoolUsage;
+  unsigned int HighWaterNonPagedPoolUsage;
+  unsigned int HighWaterNamePoolUsage;
+  unsigned int HighWaterHandleTableUsage;
+  unsigned int InvalidAttributes;
+  _GENERIC_MAPPING GenericMapping;
+  unsigned int ValidAccessMask;
+  unsigned __int8 SecurityRequired;
+  unsigned __int8 MaintainHandleCount;
+  unsigned __int8 TypeIndex;
+  char ReservedByte;
+  unsigned int PoolType;
+  unsigned int DefaultPagedPoolCharge;
+  unsigned int DefaultNonPagedPoolCharge;
+
+};

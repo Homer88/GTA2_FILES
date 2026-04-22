@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_IDLE_STATE_CHANGE
+// Полей: 3
+// Строки в оригинале: 309119-309124
+struct _PERFINFO_IDLE_STATE_CHANGE
+{
+
+  unsigned int State;
+  unsigned int Throttle;
+  unsigned int Direction;
+
+};

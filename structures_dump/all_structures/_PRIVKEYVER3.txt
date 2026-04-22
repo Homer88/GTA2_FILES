@@ -1,0 +1,14 @@
+// Структура: _PRIVKEYVER3
+// Полей: 6
+// Строки в оригинале: 99163-99171
+struct _PRIVKEYVER3
+{
+
+  unsigned int magic;
+  unsigned int bitlenP;
+  unsigned int bitlenQ;
+  unsigned int bitlenJ;
+  unsigned int bitlenX;
+  _DSSSEED DSSSeed;
+
+};

@@ -1,0 +1,10 @@
+// Структура: PPM_THERMALCHANGE_EVENT
+// Полей: 2
+// Строки в оригинале: 104005-104009
+struct PPM_THERMALCHANGE_EVENT
+{
+
+  unsigned int ThermalConstraint;
+  unsigned __int64 Processors;
+
+};

@@ -1,0 +1,11 @@
+// Структура: tagEMRMODIFYWORLDTRANSFORM
+// Полей: 3
+// Строки в оригинале: 89469-89474
+struct tagEMRMODIFYWORLDTRANSFORM
+{
+
+  tagEMR emr;
+  tagXFORM xform;
+  unsigned int iMode;
+
+};

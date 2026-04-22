@@ -1,0 +1,15 @@
+// Структура: _KTHREAD_COUNTERS
+// Полей: 7
+// Строки в оригинале: 15529-15538
+struct _KTHREAD_COUNTERS
+{
+
+  unsigned __int64 WaitReasonBitMap;
+  _THREAD_PERFORMANCE_DATA *UserData;
+  unsigned int Flags;
+  unsigned int ContextSwitches;
+  unsigned __int64 CycleTimeBias;
+  unsigned __int64 HardwareCounters;
+  _COUNTER_READING HwCounter[16];
+
+};

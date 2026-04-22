@@ -1,0 +1,10 @@
+// Структура: _XSAVE_VENDORS
+// Полей: 2
+// Строки в оригинале: 89507-89511
+struct _XSAVE_VENDORS
+{
+
+  unsigned int NumberOfVendors;
+  _XSAVE_VENDOR Vendor[1];
+
+};

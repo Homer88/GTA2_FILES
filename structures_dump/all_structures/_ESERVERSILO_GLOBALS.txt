@@ -1,0 +1,37 @@
+// Структура: _ESERVERSILO_GLOBALS
+// Полей: 29
+// Строки в оригинале: 17187-17218
+struct _ESERVERSILO_GLOBALS
+{
+
+  _OBP_SILODRIVERSTATE ObSiloState;
+  _SEP_SILOSTATE SeSiloState;
+  __declspec(align(8)) _SEP_RM_LSA_CONNECTION_STATE SeRmSiloState;
+  struct _ETW_SILODRIVERSTATE *EtwSiloState;
+  _EPROCESS *MiSessionLeaderProcess;
+  _EPROCESS *ExpDefaultErrorPortProcess;
+  void *ExpDefaultErrorPort;
+  unsigned int HardErrorState;
+  struct _EXP_LICENSE_STATE *ExpLicenseState;
+  _WNF_SILODRIVERSTATE WnfSiloState;
+  _DBGK_SILOSTATE DbgkSiloState;
+  _UNICODE_STRING PsProtectedCurrentDirectory;
+  _UNICODE_STRING PsProtectedEnvironment;
+  void *ApiSetSection;
+  void *ApiSetSchema;
+  unsigned __int8 OneCoreForwardersEnabled;
+  unsigned __int8 TzVirtualizationSupported;
+  void *ImgFileExecOptions;
+  _EX_TIMEZONE_STATE *ExTimeZoneState;
+  _UNICODE_STRING NtSystemRoot;
+  _UNICODE_STRING SiloRootDirectoryName;
+  struct _PSP_STORAGE *Storage;
+  _SERVERSILO_STATE State;
+  int ExitStatus;
+  _KEVENT *DeleteEvent;
+  _SILO_USER_SHARED_DATA *UserSharedData;
+  void *UserSharedSection;
+  _WORK_QUEUE_ITEM TerminateWorkItem;
+  unsigned __int8 IsDownlevelContainer;
+
+};

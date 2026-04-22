@@ -1,0 +1,14 @@
+// Структура: IDirect3DPixelShader9Vtbl
+// Полей: 6
+// Строки в оригинале: 26213-26221
+struct IDirect3DPixelShader9Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirect3DPixelShader9 *This, const IID *const riid, void **ppvObj);
+  ULONG (__stdcall *AddRef)(IDirect3DPixelShader9 *This);
+  ULONG (__stdcall *Release)(IDirect3DPixelShader9 *This);
+  HRESULT (__stdcall *GetDevice)(IDirect3DPixelShader9 *This, IDirect3DDevice9 **ppDevice);
+  HRESULT (__stdcall *GetFunction)(IDirect3DPixelShader9 *This, void *, UINT *pSizeOfData);
+  DWORD Version;
+
+};

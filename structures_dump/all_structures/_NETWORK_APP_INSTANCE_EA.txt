@@ -1,0 +1,10 @@
+// Структура: _NETWORK_APP_INSTANCE_EA
+// Полей: 2
+// Строки в оригинале: 110796-110800
+struct _NETWORK_APP_INSTANCE_EA
+{
+
+  _GUID AppInstanceID;
+  unsigned int CsvFlags;
+
+};

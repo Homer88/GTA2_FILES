@@ -1,0 +1,12 @@
+// Структура: _CERT_TEMPLATE_EXT
+// Полей: 4
+// Строки в оригинале: 88090-88096
+struct _CERT_TEMPLATE_EXT
+{
+
+  char *pszObjId;
+  unsigned int dwMajorVersion;
+  int fMinorVersion;
+  unsigned int dwMinorVersion;
+
+};

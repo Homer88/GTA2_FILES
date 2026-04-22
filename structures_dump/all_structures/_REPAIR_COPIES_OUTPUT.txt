@@ -1,0 +1,11 @@
+// Структура: _REPAIR_COPIES_OUTPUT
+// Полей: 3
+// Строки в оригинале: 101795-101800
+struct _REPAIR_COPIES_OUTPUT
+{
+
+  unsigned int Size;
+  int Status;
+  _LARGE_INTEGER ResumeFileOffset;
+
+};

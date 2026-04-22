@@ -1,0 +1,11 @@
+// Структура: _ETW_LAST_DROPPED_EVENT_STRUCT
+// Полей: 3
+// Строки в оригинале: 313567-313572
+struct _ETW_LAST_DROPPED_EVENT_STRUCT
+{
+
+  unsigned int Count;
+  unsigned int Padding;
+  _LARGE_INTEGER Times[1];
+
+};

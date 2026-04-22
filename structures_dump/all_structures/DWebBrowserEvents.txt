@@ -1,0 +1,9 @@
+// Структура: DWebBrowserEvents
+// Полей: 1
+// Строки в оригинале: 45221-45224
+struct DWebBrowserEvents
+{
+
+  struct DWebBrowserEventsVtbl *lpVtbl;
+
+};

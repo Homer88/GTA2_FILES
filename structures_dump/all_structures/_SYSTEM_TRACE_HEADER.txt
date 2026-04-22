@@ -1,0 +1,15 @@
+// Структура: _SYSTEM_TRACE_HEADER
+// Полей: 7
+// Строки в оригинале: 308615-308624
+struct _SYSTEM_TRACE_HEADER
+{
+
+  $8828192DD74C56DFEB817AD9E1C46228 ___u0;
+  $830CFABEAC875F8BDCD6EEE34B284671 ___u1;
+  unsigned int ThreadId;
+  unsigned int ProcessId;
+  _LARGE_INTEGER SystemTime;
+  unsigned int KernelTime;
+  unsigned int UserTime;
+
+};

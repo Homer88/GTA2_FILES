@@ -1,0 +1,9 @@
+// Структура: IWICMetadataQueryWriter
+// Полей: 1
+// Строки в оригинале: 41920-41923
+struct IWICMetadataQueryWriter
+{
+
+  struct IWICMetadataQueryWriterVtbl *lpVtbl;
+
+};

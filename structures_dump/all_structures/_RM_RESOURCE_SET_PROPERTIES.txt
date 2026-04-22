@@ -1,0 +1,15 @@
+// Структура: _RM_RESOURCE_SET_PROPERTIES
+// Полей: 7
+// Строки в оригинале: 262112-262121
+struct _RM_RESOURCE_SET_PROPERTIES
+{
+
+  _RM_RESOURCE_REQUEST ResourcesRequested;
+  _RM_ACTIVITY_IMPORTANCE Importance;
+  unsigned __int8 OverTargetPriority;
+  _RM_RESOURCE_LIMITS ResourceLimits;
+  _RM_COMMON_POLICY_FLAGS CommonPolicyFlags;
+  _RM_APPMODEL_POLICY_FLAGS AppModelPolicyFlags;
+  unsigned int ExternalResourcePriorityCount;
+
+};

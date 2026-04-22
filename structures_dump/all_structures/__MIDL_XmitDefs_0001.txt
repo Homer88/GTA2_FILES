@@ -1,0 +1,12 @@
+// Структура: __MIDL_XmitDefs_0001
+// Полей: 4
+// Строки в оригинале: 63848-63854
+struct __MIDL_XmitDefs_0001
+{
+
+  _GUID asyncOperationId;
+  unsigned __int64 oxidClientProcessNA;
+  _GUID originalClientLogicalThreadId;
+  unsigned __int64 uClientCausalityTraceId;
+
+};

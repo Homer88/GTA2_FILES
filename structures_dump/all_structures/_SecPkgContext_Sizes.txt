@@ -1,0 +1,12 @@
+// Структура: _SecPkgContext_Sizes
+// Полей: 4
+// Строки в оригинале: 325902-325908
+struct _SecPkgContext_Sizes
+{
+
+  unsigned int cbMaxToken;
+  unsigned int cbMaxSignature;
+  unsigned int cbBlockSize;
+  unsigned int cbSecurityTrailer;
+
+};

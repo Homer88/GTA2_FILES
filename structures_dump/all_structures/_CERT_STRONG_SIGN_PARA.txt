@@ -1,0 +1,11 @@
+// Структура: _CERT_STRONG_SIGN_PARA
+// Полей: 3
+// Строки в оригинале: 107423-107428
+struct _CERT_STRONG_SIGN_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int dwInfoChoice;
+  $A69CBBE8B479AC000AD5BE6C5A9F7ACF ___u2;
+
+};

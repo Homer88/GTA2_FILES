@@ -1,0 +1,11 @@
+// Структура: _CRYPT_TRUST_REG_ENTRY
+// Полей: 3
+// Строки в оригинале: 122273-122278
+struct _CRYPT_TRUST_REG_ENTRY
+{
+
+  unsigned int cbStruct;
+  wchar_t *pwszDLLName;
+  wchar_t *pwszFunctionName;
+
+};

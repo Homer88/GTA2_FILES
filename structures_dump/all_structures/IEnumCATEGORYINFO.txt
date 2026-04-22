@@ -1,0 +1,9 @@
+// Структура: IEnumCATEGORYINFO
+// Полей: 1
+// Строки в оригинале: 40771-40774
+struct IEnumCATEGORYINFO
+{
+
+  struct IEnumCATEGORYINFOVtbl *lpVtbl;
+
+};

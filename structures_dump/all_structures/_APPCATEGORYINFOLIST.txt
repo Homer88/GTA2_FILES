@@ -1,0 +1,10 @@
+// Структура: _APPCATEGORYINFOLIST
+// Полей: 2
+// Строки в оригинале: 110507-110511
+struct _APPCATEGORYINFOLIST
+{
+
+  unsigned int cCategory;
+  _APPCATEGORYINFO *pCategoryInfo;
+
+};

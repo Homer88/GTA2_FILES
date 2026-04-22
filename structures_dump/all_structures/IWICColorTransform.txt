@@ -1,0 +1,9 @@
+// Структура: IWICColorTransform
+// Полей: 1
+// Строки в оригинале: 41890-41893
+struct IWICColorTransform
+{
+
+  struct IWICColorTransformVtbl *lpVtbl;
+
+};

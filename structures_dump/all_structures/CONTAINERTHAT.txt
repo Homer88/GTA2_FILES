@@ -1,0 +1,27 @@
+// Структура: CONTAINERTHAT
+// Полей: 19
+// Строки в оригинале: 314085-314106
+struct CONTAINERTHAT
+{
+
+  unsigned __int64 responseFlags;
+  _GUID unassignedPassthroughGuid_1;
+  _GUID unassignedPassthroughGuid_2;
+  _GUID unassignedPassthroughGuid_3;
+  _GUID unassignedPassthroughGuid_4;
+  _GUID reservedGuid_1;
+  _GUID reservedGuid_2;
+  _GUID reservedGuid_3;
+  _GUID reservedGuid_4;
+  unsigned __int64 unassignedPassthroughUint64_1;
+  unsigned __int64 unassignedPassthroughUint64_2;
+  unsigned __int64 unassignedPassthroughUint64_3;
+  unsigned __int64 unassignedPassthroughUint64_4;
+  unsigned __int64 marshalingSetId;
+  unsigned __int64 reservedUint64_2;
+  unsigned __int64 reservedUint64_3;
+  unsigned __int64 reservedUint64_4;
+  unsigned int reservedUint32;
+  CONTAINER_EXTENT_ARRAY *extensions;
+
+};

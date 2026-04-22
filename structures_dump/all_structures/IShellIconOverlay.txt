@@ -1,0 +1,9 @@
+// Структура: IShellIconOverlay
+// Полей: 1
+// Строки в оригинале: 36906-36909
+struct IShellIconOverlay
+{
+
+  struct IShellIconOverlayVtbl *lpVtbl;
+
+};

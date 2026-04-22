@@ -1,0 +1,11 @@
+// Структура: TypeInfoCache
+// Полей: 3
+// Строки в оригинале: 286273-286278
+struct TypeInfoCache
+{
+
+  _GUID iid;
+  TypeInfoVtbl *pVtbl;
+  unsigned int dwTickCount;
+
+};

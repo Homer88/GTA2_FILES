@@ -1,0 +1,14 @@
+// Структура: tagHOOKAPI
+// Полей: 6
+// Строки в оригинале: 313034-313042
+struct tagHOOKAPI
+{
+
+  const char *pszModule;
+  const char *pszFunctionName;
+  void *pfnNew;
+  void *pfnOld;
+  unsigned int dwFlags;
+  tagHOOKAPIEX *pHookEx;
+
+};

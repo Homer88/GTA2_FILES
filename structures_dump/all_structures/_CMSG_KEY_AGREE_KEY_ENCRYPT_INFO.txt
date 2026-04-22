@@ -1,0 +1,10 @@
+// Структура: _CMSG_KEY_AGREE_KEY_ENCRYPT_INFO
+// Полей: 2
+// Строки в оригинале: 79501-79505
+struct _CMSG_KEY_AGREE_KEY_ENCRYPT_INFO
+{
+
+  unsigned int cbSize;
+  _CRYPTOAPI_BLOB EncryptedKey;
+
+};

@@ -1,0 +1,11 @@
+// Структура: tagCFEntry
+// Полей: 3
+// Строки в оригинале: 58979-58984
+struct tagCFEntry
+{
+
+  const _GUID *pclsid;
+  HRESULT (__stdcall *pfnCI)(IUnknown *, const _GUID *, void **);
+  unsigned int dwFlags;
+
+};

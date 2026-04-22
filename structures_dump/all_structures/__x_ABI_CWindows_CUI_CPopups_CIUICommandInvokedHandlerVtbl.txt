@@ -1,0 +1,12 @@
+// Структура: __x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandlerVtbl
+// Полей: 4
+// Строки в оригинале: 37806-37812
+struct __x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandlerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(__x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandler *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(__x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandler *This);
+  ULONG (__stdcall *Release)(__x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandler *This);
+  HRESULT (__stdcall *Invoke)(__x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandler *This, __x_ABI_CWindows_CUI_CPopups_CIUICommand *command);
+
+};

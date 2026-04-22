@@ -1,0 +1,12 @@
+// Структура: IFolderFilterSiteVtbl
+// Полей: 4
+// Строки в оригинале: 40387-40393
+struct IFolderFilterSiteVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFolderFilterSite *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFolderFilterSite *This);
+  ULONG (__stdcall *Release)(IFolderFilterSite *This);
+  HRESULT (__stdcall *SetFilter)(IFolderFilterSite *This, IUnknown *punk);
+
+};

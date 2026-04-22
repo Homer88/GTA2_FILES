@@ -1,0 +1,12 @@
+// Структура: _IO_PRIORITY_INFO
+// Полей: 4
+// Строки в оригинале: 19475-19481
+struct _IO_PRIORITY_INFO
+{
+
+  unsigned int Size;
+  unsigned int ThreadPriority;
+  unsigned int PagePriority;
+  _IO_PRIORITY_HINT IoPriority;
+
+};

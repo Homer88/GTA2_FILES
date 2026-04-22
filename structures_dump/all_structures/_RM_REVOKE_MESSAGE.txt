@@ -1,0 +1,9 @@
+// Структура: _RM_REVOKE_MESSAGE
+// Полей: 1
+// Строки в оригинале: 231102-231105
+struct _RM_REVOKE_MESSAGE
+{
+
+  $F5B19E356C1FB6F6BDBADE4AA5D05D80 ___u0;
+
+};

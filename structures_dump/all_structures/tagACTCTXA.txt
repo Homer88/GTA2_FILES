@@ -1,0 +1,17 @@
+// Структура: tagACTCTXA
+// Полей: 9
+// Строки в оригинале: 82513-82524
+struct tagACTCTXA
+{
+
+  unsigned int cbSize;
+  unsigned int dwFlags;
+  const char *lpSource;
+  unsigned __int16 wProcessorArchitecture;
+  unsigned __int16 wLangId;
+  const char *lpAssemblyDirectory;
+  const char *lpResourceName;
+  const char *lpApplicationName;
+  HINSTANCE__ *hModule;
+
+};

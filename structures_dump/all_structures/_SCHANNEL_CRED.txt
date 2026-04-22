@@ -1,0 +1,22 @@
+// Структура: _SCHANNEL_CRED
+// Полей: 14
+// Строки в оригинале: 62095-62111
+struct _SCHANNEL_CRED
+{
+
+  unsigned int dwVersion;
+  unsigned int cCreds;
+  const _CERT_CONTEXT **paCred;
+  void *hRootStore;
+  unsigned int cMappers;
+  struct _HMAPPER **aphMappers;
+  unsigned int cSupportedAlgs;
+  unsigned int *palgSupportedAlgs;
+  unsigned int grbitEnabledProtocols;
+  unsigned int dwMinimumCipherStrength;
+  unsigned int dwMaximumCipherStrength;
+  unsigned int dwSessionLifespan;
+  unsigned int dwFlags;
+  unsigned int dwCredFormat;
+
+};

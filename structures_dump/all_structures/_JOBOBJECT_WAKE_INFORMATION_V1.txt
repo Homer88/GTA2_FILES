@@ -1,0 +1,10 @@
+// Структура: _JOBOBJECT_WAKE_INFORMATION_V1
+// Полей: 2
+// Строки в оригинале: 105142-105146
+struct _JOBOBJECT_WAKE_INFORMATION_V1
+{
+
+  unsigned __int64 NotificationChannel;
+  unsigned __int64 WakeCounters[4];
+
+};

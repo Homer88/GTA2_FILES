@@ -1,0 +1,10 @@
+// Структура: tagHLITEM
+// Полей: 2
+// Строки в оригинале: 42871-42875
+struct tagHLITEM
+{
+
+  ULONG uHLID;
+  LPWSTR pwzFriendlyName;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _KDPC_DATA
+// Полей: 5
+// Строки в оригинале: 13252-13259
+struct _KDPC_DATA
+{
+
+  _KDPC_LIST DpcList;
+  unsigned int DpcLock;
+  volatile int DpcQueueDepth;
+  unsigned int DpcCount;
+  _KDPC *volatile ActiveDpc;
+
+};

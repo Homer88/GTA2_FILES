@@ -1,0 +1,11 @@
+// Структура: ErrorObjectData
+// Полей: 3
+// Строки в оригинале: 220099-220104
+struct ErrorObjectData
+{
+
+  unsigned int dwVersion;
+  unsigned int dwHelpContext;
+  _GUID iid;
+
+};

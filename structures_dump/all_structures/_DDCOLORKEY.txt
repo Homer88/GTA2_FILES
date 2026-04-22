@@ -1,0 +1,10 @@
+// Структура: _DDCOLORKEY
+// Полей: 2
+// Строки в оригинале: 24215-24219
+struct _DDCOLORKEY
+{
+
+  DWORD dwColorSpaceLowValue;
+  DWORD dwColorSpaceHighValue;
+
+};

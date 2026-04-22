@@ -1,0 +1,11 @@
+// Структура: _FILE_LINKS_INFORMATION
+// Полей: 3
+// Строки в оригинале: 91858-91863
+struct _FILE_LINKS_INFORMATION
+{
+
+  unsigned int BytesNeeded;
+  unsigned int EntriesReturned;
+  _FILE_LINK_ENTRY_INFORMATION Entry;
+
+};

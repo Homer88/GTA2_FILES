@@ -1,0 +1,10 @@
+// Структура: _FLS_DATA
+// Полей: 2
+// Строки в оригинале: 106056-106060
+struct _FLS_DATA
+{
+
+  _LIST_ENTRY Entry;
+  void *Slots[128];
+
+};

@@ -1,0 +1,10 @@
+// Структура: _KSPIN_LOCK_QUEUE
+// Полей: 2
+// Строки в оригинале: 13099-13103
+struct _KSPIN_LOCK_QUEUE
+{
+
+  _KSPIN_LOCK_QUEUE *volatile Next;
+  unsigned int *volatile Lock;
+
+};

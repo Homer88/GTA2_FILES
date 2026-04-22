@@ -1,0 +1,20 @@
+// Структура: _ACTIVATION_CONTEXT_DETAILED_INFORMATION
+// Полей: 12
+// Строки в оригинале: 111894-111908
+struct _ACTIVATION_CONTEXT_DETAILED_INFORMATION
+{
+
+  unsigned int dwFlags;
+  unsigned int ulFormatVersion;
+  unsigned int ulAssemblyCount;
+  unsigned int ulRootManifestPathType;
+  unsigned int ulRootManifestPathChars;
+  unsigned int ulRootConfigurationPathType;
+  unsigned int ulRootConfigurationPathChars;
+  unsigned int ulAppDirPathType;
+  unsigned int ulAppDirPathChars;
+  const wchar_t *lpRootManifestPath;
+  const wchar_t *lpRootConfigurationPath;
+  const wchar_t *lpAppDirPath;
+
+};

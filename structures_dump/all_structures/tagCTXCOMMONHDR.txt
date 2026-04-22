@@ -1,0 +1,14 @@
+// Структура: tagCTXCOMMONHDR
+// Полей: 6
+// Строки в оригинале: 192423-192431
+struct tagCTXCOMMONHDR
+{
+
+  _GUID ContextId;
+  unsigned int Flags;
+  unsigned int Reserved;
+  unsigned int dwNumExtents;
+  unsigned int cbExtents;
+  unsigned int MshlFlags;
+
+};

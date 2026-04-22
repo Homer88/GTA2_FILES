@@ -1,0 +1,10 @@
+// Структура: _TRACE_PROFILE_INTERVAL
+// Полей: 2
+// Строки в оригинале: 313352-313356
+struct _TRACE_PROFILE_INTERVAL
+{
+
+  unsigned int Source;
+  unsigned int Interval;
+
+};

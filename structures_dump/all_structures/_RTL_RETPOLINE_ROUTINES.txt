@@ -1,0 +1,13 @@
+// Структура: _RTL_RETPOLINE_ROUTINES
+// Полей: 5
+// Строки в оригинале: 110938-110945
+struct _RTL_RETPOLINE_ROUTINES
+{
+
+  unsigned int UnwindDataOffset;
+  unsigned int SwitchtableJump[16];
+  unsigned int CfgIndirectRax;
+  unsigned int NonCfgIndirectRax;
+  unsigned int ImportR10;
+
+};

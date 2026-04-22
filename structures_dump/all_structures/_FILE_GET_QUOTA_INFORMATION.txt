@@ -1,0 +1,11 @@
+// Структура: _FILE_GET_QUOTA_INFORMATION
+// Полей: 3
+// Строки в оригинале: 18601-18606
+struct _FILE_GET_QUOTA_INFORMATION
+{
+
+  unsigned int NextEntryOffset;
+  unsigned int SidLength;
+  _SID Sid;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _NDR_ALLOCA_CONTEXT
+// Полей: 4
+// Строки в оригинале: 86198-86204
+struct _NDR_ALLOCA_CONTEXT
+{
+
+  unsigned __int8 *pBlockPointer;
+  _LIST_ENTRY MemoryList;
+  unsigned int BytesRemaining;
+  unsigned __int8 PreAllocatedBlock[512];
+
+};

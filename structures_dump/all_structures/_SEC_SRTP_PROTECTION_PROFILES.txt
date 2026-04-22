@@ -1,0 +1,10 @@
+// Структура: _SEC_SRTP_PROTECTION_PROFILES
+// Полей: 2
+// Строки в оригинале: 323742-323746
+struct _SEC_SRTP_PROTECTION_PROFILES
+{
+
+  unsigned __int16 ProfilesSize;
+  unsigned __int16 ProfilesList[1];
+
+};

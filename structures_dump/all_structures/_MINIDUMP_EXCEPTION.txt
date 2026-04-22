@@ -1,0 +1,15 @@
+// Структура: _MINIDUMP_EXCEPTION
+// Полей: 7
+// Строки в оригинале: 123348-123357
+struct _MINIDUMP_EXCEPTION
+{
+
+  unsigned int ExceptionCode;
+  unsigned int ExceptionFlags;
+  unsigned __int64 ExceptionRecord;
+  unsigned __int64 ExceptionAddress;
+  unsigned int NumberParameters;
+  unsigned int __unusedAlignment;
+  unsigned __int64 ExceptionInformation[15];
+
+};

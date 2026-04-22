@@ -1,0 +1,11 @@
+// Структура: PPM_IDLESTATE_EVENT
+// Полей: 3
+// Строки в оригинале: 109054-109059
+struct PPM_IDLESTATE_EVENT
+{
+
+  unsigned int NewState;
+  unsigned int OldState;
+  unsigned __int64 Processors;
+
+};

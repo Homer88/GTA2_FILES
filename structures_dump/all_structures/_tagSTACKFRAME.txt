@@ -1,0 +1,19 @@
+// Структура: _tagSTACKFRAME
+// Полей: 11
+// Строки в оригинале: 122985-122998
+struct _tagSTACKFRAME
+{
+
+  _tagADDRESS AddrPC;
+  _tagADDRESS AddrReturn;
+  _tagADDRESS AddrFrame;
+  _tagADDRESS AddrStack;
+  void *FuncTableEntry;
+  unsigned int Params[4];
+  int Far;
+  int Virtual;
+  unsigned int Reserved[3];
+  _KDHELP KdHelp;
+  _tagADDRESS AddrBStore;
+
+};

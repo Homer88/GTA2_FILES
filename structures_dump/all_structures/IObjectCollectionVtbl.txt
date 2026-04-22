@@ -1,0 +1,17 @@
+// Структура: IObjectCollectionVtbl
+// Полей: 9
+// Строки в оригинале: 32263-32274
+struct IObjectCollectionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IObjectCollection *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IObjectCollection *This);
+  ULONG (__stdcall *Release)(IObjectCollection *This);
+  HRESULT (__stdcall *GetCount)(IObjectCollection *This, UINT *pcObjects);
+  HRESULT (__stdcall *GetAt)(IObjectCollection *This, UINT uiIndex, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *AddObject)(IObjectCollection *This, IUnknown *punk);
+  HRESULT (__stdcall *AddFromArray)(IObjectCollection *This, IObjectArray *poaSource);
+  HRESULT (__stdcall *RemoveObjectAt)(IObjectCollection *This, UINT uiIndex);
+  HRESULT (__stdcall *Clear)(IObjectCollection *This);
+
+};

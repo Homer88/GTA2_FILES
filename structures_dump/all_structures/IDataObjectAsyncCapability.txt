@@ -1,0 +1,9 @@
+// Структура: IDataObjectAsyncCapability
+// Полей: 1
+// Строки в оригинале: 37117-37120
+struct IDataObjectAsyncCapability
+{
+
+  struct IDataObjectAsyncCapabilityVtbl *lpVtbl;
+
+};

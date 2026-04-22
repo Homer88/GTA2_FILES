@@ -1,0 +1,9 @@
+// Структура: IInputObject
+// Полей: 1
+// Строки в оригинале: 43026-43029
+struct IInputObject
+{
+
+  struct IInputObjectVtbl *lpVtbl;
+
+};

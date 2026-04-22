@@ -1,0 +1,10 @@
+// Структура: _EVENT_BASIC_INFORMATION
+// Полей: 2
+// Строки в оригинале: 103547-103551
+struct _EVENT_BASIC_INFORMATION
+{
+
+  _EVENT_TYPE EventType;
+  int EventState;
+
+};

@@ -1,0 +1,12 @@
+// Структура: tagCStdPSFactoryBuffer
+// Полей: 4
+// Строки в оригинале: 121479-121485
+struct tagCStdPSFactoryBuffer
+{
+
+  const IPSFactoryBufferVtbl *lpVtbl /*VFT*/;
+  int RefCount;
+  const tagProxyFileInfo **pProxyFileList;
+  int Filler1;
+
+};

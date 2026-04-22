@@ -1,0 +1,9 @@
+// Структура: ITfContextView
+// Полей: 1
+// Строки в оригинале: 30319-30322
+struct ITfContextView
+{
+
+  struct ITfContextViewVtbl *lpVtbl;
+
+};

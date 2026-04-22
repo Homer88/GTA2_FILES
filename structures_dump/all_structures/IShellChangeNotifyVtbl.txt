@@ -1,0 +1,9 @@
+// Структура: IShellChangeNotifyVtbl
+// Полей: 1
+// Строки в оригинале: 40269-40272
+struct IShellChangeNotifyVtbl
+{
+
+  HRESULT (__stdcall *OnChange)(IShellChangeNotify *This, LONG lEvent, LPCITEMIDLIST pidl1, LPCITEMIDLIST pidl2);
+
+};

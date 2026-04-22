@@ -1,0 +1,10 @@
+// Структура: _RTL_BITMAP
+// Полей: 2
+// Строки в оригинале: 16778-16782
+struct _RTL_BITMAP
+{
+
+  unsigned int SizeOfBitMap;
+  unsigned int *Buffer;
+
+};

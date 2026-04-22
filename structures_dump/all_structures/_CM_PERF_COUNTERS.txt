@@ -1,0 +1,19 @@
+// Структура: _CM_PERF_COUNTERS
+// Полей: 11
+// Строки в оригинале: 312750-312763
+struct _CM_PERF_COUNTERS
+{
+
+  unsigned __int64 OpenedKeys;
+  unsigned __int64 DelayCloseKCBs;
+  unsigned __int64 PrivateAllocPages;
+  unsigned __int64 PrivateAllocFree;
+  unsigned __int64 PrivateAllocUsed;
+  unsigned __int64 LookupCacheHit;
+  unsigned __int64 LookupCacheMissFound;
+  unsigned __int64 LookupCacheMissNotFound;
+  unsigned __int64 ViewMap;
+  unsigned __int64 ViewUnMap;
+  unsigned __int64 HiveShrink;
+
+};

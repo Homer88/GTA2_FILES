@@ -1,0 +1,12 @@
+// Структура: _IO_RESOURCE_LIST
+// Полей: 4
+// Строки в оригинале: 18785-18791
+struct _IO_RESOURCE_LIST
+{
+
+  unsigned __int16 Version;
+  unsigned __int16 Revision;
+  unsigned int Count;
+  _IO_RESOURCE_DESCRIPTOR Descriptors[1];
+
+};

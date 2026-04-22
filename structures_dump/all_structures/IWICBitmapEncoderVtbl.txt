@@ -1,0 +1,21 @@
+// Структура: IWICBitmapEncoderVtbl
+// Полей: 13
+// Строки в оригинале: 41989-42004
+struct IWICBitmapEncoderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICBitmapEncoder *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICBitmapEncoder *This);
+  ULONG (__stdcall *Release)(IWICBitmapEncoder *This);
+  HRESULT (__stdcall *Initialize)(IWICBitmapEncoder *This, IStream *pIStream, WICBitmapEncoderCacheOption cacheOption);
+  HRESULT (__stdcall *GetContainerFormat)(IWICBitmapEncoder *This, GUID *pguidContainerFormat);
+  HRESULT (__stdcall *GetEncoderInfo)(IWICBitmapEncoder *This, IWICBitmapEncoderInfo **ppIEncoderInfo);
+  HRESULT (__stdcall *SetColorContexts)(IWICBitmapEncoder *This, UINT cCount, IWICColorContext **ppIColorContext);
+  HRESULT (__stdcall *SetPalette)(IWICBitmapEncoder *This, IWICPalette *pIPalette);
+  HRESULT (__stdcall *SetThumbnail)(IWICBitmapEncoder *This, IWICBitmapSource *pIThumbnail);
+  HRESULT (__stdcall *SetPreview)(IWICBitmapEncoder *This, IWICBitmapSource *pIPreview);
+  HRESULT (__stdcall *CreateNewFrame)(IWICBitmapEncoder *This, IWICBitmapFrameEncode **ppIFrameEncode, IPropertyBag2 **ppIEncoderOptions);
+  HRESULT (__stdcall *Commit)(IWICBitmapEncoder *This);
+  HRESULT (__stdcall *GetMetadataQueryWriter)(IWICBitmapEncoder *This, IWICMetadataQueryWriter **ppIMetadataQueryWriter);
+
+};

@@ -1,0 +1,18 @@
+// Структура: IDXGIAdapterVtbl
+// Полей: 10
+// Строки в оригинале: 352090-352102
+struct IDXGIAdapterVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDXGIAdapter *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDXGIAdapter *This);
+  ULONG (__stdcall *Release)(IDXGIAdapter *This);
+  HRESULT (__stdcall *SetPrivateData)(IDXGIAdapter *This, const GUID *const Name, UINT DataSize, const void *pData);
+  HRESULT (__stdcall *SetPrivateDataInterface)(IDXGIAdapter *This, const GUID *const Name, const IUnknown *pUnknown);
+  HRESULT (__stdcall *GetPrivateData)(IDXGIAdapter *This, const GUID *const Name, UINT *pDataSize, void *pData);
+  HRESULT (__stdcall *GetParent)(IDXGIAdapter *This, const IID *const riid, void **ppParent);
+  HRESULT (__stdcall *EnumOutputs)(IDXGIAdapter *This, UINT Output, IDXGIOutput **ppOutput);
+  HRESULT (__stdcall *GetDesc)(IDXGIAdapter *This, DXGI_ADAPTER_DESC *pDesc);
+  HRESULT (__stdcall *CheckInterfaceSupport)(IDXGIAdapter *This, const GUID *const InterfaceName, LARGE_INTEGER *pUMDVersion);
+
+};

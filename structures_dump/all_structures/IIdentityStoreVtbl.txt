@@ -1,0 +1,17 @@
+// Структура: IIdentityStoreVtbl
+// Полей: 9
+// Строки в оригинале: 45155-45166
+struct IIdentityStoreVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IIdentityStore *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IIdentityStore *This);
+  ULONG (__stdcall *Release)(IIdentityStore *This);
+  HRESULT (__stdcall *GetCount)(IIdentityStore *This, DWORD *pdwProviders);
+  HRESULT (__stdcall *GetAt)(IIdentityStore *This, const DWORD dwProvider, GUID *pProvGuid, IUnknown **ppIdentityProvider);
+  HRESULT (__stdcall *AddToCache)(IIdentityStore *This, LPCWSTR lpszUniqueID, const GUID *const ProviderGUID);
+  HRESULT (__stdcall *ConvertToSid)(IIdentityStore *This, LPCWSTR lpszUniqueID, const GUID *const ProviderGUID, USHORT cbSid, BYTE *pSid, USHORT *pcbRequiredSid);
+  HRESULT (__stdcall *EnumerateIdentities)(IIdentityStore *This, const IDENTITY_TYPE eIdentityType, const PROPERTYKEY *pFilterkey, const PROPVARIANT *pFilterPropVarValue, IEnumUnknown **ppIdentityEnum);
+  HRESULT (__stdcall *Reset)(IIdentityStore *This);
+
+};

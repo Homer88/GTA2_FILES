@@ -1,0 +1,10 @@
+// Структура: _LDR_SERVICE_TAG_RECORD
+// Полей: 2
+// Строки в оригинале: 21171-21175
+struct _LDR_SERVICE_TAG_RECORD
+{
+
+  _LDR_SERVICE_TAG_RECORD *Next;
+  unsigned int ServiceTag;
+
+};

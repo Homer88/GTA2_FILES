@@ -1,0 +1,14 @@
+// Структура: ITravelLogClientVtbl
+// Полей: 6
+// Строки в оригинале: 36201-36209
+struct ITravelLogClientVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITravelLogClient *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITravelLogClient *This);
+  ULONG (__stdcall *Release)(ITravelLogClient *This);
+  HRESULT (__stdcall *FindWindowByIndex)(ITravelLogClient *This, DWORD dwID, IUnknown **ppunk);
+  HRESULT (__stdcall *GetWindowData)(ITravelLogClient *This, IStream *pStream, LPWINDOWDATA pWinData);
+  HRESULT (__stdcall *LoadHistoryPosition)(ITravelLogClient *This, LPWSTR pszUrlLocation, DWORD dwPosition);
+
+};

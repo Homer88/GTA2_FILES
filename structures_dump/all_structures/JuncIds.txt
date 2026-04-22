@@ -1,0 +1,32 @@
+// Структура: JuncIds
+// Полей: 24
+// Строки в оригинале: 9618-9644
+struct JuncIds
+{
+
+  __int16 Count;
+  unsigned __int8 field_2;
+  char field_3;
+  __int16 field_4;
+  char field_6;
+  char field_7;
+  Data16 Arr_316_Data16[396];
+  char field_18C8;
+  char field_18C9;
+  char field_18CA;
+  _BYTE gap18CB[2381];
+  byte Arr_0x6400[25600];
+  ushort index;
+  unsigned __int16 field_861A;
+  S92 S92[545];
+  S92 *S92_;
+  __int16 Arr_0x884[2180];
+  __int16 arr_0x884[2180];
+  byte arr0x220[544];
+  char field_CC60;
+  char field_CC61;
+  unsigned __int16 field_CC62;
+  unsigned __int16 field_CC64;
+  unsigned __int16 Index;
+
+};

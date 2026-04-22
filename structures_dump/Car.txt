@@ -1,0 +1,60 @@
+// Structure: Car
+// Lines: 3283 - 3338
+// Fields: 54
+
+struct Car
+{
+  void *Car;
+  Passenger *Passenger;
+  CAR_LIGHTS_AND_DOORS_BITSTATE carLights;
+  CarDoor CarDoor[4];
+  Car *LastCar;
+  SpriteS1 *CarSprite;
+  Ped *Driver;
+  Player *Player;
+  EngineStruct *EngineStruct;
+  Model *Model;
+  void *TrailerCtrl;
+  int field_68;
+  int ID;
+  Ped *lastDamagingPed;                 ///< Damaged
+  __int16 Damage;
+  __int16 field_76;
+  __int16 PhysicsBitmask;
+  char field_7A;
+  char field_7B;
+  SearchType SearchType;
+  char field_80;
+  char field_81;
+  char field_82;
+  char field_83;
+  CarModel CarType;
+  int Mask;
+  char FireState;
+  char field_8D;
+  char AlarmTime;
+  char field_8F;
+  DamageType DamageType;
+  char DamageShotTimer;
+  char PlayerId;
+  char field_96;
+  char field_97;
+  int locksDoor;
+  CAR_ENGINE_STATE engineState;
+  TRAFFIC_CAR_TYPE trafficCarType;
+  char sirenState;
+  char sirenPhase;
+  char field_A6;
+  char horn;
+  char field_A8;
+  char FireTimer;
+  char field_AA;
+  char field_AB;
+  int field_AC;
+  int field_B0;
+  void *currentUpgradeSound;
+  char field_B8;
+  char field_B9;
+  char field_BA;
+  char field_0;
+};

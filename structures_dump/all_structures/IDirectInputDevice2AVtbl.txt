@@ -1,0 +1,35 @@
+// Структура: IDirectInputDevice2AVtbl
+// Полей: 27
+// Строки в оригинале: 28977-29006
+struct IDirectInputDevice2AVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirectInputDevice2A *This, const IID *const riid, LPVOID *ppvObj);
+  ULONG (__stdcall *AddRef)(IDirectInputDevice2A *This);
+  ULONG (__stdcall *Release)(IDirectInputDevice2A *This);
+  HRESULT (__stdcall *GetCapabilities)(IDirectInputDevice2A *This, LPDIDEVCAPS);
+  HRESULT (__stdcall *EnumObjects)(IDirectInputDevice2A *This, LPDIENUMDEVICEOBJECTSCALLBACKA, LPVOID, DWORD);
+  HRESULT (__stdcall *GetProperty)(IDirectInputDevice2A *This, const GUID *const, LPDIPROPHEADER);
+  HRESULT (__stdcall *SetProperty)(IDirectInputDevice2A *This, const GUID *const, LPCDIPROPHEADER);
+  HRESULT (__stdcall *Acquire)(IDirectInputDevice2A *This);
+  HRESULT (__stdcall *Unacquire)(IDirectInputDevice2A *This);
+  HRESULT (__stdcall *GetDeviceState)(IDirectInputDevice2A *This, DWORD, LPVOID);
+  HRESULT (__stdcall *GetDeviceData)(IDirectInputDevice2A *This, DWORD, LPDIDEVICEOBJECTDATA, LPDWORD, DWORD);
+  HRESULT (__stdcall *SetDataFormat)(IDirectInputDevice2A *This, LPCDIDATAFORMAT);
+  HRESULT (__stdcall *SetEventNotification)(IDirectInputDevice2A *This, HANDLE);
+  HRESULT (__stdcall *SetCooperativeLevel)(IDirectInputDevice2A *This, HWND, DWORD);
+  HRESULT (__stdcall *GetObjectInfo)(IDirectInputDevice2A *This, LPDIDEVICEOBJECTINSTANCEA, DWORD, DWORD);
+  HRESULT (__stdcall *GetDeviceInfo)(IDirectInputDevice2A *This, LPDIDEVICEINSTANCEA);
+  HRESULT (__stdcall *RunControlPanel)(IDirectInputDevice2A *This, HWND, DWORD);
+  HRESULT (__stdcall *Initialize)(IDirectInputDevice2A *This, HINSTANCE, DWORD, const GUID *const);
+  HRESULT (__stdcall *CreateEffect)(IDirectInputDevice2A *This, const GUID *const, LPCDIEFFECT, LPDIRECTINPUTEFFECT *, LPUNKNOWN);
+  HRESULT (__stdcall *EnumEffects)(IDirectInputDevice2A *This, LPDIENUMEFFECTSCALLBACKA, LPVOID, DWORD);
+  HRESULT (__stdcall *GetEffectInfo)(IDirectInputDevice2A *This, LPDIEFFECTINFOA, const GUID *const);
+  HRESULT (__stdcall *GetForceFeedbackState)(IDirectInputDevice2A *This, LPDWORD);
+  HRESULT (__stdcall *SendForceFeedbackCommand)(IDirectInputDevice2A *This, DWORD);
+  HRESULT (__stdcall *EnumCreatedEffectObjects)(IDirectInputDevice2A *This, LPDIENUMCREATEDEFFECTOBJECTSCALLBACK, LPVOID, DWORD);
+  HRESULT (__stdcall *Escape)(IDirectInputDevice2A *This, LPDIEFFESCAPE);
+  HRESULT (__stdcall *Poll)(IDirectInputDevice2A *This);
+  HRESULT (__stdcall *SendDeviceData)(IDirectInputDevice2A *This, DWORD, LPCDIDEVICEOBJECTDATA, LPDWORD, DWORD);
+
+};

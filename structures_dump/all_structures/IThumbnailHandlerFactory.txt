@@ -1,0 +1,9 @@
+// Структура: IThumbnailHandlerFactory
+// Полей: 1
+// Строки в оригинале: 43085-43088
+struct IThumbnailHandlerFactory
+{
+
+  struct IThumbnailHandlerFactoryVtbl *lpVtbl;
+
+};

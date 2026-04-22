@@ -1,0 +1,11 @@
+// Структура: SHookList
+// Полей: 3
+// Строки в оригинале: 248254-248259
+struct SHookList
+{
+
+  const SHookList *pNext;
+  IChannelHook *pHook;
+  _GUID uExtension;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _CONTEXT_CHUNK
+// Полей: 2
+// Строки в оригинале: 93787-93791
+struct _CONTEXT_CHUNK
+{
+
+  int Offset;
+  unsigned int Length;
+
+};

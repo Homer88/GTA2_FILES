@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesPinInfo2
+// Полей: 1
+// Строки в оригинале: 28544-28547
+struct IOfflineFilesPinInfo2
+{
+
+  struct IOfflineFilesPinInfo2Vtbl *lpVtbl;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _CERT_OTHER_LOGOTYPE_INFO
+// Полей: 2
+// Строки в оригинале: 82008-82012
+struct _CERT_OTHER_LOGOTYPE_INFO
+{
+
+  char *pszObjId;
+  _CERT_LOGOTYPE_INFO LogotypeInfo;
+
+};

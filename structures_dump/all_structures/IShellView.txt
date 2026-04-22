@@ -1,0 +1,9 @@
+// Структура: IShellView
+// Полей: 1
+// Строки в оригинале: 33267-33270
+struct IShellView
+{
+
+  struct IShellViewVtbl *lpVtbl;
+
+};

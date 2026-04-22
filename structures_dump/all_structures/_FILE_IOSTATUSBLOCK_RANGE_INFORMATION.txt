@@ -1,0 +1,10 @@
+// Структура: _FILE_IOSTATUSBLOCK_RANGE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 93697-93701
+struct _FILE_IOSTATUSBLOCK_RANGE_INFORMATION
+{
+
+  unsigned __int8 *IoStatusBlockRange;
+  unsigned int Length;
+
+};

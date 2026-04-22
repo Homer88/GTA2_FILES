@@ -1,0 +1,12 @@
+// Структура: ICreateObjectVtbl
+// Полей: 4
+// Строки в оригинале: 40977-40983
+struct ICreateObjectVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICreateObject *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICreateObject *This);
+  ULONG (__stdcall *Release)(ICreateObject *This);
+  HRESULT (__stdcall *CreateObject)(ICreateObject *This, const IID *const clsid, IUnknown *pUnkOuter, const IID *const riid, void **ppv);
+
+};

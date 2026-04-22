@@ -1,0 +1,14 @@
+// Структура: IClientSecurityVtbl
+// Полей: 6
+// Строки в оригинале: 182622-182630
+struct IClientSecurityVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IClientSecurity *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IClientSecurity *This);
+  ULONG (__stdcall *Release)(IClientSecurity *This);
+  HRESULT (__stdcall *QueryBlanket)(IClientSecurity *This, IUnknown *pProxy, DWORD *pAuthnSvc, DWORD *pAuthzSvc, OLECHAR **pServerPrincName, DWORD *pAuthnLevel, DWORD *pImpLevel, void **pAuthInfo, DWORD *pCapabilites);
+  HRESULT (__stdcall *SetBlanket)(IClientSecurity *This, IUnknown *pProxy, DWORD dwAuthnSvc, DWORD dwAuthzSvc, OLECHAR *pServerPrincName, DWORD dwAuthnLevel, DWORD dwImpLevel, void *pAuthInfo, DWORD dwCapabilities);
+  HRESULT (__stdcall *CopyProxy)(IClientSecurity *This, IUnknown *pProxy, IUnknown **ppCopy);
+
+};

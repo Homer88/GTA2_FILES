@@ -1,0 +1,11 @@
+// Структура: _FILEOFFSET_INFORMATION
+// Полей: 3
+// Строки в оригинале: 81635-81640
+struct _FILEOFFSET_INFORMATION
+{
+
+  unsigned __int64 DontUse : 9;
+  unsigned __int64 Offset : 48;
+  unsigned __int64 Reserved : 7;
+
+};

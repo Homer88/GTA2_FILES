@@ -1,0 +1,19 @@
+// Структура: RPC_INTERFACE_TEMPLATEW
+// Полей: 11
+// Строки в оригинале: 109217-109230
+struct RPC_INTERFACE_TEMPLATEW
+{
+
+  unsigned int Version;
+  void *IfSpec;
+  _GUID *MgrTypeUuid;
+  void *MgrEpv;
+  unsigned int Flags;
+  unsigned int MaxCalls;
+  unsigned int MaxRpcSize;
+  int (__stdcall *IfCallback)(void *, void *);
+  _UUID_VECTOR *UuidVector;
+  wchar_t *Annotation;
+  void *SecurityDescriptor;
+
+};

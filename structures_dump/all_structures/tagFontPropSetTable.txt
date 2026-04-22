@@ -1,0 +1,11 @@
+// Структура: tagFontPropSetTable
+// Полей: 3
+// Строки в оригинале: 146768-146773
+struct tagFontPropSetTable
+{
+
+  const wchar_t *lpname;
+  unsigned __int16 vt;
+  int memid;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IExplorerBrowserEvents
+// Полей: 1
+// Строки в оригинале: 39293-39296
+struct IExplorerBrowserEvents
+{
+
+  struct IExplorerBrowserEventsVtbl *lpVtbl;
+
+};

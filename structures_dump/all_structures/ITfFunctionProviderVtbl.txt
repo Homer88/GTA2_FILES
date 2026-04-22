@@ -1,0 +1,14 @@
+// Структура: ITfFunctionProviderVtbl
+// Полей: 6
+// Строки в оригинале: 41638-41646
+struct ITfFunctionProviderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfFunctionProvider *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfFunctionProvider *This);
+  ULONG (__stdcall *Release)(ITfFunctionProvider *This);
+  HRESULT (__stdcall *GetType)(ITfFunctionProvider *This, GUID *pguid);
+  HRESULT (__stdcall *GetDescription)(ITfFunctionProvider *This, BSTR *pbstrDesc);
+  HRESULT (__stdcall *GetFunction)(ITfFunctionProvider *This, const GUID *const rguid, const IID *const riid, IUnknown **ppunk);
+
+};

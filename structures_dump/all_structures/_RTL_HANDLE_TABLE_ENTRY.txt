@@ -1,0 +1,9 @@
+// Структура: _RTL_HANDLE_TABLE_ENTRY
+// Полей: 1
+// Строки в оригинале: 80533-80536
+struct _RTL_HANDLE_TABLE_ENTRY
+{
+
+  $751C6B4FA2CBEFE7B58A1E4AB3B211E2 ___u0;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_KERNEL_DEBUGGER_INFORMATION_EX
+// Полей: 3
+// Строки в оригинале: 79748-79753
+struct _SYSTEM_KERNEL_DEBUGGER_INFORMATION_EX
+{
+
+  unsigned __int8 DebuggerAllowed;
+  unsigned __int8 DebuggerEnabled;
+  unsigned __int8 DebuggerPresent;
+
+};

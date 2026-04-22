@@ -1,0 +1,9 @@
+// Структура: _VIRTUALIZATION_INSTANCE_INFO_OUTPUT
+// Полей: 1
+// Строки в оригинале: 111023-111026
+struct _VIRTUALIZATION_INSTANCE_INFO_OUTPUT
+{
+
+  _GUID VirtualizationInstanceID;
+
+};

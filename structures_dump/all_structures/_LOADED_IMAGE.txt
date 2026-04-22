@@ -1,0 +1,22 @@
+// Структура: _LOADED_IMAGE
+// Полей: 14
+// Строки в оригинале: 121630-121646
+struct _LOADED_IMAGE
+{
+
+  char *ModuleName;
+  void *hFile;
+  unsigned __int8 *MappedAddress;
+  _IMAGE_NT_HEADERS *FileHeader;
+  _IMAGE_SECTION_HEADER *LastRvaSection;
+  unsigned int NumberOfSections;
+  _IMAGE_SECTION_HEADER *Sections;
+  unsigned int Characteristics;
+  unsigned __int8 fSystemImage;
+  unsigned __int8 fDOSImage;
+  unsigned __int8 fReadOnly;
+  unsigned __int8 Version;
+  _LIST_ENTRY Links;
+  unsigned int SizeOfImage;
+
+};

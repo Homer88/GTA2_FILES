@@ -1,0 +1,14 @@
+// Структура: _WINDOWDATA
+// Полей: 6
+// Строки в оригинале: 36218-36226
+struct _WINDOWDATA
+{
+
+  DWORD dwWindowID;
+  UINT uiCP;
+  LPITEMIDLIST pidl;
+  LPWSTR lpszUrl;
+  LPWSTR lpszUrlLocation;
+  LPWSTR lpszTitle;
+
+};

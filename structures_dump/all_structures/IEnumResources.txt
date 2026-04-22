@@ -1,0 +1,9 @@
+// Структура: IEnumResources
+// Полей: 1
+// Строки в оригинале: 36968-36971
+struct IEnumResources
+{
+
+  struct IEnumResourcesVtbl *lpVtbl;
+
+};

@@ -1,0 +1,12 @@
+// Структура: CarEngines
+// Полей: 4
+// Строки в оригинале: 9165-9171
+struct CarEngines
+{
+
+  int EngineState[256];
+  S281 *S281;
+  int Arr_256_1[256];
+  S286 *S286;
+
+};

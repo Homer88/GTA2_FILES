@@ -1,0 +1,22 @@
+// Структура: _DIACTIONFORMATW
+// Полей: 14
+// Строки в оригинале: 29205-29221
+struct _DIACTIONFORMATW
+{
+
+  DWORD dwSize;
+  DWORD dwActionSize;
+  DWORD dwDataSize;
+  DWORD dwNumActions;
+  LPDIACTIONW rgoAction;
+  GUID guidActionMap;
+  DWORD dwGenre;
+  DWORD dwBufferSize;
+  LONG lAxisMin;
+  LONG lAxisMax;
+  HINSTANCE hInstString;
+  FILETIME ftTimeStamp;
+  DWORD dwCRC;
+  WCHAR tszActionMap[260];
+
+};

@@ -1,0 +1,19 @@
+// Структура: _PROC_PERF_CHECK_CONTEXT
+// Полей: 11
+// Строки в оригинале: 13536-13549
+struct _PROC_PERF_CHECK_CONTEXT
+{
+
+  _PROC_PERF_DOMAIN *Domain;
+  _PROC_PERF_CONSTRAINT *Constraint;
+  _PROC_PERF_CHECK *PerfCheck;
+  _PROC_PERF_LOAD *Load;
+  _PROC_PERF_HISTORY *PerfHistory;
+  unsigned int Utility;
+  unsigned int AffinitizedUtility;
+  unsigned int MediaUtility;
+  unsigned __int16 LatestAffinitizedPercent;
+  unsigned __int16 AveragePerformancePercent;
+  unsigned int RelativePerformance;
+
+};

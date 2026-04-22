@@ -1,0 +1,9 @@
+// Структура: IEnumTfLanguageProfiles
+// Полей: 1
+// Строки в оригинале: 40645-40648
+struct IEnumTfLanguageProfiles
+{
+
+  struct IEnumTfLanguageProfilesVtbl *lpVtbl;
+
+};

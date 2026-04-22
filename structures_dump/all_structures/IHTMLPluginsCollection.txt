@@ -1,0 +1,9 @@
+// Структура: IHTMLPluginsCollection
+// Полей: 1
+// Строки в оригинале: 38888-38891
+struct IHTMLPluginsCollection
+{
+
+  struct IHTMLPluginsCollectionVtbl *lpVtbl;
+
+};

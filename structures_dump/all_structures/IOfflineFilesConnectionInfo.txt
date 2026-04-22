@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesConnectionInfo
+// Полей: 1
+// Строки в оригинале: 28428-28431
+struct IOfflineFilesConnectionInfo
+{
+
+  struct IOfflineFilesConnectionInfoVtbl *lpVtbl;
+
+};

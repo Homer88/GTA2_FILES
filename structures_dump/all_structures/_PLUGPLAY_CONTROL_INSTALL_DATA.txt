@@ -1,0 +1,10 @@
+// Структура: _PLUGPLAY_CONTROL_INSTALL_DATA
+// Полей: 2
+// Строки в оригинале: 93755-93759
+struct _PLUGPLAY_CONTROL_INSTALL_DATA
+{
+
+  unsigned int BufferLength;
+  wchar_t *Buffer;
+
+};

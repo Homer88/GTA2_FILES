@@ -1,0 +1,13 @@
+// Структура: _JOBOBJECT_FREEZE_INFORMATION
+// Полей: 5
+// Строки в оригинале: 108030-108037
+struct _JOBOBJECT_FREEZE_INFORMATION
+{
+
+  $0117B64E2A4CFC92764FF05DFC5B6C9E ___u0;
+  unsigned __int8 Freeze;
+  unsigned __int8 Swap;
+  unsigned __int8 Reserved0[2];
+  _JOBOBJECT_WAKE_FILTER WakeFilter;
+
+};

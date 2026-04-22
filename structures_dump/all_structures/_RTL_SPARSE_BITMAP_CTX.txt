@@ -1,0 +1,23 @@
+// Структура: _RTL_SPARSE_BITMAP_CTX
+// Полей: 15
+// Строки в оригинале: 97894-97911
+struct _RTL_SPARSE_BITMAP_CTX
+{
+
+  unsigned int Lock;
+  _RTL_SPARSE_BITMAP_RANGE **BitmapRanges;
+  _RTL_BITMAP RangeArrayCommitStatus;
+  void *(__stdcall *AllocateRoutine)(unsigned int);
+  void (__stdcall *FreeRoutine)(void *);
+  unsigned int RangeCount;
+  unsigned int RangeIndexLimit;
+  unsigned int BitsPerRange;
+  unsigned int RangeCountMax;
+  unsigned int RangeMetadataOffset;
+  unsigned int MetadataSizePerBit;
+  unsigned __int32 DefaultBitsSet : 1;
+  unsigned __int32 SparseRangeArray : 1;
+  unsigned __int32 NoInternalLocking : 1;
+  unsigned __int32 SpareFlags : 29;
+
+};

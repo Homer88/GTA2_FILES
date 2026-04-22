@@ -1,0 +1,9 @@
+// Структура: ICommonQuery
+// Полей: 1
+// Строки в оригинале: 35191-35194
+struct ICommonQuery
+{
+
+  struct ICommonQueryVtbl *lpVtbl;
+
+};

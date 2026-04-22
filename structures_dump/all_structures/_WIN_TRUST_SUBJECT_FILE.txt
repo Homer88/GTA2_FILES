@@ -1,0 +1,10 @@
+// Структура: _WIN_TRUST_SUBJECT_FILE
+// Полей: 2
+// Строки в оригинале: 123602-123606
+struct _WIN_TRUST_SUBJECT_FILE
+{
+
+  void *hFile;
+  const wchar_t *lpPath;
+
+};

@@ -1,0 +1,14 @@
+// Структура: _FSCTL_OFFLOAD_READ_INPUT
+// Полей: 6
+// Строки в оригинале: 104964-104972
+struct _FSCTL_OFFLOAD_READ_INPUT
+{
+
+  unsigned int Size;
+  unsigned int Flags;
+  unsigned int TokenTimeToLive;
+  unsigned int Reserved;
+  unsigned __int64 FileOffset;
+  unsigned __int64 CopyLength;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _CRYPT_ECC_PRIVATE_KEY_INFO
+// Полей: 4
+// Строки в оригинале: 93295-93301
+struct _CRYPT_ECC_PRIVATE_KEY_INFO
+{
+
+  unsigned int dwVersion;
+  _CRYPTOAPI_BLOB PrivateKey;
+  char *szCurveOid;
+  _CRYPT_BIT_BLOB PublicKey;
+
+};

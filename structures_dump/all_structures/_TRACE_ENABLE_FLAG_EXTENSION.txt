@@ -1,0 +1,11 @@
+// Структура: _TRACE_ENABLE_FLAG_EXTENSION
+// Полей: 3
+// Строки в оригинале: 313601-313606
+struct _TRACE_ENABLE_FLAG_EXTENSION
+{
+
+  unsigned __int16 Offset;
+  unsigned __int8 Length;
+  unsigned __int8 Flag;
+
+};

@@ -1,0 +1,16 @@
+// Структура: IHlinkFrameVtbl
+// Полей: 8
+// Строки в оригинале: 42734-42744
+struct IHlinkFrameVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHlinkFrame *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHlinkFrame *This);
+  ULONG (__stdcall *Release)(IHlinkFrame *This);
+  HRESULT (__stdcall *SetBrowseContext)(IHlinkFrame *This, IHlinkBrowseContext *pihlbc);
+  HRESULT (__stdcall *GetBrowseContext)(IHlinkFrame *This, IHlinkBrowseContext **ppihlbc);
+  HRESULT (__stdcall *Navigate)(IHlinkFrame *This, DWORD grfHLNF, LPBC pbc, IBindStatusCallback *pibsc, IHlink *pihlNavigate);
+  HRESULT (__stdcall *OnNavigate)(IHlinkFrame *This, DWORD grfHLNF, IMoniker *pimkTarget, LPCWSTR pwzLocation, LPCWSTR pwzFriendlyName, DWORD dwreserved);
+  HRESULT (__stdcall *UpdateHlink)(IHlinkFrame *This, ULONG uHLID, IMoniker *pimkTarget, LPCWSTR pwzLocation, LPCWSTR pwzFriendlyName);
+
+};

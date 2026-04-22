@@ -1,0 +1,10 @@
+// Структура: timespec
+// Полей: 2
+// Строки в оригинале: 194557-194561
+struct timespec
+{
+
+  int tv_sec;
+  int tv_nsec;
+
+};

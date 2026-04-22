@@ -1,0 +1,20 @@
+// Структура: _RTL_CSPARSE_BITMAP
+// Полей: 12
+// Строки в оригинале: 20355-20369
+struct _RTL_CSPARSE_BITMAP
+{
+
+  unsigned int *CommitBitmap;
+  unsigned int *UserBitmap;
+  unsigned int BitCount;
+  unsigned int BitmapLock;
+  unsigned int DecommitPageIndex;
+  unsigned int RtlpCSparseBitmapWakeLock;
+  unsigned __int8 LockType;
+  unsigned __int8 AddressSpace;
+  unsigned __int8 MemType;
+  unsigned __int8 AllocAlignment;
+  unsigned int CommitDirectoryMaxSize;
+  unsigned int CommitDirectory[1];
+
+};

@@ -1,0 +1,40 @@
+// Структура: IHTMLEventObjVtbl
+// Полей: 32
+// Строки в оригинале: 38790-38824
+struct IHTMLEventObjVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLEventObj *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLEventObj *This);
+  ULONG (__stdcall *Release)(IHTMLEventObj *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLEventObj *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLEventObj *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLEventObj *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLEventObj *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_srcElement)(IHTMLEventObj *This, IHTMLElement **p);
+  HRESULT (__stdcall *get_altKey)(IHTMLEventObj *This, VARIANT_BOOL *p);
+  HRESULT (__stdcall *get_ctrlKey)(IHTMLEventObj *This, VARIANT_BOOL *p);
+  HRESULT (__stdcall *get_shiftKey)(IHTMLEventObj *This, VARIANT_BOOL *p);
+  HRESULT (__stdcall *put_returnValue)(IHTMLEventObj *This, VARIANT v);
+  HRESULT (__stdcall *get_returnValue)(IHTMLEventObj *This, VARIANT *p);
+  HRESULT (__stdcall *put_cancelBubble)(IHTMLEventObj *This, VARIANT_BOOL v);
+  HRESULT (__stdcall *get_cancelBubble)(IHTMLEventObj *This, VARIANT_BOOL *p);
+  HRESULT (__stdcall *get_fromElement)(IHTMLEventObj *This, IHTMLElement **p);
+  HRESULT (__stdcall *get_toElement)(IHTMLEventObj *This, IHTMLElement **p);
+  HRESULT (__stdcall *put_keyCode)(IHTMLEventObj *This, int v);
+  HRESULT (__stdcall *get_keyCode)(IHTMLEventObj *This, int *p);
+  HRESULT (__stdcall *get_button)(IHTMLEventObj *This, int *p);
+  HRESULT (__stdcall *get_type)(IHTMLEventObj *This, BSTR *p);
+  HRESULT (__stdcall *get_qualifier)(IHTMLEventObj *This, BSTR *p);
+  HRESULT (__stdcall *get_reason)(IHTMLEventObj *This, int *p);
+  HRESULT (__stdcall *get_x)(IHTMLEventObj *This, int *p);
+  HRESULT (__stdcall *get_y)(IHTMLEventObj *This, int *p);
+  HRESULT (__stdcall *get_clientX)(IHTMLEventObj *This, int *p);
+  HRESULT (__stdcall *get_clientY)(IHTMLEventObj *This, int *p);
+  HRESULT (__stdcall *get_offsetX)(IHTMLEventObj *This, int *p);
+  HRESULT (__stdcall *get_offsetY)(IHTMLEventObj *This, int *p);
+  HRESULT (__stdcall *get_screenX)(IHTMLEventObj *This, int *p);
+  HRESULT (__stdcall *get_screenY)(IHTMLEventObj *This, int *p);
+  HRESULT (__stdcall *get_srcFilter)(IHTMLEventObj *This, IDispatch **p);
+
+};

@@ -1,0 +1,15 @@
+// Структура: _ENCRYPTION_KEY_CTRL_INPUT
+// Полей: 7
+// Строки в оригинале: 95306-95315
+struct _ENCRYPTION_KEY_CTRL_INPUT
+{
+
+  unsigned int HeaderSize;
+  unsigned int StructureSize;
+  unsigned __int16 KeyOffset;
+  unsigned __int16 KeySize;
+  unsigned int DplLock;
+  unsigned __int64 DplUserId;
+  unsigned __int64 DplCredentialId;
+
+};

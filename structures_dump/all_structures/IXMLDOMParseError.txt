@@ -1,0 +1,9 @@
+// Структура: IXMLDOMParseError
+// Полей: 1
+// Строки в оригинале: 43547-43550
+struct IXMLDOMParseError
+{
+
+  struct IXMLDOMParseErrorVtbl *lpVtbl;
+
+};

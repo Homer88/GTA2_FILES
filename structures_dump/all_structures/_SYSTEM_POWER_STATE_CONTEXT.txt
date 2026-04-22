@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_POWER_STATE_CONTEXT
+// Полей: 1
+// Строки в оригинале: 17676-17679
+struct _SYSTEM_POWER_STATE_CONTEXT
+{
+
+  $492C0D5F7AA29A0E87B5DEF1C6E4E287 ___u0;
+
+};

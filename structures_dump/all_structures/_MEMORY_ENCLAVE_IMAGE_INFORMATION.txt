@@ -1,0 +1,11 @@
+// Структура: _MEMORY_ENCLAVE_IMAGE_INFORMATION
+// Полей: 3
+// Строки в оригинале: 103789-103794
+struct _MEMORY_ENCLAVE_IMAGE_INFORMATION
+{
+
+  _MEMORY_IMAGE_INFORMATION ImageInfo;
+  unsigned __int8 UniqueID[32];
+  unsigned __int8 AuthorID[32];
+
+};

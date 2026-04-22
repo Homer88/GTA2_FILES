@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_DEBUG_EVENT
+// Полей: 3
+// Строки в оригинале: 311871-311876
+struct _PERFINFO_DEBUG_EVENT
+{
+
+  unsigned int ProcessId;
+  unsigned int ThreadId;
+  _PERFINFO_DEBUG_EVENT_REASON Reason;
+
+};

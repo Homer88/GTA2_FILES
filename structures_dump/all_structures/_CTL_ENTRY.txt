@@ -1,0 +1,11 @@
+// Структура: _CTL_ENTRY
+// Полей: 3
+// Строки в оригинале: 79970-79975
+struct _CTL_ENTRY
+{
+
+  _CRYPTOAPI_BLOB SubjectIdentifier;
+  unsigned int cAttribute;
+  _CRYPT_ATTRIBUTE *rgAttribute;
+
+};

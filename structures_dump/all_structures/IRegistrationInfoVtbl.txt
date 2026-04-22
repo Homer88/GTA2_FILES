@@ -1,0 +1,33 @@
+// Структура: IRegistrationInfoVtbl
+// Полей: 25
+// Строки в оригинале: 44761-44788
+struct IRegistrationInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRegistrationInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRegistrationInfo *This);
+  ULONG (__stdcall *Release)(IRegistrationInfo *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IRegistrationInfo *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IRegistrationInfo *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IRegistrationInfo *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IRegistrationInfo *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Description)(IRegistrationInfo *This, BSTR *pDescription);
+  HRESULT (__stdcall *put_Description)(IRegistrationInfo *This, BSTR description);
+  HRESULT (__stdcall *get_Author)(IRegistrationInfo *This, BSTR *pAuthor);
+  HRESULT (__stdcall *put_Author)(IRegistrationInfo *This, BSTR author);
+  HRESULT (__stdcall *get_Version)(IRegistrationInfo *This, BSTR *pVersion);
+  HRESULT (__stdcall *put_Version)(IRegistrationInfo *This, BSTR version);
+  HRESULT (__stdcall *get_Date)(IRegistrationInfo *This, BSTR *pDate);
+  HRESULT (__stdcall *put_Date)(IRegistrationInfo *This, BSTR date);
+  HRESULT (__stdcall *get_Documentation)(IRegistrationInfo *This, BSTR *pDocumentation);
+  HRESULT (__stdcall *put_Documentation)(IRegistrationInfo *This, BSTR documentation);
+  HRESULT (__stdcall *get_XmlText)(IRegistrationInfo *This, BSTR *pText);
+  HRESULT (__stdcall *put_XmlText)(IRegistrationInfo *This, BSTR text);
+  HRESULT (__stdcall *get_URI)(IRegistrationInfo *This, BSTR *pUri);
+  HRESULT (__stdcall *put_URI)(IRegistrationInfo *This, BSTR uri);
+  HRESULT (__stdcall *get_SecurityDescriptor)(IRegistrationInfo *This, VARIANT *pSddl);
+  HRESULT (__stdcall *put_SecurityDescriptor)(IRegistrationInfo *This, VARIANT sddl);
+  HRESULT (__stdcall *get_Source)(IRegistrationInfo *This, BSTR *pSource);
+  HRESULT (__stdcall *put_Source)(IRegistrationInfo *This, BSTR source);
+
+};

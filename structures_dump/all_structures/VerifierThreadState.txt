@@ -1,0 +1,12 @@
+// Структура: VerifierThreadState
+// Полей: 4
+// Строки в оригинале: 272990-272996
+struct VerifierThreadState
+{
+
+  unsigned int cComInits;
+  unsigned int cOleInits;
+  _GUID guidContext;
+  void *pvTopSWCNode;
+
+};

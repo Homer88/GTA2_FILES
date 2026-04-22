@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_PHYSICAL_MEMORY_INFORMATION
+// Полей: 3
+// Строки в оригинале: 110592-110597
+struct _SYSTEM_PHYSICAL_MEMORY_INFORMATION
+{
+
+  unsigned __int64 TotalPhysicalBytes;
+  unsigned __int64 LowestPhysicalAddress;
+  unsigned __int64 HighestPhysicalAddress;
+
+};

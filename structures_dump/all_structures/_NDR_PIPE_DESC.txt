@@ -1,0 +1,29 @@
+// Структура: _NDR_PIPE_DESC
+// Полей: 21
+// Строки в оригинале: 86473-86496
+struct _NDR_PIPE_DESC
+{
+
+  _NDR_PIPE_MESSAGE *pPipeMsg;
+  __int16 CurrentPipe;
+  __int16 PrevPipe;
+  __int16 InPipes;
+  __int16 OutPipes;
+  __int16 TotalPipes;
+  __int16 PipeVersion;
+  _PIPEDESC_FLAGS Flags;
+  unsigned int PipeException;
+  unsigned __int8 *DispatchBuffer;
+  unsigned int DispatchBufferLength;
+  unsigned int LastPartialSize;
+  unsigned __int8 Leftover[8];
+  unsigned int LeftoverSize;
+  unsigned __int8 *BufferSave;
+  unsigned int LengthSave;
+  NDR_PIPE_STATE RuntimeState;
+  void *ChainingBuffer;
+  unsigned int ChainingBufferSize;
+  NDR_PIPE_HELPER *pPipeHelper;
+  _NDR_ALLOCA_CONTEXT *pAllocContext;
+
+};

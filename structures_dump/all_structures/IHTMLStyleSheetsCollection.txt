@@ -1,0 +1,9 @@
+// Структура: IHTMLStyleSheetsCollection
+// Полей: 1
+// Строки в оригинале: 38483-38486
+struct IHTMLStyleSheetsCollection
+{
+
+  struct IHTMLStyleSheetsCollectionVtbl *lpVtbl;
+
+};

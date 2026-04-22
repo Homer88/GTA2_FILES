@@ -1,0 +1,11 @@
+// Структура: _AUTHENTICODE_EXTRA_CERT_CHAIN_POLICY_PARA
+// Полей: 3
+// Строки в оригинале: 92233-92238
+struct _AUTHENTICODE_EXTRA_CERT_CHAIN_POLICY_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int dwRegPolicySettings;
+  _CMSG_SIGNER_INFO *pSignerInfo;
+
+};

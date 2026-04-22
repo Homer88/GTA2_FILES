@@ -1,0 +1,22 @@
+// Структура: _tagBINDINFO
+// Полей: 14
+// Строки в оригинале: 41729-41745
+struct _tagBINDINFO
+{
+
+  ULONG cbSize;
+  LPWSTR szExtraInfo;
+  STGMEDIUM stgmedData;
+  DWORD grfBindInfoF;
+  DWORD dwBindVerb;
+  LPWSTR szCustomVerb;
+  DWORD cbstgmedData;
+  DWORD dwOptions;
+  DWORD dwOptionsFlags;
+  DWORD dwCodePage;
+  SECURITY_ATTRIBUTES securityAttributes;
+  IID iid;
+  IUnknown *pUnk;
+  DWORD dwReserved;
+
+};

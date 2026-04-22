@@ -1,0 +1,15 @@
+// Структура: _PROVDATA_SIP
+// Полей: 7
+// Строки в оригинале: 122012-122021
+struct _PROVDATA_SIP
+{
+
+  unsigned int cbStruct;
+  _GUID gSubject;
+  struct SIP_DISPATCH_INFO_ *pSip;
+  struct SIP_DISPATCH_INFO_ *pCATSip;
+  struct SIP_SUBJECTINFO_ *psSipSubjectInfo;
+  struct SIP_SUBJECTINFO_ *psSipCATSubjectInfo;
+  struct SIP_INDIRECT_DATA_ *psIndirectData;
+
+};

@@ -1,0 +1,20 @@
+// Структура: _HEAP_LFH_SUBSEGMENT
+// Полей: 12
+// Строки в оригинале: 21652-21666
+struct _HEAP_LFH_SUBSEGMENT
+{
+
+  _LIST_ENTRY ListEntry;
+  $2384E6AA46B0481345C5DFE4FF73A337 ___u1;
+  unsigned int CommitLock;
+  $70F05AD5DC85A0AC8F3A3FA33300BFB4 ___u3;
+  unsigned __int16 FreeHint;
+  unsigned __int8 Location;
+  unsigned __int8 WitheldBlockCount;
+  _HEAP_LFH_SUBSEGMENT_ENCODED_OFFSETS BlockOffsets;
+  unsigned __int8 CommitUnitShift;
+  unsigned __int8 CommitUnitCount;
+  unsigned __int16 CommitStateOffset;
+  unsigned int BlockBitmap[1];
+
+};

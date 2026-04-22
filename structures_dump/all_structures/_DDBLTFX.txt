@@ -1,0 +1,22 @@
+// Структура: _DDBLTFX
+// Полей: 14
+// Строки в оригинале: 24621-24637
+struct _DDBLTFX
+{
+
+  DWORD dwSize;
+  DWORD dwDDFX;
+  DWORD dwROP;
+  DWORD dwDDROP;
+  DWORD dwRotationAngle;
+  DWORD dwZBufferOpCode;
+  DWORD dwZBufferLow;
+  DWORD dwZBufferHigh;
+  DWORD dwZBufferBaseDest;
+  DWORD dwZDestConstBitDepth;
+  union
+  {
+    DWORD dwZDestConst;
+    LPDIRECTDRAWSURFACE lpDDSZBufferDest;
+  
+};

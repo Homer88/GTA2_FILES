@@ -1,0 +1,21 @@
+// Структура: _SHCREATEPROCESSINFOW
+// Полей: 13
+// Строки в оригинале: 98954-98969
+struct _SHCREATEPROCESSINFOW
+{
+
+  unsigned int cbSize;
+  unsigned int fMask;
+  HWND__ *hwnd;
+  const wchar_t *pszFile;
+  const wchar_t *pszParameters;
+  const wchar_t *pszCurrentDirectory;
+  void *hUserToken;
+  _SECURITY_ATTRIBUTES *lpProcessAttributes;
+  _SECURITY_ATTRIBUTES *lpThreadAttributes;
+  int bInheritHandles;
+  unsigned int dwCreationFlags;
+  _STARTUPINFOW *lpStartupInfo;
+  _PROCESS_INFORMATION *lpProcessInformation;
+
+};

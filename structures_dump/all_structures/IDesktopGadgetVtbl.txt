@@ -1,0 +1,12 @@
+// Структура: IDesktopGadgetVtbl
+// Полей: 4
+// Строки в оригинале: 37282-37288
+struct IDesktopGadgetVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDesktopGadget *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDesktopGadget *This);
+  ULONG (__stdcall *Release)(IDesktopGadget *This);
+  HRESULT (__stdcall *RunGadget)(IDesktopGadget *This, LPCWSTR gadgetPath);
+
+};

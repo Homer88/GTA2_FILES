@@ -1,0 +1,9 @@
+// Структура: IXMLDOMComment
+// Полей: 1
+// Строки в оригинале: 43515-43518
+struct IXMLDOMComment
+{
+
+  struct IXMLDOMCommentVtbl *lpVtbl;
+
+};

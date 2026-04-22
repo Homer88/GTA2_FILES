@@ -1,0 +1,10 @@
+// Структура: wil_details_FeatureReportingCache
+// Полей: 2
+// Строки в оригинале: 142338-142342
+struct wil_details_FeatureReportingCache
+{
+
+  wil_details_ReportedState reported;
+  wil_details_RecordedState recorded;
+
+};

@@ -1,0 +1,17 @@
+// Структура: _FILE_QUERY_METADATA_OPTIMIZATION_OUTPUT
+// Полей: 9
+// Строки в оригинале: 94357-94368
+struct _FILE_QUERY_METADATA_OPTIMIZATION_OUTPUT
+{
+
+  _FILE_METADATA_OPTIMIZATION_STATE State;
+  unsigned int AttributeListSize;
+  unsigned int MetadataSpaceUsed;
+  unsigned int MetadataSpaceAllocated;
+  unsigned int NumberOfFileRecords;
+  unsigned int NumberOfResidentAttributes;
+  unsigned int NumberOfNonresidentAttributes;
+  unsigned int TotalInProgress;
+  unsigned int TotalPending;
+
+};

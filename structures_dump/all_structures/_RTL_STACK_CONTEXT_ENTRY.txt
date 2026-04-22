@@ -1,0 +1,10 @@
+// Структура: _RTL_STACK_CONTEXT_ENTRY
+// Полей: 2
+// Строки в оригинале: 98089-98093
+struct _RTL_STACK_CONTEXT_ENTRY
+{
+
+  unsigned int Address;
+  unsigned int Data;
+
+};

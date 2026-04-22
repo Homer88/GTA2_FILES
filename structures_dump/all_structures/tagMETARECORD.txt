@@ -1,0 +1,11 @@
+// Структура: tagMETARECORD
+// Полей: 3
+// Строки в оригинале: 108178-108183
+struct tagMETARECORD
+{
+
+  unsigned int rdSize;
+  unsigned __int16 rdFunction;
+  unsigned __int16 rdParm[1];
+
+};

@@ -1,0 +1,16 @@
+// Структура: _MEMORYSTATUS
+// Полей: 8
+// Строки в оригинале: 112438-112448
+struct _MEMORYSTATUS
+{
+
+  unsigned int dwLength;
+  unsigned int dwMemoryLoad;
+  unsigned int dwTotalPhys;
+  unsigned int dwAvailPhys;
+  unsigned int dwTotalPageFile;
+  unsigned int dwAvailPageFile;
+  unsigned int dwTotalVirtual;
+  unsigned int dwAvailVirtual;
+
+};

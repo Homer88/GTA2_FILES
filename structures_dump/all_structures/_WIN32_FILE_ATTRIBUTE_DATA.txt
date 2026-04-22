@@ -1,0 +1,14 @@
+// Структура: _WIN32_FILE_ATTRIBUTE_DATA
+// Полей: 6
+// Строки в оригинале: 86842-86850
+struct _WIN32_FILE_ATTRIBUTE_DATA
+{
+
+  unsigned int dwFileAttributes;
+  _FILETIME ftCreationTime;
+  _FILETIME ftLastAccessTime;
+  _FILETIME ftLastWriteTime;
+  unsigned int nFileSizeHigh;
+  unsigned int nFileSizeLow;
+
+};

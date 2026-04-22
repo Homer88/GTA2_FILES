@@ -1,0 +1,12 @@
+// Структура: ITfTextEditSinkVtbl
+// Полей: 4
+// Строки в оригинале: 31308-31314
+struct ITfTextEditSinkVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfTextEditSink *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfTextEditSink *This);
+  ULONG (__stdcall *Release)(ITfTextEditSink *This);
+  HRESULT (__stdcall *OnEndEdit)(ITfTextEditSink *This, ITfContext *pic, TfEditCookie ecReadOnly, ITfEditRecord *pEditRecord);
+
+};

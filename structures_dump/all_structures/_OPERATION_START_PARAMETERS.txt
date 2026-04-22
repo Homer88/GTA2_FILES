@@ -1,0 +1,11 @@
+// Структура: _OPERATION_START_PARAMETERS
+// Полей: 3
+// Строки в оригинале: 92821-92826
+struct _OPERATION_START_PARAMETERS
+{
+
+  unsigned int Version;
+  unsigned int OperationId;
+  unsigned int Flags;
+
+};

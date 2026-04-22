@@ -1,0 +1,12 @@
+// Структура: _NDR64_UNION_ARM_SELECTOR
+// Полей: 4
+// Строки в оригинале: 332334-332340
+struct _NDR64_UNION_ARM_SELECTOR
+{
+
+  unsigned __int8 Reserved1;
+  unsigned __int8 Alignment;
+  unsigned __int16 Reserved2;
+  unsigned int Arms;
+
+};

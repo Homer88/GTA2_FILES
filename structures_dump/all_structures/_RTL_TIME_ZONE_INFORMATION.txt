@@ -1,0 +1,15 @@
+// Структура: _RTL_TIME_ZONE_INFORMATION
+// Полей: 7
+// Строки в оригинале: 18416-18425
+struct _RTL_TIME_ZONE_INFORMATION
+{
+
+  int Bias;
+  wchar_t StandardName[32];
+  _TIME_FIELDS StandardStart;
+  int StandardBias;
+  wchar_t DaylightName[32];
+  _TIME_FIELDS DaylightStart;
+  int DaylightBias;
+
+};

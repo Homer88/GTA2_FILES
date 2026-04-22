@@ -1,0 +1,13 @@
+// Структура: tagGLYPHSET
+// Полей: 5
+// Строки в оригинале: 104160-104167
+struct tagGLYPHSET
+{
+
+  unsigned int cbThis;
+  unsigned int flAccel;
+  unsigned int cGlyphsSupported;
+  unsigned int cRanges;
+  tagWCRANGE ranges[1];
+
+};

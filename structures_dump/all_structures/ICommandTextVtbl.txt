@@ -1,0 +1,16 @@
+// Структура: ICommandTextVtbl
+// Полей: 8
+// Строки в оригинале: 37304-37314
+struct ICommandTextVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICommandText *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICommandText *This);
+  ULONG (__stdcall *Release)(ICommandText *This);
+  HRESULT (__stdcall *Cancel)(ICommandText *This);
+  HRESULT (__stdcall *Execute)(ICommandText *This, IUnknown *pUnkOuter, const IID *const riid, DBPARAMS *pParams, DBROWCOUNT *pcRowsAffected, IUnknown **ppRowset);
+  HRESULT (__stdcall *GetDBSession)(ICommandText *This, const IID *const riid, IUnknown **ppSession);
+  HRESULT (__stdcall *GetCommandText)(ICommandText *This, GUID *pguidDialect, LPOLESTR *ppwszCommand);
+  HRESULT (__stdcall *SetCommandText)(ICommandText *This, const GUID *const rguidDialect, LPCOLESTR pwszCommand);
+
+};

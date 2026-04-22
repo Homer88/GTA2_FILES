@@ -1,0 +1,13 @@
+// Структура: _LDR_SECTION_INFO
+// Полей: 5
+// Строки в оригинале: 88811-88818
+struct _LDR_SECTION_INFO
+{
+
+  void *SectionHandle;
+  unsigned int DesiredAccess;
+  _OBJECT_ATTRIBUTES *ObjA;
+  unsigned int SectionPageProtection;
+  unsigned int AllocationAttributes;
+
+};

@@ -1,0 +1,12 @@
+// Структура: tagEMREXTFLOODFILL
+// Полей: 4
+// Строки в оригинале: 95703-95709
+struct tagEMREXTFLOODFILL
+{
+
+  tagEMR emr;
+  _POINTL ptlStart;
+  unsigned int crColor;
+  unsigned int iMode;
+
+};

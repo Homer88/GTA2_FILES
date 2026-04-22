@@ -1,0 +1,9 @@
+// Структура: _TRANSACTIONMANAGER_OLDEST_INFORMATION
+// Полей: 1
+// Строки в оригинале: 105198-105201
+struct _TRANSACTIONMANAGER_OLDEST_INFORMATION
+{
+
+  _GUID OldestTransactionGuid;
+
+};

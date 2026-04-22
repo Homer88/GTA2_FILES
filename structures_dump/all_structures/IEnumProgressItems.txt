@@ -1,0 +1,9 @@
+// Структура: IEnumProgressItems
+// Полей: 1
+// Строки в оригинале: 41336-41339
+struct IEnumProgressItems
+{
+
+  struct IEnumProgressItemsVtbl *lpVtbl;
+
+};

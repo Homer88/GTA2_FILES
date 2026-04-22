@@ -1,0 +1,20 @@
+// Структура: IEnumNetworksVtbl
+// Полей: 12
+// Строки в оригинале: 45962-45976
+struct IEnumNetworksVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumNetworks *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumNetworks *This);
+  ULONG (__stdcall *Release)(IEnumNetworks *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IEnumNetworks *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IEnumNetworks *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IEnumNetworks *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IEnumNetworks *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get__NewEnum)(IEnumNetworks *This, IEnumVARIANT **ppEnumVar);
+  HRESULT (__stdcall *Next)(IEnumNetworks *This, ULONG celt, INetwork **rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumNetworks *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumNetworks *This);
+  HRESULT (__stdcall *Clone)(IEnumNetworks *This, IEnumNetworks **ppEnumNetwork);
+
+};

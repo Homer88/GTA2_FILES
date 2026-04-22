@@ -1,0 +1,11 @@
+// Структура: _IMAGE_BOUND_IMPORT_DESCRIPTOR
+// Полей: 3
+// Строки в оригинале: 90019-90024
+struct _IMAGE_BOUND_IMPORT_DESCRIPTOR
+{
+
+  unsigned int TimeDateStamp;
+  unsigned __int16 OffsetModuleName;
+  unsigned __int16 NumberOfModuleForwarderRefs;
+
+};

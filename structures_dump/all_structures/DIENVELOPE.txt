@@ -1,0 +1,13 @@
+// Структура: DIENVELOPE
+// Полей: 5
+// Строки в оригинале: 28949-28956
+struct DIENVELOPE
+{
+
+  DWORD dwSize;
+  DWORD dwAttackLevel;
+  DWORD dwAttackTime;
+  DWORD dwFadeLevel;
+  DWORD dwFadeTime;
+
+};

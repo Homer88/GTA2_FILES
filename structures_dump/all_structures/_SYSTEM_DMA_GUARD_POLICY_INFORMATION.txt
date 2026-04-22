@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_DMA_GUARD_POLICY_INFORMATION
+// Полей: 1
+// Строки в оригинале: 89406-89409
+struct _SYSTEM_DMA_GUARD_POLICY_INFORMATION
+{
+
+  unsigned __int8 DmaGuardPolicyEnabled;
+
+};

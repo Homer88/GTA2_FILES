@@ -1,0 +1,11 @@
+// Структура: _ALPC_SECURITY_ATTR
+// Полей: 3
+// Строки в оригинале: 105751-105756
+struct _ALPC_SECURITY_ATTR
+{
+
+  unsigned int Flags;
+  _SECURITY_QUALITY_OF_SERVICE *QoS;
+  void *ContextHandle;
+
+};

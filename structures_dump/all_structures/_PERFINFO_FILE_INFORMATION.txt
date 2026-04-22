@@ -1,0 +1,14 @@
+// Структура: _PERFINFO_FILE_INFORMATION
+// Полей: 6
+// Строки в оригинале: 312418-312426
+struct _PERFINFO_FILE_INFORMATION
+{
+
+  unsigned int Irp;
+  unsigned int FileObject;
+  unsigned int FileKey;
+  unsigned int ExtraInformation;
+  unsigned int IssuingThreadId;
+  unsigned int InfoClass;
+
+};

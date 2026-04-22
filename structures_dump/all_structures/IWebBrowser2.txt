@@ -1,0 +1,9 @@
+// Структура: IWebBrowser2
+// Полей: 1
+// Строки в оригинале: 38305-38308
+struct IWebBrowser2
+{
+
+  struct IWebBrowser2Vtbl *lpVtbl;
+
+};

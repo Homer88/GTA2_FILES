@@ -1,0 +1,9 @@
+// Структура: _ENCLAVE_CREATE_INFO_SGX
+// Полей: 1
+// Строки в оригинале: 109833-109836
+struct _ENCLAVE_CREATE_INFO_SGX
+{
+
+  unsigned __int8 Secs[4096];
+
+};

@@ -1,0 +1,10 @@
+// Структура: _OBP_SYSTEM_DOS_DEVICE_STATE
+// Полей: 2
+// Строки в оригинале: 17109-17113
+struct _OBP_SYSTEM_DOS_DEVICE_STATE
+{
+
+  unsigned int GlobalDeviceMap;
+  unsigned int LocalDeviceCount[26];
+
+};

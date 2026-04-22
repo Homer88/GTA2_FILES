@@ -1,0 +1,12 @@
+// Структура: _OVERLAPPED_ENTRY
+// Полей: 4
+// Строки в оригинале: 83901-83907
+struct _OVERLAPPED_ENTRY
+{
+
+  unsigned int lpCompletionKey;
+  _OVERLAPPED *lpOverlapped;
+  unsigned int Internal;
+  unsigned int dwNumberOfBytesTransferred;
+
+};

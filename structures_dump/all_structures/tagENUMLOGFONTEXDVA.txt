@@ -1,0 +1,10 @@
+// Структура: tagENUMLOGFONTEXDVA
+// Полей: 2
+// Строки в оригинале: 87477-87481
+struct tagENUMLOGFONTEXDVA
+{
+
+  tagENUMLOGFONTEXA elfEnumLogfontEx;
+  tagDESIGNVECTOR elfDesignVector;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _RTLP_HP_HEAP_GLOBALS
+// Полей: 4
+// Строки в оригинале: 20512-20518
+struct _RTLP_HP_HEAP_GLOBALS
+{
+
+  unsigned int HeapKey;
+  unsigned int LfhKey;
+  _HEAP_FAILURE_INFORMATION *FailureInfo;
+  _RTL_HEAP_MEMORY_LIMIT_DATA CommitLimitData;
+
+};

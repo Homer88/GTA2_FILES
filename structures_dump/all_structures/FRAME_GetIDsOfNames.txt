@@ -1,0 +1,14 @@
+// Структура: FRAME_GetIDsOfNames
+// Полей: 6
+// Строки в оригинале: 124063-124071
+struct FRAME_GetIDsOfNames
+{
+
+  IDispatch *This;
+  const _GUID *riid;
+  wchar_t **rgszNames;
+  unsigned int cNames;
+  unsigned int lcid;
+  int *rgDispId;
+
+};

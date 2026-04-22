@@ -1,0 +1,9 @@
+// Структура: IWICPalette
+// Полей: 1
+// Строки в оригинале: 40159-40162
+struct IWICPalette
+{
+
+  struct IWICPaletteVtbl *lpVtbl;
+
+};

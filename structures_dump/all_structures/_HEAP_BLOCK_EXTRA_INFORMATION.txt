@@ -1,0 +1,11 @@
+// Структура: _HEAP_BLOCK_EXTRA_INFORMATION
+// Полей: 3
+// Строки в оригинале: 105326-105331
+struct _HEAP_BLOCK_EXTRA_INFORMATION
+{
+
+  unsigned __int8 Next;
+  unsigned int Type;
+  unsigned int Size;
+
+};

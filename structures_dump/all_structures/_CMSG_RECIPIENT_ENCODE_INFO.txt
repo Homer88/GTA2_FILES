@@ -1,0 +1,10 @@
+// Структура: _CMSG_RECIPIENT_ENCODE_INFO
+// Полей: 2
+// Строки в оригинале: 87791-87795
+struct _CMSG_RECIPIENT_ENCODE_INFO
+{
+
+  unsigned int dwRecipientChoice;
+  $9D6BBD11CC3D42D4B8432095ED5A30A3 ___u1;
+
+};

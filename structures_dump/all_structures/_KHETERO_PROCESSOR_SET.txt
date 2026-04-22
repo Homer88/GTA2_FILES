@@ -1,0 +1,11 @@
+// Структура: _KHETERO_PROCESSOR_SET
+// Полей: 3
+// Строки в оригинале: 14659-14664
+struct _KHETERO_PROCESSOR_SET
+{
+
+  unsigned int IdealMask;
+  unsigned int PreferredMask;
+  unsigned int AvailableMask;
+
+};

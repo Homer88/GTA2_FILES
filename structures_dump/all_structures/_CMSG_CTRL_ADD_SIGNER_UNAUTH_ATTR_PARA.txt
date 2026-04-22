@@ -1,0 +1,11 @@
+// Структура: _CMSG_CTRL_ADD_SIGNER_UNAUTH_ATTR_PARA
+// Полей: 3
+// Строки в оригинале: 95712-95717
+struct _CMSG_CTRL_ADD_SIGNER_UNAUTH_ATTR_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int dwSignerIndex;
+  _CRYPTOAPI_BLOB blob;
+
+};

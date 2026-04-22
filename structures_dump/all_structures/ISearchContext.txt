@@ -1,0 +1,9 @@
+// Структура: ISearchContext
+// Полей: 1
+// Строки в оригинале: 43108-43111
+struct ISearchContext
+{
+
+  struct ISearchContextVtbl *lpVtbl;
+
+};

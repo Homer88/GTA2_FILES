@@ -1,0 +1,48 @@
+// Структура: _KTRAP_FRAME
+// Полей: 40
+// Строки в оригинале: 15360-15402
+struct _KTRAP_FRAME
+{
+
+  unsigned int DbgEbp;
+  unsigned int DbgEip;
+  unsigned int DbgArgMark;
+  unsigned __int16 TempSegCs;
+  unsigned __int8 Logging;
+  unsigned __int8 FrameType;
+  unsigned int TempEsp;
+  unsigned int Dr0;
+  unsigned int Dr1;
+  unsigned int Dr2;
+  unsigned int Dr3;
+  unsigned int Dr6;
+  unsigned int Dr7;
+  unsigned int SegGs;
+  unsigned int SegEs;
+  unsigned int SegDs;
+  unsigned int Edx;
+  unsigned int Ecx;
+  unsigned int Eax;
+  unsigned __int8 PreviousPreviousMode;
+  unsigned __int8 EntropyQueueDpc;
+  $938C0306244241FE2781900B291C9BB3 ___u21;
+  unsigned __int8 PreviousIrql;
+  unsigned int MxCsr;
+  _EXCEPTION_REGISTRATION_RECORD *ExceptionList;
+  unsigned int SegFs;
+  unsigned int Edi;
+  unsigned int Esi;
+  unsigned int Ebx;
+  unsigned int Ebp;
+  unsigned int ErrCode;
+  unsigned int Eip;
+  unsigned int SegCs;
+  unsigned int EFlags;
+  unsigned int HardwareEsp;
+  unsigned int HardwareSegSs;
+  unsigned int V86Es;
+  unsigned int V86Ds;
+  unsigned int V86Fs;
+  unsigned int V86Gs;
+
+};

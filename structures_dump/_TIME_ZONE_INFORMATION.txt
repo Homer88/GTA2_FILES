@@ -1,0 +1,14 @@
+// Structure: _TIME_ZONE_INFORMATION
+// Lines: 2208 - 2217
+// Fields: 8
+
+struct _TIME_ZONE_INFORMATION
+{
+  LONG Bias;
+  WCHAR StandardName[32];
+  SYSTEMTIME StandardDate;
+  LONG StandardBias;
+  WCHAR DaylightName[32];
+  SYSTEMTIME DaylightDate;
+  LONG DaylightBias;
+};

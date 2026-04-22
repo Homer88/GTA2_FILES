@@ -1,0 +1,15 @@
+// Структура: IEnumTravelLogEntryVtbl
+// Полей: 7
+// Строки в оригинале: 38054-38063
+struct IEnumTravelLogEntryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumTravelLogEntry *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumTravelLogEntry *This);
+  ULONG (__stdcall *Release)(IEnumTravelLogEntry *This);
+  HRESULT (__stdcall *Next)(IEnumTravelLogEntry *This, ULONG cElt, ITravelLogEntry **rgElt, ULONG *pcEltFetched);
+  HRESULT (__stdcall *Skip)(IEnumTravelLogEntry *This, ULONG cElt);
+  HRESULT (__stdcall *Reset)(IEnumTravelLogEntry *This);
+  HRESULT (__stdcall *Clone)(IEnumTravelLogEntry *This, IEnumTravelLogEntry **ppEnum);
+
+};

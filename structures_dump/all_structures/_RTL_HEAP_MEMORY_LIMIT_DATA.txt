@@ -1,0 +1,12 @@
+// Структура: _RTL_HEAP_MEMORY_LIMIT_DATA
+// Полей: 4
+// Строки в оригинале: 20503-20509
+struct _RTL_HEAP_MEMORY_LIMIT_DATA
+{
+
+  unsigned int CommitLimitBytes;
+  unsigned int CommitLimitFailureCode;
+  unsigned int MaxAllocationSizeBytes;
+  unsigned int AllocationLimitFailureCode;
+
+};

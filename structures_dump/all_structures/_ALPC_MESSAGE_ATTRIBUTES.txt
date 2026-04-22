@@ -1,0 +1,10 @@
+// Структура: _ALPC_MESSAGE_ATTRIBUTES
+// Полей: 2
+// Строки в оригинале: 89564-89568
+struct _ALPC_MESSAGE_ATTRIBUTES
+{
+
+  unsigned int AllocatedAttributes;
+  unsigned int ValidAttributes;
+
+};

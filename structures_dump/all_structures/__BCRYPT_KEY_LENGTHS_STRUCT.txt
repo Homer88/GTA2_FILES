@@ -1,0 +1,11 @@
+// Структура: __BCRYPT_KEY_LENGTHS_STRUCT
+// Полей: 3
+// Строки в оригинале: 112627-112632
+struct __BCRYPT_KEY_LENGTHS_STRUCT
+{
+
+  unsigned int dwMinLength;
+  unsigned int dwMaxLength;
+  unsigned int dwIncrement;
+
+};

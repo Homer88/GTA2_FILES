@@ -1,0 +1,15 @@
+// Структура: _PERFINFO_PAGECOMBINE_AGGREGATE_STAT
+// Полей: 7
+// Строки в оригинале: 313329-313338
+struct _PERFINFO_PAGECOMBINE_AGGREGATE_STAT
+{
+
+  unsigned __int32 StatType : 6;
+  unsigned __int32 Spare : 26;
+  unsigned int CombineScanCount;
+  unsigned __int64 PagesScanned;
+  unsigned __int64 PagesCombined;
+  int CombinedBlocksInUse;
+  int SumCombinedBlocksReferenceCount;
+
+};

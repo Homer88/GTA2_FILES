@@ -1,0 +1,9 @@
+// Структура: _SecPkgContext_UserFlags
+// Полей: 1
+// Строки в оригинале: 323766-323769
+struct _SecPkgContext_UserFlags
+{
+
+  unsigned int UserFlags;
+
+};

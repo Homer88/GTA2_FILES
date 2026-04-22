@@ -1,0 +1,9 @@
+// Структура: ITextRange
+// Полей: 1
+// Строки в оригинале: 45536-45539
+struct ITextRange
+{
+
+  struct ITextRangeVtbl *lpVtbl;
+
+};

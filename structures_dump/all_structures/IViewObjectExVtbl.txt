@@ -1,0 +1,23 @@
+// Структура: IViewObjectExVtbl
+// Полей: 15
+// Строки в оригинале: 352584-352601
+struct IViewObjectExVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IViewObjectEx *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IViewObjectEx *This);
+  ULONG (__stdcall *Release)(IViewObjectEx *This);
+  HRESULT (__stdcall *Draw)(IViewObjectEx *This, DWORD dwDrawAspect, LONG lindex, void *pvAspect, DVTARGETDEVICE *ptd, HDC hdcTargetDev, HDC hdcDraw, LPCRECTL lprcBounds, LPCRECTL lprcWBounds, BOOL (__stdcall *pfnContinue)(ULONG_PTR dwContinue), ULONG_PTR dwContinue);
+  HRESULT (__stdcall *GetColorSet)(IViewObjectEx *This, DWORD dwDrawAspect, LONG lindex, void *pvAspect, DVTARGETDEVICE *ptd, HDC hicTargetDev, LOGPALETTE **ppColorSet);
+  HRESULT (__stdcall *Freeze)(IViewObjectEx *This, DWORD dwDrawAspect, LONG lindex, void *pvAspect, DWORD *pdwFreeze);
+  HRESULT (__stdcall *Unfreeze)(IViewObjectEx *This, DWORD dwFreeze);
+  HRESULT (__stdcall *SetAdvise)(IViewObjectEx *This, DWORD aspects, DWORD advf, IAdviseSink *pAdvSink);
+  HRESULT (__stdcall *GetAdvise)(IViewObjectEx *This, DWORD *pAspects, DWORD *pAdvf, IAdviseSink **ppAdvSink);
+  HRESULT (__stdcall *GetExtent)(IViewObjectEx *This, DWORD dwDrawAspect, LONG lindex, DVTARGETDEVICE *ptd, LPSIZEL lpsizel);
+  HRESULT (__stdcall *GetRect)(IViewObjectEx *This, DWORD dwAspect, LPRECTL pRect);
+  HRESULT (__stdcall *GetViewStatus)(IViewObjectEx *This, DWORD *pdwStatus);
+  HRESULT (__stdcall *QueryHitPoint)(IViewObjectEx *This, DWORD dwAspect, LPCRECT pRectBounds, POINT ptlLoc, LONG lCloseHint, DWORD *pHitResult);
+  HRESULT (__stdcall *QueryHitRect)(IViewObjectEx *This, DWORD dwAspect, LPCRECT pRectBounds, LPCRECT pRectLoc, LONG lCloseHint, DWORD *pHitResult);
+  HRESULT (__stdcall *GetNaturalExtent)(IViewObjectEx *This, DWORD dwAspect, LONG lindex, DVTARGETDEVICE *ptd, HDC hicTargetDev, DVEXTENTINFO *pExtentInfo, LPSIZEL pSizel);
+
+};

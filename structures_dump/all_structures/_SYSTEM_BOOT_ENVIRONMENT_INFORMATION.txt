@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_BOOT_ENVIRONMENT_INFORMATION
+// Полей: 3
+// Строки в оригинале: 94891-94896
+struct _SYSTEM_BOOT_ENVIRONMENT_INFORMATION
+{
+
+  _GUID BootIdentifier;
+  _FIRMWARE_TYPE FirmwareType;
+  $3B03C7CCA3D24B2072AD4E844C1C2531 ___u2;
+
+};

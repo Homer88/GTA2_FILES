@@ -1,0 +1,9 @@
+// Структура: _FOCUS_EVENT_RECORD
+// Полей: 1
+// Строки в оригинале: 91980-91983
+struct _FOCUS_EVENT_RECORD
+{
+
+  int bSetFocus;
+
+};

@@ -1,0 +1,16 @@
+// Структура: tagMETHODDATA
+// Полей: 8
+// Строки в оригинале: 106553-106563
+struct tagMETHODDATA
+{
+
+  wchar_t *szName;
+  tagPARAMDATA *ppdata;
+  int dispid;
+  unsigned int iMeth;
+  tagCALLCONV cc;
+  unsigned int cArgs;
+  unsigned __int16 wFlags;
+  unsigned __int16 vtReturn;
+
+};

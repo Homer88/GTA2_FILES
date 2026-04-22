@@ -1,0 +1,13 @@
+// Структура: _CrtMemState
+// Полей: 5
+// Строки в оригинале: 111911-111918
+struct _CrtMemState
+{
+
+  _CrtMemBlockHeader *pBlockHeader;
+  unsigned int lCounts[5];
+  unsigned int lSizes[5];
+  unsigned int lHighWaterCount;
+  unsigned int lTotalCount;
+
+};

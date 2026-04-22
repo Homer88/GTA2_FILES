@@ -1,0 +1,18 @@
+// Структура: DISPLAYCONFIG_PATH_TARGET_INFO
+// Полей: 10
+// Строки в оригинале: 112169-112181
+struct DISPLAYCONFIG_PATH_TARGET_INFO
+{
+
+  _LUID adapterId;
+  unsigned int id;
+  $CEB0AC8548E1D667A4AAC66F1E21B9F2 ___u2;
+  DISPLAYCONFIG_VIDEO_OUTPUT_TECHNOLOGY outputTechnology;
+  DISPLAYCONFIG_ROTATION rotation;
+  DISPLAYCONFIG_SCALING scaling;
+  DISPLAYCONFIG_RATIONAL refreshRate;
+  DISPLAYCONFIG_SCANLINE_ORDERING scanLineOrdering;
+  int targetAvailable;
+  unsigned int statusFlags;
+
+};

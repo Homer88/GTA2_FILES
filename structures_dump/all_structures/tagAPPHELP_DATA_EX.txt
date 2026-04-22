@@ -1,0 +1,25 @@
+// Структура: tagAPPHELP_DATA_EX
+// Полей: 17
+// Строки в оригинале: 313058-313077
+struct tagAPPHELP_DATA_EX
+{
+
+  _GUID guidDBID;
+  _GUID guidExeID;
+  _GUID guidAppID;
+  unsigned int tiExe;
+  unsigned int dwFlags;
+  unsigned int dwSeverity;
+  unsigned int dwHTMLHelpID;
+  const wchar_t *szAppName;
+  const wchar_t *szVendorName;
+  const wchar_t *szSummaryMsg;
+  const wchar_t *szFullPath;
+  const wchar_t *szLink;
+  const wchar_t *szURL;
+  unsigned int dwFWLinkNumber;
+  unsigned int dwKBNumber;
+  const wchar_t *szAppStoreId;
+  unsigned int dwDatabaseType;
+
+};

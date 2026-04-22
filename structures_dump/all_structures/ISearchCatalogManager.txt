@@ -1,0 +1,9 @@
+// Структура: ISearchCatalogManager
+// Полей: 1
+// Строки в оригинале: 44010-44013
+struct ISearchCatalogManager
+{
+
+  struct ISearchCatalogManagerVtbl *lpVtbl;
+
+};

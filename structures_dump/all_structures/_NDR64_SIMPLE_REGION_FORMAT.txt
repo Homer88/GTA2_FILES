@@ -1,0 +1,12 @@
+// Структура: _NDR64_SIMPLE_REGION_FORMAT
+// Полей: 4
+// Строки в оригинале: 331261-331267
+struct _NDR64_SIMPLE_REGION_FORMAT
+{
+
+  unsigned __int8 FormatCode;
+  unsigned __int8 Alignment;
+  unsigned __int16 RegionSize;
+  unsigned int Reserved;
+
+};

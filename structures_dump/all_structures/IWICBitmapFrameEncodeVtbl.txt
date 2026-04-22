@@ -1,0 +1,22 @@
+// Структура: IWICBitmapFrameEncodeVtbl
+// Полей: 14
+// Строки в оригинале: 42323-42339
+struct IWICBitmapFrameEncodeVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICBitmapFrameEncode *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICBitmapFrameEncode *This);
+  ULONG (__stdcall *Release)(IWICBitmapFrameEncode *This);
+  HRESULT (__stdcall *Initialize)(IWICBitmapFrameEncode *This, IPropertyBag2 *pIEncoderOptions);
+  HRESULT (__stdcall *SetSize)(IWICBitmapFrameEncode *This, UINT uiWidth, UINT uiHeight);
+  HRESULT (__stdcall *SetResolution)(IWICBitmapFrameEncode *This, double dpiX, double dpiY);
+  HRESULT (__stdcall *SetPixelFormat)(IWICBitmapFrameEncode *This, WICPixelFormatGUID *pPixelFormat);
+  HRESULT (__stdcall *SetColorContexts)(IWICBitmapFrameEncode *This, UINT cCount, IWICColorContext **ppIColorContext);
+  HRESULT (__stdcall *SetPalette)(IWICBitmapFrameEncode *This, IWICPalette *pIPalette);
+  HRESULT (__stdcall *SetThumbnail)(IWICBitmapFrameEncode *This, IWICBitmapSource *pIThumbnail);
+  HRESULT (__stdcall *WritePixels)(IWICBitmapFrameEncode *This, UINT lineCount, UINT cbStride, UINT cbBufferSize, BYTE *pbPixels);
+  HRESULT (__stdcall *WriteSource)(IWICBitmapFrameEncode *This, IWICBitmapSource *pIBitmapSource, WICRect *prc);
+  HRESULT (__stdcall *Commit)(IWICBitmapFrameEncode *This);
+  HRESULT (__stdcall *GetMetadataQueryWriter)(IWICBitmapFrameEncode *This, IWICMetadataQueryWriter **ppIMetadataQueryWriter);
+
+};

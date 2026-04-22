@@ -1,0 +1,23 @@
+// Структура: ISearchFolderItemFactoryVtbl
+// Полей: 15
+// Строки в оригинале: 45351-45368
+struct ISearchFolderItemFactoryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISearchFolderItemFactory *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISearchFolderItemFactory *This);
+  ULONG (__stdcall *Release)(ISearchFolderItemFactory *This);
+  HRESULT (__stdcall *SetDisplayName)(ISearchFolderItemFactory *This, LPCWSTR pszDisplayName);
+  HRESULT (__stdcall *SetFolderTypeID)(ISearchFolderItemFactory *This, FOLDERTYPEID ftid);
+  HRESULT (__stdcall *SetFolderLogicalViewMode)(ISearchFolderItemFactory *This, FOLDERLOGICALVIEWMODE flvm);
+  HRESULT (__stdcall *SetIconSize)(ISearchFolderItemFactory *This, int iIconSize);
+  HRESULT (__stdcall *SetVisibleColumns)(ISearchFolderItemFactory *This, UINT cVisibleColumns, const PROPERTYKEY *rgKey);
+  HRESULT (__stdcall *SetSortColumns)(ISearchFolderItemFactory *This, UINT cSortColumns, SORTCOLUMN *rgSortColumns);
+  HRESULT (__stdcall *SetGroupColumn)(ISearchFolderItemFactory *This, const PROPERTYKEY *const keyGroup);
+  HRESULT (__stdcall *SetStacks)(ISearchFolderItemFactory *This, UINT cStackKeys, PROPERTYKEY *rgStackKeys);
+  HRESULT (__stdcall *SetScope)(ISearchFolderItemFactory *This, IShellItemArray *psiaScope);
+  HRESULT (__stdcall *SetCondition)(ISearchFolderItemFactory *This, ICondition *pCondition);
+  HRESULT (__stdcall *GetShellItem)(ISearchFolderItemFactory *This, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetIDList)(ISearchFolderItemFactory *This, LPITEMIDLIST *ppidl);
+
+};

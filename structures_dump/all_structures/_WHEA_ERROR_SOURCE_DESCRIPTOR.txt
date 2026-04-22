@@ -1,0 +1,19 @@
+// Структура: _WHEA_ERROR_SOURCE_DESCRIPTOR
+// Полей: 11
+// Строки в оригинале: 20072-20085
+struct _WHEA_ERROR_SOURCE_DESCRIPTOR
+{
+
+  unsigned int Length;
+  unsigned int Version;
+  _WHEA_ERROR_SOURCE_TYPE Type;
+  _WHEA_ERROR_SOURCE_STATE State;
+  unsigned int MaxRawDataLength;
+  unsigned int NumRecordsToPreallocate;
+  unsigned int MaxSectionsPerRecord;
+  unsigned int ErrorSourceId;
+  unsigned int PlatformErrorSourceId;
+  unsigned int Flags;
+  _WHEA_ERROR_SOURCE_DESCRIPTOR::$B8ED658053E0A7BBD43A8EB19CA26330 Info;
+
+};

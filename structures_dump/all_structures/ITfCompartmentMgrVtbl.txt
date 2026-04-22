@@ -1,0 +1,14 @@
+// Структура: ITfCompartmentMgrVtbl
+// Полей: 6
+// Строки в оригинале: 41661-41669
+struct ITfCompartmentMgrVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfCompartmentMgr *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfCompartmentMgr *This);
+  ULONG (__stdcall *Release)(ITfCompartmentMgr *This);
+  HRESULT (__stdcall *GetCompartment)(ITfCompartmentMgr *This, const GUID *const rguid, ITfCompartment **ppcomp);
+  HRESULT (__stdcall *ClearCompartment)(ITfCompartmentMgr *This, TfClientId tid, const GUID *const rguid);
+  HRESULT (__stdcall *EnumCompartments)(ITfCompartmentMgr *This, IEnumGUID **ppEnum);
+
+};

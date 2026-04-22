@@ -1,0 +1,18 @@
+// Структура: CarAudioSettings
+// Полей: 10
+// Строки в оригинале: 7847-7859
+struct CarAudioSettings
+{
+
+  char Flag;
+  char sirenActive;
+  char hornActive;
+  AudioSourceParams *AudioSourceParams;
+  char sirenActive1;
+  char field_9;
+  char field_A;
+  char field_B;
+  Player *Player;
+  int int;
+
+};

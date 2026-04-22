@@ -1,0 +1,14 @@
+// Структура: tagQACONTROL
+// Полей: 6
+// Строки в оригинале: 123648-123656
+struct tagQACONTROL
+{
+
+  unsigned int cbSize;
+  unsigned int dwMiscStatus;
+  unsigned int dwViewStatus;
+  unsigned int dwEventCookie;
+  unsigned int dwPropNotifyCookie;
+  unsigned int dwPointerActivationPolicy;
+
+};

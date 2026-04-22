@@ -1,0 +1,10 @@
+// Структура: _CERT_POLICY_MAPPING
+// Полей: 2
+// Строки в оригинале: 99363-99367
+struct _CERT_POLICY_MAPPING
+{
+
+  char *pszIssuerDomainPolicy;
+  char *pszSubjectDomainPolicy;
+
+};

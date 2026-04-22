@@ -1,0 +1,15 @@
+// Структура: _NDR64_PIPE_FORMAT
+// Полей: 7
+// Строки в оригинале: 332720-332729
+struct _NDR64_PIPE_FORMAT
+{
+
+  unsigned __int8 FormatCode;
+  unsigned __int8 Flags;
+  unsigned __int8 Alignment;
+  unsigned __int8 Reserved;
+  const void *Type;
+  unsigned int MemorySize;
+  unsigned int BufferSize;
+
+};

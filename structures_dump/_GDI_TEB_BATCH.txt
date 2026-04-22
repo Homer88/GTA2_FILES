@@ -1,0 +1,10 @@
+// Structure: _GDI_TEB_BATCH
+// Lines: 2468 - 2473
+// Fields: 4
+
+struct _GDI_TEB_BATCH
+{
+  unsigned int Offset;
+  unsigned int HDC;
+  unsigned int Buffer[310];
+};

@@ -1,0 +1,10 @@
+// Структура: FRAME_GetTypeInfoCount
+// Полей: 2
+// Строки в оригинале: 124047-124051
+struct FRAME_GetTypeInfoCount
+{
+
+  IDispatch *This;
+  unsigned int *pctinfo;
+
+};

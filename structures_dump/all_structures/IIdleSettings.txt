@@ -1,0 +1,9 @@
+// Структура: IIdleSettings
+// Полей: 1
+// Строки в оригинале: 44982-44985
+struct IIdleSettings
+{
+
+  struct IIdleSettingsVtbl *lpVtbl;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _RTL_PROTECTED_ACCESS
+// Полей: 3
+// Строки в оригинале: 109266-109271
+struct _RTL_PROTECTED_ACCESS
+{
+
+  unsigned int DominateMask;
+  unsigned int DeniedProcessAccess;
+  unsigned int DeniedThreadAccess;
+
+};

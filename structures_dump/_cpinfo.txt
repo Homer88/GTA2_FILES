@@ -1,0 +1,10 @@
+// Structure: _cpinfo
+// Lines: 2191 - 2196
+// Fields: 4
+
+struct _cpinfo
+{
+  UINT MaxCharSize;
+  BYTE DefaultChar[2];
+  BYTE LeadByte[12];
+};

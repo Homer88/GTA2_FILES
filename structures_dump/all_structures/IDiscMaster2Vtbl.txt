@@ -1,0 +1,19 @@
+// Структура: IDiscMaster2Vtbl
+// Полей: 11
+// Строки в оригинале: 35651-35664
+struct IDiscMaster2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDiscMaster2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDiscMaster2 *This);
+  ULONG (__stdcall *Release)(IDiscMaster2 *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IDiscMaster2 *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IDiscMaster2 *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IDiscMaster2 *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IDiscMaster2 *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get__NewEnum)(IDiscMaster2 *This, IEnumVARIANT **ppunk);
+  HRESULT (__stdcall *get_Item)(IDiscMaster2 *This, LONG index, BSTR *value);
+  HRESULT (__stdcall *get_Count)(IDiscMaster2 *This, LONG *value);
+  HRESULT (__stdcall *get_IsSupportedEnvironment)(IDiscMaster2 *This, VARIANT_BOOL *value);
+
+};

@@ -1,0 +1,20 @@
+// Структура: IOleParentUndoUnitVtbl
+// Полей: 12
+// Строки в оригинале: 33102-33116
+struct IOleParentUndoUnitVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleParentUndoUnit *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleParentUndoUnit *This);
+  ULONG (__stdcall *Release)(IOleParentUndoUnit *This);
+  HRESULT (__stdcall *Do)(IOleParentUndoUnit *This, IOleUndoManager *pUndoManager);
+  HRESULT (__stdcall *GetDescription)(IOleParentUndoUnit *This, BSTR *pBstr);
+  HRESULT (__stdcall *GetUnitType)(IOleParentUndoUnit *This, CLSID *pClsid, LONG *plID);
+  HRESULT (__stdcall *OnNextAdd)(IOleParentUndoUnit *This);
+  HRESULT (__stdcall *Open)(IOleParentUndoUnit *This, IOleParentUndoUnit *pPUU);
+  HRESULT (__stdcall *Close)(IOleParentUndoUnit *This, IOleParentUndoUnit *pPUU, BOOL fCommit);
+  HRESULT (__stdcall *Add)(IOleParentUndoUnit *This, IOleUndoUnit *pUU);
+  HRESULT (__stdcall *FindUnit)(IOleParentUndoUnit *This, IOleUndoUnit *pUU);
+  HRESULT (__stdcall *GetParentState)(IOleParentUndoUnit *This, DWORD *pdwState);
+
+};

@@ -1,0 +1,11 @@
+// Структура: _DEVPROPCOMPKEY
+// Полей: 3
+// Строки в оригинале: 280348-280353
+struct _DEVPROPCOMPKEY
+{
+
+  _DEVPROPKEY Key;
+  _DEVPROPSTORE Store;
+  const wchar_t *LocaleName;
+
+};

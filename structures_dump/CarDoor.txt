@@ -1,0 +1,14 @@
+// Structure: CarDoor
+// Lines: 3110 - 3119
+// Fields: 8
+
+struct CarDoor
+{
+  byte AnimationFrame[4];
+  int doorState;
+  Ped *PedInDoor;
+  byte field_C;
+  char rezerv_1;
+  char rezerv_2;
+  char Rezerv_3;
+};

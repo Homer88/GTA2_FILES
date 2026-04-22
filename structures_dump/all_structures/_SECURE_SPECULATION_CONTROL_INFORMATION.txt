@@ -1,0 +1,9 @@
+// Структура: _SECURE_SPECULATION_CONTROL_INFORMATION
+// Полей: 1
+// Строки в оригинале: 88069-88072
+struct _SECURE_SPECULATION_CONTROL_INFORMATION
+{
+
+  _SECURE_SPECULATION_CONTROL_INFORMATION::<unnamed_type_SecureSpeculationFlags> SecureSpeculationFlags;
+
+};

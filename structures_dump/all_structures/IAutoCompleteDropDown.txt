@@ -1,0 +1,9 @@
+// Структура: IAutoCompleteDropDown
+// Полей: 1
+// Строки в оригинале: 45282-45285
+struct IAutoCompleteDropDown
+{
+
+  struct IAutoCompleteDropDownVtbl *lpVtbl;
+
+};

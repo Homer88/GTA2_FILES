@@ -1,0 +1,9 @@
+// Структура: _FILE_IO_COMPLETION_NOTIFICATION_INFORMATION
+// Полей: 1
+// Строки в оригинале: 97879-97882
+struct _FILE_IO_COMPLETION_NOTIFICATION_INFORMATION
+{
+
+  unsigned int Flags;
+
+};

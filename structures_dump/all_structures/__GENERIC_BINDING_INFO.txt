@@ -1,0 +1,12 @@
+// Структура: __GENERIC_BINDING_INFO
+// Полей: 4
+// Строки в оригинале: 85965-85971
+struct __GENERIC_BINDING_INFO
+{
+
+  void *pObj;
+  unsigned int Size;
+  void *(__stdcall *pfnBind)(void *);
+  void (__stdcall *pfnUnbind)(void *, unsigned __int8 *);
+
+};

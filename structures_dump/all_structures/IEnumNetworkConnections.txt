@@ -1,0 +1,9 @@
+// Структура: IEnumNetworkConnections
+// Полей: 1
+// Строки в оригинале: 45928-45931
+struct IEnumNetworkConnections
+{
+
+  struct IEnumNetworkConnectionsVtbl *lpVtbl;
+
+};

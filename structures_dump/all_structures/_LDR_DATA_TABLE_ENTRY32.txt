@@ -1,0 +1,21 @@
+// Структура: _LDR_DATA_TABLE_ENTRY32
+// Полей: 13
+// Строки в оригинале: 87684-87699
+struct _LDR_DATA_TABLE_ENTRY32
+{
+
+  LIST_ENTRY32 InLoadOrderLinks;
+  LIST_ENTRY32 InMemoryOrderLinks;
+  LIST_ENTRY32 InInitializationOrderLinks;
+  unsigned int DllBase;
+  unsigned int EntryPoint;
+  unsigned int SizeOfImage;
+  _STRING32 FullDllName;
+  _STRING32 BaseDllName;
+  unsigned int Flags;
+  unsigned __int16 LoadCount;
+  unsigned __int16 TlsIndex;
+  $330390685AD2BC1BDEC8CFF9837A50B2 ___u11;
+  $6E759410AF0132AAE81951E96AC43B3B ___u12;
+
+};

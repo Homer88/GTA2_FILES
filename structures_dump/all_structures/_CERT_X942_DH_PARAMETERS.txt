@@ -1,0 +1,13 @@
+// Структура: _CERT_X942_DH_PARAMETERS
+// Полей: 5
+// Строки в оригинале: 106687-106694
+struct _CERT_X942_DH_PARAMETERS
+{
+
+  _CRYPTOAPI_BLOB p;
+  _CRYPTOAPI_BLOB g;
+  _CRYPTOAPI_BLOB q;
+  _CRYPTOAPI_BLOB j;
+  _CERT_X942_DH_VALIDATION_PARAMS *pValidationParams;
+
+};

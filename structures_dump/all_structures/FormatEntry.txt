@@ -1,0 +1,12 @@
+// Структура: FormatEntry
+// Полей: 4
+// Строки в оригинале: 142154-142160
+struct FormatEntry
+{
+
+  unsigned __int16 cfFormat;
+  unsigned int tymed;
+  wchar_t *formatName;
+  int formatNameLen;
+
+};

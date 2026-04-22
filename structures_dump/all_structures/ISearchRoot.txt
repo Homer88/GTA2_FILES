@@ -1,0 +1,9 @@
+// Структура: ISearchRoot
+// Полей: 1
+// Строки в оригинале: 44315-44318
+struct ISearchRoot
+{
+
+  struct ISearchRootVtbl *lpVtbl;
+
+};

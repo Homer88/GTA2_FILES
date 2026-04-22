@@ -1,0 +1,11 @@
+// Structure: _RTTIClassHierarchyDescriptor
+// Lines: 5796 - 5802
+// Fields: 5
+
+struct _RTTIClassHierarchyDescriptor
+{
+  int signature;
+  int attributes;
+  int numBaseClasses;
+  _UNKNOWN *baseClassArray __off;
+};

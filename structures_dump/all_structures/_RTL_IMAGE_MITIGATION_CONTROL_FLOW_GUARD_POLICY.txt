@@ -1,0 +1,10 @@
+// Структура: _RTL_IMAGE_MITIGATION_CONTROL_FLOW_GUARD_POLICY
+// Полей: 2
+// Строки в оригинале: 99105-99109
+struct _RTL_IMAGE_MITIGATION_CONTROL_FLOW_GUARD_POLICY
+{
+
+  _RTL_IMAGE_MITIGATION_POLICY ControlFlowGuard;
+  _RTL_IMAGE_MITIGATION_POLICY StrictControlFlowGuard;
+
+};

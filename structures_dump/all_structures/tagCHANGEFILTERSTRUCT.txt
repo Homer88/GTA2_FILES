@@ -1,0 +1,10 @@
+// Структура: tagCHANGEFILTERSTRUCT
+// Полей: 2
+// Строки в оригинале: 97222-97226
+struct tagCHANGEFILTERSTRUCT
+{
+
+  unsigned int cbSize;
+  unsigned int ExtStatus;
+
+};

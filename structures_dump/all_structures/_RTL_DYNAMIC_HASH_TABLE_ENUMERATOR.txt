@@ -1,0 +1,11 @@
+// Структура: _RTL_DYNAMIC_HASH_TABLE_ENUMERATOR
+// Полей: 3
+// Строки в оригинале: 12825-12830
+struct _RTL_DYNAMIC_HASH_TABLE_ENUMERATOR
+{
+
+  $40F200FD2FCA5895FECB2B741F2371D6 ___u0;
+  _LIST_ENTRY *ChainHead;
+  unsigned int BucketIndex;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _PATCHWRITEDATA
+// Полей: 3
+// Строки в оригинале: 312410-312415
+struct _PATCHWRITEDATA
+{
+
+  unsigned int dwSizeData;
+  _RELATIVE_MODULE_ADDRESS rva;
+  unsigned __int8 data[];
+
+};

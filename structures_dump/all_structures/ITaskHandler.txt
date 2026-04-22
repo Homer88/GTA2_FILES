@@ -1,0 +1,9 @@
+// Структура: ITaskHandler
+// Полей: 1
+// Строки в оригинале: 32599-32602
+struct ITaskHandler
+{
+
+  struct ITaskHandlerVtbl *lpVtbl;
+
+};

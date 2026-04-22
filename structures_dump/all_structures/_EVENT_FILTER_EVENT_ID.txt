@@ -1,0 +1,12 @@
+// Структура: _EVENT_FILTER_EVENT_ID
+// Полей: 4
+// Строки в оригинале: 310821-310827
+struct _EVENT_FILTER_EVENT_ID
+{
+
+  unsigned __int8 FilterIn;
+  unsigned __int8 Reserved;
+  unsigned __int16 Count;
+  unsigned __int16 Events[1];
+
+};

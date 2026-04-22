@@ -1,0 +1,10 @@
+// Структура: IMAGE_COR_ILMETHOD_SECT_FAT
+// Полей: 2
+// Строки в оригинале: 332124-332128
+struct IMAGE_COR_ILMETHOD_SECT_FAT
+{
+
+  unsigned __int32 Kind : 8;
+  unsigned __int32 DataSize : 24;
+
+};

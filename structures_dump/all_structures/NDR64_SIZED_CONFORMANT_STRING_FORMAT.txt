@@ -1,0 +1,10 @@
+// Структура: NDR64_SIZED_CONFORMANT_STRING_FORMAT
+// Полей: 2
+// Строки в оригинале: 332694-332698
+struct NDR64_SIZED_CONFORMANT_STRING_FORMAT
+{
+
+  NDR64_STRING_HEADER_FORMAT Header;
+  const void *SizeDescription;
+
+};

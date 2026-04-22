@@ -1,0 +1,12 @@
+// Структура: _LDR_ENUM_RESOURCE_ENTRY
+// Полей: 4
+// Строки в оригинале: 95374-95380
+struct _LDR_ENUM_RESOURCE_ENTRY
+{
+
+  _LDR_ENUM_RESOURCE_ENTRY::<unnamed_type_Path> Path[3];
+  void *Data;
+  unsigned int Size;
+  unsigned int Reserved;
+
+};

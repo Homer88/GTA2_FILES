@@ -1,0 +1,10 @@
+// Структура: _EISA_DMA_CONFIGURATION
+// Полей: 2
+// Строки в оригинале: 89883-89887
+struct _EISA_DMA_CONFIGURATION
+{
+
+  _DMA_CONFIGURATION_BYTE0 ConfigurationByte0;
+  _DMA_CONFIGURATION_BYTE1 ConfigurationByte1;
+
+};

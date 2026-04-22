@@ -1,0 +1,12 @@
+// Структура: IObjectWithBackReferencesVtbl
+// Полей: 4
+// Строки в оригинале: 41370-41376
+struct IObjectWithBackReferencesVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IObjectWithBackReferences *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IObjectWithBackReferences *This);
+  ULONG (__stdcall *Release)(IObjectWithBackReferences *This);
+  HRESULT (__stdcall *RemoveBackReferences)(IObjectWithBackReferences *This);
+
+};

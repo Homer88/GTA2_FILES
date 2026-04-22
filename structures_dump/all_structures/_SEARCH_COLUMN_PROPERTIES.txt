@@ -1,0 +1,10 @@
+// Структура: _SEARCH_COLUMN_PROPERTIES
+// Полей: 2
+// Строки в оригинале: 44308-44312
+struct _SEARCH_COLUMN_PROPERTIES
+{
+
+  PROPVARIANT Value;
+  LCID lcid;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesGhostInfo
+// Полей: 1
+// Строки в оригинале: 28623-28626
+struct IOfflineFilesGhostInfo
+{
+
+  struct IOfflineFilesGhostInfoVtbl *lpVtbl;
+
+};

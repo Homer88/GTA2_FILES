@@ -1,0 +1,12 @@
+// Структура: _SD_CHANGE_MACHINE_SID_INPUT
+// Полей: 4
+// Строки в оригинале: 92892-92898
+struct _SD_CHANGE_MACHINE_SID_INPUT
+{
+
+  unsigned __int16 CurrentMachineSIDOffset;
+  unsigned __int16 CurrentMachineSIDLength;
+  unsigned __int16 NewMachineSIDOffset;
+  unsigned __int16 NewMachineSIDLength;
+
+};

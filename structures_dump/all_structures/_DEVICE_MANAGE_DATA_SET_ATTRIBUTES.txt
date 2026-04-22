@@ -1,0 +1,15 @@
+// Структура: _DEVICE_MANAGE_DATA_SET_ATTRIBUTES
+// Полей: 7
+// Строки в оригинале: 149377-149386
+struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES
+{
+
+  unsigned int Size;
+  unsigned int Action;
+  unsigned int Flags;
+  unsigned int ParameterBlockOffset;
+  unsigned int ParameterBlockLength;
+  unsigned int DataSetRangesOffset;
+  unsigned int DataSetRangesLength;
+
+};

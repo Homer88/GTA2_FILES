@@ -1,0 +1,9 @@
+// Структура: _CSV_MGMT_LOCK
+// Полей: 1
+// Строки в оригинале: 84240-84243
+struct _CSV_MGMT_LOCK
+{
+
+  unsigned int Flags;
+
+};

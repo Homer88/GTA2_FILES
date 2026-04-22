@@ -1,0 +1,10 @@
+// Структура: DISPLAYCONFIG_ADAPTER_NAME
+// Полей: 2
+// Строки в оригинале: 94318-94322
+struct DISPLAYCONFIG_ADAPTER_NAME
+{
+
+  DISPLAYCONFIG_DEVICE_INFO_HEADER header;
+  wchar_t adapterDevicePath[128];
+
+};

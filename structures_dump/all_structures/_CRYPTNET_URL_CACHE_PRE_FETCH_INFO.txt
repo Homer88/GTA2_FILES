@@ -1,0 +1,15 @@
+// Структура: _CRYPTNET_URL_CACHE_PRE_FETCH_INFO
+// Полей: 7
+// Строки в оригинале: 106260-106269
+struct _CRYPTNET_URL_CACHE_PRE_FETCH_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int dwObjectType;
+  unsigned int dwError;
+  unsigned int dwReserved;
+  _FILETIME ThisUpdateTime;
+  _FILETIME NextUpdateTime;
+  _FILETIME PublishTime;
+
+};

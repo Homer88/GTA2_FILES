@@ -1,0 +1,12 @@
+// Структура: _D3DCOLORVALUE
+// Полей: 4
+// Строки в оригинале: 25508-25514
+struct _D3DCOLORVALUE
+{
+
+  float r;
+  float g;
+  float b;
+  float a;
+
+};

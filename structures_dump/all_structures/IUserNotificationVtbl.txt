@@ -1,0 +1,16 @@
+// Структура: IUserNotificationVtbl
+// Полей: 8
+// Строки в оригинале: 39974-39984
+struct IUserNotificationVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IUserNotification *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IUserNotification *This);
+  ULONG (__stdcall *Release)(IUserNotification *This);
+  HRESULT (__stdcall *SetBalloonInfo)(IUserNotification *This, LPCWSTR pszTitle, LPCWSTR pszText, DWORD dwInfoFlags);
+  HRESULT (__stdcall *SetBalloonRetry)(IUserNotification *This, DWORD dwShowTime, DWORD dwInterval, UINT cRetryCount);
+  HRESULT (__stdcall *SetIconInfo)(IUserNotification *This, HICON hIcon, LPCWSTR pszToolTip);
+  HRESULT (__stdcall *Show)(IUserNotification *This, IQueryContinue *pqc, DWORD dwContinuePollInterval);
+  HRESULT (__stdcall *PlaySoundA)(IUserNotification *This, LPCWSTR pszSoundName);
+
+};

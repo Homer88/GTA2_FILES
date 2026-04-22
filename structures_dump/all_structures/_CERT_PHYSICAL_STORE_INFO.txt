@@ -1,0 +1,15 @@
+// Структура: _CERT_PHYSICAL_STORE_INFO
+// Полей: 7
+// Строки в оригинале: 112739-112748
+struct _CERT_PHYSICAL_STORE_INFO
+{
+
+  unsigned int cbSize;
+  char *pszOpenStoreProvider;
+  unsigned int dwOpenEncodingType;
+  unsigned int dwOpenFlags;
+  _CRYPTOAPI_BLOB OpenParameters;
+  unsigned int dwFlags;
+  unsigned int dwPriority;
+
+};

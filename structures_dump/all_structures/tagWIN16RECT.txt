@@ -1,0 +1,12 @@
+// Структура: tagWIN16RECT
+// Полей: 4
+// Строки в оригинале: 81708-81714
+struct tagWIN16RECT
+{
+
+  unsigned __int16 left;
+  unsigned __int16 top;
+  unsigned __int16 right;
+  unsigned __int16 bottom;
+
+};

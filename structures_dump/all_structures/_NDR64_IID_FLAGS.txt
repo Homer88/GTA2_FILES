@@ -1,0 +1,10 @@
+// Структура: _NDR64_IID_FLAGS
+// Полей: 2
+// Строки в оригинале: 330852-330856
+struct _NDR64_IID_FLAGS
+{
+
+  unsigned __int8 ConstantIID : 1;
+  unsigned __int8 Reserved : 7;
+
+};

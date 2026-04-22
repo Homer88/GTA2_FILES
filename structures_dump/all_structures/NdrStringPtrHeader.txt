@@ -1,0 +1,12 @@
+// Структура: NdrStringPtrHeader
+// Полей: 4
+// Строки в оригинале: 220090-220096
+struct NdrStringPtrHeader
+{
+
+  unsigned int dwUnique;
+  unsigned int dwMax;
+  unsigned int dwOffset;
+  unsigned int dwActual;
+
+};

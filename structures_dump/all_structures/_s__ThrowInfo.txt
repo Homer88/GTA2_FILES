@@ -1,0 +1,12 @@
+// Структура: _s__ThrowInfo
+// Полей: 4
+// Строки в оригинале: 107917-107923
+struct _s__ThrowInfo
+{
+
+  unsigned int attributes;
+  void (__cdecl *pmfnUnwind)(void *);
+  int (*pForwardCompat)(...);
+  const _s__CatchableTypeArray *pCatchableTypeArray;
+
+};

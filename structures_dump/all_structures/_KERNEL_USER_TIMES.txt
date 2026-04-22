@@ -1,0 +1,12 @@
+// Структура: _KERNEL_USER_TIMES
+// Полей: 4
+// Строки в оригинале: 97989-97995
+struct _KERNEL_USER_TIMES
+{
+
+  _LARGE_INTEGER CreateTime;
+  _LARGE_INTEGER ExitTime;
+  _LARGE_INTEGER KernelTime;
+  _LARGE_INTEGER UserTime;
+
+};

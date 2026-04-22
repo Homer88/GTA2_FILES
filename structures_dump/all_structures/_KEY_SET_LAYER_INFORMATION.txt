@@ -1,0 +1,13 @@
+// Структура: _KEY_SET_LAYER_INFORMATION
+// Полей: 5
+// Строки в оригинале: 87531-87538
+struct _KEY_SET_LAYER_INFORMATION
+{
+
+  unsigned __int32 IsTombstone : 1;
+  unsigned __int32 IsSupersedeLocal : 1;
+  unsigned __int32 IsSupersedeTree : 1;
+  unsigned __int32 ClassIsInherited : 1;
+  unsigned __int32 Reserved : 28;
+
+};

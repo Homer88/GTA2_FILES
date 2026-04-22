@@ -1,0 +1,10 @@
+// Структура: _TOKEN_SOURCE
+// Полей: 2
+// Строки в оригинале: 86886-86890
+struct _TOKEN_SOURCE
+{
+
+  char SourceName[8];
+  _LUID SourceIdentifier;
+
+};

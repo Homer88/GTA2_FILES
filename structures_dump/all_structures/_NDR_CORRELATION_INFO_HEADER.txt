@@ -1,0 +1,12 @@
+// Структура: _NDR_CORRELATION_INFO_HEADER
+// Полей: 4
+// Строки в оригинале: 86265-86271
+struct _NDR_CORRELATION_INFO_HEADER
+{
+
+  _NDR_CORRELATION_INFO *pCache;
+  _NDR_CORRELATION_INFO *pInfo;
+  int DataSize;
+  int DataLen;
+
+};

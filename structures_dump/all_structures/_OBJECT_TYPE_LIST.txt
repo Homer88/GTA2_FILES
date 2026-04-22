@@ -1,0 +1,11 @@
+// Структура: _OBJECT_TYPE_LIST
+// Полей: 3
+// Строки в оригинале: 82059-82064
+struct _OBJECT_TYPE_LIST
+{
+
+  unsigned __int16 Level;
+  unsigned __int16 Sbz;
+  _GUID *ObjectType;
+
+};

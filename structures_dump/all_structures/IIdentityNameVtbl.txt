@@ -1,0 +1,13 @@
+// Структура: IIdentityNameVtbl
+// Полей: 5
+// Строки в оригинале: 37240-37247
+struct IIdentityNameVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IIdentityName *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IIdentityName *This);
+  ULONG (__stdcall *Release)(IIdentityName *This);
+  HRESULT (__stdcall *GetItemIDList)(IIdentityName *This, LPITEMIDLIST *ppidl);
+  HRESULT (__stdcall *GetItem)(IIdentityName *This, IShellItem **ppsi);
+
+};

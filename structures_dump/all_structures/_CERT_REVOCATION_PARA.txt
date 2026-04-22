@@ -1,0 +1,14 @@
+// Структура: _CERT_REVOCATION_PARA
+// Полей: 6
+// Строки в оригинале: 83266-83274
+struct _CERT_REVOCATION_PARA
+{
+
+  unsigned int cbSize;
+  const _CERT_CONTEXT *pIssuerCert;
+  unsigned int cCertStore;
+  void **rgCertStore;
+  void *hCrlStore;
+  _FILETIME *pftTimeToUse;
+
+};

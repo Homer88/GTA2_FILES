@@ -1,0 +1,10 @@
+// Структура: _NDR_USER_MARSHAL_INFO
+// Полей: 2
+// Строки в оригинале: 95596-95600
+struct _NDR_USER_MARSHAL_INFO
+{
+
+  unsigned int InformationLevel;
+  _NDR_USER_MARSHAL_INFO_LEVEL1 Level1;
+
+};

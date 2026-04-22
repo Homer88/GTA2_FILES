@@ -1,0 +1,12 @@
+// Структура: _DEBUG_EVENT
+// Полей: 4
+// Строки в оригинале: 104576-104582
+struct _DEBUG_EVENT
+{
+
+  unsigned int dwDebugEventCode;
+  unsigned int dwProcessId;
+  unsigned int dwThreadId;
+  _DEBUG_EVENT::<unnamed_type_u> u;
+
+};

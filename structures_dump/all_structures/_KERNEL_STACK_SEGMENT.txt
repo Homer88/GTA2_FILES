@@ -1,0 +1,12 @@
+// Структура: _KERNEL_STACK_SEGMENT
+// Полей: 4
+// Строки в оригинале: 16075-16081
+struct _KERNEL_STACK_SEGMENT
+{
+
+  unsigned int StackBase;
+  unsigned int StackLimit;
+  unsigned int KernelStack;
+  unsigned int InitialStack;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _SID_IDENTIFIER_AUTHORITY
+// Полей: 1
+// Строки в оригинале: 18586-18589
+struct _SID_IDENTIFIER_AUTHORITY
+{
+
+  unsigned __int8 Value[6];
+
+};

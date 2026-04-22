@@ -1,0 +1,9 @@
+// Структура: IEnumVARIANT
+// Полей: 1
+// Строки в оригинале: 32518-32521
+struct IEnumVARIANT
+{
+
+  struct IEnumVARIANTVtbl *lpVtbl;
+
+};

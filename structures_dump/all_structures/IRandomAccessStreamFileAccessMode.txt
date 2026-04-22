@@ -1,0 +1,9 @@
+// Структура: IRandomAccessStreamFileAccessMode
+// Полей: 1
+// Строки в оригинале: 352368-352371
+struct IRandomAccessStreamFileAccessMode
+{
+
+  struct IRandomAccessStreamFileAccessModeVtbl *lpVtbl;
+
+};

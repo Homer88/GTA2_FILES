@@ -1,0 +1,10 @@
+// Структура: _FILE_FS_DEVICE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 105767-105771
+struct _FILE_FS_DEVICE_INFORMATION
+{
+
+  unsigned int DeviceType;
+  unsigned int Characteristics;
+
+};

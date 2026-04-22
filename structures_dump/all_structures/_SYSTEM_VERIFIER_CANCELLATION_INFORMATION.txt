@@ -1,0 +1,14 @@
+// Структура: _SYSTEM_VERIFIER_CANCELLATION_INFORMATION
+// Полей: 6
+// Строки в оригинале: 93138-93146
+struct _SYSTEM_VERIFIER_CANCELLATION_INFORMATION
+{
+
+  unsigned int CancelProbability;
+  unsigned int CancelThreshold;
+  unsigned int CompletionThreshold;
+  unsigned int CancellationVerifierDisabled;
+  unsigned int AvailableIssues;
+  _SYSTEM_VERIFIER_ISSUE Issues[128];
+
+};

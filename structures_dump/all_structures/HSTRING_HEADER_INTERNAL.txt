@@ -1,0 +1,13 @@
+// Структура: HSTRING_HEADER_INTERNAL
+// Полей: 5
+// Строки в оригинале: 283985-283992
+struct HSTRING_HEADER_INTERNAL
+{
+
+  WINDOWS_RUNTIME_HSTRING_FLAGS flags;
+  unsigned int length;
+  unsigned int padding1;
+  unsigned int padding2;
+  const wchar_t *stringRef;
+
+};

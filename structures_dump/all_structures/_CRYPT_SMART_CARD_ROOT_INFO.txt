@@ -1,0 +1,10 @@
+// Структура: _CRYPT_SMART_CARD_ROOT_INFO
+// Полей: 2
+// Строки в оригинале: 109402-109406
+struct _CRYPT_SMART_CARD_ROOT_INFO
+{
+
+  unsigned __int8 rgbCardID[16];
+  _ROOT_INFO_LUID luid;
+
+};

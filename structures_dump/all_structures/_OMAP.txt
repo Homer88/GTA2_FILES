@@ -1,0 +1,10 @@
+// Структура: _OMAP
+// Полей: 2
+// Строки в оригинале: 123030-123034
+struct _OMAP
+{
+
+  unsigned int rva;
+  unsigned int rvaTo;
+
+};

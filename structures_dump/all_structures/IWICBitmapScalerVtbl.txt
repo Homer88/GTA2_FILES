@@ -1,0 +1,17 @@
+// Структура: IWICBitmapScalerVtbl
+// Полей: 9
+// Строки в оригинале: 42049-42060
+struct IWICBitmapScalerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICBitmapScaler *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICBitmapScaler *This);
+  ULONG (__stdcall *Release)(IWICBitmapScaler *This);
+  HRESULT (__stdcall *GetSize)(IWICBitmapScaler *This, UINT *puiWidth, UINT *puiHeight);
+  HRESULT (__stdcall *GetPixelFormat)(IWICBitmapScaler *This, WICPixelFormatGUID *pPixelFormat);
+  HRESULT (__stdcall *GetResolution)(IWICBitmapScaler *This, double *pDpiX, double *pDpiY);
+  HRESULT (__stdcall *CopyPalette)(IWICBitmapScaler *This, IWICPalette *pIPalette);
+  HRESULT (__stdcall *CopyPixels)(IWICBitmapScaler *This, const WICRect *prc, UINT cbStride, UINT cbBufferSize, BYTE *pbBuffer);
+  HRESULT (__stdcall *Initialize)(IWICBitmapScaler *This, IWICBitmapSource *pISource, UINT uiWidth, UINT uiHeight, WICBitmapInterpolationMode mode);
+
+};

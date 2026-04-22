@@ -1,0 +1,19 @@
+// Структура: PPM_WMI_IDLE_STATE
+// Полей: 11
+// Строки в оригинале: 88481-88494
+struct PPM_WMI_IDLE_STATE
+{
+
+  unsigned int Latency;
+  unsigned int Power;
+  unsigned int TimeCheck;
+  unsigned __int8 PromotePercent;
+  unsigned __int8 DemotePercent;
+  unsigned __int8 StateType;
+  unsigned __int8 Reserved;
+  unsigned int StateFlags;
+  unsigned int Context;
+  unsigned int IdleHandler;
+  unsigned int Reserved1;
+
+};

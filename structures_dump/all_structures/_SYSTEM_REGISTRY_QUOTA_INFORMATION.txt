@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_REGISTRY_QUOTA_INFORMATION
+// Полей: 3
+// Строки в оригинале: 89412-89417
+struct _SYSTEM_REGISTRY_QUOTA_INFORMATION
+{
+
+  unsigned int RegistryQuotaAllowed;
+  unsigned int RegistryQuotaUsed;
+  unsigned int PagedPoolSize;
+
+};

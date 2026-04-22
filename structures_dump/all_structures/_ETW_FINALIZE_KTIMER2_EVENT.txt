@@ -1,0 +1,11 @@
+// Структура: _ETW_FINALIZE_KTIMER2_EVENT
+// Полей: 3
+// Строки в оригинале: 310432-310437
+struct _ETW_FINALIZE_KTIMER2_EVENT
+{
+
+  unsigned int TimerKey;
+  unsigned int DisableCallback;
+  unsigned int DisableContextKey;
+
+};

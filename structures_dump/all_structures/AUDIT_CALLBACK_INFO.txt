@@ -1,0 +1,15 @@
+// Структура: AUDIT_CALLBACK_INFO
+// Полей: 7
+// Строки в оригинале: 127076-127085
+struct AUDIT_CALLBACK_INFO
+{
+
+  wchar_t *sourceDescription;
+  wchar_t *targetDescription;
+  wchar_t *dataDescription;
+  EDP_AUDIT_ACTION action;
+  unsigned int targetProcessId;
+  wchar_t *targetAppId;
+  wchar_t *dataFilePaths;
+
+};

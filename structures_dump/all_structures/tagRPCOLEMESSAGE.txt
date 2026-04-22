@@ -1,0 +1,15 @@
+// Структура: tagRPCOLEMESSAGE
+// Полей: 7
+// Строки в оригинале: 61379-61388
+struct tagRPCOLEMESSAGE
+{
+
+  void *reserved1;
+  unsigned int dataRepresentation;
+  void *Buffer;
+  unsigned int cbBuffer;
+  unsigned int iMethod;
+  void *reserved2[5];
+  unsigned int rpcFlags;
+
+};

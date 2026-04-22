@@ -1,0 +1,9 @@
+// Структура: IHWEventHandler2
+// Полей: 1
+// Строки в оригинале: 45187-45190
+struct IHWEventHandler2
+{
+
+  struct IHWEventHandler2Vtbl *lpVtbl;
+
+};

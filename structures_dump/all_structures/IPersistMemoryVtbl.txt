@@ -1,0 +1,17 @@
+// Структура: IPersistMemoryVtbl
+// Полей: 9
+// Строки в оригинале: 352559-352570
+struct IPersistMemoryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPersistMemory *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPersistMemory *This);
+  ULONG (__stdcall *Release)(IPersistMemory *This);
+  HRESULT (__stdcall *GetClassID)(IPersistMemory *This, CLSID *pClassID);
+  HRESULT (__stdcall *IsDirty)(IPersistMemory *This);
+  HRESULT (__stdcall *Load)(IPersistMemory *This, LPVOID pMem, ULONG cbSize);
+  HRESULT (__stdcall *Save)(IPersistMemory *This, LPVOID pMem, BOOL fClearDirty, ULONG cbSize);
+  HRESULT (__stdcall *GetSizeMax)(IPersistMemory *This, ULONG *pCbSize);
+  HRESULT (__stdcall *InitNew)(IPersistMemory *This);
+
+};

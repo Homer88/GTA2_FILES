@@ -1,0 +1,10 @@
+// Structure: _STRING
+// Lines: 2962 - 2967
+// Fields: 4
+
+struct _STRING
+{
+  unsigned __int16 Length;
+  unsigned __int16 MaximumLength;
+  char *Buffer;
+};

@@ -1,0 +1,10 @@
+// Структура: _LIST_ENTRY
+// Полей: 2
+// Строки в оригинале: 2484-2488
+struct _LIST_ENTRY
+{
+
+  struct _LIST_ENTRY *Flink;
+  struct _LIST_ENTRY *Blink;
+
+};

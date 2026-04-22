@@ -1,0 +1,10 @@
+// Структура: _CRYPT_CONTEXT_FUNCTION_CONFIG
+// Полей: 2
+// Строки в оригинале: 86911-86915
+struct _CRYPT_CONTEXT_FUNCTION_CONFIG
+{
+
+  unsigned int dwFlags;
+  unsigned int dwReserved;
+
+};

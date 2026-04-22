@@ -1,0 +1,10 @@
+// Структура: _IO_STATUS_BLOCK
+// Полей: 2
+// Строки в оригинале: 16138-16142
+struct _IO_STATUS_BLOCK
+{
+
+  $250F5FE22B4503EFD7D48C86CC7F2167 ___u0;
+  unsigned int Information;
+
+};

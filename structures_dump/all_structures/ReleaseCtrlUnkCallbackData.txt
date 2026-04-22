@@ -1,0 +1,10 @@
+// Структура: ReleaseCtrlUnkCallbackData
+// Полей: 2
+// Строки в оригинале: 248990-248994
+struct ReleaseCtrlUnkCallbackData
+{
+
+  CStdIdentity *pStdId;
+  unsigned int dwType;
+
+};

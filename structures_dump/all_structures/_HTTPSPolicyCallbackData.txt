@@ -1,0 +1,12 @@
+// Структура: _HTTPSPolicyCallbackData
+// Полей: 4
+// Строки в оригинале: 89044-89050
+struct _HTTPSPolicyCallbackData
+{
+
+  $B5432B5766EACA8D7A891B0C9CA17601 ___u0;
+  unsigned int dwAuthType;
+  unsigned int fdwChecks;
+  wchar_t *pwszServerName;
+
+};

@@ -1,0 +1,12 @@
+// Структура: IProcessInitControlVtbl
+// Полей: 4
+// Строки в оригинале: 351605-351611
+struct IProcessInitControlVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IProcessInitControl *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IProcessInitControl *This);
+  ULONG (__stdcall *Release)(IProcessInitControl *This);
+  HRESULT (__stdcall *ResetInitializerTimeout)(IProcessInitControl *This, DWORD dwSecondsRemaining);
+
+};

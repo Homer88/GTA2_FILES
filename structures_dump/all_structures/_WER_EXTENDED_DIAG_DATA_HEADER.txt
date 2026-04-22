@@ -1,0 +1,10 @@
+// Структура: _WER_EXTENDED_DIAG_DATA_HEADER
+// Полей: 2
+// Строки в оригинале: 287527-287531
+struct _WER_EXTENDED_DIAG_DATA_HEADER
+{
+
+  unsigned int Size;
+  unsigned int Signature;
+
+};

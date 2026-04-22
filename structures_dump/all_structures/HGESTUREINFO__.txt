@@ -1,0 +1,9 @@
+// Структура: HGESTUREINFO__
+// Полей: 1
+// Строки в оригинале: 106289-106292
+struct HGESTUREINFO__
+{
+
+  int unused;
+
+};

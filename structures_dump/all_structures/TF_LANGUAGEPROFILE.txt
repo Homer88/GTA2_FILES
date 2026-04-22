@@ -1,0 +1,13 @@
+// Структура: TF_LANGUAGEPROFILE
+// Полей: 5
+// Строки в оригинале: 40669-40676
+struct TF_LANGUAGEPROFILE
+{
+
+  CLSID clsid;
+  LANGID langid;
+  GUID catid;
+  BOOL fActive;
+  GUID guidProfile;
+
+};

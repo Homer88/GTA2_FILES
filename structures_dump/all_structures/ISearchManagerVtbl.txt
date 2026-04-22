@@ -1,0 +1,24 @@
+// Структура: ISearchManagerVtbl
+// Полей: 16
+// Строки в оригинале: 43983-44001
+struct ISearchManagerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISearchManager *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISearchManager *This);
+  ULONG (__stdcall *Release)(ISearchManager *This);
+  HRESULT (__stdcall *GetIndexerVersionStr)(ISearchManager *This, LPWSTR *ppszVersionString);
+  HRESULT (__stdcall *GetIndexerVersion)(ISearchManager *This, DWORD *pdwMajor, DWORD *pdwMinor);
+  HRESULT (__stdcall *GetParameter)(ISearchManager *This, LPCWSTR pszName, PROPVARIANT **ppValue);
+  HRESULT (__stdcall *SetParameter)(ISearchManager *This, LPCWSTR pszName, const PROPVARIANT *pValue);
+  HRESULT (__stdcall *get_ProxyName)(ISearchManager *This, LPWSTR *ppszProxyName);
+  HRESULT (__stdcall *get_BypassList)(ISearchManager *This, LPWSTR *ppszBypassList);
+  HRESULT (__stdcall *SetProxy)(ISearchManager *This, PROXY_ACCESS sUseProxy, BOOL fLocalByPassProxy, DWORD dwPortNumber, LPCWSTR pszProxyName, LPCWSTR pszByPassList);
+  HRESULT (__stdcall *GetCatalog)(ISearchManager *This, LPCWSTR pszCatalog, ISearchCatalogManager **ppCatalogManager);
+  HRESULT (__stdcall *get_UserAgent)(ISearchManager *This, LPWSTR *ppszUserAgent);
+  HRESULT (__stdcall *put_UserAgent)(ISearchManager *This, LPCWSTR pszUserAgent);
+  HRESULT (__stdcall *get_UseProxy)(ISearchManager *This, PROXY_ACCESS *pUseProxy);
+  HRESULT (__stdcall *get_LocalBypass)(ISearchManager *This, BOOL *pfLocalBypass);
+  HRESULT (__stdcall *get_PortNumber)(ISearchManager *This, DWORD *pdwPortNumber);
+
+};

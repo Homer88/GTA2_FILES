@@ -1,0 +1,11 @@
+// Структура: _IMAGE_FUNCTION_ENTRY
+// Полей: 3
+// Строки в оригинале: 95853-95858
+struct _IMAGE_FUNCTION_ENTRY
+{
+
+  unsigned int StartingAddress;
+  unsigned int EndingAddress;
+  unsigned int EndOfPrologue;
+
+};

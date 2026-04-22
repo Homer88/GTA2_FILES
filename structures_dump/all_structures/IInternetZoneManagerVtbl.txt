@@ -1,0 +1,23 @@
+// Структура: IInternetZoneManagerVtbl
+// Полей: 15
+// Строки в оригинале: 31226-31243
+struct IInternetZoneManagerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IInternetZoneManager *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IInternetZoneManager *This);
+  ULONG (__stdcall *Release)(IInternetZoneManager *This);
+  HRESULT (__stdcall *GetZoneAttributes)(IInternetZoneManager *This, DWORD dwZone, ZONEATTRIBUTES *pZoneAttributes);
+  HRESULT (__stdcall *SetZoneAttributes)(IInternetZoneManager *This, DWORD dwZone, ZONEATTRIBUTES *pZoneAttributes);
+  HRESULT (__stdcall *GetZoneCustomPolicy)(IInternetZoneManager *This, DWORD dwZone, const GUID *const guidKey, BYTE **ppPolicy, DWORD *pcbPolicy, URLZONEREG urlZoneReg);
+  HRESULT (__stdcall *SetZoneCustomPolicy)(IInternetZoneManager *This, DWORD dwZone, const GUID *const guidKey, BYTE *pPolicy, DWORD cbPolicy, URLZONEREG urlZoneReg);
+  HRESULT (__stdcall *GetZoneActionPolicy)(IInternetZoneManager *This, DWORD dwZone, DWORD dwAction, BYTE *pPolicy, DWORD cbPolicy, URLZONEREG urlZoneReg);
+  HRESULT (__stdcall *SetZoneActionPolicy)(IInternetZoneManager *This, DWORD dwZone, DWORD dwAction, BYTE *pPolicy, DWORD cbPolicy, URLZONEREG urlZoneReg);
+  HRESULT (__stdcall *PromptAction)(IInternetZoneManager *This, DWORD dwAction, HWND hwndParent, LPCWSTR pwszUrl, LPCWSTR pwszText, DWORD dwPromptFlags);
+  HRESULT (__stdcall *LogAction)(IInternetZoneManager *This, DWORD dwAction, LPCWSTR pwszUrl, LPCWSTR pwszText, DWORD dwLogFlags);
+  HRESULT (__stdcall *CreateZoneEnumerator)(IInternetZoneManager *This, DWORD *pdwEnum, DWORD *pdwCount, DWORD dwFlags);
+  HRESULT (__stdcall *GetZoneAt)(IInternetZoneManager *This, DWORD dwEnum, DWORD dwIndex, DWORD *pdwZone);
+  HRESULT (__stdcall *DestroyZoneEnumerator)(IInternetZoneManager *This, DWORD dwEnum);
+  HRESULT (__stdcall *CopyTemplatePoliciesToZone)(IInternetZoneManager *This, DWORD dwTemplate, DWORD dwZone, DWORD dwReserved);
+
+};

@@ -1,0 +1,20 @@
+// Структура: _DISPATCHER_CONTEXT_ARM64
+// Полей: 12
+// Строки в оригинале: 82665-82679
+struct _DISPATCHER_CONTEXT_ARM64
+{
+
+  unsigned int ControlPc;
+  unsigned int ImageBase;
+  _IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY *FunctionEntry;
+  unsigned int EstablisherFrame;
+  unsigned int TargetPc;
+  _ARM64_NT_CONTEXT *ContextRecord;
+  _EXCEPTION_DISPOSITION (__stdcall *LanguageHandler)(_EXCEPTION_RECORD *, void *, _CONTEXT *, void *);
+  void *HandlerData;
+  _UNWIND_HISTORY_TABLE *HistoryTable;
+  unsigned int ScopeIndex;
+  unsigned __int8 ControlPcIsUnwound;
+  unsigned __int8 *NonVolatileRegisters;
+
+};

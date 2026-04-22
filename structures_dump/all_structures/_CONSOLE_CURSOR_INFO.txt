@@ -1,0 +1,10 @@
+// Структура: _CONSOLE_CURSOR_INFO
+// Полей: 2
+// Строки в оригинале: 82258-82262
+struct _CONSOLE_CURSOR_INFO
+{
+
+  unsigned int dwSize;
+  int bVisible;
+
+};

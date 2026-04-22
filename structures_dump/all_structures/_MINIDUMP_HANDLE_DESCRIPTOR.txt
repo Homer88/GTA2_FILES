@@ -1,0 +1,15 @@
+// Структура: _MINIDUMP_HANDLE_DESCRIPTOR
+// Полей: 7
+// Строки в оригинале: 123520-123529
+struct _MINIDUMP_HANDLE_DESCRIPTOR
+{
+
+  unsigned __int64 Handle;
+  unsigned int TypeNameRva;
+  unsigned int ObjectNameRva;
+  unsigned int Attributes;
+  unsigned int GrantedAccess;
+  unsigned int HandleCount;
+  unsigned int PointerCount;
+
+};

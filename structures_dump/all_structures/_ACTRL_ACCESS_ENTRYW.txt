@@ -1,0 +1,14 @@
+// Структура: _ACTRL_ACCESS_ENTRYW
+// Полей: 6
+// Строки в оригинале: 229260-229268
+struct _ACTRL_ACCESS_ENTRYW
+{
+
+  _TRUSTEE_W Trustee;
+  unsigned int fAccessFlags;
+  unsigned int Access;
+  unsigned int ProvSpecificAccess;
+  unsigned int Inheritance;
+  wchar_t *lpInheritProperty;
+
+};

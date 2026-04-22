@@ -1,0 +1,10 @@
+// Структура: TS_STATUS
+// Полей: 2
+// Строки в оригинале: 30331-30335
+struct TS_STATUS
+{
+
+  DWORD dwDynamicFlags;
+  DWORD dwStaticFlags;
+
+};

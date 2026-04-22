@@ -1,0 +1,10 @@
+// Структура: _POWER_SESSION_CONNECT
+// Полей: 2
+// Строки в оригинале: 88230-88234
+struct _POWER_SESSION_CONNECT
+{
+
+  unsigned __int8 Connected;
+  unsigned __int8 Console;
+
+};

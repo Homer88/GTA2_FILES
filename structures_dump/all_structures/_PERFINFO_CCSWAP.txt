@@ -1,0 +1,14 @@
+// Структура: _PERFINFO_CCSWAP
+// Полей: 6
+// Строки в оригинале: 312496-312504
+struct _PERFINFO_CCSWAP
+{
+
+  unsigned __int32 DataType : 2;
+  unsigned __int32 TimeDelta : 30;
+  unsigned __int32 OldThreadIdIndex : 4;
+  unsigned __int32 OldThreadStateWr : 6;
+  unsigned __int32 OldThreadPriority : 5;
+  unsigned __int32 NewThreadWaitTime : 17;
+
+};

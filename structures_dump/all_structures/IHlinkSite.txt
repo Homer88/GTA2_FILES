@@ -1,0 +1,9 @@
+// Структура: IHlinkSite
+// Полей: 1
+// Строки в оригинале: 42838-42841
+struct IHlinkSite
+{
+
+  struct IHlinkSiteVtbl *lpVtbl;
+
+};

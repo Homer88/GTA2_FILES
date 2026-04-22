@@ -1,0 +1,13 @@
+// Структура: CarsPrefabs
+// Полей: 5
+// Строки в оригинале: 7687-7694
+struct CarsPrefabs
+{
+
+  Car *sCar2;
+  Car *Car3;
+  Car sCarArr306[306];
+  __int16 CarsCount;
+  __int16 field_E0C2;
+
+};

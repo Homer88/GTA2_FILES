@@ -1,0 +1,11 @@
+// Структура: _IMAGE_POLICY_ENTRY
+// Полей: 3
+// Строки в оригинале: 89112-89117
+struct _IMAGE_POLICY_ENTRY
+{
+
+  _IMAGE_POLICY_ENTRY_TYPE Type;
+  _IMAGE_POLICY_ID PolicyId;
+  _IMAGE_POLICY_ENTRY::<unnamed_type_u> u;
+
+};

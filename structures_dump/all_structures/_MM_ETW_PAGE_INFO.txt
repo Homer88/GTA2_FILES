@@ -1,0 +1,9 @@
+// Структура: _MM_ETW_PAGE_INFO
+// Полей: 1
+// Строки в оригинале: 107069-107072
+struct _MM_ETW_PAGE_INFO
+{
+
+  _MMPFN_IDENTITY PfnIdentity;
+
+};

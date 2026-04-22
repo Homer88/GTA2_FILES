@@ -1,0 +1,11 @@
+// Структура: _QUERY_STORAGE_RESERVE_OUTPUT
+// Полей: 3
+// Строки в оригинале: 106003-106008
+struct _QUERY_STORAGE_RESERVE_OUTPUT
+{
+
+  unsigned int Version;
+  unsigned int AreaInfoCount;
+  _STORAGE_RESERVE_AREA_INFO AreaInfo[1];
+
+};

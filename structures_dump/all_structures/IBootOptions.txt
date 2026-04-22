@@ -1,0 +1,9 @@
+// Структура: IBootOptions
+// Полей: 1
+// Строки в оригинале: 41202-41205
+struct IBootOptions
+{
+
+  struct IBootOptionsVtbl *lpVtbl;
+
+};

@@ -1,0 +1,29 @@
+// Структура: ITaskbarList3Vtbl
+// Полей: 21
+// Строки в оригинале: 41471-41494
+struct ITaskbarList3Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITaskbarList3 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITaskbarList3 *This);
+  ULONG (__stdcall *Release)(ITaskbarList3 *This);
+  HRESULT (__stdcall *HrInit)(ITaskbarList3 *This);
+  HRESULT (__stdcall *AddTab)(ITaskbarList3 *This, HWND hwnd);
+  HRESULT (__stdcall *DeleteTab)(ITaskbarList3 *This, HWND hwnd);
+  HRESULT (__stdcall *ActivateTab)(ITaskbarList3 *This, HWND hwnd);
+  HRESULT (__stdcall *SetActiveAlt)(ITaskbarList3 *This, HWND hwnd);
+  HRESULT (__stdcall *MarkFullscreenWindow)(ITaskbarList3 *This, HWND hwnd, BOOL fFullscreen);
+  HRESULT (__stdcall *SetProgressValue)(ITaskbarList3 *This, HWND hwnd, ULONGLONG ullCompleted, ULONGLONG ullTotal);
+  HRESULT (__stdcall *SetProgressState)(ITaskbarList3 *This, HWND hwnd, TBPFLAG tbpFlags);
+  HRESULT (__stdcall *RegisterTab)(ITaskbarList3 *This, HWND hwndTab, HWND hwndMDI);
+  HRESULT (__stdcall *UnregisterTab)(ITaskbarList3 *This, HWND hwndTab);
+  HRESULT (__stdcall *SetTabOrder)(ITaskbarList3 *This, HWND hwndTab, HWND hwndInsertBefore);
+  HRESULT (__stdcall *SetTabActive)(ITaskbarList3 *This, HWND hwndTab, HWND hwndMDI, DWORD dwReserved);
+  HRESULT (__stdcall *ThumbBarAddButtons)(ITaskbarList3 *This, HWND hwnd, UINT cButtons, LPTHUMBBUTTON pButton);
+  HRESULT (__stdcall *ThumbBarUpdateButtons)(ITaskbarList3 *This, HWND hwnd, UINT cButtons, LPTHUMBBUTTON pButton);
+  HRESULT (__stdcall *ThumbBarSetImageList)(ITaskbarList3 *This, HWND hwnd, HIMAGELIST himl);
+  HRESULT (__stdcall *SetOverlayIcon)(ITaskbarList3 *This, HWND hwnd, HICON hIcon, LPCWSTR pszDescription);
+  HRESULT (__stdcall *SetThumbnailTooltip)(ITaskbarList3 *This, HWND hwnd, LPCWSTR pszTip);
+  HRESULT (__stdcall *SetThumbnailClip)(ITaskbarList3 *This, HWND hwnd, RECT *prcClip);
+
+};

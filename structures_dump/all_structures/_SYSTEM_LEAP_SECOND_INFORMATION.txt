@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_LEAP_SECOND_INFORMATION
+// Полей: 2
+// Строки в оригинале: 105278-105282
+struct _SYSTEM_LEAP_SECOND_INFORMATION
+{
+
+  unsigned __int8 Enabled;
+  unsigned int Flags;
+
+};

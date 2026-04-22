@@ -1,0 +1,9 @@
+// Структура: WTS_THUMBNAILID
+// Полей: 1
+// Строки в оригинале: 38013-38016
+struct WTS_THUMBNAILID
+{
+
+  BYTE rgbKey[16];
+
+};

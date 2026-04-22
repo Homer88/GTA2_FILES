@@ -1,0 +1,9 @@
+// Структура: __x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamWithContentType
+// Полей: 1
+// Строки в оригинале: 30892-30895
+struct __x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamWithContentType
+{
+
+  struct __x_ABI_CWindows_CStorage_CStreams_CIRandomAccessStreamWithContentTypeVtbl *lpVtbl;
+
+};

@@ -1,0 +1,13 @@
+// Структура: ISimpleFrameSiteVtbl
+// Полей: 5
+// Строки в оригинале: 352690-352697
+struct ISimpleFrameSiteVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISimpleFrameSite *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISimpleFrameSite *This);
+  ULONG (__stdcall *Release)(ISimpleFrameSite *This);
+  HRESULT (__stdcall *PreMessageFilter)(ISimpleFrameSite *This, HWND hWnd, UINT msg, WPARAM wp, LPARAM lp, LRESULT *plResult, DWORD *pdwCookie);
+  HRESULT (__stdcall *PostMessageFilter)(ISimpleFrameSite *This, HWND hWnd, UINT msg, WPARAM wp, LPARAM lp, LRESULT *plResult, DWORD dwCookie);
+
+};

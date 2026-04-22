@@ -1,0 +1,12 @@
+// Структура: tagSOLE_AUTHENTICATION_SERVICE
+// Полей: 4
+// Строки в оригинале: 84005-84011
+struct tagSOLE_AUTHENTICATION_SERVICE
+{
+
+  unsigned int dwAuthnSvc;
+  unsigned int dwAuthzSvc;
+  wchar_t *pPrincipalName;
+  HRESULT hr;
+
+};

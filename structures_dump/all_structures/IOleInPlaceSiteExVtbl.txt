@@ -1,0 +1,26 @@
+// Структура: IOleInPlaceSiteExVtbl
+// Полей: 18
+// Строки в оригинале: 45288-45308
+struct IOleInPlaceSiteExVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleInPlaceSiteEx *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleInPlaceSiteEx *This);
+  ULONG (__stdcall *Release)(IOleInPlaceSiteEx *This);
+  HRESULT (__stdcall *GetWindow)(IOleInPlaceSiteEx *This, HWND *phwnd);
+  HRESULT (__stdcall *ContextSensitiveHelp)(IOleInPlaceSiteEx *This, BOOL fEnterMode);
+  HRESULT (__stdcall *CanInPlaceActivate)(IOleInPlaceSiteEx *This);
+  HRESULT (__stdcall *OnInPlaceActivate)(IOleInPlaceSiteEx *This);
+  HRESULT (__stdcall *OnUIActivate)(IOleInPlaceSiteEx *This);
+  HRESULT (__stdcall *GetWindowContext)(IOleInPlaceSiteEx *This, IOleInPlaceFrame **ppFrame, IOleInPlaceUIWindow **ppDoc, LPRECT lprcPosRect, LPRECT lprcClipRect, LPOLEINPLACEFRAMEINFO lpFrameInfo);
+  HRESULT (__stdcall *Scroll)(IOleInPlaceSiteEx *This, SIZE scrollExtant);
+  HRESULT (__stdcall *OnUIDeactivate)(IOleInPlaceSiteEx *This, BOOL fUndoable);
+  HRESULT (__stdcall *OnInPlaceDeactivate)(IOleInPlaceSiteEx *This);
+  HRESULT (__stdcall *DiscardUndoState)(IOleInPlaceSiteEx *This);
+  HRESULT (__stdcall *DeactivateAndUndo)(IOleInPlaceSiteEx *This);
+  HRESULT (__stdcall *OnPosRectChange)(IOleInPlaceSiteEx *This, LPCRECT lprcPosRect);
+  HRESULT (__stdcall *OnInPlaceActivateEx)(IOleInPlaceSiteEx *This, BOOL *pfNoRedraw, DWORD dwFlags);
+  HRESULT (__stdcall *OnInPlaceDeactivateEx)(IOleInPlaceSiteEx *This, BOOL fNoRedraw);
+  HRESULT (__stdcall *RequestUIActivate)(IOleInPlaceSiteEx *This);
+
+};

@@ -1,0 +1,9 @@
+// Структура: IHTMLOpsProfile
+// Полей: 1
+// Строки в оригинале: 38894-38897
+struct IHTMLOpsProfile
+{
+
+  struct IHTMLOpsProfileVtbl *lpVtbl;
+
+};

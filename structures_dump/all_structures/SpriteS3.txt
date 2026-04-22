@@ -1,0 +1,12 @@
+// Структура: SpriteS3
+// Полей: 4
+// Строки в оригинале: 5178-5184
+struct SpriteS3
+{
+
+  S39 S39_Arr48[48];
+  int field_3C0;
+  int Res;
+  int AdressArray;
+
+};

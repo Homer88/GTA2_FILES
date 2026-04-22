@@ -1,0 +1,13 @@
+// Структура: IShellIconOverlayManagerVtbl
+// Полей: 5
+// Строки в оригинале: 42901-42908
+struct IShellIconOverlayManagerVtbl
+{
+
+  HRESULT (__stdcall *GetFileOverlayInfo)(IShellIconOverlayManager *This, PCWSTR pwszPath, DWORD dwAttrib, int *pIndex, DWORD dwflags);
+  HRESULT (__stdcall *GetReservedOverlayInfo)(IShellIconOverlayManager *This, PCWSTR pwszPath, DWORD dwAttrib, int *pIndex, DWORD dwflags, int iReservedID);
+  HRESULT (__stdcall *RefreshOverlayImages)(IShellIconOverlayManager *This, DWORD dwFlags);
+  HRESULT (__stdcall *LoadNonloadedOverlayIdentifiers)(IShellIconOverlayManager *This);
+  HRESULT (__stdcall *OverlayIndexFromImageIndex)(IShellIconOverlayManager *This, int iImage, int *piIndex, BOOL fAdd);
+
+};

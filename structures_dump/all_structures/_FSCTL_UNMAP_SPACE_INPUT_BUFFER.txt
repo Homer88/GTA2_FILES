@@ -1,0 +1,9 @@
+// Структура: _FSCTL_UNMAP_SPACE_INPUT_BUFFER
+// Полей: 1
+// Строки в оригинале: 99545-99548
+struct _FSCTL_UNMAP_SPACE_INPUT_BUFFER
+{
+
+  _LARGE_INTEGER BytesToUnmap;
+
+};

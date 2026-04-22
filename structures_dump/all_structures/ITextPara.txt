@@ -1,0 +1,9 @@
+// Структура: ITextPara
+// Полей: 1
+// Строки в оригинале: 45699-45702
+struct ITextPara
+{
+
+  struct ITextParaVtbl *lpVtbl;
+
+};

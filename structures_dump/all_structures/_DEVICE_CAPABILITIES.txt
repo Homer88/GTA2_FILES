@@ -1,0 +1,42 @@
+// Структура: _DEVICE_CAPABILITIES
+// Полей: 34
+// Строки в оригинале: 18619-18655
+struct _DEVICE_CAPABILITIES
+{
+
+  unsigned __int16 Size;
+  unsigned __int16 Version;
+  unsigned __int32 DeviceD1 : 1;
+  unsigned __int32 DeviceD2 : 1;
+  unsigned __int32 LockSupported : 1;
+  unsigned __int32 EjectSupported : 1;
+  unsigned __int32 Removable : 1;
+  unsigned __int32 DockDevice : 1;
+  unsigned __int32 UniqueID : 1;
+  unsigned __int32 SilentInstall : 1;
+  unsigned __int32 RawDeviceOK : 1;
+  unsigned __int32 SurpriseRemovalOK : 1;
+  unsigned __int32 WakeFromD0 : 1;
+  unsigned __int32 WakeFromD1 : 1;
+  unsigned __int32 WakeFromD2 : 1;
+  unsigned __int32 WakeFromD3 : 1;
+  unsigned __int32 HardwareDisabled : 1;
+  unsigned __int32 NonDynamic : 1;
+  unsigned __int32 WarmEjectSupported : 1;
+  unsigned __int32 NoDisplayInUI : 1;
+  unsigned __int32 Reserved1 : 1;
+  unsigned __int32 WakeFromInterrupt : 1;
+  unsigned __int32 SecureDevice : 1;
+  unsigned __int32 ChildOfVgaEnabledBridge : 1;
+  unsigned __int32 DecodeIoOnBoot : 1;
+  unsigned __int32 Reserved : 9;
+  unsigned int Address;
+  unsigned int UINumber;
+  _DEVICE_POWER_STATE DeviceState[7];
+  _SYSTEM_POWER_STATE SystemWake;
+  _DEVICE_POWER_STATE DeviceWake;
+  unsigned int D1Latency;
+  unsigned int D2Latency;
+  unsigned int D3Latency;
+
+};

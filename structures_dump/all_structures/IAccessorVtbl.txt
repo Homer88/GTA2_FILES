@@ -1,0 +1,15 @@
+// Структура: IAccessorVtbl
+// Полей: 7
+// Строки в оригинале: 37161-37170
+struct IAccessorVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IAccessor *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IAccessor *This);
+  ULONG (__stdcall *Release)(IAccessor *This);
+  HRESULT (__stdcall *AddRefAccessor)(IAccessor *This, HACCESSOR hAccessor, DBREFCOUNT *pcRefCount);
+  HRESULT (__stdcall *CreateAccessor)(IAccessor *This, DBACCESSORFLAGS dwAccessorFlags, DBCOUNTITEM cBindings, const DBBINDING rgBindings[], DBLENGTH cbRowSize, HACCESSOR *phAccessor, DBBINDSTATUS rgStatus[]);
+  HRESULT (__stdcall *GetBindings)(IAccessor *This, HACCESSOR hAccessor, DBACCESSORFLAGS *pdwAccessorFlags, DBCOUNTITEM *pcBindings, DBBINDING **prgBindings);
+  HRESULT (__stdcall *ReleaseAccessor)(IAccessor *This, HACCESSOR hAccessor, DBREFCOUNT *pcRefCount);
+
+};

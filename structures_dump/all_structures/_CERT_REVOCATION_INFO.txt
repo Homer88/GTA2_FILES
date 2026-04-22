@@ -1,0 +1,15 @@
+// Структура: _CERT_REVOCATION_INFO
+// Полей: 7
+// Строки в оригинале: 79931-79940
+struct _CERT_REVOCATION_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int dwRevocationResult;
+  const char *pszRevocationOid;
+  void *pvOidSpecificInfo;
+  int fHasFreshnessTime;
+  unsigned int dwFreshnessTime;
+  _CERT_REVOCATION_CRL_INFO *pCrlInfo;
+
+};

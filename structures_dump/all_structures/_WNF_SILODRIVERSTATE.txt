@@ -1,0 +1,15 @@
+// Структура: _WNF_SILODRIVERSTATE
+// Полей: 7
+// Строки в оригинале: 17166-17175
+struct _WNF_SILODRIVERSTATE
+{
+
+  struct _WNF_SCOPE_MAP *ScopeMap;
+  void *volatile PermanentNameStoreRootKey;
+  void *volatile PersistentNameStoreRootKey;
+  volatile __int64 PermanentNameSequenceNumber;
+  _WNF_LOCK PermanentNameSequenceNumberLock;
+  volatile __int64 PermanentNameSequenceNumberPool;
+  volatile __int64 RuntimeNameSequenceNumber;
+
+};

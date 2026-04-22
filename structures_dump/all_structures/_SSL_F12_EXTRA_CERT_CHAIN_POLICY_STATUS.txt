@@ -1,0 +1,13 @@
+// Структура: _SSL_F12_EXTRA_CERT_CHAIN_POLICY_STATUS
+// Полей: 5
+// Строки в оригинале: 80278-80285
+struct _SSL_F12_EXTRA_CERT_CHAIN_POLICY_STATUS
+{
+
+  unsigned int cbSize;
+  unsigned int dwErrorLevel;
+  unsigned int dwErrorCategory;
+  unsigned int dwReserved;
+  wchar_t wszErrorText[256];
+
+};

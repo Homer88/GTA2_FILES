@@ -1,0 +1,12 @@
+// Структура: _ETW_POOL_EVENT
+// Полей: 4
+// Строки в оригинале: 311491-311497
+struct _ETW_POOL_EVENT
+{
+
+  unsigned int PoolType;
+  unsigned int Tag;
+  unsigned int NumberOfBytes;
+  void *Entry;
+
+};

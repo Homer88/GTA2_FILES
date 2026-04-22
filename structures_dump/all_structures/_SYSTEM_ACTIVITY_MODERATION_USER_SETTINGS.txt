@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_ACTIVITY_MODERATION_USER_SETTINGS
+// Полей: 1
+// Строки в оригинале: 100245-100248
+struct _SYSTEM_ACTIVITY_MODERATION_USER_SETTINGS
+{
+
+  void *UserKeyHandle;
+
+};

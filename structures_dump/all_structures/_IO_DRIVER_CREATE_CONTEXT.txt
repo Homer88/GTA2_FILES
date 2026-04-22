@@ -1,0 +1,13 @@
+// Структура: _IO_DRIVER_CREATE_CONTEXT
+// Полей: 5
+// Строки в оригинале: 19465-19472
+struct _IO_DRIVER_CREATE_CONTEXT
+{
+
+  __int16 Size;
+  struct _ECP_LIST *ExtraCreateParameter;
+  void *DeviceObjectHint;
+  _TXN_PARAMETER_BLOCK *TxnParameters;
+  _EJOB *SiloContext;
+
+};

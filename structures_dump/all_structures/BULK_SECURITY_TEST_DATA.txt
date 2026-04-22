@@ -1,0 +1,10 @@
+// Структура: BULK_SECURITY_TEST_DATA
+// Полей: 2
+// Строки в оригинале: 88145-88149
+struct BULK_SECURITY_TEST_DATA
+{
+
+  unsigned int DesiredAccess;
+  unsigned int SecurityIds[1];
+
+};

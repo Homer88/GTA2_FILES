@@ -1,0 +1,11 @@
+// Структура: tagMDINEXTMENU
+// Полей: 3
+// Строки в оригинале: 83631-83636
+struct tagMDINEXTMENU
+{
+
+  HMENU__ *hmenuIn;
+  HMENU__ *hmenuNext;
+  HWND__ *hwndNext;
+
+};

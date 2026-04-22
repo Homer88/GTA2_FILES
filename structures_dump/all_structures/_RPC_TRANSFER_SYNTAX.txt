@@ -1,0 +1,11 @@
+// Структура: _RPC_TRANSFER_SYNTAX
+// Полей: 3
+// Строки в оригинале: 110760-110765
+struct _RPC_TRANSFER_SYNTAX
+{
+
+  _GUID Uuid;
+  unsigned __int16 VersMajor;
+  unsigned __int16 VersMinor;
+
+};

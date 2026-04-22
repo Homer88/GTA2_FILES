@@ -1,0 +1,10 @@
+// Структура: _CSV_QUERY_FILE_REVISION
+// Полей: 2
+// Строки в оригинале: 98745-98749
+struct _CSV_QUERY_FILE_REVISION
+{
+
+  __int64 FileId;
+  __int64 FileRevision[3];
+
+};

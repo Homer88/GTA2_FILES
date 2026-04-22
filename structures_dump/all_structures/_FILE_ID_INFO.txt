@@ -1,0 +1,10 @@
+// Структура: _FILE_ID_INFO
+// Полей: 2
+// Строки в оригинале: 99819-99823
+struct _FILE_ID_INFO
+{
+
+  unsigned __int64 VolumeSerialNumber;
+  _FILE_ID_128 FileId;
+
+};

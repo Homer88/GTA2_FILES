@@ -1,0 +1,34 @@
+// Структура: ITextDocumentVtbl
+// Полей: 26
+// Строки в оригинале: 45487-45515
+struct ITextDocumentVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITextDocument *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITextDocument *This);
+  ULONG (__stdcall *Release)(ITextDocument *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(ITextDocument *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(ITextDocument *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(ITextDocument *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(ITextDocument *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *GetName)(ITextDocument *This, BSTR *pName);
+  HRESULT (__stdcall *GetSelection)(ITextDocument *This, ITextSelection **ppSel);
+  HRESULT (__stdcall *GetStoryCount)(ITextDocument *This, int *pCount);
+  HRESULT (__stdcall *GetStoryRanges)(ITextDocument *This, ITextStoryRanges **ppStories);
+  HRESULT (__stdcall *GetSaved)(ITextDocument *This, int *pValue);
+  HRESULT (__stdcall *SetSaved)(ITextDocument *This, int Value);
+  HRESULT (__stdcall *GetDefaultTabStop)(ITextDocument *This, float *pValue);
+  HRESULT (__stdcall *SetDefaultTabStop)(ITextDocument *This, float Value);
+  HRESULT (__stdcall *New)(ITextDocument *This);
+  HRESULT (__stdcall *Open)(ITextDocument *This, VARIANT *pVar, int Flags, int CodePage);
+  HRESULT (__stdcall *Save)(ITextDocument *This, VARIANT *pVar, int Flags, int CodePage);
+  HRESULT (__stdcall *Freeze)(ITextDocument *This, int *pCount);
+  HRESULT (__stdcall *Unfreeze)(ITextDocument *This, int *pCount);
+  HRESULT (__stdcall *BeginEditCollection)(ITextDocument *This);
+  HRESULT (__stdcall *EndEditCollection)(ITextDocument *This);
+  HRESULT (__stdcall *Undo)(ITextDocument *This, int Count, int *pCount);
+  HRESULT (__stdcall *Redo)(ITextDocument *This, int Count, int *pCount);
+  HRESULT (__stdcall *Range)(ITextDocument *This, int cpActive, int cpAnchor, ITextRange **ppRange);
+  HRESULT (__stdcall *RangeFromPoint)(ITextDocument *This, int x, int y, ITextRange **ppRange);
+
+};

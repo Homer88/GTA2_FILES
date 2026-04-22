@@ -1,0 +1,37 @@
+// Структура: IFsiDirectoryItemVtbl
+// Полей: 29
+// Строки в оригинале: 32477-32508
+struct IFsiDirectoryItemVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFsiDirectoryItem *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFsiDirectoryItem *This);
+  ULONG (__stdcall *Release)(IFsiDirectoryItem *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IFsiDirectoryItem *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IFsiDirectoryItem *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IFsiDirectoryItem *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IFsiDirectoryItem *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Name)(IFsiDirectoryItem *This, BSTR *pVal);
+  HRESULT (__stdcall *get_FullPath)(IFsiDirectoryItem *This, BSTR *pVal);
+  HRESULT (__stdcall *get_CreationTime)(IFsiDirectoryItem *This, DATE *pVal);
+  HRESULT (__stdcall *put_CreationTime)(IFsiDirectoryItem *This, DATE newVal);
+  HRESULT (__stdcall *get_LastAccessedTime)(IFsiDirectoryItem *This, DATE *pVal);
+  HRESULT (__stdcall *put_LastAccessedTime)(IFsiDirectoryItem *This, DATE newVal);
+  HRESULT (__stdcall *get_LastModifiedTime)(IFsiDirectoryItem *This, DATE *pVal);
+  HRESULT (__stdcall *put_LastModifiedTime)(IFsiDirectoryItem *This, DATE newVal);
+  HRESULT (__stdcall *get_IsHidden)(IFsiDirectoryItem *This, VARIANT_BOOL *pVal);
+  HRESULT (__stdcall *put_IsHidden)(IFsiDirectoryItem *This, VARIANT_BOOL newVal);
+  HRESULT (__stdcall *FileSystemName)(IFsiDirectoryItem *This, FsiFileSystems fileSystem, BSTR *pVal);
+  HRESULT (__stdcall *FileSystemPath)(IFsiDirectoryItem *This, FsiFileSystems fileSystem, BSTR *pVal);
+  HRESULT (__stdcall *get__NewEnum)(IFsiDirectoryItem *This, IEnumVARIANT **NewEnum);
+  HRESULT (__stdcall *get_Item)(IFsiDirectoryItem *This, BSTR path, IFsiItem **item);
+  HRESULT (__stdcall *get_Count)(IFsiDirectoryItem *This, LONG *Count);
+  HRESULT (__stdcall *get_EnumFsiItems)(IFsiDirectoryItem *This, IEnumFsiItems **NewEnum);
+  HRESULT (__stdcall *AddDirectory)(IFsiDirectoryItem *This, BSTR path);
+  HRESULT (__stdcall *AddFile)(IFsiDirectoryItem *This, BSTR path, IStream *fileData);
+  HRESULT (__stdcall *AddTree)(IFsiDirectoryItem *This, BSTR sourceDirectory, VARIANT_BOOL includeBaseDirectory);
+  HRESULT (__stdcall *Add)(IFsiDirectoryItem *This, IFsiItem *item);
+  HRESULT (__stdcall *Remove)(IFsiDirectoryItem *This, BSTR path);
+  HRESULT (__stdcall *RemoveTree)(IFsiDirectoryItem *This, BSTR path);
+
+};

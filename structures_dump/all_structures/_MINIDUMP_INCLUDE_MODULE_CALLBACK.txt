@@ -1,0 +1,9 @@
+// Структура: _MINIDUMP_INCLUDE_MODULE_CALLBACK
+// Полей: 1
+// Строки в оригинале: 122686-122689
+struct _MINIDUMP_INCLUDE_MODULE_CALLBACK
+{
+
+  unsigned __int64 BaseOfImage;
+
+};

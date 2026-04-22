@@ -1,0 +1,15 @@
+// Структура: tagCANDIDATELIST
+// Полей: 7
+// Строки в оригинале: 98273-98282
+struct tagCANDIDATELIST
+{
+
+  unsigned int dwSize;
+  unsigned int dwStyle;
+  unsigned int dwCount;
+  unsigned int dwSelection;
+  unsigned int dwPageStart;
+  unsigned int dwPageSize;
+  unsigned int dwOffset[1];
+
+};

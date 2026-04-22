@@ -1,0 +1,12 @@
+// Структура: DIPROPHEADER
+// Полей: 4
+// Строки в оригинале: 6218-6224
+struct DIPROPHEADER
+{
+
+  DWORD dwSize;
+  DWORD dwHeaderSize;
+  DWORD dwObj;
+  DWORD dwHow;
+
+};

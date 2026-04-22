@@ -1,0 +1,11 @@
+// Структура: _MIDL_TYPE_PICKLING_INFO
+// Полей: 3
+// Строки в оригинале: 273187-273192
+struct _MIDL_TYPE_PICKLING_INFO
+{
+
+  unsigned int Version;
+  unsigned int Flags;
+  unsigned int Reserved[3];
+
+};

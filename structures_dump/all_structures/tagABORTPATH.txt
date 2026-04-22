@@ -1,0 +1,9 @@
+// Структура: tagABORTPATH
+// Полей: 1
+// Строки в оригинале: 85045-85048
+struct tagABORTPATH
+{
+
+  tagEMR emr;
+
+};

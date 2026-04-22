@@ -1,0 +1,18 @@
+// Структура: _IMAGEHLP_MODULEW
+// Полей: 10
+// Строки в оригинале: 123455-123467
+struct _IMAGEHLP_MODULEW
+{
+
+  unsigned int SizeOfStruct;
+  unsigned int BaseOfImage;
+  unsigned int ImageSize;
+  unsigned int TimeDateStamp;
+  unsigned int CheckSum;
+  unsigned int NumSyms;
+  SYM_TYPE SymType;
+  wchar_t ModuleName[32];
+  wchar_t ImageName[256];
+  wchar_t LoadedImageName[256];
+
+};

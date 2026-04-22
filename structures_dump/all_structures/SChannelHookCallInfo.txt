@@ -1,0 +1,14 @@
+// Структура: SChannelHookCallInfo
+// Полей: 6
+// Строки в оригинале: 110749-110757
+struct SChannelHookCallInfo
+{
+
+  _GUID iid;
+  unsigned int cbSize;
+  _GUID uCausality;
+  unsigned int dwServerPid;
+  unsigned int iMethod;
+  void *pObject;
+
+};

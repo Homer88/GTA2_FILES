@@ -1,0 +1,9 @@
+// Структура: IWICColorContext
+// Полей: 1
+// Строки в оригинале: 41884-41887
+struct IWICColorContext
+{
+
+  struct IWICColorContextVtbl *lpVtbl;
+
+};

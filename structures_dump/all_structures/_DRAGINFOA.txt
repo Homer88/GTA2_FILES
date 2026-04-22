@@ -1,0 +1,13 @@
+// Структура: _DRAGINFOA
+// Полей: 5
+// Строки в оригинале: 84789-84796
+struct _DRAGINFOA
+{
+
+  unsigned int uSize;
+  tagPOINT pt;
+  int fNC;
+  char *lpFileList;
+  unsigned int grfKeyState;
+
+};

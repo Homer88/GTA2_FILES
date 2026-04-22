@@ -1,0 +1,9 @@
+// Структура: IRunningObjectTable
+// Полей: 1
+// Строки в оригинале: 24051-24054
+struct IRunningObjectTable
+{
+
+  struct IRunningObjectTableVtbl *lpVtbl;
+
+};

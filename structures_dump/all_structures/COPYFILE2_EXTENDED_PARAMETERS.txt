@@ -1,0 +1,13 @@
+// Структура: COPYFILE2_EXTENDED_PARAMETERS
+// Полей: 5
+// Строки в оригинале: 113363-113370
+struct COPYFILE2_EXTENDED_PARAMETERS
+{
+
+  unsigned int dwSize;
+  unsigned int dwCopyFlags;
+  int *pfCancel;
+  _COPYFILE2_MESSAGE_ACTION (__stdcall *pProgressRoutine)(const COPYFILE2_MESSAGE *, void *);
+  void *pvCallbackContext;
+
+};

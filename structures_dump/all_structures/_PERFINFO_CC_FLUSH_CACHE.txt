@@ -1,0 +1,15 @@
+// Структура: _PERFINFO_CC_FLUSH_CACHE
+// Полей: 7
+// Строки в оригинале: 308680-308689
+struct _PERFINFO_CC_FLUSH_CACHE
+{
+
+  unsigned int WorkItemKey;
+  unsigned int FileObjectKey;
+  unsigned __int64 Offset;
+  unsigned int Length;
+  unsigned int SharedCacheMapFlags;
+  unsigned int Flags;
+  unsigned int Reserved;
+
+};

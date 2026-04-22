@@ -1,0 +1,10 @@
+// Структура: _EXCEPTION_REGISTRATION_RECORD
+// Полей: 2
+// Строки в оригинале: 2449-2453
+struct _EXCEPTION_REGISTRATION_RECORD
+{
+
+  struct _EXCEPTION_REGISTRATION_RECORD *Next;
+  PEXCEPTION_ROUTINE Handler;
+
+};

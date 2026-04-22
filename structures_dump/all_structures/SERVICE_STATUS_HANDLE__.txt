@@ -1,0 +1,9 @@
+// Структура: SERVICE_STATUS_HANDLE__
+// Полей: 1
+// Строки в оригинале: 100251-100254
+struct SERVICE_STATUS_HANDLE__
+{
+
+  int unused;
+
+};

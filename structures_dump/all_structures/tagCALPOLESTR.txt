@@ -1,0 +1,10 @@
+// Структура: tagCALPOLESTR
+// Полей: 2
+// Строки в оригинале: 123827-123831
+struct tagCALPOLESTR
+{
+
+  unsigned int cElems;
+  wchar_t **pElems;
+
+};

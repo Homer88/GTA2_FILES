@@ -1,0 +1,9 @@
+// Структура: IOleCacheControl
+// Полей: 1
+// Строки в оригинале: 28333-28336
+struct IOleCacheControl
+{
+
+  struct IOleCacheControlVtbl *lpVtbl;
+
+};

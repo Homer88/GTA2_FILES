@@ -1,0 +1,14 @@
+// Структура: _PROCESS_BASIC_INFORMATION
+// Полей: 6
+// Строки в оригинале: 84724-84732
+struct _PROCESS_BASIC_INFORMATION
+{
+
+  int ExitStatus;
+  _PEB *PebBaseAddress;
+  unsigned int AffinityMask;
+  int BasePriority;
+  unsigned int UniqueProcessId;
+  unsigned int InheritedFromUniqueProcessId;
+
+};

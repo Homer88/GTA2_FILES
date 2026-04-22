@@ -1,0 +1,16 @@
+// Структура: __x_ABI_CWindows_CDevices_CHaptics_CISimpleHapticsControllerFeedbackVtbl
+// Полей: 8
+// Строки в оригинале: 351840-351850
+struct __x_ABI_CWindows_CDevices_CHaptics_CISimpleHapticsControllerFeedbackVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(__x_ABI_CWindows_CDevices_CHaptics_CISimpleHapticsControllerFeedback *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(__x_ABI_CWindows_CDevices_CHaptics_CISimpleHapticsControllerFeedback *This);
+  ULONG (__stdcall *Release)(__x_ABI_CWindows_CDevices_CHaptics_CISimpleHapticsControllerFeedback *This);
+  HRESULT (__stdcall *GetIids)(__x_ABI_CWindows_CDevices_CHaptics_CISimpleHapticsControllerFeedback *This, ULONG *iidCount, IID **iids);
+  HRESULT (__stdcall *GetRuntimeClassName)(__x_ABI_CWindows_CDevices_CHaptics_CISimpleHapticsControllerFeedback *This, HSTRING *className);
+  HRESULT (__stdcall *GetTrustLevel)(__x_ABI_CWindows_CDevices_CHaptics_CISimpleHapticsControllerFeedback *This, TrustLevel *trustLevel);
+  HRESULT (__stdcall *get_Waveform)(__x_ABI_CWindows_CDevices_CHaptics_CISimpleHapticsControllerFeedback *This, UINT16 *value);
+  HRESULT (__stdcall *get_Duration)(__x_ABI_CWindows_CDevices_CHaptics_CISimpleHapticsControllerFeedback *This, __x_ABI_CWindows_CFoundation_CTimeSpan *value);
+
+};

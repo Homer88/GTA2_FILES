@@ -1,0 +1,17 @@
+// Структура: ICommDlgBrowser2Vtbl
+// Полей: 9
+// Строки в оригинале: 40218-40229
+struct ICommDlgBrowser2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICommDlgBrowser2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICommDlgBrowser2 *This);
+  ULONG (__stdcall *Release)(ICommDlgBrowser2 *This);
+  HRESULT (__stdcall *OnDefaultCommand)(ICommDlgBrowser2 *This, IShellView *ppshv);
+  HRESULT (__stdcall *OnStateChange)(ICommDlgBrowser2 *This, IShellView *ppshv, ULONG uChange);
+  HRESULT (__stdcall *IncludeObject)(ICommDlgBrowser2 *This, IShellView *ppshv, LPCITEMIDLIST pidl);
+  HRESULT (__stdcall *Notify)(ICommDlgBrowser2 *This, IShellView *ppshv, DWORD dwNotifyType);
+  HRESULT (__stdcall *GetDefaultMenuText)(ICommDlgBrowser2 *This, IShellView *ppshv, LPWSTR pszText, int cchMax);
+  HRESULT (__stdcall *GetViewFlags)(ICommDlgBrowser2 *This, DWORD *pdwFlags);
+
+};

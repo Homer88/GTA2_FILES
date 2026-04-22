@@ -1,0 +1,10 @@
+// Структура: _HEAP_SUBSEGMENT_FREE
+// Полей: 2
+// Строки в оригинале: 313820-313824
+struct _HEAP_SUBSEGMENT_FREE
+{
+
+  _SYSTEM_TRACE_HEADER Header;
+  _HEAP_EVENT_SUBSEGMENT_ALLOC_FREE Event;
+
+};

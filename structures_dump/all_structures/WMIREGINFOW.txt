@@ -1,0 +1,14 @@
+// Структура: WMIREGINFOW
+// Полей: 6
+// Строки в оригинале: 309636-309644
+struct WMIREGINFOW
+{
+
+  unsigned int BufferSize;
+  unsigned int NextWmiRegInfo;
+  unsigned int RegistryPath;
+  unsigned int MofResourceName;
+  unsigned int GuidCount;
+  WMIREGGUIDW WmiRegGuid[];
+
+};

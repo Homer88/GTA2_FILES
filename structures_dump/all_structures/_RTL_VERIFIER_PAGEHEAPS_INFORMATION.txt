@@ -1,0 +1,11 @@
+// Структура: _RTL_VERIFIER_PAGEHEAPS_INFORMATION
+// Полей: 3
+// Строки в оригинале: 100732-100737
+struct _RTL_VERIFIER_PAGEHEAPS_INFORMATION
+{
+
+  unsigned int TotalSize;
+  unsigned int NumberPageHeaps;
+  _RTL_VERIFIER_PAGEHEAP_INFORMATION PageHeapInformation[1];
+
+};

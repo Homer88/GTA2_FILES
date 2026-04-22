@@ -1,0 +1,23 @@
+// Структура: _NOTIFYICONDATAW
+// Полей: 15
+// Строки в оригинале: 89068-89085
+struct _NOTIFYICONDATAW
+{
+
+  unsigned int cbSize;
+  HWND__ *hWnd;
+  unsigned int uID;
+  unsigned int uFlags;
+  unsigned int uCallbackMessage;
+  HICON__ *hIcon;
+  wchar_t szTip[128];
+  unsigned int dwState;
+  unsigned int dwStateMask;
+  wchar_t szInfo[256];
+  $30417D6DC3305618FB171BBBD15A8541 ___u10;
+  wchar_t szInfoTitle[64];
+  unsigned int dwInfoFlags;
+  _GUID guidItem;
+  HICON__ *hBalloonIcon;
+
+};

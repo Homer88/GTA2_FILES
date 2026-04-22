@@ -1,0 +1,10 @@
+// Структура: tagEMRSETWORLDTRANSFORM
+// Полей: 2
+// Строки в оригинале: 86659-86663
+struct tagEMRSETWORLDTRANSFORM
+{
+
+  tagEMR emr;
+  tagXFORM xform;
+
+};

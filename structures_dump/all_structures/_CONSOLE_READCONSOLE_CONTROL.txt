@@ -1,0 +1,12 @@
+// Структура: _CONSOLE_READCONSOLE_CONTROL
+// Полей: 4
+// Строки в оригинале: 111754-111760
+struct _CONSOLE_READCONSOLE_CONTROL
+{
+
+  unsigned int nLength;
+  unsigned int nInitialChars;
+  unsigned int dwCtrlWakeupMask;
+  unsigned int dwControlKeyState;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _FILE_FS_OBJECTID_INFORMATION
+// Полей: 2
+// Строки в оригинале: 89088-89092
+struct _FILE_FS_OBJECTID_INFORMATION
+{
+
+  unsigned __int8 ObjectId[16];
+  unsigned __int8 ExtendedInfo[48];
+
+};

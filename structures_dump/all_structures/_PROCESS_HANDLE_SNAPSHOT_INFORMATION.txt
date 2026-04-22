@@ -1,0 +1,11 @@
+// Структура: _PROCESS_HANDLE_SNAPSHOT_INFORMATION
+// Полей: 3
+// Строки в оригинале: 80595-80600
+struct _PROCESS_HANDLE_SNAPSHOT_INFORMATION
+{
+
+  unsigned int NumberOfHandles;
+  unsigned int Reserved;
+  _PROCESS_HANDLE_TABLE_ENTRY_INFO Handles[1];
+
+};

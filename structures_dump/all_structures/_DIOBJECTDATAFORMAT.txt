@@ -1,0 +1,12 @@
+// Структура: _DIOBJECTDATAFORMAT
+// Полей: 4
+// Строки в оригинале: 6261-6267
+struct _DIOBJECTDATAFORMAT
+{
+
+  const GUID *pguid;
+  DWORD dwOfs;
+  DWORD dwType;
+  DWORD dwFlags;
+
+};

@@ -1,0 +1,13 @@
+// Структура: IOplockStorageVtbl
+// Полей: 5
+// Строки в оригинале: 351586-351593
+struct IOplockStorageVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOplockStorage *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOplockStorage *This);
+  ULONG (__stdcall *Release)(IOplockStorage *This);
+  HRESULT (__stdcall *CreateStorageEx)(IOplockStorage *This, LPCWSTR pwcsName, DWORD grfMode, DWORD stgfmt, DWORD grfAttrs, const IID *const riid, void **ppstgOpen);
+  HRESULT (__stdcall *OpenStorageEx)(IOplockStorage *This, LPCWSTR pwcsName, DWORD grfMode, DWORD stgfmt, DWORD grfAttrs, const IID *const riid, void **ppstgOpen);
+
+};

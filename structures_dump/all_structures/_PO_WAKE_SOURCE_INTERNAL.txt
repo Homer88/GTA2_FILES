@@ -1,0 +1,10 @@
+// Структура: _PO_WAKE_SOURCE_INTERNAL
+// Полей: 2
+// Строки в оригинале: 88992-88996
+struct _PO_WAKE_SOURCE_INTERNAL
+{
+
+  _PO_WAKE_SOURCE_HEADER Header;
+  PO_INTERNAL_WAKE_SOURCE_TYPE InternalWakeSourceType;
+
+};

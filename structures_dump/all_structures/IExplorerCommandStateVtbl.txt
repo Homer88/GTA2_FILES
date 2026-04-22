@@ -1,0 +1,12 @@
+// Структура: IExplorerCommandStateVtbl
+// Полей: 4
+// Строки в оригинале: 33407-33413
+struct IExplorerCommandStateVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IExplorerCommandState *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IExplorerCommandState *This);
+  ULONG (__stdcall *Release)(IExplorerCommandState *This);
+  HRESULT (__stdcall *GetState)(IExplorerCommandState *This, IShellItemArray *psiItemArray, BOOL fOkToBeSlow, EXPCMDSTATE *pCmdState);
+
+};

@@ -1,0 +1,16 @@
+// Структура: _MINIDUMP_THREAD_EX
+// Полей: 8
+// Строки в оригинале: 122321-122331
+struct _MINIDUMP_THREAD_EX
+{
+
+  unsigned int ThreadId;
+  unsigned int SuspendCount;
+  unsigned int PriorityClass;
+  unsigned int Priority;
+  unsigned __int64 Teb;
+  _MINIDUMP_MEMORY_DESCRIPTOR Stack;
+  _MINIDUMP_LOCATION_DESCRIPTOR ThreadContext;
+  _MINIDUMP_MEMORY_DESCRIPTOR BackingStore;
+
+};

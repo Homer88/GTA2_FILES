@@ -1,0 +1,12 @@
+// Структура: _PROCESSOR_GROUP_INFO
+// Полей: 4
+// Строки в оригинале: 87576-87582
+struct _PROCESSOR_GROUP_INFO
+{
+
+  unsigned __int8 MaximumProcessorCount;
+  unsigned __int8 ActiveProcessorCount;
+  unsigned __int8 Reserved[38];
+  unsigned int ActiveProcessorMask;
+
+};

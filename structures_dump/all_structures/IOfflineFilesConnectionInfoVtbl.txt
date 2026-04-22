@@ -1,0 +1,15 @@
+// Структура: IOfflineFilesConnectionInfoVtbl
+// Полей: 7
+// Строки в оригинале: 28416-28425
+struct IOfflineFilesConnectionInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesConnectionInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesConnectionInfo *This);
+  ULONG (__stdcall *Release)(IOfflineFilesConnectionInfo *This);
+  HRESULT (__stdcall *GetConnectState)(IOfflineFilesConnectionInfo *This, OFFLINEFILES_CONNECT_STATE *pConnectState, OFFLINEFILES_OFFLINE_REASON *pOfflineReason);
+  HRESULT (__stdcall *SetConnectState)(IOfflineFilesConnectionInfo *This, HWND hwndParent, DWORD dwFlags, OFFLINEFILES_CONNECT_STATE ConnectState);
+  HRESULT (__stdcall *TransitionOnline)(IOfflineFilesConnectionInfo *This, HWND hwndParent, DWORD dwFlags);
+  HRESULT (__stdcall *TransitionOffline)(IOfflineFilesConnectionInfo *This, HWND hwndParent, DWORD dwFlags, BOOL bForceOpenFilesClosed, BOOL *pbOpenFilesPreventedTransition);
+
+};

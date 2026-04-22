@@ -1,0 +1,19 @@
+// Структура: _CTL_INFO
+// Полей: 11
+// Строки в оригинале: 79978-79991
+struct _CTL_INFO
+{
+
+  unsigned int dwVersion;
+  _CTL_USAGE SubjectUsage;
+  _CRYPTOAPI_BLOB ListIdentifier;
+  _CRYPTOAPI_BLOB SequenceNumber;
+  _FILETIME ThisUpdate;
+  _FILETIME NextUpdate;
+  _CRYPT_ALGORITHM_IDENTIFIER SubjectAlgorithm;
+  unsigned int cCTLEntry;
+  _CTL_ENTRY *rgCTLEntry;
+  unsigned int cExtension;
+  _CERT_EXTENSION *rgExtension;
+
+};

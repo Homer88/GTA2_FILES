@@ -1,0 +1,9 @@
+// Структура: __WIL__WNF_TYPE_ID
+// Полей: 1
+// Строки в оригинале: 142234-142237
+struct __WIL__WNF_TYPE_ID
+{
+
+  _GUID TypeId;
+
+};

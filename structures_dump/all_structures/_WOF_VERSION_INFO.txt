@@ -1,0 +1,9 @@
+// Структура: _WOF_VERSION_INFO
+// Полей: 1
+// Строки в оригинале: 91191-91194
+struct _WOF_VERSION_INFO
+{
+
+  unsigned int WofVersion;
+
+};

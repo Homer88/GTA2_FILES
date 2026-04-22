@@ -1,0 +1,9 @@
+// Структура: _RTL_STD_LIST_ENTRY
+// Полей: 1
+// Строки в оригинале: 22377-22380
+struct _RTL_STD_LIST_ENTRY
+{
+
+  _RTL_STD_LIST_ENTRY *Next;
+
+};

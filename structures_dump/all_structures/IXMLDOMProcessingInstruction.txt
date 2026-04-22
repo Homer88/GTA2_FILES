@@ -1,0 +1,9 @@
+// Структура: IXMLDOMProcessingInstruction
+// Полей: 1
+// Строки в оригинале: 43531-43534
+struct IXMLDOMProcessingInstruction
+{
+
+  struct IXMLDOMProcessingInstructionVtbl *lpVtbl;
+
+};

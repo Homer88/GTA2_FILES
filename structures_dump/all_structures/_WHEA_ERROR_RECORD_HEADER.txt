@@ -1,0 +1,24 @@
+// Структура: _WHEA_ERROR_RECORD_HEADER
+// Полей: 16
+// Строки в оригинале: 20257-20275
+struct _WHEA_ERROR_RECORD_HEADER
+{
+
+  unsigned int Signature;
+  _WHEA_REVISION Revision;
+  __unaligned __declspec(align(1)) unsigned int SignatureEnd;
+  unsigned __int16 SectionCount;
+  _WHEA_ERROR_SEVERITY Severity;
+  _WHEA_ERROR_RECORD_HEADER_VALIDBITS ValidBits;
+  unsigned int Length;
+  _WHEA_TIMESTAMP Timestamp;
+  _GUID PlatformId;
+  _GUID PartitionId;
+  _GUID CreatorId;
+  _GUID NotifyType;
+  unsigned __int64 RecordId;
+  _WHEA_ERROR_RECORD_HEADER_FLAGS Flags;
+  __unaligned __declspec(align(1)) _WHEA_PERSISTENCE_INFO PersistenceInfo;
+  unsigned __int8 Reserved[12];
+
+};

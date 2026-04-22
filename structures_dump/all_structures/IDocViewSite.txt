@@ -1,0 +1,9 @@
+// Структура: IDocViewSite
+// Полей: 1
+// Строки в оригинале: 40600-40603
+struct IDocViewSite
+{
+
+  struct IDocViewSiteVtbl *lpVtbl;
+
+};

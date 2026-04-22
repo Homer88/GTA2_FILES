@@ -1,0 +1,13 @@
+// Структура: _DOCHOSTUIINFO
+// Полей: 5
+// Строки в оригинале: 33956-33963
+struct _DOCHOSTUIINFO
+{
+
+  ULONG cbSize;
+  DWORD dwFlags;
+  DWORD dwDoubleClick;
+  OLECHAR *pchHostCss;
+  OLECHAR *pchHostNS;
+
+};

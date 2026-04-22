@@ -1,0 +1,9 @@
+// Структура: IDiscFormat2Erase
+// Полей: 1
+// Строки в оригинале: 33566-33569
+struct IDiscFormat2Erase
+{
+
+  struct IDiscFormat2EraseVtbl *lpVtbl;
+
+};

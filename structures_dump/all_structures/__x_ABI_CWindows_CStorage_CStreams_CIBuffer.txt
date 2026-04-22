@@ -1,0 +1,9 @@
+// Структура: __x_ABI_CWindows_CStorage_CStreams_CIBuffer
+// Полей: 1
+// Строки в оригинале: 352318-352321
+struct __x_ABI_CWindows_CStorage_CStreams_CIBuffer
+{
+
+  struct __x_ABI_CWindows_CStorage_CStreams_CIBufferVtbl *lpVtbl;
+
+};

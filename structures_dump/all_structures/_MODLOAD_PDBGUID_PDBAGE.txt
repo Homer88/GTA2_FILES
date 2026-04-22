@@ -1,0 +1,10 @@
+// Структура: _MODLOAD_PDBGUID_PDBAGE
+// Полей: 2
+// Строки в оригинале: 124013-124017
+struct _MODLOAD_PDBGUID_PDBAGE
+{
+
+  _GUID PdbGuid;
+  unsigned int PdbAge;
+
+};

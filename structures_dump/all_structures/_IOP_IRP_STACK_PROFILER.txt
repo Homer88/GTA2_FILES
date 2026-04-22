@@ -1,0 +1,10 @@
+// Структура: _IOP_IRP_STACK_PROFILER
+// Полей: 2
+// Строки в оригинале: 13705-13709
+struct _IOP_IRP_STACK_PROFILER
+{
+
+  unsigned int Profile[20];
+  unsigned int TotalIrps;
+
+};

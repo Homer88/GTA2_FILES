@@ -1,0 +1,13 @@
+// Структура: _LBR_TRACE_EVENT_DATA
+// Полей: 5
+// Строки в оригинале: 309751-309758
+struct _LBR_TRACE_EVENT_DATA
+{
+
+  unsigned __int64 TimeStamp;
+  unsigned int ProcessId;
+  unsigned int ThreadId;
+  unsigned int Options;
+  _ETW_LBR_ENTRY Entries[1];
+
+};

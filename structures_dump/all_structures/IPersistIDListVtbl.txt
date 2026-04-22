@@ -1,0 +1,14 @@
+// Структура: IPersistIDListVtbl
+// Полей: 6
+// Строки в оригинале: 46056-46064
+struct IPersistIDListVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPersistIDList *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPersistIDList *This);
+  ULONG (__stdcall *Release)(IPersistIDList *This);
+  HRESULT (__stdcall *GetClassID)(IPersistIDList *This, CLSID *pClassID);
+  HRESULT (__stdcall *SetIDList)(IPersistIDList *This, LPCITEMIDLIST pidl);
+  HRESULT (__stdcall *GetIDList)(IPersistIDList *This, LPITEMIDLIST *ppidl);
+
+};

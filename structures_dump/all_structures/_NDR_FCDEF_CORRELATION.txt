@@ -1,0 +1,14 @@
+// Структура: _NDR_FCDEF_CORRELATION
+// Полей: 6
+// Строки в оригинале: 286614-286622
+struct _NDR_FCDEF_CORRELATION
+{
+
+  unsigned __int16 Type : 4;
+  unsigned __int16 Kind : 4;
+  unsigned __int16 Operation : 8;
+  __int16 Offset;
+  _NDR_CORRELATION_FLAGS CorrFlags;
+  unsigned __int16 Reserved : 8;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _CERT_NAME_VALUE
+// Полей: 2
+// Строки в оригинале: 93999-94003
+struct _CERT_NAME_VALUE
+{
+
+  unsigned int dwValueType;
+  _CRYPTOAPI_BLOB Value;
+
+};

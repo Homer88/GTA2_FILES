@@ -1,0 +1,10 @@
+// Структура: _FILE_DESIRED_STORAGE_CLASS_INFORMATION
+// Полей: 2
+// Строки в оригинале: 82527-82531
+struct _FILE_DESIRED_STORAGE_CLASS_INFORMATION
+{
+
+  _FILE_STORAGE_TIER_CLASS Class;
+  unsigned int Flags;
+
+};

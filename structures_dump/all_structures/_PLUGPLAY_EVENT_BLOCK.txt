@@ -1,0 +1,15 @@
+// Структура: _PLUGPLAY_EVENT_BLOCK
+// Полей: 7
+// Строки в оригинале: 95841-95850
+struct _PLUGPLAY_EVENT_BLOCK
+{
+
+  _GUID EventGuid;
+  _PLUGPLAY_EVENT_CATEGORY EventCategory;
+  unsigned int *Result;
+  unsigned int Flags;
+  unsigned int TotalSize;
+  void *DeviceObject;
+  _PLUGPLAY_EVENT_BLOCK::<unnamed_type_u> u;
+
+};

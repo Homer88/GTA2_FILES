@@ -1,0 +1,13 @@
+// Structure: tagMSG
+// Lines: 2115 - 2123
+// Fields: 7
+
+struct tagMSG
+{
+  HWND hwnd;
+  UINT message;
+  WPARAM style;
+  LPARAM lParam;
+  DWORD time;
+  POINT pt;
+};

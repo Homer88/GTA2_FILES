@@ -1,0 +1,12 @@
+// Структура: _RTL_UMS_COMPLETION_LIST
+// Полей: 4
+// Строки в оригинале: 104233-104239
+struct _RTL_UMS_COMPLETION_LIST
+{
+
+  _SINGLE_LIST_ENTRY *ThreadListHead;
+  void *CompletionEvent;
+  unsigned int CompletionFlags;
+  _SINGLE_LIST_ENTRY InternalListHead;
+
+};

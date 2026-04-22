@@ -1,0 +1,10 @@
+// Структура: _BCRYPT_MULTI_OBJECT_LENGTH_STRUCT
+// Полей: 2
+// Строки в оригинале: 94125-94129
+struct _BCRYPT_MULTI_OBJECT_LENGTH_STRUCT
+{
+
+  unsigned int cbPerObject;
+  unsigned int cbPerElement;
+
+};

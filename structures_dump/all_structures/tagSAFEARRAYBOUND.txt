@@ -1,0 +1,10 @@
+// Структура: tagSAFEARRAYBOUND
+// Полей: 2
+// Строки в оригинале: 23493-23497
+struct tagSAFEARRAYBOUND
+{
+
+  ULONG cElements;
+  LONG lLbound;
+
+};

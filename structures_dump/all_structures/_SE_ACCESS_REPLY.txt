@@ -1,0 +1,14 @@
+// Структура: _SE_ACCESS_REPLY
+// Полей: 6
+// Строки в оригинале: 90228-90236
+struct _SE_ACCESS_REPLY
+{
+
+  unsigned int Size;
+  unsigned int ResultListCount;
+  unsigned int *GrantedAccess;
+  int *AccessStatus;
+  _ACCESS_REASONS *AccessReason;
+  _PRIVILEGE_SET **Privileges;
+
+};

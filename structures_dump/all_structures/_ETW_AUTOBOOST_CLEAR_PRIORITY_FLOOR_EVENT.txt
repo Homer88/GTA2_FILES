@@ -1,0 +1,11 @@
+// Структура: _ETW_AUTOBOOST_CLEAR_PRIORITY_FLOOR_EVENT
+// Полей: 3
+// Строки в оригинале: 311985-311990
+struct _ETW_AUTOBOOST_CLEAR_PRIORITY_FLOOR_EVENT
+{
+
+  void *Lock;
+  unsigned int ThreadId;
+  unsigned int BoostBitmap;
+
+};

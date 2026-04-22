@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_BIGPOOL_INFORMATION
+// Полей: 2
+// Строки в оригинале: 93748-93752
+struct _SYSTEM_BIGPOOL_INFORMATION
+{
+
+  unsigned int Count;
+  _SYSTEM_BIGPOOL_ENTRY AllocatedInfo[1];
+
+};

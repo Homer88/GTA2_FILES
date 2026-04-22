@@ -1,0 +1,13 @@
+// Структура: wil_details_StagingConfigHeaderProperties
+// Полей: 5
+// Строки в оригинале: 142370-142377
+struct wil_details_StagingConfigHeaderProperties
+{
+
+  unsigned __int32 ignoreServiceState : 1;
+  unsigned __int32 ignoreUserState : 1;
+  unsigned __int32 ignoreTestState : 1;
+  unsigned __int32 ignoreVariants : 1;
+  unsigned __int32 unused : 28;
+
+};

@@ -1,0 +1,14 @@
+// Структура: tagIMMAPPTIMESTAMPS
+// Полей: 6
+// Строки в оригинале: 149644-149652
+struct tagIMMAPPTIMESTAMPS
+{
+
+  _FILETIME ftCreation;
+  _FILETIME ftClosed;
+  _FILETIME ftActivation;
+  _FILETIME ftInactive;
+  _FILETIME ftVisible;
+  _FILETIME ftHidden;
+
+};

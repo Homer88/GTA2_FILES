@@ -1,0 +1,12 @@
+// Структура: NDR_ALLOC_ALL_NODES_CONTEXT
+// Полей: 4
+// Строки в оригинале: 86059-86065
+struct NDR_ALLOC_ALL_NODES_CONTEXT
+{
+
+  unsigned __int8 *AllocAllNodesMemory;
+  unsigned __int8 *AllocAllNodesMemoryBegin;
+  unsigned __int8 *AllocAllNodesMemoryEnd;
+  int IsByteCount;
+
+};

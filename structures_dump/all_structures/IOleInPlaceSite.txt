@@ -1,0 +1,9 @@
+// Структура: IOleInPlaceSite
+// Полей: 1
+// Строки в оригинале: 28219-28222
+struct IOleInPlaceSite
+{
+
+  struct IOleInPlaceSiteVtbl *lpVtbl;
+
+};

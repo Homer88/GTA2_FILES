@@ -1,0 +1,9 @@
+// Структура: IColumnManager
+// Полей: 1
+// Строки в оригинале: 36828-36831
+struct IColumnManager
+{
+
+  struct IColumnManagerVtbl *lpVtbl;
+
+};

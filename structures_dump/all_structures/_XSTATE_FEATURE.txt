@@ -1,0 +1,10 @@
+// Структура: _XSTATE_FEATURE
+// Полей: 2
+// Строки в оригинале: 12576-12580
+struct _XSTATE_FEATURE
+{
+
+  unsigned int Offset;
+  unsigned int Size;
+
+};

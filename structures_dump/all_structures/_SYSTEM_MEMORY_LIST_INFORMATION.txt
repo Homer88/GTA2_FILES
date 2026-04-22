@@ -1,0 +1,16 @@
+// Структура: _SYSTEM_MEMORY_LIST_INFORMATION
+// Полей: 8
+// Строки в оригинале: 107926-107936
+struct _SYSTEM_MEMORY_LIST_INFORMATION
+{
+
+  unsigned int ZeroPageCount;
+  unsigned int FreePageCount;
+  unsigned int ModifiedPageCount;
+  unsigned int ModifiedNoWritePageCount;
+  unsigned int BadPageCount;
+  unsigned int PageCountByPriority[8];
+  unsigned int RepurposedPagesByPriority[8];
+  unsigned int ModifiedPageCountPageFile;
+
+};

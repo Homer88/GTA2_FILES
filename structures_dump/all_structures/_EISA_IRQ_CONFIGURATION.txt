@@ -1,0 +1,10 @@
+// Структура: _EISA_IRQ_CONFIGURATION
+// Полей: 2
+// Строки в оригинале: 94491-94495
+struct _EISA_IRQ_CONFIGURATION
+{
+
+  _EISA_IRQ_DESCRIPTOR ConfigurationByte;
+  unsigned __int8 Reserved;
+
+};

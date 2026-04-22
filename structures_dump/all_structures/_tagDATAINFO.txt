@@ -1,0 +1,12 @@
+// Структура: _tagDATAINFO
+// Полей: 4
+// Строки в оригинале: 106310-106316
+struct _tagDATAINFO
+{
+
+  unsigned int ulTotalSize;
+  unsigned int ulavrPacketSize;
+  unsigned int ulConnectSpeed;
+  unsigned int ulProcessorSpeed;
+
+};

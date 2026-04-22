@@ -1,0 +1,10 @@
+// Структура: tagREMQIRESULT
+// Полей: 2
+// Строки в оригинале: 187881-187885
+struct tagREMQIRESULT
+{
+
+  HRESULT hResult;
+  tagSTDOBJREF std;
+
+};

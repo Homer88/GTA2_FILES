@@ -1,0 +1,20 @@
+// Структура: IXMLDOMNodeListVtbl
+// Полей: 12
+// Строки в оригинале: 43304-43318
+struct IXMLDOMNodeListVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IXMLDOMNodeList *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IXMLDOMNodeList *This);
+  ULONG (__stdcall *Release)(IXMLDOMNodeList *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IXMLDOMNodeList *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IXMLDOMNodeList *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IXMLDOMNodeList *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IXMLDOMNodeList *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_item)(IXMLDOMNodeList *This, int index, IXMLDOMNode **listItem);
+  HRESULT (__stdcall *get_length)(IXMLDOMNodeList *This, int *listLength);
+  HRESULT (__stdcall *nextNode)(IXMLDOMNodeList *This, IXMLDOMNode **nextItem);
+  HRESULT (__stdcall *reset)(IXMLDOMNodeList *This);
+  HRESULT (__stdcall *get__newEnum)(IXMLDOMNodeList *This, IUnknown **ppUnk);
+
+};

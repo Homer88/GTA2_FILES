@@ -1,0 +1,15 @@
+// Структура: tagPOINTER_PEN_INFO
+// Полей: 7
+// Строки в оригинале: 99425-99434
+struct tagPOINTER_PEN_INFO
+{
+
+  tagPOINTER_INFO pointerInfo;
+  unsigned int penFlags;
+  unsigned int penMask;
+  unsigned int pressure;
+  unsigned int rotation;
+  int tiltX;
+  int tiltY;
+
+};

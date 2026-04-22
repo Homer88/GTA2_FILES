@@ -1,0 +1,12 @@
+// Структура: __FITypedEventHandler_2_IInspectable_IInspectableVtbl
+// Полей: 4
+// Строки в оригинале: 352712-352718
+struct __FITypedEventHandler_2_IInspectable_IInspectableVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(__FITypedEventHandler_2_IInspectable_IInspectable *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(__FITypedEventHandler_2_IInspectable_IInspectable *This);
+  ULONG (__stdcall *Release)(__FITypedEventHandler_2_IInspectable_IInspectable *This);
+  HRESULT (__stdcall *Invoke)(__FITypedEventHandler_2_IInspectable_IInspectable *This, IInspectable *sender, IInspectable **e);
+
+};

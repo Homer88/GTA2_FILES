@@ -1,0 +1,13 @@
+// Структура: _PUBKEYVER3
+// Полей: 5
+// Строки в оригинале: 109583-109590
+struct _PUBKEYVER3
+{
+
+  unsigned int magic;
+  unsigned int bitlenP;
+  unsigned int bitlenQ;
+  unsigned int bitlenJ;
+  _DSSSEED DSSSeed;
+
+};

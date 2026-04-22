@@ -1,0 +1,10 @@
+// Структура: tagBSTRBLOB
+// Полей: 2
+// Строки в оригинале: 31451-31455
+struct tagBSTRBLOB
+{
+
+  ULONG cbSize;
+  BYTE *pData;
+
+};

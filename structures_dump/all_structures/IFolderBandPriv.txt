@@ -1,0 +1,9 @@
+// Структура: IFolderBandPriv
+// Полей: 1
+// Строки в оригинале: 44428-44431
+struct IFolderBandPriv
+{
+
+  struct IFolderBandPrivVtbl *lpVtbl;
+
+};

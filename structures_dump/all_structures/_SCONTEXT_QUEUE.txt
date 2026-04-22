@@ -1,0 +1,10 @@
+// Структура: _SCONTEXT_QUEUE
+// Полей: 2
+// Строки в оригинале: 108244-108248
+struct _SCONTEXT_QUEUE
+{
+
+  unsigned int NumberOfObjects;
+  $3FA64165D15A4602C29B2D9B0DA4A5E9 **ArrayOfObjects;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _KAFFINITY_EX
+// Полей: 4
+// Строки в оригинале: 13629-13635
+struct _KAFFINITY_EX
+{
+
+  unsigned __int16 Count;
+  unsigned __int16 Size;
+  unsigned int Reserved;
+  unsigned int Bitmap[20];
+
+};

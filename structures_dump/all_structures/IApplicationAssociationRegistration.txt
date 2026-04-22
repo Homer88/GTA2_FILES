@@ -1,0 +1,9 @@
+// Структура: IApplicationAssociationRegistration
+// Полей: 1
+// Строки в оригинале: 32212-32215
+struct IApplicationAssociationRegistration
+{
+
+  struct IApplicationAssociationRegistrationVtbl *lpVtbl;
+
+};

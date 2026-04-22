@@ -1,0 +1,9 @@
+// Структура: _TAPE_SET_MEDIA_PARAMETERS
+// Полей: 1
+// Строки в оригинале: 124137-124140
+struct _TAPE_SET_MEDIA_PARAMETERS
+{
+
+  unsigned int BlockSize;
+
+};

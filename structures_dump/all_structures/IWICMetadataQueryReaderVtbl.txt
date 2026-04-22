@@ -1,0 +1,15 @@
+// Структура: IWICMetadataQueryReaderVtbl
+// Полей: 7
+// Строки в оригинале: 42221-42230
+struct IWICMetadataQueryReaderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICMetadataQueryReader *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICMetadataQueryReader *This);
+  ULONG (__stdcall *Release)(IWICMetadataQueryReader *This);
+  HRESULT (__stdcall *GetContainerFormat)(IWICMetadataQueryReader *This, GUID *pguidContainerFormat);
+  HRESULT (__stdcall *GetLocation)(IWICMetadataQueryReader *This, UINT cchMaxLength, WCHAR *wzNamespace, UINT *pcchActualLength);
+  HRESULT (__stdcall *GetMetadataByName)(IWICMetadataQueryReader *This, LPCWSTR wzName, PROPVARIANT *pvarValue);
+  HRESULT (__stdcall *GetEnumerator)(IWICMetadataQueryReader *This, IEnumString **ppIEnumString);
+
+};

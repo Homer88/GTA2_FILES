@@ -1,0 +1,11 @@
+// Структура: Arsenal
+// Полей: 3
+// Строки в оригинале: 5137-5142
+struct Arsenal
+{
+
+  void *Sprite;
+  __int16 Count;
+  __int16 field_6;
+
+};

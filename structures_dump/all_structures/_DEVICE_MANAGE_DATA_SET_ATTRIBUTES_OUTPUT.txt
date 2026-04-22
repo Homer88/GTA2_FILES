@@ -1,0 +1,17 @@
+// Структура: _DEVICE_MANAGE_DATA_SET_ATTRIBUTES_OUTPUT
+// Полей: 9
+// Строки в оригинале: 149389-149400
+struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES_OUTPUT
+{
+
+  unsigned int Size;
+  unsigned int Action;
+  unsigned int Flags;
+  unsigned int OperationStatus;
+  unsigned int ExtendedError;
+  unsigned int TargetDetailedError;
+  unsigned int ReservedStatus;
+  unsigned int OutputBlockOffset;
+  unsigned int OutputBlockLength;
+
+};

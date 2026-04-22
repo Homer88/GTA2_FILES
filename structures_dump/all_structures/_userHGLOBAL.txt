@@ -1,0 +1,10 @@
+// Структура: _userHGLOBAL
+// Полей: 2
+// Строки в оригинале: 92141-92145
+struct _userHGLOBAL
+{
+
+  int fContext;
+  _userHGLOBAL::__MIDL_IWinTypes_0003 u;
+
+};

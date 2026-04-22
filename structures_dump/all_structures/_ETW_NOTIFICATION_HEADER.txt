@@ -1,0 +1,19 @@
+// Структура: _ETW_NOTIFICATION_HEADER
+// Полей: 11
+// Строки в оригинале: 311034-311047
+struct _ETW_NOTIFICATION_HEADER
+{
+
+  _ETW_NOTIFICATION_TYPE NotificationType;
+  unsigned int NotificationSize;
+  unsigned int Offset;
+  unsigned __int8 ReplyRequested;
+  unsigned int Timeout;
+  $50CA8CBBA05A5E98ABD5165AD2FEFF3A ___u5;
+  unsigned __int64 Reserved2;
+  unsigned int TargetPID;
+  unsigned int SourcePID;
+  _GUID DestinationGuid;
+  _GUID SourceGuid;
+
+};

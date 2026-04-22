@@ -1,0 +1,17 @@
+// Структура: _PERFINFO_WORKINGSET_ENTRY
+// Полей: 9
+// Строки в оригинале: 310530-310541
+struct _PERFINFO_WORKINGSET_ENTRY
+{
+
+  $16DE3CDFF8F5270CCCE99ED599B296AA ___u0;
+  unsigned int WorkingSetPageCount;
+  unsigned int CommitPageCount;
+  $6A069524B1C65A5A585CCD08C1824143 ___u3;
+  unsigned int PrivateWorkingSetPageCount;
+  unsigned int StoreSizeInPages;
+  unsigned int StoredPageCount;
+  unsigned int CommitDebtInPages;
+  unsigned int SharedCommitInPages;
+
+};

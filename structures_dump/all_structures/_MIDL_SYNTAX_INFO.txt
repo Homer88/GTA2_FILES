@@ -1,0 +1,16 @@
+// Структура: _MIDL_SYNTAX_INFO
+// Полей: 8
+// Строки в оригинале: 86419-86429
+struct _MIDL_SYNTAX_INFO
+{
+
+  _RPC_SYNTAX_IDENTIFIER TransferSyntax;
+  RPC_DISPATCH_TABLE *DispatchTable;
+  const unsigned __int8 *ProcString;
+  const unsigned __int16 *FmtStringOffset;
+  const unsigned __int8 *TypeString;
+  const void *aUserMarshalQuadruple;
+  const _MIDL_INTERFACE_METHOD_PROPERTIES *pMethodProperties;
+  unsigned int pReserved2;
+
+};

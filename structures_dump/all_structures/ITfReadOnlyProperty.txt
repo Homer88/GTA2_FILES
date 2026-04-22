@@ -1,0 +1,9 @@
+// Структура: ITfReadOnlyProperty
+// Полей: 1
+// Строки в оригинале: 30344-30347
+struct ITfReadOnlyProperty
+{
+
+  struct ITfReadOnlyPropertyVtbl *lpVtbl;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _RTL_RETPOLINE_RELOCATION_INDEX
+// Полей: 5
+// Строки в оригинале: 113242-113249
+struct _RTL_RETPOLINE_RELOCATION_INDEX
+{
+
+  unsigned __int16 ImportRelocationSize;
+  unsigned __int16 IndirectRelocationSize;
+  unsigned __int16 SwitchJumpRelocationSize;
+  unsigned __int16 StraddleType;
+  _RTL_RETPOLINE_RELOCATION_INDEX::<unnamed_type_StraddleReloc> StraddleReloc;
+
+};

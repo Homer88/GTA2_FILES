@@ -1,0 +1,13 @@
+// Структура: WireContainerExtent
+// Полей: 5
+// Строки в оригинале: 192963-192970
+struct WireContainerExtent
+{
+
+  unsigned int rounded_size;
+  unsigned int id;
+  unsigned int version;
+  unsigned int size;
+  unsigned __int8 data[];
+
+};

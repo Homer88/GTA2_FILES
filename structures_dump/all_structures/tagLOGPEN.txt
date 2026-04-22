@@ -1,0 +1,11 @@
+// Структура: tagLOGPEN
+// Полей: 3
+// Строки в оригинале: 88160-88165
+struct tagLOGPEN
+{
+
+  unsigned int lopnStyle;
+  tagPOINT lopnWidth;
+  unsigned int lopnColor;
+
+};

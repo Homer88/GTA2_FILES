@@ -1,0 +1,26 @@
+// Структура: IShellWindowsVtbl
+// Полей: 18
+// Строки в оригинале: 32818-32838
+struct IShellWindowsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellWindows *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellWindows *This);
+  ULONG (__stdcall *Release)(IShellWindows *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IShellWindows *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IShellWindows *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IShellWindows *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IShellWindows *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Count)(IShellWindows *This, int *Count);
+  HRESULT (__stdcall *Item)(IShellWindows *This, VARIANT index, IDispatch **Folder);
+  HRESULT (__stdcall *_NewEnum)(IShellWindows *This, IUnknown **ppunk);
+  HRESULT (__stdcall *Register)(IShellWindows *This, IDispatch *pid, int hwnd, int swClass, int *plCookie);
+  HRESULT (__stdcall *RegisterPending)(IShellWindows *This, int lThreadId, VARIANT *pvarloc, VARIANT *pvarlocRoot, int swClass, int *plCookie);
+  HRESULT (__stdcall *Revoke)(IShellWindows *This, int lCookie);
+  HRESULT (__stdcall *OnNavigate)(IShellWindows *This, int lCookie, VARIANT *pvarLoc);
+  HRESULT (__stdcall *OnActivated)(IShellWindows *This, int lCookie, VARIANT_BOOL fActive);
+  HRESULT (__stdcall *FindWindowSW)(IShellWindows *This, VARIANT *pvarLoc, VARIANT *pvarLocRoot, int swClass, int *phwnd, int swfwOptions, IDispatch **ppdispOut);
+  HRESULT (__stdcall *OnCreated)(IShellWindows *This, int lCookie, IUnknown *punk);
+  HRESULT (__stdcall *ProcessAttachDetach)(IShellWindows *This, VARIANT_BOOL fAttach);
+
+};

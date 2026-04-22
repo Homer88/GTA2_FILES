@@ -1,0 +1,24 @@
+// Структура: IBootOptionsVtbl
+// Полей: 16
+// Строки в оригинале: 41239-41257
+struct IBootOptionsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IBootOptions *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IBootOptions *This);
+  ULONG (__stdcall *Release)(IBootOptions *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IBootOptions *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IBootOptions *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IBootOptions *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IBootOptions *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_BootImage)(IBootOptions *This, IStream **pVal);
+  HRESULT (__stdcall *get_Manufacturer)(IBootOptions *This, BSTR *pVal);
+  HRESULT (__stdcall *put_Manufacturer)(IBootOptions *This, BSTR newVal);
+  HRESULT (__stdcall *get_PlatformId)(IBootOptions *This, PlatformId *pVal);
+  HRESULT (__stdcall *put_PlatformId)(IBootOptions *This, PlatformId newVal);
+  HRESULT (__stdcall *get_Emulation)(IBootOptions *This, EmulationType *pVal);
+  HRESULT (__stdcall *put_Emulation)(IBootOptions *This, EmulationType newVal);
+  HRESULT (__stdcall *get_ImageSize)(IBootOptions *This, ULONG *pVal);
+  HRESULT (__stdcall *AssignBootImage)(IBootOptions *This, IStream *newVal);
+
+};

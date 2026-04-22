@@ -1,0 +1,20 @@
+// Структура: ICommDlgBrowser3Vtbl
+// Полей: 12
+// Строки в оригинале: 40418-40432
+struct ICommDlgBrowser3Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICommDlgBrowser3 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICommDlgBrowser3 *This);
+  ULONG (__stdcall *Release)(ICommDlgBrowser3 *This);
+  HRESULT (__stdcall *OnDefaultCommand)(ICommDlgBrowser3 *This, IShellView *ppshv);
+  HRESULT (__stdcall *OnStateChange)(ICommDlgBrowser3 *This, IShellView *ppshv, ULONG uChange);
+  HRESULT (__stdcall *IncludeObject)(ICommDlgBrowser3 *This, IShellView *ppshv, LPCITEMIDLIST pidl);
+  HRESULT (__stdcall *Notify)(ICommDlgBrowser3 *This, IShellView *ppshv, DWORD dwNotifyType);
+  HRESULT (__stdcall *GetDefaultMenuText)(ICommDlgBrowser3 *This, IShellView *ppshv, LPWSTR pszText, int cchMax);
+  HRESULT (__stdcall *GetViewFlags)(ICommDlgBrowser3 *This, DWORD *pdwFlags);
+  HRESULT (__stdcall *OnColumnClicked)(ICommDlgBrowser3 *This, IShellView *ppshv, int iColumn);
+  HRESULT (__stdcall *GetCurrentFilter)(ICommDlgBrowser3 *This, LPWSTR pszFileSpec, int cchFileSpec);
+  HRESULT (__stdcall *OnPreViewCreated)(ICommDlgBrowser3 *This, IShellView *ppshv);
+
+};

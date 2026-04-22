@@ -1,0 +1,10 @@
+// Структура: _CMC_TAGGED_CERT_REQUEST
+// Полей: 2
+// Строки в оригинале: 85492-85496
+struct _CMC_TAGGED_CERT_REQUEST
+{
+
+  unsigned int dwBodyPartID;
+  _CRYPTOAPI_BLOB SignedCertRequest;
+
+};

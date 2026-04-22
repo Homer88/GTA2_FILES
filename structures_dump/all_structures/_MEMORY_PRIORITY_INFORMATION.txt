@@ -1,0 +1,9 @@
+// Структура: _MEMORY_PRIORITY_INFORMATION
+// Полей: 1
+// Строки в оригинале: 108289-108292
+struct _MEMORY_PRIORITY_INFORMATION
+{
+
+  unsigned int MemoryPriority;
+
+};

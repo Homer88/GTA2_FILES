@@ -1,0 +1,14 @@
+// Структура: IQuickActivateVtbl
+// Полей: 6
+// Строки в оригинале: 352528-352536
+struct IQuickActivateVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IQuickActivate *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IQuickActivate *This);
+  ULONG (__stdcall *Release)(IQuickActivate *This);
+  HRESULT (__stdcall *QuickActivate)(IQuickActivate *This, QACONTAINER *pQaContainer, QACONTROL *pQaControl);
+  HRESULT (__stdcall *SetContentExtent)(IQuickActivate *This, LPSIZEL pSizel);
+  HRESULT (__stdcall *GetContentExtent)(IQuickActivate *This, LPSIZEL pSizel);
+
+};

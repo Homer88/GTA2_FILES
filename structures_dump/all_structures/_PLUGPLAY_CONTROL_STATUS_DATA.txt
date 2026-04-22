@@ -1,0 +1,14 @@
+// Структура: _PLUGPLAY_CONTROL_STATUS_DATA
+// Полей: 6
+// Строки в оригинале: 104291-104299
+struct _PLUGPLAY_CONTROL_STATUS_DATA
+{
+
+  _UNICODE_STRING DeviceInstance;
+  unsigned int Operation;
+  unsigned int DeviceStatus;
+  unsigned int DeviceProblem;
+  unsigned int Flags;
+  int ProblemStatus;
+
+};

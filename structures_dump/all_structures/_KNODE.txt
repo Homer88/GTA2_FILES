@@ -1,0 +1,36 @@
+// Структура: _KNODE
+// Полей: 28
+// Строки в оригинале: 14681-14711
+struct _KNODE
+{
+
+  unsigned int IdleNonParkedCpuSet;
+  unsigned int IdleSmtSet;
+  unsigned int NonPairedSmtSet;
+  unsigned int IdleCpuSet;
+  __declspec(align(64)) unsigned int DeepIdleSet;
+  unsigned int IdleConstrainedSet;
+  unsigned int NonParkedSet;
+  unsigned int SoftParkedSet;
+  unsigned int NonIsrTargetedSet;
+  int ParkLock;
+  unsigned __int16 ThreadSeed;
+  unsigned __int16 ProcessSeed;
+  __declspec(align(64)) unsigned int SiblingMask;
+  $D23F622901E7711DCEB4B538659B62ED ___u13;
+  unsigned int SharedReadyQueueMask;
+  unsigned int StrideMask;
+  unsigned int ProximityId;
+  unsigned int Lowest;
+  unsigned int Highest;
+  unsigned __int8 MaximumProcessors;
+  _flags Flags;
+  unsigned __int8 Spare10;
+  _KHETERO_PROCESSOR_SET HeteroSets[5];
+  unsigned int PpmConfiguredQosSets[5];
+  unsigned int Spare11;
+  _KQOS_GROUPING_SETS QosGroupingSets;
+  unsigned int QosPreemptibleSet;
+  unsigned int LLCLeaders;
+
+};

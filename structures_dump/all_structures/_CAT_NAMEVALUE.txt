@@ -1,0 +1,11 @@
+// Структура: _CAT_NAMEVALUE
+// Полей: 3
+// Строки в оригинале: 121724-121729
+struct _CAT_NAMEVALUE
+{
+
+  wchar_t *pwszTag;
+  unsigned int fdwFlags;
+  _CRYPTOAPI_BLOB Value;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _PP_LOOKASIDE_LIST
+// Полей: 2
+// Строки в оригинале: 13123-13127
+struct _PP_LOOKASIDE_LIST
+{
+
+  _GENERAL_LOOKASIDE *P;
+  _GENERAL_LOOKASIDE *L;
+
+};

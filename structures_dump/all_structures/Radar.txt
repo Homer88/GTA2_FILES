@@ -1,0 +1,11 @@
+// Структура: Radar
+// Полей: 3
+// Строки в оригинале: 7936-7941
+struct Radar
+{
+
+  int field_0;
+  int Time;
+  int DeltaTime;
+
+};

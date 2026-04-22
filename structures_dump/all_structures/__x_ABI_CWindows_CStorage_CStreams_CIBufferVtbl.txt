@@ -1,0 +1,17 @@
+// Структура: __x_ABI_CWindows_CStorage_CStreams_CIBufferVtbl
+// Полей: 9
+// Строки в оригинале: 352342-352353
+struct __x_ABI_CWindows_CStorage_CStreams_CIBufferVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(__x_ABI_CWindows_CStorage_CStreams_CIBuffer *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(__x_ABI_CWindows_CStorage_CStreams_CIBuffer *This);
+  ULONG (__stdcall *Release)(__x_ABI_CWindows_CStorage_CStreams_CIBuffer *This);
+  HRESULT (__stdcall *GetIids)(__x_ABI_CWindows_CStorage_CStreams_CIBuffer *This, ULONG *iidCount, IID **iids);
+  HRESULT (__stdcall *GetRuntimeClassName)(__x_ABI_CWindows_CStorage_CStreams_CIBuffer *This, HSTRING *className);
+  HRESULT (__stdcall *GetTrustLevel)(__x_ABI_CWindows_CStorage_CStreams_CIBuffer *This, TrustLevel *trustLevel);
+  HRESULT (__stdcall *get_Capacity)(__x_ABI_CWindows_CStorage_CStreams_CIBuffer *This, UINT32 *value);
+  HRESULT (__stdcall *get_Length)(__x_ABI_CWindows_CStorage_CStreams_CIBuffer *This, UINT32 *value);
+  HRESULT (__stdcall *put_Length)(__x_ABI_CWindows_CStorage_CStreams_CIBuffer *This, UINT32 value);
+
+};

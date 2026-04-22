@@ -1,0 +1,12 @@
+// Структура: IParseDisplayNameVtbl
+// Полей: 4
+// Строки в оригинале: 28630-28636
+struct IParseDisplayNameVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IParseDisplayName *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IParseDisplayName *This);
+  ULONG (__stdcall *Release)(IParseDisplayName *This);
+  HRESULT (__stdcall *ParseDisplayName)(IParseDisplayName *This, IBindCtx *pbc, LPOLESTR pszDisplayName, ULONG *pchEaten, IMoniker **ppmkOut);
+
+};

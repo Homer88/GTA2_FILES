@@ -1,0 +1,9 @@
+// Структура: ISearchScopeRule
+// Полей: 1
+// Строки в оригинале: 44398-44401
+struct ISearchScopeRule
+{
+
+  struct ISearchScopeRuleVtbl *lpVtbl;
+
+};

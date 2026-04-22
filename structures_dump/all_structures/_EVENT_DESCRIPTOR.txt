@@ -1,0 +1,15 @@
+// Структура: _EVENT_DESCRIPTOR
+// Полей: 7
+// Строки в оригинале: 19507-19516
+struct _EVENT_DESCRIPTOR
+{
+
+  unsigned __int16 Id;
+  unsigned __int8 Version;
+  unsigned __int8 Channel;
+  unsigned __int8 Level;
+  unsigned __int8 Opcode;
+  unsigned __int16 Task;
+  unsigned __int64 Keyword;
+
+};

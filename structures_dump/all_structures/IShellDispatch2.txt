@@ -1,0 +1,9 @@
+// Структура: IShellDispatch2
+// Полей: 1
+// Строки в оригинале: 37687-37690
+struct IShellDispatch2
+{
+
+  struct IShellDispatch2Vtbl *lpVtbl;
+
+};

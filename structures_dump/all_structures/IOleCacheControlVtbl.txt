@@ -1,0 +1,13 @@
+// Структура: IOleCacheControlVtbl
+// Полей: 5
+// Строки в оригинале: 28321-28328
+struct IOleCacheControlVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleCacheControl *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleCacheControl *This);
+  ULONG (__stdcall *Release)(IOleCacheControl *This);
+  HRESULT (__stdcall *OnRun)(IOleCacheControl *This, LPDATAOBJECT pDataObject);
+  HRESULT (__stdcall *OnStop)(IOleCacheControl *This);
+
+};

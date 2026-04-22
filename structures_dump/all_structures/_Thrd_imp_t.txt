@@ -1,0 +1,10 @@
+// Структура: _Thrd_imp_t
+// Полей: 2
+// Строки в оригинале: 363042-363046
+struct _Thrd_imp_t
+{
+
+  void *_Hnd;
+  unsigned int _Id;
+
+};

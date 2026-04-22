@@ -1,0 +1,11 @@
+// Структура: _EV_EXTRA_CERT_CHAIN_POLICY_STATUS
+// Полей: 3
+// Строки в оригинале: 109240-109245
+struct _EV_EXTRA_CERT_CHAIN_POLICY_STATUS
+{
+
+  unsigned int cbSize;
+  unsigned int dwQualifiers;
+  unsigned int dwIssuanceUsageIndex;
+
+};

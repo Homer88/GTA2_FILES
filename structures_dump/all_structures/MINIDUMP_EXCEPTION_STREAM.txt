@@ -1,0 +1,12 @@
+// Структура: MINIDUMP_EXCEPTION_STREAM
+// Полей: 4
+// Строки в оригинале: 124038-124044
+struct MINIDUMP_EXCEPTION_STREAM
+{
+
+  unsigned int ThreadId;
+  unsigned int __alignment;
+  _MINIDUMP_EXCEPTION ExceptionRecord;
+  _MINIDUMP_LOCATION_DESCRIPTOR ThreadContext;
+
+};

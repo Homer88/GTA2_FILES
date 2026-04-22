@@ -1,0 +1,11 @@
+// Структура: _KTMOBJECT_CURSOR
+// Полей: 3
+// Строки в оригинале: 82177-82182
+struct _KTMOBJECT_CURSOR
+{
+
+  _GUID LastQuery;
+  unsigned int ObjectIdCount;
+  _GUID ObjectIds[1];
+
+};

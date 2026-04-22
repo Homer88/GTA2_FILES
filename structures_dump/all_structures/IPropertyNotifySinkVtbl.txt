@@ -1,0 +1,13 @@
+// Структура: IPropertyNotifySinkVtbl
+// Полей: 5
+// Строки в оригинале: 37627-37634
+struct IPropertyNotifySinkVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyNotifySink *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyNotifySink *This);
+  ULONG (__stdcall *Release)(IPropertyNotifySink *This);
+  HRESULT (__stdcall *OnChanged)(IPropertyNotifySink *This, DISPID dispID);
+  HRESULT (__stdcall *OnRequestEdit)(IPropertyNotifySink *This, DISPID dispID);
+
+};

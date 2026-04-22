@@ -1,0 +1,20 @@
+// Структура: IDeskBand2Vtbl
+// Полей: 12
+// Строки в оригинале: 33384-33398
+struct IDeskBand2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDeskBand2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDeskBand2 *This);
+  ULONG (__stdcall *Release)(IDeskBand2 *This);
+  HRESULT (__stdcall *GetWindow)(IDeskBand2 *This, HWND *phwnd);
+  HRESULT (__stdcall *ContextSensitiveHelp)(IDeskBand2 *This, BOOL fEnterMode);
+  HRESULT (__stdcall *ShowDW)(IDeskBand2 *This, BOOL fShow);
+  HRESULT (__stdcall *CloseDW)(IDeskBand2 *This, DWORD dwReserved);
+  HRESULT (__stdcall *ResizeBorderDW)(IDeskBand2 *This, LPCRECT prcBorder, IUnknown *punkToolbarSite, BOOL fReserved);
+  HRESULT (__stdcall *GetBandInfo)(IDeskBand2 *This, DWORD dwBandID, DWORD dwViewMode, DESKBANDINFO *pdbi);
+  HRESULT (__stdcall *CanRenderComposited)(IDeskBand2 *This, BOOL *pfCanRenderComposited);
+  HRESULT (__stdcall *SetCompositionState)(IDeskBand2 *This, BOOL fCompositionEnabled);
+  HRESULT (__stdcall *GetCompositionState)(IDeskBand2 *This, BOOL *pfCompositionEnabled);
+
+};

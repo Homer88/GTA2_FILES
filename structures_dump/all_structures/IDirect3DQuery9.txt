@@ -1,0 +1,9 @@
+// Структура: IDirect3DQuery9
+// Полей: 1
+// Строки в оригинале: 25900-25903
+struct IDirect3DQuery9
+{
+
+  struct IDirect3DQuery9Vtbl *lpVtbl;
+
+};

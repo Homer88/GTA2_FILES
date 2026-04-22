@@ -1,0 +1,10 @@
+// Структура: _STOWED_EXCEPTION_INFORMATION_HEADER
+// Полей: 2
+// Строки в оригинале: 284178-284182
+struct _STOWED_EXCEPTION_INFORMATION_HEADER
+{
+
+  unsigned int Size;
+  unsigned int Signature;
+
+};

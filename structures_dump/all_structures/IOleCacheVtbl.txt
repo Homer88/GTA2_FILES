@@ -1,0 +1,16 @@
+// Структура: IOleCacheVtbl
+// Полей: 8
+// Строки в оригинале: 27215-27225
+struct IOleCacheVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleCache *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleCache *This);
+  ULONG (__stdcall *Release)(IOleCache *This);
+  HRESULT (__stdcall *Cache)(IOleCache *This, FORMATETC *pformatetc, DWORD advf, DWORD *pdwConnection);
+  HRESULT (__stdcall *Uncache)(IOleCache *This, DWORD dwConnection);
+  HRESULT (__stdcall *EnumCache)(IOleCache *This, IEnumSTATDATA **ppenumSTATDATA);
+  HRESULT (__stdcall *InitCache)(IOleCache *This, IDataObject *pDataObject);
+  HRESULT (__stdcall *SetData)(IOleCache *This, FORMATETC *pformatetc, STGMEDIUM *pmedium, BOOL fRelease);
+
+};

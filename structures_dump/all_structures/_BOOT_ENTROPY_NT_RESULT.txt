@@ -1,0 +1,11 @@
+// Структура: _BOOT_ENTROPY_NT_RESULT
+// Полей: 3
+// Строки в оригинале: 101596-101601
+struct _BOOT_ENTROPY_NT_RESULT
+{
+
+  unsigned int maxEntropySources;
+  _BOOT_ENTROPY_SOURCE_NT_RESULT EntropySourceResult[10];
+  unsigned __int8 SeedBytesForCng[48];
+
+};

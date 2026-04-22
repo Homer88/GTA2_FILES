@@ -1,0 +1,10 @@
+// Структура: tagCAI
+// Полей: 2
+// Строки в оригинале: 31502-31506
+struct tagCAI
+{
+
+  ULONG cElems;
+  SHORT *pElems;
+
+};

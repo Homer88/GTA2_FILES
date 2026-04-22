@@ -1,0 +1,10 @@
+// Структура: _SCRUB_PARITY_EXTENT
+// Полей: 2
+// Строки в оригинале: 95571-95575
+struct _SCRUB_PARITY_EXTENT
+{
+
+  __int64 Offset;
+  unsigned __int64 Length;
+
+};

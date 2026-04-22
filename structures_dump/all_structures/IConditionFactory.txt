@@ -1,0 +1,9 @@
+// Структура: IConditionFactory
+// Полей: 1
+// Строки в оригинале: 39626-39629
+struct IConditionFactory
+{
+
+  struct IConditionFactoryVtbl *lpVtbl;
+
+};

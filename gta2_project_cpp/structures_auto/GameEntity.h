@@ -1,0 +1,127 @@
+// Auto-generated structure: GameEntity
+// Source: GameEntity.txt
+// Fields count: 106
+// Generated for GTA 2 project (DirectX 6.1)
+
+#pragma once
+
+#include <windows.h>
+
+// Forward declarations will be added later as needed
+
+#pragma pack(push, 1)
+
+struct GameEntity
+{
+    int CurrentElement;
+    int field_8;
+    char field_34;
+    char field_35;
+    char field_36;
+    char field_37;
+    int field_3C;
+    char field_40;
+    char field_41;
+    char field_42;
+    char field_43;
+    char field_44;
+    char field_45;
+    char field_46;
+    char field_47;
+    char field_48;
+    char field_49;
+    char field_4A;
+    char field_4B;
+    char field_4C;
+    char field_4D;
+    char field_4E;
+    char field_4F;
+    char field_50;
+    char field_51;
+    char field_52;
+    char field_53;
+    char field_54;
+    char field_55;
+    char field_56;
+    char field_57;
+    __int16 special_buffer;
+    char field_5A;
+    char field_5B;
+    int field_5C;
+    char field_60;
+    char field_61;
+    char field_62;
+    char field_63;
+    char field_64;
+    char field_65;
+    char field_66;
+    char field_67;
+    char field_68;
+    char field_69;
+    char field_6A;
+    char field_6B;
+    char field_6C;
+    char field_6D;
+    char field_6E;
+    char field_6F;
+    char field_70;
+    char field_71;
+    char field_72;
+    char field_73;
+    char field_74;
+    char field_75;
+    char field_76;
+    char field_77;
+    char field_78;
+    char field_79;
+    char field_7A;
+    char field_7B;
+    int field_7C;
+    int field_80;
+    char field_84;
+    char field_85;
+    char field_86;
+    char field_87;
+    char field_88;
+    char field_89;
+    char field_8A;
+    char field_8B;
+    char field_8C;
+    char field_8D;
+    char field_8E;
+    char field_8F;
+    char field_90;
+    char field_91;
+    char field_92;
+    char field_93;
+    int field_94;
+    char field_98;
+    char field_99;
+    char field_9A;
+    char field_9B;
+    char field_9C;
+    char field_9D;
+    char field_9E;
+    char field_9F;
+    char field_A0;
+    char field_A1;
+    char field_A2;
+    char field_A3;
+    char NextElement;
+    char field_A5;
+    char field_A6;
+    char field_A7;
+    char field_A8;
+    char field_A9;
+    char field_AA;
+    char field_AB;
+    char field_AC;
+    char field_AD;
+    char field_AE;
+    char field_0;
+};
+
+#pragma pack(pop)
+
+// Static size check (uncomment after verifying size)
+// static_assert(sizeof(GameEntity) == EXPECTED_SIZE, "Size mismatch for GameEntity");

@@ -1,0 +1,10 @@
+// Структура: _CRYPT_OID_FUNC_ENTRY
+// Полей: 2
+// Строки в оригинале: 98221-98225
+struct _CRYPT_OID_FUNC_ENTRY
+{
+
+  const char *pszOID;
+  void *pvFuncAddr;
+
+};

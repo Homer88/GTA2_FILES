@@ -1,0 +1,9 @@
+// Структура: IRelatedItem
+// Полей: 1
+// Строки в оригинале: 45203-45206
+struct IRelatedItem
+{
+
+  struct IRelatedItemVtbl *lpVtbl;
+
+};

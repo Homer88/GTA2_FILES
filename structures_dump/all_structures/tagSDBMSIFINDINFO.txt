@@ -1,0 +1,13 @@
+// Структура: tagSDBMSIFINDINFO
+// Полей: 5
+// Строки в оригинале: 313795-313802
+struct tagSDBMSIFINDINFO
+{
+
+  unsigned int trMatch;
+  _GUID guidID;
+  _FIND_INFO sdbFindInfo;
+  tagSDBMSILOOKUPSTATE sdbLookupState;
+  unsigned int dwCustomIndex;
+
+};

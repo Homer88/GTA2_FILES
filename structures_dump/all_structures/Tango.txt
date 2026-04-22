@@ -1,0 +1,19 @@
+// Структура: Tango
+// Полей: 11
+// Строки в оригинале: 4247-4260
+struct Tango
+{
+
+  int field;
+  Tango *Tango;
+  int Select;
+  Car *TargetCar;
+  int field_10;
+  _BYTE gap14[8];
+  Car *Car;
+  Ped *Ped;
+  __int16 field_24;
+  char field_26;
+  char field_0;
+
+};

@@ -1,0 +1,14 @@
+// Структура: _FSCTL_QUERY_STORAGE_CLASSES_OUTPUT
+// Полей: 6
+// Строки в оригинале: 103956-103964
+struct _FSCTL_QUERY_STORAGE_CLASSES_OUTPUT
+{
+
+  unsigned int Version;
+  unsigned int Size;
+  unsigned int Flags;
+  unsigned int TotalNumberOfTiers;
+  unsigned int NumberOfTiersReturned;
+  _FILE_STORAGE_TIER Tiers[1];
+
+};

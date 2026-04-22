@@ -1,0 +1,10 @@
+// Структура: _OBJECT_HANDLE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 19450-19454
+struct _OBJECT_HANDLE_INFORMATION
+{
+
+  unsigned int HandleAttributes;
+  unsigned int GrantedAccess;
+
+};

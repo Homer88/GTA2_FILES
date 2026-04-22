@@ -1,0 +1,11 @@
+// Структура: _WHEA_ERROR_SOURCE_CONFIGURATION_DD
+// Полей: 3
+// Строки в оригинале: 20026-20031
+struct _WHEA_ERROR_SOURCE_CONFIGURATION_DD
+{
+
+  int (__stdcall *Initialize)(void *, unsigned int);
+  void (__stdcall *Uninitialize)(void *);
+  int (__stdcall *Correct)(void *, unsigned int *);
+
+};

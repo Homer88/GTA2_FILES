@@ -1,0 +1,10 @@
+// Структура: _RTL_HASH_ENTRY
+// Полей: 2
+// Строки в оригинале: 21538-21542
+struct _RTL_HASH_ENTRY
+{
+
+  _SINGLE_LIST_ENTRY BucketLink;
+  unsigned int Key;
+
+};

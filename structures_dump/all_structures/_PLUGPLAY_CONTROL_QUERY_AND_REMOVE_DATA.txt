@@ -1,0 +1,13 @@
+// Структура: _PLUGPLAY_CONTROL_QUERY_AND_REMOVE_DATA
+// Полей: 5
+// Строки в оригинале: 81435-81442
+struct _PLUGPLAY_CONTROL_QUERY_AND_REMOVE_DATA
+{
+
+  _UNICODE_STRING DeviceInstance;
+  unsigned int Flags;
+  _PNP_VETO_TYPE VetoType;
+  wchar_t *VetoName;
+  unsigned int VetoNameLength;
+
+};

@@ -1,0 +1,11 @@
+// Структура: tagEMRROUNDRECT
+// Полей: 3
+// Строки в оригинале: 100713-100718
+struct tagEMRROUNDRECT
+{
+
+  tagEMR emr;
+  _RECTL rclBox;
+  tagSIZE szlCorner;
+
+};

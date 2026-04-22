@@ -1,0 +1,13 @@
+// Структура: _MINIDUMP_VM_POST_READ_CALLBACK
+// Полей: 5
+// Строки в оригинале: 122723-122730
+struct _MINIDUMP_VM_POST_READ_CALLBACK
+{
+
+  unsigned __int64 Offset;
+  void *Buffer;
+  unsigned int Size;
+  unsigned int Completed;
+  HRESULT Status;
+
+};

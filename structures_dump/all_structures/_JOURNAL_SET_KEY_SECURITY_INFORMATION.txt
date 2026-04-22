@@ -1,0 +1,16 @@
+// Структура: _JOURNAL_SET_KEY_SECURITY_INFORMATION
+// Полей: 8
+// Строки в оригинале: 87938-87948
+struct _JOURNAL_SET_KEY_SECURITY_INFORMATION
+{
+
+  _JOURNAL_CHANGE_INFORMATION_CLASS Action;
+  unsigned __int64 RecordNumber;
+  _LARGE_INTEGER TimeStamp;
+  _UNICODE_STRING KeyPathName;
+  unsigned int OldSecurityDescriptorLength;
+  void *OldSecurityDescriptor;
+  unsigned int NewSecurityDescriptorLength;
+  void *NewSecurityDescriptor;
+
+};

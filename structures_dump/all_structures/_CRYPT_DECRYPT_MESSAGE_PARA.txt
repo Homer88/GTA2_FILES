@@ -1,0 +1,12 @@
+// Структура: _CRYPT_DECRYPT_MESSAGE_PARA
+// Полей: 4
+// Строки в оригинале: 96304-96310
+struct _CRYPT_DECRYPT_MESSAGE_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int dwMsgAndCertEncodingType;
+  unsigned int cCertStore;
+  void **rghCertStore;
+
+};

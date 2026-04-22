@@ -1,0 +1,13 @@
+// Структура: _BCRYPT_DSA_KEY_BLOB
+// Полей: 5
+// Строки в оригинале: 112109-112116
+struct _BCRYPT_DSA_KEY_BLOB
+{
+
+  unsigned int dwMagic;
+  unsigned int cbKey;
+  unsigned __int8 Count[4];
+  unsigned __int8 Seed[20];
+  unsigned __int8 q[20];
+
+};

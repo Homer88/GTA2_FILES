@@ -1,0 +1,17 @@
+// Структура: _MCA_EXCEPTION
+// Полей: 9
+// Строки в оригинале: 22741-22752
+struct _MCA_EXCEPTION
+{
+
+  unsigned int VersionNumber;
+  MCA_EXCEPTION_TYPE ExceptionType;
+  _LARGE_INTEGER TimeStamp;
+  unsigned int ProcessorNumber;
+  unsigned int Reserved1;
+  _MCA_EXCEPTION::$C65412E4F549A8FDE1BEFF3AD7BCD8DC u;
+  unsigned int ExtCnt;
+  unsigned int Reserved3;
+  unsigned __int64 ExtReg[24];
+
+};

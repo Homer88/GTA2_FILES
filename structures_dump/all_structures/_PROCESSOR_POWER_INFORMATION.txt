@@ -1,0 +1,14 @@
+// Структура: _PROCESSOR_POWER_INFORMATION
+// Полей: 6
+// Строки в оригинале: 92290-92298
+struct _PROCESSOR_POWER_INFORMATION
+{
+
+  unsigned int Number;
+  unsigned int MaxMhz;
+  unsigned int CurrentMhz;
+  unsigned int MhzLimit;
+  unsigned int MaxIdleState;
+  unsigned int CurrentIdleState;
+
+};

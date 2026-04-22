@@ -1,0 +1,10 @@
+// Структура: _PROCESS_KEEPALIVE_COUNT_INFORMATION
+// Полей: 2
+// Строки в оригинале: 105885-105889
+struct _PROCESS_KEEPALIVE_COUNT_INFORMATION
+{
+
+  unsigned int WakeCount;
+  unsigned int NoWakeCount;
+
+};

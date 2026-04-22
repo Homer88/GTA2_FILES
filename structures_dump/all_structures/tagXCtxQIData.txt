@@ -1,0 +1,11 @@
+// Структура: tagXCtxQIData
+// Полей: 3
+// Строки в оригинале: 244511-244516
+struct tagXCtxQIData
+{
+
+  const _GUID *pIID;
+  CStdWrapper *pStdWrapper;
+  IFaceEntry *pEntry;
+
+};

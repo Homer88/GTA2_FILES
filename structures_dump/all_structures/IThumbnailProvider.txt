@@ -1,0 +1,9 @@
+// Структура: IThumbnailProvider
+// Полей: 1
+// Строки в оригинале: 35645-35648
+struct IThumbnailProvider
+{
+
+  struct IThumbnailProviderVtbl *lpVtbl;
+
+};

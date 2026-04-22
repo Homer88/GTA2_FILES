@@ -1,0 +1,11 @@
+// Структура: _T2_SET_PARAMETERS_V0
+// Полей: 3
+// Строки в оригинале: 105270-105275
+struct _T2_SET_PARAMETERS_V0
+{
+
+  unsigned int Version;
+  unsigned int Reserved;
+  __int64 NoWakeTolerance;
+
+};

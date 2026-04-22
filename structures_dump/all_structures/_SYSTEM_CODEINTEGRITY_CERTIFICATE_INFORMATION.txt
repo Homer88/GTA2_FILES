@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_CODEINTEGRITY_CERTIFICATE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 81541-81545
+struct _SYSTEM_CODEINTEGRITY_CERTIFICATE_INFORMATION
+{
+
+  void *ImageFile;
+  unsigned int Type;
+
+};

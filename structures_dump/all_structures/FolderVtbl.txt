@@ -1,0 +1,25 @@
+// Структура: FolderVtbl
+// Полей: 17
+// Строки в оригинале: 30754-30773
+struct FolderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(Folder *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(Folder *This);
+  ULONG (__stdcall *Release)(Folder *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(Folder *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(Folder *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(Folder *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(Folder *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Title)(Folder *This, BSTR *pbs);
+  HRESULT (__stdcall *get_Application)(Folder *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_Parent)(Folder *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_ParentFolder)(Folder *This, Folder **ppsf);
+  HRESULT (__stdcall *Items)(Folder *This, FolderItems **ppid);
+  HRESULT (__stdcall *ParseName)(Folder *This, BSTR bName, FolderItem **ppid);
+  HRESULT (__stdcall *NewFolder)(Folder *This, BSTR bName, VARIANT vOptions);
+  HRESULT (__stdcall *MoveHere)(Folder *This, VARIANT vItem, VARIANT vOptions);
+  HRESULT (__stdcall *CopyHere)(Folder *This, VARIANT vItem, VARIANT vOptions);
+  HRESULT (__stdcall *GetDetailsOf)(Folder *This, VARIANT vItem, int iColumn, BSTR *pbs);
+
+};

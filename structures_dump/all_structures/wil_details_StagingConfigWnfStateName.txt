@@ -1,0 +1,9 @@
+// Структура: wil_details_StagingConfigWnfStateName
+// Полей: 1
+// Строки в оригинале: 142392-142395
+struct wil_details_StagingConfigWnfStateName
+{
+
+  unsigned int Data[2];
+
+};

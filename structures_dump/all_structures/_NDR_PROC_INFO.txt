@@ -1,0 +1,10 @@
+// Структура: _NDR_PROC_INFO
+// Полей: 2
+// Строки в оригинале: 86171-86175
+struct _NDR_PROC_INFO
+{
+
+  INTERPRETER_FLAGS InterpreterFlags;
+  _NDR_PROC_DESC *pProcDesc;
+
+};

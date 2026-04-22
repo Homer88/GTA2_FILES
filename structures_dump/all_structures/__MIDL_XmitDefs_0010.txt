@@ -1,0 +1,14 @@
+// Структура: __MIDL_XmitDefs_0010
+// Полей: 6
+// Строки в оригинале: 314412-314420
+struct __MIDL_XmitDefs_0010
+{
+
+  unsigned int asyncStatus;
+  unsigned int reserved1;
+  unsigned __int64 uServerCausalityTraceId;
+  _GUID completionTraceActivity;
+  unsigned int reserved2;
+  __MIDL_XmitDefs_0008 *pOutcomeDetails;
+
+};

@@ -1,0 +1,12 @@
+// Структура: tagEMRARC
+// Полей: 4
+// Строки в оригинале: 99201-99207
+struct tagEMRARC
+{
+
+  tagEMR emr;
+  _RECTL rclBox;
+  _POINTL ptlStart;
+  _POINTL ptlEnd;
+
+};

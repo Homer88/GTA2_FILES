@@ -1,0 +1,29 @@
+// Структура: _MINIDUMP_PROCESS_VM_COUNTERS_2
+// Полей: 21
+// Строки в оригинале: 122575-122598
+struct _MINIDUMP_PROCESS_VM_COUNTERS_2
+{
+
+  unsigned __int16 Revision;
+  unsigned __int16 Flags;
+  unsigned int PageFaultCount;
+  unsigned __int64 PeakWorkingSetSize;
+  unsigned __int64 WorkingSetSize;
+  unsigned __int64 QuotaPeakPagedPoolUsage;
+  unsigned __int64 QuotaPagedPoolUsage;
+  unsigned __int64 QuotaPeakNonPagedPoolUsage;
+  unsigned __int64 QuotaNonPagedPoolUsage;
+  unsigned __int64 PagefileUsage;
+  unsigned __int64 PeakPagefileUsage;
+  unsigned __int64 PeakVirtualSize;
+  unsigned __int64 VirtualSize;
+  unsigned __int64 PrivateUsage;
+  unsigned __int64 PrivateWorkingSetSize;
+  unsigned __int64 SharedCommitUsage;
+  unsigned __int64 JobSharedCommitUsage;
+  unsigned __int64 JobPrivateCommitUsage;
+  unsigned __int64 JobPeakPrivateCommitUsage;
+  unsigned __int64 JobPrivateCommitLimit;
+  unsigned __int64 JobTotalCommitLimit;
+
+};

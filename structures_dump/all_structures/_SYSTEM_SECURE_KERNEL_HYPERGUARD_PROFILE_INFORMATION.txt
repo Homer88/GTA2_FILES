@@ -1,0 +1,32 @@
+// Структура: _SYSTEM_SECURE_KERNEL_HYPERGUARD_PROFILE_INFORMATION
+// Полей: 24
+// Строки в оригинале: 108522-108548
+struct _SYSTEM_SECURE_KERNEL_HYPERGUARD_PROFILE_INFORMATION
+{
+
+  unsigned int ExtentCount;
+  unsigned int ValidStructureSize;
+  unsigned int NextExtentIndex;
+  unsigned int ExtentRestart;
+  unsigned int CycleCount;
+  unsigned int TimeoutCount;
+  unsigned __int64 CycleTime;
+  unsigned __int64 CycleTimeMax;
+  unsigned __int64 ExtentTime;
+  unsigned int ExtentTimeIndex;
+  unsigned int ExtentTimeMaxIndex;
+  unsigned __int64 ExtentTimeMax;
+  unsigned __int64 HyperFlushTimeMax;
+  unsigned __int64 TranslateVaTimeMax;
+  unsigned __int64 DebugExemptionCount;
+  unsigned __int64 TbHitCount;
+  unsigned __int64 TbMissCount;
+  unsigned __int64 VinaPendingYield;
+  unsigned __int64 HashCycles;
+  unsigned int HistogramOffset;
+  unsigned int HistogramBuckets;
+  unsigned int HistogramShift;
+  unsigned int Reserved1;
+  unsigned __int64 PageNotPresentCount;
+
+};

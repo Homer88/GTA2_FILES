@@ -1,0 +1,18 @@
+// Структура: _STOWED_EXCEPTION_INFORMATION_V2
+// Полей: 10
+// Строки в оригинале: 284957-284969
+struct _STOWED_EXCEPTION_INFORMATION_V2
+{
+
+  _STOWED_EXCEPTION_INFORMATION_HEADER Header;
+  HRESULT ResultCode;
+  unsigned __int32 ExceptionForm : 2;
+  unsigned __int32 ThreadId : 30;
+  $A6C00CE596585C9FCF8280BE8B0C0788 ___u4;
+  unsigned int StackTraceWordSize;
+  unsigned int StackTraceWords;
+  void *StackTrace;
+  unsigned int NestedExceptionType;
+  void *NestedException;
+
+};

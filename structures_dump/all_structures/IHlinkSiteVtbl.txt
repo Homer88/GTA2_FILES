@@ -1,0 +1,15 @@
+// Структура: IHlinkSiteVtbl
+// Полей: 7
+// Строки в оригинале: 42859-42868
+struct IHlinkSiteVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHlinkSite *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHlinkSite *This);
+  ULONG (__stdcall *Release)(IHlinkSite *This);
+  HRESULT (__stdcall *QueryService)(IHlinkSite *This, DWORD dwSiteData, const GUID *const guidService, const IID *const riid, IUnknown **ppiunk);
+  HRESULT (__stdcall *GetMoniker)(IHlinkSite *This, DWORD dwSiteData, DWORD dwAssign, DWORD dwWhich, IMoniker **ppimk);
+  HRESULT (__stdcall *ReadyToNavigate)(IHlinkSite *This, DWORD dwSiteData, DWORD dwReserved);
+  HRESULT (__stdcall *OnNavigationComplete)(IHlinkSite *This, DWORD dwSiteData, DWORD dwreserved, HRESULT hrError, LPCWSTR pwzError);
+
+};

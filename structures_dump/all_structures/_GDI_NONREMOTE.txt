@@ -1,0 +1,10 @@
+// Структура: _GDI_NONREMOTE
+// Полей: 2
+// Строки в оригинале: 101631-101635
+struct _GDI_NONREMOTE
+{
+
+  int fContext;
+  _GDI_NONREMOTE::__MIDL_IWinTypes_0002 u;
+
+};

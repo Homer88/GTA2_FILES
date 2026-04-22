@@ -1,0 +1,17 @@
+// Структура: _PEB_LDR_DATA
+// Полей: 9
+// Строки в оригинале: 2941-2952
+struct _PEB_LDR_DATA
+{
+
+  unsigned int Length;
+  uint8_t Initialized;
+  void *SsHandle;
+  struct _LIST_ENTRY InLoadOrderModuleList;
+  struct _LIST_ENTRY InMemoryOrderModuleList;
+  struct _LIST_ENTRY InInitializationOrderModuleList;
+  void *EntryInProgress;
+  uint8_t ShutdownInProgress;
+  void *ShutdownThreadId;
+
+};

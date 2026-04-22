@@ -1,0 +1,11 @@
+// Структура: _CERT_CHAIN_POLICY_PARA
+// Полей: 3
+// Строки в оригинале: 94920-94925
+struct _CERT_CHAIN_POLICY_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int dwFlags;
+  void *pvExtraPolicyPara;
+
+};

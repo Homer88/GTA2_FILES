@@ -1,0 +1,12 @@
+// Структура: _CRYPT_KEY_PROV_PARAM
+// Полей: 4
+// Строки в оригинале: 86865-86871
+struct _CRYPT_KEY_PROV_PARAM
+{
+
+  unsigned int dwParam;
+  unsigned __int8 *pbData;
+  unsigned int cbData;
+  unsigned int dwFlags;
+
+};

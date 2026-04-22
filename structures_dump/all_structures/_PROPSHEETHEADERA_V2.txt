@@ -1,0 +1,21 @@
+// Структура: _PROPSHEETHEADERA_V2
+// Полей: 13
+// Строки в оригинале: 147336-147351
+struct _PROPSHEETHEADERA_V2
+{
+
+  unsigned int dwSize;
+  unsigned int dwFlags;
+  HWND__ *hwndParent;
+  HINSTANCE__ *hInstance;
+  $065B69C5D57989D73D53362E31BF09C4 ___u4;
+  const char *pszCaption;
+  unsigned int nPages;
+  $E3CAD8411F77256CCB020CE77D197F57 ___u7;
+  $C3357398FF32C0D311EB4E5E808A8074 ___u8;
+  int (__stdcall *pfnCallback)(HWND__ *, unsigned int, int);
+  $D6A5C1FC7194E42A9496CA5F25DE7FE2 ___u10;
+  HPALETTE__ *hplWatermark;
+  $85719749D1C3DC9C07489ED577BD8EF2 ___u12;
+
+};

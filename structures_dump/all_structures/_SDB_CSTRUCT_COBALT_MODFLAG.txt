@@ -1,0 +1,24 @@
+// Структура: _SDB_CSTRUCT_COBALT_MODFLAG
+// Полей: 16
+// Строки в оригинале: 309901-309919
+struct _SDB_CSTRUCT_COBALT_MODFLAG
+{
+
+  unsigned __int64 BarriersOverride;
+  unsigned int InternalSelfMod;
+  unsigned int PreciseExceptions;
+  unsigned __int16 Reserved1;
+  unsigned __int8 Reserved2;
+  unsigned __int8 Barriers : 4;
+  unsigned __int8 Reserved3 : 4;
+  unsigned __int8 Reserved4 : 2;
+  unsigned __int8 JitCache : 1;
+  unsigned __int8 AlwaysLock : 1;
+  unsigned __int8 MergePushImmedPop : 1;
+  unsigned __int8 StrongFloat : 1;
+  unsigned __int8 CHPE : 1;
+  unsigned __int8 Reserved5 : 1;
+  unsigned __int8 Reserved6 : 1;
+  _SDB_CSTRUCT_COBALT_MODFLAG::<unnamed_type_Specified> Specified;
+
+};

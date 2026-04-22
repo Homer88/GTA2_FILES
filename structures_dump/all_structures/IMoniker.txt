@@ -1,0 +1,9 @@
+// Структура: IMoniker
+// Полей: 1
+// Строки в оригинале: 23929-23932
+struct IMoniker
+{
+
+  struct IMonikerVtbl *lpVtbl;
+
+};

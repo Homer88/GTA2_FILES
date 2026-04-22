@@ -1,0 +1,13 @@
+// Структура: _ETW_READY_THREAD_EVENT
+// Полей: 5
+// Строки в оригинале: 312573-312580
+struct _ETW_READY_THREAD_EVENT
+{
+
+  unsigned int ThreadId;
+  unsigned __int8 AdjustReason;
+  char AdjustIncrement;
+  $2F518F2DB1406585875ACB7B2EF17018 ___u3;
+  unsigned __int8 SpareByte;
+
+};

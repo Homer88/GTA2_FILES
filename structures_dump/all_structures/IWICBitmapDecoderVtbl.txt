@@ -1,0 +1,22 @@
+// Структура: IWICBitmapDecoderVtbl
+// Полей: 14
+// Строки в оригинале: 41932-41948
+struct IWICBitmapDecoderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWICBitmapDecoder *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWICBitmapDecoder *This);
+  ULONG (__stdcall *Release)(IWICBitmapDecoder *This);
+  HRESULT (__stdcall *QueryCapability)(IWICBitmapDecoder *This, IStream *pIStream, DWORD *pdwCapability);
+  HRESULT (__stdcall *Initialize)(IWICBitmapDecoder *This, IStream *pIStream, WICDecodeOptions cacheOptions);
+  HRESULT (__stdcall *GetContainerFormat)(IWICBitmapDecoder *This, GUID *pguidContainerFormat);
+  HRESULT (__stdcall *GetDecoderInfo)(IWICBitmapDecoder *This, IWICBitmapDecoderInfo **ppIDecoderInfo);
+  HRESULT (__stdcall *CopyPalette)(IWICBitmapDecoder *This, IWICPalette *pIPalette);
+  HRESULT (__stdcall *GetMetadataQueryReader)(IWICBitmapDecoder *This, IWICMetadataQueryReader **ppIMetadataQueryReader);
+  HRESULT (__stdcall *GetPreview)(IWICBitmapDecoder *This, IWICBitmapSource **ppIBitmapSource);
+  HRESULT (__stdcall *GetColorContexts)(IWICBitmapDecoder *This, UINT cCount, IWICColorContext **ppIColorContexts, UINT *pcActualCount);
+  HRESULT (__stdcall *GetThumbnail)(IWICBitmapDecoder *This, IWICBitmapSource **ppIThumbnail);
+  HRESULT (__stdcall *GetFrameCount)(IWICBitmapDecoder *This, UINT *pCount);
+  HRESULT (__stdcall *GetFrame)(IWICBitmapDecoder *This, UINT index, IWICBitmapFrameDecode **ppIBitmapFrame);
+
+};

@@ -1,0 +1,9 @@
+// Структура: IDocViewSiteVtbl
+// Полей: 1
+// Строки в оригинале: 40592-40595
+struct IDocViewSiteVtbl
+{
+
+  HRESULT (__stdcall *OnSetTitle)(IDocViewSite *This, VARIANTARG *pvTitle);
+
+};

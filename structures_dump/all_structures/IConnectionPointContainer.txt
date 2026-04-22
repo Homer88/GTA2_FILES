@@ -1,0 +1,9 @@
+// Структура: IConnectionPointContainer
+// Полей: 1
+// Строки в оригинале: 36727-36730
+struct IConnectionPointContainer
+{
+
+  struct IConnectionPointContainerVtbl *lpVtbl;
+
+};

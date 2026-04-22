@@ -1,0 +1,16 @@
+// Структура: IContextMenu3Vtbl
+// Полей: 8
+// Строки в оригинале: 33477-33487
+struct IContextMenu3Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IContextMenu3 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IContextMenu3 *This);
+  ULONG (__stdcall *Release)(IContextMenu3 *This);
+  HRESULT (__stdcall *QueryContextMenu)(IContextMenu3 *This, HMENU hmenu, UINT indexMenu, UINT idCmdFirst, UINT idCmdLast, UINT uFlags);
+  HRESULT (__stdcall *InvokeCommand)(IContextMenu3 *This, CMINVOKECOMMANDINFO *pici);
+  HRESULT (__stdcall *GetCommandString)(IContextMenu3 *This, UINT_PTR idCmd, UINT uType, UINT *pReserved, CHAR *pszName, UINT cchMax);
+  HRESULT (__stdcall *HandleMenuMsg)(IContextMenu3 *This, UINT uMsg, WPARAM wParam, LPARAM lParam);
+  HRESULT (__stdcall *HandleMenuMsg2)(IContextMenu3 *This, UINT uMsg, WPARAM wParam, LPARAM lParam, LRESULT *plResult);
+
+};

@@ -1,0 +1,50 @@
+// Структура: IFolderView2Vtbl
+// Полей: 42
+// Строки в оригинале: 31383-31427
+struct IFolderView2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFolderView2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFolderView2 *This);
+  ULONG (__stdcall *Release)(IFolderView2 *This);
+  HRESULT (__stdcall *GetCurrentViewMode)(IFolderView2 *This, UINT *pViewMode);
+  HRESULT (__stdcall *SetCurrentViewMode)(IFolderView2 *This, UINT ViewMode);
+  HRESULT (__stdcall *GetFolder)(IFolderView2 *This, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *Item)(IFolderView2 *This, int iItemIndex, LPITEMIDLIST *ppidl);
+  HRESULT (__stdcall *ItemCount)(IFolderView2 *This, UINT uFlags, int *pcItems);
+  HRESULT (__stdcall *Items)(IFolderView2 *This, UINT uFlags, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetSelectionMarkedItem)(IFolderView2 *This, int *piItem);
+  HRESULT (__stdcall *GetFocusedItem)(IFolderView2 *This, int *piItem);
+  HRESULT (__stdcall *GetItemPosition)(IFolderView2 *This, LPCITEMIDLIST pidl, POINT *ppt);
+  HRESULT (__stdcall *GetSpacing)(IFolderView2 *This, POINT *ppt);
+  HRESULT (__stdcall *GetDefaultSpacing)(IFolderView2 *This, POINT *ppt);
+  HRESULT (__stdcall *GetAutoArrange)(IFolderView2 *This);
+  HRESULT (__stdcall *SelectItem)(IFolderView2 *This, int iItem, DWORD dwFlags);
+  HRESULT (__stdcall *SelectAndPositionItems)(IFolderView2 *This, UINT cidl, LPCITEMIDLIST *apidl, POINT *apt, DWORD dwFlags);
+  HRESULT (__stdcall *SetGroupBy)(IFolderView2 *This, const PROPERTYKEY *const key, BOOL fAscending);
+  HRESULT (__stdcall *GetGroupBy)(IFolderView2 *This, PROPERTYKEY *pkey, BOOL *pfAscending);
+  DEPRECATED_HRESULT (__stdcall *SetViewProperty)(IFolderView2 *This, LPCITEMIDLIST pidl, const PROPERTYKEY *const propkey, const PROPVARIANT *const propvar);
+  DEPRECATED_HRESULT (__stdcall *GetViewProperty)(IFolderView2 *This, LPCITEMIDLIST pidl, const PROPERTYKEY *const propkey, PROPVARIANT *ppropvar);
+  DEPRECATED_HRESULT (__stdcall *SetTileViewProperties)(IFolderView2 *This, LPCITEMIDLIST pidl, LPCWSTR pszPropList);
+  DEPRECATED_HRESULT (__stdcall *SetExtendedTileViewProperties)(IFolderView2 *This, LPCITEMIDLIST pidl, LPCWSTR pszPropList);
+  HRESULT (__stdcall *SetText)(IFolderView2 *This, FVTEXTTYPE iType, LPCWSTR pwszText);
+  HRESULT (__stdcall *SetCurrentFolderFlags)(IFolderView2 *This, DWORD dwMask, DWORD dwFlags);
+  HRESULT (__stdcall *GetCurrentFolderFlags)(IFolderView2 *This, DWORD *pdwFlags);
+  HRESULT (__stdcall *GetSortColumnCount)(IFolderView2 *This, int *pcColumns);
+  HRESULT (__stdcall *SetSortColumns)(IFolderView2 *This, const SORTCOLUMN *rgSortColumns, int cColumns);
+  HRESULT (__stdcall *GetSortColumns)(IFolderView2 *This, SORTCOLUMN *rgSortColumns, int cColumns);
+  HRESULT (__stdcall *GetItem)(IFolderView2 *This, int iItem, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetVisibleItem)(IFolderView2 *This, int iStart, BOOL fPrevious, int *piItem);
+  HRESULT (__stdcall *GetSelectedItem)(IFolderView2 *This, int iStart, int *piItem);
+  HRESULT (__stdcall *GetSelection)(IFolderView2 *This, BOOL fNoneImpliesFolder, IShellItemArray **ppsia);
+  HRESULT (__stdcall *GetSelectionState)(IFolderView2 *This, LPCITEMIDLIST pidl, DWORD *pdwFlags);
+  HRESULT (__stdcall *InvokeVerbOnSelection)(IFolderView2 *This, LPCSTR pszVerb);
+  HRESULT (__stdcall *SetViewModeAndIconSize)(IFolderView2 *This, FOLDERVIEWMODE uViewMode, int iImageSize);
+  HRESULT (__stdcall *GetViewModeAndIconSize)(IFolderView2 *This, FOLDERVIEWMODE *puViewMode, int *piImageSize);
+  HRESULT (__stdcall *SetGroupSubsetCount)(IFolderView2 *This, UINT cVisibleRows);
+  HRESULT (__stdcall *GetGroupSubsetCount)(IFolderView2 *This, UINT *pcVisibleRows);
+  HRESULT (__stdcall *SetRedraw)(IFolderView2 *This, BOOL fRedrawOn);
+  HRESULT (__stdcall *IsMoveInSameFolder)(IFolderView2 *This);
+  HRESULT (__stdcall *DoRename)(IFolderView2 *This);
+
+};

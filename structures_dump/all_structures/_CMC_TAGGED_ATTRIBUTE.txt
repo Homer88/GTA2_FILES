@@ -1,0 +1,10 @@
+// Структура: _CMC_TAGGED_ATTRIBUTE
+// Полей: 2
+// Строки в оригинале: 97306-97310
+struct _CMC_TAGGED_ATTRIBUTE
+{
+
+  unsigned int dwBodyPartID;
+  _CRYPT_ATTRIBUTE Attribute;
+
+};

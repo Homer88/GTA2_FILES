@@ -1,0 +1,18 @@
+// Структура: _REFS_SMR_VOLUME_INFO_OUTPUT
+// Полей: 10
+// Строки в оригинале: 104475-104487
+struct _REFS_SMR_VOLUME_INFO_OUTPUT
+{
+
+  unsigned int Version;
+  unsigned int Flags;
+  _LARGE_INTEGER SizeOfRandomlyWritableTier;
+  _LARGE_INTEGER FreeSpaceInRandomlyWritableTier;
+  _LARGE_INTEGER SizeofSMRTier;
+  _LARGE_INTEGER FreeSpaceInSMRTier;
+  _LARGE_INTEGER UsableFreeSpaceInSMRTier;
+  _REFS_SMR_VOLUME_GC_STATE VolumeGcState;
+  int VolumeGcLastStatus;
+  unsigned __int64 Unused[7];
+
+};

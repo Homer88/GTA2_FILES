@@ -1,0 +1,27 @@
+// Структура: _RTL_VERIFIER_HELPER_TABLE
+// Полей: 19
+// Строки в оригинале: 95531-95552
+struct _RTL_VERIFIER_HELPER_TABLE
+{
+
+  unsigned int Length;
+  void *(__stdcall *VerifierEngGetStackTraceAddress)(unsigned __int16);
+  void (__stdcall *VerifierEngNtdllHeapFreeCallback)(void *, unsigned int);
+  void *(__stdcall *VerifierEngLogStackTrace)(unsigned int);
+  const _UNICODE_STRING *UnicodeImageName;
+  void *(__stdcall *VerifierEngCommitDebugInfo)(_RTL_DEBUG_INFORMATION *, unsigned int);
+  int (__stdcall *VerifierEngSetProcessDebugInformation)(void *, unsigned int, _RTL_DEBUG_INFORMATION *);
+  int (__stdcall *VerifierEngQueryImageFileExecutionOptionsEx)(const _UNICODE_STRING *, const wchar_t *, unsigned int, void *, unsigned int, unsigned int *, unsigned __int8);
+  unsigned int *AddressDphGlobalFlags;
+  _RTL_VERIFIER_HEAP_TABLE *VerifierTable;
+  _RTL_VERIFIER_PROVIDER_DESCRIPTOR *VerifierDescriptor;
+  void *OptionsKey;
+  void *SystemDllBase;
+  void *(__stdcall *VerifierEngGetStackTraceAddressEx)(unsigned __int16, unsigned __int16);
+  void (__stdcall *VerifierEngReleaseStackTrace)(void *);
+  int (__stdcall *VerifierEngStdInitializeStackTrace)(void *, unsigned int, unsigned int, _STACK_TRACE_DATABASE **);
+  int (__stdcall *VerifierEngStdDeleteStackTrace)(_STACK_TRACE_DATABASE *);
+  _RTL_STACK_TRACE_ENTRY *(__stdcall *VerifierEngStdLogStackTrace)(_STACK_TRACE_DATABASE *, unsigned int);
+  void (__stdcall *VerifierEngStdReleaseStackTrace)(_STACK_TRACE_DATABASE *, _RTL_STACK_TRACE_ENTRY *);
+
+};

@@ -1,0 +1,9 @@
+// Структура: ITransferAdviseSink
+// Полей: 1
+// Строки в оригинале: 36950-36953
+struct ITransferAdviseSink
+{
+
+  struct ITransferAdviseSinkVtbl *lpVtbl;
+
+};

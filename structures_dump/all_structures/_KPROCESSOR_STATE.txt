@@ -1,0 +1,10 @@
+// Структура: _KPROCESSOR_STATE
+// Полей: 2
+// Строки в оригинале: 13078-13082
+struct _KPROCESSOR_STATE
+{
+
+  _CONTEXT ContextFrame;
+  _KSPECIAL_REGISTERS SpecialRegisters;
+
+};

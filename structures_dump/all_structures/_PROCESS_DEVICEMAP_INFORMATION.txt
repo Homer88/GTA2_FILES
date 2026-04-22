@@ -1,0 +1,9 @@
+// Структура: _PROCESS_DEVICEMAP_INFORMATION
+// Полей: 1
+// Строки в оригинале: 82501-82504
+struct _PROCESS_DEVICEMAP_INFORMATION
+{
+
+  $59F504A47AD53BF2F4C1DC29025F7AB9 ___u0;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _DRAWPATRECT
+// Полей: 4
+// Строки в оригинале: 103602-103608
+struct _DRAWPATRECT
+{
+
+  tagPOINT ptPosition;
+  tagPOINT ptSize;
+  unsigned __int16 wStyle;
+  unsigned __int16 wPattern;
+
+};

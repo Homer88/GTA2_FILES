@@ -1,0 +1,10 @@
+// Структура: _SecPkgContext_SessionKey
+// Полей: 2
+// Строки в оригинале: 325887-325891
+struct _SecPkgContext_SessionKey
+{
+
+  unsigned int SessionKeyLength;
+  unsigned __int8 *SessionKey;
+
+};

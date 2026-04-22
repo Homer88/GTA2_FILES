@@ -1,0 +1,14 @@
+// Структура: _MUICCENTRY
+// Полей: 6
+// Строки в оригинале: 103359-103367
+struct _MUICCENTRY
+{
+
+  unsigned int lCultureNameOffset;
+  unsigned int ulCultureID;
+  unsigned int ulLanguageType;
+  _MUICCENTRY *pNeutralCulture;
+  _MUICCENTRY *lBaseLanguageIndices[4];
+  int lParentLanguageIndices[4];
+
+};

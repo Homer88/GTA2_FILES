@@ -1,0 +1,15 @@
+// Структура: _NT_TIB32
+// Полей: 7
+// Строки в оригинале: 21938-21947
+struct _NT_TIB32
+{
+
+  unsigned int ExceptionList;
+  unsigned int StackBase;
+  unsigned int StackLimit;
+  unsigned int SubSystemTib;
+  $E38888FFFF2E8047BDBD55C921E86469 ___u4;
+  unsigned int ArbitraryUserPointer;
+  unsigned int Self;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _IMAGE_IMPORT_CONTROL_TRANSFER_DYNAMIC_RELOCATION
+// Полей: 3
+// Строки в оригинале: 111270-111275
+struct _IMAGE_IMPORT_CONTROL_TRANSFER_DYNAMIC_RELOCATION
+{
+
+  unsigned __int32 PageRelativeOffset : 12;
+  unsigned __int32 IndirectCall : 1;
+  unsigned __int32 IATIndex : 19;
+
+};

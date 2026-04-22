@@ -1,0 +1,32 @@
+// Структура: IFsiFileItemVtbl
+// Полей: 24
+// Строки в оригинале: 41277-41303
+struct IFsiFileItemVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFsiFileItem *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFsiFileItem *This);
+  ULONG (__stdcall *Release)(IFsiFileItem *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IFsiFileItem *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IFsiFileItem *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IFsiFileItem *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IFsiFileItem *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Name)(IFsiFileItem *This, BSTR *pVal);
+  HRESULT (__stdcall *get_FullPath)(IFsiFileItem *This, BSTR *pVal);
+  HRESULT (__stdcall *get_CreationTime)(IFsiFileItem *This, DATE *pVal);
+  HRESULT (__stdcall *put_CreationTime)(IFsiFileItem *This, DATE newVal);
+  HRESULT (__stdcall *get_LastAccessedTime)(IFsiFileItem *This, DATE *pVal);
+  HRESULT (__stdcall *put_LastAccessedTime)(IFsiFileItem *This, DATE newVal);
+  HRESULT (__stdcall *get_LastModifiedTime)(IFsiFileItem *This, DATE *pVal);
+  HRESULT (__stdcall *put_LastModifiedTime)(IFsiFileItem *This, DATE newVal);
+  HRESULT (__stdcall *get_IsHidden)(IFsiFileItem *This, VARIANT_BOOL *pVal);
+  HRESULT (__stdcall *put_IsHidden)(IFsiFileItem *This, VARIANT_BOOL newVal);
+  HRESULT (__stdcall *FileSystemName)(IFsiFileItem *This, FsiFileSystems fileSystem, BSTR *pVal);
+  HRESULT (__stdcall *FileSystemPath)(IFsiFileItem *This, FsiFileSystems fileSystem, BSTR *pVal);
+  HRESULT (__stdcall *get_DataSize)(IFsiFileItem *This, LONGLONG *pVal);
+  HRESULT (__stdcall *get_DataSize32BitLow)(IFsiFileItem *This, LONG *pVal);
+  HRESULT (__stdcall *get_DataSize32BitHigh)(IFsiFileItem *This, LONG *pVal);
+  HRESULT (__stdcall *get_Data)(IFsiFileItem *This, IStream **pVal);
+  HRESULT (__stdcall *put_Data)(IFsiFileItem *This, IStream *newVal);
+
+};

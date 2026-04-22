@@ -1,0 +1,9 @@
+// Структура: _REFS_VOLUME_COUNTER_INFO_INPUT_BUFFER
+// Полей: 1
+// Строки в оригинале: 103999-104002
+struct _REFS_VOLUME_COUNTER_INFO_INPUT_BUFFER
+{
+
+  unsigned __int8 ResetCounters;
+
+};

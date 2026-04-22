@@ -1,0 +1,17 @@
+// Структура: tagIMEMENUITEMINFOA
+// Полей: 9
+// Строки в оригинале: 84226-84237
+struct tagIMEMENUITEMINFOA
+{
+
+  unsigned int cbSize;
+  unsigned int fType;
+  unsigned int fState;
+  unsigned int wID;
+  HBITMAP__ *hbmpChecked;
+  HBITMAP__ *hbmpUnchecked;
+  unsigned int dwItemData;
+  char szString[80];
+  HBITMAP__ *hbmpItem;
+
+};

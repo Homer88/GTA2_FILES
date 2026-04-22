@@ -1,0 +1,9 @@
+// Структура: ICurrentItem
+// Полей: 1
+// Строки в оригинале: 37030-37033
+struct ICurrentItem
+{
+
+  struct ICurrentItemVtbl *lpVtbl;
+
+};

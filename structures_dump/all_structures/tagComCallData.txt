@@ -1,0 +1,11 @@
+// Структура: tagComCallData
+// Полей: 3
+// Строки в оригинале: 188188-188193
+struct tagComCallData
+{
+
+  unsigned int dwDispid;
+  unsigned int dwReserved;
+  void *pUserDefined;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _RTTICompleteObjectLocator
+// Полей: 5
+// Строки в оригинале: 5816-5823
+struct _RTTICompleteObjectLocator
+{
+
+  int signature;
+  int offset;
+  int cdOffset;
+  _UNKNOWN *typeDescriptor __off;
+  _UNKNOWN *classDescriptor __off;
+
+};

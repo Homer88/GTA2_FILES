@@ -1,0 +1,12 @@
+// Структура: _GDI_TEB_BATCH32
+// Полей: 4
+// Строки в оригинале: 21967-21973
+struct _GDI_TEB_BATCH32
+{
+
+  unsigned __int32 Offset : 31;
+  unsigned __int32 HasRenderingCommand : 1;
+  unsigned int HDC;
+  unsigned int Buffer[310];
+
+};

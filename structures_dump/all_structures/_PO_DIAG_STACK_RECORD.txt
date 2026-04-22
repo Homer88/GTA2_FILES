@@ -1,0 +1,10 @@
+// Структура: _PO_DIAG_STACK_RECORD
+// Полей: 2
+// Строки в оригинале: 19077-19081
+struct _PO_DIAG_STACK_RECORD
+{
+
+  unsigned int StackDepth;
+  void *Stack[1];
+
+};

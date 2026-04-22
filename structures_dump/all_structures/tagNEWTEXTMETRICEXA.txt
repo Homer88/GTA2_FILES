@@ -1,0 +1,10 @@
+// Структура: tagNEWTEXTMETRICEXA
+// Полей: 2
+// Строки в оригинале: 102849-102853
+struct tagNEWTEXTMETRICEXA
+{
+
+  tagNEWTEXTMETRICA ntmTm;
+  tagFONTSIGNATURE ntmFontSig;
+
+};

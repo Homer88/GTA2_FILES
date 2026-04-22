@@ -1,0 +1,10 @@
+// Структура: _SEC_APPLICATION_PROTOCOLS
+// Полей: 2
+// Строки в оригинале: 325692-325696
+struct _SEC_APPLICATION_PROTOCOLS
+{
+
+  unsigned int ProtocolListsSize;
+  _SEC_APPLICATION_PROTOCOL_LIST ProtocolLists[1];
+
+};

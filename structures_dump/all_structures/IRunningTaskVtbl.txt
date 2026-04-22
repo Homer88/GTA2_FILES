@@ -1,0 +1,23 @@
+// Структура: IRunningTaskVtbl
+// Полей: 15
+// Строки в оригинале: 44741-44758
+struct IRunningTaskVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRunningTask *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRunningTask *This);
+  ULONG (__stdcall *Release)(IRunningTask *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IRunningTask *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IRunningTask *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IRunningTask *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IRunningTask *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Name)(IRunningTask *This, BSTR *pName);
+  HRESULT (__stdcall *get_InstanceGuid)(IRunningTask *This, BSTR *pGuid);
+  HRESULT (__stdcall *get_Path)(IRunningTask *This, BSTR *pPath);
+  HRESULT (__stdcall *get_State)(IRunningTask *This, TASK_STATE *pState);
+  HRESULT (__stdcall *get_CurrentAction)(IRunningTask *This, BSTR *pName);
+  HRESULT (__stdcall *Stop)(IRunningTask *This);
+  HRESULT (__stdcall *Refresh)(IRunningTask *This);
+  HRESULT (__stdcall *get_EnginePID)(IRunningTask *This, DWORD *pPID);
+
+};

@@ -1,0 +1,12 @@
+// Структура: _HEAP_GLOBAL_APPCOMPAT_FLAGS
+// Полей: 4
+// Строки в оригинале: 22490-22496
+struct _HEAP_GLOBAL_APPCOMPAT_FLAGS
+{
+
+  unsigned __int32 SafeInputValidation : 1;
+  unsigned __int32 Padding : 1;
+  unsigned __int32 CommitLFHSubsegments : 1;
+  unsigned __int32 AllocateHeapFromEnv : 1;
+
+};

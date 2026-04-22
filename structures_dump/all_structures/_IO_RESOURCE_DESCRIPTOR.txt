@@ -1,0 +1,15 @@
+// Структура: _IO_RESOURCE_DESCRIPTOR
+// Полей: 7
+// Строки в оригинале: 18773-18782
+struct _IO_RESOURCE_DESCRIPTOR
+{
+
+  unsigned __int8 Option;
+  unsigned __int8 Type;
+  unsigned __int8 ShareDisposition;
+  unsigned __int8 Spare1;
+  unsigned __int16 Flags;
+  unsigned __int16 Spare2;
+  _IO_RESOURCE_DESCRIPTOR::$EDD907781FF4E1BB4DDF50D225C05E0F u;
+
+};

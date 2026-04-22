@@ -1,0 +1,12 @@
+// Структура: IThumbnailHandlerFactoryVtbl
+// Полей: 4
+// Строки в оригинале: 43076-43082
+struct IThumbnailHandlerFactoryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IThumbnailHandlerFactory *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IThumbnailHandlerFactory *This);
+  ULONG (__stdcall *Release)(IThumbnailHandlerFactory *This);
+  HRESULT (__stdcall *GetThumbnailHandler)(IThumbnailHandlerFactory *This, LPCITEMIDLIST pidlChild, IBindCtx *pbc, const IID *const riid, void **ppv);
+
+};

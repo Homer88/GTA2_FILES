@@ -1,0 +1,32 @@
+// Структура: IDirectDraw2Vtbl
+// Полей: 24
+// Строки в оригинале: 26636-26662
+struct IDirectDraw2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirectDraw2 *This, const IID *const riid, LPVOID *ppvObj);
+  ULONG (__stdcall *AddRef)(IDirectDraw2 *This);
+  ULONG (__stdcall *Release)(IDirectDraw2 *This);
+  HRESULT (__stdcall *Compact)(IDirectDraw2 *This);
+  HRESULT (__stdcall *CreateClipper)(IDirectDraw2 *This, DWORD, LPDIRECTDRAWCLIPPER *, IUnknown *);
+  HRESULT (__stdcall *CreatePalette)(IDirectDraw2 *This, DWORD, LPPALETTEENTRY, LPDIRECTDRAWPALETTE *, IUnknown *);
+  HRESULT (__stdcall *CreateSurface)(IDirectDraw2 *This, LPDDSURFACEDESC, LPDIRECTDRAWSURFACE *, IUnknown *);
+  HRESULT (__stdcall *DuplicateSurface)(IDirectDraw2 *This, LPDIRECTDRAWSURFACE, LPDIRECTDRAWSURFACE *);
+  HRESULT (__stdcall *EnumDisplayModes)(IDirectDraw2 *This, DWORD, LPDDSURFACEDESC, LPVOID, LPDDENUMMODESCALLBACK);
+  HRESULT (__stdcall *EnumSurfaces)(IDirectDraw2 *This, DWORD, LPDDSURFACEDESC, LPVOID, LPDDENUMSURFACESCALLBACK);
+  HRESULT (__stdcall *FlipToGDISurface)(IDirectDraw2 *This);
+  HRESULT (__stdcall *GetCaps)(IDirectDraw2 *This, LPDDCAPS, LPDDCAPS);
+  HRESULT (__stdcall *GetDisplayMode)(IDirectDraw2 *This, LPDDSURFACEDESC);
+  HRESULT (__stdcall *GetFourCCCodes)(IDirectDraw2 *This, LPDWORD, LPDWORD);
+  HRESULT (__stdcall *GetGDISurface)(IDirectDraw2 *This, LPDIRECTDRAWSURFACE *);
+  HRESULT (__stdcall *GetMonitorFrequency)(IDirectDraw2 *This, LPDWORD);
+  HRESULT (__stdcall *GetScanLine)(IDirectDraw2 *This, LPDWORD);
+  HRESULT (__stdcall *GetVerticalBlankStatus)(IDirectDraw2 *This, LPBOOL);
+  HRESULT (__stdcall *Initialize)(IDirectDraw2 *This, GUID *);
+  HRESULT (__stdcall *RestoreDisplayMode)(IDirectDraw2 *This);
+  HRESULT (__stdcall *SetCooperativeLevel)(IDirectDraw2 *This, HWND, DWORD);
+  HRESULT (__stdcall *SetDisplayMode)(IDirectDraw2 *This, DWORD, DWORD, DWORD, DWORD, DWORD);
+  HRESULT (__stdcall *WaitForVerticalBlank)(IDirectDraw2 *This, DWORD, HANDLE);
+  HRESULT (__stdcall *GetAvailableVidMem)(IDirectDraw2 *This, LPDDSCAPS, LPDWORD, LPDWORD);
+
+};

@@ -1,0 +1,11 @@
+// Структура: _NDR64_UNION_ARM
+// Полей: 3
+// Строки в оригинале: 331394-331399
+struct _NDR64_UNION_ARM
+{
+
+  __int64 CaseValue;
+  const void *Type;
+  unsigned int Reserved;
+
+};

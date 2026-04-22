@@ -1,0 +1,14 @@
+// Структура: IUserNotificationCallbackVtbl
+// Полей: 6
+// Строки в оригинале: 34112-34120
+struct IUserNotificationCallbackVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IUserNotificationCallback *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IUserNotificationCallback *This);
+  ULONG (__stdcall *Release)(IUserNotificationCallback *This);
+  HRESULT (__stdcall *OnBalloonUserClick)(IUserNotificationCallback *This, POINT *pt);
+  HRESULT (__stdcall *OnLeftClick)(IUserNotificationCallback *This, POINT *pt);
+  HRESULT (__stdcall *OnContextMenu)(IUserNotificationCallback *This, POINT *pt);
+
+};

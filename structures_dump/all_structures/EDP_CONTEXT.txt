@@ -1,0 +1,12 @@
+// Структура: EDP_CONTEXT
+// Полей: 4
+// Строки в оригинале: 127088-127094
+struct EDP_CONTEXT
+{
+
+  EDP_CONTEXT_STATES contextStates;
+  unsigned int allowedEnterpriseIdCount;
+  wchar_t *enterpriseIdForUIEnforcement;
+  wchar_t *allowedEnterpriseIds[1];
+
+};

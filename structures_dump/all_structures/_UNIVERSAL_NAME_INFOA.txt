@@ -1,0 +1,9 @@
+// Структура: _UNIVERSAL_NAME_INFOA
+// Полей: 1
+// Строки в оригинале: 104154-104157
+struct _UNIVERSAL_NAME_INFOA
+{
+
+  char *lpUniversalName;
+
+};

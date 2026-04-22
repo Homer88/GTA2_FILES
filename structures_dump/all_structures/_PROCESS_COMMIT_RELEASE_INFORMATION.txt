@@ -1,0 +1,16 @@
+// Структура: _PROCESS_COMMIT_RELEASE_INFORMATION
+// Полей: 8
+// Строки в оригинале: 93969-93979
+struct _PROCESS_COMMIT_RELEASE_INFORMATION
+{
+
+  unsigned int Version;
+  unsigned __int32 Eligible : 1;
+  unsigned __int32 ReleaseRepurposedMemResetCommit : 1;
+  unsigned __int32 ForceReleaseMemResetCommit : 1;
+  unsigned __int32 Spare : 29;
+  unsigned int CommitDebt;
+  unsigned int CommittedMemResetSize;
+  unsigned int RepurposedMemResetSize;
+
+};

@@ -1,0 +1,15 @@
+// Структура: IRawElementProviderSimpleVtbl
+// Полей: 7
+// Строки в оригинале: 351879-351888
+struct IRawElementProviderSimpleVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRawElementProviderSimple *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRawElementProviderSimple *This);
+  ULONG (__stdcall *Release)(IRawElementProviderSimple *This);
+  HRESULT (__stdcall *get_ProviderOptions)(IRawElementProviderSimple *This, enum ProviderOptions *pRetVal);
+  HRESULT (__stdcall *GetPatternProvider)(IRawElementProviderSimple *This, PATTERNID patternId, IUnknown **pRetVal);
+  HRESULT (__stdcall *GetPropertyValue)(IRawElementProviderSimple *This, PROPERTYID propertyId, VARIANT *pRetVal);
+  HRESULT (__stdcall *get_HostRawElementProvider)(IRawElementProviderSimple *This, IRawElementProviderSimple **pRetVal);
+
+};

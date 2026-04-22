@@ -1,0 +1,25 @@
+// Структура: IHlinkBrowseContextVtbl
+// Полей: 17
+// Строки в оригинале: 42768-42787
+struct IHlinkBrowseContextVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHlinkBrowseContext *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHlinkBrowseContext *This);
+  ULONG (__stdcall *Release)(IHlinkBrowseContext *This);
+  HRESULT (__stdcall *Register)(IHlinkBrowseContext *This, DWORD reserved, IUnknown *piunk, IMoniker *pimk, DWORD *pdwRegister);
+  HRESULT (__stdcall *GetObjectA)(IHlinkBrowseContext *This, IMoniker *pimk, BOOL fBindIfRootRegistered, IUnknown **ppiunk);
+  HRESULT (__stdcall *Revoke)(IHlinkBrowseContext *This, DWORD dwRegister);
+  HRESULT (__stdcall *SetBrowseWindowInfo)(IHlinkBrowseContext *This, HLBWINFO *phlbwi);
+  HRESULT (__stdcall *GetBrowseWindowInfo)(IHlinkBrowseContext *This, HLBWINFO *phlbwi);
+  HRESULT (__stdcall *SetInitialHlink)(IHlinkBrowseContext *This, IMoniker *pimkTarget, LPCWSTR pwzLocation, LPCWSTR pwzFriendlyName);
+  HRESULT (__stdcall *OnNavigateHlink)(IHlinkBrowseContext *This, DWORD grfHLNF, IMoniker *pimkTarget, LPCWSTR pwzLocation, LPCWSTR pwzFriendlyName, ULONG *puHLID);
+  HRESULT (__stdcall *UpdateHlink)(IHlinkBrowseContext *This, ULONG uHLID, IMoniker *pimkTarget, LPCWSTR pwzLocation, LPCWSTR pwzFriendlyName);
+  HRESULT (__stdcall *EnumNavigationStack)(IHlinkBrowseContext *This, DWORD dwReserved, DWORD grfHLFNAMEF, IEnumHLITEM **ppienumhlitem);
+  HRESULT (__stdcall *QueryHlink)(IHlinkBrowseContext *This, DWORD grfHLQF, ULONG uHLID);
+  HRESULT (__stdcall *GetHlink)(IHlinkBrowseContext *This, ULONG uHLID, IHlink **ppihl);
+  HRESULT (__stdcall *SetCurrentHlink)(IHlinkBrowseContext *This, ULONG uHLID);
+  HRESULT (__stdcall *Clone)(IHlinkBrowseContext *This, IUnknown *piunkOuter, const IID *const riid, IUnknown **ppiunkObj);
+  HRESULT (__stdcall *Close)(IHlinkBrowseContext *This, DWORD reserved);
+
+};

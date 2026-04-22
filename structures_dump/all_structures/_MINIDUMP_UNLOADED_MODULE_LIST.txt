@@ -1,0 +1,11 @@
+// Структура: _MINIDUMP_UNLOADED_MODULE_LIST
+// Полей: 3
+// Строки в оригинале: 123064-123069
+struct _MINIDUMP_UNLOADED_MODULE_LIST
+{
+
+  unsigned int SizeOfHeader;
+  unsigned int SizeOfEntry;
+  unsigned int NumberOfEntries;
+
+};

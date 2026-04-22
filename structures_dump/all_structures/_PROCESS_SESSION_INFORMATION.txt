@@ -1,0 +1,9 @@
+// Структура: _PROCESS_SESSION_INFORMATION
+// Полей: 1
+// Строки в оригинале: 96232-96235
+struct _PROCESS_SESSION_INFORMATION
+{
+
+  unsigned int SessionId;
+
+};

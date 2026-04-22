@@ -1,0 +1,52 @@
+// Структура: IDiscFormat2DataVtbl
+// Полей: 44
+// Строки в оригинале: 34017-34063
+struct IDiscFormat2DataVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDiscFormat2Data *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDiscFormat2Data *This);
+  ULONG (__stdcall *Release)(IDiscFormat2Data *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IDiscFormat2Data *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IDiscFormat2Data *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IDiscFormat2Data *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IDiscFormat2Data *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *IsRecorderSupported)(IDiscFormat2Data *This, IDiscRecorder2 *recorder, VARIANT_BOOL *value);
+  HRESULT (__stdcall *IsCurrentMediaSupported)(IDiscFormat2Data *This, IDiscRecorder2 *recorder, VARIANT_BOOL *value);
+  HRESULT (__stdcall *get_MediaPhysicallyBlank)(IDiscFormat2Data *This, VARIANT_BOOL *value);
+  HRESULT (__stdcall *get_MediaHeuristicallyBlank)(IDiscFormat2Data *This, VARIANT_BOOL *value);
+  HRESULT (__stdcall *get_SupportedMediaTypes)(IDiscFormat2Data *This, SAFEARRAY **value);
+  HRESULT (__stdcall *put_Recorder)(IDiscFormat2Data *This, IDiscRecorder2 *value);
+  HRESULT (__stdcall *get_Recorder)(IDiscFormat2Data *This, IDiscRecorder2 **value);
+  HRESULT (__stdcall *put_BufferUnderrunFreeDisabled)(IDiscFormat2Data *This, VARIANT_BOOL value);
+  HRESULT (__stdcall *get_BufferUnderrunFreeDisabled)(IDiscFormat2Data *This, VARIANT_BOOL *value);
+  HRESULT (__stdcall *put_PostgapAlreadyInImage)(IDiscFormat2Data *This, VARIANT_BOOL value);
+  HRESULT (__stdcall *get_PostgapAlreadyInImage)(IDiscFormat2Data *This, VARIANT_BOOL *value);
+  HRESULT (__stdcall *get_CurrentMediaStatus)(IDiscFormat2Data *This, IMAPI_FORMAT2_DATA_MEDIA_STATE *value);
+  HRESULT (__stdcall *get_WriteProtectStatus)(IDiscFormat2Data *This, IMAPI_MEDIA_WRITE_PROTECT_STATE *value);
+  HRESULT (__stdcall *get_TotalSectorsOnMedia)(IDiscFormat2Data *This, LONG *value);
+  HRESULT (__stdcall *get_FreeSectorsOnMedia)(IDiscFormat2Data *This, LONG *value);
+  HRESULT (__stdcall *get_NextWritableAddress)(IDiscFormat2Data *This, LONG *value);
+  HRESULT (__stdcall *get_StartAddressOfPreviousSession)(IDiscFormat2Data *This, LONG *value);
+  HRESULT (__stdcall *get_LastWrittenAddressOfPreviousSession)(IDiscFormat2Data *This, LONG *value);
+  HRESULT (__stdcall *put_ForceMediaToBeClosed)(IDiscFormat2Data *This, VARIANT_BOOL value);
+  HRESULT (__stdcall *get_ForceMediaToBeClosed)(IDiscFormat2Data *This, VARIANT_BOOL *value);
+  HRESULT (__stdcall *put_DisableConsumerDvdCompatibilityMode)(IDiscFormat2Data *This, VARIANT_BOOL value);
+  HRESULT (__stdcall *get_DisableConsumerDvdCompatibilityMode)(IDiscFormat2Data *This, VARIANT_BOOL *value);
+  HRESULT (__stdcall *get_CurrentPhysicalMediaType)(IDiscFormat2Data *This, IMAPI_MEDIA_PHYSICAL_TYPE *value);
+  HRESULT (__stdcall *put_ClientName)(IDiscFormat2Data *This, BSTR value);
+  HRESULT (__stdcall *get_ClientName)(IDiscFormat2Data *This, BSTR *value);
+  HRESULT (__stdcall *get_RequestedWriteSpeed)(IDiscFormat2Data *This, LONG *value);
+  HRESULT (__stdcall *get_RequestedRotationTypeIsPureCAV)(IDiscFormat2Data *This, VARIANT_BOOL *value);
+  HRESULT (__stdcall *get_CurrentWriteSpeed)(IDiscFormat2Data *This, LONG *value);
+  HRESULT (__stdcall *get_CurrentRotationTypeIsPureCAV)(IDiscFormat2Data *This, VARIANT_BOOL *value);
+  HRESULT (__stdcall *get_SupportedWriteSpeeds)(IDiscFormat2Data *This, SAFEARRAY **supportedSpeeds);
+  HRESULT (__stdcall *get_SupportedWriteSpeedDescriptors)(IDiscFormat2Data *This, SAFEARRAY **supportedSpeedDescriptors);
+  HRESULT (__stdcall *put_ForceOverwrite)(IDiscFormat2Data *This, VARIANT_BOOL value);
+  HRESULT (__stdcall *get_ForceOverwrite)(IDiscFormat2Data *This, VARIANT_BOOL *value);
+  HRESULT (__stdcall *get_MultisessionInterfaces)(IDiscFormat2Data *This, SAFEARRAY **value);
+  HRESULT (__stdcall *Write)(IDiscFormat2Data *This, IStream *data);
+  HRESULT (__stdcall *CancelWrite)(IDiscFormat2Data *This);
+  HRESULT (__stdcall *SetWriteSpeed)(IDiscFormat2Data *This, LONG RequestedSectorsPerSecond, VARIANT_BOOL RotationTypeIsPureCAV);
+
+};

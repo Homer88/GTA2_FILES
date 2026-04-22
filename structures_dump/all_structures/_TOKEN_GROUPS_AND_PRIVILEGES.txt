@@ -1,0 +1,18 @@
+// Структура: _TOKEN_GROUPS_AND_PRIVILEGES
+// Полей: 10
+// Строки в оригинале: 78153-78165
+struct _TOKEN_GROUPS_AND_PRIVILEGES
+{
+
+  unsigned int SidCount;
+  unsigned int SidLength;
+  _SID_AND_ATTRIBUTES *Sids;
+  unsigned int RestrictedSidCount;
+  unsigned int RestrictedSidLength;
+  _SID_AND_ATTRIBUTES *RestrictedSids;
+  unsigned int PrivilegeCount;
+  unsigned int PrivilegeLength;
+  _LUID_AND_ATTRIBUTES *Privileges;
+  _LUID AuthenticationId;
+
+};

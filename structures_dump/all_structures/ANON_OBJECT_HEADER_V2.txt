@@ -1,0 +1,18 @@
+// Структура: ANON_OBJECT_HEADER_V2
+// Полей: 10
+// Строки в оригинале: 111549-111561
+struct ANON_OBJECT_HEADER_V2
+{
+
+  unsigned __int16 Sig1;
+  unsigned __int16 Sig2;
+  unsigned __int16 Version;
+  unsigned __int16 Machine;
+  unsigned int TimeDateStamp;
+  _GUID ClassID;
+  unsigned int SizeOfData;
+  unsigned int Flags;
+  unsigned int MetaDataSize;
+  unsigned int MetaDataOffset;
+
+};

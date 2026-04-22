@@ -1,0 +1,12 @@
+// Структура: _QUERY_BAD_RANGES_OUTPUT
+// Полей: 4
+// Строки в оригинале: 89611-89617
+struct _QUERY_BAD_RANGES_OUTPUT
+{
+
+  unsigned int Flags;
+  unsigned int NumBadRanges;
+  unsigned __int64 NextOffsetToLookUp;
+  _QUERY_BAD_RANGES_OUTPUT_RANGE BadRanges[1];
+
+};

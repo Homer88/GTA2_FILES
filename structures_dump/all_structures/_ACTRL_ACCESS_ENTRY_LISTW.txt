@@ -1,0 +1,10 @@
+// Структура: _ACTRL_ACCESS_ENTRY_LISTW
+// Полей: 2
+// Строки в оригинале: 229271-229275
+struct _ACTRL_ACCESS_ENTRY_LISTW
+{
+
+  unsigned int cEntries;
+  _ACTRL_ACCESS_ENTRYW *pAccessList;
+
+};

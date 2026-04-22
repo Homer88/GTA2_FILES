@@ -1,0 +1,9 @@
+// Структура: IDirectDrawSurface4
+// Полей: 1
+// Строки в оригинале: 26577-26580
+struct IDirectDrawSurface4
+{
+
+  struct IDirectDrawSurface4Vtbl *lpVtbl;
+
+};

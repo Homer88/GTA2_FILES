@@ -1,0 +1,11 @@
+// Структура: _CREATE_THREAD_DEBUG_INFO
+// Полей: 3
+// Строки в оригинале: 88082-88087
+struct _CREATE_THREAD_DEBUG_INFO
+{
+
+  void *hThread;
+  void *lpThreadLocalBase;
+  unsigned int (__stdcall *lpStartAddress)(void *);
+
+};

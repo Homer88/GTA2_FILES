@@ -1,0 +1,28 @@
+// Структура: ITriggerVtbl
+// Полей: 20
+// Строки в оригинале: 45000-45022
+struct ITriggerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITrigger *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITrigger *This);
+  ULONG (__stdcall *Release)(ITrigger *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(ITrigger *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(ITrigger *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(ITrigger *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(ITrigger *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Type)(ITrigger *This, TASK_TRIGGER_TYPE2 *pType);
+  HRESULT (__stdcall *get_Id)(ITrigger *This, BSTR *pId);
+  HRESULT (__stdcall *put_Id)(ITrigger *This, BSTR id);
+  HRESULT (__stdcall *get_Repetition)(ITrigger *This, IRepetitionPattern **ppRepeat);
+  HRESULT (__stdcall *put_Repetition)(ITrigger *This, IRepetitionPattern *pRepeat);
+  HRESULT (__stdcall *get_ExecutionTimeLimit)(ITrigger *This, BSTR *pTimeLimit);
+  HRESULT (__stdcall *put_ExecutionTimeLimit)(ITrigger *This, BSTR timelimit);
+  HRESULT (__stdcall *get_StartBoundary)(ITrigger *This, BSTR *pStart);
+  HRESULT (__stdcall *put_StartBoundary)(ITrigger *This, BSTR start);
+  HRESULT (__stdcall *get_EndBoundary)(ITrigger *This, BSTR *pEnd);
+  HRESULT (__stdcall *put_EndBoundary)(ITrigger *This, BSTR end);
+  HRESULT (__stdcall *get_Enabled)(ITrigger *This, VARIANT_BOOL *pEnabled);
+  HRESULT (__stdcall *put_Enabled)(ITrigger *This, VARIANT_BOOL enabled);
+
+};

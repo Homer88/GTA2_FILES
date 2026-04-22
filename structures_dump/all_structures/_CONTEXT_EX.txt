@@ -1,0 +1,11 @@
+// Структура: _CONTEXT_EX
+// Полей: 3
+// Строки в оригинале: 102528-102533
+struct _CONTEXT_EX
+{
+
+  _CONTEXT_CHUNK All;
+  _CONTEXT_CHUNK Legacy;
+  _CONTEXT_CHUNK XState;
+
+};

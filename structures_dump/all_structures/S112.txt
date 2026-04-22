@@ -1,0 +1,36 @@
+// Структура: S112
+// Полей: 28
+// Строки в оригинале: 8400-8430
+struct S112
+{
+
+  __int16 field;
+  char X;
+  char Y;
+  char Z;
+  char field_5;
+  char field_6;
+  char field_7;
+  int field_8;
+  int field_C;
+  S110 *S110;
+  S113 *S113;
+  __int16 field_18;
+  char field_1A;
+  char field_1B;
+  int field_1C;
+  int field_20;
+  int State;
+  char field_28;
+  char field_29;
+  __int16 field_2A;
+  __int16 field_2C;
+  char field_2E;
+  char field_2F;
+  int field_30;
+  char field_34;
+  char field_35;
+  char field_36;
+  char field_0;
+
+};

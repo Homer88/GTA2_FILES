@@ -1,0 +1,15 @@
+// Структура: _SYSTEM_INFO
+// Полей: 7
+// Строки в оригинале: 2366-2375
+struct _SYSTEM_INFO
+{
+
+  union
+  {
+    DWORD dwOemId;
+    struct
+    {
+      WORD wProcessorArchitecture;
+      WORD wReserved;
+    
+};

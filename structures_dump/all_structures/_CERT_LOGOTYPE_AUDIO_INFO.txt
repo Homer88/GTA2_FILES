@@ -1,0 +1,13 @@
+// Структура: _CERT_LOGOTYPE_AUDIO_INFO
+// Полей: 5
+// Строки в оригинале: 81961-81968
+struct _CERT_LOGOTYPE_AUDIO_INFO
+{
+
+  unsigned int dwFileSize;
+  unsigned int dwPlayTime;
+  unsigned int dwChannels;
+  unsigned int dwSampleRate;
+  wchar_t *pwszLanguage;
+
+};

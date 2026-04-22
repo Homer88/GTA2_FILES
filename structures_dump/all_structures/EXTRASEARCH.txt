@@ -1,0 +1,11 @@
+// Структура: EXTRASEARCH
+// Полей: 3
+// Строки в оригинале: 32439-32444
+struct EXTRASEARCH
+{
+
+  GUID guidSearch;
+  WCHAR wszFriendlyName[80];
+  WCHAR wszUrl[2084];
+
+};

@@ -1,0 +1,9 @@
+// Структура: _FILE_LEVEL_TRIM_OUTPUT
+// Полей: 1
+// Строки в оригинале: 99640-99643
+struct _FILE_LEVEL_TRIM_OUTPUT
+{
+
+  unsigned int NumRangesProcessed;
+
+};

@@ -1,0 +1,12 @@
+// Структура: tagRGBQUAD
+// Полей: 4
+// Строки в оригинале: 95967-95973
+struct tagRGBQUAD
+{
+
+  unsigned __int8 rgbBlue;
+  unsigned __int8 rgbGreen;
+  unsigned __int8 rgbRed;
+  unsigned __int8 rgbReserved;
+
+};

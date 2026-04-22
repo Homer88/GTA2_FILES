@@ -1,0 +1,9 @@
+// Структура: IPropertyStoreCache
+// Полей: 1
+// Строки в оригинале: 45420-45423
+struct IPropertyStoreCache
+{
+
+  struct IPropertyStoreCacheVtbl *lpVtbl;
+
+};

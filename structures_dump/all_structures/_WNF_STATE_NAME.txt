@@ -1,0 +1,9 @@
+// Структура: _WNF_STATE_NAME
+// Полей: 1
+// Строки в оригинале: 16659-16662
+struct _WNF_STATE_NAME
+{
+
+  unsigned int Data[2];
+
+};

@@ -1,0 +1,11 @@
+// Структура: _CRYPT_ATTRIBUTE
+// Полей: 3
+// Строки в оригинале: 79962-79967
+struct _CRYPT_ATTRIBUTE
+{
+
+  char *pszObjId;
+  unsigned int cValue;
+  _CRYPTOAPI_BLOB *rgValue;
+
+};

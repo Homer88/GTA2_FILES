@@ -1,0 +1,13 @@
+// Структура: _FILE_FS_FULL_SIZE_INFORMATION
+// Полей: 5
+// Строки в оригинале: 84289-84296
+struct _FILE_FS_FULL_SIZE_INFORMATION
+{
+
+  _LARGE_INTEGER TotalAllocationUnits;
+  _LARGE_INTEGER CallerAvailableAllocationUnits;
+  _LARGE_INTEGER ActualAvailableAllocationUnits;
+  unsigned int SectorsPerAllocationUnit;
+  unsigned int BytesPerSector;
+
+};

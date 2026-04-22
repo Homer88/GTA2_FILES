@@ -1,0 +1,36 @@
+// Структура: _SYSTEM_VERIFIER_INFORMATION
+// Полей: 28
+// Строки в оригинале: 97393-97423
+struct _SYSTEM_VERIFIER_INFORMATION
+{
+
+  unsigned int NextEntryOffset;
+  unsigned int Level;
+  unsigned int RuleClasses[2];
+  unsigned int TriageContext;
+  _SYSTEM_VERIFIER_INFORMATION::<unnamed_type_u1> u1;
+  _UNICODE_STRING DriverName;
+  unsigned int RaiseIrqls;
+  unsigned int AcquireSpinLocks;
+  unsigned int SynchronizeExecutions;
+  unsigned int AllocationsAttempted;
+  unsigned int AllocationsSucceeded;
+  unsigned int AllocationsSucceededSpecialPool;
+  unsigned int AllocationsWithNoTag;
+  unsigned int TrimRequests;
+  unsigned int Trims;
+  unsigned int AllocationsFailed;
+  unsigned int AllocationsFailedDeliberately;
+  unsigned int Loads;
+  unsigned int Unloads;
+  unsigned int UnTrackedPool;
+  unsigned int CurrentPagedPoolAllocations;
+  unsigned int CurrentNonPagedPoolAllocations;
+  unsigned int PeakPagedPoolAllocations;
+  unsigned int PeakNonPagedPoolAllocations;
+  unsigned int PagedPoolUsageInBytes;
+  unsigned int NonPagedPoolUsageInBytes;
+  unsigned int PeakPagedPoolUsageInBytes;
+  unsigned int PeakNonPagedPoolUsageInBytes;
+
+};

@@ -1,0 +1,15 @@
+// Структура: METADC
+// Полей: 7
+// Строки в оригинале: 146851-146860
+struct METADC
+{
+
+  int xMwo;
+  int yMwo;
+  int xMwe;
+  int yMwe;
+  int xre;
+  int yre;
+  METADC *pNext;
+
+};

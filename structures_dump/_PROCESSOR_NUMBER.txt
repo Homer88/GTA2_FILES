@@ -1,0 +1,10 @@
+// Structure: _PROCESSOR_NUMBER
+// Lines: 2491 - 2496
+// Fields: 4
+
+struct _PROCESSOR_NUMBER
+{
+  WORD Group;
+  BYTE Number;
+  BYTE Reserved;
+};

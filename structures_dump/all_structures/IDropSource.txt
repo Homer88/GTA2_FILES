@@ -1,0 +1,9 @@
+// Структура: IDropSource
+// Полей: 1
+// Строки в оригинале: 28506-28509
+struct IDropSource
+{
+
+  struct IDropSourceVtbl *lpVtbl;
+
+};

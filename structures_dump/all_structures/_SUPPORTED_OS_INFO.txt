@@ -1,0 +1,10 @@
+// Структура: _SUPPORTED_OS_INFO
+// Полей: 2
+// Строки в оригинале: 84156-84160
+struct _SUPPORTED_OS_INFO
+{
+
+  unsigned __int16 MajorVersion;
+  unsigned __int16 MinorVersion;
+
+};

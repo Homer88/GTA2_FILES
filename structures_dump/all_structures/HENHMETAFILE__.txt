@@ -1,0 +1,9 @@
+// Структура: HENHMETAFILE__
+// Полей: 1
+// Строки в оригинале: 27150-27153
+struct HENHMETAFILE__
+{
+
+  int unused;
+
+};

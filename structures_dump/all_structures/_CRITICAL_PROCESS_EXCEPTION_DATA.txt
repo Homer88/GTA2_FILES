@@ -1,0 +1,13 @@
+// Структура: _CRITICAL_PROCESS_EXCEPTION_DATA
+// Полей: 5
+// Строки в оригинале: 104264-104271
+struct _CRITICAL_PROCESS_EXCEPTION_DATA
+{
+
+  _GUID ReportId;
+  _UNICODE_STRING ModuleName;
+  unsigned int ModuleTimestamp;
+  unsigned int ModuleSize;
+  unsigned __int64 Offset;
+
+};

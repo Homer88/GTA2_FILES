@@ -1,0 +1,10 @@
+// Структура: _HEAP_OPTIMIZE_RESOURCES_INFORMATION
+// Полей: 2
+// Строки в оригинале: 97204-97208
+struct _HEAP_OPTIMIZE_RESOURCES_INFORMATION
+{
+
+  unsigned int Version;
+  unsigned int Flags;
+
+};

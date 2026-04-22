@@ -1,0 +1,11 @@
+// Структура: _MESSAGE_RESOURCE_BLOCK
+// Полей: 3
+// Строки в оригинале: 90246-90251
+struct _MESSAGE_RESOURCE_BLOCK
+{
+
+  unsigned int LowId;
+  unsigned int HighId;
+  unsigned int OffsetToEntries;
+
+};

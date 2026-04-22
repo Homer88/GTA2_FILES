@@ -1,0 +1,13 @@
+// Структура: _CRYPT_TIMESTAMP_PARA
+// Полей: 5
+// Строки в оригинале: 96792-96799
+struct _CRYPT_TIMESTAMP_PARA
+{
+
+  const char *pszTSAPolicyId;
+  int fRequestCerts;
+  _CRYPTOAPI_BLOB Nonce;
+  unsigned int cExtension;
+  _CERT_EXTENSION *rgExtension;
+
+};

@@ -1,0 +1,10 @@
+// Структура: IShellDetailsVtbl
+// Полей: 2
+// Строки в оригинале: 32222-32226
+struct IShellDetailsVtbl
+{
+
+  HRESULT (__stdcall *GetDetailsOf)(IShellDetails *This, LPCITEMIDLIST pidl, UINT iColumn, SHELLDETAILS *pDetails);
+  HRESULT (__stdcall *ColumnClick)(IShellDetails *This, UINT iColumn);
+
+};

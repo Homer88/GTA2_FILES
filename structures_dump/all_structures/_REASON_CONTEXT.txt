@@ -1,0 +1,11 @@
+// Структура: _REASON_CONTEXT
+// Полей: 3
+// Строки в оригинале: 82776-82781
+struct _REASON_CONTEXT
+{
+
+  unsigned int Version;
+  unsigned int Flags;
+  _REASON_CONTEXT::<unnamed_type_Reason> Reason;
+
+};

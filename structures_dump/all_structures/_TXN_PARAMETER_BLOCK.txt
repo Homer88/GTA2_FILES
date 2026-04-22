@@ -1,0 +1,11 @@
+// Структура: _TXN_PARAMETER_BLOCK
+// Полей: 3
+// Строки в оригинале: 19457-19462
+struct _TXN_PARAMETER_BLOCK
+{
+
+  unsigned __int16 Length;
+  unsigned __int16 TxFsContext;
+  void *TransactionObject;
+
+};

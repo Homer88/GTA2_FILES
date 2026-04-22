@@ -1,0 +1,12 @@
+// Структура: ICDBurnExtVtbl
+// Полей: 4
+// Строки в оригинале: 36541-36547
+struct ICDBurnExtVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICDBurnExt *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICDBurnExt *This);
+  ULONG (__stdcall *Release)(ICDBurnExt *This);
+  HRESULT (__stdcall *GetSupportedActionTypes)(ICDBurnExt *This, CDBE_ACTIONS *pdwActions);
+
+};

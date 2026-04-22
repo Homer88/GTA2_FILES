@@ -1,0 +1,12 @@
+// Структура: _VIRTUALIZATION_RECORD
+// Полей: 4
+// Строки в оригинале: 313637-313643
+struct _VIRTUALIZATION_RECORD
+{
+
+  unsigned __int8 VbsEnabled;
+  unsigned __int8 HvciEnabled;
+  unsigned __int8 HyperVisorEnabled;
+  unsigned __int8 Reserved;
+
+};

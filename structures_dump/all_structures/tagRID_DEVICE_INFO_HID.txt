@@ -1,0 +1,13 @@
+// Структура: tagRID_DEVICE_INFO_HID
+// Полей: 5
+// Строки в оригинале: 81122-81129
+struct tagRID_DEVICE_INFO_HID
+{
+
+  unsigned int dwVendorId;
+  unsigned int dwProductId;
+  unsigned int dwVersionNumber;
+  unsigned __int16 usUsagePage;
+  unsigned __int16 usUsage;
+
+};

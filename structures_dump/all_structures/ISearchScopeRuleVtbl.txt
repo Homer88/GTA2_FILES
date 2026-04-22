@@ -1,0 +1,15 @@
+// Структура: ISearchScopeRuleVtbl
+// Полей: 7
+// Строки в оригинале: 44404-44413
+struct ISearchScopeRuleVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISearchScopeRule *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISearchScopeRule *This);
+  ULONG (__stdcall *Release)(ISearchScopeRule *This);
+  HRESULT (__stdcall *get_PatternOrURL)(ISearchScopeRule *This, LPWSTR *ppszPatternOrURL);
+  HRESULT (__stdcall *get_IsIncluded)(ISearchScopeRule *This, BOOL *pfIsIncluded);
+  HRESULT (__stdcall *get_IsDefault)(ISearchScopeRule *This, BOOL *pfIsDefault);
+  HRESULT (__stdcall *get_FollowFlags)(ISearchScopeRule *This, DWORD *pFollowFlags);
+
+};

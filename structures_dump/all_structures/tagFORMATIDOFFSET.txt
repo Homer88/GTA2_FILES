@@ -1,0 +1,10 @@
+// Структура: tagFORMATIDOFFSET
+// Полей: 2
+// Строки в оригинале: 147572-147576
+struct tagFORMATIDOFFSET
+{
+
+  _GUID formatID;
+  unsigned int dwOffset;
+
+};

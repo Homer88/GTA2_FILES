@@ -1,0 +1,20 @@
+// Структура: __MIDL_ICallFrame_0001
+// Полей: 12
+// Строки в оригинале: 120352-120366
+struct __MIDL_ICallFrame_0001
+{
+
+  unsigned int iMethod;
+  int fHasInValues;
+  int fHasInOutValues;
+  int fHasOutValues;
+  int fDerivesFromIDispatch;
+  int cInInterfacesMax;
+  int cInOutInterfacesMax;
+  int cOutInterfacesMax;
+  int cTopLevelInInterfaces;
+  _GUID iid;
+  unsigned int cMethod;
+  unsigned int cParams;
+
+};

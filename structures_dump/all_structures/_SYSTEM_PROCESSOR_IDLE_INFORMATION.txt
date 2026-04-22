@@ -1,0 +1,16 @@
+// Структура: _SYSTEM_PROCESSOR_IDLE_INFORMATION
+// Полей: 8
+// Строки в оригинале: 84965-84975
+struct _SYSTEM_PROCESSOR_IDLE_INFORMATION
+{
+
+  unsigned __int64 IdleTime;
+  unsigned __int64 C1Time;
+  unsigned __int64 C2Time;
+  unsigned __int64 C3Time;
+  unsigned int C1Transitions;
+  unsigned int C2Transitions;
+  unsigned int C3Transitions;
+  unsigned int Padding;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _RTL_CHASH_TABLE
+// Полей: 4
+// Строки в оригинале: 21559-21565
+struct _RTL_CHASH_TABLE
+{
+
+  _RTL_CHASH_ENTRY *Table;
+  unsigned int EntrySizeShift;
+  unsigned int EntryMax;
+  unsigned int EntryCount;
+
+};

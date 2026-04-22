@@ -1,0 +1,9 @@
+// Структура: ICopyHookW
+// Полей: 1
+// Строки в оригинале: 34830-34833
+struct ICopyHookW
+{
+
+  struct ICopyHookWVtbl *lpVtbl;
+
+};

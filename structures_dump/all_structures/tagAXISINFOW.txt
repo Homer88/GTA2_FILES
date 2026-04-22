@@ -1,0 +1,11 @@
+// Структура: tagAXISINFOW
+// Полей: 3
+// Строки в оригинале: 84773-84778
+struct tagAXISINFOW
+{
+
+  int axMinValue;
+  int axMaxValue;
+  wchar_t axAxisName[16];
+
+};

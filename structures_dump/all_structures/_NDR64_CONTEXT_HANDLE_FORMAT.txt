@@ -1,0 +1,12 @@
+// Структура: _NDR64_CONTEXT_HANDLE_FORMAT
+// Полей: 4
+// Строки в оригинале: 336336-336342
+struct _NDR64_CONTEXT_HANDLE_FORMAT
+{
+
+  unsigned __int8 FormatCode;
+  unsigned __int8 ContextFlags;
+  unsigned __int8 RundownRoutineIndex;
+  unsigned __int8 Ordinal;
+
+};

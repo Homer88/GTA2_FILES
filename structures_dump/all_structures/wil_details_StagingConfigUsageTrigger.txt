@@ -1,0 +1,13 @@
+// Структура: wil_details_StagingConfigUsageTrigger
+// Полей: 5
+// Строки в оригинале: 142398-142405
+struct wil_details_StagingConfigUsageTrigger
+{
+
+  unsigned int featureId;
+  wil_details_StagingConfigWnfStateName trigger;
+  unsigned __int32 serviceReportingKind : 16;
+  unsigned __int32 isVariantConfig : 1;
+  unsigned __int32 unused : 15;
+
+};

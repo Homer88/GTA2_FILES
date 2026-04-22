@@ -1,0 +1,14 @@
+// Структура: _SYSDBG_BUS_DATA
+// Полей: 6
+// Строки в оригинале: 89897-89905
+struct _SYSDBG_BUS_DATA
+{
+
+  unsigned int Address;
+  void *Buffer;
+  unsigned int Request;
+  _BUS_DATA_TYPE BusDataType;
+  unsigned int BusNumber;
+  unsigned int SlotNumber;
+
+};

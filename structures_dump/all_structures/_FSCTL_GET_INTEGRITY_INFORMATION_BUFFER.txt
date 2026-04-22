@@ -1,0 +1,13 @@
+// Структура: _FSCTL_GET_INTEGRITY_INFORMATION_BUFFER
+// Полей: 5
+// Строки в оригинале: 107551-107558
+struct _FSCTL_GET_INTEGRITY_INFORMATION_BUFFER
+{
+
+  unsigned __int16 ChecksumAlgorithm;
+  unsigned __int16 Reserved;
+  unsigned int Flags;
+  unsigned int ChecksumChunkSizeInBytes;
+  unsigned int ClusterSizeInBytes;
+
+};

@@ -1,0 +1,14 @@
+// Структура: _BOOT_RECORD
+// Полей: 6
+// Строки в оригинале: 309946-309954
+struct _BOOT_RECORD
+{
+
+  unsigned __int64 BootFlags;
+  unsigned int FirmwareType;
+  unsigned __int8 SecureBootEnabled;
+  unsigned __int8 SecureBootCapable;
+  unsigned __int8 Reserved1;
+  unsigned __int8 Reserved2;
+
+};

@@ -1,0 +1,15 @@
+// Структура: IProvideMultipleClassInfoVtbl
+// Полей: 7
+// Строки в оригинале: 352678-352687
+struct IProvideMultipleClassInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IProvideMultipleClassInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IProvideMultipleClassInfo *This);
+  ULONG (__stdcall *Release)(IProvideMultipleClassInfo *This);
+  HRESULT (__stdcall *GetClassInfoA)(IProvideMultipleClassInfo *This, ITypeInfo **ppTI);
+  HRESULT (__stdcall *GetGUID)(IProvideMultipleClassInfo *This, DWORD dwGuidKind, GUID *pGUID);
+  HRESULT (__stdcall *GetMultiTypeInfoCount)(IProvideMultipleClassInfo *This, ULONG *pcti);
+  HRESULT (__stdcall *GetInfoOfIndex)(IProvideMultipleClassInfo *This, ULONG iti, DWORD dwFlags, ITypeInfo **pptiCoClass, DWORD *pdwTIFlags, ULONG *pcdispidReserved, IID *piidPrimary, IID *piidSource);
+
+};

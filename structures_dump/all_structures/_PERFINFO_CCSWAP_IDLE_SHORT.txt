@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_CCSWAP_IDLE_SHORT
+// Полей: 2
+// Строки в оригинале: 309207-309211
+struct _PERFINFO_CCSWAP_IDLE_SHORT
+{
+
+  unsigned __int16 DataType : 2;
+  unsigned __int16 TimeDelta : 14;
+
+};

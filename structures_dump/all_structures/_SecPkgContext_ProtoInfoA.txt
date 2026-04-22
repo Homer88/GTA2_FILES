@@ -1,0 +1,11 @@
+// Структура: _SecPkgContext_ProtoInfoA
+// Полей: 3
+// Строки в оригинале: 325894-325899
+struct _SecPkgContext_ProtoInfoA
+{
+
+  char *sProtocolName;
+  unsigned int majorVersion;
+  unsigned int minorVersion;
+
+};

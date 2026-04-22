@@ -1,0 +1,10 @@
+// Структура: TriggerVolume
+// Полей: 2
+// Строки в оригинале: 9994-9998
+struct TriggerVolume
+{
+
+  S65 *FirstElement;
+  S65 S65[1101];
+
+};

@@ -1,0 +1,12 @@
+// Структура: _OCSP_CERT_ID
+// Полей: 4
+// Строки в оригинале: 91713-91719
+struct _OCSP_CERT_ID
+{
+
+  _CRYPT_ALGORITHM_IDENTIFIER HashAlgorithm;
+  _CRYPTOAPI_BLOB IssuerNameHash;
+  _CRYPTOAPI_BLOB IssuerKeyHash;
+  _CRYPTOAPI_BLOB SerialNumber;
+
+};

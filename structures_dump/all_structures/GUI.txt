@@ -1,0 +1,15 @@
+// Структура: GUI
+// Полей: 7
+// Строки в оригинале: 5862-5871
+struct GUI
+{
+
+  char Interface;
+  char PlayerArena;
+  __int16 X;
+  __int16 Y;
+  wchar_t Sprite[50];
+  __int16 dX;
+  __int16 dY;
+
+};

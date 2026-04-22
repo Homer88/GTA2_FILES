@@ -1,0 +1,13 @@
+// Структура: _SHFILEINFOA
+// Полей: 5
+// Строки в оригинале: 81358-81365
+struct _SHFILEINFOA
+{
+
+  HICON__ *hIcon;
+  int iIcon;
+  unsigned int dwAttributes;
+  char szDisplayName[260];
+  char szTypeName[80];
+
+};

@@ -1,0 +1,41 @@
+// Структура: IDirect3DCubeTexture9Vtbl
+// Полей: 33
+// Строки в оригинале: 26063-26098
+struct IDirect3DCubeTexture9Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirect3DCubeTexture9 *This, const IID *const riid, void **ppvObj);
+  ULONG (__stdcall *AddRef)(IDirect3DCubeTexture9 *This);
+  ULONG (__stdcall *Release)(IDirect3DCubeTexture9 *This);
+  HRESULT (__stdcall *GetDevice)(IDirect3DCubeTexture9 *This, IDirect3DDevice9 **ppDevice);
+  HRESULT (__stdcall *SetPrivateData)(IDirect3DCubeTexture9 *This, const GUID *const refguid, const void *pData, DWORD SizeOfData, DWORD Flags);
+  HRESULT (__stdcall *GetPrivateData)(IDirect3DCubeTexture9 *This, const GUID *const refguid, void *pData, DWORD *pSizeOfData);
+  HRESULT (__stdcall *FreePrivateData)(IDirect3DCubeTexture9 *This, const GUID *const refguid);
+  DWORD (__stdcall *SetPriority)(IDirect3DCubeTexture9 *This, DWORD PriorityNew);
+  DWORD (__stdcall *GetPriority)(IDirect3DCubeTexture9 *This);
+  void (__stdcall *PreLoad)(IDirect3DCubeTexture9 *This);
+  D3DRESOURCETYPE (__stdcall *GetType)(IDirect3DCubeTexture9 *This);
+  DWORD (__stdcall *SetLOD)(IDirect3DCubeTexture9 *This, DWORD LODNew);
+  DWORD (__stdcall *GetLOD)(IDirect3DCubeTexture9 *This);
+  DWORD (__stdcall *GetLevelCount)(IDirect3DCubeTexture9 *This);
+  HRESULT (__stdcall *SetAutoGenFilterType)(IDirect3DCubeTexture9 *This, D3DTEXTUREFILTERTYPE FilterType);
+  D3DTEXTUREFILTERTYPE (__stdcall *GetAutoGenFilterType)(IDirect3DCubeTexture9 *This);
+  void (__stdcall *GenerateMipSubLevels)(IDirect3DCubeTexture9 *This);
+  HRESULT (__stdcall *GetLevelDesc)(IDirect3DCubeTexture9 *This, UINT Level, D3DSURFACE_DESC *pDesc);
+  HRESULT (__stdcall *GetCubeMapSurface)(IDirect3DCubeTexture9 *This, D3DCUBEMAP_FACES FaceType, UINT Level, IDirect3DSurface9 **ppCubeMapSurface);
+  HRESULT (__stdcall *LockRect)(IDirect3DCubeTexture9 *This, D3DCUBEMAP_FACES FaceType, UINT Level, D3DLOCKED_RECT *pLockedRect, const RECT *pRect, DWORD Flags);
+  HRESULT (__stdcall *UnlockRect)(IDirect3DCubeTexture9 *This, D3DCUBEMAP_FACES FaceType, UINT Level);
+  HRESULT (__stdcall *AddDirtyRect)(IDirect3DCubeTexture9 *This, D3DCUBEMAP_FACES FaceType, const RECT *pDirtyRect);
+  LPCWSTR Name;
+  UINT Width;
+  UINT Height;
+  UINT Levels;
+  DWORD Usage;
+  D3DFORMAT Format;
+  D3DPOOL Pool;
+  DWORD Priority;
+  DWORD LOD;
+  D3DTEXTUREFILTERTYPE FilterType;
+  UINT LockCount;
+
+};

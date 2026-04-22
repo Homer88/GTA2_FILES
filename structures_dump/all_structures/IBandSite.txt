@@ -1,0 +1,9 @@
+// Структура: IBandSite
+// Полей: 1
+// Строки в оригинале: 32866-32869
+struct IBandSite
+{
+
+  struct IBandSiteVtbl *lpVtbl;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _OBP_SILODRIVERSTATE
+// Полей: 4
+// Строки в оригинале: 17124-17130
+struct _OBP_SILODRIVERSTATE
+{
+
+  _DEVICE_MAP *SystemDeviceMap;
+  _OBP_SYSTEM_DOS_DEVICE_STATE SystemDosDeviceState;
+  _EX_PUSH_LOCK DeviceMapLock;
+  _OBJECT_NAMESPACE_LOOKUPTABLE PrivateNamespaceLookupTable;
+
+};

@@ -1,0 +1,14 @@
+// Структура: _IO_ERROR_LOG_MESSAGE
+// Полей: 6
+// Строки в оригинале: 108212-108220
+struct _IO_ERROR_LOG_MESSAGE
+{
+
+  unsigned __int16 Type;
+  unsigned __int16 Size;
+  unsigned __int16 DriverNameLength;
+  _LARGE_INTEGER TimeStamp;
+  unsigned int DriverNameOffset;
+  _IO_ERROR_LOG_PACKET EntryData;
+
+};

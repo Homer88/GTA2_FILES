@@ -1,0 +1,18 @@
+// Структура: _PEBS_DS_SAVE_AREA64
+// Полей: 10
+// Строки в оригинале: 15149-15161
+struct _PEBS_DS_SAVE_AREA64
+{
+
+  unsigned __int64 BtsBufferBase;
+  unsigned __int64 BtsIndex;
+  unsigned __int64 BtsAbsoluteMaximum;
+  unsigned __int64 BtsInterruptThreshold;
+  unsigned __int64 PebsBufferBase;
+  unsigned __int64 PebsIndex;
+  unsigned __int64 PebsAbsoluteMaximum;
+  unsigned __int64 PebsInterruptThreshold;
+  unsigned __int64 PebsGpCounterReset[8];
+  unsigned __int64 PebsFixedCounterReset[4];
+
+};

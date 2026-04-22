@@ -1,0 +1,9 @@
+// Структура: _FILE_END_OF_FILE_INFORMATION
+// Полей: 1
+// Строки в оригинале: 99268-99271
+struct _FILE_END_OF_FILE_INFORMATION
+{
+
+  _LARGE_INTEGER EndOfFile;
+
+};

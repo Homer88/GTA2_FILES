@@ -1,0 +1,16 @@
+// Структура: _FNSAVE_FORMAT
+// Полей: 8
+// Строки в оригинале: 108795-108805
+struct _FNSAVE_FORMAT
+{
+
+  unsigned int ControlWord;
+  unsigned int StatusWord;
+  unsigned int TagWord;
+  unsigned int ErrorOffset;
+  unsigned int ErrorSelector;
+  unsigned int DataOffset;
+  unsigned int DataSelector;
+  unsigned __int8 RegisterArea[80];
+
+};

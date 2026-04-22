@@ -1,0 +1,12 @@
+// Структура: _FS_FILTER_SECTION_SYNC_OUTPUT
+// Полей: 4
+// Строки в оригинале: 19315-19321
+struct _FS_FILTER_SECTION_SYNC_OUTPUT
+{
+
+  unsigned int StructureSize;
+  unsigned int SizeReturned;
+  unsigned int Flags;
+  unsigned int DesiredReadAlignment;
+
+};

@@ -1,0 +1,21 @@
+// Структура: IProgressItemsVtbl
+// Полей: 13
+// Строки в оригинале: 41312-41327
+struct IProgressItemsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IProgressItems *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IProgressItems *This);
+  ULONG (__stdcall *Release)(IProgressItems *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IProgressItems *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IProgressItems *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IProgressItems *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IProgressItems *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get__NewEnum)(IProgressItems *This, IEnumVARIANT **NewEnum);
+  HRESULT (__stdcall *get_Item)(IProgressItems *This, int Index, IProgressItem **item);
+  HRESULT (__stdcall *get_Count)(IProgressItems *This, int *Count);
+  HRESULT (__stdcall *ProgressItemFromBlock)(IProgressItems *This, ULONG block, IProgressItem **item);
+  HRESULT (__stdcall *ProgressItemFromDescription)(IProgressItems *This, BSTR description, IProgressItem **item);
+  HRESULT (__stdcall *get_EnumProgressItems)(IProgressItems *This, IEnumProgressItems **NewEnum);
+
+};

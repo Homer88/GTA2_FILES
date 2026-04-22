@@ -1,0 +1,9 @@
+// Структура: _TXFS_TRANSACTION_ACTIVE_INFO
+// Полей: 1
+// Строки в оригинале: 108283-108286
+struct _TXFS_TRANSACTION_ACTIVE_INFO
+{
+
+  unsigned __int8 TransactionsActiveAtSnapshot;
+
+};

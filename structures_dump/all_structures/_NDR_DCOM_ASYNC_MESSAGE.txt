@@ -1,0 +1,32 @@
+// Структура: _NDR_DCOM_ASYNC_MESSAGE
+// Полей: 24
+// Строки в оригинале: 286645-286671
+struct _NDR_DCOM_ASYNC_MESSAGE
+{
+
+  int Version;
+  int Signature;
+  SYNTAX_TYPE SyntaxType;
+  int nBeginParams;
+  void *BeginParams;
+  int nFinishParams;
+  void *FinishParams;
+  unsigned __int8 *BeginStack;
+  unsigned __int8 *FinishStack;
+  unsigned int BeginStackSize;
+  unsigned int FinishStackSize;
+  _Flags Flags;
+  unsigned int RefCount;
+  void *pThis;
+  void *pAsyncPB;
+  void *pAsyncSB;
+  unsigned int *pdwStubPhase;
+  unsigned __int16 StubPhase;
+  unsigned int ErrorCode;
+  _RPC_MESSAGE RpcMsg;
+  _MIDL_STUB_MESSAGE StubMsg;
+  _NDR_PROC_CONTEXT ProcContext;
+  unsigned __int8 *pArg;
+  unsigned __int64 AppStack;
+
+};

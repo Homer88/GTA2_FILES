@@ -1,0 +1,10 @@
+// Структура: PREVIEWHANDLERFRAMEINFO
+// Полей: 2
+// Строки в оригинале: 41555-41559
+struct PREVIEWHANDLERFRAMEINFO
+{
+
+  HACCEL haccel;
+  UINT cAccelEntries;
+
+};

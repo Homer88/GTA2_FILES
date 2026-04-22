@@ -1,0 +1,10 @@
+// Структура: tagEMRSETARCDIRECTION
+// Полей: 2
+// Строки в оригинале: 111582-111586
+struct tagEMRSETARCDIRECTION
+{
+
+  tagEMR emr;
+  unsigned int iArcDirection;
+
+};

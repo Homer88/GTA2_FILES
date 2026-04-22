@@ -1,0 +1,12 @@
+// Структура: _MEMORY_EXHAUSTION_INFORMATION
+// Полей: 4
+// Строки в оригинале: 106933-106939
+struct _MEMORY_EXHAUSTION_INFORMATION
+{
+
+  unsigned __int16 Version;
+  unsigned __int16 Reserved;
+  _MEMORY_EXHAUSTION_TYPE Type;
+  unsigned int Value;
+
+};

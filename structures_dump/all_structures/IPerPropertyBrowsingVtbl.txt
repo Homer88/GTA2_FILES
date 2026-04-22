@@ -1,0 +1,15 @@
+// Структура: IPerPropertyBrowsingVtbl
+// Полей: 7
+// Строки в оригинале: 182141-182150
+struct IPerPropertyBrowsingVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPerPropertyBrowsing *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPerPropertyBrowsing *This);
+  ULONG (__stdcall *Release)(IPerPropertyBrowsing *This);
+  HRESULT (__stdcall *GetDisplayString)(IPerPropertyBrowsing *This, DISPID dispID, BSTR *pBstr);
+  HRESULT (__stdcall *MapPropertyToPage)(IPerPropertyBrowsing *This, DISPID dispID, CLSID *pClsid);
+  HRESULT (__stdcall *GetPredefinedStrings)(IPerPropertyBrowsing *This, DISPID dispID, CALPOLESTR *pCaStringsOut, CADWORD *pCaCookiesOut);
+  HRESULT (__stdcall *GetPredefinedValue)(IPerPropertyBrowsing *This, DISPID dispID, DWORD dwCookie, VARIANT *pVarOut);
+
+};

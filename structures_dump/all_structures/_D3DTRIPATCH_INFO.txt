@@ -1,0 +1,12 @@
+// Структура: _D3DTRIPATCH_INFO
+// Полей: 4
+// Строки в оригинале: 25890-25896
+struct _D3DTRIPATCH_INFO
+{
+
+  UINT StartVertexOffset;
+  UINT NumVertices;
+  D3DBASISTYPE Basis;
+  D3DDEGREETYPE Degree;
+
+};

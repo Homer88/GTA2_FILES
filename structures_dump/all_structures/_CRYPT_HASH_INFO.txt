@@ -1,0 +1,10 @@
+// Структура: _CRYPT_HASH_INFO
+// Полей: 2
+// Строки в оригинале: 99538-99542
+struct _CRYPT_HASH_INFO
+{
+
+  _CRYPT_ALGORITHM_IDENTIFIER HashAlgorithm;
+  _CRYPTOAPI_BLOB Hash;
+
+};

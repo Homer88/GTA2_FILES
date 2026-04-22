@@ -1,0 +1,12 @@
+// Структура: IStdMarshalInfoVtbl
+// Полей: 4
+// Строки в оригинале: 351650-351656
+struct IStdMarshalInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IStdMarshalInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IStdMarshalInfo *This);
+  ULONG (__stdcall *Release)(IStdMarshalInfo *This);
+  HRESULT (__stdcall *GetClassForHandler)(IStdMarshalInfo *This, DWORD dwDestContext, void *pvDestContext, CLSID *pClsid);
+
+};

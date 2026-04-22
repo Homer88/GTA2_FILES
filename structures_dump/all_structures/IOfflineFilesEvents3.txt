@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesEvents3
+// Полей: 1
+// Строки в оригинале: 27950-27953
+struct IOfflineFilesEvents3
+{
+
+  struct IOfflineFilesEvents3Vtbl *lpVtbl;
+
+};

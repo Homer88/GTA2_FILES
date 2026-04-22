@@ -1,0 +1,14 @@
+// Структура: tagELEMDESC
+// Полей: 6
+// Строки в оригинале: 23676-23684
+struct tagELEMDESC
+{
+
+  TYPEDESC tdesc;
+  #pragma pack(push, 8)
+  union
+  {
+    IDLDESC idldesc;
+    PARAMDESC paramdesc;
+  
+};

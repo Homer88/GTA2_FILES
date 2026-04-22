@@ -1,0 +1,13 @@
+// Структура: IAutoCompleteDropDownVtbl
+// Полей: 5
+// Строки в оригинале: 45272-45279
+struct IAutoCompleteDropDownVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IAutoCompleteDropDown *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IAutoCompleteDropDown *This);
+  ULONG (__stdcall *Release)(IAutoCompleteDropDown *This);
+  HRESULT (__stdcall *GetDropDownStatus)(IAutoCompleteDropDown *This, DWORD *pdwFlags, LPWSTR *ppwszString);
+  HRESULT (__stdcall *ResetEnumerator)(IAutoCompleteDropDown *This);
+
+};

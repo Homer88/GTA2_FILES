@@ -1,0 +1,15 @@
+// Структура: tagEXTLOGPEN
+// Полей: 7
+// Строки в оригинале: 94165-94174
+struct tagEXTLOGPEN
+{
+
+  unsigned int elpPenStyle;
+  unsigned int elpWidth;
+  unsigned int elpBrushStyle;
+  unsigned int elpColor;
+  unsigned int elpHatch;
+  unsigned int elpNumEntries;
+  unsigned int elpStyleEntry[1];
+
+};

@@ -1,0 +1,10 @@
+// Структура: _TRANSACTION_LIST_INFORMATION
+// Полей: 2
+// Строки в оригинале: 88297-88301
+struct _TRANSACTION_LIST_INFORMATION
+{
+
+  unsigned int NumberOfTransactions;
+  _TRANSACTION_LIST_ENTRY TransactionInformation[1];
+
+};

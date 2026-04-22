@@ -1,0 +1,9 @@
+// Структура: _SERVICE_PRESHUTDOWN_INFO
+// Полей: 1
+// Строки в оригинале: 112645-112648
+struct _SERVICE_PRESHUTDOWN_INFO
+{
+
+  unsigned int dwPreshutdownTimeout;
+
+};

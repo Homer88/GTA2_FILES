@@ -1,0 +1,10 @@
+// Структура: tagCALPWSTR
+// Полей: 2
+// Строки в оригинале: 31718-31722
+struct tagCALPWSTR
+{
+
+  ULONG cElems;
+  LPWSTR *pElems;
+
+};

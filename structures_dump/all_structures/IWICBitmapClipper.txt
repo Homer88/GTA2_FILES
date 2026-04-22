@@ -1,0 +1,9 @@
+// Структура: IWICBitmapClipper
+// Полей: 1
+// Строки в оригинале: 41866-41869
+struct IWICBitmapClipper
+{
+
+  struct IWICBitmapClipperVtbl *lpVtbl;
+
+};

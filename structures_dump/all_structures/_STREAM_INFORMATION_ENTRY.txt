@@ -1,0 +1,11 @@
+// Структура: _STREAM_INFORMATION_ENTRY
+// Полей: 3
+// Строки в оригинале: 106518-106523
+struct _STREAM_INFORMATION_ENTRY
+{
+
+  unsigned int Version;
+  unsigned int Flags;
+  _STREAM_INFORMATION_ENTRY::_StreamInformation StreamInformation;
+
+};

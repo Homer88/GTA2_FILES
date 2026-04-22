@@ -1,0 +1,12 @@
+// Структура: IBanneredBarVtbl
+// Полей: 4
+// Строки в оригинале: 33824-33830
+struct IBanneredBarVtbl
+{
+
+  HRESULT (__stdcall *SetIconSize)(IBanneredBar *This, DWORD iIcon);
+  HRESULT (__stdcall *GetIconSize)(IBanneredBar *This, DWORD *piIcon);
+  HRESULT (__stdcall *SetBitmap)(IBanneredBar *This, HBITMAP hBitmap);
+  HRESULT (__stdcall *GetBitmap)(IBanneredBar *This, HBITMAP *phBitmap);
+
+};

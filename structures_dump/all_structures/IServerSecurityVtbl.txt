@@ -1,0 +1,15 @@
+// Структура: IServerSecurityVtbl
+// Полей: 7
+// Строки в оригинале: 351298-351307
+struct IServerSecurityVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IServerSecurity *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IServerSecurity *This);
+  ULONG (__stdcall *Release)(IServerSecurity *This);
+  HRESULT (__stdcall *QueryBlanket)(IServerSecurity *This, DWORD *pAuthnSvc, DWORD *pAuthzSvc, OLECHAR **pServerPrincName, DWORD *pAuthnLevel, DWORD *pImpLevel, void **pPrivs, DWORD *pCapabilities);
+  HRESULT (__stdcall *ImpersonateClient)(IServerSecurity *This);
+  HRESULT (__stdcall *RevertToSelf)(IServerSecurity *This);
+  BOOL (__stdcall *IsImpersonating)(IServerSecurity *This);
+
+};

@@ -1,0 +1,11 @@
+// Структура: _CERT_EXTENSION
+// Полей: 3
+// Строки в оригинале: 59422-59427
+struct _CERT_EXTENSION
+{
+
+  char *pszObjId;
+  int fCritical;
+  _CRYPTOAPI_BLOB Value;
+
+};

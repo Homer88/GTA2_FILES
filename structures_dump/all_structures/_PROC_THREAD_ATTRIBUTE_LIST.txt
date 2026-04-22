@@ -1,0 +1,14 @@
+// Структура: _PROC_THREAD_ATTRIBUTE_LIST
+// Полей: 6
+// Строки в оригинале: 59103-59111
+struct _PROC_THREAD_ATTRIBUTE_LIST
+{
+
+  unsigned int PresentFlags;
+  unsigned int AttributeCount;
+  unsigned int LastAttribute;
+  unsigned int SpareUlong0;
+  _PROC_THREAD_ATTRIBUTE *ExtendedFlagsAttribute;
+  _PROC_THREAD_ATTRIBUTE Attributes[1];
+
+};

@@ -1,0 +1,10 @@
+// Структура: DISPLAYCONFIG_RATIONAL
+// Полей: 2
+// Строки в оригинале: 80305-80309
+struct DISPLAYCONFIG_RATIONAL
+{
+
+  unsigned int Numerator;
+  unsigned int Denominator;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _SPC_STATEMENT_TYPE
+// Полей: 2
+// Строки в оригинале: 122095-122099
+struct _SPC_STATEMENT_TYPE
+{
+
+  unsigned int cKeyPurposeId;
+  char **rgpszKeyPurposeId;
+
+};

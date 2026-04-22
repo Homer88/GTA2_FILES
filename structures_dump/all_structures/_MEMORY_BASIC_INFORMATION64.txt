@@ -1,0 +1,17 @@
+// Структура: _MEMORY_BASIC_INFORMATION64
+// Полей: 9
+// Строки в оригинале: 95292-95303
+struct _MEMORY_BASIC_INFORMATION64
+{
+
+  unsigned __int64 BaseAddress;
+  unsigned __int64 AllocationBase;
+  unsigned int AllocationProtect;
+  unsigned int __alignment1;
+  unsigned __int64 RegionSize;
+  unsigned int State;
+  unsigned int Protect;
+  unsigned int Type;
+  unsigned int __alignment2;
+
+};

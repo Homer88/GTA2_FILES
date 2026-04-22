@@ -1,0 +1,10 @@
+// Структура: tagAspectInfo
+// Полей: 2
+// Строки в оригинале: 124006-124010
+struct tagAspectInfo
+{
+
+  unsigned int cb;
+  unsigned int dwFlags;
+
+};

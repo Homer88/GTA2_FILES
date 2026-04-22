@@ -1,0 +1,9 @@
+// Структура: UserContextPropertiesData
+// Полей: 1
+// Строки в оригинале: 193077-193080
+struct UserContextPropertiesData
+{
+
+  unsigned __int64 userContext;
+
+};

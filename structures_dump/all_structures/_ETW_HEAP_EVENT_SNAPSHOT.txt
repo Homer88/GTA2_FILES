@@ -1,0 +1,19 @@
+// Структура: _ETW_HEAP_EVENT_SNAPSHOT
+// Полей: 11
+// Строки в оригинале: 308664-308677
+struct _ETW_HEAP_EVENT_SNAPSHOT
+{
+
+  _SYSTEM_TRACE_HEADER Header;
+  void *HeapHandle;
+  unsigned int FreeSpace;
+  unsigned int CommittedSpace;
+  unsigned int ReservedSpace;
+  unsigned int Flags;
+  unsigned int ProcessId;
+  unsigned int LargeUCRSpace;
+  unsigned int FreeListLength;
+  unsigned int UCRLength;
+  unsigned int AllocatedSpace;
+
+};

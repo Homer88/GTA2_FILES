@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_BOOT_PREFETCH_INFORMATION
+// Полей: 3
+// Строки в оригинале: 313126-313131
+struct _PERFINFO_BOOT_PREFETCH_INFORMATION
+{
+
+  int Action;
+  int Status;
+  int Pages;
+
+};

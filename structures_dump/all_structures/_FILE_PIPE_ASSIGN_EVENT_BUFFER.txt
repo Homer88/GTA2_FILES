@@ -1,0 +1,10 @@
+// Структура: _FILE_PIPE_ASSIGN_EVENT_BUFFER
+// Полей: 2
+// Строки в оригинале: 107357-107361
+struct _FILE_PIPE_ASSIGN_EVENT_BUFFER
+{
+
+  void *EventHandle;
+  unsigned int KeyValue;
+
+};

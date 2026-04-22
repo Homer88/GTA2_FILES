@@ -1,0 +1,10 @@
+// Структура: _BCRYPT_PSS_PADDING_INFO
+// Полей: 2
+// Строки в оригинале: 105716-105720
+struct _BCRYPT_PSS_PADDING_INFO
+{
+
+  const wchar_t *pszAlgId;
+  unsigned int cbSalt;
+
+};

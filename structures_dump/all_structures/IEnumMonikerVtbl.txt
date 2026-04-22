@@ -1,0 +1,15 @@
+// Структура: IEnumMonikerVtbl
+// Полей: 7
+// Строки в оригинале: 24008-24017
+struct IEnumMonikerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumMoniker *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumMoniker *This);
+  ULONG (__stdcall *Release)(IEnumMoniker *This);
+  HRESULT (__stdcall *Next)(IEnumMoniker *This, ULONG celt, IMoniker **rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumMoniker *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumMoniker *This);
+  HRESULT (__stdcall *Clone)(IEnumMoniker *This, IEnumMoniker **ppenum);
+
+};

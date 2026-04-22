@@ -1,0 +1,11 @@
+// Структура: MFT_ENUM_DATA_V0
+// Полей: 3
+// Строки в оригинале: 108908-108913
+struct MFT_ENUM_DATA_V0
+{
+
+  unsigned __int64 StartFileReferenceNumber;
+  __int64 LowUsn;
+  __int64 HighUsn;
+
+};

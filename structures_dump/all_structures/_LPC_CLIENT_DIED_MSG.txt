@@ -1,0 +1,10 @@
+// Структура: _LPC_CLIENT_DIED_MSG
+// Полей: 2
+// Строки в оригинале: 104322-104326
+struct _LPC_CLIENT_DIED_MSG
+{
+
+  _PORT_MESSAGE PortMsg;
+  _LARGE_INTEGER CreateTime;
+
+};

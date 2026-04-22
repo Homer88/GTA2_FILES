@@ -1,0 +1,13 @@
+// Структура: PPM_PERFSTATE_EVENT
+// Полей: 5
+// Строки в оригинале: 101305-101312
+struct PPM_PERFSTATE_EVENT
+{
+
+  unsigned int State;
+  unsigned int Status;
+  unsigned int Latency;
+  unsigned int Speed;
+  unsigned int Processor;
+
+};

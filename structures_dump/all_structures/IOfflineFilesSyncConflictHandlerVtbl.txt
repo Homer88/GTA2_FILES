@@ -1,0 +1,12 @@
+// Структура: IOfflineFilesSyncConflictHandlerVtbl
+// Полей: 4
+// Строки в оригинале: 28075-28081
+struct IOfflineFilesSyncConflictHandlerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesSyncConflictHandler *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesSyncConflictHandler *This);
+  ULONG (__stdcall *Release)(IOfflineFilesSyncConflictHandler *This);
+  HRESULT (__stdcall *ResolveConflict)(IOfflineFilesSyncConflictHandler *This, LPCWSTR pszPath, DWORD fStateKnown, OFFLINEFILES_SYNC_STATE state, DWORD fChangeDetails, OFFLINEFILES_SYNC_CONFLICT_RESOLVE *pConflictResolution, LPWSTR *ppszNewName);
+
+};

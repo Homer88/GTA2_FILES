@@ -1,0 +1,13 @@
+// Структура: INamespaceWalkVtbl
+// Полей: 5
+// Строки в оригинале: 32711-32718
+struct INamespaceWalkVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(INamespaceWalk *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(INamespaceWalk *This);
+  ULONG (__stdcall *Release)(INamespaceWalk *This);
+  HRESULT (__stdcall *Walk)(INamespaceWalk *This, IUnknown *punkToWalk, DWORD dwFlags, int cDepth, INamespaceWalkCB *pnswcb);
+  HRESULT (__stdcall *GetIDArrayResult)(INamespaceWalk *This, UINT *pcItems, LPITEMIDLIST **prgpidl);
+
+};

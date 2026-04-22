@@ -1,0 +1,10 @@
+// Структура: _HEAP_LFH_SUBSEGMENT_STAT
+// Полей: 2
+// Строки в оригинале: 20660-20664
+struct _HEAP_LFH_SUBSEGMENT_STAT
+{
+
+  unsigned __int8 Index;
+  unsigned __int8 Count;
+
+};

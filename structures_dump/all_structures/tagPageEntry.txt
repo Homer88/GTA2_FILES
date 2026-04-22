@@ -1,0 +1,10 @@
+// Структура: tagPageEntry
+// Полей: 2
+// Строки в оригинале: 59405-59409
+struct tagPageEntry
+{
+
+  tagPageEntry *pNext;
+  unsigned int dwFlag;
+
+};

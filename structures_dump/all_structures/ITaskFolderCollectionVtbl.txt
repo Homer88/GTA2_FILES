@@ -1,0 +1,18 @@
+// Структура: ITaskFolderCollectionVtbl
+// Полей: 10
+// Строки в оригинале: 44665-44677
+struct ITaskFolderCollectionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITaskFolderCollection *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITaskFolderCollection *This);
+  ULONG (__stdcall *Release)(ITaskFolderCollection *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(ITaskFolderCollection *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(ITaskFolderCollection *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(ITaskFolderCollection *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(ITaskFolderCollection *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Count)(ITaskFolderCollection *This, LONG *pCount);
+  HRESULT (__stdcall *get_Item)(ITaskFolderCollection *This, VARIANT index, ITaskFolder **ppFolder);
+  HRESULT (__stdcall *get__NewEnum)(ITaskFolderCollection *This, IUnknown **ppEnum);
+
+};

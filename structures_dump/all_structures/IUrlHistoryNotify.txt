@@ -1,0 +1,9 @@
+// Структура: IUrlHistoryNotify
+// Полей: 1
+// Строки в оригинале: 36387-36390
+struct IUrlHistoryNotify
+{
+
+  struct IUrlHistoryNotifyVtbl *lpVtbl;
+
+};

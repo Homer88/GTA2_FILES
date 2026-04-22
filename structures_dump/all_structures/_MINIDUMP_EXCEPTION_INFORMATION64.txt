@@ -1,0 +1,12 @@
+// Структура: _MINIDUMP_EXCEPTION_INFORMATION64
+// Полей: 4
+// Строки в оригинале: 123666-123672
+struct _MINIDUMP_EXCEPTION_INFORMATION64
+{
+
+  unsigned int ThreadId;
+  __unaligned __declspec(align(1)) unsigned __int64 ExceptionRecord;
+  __unaligned __declspec(align(1)) unsigned __int64 ContextRecord;
+  int ClientPointers;
+
+};

@@ -1,0 +1,20 @@
+// Структура: _ETW_COVERAGE_SAMPLER_MODULE
+// Полей: 12
+// Строки в оригинале: 313232-313246
+struct _ETW_COVERAGE_SAMPLER_MODULE
+{
+
+  unsigned int PathOffset;
+  unsigned int PathLength;
+  unsigned int DebugInfoOffset;
+  unsigned int DebugInfoLength;
+  unsigned int TimeDateStamp;
+  unsigned int ImageChecksum;
+  unsigned int ImageSize;
+  unsigned int ModuleId;
+  unsigned int ModuleSequence;
+  unsigned int ExeModuleId;
+  unsigned int ExeModuleSequence;
+  unsigned int ExeProcessId;
+
+};

@@ -1,0 +1,14 @@
+// Структура: _SYSTEM_MEMORY_CHANNEL_INFORMATION
+// Полей: 6
+// Строки в оригинале: 107540-107548
+struct _SYSTEM_MEMORY_CHANNEL_INFORMATION
+{
+
+  unsigned int ChannelNumber;
+  unsigned int ChannelHeatIndex;
+  unsigned __int64 TotalPageCount;
+  unsigned __int64 ZeroPageCount;
+  unsigned __int64 FreePageCount;
+  unsigned __int64 StandbyPageCount;
+
+};

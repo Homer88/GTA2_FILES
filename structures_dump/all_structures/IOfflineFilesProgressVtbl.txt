@@ -1,0 +1,14 @@
+// Структура: IOfflineFilesProgressVtbl
+// Полей: 6
+// Строки в оригинале: 28759-28767
+struct IOfflineFilesProgressVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesProgress *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesProgress *This);
+  ULONG (__stdcall *Release)(IOfflineFilesProgress *This);
+  HRESULT (__stdcall *Begin)(IOfflineFilesProgress *This, BOOL *pbAbort);
+  HRESULT (__stdcall *QueryAbort)(IOfflineFilesProgress *This, BOOL *pbAbort);
+  HRESULT (__stdcall *End)(IOfflineFilesProgress *This, HRESULT hrResult);
+
+};

@@ -1,0 +1,15 @@
+// Структура: _CM_PCCARD_DEVICE_DATA
+// Полей: 7
+// Строки в оригинале: 95922-95931
+struct _CM_PCCARD_DEVICE_DATA
+{
+
+  unsigned __int8 Flags;
+  unsigned __int8 ErrorCode;
+  unsigned __int16 Reserved;
+  unsigned int BusData;
+  unsigned int DeviceId;
+  unsigned int LegacyBaseAddress;
+  unsigned __int8 IRQMap[16];
+
+};

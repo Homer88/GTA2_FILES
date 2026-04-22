@@ -1,0 +1,17 @@
+// Структура: _HEAP_LFH_SUBSEGMENT_OWNER
+// Полей: 9
+// Строки в оригинале: 20681-20692
+struct _HEAP_LFH_SUBSEGMENT_OWNER
+{
+
+  unsigned __int8 IsBucket : 1;
+  unsigned __int8 Spare0 : 7;
+  unsigned __int8 BucketIndex;
+  $D283FD200F436B7746EF06B7621258B1 ___u3;
+  unsigned __int8 Spare1;
+  unsigned int AvailableSubsegmentCount;
+  unsigned int Lock;
+  _LIST_ENTRY AvailableSubsegmentList;
+  _LIST_ENTRY FullSubsegmentList;
+
+};

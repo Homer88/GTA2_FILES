@@ -1,0 +1,10 @@
+// Структура: _PO_WAKE_SOURCE_HISTORY
+// Полей: 2
+// Строки в оригинале: 111747-111751
+struct _PO_WAKE_SOURCE_HISTORY
+{
+
+  unsigned int Count;
+  unsigned int Offsets[1];
+
+};

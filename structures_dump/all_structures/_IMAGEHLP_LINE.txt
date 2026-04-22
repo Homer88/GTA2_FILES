@@ -1,0 +1,13 @@
+// Структура: _IMAGEHLP_LINE
+// Полей: 5
+// Строки в оригинале: 123986-123993
+struct _IMAGEHLP_LINE
+{
+
+  unsigned int SizeOfStruct;
+  void *Key;
+  unsigned int LineNumber;
+  char *FileName;
+  unsigned int Address;
+
+};

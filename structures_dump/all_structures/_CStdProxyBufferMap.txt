@@ -1,0 +1,9 @@
+// Структура: _CStdProxyBufferMap
+// Полей: 1
+// Строки в оригинале: 286480-286483
+struct _CStdProxyBufferMap
+{
+
+  IUnknown *pBaseProxy;
+
+};

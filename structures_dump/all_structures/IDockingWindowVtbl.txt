@@ -1,0 +1,16 @@
+// Структура: IDockingWindowVtbl
+// Полей: 8
+// Строки в оригинале: 40049-40059
+struct IDockingWindowVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDockingWindow *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDockingWindow *This);
+  ULONG (__stdcall *Release)(IDockingWindow *This);
+  HRESULT (__stdcall *GetWindow)(IDockingWindow *This, HWND *phwnd);
+  HRESULT (__stdcall *ContextSensitiveHelp)(IDockingWindow *This, BOOL fEnterMode);
+  HRESULT (__stdcall *ShowDW)(IDockingWindow *This, BOOL fShow);
+  HRESULT (__stdcall *CloseDW)(IDockingWindow *This, DWORD dwReserved);
+  HRESULT (__stdcall *ResizeBorderDW)(IDockingWindow *This, LPCRECT prcBorder, IUnknown *punkToolbarSite, BOOL fReserved);
+
+};

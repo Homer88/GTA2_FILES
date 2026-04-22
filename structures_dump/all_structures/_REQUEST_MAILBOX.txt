@@ -1,0 +1,13 @@
+// Структура: _REQUEST_MAILBOX
+// Полей: 5
+// Строки в оригинале: 13744-13751
+struct _REQUEST_MAILBOX
+{
+
+  _REQUEST_MAILBOX *Next;
+  unsigned int RequestSummary;
+  _KREQUEST_PACKET RequestPacket;
+  volatile int *NodeTargetCountAddr;
+  volatile int NodeTargetCount;
+
+};

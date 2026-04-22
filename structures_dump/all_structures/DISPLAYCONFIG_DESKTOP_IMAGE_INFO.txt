@@ -1,0 +1,11 @@
+// Структура: DISPLAYCONFIG_DESKTOP_IMAGE_INFO
+// Полей: 3
+// Строки в оригинале: 81746-81751
+struct DISPLAYCONFIG_DESKTOP_IMAGE_INFO
+{
+
+  _POINTL PathSourceSize;
+  _RECTL DesktopImageRegion;
+  _RECTL DesktopImageClip;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _FILE_MAKE_COMPATIBLE_BUFFER
+// Полей: 1
+// Строки в оригинале: 110404-110407
+struct _FILE_MAKE_COMPATIBLE_BUFFER
+{
+
+  unsigned __int8 CloseDisc;
+
+};

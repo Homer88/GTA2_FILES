@@ -1,0 +1,16 @@
+// Структура: _STOWED_EXCEPTION_INFORMATION_V1
+// Полей: 8
+// Строки в оригинале: 285042-285052
+struct _STOWED_EXCEPTION_INFORMATION_V1
+{
+
+  _STOWED_EXCEPTION_INFORMATION_HEADER Header;
+  HRESULT ResultCode;
+  unsigned __int32 ExceptionForm : 2;
+  unsigned __int32 ThreadId : 30;
+  $A6C00CE596585C9FCF8280BE8B0C0788 ___u4;
+  unsigned int StackTraceWordSize;
+  unsigned int StackTraceWords;
+  void *StackTrace;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _MINIDUMP_HANDLE_OPERATION_LIST
+// Полей: 4
+// Строки в оригинале: 123339-123345
+struct _MINIDUMP_HANDLE_OPERATION_LIST
+{
+
+  unsigned int SizeOfHeader;
+  unsigned int SizeOfEntry;
+  unsigned int NumberOfEntries;
+  unsigned int Reserved;
+
+};

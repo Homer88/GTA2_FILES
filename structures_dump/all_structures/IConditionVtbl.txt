@@ -1,0 +1,23 @@
+// Структура: IConditionVtbl
+// Полей: 15
+// Строки в оригинале: 34301-34318
+struct IConditionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICondition *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICondition *This);
+  ULONG (__stdcall *Release)(ICondition *This);
+  HRESULT (__stdcall *GetClassID)(ICondition *This, CLSID *pClassID);
+  HRESULT (__stdcall *IsDirty)(ICondition *This);
+  HRESULT (__stdcall *Load)(ICondition *This, IStream *pStm);
+  HRESULT (__stdcall *Save)(ICondition *This, IStream *pStm, BOOL fClearDirty);
+  HRESULT (__stdcall *GetSizeMax)(ICondition *This, ULARGE_INTEGER *pcbSize);
+  HRESULT (__stdcall *GetConditionType)(ICondition *This, CONDITION_TYPE *pNodeType);
+  HRESULT (__stdcall *GetSubConditions)(ICondition *This, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetComparisonInfo)(ICondition *This, LPWSTR *ppszPropertyName, CONDITION_OPERATION *pcop, PROPVARIANT *ppropvar);
+  HRESULT (__stdcall *GetValueType)(ICondition *This, LPWSTR *ppszValueTypeName);
+  HRESULT (__stdcall *GetValueNormalization)(ICondition *This, LPWSTR *ppszNormalization);
+  HRESULT (__stdcall *GetInputTerms)(ICondition *This, IRichChunk **ppPropertyTerm, IRichChunk **ppOperationTerm, IRichChunk **ppValueTerm);
+  HRESULT (__stdcall *Clone)(ICondition *This, ICondition **ppc);
+
+};

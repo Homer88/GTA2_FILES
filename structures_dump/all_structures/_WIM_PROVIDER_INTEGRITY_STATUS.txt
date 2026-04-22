@@ -1,0 +1,12 @@
+// Структура: _WIM_PROVIDER_INTEGRITY_STATUS
+// Полей: 4
+// Строки в оригинале: 106603-106609
+struct _WIM_PROVIDER_INTEGRITY_STATUS
+{
+
+  unsigned __int8 IntegrityComplete;
+  unsigned __int8 IntegrityRunning;
+  unsigned __int64 IntegrityAvailable;
+  unsigned __int64 IntegrityRequired;
+
+};

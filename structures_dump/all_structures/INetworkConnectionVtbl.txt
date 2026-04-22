@@ -1,0 +1,22 @@
+// Структура: INetworkConnectionVtbl
+// Полей: 14
+// Строки в оригинале: 46037-46053
+struct INetworkConnectionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(INetworkConnection *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(INetworkConnection *This);
+  ULONG (__stdcall *Release)(INetworkConnection *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(INetworkConnection *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(INetworkConnection *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(INetworkConnection *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(INetworkConnection *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *GetNetwork)(INetworkConnection *This, INetwork **ppNetwork);
+  HRESULT (__stdcall *get_IsConnectedToInternet)(INetworkConnection *This, VARIANT_BOOL *pbIsConnected);
+  HRESULT (__stdcall *get_IsConnected)(INetworkConnection *This, VARIANT_BOOL *pbIsConnected);
+  HRESULT (__stdcall *GetConnectivity)(INetworkConnection *This, NLM_CONNECTIVITY *pConnectivity);
+  HRESULT (__stdcall *GetConnectionId)(INetworkConnection *This, GUID *pgdConnectionId);
+  HRESULT (__stdcall *GetAdapterId)(INetworkConnection *This, GUID *pgdAdapterId);
+  HRESULT (__stdcall *GetDomainType)(INetworkConnection *This, NLM_DOMAIN_TYPE *pDomainType);
+
+};

@@ -1,0 +1,10 @@
+// Структура: _BCRYPT_OID_LIST
+// Полей: 2
+// Строки в оригинале: 96692-96696
+struct _BCRYPT_OID_LIST
+{
+
+  unsigned int dwOIDCount;
+  _BCRYPT_OID *pOIDs;
+
+};

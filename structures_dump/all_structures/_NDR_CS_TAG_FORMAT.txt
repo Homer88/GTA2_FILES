@@ -1,0 +1,11 @@
+// Структура: _NDR_CS_TAG_FORMAT
+// Полей: 3
+// Строки в оригинале: 330935-330940
+struct _NDR_CS_TAG_FORMAT
+{
+
+  unsigned __int8 FormatCode;
+  _NDR_CS_TAG_FLAGS Flags;
+  unsigned __int16 TagRoutineIndex;
+
+};

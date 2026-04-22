@@ -1,0 +1,11 @@
+// Структура: tagInputRoutingInfo
+// Полей: 3
+// Строки в оригинале: 124988-124993
+struct tagInputRoutingInfo
+{
+
+  unsigned int peerId;
+  unsigned int itemId;
+  tagMsgRoutingInfo msgRoutingInfo;
+
+};

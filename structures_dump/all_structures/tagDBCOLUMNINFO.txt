@@ -1,0 +1,17 @@
+// Структура: tagDBCOLUMNINFO
+// Полей: 9
+// Строки в оригинале: 36500-36511
+struct tagDBCOLUMNINFO
+{
+
+  LPOLESTR pwszName;
+  ITypeInfo *pTypeInfo;
+  DBORDINAL iOrdinal;
+  DBCOLUMNFLAGS dwFlags;
+  DBLENGTH ulColumnSize;
+  DBTYPE wType;
+  BYTE bPrecision;
+  BYTE bScale;
+  DBID columnid;
+
+};

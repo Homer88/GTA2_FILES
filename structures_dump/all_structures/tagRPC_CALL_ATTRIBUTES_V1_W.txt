@@ -1,0 +1,17 @@
+// Структура: tagRPC_CALL_ATTRIBUTES_V1_W
+// Полей: 9
+// Строки в оригинале: 87517-87528
+struct tagRPC_CALL_ATTRIBUTES_V1_W
+{
+
+  unsigned int Version;
+  unsigned int Flags;
+  unsigned int ServerPrincipalNameBufferLength;
+  wchar_t *ServerPrincipalName;
+  unsigned int ClientPrincipalNameBufferLength;
+  wchar_t *ClientPrincipalName;
+  unsigned int AuthenticationLevel;
+  unsigned int AuthenticationService;
+  int NullSession;
+
+};

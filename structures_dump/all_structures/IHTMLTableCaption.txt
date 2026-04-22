@@ -1,0 +1,9 @@
+// Структура: IHTMLTableCaption
+// Полей: 1
+// Строки в оригинале: 35908-35911
+struct IHTMLTableCaption
+{
+
+  struct IHTMLTableCaptionVtbl *lpVtbl;
+
+};

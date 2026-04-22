@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_WRITE_CONSTRAINT_INFORMATION
+// Полей: 2
+// Строки в оригинале: 94158-94162
+struct _SYSTEM_WRITE_CONSTRAINT_INFORMATION
+{
+
+  unsigned int WriteConstraintPolicy;
+  unsigned int Reserved;
+
+};

@@ -1,0 +1,16 @@
+// Структура: _SYSTEM_PREFETCH_OPTIONS
+// Полей: 8
+// Строки в оригинале: 101292-101302
+struct _SYSTEM_PREFETCH_OPTIONS
+{
+
+  unsigned __int32 LowerPriority : 1;
+  unsigned __int32 VirtualOffsets : 1;
+  unsigned __int32 TrickleIOs : 1;
+  unsigned __int32 SkipInStorePages : 1;
+  unsigned __int32 PrefetchFilesByVa : 1;
+  unsigned __int32 SkipMemoryStorePages : 1;
+  unsigned __int32 Spare : 2;
+  unsigned __int32 ScenarioType : 8;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IDXGIAdapter
+// Полей: 1
+// Строки в оригинале: 351931-351934
+struct IDXGIAdapter
+{
+
+  struct IDXGIAdapterVtbl *lpVtbl;
+
+};

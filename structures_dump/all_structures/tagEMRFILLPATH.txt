@@ -1,0 +1,10 @@
+// Структура: tagEMRFILLPATH
+// Полей: 2
+// Строки в оригинале: 81256-81260
+struct tagEMRFILLPATH
+{
+
+  tagEMR emr;
+  _RECTL rclBounds;
+
+};

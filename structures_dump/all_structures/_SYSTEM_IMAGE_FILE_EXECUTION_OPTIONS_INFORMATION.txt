@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_IMAGE_FILE_EXECUTION_OPTIONS_INFORMATION
+// Полей: 2
+// Строки в оригинале: 110847-110851
+struct _SYSTEM_IMAGE_FILE_EXECUTION_OPTIONS_INFORMATION
+{
+
+  unsigned int FlagsToEnable;
+  unsigned int FlagsToDisable;
+
+};

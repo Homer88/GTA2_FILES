@@ -1,0 +1,10 @@
+// Структура: tagEMRSETCOLORADJUSTMENT
+// Полей: 2
+// Строки в оригинале: 99281-99285
+struct tagEMRSETCOLORADJUSTMENT
+{
+
+  tagEMR emr;
+  tagCOLORADJUSTMENT ColorAdjustment;
+
+};

@@ -1,0 +1,31 @@
+// Структура: _RTL_DEBUG_INFORMATION32
+// Полей: 23
+// Строки в оригинале: 110070-110095
+struct _RTL_DEBUG_INFORMATION32
+{
+
+  unsigned int SectionHandleClient;
+  unsigned int ViewBaseClient;
+  unsigned int ViewBaseTarget;
+  unsigned int ViewBaseDelta;
+  unsigned int EventPairClient;
+  unsigned int EventPairTarget;
+  unsigned int TargetProcessId;
+  unsigned int TargetThreadHandle;
+  unsigned int Flags;
+  unsigned int OffsetFree;
+  unsigned int CommitSize;
+  unsigned int ViewSize;
+  $B909607A8590F9A7F75A6434DE47E1C1 ___u12;
+  unsigned int BackTraces;
+  unsigned int Heaps;
+  unsigned int Locks;
+  unsigned int SpecificHeap;
+  unsigned int TargetProcessHandle;
+  unsigned int VerifierOptions;
+  unsigned int ProcessHeap;
+  unsigned int CriticalSectionHandle;
+  unsigned int CriticalSectionOwnerThread;
+  unsigned int Reserved[4];
+
+};

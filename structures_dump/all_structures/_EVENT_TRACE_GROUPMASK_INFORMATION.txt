@@ -1,0 +1,11 @@
+// Структура: _EVENT_TRACE_GROUPMASK_INFORMATION
+// Полей: 3
+// Строки в оригинале: 312849-312854
+struct _EVENT_TRACE_GROUPMASK_INFORMATION
+{
+
+  _EVENT_TRACE_INFORMATION_CLASS EventTraceInformationClass;
+  unsigned __int64 TraceHandle;
+  _PERFINFO_GROUPMASK EventTraceGroupMasks;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _WIN32K_SYSCALL_FILTER
+// Полей: 2
+// Строки в оригинале: 101728-101732
+struct _WIN32K_SYSCALL_FILTER
+{
+
+  unsigned int FilterState;
+  unsigned int FilterSet;
+
+};

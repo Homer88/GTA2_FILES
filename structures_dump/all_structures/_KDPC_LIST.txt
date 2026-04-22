@@ -1,0 +1,10 @@
+// Структура: _KDPC_LIST
+// Полей: 2
+// Строки в оригинале: 13245-13249
+struct _KDPC_LIST
+{
+
+  _SINGLE_LIST_ENTRY ListHead;
+  _SINGLE_LIST_ENTRY *LastEntry;
+
+};

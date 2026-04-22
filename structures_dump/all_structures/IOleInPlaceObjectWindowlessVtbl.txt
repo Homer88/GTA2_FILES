@@ -1,0 +1,19 @@
+// Структура: IOleInPlaceObjectWindowlessVtbl
+// Полей: 11
+// Строки в оригинале: 42878-42891
+struct IOleInPlaceObjectWindowlessVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleInPlaceObjectWindowless *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleInPlaceObjectWindowless *This);
+  ULONG (__stdcall *Release)(IOleInPlaceObjectWindowless *This);
+  HRESULT (__stdcall *GetWindow)(IOleInPlaceObjectWindowless *This, HWND *phwnd);
+  HRESULT (__stdcall *ContextSensitiveHelp)(IOleInPlaceObjectWindowless *This, BOOL fEnterMode);
+  HRESULT (__stdcall *InPlaceDeactivate)(IOleInPlaceObjectWindowless *This);
+  HRESULT (__stdcall *UIDeactivate)(IOleInPlaceObjectWindowless *This);
+  HRESULT (__stdcall *SetObjectRects)(IOleInPlaceObjectWindowless *This, LPCRECT lprcPosRect, LPCRECT lprcClipRect);
+  HRESULT (__stdcall *ReactivateAndUndo)(IOleInPlaceObjectWindowless *This);
+  HRESULT (__stdcall *OnWindowMessage)(IOleInPlaceObjectWindowless *This, UINT msg, WPARAM wParam, LPARAM lParam, LRESULT *plResult);
+  HRESULT (__stdcall *GetDropTarget)(IOleInPlaceObjectWindowless *This, IDropTarget **ppDropTarget);
+
+};

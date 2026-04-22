@@ -1,0 +1,18 @@
+// Структура: ITextStoryRangesVtbl
+// Полей: 10
+// Строки в оригинале: 45615-45627
+struct ITextStoryRangesVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITextStoryRanges *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITextStoryRanges *This);
+  ULONG (__stdcall *Release)(ITextStoryRanges *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(ITextStoryRanges *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(ITextStoryRanges *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(ITextStoryRanges *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(ITextStoryRanges *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *_NewEnum)(ITextStoryRanges *This, IUnknown **ppunkEnum);
+  HRESULT (__stdcall *Item)(ITextStoryRanges *This, int Index, ITextRange **ppRange);
+  HRESULT (__stdcall *GetCount)(ITextStoryRanges *This, int *pCount);
+
+};

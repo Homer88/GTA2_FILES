@@ -1,0 +1,13 @@
+// Структура: _SecPkgContext_StreamSizes
+// Полей: 5
+// Строки в оригинале: 323872-323879
+struct _SecPkgContext_StreamSizes
+{
+
+  unsigned int cbHeader;
+  unsigned int cbTrailer;
+  unsigned int cbMaximumMessage;
+  unsigned int cBuffers;
+  unsigned int cbBlockSize;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _GENERIC_PIPE_TYPE
+// Полей: 4
+// Строки в оригинале: 86561-86567
+struct _GENERIC_PIPE_TYPE
+{
+
+  int (__stdcall *pfnPull)(char *, void *, unsigned int, unsigned int *);
+  int (__stdcall *pfnPush)(char *, void *, unsigned int);
+  int (__stdcall *pfnAlloc)(char *, unsigned int, void **, unsigned int *);
+  char *pState;
+
+};

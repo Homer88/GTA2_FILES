@@ -1,0 +1,13 @@
+// Структура: MicrosoftTelemetryAssertTriggeredNode
+// Полей: 5
+// Строки в оригинале: 150114-150121
+struct MicrosoftTelemetryAssertTriggeredNode
+{
+
+  unsigned __int64 Hash;
+  unsigned int LastUpload;
+  unsigned int Count;
+  unsigned int TotalHits;
+  MicrosoftTelemetryAssertTriggeredNode *Next;
+
+};

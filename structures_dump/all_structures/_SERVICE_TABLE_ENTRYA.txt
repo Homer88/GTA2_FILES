@@ -1,0 +1,10 @@
+// Структура: _SERVICE_TABLE_ENTRYA
+// Полей: 2
+// Строки в оригинале: 103047-103051
+struct _SERVICE_TABLE_ENTRYA
+{
+
+  char *lpServiceName;
+  void (__stdcall *lpServiceProc)(unsigned int, char **);
+
+};

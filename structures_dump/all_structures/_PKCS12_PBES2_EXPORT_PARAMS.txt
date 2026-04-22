@@ -1,0 +1,11 @@
+// Структура: _PKCS12_PBES2_EXPORT_PARAMS
+// Полей: 3
+// Строки в оригинале: 97156-97161
+struct _PKCS12_PBES2_EXPORT_PARAMS
+{
+
+  unsigned int dwSize;
+  void *hNcryptDescriptor;
+  wchar_t *pwszPbes2Alg;
+
+};

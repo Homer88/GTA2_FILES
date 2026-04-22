@@ -1,0 +1,12 @@
+// Структура: _Cvtvec
+// Полей: 4
+// Строки в оригинале: 361477-361483
+struct _Cvtvec
+{
+
+  unsigned int _Page;
+  unsigned int _Mbcurmax;
+  int _Isclocale;
+  unsigned __int8 _Isleadbyte[32];
+
+};

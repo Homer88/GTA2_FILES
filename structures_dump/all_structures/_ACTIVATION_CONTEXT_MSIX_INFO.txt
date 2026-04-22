@@ -1,0 +1,9 @@
+// Структура: _ACTIVATION_CONTEXT_MSIX_INFO
+// Полей: 1
+// Строки в оригинале: 106223-106226
+struct _ACTIVATION_CONTEXT_MSIX_INFO
+{
+
+  wchar_t ApplicationUserModelId[130];
+
+};

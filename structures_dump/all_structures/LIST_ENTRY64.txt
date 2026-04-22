@@ -1,0 +1,10 @@
+// Структура: LIST_ENTRY64
+// Полей: 2
+// Строки в оригинале: 12542-12546
+struct LIST_ENTRY64
+{
+
+  unsigned __int64 Flink;
+  unsigned __int64 Blink;
+
+};

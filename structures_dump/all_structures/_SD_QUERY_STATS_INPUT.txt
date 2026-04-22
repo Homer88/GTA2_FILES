@@ -1,0 +1,9 @@
+// Структура: _SD_QUERY_STATS_INPUT
+// Полей: 1
+// Строки в оригинале: 103524-103527
+struct _SD_QUERY_STATS_INPUT
+{
+
+  unsigned int Reserved;
+
+};

@@ -1,0 +1,15 @@
+// Структура: __FIIterable_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedbackVtbl
+// Полей: 7
+// Строки в оригинале: 351795-351804
+struct __FIIterable_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedbackVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(__FIIterable_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(__FIIterable_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This);
+  ULONG (__stdcall *Release)(__FIIterable_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This);
+  HRESULT (__stdcall *GetIids)(__FIIterable_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This, ULONG *iidCount, IID **iids);
+  HRESULT (__stdcall *GetRuntimeClassName)(__FIIterable_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This, HSTRING *className);
+  HRESULT (__stdcall *GetTrustLevel)(__FIIterable_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This, TrustLevel *trustLevel);
+  HRESULT (__stdcall *First)(__FIIterable_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback *This, __FIIterator_1_Windows__CDevices__CHaptics__CSimpleHapticsControllerFeedback **first);
+
+};

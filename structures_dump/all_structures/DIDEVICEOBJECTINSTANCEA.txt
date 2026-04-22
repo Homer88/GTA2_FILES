@@ -1,0 +1,23 @@
+// Структура: DIDEVICEOBJECTINSTANCEA
+// Полей: 15
+// Строки в оригинале: 6198-6215
+struct DIDEVICEOBJECTINSTANCEA
+{
+
+  DWORD dwSize;
+  GUID guidType;
+  DWORD dwOfs;
+  DWORD dwType;
+  DWORD dwFlags;
+  CHAR tszName[260];
+  DWORD dwFFMaxForce;
+  DWORD dwFFForceResolution;
+  WORD wCollectionNumber;
+  WORD wDesignatorIndex;
+  WORD wUsagePage;
+  WORD wUsage;
+  DWORD dwDimension;
+  WORD wExponent;
+  WORD wReportId;
+
+};

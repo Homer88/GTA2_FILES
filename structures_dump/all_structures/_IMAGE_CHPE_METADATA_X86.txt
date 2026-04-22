@@ -1,0 +1,20 @@
+// Структура: _IMAGE_CHPE_METADATA_X86
+// Полей: 12
+// Строки в оригинале: 106124-106138
+struct _IMAGE_CHPE_METADATA_X86
+{
+
+  unsigned int Version;
+  unsigned int CHPECodeAddressRangeOffset;
+  unsigned int CHPECodeAddressRangeCount;
+  unsigned int WowA64ExceptionHandlerFunctionPointer;
+  unsigned int WowA64DispatchCallFunctionPointer;
+  unsigned int WowA64DispatchIndirectCallFunctionPointer;
+  unsigned int WowA64DispatchIndirectCallCfgFunctionPointer;
+  unsigned int WowA64DispatchRetFunctionPointer;
+  unsigned int WowA64DispatchRetLeafFunctionPointer;
+  unsigned int WowA64DispatchJumpFunctionPointer;
+  unsigned int CompilerIATPointer;
+  unsigned int WowA64RdtscFunctionPointer;
+
+};

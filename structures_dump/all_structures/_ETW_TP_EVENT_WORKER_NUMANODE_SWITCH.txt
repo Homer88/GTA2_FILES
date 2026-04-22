@@ -1,0 +1,16 @@
+// Структура: _ETW_TP_EVENT_WORKER_NUMANODE_SWITCH
+// Полей: 8
+// Строки в оригинале: 311265-311275
+struct _ETW_TP_EVENT_WORKER_NUMANODE_SWITCH
+{
+
+  _SYSTEM_TRACE_HEADER Header;
+  void *PoolId;
+  unsigned int CurrentNode;
+  unsigned int NextNode;
+  unsigned __int16 CurrentGroup;
+  unsigned __int16 NextGroup;
+  unsigned int CurrentWorkerCount;
+  unsigned int NextWorkerCount;
+
+};

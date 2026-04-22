@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_SET_POWER_ACTION
+// Полей: 3
+// Строки в оригинале: 311199-311204
+struct _PERFINFO_SET_POWER_ACTION
+{
+
+  void *Trigger;
+  unsigned int PowerAction;
+  unsigned int LightestState;
+
+};

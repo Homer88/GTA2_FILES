@@ -1,0 +1,15 @@
+// Структура: _NDR64_ENCAPSULATED_UNION
+// Полей: 7
+// Строки в оригинале: 336265-336274
+struct _NDR64_ENCAPSULATED_UNION
+{
+
+  unsigned __int8 FormatCode;
+  unsigned __int8 Alignment;
+  unsigned __int8 Flags;
+  unsigned __int8 SwitchType;
+  unsigned int MemoryOffset;
+  unsigned int MemorySize;
+  unsigned int Reserved;
+
+};

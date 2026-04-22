@@ -1,0 +1,9 @@
+// Структура: ITypeLib
+// Полей: 1
+// Строки в оригинале: 23750-23753
+struct ITypeLib
+{
+
+  struct ITypeLibVtbl *lpVtbl;
+
+};

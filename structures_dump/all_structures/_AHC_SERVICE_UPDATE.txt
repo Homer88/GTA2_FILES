@@ -1,0 +1,14 @@
+// Структура: _AHC_SERVICE_UPDATE
+// Полей: 6
+// Строки в оригинале: 308758-308766
+struct _AHC_SERVICE_UPDATE
+{
+
+  _AHC_INFO_CLASS InfoClass;
+  _UNICODE_STRING PackageAlias;
+  void *FileHandle;
+  _UNICODE_STRING ExeSignature;
+  void *Data;
+  unsigned int DataSize;
+
+};

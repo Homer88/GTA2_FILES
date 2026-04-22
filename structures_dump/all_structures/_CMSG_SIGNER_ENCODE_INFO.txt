@@ -1,0 +1,18 @@
+// Структура: _CMSG_SIGNER_ENCODE_INFO
+// Полей: 10
+// Строки в оригинале: 94950-94962
+struct _CMSG_SIGNER_ENCODE_INFO
+{
+
+  unsigned int cbSize;
+  _CERT_INFO *pCertInfo;
+  $2648935626D60F3A93F830EF5D884CB4 ___u2;
+  unsigned int dwKeySpec;
+  _CRYPT_ALGORITHM_IDENTIFIER HashAlgorithm;
+  void *pvHashAuxInfo;
+  unsigned int cAuthAttr;
+  _CRYPT_ATTRIBUTE *rgAuthAttr;
+  unsigned int cUnauthAttr;
+  _CRYPT_ATTRIBUTE *rgUnauthAttr;
+
+};

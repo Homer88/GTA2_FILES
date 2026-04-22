@@ -1,0 +1,9 @@
+// Структура: _JOBOBJECT_END_OF_JOB_TIME_INFORMATION
+// Полей: 1
+// Строки в оригинале: 103347-103350
+struct _JOBOBJECT_END_OF_JOB_TIME_INFORMATION
+{
+
+  unsigned int EndOfJobTimeAction;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _PROCESS_DISK_COUNTERS
+// Полей: 5
+// Строки в оригинале: 16649-16656
+struct _PROCESS_DISK_COUNTERS
+{
+
+  unsigned __int64 BytesRead;
+  unsigned __int64 BytesWritten;
+  unsigned __int64 ReadOperationCount;
+  unsigned __int64 WriteOperationCount;
+  unsigned __int64 FlushOperationCount;
+
+};

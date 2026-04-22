@@ -1,0 +1,27 @@
+// Структура: SoundInfo
+// Полей: 19
+// Строки в оригинале: 6829-6850
+struct SoundInfo
+{
+
+  SoundInfo *NextElement;
+  __int16 field_4;
+  char field_6;
+  char field_7;
+  int field_8;
+  char field_C;
+  char field_D;
+  __int16 field_E;
+  char field_10;
+  char field_11;
+  __int16 field_12;
+  byte arr[252];
+  __int16 field_110;
+  char field_112;
+  char field_113;
+  S29 *S29;
+  char field_118;
+  char field_119;
+  __int16 field_11A;
+
+};

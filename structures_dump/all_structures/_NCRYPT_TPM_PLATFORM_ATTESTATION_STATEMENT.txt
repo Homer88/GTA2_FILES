@@ -1,0 +1,14 @@
+// Структура: _NCRYPT_TPM_PLATFORM_ATTESTATION_STATEMENT
+// Полей: 6
+// Строки в оригинале: 92425-92433
+struct _NCRYPT_TPM_PLATFORM_ATTESTATION_STATEMENT
+{
+
+  unsigned int Magic;
+  unsigned int Version;
+  unsigned int pcrAlg;
+  unsigned int cbSignature;
+  unsigned int cbQuote;
+  unsigned int cbPcrs;
+
+};

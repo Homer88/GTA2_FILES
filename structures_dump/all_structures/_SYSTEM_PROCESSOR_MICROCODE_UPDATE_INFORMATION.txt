@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_PROCESSOR_MICROCODE_UPDATE_INFORMATION
+// Полей: 1
+// Строки в оригинале: 110776-110779
+struct _SYSTEM_PROCESSOR_MICROCODE_UPDATE_INFORMATION
+{
+
+  unsigned int Operation;
+
+};

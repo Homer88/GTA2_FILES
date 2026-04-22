@@ -1,0 +1,9 @@
+// Структура: _FILE_SET_DEFECT_MGMT_BUFFER
+// Полей: 1
+// Строки в оригинале: 105093-105096
+struct _FILE_SET_DEFECT_MGMT_BUFFER
+{
+
+  unsigned __int8 Disable;
+
+};

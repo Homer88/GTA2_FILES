@@ -1,0 +1,9 @@
+// Структура: IDeskBandInfo
+// Полей: 1
+// Строки в оригинале: 33975-33978
+struct IDeskBandInfo
+{
+
+  struct IDeskBandInfoVtbl *lpVtbl;
+
+};

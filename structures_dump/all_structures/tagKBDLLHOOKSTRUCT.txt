@@ -1,0 +1,13 @@
+// Структура: tagKBDLLHOOKSTRUCT
+// Полей: 5
+// Строки в оригинале: 88975-88982
+struct tagKBDLLHOOKSTRUCT
+{
+
+  unsigned int vkCode;
+  unsigned int scanCode;
+  unsigned int flags;
+  unsigned int time;
+  unsigned int dwExtraInfo;
+
+};

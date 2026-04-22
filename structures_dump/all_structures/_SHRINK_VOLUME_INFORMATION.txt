@@ -1,0 +1,11 @@
+// Структура: _SHRINK_VOLUME_INFORMATION
+// Полей: 3
+// Строки в оригинале: 102401-102406
+struct _SHRINK_VOLUME_INFORMATION
+{
+
+  _SHRINK_VOLUME_REQUEST_TYPES ShrinkRequestType;
+  unsigned __int64 Flags;
+  __int64 NewNumberOfSectors;
+
+};

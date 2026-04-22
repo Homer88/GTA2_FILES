@@ -1,0 +1,17 @@
+// Структура: _SERVICE_STATUS_PROCESS
+// Полей: 9
+// Строки в оригинале: 81332-81343
+struct _SERVICE_STATUS_PROCESS
+{
+
+  unsigned int dwServiceType;
+  unsigned int dwCurrentState;
+  unsigned int dwControlsAccepted;
+  unsigned int dwWin32ExitCode;
+  unsigned int dwServiceSpecificExitCode;
+  unsigned int dwCheckPoint;
+  unsigned int dwWaitHint;
+  unsigned int dwProcessId;
+  unsigned int dwServiceFlags;
+
+};

@@ -1,0 +1,19 @@
+// Структура: _RTL_VERIFIER_PROVIDER_DESCRIPTOR
+// Полей: 11
+// Строки в оригинале: 83536-83549
+struct _RTL_VERIFIER_PROVIDER_DESCRIPTOR
+{
+
+  unsigned int Length;
+  _RTL_VERIFIER_DLL_DESCRIPTOR *ProviderDlls;
+  void (__stdcall *ProviderDllLoadCallback)(wchar_t *, void *, unsigned int, void *);
+  void (__stdcall *ProviderDllUnloadCallback)(wchar_t *, void *, unsigned int, void *);
+  wchar_t *VerifierImage;
+  unsigned int VerifierFlags;
+  unsigned int VerifierDebug;
+  void *RtlpGetStackTraceAddress;
+  void *RtlpDebugPageHeapCreate;
+  void *RtlpDebugPageHeapDestroy;
+  void (__stdcall *ProviderNtdllHeapFreeCallback)(void *, unsigned int);
+
+};

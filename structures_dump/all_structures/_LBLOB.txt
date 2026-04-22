@@ -1,0 +1,11 @@
+// Структура: _LBLOB
+// Полей: 3
+// Строки в оригинале: 113034-113039
+struct _LBLOB
+{
+
+  unsigned int Length;
+  unsigned int MaximumLength;
+  unsigned __int8 *Buffer;
+
+};

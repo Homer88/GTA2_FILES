@@ -1,0 +1,13 @@
+// Структура: _RTL_PROCESS_MODULE_INFORMATION_EX
+// Полей: 5
+// Строки в оригинале: 95457-95464
+struct _RTL_PROCESS_MODULE_INFORMATION_EX
+{
+
+  unsigned __int16 NextOffset;
+  _RTL_PROCESS_MODULE_INFORMATION BaseInfo;
+  unsigned int ImageChecksum;
+  unsigned int TimeDateStamp;
+  void *DefaultBase;
+
+};

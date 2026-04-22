@@ -1,0 +1,9 @@
+// Структура: _SecPkgContext_Flags
+// Полей: 1
+// Строки в оригинале: 325801-325804
+struct _SecPkgContext_Flags
+{
+
+  unsigned int Flags;
+
+};

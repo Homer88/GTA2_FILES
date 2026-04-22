@@ -1,0 +1,14 @@
+// Структура: _PERFINFO_DRIVER_MAJORFUNCTION
+// Полей: 6
+// Строки в оригинале: 313609-313617
+struct _PERFINFO_DRIVER_MAJORFUNCTION
+{
+
+  unsigned int MajorFunction;
+  unsigned int MinorFunction;
+  void *RoutineAddr;
+  void *FileNamePointer;
+  void *Irp;
+  unsigned int UniqMatchId;
+
+};

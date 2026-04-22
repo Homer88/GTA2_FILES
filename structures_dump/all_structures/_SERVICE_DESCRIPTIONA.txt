@@ -1,0 +1,9 @@
+// Структура: _SERVICE_DESCRIPTIONA
+// Полей: 1
+// Строки в оригинале: 92768-92771
+struct _SERVICE_DESCRIPTIONA
+{
+
+  char *lpDescription;
+
+};

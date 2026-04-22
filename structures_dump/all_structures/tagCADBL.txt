@@ -1,0 +1,10 @@
+// Структура: tagCADBL
+// Полей: 2
+// Строки в оригинале: 31586-31590
+struct tagCADBL
+{
+
+  ULONG cElems;
+  DOUBLE *pElems;
+
+};

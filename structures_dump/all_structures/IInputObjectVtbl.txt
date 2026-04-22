@@ -1,0 +1,14 @@
+// Структура: IInputObjectVtbl
+// Полей: 6
+// Строки в оригинале: 43015-43023
+struct IInputObjectVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IInputObject *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IInputObject *This);
+  ULONG (__stdcall *Release)(IInputObject *This);
+  HRESULT (__stdcall *UIActivateIO)(IInputObject *This, BOOL fActivate, MSG *pMsg);
+  HRESULT (__stdcall *HasFocusIO)(IInputObject *This);
+  HRESULT (__stdcall *TranslateAcceleratorIO)(IInputObject *This, MSG *pMsg);
+
+};

@@ -1,0 +1,19 @@
+// Структура: _SYSTEM_OBJECTTYPE_INFORMATION
+// Полей: 11
+// Строки в оригинале: 82091-82104
+struct _SYSTEM_OBJECTTYPE_INFORMATION
+{
+
+  unsigned int NextEntryOffset;
+  unsigned int NumberOfObjects;
+  unsigned int NumberOfHandles;
+  unsigned int TypeIndex;
+  unsigned int InvalidAttributes;
+  _GENERIC_MAPPING GenericMapping;
+  unsigned int ValidAccessMask;
+  unsigned int PoolType;
+  unsigned __int8 SecurityRequired;
+  unsigned __int8 WaitableObject;
+  _UNICODE_STRING TypeName;
+
+};

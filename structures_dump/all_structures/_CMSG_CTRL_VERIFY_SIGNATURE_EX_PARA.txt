@@ -1,0 +1,13 @@
+// Структура: _CMSG_CTRL_VERIFY_SIGNATURE_EX_PARA
+// Полей: 5
+// Строки в оригинале: 112077-112084
+struct _CMSG_CTRL_VERIFY_SIGNATURE_EX_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int hCryptProv;
+  unsigned int dwSignerIndex;
+  unsigned int dwSignerType;
+  void *pvSigner;
+
+};

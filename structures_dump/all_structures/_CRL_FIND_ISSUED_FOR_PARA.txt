@@ -1,0 +1,10 @@
+// Структура: _CRL_FIND_ISSUED_FOR_PARA
+// Полей: 2
+// Строки в оригинале: 96104-96108
+struct _CRL_FIND_ISSUED_FOR_PARA
+{
+
+  const _CERT_CONTEXT *pSubjectCert;
+  const _CERT_CONTEXT *pIssuerCert;
+
+};

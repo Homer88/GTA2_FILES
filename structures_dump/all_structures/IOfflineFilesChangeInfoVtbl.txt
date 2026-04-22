@@ -1,0 +1,17 @@
+// Структура: IOfflineFilesChangeInfoVtbl
+// Полей: 9
+// Строки в оригинале: 28300-28311
+struct IOfflineFilesChangeInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesChangeInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesChangeInfo *This);
+  ULONG (__stdcall *Release)(IOfflineFilesChangeInfo *This);
+  HRESULT (__stdcall *IsDirty)(IOfflineFilesChangeInfo *This, BOOL *pbDirty);
+  HRESULT (__stdcall *IsDeletedOffline)(IOfflineFilesChangeInfo *This, BOOL *pbDeletedOffline);
+  HRESULT (__stdcall *IsCreatedOffline)(IOfflineFilesChangeInfo *This, BOOL *pbCreatedOffline);
+  HRESULT (__stdcall *IsLocallyModifiedData)(IOfflineFilesChangeInfo *This, BOOL *pbLocallyModifiedData);
+  HRESULT (__stdcall *IsLocallyModifiedAttributes)(IOfflineFilesChangeInfo *This, BOOL *pbLocallyModifiedAttributes);
+  HRESULT (__stdcall *IsLocallyModifiedTime)(IOfflineFilesChangeInfo *This, BOOL *pbLocallyModifiedTime);
+
+};

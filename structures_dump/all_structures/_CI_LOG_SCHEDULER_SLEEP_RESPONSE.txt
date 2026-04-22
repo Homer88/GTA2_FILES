@@ -1,0 +1,9 @@
+// Структура: _CI_LOG_SCHEDULER_SLEEP_RESPONSE
+// Полей: 1
+// Строки в оригинале: 310440-310443
+struct _CI_LOG_SCHEDULER_SLEEP_RESPONSE
+{
+
+  _EVENT_TRACE_HEADER Header;
+
+};

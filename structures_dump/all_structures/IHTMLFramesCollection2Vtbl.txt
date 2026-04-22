@@ -1,0 +1,17 @@
+// Структура: IHTMLFramesCollection2Vtbl
+// Полей: 9
+// Строки в оригинале: 38511-38522
+struct IHTMLFramesCollection2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLFramesCollection2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLFramesCollection2 *This);
+  ULONG (__stdcall *Release)(IHTMLFramesCollection2 *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLFramesCollection2 *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLFramesCollection2 *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLFramesCollection2 *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLFramesCollection2 *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *item)(IHTMLFramesCollection2 *This, VARIANT *pvarIndex, VARIANT *pvarResult);
+  HRESULT (__stdcall *get_length)(IHTMLFramesCollection2 *This, int *p);
+
+};

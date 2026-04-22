@@ -1,0 +1,12 @@
+// Структура: tagXCtxDisconnectData
+// Полей: 4
+// Строки в оригинале: 244542-244548
+struct tagXCtxDisconnectData
+{
+
+  IUnknown *pServer;
+  CIDObject *pID;
+  unsigned int cIFaces;
+  tagIFaceSvrRefs *pIFaceSvrRefs;
+
+};

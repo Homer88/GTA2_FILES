@@ -1,0 +1,22 @@
+// Структура: _HEAP_VAMGR_ALLOCATOR
+// Полей: 14
+// Строки в оригинале: 20395-20411
+struct _HEAP_VAMGR_ALLOCATOR
+{
+
+  unsigned int TreeLock;
+  _RTL_RB_TREE FreeRanges;
+  _HEAP_VAMGR_VASPACE *VaSpace;
+  void *PartitionHandle;
+  unsigned __int16 ChunksPerRegion;
+  unsigned __int16 RefCount;
+  unsigned __int8 AllocatorIndex;
+  unsigned __int8 NumaNode;
+  unsigned __int8 LockType : 1;
+  unsigned __int8 MemoryType : 2;
+  unsigned __int8 ConstrainedVA : 1;
+  unsigned __int8 AllowFreeHead : 1;
+  unsigned __int8 Spare0 : 3;
+  unsigned __int8 Spare1;
+
+};

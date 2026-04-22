@@ -1,0 +1,13 @@
+// Структура: IClassFactoryVtbl
+// Полей: 5
+// Строки в оригинале: 28740-28747
+struct IClassFactoryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IClassFactory *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IClassFactory *This);
+  ULONG (__stdcall *Release)(IClassFactory *This);
+  HRESULT (__stdcall *CreateInstance)(IClassFactory *This, IUnknown *pUnkOuter, const IID *const riid, void **ppvObject);
+  HRESULT (__stdcall *LockServer)(IClassFactory *This, BOOL fLock);
+
+};

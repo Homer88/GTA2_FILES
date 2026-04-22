@@ -1,0 +1,13 @@
+// Структура: _ETW_DISKIO_FLUSH_BUFFERS_V3
+// Полей: 5
+// Строки в оригинале: 309684-309691
+struct _ETW_DISKIO_FLUSH_BUFFERS_V3
+{
+
+  unsigned int DiskNumber;
+  unsigned int IrpFlags;
+  unsigned __int64 HighResResponseTime;
+  void *IrpAddr;
+  unsigned int IssuingThreadId;
+
+};

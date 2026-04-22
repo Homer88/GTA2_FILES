@@ -1,0 +1,12 @@
+// Структура: tagWNODE_EVENT_REFERENCE
+// Полей: 4
+// Строки в оригинале: 310596-310602
+struct tagWNODE_EVENT_REFERENCE
+{
+
+  _WNODE_HEADER WnodeHeader;
+  _GUID TargetGuid;
+  unsigned int TargetDataBlockSize;
+  $00C061E098DF7A0183ECB60300A0982E ___u3;
+
+};

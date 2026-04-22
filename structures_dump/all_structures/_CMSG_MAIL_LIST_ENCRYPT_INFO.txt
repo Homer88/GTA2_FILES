@@ -1,0 +1,13 @@
+// Структура: _CMSG_MAIL_LIST_ENCRYPT_INFO
+// Полей: 5
+// Строки в оригинале: 87825-87832
+struct _CMSG_MAIL_LIST_ENCRYPT_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int dwRecipientIndex;
+  _CRYPT_ALGORITHM_IDENTIFIER KeyEncryptionAlgorithm;
+  _CRYPTOAPI_BLOB EncryptedKey;
+  unsigned int dwFlags;
+
+};

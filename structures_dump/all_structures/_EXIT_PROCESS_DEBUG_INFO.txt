@@ -1,0 +1,9 @@
+// Структура: _EXIT_PROCESS_DEBUG_INFO
+// Полей: 1
+// Строки в оригинале: 104274-104277
+struct _EXIT_PROCESS_DEBUG_INFO
+{
+
+  unsigned int dwExitCode;
+
+};

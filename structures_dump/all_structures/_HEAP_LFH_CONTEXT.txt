@@ -1,0 +1,18 @@
+// Структура: _HEAP_LFH_CONTEXT
+// Полей: 10
+// Строки в оригинале: 20736-20748
+struct _HEAP_LFH_CONTEXT
+{
+
+  void *BackendCtx;
+  _HEAP_SUBALLOCATOR_CALLBACKS Callbacks;
+  const unsigned __int8 *AffinityModArray;
+  unsigned __int8 MaxAffinity;
+  unsigned __int8 LockType;
+  __int16 MemStatsOffset;
+  _RTL_HP_LFH_CONFIG Config;
+  __declspec(align(32)) _HEAP_LFH_SUBSEGMENT_STATS BucketStats;
+  unsigned int SubsegmentCreationLock;
+  __declspec(align(64)) _HEAP_LFH_BUCKET *Buckets[129];
+
+};

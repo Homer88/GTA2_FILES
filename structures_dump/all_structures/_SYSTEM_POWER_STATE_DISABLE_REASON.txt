@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_POWER_STATE_DISABLE_REASON
+// Полей: 3
+// Строки в оригинале: 84950-84955
+struct _SYSTEM_POWER_STATE_DISABLE_REASON
+{
+
+  unsigned __int8 AffectedState[8];
+  unsigned int PowerReasonCode;
+  unsigned int PowerReasonLength;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_CODEINTEGRITYVERIFICATION_INFORMATION
+// Полей: 3
+// Строки в оригинале: 89053-89058
+struct _SYSTEM_CODEINTEGRITYVERIFICATION_INFORMATION
+{
+
+  void *FileHandle;
+  unsigned int ImageSize;
+  void *Image;
+
+};

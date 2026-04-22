@@ -1,0 +1,11 @@
+// Структура: _FILE_LINKS_FULL_ID_INFORMATION
+// Полей: 3
+// Строки в оригинале: 113545-113550
+struct _FILE_LINKS_FULL_ID_INFORMATION
+{
+
+  unsigned int BytesNeeded;
+  unsigned int EntriesReturned;
+  _FILE_LINK_ENTRY_FULL_ID_INFORMATION Entry;
+
+};

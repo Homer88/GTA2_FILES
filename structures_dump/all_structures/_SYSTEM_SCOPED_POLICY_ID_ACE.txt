@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_SCOPED_POLICY_ID_ACE
+// Полей: 3
+// Строки в оригинале: 101381-101386
+struct _SYSTEM_SCOPED_POLICY_ID_ACE
+{
+
+  _ACE_HEADER Header;
+  unsigned int Mask;
+  unsigned int SidStart;
+
+};

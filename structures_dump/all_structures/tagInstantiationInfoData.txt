@@ -1,0 +1,17 @@
+// Структура: tagInstantiationInfoData
+// Полей: 9
+// Строки в оригинале: 193011-193022
+struct tagInstantiationInfoData
+{
+
+  _GUID classId;
+  unsigned int classCtx;
+  unsigned int actvflags;
+  int fIsSurrogate;
+  unsigned int cIID;
+  unsigned int instFlag;
+  _GUID *pIID;
+  unsigned int thisSize;
+  tagCOMVERSION clientCOMVersion;
+
+};

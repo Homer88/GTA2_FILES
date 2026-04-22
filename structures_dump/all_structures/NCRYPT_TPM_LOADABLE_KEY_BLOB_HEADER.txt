@@ -1,0 +1,13 @@
+// Структура: NCRYPT_TPM_LOADABLE_KEY_BLOB_HEADER
+// Полей: 5
+// Строки в оригинале: 100495-100502
+struct NCRYPT_TPM_LOADABLE_KEY_BLOB_HEADER
+{
+
+  unsigned int magic;
+  unsigned int cbHeader;
+  unsigned int cbPublic;
+  unsigned int cbPrivate;
+  unsigned int cbName;
+
+};

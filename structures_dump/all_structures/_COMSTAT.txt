@@ -1,0 +1,18 @@
+// Структура: _COMSTAT
+// Полей: 10
+// Строки в оригинале: 90197-90209
+struct _COMSTAT
+{
+
+  unsigned __int32 fCtsHold : 1;
+  unsigned __int32 fDsrHold : 1;
+  unsigned __int32 fRlsdHold : 1;
+  unsigned __int32 fXoffHold : 1;
+  unsigned __int32 fXoffSent : 1;
+  unsigned __int32 fEof : 1;
+  unsigned __int32 fTxim : 1;
+  unsigned __int32 fReserved : 25;
+  unsigned int cbInQue;
+  unsigned int cbOutQue;
+
+};

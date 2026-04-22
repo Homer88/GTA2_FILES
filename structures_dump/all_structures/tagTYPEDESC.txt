@@ -1,0 +1,14 @@
+// Структура: tagTYPEDESC
+// Полей: 6
+// Строки в оригинале: 23553-23561
+struct tagTYPEDESC
+{
+
+  #pragma pack(push, 8)
+  union
+  {
+    struct tagTYPEDESC *lptdesc;
+    struct tagARRAYDESC *lpadesc;
+    HREFTYPE hreftype;
+  
+};

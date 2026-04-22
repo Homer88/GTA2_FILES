@@ -1,0 +1,13 @@
+// Структура: _PERSIST_FOLDER_TARGET_INFO
+// Полей: 5
+// Строки в оригинале: 45340-45347
+struct _PERSIST_FOLDER_TARGET_INFO
+{
+
+  LPITEMIDLIST pidlTargetFolder;
+  WCHAR szTargetParsingName[260];
+  WCHAR szNetworkProvider[260];
+  DWORD dwAttributes;
+  int csidl;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _MEMORY_PARTITION_PAGE_COMBINE_INFORMATION
+// Полей: 3
+// Строки в оригинале: 103243-103248
+struct _MEMORY_PARTITION_PAGE_COMBINE_INFORMATION
+{
+
+  void *StopHandle;
+  unsigned int Flags;
+  unsigned int TotalNumberOfPages;
+
+};

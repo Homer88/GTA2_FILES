@@ -1,0 +1,29 @@
+// Структура: _IRP
+// Полей: 21
+// Строки в оригинале: 17023-17046
+struct _IRP
+{
+
+  __int16 Type;
+  unsigned __int16 Size;
+  _MDL *MdlAddress;
+  unsigned int Flags;
+  _IRP::$04B1A7556B4AC6D95596C3902CEA633C AssociatedIrp;
+  _LIST_ENTRY ThreadListEntry;
+  _IO_STATUS_BLOCK IoStatus;
+  char RequestorMode;
+  unsigned __int8 PendingReturned;
+  char StackCount;
+  char CurrentLocation;
+  unsigned __int8 Cancel;
+  unsigned __int8 CancelIrql;
+  char ApcEnvironment;
+  unsigned __int8 AllocationFlags;
+  _IO_STATUS_BLOCK *UserIosb;
+  _KEVENT *UserEvent;
+  _IRP::$5AC76A5ECF51FA19885264F76854DCCF Overlay;
+  void (__stdcall *CancelRoutine)(_DEVICE_OBJECT *, _IRP *);
+  void *UserBuffer;
+  _IRP::$B4171EA1256770415ADEFA3730734C4C Tail;
+
+};

@@ -1,0 +1,19 @@
+// Структура: IExplorerCommandVtbl
+// Полей: 11
+// Строки в оригинале: 31062-31075
+struct IExplorerCommandVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IExplorerCommand *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IExplorerCommand *This);
+  ULONG (__stdcall *Release)(IExplorerCommand *This);
+  HRESULT (__stdcall *GetTitle)(IExplorerCommand *This, IShellItemArray *psiItemArray, LPWSTR *ppszName);
+  HRESULT (__stdcall *GetIcon)(IExplorerCommand *This, IShellItemArray *psiItemArray, LPWSTR *ppszIcon);
+  HRESULT (__stdcall *GetToolTip)(IExplorerCommand *This, IShellItemArray *psiItemArray, LPWSTR *ppszInfotip);
+  HRESULT (__stdcall *GetCanonicalName)(IExplorerCommand *This, GUID *pguidCommandName);
+  HRESULT (__stdcall *GetState)(IExplorerCommand *This, IShellItemArray *psiItemArray, BOOL fOkToBeSlow, EXPCMDSTATE *pCmdState);
+  HRESULT (__stdcall *Invoke)(IExplorerCommand *This, IShellItemArray *psiItemArray, IBindCtx *pbc);
+  HRESULT (__stdcall *GetFlags)(IExplorerCommand *This, EXPCMDFLAGS *pFlags);
+  HRESULT (__stdcall *EnumSubCommands)(IExplorerCommand *This, IEnumExplorerCommand **ppEnum);
+
+};

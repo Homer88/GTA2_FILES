@@ -1,0 +1,13 @@
+// Структура: IQueryAssociationsVtbl
+// Полей: 5
+// Строки в оригинале: 40958-40965
+struct IQueryAssociationsVtbl
+{
+
+  HRESULT (__stdcall *Init)(IQueryAssociations *This, ASSOCF flags, LPCWSTR pszAssoc, HKEY hkProgid, HWND hwnd);
+  HRESULT (__stdcall *GetString)(IQueryAssociations *This, ASSOCF flags, ASSOCSTR str, LPCWSTR pszExtra, LPWSTR pszOut, DWORD *pcchOut);
+  HRESULT (__stdcall *GetKey)(IQueryAssociations *This, ASSOCF flags, ASSOCKEY key, LPCWSTR pszExtra, HKEY *phkeyOut);
+  HRESULT (__stdcall *GetData)(IQueryAssociations *This, ASSOCF flags, ASSOCDATA data, LPCWSTR pszExtra, void *pvOut, DWORD *pcbOut);
+  HRESULT (__stdcall *GetEnum)(IQueryAssociations *This, ASSOCF flags, ASSOCENUM assocenum, LPCWSTR pszExtra, const IID *const riid, void **ppvOut);
+
+};

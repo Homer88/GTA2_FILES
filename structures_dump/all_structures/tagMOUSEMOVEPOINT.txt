@@ -1,0 +1,12 @@
+// Структура: tagMOUSEMOVEPOINT
+// Полей: 4
+// Строки в оригинале: 80096-80102
+struct tagMOUSEMOVEPOINT
+{
+
+  int x;
+  int y;
+  unsigned int time;
+  unsigned int dwExtraInfo;
+
+};

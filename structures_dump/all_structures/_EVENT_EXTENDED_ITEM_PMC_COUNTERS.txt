@@ -1,0 +1,9 @@
+// Структура: _EVENT_EXTENDED_ITEM_PMC_COUNTERS
+// Полей: 1
+// Строки в оригинале: 309113-309116
+struct _EVENT_EXTENDED_ITEM_PMC_COUNTERS
+{
+
+  unsigned __int64 Counter[1];
+
+};

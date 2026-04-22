@@ -1,0 +1,17 @@
+// Структура: _CONSOLE_SCREEN_BUFFER_INFOEX
+// Полей: 9
+// Строки в оригинале: 87174-87185
+struct _CONSOLE_SCREEN_BUFFER_INFOEX
+{
+
+  unsigned int cbSize;
+  _COORD dwSize;
+  _COORD dwCursorPosition;
+  unsigned __int16 wAttributes;
+  _SMALL_RECT srWindow;
+  _COORD dwMaximumWindowSize;
+  unsigned __int16 wPopupAttributes;
+  int bFullscreenSupported;
+  unsigned int ColorTable[16];
+
+};

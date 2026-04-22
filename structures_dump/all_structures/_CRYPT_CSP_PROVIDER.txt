@@ -1,0 +1,11 @@
+// Структура: _CRYPT_CSP_PROVIDER
+// Полей: 3
+// Строки в оригинале: 81132-81137
+struct _CRYPT_CSP_PROVIDER
+{
+
+  unsigned int dwKeySpec;
+  wchar_t *pwszProviderName;
+  _CRYPT_BIT_BLOB Signature;
+
+};

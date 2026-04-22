@@ -1,0 +1,9 @@
+// Структура: _SecPkgContext_NegoStatus
+// Полей: 1
+// Строки в оригинале: 325719-325722
+struct _SecPkgContext_NegoStatus
+{
+
+  unsigned int LastStatus;
+
+};

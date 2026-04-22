@@ -1,0 +1,21 @@
+// Структура: wil_details_StagingConfig
+// Полей: 13
+// Строки в оригинале: 142408-142423
+struct wil_details_StagingConfig
+{
+
+  wil_FeatureStore store;
+  int forUpdate;
+  unsigned int readChangeStamp;
+  unsigned __int8 readVersion;
+  int modified;
+  wil_details_StagingConfigHeader *header;
+  wil_details_StagingConfigFeature *features;
+  wil_details_StagingConfigUsageTrigger *triggers;
+  int changedInSession;
+  void *buffer;
+  unsigned int bufferSize;
+  unsigned int bufferAlloc;
+  int bufferOwned;
+
+};

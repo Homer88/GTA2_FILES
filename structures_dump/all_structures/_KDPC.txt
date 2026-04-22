@@ -1,0 +1,16 @@
+// Структура: _KDPC
+// Полей: 8
+// Строки в оригинале: 13458-13468
+struct _KDPC
+{
+
+  $8C96C637FB7940A38ECB9D231EF50C5B ___u0;
+  _SINGLE_LIST_ENTRY DpcListEntry;
+  unsigned int ProcessorHistory;
+  void (__stdcall *DeferredRoutine)(_KDPC *, void *, void *, void *);
+  void *DeferredContext;
+  void *SystemArgument1;
+  void *SystemArgument2;
+  void *DpcData;
+
+};

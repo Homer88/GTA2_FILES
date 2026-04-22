@@ -1,0 +1,16 @@
+// Структура: _IMAGE_HOT_PATCH_BASE
+// Полей: 8
+// Строки в оригинале: 102515-102525
+struct _IMAGE_HOT_PATCH_BASE
+{
+
+  unsigned int SequenceNumber;
+  unsigned int Flags;
+  unsigned int OriginalTimeDateStamp;
+  unsigned int OriginalCheckSum;
+  unsigned int CodeIntegrityInfo;
+  unsigned int CodeIntegritySize;
+  unsigned int PatchTable;
+  unsigned int BufferOffset;
+
+};

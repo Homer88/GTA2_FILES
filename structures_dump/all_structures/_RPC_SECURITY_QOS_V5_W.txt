@@ -1,0 +1,17 @@
+// Структура: _RPC_SECURITY_QOS_V5_W
+// Полей: 9
+// Строки в оригинале: 98864-98875
+struct _RPC_SECURITY_QOS_V5_W
+{
+
+  unsigned int Version;
+  unsigned int Capabilities;
+  unsigned int IdentityTracking;
+  unsigned int ImpersonationType;
+  unsigned int AdditionalSecurityInfoType;
+  _RPC_SECURITY_QOS_V5_W::<unnamed_type_u> u;
+  void *Sid;
+  unsigned int EffectiveOnly;
+  void *ServerSecurityDescriptor;
+
+};

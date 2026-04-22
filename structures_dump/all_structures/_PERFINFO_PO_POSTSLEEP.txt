@@ -1,0 +1,9 @@
+// Структура: _PERFINFO_PO_POSTSLEEP
+// Полей: 1
+// Строки в оригинале: 312028-312031
+struct _PERFINFO_PO_POSTSLEEP
+{
+
+  _LARGE_INTEGER PerformanceCounter;
+
+};

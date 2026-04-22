@@ -1,0 +1,17 @@
+// Структура: tagSDBDEVICEINFO
+// Полей: 9
+// Строки в оригинале: 310464-310475
+struct tagSDBDEVICEINFO
+{
+
+  wchar_t *szVendorId;
+  wchar_t *szDeviceId;
+  wchar_t *szSubVendorId;
+  wchar_t *szSubSystemId;
+  unsigned int dwModel;
+  unsigned int dwFamily;
+  unsigned int dwDate;
+  unsigned int dwRevision;
+  unsigned int dwCreatorRevision;
+
+};

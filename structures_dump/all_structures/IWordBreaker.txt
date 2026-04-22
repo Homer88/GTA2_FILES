@@ -1,0 +1,9 @@
+// Структура: IWordBreaker
+// Полей: 1
+// Строки в оригинале: 36622-36625
+struct IWordBreaker
+{
+
+  struct IWordBreakerVtbl *lpVtbl;
+
+};

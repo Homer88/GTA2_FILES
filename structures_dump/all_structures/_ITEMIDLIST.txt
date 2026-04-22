@@ -1,0 +1,9 @@
+// Структура: _ITEMIDLIST
+// Полей: 1
+// Строки в оригинале: 30685-30688
+struct _ITEMIDLIST
+{
+
+  SHITEMID mkid;
+
+};

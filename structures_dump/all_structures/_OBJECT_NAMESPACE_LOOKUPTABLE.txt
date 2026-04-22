@@ -1,0 +1,11 @@
+// Структура: _OBJECT_NAMESPACE_LOOKUPTABLE
+// Полей: 3
+// Строки в оригинале: 17116-17121
+struct _OBJECT_NAMESPACE_LOOKUPTABLE
+{
+
+  _LIST_ENTRY HashBuckets[37];
+  _EX_PUSH_LOCK Lock;
+  unsigned int NumberOfPrivateSpaces;
+
+};

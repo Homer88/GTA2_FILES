@@ -1,0 +1,11 @@
+// Структура: _ACCESS_DENIED_ACE
+// Полей: 3
+// Строки в оригинале: 90189-90194
+struct _ACCESS_DENIED_ACE
+{
+
+  _ACE_HEADER Header;
+  unsigned int Mask;
+  unsigned int SidStart;
+
+};

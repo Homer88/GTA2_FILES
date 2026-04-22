@@ -1,0 +1,9 @@
+// Структура: _RTL_BACKOFF
+// Полей: 1
+// Строки в оригинале: 106723-106726
+struct _RTL_BACKOFF
+{
+
+  unsigned int Delay;
+
+};

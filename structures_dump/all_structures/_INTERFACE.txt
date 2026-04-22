@@ -1,0 +1,13 @@
+// Структура: _INTERFACE
+// Полей: 5
+// Строки в оригинале: 18609-18616
+struct _INTERFACE
+{
+
+  unsigned __int16 Size;
+  unsigned __int16 Version;
+  void *Context;
+  void (__stdcall *InterfaceReference)(void *);
+  void (__stdcall *InterfaceDereference)(void *);
+
+};

@@ -1,0 +1,14 @@
+// Структура: _SYSTEM_INTERRUPT_INFORMATION
+// Полей: 6
+// Строки в оригинале: 91933-91941
+struct _SYSTEM_INTERRUPT_INFORMATION
+{
+
+  unsigned int ContextSwitches;
+  unsigned int DpcCount;
+  unsigned int DpcRate;
+  unsigned int TimeIncrement;
+  unsigned int DpcBypassCount;
+  unsigned int ApcBypassCount;
+
+};

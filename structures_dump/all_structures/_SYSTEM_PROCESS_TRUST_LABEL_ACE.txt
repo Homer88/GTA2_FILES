@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_PROCESS_TRUST_LABEL_ACE
+// Полей: 3
+// Строки в оригинале: 90126-90131
+struct _SYSTEM_PROCESS_TRUST_LABEL_ACE
+{
+
+  _ACE_HEADER Header;
+  unsigned int Mask;
+  unsigned int SidStart;
+
+};

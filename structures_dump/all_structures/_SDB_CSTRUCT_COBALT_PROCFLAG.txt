@@ -1,0 +1,26 @@
+// Структура: _SDB_CSTRUCT_COBALT_PROCFLAG
+// Полей: 18
+// Строки в оригинале: 311798-311818
+struct _SDB_CSTRUCT_COBALT_PROCFLAG
+{
+
+  unsigned __int64 AffinityMask;
+  unsigned int CPUIDEcxOverride;
+  unsigned int CPUIDEdxOverride;
+  unsigned __int16 ProcessorGroup;
+  unsigned __int16 FastSelfModThreshold;
+  unsigned __int16 Reserved1;
+  unsigned __int8 Reserved2;
+  unsigned __int8 CPUIDBrand : 4;
+  unsigned __int8 Reserved3 : 4;
+  unsigned __int8 RdtscScaling : 3;
+  unsigned __int8 Reserved4 : 2;
+  unsigned __int8 UnalignedAtomicApproach : 2;
+  unsigned __int8 RunOnSingleCore : 1;
+  unsigned __int8 InlineCFGChecks : 1;
+  unsigned __int8 PatchUnaligned : 1;
+  unsigned __int8 Reserved5 : 1;
+  unsigned __int8 Reserved6 : 1;
+  _SDB_CSTRUCT_COBALT_PROCFLAG::<unnamed_type_Specified> Specified;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _EISA_IRQ_DESCRIPTOR
+// Полей: 5
+// Строки в оригинале: 94481-94488
+struct _EISA_IRQ_DESCRIPTOR
+{
+
+  unsigned __int8 Interrupt : 4;
+  unsigned __int8 Reserved : 1;
+  unsigned __int8 LevelTriggered : 1;
+  unsigned __int8 Shared : 1;
+  unsigned __int8 MoreEntries : 1;
+
+};

@@ -1,0 +1,16 @@
+// Структура: _TIME_FIELDS
+// Полей: 8
+// Строки в оригинале: 18403-18413
+struct _TIME_FIELDS
+{
+
+  __int16 Year;
+  __int16 Month;
+  __int16 Day;
+  __int16 Hour;
+  __int16 Minute;
+  __int16 Second;
+  __int16 Milliseconds;
+  __int16 Weekday;
+
+};

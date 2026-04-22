@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_TPM_INFORMATION
+// Полей: 1
+// Строки в оригинале: 88562-88565
+struct _SYSTEM_TPM_INFORMATION
+{
+
+  unsigned int Flags;
+
+};

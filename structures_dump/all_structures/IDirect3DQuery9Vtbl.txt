@@ -1,0 +1,18 @@
+// Структура: IDirect3DQuery9Vtbl
+// Полей: 10
+// Строки в оригинале: 26224-26236
+struct IDirect3DQuery9Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirect3DQuery9 *This, const IID *const riid, void **ppvObj);
+  ULONG (__stdcall *AddRef)(IDirect3DQuery9 *This);
+  ULONG (__stdcall *Release)(IDirect3DQuery9 *This);
+  HRESULT (__stdcall *GetDevice)(IDirect3DQuery9 *This, IDirect3DDevice9 **ppDevice);
+  D3DQUERYTYPE (__stdcall *GetType)(IDirect3DQuery9 *This);
+  DWORD (__stdcall *GetDataSize)(IDirect3DQuery9 *This);
+  HRESULT (__stdcall *Issue)(IDirect3DQuery9 *This, DWORD dwIssueFlags);
+  HRESULT (__stdcall *GetData)(IDirect3DQuery9 *This, void *pData, DWORD dwSize, DWORD dwGetDataFlags);
+  D3DQUERYTYPE Type;
+  DWORD DataSize;
+
+};

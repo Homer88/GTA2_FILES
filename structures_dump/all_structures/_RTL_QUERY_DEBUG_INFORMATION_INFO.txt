@@ -1,0 +1,11 @@
+// Структура: _RTL_QUERY_DEBUG_INFORMATION_INFO
+// Полей: 3
+// Строки в оригинале: 108392-108397
+struct _RTL_QUERY_DEBUG_INFORMATION_INFO
+{
+
+  unsigned int UniqueProcessId;
+  unsigned int Flags;
+  unsigned __int64 Buffer;
+
+};

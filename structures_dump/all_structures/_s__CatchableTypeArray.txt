@@ -1,0 +1,10 @@
+// Структура: _s__CatchableTypeArray
+// Полей: 2
+// Строки в оригинале: 107910-107914
+struct _s__CatchableTypeArray
+{
+
+  int nCatchableTypes;
+  const _s__CatchableType *arrayOfCatchableTypes[];
+
+};

@@ -1,0 +1,13 @@
+// Структура: _DPC_WATCHDOG_GLOBAL_TRIAGE_BLOCK
+// Полей: 5
+// Строки в оригинале: 103037-103044
+struct _DPC_WATCHDOG_GLOBAL_TRIAGE_BLOCK
+{
+
+  unsigned int Signature;
+  unsigned __int16 Revision;
+  unsigned __int16 Size;
+  unsigned __int16 DpcWatchdogProfileOffset;
+  unsigned int DpcWatchdogProfileLength;
+
+};

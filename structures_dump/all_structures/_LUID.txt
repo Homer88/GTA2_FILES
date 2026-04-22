@@ -1,0 +1,10 @@
+// Структура: _LUID
+// Полей: 2
+// Строки в оригинале: 12847-12851
+struct _LUID
+{
+
+  unsigned int LowPart;
+  int HighPart;
+
+};

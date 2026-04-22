@@ -1,0 +1,13 @@
+// Структура: tagMsgRoutingInfo
+// Полей: 5
+// Строки в оригинале: 124978-124985
+struct tagMsgRoutingInfo
+{
+
+  unsigned int SystemProcessID;
+  unsigned int SystemThreadID;
+  unsigned __int64 Identity;
+  unsigned __int64 ItemID;
+  _GUID ConnectionGuid;
+
+};

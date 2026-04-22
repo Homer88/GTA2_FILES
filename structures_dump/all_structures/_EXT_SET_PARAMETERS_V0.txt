@@ -1,0 +1,11 @@
+// Структура: _EXT_SET_PARAMETERS_V0
+// Полей: 3
+// Строки в оригинале: 15994-15999
+struct _EXT_SET_PARAMETERS_V0
+{
+
+  unsigned int Version;
+  unsigned int Reserved;
+  __int64 NoWakeTolerance;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _FILE_SYSTEM_RECOGNITION_INFORMATION
+// Полей: 1
+// Строки в оригинале: 110381-110384
+struct _FILE_SYSTEM_RECOGNITION_INFORMATION
+{
+
+  char FileSystem[9];
+
+};

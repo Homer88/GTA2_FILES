@@ -1,0 +1,17 @@
+// Структура: _WOW64_FLOATING_SAVE_AREA
+// Полей: 9
+// Строки в оригинале: 100425-100436
+struct _WOW64_FLOATING_SAVE_AREA
+{
+
+  unsigned int ControlWord;
+  unsigned int StatusWord;
+  unsigned int TagWord;
+  unsigned int ErrorOffset;
+  unsigned int ErrorSelector;
+  unsigned int DataOffset;
+  unsigned int DataSelector;
+  unsigned __int8 RegisterArea[80];
+  unsigned int Cr0NpxState;
+
+};

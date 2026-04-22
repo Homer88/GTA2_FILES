@@ -1,0 +1,9 @@
+// Структура: IFileOperation
+// Полей: 1
+// Строки в оригинале: 42419-42422
+struct IFileOperation
+{
+
+  struct IFileOperationVtbl *lpVtbl;
+
+};

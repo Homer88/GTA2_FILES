@@ -1,0 +1,9 @@
+// Структура: IBindCtx
+// Полей: 1
+// Строки в оригинале: 23945-23948
+struct IBindCtx
+{
+
+  struct IBindCtxVtbl *lpVtbl;
+
+};

@@ -1,0 +1,26 @@
+// Структура: SP
+// Полей: 18
+// Строки в оригинале: 7964-7984
+struct SP
+{
+
+  char field;
+  char field_1;
+  char field_2;
+  char field_3;
+  char field_4;
+  char field_5;
+  char field_6;
+  char field_7;
+  char field_8;
+  char field_9;
+  char field_A;
+  char field_B;
+  SpriteS1 *SpriteS1;
+  char field_10;
+  char field_11;
+  char field_12;
+  _BYTE gap13[40];
+  char field_0;
+
+};

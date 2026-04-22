@@ -1,0 +1,15 @@
+// Структура: _SECURITY_DESCRIPTOR
+// Полей: 7
+// Строки в оригинале: 22359-22368
+struct _SECURITY_DESCRIPTOR
+{
+
+  unsigned __int8 Revision;
+  unsigned __int8 Sbz1;
+  unsigned __int16 Control;
+  void *Owner;
+  void *Group;
+  _ACL *Sacl;
+  _ACL *Dacl;
+
+};

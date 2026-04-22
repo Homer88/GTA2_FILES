@@ -1,0 +1,11 @@
+// Структура: __MIDL_XmitDefs_0005
+// Полей: 3
+// Строки в оригинале: 314380-314385
+struct __MIDL_XmitDefs_0005
+{
+
+  unsigned int sizeOfMarshaledResults;
+  unsigned int reserved;
+  unsigned __int8 *pMarshaledResults;
+
+};

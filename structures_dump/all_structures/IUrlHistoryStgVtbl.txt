@@ -1,0 +1,16 @@
+// Структура: IUrlHistoryStgVtbl
+// Полей: 8
+// Строки в оригинале: 39730-39740
+struct IUrlHistoryStgVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IUrlHistoryStg *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IUrlHistoryStg *This);
+  ULONG (__stdcall *Release)(IUrlHistoryStg *This);
+  HRESULT (__stdcall *AddUrl)(IUrlHistoryStg *This, LPCOLESTR pocsUrl, LPCOLESTR pocsTitle, DWORD dwFlags);
+  HRESULT (__stdcall *DeleteUrl)(IUrlHistoryStg *This, LPCOLESTR pocsUrl, DWORD dwFlags);
+  HRESULT (__stdcall *QueryUrl)(IUrlHistoryStg *This, LPCOLESTR pocsUrl, DWORD dwFlags, LPSTATURL lpSTATURL);
+  HRESULT (__stdcall *BindToObject)(IUrlHistoryStg *This, LPCOLESTR pocsUrl, const IID *const riid, void **ppvOut);
+  HRESULT (__stdcall *EnumUrls)(IUrlHistoryStg *This, IEnumSTATURL **ppEnum);
+
+};

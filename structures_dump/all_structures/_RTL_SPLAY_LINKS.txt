@@ -1,0 +1,11 @@
+// Структура: _RTL_SPLAY_LINKS
+// Полей: 3
+// Строки в оригинале: 12795-12800
+struct _RTL_SPLAY_LINKS
+{
+
+  _RTL_SPLAY_LINKS *Parent;
+  _RTL_SPLAY_LINKS *LeftChild;
+  _RTL_SPLAY_LINKS *RightChild;
+
+};

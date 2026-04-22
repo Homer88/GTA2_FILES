@@ -1,0 +1,11 @@
+// Структура: _ENUM_SERVICE_STATUSA
+// Полей: 3
+// Строки в оригинале: 96355-96360
+struct _ENUM_SERVICE_STATUSA
+{
+
+  char *lpServiceName;
+  char *lpDisplayName;
+  _SERVICE_STATUS ServiceStatus;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_KERNEL_DEBUGGER_FLAGS
+// Полей: 1
+// Строки в оригинале: 112897-112900
+struct _SYSTEM_KERNEL_DEBUGGER_FLAGS
+{
+
+  unsigned __int8 KernelDebuggerIgnoreUmExceptions;
+
+};

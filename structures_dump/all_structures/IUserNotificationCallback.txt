@@ -1,0 +1,9 @@
+// Структура: IUserNotificationCallback
+// Полей: 1
+// Строки в оригинале: 34097-34100
+struct IUserNotificationCallback
+{
+
+  struct IUserNotificationCallbackVtbl *lpVtbl;
+
+};

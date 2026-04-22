@@ -1,0 +1,10 @@
+// Структура: _CRYPT_MASK_GEN_ALGORITHM
+// Полей: 2
+// Строки в оригинале: 88304-88308
+struct _CRYPT_MASK_GEN_ALGORITHM
+{
+
+  char *pszObjId;
+  _CRYPT_ALGORITHM_IDENTIFIER HashAlgorithm;
+
+};

@@ -1,0 +1,14 @@
+// Структура: _HEAP_RANGE_INFORMATION
+// Полей: 6
+// Строки в оригинале: 89276-89284
+struct _HEAP_RANGE_INFORMATION
+{
+
+  unsigned int Address;
+  unsigned int Size;
+  unsigned int Type;
+  unsigned int Protection;
+  unsigned int FirstBlockInformationOffset;
+  unsigned int NextRangeInformationOffset;
+
+};

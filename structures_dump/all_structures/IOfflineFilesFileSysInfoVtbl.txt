@@ -1,0 +1,14 @@
+// Структура: IOfflineFilesFileSysInfoVtbl
+// Полей: 6
+// Строки в оригинале: 28706-28714
+struct IOfflineFilesFileSysInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesFileSysInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesFileSysInfo *This);
+  ULONG (__stdcall *Release)(IOfflineFilesFileSysInfo *This);
+  HRESULT (__stdcall *GetAttributes)(IOfflineFilesFileSysInfo *This, OFFLINEFILES_ITEM_COPY copy, DWORD *pdwAttributes);
+  HRESULT (__stdcall *GetTimes)(IOfflineFilesFileSysInfo *This, OFFLINEFILES_ITEM_COPY copy, FILETIME *pftCreationTime, FILETIME *pftLastWriteTime, FILETIME *pftChangeTime, FILETIME *pftLastAccessTime);
+  HRESULT (__stdcall *GetFileSize)(IOfflineFilesFileSysInfo *This, OFFLINEFILES_ITEM_COPY copy, LARGE_INTEGER *pSize);
+
+};

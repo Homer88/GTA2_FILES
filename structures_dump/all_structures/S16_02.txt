@@ -1,0 +1,17 @@
+// Структура: S16_02
+// Полей: 9
+// Строки в оригинале: 7572-7583
+struct S16_02
+{
+
+  __int16 field;
+  __int16 field_2;
+  __int16 field_4;
+  __int16 field_6;
+  __int16 field_8;
+  char field_A;
+  char field_B;
+  char field_C;
+  char field_0;
+
+};

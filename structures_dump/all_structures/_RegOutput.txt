@@ -1,0 +1,10 @@
+// Структура: _RegOutput
+// Полей: 2
+// Строки в оригинале: 195027-195031
+struct _RegOutput
+{
+
+  unsigned int dwSize;
+  unsigned int RegKeys[1];
+
+};

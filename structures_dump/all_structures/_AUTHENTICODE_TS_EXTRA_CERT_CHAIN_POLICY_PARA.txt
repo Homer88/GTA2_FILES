@@ -1,0 +1,11 @@
+// Структура: _AUTHENTICODE_TS_EXTRA_CERT_CHAIN_POLICY_PARA
+// Полей: 3
+// Строки в оригинале: 93009-93014
+struct _AUTHENTICODE_TS_EXTRA_CERT_CHAIN_POLICY_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int dwRegPolicySettings;
+  int fCommercial;
+
+};

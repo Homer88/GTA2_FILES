@@ -1,0 +1,12 @@
+// Структура: _SECURITY_SUBJECT_CONTEXT
+// Полей: 4
+// Строки в оригинале: 19156-19162
+struct _SECURITY_SUBJECT_CONTEXT
+{
+
+  void *ClientToken;
+  _SECURITY_IMPERSONATION_LEVEL ImpersonationLevel;
+  void *PrimaryToken;
+  void *ProcessAuditId;
+
+};

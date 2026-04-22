@@ -1,0 +1,19 @@
+// Структура: APPLICATION_VIEW_DATA
+// Полей: 11
+// Строки в оригинале: 149621-149634
+struct APPLICATION_VIEW_DATA
+{
+
+  APPLICATION_VIEW_STATE viewState;
+  APPLICATION_VIEW_ORIENTATION viewOrientation;
+  ADJACENT_DISPLAY_EDGES displayEdges;
+  int fIsOnLockScreen;
+  int fIsFullScreenMode;
+  USER_INTERACTION_MODE userInteractionMode;
+  VIEW_PRESENTATION_MODE presentationMode;
+  APPLICATION_VIEW_MODE viewMode;
+  APPLICATION_VIEW_MODE_FLAGS allowedViewModes;
+  WindowTransparencyMode windowTransparencyMode;
+  int canOpenInNewTab;
+
+};

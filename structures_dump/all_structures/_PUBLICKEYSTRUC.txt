@@ -1,0 +1,12 @@
+// Структура: _PUBLICKEYSTRUC
+// Полей: 4
+// Строки в оригинале: 99493-99499
+struct _PUBLICKEYSTRUC
+{
+
+  unsigned __int8 bType;
+  unsigned __int8 bVersion;
+  unsigned __int16 reserved;
+  unsigned int aiKeyAlg;
+
+};

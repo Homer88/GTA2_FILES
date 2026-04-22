@@ -1,0 +1,15 @@
+// Структура: _SYSTEM_HYPERVISOR_DETAIL_INFORMATION
+// Полей: 7
+// Строки в оригинале: 87194-87203
+struct _SYSTEM_HYPERVISOR_DETAIL_INFORMATION
+{
+
+  _HV_DETAILS HvVendorAndMaxFunction;
+  _HV_DETAILS HypervisorInterface;
+  _HV_DETAILS HypervisorVersion;
+  _HV_DETAILS HvFeatures;
+  _HV_DETAILS HwFeatures;
+  _HV_DETAILS EnlightenmentInfo;
+  _HV_DETAILS ImplementationLimits;
+
+};

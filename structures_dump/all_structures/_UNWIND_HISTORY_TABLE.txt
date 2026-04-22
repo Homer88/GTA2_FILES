@@ -1,0 +1,16 @@
+// Структура: _UNWIND_HISTORY_TABLE
+// Полей: 8
+// Строки в оригинале: 82652-82662
+struct _UNWIND_HISTORY_TABLE
+{
+
+  unsigned int Count;
+  unsigned __int8 LocalHint;
+  unsigned __int8 GlobalHint;
+  unsigned __int8 Search;
+  unsigned __int8 Once;
+  unsigned __int64 LowAddress;
+  unsigned __int64 HighAddress;
+  _UNWIND_HISTORY_TABLE_ENTRY Entry[12];
+
+};

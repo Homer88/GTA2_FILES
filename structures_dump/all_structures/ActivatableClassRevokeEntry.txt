@@ -1,0 +1,11 @@
+// Структура: ActivatableClassRevokeEntry
+// Полей: 3
+// Строки в оригинале: 227624-227629
+struct ActivatableClassRevokeEntry
+{
+
+  const wchar_t *activatableClassId;
+  const wchar_t *packageFullName;
+  unsigned int dwReg;
+
+};

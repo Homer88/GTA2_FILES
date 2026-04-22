@@ -1,0 +1,12 @@
+// Структура: _SYSTEM_REF_TRACE_INFORMATION
+// Полей: 4
+// Строки в оригинале: 100372-100378
+struct _SYSTEM_REF_TRACE_INFORMATION
+{
+
+  unsigned __int8 TraceEnable;
+  unsigned __int8 TracePermanent;
+  _UNICODE_STRING TraceProcessName;
+  _UNICODE_STRING TracePoolTags;
+
+};

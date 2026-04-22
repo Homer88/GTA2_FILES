@@ -1,0 +1,9 @@
+// Структура: IDBCreateCommand
+// Полей: 1
+// Строки в оригинале: 45844-45847
+struct IDBCreateCommand
+{
+
+  struct IDBCreateCommandVtbl *lpVtbl;
+
+};

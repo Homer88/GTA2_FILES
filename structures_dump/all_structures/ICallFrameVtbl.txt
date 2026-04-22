@@ -1,0 +1,30 @@
+// Структура: ICallFrameVtbl
+// Полей: 22
+// Строки в оригинале: 182572-182596
+struct ICallFrameVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ICallFrame *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ICallFrame *This);
+  ULONG (__stdcall *Release)(ICallFrame *This);
+  HRESULT (__stdcall *GetInfo)(ICallFrame *This, CALLFRAMEINFO *pInfo);
+  HRESULT (__stdcall *GetIIDAndMethod)(ICallFrame *This, IID *pIID, ULONG *piMethod);
+  HRESULT (__stdcall *GetNames)(ICallFrame *This, LPWSTR *pwszInterface, LPWSTR *pwszMethod);
+  PVOID (__stdcall *GetStackLocation)(ICallFrame *This);
+  void (__stdcall *SetStackLocation)(ICallFrame *This, PVOID pvStack);
+  void (__stdcall *SetReturnValue)(ICallFrame *This, HRESULT hr);
+  HRESULT (__stdcall *GetReturnValue)(ICallFrame *This);
+  HRESULT (__stdcall *GetParamInfo)(ICallFrame *This, ULONG iparam, CALLFRAMEPARAMINFO *pInfo);
+  HRESULT (__stdcall *SetParam)(ICallFrame *This, ULONG iparam, VARIANT *pvar);
+  HRESULT (__stdcall *GetParam)(ICallFrame *This, ULONG iparam, VARIANT *pvar);
+  HRESULT (__stdcall *Copy)(ICallFrame *This, CALLFRAME_COPY copyControl, ICallFrameWalker *pWalker, ICallFrame **ppFrame);
+  HRESULT (__stdcall *Free)(ICallFrame *This, ICallFrame *pframeArgsDest, ICallFrameWalker *pWalkerDestFree, ICallFrameWalker *pWalkerCopy, DWORD freeFlags, ICallFrameWalker *pWalkerFree, DWORD nullFlags);
+  HRESULT (__stdcall *FreeParam)(ICallFrame *This, ULONG iparam, DWORD freeFlags, ICallFrameWalker *pWalkerFree, DWORD nullFlags);
+  HRESULT (__stdcall *WalkFrame)(ICallFrame *This, DWORD walkWhat, ICallFrameWalker *pWalker);
+  HRESULT (__stdcall *GetMarshalSizeMax)(ICallFrame *This, CALLFRAME_MARSHALCONTEXT *pmshlContext, MSHLFLAGS mshlflags, ULONG *pcbBufferNeeded);
+  HRESULT (__stdcall *Marshal)(ICallFrame *This, CALLFRAME_MARSHALCONTEXT *pmshlContext, MSHLFLAGS mshlflags, PVOID pBuffer, ULONG cbBuffer, ULONG *pcbBufferUsed, RPCOLEDATAREP *pdataRep, ULONG *prpcFlags);
+  HRESULT (__stdcall *Unmarshal)(ICallFrame *This, PVOID pBuffer, ULONG cbBuffer, RPCOLEDATAREP dataRep, CALLFRAME_MARSHALCONTEXT *pcontext, ULONG *pcbUnmarshalled);
+  HRESULT (__stdcall *ReleaseMarshalData)(ICallFrame *This, PVOID pBuffer, ULONG cbBuffer, ULONG ibFirstRelease, RPCOLEDATAREP dataRep, CALLFRAME_MARSHALCONTEXT *pcontext);
+  HRESULT (*Invoke)(ICallFrame *This, void *pvReceiver, ...);
+
+};

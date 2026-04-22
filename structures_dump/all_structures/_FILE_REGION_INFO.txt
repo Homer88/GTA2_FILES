@@ -1,0 +1,12 @@
+// Структура: _FILE_REGION_INFO
+// Полей: 4
+// Строки в оригинале: 87040-87046
+struct _FILE_REGION_INFO
+{
+
+  __int64 FileOffset;
+  __int64 Length;
+  unsigned int Usage;
+  unsigned int Reserved;
+
+};

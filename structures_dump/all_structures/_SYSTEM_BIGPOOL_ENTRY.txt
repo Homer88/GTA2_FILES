@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_BIGPOOL_ENTRY
+// Полей: 3
+// Строки в оригинале: 93740-93745
+struct _SYSTEM_BIGPOOL_ENTRY
+{
+
+  $B4EC5DE60225BF9DCA8C557CB0392603 ___u0;
+  unsigned int SizeInBytes;
+  $BD358E6F1AB7428D2A19828FCF03B146 ___u2;
+
+};

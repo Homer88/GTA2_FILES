@@ -1,0 +1,14 @@
+// Структура: _PROCESSOR_IDLE_STATES
+// Полей: 6
+// Строки в оригинале: 106820-106828
+struct _PROCESSOR_IDLE_STATES
+{
+
+  unsigned int Size;
+  unsigned int Revision;
+  unsigned int Count;
+  unsigned int Type;
+  unsigned int TargetProcessors;
+  _PROCESSOR_IDLE_STATE State[1];
+
+};

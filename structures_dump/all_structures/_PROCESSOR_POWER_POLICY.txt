@@ -1,0 +1,15 @@
+// Структура: _PROCESSOR_POWER_POLICY
+// Полей: 7
+// Строки в оригинале: 109646-109655
+struct _PROCESSOR_POWER_POLICY
+{
+
+  unsigned int Revision;
+  unsigned __int8 DynamicThrottle;
+  unsigned __int8 Spare[3];
+  unsigned __int32 DisableCStates : 1;
+  unsigned __int32 Reserved : 31;
+  unsigned int PolicyCount;
+  _PROCESSOR_POWER_POLICY_INFO Policy[3];
+
+};

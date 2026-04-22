@@ -1,0 +1,9 @@
+// Структура: IObjectSafety
+// Полей: 1
+// Строки в оригинале: 40810-40813
+struct IObjectSafety
+{
+
+  struct IObjectSafetyVtbl *lpVtbl;
+
+};

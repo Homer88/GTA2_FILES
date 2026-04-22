@@ -1,0 +1,11 @@
+// Структура: _CRYPTNET_URL_CACHE_FLUSH_INFO
+// Полей: 3
+// Строки в оригинале: 86606-86611
+struct _CRYPTNET_URL_CACHE_FLUSH_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int dwExemptSeconds;
+  _FILETIME ExpireTime;
+
+};

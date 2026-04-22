@@ -1,0 +1,12 @@
+// Структура: _PERFINFO_SPINLOCK_CONFIG
+// Полей: 4
+// Строки в оригинале: 312487-312493
+struct _PERFINFO_SPINLOCK_CONFIG
+{
+
+  unsigned int SpinLockSpinThreshold;
+  unsigned int SpinLockContentionSampleRate;
+  unsigned int SpinLockAcquireSampleRate;
+  unsigned int SpinLockHoldThreshold;
+
+};

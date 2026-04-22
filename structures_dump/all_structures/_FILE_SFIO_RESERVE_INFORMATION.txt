@@ -1,0 +1,14 @@
+// Структура: _FILE_SFIO_RESERVE_INFORMATION
+// Полей: 6
+// Строки в оригинале: 89496-89504
+struct _FILE_SFIO_RESERVE_INFORMATION
+{
+
+  unsigned int RequestsPerPeriod;
+  unsigned int Period;
+  unsigned __int8 RetryFailures;
+  unsigned __int8 Discardable;
+  unsigned int RequestSize;
+  unsigned int NumOutstandingRequests;
+
+};

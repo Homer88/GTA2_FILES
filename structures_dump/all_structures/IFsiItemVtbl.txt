@@ -1,0 +1,27 @@
+// Структура: IFsiItemVtbl
+// Полей: 19
+// Строки в оригинале: 32551-32572
+struct IFsiItemVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFsiItem *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFsiItem *This);
+  ULONG (__stdcall *Release)(IFsiItem *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IFsiItem *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IFsiItem *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IFsiItem *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IFsiItem *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Name)(IFsiItem *This, BSTR *pVal);
+  HRESULT (__stdcall *get_FullPath)(IFsiItem *This, BSTR *pVal);
+  HRESULT (__stdcall *get_CreationTime)(IFsiItem *This, DATE *pVal);
+  HRESULT (__stdcall *put_CreationTime)(IFsiItem *This, DATE newVal);
+  HRESULT (__stdcall *get_LastAccessedTime)(IFsiItem *This, DATE *pVal);
+  HRESULT (__stdcall *put_LastAccessedTime)(IFsiItem *This, DATE newVal);
+  HRESULT (__stdcall *get_LastModifiedTime)(IFsiItem *This, DATE *pVal);
+  HRESULT (__stdcall *put_LastModifiedTime)(IFsiItem *This, DATE newVal);
+  HRESULT (__stdcall *get_IsHidden)(IFsiItem *This, VARIANT_BOOL *pVal);
+  HRESULT (__stdcall *put_IsHidden)(IFsiItem *This, VARIANT_BOOL newVal);
+  HRESULT (__stdcall *FileSystemName)(IFsiItem *This, FsiFileSystems fileSystem, BSTR *pVal);
+  HRESULT (__stdcall *FileSystemPath)(IFsiItem *This, FsiFileSystems fileSystem, BSTR *pVal);
+
+};

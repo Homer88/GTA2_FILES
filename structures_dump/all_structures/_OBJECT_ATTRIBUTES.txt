@@ -1,0 +1,14 @@
+// Структура: _OBJECT_ATTRIBUTES
+// Полей: 6
+// Строки в оригинале: 88800-88808
+struct _OBJECT_ATTRIBUTES
+{
+
+  unsigned int Length;
+  void *RootDirectory;
+  _UNICODE_STRING *ObjectName;
+  unsigned int Attributes;
+  void *SecurityDescriptor;
+  void *SecurityQualityOfService;
+
+};

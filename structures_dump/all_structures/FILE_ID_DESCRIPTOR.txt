@@ -1,0 +1,11 @@
+// Структура: FILE_ID_DESCRIPTOR
+// Полей: 3
+// Строки в оригинале: 106386-106391
+struct FILE_ID_DESCRIPTOR
+{
+
+  unsigned int dwSize;
+  _FILE_ID_TYPE Type;
+  $B956C7C58DB473B59D165C3F3CA9C61E ___u2;
+
+};

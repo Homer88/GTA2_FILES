@@ -1,0 +1,11 @@
+// Структура: _STRING32
+// Полей: 3
+// Строки в оригинале: 21976-21981
+struct _STRING32
+{
+
+  unsigned __int16 Length;
+  unsigned __int16 MaximumLength;
+  unsigned int Buffer;
+
+};

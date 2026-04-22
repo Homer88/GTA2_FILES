@@ -1,0 +1,9 @@
+// Структура: IOleCache2
+// Полей: 1
+// Строки в оригинале: 27307-27310
+struct IOleCache2
+{
+
+  struct IOleCache2Vtbl *lpVtbl;
+
+};

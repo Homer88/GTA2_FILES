@@ -1,0 +1,21 @@
+// Структура: _TOKEN_ACCESS_INFORMATION
+// Полей: 13
+// Строки в оригинале: 102478-102493
+struct _TOKEN_ACCESS_INFORMATION
+{
+
+  _SID_AND_ATTRIBUTES_HASH *SidHash;
+  _SID_AND_ATTRIBUTES_HASH *RestrictedSidHash;
+  _TOKEN_PRIVILEGES *Privileges;
+  _LUID AuthenticationId;
+  _TOKEN_TYPE TokenType;
+  _SECURITY_IMPERSONATION_LEVEL ImpersonationLevel;
+  _TOKEN_MANDATORY_POLICY MandatoryPolicy;
+  unsigned int Flags;
+  unsigned int AppContainerNumber;
+  void *PackageSid;
+  _SID_AND_ATTRIBUTES_HASH *CapabilitiesHash;
+  void *TrustLevelSid;
+  void *SecurityAttributes;
+
+};

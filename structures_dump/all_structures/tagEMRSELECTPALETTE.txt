@@ -1,0 +1,10 @@
+// Структура: tagEMRSELECTPALETTE
+// Полей: 2
+// Строки в оригинале: 93930-93934
+struct tagEMRSELECTPALETTE
+{
+
+  tagEMR emr;
+  unsigned int ihPal;
+
+};

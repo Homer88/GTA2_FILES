@@ -1,0 +1,11 @@
+// Структура: _SHELLDETAILS
+// Полей: 3
+// Строки в оригинале: 32239-32244
+struct _SHELLDETAILS
+{
+
+  int fmt;
+  int cxChar;
+  STRRET str;
+
+};

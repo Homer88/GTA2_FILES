@@ -1,0 +1,9 @@
+// Структура: IRichChunk
+// Полей: 1
+// Строки в оригинале: 34280-34283
+struct IRichChunk
+{
+
+  struct IRichChunkVtbl *lpVtbl;
+
+};

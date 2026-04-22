@@ -1,0 +1,10 @@
+// Структура: _ETW_REF_CLOCK
+// Полей: 2
+// Строки в оригинале: 309494-309498
+struct _ETW_REF_CLOCK
+{
+
+  _LARGE_INTEGER StartTime;
+  _LARGE_INTEGER StartPerfClock;
+
+};

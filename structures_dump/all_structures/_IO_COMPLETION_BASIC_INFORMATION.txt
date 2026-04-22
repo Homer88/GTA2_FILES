@@ -1,0 +1,9 @@
+// Структура: _IO_COMPLETION_BASIC_INFORMATION
+// Полей: 1
+// Строки в оригинале: 99419-99422
+struct _IO_COMPLETION_BASIC_INFORMATION
+{
+
+  int Depth;
+
+};

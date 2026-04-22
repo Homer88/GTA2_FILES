@@ -1,0 +1,40 @@
+// Структура: IFileSaveDialogVtbl
+// Полей: 32
+// Строки в оригинале: 34438-34472
+struct IFileSaveDialogVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFileSaveDialog *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFileSaveDialog *This);
+  ULONG (__stdcall *Release)(IFileSaveDialog *This);
+  HRESULT (__stdcall *Show)(IFileSaveDialog *This, HWND hwndOwner);
+  HRESULT (__stdcall *SetFileTypes)(IFileSaveDialog *This, UINT cFileTypes, const COMDLG_FILTERSPEC *rgFilterSpec);
+  HRESULT (__stdcall *SetFileTypeIndex)(IFileSaveDialog *This, UINT iFileType);
+  HRESULT (__stdcall *GetFileTypeIndex)(IFileSaveDialog *This, UINT *piFileType);
+  HRESULT (__stdcall *Advise)(IFileSaveDialog *This, IFileDialogEvents *pfde, DWORD *pdwCookie);
+  HRESULT (__stdcall *Unadvise)(IFileSaveDialog *This, DWORD dwCookie);
+  HRESULT (__stdcall *SetOptions)(IFileSaveDialog *This, FILEOPENDIALOGOPTIONS fos);
+  HRESULT (__stdcall *GetOptions)(IFileSaveDialog *This, FILEOPENDIALOGOPTIONS *pfos);
+  HRESULT (__stdcall *SetDefaultFolder)(IFileSaveDialog *This, IShellItem *psi);
+  HRESULT (__stdcall *SetFolder)(IFileSaveDialog *This, IShellItem *psi);
+  HRESULT (__stdcall *GetFolder)(IFileSaveDialog *This, IShellItem **ppsi);
+  HRESULT (__stdcall *GetCurrentSelection)(IFileSaveDialog *This, IShellItem **ppsi);
+  HRESULT (__stdcall *SetFileName)(IFileSaveDialog *This, LPCWSTR pszName);
+  HRESULT (__stdcall *GetFileName)(IFileSaveDialog *This, LPWSTR *pszName);
+  HRESULT (__stdcall *SetTitle)(IFileSaveDialog *This, LPCWSTR pszTitle);
+  HRESULT (__stdcall *SetOkButtonLabel)(IFileSaveDialog *This, LPCWSTR pszText);
+  HRESULT (__stdcall *SetFileNameLabel)(IFileSaveDialog *This, LPCWSTR pszLabel);
+  HRESULT (__stdcall *GetResult)(IFileSaveDialog *This, IShellItem **ppsi);
+  HRESULT (__stdcall *AddPlace)(IFileSaveDialog *This, IShellItem *psi, FDAP fdap);
+  HRESULT (__stdcall *SetDefaultExtension)(IFileSaveDialog *This, LPCWSTR pszDefaultExtension);
+  HRESULT (__stdcall *Close)(IFileSaveDialog *This, HRESULT hr);
+  HRESULT (__stdcall *SetClientGuid)(IFileSaveDialog *This, const GUID *const guid);
+  HRESULT (__stdcall *ClearClientData)(IFileSaveDialog *This);
+  HRESULT (__stdcall *SetFilter)(IFileSaveDialog *This, IShellItemFilter *pFilter);
+  HRESULT (__stdcall *SetSaveAsItem)(IFileSaveDialog *This, IShellItem *psi);
+  HRESULT (__stdcall *SetProperties)(IFileSaveDialog *This, IPropertyStore *pStore);
+  HRESULT (__stdcall *SetCollectedProperties)(IFileSaveDialog *This, IPropertyDescriptionList *pList, BOOL fAppendDefault);
+  HRESULT (__stdcall *GetProperties)(IFileSaveDialog *This, IPropertyStore **ppStore);
+  HRESULT (__stdcall *ApplyProperties)(IFileSaveDialog *This, IShellItem *psi, IPropertyStore *pStore, HWND hwnd, IFileOperationProgressSink *pSink);
+
+};

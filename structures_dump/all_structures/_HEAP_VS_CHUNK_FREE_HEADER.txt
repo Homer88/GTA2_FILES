@@ -1,0 +1,9 @@
+// Структура: _HEAP_VS_CHUNK_FREE_HEADER
+// Полей: 1
+// Строки в оригинале: 21753-21756
+struct _HEAP_VS_CHUNK_FREE_HEADER
+{
+
+  $3F6FF9829D0E0B6A25C63F45C39AC7B5 ___u0;
+
+};

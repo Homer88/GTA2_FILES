@@ -1,0 +1,9 @@
+// Структура: _FILE_EA_INFORMATION
+// Полей: 1
+// Строки в оригинале: 90338-90341
+struct _FILE_EA_INFORMATION
+{
+
+  unsigned int EaSize;
+
+};

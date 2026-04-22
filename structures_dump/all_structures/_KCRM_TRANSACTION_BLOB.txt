@@ -1,0 +1,14 @@
+// Структура: _KCRM_TRANSACTION_BLOB
+// Полей: 6
+// Строки в оригинале: 89395-89403
+struct _KCRM_TRANSACTION_BLOB
+{
+
+  _GUID UOW;
+  _GUID TmIdentity;
+  unsigned int IsolationLevel;
+  unsigned int IsolationFlags;
+  unsigned int Timeout;
+  wchar_t Description[64];
+
+};

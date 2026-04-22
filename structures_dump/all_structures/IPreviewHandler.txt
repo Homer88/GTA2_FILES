@@ -1,0 +1,9 @@
+// Структура: IPreviewHandler
+// Полей: 1
+// Строки в оригинале: 40299-40302
+struct IPreviewHandler
+{
+
+  struct IPreviewHandlerVtbl *lpVtbl;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IOpenControlPanel
+// Полей: 1
+// Строки в оригинале: 43070-43073
+struct IOpenControlPanel
+{
+
+  struct IOpenControlPanelVtbl *lpVtbl;
+
+};

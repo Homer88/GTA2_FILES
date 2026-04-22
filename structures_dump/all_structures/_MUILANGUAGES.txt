@@ -1,0 +1,13 @@
+// Структура: _MUILANGUAGES
+// Полей: 5
+// Строки в оригинале: 80777-80784
+struct _MUILANGUAGES
+{
+
+  unsigned int TotalSize;
+  unsigned __int16 MaxNumLanguages;
+  unsigned __int16 NumLanguages;
+  unsigned __int16 NumInstalledLanguages;
+  _MUILANGINFO *LangInfos;
+
+};

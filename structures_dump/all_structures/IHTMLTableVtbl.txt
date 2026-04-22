@@ -1,0 +1,64 @@
+// Структура: IHTMLTableVtbl
+// Полей: 56
+// Строки в оригинале: 35835-35893
+struct IHTMLTableVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLTable *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLTable *This);
+  ULONG (__stdcall *Release)(IHTMLTable *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLTable *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLTable *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLTable *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLTable *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *put_cols)(IHTMLTable *This, int v);
+  HRESULT (__stdcall *get_cols)(IHTMLTable *This, int *p);
+  HRESULT (__stdcall *put_border)(IHTMLTable *This, VARIANT v);
+  HRESULT (__stdcall *get_border)(IHTMLTable *This, VARIANT *p);
+  HRESULT (__stdcall *put_frame)(IHTMLTable *This, BSTR v);
+  HRESULT (__stdcall *get_frame)(IHTMLTable *This, BSTR *p);
+  HRESULT (__stdcall *put_rules)(IHTMLTable *This, BSTR v);
+  HRESULT (__stdcall *get_rules)(IHTMLTable *This, BSTR *p);
+  HRESULT (__stdcall *put_cellSpacing)(IHTMLTable *This, VARIANT v);
+  HRESULT (__stdcall *get_cellSpacing)(IHTMLTable *This, VARIANT *p);
+  HRESULT (__stdcall *put_cellPadding)(IHTMLTable *This, VARIANT v);
+  HRESULT (__stdcall *get_cellPadding)(IHTMLTable *This, VARIANT *p);
+  HRESULT (__stdcall *put_background)(IHTMLTable *This, BSTR v);
+  HRESULT (__stdcall *get_background)(IHTMLTable *This, BSTR *p);
+  HRESULT (__stdcall *put_bgColor)(IHTMLTable *This, VARIANT v);
+  HRESULT (__stdcall *get_bgColor)(IHTMLTable *This, VARIANT *p);
+  HRESULT (__stdcall *put_borderColor)(IHTMLTable *This, VARIANT v);
+  HRESULT (__stdcall *get_borderColor)(IHTMLTable *This, VARIANT *p);
+  HRESULT (__stdcall *put_borderColorLight)(IHTMLTable *This, VARIANT v);
+  HRESULT (__stdcall *get_borderColorLight)(IHTMLTable *This, VARIANT *p);
+  HRESULT (__stdcall *put_borderColorDark)(IHTMLTable *This, VARIANT v);
+  HRESULT (__stdcall *get_borderColorDark)(IHTMLTable *This, VARIANT *p);
+  HRESULT (__stdcall *put_align)(IHTMLTable *This, BSTR v);
+  HRESULT (__stdcall *get_align)(IHTMLTable *This, BSTR *p);
+  HRESULT (__stdcall *refresh)(IHTMLTable *This);
+  HRESULT (__stdcall *get_rows)(IHTMLTable *This, IHTMLElementCollection **p);
+  HRESULT (__stdcall *put_width)(IHTMLTable *This, VARIANT v);
+  HRESULT (__stdcall *get_width)(IHTMLTable *This, VARIANT *p);
+  HRESULT (__stdcall *put_height)(IHTMLTable *This, VARIANT v);
+  HRESULT (__stdcall *get_height)(IHTMLTable *This, VARIANT *p);
+  HRESULT (__stdcall *put_dataPageSize)(IHTMLTable *This, int v);
+  HRESULT (__stdcall *get_dataPageSize)(IHTMLTable *This, int *p);
+  HRESULT (__stdcall *nextPage)(IHTMLTable *This);
+  HRESULT (__stdcall *previousPage)(IHTMLTable *This);
+  HRESULT (__stdcall *get_tHead)(IHTMLTable *This, IHTMLTableSection **p);
+  HRESULT (__stdcall *get_tFoot)(IHTMLTable *This, IHTMLTableSection **p);
+  HRESULT (__stdcall *get_tBodies)(IHTMLTable *This, IHTMLElementCollection **p);
+  HRESULT (__stdcall *get_caption)(IHTMLTable *This, IHTMLTableCaption **p);
+  HRESULT (__stdcall *createTHead)(IHTMLTable *This, IDispatch **head);
+  HRESULT (__stdcall *deleteTHead)(IHTMLTable *This);
+  HRESULT (__stdcall *createTFoot)(IHTMLTable *This, IDispatch **foot);
+  HRESULT (__stdcall *deleteTFoot)(IHTMLTable *This);
+  HRESULT (__stdcall *createCaption)(IHTMLTable *This, IHTMLTableCaption **caption);
+  HRESULT (__stdcall *deleteCaption)(IHTMLTable *This);
+  HRESULT (__stdcall *insertRow)(IHTMLTable *This, int index, IDispatch **row);
+  HRESULT (__stdcall *deleteRow)(IHTMLTable *This, int index);
+  HRESULT (__stdcall *get_readyState)(IHTMLTable *This, BSTR *p);
+  HRESULT (__stdcall *put_onreadystatechange)(IHTMLTable *This, VARIANT v);
+  HRESULT (__stdcall *get_onreadystatechange)(IHTMLTable *This, VARIANT *p);
+
+};

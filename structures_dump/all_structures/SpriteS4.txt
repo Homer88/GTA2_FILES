@@ -1,0 +1,10 @@
+// Структура: SpriteS4
+// Полей: 2
+// Строки в оригинале: 7987-7991
+struct SpriteS4
+{
+
+  int dat;
+  VehiclePool S46_Arr300[300];
+
+};

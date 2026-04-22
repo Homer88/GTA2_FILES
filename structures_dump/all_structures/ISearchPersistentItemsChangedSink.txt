@@ -1,0 +1,9 @@
+// Структура: ISearchPersistentItemsChangedSink
+// Полей: 1
+// Строки в оригинале: 44084-44087
+struct ISearchPersistentItemsChangedSink
+{
+
+  struct ISearchPersistentItemsChangedSinkVtbl *lpVtbl;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_CALL_TIME_INFORMATION
+// Полей: 3
+// Строки в оригинале: 111541-111546
+struct _SYSTEM_CALL_TIME_INFORMATION
+{
+
+  unsigned int Length;
+  unsigned int TotalCalls;
+  _LARGE_INTEGER TimeOfCalls[1];
+
+};

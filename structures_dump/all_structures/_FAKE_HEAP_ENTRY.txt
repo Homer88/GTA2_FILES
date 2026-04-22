@@ -1,0 +1,10 @@
+// Структура: _FAKE_HEAP_ENTRY
+// Полей: 2
+// Строки в оригинале: 20475-20479
+struct _FAKE_HEAP_ENTRY
+{
+
+  unsigned int Size;
+  unsigned int PreviousSize;
+
+};

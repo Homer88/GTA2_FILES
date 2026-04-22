@@ -1,0 +1,36 @@
+// Структура: IHTMLStyleSheetVtbl
+// Полей: 28
+// Строки в оригинале: 38654-38684
+struct IHTMLStyleSheetVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLStyleSheet *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLStyleSheet *This);
+  ULONG (__stdcall *Release)(IHTMLStyleSheet *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLStyleSheet *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLStyleSheet *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLStyleSheet *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLStyleSheet *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *put_title)(IHTMLStyleSheet *This, BSTR v);
+  HRESULT (__stdcall *get_title)(IHTMLStyleSheet *This, BSTR *p);
+  HRESULT (__stdcall *get_parentStyleSheet)(IHTMLStyleSheet *This, IHTMLStyleSheet **p);
+  HRESULT (__stdcall *get_owningElement)(IHTMLStyleSheet *This, IHTMLElement **p);
+  HRESULT (__stdcall *put_disabled)(IHTMLStyleSheet *This, VARIANT_BOOL v);
+  HRESULT (__stdcall *get_disabled)(IHTMLStyleSheet *This, VARIANT_BOOL *p);
+  HRESULT (__stdcall *get_readOnly)(IHTMLStyleSheet *This, VARIANT_BOOL *p);
+  HRESULT (__stdcall *get_imports)(IHTMLStyleSheet *This, IHTMLStyleSheetsCollection **p);
+  HRESULT (__stdcall *put_href)(IHTMLStyleSheet *This, BSTR v);
+  HRESULT (__stdcall *get_href)(IHTMLStyleSheet *This, BSTR *p);
+  HRESULT (__stdcall *get_type)(IHTMLStyleSheet *This, BSTR *p);
+  HRESULT (__stdcall *get_id)(IHTMLStyleSheet *This, BSTR *p);
+  HRESULT (__stdcall *addImport)(IHTMLStyleSheet *This, BSTR bstrURL, int lIndex, int *plIndex);
+  HRESULT (__stdcall *addRule)(IHTMLStyleSheet *This, BSTR bstrSelector, BSTR bstrStyle, int lIndex, int *plNewIndex);
+  HRESULT (__stdcall *removeImport)(IHTMLStyleSheet *This, int lIndex);
+  HRESULT (__stdcall *removeRule)(IHTMLStyleSheet *This, int lIndex);
+  HRESULT (__stdcall *put_media)(IHTMLStyleSheet *This, BSTR v);
+  HRESULT (__stdcall *get_media)(IHTMLStyleSheet *This, BSTR *p);
+  HRESULT (__stdcall *put_cssText)(IHTMLStyleSheet *This, BSTR v);
+  HRESULT (__stdcall *get_cssText)(IHTMLStyleSheet *This, BSTR *p);
+  HRESULT (__stdcall *get_rules)(IHTMLStyleSheet *This, IHTMLStyleSheetRulesCollection **p);
+
+};

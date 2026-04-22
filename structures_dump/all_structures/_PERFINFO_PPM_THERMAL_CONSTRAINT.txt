@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_PPM_THERMAL_CONSTRAINT
+// Полей: 2
+// Строки в оригинале: 313300-313304
+struct _PERFINFO_PPM_THERMAL_CONSTRAINT
+{
+
+  unsigned int Constraint;
+  unsigned __int64 Processors;
+
+};

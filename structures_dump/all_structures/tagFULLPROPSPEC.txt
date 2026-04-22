@@ -1,0 +1,10 @@
+// Структура: tagFULLPROPSPEC
+// Полей: 2
+// Строки в оригинале: 40477-40481
+struct tagFULLPROPSPEC
+{
+
+  GUID guidPropSet;
+  PROPSPEC psProperty;
+
+};

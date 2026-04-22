@@ -1,0 +1,119 @@
+// Structure: _PEB
+// Lines: 2806 - 2920
+// Fields: 99
+
+struct _PEB
+{
+  uint8_t InheritedAddressSpace;
+  uint8_t ReadImageFileExecOptions;
+  uint8_t BeingDebugged;
+  union
+  {
+    uint8_t BitField;
+    struct
+    {
+      unsigned __int8 ImageUsesLargePages : 1;
+      unsigned __int8 IsProtectedProcess : 1;
+      unsigned __int8 IsLegacyProcess : 1;
+      unsigned __int8 IsImageDynamicallyRelocated : 1;
+      unsigned __int8 SkipPatchingUser32Forwarders : 1;
+      unsigned __int8 SpareBits : 3;
+    };
+  };
+  void *Mutant;
+  void *ImageBaseAddress;
+  struct _PEB_LDR_DATA *Ldr;
+  struct _RTL_USER_PROCESS_PARAMETERS *ProcessParameters;
+  void *SubSystemData;
+  void *ProcessHeap;
+  struct _RTL_CRITICAL_SECTION *FastPebLock;
+  void *AtlThunkSListPtr;
+  void *IFEOKey;
+  union
+  {
+    unsigned int CrossProcessFlags;
+    struct
+    {
+      unsigned __int32 ProcessInJob : 1;
+      unsigned __int32 ProcessInitializing : 1;
+      unsigned __int32 ProcessUsingVEH : 1;
+      unsigned __int32 ProcessUsingVCH : 1;
+      unsigned __int32 ProcessUsingFTH : 1;
+      unsigned __int32 ReservedBits0 : 27;
+    };
+  };
+  union
+  {
+    void *KernelCallbackTable;
+    void *UserSharedInfoPtr;
+  };
+  unsigned int SystemReserved[1];
+  unsigned int AtlThunkSListPtr32;
+  void *ApiSetMap;
+  unsigned int TlsExpansionCounter;
+  void *TlsBitmap;
+  unsigned int TlsBitmapBits[2];
+  void *ReadOnlySharedMemoryBase;
+  void *HotpatchInformation;
+  void **ReadOnlyStaticServerData;
+  void *AnsiCodePageData;
+  void *OemCodePageData;
+  void *UnicodeCaseTableData;
+  unsigned int NumberOfProcessors;
+  unsigned int NtGlobalFlag;
+  union _LARGE_INTEGER CriticalSectionTimeout;
+  unsigned int HeapSegmentReserve;
+  unsigned int HeapSegmentCommit;
+  unsigned int HeapDeCommitTotalFreeThreshold;
+  unsigned int HeapDeCommitFreeBlockThreshold;
+  unsigned int NumberOfHeaps;
+  unsigned int MaximumNumberOfHeaps;
+  void **ProcessHeaps;
+  void *GdiSharedHandleTable;
+  void *ProcessStarterHelper;
+  unsigned int GdiDCAttributeList;
+  struct _RTL_CRITICAL_SECTION *LoaderLock;
+  unsigned int OSMajorVersion;
+  unsigned int OSMinorVersion;
+  uint16_t OSBuildNumber;
+  uint16_t OSCSDVersion;
+  unsigned int OSPlatformId;
+  unsigned int ImageSubsystem;
+  unsigned int ImageSubsystemMajorVersion;
+  unsigned int ImageSubsystemMinorVersion;
+  unsigned int ActiveProcessAffinityMask;
+  unsigned int GdiHandleBuffer[34];
+  void *PostProcessInitRoutine;
+  void *TlsExpansionBitmap;
+  unsigned int TlsExpansionBitmapBits[32];
+  unsigned int SessionId;
+  union _ULARGE_INTEGER AppCompatFlags;
+  union _ULARGE_INTEGER AppCompatFlagsUser;
+  void *pShimData;
+  void *AppCompatInfo;
+  struct _UNICODE_STRING CSDVersion;
+  const struct _ACTIVATION_CONTEXT_DATA *ActivationContextData;
+  struct _ASSEMBLY_STORAGE_MAP *ProcessAssemblyStorageMap;
+  const struct _ACTIVATION_CONTEXT_DATA *SystemDefaultActivationContextData;
+  struct _ASSEMBLY_STORAGE_MAP *SystemAssemblyStorageMap;
+  unsigned int MinimumStackCommit;
+  struct _FLS_CALLBACK_INFO *FlsCallback;
+  struct _LIST_ENTRY FlsListHead;
+  void *FlsBitmap;
+  unsigned int FlsBitmapBits[4];
+  unsigned int FlsHighIndex;
+  void *WerRegistrationData;
+  void *WerShipAssertPtr;
+  void *pContextData;
+  void *pImageHeaderHash;
+  union
+  {
+    unsigned int TracingFlags;
+    struct
+    {
+      unsigned __int32 HeapTracingEnabled : 1;
+      unsigned __int32 CritSecTracingEnabled : 1;
+      unsigned __int32 SpareTracingBits : 30;
+    };
+  };
+};

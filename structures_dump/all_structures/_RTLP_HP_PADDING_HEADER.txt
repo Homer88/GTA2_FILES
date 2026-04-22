@@ -1,0 +1,10 @@
+// Структура: _RTLP_HP_PADDING_HEADER
+// Полей: 2
+// Строки в оригинале: 21531-21535
+struct _RTLP_HP_PADDING_HEADER
+{
+
+  unsigned int PaddingSize;
+  unsigned int Spare;
+
+};

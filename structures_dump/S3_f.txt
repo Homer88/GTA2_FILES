@@ -1,0 +1,9 @@
+// Structure: S3_f
+// Lines: 5283 - 5287
+// Fields: 3
+
+struct S3_f
+{
+  _BYTE gap0[4203];
+  char field_0;
+};

@@ -1,0 +1,12 @@
+// Структура: _GROUP_RELATIONSHIP
+// Полей: 4
+// Строки в оригинале: 87585-87591
+struct _GROUP_RELATIONSHIP
+{
+
+  unsigned __int16 MaximumGroupCount;
+  unsigned __int16 ActiveGroupCount;
+  unsigned __int8 Reserved[20];
+  _PROCESSOR_GROUP_INFO GroupInfo[1];
+
+};

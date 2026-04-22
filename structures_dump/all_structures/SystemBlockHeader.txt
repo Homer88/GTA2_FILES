@@ -1,0 +1,10 @@
+// Структура: SystemBlockHeader
+// Полей: 2
+// Строки в оригинале: 147846-147850
+struct SystemBlockHeader
+{
+
+  unsigned int dwIndex;
+  unsigned int ulSignature;
+
+};

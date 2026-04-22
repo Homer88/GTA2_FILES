@@ -1,0 +1,16 @@
+// Структура: IRCEntry
+// Полей: 8
+// Строки в оригинале: 63669-63679
+struct IRCEntry
+{
+
+  IRCEntry *pNext;
+  CRefCache *pRefCache;
+  unsigned int cStrongUsage;
+  unsigned int cWeakUsage;
+  unsigned int cStrongRefs;
+  unsigned int cPrivateRefs;
+  unsigned int cWeakRefs;
+  _GUID ipid;
+
+};

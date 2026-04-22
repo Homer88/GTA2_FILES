@@ -1,0 +1,16 @@
+// Структура: _SD_QUERY_STATS_OUTPUT
+// Полей: 8
+// Строки в оригинале: 95617-95627
+struct _SD_QUERY_STATS_OUTPUT
+{
+
+  unsigned __int64 SdsStreamSize;
+  unsigned __int64 SdsAllocationSize;
+  unsigned __int64 SiiStreamSize;
+  unsigned __int64 SiiAllocationSize;
+  unsigned __int64 SdhStreamSize;
+  unsigned __int64 SdhAllocationSize;
+  unsigned __int64 NumSDTotal;
+  unsigned __int64 NumSDUnused;
+
+};

@@ -1,0 +1,13 @@
+// Структура: INewMenuClientVtbl
+// Полей: 5
+// Строки в оригинале: 33807-33814
+struct INewMenuClientVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(INewMenuClient *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(INewMenuClient *This);
+  ULONG (__stdcall *Release)(INewMenuClient *This);
+  HRESULT (__stdcall *IncludeItems)(INewMenuClient *This, NMCII_FLAGS *pflags);
+  HRESULT (__stdcall *SelectAndEditItem)(INewMenuClient *This, LPCITEMIDLIST pidlItem, NMCSAEI_FLAGS flags);
+
+};

@@ -1,0 +1,14 @@
+// Структура: _SYSTEM_GDI_DRIVER_INFORMATION
+// Полей: 6
+// Строки в оригинале: 95383-95391
+struct _SYSTEM_GDI_DRIVER_INFORMATION
+{
+
+  _UNICODE_STRING DriverName;
+  void *ImageAddress;
+  void *SectionPointer;
+  void *EntryPoint;
+  _IMAGE_EXPORT_DIRECTORY *ExportSectionPointer;
+  unsigned int ImageLength;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _AHC_SERVICE_DATAQUERY
+// Полей: 3
+// Строки в оригинале: 313285-313290
+struct _AHC_SERVICE_DATAQUERY
+{
+
+  _AHC_STATISTICS Stats;
+  unsigned int DataSize;
+  unsigned __int8 *Data;
+
+};

@@ -1,0 +1,9 @@
+// Структура: __FIAsyncOperation_1_Windows__CStorage__CStreams__CIRandomAccessStreamWithContentType
+// Полей: 1
+// Строки в оригинале: 30872-30875
+struct __FIAsyncOperation_1_Windows__CStorage__CStreams__CIRandomAccessStreamWithContentType
+{
+
+  struct __FIAsyncOperation_1_Windows__CStorage__CStreams__CIRandomAccessStreamWithContentTypeVtbl *lpVtbl;
+
+};

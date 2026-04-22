@@ -1,0 +1,11 @@
+// Структура: _RTL_TRACE_ENUMERATE
+// Полей: 3
+// Строки в оригинале: 103991-103996
+struct _RTL_TRACE_ENUMERATE
+{
+
+  _RTL_TRACE_DATABASE *Database;
+  unsigned int Index;
+  _RTL_TRACE_BLOCK *Block;
+
+};

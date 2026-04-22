@@ -1,0 +1,11 @@
+// Структура: tagRGBTRIPLE
+// Полей: 3
+// Строки в оригинале: 95060-95065
+struct tagRGBTRIPLE
+{
+
+  unsigned __int8 rgbtBlue;
+  unsigned __int8 rgbtGreen;
+  unsigned __int8 rgbtRed;
+
+};

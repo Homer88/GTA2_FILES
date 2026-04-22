@@ -1,0 +1,21 @@
+// Структура: _tagSOFTDISTINFO
+// Полей: 13
+// Строки в оригинале: 92991-93006
+struct _tagSOFTDISTINFO
+{
+
+  unsigned int cbSize;
+  unsigned int dwFlags;
+  unsigned int dwAdState;
+  wchar_t *szTitle;
+  wchar_t *szAbstract;
+  wchar_t *szHREF;
+  unsigned int dwInstalledVersionMS;
+  unsigned int dwInstalledVersionLS;
+  unsigned int dwUpdateVersionMS;
+  unsigned int dwUpdateVersionLS;
+  unsigned int dwAdvertisedVersionMS;
+  unsigned int dwAdvertisedVersionLS;
+  unsigned int dwReserved;
+
+};

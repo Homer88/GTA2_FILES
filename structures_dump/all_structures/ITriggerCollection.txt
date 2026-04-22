@@ -1,0 +1,9 @@
+// Структура: ITriggerCollection
+// Полей: 1
+// Строки в оригинале: 44641-44644
+struct ITriggerCollection
+{
+
+  struct ITriggerCollectionVtbl *lpVtbl;
+
+};

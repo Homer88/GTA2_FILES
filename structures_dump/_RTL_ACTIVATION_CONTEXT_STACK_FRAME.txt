@@ -1,0 +1,10 @@
+// Structure: _RTL_ACTIVATION_CONTEXT_STACK_FRAME
+// Lines: 3043 - 3048
+// Fields: 4
+
+struct _RTL_ACTIVATION_CONTEXT_STACK_FRAME
+{
+  _RTL_ACTIVATION_CONTEXT_STACK_FRAME *Previous;
+  struct _ACTIVATION_CONTEXT *ActivationContext;
+  unsigned int Flags;
+};

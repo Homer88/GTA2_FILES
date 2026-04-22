@@ -1,0 +1,9 @@
+// Структура: IWICMetadataQueryReader
+// Полей: 1
+// Строки в оригинале: 41926-41929
+struct IWICMetadataQueryReader
+{
+
+  struct IWICMetadataQueryReaderVtbl *lpVtbl;
+
+};

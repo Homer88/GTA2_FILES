@@ -1,0 +1,12 @@
+// Структура: tagSDBENTRYINFO
+// Полей: 4
+// Строки в оригинале: 312990-312996
+struct tagSDBENTRYINFO
+{
+
+  _GUID guidID;
+  unsigned int dwFlags;
+  unsigned int tiData;
+  _GUID guidDB;
+
+};

@@ -1,0 +1,15 @@
+// Структура: _PERFINFO_FLT_OPERATION_STATUS
+// Полей: 7
+// Строки в оригинале: 311500-311509
+struct _PERFINFO_FLT_OPERATION_STATUS
+{
+
+  void *RoutineAddr;
+  void *FileObject;
+  void *FsContext;
+  void *IrpPtr;
+  void *CbdPtr;
+  int MajorFunction;
+  int Status;
+
+};

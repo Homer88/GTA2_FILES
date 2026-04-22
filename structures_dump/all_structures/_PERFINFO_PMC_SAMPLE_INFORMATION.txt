@@ -1,0 +1,12 @@
+// Структура: _PERFINFO_PMC_SAMPLE_INFORMATION
+// Полей: 4
+// Строки в оригинале: 313628-313634
+struct _PERFINFO_PMC_SAMPLE_INFORMATION
+{
+
+  void *InstructionPointer;
+  unsigned int ThreadId;
+  unsigned __int16 ProfileSource;
+  unsigned __int16 Reserved;
+
+};

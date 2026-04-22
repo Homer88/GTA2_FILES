@@ -1,0 +1,10 @@
+// Структура: _MEMORY_COMBINE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 89126-89130
+struct _MEMORY_COMBINE_INFORMATION
+{
+
+  void *Handle;
+  unsigned int PagesCombined;
+
+};

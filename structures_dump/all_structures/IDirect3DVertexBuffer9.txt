@@ -1,0 +1,9 @@
+// Структура: IDirect3DVertexBuffer9
+// Полей: 1
+// Строки в оригинале: 25775-25778
+struct IDirect3DVertexBuffer9
+{
+
+  struct IDirect3DVertexBuffer9Vtbl *lpVtbl;
+
+};

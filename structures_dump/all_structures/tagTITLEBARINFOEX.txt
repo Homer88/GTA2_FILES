@@ -1,0 +1,12 @@
+// Структура: tagTITLEBARINFOEX
+// Полей: 4
+// Строки в оригинале: 108135-108141
+struct tagTITLEBARINFOEX
+{
+
+  unsigned int cbSize;
+  tagRECT rcTitleBar;
+  unsigned int rgstate[6];
+  tagRECT rgrect[6];
+
+};

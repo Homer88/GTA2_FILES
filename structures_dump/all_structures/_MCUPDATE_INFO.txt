@@ -1,0 +1,12 @@
+// Структура: _MCUPDATE_INFO
+// Полей: 4
+// Строки в оригинале: 19695-19701
+struct _MCUPDATE_INFO
+{
+
+  _LIST_ENTRY List;
+  unsigned int Status;
+  unsigned __int64 Id;
+  unsigned __int64 VendorScratch[2];
+
+};

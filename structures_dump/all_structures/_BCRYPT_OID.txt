@@ -1,0 +1,10 @@
+// Структура: _BCRYPT_OID
+// Полей: 2
+// Строки в оригинале: 96685-96689
+struct _BCRYPT_OID
+{
+
+  unsigned int cbOID;
+  unsigned __int8 *pbOID;
+
+};

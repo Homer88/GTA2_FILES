@@ -1,0 +1,9 @@
+// Структура: Folder2
+// Полей: 1
+// Строки в оригинале: 40381-40384
+struct Folder2
+{
+
+  struct Folder2Vtbl *lpVtbl;
+
+};

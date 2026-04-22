@@ -1,0 +1,10 @@
+// Структура: _CERT_QC_STATEMENT
+// Полей: 2
+// Строки в оригинале: 83585-83589
+struct _CERT_QC_STATEMENT
+{
+
+  char *pszStatementId;
+  _CRYPTOAPI_BLOB StatementInfo;
+
+};

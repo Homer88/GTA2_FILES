@@ -1,0 +1,10 @@
+// Структура: EVENT_INSTANCE_INFO
+// Полей: 2
+// Строки в оригинале: 313813-313817
+struct EVENT_INSTANCE_INFO
+{
+
+  void *RegHandle;
+  unsigned int InstanceId;
+
+};

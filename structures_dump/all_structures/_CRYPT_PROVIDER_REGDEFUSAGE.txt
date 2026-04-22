@@ -1,0 +1,13 @@
+// Структура: _CRYPT_PROVIDER_REGDEFUSAGE
+// Полей: 5
+// Строки в оригинале: 123477-123484
+struct _CRYPT_PROVIDER_REGDEFUSAGE
+{
+
+  unsigned int cbStruct;
+  _GUID *pgActionID;
+  wchar_t *pwszDllName;
+  char *pwszLoadCallbackDataFunctionName;
+  char *pwszFreeCallbackDataFunctionName;
+
+};

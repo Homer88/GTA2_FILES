@@ -1,0 +1,11 @@
+// Структура: _D3DGAMMARAMP
+// Полей: 3
+// Строки в оригинале: 25576-25581
+struct _D3DGAMMARAMP
+{
+
+  WORD red[256];
+  WORD green[256];
+  WORD blue[256];
+
+};

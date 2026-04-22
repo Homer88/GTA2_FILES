@@ -1,0 +1,11 @@
+// Структура: _CRYPT_TIMESTAMP_CONTEXT
+// Полей: 3
+// Строки в оригинале: 111029-111034
+struct _CRYPT_TIMESTAMP_CONTEXT
+{
+
+  unsigned int cbEncoded;
+  unsigned __int8 *pbEncoded;
+  _CRYPT_TIMESTAMP_INFO *pTimeStamp;
+
+};

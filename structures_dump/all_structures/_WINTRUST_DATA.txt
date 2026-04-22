@@ -1,0 +1,21 @@
+// Структура: _WINTRUST_DATA
+// Полей: 13
+// Строки в оригинале: 121911-121926
+struct _WINTRUST_DATA
+{
+
+  unsigned int cbStruct;
+  void *pPolicyCallbackData;
+  void *pSIPClientData;
+  unsigned int dwUIChoice;
+  unsigned int fdwRevocationChecks;
+  unsigned int dwUnionChoice;
+  $C53E88B89CACC62440330905520AB4CE ___u6;
+  unsigned int dwStateAction;
+  void *hWVTStateData;
+  wchar_t *pwszURLReference;
+  unsigned int dwProvFlags;
+  unsigned int dwUIContext;
+  WINTRUST_SIGNATURE_SETTINGS_ *pSignatureSettings;
+
+};

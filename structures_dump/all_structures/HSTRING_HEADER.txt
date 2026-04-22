@@ -1,0 +1,9 @@
+// Структура: HSTRING_HEADER
+// Полей: 1
+// Строки в оригинале: 88953-88956
+struct HSTRING_HEADER
+{
+
+  HSTRING_HEADER::<unnamed_type_Reserved> Reserved;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesSyncConflictHandler
+// Полей: 1
+// Строки в оригинале: 28040-28043
+struct IOfflineFilesSyncConflictHandler
+{
+
+  struct IOfflineFilesSyncConflictHandlerVtbl *lpVtbl;
+
+};

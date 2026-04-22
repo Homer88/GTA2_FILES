@@ -1,0 +1,9 @@
+// Структура: IXMLDOMDocumentFragment
+// Полей: 1
+// Строки в оригинале: 43499-43502
+struct IXMLDOMDocumentFragment
+{
+
+  struct IXMLDOMDocumentFragmentVtbl *lpVtbl;
+
+};

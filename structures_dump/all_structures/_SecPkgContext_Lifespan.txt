@@ -1,0 +1,10 @@
+// Структура: _SecPkgContext_Lifespan
+// Полей: 2
+// Строки в оригинале: 323828-323832
+struct _SecPkgContext_Lifespan
+{
+
+  _LARGE_INTEGER tsStart;
+  _LARGE_INTEGER tsExpiry;
+
+};

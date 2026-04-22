@@ -1,0 +1,11 @@
+// Структура: _BCryptBuffer
+// Полей: 3
+// Строки в оригинале: 99112-99117
+struct _BCryptBuffer
+{
+
+  unsigned int cbBuffer;
+  unsigned int BufferType;
+  void *pvBuffer;
+
+};

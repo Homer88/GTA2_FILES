@@ -1,0 +1,27 @@
+// Структура: IFileOperationProgressSinkVtbl
+// Полей: 19
+// Строки в оригинале: 34566-34587
+struct IFileOperationProgressSinkVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFileOperationProgressSink *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFileOperationProgressSink *This);
+  ULONG (__stdcall *Release)(IFileOperationProgressSink *This);
+  HRESULT (__stdcall *StartOperations)(IFileOperationProgressSink *This);
+  HRESULT (__stdcall *FinishOperations)(IFileOperationProgressSink *This, HRESULT hrResult);
+  HRESULT (__stdcall *PreRenameItem)(IFileOperationProgressSink *This, DWORD dwFlags, IShellItem *psiItem, LPCWSTR pszNewName);
+  HRESULT (__stdcall *PostRenameItem)(IFileOperationProgressSink *This, DWORD dwFlags, IShellItem *psiItem, LPCWSTR pszNewName, HRESULT hrRename, IShellItem *psiNewlyCreated);
+  HRESULT (__stdcall *PreMoveItem)(IFileOperationProgressSink *This, DWORD dwFlags, IShellItem *psiItem, IShellItem *psiDestinationFolder, LPCWSTR pszNewName);
+  HRESULT (__stdcall *PostMoveItem)(IFileOperationProgressSink *This, DWORD dwFlags, IShellItem *psiItem, IShellItem *psiDestinationFolder, LPCWSTR pszNewName, HRESULT hrMove, IShellItem *psiNewlyCreated);
+  HRESULT (__stdcall *PreCopyItem)(IFileOperationProgressSink *This, DWORD dwFlags, IShellItem *psiItem, IShellItem *psiDestinationFolder, LPCWSTR pszNewName);
+  HRESULT (__stdcall *PostCopyItem)(IFileOperationProgressSink *This, DWORD dwFlags, IShellItem *psiItem, IShellItem *psiDestinationFolder, LPCWSTR pszNewName, HRESULT hrCopy, IShellItem *psiNewlyCreated);
+  HRESULT (__stdcall *PreDeleteItem)(IFileOperationProgressSink *This, DWORD dwFlags, IShellItem *psiItem);
+  HRESULT (__stdcall *PostDeleteItem)(IFileOperationProgressSink *This, DWORD dwFlags, IShellItem *psiItem, HRESULT hrDelete, IShellItem *psiNewlyCreated);
+  HRESULT (__stdcall *PreNewItem)(IFileOperationProgressSink *This, DWORD dwFlags, IShellItem *psiDestinationFolder, LPCWSTR pszNewName);
+  HRESULT (__stdcall *PostNewItem)(IFileOperationProgressSink *This, DWORD dwFlags, IShellItem *psiDestinationFolder, LPCWSTR pszNewName, LPCWSTR pszTemplateName, DWORD dwFileAttributes, HRESULT hrNew, IShellItem *psiNewItem);
+  HRESULT (__stdcall *UpdateProgress)(IFileOperationProgressSink *This, UINT iWorkTotal, UINT iWorkSoFar);
+  HRESULT (__stdcall *ResetTimer)(IFileOperationProgressSink *This);
+  HRESULT (__stdcall *PauseTimer)(IFileOperationProgressSink *This);
+  HRESULT (__stdcall *ResumeTimer)(IFileOperationProgressSink *This);
+
+};

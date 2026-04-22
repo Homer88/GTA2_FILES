@@ -1,0 +1,16 @@
+// Структура: _NDR64_USER_MARSHAL_FORMAT
+// Полей: 8
+// Строки в оригинале: 332156-332166
+struct _NDR64_USER_MARSHAL_FORMAT
+{
+
+  unsigned __int8 FormatCode;
+  unsigned __int8 Flags;
+  unsigned __int16 RoutineIndex;
+  unsigned __int16 TransmittedTypeWireAlignment;
+  unsigned __int16 MemoryAlignment;
+  unsigned int UserTypeMemorySize;
+  unsigned int TransmittedTypeBufferSize;
+  const void *TransmittedType;
+
+};

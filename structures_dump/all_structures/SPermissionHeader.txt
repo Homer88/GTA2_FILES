@@ -1,0 +1,11 @@
+// Структура: SPermissionHeader
+// Полей: 3
+// Строки в оригинале: 241689-241694
+struct SPermissionHeader
+{
+
+  unsigned __int16 wVersion;
+  unsigned __int16 wPad;
+  _GUID gClass;
+
+};

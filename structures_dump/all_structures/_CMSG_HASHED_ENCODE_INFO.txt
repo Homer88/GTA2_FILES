@@ -1,0 +1,12 @@
+// Структура: _CMSG_HASHED_ENCODE_INFO
+// Полей: 4
+// Строки в оригинале: 110133-110139
+struct _CMSG_HASHED_ENCODE_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int hCryptProv;
+  _CRYPT_ALGORITHM_IDENTIFIER HashAlgorithm;
+  void *pvHashAuxInfo;
+
+};

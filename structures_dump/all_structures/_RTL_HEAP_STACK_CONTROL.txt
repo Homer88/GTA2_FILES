@@ -1,0 +1,11 @@
+// Структура: _RTL_HEAP_STACK_CONTROL
+// Полей: 3
+// Строки в оригинале: 101994-101999
+struct _RTL_HEAP_STACK_CONTROL
+{
+
+  unsigned __int16 Version;
+  unsigned __int16 Flags;
+  void *Process;
+
+};

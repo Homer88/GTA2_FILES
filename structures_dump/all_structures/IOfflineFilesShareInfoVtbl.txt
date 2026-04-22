@@ -1,0 +1,14 @@
+// Структура: IOfflineFilesShareInfoVtbl
+// Полей: 6
+// Строки в оригинале: 28513-28521
+struct IOfflineFilesShareInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesShareInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesShareInfo *This);
+  ULONG (__stdcall *Release)(IOfflineFilesShareInfo *This);
+  HRESULT (__stdcall *GetShareItem)(IOfflineFilesShareInfo *This, IOfflineFilesShareItem **ppShareItem);
+  HRESULT (__stdcall *GetShareCachingMode)(IOfflineFilesShareInfo *This, OFFLINEFILES_CACHING_MODE *pCachingMode);
+  HRESULT (__stdcall *IsShareDfsJunction)(IOfflineFilesShareInfo *This, BOOL *pbIsDfsJunction);
+
+};

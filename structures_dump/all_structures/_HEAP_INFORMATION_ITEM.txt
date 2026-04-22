@@ -1,0 +1,11 @@
+// Структура: _HEAP_INFORMATION_ITEM
+// Полей: 3
+// Строки в оригинале: 89343-89348
+struct _HEAP_INFORMATION_ITEM
+{
+
+  unsigned int Level;
+  unsigned int Size;
+  $9C942BBB324027FDEA9438A942D2A28E ___u2;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IParseDisplayName
+// Полей: 1
+// Строки в оригинале: 28641-28644
+struct IParseDisplayName
+{
+
+  struct IParseDisplayNameVtbl *lpVtbl;
+
+};

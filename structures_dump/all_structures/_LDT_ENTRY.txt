@@ -1,0 +1,11 @@
+// Структура: _LDT_ENTRY
+// Полей: 3
+// Строки в оригинале: 82357-82362
+struct _LDT_ENTRY
+{
+
+  unsigned __int16 LimitLow;
+  unsigned __int16 BaseLow;
+  _LDT_ENTRY::<unnamed_type_HighWord> HighWord;
+
+};

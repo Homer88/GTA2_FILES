@@ -1,0 +1,12 @@
+// Структура: tagCSPLATFORM
+// Полей: 4
+// Строки в оригинале: 84116-84122
+struct tagCSPLATFORM
+{
+
+  unsigned int dwPlatformId;
+  unsigned int dwVersionHi;
+  unsigned int dwVersionLo;
+  unsigned int dwProcessorArch;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _ETW_OPTICALIO_INIT
+// Полей: 2
+// Строки в оригинале: 310221-310225
+struct _ETW_OPTICALIO_INIT
+{
+
+  void *Irp;
+  unsigned int IssuingThreadId;
+
+};

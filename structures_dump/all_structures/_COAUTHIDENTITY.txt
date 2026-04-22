@@ -1,0 +1,15 @@
+// Структура: _COAUTHIDENTITY
+// Полей: 7
+// Строки в оригинале: 78725-78734
+struct _COAUTHIDENTITY
+{
+
+  wchar_t *User;
+  unsigned int UserLength;
+  wchar_t *Domain;
+  unsigned int DomainLength;
+  wchar_t *Password;
+  unsigned int PasswordLength;
+  unsigned int Flags;
+
+};

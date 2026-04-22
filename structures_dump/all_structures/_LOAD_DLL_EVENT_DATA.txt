@@ -1,0 +1,9 @@
+// Структура: _LOAD_DLL_EVENT_DATA
+// Полей: 1
+// Строки в оригинале: 312384-312387
+struct _LOAD_DLL_EVENT_DATA
+{
+
+  wchar_t ImageName[1];
+
+};

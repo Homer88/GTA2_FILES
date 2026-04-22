@@ -1,0 +1,19 @@
+// Структура: IProgressItemVtbl
+// Полей: 11
+// Строки в оригинале: 41342-41355
+struct IProgressItemVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IProgressItem *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IProgressItem *This);
+  ULONG (__stdcall *Release)(IProgressItem *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IProgressItem *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IProgressItem *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IProgressItem *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IProgressItem *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Description)(IProgressItem *This, BSTR *desc);
+  HRESULT (__stdcall *get_FirstBlock)(IProgressItem *This, ULONG *block);
+  HRESULT (__stdcall *get_LastBlock)(IProgressItem *This, ULONG *block);
+  HRESULT (__stdcall *get_BlockCount)(IProgressItem *This, ULONG *blocks);
+
+};

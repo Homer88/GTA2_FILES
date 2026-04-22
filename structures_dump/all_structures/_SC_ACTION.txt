@@ -1,0 +1,10 @@
+// Структура: _SC_ACTION
+// Полей: 2
+// Строки в оригинале: 81418-81422
+struct _SC_ACTION
+{
+
+  _SC_ACTION_TYPE Type;
+  unsigned int Delay;
+
+};

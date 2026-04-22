@@ -1,0 +1,13 @@
+// Структура: tagBITMAPCOREHEADER
+// Полей: 5
+// Строки в оригинале: 84368-84375
+struct tagBITMAPCOREHEADER
+{
+
+  unsigned int bcSize;
+  unsigned __int16 bcWidth;
+  unsigned __int16 bcHeight;
+  unsigned __int16 bcPlanes;
+  unsigned __int16 bcBitCount;
+
+};

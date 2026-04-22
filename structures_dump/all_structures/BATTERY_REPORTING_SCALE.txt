@@ -1,0 +1,10 @@
+// Структура: BATTERY_REPORTING_SCALE
+// Полей: 2
+// Строки в оригинале: 22553-22557
+struct BATTERY_REPORTING_SCALE
+{
+
+  unsigned int Granularity;
+  unsigned int Capacity;
+
+};

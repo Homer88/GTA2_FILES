@@ -1,0 +1,10 @@
+// Структура: _CRYPT_ALGORITHM_IDENTIFIER
+// Полей: 2
+// Строки в оригинале: 59028-59032
+struct _CRYPT_ALGORITHM_IDENTIFIER
+{
+
+  char *pszObjId;
+  _CRYPTOAPI_BLOB Parameters;
+
+};

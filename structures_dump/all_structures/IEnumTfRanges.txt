@@ -1,0 +1,9 @@
+// Структура: IEnumTfRanges
+// Полей: 1
+// Строки в оригинале: 30464-30467
+struct IEnumTfRanges
+{
+
+  struct IEnumTfRangesVtbl *lpVtbl;
+
+};

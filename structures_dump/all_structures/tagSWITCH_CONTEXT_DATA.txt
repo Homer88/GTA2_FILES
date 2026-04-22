@@ -1,0 +1,16 @@
+// Структура: tagSWITCH_CONTEXT_DATA
+// Полей: 8
+// Строки в оригинале: 309127-309137
+struct tagSWITCH_CONTEXT_DATA
+{
+
+  unsigned __int64 ullOsMaxVersionTested;
+  unsigned int ulTargetPlatform;
+  unsigned __int64 ullContextMinimum;
+  _GUID guPlatform;
+  _GUID guMinPlatform;
+  unsigned int ulContextSource;
+  unsigned int ulElementCount;
+  _GUID guElements[48];
+
+};

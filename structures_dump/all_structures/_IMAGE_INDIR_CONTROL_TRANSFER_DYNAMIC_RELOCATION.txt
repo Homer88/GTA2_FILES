@@ -1,0 +1,13 @@
+// Структура: _IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION
+// Полей: 5
+// Строки в оригинале: 80042-80049
+struct _IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION
+{
+
+  unsigned __int16 PageRelativeOffset : 12;
+  unsigned __int16 IndirectCall : 1;
+  unsigned __int16 RexWPrefix : 1;
+  unsigned __int16 CfgCheck : 1;
+  unsigned __int16 Reserved : 1;
+
+};

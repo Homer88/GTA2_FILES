@@ -1,0 +1,12 @@
+// Структура: ITfCompositionSinkVtbl
+// Полей: 4
+// Строки в оригинале: 32341-32347
+struct ITfCompositionSinkVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfCompositionSink *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfCompositionSink *This);
+  ULONG (__stdcall *Release)(ITfCompositionSink *This);
+  HRESULT (__stdcall *OnCompositionTerminated)(ITfCompositionSink *This, TfEditCookie ecWrite, ITfComposition *pComposition);
+
+};

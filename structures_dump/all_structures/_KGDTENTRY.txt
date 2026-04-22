@@ -1,0 +1,11 @@
+// Структура: _KGDTENTRY
+// Полей: 3
+// Строки в оригинале: 14112-14117
+struct _KGDTENTRY
+{
+
+  unsigned __int16 LimitLow;
+  unsigned __int16 BaseLow;
+  _KGDTENTRY::$9DC6B77CF46BE1658D82BF6EA1FE1710 HighWord;
+
+};

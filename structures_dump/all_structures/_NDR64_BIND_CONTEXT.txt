@@ -1,0 +1,13 @@
+// Структура: _NDR64_BIND_CONTEXT
+// Полей: 5
+// Строки в оригинале: 331330-331337
+struct _NDR64_BIND_CONTEXT
+{
+
+  unsigned __int8 HandleType;
+  unsigned __int8 Flags;
+  unsigned __int16 StackOffset;
+  unsigned __int8 RoutineIndex;
+  unsigned __int8 Ordinal;
+
+};

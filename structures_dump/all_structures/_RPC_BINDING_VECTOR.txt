@@ -1,0 +1,10 @@
+// Структура: _RPC_BINDING_VECTOR
+// Полей: 2
+// Строки в оригинале: 64107-64111
+struct _RPC_BINDING_VECTOR
+{
+
+  unsigned int Count;
+  void *BindingH[1];
+
+};

@@ -1,0 +1,10 @@
+// Структура: _CRYPT_PROVIDERS
+// Полей: 2
+// Строки в оригинале: 101187-101191
+struct _CRYPT_PROVIDERS
+{
+
+  unsigned int cProviders;
+  wchar_t **rgpszProviders;
+
+};

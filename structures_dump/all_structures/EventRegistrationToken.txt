@@ -1,0 +1,9 @@
+// Структура: EventRegistrationToken
+// Полей: 1
+// Строки в оригинале: 66809-66812
+struct EventRegistrationToken
+{
+
+  __int64 value;
+
+};

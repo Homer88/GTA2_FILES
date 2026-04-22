@@ -1,0 +1,14 @@
+// Структура: _CRYPT_OBJECT_LOCATOR_PROVIDER_TABLE
+// Полей: 6
+// Строки в оригинале: 81375-81383
+struct _CRYPT_OBJECT_LOCATOR_PROVIDER_TABLE
+{
+
+  unsigned int cbSize;
+  int (__stdcall *pfnGet)(void *, _CRYPTOAPI_BLOB *, unsigned int, _CRYPTOAPI_BLOB *, unsigned __int8 **, unsigned int *, const wchar_t **, _CRYPTOAPI_BLOB **);
+  void (__stdcall *pfnRelease)(unsigned int, void *);
+  void (__stdcall *pfnFreePassword)(void *, const wchar_t *);
+  void (__stdcall *pfnFree)(void *, unsigned __int8 *);
+  void (__stdcall *pfnFreeIdentifier)(void *, _CRYPTOAPI_BLOB *);
+
+};

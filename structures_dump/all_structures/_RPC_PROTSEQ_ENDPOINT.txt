@@ -1,0 +1,10 @@
+// Структура: _RPC_PROTSEQ_ENDPOINT
+// Полей: 2
+// Строки в оригинале: 97124-97128
+struct _RPC_PROTSEQ_ENDPOINT
+{
+
+  unsigned __int8 *RpcProtocolSequence;
+  unsigned __int8 *Endpoint;
+
+};

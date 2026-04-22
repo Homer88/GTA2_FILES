@@ -1,0 +1,9 @@
+// Структура: IMalloc
+// Полей: 1
+// Строки в оригинале: 39849-39852
+struct IMalloc
+{
+
+  struct IMallocVtbl *lpVtbl;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _RTL_DYNAMIC_HASH_TABLE_CONTEXT
+// Полей: 3
+// Строки в оригинале: 12803-12808
+struct _RTL_DYNAMIC_HASH_TABLE_CONTEXT
+{
+
+  _LIST_ENTRY *ChainHead;
+  _LIST_ENTRY *PrevLinkage;
+  unsigned int Signature;
+
+};

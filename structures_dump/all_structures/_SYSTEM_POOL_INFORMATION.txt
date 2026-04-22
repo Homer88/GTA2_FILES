@@ -1,0 +1,15 @@
+// Структура: _SYSTEM_POOL_INFORMATION
+// Полей: 7
+// Строки в оригинале: 98170-98179
+struct _SYSTEM_POOL_INFORMATION
+{
+
+  unsigned int TotalSize;
+  void *FirstEntry;
+  unsigned __int16 EntryOverhead;
+  unsigned __int8 PoolTagPresent;
+  unsigned __int8 Spare0;
+  unsigned int NumberOfEntries;
+  _SYSTEM_POOL_ENTRY Entries[1];
+
+};

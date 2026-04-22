@@ -1,0 +1,14 @@
+// Структура: _PERFINFO_CC_LOGGED_STREAM_INFO
+// Полей: 6
+// Строки в оригинале: 310504-310512
+struct _PERFINFO_CC_LOGGED_STREAM_INFO
+{
+
+  unsigned int FileObjectKey;
+  unsigned int ReasonForFlush;
+  unsigned int PagesToWrite;
+  unsigned int DirtyLoggedPages;
+  unsigned int DirtyLoggedPageThreshold;
+  _LARGE_INTEGER LargestLsnForLWS;
+
+};

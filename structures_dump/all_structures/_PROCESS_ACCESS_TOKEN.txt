@@ -1,0 +1,10 @@
+// Структура: _PROCESS_ACCESS_TOKEN
+// Полей: 2
+// Строки в оригинале: 110575-110579
+struct _PROCESS_ACCESS_TOKEN
+{
+
+  void *Token;
+  void *Thread;
+
+};

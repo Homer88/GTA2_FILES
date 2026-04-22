@@ -1,0 +1,9 @@
+// Структура: _RTL_DISK_SPEED_INFO
+// Полей: 1
+// Строки в оригинале: 98829-98832
+struct _RTL_DISK_SPEED_INFO
+{
+
+  RTL_DISK_SPEED_POLICY Policy;
+
+};

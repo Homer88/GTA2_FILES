@@ -1,0 +1,23 @@
+// Структура: FolderItems3Vtbl
+// Полей: 15
+// Строки в оригинале: 37256-37273
+struct FolderItems3Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(FolderItems3 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(FolderItems3 *This);
+  ULONG (__stdcall *Release)(FolderItems3 *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(FolderItems3 *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(FolderItems3 *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(FolderItems3 *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(FolderItems3 *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Count)(FolderItems3 *This, int *plCount);
+  HRESULT (__stdcall *get_Application)(FolderItems3 *This, IDispatch **ppid);
+  HRESULT (__stdcall *get_Parent)(FolderItems3 *This, IDispatch **ppid);
+  HRESULT (__stdcall *Item)(FolderItems3 *This, VARIANT index, FolderItem **ppid);
+  HRESULT (__stdcall *_NewEnum)(FolderItems3 *This, IUnknown **ppunk);
+  HRESULT (__stdcall *InvokeVerbEx)(FolderItems3 *This, VARIANT vVerb, VARIANT vArgs);
+  HRESULT (__stdcall *Filter)(FolderItems3 *This, int grfFlags, BSTR bstrFileSpec);
+  HRESULT (__stdcall *get_Verbs)(FolderItems3 *This, FolderItemVerbs **ppfic);
+
+};

@@ -1,0 +1,10 @@
+// Структура: _IMAGE_HOT_PATCH_HASHES
+// Полей: 2
+// Строки в оригинале: 107350-107354
+struct _IMAGE_HOT_PATCH_HASHES
+{
+
+  unsigned __int8 SHA256[32];
+  unsigned __int8 SHA1[20];
+
+};

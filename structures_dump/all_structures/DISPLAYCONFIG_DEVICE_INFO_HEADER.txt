@@ -1,0 +1,12 @@
+// Структура: DISPLAYCONFIG_DEVICE_INFO_HEADER
+// Полей: 4
+// Строки в оригинале: 80066-80072
+struct DISPLAYCONFIG_DEVICE_INFO_HEADER
+{
+
+  DISPLAYCONFIG_DEVICE_INFO_TYPE type;
+  unsigned int size;
+  _LUID adapterId;
+  unsigned int id;
+
+};

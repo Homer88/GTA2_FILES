@@ -1,0 +1,11 @@
+// Структура: _EH4_SCOPETABLE_RECORD
+// Полей: 3
+// Строки в оригинале: 22944-22949
+struct _EH4_SCOPETABLE_RECORD
+{
+
+  int EnclosingLevel;
+  void *FilterFunc;
+  void *HandlerFunc;
+
+};

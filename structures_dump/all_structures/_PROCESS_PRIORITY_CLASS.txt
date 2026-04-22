@@ -1,0 +1,10 @@
+// Структура: _PROCESS_PRIORITY_CLASS
+// Полей: 2
+// Строки в оригинале: 82115-82119
+struct _PROCESS_PRIORITY_CLASS
+{
+
+  unsigned __int8 Foreground;
+  unsigned __int8 PriorityClass;
+
+};

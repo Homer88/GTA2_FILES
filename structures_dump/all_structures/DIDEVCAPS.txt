@@ -1,0 +1,19 @@
+// Структура: DIDEVCAPS
+// Полей: 11
+// Строки в оригинале: 6182-6195
+struct DIDEVCAPS
+{
+
+  DWORD dwSize;
+  DWORD dwFlags;
+  DWORD dwDevType;
+  DWORD dwAxes;
+  DWORD dwButtons;
+  DWORD dwPOVs;
+  DWORD dwFFSamplePeriod;
+  DWORD dwFFMinTimeResolution;
+  DWORD dwFirmwareRevision;
+  DWORD dwHardwareRevision;
+  DWORD dwFFDriverVersion;
+
+};

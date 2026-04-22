@@ -1,0 +1,13 @@
+// Структура: _PREFIX_TABLE_ENTRY
+// Полей: 5
+// Строки в оригинале: 107818-107825
+struct _PREFIX_TABLE_ENTRY
+{
+
+  __int16 NodeTypeCode;
+  __int16 NameLength;
+  _PREFIX_TABLE_ENTRY *NextPrefixTree;
+  _RTL_SPLAY_LINKS Links;
+  _STRING *Prefix;
+
+};

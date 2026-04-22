@@ -1,0 +1,9 @@
+// Структура: IUserAccountChangeCallback
+// Полей: 1
+// Строки в оригинале: 39937-39940
+struct IUserAccountChangeCallback
+{
+
+  struct IUserAccountChangeCallbackVtbl *lpVtbl;
+
+};

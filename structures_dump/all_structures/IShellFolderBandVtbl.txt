@@ -1,0 +1,11 @@
+// Структура: IShellFolderBandVtbl
+// Полей: 3
+// Строки в оригинале: 36397-36402
+struct IShellFolderBandVtbl
+{
+
+  HRESULT (__stdcall *InitializeSFB)(IShellFolderBand *This, IShellFolder *psf, LPCITEMIDLIST pidl);
+  HRESULT (__stdcall *SetBandInfoSFB)(IShellFolderBand *This, PBANDINFOSFB pbi);
+  HRESULT (__stdcall *GetBandInfoSFB)(IShellFolderBand *This, PBANDINFOSFB pbi);
+
+};

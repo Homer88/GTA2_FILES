@@ -1,0 +1,9 @@
+// Структура: _PERFINFO_SET_DEVICES_STATE_RET
+// Полей: 1
+// Строки в оригинале: 310035-310038
+struct _PERFINFO_SET_DEVICES_STATE_RET
+{
+
+  int Status;
+
+};

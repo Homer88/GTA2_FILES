@@ -1,0 +1,21 @@
+// Структура: _PROCESS_ENERGY_VALUES
+// Полей: 13
+// Строки в оригинале: 17251-17266
+struct _PROCESS_ENERGY_VALUES
+{
+
+  unsigned __int64 Cycles[4][2];
+  unsigned __int64 DiskEnergy;
+  unsigned __int64 NetworkTailEnergy;
+  unsigned __int64 MBBTailEnergy;
+  unsigned __int64 NetworkTxRxBytes;
+  unsigned __int64 MBBTxRxBytes;
+  $6CEBBFB23F95DD5EDFA22F27F007AB63 ___u6;
+  unsigned int CompositionRendered;
+  unsigned int CompositionDirtyGenerated;
+  unsigned int CompositionDirtyPropagated;
+  unsigned int Reserved1;
+  unsigned __int64 AttributedCycles[4][2];
+  unsigned __int64 WorkOnBehalfCycles[4][2];
+
+};

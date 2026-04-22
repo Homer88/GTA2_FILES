@@ -1,0 +1,12 @@
+// Структура: _NDR64_BIND_PRIMITIVE
+// Полей: 4
+// Строки в оригинале: 331136-331142
+struct _NDR64_BIND_PRIMITIVE
+{
+
+  unsigned __int8 HandleType;
+  unsigned __int8 Flags;
+  unsigned __int16 StackOffset;
+  unsigned __int16 Reserved;
+
+};

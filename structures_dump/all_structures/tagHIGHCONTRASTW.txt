@@ -1,0 +1,11 @@
+// Структура: tagHIGHCONTRASTW
+// Полей: 3
+// Строки в оригинале: 94285-94290
+struct tagHIGHCONTRASTW
+{
+
+  unsigned int cbSize;
+  unsigned int dwFlags;
+  wchar_t *lpszDefaultScheme;
+
+};

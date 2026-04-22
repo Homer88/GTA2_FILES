@@ -1,0 +1,15 @@
+// Структура: _tagDdeClassInfo
+// Полей: 7
+// Строки в оригинале: 114208-114217
+struct _tagDdeClassInfo
+{
+
+  unsigned int dwContextMask;
+  int fClaimFactory;
+  unsigned int dwContext;
+  unsigned int dwFlags;
+  unsigned int dwThreadId;
+  unsigned int dwRegistrationKey;
+  IUnknown *punk;
+
+};

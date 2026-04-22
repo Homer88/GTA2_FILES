@@ -1,0 +1,12 @@
+// Структура: _PROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGES_INFORMATION
+// Полей: 4
+// Строки в оригинале: 103797-103803
+struct _PROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGES_INFORMATION
+{
+
+  unsigned __int16 NumberOfRanges;
+  unsigned __int16 Reserved;
+  unsigned int Reserved2;
+  _PROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGE *Ranges;
+
+};

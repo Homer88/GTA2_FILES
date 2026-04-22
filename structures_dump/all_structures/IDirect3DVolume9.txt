@@ -1,0 +1,9 @@
+// Структура: IDirect3DVolume9
+// Полей: 1
+// Строки в оригинале: 26277-26280
+struct IDirect3DVolume9
+{
+
+  struct IDirect3DVolume9Vtbl *lpVtbl;
+
+};

@@ -1,0 +1,9 @@
+// Структура: INamespaceWalkCB2
+// Полей: 1
+// Строки в оригинале: 36172-36175
+struct INamespaceWalkCB2
+{
+
+  struct INamespaceWalkCB2Vtbl *lpVtbl;
+
+};

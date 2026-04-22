@@ -1,0 +1,10 @@
+// Структура: _SHARED_VIRTUAL_DISK_SUPPORT
+// Полей: 2
+// Строки в оригинале: 89665-89669
+struct _SHARED_VIRTUAL_DISK_SUPPORT
+{
+
+  _SharedVirtualDiskSupportType SharedVirtualDiskSupport;
+  _SharedVirtualDiskHandleState HandleState;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_DRIVER_MAJORFUNCTION_RET
+// Полей: 2
+// Строки в оригинале: 313269-313273
+struct _PERFINFO_DRIVER_MAJORFUNCTION_RET
+{
+
+  void *Irp;
+  unsigned int UniqMatchId;
+
+};

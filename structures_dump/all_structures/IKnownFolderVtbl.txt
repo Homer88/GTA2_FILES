@@ -1,0 +1,20 @@
+// Структура: IKnownFolderVtbl
+// Полей: 12
+// Строки в оригинале: 36345-36359
+struct IKnownFolderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IKnownFolder *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IKnownFolder *This);
+  ULONG (__stdcall *Release)(IKnownFolder *This);
+  HRESULT (__stdcall *GetId)(IKnownFolder *This, KNOWNFOLDERID *pkfid);
+  HRESULT (__stdcall *GetCategory)(IKnownFolder *This, KF_CATEGORY *pCategory);
+  HRESULT (__stdcall *GetShellItem)(IKnownFolder *This, DWORD dwFlags, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetPath)(IKnownFolder *This, DWORD dwFlags, LPWSTR *ppszPath);
+  HRESULT (__stdcall *SetPath)(IKnownFolder *This, DWORD dwFlags, LPCWSTR pszPath);
+  HRESULT (__stdcall *GetIDList)(IKnownFolder *This, DWORD dwFlags, LPITEMIDLIST *ppidl);
+  HRESULT (__stdcall *GetFolderType)(IKnownFolder *This, FOLDERTYPEID *pftid);
+  HRESULT (__stdcall *GetRedirectionCapabilities)(IKnownFolder *This, KF_REDIRECTION_CAPABILITIES *pCapabilities);
+  HRESULT (__stdcall *GetFolderDefinition)(IKnownFolder *This, KNOWNFOLDER_DEFINITION *pKFD);
+
+};

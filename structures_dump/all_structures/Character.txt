@@ -1,0 +1,16 @@
+// Структура: Character
+// Полей: 8
+// Строки в оригинале: 7923-7933
+struct Character
+{
+
+  unsigned __int16 field_0;
+  unsigned __int8 dummy_chars;
+  char field_3;
+  char field_4;
+  char field_5;
+  char Num_peds_on_screen;
+  bool Bunt;
+  SpriteS1 *SpriteS1;
+
+};

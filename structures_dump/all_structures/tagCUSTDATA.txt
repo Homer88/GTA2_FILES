@@ -1,0 +1,10 @@
+// Структура: tagCUSTDATA
+// Полей: 2
+// Строки в оригинале: 29889-29893
+struct tagCUSTDATA
+{
+
+  DWORD cCustData;
+  LPCUSTDATAITEM prgCustData;
+
+};

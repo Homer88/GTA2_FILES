@@ -1,0 +1,11 @@
+// Структура: _CERT_BASIC_CONSTRAINTS2_INFO
+// Полей: 3
+// Строки в оригинале: 102579-102584
+struct _CERT_BASIC_CONSTRAINTS2_INFO
+{
+
+  int fCA;
+  int fPathLenConstraint;
+  unsigned int dwPathLenConstraint;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IInitializeWithItem
+// Полей: 1
+// Строки в оригинале: 39540-39543
+struct IInitializeWithItem
+{
+
+  struct IInitializeWithItemVtbl *lpVtbl;
+
+};

@@ -1,0 +1,17 @@
+// Структура: _POOLED_USAGE_AND_LIMITS
+// Полей: 9
+// Строки в оригинале: 109743-109754
+struct _POOLED_USAGE_AND_LIMITS
+{
+
+  unsigned int PeakPagedPoolUsage;
+  unsigned int PagedPoolUsage;
+  unsigned int PagedPoolLimit;
+  unsigned int PeakNonPagedPoolUsage;
+  unsigned int NonPagedPoolUsage;
+  unsigned int NonPagedPoolLimit;
+  unsigned int PeakPagefileUsage;
+  unsigned int PagefileUsage;
+  unsigned int PagefileLimit;
+
+};

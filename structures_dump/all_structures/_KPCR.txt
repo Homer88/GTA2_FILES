@@ -1,0 +1,35 @@
+// Структура: _KPCR
+// Полей: 27
+// Строки в оригинале: 14040-14069
+struct _KPCR
+{
+
+  $3FCAB7C3FE49FF9F2519C30F1A2F2AA3 ___u0;
+  _KPCR *SelfPcr;
+  _KPRCB *Prcb;
+  unsigned __int8 Irql;
+  unsigned int IRR;
+  unsigned int IrrActive;
+  unsigned int IDR;
+  void *KdVersionBlock;
+  _KIDTENTRY *IDT;
+  _KGDTENTRY *GDT;
+  _KTSS *TSS;
+  unsigned __int16 MajorVersion;
+  unsigned __int16 MinorVersion;
+  unsigned int SetMember;
+  unsigned int StallScaleFactor;
+  unsigned __int8 SpareUnused;
+  unsigned __int8 Number;
+  unsigned __int8 Spare0;
+  unsigned __int8 SecondLevelCacheAssociativity;
+  unsigned int VdmAlert;
+  unsigned int KernelReserved[14];
+  unsigned int SecondLevelCacheSize;
+  unsigned int HalReserved[16];
+  unsigned int InterruptMode;
+  unsigned __int8 Spare1;
+  unsigned int KernelReserved2[17];
+  _KPRCB PrcbData;
+
+};

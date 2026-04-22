@@ -1,0 +1,13 @@
+// Структура: _CERT_SELECT_CHAIN_PARA
+// Полей: 5
+// Строки в оригинале: 80923-80930
+struct _CERT_SELECT_CHAIN_PARA
+{
+
+  void *hChainEngine;
+  _FILETIME *pTime;
+  void *hAdditionalStore;
+  _CERT_CHAIN_PARA *pChainPara;
+  unsigned int dwFlags;
+
+};

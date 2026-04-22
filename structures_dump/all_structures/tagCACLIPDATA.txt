@@ -1,0 +1,10 @@
+// Структура: tagCACLIPDATA
+// Полей: 2
+// Строки в оригинале: 31670-31674
+struct tagCACLIPDATA
+{
+
+  ULONG cElems;
+  CLIPDATA *pElems;
+
+};

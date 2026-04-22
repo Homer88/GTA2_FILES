@@ -1,0 +1,9 @@
+// Структура: DDiscFormat2DataEvents
+// Полей: 1
+// Строки в оригинале: 37567-37570
+struct DDiscFormat2DataEvents
+{
+
+  struct DDiscFormat2DataEventsVtbl *lpVtbl;
+
+};

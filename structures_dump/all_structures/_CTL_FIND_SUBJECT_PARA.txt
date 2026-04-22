@@ -1,0 +1,12 @@
+// Структура: _CTL_FIND_SUBJECT_PARA
+// Полей: 4
+// Строки в оригинале: 106251-106257
+struct _CTL_FIND_SUBJECT_PARA
+{
+
+  unsigned int cbSize;
+  _CTL_FIND_USAGE_PARA *pUsagePara;
+  unsigned int dwSubjectType;
+  void *pvSubject;
+
+};

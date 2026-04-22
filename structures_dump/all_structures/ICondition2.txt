@@ -1,0 +1,9 @@
+// Структура: ICondition2
+// Полей: 1
+// Строки в оригинале: 34274-34277
+struct ICondition2
+{
+
+  struct ICondition2Vtbl *lpVtbl;
+
+};

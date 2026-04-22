@@ -1,0 +1,19 @@
+// Структура: IOmHistoryVtbl
+// Полей: 11
+// Строки в оригинале: 38742-38755
+struct IOmHistoryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOmHistory *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOmHistory *This);
+  ULONG (__stdcall *Release)(IOmHistory *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IOmHistory *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IOmHistory *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IOmHistory *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IOmHistory *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_length)(IOmHistory *This, __int16 *p);
+  HRESULT (__stdcall *back)(IOmHistory *This, VARIANT *pvargdistance);
+  HRESULT (__stdcall *forward)(IOmHistory *This, VARIANT *pvargdistance);
+  HRESULT (__stdcall *go)(IOmHistory *This, VARIANT *pvargdistance);
+
+};

@@ -1,0 +1,9 @@
+// Структура: tagWNODE_EVENT_ITEM
+// Полей: 1
+// Строки в оригинале: 312041-312044
+struct tagWNODE_EVENT_ITEM
+{
+
+  _WNODE_HEADER WnodeHeader;
+
+};

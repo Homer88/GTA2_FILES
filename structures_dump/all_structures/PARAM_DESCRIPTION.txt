@@ -1,0 +1,11 @@
+// Структура: PARAM_DESCRIPTION
+// Полей: 3
+// Строки в оригинале: 120450-120455
+struct PARAM_DESCRIPTION
+{
+
+  PARAM_ATTRIBUTES ParamAttr;
+  unsigned __int16 StackOffset;
+  $7F59B631D53DE31488427B921CCE201D ___u2;
+
+};

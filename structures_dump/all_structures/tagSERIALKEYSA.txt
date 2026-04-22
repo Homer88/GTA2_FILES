@@ -1,0 +1,15 @@
+// Структура: tagSERIALKEYSA
+// Полей: 7
+// Строки в оригинале: 100518-100527
+struct tagSERIALKEYSA
+{
+
+  unsigned int cbSize;
+  unsigned int dwFlags;
+  char *lpszActivePort;
+  char *lpszPort;
+  unsigned int iBaudRate;
+  unsigned int iPortState;
+  unsigned int iActive;
+
+};

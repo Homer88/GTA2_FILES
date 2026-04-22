@@ -1,0 +1,10 @@
+// Структура: _PO_SPR_ACTIVE_SESSION_DATA
+// Полей: 2
+// Строки в оригинале: 96706-96710
+struct _PO_SPR_ACTIVE_SESSION_DATA
+{
+
+  unsigned __int8 Start;
+  _GUID ActiveSessionGuid;
+
+};

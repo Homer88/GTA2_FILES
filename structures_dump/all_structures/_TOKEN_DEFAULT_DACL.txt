@@ -1,0 +1,9 @@
+// Структура: _TOKEN_DEFAULT_DACL
+// Полей: 1
+// Строки в оригинале: 78086-78089
+struct _TOKEN_DEFAULT_DACL
+{
+
+  _ACL *DefaultDacl;
+
+};

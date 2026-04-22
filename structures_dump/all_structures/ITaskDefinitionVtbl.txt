@@ -1,0 +1,29 @@
+// Структура: ITaskDefinitionVtbl
+// Полей: 21
+// Строки в оригинале: 44585-44608
+struct ITaskDefinitionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITaskDefinition *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITaskDefinition *This);
+  ULONG (__stdcall *Release)(ITaskDefinition *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(ITaskDefinition *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(ITaskDefinition *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(ITaskDefinition *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(ITaskDefinition *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_RegistrationInfo)(ITaskDefinition *This, IRegistrationInfo **ppRegistrationInfo);
+  HRESULT (__stdcall *put_RegistrationInfo)(ITaskDefinition *This, IRegistrationInfo *pRegistrationInfo);
+  HRESULT (__stdcall *get_Triggers)(ITaskDefinition *This, ITriggerCollection **ppTriggers);
+  HRESULT (__stdcall *put_Triggers)(ITaskDefinition *This, ITriggerCollection *pTriggers);
+  HRESULT (__stdcall *get_Settings)(ITaskDefinition *This, ITaskSettings **ppSettings);
+  HRESULT (__stdcall *put_Settings)(ITaskDefinition *This, ITaskSettings *pSettings);
+  HRESULT (__stdcall *get_Data)(ITaskDefinition *This, BSTR *pData);
+  HRESULT (__stdcall *put_Data)(ITaskDefinition *This, BSTR data);
+  HRESULT (__stdcall *get_Principal)(ITaskDefinition *This, IPrincipal **ppPrincipal);
+  HRESULT (__stdcall *put_Principal)(ITaskDefinition *This, IPrincipal *pPrincipal);
+  HRESULT (__stdcall *get_Actions)(ITaskDefinition *This, IActionCollection **ppActions);
+  HRESULT (__stdcall *put_Actions)(ITaskDefinition *This, IActionCollection *pActions);
+  HRESULT (__stdcall *get_XmlText)(ITaskDefinition *This, BSTR *pXml);
+  HRESULT (__stdcall *put_XmlText)(ITaskDefinition *This, BSTR xml);
+
+};

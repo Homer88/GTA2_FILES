@@ -1,0 +1,10 @@
+// Структура: _FILE_QUERY_STORAGE_RESERVE_ID_INFORMATION_EX
+// Полей: 2
+// Строки в оригинале: 103454-103458
+struct _FILE_QUERY_STORAGE_RESERVE_ID_INFORMATION_EX
+{
+
+  _STORAGE_RESERVE_ID StorageReserveId;
+  __int64 SpaceUsed;
+
+};

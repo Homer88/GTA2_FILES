@@ -1,0 +1,12 @@
+// Структура: _RTL_FEATURE_USAGE_SUBSCRIPTION_DETAILS
+// Полей: 4
+// Строки в оригинале: 83077-83083
+struct _RTL_FEATURE_USAGE_SUBSCRIPTION_DETAILS
+{
+
+  unsigned int FeatureId;
+  unsigned __int16 ReportingKind;
+  unsigned __int16 ReportingOptions;
+  _RTL_FEATURE_USAGE_SUBSCRIPTION_TARGET ReportingTarget;
+
+};

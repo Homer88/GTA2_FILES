@@ -1,0 +1,11 @@
+// Structure: tagRECT
+// Lines: 2003 - 2009
+// Fields: 5
+
+struct tagRECT
+{
+  LONG left;
+  LONG top;
+  LONG right;
+  LONG bottom;
+};

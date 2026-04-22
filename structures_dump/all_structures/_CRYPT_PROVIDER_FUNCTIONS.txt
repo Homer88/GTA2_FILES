@@ -1,0 +1,24 @@
+// Структура: _CRYPT_PROVIDER_FUNCTIONS
+// Полей: 16
+// Строки в оригинале: 121967-121985
+struct _CRYPT_PROVIDER_FUNCTIONS
+{
+
+  unsigned int cbStruct;
+  void *(__stdcall *pfnAlloc)(unsigned int);
+  void (__stdcall *pfnFree)(void *);
+  int (__stdcall *pfnAddStore2Chain)(_CRYPT_PROVIDER_DATA *, void *);
+  int (__stdcall *pfnAddSgnr2Chain)(_CRYPT_PROVIDER_DATA *, int, unsigned int, _CRYPT_PROVIDER_SGNR *);
+  int (__stdcall *pfnAddCert2Chain)(_CRYPT_PROVIDER_DATA *, unsigned int, int, unsigned int, const _CERT_CONTEXT *);
+  int (__stdcall *pfnAddPrivData2Chain)(_CRYPT_PROVIDER_DATA *, _CRYPT_PROVIDER_PRIVDATA *);
+  HRESULT (__stdcall *pfnInitialize)(_CRYPT_PROVIDER_DATA *);
+  HRESULT (__stdcall *pfnObjectTrust)(_CRYPT_PROVIDER_DATA *);
+  HRESULT (__stdcall *pfnSignatureTrust)(_CRYPT_PROVIDER_DATA *);
+  HRESULT (__stdcall *pfnCertificateTrust)(_CRYPT_PROVIDER_DATA *);
+  HRESULT (__stdcall *pfnFinalPolicy)(_CRYPT_PROVIDER_DATA *);
+  int (__stdcall *pfnCertCheckPolicy)(_CRYPT_PROVIDER_DATA *, unsigned int, int, unsigned int);
+  HRESULT (__stdcall *pfnTestFinalPolicy)(_CRYPT_PROVIDER_DATA *);
+  _CRYPT_PROVUI_FUNCS *psUIpfns;
+  HRESULT (__stdcall *pfnCleanupPolicy)(_CRYPT_PROVIDER_DATA *);
+
+};

@@ -1,0 +1,13 @@
+// Структура: _FILE_MAILSLOT_QUERY_INFORMATION
+// Полей: 5
+// Строки в оригинале: 99296-99303
+struct _FILE_MAILSLOT_QUERY_INFORMATION
+{
+
+  unsigned int MaximumMessageSize;
+  unsigned int MailslotQuota;
+  unsigned int NextMessageSize;
+  unsigned int MessagesAvailable;
+  _LARGE_INTEGER ReadTimeout;
+
+};

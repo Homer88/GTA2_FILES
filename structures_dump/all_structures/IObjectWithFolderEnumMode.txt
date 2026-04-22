@@ -1,0 +1,9 @@
+// Структура: IObjectWithFolderEnumMode
+// Полей: 1
+// Строки в оригинале: 34189-34192
+struct IObjectWithFolderEnumMode
+{
+
+  struct IObjectWithFolderEnumModeVtbl *lpVtbl;
+
+};

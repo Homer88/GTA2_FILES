@@ -1,0 +1,14 @@
+// Структура: _MINIDUMP_FUNCTION_TABLE_STREAM
+// Полей: 6
+// Строки в оригинале: 122641-122649
+struct _MINIDUMP_FUNCTION_TABLE_STREAM
+{
+
+  unsigned int SizeOfHeader;
+  unsigned int SizeOfDescriptor;
+  unsigned int SizeOfNativeDescriptor;
+  unsigned int SizeOfFunctionEntry;
+  unsigned int NumberOfDescriptors;
+  unsigned int SizeOfAlignPad;
+
+};

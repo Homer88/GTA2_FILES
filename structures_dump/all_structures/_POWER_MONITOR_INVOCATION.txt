@@ -1,0 +1,10 @@
+// Структура: _POWER_MONITOR_INVOCATION
+// Полей: 2
+// Строки в оригинале: 87623-87627
+struct _POWER_MONITOR_INVOCATION
+{
+
+  unsigned __int8 Console;
+  POWER_MONITOR_REQUEST_REASON RequestReason;
+
+};

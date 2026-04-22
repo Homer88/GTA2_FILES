@@ -1,0 +1,15 @@
+// Структура: _DEVICE_MAP
+// Полей: 7
+// Строки в оригинале: 17823-17832
+struct _DEVICE_MAP
+{
+
+  _OBJECT_DIRECTORY *DosDevicesDirectory;
+  _OBJECT_DIRECTORY *GlobalDosDevicesDirectory;
+  void *DosDevicesDirectoryHandle;
+  volatile int ReferenceCount;
+  unsigned int DriveMap;
+  unsigned __int8 DriveType[32];
+  _EJOB *ServerSilo;
+
+};

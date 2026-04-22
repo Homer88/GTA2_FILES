@@ -1,0 +1,15 @@
+// Структура: _FILE_FS_SECTOR_SIZE_INFORMATION
+// Полей: 7
+// Строки в оригинале: 111610-111619
+struct _FILE_FS_SECTOR_SIZE_INFORMATION
+{
+
+  unsigned int LogicalBytesPerSector;
+  unsigned int PhysicalBytesPerSectorForAtomicity;
+  unsigned int PhysicalBytesPerSectorForPerformance;
+  unsigned int FileSystemEffectivePhysicalBytesPerSectorForAtomicity;
+  unsigned int Flags;
+  unsigned int ByteOffsetForSectorAlignment;
+  unsigned int ByteOffsetForPartitionAlignment;
+
+};

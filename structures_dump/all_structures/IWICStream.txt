@@ -1,0 +1,9 @@
+// Структура: IWICStream
+// Полей: 1
+// Строки в оригинале: 41878-41881
+struct IWICStream
+{
+
+  struct IWICStreamVtbl *lpVtbl;
+
+};

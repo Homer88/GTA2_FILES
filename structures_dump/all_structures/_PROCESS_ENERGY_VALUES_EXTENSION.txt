@@ -1,0 +1,12 @@
+// Структура: _PROCESS_ENERGY_VALUES_EXTENSION
+// Полей: 4
+// Строки в оригинале: 17312-17318
+struct _PROCESS_ENERGY_VALUES_EXTENSION
+{
+
+  $D90DE4F2D7F04D92C583AF08C8CFAEF3 ___u0;
+  $50AEEE7B4933D1311720818608C75A26 ___u1;
+  unsigned int KeyboardInput;
+  unsigned int MouseInput;
+
+};

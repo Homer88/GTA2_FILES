@@ -1,0 +1,17 @@
+// Структура: IOleAdviseHolderVtbl
+// Полей: 9
+// Строки в оригинале: 26975-26986
+struct IOleAdviseHolderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleAdviseHolder *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleAdviseHolder *This);
+  ULONG (__stdcall *Release)(IOleAdviseHolder *This);
+  HRESULT (__stdcall *Advise)(IOleAdviseHolder *This, IAdviseSink *pAdvise, DWORD *pdwConnection);
+  HRESULT (__stdcall *Unadvise)(IOleAdviseHolder *This, DWORD dwConnection);
+  HRESULT (__stdcall *EnumAdvise)(IOleAdviseHolder *This, IEnumSTATDATA **ppenumAdvise);
+  HRESULT (__stdcall *SendOnRename)(IOleAdviseHolder *This, IMoniker *pmk);
+  HRESULT (__stdcall *SendOnSave)(IOleAdviseHolder *This);
+  HRESULT (__stdcall *SendOnClose)(IOleAdviseHolder *This);
+
+};

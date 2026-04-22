@@ -1,0 +1,16 @@
+// Структура: NDR_CONTEXT_HANDLE_FLAGS
+// Полей: 8
+// Строки в оригинале: 263636-263646
+struct NDR_CONTEXT_HANDLE_FLAGS
+{
+
+  unsigned __int8 CannotBeNull : 1;
+  unsigned __int8 Serialize : 1;
+  unsigned __int8 NoSerialize : 1;
+  unsigned __int8 IsStrict : 1;
+  unsigned __int8 IsReturn : 1;
+  unsigned __int8 IsOut : 1;
+  unsigned __int8 IsIn : 1;
+  unsigned __int8 IsViaPtr : 1;
+
+};

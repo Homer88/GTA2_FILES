@@ -1,0 +1,11 @@
+// Структура: tagEMRCREATEBRUSHINDIRECT
+// Полей: 3
+// Строки в оригинале: 105000-105005
+struct tagEMRCREATEBRUSHINDIRECT
+{
+
+  tagEMR emr;
+  unsigned int ihBrush;
+  tagLOGBRUSH32 lb;
+
+};

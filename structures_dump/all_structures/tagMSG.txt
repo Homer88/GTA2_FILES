@@ -1,0 +1,14 @@
+// Структура: tagMSG
+// Полей: 6
+// Строки в оригинале: 2115-2123
+struct tagMSG
+{
+
+  HWND hwnd;
+  UINT message;
+  WPARAM style;
+  LPARAM lParam;
+  DWORD time;
+  POINT pt;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _BCRYPT_DH_PARAMETER_HEADER
+// Полей: 3
+// Строки в оригинале: 102158-102163
+struct _BCRYPT_DH_PARAMETER_HEADER
+{
+
+  unsigned int cbLength;
+  unsigned int dwMagic;
+  unsigned int cbKeyLength;
+
+};

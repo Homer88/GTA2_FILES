@@ -1,0 +1,10 @@
+// Структура: _CLIENT_ID
+// Полей: 2
+// Строки в оригинале: 2457-2461
+struct _CLIENT_ID
+{
+
+  HANDLE UniqueProcess;
+  HANDLE UniqueThread;
+
+};

@@ -1,0 +1,15 @@
+// Структура: _STATURL
+// Полей: 7
+// Строки в оригинале: 39749-39758
+struct _STATURL
+{
+
+  DWORD cbSize;
+  LPWSTR pwcsUrl;
+  LPWSTR pwcsTitle;
+  FILETIME ftLastVisited;
+  FILETIME ftLastUpdated;
+  FILETIME ftExpires;
+  DWORD dwFlags;
+
+};

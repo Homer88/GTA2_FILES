@@ -1,0 +1,65 @@
+// Структура: IFileSystemImageVtbl
+// Полей: 57
+// Строки в оригинале: 41134-41193
+struct IFileSystemImageVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFileSystemImage *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFileSystemImage *This);
+  ULONG (__stdcall *Release)(IFileSystemImage *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IFileSystemImage *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IFileSystemImage *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IFileSystemImage *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IFileSystemImage *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Root)(IFileSystemImage *This, IFsiDirectoryItem **pVal);
+  HRESULT (__stdcall *get_SessionStartBlock)(IFileSystemImage *This, LONG *pVal);
+  HRESULT (__stdcall *put_SessionStartBlock)(IFileSystemImage *This, LONG newVal);
+  HRESULT (__stdcall *get_FreeMediaBlocks)(IFileSystemImage *This, LONG *pVal);
+  HRESULT (__stdcall *put_FreeMediaBlocks)(IFileSystemImage *This, LONG newVal);
+  HRESULT (__stdcall *SetMaxMediaBlocksFromDevice)(IFileSystemImage *This, IDiscRecorder2 *discRecorder);
+  HRESULT (__stdcall *get_UsedBlocks)(IFileSystemImage *This, LONG *pVal);
+  HRESULT (__stdcall *get_VolumeName)(IFileSystemImage *This, BSTR *pVal);
+  HRESULT (__stdcall *put_VolumeName)(IFileSystemImage *This, BSTR newVal);
+  HRESULT (__stdcall *get_ImportedVolumeName)(IFileSystemImage *This, BSTR *pVal);
+  HRESULT (__stdcall *get_BootImageOptions)(IFileSystemImage *This, IBootOptions **pVal);
+  HRESULT (__stdcall *put_BootImageOptions)(IFileSystemImage *This, IBootOptions *newVal);
+  HRESULT (__stdcall *get_FileCount)(IFileSystemImage *This, LONG *pVal);
+  HRESULT (__stdcall *get_DirectoryCount)(IFileSystemImage *This, LONG *pVal);
+  HRESULT (__stdcall *get_WorkingDirectory)(IFileSystemImage *This, BSTR *pVal);
+  HRESULT (__stdcall *put_WorkingDirectory)(IFileSystemImage *This, BSTR newVal);
+  HRESULT (__stdcall *get_ChangePoint)(IFileSystemImage *This, LONG *pVal);
+  HRESULT (__stdcall *get_StrictFileSystemCompliance)(IFileSystemImage *This, VARIANT_BOOL *pVal);
+  HRESULT (__stdcall *put_StrictFileSystemCompliance)(IFileSystemImage *This, VARIANT_BOOL newVal);
+  HRESULT (__stdcall *get_UseRestrictedCharacterSet)(IFileSystemImage *This, VARIANT_BOOL *pVal);
+  HRESULT (__stdcall *put_UseRestrictedCharacterSet)(IFileSystemImage *This, VARIANT_BOOL newVal);
+  HRESULT (__stdcall *get_FileSystemsToCreate)(IFileSystemImage *This, FsiFileSystems *pVal);
+  HRESULT (__stdcall *put_FileSystemsToCreate)(IFileSystemImage *This, FsiFileSystems newVal);
+  HRESULT (__stdcall *get_FileSystemsSupported)(IFileSystemImage *This, FsiFileSystems *pVal);
+  HRESULT (__stdcall *put_UDFRevision)(IFileSystemImage *This, LONG newVal);
+  HRESULT (__stdcall *get_UDFRevision)(IFileSystemImage *This, LONG *pVal);
+  HRESULT (__stdcall *get_UDFRevisionsSupported)(IFileSystemImage *This, SAFEARRAY **pVal);
+  HRESULT (__stdcall *ChooseImageDefaults)(IFileSystemImage *This, IDiscRecorder2 *discRecorder);
+  HRESULT (__stdcall *ChooseImageDefaultsForMediaType)(IFileSystemImage *This, IMAPI_MEDIA_PHYSICAL_TYPE value);
+  HRESULT (__stdcall *put_ISO9660InterchangeLevel)(IFileSystemImage *This, LONG newVal);
+  HRESULT (__stdcall *get_ISO9660InterchangeLevel)(IFileSystemImage *This, LONG *pVal);
+  HRESULT (__stdcall *get_ISO9660InterchangeLevelsSupported)(IFileSystemImage *This, SAFEARRAY **pVal);
+  HRESULT (__stdcall *CreateResultImage)(IFileSystemImage *This, IFileSystemImageResult **resultStream);
+  HRESULT (__stdcall *Exists)(IFileSystemImage *This, BSTR fullPath, FsiItemType *itemType);
+  HRESULT (__stdcall *CalculateDiscIdentifier)(IFileSystemImage *This, BSTR *discIdentifier);
+  HRESULT (__stdcall *IdentifyFileSystemsOnDisc)(IFileSystemImage *This, IDiscRecorder2 *discRecorder, FsiFileSystems *fileSystems);
+  HRESULT (__stdcall *GetDefaultFileSystemForImport)(IFileSystemImage *This, FsiFileSystems fileSystems, FsiFileSystems *importDefault);
+  HRESULT (__stdcall *ImportFileSystem)(IFileSystemImage *This, FsiFileSystems *importedFileSystem);
+  HRESULT (__stdcall *ImportSpecificFileSystem)(IFileSystemImage *This, FsiFileSystems fileSystemToUse);
+  HRESULT (__stdcall *RollbackToChangePoint)(IFileSystemImage *This, LONG changePoint);
+  HRESULT (__stdcall *LockInChangePoint)(IFileSystemImage *This);
+  HRESULT (__stdcall *CreateDirectoryItem)(IFileSystemImage *This, BSTR name, IFsiDirectoryItem **newItem);
+  HRESULT (__stdcall *CreateFileItem)(IFileSystemImage *This, BSTR name, IFsiFileItem **newItem);
+  HRESULT (__stdcall *get_VolumeNameUDF)(IFileSystemImage *This, BSTR *pVal);
+  HRESULT (__stdcall *get_VolumeNameJoliet)(IFileSystemImage *This, BSTR *pVal);
+  HRESULT (__stdcall *get_VolumeNameISO9660)(IFileSystemImage *This, BSTR *pVal);
+  HRESULT (__stdcall *get_StageFiles)(IFileSystemImage *This, VARIANT_BOOL *pVal);
+  HRESULT (__stdcall *put_StageFiles)(IFileSystemImage *This, VARIANT_BOOL newVal);
+  HRESULT (__stdcall *get_MultisessionInterfaces)(IFileSystemImage *This, SAFEARRAY **pVal);
+  HRESULT (__stdcall *put_MultisessionInterfaces)(IFileSystemImage *This, SAFEARRAY *newVal);
+
+};

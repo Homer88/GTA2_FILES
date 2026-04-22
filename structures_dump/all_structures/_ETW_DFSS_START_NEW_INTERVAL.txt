@@ -1,0 +1,13 @@
+// Структура: _ETW_DFSS_START_NEW_INTERVAL
+// Полей: 5
+// Строки в оригинале: 311287-311294
+struct _ETW_DFSS_START_NEW_INTERVAL
+{
+
+  unsigned int CurrentGeneration;
+  unsigned int SessionCount;
+  unsigned __int64 TotalCycleCredit;
+  unsigned __int64 TotalCyclesAccumulated;
+  _ETW_PER_SESSION_QUOTA SessionQuota[1];
+
+};

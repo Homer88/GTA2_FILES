@@ -1,0 +1,17 @@
+// Структура: tagCustomHeader
+// Полей: 9
+// Строки в оригинале: 194478-194489
+struct tagCustomHeader
+{
+
+  unsigned int totalSize;
+  unsigned int headerSize;
+  unsigned int cOpaqueData;
+  unsigned int destCtx;
+  unsigned int cIfs;
+  _GUID classInfoClsid;
+  _GUID *pclsid;
+  unsigned int *pSizes;
+  tagCustomOpaqueData *opaqueData;
+
+};

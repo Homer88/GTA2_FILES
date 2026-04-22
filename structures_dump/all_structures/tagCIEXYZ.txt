@@ -1,0 +1,11 @@
+// Структура: tagCIEXYZ
+// Полей: 3
+// Строки в оригинале: 87541-87546
+struct tagCIEXYZ
+{
+
+  int ciexyzX;
+  int ciexyzY;
+  int ciexyzZ;
+
+};

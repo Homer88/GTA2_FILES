@@ -1,0 +1,15 @@
+// Структура: _CERT_LOGOTYPE_IMAGE_INFO
+// Полей: 7
+// Строки в оригинале: 81942-81951
+struct _CERT_LOGOTYPE_IMAGE_INFO
+{
+
+  unsigned int dwLogotypeImageInfoChoice;
+  unsigned int dwFileSize;
+  unsigned int dwXSize;
+  unsigned int dwYSize;
+  unsigned int dwLogotypeImageResolutionChoice;
+  $3C8120B90EF6903C0B2E2DA025F6B029 ___u5;
+  wchar_t *pwszLanguage;
+
+};

@@ -1,0 +1,15 @@
+// Структура: AsyncIPipeByteVtbl
+// Полей: 7
+// Строки в оригинале: 351495-351504
+struct AsyncIPipeByteVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(AsyncIPipeByte *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(AsyncIPipeByte *This);
+  ULONG (__stdcall *Release)(AsyncIPipeByte *This);
+  HRESULT (__stdcall *Begin_Pull)(AsyncIPipeByte *This, ULONG cRequest);
+  HRESULT (__stdcall *Finish_Pull)(AsyncIPipeByte *This, BYTE *buf, ULONG *pcReturned);
+  HRESULT (__stdcall *Begin_Push)(AsyncIPipeByte *This, BYTE *buf, ULONG cSent);
+  HRESULT (__stdcall *Finish_Push)(AsyncIPipeByte *This);
+
+};

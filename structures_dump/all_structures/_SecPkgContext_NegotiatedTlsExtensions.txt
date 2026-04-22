@@ -1,0 +1,10 @@
+// Структура: _SecPkgContext_NegotiatedTlsExtensions
+// Полей: 2
+// Строки в оригинале: 325751-325755
+struct _SecPkgContext_NegotiatedTlsExtensions
+{
+
+  unsigned int ExtensionsCount;
+  wchar_t *Extensions;
+
+};

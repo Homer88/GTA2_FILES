@@ -1,0 +1,9 @@
+// Структура: _FILE_POSITION_INFORMATION
+// Полей: 1
+// Строки в оригинале: 94026-94029
+struct _FILE_POSITION_INFORMATION
+{
+
+  _LARGE_INTEGER CurrentByteOffset;
+
+};

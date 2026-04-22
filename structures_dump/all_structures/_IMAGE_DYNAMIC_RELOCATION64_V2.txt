@@ -1,0 +1,13 @@
+// Структура: _IMAGE_DYNAMIC_RELOCATION64_V2
+// Полей: 5
+// Строки в оригинале: 88176-88183
+struct _IMAGE_DYNAMIC_RELOCATION64_V2
+{
+
+  unsigned int HeaderSize;
+  unsigned int FixupInfoSize;
+  unsigned __int64 Symbol;
+  unsigned int SymbolGroup;
+  unsigned int Flags;
+
+};

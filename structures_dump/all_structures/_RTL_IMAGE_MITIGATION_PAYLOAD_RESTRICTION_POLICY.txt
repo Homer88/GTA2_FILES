@@ -1,0 +1,15 @@
+// Структура: _RTL_IMAGE_MITIGATION_PAYLOAD_RESTRICTION_POLICY
+// Полей: 7
+// Строки в оригинале: 79666-79675
+struct _RTL_IMAGE_MITIGATION_PAYLOAD_RESTRICTION_POLICY
+{
+
+  _RTL_IMAGE_MITIGATION_POLICY EnableExportAddressFilter;
+  _RTL_IMAGE_MITIGATION_POLICY EnableExportAddressFilterPlus;
+  _RTL_IMAGE_MITIGATION_POLICY EnableImportAddressFilter;
+  _RTL_IMAGE_MITIGATION_POLICY EnableRopStackPivot;
+  _RTL_IMAGE_MITIGATION_POLICY EnableRopCallerCheck;
+  _RTL_IMAGE_MITIGATION_POLICY EnableRopSimExec;
+  wchar_t EafPlusModuleList[512];
+
+};

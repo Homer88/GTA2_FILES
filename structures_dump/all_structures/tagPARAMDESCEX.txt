@@ -1,0 +1,10 @@
+// Структура: tagPARAMDESCEX
+// Полей: 2
+// Строки в оригинале: 23826-23830
+struct tagPARAMDESCEX
+{
+
+  ULONG cBytes;
+  VARIANTARG varDefaultValue;
+
+};

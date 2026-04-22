@@ -1,0 +1,15 @@
+// Структура: _COAUTHINFO
+// Полей: 7
+// Строки в оригинале: 78737-78746
+struct _COAUTHINFO
+{
+
+  unsigned int dwAuthnSvc;
+  unsigned int dwAuthzSvc;
+  wchar_t *pwszServerPrincName;
+  unsigned int dwAuthnLevel;
+  unsigned int dwImpersonationLevel;
+  _COAUTHIDENTITY *pAuthIdentityData;
+  unsigned int dwCapabilities;
+
+};

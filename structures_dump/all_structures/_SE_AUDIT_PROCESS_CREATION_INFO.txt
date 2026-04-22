@@ -1,0 +1,9 @@
+// Структура: _SE_AUDIT_PROCESS_CREATION_INFO
+// Полей: 1
+// Строки в оригинале: 17930-17933
+struct _SE_AUDIT_PROCESS_CREATION_INFO
+{
+
+  _OBJECT_NAME_INFORMATION *ImageFileName;
+
+};

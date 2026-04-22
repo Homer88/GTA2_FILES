@@ -1,0 +1,11 @@
+// Структура: _WIN_TRUST_SUBJECT_FILE_AND_DISPLAY
+// Полей: 3
+// Строки в оригинале: 123097-123102
+struct _WIN_TRUST_SUBJECT_FILE_AND_DISPLAY
+{
+
+  void *hFile;
+  const wchar_t *lpPath;
+  const wchar_t *lpDisplayName;
+
+};

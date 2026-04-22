@@ -1,0 +1,44 @@
+// Структура: _NDR_PROC_CONTEXT
+// Полей: 36
+// Строки в оригинале: 86207-86245
+struct _NDR_PROC_CONTEXT
+{
+
+  SYNTAX_TYPE CurrentSyntaxType;
+  $0ABEE43DE04AA7F6EDAC0D160A04F1DA ___u1;
+  const unsigned __int8 *pProcFormat;
+  unsigned int NumberParams;
+  void *Params;
+  unsigned __int8 *StartofStack;
+  unsigned __int8 HandleType;
+  unsigned __int8 CorrIncrement;
+  void *SavedGenericHandle;
+  const unsigned __int8 *pHandleFormatSave;
+  const unsigned __int8 *DceTypeFormatString;
+  unsigned __int32 IsAsync : 1;
+  unsigned __int32 IsObject : 1;
+  unsigned __int32 HasPipe : 1;
+  unsigned __int32 HasComplexReturn : 1;
+  unsigned __int32 NeedsResend : 1;
+  unsigned __int32 UseLocator : 1;
+  unsigned __int32 IsStubless : 1;
+  unsigned __int32 Reserved8 : 1;
+  unsigned __int32 Reservedleft : 8;
+  unsigned int FloatDoubleMask;
+  unsigned int ResendCount;
+  unsigned int RpcFlags;
+  unsigned int ExceptionFlag;
+  unsigned int StackSize;
+  _MIDL_SYNTAX_INFO *pSyntaxInfo;
+  unsigned int (__stdcall *pfnValidate)(void *, unsigned __int8 *, unsigned int);
+  void *ValidateCookie;
+  _SYNTAX_DISPATCH_TABLE SyntaxDispatch;
+  _NDR_PIPE_DESC *pPipeDesc;
+  NDR_POINTER_QUEUE_ELEMENT *pQueueFreeList;
+  struct NDR_MINICOMPUTE_QUEUE *pMiniComputeQueue;
+  struct NDR_MINICOMPUTE_QUEUE_ELEMENT *pConfQueueFreeList;
+  const unsigned __int8 *pFormatSupplement;
+  _GUID CurrentActivityID;
+  _NDR_ALLOCA_CONTEXT AllocateContext;
+
+};

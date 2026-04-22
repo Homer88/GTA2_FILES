@@ -1,0 +1,15 @@
+// Структура: INamedPropertyStoreVtbl
+// Полей: 7
+// Строки в оригинале: 35673-35682
+struct INamedPropertyStoreVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(INamedPropertyStore *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(INamedPropertyStore *This);
+  ULONG (__stdcall *Release)(INamedPropertyStore *This);
+  HRESULT (__stdcall *GetNamedValue)(INamedPropertyStore *This, LPCWSTR pszName, PROPVARIANT *ppropvar);
+  HRESULT (__stdcall *SetNamedValue)(INamedPropertyStore *This, LPCWSTR pszName, const PROPVARIANT *const propvar);
+  HRESULT (__stdcall *GetNameCount)(INamedPropertyStore *This, DWORD *pdwCount);
+  HRESULT (__stdcall *GetNameAt)(INamedPropertyStore *This, DWORD iProp, BSTR *pbstrName);
+
+};

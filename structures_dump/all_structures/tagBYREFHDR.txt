@@ -1,0 +1,10 @@
+// Структура: tagBYREFHDR
+// Полей: 2
+// Строки в оригинале: 193055-193059
+struct tagBYREFHDR
+{
+
+  unsigned int Reserved;
+  unsigned int ProcessId;
+
+};

@@ -1,0 +1,14 @@
+// Структура: _CERT_REVOCATION_STATUS
+// Полей: 6
+// Строки в оригинале: 107783-107791
+struct _CERT_REVOCATION_STATUS
+{
+
+  unsigned int cbSize;
+  unsigned int dwIndex;
+  unsigned int dwError;
+  unsigned int dwReason;
+  int fHasFreshnessTime;
+  unsigned int dwFreshnessTime;
+
+};

@@ -1,0 +1,14 @@
+// Структура: DIEFFECTINFOA
+// Полей: 6
+// Строки в оригинале: 29021-29029
+struct DIEFFECTINFOA
+{
+
+  DWORD dwSize;
+  GUID guid;
+  DWORD dwEffType;
+  DWORD dwStaticParams;
+  DWORD dwDynamicParams;
+  CHAR tszName[260];
+
+};

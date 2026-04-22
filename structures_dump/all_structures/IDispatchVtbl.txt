@@ -1,0 +1,15 @@
+// Структура: IDispatchVtbl
+// Полей: 7
+// Строки в оригинале: 22981-22990
+struct IDispatchVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDispatch *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDispatch *This);
+  ULONG (__stdcall *Release)(IDispatch *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IDispatch *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IDispatch *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IDispatch *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IDispatch *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+
+};

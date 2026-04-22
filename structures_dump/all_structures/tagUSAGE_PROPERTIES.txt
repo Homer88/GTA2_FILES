@@ -1,0 +1,18 @@
+// Структура: tagUSAGE_PROPERTIES
+// Полей: 10
+// Строки в оригинале: 87561-87573
+struct tagUSAGE_PROPERTIES
+{
+
+  unsigned __int16 level;
+  unsigned __int16 page;
+  unsigned __int16 usage;
+  int logicalMinimum;
+  int logicalMaximum;
+  unsigned __int16 unit;
+  unsigned __int16 exponent;
+  unsigned __int8 count;
+  int physicalMinimum;
+  int physicalMaximum;
+
+};

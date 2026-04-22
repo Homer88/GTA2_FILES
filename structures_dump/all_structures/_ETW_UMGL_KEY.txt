@@ -1,0 +1,10 @@
+// Структура: _ETW_UMGL_KEY
+// Полей: 2
+// Строки в оригинале: 309000-309004
+struct _ETW_UMGL_KEY
+{
+
+  unsigned __int8 LoggerId;
+  unsigned __int8 Flags;
+
+};

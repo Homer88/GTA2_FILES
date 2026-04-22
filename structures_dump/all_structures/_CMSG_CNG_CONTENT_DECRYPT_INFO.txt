@@ -1,0 +1,17 @@
+// Структура: _CMSG_CNG_CONTENT_DECRYPT_INFO
+// Полей: 9
+// Строки в оригинале: 89141-89152
+struct _CMSG_CNG_CONTENT_DECRYPT_INFO
+{
+
+  unsigned int cbSize;
+  _CRYPT_ALGORITHM_IDENTIFIER ContentEncryptionAlgorithm;
+  void *(__stdcall *pfnAlloc)(unsigned int);
+  void (__stdcall *pfnFree)(void *);
+  unsigned int hNCryptKey;
+  unsigned __int8 *pbContentEncryptKey;
+  unsigned int cbContentEncryptKey;
+  void *hCNGContentEncryptKey;
+  unsigned __int8 *pbCNGContentEncryptKeyObject;
+
+};

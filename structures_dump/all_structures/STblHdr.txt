@@ -1,0 +1,12 @@
+// Структура: STblHdr
+// Полей: 4
+// Строки в оригинале: 60254-60260
+struct STblHdr
+{
+
+  unsigned int ulSize;
+  unsigned int cbLargest;
+  unsigned int OffsStart;
+  unsigned int OffsEnd;
+
+};

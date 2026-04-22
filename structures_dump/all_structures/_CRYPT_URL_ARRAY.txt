@@ -1,0 +1,10 @@
+// Структура: _CRYPT_URL_ARRAY
+// Полей: 2
+// Строки в оригинале: 100350-100354
+struct _CRYPT_URL_ARRAY
+{
+
+  unsigned int cUrl;
+  wchar_t **rgwszUrl;
+
+};

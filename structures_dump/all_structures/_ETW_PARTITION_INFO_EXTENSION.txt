@@ -1,0 +1,14 @@
+// Структура: _ETW_PARTITION_INFO_EXTENSION
+// Полей: 6
+// Строки в оригинале: 310544-310552
+struct _ETW_PARTITION_INFO_EXTENSION
+{
+
+  unsigned __int16 EventVersion;
+  unsigned __int16 Reserved;
+  unsigned int PartitionType;
+  _LARGE_INTEGER QpcOffsetFromRoot;
+  _GUID PartitionId;
+  _GUID ParentId;
+
+};

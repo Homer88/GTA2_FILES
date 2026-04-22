@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_NUMA_INFORMATION
+// Полей: 3
+// Строки в оригинале: 86651-86656
+struct _SYSTEM_NUMA_INFORMATION
+{
+
+  unsigned int HighestNodeNumber;
+  unsigned int Reserved;
+  $4536B945F7AA22FF5AEEA5A0A5FCE59F ___u2;
+
+};

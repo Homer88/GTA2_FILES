@@ -1,0 +1,19 @@
+// Структура: _RTL_SMART_LBLOB_WRITING_CONTEXT
+// Полей: 11
+// Строки в оригинале: 147989-148002
+struct _RTL_SMART_LBLOB_WRITING_CONTEXT
+{
+
+  unsigned __int8 *CurrentEncodingPosition;
+  unsigned __int8 *EndEncodingPosition;
+  unsigned int BytesWrittenOrRequired;
+  unsigned int LongestLegalLength;
+  _LBLOB *BufferInUse;
+  _LBLOB *FixedSizeBuffer;
+  _LBLOB *DynamicBuffer;
+  _LBLOB **ReturnedBufferUsed;
+  int (__stdcall *ResizePolicy)(const _RTL_SMART_LBLOB_WRITING_CONTEXT *, unsigned int, unsigned int *);
+  void *Reserved1;
+  void *Reserved2;
+
+};

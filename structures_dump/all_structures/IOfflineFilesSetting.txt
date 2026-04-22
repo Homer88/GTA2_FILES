@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesSetting
+// Полей: 1
+// Строки в оригинале: 27344-27347
+struct IOfflineFilesSetting
+{
+
+  struct IOfflineFilesSettingVtbl *lpVtbl;
+
+};

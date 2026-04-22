@@ -1,0 +1,16 @@
+// Структура: _PPM_VETO_ENTRY
+// Полей: 8
+// Строки в оригинале: 15782-15792
+struct _PPM_VETO_ENTRY
+{
+
+  _LIST_ENTRY Link;
+  unsigned int VetoReason;
+  unsigned int ReferenceCount;
+  unsigned __int64 HitCount;
+  unsigned __int64 LastActivationTime;
+  unsigned __int64 TotalActiveTime;
+  unsigned __int64 CsActivationTime;
+  unsigned __int64 CsActiveTime;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _TERMINATION_PORT
+// Полей: 2
+// Строки в оригинале: 16239-16243
+struct _TERMINATION_PORT
+{
+
+  _TERMINATION_PORT *Next;
+  void *Port;
+
+};

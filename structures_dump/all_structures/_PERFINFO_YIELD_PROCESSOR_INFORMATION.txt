@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_YIELD_PROCESSOR_INFORMATION
+// Полей: 3
+// Строки в оригинале: 308635-308640
+struct _PERFINFO_YIELD_PROCESSOR_INFORMATION
+{
+
+  unsigned int YieldReason;
+  unsigned int DpcWatchdogCount;
+  unsigned int DpcTimeCount;
+
+};

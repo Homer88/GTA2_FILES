@@ -1,0 +1,10 @@
+// Структура: _HEAP_VAMGR_RANGE
+// Полей: 2
+// Строки в оригинале: 20454-20458
+struct _HEAP_VAMGR_RANGE
+{
+
+  $4F1261FA9E59497E9FBC79EED57C8D9B ___u0;
+  $C6A135CF9FE48B36B70A0896E8CB1E77 ___u1;
+
+};

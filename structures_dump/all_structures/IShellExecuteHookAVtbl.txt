@@ -1,0 +1,9 @@
+// Структура: IShellExecuteHookAVtbl
+// Полей: 1
+// Строки в оригинале: 39876-39879
+struct IShellExecuteHookAVtbl
+{
+
+  HRESULT (__stdcall *Execute)(IShellExecuteHookA *This, LPSHELLEXECUTEINFOA pei);
+
+};

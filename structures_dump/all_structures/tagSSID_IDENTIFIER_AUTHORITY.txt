@@ -1,0 +1,9 @@
+// Структура: tagSSID_IDENTIFIER_AUTHORITY
+// Полей: 1
+// Строки в оригинале: 273048-273051
+struct tagSSID_IDENTIFIER_AUTHORITY
+{
+
+  unsigned __int8 Value[6];
+
+};

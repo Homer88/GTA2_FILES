@@ -1,0 +1,9 @@
+// Структура: __x_ABI_CWindows_CDevices_CHaptics_CISimpleHapticsControllerFeedback
+// Полей: 1
+// Строки в оригинале: 351834-351837
+struct __x_ABI_CWindows_CDevices_CHaptics_CISimpleHapticsControllerFeedback
+{
+
+  struct __x_ABI_CWindows_CDevices_CHaptics_CISimpleHapticsControllerFeedbackVtbl *lpVtbl;
+
+};

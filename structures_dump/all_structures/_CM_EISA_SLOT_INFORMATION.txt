@@ -1,0 +1,16 @@
+// Структура: _CM_EISA_SLOT_INFORMATION
+// Полей: 8
+// Строки в оригинале: 105222-105232
+struct _CM_EISA_SLOT_INFORMATION
+{
+
+  unsigned __int8 ReturnCode;
+  unsigned __int8 ReturnFlags;
+  unsigned __int8 MajorRevision;
+  unsigned __int8 MinorRevision;
+  unsigned __int16 Checksum;
+  unsigned __int8 NumberFunctions;
+  unsigned __int8 FunctionInformation;
+  unsigned int CompressedId;
+
+};

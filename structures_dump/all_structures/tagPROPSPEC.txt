@@ -1,0 +1,14 @@
+// Структура: tagPROPSPEC
+// Полей: 6
+// Строки в оригинале: 37920-37928
+struct tagPROPSPEC
+{
+
+  ULONG ulKind;
+  #pragma pack(push, 8)
+  union
+  {
+    PROPID propid;
+    LPOLESTR lpwstr;
+  
+};

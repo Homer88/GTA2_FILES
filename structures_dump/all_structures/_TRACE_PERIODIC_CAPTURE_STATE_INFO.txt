@@ -1,0 +1,11 @@
+// Структура: _TRACE_PERIODIC_CAPTURE_STATE_INFO
+// Полей: 3
+// Строки в оригинале: 311297-311302
+struct _TRACE_PERIODIC_CAPTURE_STATE_INFO
+{
+
+  unsigned int CaptureStateFrequencyInSeconds;
+  unsigned __int16 ProviderCount;
+  unsigned __int16 Reserved;
+
+};

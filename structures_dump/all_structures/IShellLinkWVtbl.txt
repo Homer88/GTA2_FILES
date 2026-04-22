@@ -1,0 +1,29 @@
+// Структура: IShellLinkWVtbl
+// Полей: 21
+// Строки в оригинале: 33845-33868
+struct IShellLinkWVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellLinkW *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellLinkW *This);
+  ULONG (__stdcall *Release)(IShellLinkW *This);
+  HRESULT (__stdcall *GetPath)(IShellLinkW *This, LPWSTR pszFile, int cch, WIN32_FIND_DATAW *pfd, DWORD fFlags);
+  HRESULT (__stdcall *GetIDList)(IShellLinkW *This, LPITEMIDLIST *ppidl);
+  HRESULT (__stdcall *SetIDList)(IShellLinkW *This, LPCITEMIDLIST pidl);
+  HRESULT (__stdcall *GetDescription)(IShellLinkW *This, LPWSTR pszName, int cch);
+  HRESULT (__stdcall *SetDescription)(IShellLinkW *This, LPCWSTR pszName);
+  HRESULT (__stdcall *GetWorkingDirectory)(IShellLinkW *This, LPWSTR pszDir, int cch);
+  HRESULT (__stdcall *SetWorkingDirectory)(IShellLinkW *This, LPCWSTR pszDir);
+  HRESULT (__stdcall *GetArguments)(IShellLinkW *This, LPWSTR pszArgs, int cch);
+  HRESULT (__stdcall *SetArguments)(IShellLinkW *This, LPCWSTR pszArgs);
+  HRESULT (__stdcall *GetHotkey)(IShellLinkW *This, WORD *pwHotkey);
+  HRESULT (__stdcall *SetHotkey)(IShellLinkW *This, WORD wHotkey);
+  HRESULT (__stdcall *GetShowCmd)(IShellLinkW *This, int *piShowCmd);
+  HRESULT (__stdcall *SetShowCmd)(IShellLinkW *This, int iShowCmd);
+  HRESULT (__stdcall *GetIconLocation)(IShellLinkW *This, LPWSTR pszIconPath, int cch, int *piIcon);
+  HRESULT (__stdcall *SetIconLocation)(IShellLinkW *This, LPCWSTR pszIconPath, int iIcon);
+  HRESULT (__stdcall *SetRelativePath)(IShellLinkW *This, LPCWSTR pszPathRel, DWORD dwReserved);
+  HRESULT (__stdcall *Resolve)(IShellLinkW *This, HWND hwnd, DWORD fFlags);
+  HRESULT (__stdcall *SetPath)(IShellLinkW *This, LPCWSTR pszFile);
+
+};

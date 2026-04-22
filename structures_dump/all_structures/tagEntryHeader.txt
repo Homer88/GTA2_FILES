@@ -1,0 +1,13 @@
+// Структура: tagEntryHeader
+// Полей: 5
+// Строки в оригинале: 246156-246163
+struct tagEntryHeader
+{
+
+  unsigned int Signature;
+  unsigned int cbBuffer;
+  unsigned int cbSize;
+  int reserved;
+  _GUID policyID;
+
+};

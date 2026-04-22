@@ -1,0 +1,16 @@
+// Структура: IColumnManagerVtbl
+// Полей: 8
+// Строки в оригинале: 36815-36825
+struct IColumnManagerVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IColumnManager *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IColumnManager *This);
+  ULONG (__stdcall *Release)(IColumnManager *This);
+  HRESULT (__stdcall *SetColumnInfo)(IColumnManager *This, const PROPERTYKEY *const propkey, const CM_COLUMNINFO *pcmci);
+  HRESULT (__stdcall *GetColumnInfo)(IColumnManager *This, const PROPERTYKEY *const propkey, CM_COLUMNINFO *pcmci);
+  HRESULT (__stdcall *GetColumnCount)(IColumnManager *This, CM_ENUM_FLAGS dwFlags, UINT *puCount);
+  HRESULT (__stdcall *GetColumns)(IColumnManager *This, CM_ENUM_FLAGS dwFlags, PROPERTYKEY *rgkeyOrder, UINT cColumns);
+  HRESULT (__stdcall *SetColumns)(IColumnManager *This, const PROPERTYKEY *rgkeyOrder, UINT cVisible);
+
+};

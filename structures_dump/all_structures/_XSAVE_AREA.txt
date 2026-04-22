@@ -1,0 +1,10 @@
+// Структура: _XSAVE_AREA
+// Полей: 2
+// Строки в оригинале: 15219-15223
+struct _XSAVE_AREA
+{
+
+  _XSAVE_FORMAT LegacyState;
+  _XSAVE_AREA_HEADER Header;
+
+};

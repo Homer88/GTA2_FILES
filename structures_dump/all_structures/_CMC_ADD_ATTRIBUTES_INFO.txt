@@ -1,0 +1,13 @@
+// Структура: _CMC_ADD_ATTRIBUTES_INFO
+// Полей: 5
+// Строки в оригинале: 98366-98373
+struct _CMC_ADD_ATTRIBUTES_INFO
+{
+
+  unsigned int dwCmcDataReference;
+  unsigned int cCertReference;
+  unsigned int *rgdwCertReference;
+  unsigned int cAttribute;
+  _CRYPT_ATTRIBUTE *rgAttribute;
+
+};

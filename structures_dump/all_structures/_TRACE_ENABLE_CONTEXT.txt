@@ -1,0 +1,12 @@
+// Структура: _TRACE_ENABLE_CONTEXT
+// Полей: 4
+// Строки в оригинале: 312999-313005
+struct _TRACE_ENABLE_CONTEXT
+{
+
+  unsigned __int16 LoggerId;
+  unsigned __int8 Level;
+  unsigned __int8 InternalFlag;
+  unsigned int EnableFlags;
+
+};

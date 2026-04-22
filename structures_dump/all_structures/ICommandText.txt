@@ -1,0 +1,9 @@
+// Структура: ICommandText
+// Полей: 1
+// Строки в оригинале: 37319-37322
+struct ICommandText
+{
+
+  struct ICommandTextVtbl *lpVtbl;
+
+};

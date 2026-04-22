@@ -1,0 +1,14 @@
+// Структура: tagOLEMENU
+// Полей: 6
+// Строки в оригинале: 141052-141060
+struct tagOLEMENU
+{
+
+  unsigned __int16 wSignature;
+  unsigned int hwndFrame;
+  unsigned int hmenuCombined;
+  tagOleMenuGroupWidths MenuWidths;
+  int lMenuCnt;
+  tagOLEMENUITEM menuitem[1];
+
+};

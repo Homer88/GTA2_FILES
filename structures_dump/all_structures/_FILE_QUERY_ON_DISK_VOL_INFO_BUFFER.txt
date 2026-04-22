@@ -1,0 +1,19 @@
+// Структура: _FILE_QUERY_ON_DISK_VOL_INFO_BUFFER
+// Полей: 11
+// Строки в оригинале: 81308-81321
+struct _FILE_QUERY_ON_DISK_VOL_INFO_BUFFER
+{
+
+  _LARGE_INTEGER DirectoryCount;
+  _LARGE_INTEGER FileCount;
+  unsigned __int16 FsFormatMajVersion;
+  unsigned __int16 FsFormatMinVersion;
+  wchar_t FsFormatName[12];
+  _LARGE_INTEGER FormatTime;
+  _LARGE_INTEGER LastUpdateTime;
+  wchar_t CopyrightInfo[34];
+  wchar_t AbstractInfo[34];
+  wchar_t FormattingImplementationInfo[34];
+  wchar_t LastModifyingImplementationInfo[34];
+
+};

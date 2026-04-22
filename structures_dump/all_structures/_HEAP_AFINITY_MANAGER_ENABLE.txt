@@ -1,0 +1,11 @@
+// Структура: _HEAP_AFINITY_MANAGER_ENABLE
+// Полей: 3
+// Строки в оригинале: 308627-308632
+struct _HEAP_AFINITY_MANAGER_ENABLE
+{
+
+  _SYSTEM_TRACE_HEADER Header;
+  void *HeapHandle;
+  unsigned int BucketIndex;
+
+};

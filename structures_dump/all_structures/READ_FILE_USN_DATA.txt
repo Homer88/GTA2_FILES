@@ -1,0 +1,10 @@
+// Структура: READ_FILE_USN_DATA
+// Полей: 2
+// Строки в оригинале: 108926-108930
+struct READ_FILE_USN_DATA
+{
+
+  unsigned __int16 MinMajorVersion;
+  unsigned __int16 MaxMajorVersion;
+
+};

@@ -1,0 +1,17 @@
+// Структура: _CMSG_MAIL_LIST_RECIPIENT_ENCODE_INFO
+// Полей: 9
+// Строки в оригинале: 87769-87780
+struct _CMSG_MAIL_LIST_RECIPIENT_ENCODE_INFO
+{
+
+  unsigned int cbSize;
+  _CRYPT_ALGORITHM_IDENTIFIER KeyEncryptionAlgorithm;
+  void *pvKeyEncryptionAuxInfo;
+  unsigned int hCryptProv;
+  unsigned int dwKeyChoice;
+  $444B8AF3F414656C8F88F98B3D40B8AE ___u5;
+  _CRYPTOAPI_BLOB KeyId;
+  _FILETIME Date;
+  _CRYPT_ATTRIBUTE_TYPE_VALUE *pOtherAttr;
+
+};

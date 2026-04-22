@@ -1,0 +1,10 @@
+// Структура: _XSAVE_CET_U_FORMAT
+// Полей: 2
+// Строки в оригинале: 94096-94100
+struct _XSAVE_CET_U_FORMAT
+{
+
+  unsigned __int64 Ia32CetUMsr;
+  unsigned __int64 Ia32Pl3SspMsr;
+
+};

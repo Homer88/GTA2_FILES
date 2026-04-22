@@ -1,0 +1,12 @@
+// Структура: _KEY_SET_VIRTUALIZATION_INFORMATION
+// Полей: 4
+// Строки в оригинале: 96860-96866
+struct _KEY_SET_VIRTUALIZATION_INFORMATION
+{
+
+  unsigned __int32 VirtualTarget : 1;
+  unsigned __int32 VirtualStore : 1;
+  unsigned __int32 VirtualSource : 1;
+  unsigned __int32 Reserved : 29;
+
+};

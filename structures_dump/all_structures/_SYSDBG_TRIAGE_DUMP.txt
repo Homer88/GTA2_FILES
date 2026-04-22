@@ -1,0 +1,17 @@
+// Структура: _SYSDBG_TRIAGE_DUMP
+// Полей: 9
+// Строки в оригинале: 83406-83417
+struct _SYSDBG_TRIAGE_DUMP
+{
+
+  unsigned int Flags;
+  unsigned int BugCheckCode;
+  unsigned int BugCheckParam1;
+  unsigned int BugCheckParam2;
+  unsigned int BugCheckParam3;
+  unsigned int BugCheckParam4;
+  unsigned int ProcessHandles;
+  unsigned int ThreadHandles;
+  void **Handles;
+
+};

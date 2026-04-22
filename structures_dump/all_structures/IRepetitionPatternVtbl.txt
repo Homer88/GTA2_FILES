@@ -1,0 +1,21 @@
+// Структура: IRepetitionPatternVtbl
+// Полей: 13
+// Строки в оригинале: 45082-45097
+struct IRepetitionPatternVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRepetitionPattern *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRepetitionPattern *This);
+  ULONG (__stdcall *Release)(IRepetitionPattern *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IRepetitionPattern *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IRepetitionPattern *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IRepetitionPattern *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IRepetitionPattern *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_Interval)(IRepetitionPattern *This, BSTR *pInterval);
+  HRESULT (__stdcall *put_Interval)(IRepetitionPattern *This, BSTR interval);
+  HRESULT (__stdcall *get_Duration)(IRepetitionPattern *This, BSTR *pDuration);
+  HRESULT (__stdcall *put_Duration)(IRepetitionPattern *This, BSTR duration);
+  HRESULT (__stdcall *get_StopAtDurationEnd)(IRepetitionPattern *This, VARIANT_BOOL *pStop);
+  HRESULT (__stdcall *put_StopAtDurationEnd)(IRepetitionPattern *This, VARIANT_BOOL stop);
+
+};

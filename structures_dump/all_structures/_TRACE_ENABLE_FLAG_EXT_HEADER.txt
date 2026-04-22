@@ -1,0 +1,10 @@
+// Структура: _TRACE_ENABLE_FLAG_EXT_HEADER
+// Полей: 2
+// Строки в оригинале: 308993-308997
+struct _TRACE_ENABLE_FLAG_EXT_HEADER
+{
+
+  unsigned __int16 Length;
+  unsigned __int16 Items;
+
+};

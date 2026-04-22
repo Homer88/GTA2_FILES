@@ -1,0 +1,18 @@
+// Структура: _RTL_VERIFIER_FAULT_INJECTIONS_INFORMATION
+// Полей: 10
+// Строки в оригинале: 85335-85347
+struct _RTL_VERIFIER_FAULT_INJECTIONS_INFORMATION
+{
+
+  unsigned int Size;
+  unsigned __int8 Initialized;
+  unsigned int FaultProbability[16];
+  unsigned int FaultBreak[16];
+  unsigned int TargetMaximumIndex;
+  unsigned int FaultTargetStart[128];
+  unsigned int FaultTargetEnd[128];
+  unsigned int ExclusionMaximumIndex;
+  unsigned int FaultExclusionStart[128];
+  unsigned int FaultExclusionEnd[128];
+
+};

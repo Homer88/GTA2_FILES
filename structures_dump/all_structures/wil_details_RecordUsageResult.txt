@@ -1,0 +1,14 @@
+// Структура: wil_details_RecordUsageResult
+// Полей: 6
+// Строки в оригинале: 142345-142353
+struct wil_details_RecordUsageResult
+{
+
+  int queueBackground;
+  unsigned int countImmediate;
+  wil_details_ServiceReportingKind kindImmediate;
+  unsigned int payloadId;
+  int ignoredUse;
+  int isVariantConfiguration;
+
+};

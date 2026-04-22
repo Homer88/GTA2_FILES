@@ -1,0 +1,13 @@
+// Структура: _RTL_BALANCED_LINKS
+// Полей: 5
+// Строки в оригинале: 22441-22448
+struct _RTL_BALANCED_LINKS
+{
+
+  _RTL_BALANCED_LINKS *Parent;
+  _RTL_BALANCED_LINKS *LeftChild;
+  _RTL_BALANCED_LINKS *RightChild;
+  char Balance;
+  unsigned __int8 Reserved[3];
+
+};

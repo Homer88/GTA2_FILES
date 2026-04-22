@@ -1,0 +1,10 @@
+// Структура: _NDR64_POINTER_INSTANCE_HEADER_FORMAT
+// Полей: 2
+// Строки в оригинале: 332359-332363
+struct _NDR64_POINTER_INSTANCE_HEADER_FORMAT
+{
+
+  unsigned int Offset;
+  unsigned int Reserved;
+
+};

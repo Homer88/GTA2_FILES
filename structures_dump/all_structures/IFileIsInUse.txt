@@ -1,0 +1,9 @@
+// Структура: IFileIsInUse
+// Полей: 1
+// Строки в оригинале: 352427-352430
+struct IFileIsInUse
+{
+
+  struct IFileIsInUseVtbl *lpVtbl;
+
+};

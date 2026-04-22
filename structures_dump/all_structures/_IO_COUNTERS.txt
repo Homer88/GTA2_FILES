@@ -1,0 +1,14 @@
+// Структура: _IO_COUNTERS
+// Полей: 6
+// Строки в оригинале: 80631-80639
+struct _IO_COUNTERS
+{
+
+  unsigned __int64 ReadOperationCount;
+  unsigned __int64 WriteOperationCount;
+  unsigned __int64 OtherOperationCount;
+  unsigned __int64 ReadTransferCount;
+  unsigned __int64 WriteTransferCount;
+  unsigned __int64 OtherTransferCount;
+
+};

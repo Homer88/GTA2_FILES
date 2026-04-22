@@ -1,0 +1,13 @@
+// Структура: tagCustomOpaqueData
+// Полей: 5
+// Строки в оригинале: 194517-194524
+struct tagCustomOpaqueData
+{
+
+  _GUID guid;
+  unsigned int dataLength;
+  unsigned int reserved1;
+  unsigned int reserved2;
+  unsigned __int8 *data;
+
+};

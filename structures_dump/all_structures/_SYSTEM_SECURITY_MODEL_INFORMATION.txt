@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_SECURITY_MODEL_INFORMATION
+// Полей: 1
+// Строки в оригинале: 100075-100078
+struct _SYSTEM_SECURITY_MODEL_INFORMATION
+{
+
+  _SYSTEM_SECURITY_MODEL_INFORMATION::<unnamed_type_SecurityModelFlags> SecurityModelFlags;
+
+};

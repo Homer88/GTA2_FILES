@@ -1,0 +1,36 @@
+// Структура: _FAST_IO_DISPATCH
+// Полей: 28
+// Строки в оригинале: 17356-17386
+struct _FAST_IO_DISPATCH
+{
+
+  unsigned int SizeOfFastIoDispatch;
+  unsigned __int8 (__stdcall *FastIoCheckIfPossible)(_FILE_OBJECT *, _LARGE_INTEGER *, unsigned int, unsigned __int8, unsigned int, unsigned __int8, _IO_STATUS_BLOCK *, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *FastIoRead)(_FILE_OBJECT *, _LARGE_INTEGER *, unsigned int, unsigned __int8, unsigned int, void *, _IO_STATUS_BLOCK *, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *FastIoWrite)(_FILE_OBJECT *, _LARGE_INTEGER *, unsigned int, unsigned __int8, unsigned int, void *, _IO_STATUS_BLOCK *, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *FastIoQueryBasicInfo)(_FILE_OBJECT *, unsigned __int8, _FILE_BASIC_INFORMATION *, _IO_STATUS_BLOCK *, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *FastIoQueryStandardInfo)(_FILE_OBJECT *, unsigned __int8, _FILE_STANDARD_INFORMATION *, _IO_STATUS_BLOCK *, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *FastIoLock)(_FILE_OBJECT *, _LARGE_INTEGER *, _LARGE_INTEGER *, _EPROCESS *, unsigned int, unsigned __int8, unsigned __int8, _IO_STATUS_BLOCK *, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *FastIoUnlockSingle)(_FILE_OBJECT *, _LARGE_INTEGER *, _LARGE_INTEGER *, _EPROCESS *, unsigned int, _IO_STATUS_BLOCK *, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *FastIoUnlockAll)(_FILE_OBJECT *, _EPROCESS *, _IO_STATUS_BLOCK *, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *FastIoUnlockAllByKey)(_FILE_OBJECT *, void *, unsigned int, _IO_STATUS_BLOCK *, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *FastIoDeviceControl)(_FILE_OBJECT *, unsigned __int8, void *, unsigned int, void *, unsigned int, unsigned int, _IO_STATUS_BLOCK *, _DEVICE_OBJECT *);
+  void (__stdcall *AcquireFileForNtCreateSection)(_FILE_OBJECT *);
+  void (__stdcall *ReleaseFileForNtCreateSection)(_FILE_OBJECT *);
+  void (__stdcall *FastIoDetachDevice)(_DEVICE_OBJECT *, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *FastIoQueryNetworkOpenInfo)(_FILE_OBJECT *, unsigned __int8, _FILE_NETWORK_OPEN_INFORMATION *, _IO_STATUS_BLOCK *, _DEVICE_OBJECT *);
+  int (__stdcall *AcquireForModWrite)(_FILE_OBJECT *, _LARGE_INTEGER *, _ERESOURCE **, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *MdlRead)(_FILE_OBJECT *, _LARGE_INTEGER *, unsigned int, unsigned int, _MDL **, _IO_STATUS_BLOCK *, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *MdlReadComplete)(_FILE_OBJECT *, _MDL *, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *PrepareMdlWrite)(_FILE_OBJECT *, _LARGE_INTEGER *, unsigned int, unsigned int, _MDL **, _IO_STATUS_BLOCK *, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *MdlWriteComplete)(_FILE_OBJECT *, _LARGE_INTEGER *, _MDL *, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *FastIoReadCompressed)(_FILE_OBJECT *, _LARGE_INTEGER *, unsigned int, unsigned int, void *, _MDL **, _IO_STATUS_BLOCK *, _COMPRESSED_DATA_INFO *, unsigned int, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *FastIoWriteCompressed)(_FILE_OBJECT *, _LARGE_INTEGER *, unsigned int, unsigned int, void *, _MDL **, _IO_STATUS_BLOCK *, _COMPRESSED_DATA_INFO *, unsigned int, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *MdlReadCompleteCompressed)(_FILE_OBJECT *, _MDL *, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *MdlWriteCompleteCompressed)(_FILE_OBJECT *, _LARGE_INTEGER *, _MDL *, _DEVICE_OBJECT *);
+  unsigned __int8 (__stdcall *FastIoQueryOpen)(_IRP *, _FILE_NETWORK_OPEN_INFORMATION *, _DEVICE_OBJECT *);
+  int (__stdcall *ReleaseForModWrite)(_FILE_OBJECT *, _ERESOURCE *, _DEVICE_OBJECT *);
+  int (__stdcall *AcquireForCcFlush)(_FILE_OBJECT *, _DEVICE_OBJECT *);
+  int (__stdcall *ReleaseForCcFlush)(_FILE_OBJECT *, _DEVICE_OBJECT *);
+
+};

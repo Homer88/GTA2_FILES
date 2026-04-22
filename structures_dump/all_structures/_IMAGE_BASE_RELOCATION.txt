@@ -1,0 +1,10 @@
+// Структура: _IMAGE_BASE_RELOCATION
+// Полей: 2
+// Строки в оригинале: 110902-110906
+struct _IMAGE_BASE_RELOCATION
+{
+
+  unsigned int VirtualAddress;
+  unsigned int SizeOfBlock;
+
+};

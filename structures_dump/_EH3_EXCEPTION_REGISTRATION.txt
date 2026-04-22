@@ -1,0 +1,11 @@
+// Structure: _EH3_EXCEPTION_REGISTRATION
+// Lines: 2234 - 2240
+// Fields: 5
+
+struct _EH3_EXCEPTION_REGISTRATION
+{
+  struct _EH3_EXCEPTION_REGISTRATION *Next;
+  PVOID ExceptionHandler;
+  PSCOPETABLE_ENTRY ScopeTable;
+  DWORD TryLevel;
+};

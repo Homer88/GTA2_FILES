@@ -1,0 +1,12 @@
+// Структура: _PERFINFO_CC_CAN_WRITE_FAIL
+// Полей: 4
+// Строки в оригинале: 312960-312966
+struct _PERFINFO_CC_CAN_WRITE_FAIL
+{
+
+  unsigned int FileObjectKey;
+  unsigned int TotalDirtyPages;
+  unsigned int DirtyPageThreshold;
+  unsigned int BytesToWrite;
+
+};

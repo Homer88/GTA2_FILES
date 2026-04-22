@@ -1,0 +1,13 @@
+// Структура: tagOIFI
+// Полей: 5
+// Строки в оригинале: 28238-28245
+struct tagOIFI
+{
+
+  UINT cb;
+  BOOL fMDIApp;
+  HWND hwndFrame;
+  HACCEL haccel;
+  UINT cAccelEntries;
+
+};

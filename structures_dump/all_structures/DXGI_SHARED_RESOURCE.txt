@@ -1,0 +1,9 @@
+// Структура: DXGI_SHARED_RESOURCE
+// Полей: 1
+// Строки в оригинале: 352078-352081
+struct DXGI_SHARED_RESOURCE
+{
+
+  HANDLE Handle;
+
+};

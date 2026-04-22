@@ -1,0 +1,11 @@
+// Структура: _ALPC_BASIC_INFORMATION
+// Полей: 3
+// Строки в оригинале: 99288-99293
+struct _ALPC_BASIC_INFORMATION
+{
+
+  unsigned int Flags;
+  unsigned int SequenceNo;
+  void *PortContext;
+
+};

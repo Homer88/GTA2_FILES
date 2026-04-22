@@ -1,0 +1,14 @@
+// Структура: _CMSG_CTRL_MAIL_LIST_DECRYPT_PARA
+// Полей: 6
+// Строки в оригинале: 107488-107496
+struct _CMSG_CTRL_MAIL_LIST_DECRYPT_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int hCryptProv;
+  _CMSG_MAIL_LIST_RECIPIENT_INFO *pMailList;
+  unsigned int dwRecipientIndex;
+  unsigned int dwKeyChoice;
+  $444B8AF3F414656C8F88F98B3D40B8AE ___u5;
+
+};

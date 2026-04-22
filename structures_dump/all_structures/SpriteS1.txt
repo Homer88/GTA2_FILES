@@ -1,0 +1,10 @@
+// Структура: SpriteS1
+// Полей: 2
+// Строки в оригинале: 3975-3979
+struct SpriteS1
+{
+
+  SpriteS1 *FirstElement;
+  CarTransforms S3_arr5031[5031];
+
+};

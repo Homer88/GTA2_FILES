@@ -1,0 +1,12 @@
+// Структура: IROTDataVtbl
+// Полей: 4
+// Строки в оригинале: 182553-182559
+struct IROTDataVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IROTData *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IROTData *This);
+  ULONG (__stdcall *Release)(IROTData *This);
+  HRESULT (__stdcall *GetComparisonData)(IROTData *This, byte *pbData, ULONG cbMax, ULONG *pcbData);
+
+};

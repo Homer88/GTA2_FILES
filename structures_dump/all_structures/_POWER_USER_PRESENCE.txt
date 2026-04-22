@@ -1,0 +1,9 @@
+// Структура: _POWER_USER_PRESENCE
+// Полей: 1
+// Строки в оригинале: 92815-92818
+struct _POWER_USER_PRESENCE
+{
+
+  POWER_USER_PRESENCE_TYPE UserPresence;
+
+};

@@ -1,0 +1,9 @@
+// Структура: ITaskDefinition
+// Полей: 1
+// Строки в оригинале: 44524-44527
+struct ITaskDefinition
+{
+
+  struct ITaskDefinitionVtbl *lpVtbl;
+
+};

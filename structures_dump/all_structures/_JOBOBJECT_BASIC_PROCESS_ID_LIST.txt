@@ -1,0 +1,11 @@
+// Структура: _JOBOBJECT_BASIC_PROCESS_ID_LIST
+// Полей: 3
+// Строки в оригинале: 103139-103144
+struct _JOBOBJECT_BASIC_PROCESS_ID_LIST
+{
+
+  unsigned int NumberOfAssignedProcesses;
+  unsigned int NumberOfProcessIdsInList;
+  unsigned int ProcessIdList[1];
+
+};

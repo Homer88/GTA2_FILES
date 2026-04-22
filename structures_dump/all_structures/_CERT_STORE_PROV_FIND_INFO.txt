@@ -1,0 +1,13 @@
+// Структура: _CERT_STORE_PROV_FIND_INFO
+// Полей: 5
+// Строки в оригинале: 84872-84879
+struct _CERT_STORE_PROV_FIND_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int dwMsgAndCertEncodingType;
+  unsigned int dwFindFlags;
+  unsigned int dwFindType;
+  const void *pvFindPara;
+
+};

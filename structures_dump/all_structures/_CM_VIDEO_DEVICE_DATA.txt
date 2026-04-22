@@ -1,0 +1,11 @@
+// Структура: _CM_VIDEO_DEVICE_DATA
+// Полей: 3
+// Строки в оригинале: 103725-103730
+struct _CM_VIDEO_DEVICE_DATA
+{
+
+  unsigned __int16 Version;
+  unsigned __int16 Revision;
+  unsigned int VideoClock;
+
+};

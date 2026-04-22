@@ -1,0 +1,9 @@
+// Структура: IInspectable
+// Полей: 1
+// Строки в оригинале: 29951-29954
+struct IInspectable
+{
+
+  struct IInspectableVtbl *lpVtbl;
+
+};

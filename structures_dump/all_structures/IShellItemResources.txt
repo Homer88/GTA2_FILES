@@ -1,0 +1,9 @@
+// Структура: IShellItemResources
+// Полей: 1
+// Строки в оригинале: 40560-40563
+struct IShellItemResources
+{
+
+  struct IShellItemResourcesVtbl *lpVtbl;
+
+};

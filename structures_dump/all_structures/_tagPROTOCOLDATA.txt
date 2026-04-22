@@ -1,0 +1,12 @@
+// Структура: _tagPROTOCOLDATA
+// Полей: 4
+// Строки в оригинале: 88383-88389
+struct _tagPROTOCOLDATA
+{
+
+  unsigned int grfFlags;
+  unsigned int dwState;
+  void *pData;
+  unsigned int cbData;
+
+};

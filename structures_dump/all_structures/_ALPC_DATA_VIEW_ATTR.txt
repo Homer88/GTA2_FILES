@@ -1,0 +1,12 @@
+// Структура: _ALPC_DATA_VIEW_ATTR
+// Полей: 4
+// Строки в оригинале: 98627-98633
+struct _ALPC_DATA_VIEW_ATTR
+{
+
+  unsigned int Flags;
+  void *SectionHandle;
+  void *ViewBase;
+  unsigned int ViewSize;
+
+};

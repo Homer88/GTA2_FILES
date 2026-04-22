@@ -1,0 +1,9 @@
+// Структура: IEnumTfFunctionProviders
+// Полей: 1
+// Строки в оригинале: 41614-41617
+struct IEnumTfFunctionProviders
+{
+
+  struct IEnumTfFunctionProvidersVtbl *lpVtbl;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _FILE_DISPOSITION_INFO_EX
+// Полей: 1
+// Строки в оригинале: 96657-96660
+struct _FILE_DISPOSITION_INFO_EX
+{
+
+  unsigned int Flags;
+
+};

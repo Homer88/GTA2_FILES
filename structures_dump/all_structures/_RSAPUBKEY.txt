@@ -1,0 +1,11 @@
+// Структура: _RSAPUBKEY
+// Полей: 3
+// Строки в оригинале: 102437-102442
+struct _RSAPUBKEY
+{
+
+  unsigned int magic;
+  unsigned int bitlen;
+  unsigned int pubexp;
+
+};

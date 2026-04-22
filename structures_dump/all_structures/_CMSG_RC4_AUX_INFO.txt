@@ -1,0 +1,10 @@
+// Структура: _CMSG_RC4_AUX_INFO
+// Полей: 2
+// Строки в оригинале: 88075-88079
+struct _CMSG_RC4_AUX_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int dwBitLen;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _HEAP_SUMMARY
+// Полей: 5
+// Строки в оригинале: 84075-84082
+struct _HEAP_SUMMARY
+{
+
+  unsigned int cb;
+  unsigned int cbAllocated;
+  unsigned int cbCommitted;
+  unsigned int cbReserved;
+  unsigned int cbMaxReserve;
+
+};

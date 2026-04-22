@@ -1,0 +1,10 @@
+// Структура: _ALPC_PORT_MESSAGE_ZONE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 102542-102546
+struct _ALPC_PORT_MESSAGE_ZONE_INFORMATION
+{
+
+  void *Buffer;
+  unsigned int Size;
+
+};

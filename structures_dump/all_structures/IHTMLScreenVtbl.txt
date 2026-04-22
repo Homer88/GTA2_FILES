@@ -1,0 +1,25 @@
+// Структура: IHTMLScreenVtbl
+// Полей: 17
+// Строки в оригинале: 38827-38846
+struct IHTMLScreenVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLScreen *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLScreen *This);
+  ULONG (__stdcall *Release)(IHTMLScreen *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLScreen *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLScreen *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLScreen *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLScreen *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_colorDepth)(IHTMLScreen *This, int *p);
+  HRESULT (__stdcall *put_bufferDepth)(IHTMLScreen *This, int v);
+  HRESULT (__stdcall *get_bufferDepth)(IHTMLScreen *This, int *p);
+  HRESULT (__stdcall *get_width)(IHTMLScreen *This, int *p);
+  HRESULT (__stdcall *get_height)(IHTMLScreen *This, int *p);
+  HRESULT (__stdcall *put_updateInterval)(IHTMLScreen *This, int v);
+  HRESULT (__stdcall *get_updateInterval)(IHTMLScreen *This, int *p);
+  HRESULT (__stdcall *get_availHeight)(IHTMLScreen *This, int *p);
+  HRESULT (__stdcall *get_availWidth)(IHTMLScreen *This, int *p);
+  HRESULT (__stdcall *get_fontSmoothingEnabled)(IHTMLScreen *This, VARIANT_BOOL *p);
+
+};

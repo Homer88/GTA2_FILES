@@ -1,0 +1,11 @@
+// Структура: CONTAINER_EXTENT_ARRAY
+// Полей: 3
+// Строки в оригинале: 62035-62040
+struct CONTAINER_EXTENT_ARRAY
+{
+
+  unsigned int size;
+  unsigned int reserved;
+  CONTAINER_EXTENT **extent;
+
+};

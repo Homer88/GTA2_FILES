@@ -1,0 +1,9 @@
+// Структура: IXMLDOMCDATASection
+// Полей: 1
+// Строки в оригинале: 43523-43526
+struct IXMLDOMCDATASection
+{
+
+  struct IXMLDOMCDATASectionVtbl *lpVtbl;
+
+};

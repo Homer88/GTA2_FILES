@@ -1,0 +1,11 @@
+// Структура: _D3DVECTOR
+// Полей: 3
+// Строки в оригинале: 25544-25549
+struct _D3DVECTOR
+{
+
+  float x;
+  float y;
+  float z;
+
+};

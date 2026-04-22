@@ -1,0 +1,12 @@
+// Структура: _SYSTEM_EXCEPTION_INFORMATION
+// Полей: 4
+// Строки в оригинале: 101985-101991
+struct _SYSTEM_EXCEPTION_INFORMATION
+{
+
+  unsigned int AlignmentFixupCount;
+  unsigned int ExceptionDispatchCount;
+  unsigned int FloatingEmulationCount;
+  unsigned int ByteWordEmulationCount;
+
+};

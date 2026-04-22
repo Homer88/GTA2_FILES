@@ -1,0 +1,10 @@
+// Структура: _CERT_PUBLIC_KEY_INFO
+// Полей: 2
+// Строки в оригинале: 59043-59047
+struct _CERT_PUBLIC_KEY_INFO
+{
+
+  _CRYPT_ALGORITHM_IDENTIFIER Algorithm;
+  _CRYPT_BIT_BLOB PublicKey;
+
+};

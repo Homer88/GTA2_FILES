@@ -1,0 +1,10 @@
+// Структура: tagEMRPIXELFORMAT
+// Полей: 2
+// Строки в оригинале: 109839-109843
+struct tagEMRPIXELFORMAT
+{
+
+  tagEMR emr;
+  tagPIXELFORMATDESCRIPTOR pfd;
+
+};

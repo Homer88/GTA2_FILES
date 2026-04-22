@@ -1,0 +1,30 @@
+// Структура: _RTL_VERIFIER_HEAP_TABLE
+// Полей: 22
+// Строки в оригинале: 92741-92765
+struct _RTL_VERIFIER_HEAP_TABLE
+{
+
+  unsigned int Size;
+  void *(__stdcall *VrfHeapAllocate)(void *, unsigned int, unsigned int);
+  void *(__stdcall *VrfHeapReAllocate)(void *, unsigned int, void *, unsigned int);
+  unsigned __int8 (__stdcall *VrfHeapFree)(void *, unsigned int, void *);
+  void *(__stdcall *VrfHeapCreate)(unsigned int, void *, unsigned int, unsigned int, void *, _RTL_HEAP_PARAMETERS *);
+  void *(__stdcall *VrfHeapDestroy)(void *);
+  int (__stdcall *VrfHeapExtend)(void *, unsigned int, void *, unsigned int);
+  unsigned int (__stdcall *VrfGetProcessHeaps)(unsigned int, void **);
+  int (__stdcall *VrfHeapWalk)(void *, _RTL_HEAP_WALK_ENTRY *);
+  unsigned __int8 (__stdcall *VrfHeapLock)(void *);
+  unsigned __int8 (__stdcall *VrfHeapUnlock)(void *);
+  unsigned __int8 (__stdcall *VrfHeapIsLocked)(void *);
+  unsigned __int8 (__stdcall *VrfHeapValidate)(void *, unsigned int, void *);
+  unsigned __int8 (__stdcall *VrfHeapSetUserValue)(void *, unsigned int, void *, void *);
+  unsigned __int8 (__stdcall *VrfHeapGetUserInfo)(void *, unsigned int, void *, void **, unsigned int *);
+  unsigned __int8 (__stdcall *VrfHeapSetUserFlags)(void *, unsigned int, void *, unsigned int, unsigned int);
+  unsigned __int8 (__stdcall *VrfHeapSerialize)(void *);
+  unsigned int (__stdcall *VrfHeapSize)(void *, unsigned int, void *);
+  unsigned int (__stdcall *VrfHeapCompact)(void *, unsigned int);
+  int (__stdcall *VrfHeapZero)(void *, unsigned int);
+  int (__stdcall *VrfQueryVerifierOptions)(unsigned int, unsigned int *, void *);
+  int (__stdcall *VrfSetVerifierOptions)(unsigned int, unsigned int *, void *);
+
+};

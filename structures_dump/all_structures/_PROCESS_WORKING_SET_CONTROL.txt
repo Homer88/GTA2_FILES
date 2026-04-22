@@ -1,0 +1,11 @@
+// Структура: _PROCESS_WORKING_SET_CONTROL
+// Полей: 3
+// Строки в оригинале: 91399-91404
+struct _PROCESS_WORKING_SET_CONTROL
+{
+
+  unsigned int Version;
+  _PROCESS_WORKING_SET_OPERATION Operation;
+  unsigned int Flags;
+
+};

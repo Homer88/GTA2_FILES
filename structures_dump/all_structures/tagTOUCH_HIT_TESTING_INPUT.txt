@@ -1,0 +1,13 @@
+// Структура: tagTOUCH_HIT_TESTING_INPUT
+// Полей: 5
+// Строки в оригинале: 86633-86640
+struct tagTOUCH_HIT_TESTING_INPUT
+{
+
+  unsigned int pointerId;
+  tagPOINT point;
+  tagRECT boundingBox;
+  tagRECT nonOccludedBoundingBox;
+  unsigned int orientation;
+
+};

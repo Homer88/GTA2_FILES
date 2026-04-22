@@ -1,0 +1,14 @@
+// Структура: _EVENT_HEADER_EXTENDED_DATA_ITEM
+// Полей: 6
+// Строки в оригинале: 19570-19578
+struct _EVENT_HEADER_EXTENDED_DATA_ITEM
+{
+
+  unsigned __int16 Reserved1;
+  unsigned __int16 ExtType;
+  unsigned __int16 Linkage : 1;
+  unsigned __int16 Reserved2 : 15;
+  unsigned __int16 DataSize;
+  unsigned __int64 DataPtr;
+
+};

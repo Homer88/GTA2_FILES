@@ -1,0 +1,9 @@
+// Структура: _MM_PAGE_ACCESS_INFO
+// Полей: 1
+// Строки в оригинале: 19646-19649
+struct _MM_PAGE_ACCESS_INFO
+{
+
+  $F8268F5DC8A1EDA30413C2037F7EAD8F ___u0;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IRichEditOleCallback
+// Полей: 1
+// Строки в оригинале: 32994-32997
+struct IRichEditOleCallback
+{
+
+  struct IRichEditOleCallbackVtbl *lpVtbl;
+
+};

@@ -1,0 +1,14 @@
+// Структура: _SDB_FILE_INFO
+// Полей: 6
+// Строки в оригинале: 309673-309681
+struct _SDB_FILE_INFO
+{
+
+  unsigned int dwSizeCb;
+  wchar_t *pwszFilePath;
+  unsigned int dwFileValidationFlags;
+  _DB_HEADER dbHeader;
+  wchar_t *pwszDescription;
+  _GUID guidDB;
+
+};

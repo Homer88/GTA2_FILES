@@ -1,0 +1,9 @@
+// Структура: FEATURE_STATE_CHANGE_SUBSCRIPTION__
+// Полей: 1
+// Строки в оригинале: 142195-142198
+struct FEATURE_STATE_CHANGE_SUBSCRIPTION__
+{
+
+  int unused;
+
+};

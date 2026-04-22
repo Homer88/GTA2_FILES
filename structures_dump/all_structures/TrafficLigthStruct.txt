@@ -1,0 +1,19 @@
+// Структура: TrafficLigthStruct
+// Полей: 11
+// Строки в оригинале: 9660-9673
+struct TrafficLigthStruct
+{
+
+  S202 S202[12];
+  char field_180;
+  char field_181;
+  char field_182;
+  char field_183;
+  char field_184;
+  char field_185;
+  _BYTE gap186[10];
+  unsigned __int16 index;
+  TRAFFIC_PHASE Phase;
+  char Timer;
+
+};

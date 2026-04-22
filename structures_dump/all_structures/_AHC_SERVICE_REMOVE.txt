@@ -1,0 +1,12 @@
+// Структура: _AHC_SERVICE_REMOVE
+// Полей: 4
+// Строки в оригинале: 311105-311111
+struct _AHC_SERVICE_REMOVE
+{
+
+  _AHC_INFO_CLASS InfoClass;
+  _UNICODE_STRING PackageAlias;
+  void *FileHandle;
+  _UNICODE_STRING ExeSignature;
+
+};

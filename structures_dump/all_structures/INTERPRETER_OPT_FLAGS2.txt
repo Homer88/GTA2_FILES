@@ -1,0 +1,16 @@
+// Структура: INTERPRETER_OPT_FLAGS2
+// Полей: 8
+// Строки в оригинале: 86373-86383
+struct INTERPRETER_OPT_FLAGS2
+{
+
+  unsigned __int8 HasNewCorrDesc : 1;
+  unsigned __int8 ClientCorrCheck : 1;
+  unsigned __int8 ServerCorrCheck : 1;
+  unsigned __int8 HasNotify : 1;
+  unsigned __int8 HasNotify2 : 1;
+  unsigned __int8 HasComplexReturn : 1;
+  unsigned __int8 HasConformanceRange : 1;
+  unsigned __int8 HasBigByValueParam : 1;
+
+};

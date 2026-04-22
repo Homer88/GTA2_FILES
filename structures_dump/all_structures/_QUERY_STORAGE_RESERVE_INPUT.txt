@@ -1,0 +1,13 @@
+// Структура: _QUERY_STORAGE_RESERVE_INPUT
+// Полей: 5
+// Строки в оригинале: 80138-80145
+struct _QUERY_STORAGE_RESERVE_INPUT
+{
+
+  unsigned int Version;
+  unsigned int Flags;
+  unsigned int AreaIdOffset;
+  unsigned int AreaIdCount;
+  _STORAGE_RESERVE_ID AreaId[1];
+
+};

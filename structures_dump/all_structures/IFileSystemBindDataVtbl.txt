@@ -1,0 +1,13 @@
+// Структура: IFileSystemBindDataVtbl
+// Полей: 5
+// Строки в оригинале: 37573-37580
+struct IFileSystemBindDataVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFileSystemBindData *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFileSystemBindData *This);
+  ULONG (__stdcall *Release)(IFileSystemBindData *This);
+  HRESULT (__stdcall *SetFindData)(IFileSystemBindData *This, const WIN32_FIND_DATAW *pfd);
+  HRESULT (__stdcall *GetFindData)(IFileSystemBindData *This, WIN32_FIND_DATAW *pfd);
+
+};

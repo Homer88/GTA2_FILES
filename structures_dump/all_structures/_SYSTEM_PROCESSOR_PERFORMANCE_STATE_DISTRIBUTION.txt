@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_PROCESSOR_PERFORMANCE_STATE_DISTRIBUTION
+// Полей: 3
+// Строки в оригинале: 96499-96504
+struct _SYSTEM_PROCESSOR_PERFORMANCE_STATE_DISTRIBUTION
+{
+
+  unsigned int ProcessorNumber;
+  unsigned int StateCount;
+  _SYSTEM_PROCESSOR_PERFORMANCE_HITCOUNT States[1];
+
+};

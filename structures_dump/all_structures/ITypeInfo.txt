@@ -1,0 +1,9 @@
+// Структура: ITypeInfo
+// Полей: 1
+// Строки в оригинале: 23003-23006
+struct ITypeInfo
+{
+
+  struct ITypeInfoVtbl *lpVtbl;
+
+};

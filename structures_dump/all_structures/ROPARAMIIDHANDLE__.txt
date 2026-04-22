@@ -1,0 +1,9 @@
+// Структура: ROPARAMIIDHANDLE__
+// Полей: 1
+// Строки в оригинале: 285967-285970
+struct ROPARAMIIDHANDLE__
+{
+
+  int unused;
+
+};

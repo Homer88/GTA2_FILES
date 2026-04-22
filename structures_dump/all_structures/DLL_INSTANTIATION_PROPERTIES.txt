@@ -1,0 +1,14 @@
+// Структура: DLL_INSTANTIATION_PROPERTIES
+// Полей: 6
+// Строки в оригинале: 194639-194647
+struct DLL_INSTANTIATION_PROPERTIES
+{
+
+  wchar_t _pzDllPath[261];
+  unsigned int _dwThreadingModel;
+  unsigned int _dwFlags;
+  unsigned int _dwHash;
+  unsigned int _dwContext;
+  $F1BCC8D2ED72627AE3E1D14940DBB08E *_dllClass;
+
+};

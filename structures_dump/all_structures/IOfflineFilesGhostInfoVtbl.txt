@@ -1,0 +1,12 @@
+// Структура: IOfflineFilesGhostInfoVtbl
+// Полей: 4
+// Строки в оригинале: 28614-28620
+struct IOfflineFilesGhostInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesGhostInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesGhostInfo *This);
+  ULONG (__stdcall *Release)(IOfflineFilesGhostInfo *This);
+  HRESULT (__stdcall *IsGhosted)(IOfflineFilesGhostInfo *This, BOOL *pbGhosted);
+
+};

@@ -1,0 +1,16 @@
+// Структура: INamespaceWalkCB2Vtbl
+// Полей: 8
+// Строки в оригинале: 36159-36169
+struct INamespaceWalkCB2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(INamespaceWalkCB2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(INamespaceWalkCB2 *This);
+  ULONG (__stdcall *Release)(INamespaceWalkCB2 *This);
+  HRESULT (__stdcall *FoundItem)(INamespaceWalkCB2 *This, IShellFolder *psf, LPCITEMIDLIST pidl);
+  HRESULT (__stdcall *EnterFolder)(INamespaceWalkCB2 *This, IShellFolder *psf, LPCITEMIDLIST pidl);
+  HRESULT (__stdcall *LeaveFolder)(INamespaceWalkCB2 *This, IShellFolder *psf, LPCITEMIDLIST pidl);
+  HRESULT (__stdcall *InitializeProgressDialog)(INamespaceWalkCB2 *This, LPWSTR *ppszTitle, LPWSTR *ppszCancel);
+  HRESULT (__stdcall *WalkComplete)(INamespaceWalkCB2 *This, HRESULT hr);
+
+};

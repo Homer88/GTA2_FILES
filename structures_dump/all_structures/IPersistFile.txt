@@ -1,0 +1,9 @@
+// Структура: IPersistFile
+// Полей: 1
+// Строки в оригинале: 35828-35831
+struct IPersistFile
+{
+
+  struct IPersistFileVtbl *lpVtbl;
+
+};

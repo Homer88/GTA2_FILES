@@ -1,0 +1,9 @@
+// Структура: HSYNTHETICPOINTERDEVICE__
+// Полей: 1
+// Строки в оригинале: 103564-103567
+struct HSYNTHETICPOINTERDEVICE__
+{
+
+  int unused;
+
+};

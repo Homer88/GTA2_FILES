@@ -1,0 +1,88 @@
+// Структура: _KUSER_SHARED_DATA
+// Полей: 80
+// Строки в оригинале: 12674-12756
+struct _KUSER_SHARED_DATA
+{
+
+  unsigned int TickCountLowDeprecated;
+  unsigned int TickCountMultiplier;
+  volatile _KSYSTEM_TIME InterruptTime;
+  volatile _KSYSTEM_TIME SystemTime;
+  volatile _KSYSTEM_TIME TimeZoneBias;
+  unsigned __int16 ImageNumberLow;
+  unsigned __int16 ImageNumberHigh;
+  wchar_t NtSystemRoot[260];
+  unsigned int MaxStackTraceDepth;
+  unsigned int CryptoExponent;
+  unsigned int TimeZoneId;
+  unsigned int LargePageMinimum;
+  unsigned int AitSamplingValue;
+  unsigned int AppCompatFlag;
+  unsigned __int64 RNGSeedVersion;
+  unsigned int GlobalValidationRunlevel;
+  volatile int TimeZoneBiasStamp;
+  unsigned int NtBuildNumber;
+  _NT_PRODUCT_TYPE NtProductType;
+  unsigned __int8 ProductTypeIsValid;
+  unsigned __int8 Reserved0[1];
+  unsigned __int16 NativeProcessorArchitecture;
+  unsigned int NtMajorVersion;
+  unsigned int NtMinorVersion;
+  unsigned __int8 ProcessorFeatures[64];
+  unsigned int Reserved1;
+  unsigned int Reserved3;
+  volatile unsigned int TimeSlip;
+  _ALTERNATIVE_ARCHITECTURE_TYPE AlternativeArchitecture;
+  unsigned int BootId;
+  _LARGE_INTEGER SystemExpirationDate;
+  unsigned int SuiteMask;
+  unsigned __int8 KdDebuggerEnabled;
+  $47F65C652266790E36785F89EB3D71C0 ___u33;
+  unsigned __int16 CyclesPerYield;
+  volatile unsigned int ActiveConsoleId;
+  volatile unsigned int DismountCount;
+  unsigned int ComPlusPackage;
+  unsigned int LastSystemRITEventTickCount;
+  unsigned int NumberOfPhysicalPages;
+  unsigned __int8 SafeBootMode;
+  unsigned __int8 VirtualizationFlags;
+  unsigned __int8 Reserved12[2];
+  $A49CD65A9873A9458623B5BC881BB1ED ___u43;
+  unsigned int DataFlagsPad[1];
+  unsigned __int64 TestRetInstruction;
+  __int64 QpcFrequency;
+  unsigned int SystemCall;
+  unsigned int Reserved2;
+  unsigned __int64 SystemCallPad[2];
+  $E63118480E69006C6D574737C290A5EF ___u50;
+  unsigned int TickCountPad[1];
+  unsigned int Cookie;
+  unsigned int CookiePad[1];
+  __int64 ConsoleSessionForegroundProcessId;
+  unsigned __int64 TimeUpdateLock;
+  unsigned __int64 BaselineSystemTimeQpc;
+  unsigned __int64 BaselineInterruptTimeQpc;
+  unsigned __int64 QpcSystemTimeIncrement;
+  unsigned __int64 QpcInterruptTimeIncrement;
+  unsigned __int8 QpcSystemTimeIncrementShift;
+  unsigned __int8 QpcInterruptTimeIncrementShift;
+  unsigned __int16 UnparkedProcessorCount;
+  unsigned int EnclaveFeatureMask[4];
+  unsigned int TelemetryCoverageRound;
+  unsigned __int16 UserModeGlobalLogger[16];
+  unsigned int ImageFileExecutionOptions;
+  unsigned int LangGenerationCount;
+  unsigned __int64 Reserved4;
+  volatile unsigned __int64 InterruptTimeBias;
+  volatile unsigned __int64 QpcBias;
+  unsigned int ActiveProcessorCount;
+  volatile unsigned __int8 ActiveGroupCount;
+  unsigned __int8 Reserved9;
+  $64D22FA133FFCC3DADC540C321E8A289 ___u74;
+  _LARGE_INTEGER TimeZoneBiasEffectiveStart;
+  _LARGE_INTEGER TimeZoneBiasEffectiveEnd;
+  _XSTATE_CONFIGURATION XState;
+  _KSYSTEM_TIME FeatureConfigurationChangeStamp;
+  unsigned int Spare;
+
+};

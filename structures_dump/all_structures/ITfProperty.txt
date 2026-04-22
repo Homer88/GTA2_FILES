@@ -1,0 +1,9 @@
+// Структура: ITfProperty
+// Полей: 1
+// Строки в оригинале: 30338-30341
+struct ITfProperty
+{
+
+  struct ITfPropertyVtbl *lpVtbl;
+
+};

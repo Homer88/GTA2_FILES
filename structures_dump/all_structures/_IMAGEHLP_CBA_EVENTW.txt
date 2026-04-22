@@ -1,0 +1,12 @@
+// Структура: _IMAGEHLP_CBA_EVENTW
+// Полей: 4
+// Строки в оригинале: 123128-123134
+struct _IMAGEHLP_CBA_EVENTW
+{
+
+  unsigned int severity;
+  unsigned int code;
+  const wchar_t *desc;
+  void *object;
+
+};

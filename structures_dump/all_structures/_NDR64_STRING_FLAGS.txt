@@ -1,0 +1,16 @@
+// Структура: _NDR64_STRING_FLAGS
+// Полей: 8
+// Строки в оригинале: 331430-331440
+struct _NDR64_STRING_FLAGS
+{
+
+  unsigned __int8 IsSized : 1;
+  unsigned __int8 IsRanged : 1;
+  unsigned __int8 Reserved3 : 1;
+  unsigned __int8 Reserved4 : 1;
+  unsigned __int8 Reserved5 : 1;
+  unsigned __int8 Reserved6 : 1;
+  unsigned __int8 Reserved7 : 1;
+  unsigned __int8 Reserved8 : 1;
+
+};

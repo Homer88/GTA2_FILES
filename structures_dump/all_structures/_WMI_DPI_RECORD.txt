@@ -1,0 +1,10 @@
+// Структура: _WMI_DPI_RECORD
+// Полей: 2
+// Строки в оригинале: 313774-313778
+struct _WMI_DPI_RECORD
+{
+
+  unsigned int MachineDPI;
+  unsigned int UserDPI;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _TRUSTEE_W
+// Полей: 5
+// Строки в оригинале: 212346-212353
+struct _TRUSTEE_W
+{
+
+  _TRUSTEE_W *pMultipleTrustee;
+  _MULTIPLE_TRUSTEE_OPERATION MultipleTrusteeOperation;
+  _TRUSTEE_FORM TrusteeForm;
+  _TRUSTEE_TYPE TrusteeType;
+  wchar_t *ptstrName;
+
+};

@@ -1,0 +1,12 @@
+// Структура: WINTRUST_FILE_INFO_
+// Полей: 4
+// Строки в оригинале: 121844-121850
+struct WINTRUST_FILE_INFO_
+{
+
+  unsigned int cbStruct;
+  const wchar_t *pcwszFilePath;
+  void *hFile;
+  _GUID *pgKnownSubject;
+
+};

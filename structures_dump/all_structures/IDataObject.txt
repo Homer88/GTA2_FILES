@@ -1,0 +1,9 @@
+// Структура: IDataObject
+// Полей: 1
+// Строки в оригинале: 27238-27241
+struct IDataObject
+{
+
+  struct IDataObjectVtbl *lpVtbl;
+
+};

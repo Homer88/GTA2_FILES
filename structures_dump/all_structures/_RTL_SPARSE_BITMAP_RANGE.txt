@@ -1,0 +1,10 @@
+// Структура: _RTL_SPARSE_BITMAP_RANGE
+// Полей: 2
+// Строки в оригинале: 83987-83991
+struct _RTL_SPARSE_BITMAP_RANGE
+{
+
+  $3B4DCFFFA68AD27FC828082218DC31D0 ___u0;
+  _RTL_BITMAP RangeBitmap;
+
+};

@@ -1,0 +1,13 @@
+// Структура: joyreghwconfig_tag
+// Полей: 5
+// Строки в оригинале: 29675-29682
+struct joyreghwconfig_tag
+{
+
+  JOYREGHWSETTINGS hws;
+  DWORD dwUsageSettings;
+  JOYREGHWVALUES hwv;
+  DWORD dwType;
+  DWORD dwReserved;
+
+};

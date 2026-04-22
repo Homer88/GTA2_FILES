@@ -1,0 +1,9 @@
+// Структура: IEnumHLITEM
+// Полей: 1
+// Строки в оригинале: 42832-42835
+struct IEnumHLITEM
+{
+
+  struct IEnumHLITEMVtbl *lpVtbl;
+
+};

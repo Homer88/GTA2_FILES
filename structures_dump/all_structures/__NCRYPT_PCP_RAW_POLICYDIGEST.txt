@@ -1,0 +1,10 @@
+// Структура: __NCRYPT_PCP_RAW_POLICYDIGEST
+// Полей: 2
+// Строки в оригинале: 109813-109817
+struct __NCRYPT_PCP_RAW_POLICYDIGEST
+{
+
+  unsigned int dwVersion;
+  unsigned int cbDigest;
+
+};

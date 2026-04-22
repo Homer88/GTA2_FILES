@@ -1,0 +1,15 @@
+// Структура: _MEMORY_BASIC_INFORMATION32
+// Полей: 7
+// Строки в оригинале: 98718-98727
+struct _MEMORY_BASIC_INFORMATION32
+{
+
+  unsigned int BaseAddress;
+  unsigned int AllocationBase;
+  unsigned int AllocationProtect;
+  unsigned int RegionSize;
+  unsigned int State;
+  unsigned int Protect;
+  unsigned int Type;
+
+};

@@ -1,0 +1,16 @@
+// Структура: _TRACE_ENABLE_INFO
+// Полей: 8
+// Строки в оригинале: 313575-313585
+struct _TRACE_ENABLE_INFO
+{
+
+  unsigned int IsEnabled;
+  unsigned __int8 Level;
+  unsigned __int8 Reserved1;
+  unsigned __int16 LoggerId;
+  unsigned int EnableProperty;
+  unsigned int Reserved2;
+  unsigned __int64 MatchAnyKeyword;
+  unsigned __int64 MatchAllKeyword;
+
+};

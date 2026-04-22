@@ -1,0 +1,10 @@
+// Структура: _HEAP_OPPORTUNISTIC_LARGE_PAGE_STATS
+// Полей: 2
+// Строки в оригинале: 20550-20554
+struct _HEAP_OPPORTUNISTIC_LARGE_PAGE_STATS
+{
+
+  volatile unsigned int SmallPagesInUseWithinLarge;
+  volatile unsigned int OpportunisticLargePageCount;
+
+};

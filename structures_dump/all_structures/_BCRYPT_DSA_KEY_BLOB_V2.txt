@@ -1,0 +1,15 @@
+// Структура: _BCRYPT_DSA_KEY_BLOB_V2
+// Полей: 7
+// Строки в оригинале: 88024-88033
+struct _BCRYPT_DSA_KEY_BLOB_V2
+{
+
+  unsigned int dwMagic;
+  unsigned int cbKey;
+  HASHALGORITHM_ENUM hashAlgorithm;
+  DSAFIPSVERSION_ENUM standardVersion;
+  unsigned int cbSeedLength;
+  unsigned int cbGroupSize;
+  unsigned __int8 Count[4];
+
+};

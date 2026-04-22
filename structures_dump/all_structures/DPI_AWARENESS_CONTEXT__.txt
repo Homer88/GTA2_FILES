@@ -1,0 +1,9 @@
+// Структура: DPI_AWARENESS_CONTEXT__
+// Полей: 1
+// Строки в оригинале: 93519-93522
+struct DPI_AWARENESS_CONTEXT__
+{
+
+  int unused;
+
+};

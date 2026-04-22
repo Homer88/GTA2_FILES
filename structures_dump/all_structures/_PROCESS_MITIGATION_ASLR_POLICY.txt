@@ -1,0 +1,9 @@
+// Структура: _PROCESS_MITIGATION_ASLR_POLICY
+// Полей: 1
+// Строки в оригинале: 107593-107596
+struct _PROCESS_MITIGATION_ASLR_POLICY
+{
+
+  $14E97E78C016B260F38082F429CEF16F ___u0;
+
+};

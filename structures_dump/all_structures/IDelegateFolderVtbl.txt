@@ -1,0 +1,12 @@
+// Структура: IDelegateFolderVtbl
+// Полей: 4
+// Строки в оригинале: 39833-39839
+struct IDelegateFolderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDelegateFolder *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDelegateFolder *This);
+  ULONG (__stdcall *Release)(IDelegateFolder *This);
+  HRESULT (__stdcall *SetItemAlloc)(IDelegateFolder *This, IMalloc *pmalloc);
+
+};

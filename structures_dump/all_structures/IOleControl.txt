@@ -1,0 +1,9 @@
+// Структура: IOleControl
+// Полей: 1
+// Строки в оригинале: 40083-40086
+struct IOleControl
+{
+
+  struct IOleControlVtbl *lpVtbl;
+
+};

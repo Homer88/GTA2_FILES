@@ -1,0 +1,24 @@
+// Структура: IHTMLTableSectionVtbl
+// Полей: 16
+// Строки в оригинале: 35914-35932
+struct IHTMLTableSectionVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IHTMLTableSection *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IHTMLTableSection *This);
+  ULONG (__stdcall *Release)(IHTMLTableSection *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IHTMLTableSection *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IHTMLTableSection *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IHTMLTableSection *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IHTMLTableSection *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *put_align)(IHTMLTableSection *This, BSTR v);
+  HRESULT (__stdcall *get_align)(IHTMLTableSection *This, BSTR *p);
+  HRESULT (__stdcall *put_vAlign)(IHTMLTableSection *This, BSTR v);
+  HRESULT (__stdcall *get_vAlign)(IHTMLTableSection *This, BSTR *p);
+  HRESULT (__stdcall *put_bgColor)(IHTMLTableSection *This, VARIANT v);
+  HRESULT (__stdcall *get_bgColor)(IHTMLTableSection *This, VARIANT *p);
+  HRESULT (__stdcall *get_rows)(IHTMLTableSection *This, IHTMLElementCollection **p);
+  HRESULT (__stdcall *insertRow)(IHTMLTableSection *This, int index, IDispatch **row);
+  HRESULT (__stdcall *deleteRow)(IHTMLTableSection *This, int index);
+
+};

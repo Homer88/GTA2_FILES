@@ -1,0 +1,17 @@
+// Структура: _PROC_IDLE_STATE_ACCOUNTING
+// Полей: 9
+// Строки в оригинале: 14895-14906
+struct _PROC_IDLE_STATE_ACCOUNTING
+{
+
+  unsigned __int64 TotalTime;
+  unsigned int CancelCount;
+  unsigned int FailureCount;
+  unsigned int SuccessCount;
+  unsigned int InvalidBucketIndex;
+  unsigned __int64 MinTime;
+  unsigned __int64 MaxTime;
+  _PPM_SELECTION_STATISTICS SelectionStatistics;
+  _PROC_IDLE_STATE_BUCKET IdleTimeBuckets[26];
+
+};

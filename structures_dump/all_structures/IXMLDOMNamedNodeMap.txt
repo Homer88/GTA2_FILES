@@ -1,0 +1,9 @@
+// Структура: IXMLDOMNamedNodeMap
+// Полей: 1
+// Строки в оригинале: 43230-43233
+struct IXMLDOMNamedNodeMap
+{
+
+  struct IXMLDOMNamedNodeMapVtbl *lpVtbl;
+
+};

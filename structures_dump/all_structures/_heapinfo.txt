@@ -1,0 +1,11 @@
+// Структура: _heapinfo
+// Полей: 3
+// Строки в оригинале: 89133-89138
+struct _heapinfo
+{
+
+  int *_pentry;
+  unsigned int _size;
+  int _useflag;
+
+};

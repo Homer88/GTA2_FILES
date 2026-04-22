@@ -1,0 +1,81 @@
+// Структура: _MIDL_STUB_MESSAGE
+// Полей: 73
+// Строки в оригинале: 85981-86056
+struct _MIDL_STUB_MESSAGE
+{
+
+  _RPC_MESSAGE *RpcMsg;
+  unsigned __int8 *Buffer;
+  unsigned __int8 *BufferStart;
+  unsigned __int8 *BufferEnd;
+  unsigned __int8 *BufferMark;
+  unsigned int BufferLength;
+  unsigned int MemorySize;
+  unsigned __int8 *Memory;
+  unsigned __int8 IsClient;
+  unsigned __int8 Pad;
+  unsigned __int16 uFlags2;
+  int ReuseBuffer;
+  struct NDR_ALLOC_ALL_NODES_CONTEXT *pAllocAllNodesContext;
+  struct NDR_POINTER_QUEUE_STATE *pPointerQueueState;
+  int IgnoreEmbeddedPointers;
+  unsigned __int8 *PointerBufferMark;
+  unsigned __int8 CorrDespIncrement;
+  unsigned __int8 uFlags;
+  unsigned __int16 UniquePtrCount;
+  unsigned int MaxCount;
+  unsigned int Offset;
+  unsigned int ActualCount;
+  void *(__stdcall *pfnAllocate)(unsigned int);
+  void (__stdcall *pfnFree)(void *);
+  unsigned __int8 *StackTop;
+  unsigned __int8 *pPresentedType;
+  unsigned __int8 *pTransmitType;
+  void *SavedHandle;
+  const _MIDL_STUB_DESC *StubDesc;
+  _FULL_PTR_XLAT_TABLES *FullPtrXlatTables;
+  unsigned int FullPtrRefId;
+  unsigned int PointerLength;
+  __int32 fInDontFree : 1;
+  __int32 fDontCallFreeInst : 1;
+  __int32 fUnused1 : 1;
+  __int32 fHasReturn : 1;
+  __int32 fHasExtensions : 1;
+  __int32 fHasNewCorrDesc : 1;
+  __int32 fIsIn : 1;
+  __int32 fIsOut : 1;
+  __int32 fIsOicf : 1;
+  __int32 fBufferValid : 1;
+  __int32 fHasMemoryValidateCallback : 1;
+  __int32 fInFree : 1;
+  __int32 fNeedMCCP : 1;
+  __int32 fUnused2 : 3;
+  __int32 fUnused3 : 16;
+  unsigned int dwDestContext;
+  void *pvDestContext;
+  $3FA64165D15A4602C29B2D9B0DA4A5E9 **SavedContextHandles;
+  int ParamNumber;
+  IRpcChannelBuffer *pRpcChannelBuffer;
+  ARRAY_INFO *pArrayInfo;
+  unsigned int *SizePtrCountArray;
+  unsigned int *SizePtrOffsetArray;
+  unsigned int *SizePtrLengthArray;
+  void *pArgQueue;
+  unsigned int dwStubPhase;
+  void *LowStackMark;
+  struct _NDR_ASYNC_MESSAGE *pAsyncMsg;
+  struct _NDR_CORRELATION_INFO *pCorrInfo;
+  unsigned __int8 *pCorrMemory;
+  void *pMemoryList;
+  int pCSInfo;
+  unsigned __int8 *ConformanceMark;
+  unsigned __int8 *VarianceMark;
+  int Unused;
+  struct _NDR_PROC_CONTEXT *pContext;
+  void *ContextHandleHash;
+  void *pUserMarshalList;
+  unsigned __int8 *pFullPtrFormat;
+  int Reserved51_4;
+  int Reserved51_5;
+
+};

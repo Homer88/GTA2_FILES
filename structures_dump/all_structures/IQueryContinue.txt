@@ -1,0 +1,9 @@
+// Структура: IQueryContinue
+// Полей: 1
+// Строки в оригинале: 34091-34094
+struct IQueryContinue
+{
+
+  struct IQueryContinueVtbl *lpVtbl;
+
+};

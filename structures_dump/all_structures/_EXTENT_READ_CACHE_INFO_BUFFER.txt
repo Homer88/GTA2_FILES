@@ -1,0 +1,11 @@
+// Структура: _EXTENT_READ_CACHE_INFO_BUFFER
+// Полей: 3
+// Строки в оригинале: 93663-93668
+struct _EXTENT_READ_CACHE_INFO_BUFFER
+{
+
+  _LARGE_INTEGER AllocatedCache;
+  _LARGE_INTEGER PopulatedCache;
+  _LARGE_INTEGER InErrorCache;
+
+};

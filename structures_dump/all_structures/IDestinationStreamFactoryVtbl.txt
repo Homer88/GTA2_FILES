@@ -1,0 +1,12 @@
+// Структура: IDestinationStreamFactoryVtbl
+// Полей: 4
+// Строки в оригинале: 34139-34145
+struct IDestinationStreamFactoryVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDestinationStreamFactory *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDestinationStreamFactory *This);
+  ULONG (__stdcall *Release)(IDestinationStreamFactory *This);
+  HRESULT (__stdcall *GetDestinationStream)(IDestinationStreamFactory *This, IStream **ppstm);
+
+};

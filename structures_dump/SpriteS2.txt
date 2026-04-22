@@ -1,0 +1,9 @@
+// Structure: SpriteS2
+// Lines: 5667 - 5671
+// Fields: 3
+
+struct SpriteS2
+{
+  SpriteS3 *FirstElement;
+  GangInfo S40_ARR5031[5031];
+};

@@ -1,0 +1,54 @@
+// Структура: _SYNCH_COUNTERS
+// Полей: 46
+// Строки в оригинале: 13638-13686
+struct _SYNCH_COUNTERS
+{
+
+  unsigned int SpinLockAcquireCount;
+  unsigned int SpinLockContentionCount;
+  unsigned int SpinLockSpinCount;
+  unsigned int IpiSendRequestBroadcastCount;
+  unsigned int IpiSendRequestRoutineCount;
+  unsigned int IpiSendSoftwareInterruptCount;
+  unsigned int ExInitializeResourceCount;
+  unsigned int ExReInitializeResourceCount;
+  unsigned int ExDeleteResourceCount;
+  unsigned int ExecutiveResourceAcquiresCount;
+  unsigned int ExecutiveResourceContentionsCount;
+  unsigned int ExecutiveResourceReleaseExclusiveCount;
+  unsigned int ExecutiveResourceReleaseSharedCount;
+  unsigned int ExecutiveResourceConvertsCount;
+  unsigned int ExAcqResExclusiveAttempts;
+  unsigned int ExAcqResExclusiveAcquiresExclusive;
+  unsigned int ExAcqResExclusiveAcquiresExclusiveRecursive;
+  unsigned int ExAcqResExclusiveWaits;
+  unsigned int ExAcqResExclusiveNotAcquires;
+  unsigned int ExAcqResSharedAttempts;
+  unsigned int ExAcqResSharedAcquiresExclusive;
+  unsigned int ExAcqResSharedAcquiresShared;
+  unsigned int ExAcqResSharedAcquiresSharedRecursive;
+  unsigned int ExAcqResSharedWaits;
+  unsigned int ExAcqResSharedNotAcquires;
+  unsigned int ExAcqResSharedStarveExclusiveAttempts;
+  unsigned int ExAcqResSharedStarveExclusiveAcquiresExclusive;
+  unsigned int ExAcqResSharedStarveExclusiveAcquiresShared;
+  unsigned int ExAcqResSharedStarveExclusiveAcquiresSharedRecursive;
+  unsigned int ExAcqResSharedStarveExclusiveWaits;
+  unsigned int ExAcqResSharedStarveExclusiveNotAcquires;
+  unsigned int ExAcqResSharedWaitForExclusiveAttempts;
+  unsigned int ExAcqResSharedWaitForExclusiveAcquiresExclusive;
+  unsigned int ExAcqResSharedWaitForExclusiveAcquiresShared;
+  unsigned int ExAcqResSharedWaitForExclusiveAcquiresSharedRecursive;
+  unsigned int ExAcqResSharedWaitForExclusiveWaits;
+  unsigned int ExAcqResSharedWaitForExclusiveNotAcquires;
+  unsigned int ExSetResOwnerPointerExclusive;
+  unsigned int ExSetResOwnerPointerSharedNew;
+  unsigned int ExSetResOwnerPointerSharedOld;
+  unsigned int ExTryToAcqExclusiveAttempts;
+  unsigned int ExTryToAcqExclusiveAcquires;
+  unsigned int ExBoostExclusiveOwner;
+  unsigned int ExBoostSharedOwners;
+  unsigned int ExEtwSynchTrackingNotificationsCount;
+  unsigned int ExEtwSynchTrackingNotificationsAccountedCount;
+
+};

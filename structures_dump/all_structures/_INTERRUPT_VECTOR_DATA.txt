@@ -1,0 +1,18 @@
+// Структура: _INTERRUPT_VECTOR_DATA
+// Полей: 10
+// Строки в оригинале: 15899-15911
+struct _INTERRUPT_VECTOR_DATA
+{
+
+  INTERRUPT_CONNECTION_TYPE Type;
+  unsigned int Vector;
+  unsigned __int8 Irql;
+  _KINTERRUPT_POLARITY Polarity;
+  _KINTERRUPT_MODE Mode;
+  _GROUP_AFFINITY TargetProcessors;
+  _INTERRUPT_REMAPPING_INFO IntRemapInfo;
+  _INTERRUPT_VECTOR_DATA::$9C4F338B70295F7B2047FA8931243165 ControllerInput;
+  unsigned __int64 HvDeviceId;
+  $B43A09E10E0CD9627549C90E0C77EFE7 ___u9;
+
+};

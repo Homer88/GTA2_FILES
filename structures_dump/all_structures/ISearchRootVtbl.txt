@@ -1,0 +1,33 @@
+// Структура: ISearchRootVtbl
+// Полей: 25
+// Строки в оригинале: 44344-44371
+struct ISearchRootVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISearchRoot *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISearchRoot *This);
+  ULONG (__stdcall *Release)(ISearchRoot *This);
+  HRESULT (__stdcall *put_Schedule)(ISearchRoot *This, LPCWSTR pszTaskArg);
+  HRESULT (__stdcall *get_Schedule)(ISearchRoot *This, LPWSTR *ppszTaskArg);
+  HRESULT (__stdcall *put_RootURL)(ISearchRoot *This, LPCWSTR pszURL);
+  HRESULT (__stdcall *get_RootURL)(ISearchRoot *This, LPWSTR *ppszURL);
+  HRESULT (__stdcall *put_IsHierarchical)(ISearchRoot *This, BOOL fIsHierarchical);
+  HRESULT (__stdcall *get_IsHierarchical)(ISearchRoot *This, BOOL *pfIsHierarchical);
+  HRESULT (__stdcall *put_ProvidesNotifications)(ISearchRoot *This, BOOL fProvidesNotifications);
+  HRESULT (__stdcall *get_ProvidesNotifications)(ISearchRoot *This, BOOL *pfProvidesNotifications);
+  HRESULT (__stdcall *put_UseNotificationsOnly)(ISearchRoot *This, BOOL fUseNotificationsOnly);
+  HRESULT (__stdcall *get_UseNotificationsOnly)(ISearchRoot *This, BOOL *pfUseNotificationsOnly);
+  HRESULT (__stdcall *put_EnumerationDepth)(ISearchRoot *This, DWORD dwDepth);
+  HRESULT (__stdcall *get_EnumerationDepth)(ISearchRoot *This, DWORD *pdwDepth);
+  HRESULT (__stdcall *put_HostDepth)(ISearchRoot *This, DWORD dwDepth);
+  HRESULT (__stdcall *get_HostDepth)(ISearchRoot *This, DWORD *pdwDepth);
+  HRESULT (__stdcall *put_FollowDirectories)(ISearchRoot *This, BOOL fFollowDirectories);
+  HRESULT (__stdcall *get_FollowDirectories)(ISearchRoot *This, BOOL *pfFollowDirectories);
+  HRESULT (__stdcall *put_AuthenticationType)(ISearchRoot *This, AUTH_TYPE authType);
+  HRESULT (__stdcall *get_AuthenticationType)(ISearchRoot *This, AUTH_TYPE *pAuthType);
+  HRESULT (__stdcall *put_User)(ISearchRoot *This, LPCWSTR pszUser);
+  HRESULT (__stdcall *get_User)(ISearchRoot *This, LPWSTR *ppszUser);
+  HRESULT (__stdcall *put_Password)(ISearchRoot *This, LPCWSTR pszPassword);
+  HRESULT (__stdcall *get_Password)(ISearchRoot *This, LPWSTR *ppszPassword);
+
+};

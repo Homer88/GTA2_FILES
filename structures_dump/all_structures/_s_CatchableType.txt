@@ -1,0 +1,13 @@
+// Структура: _s_CatchableType
+// Полей: 5
+// Строки в оригинале: 58869-58876
+struct _s_CatchableType
+{
+
+  unsigned int properties;
+  TypeDescriptor *pType;
+  PMD thisDisplacement;
+  int sizeOrOffset;
+  void (__cdecl *copyFunction)(void *);
+
+};

@@ -1,0 +1,9 @@
+// Структура: IHTMLImgElement
+// Полей: 1
+// Строки в оригинале: 38876-38879
+struct IHTMLImgElement
+{
+
+  struct IHTMLImgElementVtbl *lpVtbl;
+
+};

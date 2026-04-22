@@ -1,0 +1,14 @@
+// Структура: _COUNTED_REASON_CONTEXT
+// Полей: 6
+// Строки в оригинале: 91828-91836
+struct _COUNTED_REASON_CONTEXT
+{
+
+  unsigned int Version;
+  unsigned int Flags;
+  $818E4E4C12A33B49FA5DAAB6E522D20F ___u2;
+  unsigned __int16 ResourceReasonId;
+  unsigned int StringCount;
+  _UNICODE_STRING *ReasonStrings;
+
+};

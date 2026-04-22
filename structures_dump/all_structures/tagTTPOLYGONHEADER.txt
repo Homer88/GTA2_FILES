@@ -1,0 +1,11 @@
+// Структура: tagTTPOLYGONHEADER
+// Полей: 3
+// Строки в оригинале: 95603-95608
+struct tagTTPOLYGONHEADER
+{
+
+  unsigned int cb;
+  unsigned int dwType;
+  tagPOINTFX pfxStart;
+
+};

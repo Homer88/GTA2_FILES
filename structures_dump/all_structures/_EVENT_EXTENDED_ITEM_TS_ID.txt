@@ -1,0 +1,9 @@
+// Структура: _EVENT_EXTENDED_ITEM_TS_ID
+// Полей: 1
+// Строки в оригинале: 311305-311308
+struct _EVENT_EXTENDED_ITEM_TS_ID
+{
+
+  unsigned int SessionId;
+
+};

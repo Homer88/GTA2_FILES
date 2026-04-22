@@ -1,0 +1,9 @@
+// Structure: _EXCEPTION_POINTERS
+// Lines: 2260 - 2264
+// Fields: 3
+
+struct _EXCEPTION_POINTERS
+{
+  _EXCEPTION_RECORD *ExceptionRecord;
+  _CONTEXT *ContextRecord;
+};

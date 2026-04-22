@@ -1,0 +1,10 @@
+// Структура: _SecPkgContext_NativeNamesW
+// Полей: 2
+// Строки в оригинале: 323914-323918
+struct _SecPkgContext_NativeNamesW
+{
+
+  wchar_t *sClientName;
+  wchar_t *sServerName;
+
+};

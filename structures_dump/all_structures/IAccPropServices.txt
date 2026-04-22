@@ -1,0 +1,9 @@
+// Структура: IAccPropServices
+// Полей: 1
+// Строки в оригинале: 35439-35442
+struct IAccPropServices
+{
+
+  struct IAccPropServicesVtbl *lpVtbl;
+
+};

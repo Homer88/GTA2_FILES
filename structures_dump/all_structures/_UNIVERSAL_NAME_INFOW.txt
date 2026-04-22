@@ -1,0 +1,9 @@
+// Структура: _UNIVERSAL_NAME_INFOW
+// Полей: 1
+// Строки в оригинале: 94721-94724
+struct _UNIVERSAL_NAME_INFOW
+{
+
+  wchar_t *lpUniversalName;
+
+};

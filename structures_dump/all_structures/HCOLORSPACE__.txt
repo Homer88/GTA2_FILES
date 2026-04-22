@@ -1,0 +1,9 @@
+// Структура: HCOLORSPACE__
+// Полей: 1
+// Строки в оригинале: 104620-104623
+struct HCOLORSPACE__
+{
+
+  int unused;
+
+};

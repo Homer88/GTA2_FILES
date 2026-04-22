@@ -1,0 +1,17 @@
+// Структура: IDirectDrawClipperVtbl
+// Полей: 9
+// Строки в оригинале: 24473-24484
+struct IDirectDrawClipperVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirectDrawClipper *This, const IID *const riid, LPVOID *ppvObj);
+  ULONG (__stdcall *AddRef)(IDirectDrawClipper *This);
+  ULONG (__stdcall *Release)(IDirectDrawClipper *This);
+  HRESULT (__stdcall *GetClipList)(IDirectDrawClipper *This, LPRECT, LPRGNDATA, LPDWORD);
+  HRESULT (__stdcall *GetHWnd)(IDirectDrawClipper *This, HWND *);
+  HRESULT (__stdcall *Initialize)(IDirectDrawClipper *This, LPDIRECTDRAW, DWORD);
+  HRESULT (__stdcall *IsClipListChanged)(IDirectDrawClipper *This, BOOL *);
+  HRESULT (__stdcall *SetClipList)(IDirectDrawClipper *This, LPRGNDATA, DWORD);
+  HRESULT (__stdcall *SetHWnd)(IDirectDrawClipper *This, DWORD, HWND);
+
+};

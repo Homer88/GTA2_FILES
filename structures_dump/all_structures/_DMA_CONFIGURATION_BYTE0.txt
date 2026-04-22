@@ -1,0 +1,12 @@
+// Структура: _DMA_CONFIGURATION_BYTE0
+// Полей: 4
+// Строки в оригинале: 89865-89871
+struct _DMA_CONFIGURATION_BYTE0
+{
+
+  unsigned __int8 Channel : 3;
+  unsigned __int8 Reserved : 3;
+  unsigned __int8 Shared : 1;
+  unsigned __int8 MoreEntries : 1;
+
+};

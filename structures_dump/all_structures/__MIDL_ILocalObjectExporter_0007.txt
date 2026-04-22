@@ -1,0 +1,24 @@
+// Структура: __MIDL_ILocalObjectExporter_0007
+// Полей: 16
+// Строки в оригинале: 61500-61518
+struct __MIDL_ILocalObjectExporter_0007
+{
+
+  unsigned int dwTid;
+  unsigned int dwPid;
+  unsigned int dwAuthnHint;
+  tagCOMVERSION dcomVersion;
+  CONTAINERVERSION containerVersion;
+  _GUID ipidRemUnknown;
+  unsigned int dwFlags;
+  tagDUALSTRINGARRAY *psa;
+  _GUID guidProcessIdentifier;
+  unsigned __int64 processHostId;
+  __MIDL_ILocalObjectExporter_0006 clientDependencyBehavior;
+  HSTRING__ *packageFullName;
+  HSTRING__ *userSid;
+  HSTRING__ *appcontainerSid;
+  unsigned __int64 primaryOxid;
+  _GUID primaryIpidRemUnknown;
+
+};

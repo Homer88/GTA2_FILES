@@ -1,0 +1,12 @@
+// Структура: IPersistVtbl
+// Полей: 4
+// Строки в оригинале: 36248-36254
+struct IPersistVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPersist *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPersist *This);
+  ULONG (__stdcall *Release)(IPersist *This);
+  HRESULT (__stdcall *GetClassID)(IPersist *This, CLSID *pClassID);
+
+};

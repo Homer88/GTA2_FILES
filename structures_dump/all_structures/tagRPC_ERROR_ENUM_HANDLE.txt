@@ -1,0 +1,11 @@
+// Структура: tagRPC_ERROR_ENUM_HANDLE
+// Полей: 3
+// Строки в оригинале: 96524-96529
+struct tagRPC_ERROR_ENUM_HANDLE
+{
+
+  unsigned int Signature;
+  void *CurrentPos;
+  void *Head;
+
+};

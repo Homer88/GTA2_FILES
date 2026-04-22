@@ -1,0 +1,11 @@
+// Структура: DISPLAYCONFIG_PATH_INFO
+// Полей: 3
+// Строки в оригинале: 112184-112189
+struct DISPLAYCONFIG_PATH_INFO
+{
+
+  DISPLAYCONFIG_PATH_SOURCE_INFO sourceInfo;
+  DISPLAYCONFIG_PATH_TARGET_INFO targetInfo;
+  unsigned int flags;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _IMAGE_SWITCHTABLE_BRANCH_DYNAMIC_RELOCATION
+// Полей: 2
+// Строки в оригинале: 86701-86705
+struct _IMAGE_SWITCHTABLE_BRANCH_DYNAMIC_RELOCATION
+{
+
+  unsigned __int16 PageRelativeOffset : 12;
+  unsigned __int16 RegisterNumber : 4;
+
+};

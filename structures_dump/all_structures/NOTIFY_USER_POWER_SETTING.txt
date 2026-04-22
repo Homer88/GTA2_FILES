@@ -1,0 +1,9 @@
+// Структура: NOTIFY_USER_POWER_SETTING
+// Полей: 1
+// Строки в оригинале: 108972-108975
+struct NOTIFY_USER_POWER_SETTING
+{
+
+  _GUID Guid;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _WMI_JOB_SET_QUERY_CPU_RATE
+// Полей: 2
+// Строки в оригинале: 312337-312341
+struct _WMI_JOB_SET_QUERY_CPU_RATE
+{
+
+  unsigned int AllFlags;
+  unsigned int Value;
+
+};

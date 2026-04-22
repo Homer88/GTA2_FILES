@@ -1,0 +1,10 @@
+// Структура: tagREGISTERWORDA
+// Полей: 2
+// Строки в оригинале: 96507-96511
+struct tagREGISTERWORDA
+{
+
+  char *lpReading;
+  char *lpWord;
+
+};

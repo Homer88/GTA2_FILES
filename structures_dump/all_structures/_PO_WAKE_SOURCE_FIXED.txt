@@ -1,0 +1,10 @@
+// Структура: _PO_WAKE_SOURCE_FIXED
+// Полей: 2
+// Строки в оригинале: 97819-97823
+struct _PO_WAKE_SOURCE_FIXED
+{
+
+  _PO_WAKE_SOURCE_HEADER Header;
+  PO_FIXED_WAKE_SOURCE_TYPE FixedWakeSourceType;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _PERFINFO_PAGECOMBINE_ITERATION_STAT
+// Полей: 4
+// Строки в оригинале: 311439-311445
+struct _PERFINFO_PAGECOMBINE_ITERATION_STAT
+{
+
+  unsigned __int32 StatType : 6;
+  unsigned __int32 Spare : 26;
+  unsigned int PagesScanned;
+  unsigned int PagesCombined;
+
+};

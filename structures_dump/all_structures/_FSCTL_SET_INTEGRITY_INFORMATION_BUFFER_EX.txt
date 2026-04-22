@@ -1,0 +1,14 @@
+// Структура: _FSCTL_SET_INTEGRITY_INFORMATION_BUFFER_EX
+// Полей: 6
+// Строки в оригинале: 84246-84254
+struct _FSCTL_SET_INTEGRITY_INFORMATION_BUFFER_EX
+{
+
+  unsigned __int8 EnableIntegrity;
+  unsigned __int8 KeepIntegrityStateUnchanged;
+  unsigned __int16 Reserved;
+  unsigned int Flags;
+  unsigned __int8 Version;
+  unsigned __int8 Reserved2[7];
+
+};

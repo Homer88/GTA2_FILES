@@ -1,0 +1,9 @@
+// Структура: IColumnsInfo
+// Полей: 1
+// Строки в оригинале: 36483-36486
+struct IColumnsInfo
+{
+
+  struct IColumnsInfoVtbl *lpVtbl;
+
+};

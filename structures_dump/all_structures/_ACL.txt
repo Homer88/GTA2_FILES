@@ -1,0 +1,13 @@
+// Структура: _ACL
+// Полей: 5
+// Строки в оригинале: 22349-22356
+struct _ACL
+{
+
+  unsigned __int8 AclRevision;
+  unsigned __int8 Sbz1;
+  unsigned __int16 AclSize;
+  unsigned __int16 AceCount;
+  unsigned __int16 Sbz2;
+
+};

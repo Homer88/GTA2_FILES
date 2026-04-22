@@ -1,0 +1,11 @@
+// Структура: tagSECURITYBINDING
+// Полей: 3
+// Строки в оригинале: 106011-106016
+struct tagSECURITYBINDING
+{
+
+  unsigned __int16 wAuthnSvc;
+  unsigned __int16 wAuthzSvc;
+  unsigned __int16 aPrincName;
+
+};

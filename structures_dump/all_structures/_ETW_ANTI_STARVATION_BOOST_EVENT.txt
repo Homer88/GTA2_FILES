@@ -1,0 +1,12 @@
+// Структура: _ETW_ANTI_STARVATION_BOOST_EVENT
+// Полей: 4
+// Строки в оригинале: 310906-310912
+struct _ETW_ANTI_STARVATION_BOOST_EVENT
+{
+
+  unsigned int ThreadId;
+  unsigned __int16 ProcessorIndex;
+  char OldPriority;
+  unsigned __int8 SpareByte;
+
+};

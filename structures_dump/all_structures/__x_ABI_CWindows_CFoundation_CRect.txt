@@ -1,0 +1,12 @@
+// Структура: __x_ABI_CWindows_CFoundation_CRect
+// Полей: 4
+// Строки в оригинале: 352762-352768
+struct __x_ABI_CWindows_CFoundation_CRect
+{
+
+  FLOAT X;
+  FLOAT Y;
+  FLOAT Width;
+  FLOAT Height;
+
+};

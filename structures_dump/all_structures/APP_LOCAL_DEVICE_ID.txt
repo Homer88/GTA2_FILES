@@ -1,0 +1,9 @@
+// Структура: APP_LOCAL_DEVICE_ID
+// Полей: 1
+// Строки в оригинале: 102502-102505
+struct APP_LOCAL_DEVICE_ID
+{
+
+  unsigned __int8 value[32];
+
+};

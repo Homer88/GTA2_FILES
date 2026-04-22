@@ -1,0 +1,13 @@
+// Структура: tagORPCTHIS
+// Полей: 5
+// Строки в оригинале: 97543-97550
+struct tagORPCTHIS
+{
+
+  tagCOMVERSION version;
+  unsigned int flags;
+  unsigned int reserved1;
+  _GUID cid;
+  tagORPC_EXTENT_ARRAY *extensions;
+
+};

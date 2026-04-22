@@ -1,0 +1,25 @@
+// Структура: IDirect3DBaseTexture9Vtbl
+// Полей: 17
+// Строки в оригинале: 26159-26178
+struct IDirect3DBaseTexture9Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirect3DBaseTexture9 *This, const IID *const riid, void **ppvObj);
+  ULONG (__stdcall *AddRef)(IDirect3DBaseTexture9 *This);
+  ULONG (__stdcall *Release)(IDirect3DBaseTexture9 *This);
+  HRESULT (__stdcall *GetDevice)(IDirect3DBaseTexture9 *This, IDirect3DDevice9 **ppDevice);
+  HRESULT (__stdcall *SetPrivateData)(IDirect3DBaseTexture9 *This, const GUID *const refguid, const void *pData, DWORD SizeOfData, DWORD Flags);
+  HRESULT (__stdcall *GetPrivateData)(IDirect3DBaseTexture9 *This, const GUID *const refguid, void *pData, DWORD *pSizeOfData);
+  HRESULT (__stdcall *FreePrivateData)(IDirect3DBaseTexture9 *This, const GUID *const refguid);
+  DWORD (__stdcall *SetPriority)(IDirect3DBaseTexture9 *This, DWORD PriorityNew);
+  DWORD (__stdcall *GetPriority)(IDirect3DBaseTexture9 *This);
+  void (__stdcall *PreLoad)(IDirect3DBaseTexture9 *This);
+  D3DRESOURCETYPE (__stdcall *GetType)(IDirect3DBaseTexture9 *This);
+  DWORD (__stdcall *SetLOD)(IDirect3DBaseTexture9 *This, DWORD LODNew);
+  DWORD (__stdcall *GetLOD)(IDirect3DBaseTexture9 *This);
+  DWORD (__stdcall *GetLevelCount)(IDirect3DBaseTexture9 *This);
+  HRESULT (__stdcall *SetAutoGenFilterType)(IDirect3DBaseTexture9 *This, D3DTEXTUREFILTERTYPE FilterType);
+  D3DTEXTUREFILTERTYPE (__stdcall *GetAutoGenFilterType)(IDirect3DBaseTexture9 *This);
+  void (__stdcall *GenerateMipSubLevels)(IDirect3DBaseTexture9 *This);
+
+};

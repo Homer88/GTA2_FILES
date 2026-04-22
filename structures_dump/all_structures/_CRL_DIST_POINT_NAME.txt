@@ -1,0 +1,10 @@
+// Структура: _CRL_DIST_POINT_NAME
+// Полей: 2
+// Строки в оригинале: 91442-91446
+struct _CRL_DIST_POINT_NAME
+{
+
+  unsigned int dwDistPointNameChoice;
+  _CERT_ALT_NAME_INFO FullName;
+
+};

@@ -1,0 +1,13 @@
+// Структура: tagSWITCH_CONTEXT_PLATFORM_DETAILS
+// Полей: 5
+// Строки в оригинале: 309593-309600
+struct tagSWITCH_CONTEXT_PLATFORM_DETAILS
+{
+
+  SWITCH_CONTEXT_PLATFORM_ID Id;
+  _GUID Guid;
+  unsigned __int16 Major;
+  unsigned __int16 Minor;
+  const wchar_t *Name;
+
+};

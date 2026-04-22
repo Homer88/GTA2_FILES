@@ -1,0 +1,10 @@
+// Структура: _CERT_X942_DH_VALIDATION_PARAMS
+// Полей: 2
+// Строки в оригинале: 93962-93966
+struct _CERT_X942_DH_VALIDATION_PARAMS
+{
+
+  _CRYPT_BIT_BLOB seed;
+  unsigned int pgenCounter;
+
+};

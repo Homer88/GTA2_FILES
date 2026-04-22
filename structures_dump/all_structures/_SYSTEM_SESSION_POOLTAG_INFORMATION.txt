@@ -1,0 +1,12 @@
+// Структура: _SYSTEM_SESSION_POOLTAG_INFORMATION
+// Полей: 4
+// Строки в оригинале: 103234-103240
+struct _SYSTEM_SESSION_POOLTAG_INFORMATION
+{
+
+  unsigned int NextEntryOffset;
+  unsigned int SessionId;
+  unsigned int Count;
+  _SYSTEM_POOLTAG TagInfo[1];
+
+};

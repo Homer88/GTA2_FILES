@@ -1,0 +1,11 @@
+// Структура: _FILE_IO_COMPLETION_INFORMATION
+// Полей: 3
+// Строки в оригинале: 105052-105057
+struct _FILE_IO_COMPLETION_INFORMATION
+{
+
+  void *KeyContext;
+  void *ApcContext;
+  _IO_STATUS_BLOCK IoStatusBlock;
+
+};

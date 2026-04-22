@@ -1,0 +1,9 @@
+// Структура: IFileSaveDialog
+// Полей: 1
+// Строки в оригинале: 34475-34478
+struct IFileSaveDialog
+{
+
+  struct IFileSaveDialogVtbl *lpVtbl;
+
+};

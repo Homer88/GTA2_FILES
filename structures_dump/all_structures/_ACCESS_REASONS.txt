@@ -1,0 +1,9 @@
+// Структура: _ACCESS_REASONS
+// Полей: 1
+// Строки в оригинале: 19340-19343
+struct _ACCESS_REASONS
+{
+
+  unsigned int Data[32];
+
+};

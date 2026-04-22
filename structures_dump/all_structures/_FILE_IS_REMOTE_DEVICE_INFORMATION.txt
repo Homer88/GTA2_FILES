@@ -1,0 +1,9 @@
+// Структура: _FILE_IS_REMOTE_DEVICE_INFORMATION
+// Полей: 1
+// Строки в оригинале: 109846-109849
+struct _FILE_IS_REMOTE_DEVICE_INFORMATION
+{
+
+  unsigned __int8 IsRemote;
+
+};

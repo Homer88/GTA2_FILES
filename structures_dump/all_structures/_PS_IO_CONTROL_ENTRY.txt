@@ -1,0 +1,13 @@
+// Структура: _PS_IO_CONTROL_ENTRY
+// Полей: 5
+// Строки в оригинале: 16808-16815
+struct _PS_IO_CONTROL_ENTRY
+{
+
+  $2F51C78C19551C90E10A9672A1C0ACAF ___u0;
+  unsigned int VolumeKey;
+  _EX_RUNDOWN_REF Rundown;
+  void *IoControl;
+  void *VolumeIoAttribution;
+
+};

@@ -1,0 +1,17 @@
+// Структура: _CMSG_KEY_AGREE_ENCRYPT_INFO
+// Полей: 9
+// Строки в оригинале: 81192-81203
+struct _CMSG_KEY_AGREE_ENCRYPT_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int dwRecipientIndex;
+  _CRYPT_ALGORITHM_IDENTIFIER KeyEncryptionAlgorithm;
+  _CRYPTOAPI_BLOB UserKeyingMaterial;
+  unsigned int dwOriginatorChoice;
+  $CA195191285679223859A8CDCE3799DA ___u5;
+  unsigned int cKeyAgreeKeyEncryptInfo;
+  _CMSG_KEY_AGREE_KEY_ENCRYPT_INFO **rgpKeyAgreeKeyEncryptInfo;
+  unsigned int dwFlags;
+
+};

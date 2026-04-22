@@ -1,0 +1,9 @@
+// Структура: CallEntryBuffer
+// Полей: 1
+// Строки в оригинале: 62397-62400
+struct CallEntryBuffer
+{
+
+  unsigned int Reserved[3];
+
+};

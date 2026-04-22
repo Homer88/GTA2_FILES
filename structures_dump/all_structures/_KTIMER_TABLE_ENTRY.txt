@@ -1,0 +1,11 @@
+// Структура: _KTIMER_TABLE_ENTRY
+// Полей: 3
+// Строки в оригинале: 13420-13425
+struct _KTIMER_TABLE_ENTRY
+{
+
+  unsigned int Lock;
+  _LIST_ENTRY Entry;
+  _ULARGE_INTEGER Time;
+
+};

@@ -1,0 +1,12 @@
+// Структура: tagENUMLOGFONTEXW
+// Полей: 4
+// Строки в оригинале: 85382-85388
+struct tagENUMLOGFONTEXW
+{
+
+  tagLOGFONTW elfLogFont;
+  wchar_t elfFullName[64];
+  wchar_t elfStyle[32];
+  wchar_t elfScript[32];
+
+};

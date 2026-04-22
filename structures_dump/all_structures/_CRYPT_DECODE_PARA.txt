@@ -1,0 +1,11 @@
+// Структура: _CRYPT_DECODE_PARA
+// Полей: 3
+// Строки в оригинале: 94733-94738
+struct _CRYPT_DECODE_PARA
+{
+
+  unsigned int cbSize;
+  void *(__stdcall *pfnAlloc)(unsigned int);
+  void (__stdcall *pfnFree)(void *);
+
+};

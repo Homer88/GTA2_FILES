@@ -1,0 +1,10 @@
+// Структура: _MkInterfaceList
+// Полей: 2
+// Строки в оригинале: 78836-78840
+struct _MkInterfaceList
+{
+
+  unsigned int dwSize;
+  _MkInterfaceListEntry apIFDList[1];
+
+};

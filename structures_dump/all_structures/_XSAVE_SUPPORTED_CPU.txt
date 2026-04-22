@@ -1,0 +1,10 @@
+// Структура: _XSAVE_SUPPORTED_CPU
+// Полей: 2
+// Строки в оригинале: 88922-88926
+struct _XSAVE_SUPPORTED_CPU
+{
+
+  XSAVE_CPU_INFO CpuInfo;
+  $B9F545A5BF281FD4EAE9F683B1A4C0F0 ___u1;
+
+};

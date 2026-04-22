@@ -1,0 +1,10 @@
+// Структура: _RTL_IMAGE_MITIGATION_BINARY_SIGNATURE_POLICY
+// Полей: 2
+// Строки в оригинале: 96126-96130
+struct _RTL_IMAGE_MITIGATION_BINARY_SIGNATURE_POLICY
+{
+
+  _RTL_IMAGE_MITIGATION_POLICY BlockNonMicrosoftSignedBinaries;
+  _RTL_IMAGE_MITIGATION_POLICY EnforceSigningOnModuleDependencies;
+
+};

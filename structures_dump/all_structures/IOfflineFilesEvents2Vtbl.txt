@@ -1,0 +1,45 @@
+// Структура: IOfflineFilesEvents2Vtbl
+// Полей: 37
+// Строки в оригинале: 27857-27896
+struct IOfflineFilesEvents2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesEvents2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesEvents2 *This);
+  ULONG (__stdcall *Release)(IOfflineFilesEvents2 *This);
+  HRESULT (__stdcall *CacheMoved)(IOfflineFilesEvents2 *This, LPCWSTR pszOldPath, LPCWSTR pszNewPath);
+  HRESULT (__stdcall *CacheIsFull)(IOfflineFilesEvents2 *This);
+  HRESULT (__stdcall *CacheIsCorrupted)(IOfflineFilesEvents2 *This);
+  HRESULT (__stdcall *Enabled)(IOfflineFilesEvents2 *This, BOOL bEnabled);
+  HRESULT (__stdcall *EncryptionChanged)(IOfflineFilesEvents2 *This, BOOL bWasEncrypted, BOOL bWasPartial, BOOL bIsEncrypted, BOOL bIsPartial);
+  HRESULT (__stdcall *SyncBegin)(IOfflineFilesEvents2 *This, const GUID *const rSyncId);
+  HRESULT (__stdcall *SyncFileResult)(IOfflineFilesEvents2 *This, const GUID *const rSyncId, LPCWSTR pszFile, HRESULT hrResult);
+  HRESULT (__stdcall *SyncConflictRecAdded)(IOfflineFilesEvents2 *This, LPCWSTR pszConflictPath, const FILETIME *pftConflictDateTime, OFFLINEFILES_SYNC_STATE ConflictSyncState);
+  HRESULT (__stdcall *SyncConflictRecUpdated)(IOfflineFilesEvents2 *This, LPCWSTR pszConflictPath, const FILETIME *pftConflictDateTime, OFFLINEFILES_SYNC_STATE ConflictSyncState);
+  HRESULT (__stdcall *SyncConflictRecRemoved)(IOfflineFilesEvents2 *This, LPCWSTR pszConflictPath, const FILETIME *pftConflictDateTime, OFFLINEFILES_SYNC_STATE ConflictSyncState);
+  HRESULT (__stdcall *SyncEnd)(IOfflineFilesEvents2 *This, const GUID *const rSyncId, HRESULT hrResult);
+  HRESULT (__stdcall *NetTransportArrived)(IOfflineFilesEvents2 *This);
+  HRESULT (__stdcall *NoNetTransports)(IOfflineFilesEvents2 *This);
+  HRESULT (__stdcall *ItemDisconnected)(IOfflineFilesEvents2 *This, LPCWSTR pszPath, OFFLINEFILES_ITEM_TYPE ItemType);
+  HRESULT (__stdcall *ItemReconnected)(IOfflineFilesEvents2 *This, LPCWSTR pszPath, OFFLINEFILES_ITEM_TYPE ItemType);
+  HRESULT (__stdcall *ItemAvailableOffline)(IOfflineFilesEvents2 *This, LPCWSTR pszPath, OFFLINEFILES_ITEM_TYPE ItemType);
+  HRESULT (__stdcall *ItemNotAvailableOffline)(IOfflineFilesEvents2 *This, LPCWSTR pszPath, OFFLINEFILES_ITEM_TYPE ItemType);
+  HRESULT (__stdcall *ItemPinned)(IOfflineFilesEvents2 *This, LPCWSTR pszPath, OFFLINEFILES_ITEM_TYPE ItemType);
+  HRESULT (__stdcall *ItemNotPinned)(IOfflineFilesEvents2 *This, LPCWSTR pszPath, OFFLINEFILES_ITEM_TYPE ItemType);
+  HRESULT (__stdcall *ItemModified)(IOfflineFilesEvents2 *This, LPCWSTR pszPath, OFFLINEFILES_ITEM_TYPE ItemType, BOOL bModifiedData, BOOL bModifiedAttributes);
+  HRESULT (__stdcall *ItemAddedToCache)(IOfflineFilesEvents2 *This, LPCWSTR pszPath, OFFLINEFILES_ITEM_TYPE ItemType);
+  HRESULT (__stdcall *ItemDeletedFromCache)(IOfflineFilesEvents2 *This, LPCWSTR pszPath, OFFLINEFILES_ITEM_TYPE ItemType);
+  HRESULT (__stdcall *ItemRenamed)(IOfflineFilesEvents2 *This, LPCWSTR pszOldPath, LPCWSTR pszNewPath, OFFLINEFILES_ITEM_TYPE ItemType);
+  HRESULT (__stdcall *DataLost)(IOfflineFilesEvents2 *This);
+  HRESULT (__stdcall *Ping)(IOfflineFilesEvents2 *This);
+  HRESULT (__stdcall *ItemReconnectBegin)(IOfflineFilesEvents2 *This);
+  HRESULT (__stdcall *ItemReconnectEnd)(IOfflineFilesEvents2 *This);
+  HRESULT (__stdcall *CacheEvictBegin)(IOfflineFilesEvents2 *This);
+  HRESULT (__stdcall *CacheEvictEnd)(IOfflineFilesEvents2 *This);
+  HRESULT (__stdcall *BackgroundSyncBegin)(IOfflineFilesEvents2 *This, DWORD dwSyncControlFlags);
+  HRESULT (__stdcall *BackgroundSyncEnd)(IOfflineFilesEvents2 *This, DWORD dwSyncControlFlags);
+  HRESULT (__stdcall *PolicyChangeDetected)(IOfflineFilesEvents2 *This);
+  HRESULT (__stdcall *PreferenceChangeDetected)(IOfflineFilesEvents2 *This);
+  HRESULT (__stdcall *SettingsChangesApplied)(IOfflineFilesEvents2 *This);
+
+};

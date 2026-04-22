@@ -1,0 +1,11 @@
+// Структура: _RTL_SPARSE_ARRAY
+// Полей: 3
+// Строки в оригинале: 20372-20377
+struct _RTL_SPARSE_ARRAY
+{
+
+  unsigned int ElementCount;
+  unsigned int ElementSizeShift;
+  _RTL_CSPARSE_BITMAP Bitmap;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _EXPLICIT_ACCESS_W
+// Полей: 4
+// Строки в оригинале: 212356-212362
+struct _EXPLICIT_ACCESS_W
+{
+
+  unsigned int grfAccessPermissions;
+  _ACCESS_MODE grfAccessMode;
+  unsigned int grfInheritance;
+  _TRUSTEE_W Trustee;
+
+};

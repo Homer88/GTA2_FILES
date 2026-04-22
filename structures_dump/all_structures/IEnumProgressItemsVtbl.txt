@@ -1,0 +1,15 @@
+// Структура: IEnumProgressItemsVtbl
+// Полей: 7
+// Строки в оригинале: 41358-41367
+struct IEnumProgressItemsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumProgressItems *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumProgressItems *This);
+  ULONG (__stdcall *Release)(IEnumProgressItems *This);
+  HRESULT (__stdcall *Next)(IEnumProgressItems *This, ULONG celt, IProgressItem **rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumProgressItems *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumProgressItems *This);
+  HRESULT (__stdcall *Clone)(IEnumProgressItems *This, IEnumProgressItems **ppEnum);
+
+};

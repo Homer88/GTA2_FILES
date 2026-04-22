@@ -1,0 +1,9 @@
+// Структура: EnumVerbCache
+// Полей: 1
+// Строки в оригинале: 141635-141638
+struct EnumVerbCache
+{
+
+  CEnumVerb *pEnum;
+
+};

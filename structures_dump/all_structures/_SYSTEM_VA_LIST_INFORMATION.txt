@@ -1,0 +1,12 @@
+// Структура: _SYSTEM_VA_LIST_INFORMATION
+// Полей: 4
+// Строки в оригинале: 92982-92988
+struct _SYSTEM_VA_LIST_INFORMATION
+{
+
+  unsigned int VirtualSize;
+  unsigned int VirtualPeak;
+  unsigned int VirtualLimit;
+  unsigned int AllocationFailures;
+
+};

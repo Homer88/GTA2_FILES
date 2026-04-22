@@ -1,0 +1,9 @@
+// Структура: ITfFunctionProvider
+// Полей: 1
+// Строки в оригинале: 41608-41611
+struct ITfFunctionProvider
+{
+
+  struct ITfFunctionProviderVtbl *lpVtbl;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _SecPkgContext_AuthzID
+// Полей: 2
+// Строки в оригинале: 325699-325703
+struct _SecPkgContext_AuthzID
+{
+
+  unsigned int AuthzIDLength;
+  char *AuthzID;
+
+};

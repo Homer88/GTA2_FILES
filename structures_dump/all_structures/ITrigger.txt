@@ -1,0 +1,9 @@
+// Структура: ITrigger
+// Полей: 1
+// Строки в оригинале: 44976-44979
+struct ITrigger
+{
+
+  struct ITriggerVtbl *lpVtbl;
+
+};

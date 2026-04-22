@@ -1,0 +1,13 @@
+// Структура: _RTL_USER_PROCESS_INFORMATION
+// Полей: 5
+// Строки в оригинале: 95050-95057
+struct _RTL_USER_PROCESS_INFORMATION
+{
+
+  unsigned int Length;
+  void *Process;
+  void *Thread;
+  _CLIENT_ID ClientId;
+  _SECTION_IMAGE_INFORMATION ImageInformation;
+
+};

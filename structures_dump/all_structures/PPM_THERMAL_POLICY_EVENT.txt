@@ -1,0 +1,10 @@
+// Структура: PPM_THERMAL_POLICY_EVENT
+// Полей: 2
+// Строки в оригинале: 103147-103151
+struct PPM_THERMAL_POLICY_EVENT
+{
+
+  unsigned __int8 Mode;
+  unsigned __int64 Processors;
+
+};

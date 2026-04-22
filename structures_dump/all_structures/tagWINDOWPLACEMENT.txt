@@ -1,0 +1,14 @@
+// Структура: tagWINDOWPLACEMENT
+// Полей: 6
+// Строки в оригинале: 95260-95268
+struct tagWINDOWPLACEMENT
+{
+
+  unsigned int length;
+  unsigned int flags;
+  unsigned int showCmd;
+  tagPOINT ptMinPosition;
+  tagPOINT ptMaxPosition;
+  tagRECT rcNormalPosition;
+
+};

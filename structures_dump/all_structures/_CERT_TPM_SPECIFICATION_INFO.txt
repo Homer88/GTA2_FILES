@@ -1,0 +1,11 @@
+// Структура: _CERT_TPM_SPECIFICATION_INFO
+// Полей: 3
+// Строки в оригинале: 98182-98187
+struct _CERT_TPM_SPECIFICATION_INFO
+{
+
+  wchar_t *pwszFamily;
+  unsigned int dwLevel;
+  unsigned int dwRevision;
+
+};

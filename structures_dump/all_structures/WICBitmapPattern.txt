@@ -1,0 +1,13 @@
+// Структура: WICBitmapPattern
+// Полей: 5
+// Строки в оригинале: 42370-42377
+struct WICBitmapPattern
+{
+
+  ULARGE_INTEGER Position;
+  ULONG Length;
+  BYTE *Pattern;
+  BYTE *Mask;
+  BOOL EndOfStream;
+
+};

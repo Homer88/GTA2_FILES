@@ -1,0 +1,9 @@
+// Структура: _EVENT_EXTENDED_ITEM_PEBS_INDEX
+// Полей: 1
+// Строки в оригинале: 312514-312517
+struct _EVENT_EXTENDED_ITEM_PEBS_INDEX
+{
+
+  unsigned __int64 PebsIndex;
+
+};

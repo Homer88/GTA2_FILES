@@ -1,0 +1,20 @@
+// Структура: IPropertySystemVtbl
+// Полей: 12
+// Строки в оригинале: 42967-42981
+struct IPropertySystemVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertySystem *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertySystem *This);
+  ULONG (__stdcall *Release)(IPropertySystem *This);
+  HRESULT (__stdcall *GetPropertyDescription)(IPropertySystem *This, const PROPERTYKEY *const propkey, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetPropertyDescriptionByName)(IPropertySystem *This, LPCWSTR pszCanonicalName, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetPropertyDescriptionListFromString)(IPropertySystem *This, LPCWSTR pszPropList, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *EnumeratePropertyDescriptions)(IPropertySystem *This, PROPDESC_ENUMFILTER filterOn, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *FormatForDisplay)(IPropertySystem *This, const PROPERTYKEY *const key, const PROPVARIANT *const propvar, PROPDESC_FORMAT_FLAGS pdff, LPWSTR pszText, DWORD cchText);
+  HRESULT (__stdcall *FormatForDisplayAlloc)(IPropertySystem *This, const PROPERTYKEY *const key, const PROPVARIANT *const propvar, PROPDESC_FORMAT_FLAGS pdff, LPWSTR *ppszDisplay);
+  HRESULT (__stdcall *RegisterPropertySchema)(IPropertySystem *This, LPCWSTR pszPath);
+  HRESULT (__stdcall *UnregisterPropertySchema)(IPropertySystem *This, LPCWSTR pszPath);
+  HRESULT (__stdcall *RefreshPropertySchema)(IPropertySystem *This);
+
+};

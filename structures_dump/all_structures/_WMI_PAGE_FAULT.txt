@@ -1,0 +1,10 @@
+// Структура: _WMI_PAGE_FAULT
+// Полей: 2
+// Строки в оригинале: 312034-312038
+struct _WMI_PAGE_FAULT
+{
+
+  void *VirtualAddress;
+  void *ProgramCounter;
+
+};

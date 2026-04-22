@@ -1,0 +1,23 @@
+// Структура: tagIPIDEntry
+// Полей: 15
+// Строки в оригинале: 62557-62574
+struct tagIPIDEntry
+{
+
+  tagIPIDEntry *pNextIPID;
+  unsigned int dwFlags;
+  unsigned int cStrongRefs;
+  unsigned int cWeakRefs;
+  unsigned int cPrivateRefs;
+  void *pv;
+  IUnknown *pStub;
+  OXIDEntry *pOXIDEntry;
+  _GUID ipid;
+  _GUID iid;
+  CCtxComChnl *pChnl;
+  IRCEntry *pIRCEntry;
+  HSTRING__ *pInterfaceName;
+  tagIPIDEntry *pOIDFLink;
+  tagIPIDEntry *pOIDBLink;
+
+};

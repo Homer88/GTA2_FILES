@@ -1,0 +1,14 @@
+// Структура: _CMSG_ENVELOPED_ENCODE_INFO
+// Полей: 6
+// Строки в оригинале: 85363-85371
+struct _CMSG_ENVELOPED_ENCODE_INFO
+{
+
+  unsigned int cbSize;
+  unsigned int hCryptProv;
+  _CRYPT_ALGORITHM_IDENTIFIER ContentEncryptionAlgorithm;
+  void *pvEncryptionAuxInfo;
+  unsigned int cRecipients;
+  _CERT_INFO **rgpRecipients;
+
+};

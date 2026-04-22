@@ -1,0 +1,13 @@
+// Структура: _SYSTEM_DPC_BEHAVIOR_INFORMATION
+// Полей: 5
+// Строки в оригинале: 96514-96521
+struct _SYSTEM_DPC_BEHAVIOR_INFORMATION
+{
+
+  unsigned int Spare;
+  unsigned int DpcQueueDepth;
+  unsigned int MinimumDpcRate;
+  unsigned int AdjustDpcThreshold;
+  unsigned int IdealDpcRate;
+
+};

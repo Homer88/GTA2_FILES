@@ -1,0 +1,15 @@
+// Структура: IEnumCATEGORYINFOVtbl
+// Полей: 7
+// Строки в оригинале: 40780-40789
+struct IEnumCATEGORYINFOVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumCATEGORYINFO *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumCATEGORYINFO *This);
+  ULONG (__stdcall *Release)(IEnumCATEGORYINFO *This);
+  HRESULT (__stdcall *Next)(IEnumCATEGORYINFO *This, ULONG celt, CATEGORYINFO *rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumCATEGORYINFO *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumCATEGORYINFO *This);
+  HRESULT (__stdcall *Clone)(IEnumCATEGORYINFO *This, IEnumCATEGORYINFO **ppenum);
+
+};

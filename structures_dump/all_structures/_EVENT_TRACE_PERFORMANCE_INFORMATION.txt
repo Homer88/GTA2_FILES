@@ -1,0 +1,10 @@
+// Структура: _EVENT_TRACE_PERFORMANCE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 309184-309188
+struct _EVENT_TRACE_PERFORMANCE_INFORMATION
+{
+
+  _EVENT_TRACE_INFORMATION_CLASS EventTraceInformationClass;
+  _LARGE_INTEGER LogfileBytesWritten;
+
+};

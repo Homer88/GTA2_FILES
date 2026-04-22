@@ -1,0 +1,11 @@
+// Структура: tagCLASS_DATA
+// Полей: 3
+// Строки в оригинале: 146511-146516
+struct tagCLASS_DATA
+{
+
+  const _GUID *pclsid;
+  const wchar_t *wszName;
+  const wchar_t *wszProgId;
+
+};

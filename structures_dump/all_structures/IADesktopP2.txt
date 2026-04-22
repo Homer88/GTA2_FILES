@@ -1,0 +1,9 @@
+// Структура: IADesktopP2
+// Полей: 1
+// Строки в оригинале: 34210-34213
+struct IADesktopP2
+{
+
+  struct IADesktopP2Vtbl *lpVtbl;
+
+};

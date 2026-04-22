@@ -1,0 +1,11 @@
+// Структура: _ETW_UMS_EVENT_PARK
+// Полей: 3
+// Строки в оригинале: 310994-310999
+struct _ETW_UMS_EVENT_PARK
+{
+
+  unsigned int ProcessId;
+  unsigned int ScheduledThreadId;
+  unsigned int ParkFlags;
+
+};

@@ -1,0 +1,9 @@
+// Структура: HTMLDocumentEvents
+// Полей: 1
+// Строки в оригинале: 43044-43047
+struct HTMLDocumentEvents
+{
+
+  struct HTMLDocumentEventsVtbl *lpVtbl;
+
+};

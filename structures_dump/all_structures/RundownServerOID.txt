@@ -1,0 +1,10 @@
+// Структура: RundownServerOID
+// Полей: 2
+// Строки в оригинале: 246408-246412
+struct RundownServerOID
+{
+
+  unsigned __int64 oid;
+  _GUID implementedInterface;
+
+};

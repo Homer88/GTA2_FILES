@@ -1,0 +1,17 @@
+// Структура: _CRYPT_PROVUI_DATA
+// Полей: 9
+// Строки в оригинале: 122081-122092
+struct _CRYPT_PROVUI_DATA
+{
+
+  unsigned int cbStruct;
+  unsigned int dwFinalError;
+  wchar_t *pYesButtonText;
+  wchar_t *pNoButtonText;
+  wchar_t *pMoreInfoButtonText;
+  wchar_t *pAdvancedLinkText;
+  wchar_t *pCopyActionText;
+  wchar_t *pCopyActionTextNoTS;
+  wchar_t *pCopyActionTextNotSigned;
+
+};

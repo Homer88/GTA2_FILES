@@ -1,0 +1,10 @@
+// Структура: tagINPUT
+// Полей: 2
+// Строки в оригинале: 99633-99637
+struct tagINPUT
+{
+
+  unsigned int type;
+  $B1BD71F39255D710DE9B29C3932A6802 ___u1;
+
+};

@@ -1,0 +1,19 @@
+// Структура: _OBJECT_BASIC_INFORMATION
+// Полей: 11
+// Строки в оригинале: 109593-109606
+struct _OBJECT_BASIC_INFORMATION
+{
+
+  unsigned int Attributes;
+  unsigned int GrantedAccess;
+  unsigned int HandleCount;
+  unsigned int PointerCount;
+  unsigned int PagedPoolCharge;
+  unsigned int NonPagedPoolCharge;
+  unsigned int Reserved[3];
+  unsigned int NameInfoSize;
+  unsigned int TypeInfoSize;
+  unsigned int SecurityDescriptorSize;
+  _LARGE_INTEGER CreationTime;
+
+};

@@ -1,0 +1,9 @@
+// Структура: ISearchCrawlScopeManager
+// Полей: 1
+// Строки в оригинале: 44108-44111
+struct ISearchCrawlScopeManager
+{
+
+  struct ISearchCrawlScopeManagerVtbl *lpVtbl;
+
+};

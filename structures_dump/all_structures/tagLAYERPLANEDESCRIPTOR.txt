@@ -1,0 +1,32 @@
+// Структура: tagLAYERPLANEDESCRIPTOR
+// Полей: 24
+// Строки в оригинале: 90082-90108
+struct tagLAYERPLANEDESCRIPTOR
+{
+
+  unsigned __int16 nSize;
+  unsigned __int16 nVersion;
+  unsigned int dwFlags;
+  unsigned __int8 iPixelType;
+  unsigned __int8 cColorBits;
+  unsigned __int8 cRedBits;
+  unsigned __int8 cRedShift;
+  unsigned __int8 cGreenBits;
+  unsigned __int8 cGreenShift;
+  unsigned __int8 cBlueBits;
+  unsigned __int8 cBlueShift;
+  unsigned __int8 cAlphaBits;
+  unsigned __int8 cAlphaShift;
+  unsigned __int8 cAccumBits;
+  unsigned __int8 cAccumRedBits;
+  unsigned __int8 cAccumGreenBits;
+  unsigned __int8 cAccumBlueBits;
+  unsigned __int8 cAccumAlphaBits;
+  unsigned __int8 cDepthBits;
+  unsigned __int8 cStencilBits;
+  unsigned __int8 cAuxBuffers;
+  unsigned __int8 iLayerPlane;
+  unsigned __int8 bReserved;
+  unsigned int crTransparent;
+
+};

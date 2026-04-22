@@ -1,0 +1,10 @@
+// Структура: tagSWITCH_CONTEXT
+// Полей: 2
+// Строки в оригинале: 312976-312980
+struct tagSWITCH_CONTEXT
+{
+
+  tagSWITCH_CONTEXT_ATTRIBUTE Attribute;
+  tagSWITCH_CONTEXT_DATA Data;
+
+};

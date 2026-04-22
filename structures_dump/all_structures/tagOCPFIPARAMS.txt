@@ -1,0 +1,19 @@
+// Структура: tagOCPFIPARAMS
+// Полей: 11
+// Строки в оригинале: 124187-124200
+struct tagOCPFIPARAMS
+{
+
+  unsigned int cbStructSize;
+  HWND__ *hWndOwner;
+  int x;
+  int y;
+  const wchar_t *lpszCaption;
+  unsigned int cObjects;
+  IUnknown **lplpUnk;
+  unsigned int cPages;
+  _GUID *lpPages;
+  unsigned int lcid;
+  int dispidInitialProperty;
+
+};

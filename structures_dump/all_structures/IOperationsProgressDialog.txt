@@ -1,0 +1,9 @@
+// Структура: IOperationsProgressDialog
+// Полей: 1
+// Строки в оригинале: 32175-32178
+struct IOperationsProgressDialog
+{
+
+  struct IOperationsProgressDialogVtbl *lpVtbl;
+
+};

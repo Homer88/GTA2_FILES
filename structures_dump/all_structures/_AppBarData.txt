@@ -1,0 +1,14 @@
+// Структура: _AppBarData
+// Полей: 6
+// Строки в оригинале: 107147-107155
+struct _AppBarData
+{
+
+  unsigned int cbSize;
+  HWND__ *hWnd;
+  unsigned int uCallbackMessage;
+  unsigned int uEdge;
+  tagRECT rc;
+  int lParam;
+
+};

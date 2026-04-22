@@ -1,0 +1,29 @@
+// Структура: _KLDR_DATA_TABLE_ENTRY
+// Полей: 21
+// Строки в оригинале: 83040-83063
+struct _KLDR_DATA_TABLE_ENTRY
+{
+
+  _LIST_ENTRY InLoadOrderLinks;
+  void *ExceptionTable;
+  unsigned int ExceptionTableSize;
+  void *GpValue;
+  _NON_PAGED_DEBUG_INFO *NonPagedDebugInfo;
+  void *DllBase;
+  void *EntryPoint;
+  unsigned int SizeOfImage;
+  _UNICODE_STRING FullDllName;
+  _UNICODE_STRING BaseDllName;
+  unsigned int Flags;
+  unsigned __int16 LoadCount;
+  _KLDR_DATA_TABLE_ENTRY::<unnamed_type_u1> u1;
+  void *SectionPointer;
+  unsigned int CheckSum;
+  unsigned int CoverageSectionSize;
+  void *CoverageSection;
+  void *LoadedImports;
+  void *Spare;
+  unsigned int SizeOfImageNotRounded;
+  unsigned int TimeDateStamp;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _PROCESS_STACK_ALLOCATION_INFORMATION_EX
+// Полей: 5
+// Строки в оригинале: 105723-105730
+struct _PROCESS_STACK_ALLOCATION_INFORMATION_EX
+{
+
+  unsigned int PreferredNode;
+  unsigned int Reserved0;
+  unsigned int Reserved1;
+  unsigned int Reserved2;
+  _PROCESS_STACK_ALLOCATION_INFORMATION AllocInfo;
+
+};

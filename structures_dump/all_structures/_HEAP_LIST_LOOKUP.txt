@@ -1,0 +1,17 @@
+// Структура: _HEAP_LIST_LOOKUP
+// Полей: 9
+// Строки в оригинале: 20818-20829
+struct _HEAP_LIST_LOOKUP
+{
+
+  _HEAP_LIST_LOOKUP *ExtendedLookup;
+  unsigned int ArraySize;
+  unsigned int ExtraItem;
+  unsigned int ItemCount;
+  unsigned int OutOfRangeItems;
+  unsigned int BaseIndex;
+  _LIST_ENTRY *ListHead;
+  unsigned int *ListsInUseUlong;
+  _LIST_ENTRY **ListHints;
+
+};

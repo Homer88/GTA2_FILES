@@ -1,0 +1,21 @@
+// Структура: _PARAM_STRUCT
+// Полей: 13
+// Строки в оригинале: 152575-152590
+struct _PARAM_STRUCT
+{
+
+  IDispatch *This;
+  int dispIdMember;
+  const _GUID *const riid;
+  unsigned int lcid;
+  unsigned int dwFlags;
+  tagDISPPARAMS *pDispParams;
+  tagVARIANT *pVarResult;
+  tagEXCEPINFO *pExcepInfo;
+  unsigned int *pArgErr;
+  unsigned int cVarRef;
+  unsigned int *rgVarRefIdx;
+  tagVARIANT *rgVarRef;
+  HRESULT _RetVal;
+
+};

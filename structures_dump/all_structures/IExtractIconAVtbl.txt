@@ -1,0 +1,10 @@
+// Структура: IExtractIconAVtbl
+// Полей: 2
+// Строки в оригинале: 31292-31296
+struct IExtractIconAVtbl
+{
+
+  HRESULT (__stdcall *GetIconLocation)(IExtractIconA *This, UINT uFlags, PSTR pszIconFile, UINT cchMax, int *piIndex, UINT *pwFlags);
+  HRESULT (__stdcall *Extract)(IExtractIconA *This, PCSTR pszFile, UINT nIconIndex, HICON *phiconLarge, HICON *phiconSmall, UINT nIconSize);
+
+};

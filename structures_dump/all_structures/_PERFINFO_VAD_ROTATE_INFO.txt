@@ -1,0 +1,11 @@
+// Структура: _PERFINFO_VAD_ROTATE_INFO
+// Полей: 3
+// Строки в оригинале: 309971-309976
+struct _PERFINFO_VAD_ROTATE_INFO
+{
+
+  void *BaseAddress;
+  unsigned int SizeInBytes;
+  $BCCE745F076EE67F84EA2CD19C73B16A ___u2;
+
+};

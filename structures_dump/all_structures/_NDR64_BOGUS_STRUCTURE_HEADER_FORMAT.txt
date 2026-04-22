@@ -1,0 +1,16 @@
+// Структура: _NDR64_BOGUS_STRUCTURE_HEADER_FORMAT
+// Полей: 8
+// Строки в оригинале: 330872-330882
+struct _NDR64_BOGUS_STRUCTURE_HEADER_FORMAT
+{
+
+  unsigned __int8 FormatCode;
+  unsigned __int8 Alignment;
+  _NDR64_STRUCTURE_FLAGS Flags;
+  unsigned __int8 Reserve;
+  unsigned int MemorySize;
+  const void *OriginalMemberLayout;
+  const void *OriginalPointerLayout;
+  const void *PointerLayout;
+
+};

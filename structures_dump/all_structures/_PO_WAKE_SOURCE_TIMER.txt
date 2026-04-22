@@ -1,0 +1,10 @@
+// Структура: _PO_WAKE_SOURCE_TIMER
+// Полей: 2
+// Строки в оригинале: 102508-102512
+struct _PO_WAKE_SOURCE_TIMER
+{
+
+  _PO_WAKE_SOURCE_HEADER Header;
+  _DIAGNOSTIC_BUFFER Reason;
+
+};

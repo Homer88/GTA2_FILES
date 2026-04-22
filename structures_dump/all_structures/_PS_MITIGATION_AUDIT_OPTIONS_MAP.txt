@@ -1,0 +1,9 @@
+// Структура: _PS_MITIGATION_AUDIT_OPTIONS_MAP
+// Полей: 1
+// Строки в оригинале: 12562-12565
+struct _PS_MITIGATION_AUDIT_OPTIONS_MAP
+{
+
+  unsigned __int64 Map[3];
+
+};

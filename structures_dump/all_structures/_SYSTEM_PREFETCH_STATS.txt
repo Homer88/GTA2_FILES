@@ -1,0 +1,16 @@
+// Структура: _SYSTEM_PREFETCH_STATS
+// Полей: 8
+// Строки в оригинале: 87594-87604
+struct _SYSTEM_PREFETCH_STATS
+{
+
+  unsigned int DemandFilePageCount;
+  unsigned int DemandFileIOCount;
+  unsigned int TrickleFilePageCount;
+  unsigned int TrickleFileIOCount;
+  unsigned int DemandPrivatePageCount;
+  unsigned int DemandPrivateIOCount;
+  unsigned int TricklePrivatePageCount;
+  unsigned int TricklePrivateIOCount;
+
+};

@@ -1,0 +1,19 @@
+// Структура: _SYSTEM_PROCESS_INFORMATION_EXTENSION
+// Полей: 11
+// Строки в оригинале: 89230-89243
+struct _SYSTEM_PROCESS_INFORMATION_EXTENSION
+{
+
+  _PROCESS_DISK_COUNTERS DiskCounters;
+  unsigned __int64 ContextSwitches;
+  $4F1983DD8B73B33174137DD81A9D3506 ___u2;
+  unsigned int UserSidOffset;
+  unsigned int PackageFullNameOffset;
+  _PROCESS_ENERGY_VALUES EnergyValues;
+  unsigned int AppIdOffset;
+  unsigned int SharedCommitCharge;
+  unsigned int JobObjectId;
+  unsigned int SpareUlong;
+  unsigned __int64 ProcessSequenceNumber;
+
+};

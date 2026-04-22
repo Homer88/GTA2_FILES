@@ -1,0 +1,13 @@
+// Структура: _NCRYPT_VSM_KEY_ATTESTATION_STATEMENT
+// Полей: 5
+// Строки в оригинале: 89447-89454
+struct _NCRYPT_VSM_KEY_ATTESTATION_STATEMENT
+{
+
+  unsigned int Magic;
+  unsigned int Version;
+  unsigned int cbSignature;
+  unsigned int cbReport;
+  unsigned int cbAttributes;
+
+};

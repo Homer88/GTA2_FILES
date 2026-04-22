@@ -1,0 +1,12 @@
+// Структура: _COVERAGE_MODULES
+// Полей: 4
+// Строки в оригинале: 89593-89599
+struct _COVERAGE_MODULES
+{
+
+  unsigned int ListAndReset;
+  unsigned int NumberOfModules;
+  _COVERAGE_MODULE_REQUEST ModuleRequestInfo;
+  _COVERAGE_MODULE_INFO Modules[1];
+
+};

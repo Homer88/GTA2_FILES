@@ -1,0 +1,9 @@
+// Структура: _TRANSACTION_BIND_INFORMATION
+// Полей: 1
+// Строки в оригинале: 107388-107391
+struct _TRANSACTION_BIND_INFORMATION
+{
+
+  void *TmHandle;
+
+};

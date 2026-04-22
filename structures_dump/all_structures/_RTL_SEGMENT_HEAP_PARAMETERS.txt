@@ -1,0 +1,13 @@
+// Структура: _RTL_SEGMENT_HEAP_PARAMETERS
+// Полей: 5
+// Строки в оригинале: 101364-101371
+struct _RTL_SEGMENT_HEAP_PARAMETERS
+{
+
+  unsigned __int16 Version;
+  unsigned __int16 Size;
+  unsigned int Flags;
+  _RTL_SEGMENT_HEAP_MEMORY_SOURCE MemorySource;
+  unsigned int Reserved[4];
+
+};

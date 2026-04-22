@@ -1,0 +1,11 @@
+// Структура: Collide
+// Полей: 3
+// Строки в оригинале: 10102-10107
+struct Collide
+{
+
+  int Index;
+  int Index_1;
+  int field_8;
+
+};

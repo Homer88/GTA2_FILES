@@ -1,0 +1,14 @@
+// Структура: _FINDFIRSTACTIVATIONCONTEXTSECTION
+// Полей: 6
+// Строки в оригинале: 89351-89359
+struct _FINDFIRSTACTIVATIONCONTEXTSECTION
+{
+
+  unsigned int Size;
+  unsigned int Flags;
+  const _GUID *ExtensionGuid;
+  unsigned int Id;
+  unsigned int Depth;
+  unsigned int OutFlags;
+
+};

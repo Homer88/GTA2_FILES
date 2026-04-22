@@ -1,0 +1,9 @@
+// Структура: IAuthenticate
+// Полей: 1
+// Строки в оригинале: 40828-40831
+struct IAuthenticate
+{
+
+  struct IAuthenticateVtbl *lpVtbl;
+
+};

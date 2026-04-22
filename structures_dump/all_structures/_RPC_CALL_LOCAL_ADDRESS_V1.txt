@@ -1,0 +1,12 @@
+// Структура: _RPC_CALL_LOCAL_ADDRESS_V1
+// Полей: 4
+// Строки в оригинале: 85777-85783
+struct _RPC_CALL_LOCAL_ADDRESS_V1
+{
+
+  unsigned int Version;
+  void *Buffer;
+  unsigned int BufferSize;
+  tagRpcLocalAddressFormat AddressFormat;
+
+};

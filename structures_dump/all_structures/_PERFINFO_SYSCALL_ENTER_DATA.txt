@@ -1,0 +1,9 @@
+// Структура: _PERFINFO_SYSCALL_ENTER_DATA
+// Полей: 1
+// Строки в оригинале: 310015-310018
+struct _PERFINFO_SYSCALL_ENTER_DATA
+{
+
+  void *SysCallAddr;
+
+};

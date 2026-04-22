@@ -1,0 +1,15 @@
+// Структура: _CRYPT_GET_TIME_VALID_OBJECT_EXTRA_INFO
+// Полей: 7
+// Строки в оригинале: 107338-107347
+struct _CRYPT_GET_TIME_VALID_OBJECT_EXTRA_INFO
+{
+
+  unsigned int cbSize;
+  int iDeltaCrlIndicator;
+  _FILETIME *pftCacheResync;
+  _FILETIME *pLastSyncTime;
+  _FILETIME *pMaxAgeTime;
+  _CERT_REVOCATION_CHAIN_PARA *pChainPara;
+  _CRYPTOAPI_BLOB *pDeltaCrlIndicator;
+
+};

@@ -1,0 +1,13 @@
+// Структура: tagInitializeSpyNode
+// Полей: 5
+// Строки в оригинале: 63556-63563
+struct tagInitializeSpyNode
+{
+
+  tagInitializeSpyNode *pNext;
+  tagInitializeSpyNode *pPrev;
+  unsigned int dwRefs;
+  unsigned int dwCookie;
+  IInitializeSpy *pInitSpy;
+
+};

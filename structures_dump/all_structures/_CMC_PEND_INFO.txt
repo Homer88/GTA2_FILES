@@ -1,0 +1,10 @@
+// Структура: _CMC_PEND_INFO
+// Полей: 2
+// Строки в оригинале: 91593-91597
+struct _CMC_PEND_INFO
+{
+
+  _CRYPTOAPI_BLOB PendToken;
+  _FILETIME PendTime;
+
+};

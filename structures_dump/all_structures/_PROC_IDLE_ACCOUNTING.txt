@@ -1,0 +1,16 @@
+// Структура: _PROC_IDLE_ACCOUNTING
+// Полей: 8
+// Строки в оригинале: 14909-14919
+struct _PROC_IDLE_ACCOUNTING
+{
+
+  unsigned int StateCount;
+  unsigned int TotalTransitions;
+  unsigned int ResetCount;
+  unsigned int AbortCount;
+  unsigned __int64 StartTime;
+  unsigned __int64 PriorIdleTime;
+  PPM_IDLE_BUCKET_TIME_TYPE TimeUnit;
+  _PROC_IDLE_STATE_ACCOUNTING State[1];
+
+};

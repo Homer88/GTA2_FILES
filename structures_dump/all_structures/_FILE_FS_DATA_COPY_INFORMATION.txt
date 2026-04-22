@@ -1,0 +1,9 @@
+// Структура: _FILE_FS_DATA_COPY_INFORMATION
+// Полей: 1
+// Строки в оригинале: 93244-93247
+struct _FILE_FS_DATA_COPY_INFORMATION
+{
+
+  unsigned int NumberOfCopies;
+
+};

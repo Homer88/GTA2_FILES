@@ -1,0 +1,18 @@
+// Структура: _MTA_USAGE_GLOBALS
+// Полей: 10
+// Строки в оригинале: 219871-219883
+struct _MTA_USAGE_GLOBALS
+{
+
+  unsigned int dwStackCapture;
+  unsigned int *p_cMTAInits;
+  unsigned int *p_cMTAIncInits;
+  unsigned int *p_cMTAWaiters;
+  unsigned int *p_cMTAIncrementorSize;
+  unsigned int dwCompletionTimeOut;
+  _LIST_ENTRY *pListEntryHeadMTAUsageIncrementor;
+  volatile unsigned int *p_posMTAIncrementorCompleted;
+  _MTA_USAGE_INCREMENTOR **ppMTAUsageCompletedIncrementorHead;
+  MTA_HOST_USAGE_FLAGS *p_fMTAHostUsageFlags;
+
+};

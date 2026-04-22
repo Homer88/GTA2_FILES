@@ -1,0 +1,13 @@
+// Структура: _HEAP_SUBALLOCATOR_CALLBACKS
+// Полей: 5
+// Строки в оригинале: 20335-20342
+struct _HEAP_SUBALLOCATOR_CALLBACKS
+{
+
+  unsigned int Allocate;
+  unsigned int Free;
+  unsigned int Commit;
+  unsigned int Decommit;
+  unsigned int ExtendContext;
+
+};

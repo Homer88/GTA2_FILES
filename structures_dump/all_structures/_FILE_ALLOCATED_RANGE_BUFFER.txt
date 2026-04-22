@@ -1,0 +1,10 @@
+// Структура: _FILE_ALLOCATED_RANGE_BUFFER
+// Полей: 2
+// Строки в оригинале: 104508-104512
+struct _FILE_ALLOCATED_RANGE_BUFFER
+{
+
+  _LARGE_INTEGER FileOffset;
+  _LARGE_INTEGER Length;
+
+};

@@ -1,0 +1,13 @@
+// Структура: ITypeCompVtbl
+// Полей: 5
+// Строки в оригинале: 23814-23821
+struct ITypeCompVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITypeComp *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITypeComp *This);
+  ULONG (__stdcall *Release)(ITypeComp *This);
+  HRESULT (__stdcall *Bind)(ITypeComp *This, LPOLESTR szName, ULONG lHashVal, WORD wFlags, ITypeInfo **ppTInfo, DESCKIND *pDescKind, BINDPTR *pBindPtr);
+  HRESULT (__stdcall *BindType)(ITypeComp *This, LPOLESTR szName, ULONG lHashVal, ITypeInfo **ppTInfo, ITypeComp **ppTComp);
+
+};

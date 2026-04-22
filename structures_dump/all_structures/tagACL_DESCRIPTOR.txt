@@ -1,0 +1,13 @@
+// Структура: tagACL_DESCRIPTOR
+// Полей: 5
+// Строки в оригинале: 273097-273104
+struct tagACL_DESCRIPTOR
+{
+
+  void *pACLBuffer;
+  unsigned int ulACLBufferSize;
+  unsigned int ulSIDSize;
+  int bDirtyACL;
+  _SECURITY_DESCRIPTOR SecDesc;
+
+};

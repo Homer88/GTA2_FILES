@@ -1,0 +1,9 @@
+// Структура: __FITypedEventHandler_2_IInspectable_IInspectable
+// Полей: 1
+// Строки в оригинале: 352721-352724
+struct __FITypedEventHandler_2_IInspectable_IInspectable
+{
+
+  struct __FITypedEventHandler_2_IInspectable_IInspectableVtbl *lpVtbl;
+
+};

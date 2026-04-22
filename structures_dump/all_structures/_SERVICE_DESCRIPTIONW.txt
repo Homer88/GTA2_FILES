@@ -1,0 +1,9 @@
+// Структура: _SERVICE_DESCRIPTIONW
+// Полей: 1
+// Строки в оригинале: 95215-95218
+struct _SERVICE_DESCRIPTIONW
+{
+
+  wchar_t *lpDescription;
+
+};

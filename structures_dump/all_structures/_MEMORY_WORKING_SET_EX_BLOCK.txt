@@ -1,0 +1,9 @@
+// Структура: _MEMORY_WORKING_SET_EX_BLOCK
+// Полей: 1
+// Строки в оригинале: 101708-101711
+struct _MEMORY_WORKING_SET_EX_BLOCK
+{
+
+  $567F2F63CAFD6D979CA1DB6EA14475AB ___u0;
+
+};

@@ -1,0 +1,13 @@
+// Структура: tagChannelWrapper
+// Полей: 5
+// Строки в оригинале: 286470-286477
+struct tagChannelWrapper
+{
+
+  const IRpcChannelBufferVtbl *lpVtbl /*VFT*/;
+  int RefCount;
+  const _GUID *pIID;
+  IRpcChannelBuffer *pChannel;
+  const IChannelWrapperVtbl *pChannelWrapperVtbl;
+
+};

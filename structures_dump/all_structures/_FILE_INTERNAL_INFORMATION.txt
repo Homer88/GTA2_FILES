@@ -1,0 +1,9 @@
+// Структура: _FILE_INTERNAL_INFORMATION
+// Полей: 1
+// Строки в оригинале: 92182-92185
+struct _FILE_INTERNAL_INFORMATION
+{
+
+  _LARGE_INTEGER IndexNumber;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _UMS_CREATE_THREAD_ATTRIBUTES
+// Полей: 3
+// Строки в оригинале: 104256-104261
+struct _UMS_CREATE_THREAD_ATTRIBUTES
+{
+
+  unsigned int UmsVersion;
+  $28678FD832A8AFCA57D28463BB5EAFCE ___u1;
+  $F2B125B633907AB71DF63FEE546E694F ___u2;
+
+};

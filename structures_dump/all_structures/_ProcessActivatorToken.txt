@@ -1,0 +1,11 @@
+// Структура: _ProcessActivatorToken
+// Полей: 3
+// Строки в оригинале: 192730-192735
+struct _ProcessActivatorToken
+{
+
+  _GUID ProcessGUID;
+  _GUID ActivatorIPID;
+  unsigned int dwFlags;
+
+};

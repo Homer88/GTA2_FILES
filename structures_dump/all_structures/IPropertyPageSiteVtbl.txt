@@ -1,0 +1,15 @@
+// Структура: IPropertyPageSiteVtbl
+// Полей: 7
+// Строки в оригинале: 182199-182208
+struct IPropertyPageSiteVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyPageSite *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyPageSite *This);
+  ULONG (__stdcall *Release)(IPropertyPageSite *This);
+  HRESULT (__stdcall *OnStatusChange)(IPropertyPageSite *This, DWORD dwFlags);
+  HRESULT (__stdcall *GetLocaleID)(IPropertyPageSite *This, LCID *pLocaleID);
+  HRESULT (__stdcall *GetPageContainer)(IPropertyPageSite *This, IUnknown **ppUnk);
+  HRESULT (__stdcall *TranslateAcceleratorA)(IPropertyPageSite *This, MSG *pMsg);
+
+};

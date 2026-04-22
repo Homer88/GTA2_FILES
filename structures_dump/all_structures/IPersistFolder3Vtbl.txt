@@ -1,0 +1,16 @@
+// Структура: IPersistFolder3Vtbl
+// Полей: 8
+// Строки в оригинале: 45320-45330
+struct IPersistFolder3Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPersistFolder3 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPersistFolder3 *This);
+  ULONG (__stdcall *Release)(IPersistFolder3 *This);
+  HRESULT (__stdcall *GetClassID)(IPersistFolder3 *This, CLSID *pClassID);
+  HRESULT (__stdcall *Initialize)(IPersistFolder3 *This, LPCITEMIDLIST pidl);
+  HRESULT (__stdcall *GetCurFolder)(IPersistFolder3 *This, LPITEMIDLIST *ppidl);
+  HRESULT (__stdcall *InitializeEx)(IPersistFolder3 *This, IBindCtx *pbc, LPCITEMIDLIST pidlRoot, const PERSIST_FOLDER_TARGET_INFO *ppfti);
+  HRESULT (__stdcall *GetFolderTargetInfo)(IPersistFolder3 *This, PERSIST_FOLDER_TARGET_INFO *ppfti);
+
+};

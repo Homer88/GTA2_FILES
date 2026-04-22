@@ -1,0 +1,22 @@
+// Структура: IDirectInputEffectDriverVtbl
+// Полей: 14
+// Строки в оригинале: 28874-28890
+struct IDirectInputEffectDriverVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirectInputEffectDriver *This, const IID *const riid, LPVOID *ppvObj);
+  ULONG (__stdcall *AddRef)(IDirectInputEffectDriver *This);
+  ULONG (__stdcall *Release)(IDirectInputEffectDriver *This);
+  HRESULT (__stdcall *DeviceID)(IDirectInputEffectDriver *This, DWORD, DWORD, DWORD, DWORD, LPVOID);
+  HRESULT (__stdcall *GetVersions)(IDirectInputEffectDriver *This, LPDIDRIVERVERSIONS);
+  HRESULT (__stdcall *Escape)(IDirectInputEffectDriver *This, DWORD, DWORD, LPDIEFFESCAPE);
+  HRESULT (__stdcall *SetGain)(IDirectInputEffectDriver *This, DWORD, DWORD);
+  HRESULT (__stdcall *SendForceFeedbackCommand)(IDirectInputEffectDriver *This, DWORD, DWORD);
+  HRESULT (__stdcall *GetForceFeedbackState)(IDirectInputEffectDriver *This, DWORD, LPDIDEVICESTATE);
+  HRESULT (__stdcall *DownloadEffect)(IDirectInputEffectDriver *This, DWORD, DWORD, LPDWORD, LPCDIEFFECT, DWORD);
+  HRESULT (__stdcall *DestroyEffect)(IDirectInputEffectDriver *This, DWORD, DWORD);
+  HRESULT (__stdcall *StartEffect)(IDirectInputEffectDriver *This, DWORD, DWORD, DWORD, DWORD);
+  HRESULT (__stdcall *StopEffect)(IDirectInputEffectDriver *This, DWORD, DWORD);
+  HRESULT (__stdcall *GetEffectStatus)(IDirectInputEffectDriver *This, DWORD, DWORD, LPDWORD);
+
+};

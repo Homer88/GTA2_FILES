@@ -1,0 +1,16 @@
+// Структура: _SYNTAX_DISPATCH_TABLE
+// Полей: 8
+// Строки в оригинале: 86185-86195
+struct _SYNTAX_DISPATCH_TABLE
+{
+
+  void (__fastcall *pfnInit)(_MIDL_STUB_MESSAGE *, void *);
+  void (__fastcall *pfnSizing)(_MIDL_STUB_MESSAGE *, int);
+  void (__fastcall *pfnMarshal)(_MIDL_STUB_MESSAGE *);
+  void (__fastcall *pfnUnMarshal)(_MIDL_STUB_MESSAGE *, void *);
+  void (__fastcall *pfnExceptionHandling)(_MIDL_STUB_MESSAGE *, unsigned int, int, _CLIENT_CALL_RETURN *);
+  void (__fastcall *pfnClientFinally)(_MIDL_STUB_MESSAGE *, void *);
+  unsigned __int8 *(__stdcall *pfnGetBuffer)(_MIDL_STUB_MESSAGE *, unsigned int, void *);
+  void (__fastcall *pfnSendReceive)(_MIDL_STUB_MESSAGE *);
+
+};

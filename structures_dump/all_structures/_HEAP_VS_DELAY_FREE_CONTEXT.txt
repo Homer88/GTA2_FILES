@@ -1,0 +1,9 @@
+// Структура: _HEAP_VS_DELAY_FREE_CONTEXT
+// Полей: 1
+// Строки в оригинале: 20616-20619
+struct _HEAP_VS_DELAY_FREE_CONTEXT
+{
+
+  _SLIST_HEADER ListHead;
+
+};

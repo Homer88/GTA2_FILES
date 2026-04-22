@@ -1,0 +1,13 @@
+// Структура: _PORT_MESSAGE
+// Полей: 5
+// Строки в оригинале: 84940-84947
+struct _PORT_MESSAGE
+{
+
+  _PORT_MESSAGE::<unnamed_type_u1> u1;
+  _PORT_MESSAGE::<unnamed_type_u2> u2;
+  $1E86567D5DD53724ED873C2D52D0BED1 ___u2;
+  unsigned int MessageId;
+  $DFDBDD63C2587FA282FAD6CEC707ED02 ___u4;
+
+};

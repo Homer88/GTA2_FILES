@@ -1,0 +1,15 @@
+// Структура: _CMSG_CTRL_KEY_AGREE_DECRYPT_PARA
+// Полей: 7
+// Строки в оригинале: 98899-98908
+struct _CMSG_CTRL_KEY_AGREE_DECRYPT_PARA
+{
+
+  unsigned int cbSize;
+  $2648935626D60F3A93F830EF5D884CB4 ___u1;
+  unsigned int dwKeySpec;
+  _CMSG_KEY_AGREE_RECIPIENT_INFO *pKeyAgree;
+  unsigned int dwRecipientIndex;
+  unsigned int dwRecipientEncryptedKeyIndex;
+  _CRYPT_BIT_BLOB OriginatorPublicKey;
+
+};

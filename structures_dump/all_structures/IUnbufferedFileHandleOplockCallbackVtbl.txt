@@ -1,0 +1,12 @@
+// Структура: IUnbufferedFileHandleOplockCallbackVtbl
+// Полей: 4
+// Строки в оригинале: 352404-352410
+struct IUnbufferedFileHandleOplockCallbackVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IUnbufferedFileHandleOplockCallback *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IUnbufferedFileHandleOplockCallback *This);
+  ULONG (__stdcall *Release)(IUnbufferedFileHandleOplockCallback *This);
+  HRESULT (__stdcall *OnBrokenCallback)(IUnbufferedFileHandleOplockCallback *This);
+
+};

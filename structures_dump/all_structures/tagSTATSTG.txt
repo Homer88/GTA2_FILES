@@ -1,0 +1,19 @@
+// Структура: tagSTATSTG
+// Полей: 11
+// Строки в оригинале: 24022-24035
+struct tagSTATSTG
+{
+
+  LPOLESTR pwcsName;
+  DWORD type;
+  ULARGE_INTEGER cbSize;
+  FILETIME mtime;
+  FILETIME ctime;
+  FILETIME atime;
+  DWORD grfMode;
+  DWORD grfLocksSupported;
+  CLSID clsid;
+  DWORD grfStateBits;
+  DWORD reserved;
+
+};

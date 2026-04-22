@@ -1,0 +1,16 @@
+// Структура: _JOBOBJECT_BASIC_ACCOUNTING_INFORMATION
+// Полей: 8
+// Строки в оригинале: 92365-92375
+struct _JOBOBJECT_BASIC_ACCOUNTING_INFORMATION
+{
+
+  _LARGE_INTEGER TotalUserTime;
+  _LARGE_INTEGER TotalKernelTime;
+  _LARGE_INTEGER ThisPeriodTotalUserTime;
+  _LARGE_INTEGER ThisPeriodTotalKernelTime;
+  unsigned int TotalPageFaultCount;
+  unsigned int TotalProcesses;
+  unsigned int ActiveProcesses;
+  unsigned int TotalTerminatedProcesses;
+
+};

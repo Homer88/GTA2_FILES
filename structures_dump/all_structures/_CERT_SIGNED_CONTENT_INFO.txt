@@ -1,0 +1,11 @@
+// Структура: _CERT_SIGNED_CONTENT_INFO
+// Полей: 3
+// Строки в оригинале: 80868-80873
+struct _CERT_SIGNED_CONTENT_INFO
+{
+
+  _CRYPTOAPI_BLOB ToBeSigned;
+  _CRYPT_ALGORITHM_IDENTIFIER SignatureAlgorithm;
+  _CRYPT_BIT_BLOB Signature;
+
+};

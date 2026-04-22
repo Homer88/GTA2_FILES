@@ -1,0 +1,13 @@
+// Структура: _PROCESS_JOB_MEMORY_INFO
+// Полей: 5
+// Строки в оригинале: 88099-88106
+struct _PROCESS_JOB_MEMORY_INFO
+{
+
+  unsigned __int64 SharedCommitUsage;
+  unsigned __int64 PrivateCommitUsage;
+  unsigned __int64 PeakPrivateCommitUsage;
+  unsigned __int64 PrivateCommitLimit;
+  unsigned __int64 TotalCommitLimit;
+
+};

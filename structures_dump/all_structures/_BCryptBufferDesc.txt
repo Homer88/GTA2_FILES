@@ -1,0 +1,11 @@
+// Структура: _BCryptBufferDesc
+// Полей: 3
+// Строки в оригинале: 108186-108191
+struct _BCryptBufferDesc
+{
+
+  unsigned int ulVersion;
+  unsigned int cBuffers;
+  _BCryptBuffer *pBuffers;
+
+};

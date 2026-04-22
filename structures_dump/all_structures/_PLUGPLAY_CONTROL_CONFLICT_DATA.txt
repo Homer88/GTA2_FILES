@@ -1,0 +1,15 @@
+// Структура: _PLUGPLAY_CONTROL_CONFLICT_DATA
+// Полей: 7
+// Строки в оригинале: 93644-93653
+struct _PLUGPLAY_CONTROL_CONFLICT_DATA
+{
+
+  _UNICODE_STRING DeviceInstance;
+  _CM_RESOURCE_LIST *ResourceList;
+  unsigned int ResourceListSize;
+  _PLUGPLAY_CONTROL_CONFLICT_LIST *ConflictBuffer;
+  unsigned int ConflictBufferSize;
+  unsigned int Flags;
+  int Status;
+
+};

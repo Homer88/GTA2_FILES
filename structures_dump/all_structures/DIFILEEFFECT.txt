@@ -1,0 +1,12 @@
+// Структура: DIFILEEFFECT
+// Полей: 4
+// Строки в оригинале: 29346-29352
+struct DIFILEEFFECT
+{
+
+  DWORD dwSize;
+  GUID GuidEffect;
+  LPCDIEFFECT lpDiEffect;
+  CHAR szFriendlyName[260];
+
+};

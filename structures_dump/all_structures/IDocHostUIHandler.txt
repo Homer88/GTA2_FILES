@@ -1,0 +1,9 @@
+// Структура: IDocHostUIHandler
+// Полей: 1
+// Строки в оригинале: 33950-33953
+struct IDocHostUIHandler
+{
+
+  struct IDocHostUIHandlerVtbl *lpVtbl;
+
+};

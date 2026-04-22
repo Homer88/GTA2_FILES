@@ -1,0 +1,9 @@
+// Структура: IShellExecuteHookWVtbl
+// Полей: 1
+// Строки в оригинале: 34726-34729
+struct IShellExecuteHookWVtbl
+{
+
+  HRESULT (__stdcall *Execute)(IShellExecuteHookW *This, LPSHELLEXECUTEINFOW pei);
+
+};

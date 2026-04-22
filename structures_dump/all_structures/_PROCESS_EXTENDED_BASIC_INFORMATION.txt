@@ -1,0 +1,11 @@
+// Структура: _PROCESS_EXTENDED_BASIC_INFORMATION
+// Полей: 3
+// Строки в оригинале: 84757-84762
+struct _PROCESS_EXTENDED_BASIC_INFORMATION
+{
+
+  unsigned int Size;
+  _PROCESS_BASIC_INFORMATION BasicInfo;
+  $74C422EF2531C6DD56CA796FD378F3F5 ___u2;
+
+};

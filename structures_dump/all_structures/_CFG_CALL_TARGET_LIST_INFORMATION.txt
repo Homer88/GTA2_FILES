@@ -1,0 +1,14 @@
+// Структура: _CFG_CALL_TARGET_LIST_INFORMATION
+// Полей: 6
+// Строки в оригинале: 101544-101552
+struct _CFG_CALL_TARGET_LIST_INFORMATION
+{
+
+  unsigned int NumberOfEntries;
+  unsigned int Reserved;
+  unsigned int *NumberOfEntriesProcessed;
+  _CFG_CALL_TARGET_INFO *CallTargetInfo;
+  void *Section;
+  unsigned __int64 FileOffset;
+
+};

@@ -1,0 +1,11 @@
+// Структура: DXGI_RGB
+// Полей: 3
+// Строки в оригинале: 352237-352242
+struct DXGI_RGB
+{
+
+  float Red;
+  float Green;
+  float Blue;
+
+};

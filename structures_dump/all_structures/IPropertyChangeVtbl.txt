@@ -1,0 +1,14 @@
+// Структура: IPropertyChangeVtbl
+// Полей: 6
+// Строки в оригинале: 35718-35726
+struct IPropertyChangeVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyChange *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyChange *This);
+  ULONG (__stdcall *Release)(IPropertyChange *This);
+  HRESULT (__stdcall *SetPropertyKey)(IPropertyChange *This, const PROPERTYKEY *const key);
+  HRESULT (__stdcall *GetPropertyKey)(IPropertyChange *This, PROPERTYKEY *pkey);
+  HRESULT (__stdcall *ApplyToPropVariant)(IPropertyChange *This, const PROPVARIANT *const propvarIn, PROPVARIANT *ppropvarOut);
+
+};

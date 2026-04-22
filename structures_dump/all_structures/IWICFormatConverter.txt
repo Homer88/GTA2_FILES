@@ -1,0 +1,9 @@
+// Структура: IWICFormatConverter
+// Полей: 1
+// Строки в оригинале: 41854-41857
+struct IWICFormatConverter
+{
+
+  struct IWICFormatConverterVtbl *lpVtbl;
+
+};

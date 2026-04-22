@@ -1,0 +1,11 @@
+// Структура: _PATCHMATCHDATA
+// Полей: 3
+// Строки в оригинале: 312898-312903
+struct _PATCHMATCHDATA
+{
+
+  unsigned int dwSizeData;
+  _RELATIVE_MODULE_ADDRESS rva;
+  unsigned __int8 data[];
+
+};

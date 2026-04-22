@@ -1,0 +1,15 @@
+// Структура: Text
+// Полей: 7
+// Строки в оригинале: 7414-7423
+struct Text
+{
+
+  FILE *Base;
+  size_t Num;
+  int field_8;
+  _BYTE gapC[4];
+  char Language;
+  _BYTE gap11[2];
+  char field_0;
+
+};

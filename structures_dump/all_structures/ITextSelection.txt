@@ -1,0 +1,9 @@
+// Структура: ITextSelection
+// Полей: 1
+// Строки в оригинале: 45524-45527
+struct ITextSelection
+{
+
+  struct ITextSelectionVtbl *lpVtbl;
+
+};

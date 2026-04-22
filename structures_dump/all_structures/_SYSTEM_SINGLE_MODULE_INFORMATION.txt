@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_SINGLE_MODULE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 98927-98931
+struct _SYSTEM_SINGLE_MODULE_INFORMATION
+{
+
+  void *TargetModuleAddress;
+  _RTL_PROCESS_MODULE_INFORMATION_EX ExInfo;
+
+};

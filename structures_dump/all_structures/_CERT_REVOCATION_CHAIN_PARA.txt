@@ -1,0 +1,16 @@
+// Структура: _CERT_REVOCATION_CHAIN_PARA
+// Полей: 8
+// Строки в оригинале: 85350-85360
+struct _CERT_REVOCATION_CHAIN_PARA
+{
+
+  unsigned int cbSize;
+  void *hChainEngine;
+  void *hAdditionalStore;
+  unsigned int dwChainFlags;
+  unsigned int dwUrlRetrievalTimeout;
+  _FILETIME *pftCurrentTime;
+  _FILETIME *pftCacheResync;
+  unsigned int cbMaxUrlRetrievalByteCount;
+
+};

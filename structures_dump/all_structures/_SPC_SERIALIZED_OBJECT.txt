@@ -1,0 +1,10 @@
+// Структура: _SPC_SERIALIZED_OBJECT
+// Полей: 2
+// Строки в оригинале: 122359-122363
+struct _SPC_SERIALIZED_OBJECT
+{
+
+  unsigned __int8 ClassId[16];
+  _CRYPTOAPI_BLOB SerializedData;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _FILE_CASE_SENSITIVE_INFORMATION
+// Полей: 1
+// Строки в оригинале: 107002-107005
+struct _FILE_CASE_SENSITIVE_INFORMATION
+{
+
+  unsigned int Flags;
+
+};

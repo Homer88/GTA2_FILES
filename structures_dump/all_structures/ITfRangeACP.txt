@@ -1,0 +1,9 @@
+// Структура: ITfRangeACP
+// Полей: 1
+// Строки в оригинале: 30203-30206
+struct ITfRangeACP
+{
+
+  struct ITfRangeACPVtbl *lpVtbl;
+
+};

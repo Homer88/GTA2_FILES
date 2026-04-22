@@ -1,0 +1,12 @@
+// Структура: DISPLAYCONFIG_SOURCE_MODE
+// Полей: 4
+// Строки в оригинале: 91255-91261
+struct DISPLAYCONFIG_SOURCE_MODE
+{
+
+  unsigned int width;
+  unsigned int height;
+  DISPLAYCONFIG_PIXELFORMAT pixelFormat;
+  _POINTL position;
+
+};

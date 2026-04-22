@@ -1,0 +1,11 @@
+// Структура: _Mbstatet
+// Полей: 3
+// Строки в оригинале: 65395-65400
+struct _Mbstatet
+{
+
+  unsigned int _Wchar;
+  unsigned __int16 _Byte;
+  unsigned __int16 _State;
+
+};

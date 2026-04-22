@@ -1,0 +1,9 @@
+// Структура: _IMAGE_THUNK_DATA32
+// Полей: 1
+// Строки в оригинале: 101504-101507
+struct _IMAGE_THUNK_DATA32
+{
+
+  _IMAGE_THUNK_DATA32::<unnamed_type_u1> u1;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _REMOTE_NAME_INFOA
+// Полей: 3
+// Строки в оригинале: 104651-104656
+struct _REMOTE_NAME_INFOA
+{
+
+  char *lpUniversalName;
+  char *lpConnectionName;
+  char *lpRemainingPath;
+
+};

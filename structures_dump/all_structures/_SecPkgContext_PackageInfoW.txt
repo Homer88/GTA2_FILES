@@ -1,0 +1,9 @@
+// Структура: _SecPkgContext_PackageInfoW
+// Полей: 1
+// Строки в оригинале: 323967-323970
+struct _SecPkgContext_PackageInfoW
+{
+
+  _SecPkgInfoW *PackageInfo;
+
+};

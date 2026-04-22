@@ -1,0 +1,11 @@
+// Структура: _NCRYPT_ISOLATED_KEY_ATTESTED_ATTRIBUTES
+// Полей: 3
+// Строки в оригинале: 102571-102576
+struct _NCRYPT_ISOLATED_KEY_ATTESTED_ATTRIBUTES
+{
+
+  unsigned int Version;
+  unsigned int Flags;
+  unsigned int cbPublicKeyBlob;
+
+};

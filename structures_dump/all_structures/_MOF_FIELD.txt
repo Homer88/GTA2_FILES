@@ -1,0 +1,11 @@
+// Структура: _MOF_FIELD
+// Полей: 3
+// Строки в оригинале: 311744-311749
+struct _MOF_FIELD
+{
+
+  unsigned __int64 DataPtr;
+  unsigned int Length;
+  unsigned int DataType;
+
+};

@@ -1,0 +1,14 @@
+// Структура: tagXAptQIData
+// Полей: 6
+// Строки в оригинале: 250344-250352
+struct tagXAptQIData
+{
+
+  const _GUID *pIPID;
+  unsigned int cRefs;
+  unsigned __int16 cIids;
+  _GUID *iids;
+  tagREMQIRESULT **ppQIResults;
+  CRemoteUnknown *pRemUnk;
+
+};

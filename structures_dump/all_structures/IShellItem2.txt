@@ -1,0 +1,9 @@
+// Структура: IShellItem2
+// Полей: 1
+// Строки в оригинале: 39525-39528
+struct IShellItem2
+{
+
+  struct IShellItem2Vtbl *lpVtbl;
+
+};

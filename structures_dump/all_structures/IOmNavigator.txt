@@ -1,0 +1,9 @@
+// Структура: IOmNavigator
+// Полей: 1
+// Строки в оригинале: 38699-38702
+struct IOmNavigator
+{
+
+  struct IOmNavigatorVtbl *lpVtbl;
+
+};

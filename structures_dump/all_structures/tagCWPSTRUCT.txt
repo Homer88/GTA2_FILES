@@ -1,0 +1,12 @@
+// Структура: tagCWPSTRUCT
+// Полей: 4
+// Строки в оригинале: 104048-104054
+struct tagCWPSTRUCT
+{
+
+  int lParam;
+  unsigned int wParam;
+  unsigned int message;
+  HWND__ *hwnd;
+
+};

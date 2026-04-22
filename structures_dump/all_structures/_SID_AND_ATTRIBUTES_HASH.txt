@@ -1,0 +1,11 @@
+// Структура: _SID_AND_ATTRIBUTES_HASH
+// Полей: 3
+// Строки в оригинале: 96747-96752
+struct _SID_AND_ATTRIBUTES_HASH
+{
+
+  unsigned int SidCount;
+  _SID_AND_ATTRIBUTES *SidAttr;
+  unsigned int Hash[32];
+
+};

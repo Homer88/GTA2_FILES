@@ -1,0 +1,9 @@
+// Структура: IPropertyUI
+// Полей: 1
+// Строки в оригинале: 35573-35576
+struct IPropertyUI
+{
+
+  struct IPropertyUIVtbl *lpVtbl;
+
+};

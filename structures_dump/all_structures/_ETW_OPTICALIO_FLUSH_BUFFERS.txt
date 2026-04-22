@@ -1,0 +1,13 @@
+// Структура: _ETW_OPTICALIO_FLUSH_BUFFERS
+// Полей: 5
+// Строки в оригинале: 309858-309865
+struct _ETW_OPTICALIO_FLUSH_BUFFERS
+{
+
+  unsigned int DiskNumber;
+  unsigned int IrpFlags;
+  unsigned __int64 HighResResponseTime;
+  void *IrpAddr;
+  unsigned int IssuingThreadId;
+
+};

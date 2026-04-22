@@ -1,0 +1,15 @@
+// Структура: S107
+// Полей: 7
+// Строки в оригинале: 8945-8954
+struct S107
+{
+
+  S108 S108[120];
+  int Index;
+  int Count;
+  unsigned __int8 field_14A8;
+  char field_14A9;
+  char field_14AA;
+  char field_14AB;
+
+};

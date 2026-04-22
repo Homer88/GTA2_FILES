@@ -1,0 +1,9 @@
+// Структура: HTMLWindowEvents
+// Полей: 1
+// Строки в оригинале: 36241-36244
+struct HTMLWindowEvents
+{
+
+  struct HTMLWindowEventsVtbl *lpVtbl;
+
+};

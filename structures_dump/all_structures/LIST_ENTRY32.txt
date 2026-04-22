@@ -1,0 +1,10 @@
+// Структура: LIST_ENTRY32
+// Полей: 2
+// Строки в оригинале: 12549-12553
+struct LIST_ENTRY32
+{
+
+  unsigned int Flink;
+  unsigned int Blink;
+
+};

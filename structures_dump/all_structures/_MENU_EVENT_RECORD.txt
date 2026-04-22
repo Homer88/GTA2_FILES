@@ -1,0 +1,9 @@
+// Структура: _MENU_EVENT_RECORD
+// Полей: 1
+// Строки в оригинале: 91974-91977
+struct _MENU_EVENT_RECORD
+{
+
+  unsigned int dwCommandId;
+
+};

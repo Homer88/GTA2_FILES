@@ -1,0 +1,18 @@
+// Структура: IOleInPlaceActiveObjectVtbl
+// Полей: 10
+// Строки в оригинале: 26943-26955
+struct IOleInPlaceActiveObjectVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOleInPlaceActiveObject *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOleInPlaceActiveObject *This);
+  ULONG (__stdcall *Release)(IOleInPlaceActiveObject *This);
+  HRESULT (__stdcall *GetWindow)(IOleInPlaceActiveObject *This, HWND *phwnd);
+  HRESULT (__stdcall *ContextSensitiveHelp)(IOleInPlaceActiveObject *This, BOOL fEnterMode);
+  HRESULT (__stdcall *TranslateAcceleratorA)(IOleInPlaceActiveObject *This, LPMSG lpmsg);
+  HRESULT (__stdcall *OnFrameWindowActivate)(IOleInPlaceActiveObject *This, BOOL fActivate);
+  HRESULT (__stdcall *OnDocWindowActivate)(IOleInPlaceActiveObject *This, BOOL fActivate);
+  HRESULT (__stdcall *ResizeBorder)(IOleInPlaceActiveObject *This, LPCRECT prcBorder, IOleInPlaceUIWindow *pUIWindow, BOOL fFrameWindow);
+  HRESULT (__stdcall *EnableModeless)(IOleInPlaceActiveObject *This, BOOL fEnable);
+
+};

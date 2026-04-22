@@ -1,0 +1,18 @@
+// Структура: _IMAGE_SECTION_HEADER
+// Полей: 10
+// Строки в оригинале: 58719-58731
+struct _IMAGE_SECTION_HEADER
+{
+
+  unsigned __int8 Name[8];
+  _IMAGE_SECTION_HEADER::<unnamed_type_Misc> Misc;
+  unsigned int VirtualAddress;
+  unsigned int SizeOfRawData;
+  unsigned int PointerToRawData;
+  unsigned int PointerToRelocations;
+  unsigned int PointerToLinenumbers;
+  unsigned __int16 NumberOfRelocations;
+  unsigned __int16 NumberOfLinenumbers;
+  unsigned int Characteristics;
+
+};

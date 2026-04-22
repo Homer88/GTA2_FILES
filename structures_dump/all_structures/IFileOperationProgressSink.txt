@@ -1,0 +1,9 @@
+// Структура: IFileOperationProgressSink
+// Полей: 1
+// Строки в оригинале: 34506-34509
+struct IFileOperationProgressSink
+{
+
+  struct IFileOperationProgressSinkVtbl *lpVtbl;
+
+};

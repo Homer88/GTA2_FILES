@@ -1,0 +1,15 @@
+// Структура: _NTVDM_FLAGS
+// Полей: 7
+// Строки в оригинале: 309581-309590
+struct _NTVDM_FLAGS
+{
+
+  unsigned int dwWOWCompatFlags;
+  unsigned int dwWOWCompatFlagsEx;
+  unsigned int dwUserWOWCompatFlags;
+  unsigned int dwWOWCompatFlags2;
+  unsigned int dwWOWCompatFlagsFE;
+  unsigned int dwFlagsInfoSize;
+  void *pFlagsInfo;
+
+};

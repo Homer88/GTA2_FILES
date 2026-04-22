@@ -1,0 +1,11 @@
+// Структура: _ENLISTMENT_BASIC_INFORMATION
+// Полей: 3
+// Строки в оригинале: 94012-94017
+struct _ENLISTMENT_BASIC_INFORMATION
+{
+
+  _GUID EnlistmentId;
+  _GUID TransactionId;
+  _GUID ResourceManagerId;
+
+};

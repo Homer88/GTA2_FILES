@@ -1,0 +1,10 @@
+// Структура: STwoBits
+// Полей: 2
+// Строки в оригинале: 250855-250859
+struct STwoBits
+{
+
+  void *_hEvent;
+  unsigned int _dwCookie;
+
+};

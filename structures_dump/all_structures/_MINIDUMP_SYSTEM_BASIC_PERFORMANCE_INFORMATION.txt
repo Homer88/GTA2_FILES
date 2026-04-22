@@ -1,0 +1,12 @@
+// Структура: _MINIDUMP_SYSTEM_BASIC_PERFORMANCE_INFORMATION
+// Полей: 4
+// Строки в оригинале: 123170-123176
+struct _MINIDUMP_SYSTEM_BASIC_PERFORMANCE_INFORMATION
+{
+
+  unsigned __int64 AvailablePages;
+  unsigned __int64 CommittedPages;
+  unsigned __int64 CommitLimit;
+  unsigned __int64 PeakCommitment;
+
+};

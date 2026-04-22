@@ -1,0 +1,12 @@
+// Структура: tagPALETTEENTRY
+// Полей: 4
+// Строки в оригинале: 24121-24127
+struct tagPALETTEENTRY
+{
+
+  BYTE peRed;
+  BYTE peGreen;
+  BYTE peBlue;
+  BYTE peFlags;
+
+};

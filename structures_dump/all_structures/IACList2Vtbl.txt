@@ -1,0 +1,10 @@
+// Структура: IACList2Vtbl
+// Полей: 2
+// Строки в оригинале: 45378-45382
+struct IACList2Vtbl
+{
+
+  HRESULT (__stdcall *SetOptions)(IACList2 *This, DWORD dwFlag);
+  HRESULT (__stdcall *GetOptions)(IACList2 *This, DWORD *pdwFlag);
+
+};

@@ -1,0 +1,18 @@
+// Структура: tagWNDCLASSW
+// Полей: 10
+// Строки в оригинале: 89916-89928
+struct tagWNDCLASSW
+{
+
+  unsigned int style;
+  int (__stdcall *lpfnWndProc)(HWND__ *, unsigned int, unsigned int, int);
+  int cbClsExtra;
+  int cbWndExtra;
+  HINSTANCE__ *hInstance;
+  HICON__ *hIcon;
+  HICON__ *hCursor;
+  HBRUSH__ *hbrBackground;
+  const wchar_t *lpszMenuName;
+  const wchar_t *lpszClassName;
+
+};

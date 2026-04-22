@@ -1,0 +1,10 @@
+// Структура: _RTL_UCSCHAR_DECODER_RETURN_VALUE
+// Полей: 2
+// Строки в оригинале: 148020-148024
+struct _RTL_UCSCHAR_DECODER_RETURN_VALUE
+{
+
+  unsigned int UcsCharacter;
+  $C40A5B14059477C065E035529EB405FD ___u1;
+
+};

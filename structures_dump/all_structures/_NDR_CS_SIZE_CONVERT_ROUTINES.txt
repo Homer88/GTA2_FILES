@@ -1,0 +1,12 @@
+// Структура: _NDR_CS_SIZE_CONVERT_ROUTINES
+// Полей: 4
+// Строки в оригинале: 86506-86512
+struct _NDR_CS_SIZE_CONVERT_ROUTINES
+{
+
+  void (__stdcall *pfnNetSize)(void *, unsigned int, unsigned int, _IDL_CS_CONVERT *, unsigned int *, unsigned int *);
+  void (__stdcall *pfnToNetCs)(void *, unsigned int, void *, unsigned int, unsigned __int8 *, unsigned int *, unsigned int *);
+  void (__stdcall *pfnLocalSize)(void *, unsigned int, unsigned int, _IDL_CS_CONVERT *, unsigned int *, unsigned int *);
+  void (__stdcall *pfnFromNetCs)(void *, unsigned int, unsigned __int8 *, unsigned int, unsigned int, void *, unsigned int *, unsigned int *);
+
+};

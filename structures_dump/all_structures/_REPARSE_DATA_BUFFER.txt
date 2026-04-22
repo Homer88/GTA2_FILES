@@ -1,0 +1,12 @@
+// Структура: _REPARSE_DATA_BUFFER
+// Полей: 4
+// Строки в оригинале: 106369-106375
+struct _REPARSE_DATA_BUFFER
+{
+
+  unsigned int ReparseTag;
+  unsigned __int16 ReparseDataLength;
+  unsigned __int16 Reserved;
+  $1366BCD0C7DAAA839CDFD630800B67C9 ___u3;
+
+};

@@ -1,0 +1,15 @@
+// Структура: IEnumTfContextsVtbl
+// Полей: 7
+// Строки в оригинале: 30511-30520
+struct IEnumTfContextsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumTfContexts *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumTfContexts *This);
+  ULONG (__stdcall *Release)(IEnumTfContexts *This);
+  HRESULT (__stdcall *Clone)(IEnumTfContexts *This, IEnumTfContexts **ppEnum);
+  HRESULT (__stdcall *Next)(IEnumTfContexts *This, ULONG ulCount, ITfContext **rgContext, ULONG *pcFetched);
+  HRESULT (__stdcall *Reset)(IEnumTfContexts *This);
+  HRESULT (__stdcall *Skip)(IEnumTfContexts *This, ULONG ulCount);
+
+};

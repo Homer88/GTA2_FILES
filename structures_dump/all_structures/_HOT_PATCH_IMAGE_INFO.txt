@@ -1,0 +1,10 @@
+// Структура: _HOT_PATCH_IMAGE_INFO
+// Полей: 2
+// Строки в оригинале: 79829-79833
+struct _HOT_PATCH_IMAGE_INFO
+{
+
+  unsigned int CheckSum;
+  unsigned int TimeDateStamp;
+
+};

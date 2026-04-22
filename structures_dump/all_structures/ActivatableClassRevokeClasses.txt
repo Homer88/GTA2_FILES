@@ -1,0 +1,10 @@
+// Структура: ActivatableClassRevokeClasses
+// Полей: 2
+// Строки в оригинале: 227632-227636
+struct ActivatableClassRevokeClasses
+{
+
+  unsigned int dwSize;
+  ActivatableClassRevokeEntry revent[1];
+
+};

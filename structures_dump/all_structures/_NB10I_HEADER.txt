@@ -1,0 +1,12 @@
+// Структура: _NB10I_HEADER
+// Полей: 4
+// Строки в оригинале: 285386-285392
+struct _NB10I_HEADER
+{
+
+  unsigned int dwSig;
+  unsigned int dwOffset;
+  unsigned int sig;
+  unsigned int age;
+
+};

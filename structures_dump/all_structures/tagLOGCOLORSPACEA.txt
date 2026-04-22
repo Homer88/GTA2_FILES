@@ -1,0 +1,18 @@
+// Структура: tagLOGCOLORSPACEA
+// Полей: 10
+// Строки в оригинале: 98762-98774
+struct tagLOGCOLORSPACEA
+{
+
+  unsigned int lcsSignature;
+  unsigned int lcsVersion;
+  unsigned int lcsSize;
+  int lcsCSType;
+  int lcsIntent;
+  tagICEXYZTRIPLE lcsEndpoints;
+  unsigned int lcsGammaRed;
+  unsigned int lcsGammaGreen;
+  unsigned int lcsGammaBlue;
+  char lcsFilename[260];
+
+};

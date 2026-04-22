@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_KERNEL_DEBUGGER_INFORMATION
+// Полей: 2
+// Строки в оригинале: 79515-79519
+struct _SYSTEM_KERNEL_DEBUGGER_INFORMATION
+{
+
+  unsigned __int8 KernelDebuggerEnabled;
+  unsigned __int8 KernelDebuggerNotPresent;
+
+};

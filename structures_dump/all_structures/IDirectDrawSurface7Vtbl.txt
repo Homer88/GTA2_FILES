@@ -1,0 +1,57 @@
+// Структура: IDirectDrawSurface7Vtbl
+// Полей: 49
+// Строки в оригинале: 26382-26433
+struct IDirectDrawSurface7Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirectDrawSurface7 *This, const IID *const riid, LPVOID *ppvObj);
+  ULONG (__stdcall *AddRef)(IDirectDrawSurface7 *This);
+  ULONG (__stdcall *Release)(IDirectDrawSurface7 *This);
+  HRESULT (__stdcall *AddAttachedSurface)(IDirectDrawSurface7 *This, LPDIRECTDRAWSURFACE7);
+  HRESULT (__stdcall *AddOverlayDirtyRect)(IDirectDrawSurface7 *This, LPRECT);
+  HRESULT (__stdcall *Blt)(IDirectDrawSurface7 *This, LPRECT, LPDIRECTDRAWSURFACE7, LPRECT, DWORD, LPDDBLTFX);
+  HRESULT (__stdcall *BltBatch)(IDirectDrawSurface7 *This, LPDDBLTBATCH, DWORD, DWORD);
+  HRESULT (__stdcall *BltFast)(IDirectDrawSurface7 *This, DWORD, DWORD, LPDIRECTDRAWSURFACE7, LPRECT, DWORD);
+  HRESULT (__stdcall *DeleteAttachedSurface)(IDirectDrawSurface7 *This, DWORD, LPDIRECTDRAWSURFACE7);
+  HRESULT (__stdcall *EnumAttachedSurfaces)(IDirectDrawSurface7 *This, LPVOID, LPDDENUMSURFACESCALLBACK7);
+  HRESULT (__stdcall *EnumOverlayZOrders)(IDirectDrawSurface7 *This, DWORD, LPVOID, LPDDENUMSURFACESCALLBACK7);
+  HRESULT (__stdcall *Flip)(IDirectDrawSurface7 *This, LPDIRECTDRAWSURFACE7, DWORD);
+  HRESULT (__stdcall *GetAttachedSurface)(IDirectDrawSurface7 *This, LPDDSCAPS2, LPDIRECTDRAWSURFACE7 *);
+  HRESULT (__stdcall *GetBltStatus)(IDirectDrawSurface7 *This, DWORD);
+  HRESULT (__stdcall *GetCaps)(IDirectDrawSurface7 *This, LPDDSCAPS2);
+  HRESULT (__stdcall *GetClipper)(IDirectDrawSurface7 *This, LPDIRECTDRAWCLIPPER *);
+  HRESULT (__stdcall *GetColorKey)(IDirectDrawSurface7 *This, DWORD, LPDDCOLORKEY);
+  HRESULT (__stdcall *GetDC)(IDirectDrawSurface7 *This, HDC *);
+  HRESULT (__stdcall *GetFlipStatus)(IDirectDrawSurface7 *This, DWORD);
+  HRESULT (__stdcall *GetOverlayPosition)(IDirectDrawSurface7 *This, LPLONG, LPLONG);
+  HRESULT (__stdcall *GetPalette)(IDirectDrawSurface7 *This, LPDIRECTDRAWPALETTE *);
+  HRESULT (__stdcall *GetPixelFormat)(IDirectDrawSurface7 *This, LPDDPIXELFORMAT);
+  HRESULT (__stdcall *GetSurfaceDesc)(IDirectDrawSurface7 *This, LPDDSURFACEDESC2);
+  HRESULT (__stdcall *Initialize)(IDirectDrawSurface7 *This, LPDIRECTDRAW, LPDDSURFACEDESC2);
+  HRESULT (__stdcall *IsLost)(IDirectDrawSurface7 *This);
+  HRESULT (__stdcall *Lock)(IDirectDrawSurface7 *This, LPRECT, LPDDSURFACEDESC2, DWORD, HANDLE);
+  HRESULT (__stdcall *ReleaseDC)(IDirectDrawSurface7 *This, HDC);
+  HRESULT (__stdcall *Restore)(IDirectDrawSurface7 *This);
+  HRESULT (__stdcall *SetClipper)(IDirectDrawSurface7 *This, LPDIRECTDRAWCLIPPER);
+  HRESULT (__stdcall *SetColorKey)(IDirectDrawSurface7 *This, DWORD, LPDDCOLORKEY);
+  HRESULT (__stdcall *SetOverlayPosition)(IDirectDrawSurface7 *This, LONG, LONG);
+  HRESULT (__stdcall *SetPalette)(IDirectDrawSurface7 *This, LPDIRECTDRAWPALETTE);
+  HRESULT (__stdcall *Unlock)(IDirectDrawSurface7 *This, LPRECT);
+  HRESULT (__stdcall *UpdateOverlay)(IDirectDrawSurface7 *This, LPRECT, LPDIRECTDRAWSURFACE7, LPRECT, DWORD, LPDDOVERLAYFX);
+  HRESULT (__stdcall *UpdateOverlayDisplay)(IDirectDrawSurface7 *This, DWORD);
+  HRESULT (__stdcall *UpdateOverlayZOrder)(IDirectDrawSurface7 *This, DWORD, LPDIRECTDRAWSURFACE7);
+  HRESULT (__stdcall *GetDDInterface)(IDirectDrawSurface7 *This, LPVOID *);
+  HRESULT (__stdcall *PageLock)(IDirectDrawSurface7 *This, DWORD);
+  HRESULT (__stdcall *PageUnlock)(IDirectDrawSurface7 *This, DWORD);
+  HRESULT (__stdcall *SetSurfaceDesc)(IDirectDrawSurface7 *This, LPDDSURFACEDESC2, DWORD);
+  HRESULT (__stdcall *SetPrivateData)(IDirectDrawSurface7 *This, const GUID *const, LPVOID, DWORD, DWORD);
+  HRESULT (__stdcall *GetPrivateData)(IDirectDrawSurface7 *This, const GUID *const, LPVOID, LPDWORD);
+  HRESULT (__stdcall *FreePrivateData)(IDirectDrawSurface7 *This, const GUID *const);
+  HRESULT (__stdcall *GetUniquenessValue)(IDirectDrawSurface7 *This, LPDWORD);
+  HRESULT (__stdcall *ChangeUniquenessValue)(IDirectDrawSurface7 *This);
+  HRESULT (__stdcall *SetPriority)(IDirectDrawSurface7 *This, DWORD);
+  HRESULT (__stdcall *GetPriority)(IDirectDrawSurface7 *This, LPDWORD);
+  HRESULT (__stdcall *SetLOD)(IDirectDrawSurface7 *This, DWORD);
+  HRESULT (__stdcall *GetLOD)(IDirectDrawSurface7 *This, LPDWORD);
+
+};

@@ -1,0 +1,13 @@
+// Структура: tagCWPRETSTRUCT
+// Полей: 5
+// Строки в оригинале: 105132-105139
+struct tagCWPRETSTRUCT
+{
+
+  int lResult;
+  int lParam;
+  unsigned int wParam;
+  unsigned int message;
+  HWND__ *hwnd;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IDiscFormat2Data
+// Полей: 1
+// Строки в оригинале: 34066-34069
+struct IDiscFormat2Data
+{
+
+  struct IDiscFormat2DataVtbl *lpVtbl;
+
+};

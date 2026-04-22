@@ -1,0 +1,53 @@
+// Структура: _PROCESSOR_POWER_STATE
+// Полей: 45
+// Строки в оригинале: 13559-13606
+struct _PROCESSOR_POWER_STATE
+{
+
+  _PPM_IDLE_STATES *IdleStates;
+  _PROC_IDLE_ACCOUNTING *IdleAccounting;
+  unsigned __int64 IdleTimeLast;
+  unsigned __int64 IdleTimeTotal;
+  volatile unsigned __int64 IdleTimeEntry;
+  unsigned __int64 IdleTimeExpiration;
+  unsigned __int8 NonInterruptibleTransition;
+  unsigned __int8 PepWokenTransition;
+  unsigned __int8 HvTargetState;
+  unsigned __int8 SoftParked;
+  unsigned int TargetIdleState;
+  _PROC_IDLE_POLICY IdlePolicy;
+  volatile _PPM_IDLE_SYNCHRONIZATION_STATE Synchronization;
+  _PROC_FEEDBACK PerfFeedback;
+  _PROC_HYPERVISOR_STATE Hypervisor;
+  unsigned int LastSysTime;
+  unsigned int WmiDispatchPtr;
+  int WmiInterfaceEnabled;
+  _PPM_FFH_THROTTLE_STATE_INFO FFHThrottleStateInfo;
+  _KDPC PerfActionDpc;
+  volatile int PerfActionMask;
+  _PROC_IDLE_SNAP HvIdleCheck;
+  _PROC_PERF_CHECK_CONTEXT CheckContext;
+  _PPM_CONCURRENCY_ACCOUNTING *Concurrency;
+  _PPM_CONCURRENCY_ACCOUNTING *ClassConcurrency;
+  unsigned __int8 ArchitecturalEfficiencyClass;
+  unsigned __int8 PerformanceSchedulingClass;
+  unsigned __int8 EfficiencySchedulingClass;
+  unsigned __int8 Unused;
+  unsigned __int8 Parked;
+  unsigned __int8 LongPriorQosPeriod;
+  $1295C7652040702D9335A0311A3EC089 ___u31;
+  unsigned __int64 ActiveTime;
+  unsigned __int64 TotalTime;
+  struct _POP_FX_DEVICE *FxDevice;
+  unsigned __int64 LastQosTranstionTsc;
+  unsigned __int64 QosTransitionHysteresis;
+  _KHETERO_CPU_QOS RequestedQosClass;
+  _KHETERO_CPU_QOS ResolvedQosClass;
+  unsigned __int16 QosEquivalencyMask;
+  unsigned __int16 HwFeedbackTableIndex;
+  unsigned __int8 HwFeedbackParkHint;
+  unsigned __int8 HwFeedbackPerformanceClass;
+  unsigned __int8 HwFeedbackEfficiencyClass;
+  unsigned __int8 HeteroCoreType;
+
+};

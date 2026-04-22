@@ -1,0 +1,9 @@
+// Структура: INamespaceWalk
+// Полей: 1
+// Строки в оригинале: 32721-32724
+struct INamespaceWalk
+{
+
+  struct INamespaceWalkVtbl *lpVtbl;
+
+};

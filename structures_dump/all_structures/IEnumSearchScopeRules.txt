@@ -1,0 +1,9 @@
+// Структура: IEnumSearchScopeRules
+// Полей: 1
+// Строки в оригинале: 44327-44330
+struct IEnumSearchScopeRules
+{
+
+  struct IEnumSearchScopeRulesVtbl *lpVtbl;
+
+};

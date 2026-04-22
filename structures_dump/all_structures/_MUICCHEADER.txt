@@ -1,0 +1,14 @@
+// Структура: _MUICCHEADER
+// Полей: 6
+// Строки в оригинале: 103461-103469
+struct _MUICCHEADER
+{
+
+  unsigned int ulMaxStringsSize;
+  unsigned int ulSizeStrings;
+  unsigned int ulMaxNumInstalledCultures;
+  unsigned int ulNumInstalledCultures;
+  unsigned int ulMaxNumUnverifiedCultures;
+  unsigned int ulNumUnverifiedCultures;
+
+};

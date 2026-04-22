@@ -1,0 +1,26 @@
+// Структура: BaseCar
+// Полей: 18
+// Строки в оригинале: 9706-9726
+struct BaseCar
+{
+
+  int field;
+  int field_4;
+  int field_8;
+  int field_C;
+  int count;
+  int Status;
+  int field_18;
+  int field_1C;
+  BaseCar *S82;
+  int SkipTrains;
+  int field_28;
+  __int16 field_2C;
+  char field_2E;
+  char field_2F;
+  char field_30;
+  char field_31;
+  char field_32;
+  char field_0;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IEnumFORMATETC
+// Полей: 1
+// Строки в оригинале: 27265-27268
+struct IEnumFORMATETC
+{
+
+  struct IEnumFORMATETCVtbl *lpVtbl;
+
+};

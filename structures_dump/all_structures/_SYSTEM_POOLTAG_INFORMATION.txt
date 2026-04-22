@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_POOLTAG_INFORMATION
+// Полей: 2
+// Строки в оригинале: 91307-91311
+struct _SYSTEM_POOLTAG_INFORMATION
+{
+
+  unsigned int Count;
+  _SYSTEM_POOLTAG TagInfo[1];
+
+};

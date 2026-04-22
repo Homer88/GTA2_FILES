@@ -1,0 +1,9 @@
+// Structure: _FILETIME
+// Lines: 1972 - 1976
+// Fields: 3
+
+struct _FILETIME
+{
+  DWORD dwLowDateTime;
+  DWORD dwHighDateTime;
+};

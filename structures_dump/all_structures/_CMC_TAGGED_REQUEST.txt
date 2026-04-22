@@ -1,0 +1,10 @@
+// Структура: _CMC_TAGGED_REQUEST
+// Полей: 2
+// Строки в оригинале: 105099-105103
+struct _CMC_TAGGED_REQUEST
+{
+
+  unsigned int dwTaggedRequestChoice;
+  _CMC_TAGGED_CERT_REQUEST *pTaggedCertRequest;
+
+};

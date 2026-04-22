@@ -1,0 +1,14 @@
+// Структура: IBindHostVtbl
+// Полей: 6
+// Строки в оригинале: 182482-182490
+struct IBindHostVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IBindHost *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IBindHost *This);
+  ULONG (__stdcall *Release)(IBindHost *This);
+  HRESULT (__stdcall *CreateMoniker)(IBindHost *This, LPOLESTR szName, IBindCtx *pBC, IMoniker **ppmk, DWORD dwReserved);
+  HRESULT (__stdcall *MonikerBindToStorage)(IBindHost *This, IMoniker *pMk, IBindCtx *pBC, IBindStatusCallback *pBSC, const IID *const riid, void **ppvObj);
+  HRESULT (__stdcall *MonikerBindToObject)(IBindHost *This, IMoniker *pMk, IBindCtx *pBC, IBindStatusCallback *pBSC, const IID *const riid, void **ppvObj);
+
+};

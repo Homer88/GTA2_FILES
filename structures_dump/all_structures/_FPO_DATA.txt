@@ -1,0 +1,18 @@
+// Структура: _FPO_DATA
+// Полей: 10
+// Строки в оригинале: 103293-103305
+struct _FPO_DATA
+{
+
+  unsigned int ulOffStart;
+  unsigned int cbProcSize;
+  unsigned int cdwLocals;
+  unsigned __int16 cdwParams;
+  unsigned __int16 cbProlog : 8;
+  unsigned __int16 cbRegs : 3;
+  unsigned __int16 fHasSEH : 1;
+  unsigned __int16 fUseBP : 1;
+  unsigned __int16 reserved : 1;
+  unsigned __int16 cbFrame : 2;
+
+};

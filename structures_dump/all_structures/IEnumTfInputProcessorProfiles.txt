@@ -1,0 +1,9 @@
+// Структура: IEnumTfInputProcessorProfiles
+// Полей: 1
+// Строки в оригинале: 40871-40874
+struct IEnumTfInputProcessorProfiles
+{
+
+  struct IEnumTfInputProcessorProfilesVtbl *lpVtbl;
+
+};

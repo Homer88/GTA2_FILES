@@ -1,0 +1,16 @@
+// Структура: _currencyfmtA
+// Полей: 8
+// Строки в оригинале: 100103-100113
+struct _currencyfmtA
+{
+
+  unsigned int NumDigits;
+  unsigned int LeadingZero;
+  unsigned int Grouping;
+  char *lpDecimalSep;
+  char *lpThousandSep;
+  unsigned int NegativeOrder;
+  unsigned int PositiveOrder;
+  char *lpCurrencySymbol;
+
+};

@@ -1,0 +1,9 @@
+// Структура: ITextDocument
+// Полей: 1
+// Строки в оригинале: 45518-45521
+struct ITextDocument
+{
+
+  struct ITextDocumentVtbl *lpVtbl;
+
+};

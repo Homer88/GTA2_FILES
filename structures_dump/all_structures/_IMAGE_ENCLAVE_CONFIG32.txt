@@ -1,0 +1,21 @@
+// Структура: _IMAGE_ENCLAVE_CONFIG32
+// Полей: 13
+// Строки в оригинале: 88782-88797
+struct _IMAGE_ENCLAVE_CONFIG32
+{
+
+  unsigned int Size;
+  unsigned int MinimumRequiredConfigSize;
+  unsigned int PolicyFlags;
+  unsigned int NumberOfImports;
+  unsigned int ImportList;
+  unsigned int ImportEntrySize;
+  unsigned __int8 FamilyID[16];
+  unsigned __int8 ImageID[16];
+  unsigned int ImageVersion;
+  unsigned int SecurityVersion;
+  unsigned int EnclaveSize;
+  unsigned int NumberOfThreads;
+  unsigned int EnclaveFlags;
+
+};

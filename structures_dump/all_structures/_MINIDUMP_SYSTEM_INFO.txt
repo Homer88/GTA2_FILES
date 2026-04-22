@@ -1,0 +1,19 @@
+// Структура: _MINIDUMP_SYSTEM_INFO
+// Полей: 11
+// Строки в оригинале: 121597-121610
+struct _MINIDUMP_SYSTEM_INFO
+{
+
+  unsigned __int16 ProcessorArchitecture;
+  unsigned __int16 ProcessorLevel;
+  unsigned __int16 ProcessorRevision;
+  $07C7809496F3BA2031494F3AFE3827F7 ___u3;
+  unsigned int MajorVersion;
+  unsigned int MinorVersion;
+  unsigned int BuildNumber;
+  unsigned int PlatformId;
+  unsigned int CSDVersionRva;
+  $377FFD3AD61F423833EFEFC43503A468 ___u9;
+  _CPU_INFORMATION Cpu;
+
+};

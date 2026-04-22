@@ -1,0 +1,9 @@
+// Структура: IDiscMaster2
+// Полей: 1
+// Строки в оригинале: 35667-35670
+struct IDiscMaster2
+{
+
+  struct IDiscMaster2Vtbl *lpVtbl;
+
+};

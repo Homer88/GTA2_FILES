@@ -1,0 +1,9 @@
+// Структура: IErrorLog
+// Полей: 1
+// Строки в оригинале: 35266-35269
+struct IErrorLog
+{
+
+  struct IErrorLogVtbl *lpVtbl;
+
+};

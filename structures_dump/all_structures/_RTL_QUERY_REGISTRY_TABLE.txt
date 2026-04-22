@@ -1,0 +1,15 @@
+// Структура: _RTL_QUERY_REGISTRY_TABLE
+// Полей: 7
+// Строки в оригинале: 92307-92316
+struct _RTL_QUERY_REGISTRY_TABLE
+{
+
+  int (__stdcall *QueryRoutine)(wchar_t *, unsigned int, void *, unsigned int, void *, void *);
+  unsigned int Flags;
+  wchar_t *Name;
+  void *EntryContext;
+  unsigned int DefaultType;
+  void *DefaultData;
+  unsigned int DefaultLength;
+
+};

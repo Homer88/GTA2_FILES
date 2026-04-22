@@ -1,0 +1,21 @@
+// Структура: FileMgr
+// Полей: 13
+// Строки в оригинале: 8194-8209
+struct FileMgr
+{
+
+  FILE *FILE;
+  FILE *File1;
+  SIZE_T field_8;
+  int field_C;
+  int field_10;
+  int field_14;
+  int field_18;
+  int field_1C;
+  int field_20;
+  char field_24;
+  char field_25;
+  char field_26;
+  char field_27;
+
+};

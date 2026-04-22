@@ -1,0 +1,15 @@
+// Структура: _IMAGE_FILE_HEADER
+// Полей: 7
+// Строки в оригинале: 12861-12870
+struct _IMAGE_FILE_HEADER
+{
+
+  unsigned __int16 Machine;
+  unsigned __int16 NumberOfSections;
+  unsigned int TimeDateStamp;
+  unsigned int PointerToSymbolTable;
+  unsigned int NumberOfSymbols;
+  unsigned __int16 SizeOfOptionalHeader;
+  unsigned __int16 Characteristics;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _NDR_CORRELATION_INFO_DATA
+// Полей: 4
+// Строки в оригинале: 86274-86280
+struct _NDR_CORRELATION_INFO_DATA
+{
+
+  unsigned __int8 *pMemoryObject;
+  const unsigned __int8 *pCorrDesc;
+  int Value;
+  int CheckKind;
+
+};

@@ -1,0 +1,27 @@
+// Структура: tagENHMETAHEADER
+// Полей: 19
+// Строки в оригинале: 84487-84508
+struct tagENHMETAHEADER
+{
+
+  unsigned int iType;
+  unsigned int nSize;
+  _RECTL rclBounds;
+  _RECTL rclFrame;
+  unsigned int dSignature;
+  unsigned int nVersion;
+  unsigned int nBytes;
+  unsigned int nRecords;
+  unsigned __int16 nHandles;
+  unsigned __int16 sReserved;
+  unsigned int nDescription;
+  unsigned int offDescription;
+  unsigned int nPalEntries;
+  tagSIZE szlDevice;
+  tagSIZE szlMillimeters;
+  unsigned int cbPixelFormat;
+  unsigned int offPixelFormat;
+  unsigned int bOpenGL;
+  tagSIZE szlMicrometers;
+
+};

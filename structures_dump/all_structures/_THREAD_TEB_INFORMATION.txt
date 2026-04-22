@@ -1,0 +1,11 @@
+// Структура: _THREAD_TEB_INFORMATION
+// Полей: 3
+// Строки в оригинале: 106623-106628
+struct _THREAD_TEB_INFORMATION
+{
+
+  void *TebInformation;
+  unsigned int TebOffset;
+  unsigned int BytesToRead;
+
+};

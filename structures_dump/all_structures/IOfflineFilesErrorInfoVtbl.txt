@@ -1,0 +1,13 @@
+// Структура: IOfflineFilesErrorInfoVtbl
+// Полей: 5
+// Строки в оригинале: 28723-28730
+struct IOfflineFilesErrorInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesErrorInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesErrorInfo *This);
+  ULONG (__stdcall *Release)(IOfflineFilesErrorInfo *This);
+  HRESULT (__stdcall *GetRawData)(IOfflineFilesErrorInfo *This, BYTE_BLOB **ppBlob);
+  HRESULT (__stdcall *GetDescription)(IOfflineFilesErrorInfo *This, LPWSTR *ppszDescription);
+
+};

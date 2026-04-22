@@ -1,0 +1,13 @@
+// Структура: _ACTIVATION_CONTEXT_STACK
+// Полей: 5
+// Строки в оригинале: 2923-2930
+struct _ACTIVATION_CONTEXT_STACK
+{
+
+  struct _RTL_ACTIVATION_CONTEXT_STACK_FRAME *ActiveFrame;
+  struct _LIST_ENTRY FrameListCache;
+  unsigned int Flags;
+  unsigned int NextCookieSequenceNumber;
+  unsigned int StackId;
+
+};

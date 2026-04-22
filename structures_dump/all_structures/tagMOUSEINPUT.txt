@@ -1,0 +1,14 @@
+// Структура: tagMOUSEINPUT
+// Полей: 6
+// Строки в оригинале: 99604-99612
+struct tagMOUSEINPUT
+{
+
+  int dx;
+  int dy;
+  unsigned int mouseData;
+  unsigned int dwFlags;
+  unsigned int time;
+  unsigned int dwExtraInfo;
+
+};

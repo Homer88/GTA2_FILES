@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_THREAD_CID_PRIORITY_INFORMATION
+// Полей: 2
+// Строки в оригинале: 100774-100778
+struct _SYSTEM_THREAD_CID_PRIORITY_INFORMATION
+{
+
+  _CLIENT_ID ClientId;
+  int Priority;
+
+};

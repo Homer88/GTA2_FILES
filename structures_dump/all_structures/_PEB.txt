@@ -1,0 +1,22 @@
+// Структура: _PEB
+// Полей: 14
+// Строки в оригинале: 2806-2822
+struct _PEB
+{
+
+  uint8_t InheritedAddressSpace;
+  uint8_t ReadImageFileExecOptions;
+  uint8_t BeingDebugged;
+  union
+  {
+    uint8_t BitField;
+    struct
+    {
+      unsigned __int8 ImageUsesLargePages : 1;
+      unsigned __int8 IsProtectedProcess : 1;
+      unsigned __int8 IsLegacyProcess : 1;
+      unsigned __int8 IsImageDynamicallyRelocated : 1;
+      unsigned __int8 SkipPatchingUser32Forwarders : 1;
+      unsigned __int8 SpareBits : 3;
+    
+};

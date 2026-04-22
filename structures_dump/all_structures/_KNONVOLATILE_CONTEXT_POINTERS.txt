@@ -1,0 +1,9 @@
+// Структура: _KNONVOLATILE_CONTEXT_POINTERS
+// Полей: 1
+// Строки в оригинале: 107748-107751
+struct _KNONVOLATILE_CONTEXT_POINTERS
+{
+
+  unsigned int Dummy;
+
+};

@@ -1,0 +1,9 @@
+// Структура: IOfflineFilesItemFilter
+// Полей: 1
+// Строки в оригинале: 27464-27467
+struct IOfflineFilesItemFilter
+{
+
+  struct IOfflineFilesItemFilterVtbl *lpVtbl;
+
+};

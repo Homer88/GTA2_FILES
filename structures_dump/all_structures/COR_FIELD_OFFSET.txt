@@ -1,0 +1,10 @@
+// Структура: COR_FIELD_OFFSET
+// Полей: 2
+// Строки в оригинале: 288431-288435
+struct COR_FIELD_OFFSET
+{
+
+  unsigned int ridOfField;
+  unsigned int ulOffset;
+
+};

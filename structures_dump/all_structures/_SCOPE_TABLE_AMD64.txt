@@ -1,0 +1,10 @@
+// Структура: _SCOPE_TABLE_AMD64
+// Полей: 2
+// Строки в оригинале: 124245-124249
+struct _SCOPE_TABLE_AMD64
+{
+
+  unsigned int Count;
+  _SCOPE_TABLE_AMD64::<unnamed_type_ScopeRecord> ScopeRecord[1];
+
+};

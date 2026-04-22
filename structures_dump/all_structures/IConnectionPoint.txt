@@ -1,0 +1,9 @@
+// Структура: IConnectionPoint
+// Полей: 1
+// Строки в оригинале: 36708-36711
+struct IConnectionPoint
+{
+
+  struct IConnectionPointVtbl *lpVtbl;
+
+};

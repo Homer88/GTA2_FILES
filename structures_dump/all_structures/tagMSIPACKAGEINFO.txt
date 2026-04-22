@@ -1,0 +1,12 @@
+// Структура: tagMSIPACKAGEINFO
+// Полей: 4
+// Строки в оригинале: 313080-313086
+struct tagMSIPACKAGEINFO
+{
+
+  _GUID guidID;
+  _GUID guidMsiPackageID;
+  _GUID guidDatabaseID;
+  unsigned int dwPackageFlags;
+
+};

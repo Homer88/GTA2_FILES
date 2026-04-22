@@ -1,0 +1,9 @@
+// Структура: _TXFS_WRITE_BACKUP_INFORMATION
+// Полей: 1
+// Строки в оригинале: 103662-103665
+struct _TXFS_WRITE_BACKUP_INFORMATION
+{
+
+  unsigned __int8 Buffer[1];
+
+};

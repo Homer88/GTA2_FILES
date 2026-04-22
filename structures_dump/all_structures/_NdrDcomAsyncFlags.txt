@@ -1,0 +1,17 @@
+// Структура: _NdrDcomAsyncFlags
+// Полей: 9
+// Строки в оригинале: 286182-286193
+struct _NdrDcomAsyncFlags
+{
+
+  unsigned __int32 AsyncMsgSet : 1;
+  unsigned __int32 BeginStarted : 1;
+  unsigned __int32 BeginDone : 1;
+  unsigned __int32 FinishStarted : 1;
+  unsigned __int32 FinishDone : 1;
+  unsigned __int32 BeginError : 1;
+  unsigned __int32 FinishError : 1;
+  unsigned __int32 InvokeForwarded : 1;
+  unsigned __int32 Unused : 24;
+
+};

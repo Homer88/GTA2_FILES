@@ -1,0 +1,10 @@
+// Структура: _RemotableHandle
+// Полей: 2
+// Строки в оригинале: 83453-83457
+struct _RemotableHandle
+{
+
+  int fContext;
+  _RemotableHandle::__MIDL_IWinTypes_0009 u;
+
+};

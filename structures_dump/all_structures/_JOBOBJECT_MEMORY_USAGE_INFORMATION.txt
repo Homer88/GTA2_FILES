@@ -1,0 +1,10 @@
+// Структура: _JOBOBJECT_MEMORY_USAGE_INFORMATION
+// Полей: 2
+// Строки в оригинале: 99120-99124
+struct _JOBOBJECT_MEMORY_USAGE_INFORMATION
+{
+
+  unsigned __int64 JobMemory;
+  unsigned __int64 PeakJobMemoryUsed;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _CERT_SERVER_OCSP_RESPONSE_CONTEXT
+// Полей: 3
+// Строки в оригинале: 83893-83898
+struct _CERT_SERVER_OCSP_RESPONSE_CONTEXT
+{
+
+  unsigned int cbSize;
+  unsigned __int8 *pbEncodedOcspResponse;
+  unsigned int cbEncodedOcspResponse;
+
+};

@@ -1,0 +1,19 @@
+// Структура: _OSVERSIONINFOEXW
+// Полей: 11
+// Строки в оригинале: 92027-92040
+struct _OSVERSIONINFOEXW
+{
+
+  unsigned int dwOSVersionInfoSize;
+  unsigned int dwMajorVersion;
+  unsigned int dwMinorVersion;
+  unsigned int dwBuildNumber;
+  unsigned int dwPlatformId;
+  wchar_t szCSDVersion[128];
+  unsigned __int16 wServicePackMajor;
+  unsigned __int16 wServicePackMinor;
+  unsigned __int16 wSuiteMask;
+  unsigned __int8 wProductType;
+  unsigned __int8 wReserved;
+
+};

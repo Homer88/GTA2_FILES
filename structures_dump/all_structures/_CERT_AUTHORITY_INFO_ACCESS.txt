@@ -1,0 +1,10 @@
+// Структура: _CERT_AUTHORITY_INFO_ACCESS
+// Полей: 2
+// Строки в оригинале: 88874-88878
+struct _CERT_AUTHORITY_INFO_ACCESS
+{
+
+  unsigned int cAccDescr;
+  _CERT_ACCESS_DESCRIPTION *rgAccDescr;
+
+};

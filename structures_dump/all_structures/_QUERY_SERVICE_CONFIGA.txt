@@ -1,0 +1,17 @@
+// Структура: _QUERY_SERVICE_CONFIGA
+// Полей: 9
+// Строки в оригинале: 111311-111322
+struct _QUERY_SERVICE_CONFIGA
+{
+
+  unsigned int dwServiceType;
+  unsigned int dwStartType;
+  unsigned int dwErrorControl;
+  char *lpBinaryPathName;
+  char *lpLoadOrderGroup;
+  unsigned int dwTagId;
+  char *lpDependencies;
+  char *lpServiceStartName;
+  char *lpDisplayName;
+
+};

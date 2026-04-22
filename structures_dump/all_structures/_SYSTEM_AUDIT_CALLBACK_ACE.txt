@@ -1,0 +1,11 @@
+// Структура: _SYSTEM_AUDIT_CALLBACK_ACE
+// Полей: 3
+// Строки в оригинале: 91919-91924
+struct _SYSTEM_AUDIT_CALLBACK_ACE
+{
+
+  _ACE_HEADER Header;
+  unsigned int Mask;
+  unsigned int SidStart;
+
+};

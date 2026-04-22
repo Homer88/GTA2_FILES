@@ -1,0 +1,14 @@
+// Структура: _CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1
+// Полей: 6
+// Строки в оригинале: 81063-81071
+struct _CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1
+{
+
+  unsigned int Name;
+  unsigned __int16 ValueType;
+  unsigned __int16 Reserved;
+  unsigned int Flags;
+  unsigned int ValueCount;
+  _CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1::<unnamed_type_Values> Values;
+
+};

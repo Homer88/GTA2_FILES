@@ -1,0 +1,12 @@
+// Структура: IRandomAccessStreamFileAccessModeVtbl
+// Полей: 4
+// Строки в оригинале: 352357-352363
+struct IRandomAccessStreamFileAccessModeVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IRandomAccessStreamFileAccessMode *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IRandomAccessStreamFileAccessMode *This);
+  ULONG (__stdcall *Release)(IRandomAccessStreamFileAccessMode *This);
+  HRESULT (__stdcall *GetMode)(IRandomAccessStreamFileAccessMode *This, DWORD *fileAccessMode);
+
+};

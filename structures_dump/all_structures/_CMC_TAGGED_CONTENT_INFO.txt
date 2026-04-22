@@ -1,0 +1,10 @@
+// Структура: _CMC_TAGGED_CONTENT_INFO
+// Полей: 2
+// Строки в оригинале: 92461-92465
+struct _CMC_TAGGED_CONTENT_INFO
+{
+
+  unsigned int dwBodyPartID;
+  _CRYPTOAPI_BLOB EncodedContentInfo;
+
+};

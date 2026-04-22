@@ -1,0 +1,14 @@
+// Структура: IOfflineFilesEventsFilterVtbl
+// Полей: 6
+// Строки в оригинале: 27411-27419
+struct IOfflineFilesEventsFilterVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesEventsFilter *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesEventsFilter *This);
+  ULONG (__stdcall *Release)(IOfflineFilesEventsFilter *This);
+  HRESULT (__stdcall *GetPathFilter)(IOfflineFilesEventsFilter *This, LPWSTR *ppszFilter, OFFLINEFILES_PATHFILTER_MATCH *pMatch);
+  HRESULT (__stdcall *GetIncludedEvents)(IOfflineFilesEventsFilter *This, ULONG cElements, OFFLINEFILES_EVENTS *prgEvents, ULONG *pcEvents);
+  HRESULT (__stdcall *GetExcludedEvents)(IOfflineFilesEventsFilter *This, ULONG cElements, OFFLINEFILES_EVENTS *prgEvents, ULONG *pcEvents);
+
+};

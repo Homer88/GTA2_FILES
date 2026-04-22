@@ -1,0 +1,18 @@
+// Структура: tagPCB
+// Полей: 10
+// Строки в оригинале: 273082-273094
+struct tagPCB
+{
+
+  char *pPicklingBuff;
+  char *pTruePicklingBuff;
+  unsigned int ulPicklingBuffSize;
+  unsigned int ulBytesUsed;
+  tagSTREAM_ACL StreamACL;
+  void *PickleHandle;
+  int bDirtyHandle;
+  int bPickled;
+  unsigned int ulMaxNumOfStreamACEs;
+  unsigned int ulNumOfStreamACEs;
+
+};

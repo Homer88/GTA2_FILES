@@ -1,0 +1,12 @@
+// Структура: _RTL_HEAP_ENTRY
+// Полей: 4
+// Строки в оригинале: 80984-80990
+struct _RTL_HEAP_ENTRY
+{
+
+  unsigned int Size;
+  unsigned __int16 Flags;
+  unsigned __int16 AllocatorBackTraceIndex;
+  _RTL_HEAP_ENTRY::<unnamed_type_u> u;
+
+};

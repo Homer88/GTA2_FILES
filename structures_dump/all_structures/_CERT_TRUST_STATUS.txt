@@ -1,0 +1,10 @@
+// Структура: _CERT_TRUST_STATUS
+// Полей: 2
+// Строки в оригинале: 79881-79885
+struct _CERT_TRUST_STATUS
+{
+
+  unsigned int dwErrorStatus;
+  unsigned int dwInfoStatus;
+
+};

@@ -1,0 +1,31 @@
+// Структура: IFileOperationVtbl
+// Полей: 23
+// Строки в оригинале: 42391-42416
+struct IFileOperationVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFileOperation *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFileOperation *This);
+  ULONG (__stdcall *Release)(IFileOperation *This);
+  HRESULT (__stdcall *Advise)(IFileOperation *This, IFileOperationProgressSink *pfops, DWORD *pdwCookie);
+  HRESULT (__stdcall *Unadvise)(IFileOperation *This, DWORD dwCookie);
+  HRESULT (__stdcall *SetOperationFlags)(IFileOperation *This, DWORD dwOperationFlags);
+  HRESULT (__stdcall *SetProgressMessage)(IFileOperation *This, LPCWSTR pszMessage);
+  HRESULT (__stdcall *SetProgressDialog)(IFileOperation *This, IOperationsProgressDialog *popd);
+  HRESULT (__stdcall *SetProperties)(IFileOperation *This, IPropertyChangeArray *pproparray);
+  HRESULT (__stdcall *SetOwnerWindow)(IFileOperation *This, HWND hwndOwner);
+  HRESULT (__stdcall *ApplyPropertiesToItem)(IFileOperation *This, IShellItem *psiItem);
+  HRESULT (__stdcall *ApplyPropertiesToItems)(IFileOperation *This, IUnknown *punkItems);
+  HRESULT (__stdcall *RenameItem)(IFileOperation *This, IShellItem *psiItem, LPCWSTR pszNewName, IFileOperationProgressSink *pfopsItem);
+  HRESULT (__stdcall *RenameItems)(IFileOperation *This, IUnknown *pUnkItems, LPCWSTR pszNewName);
+  HRESULT (__stdcall *MoveItem)(IFileOperation *This, IShellItem *psiItem, IShellItem *psiDestinationFolder, LPCWSTR pszNewName, IFileOperationProgressSink *pfopsItem);
+  HRESULT (__stdcall *MoveItems)(IFileOperation *This, IUnknown *punkItems, IShellItem *psiDestinationFolder);
+  HRESULT (__stdcall *CopyItem)(IFileOperation *This, IShellItem *psiItem, IShellItem *psiDestinationFolder, LPCWSTR pszCopyName, IFileOperationProgressSink *pfopsItem);
+  HRESULT (__stdcall *CopyItems)(IFileOperation *This, IUnknown *punkItems, IShellItem *psiDestinationFolder);
+  HRESULT (__stdcall *DeleteItem)(IFileOperation *This, IShellItem *psiItem, IFileOperationProgressSink *pfopsItem);
+  HRESULT (__stdcall *DeleteItems)(IFileOperation *This, IUnknown *punkItems);
+  HRESULT (__stdcall *NewItem)(IFileOperation *This, IShellItem *psiDestinationFolder, DWORD dwFileAttributes, LPCWSTR pszName, LPCWSTR pszTemplateName, IFileOperationProgressSink *pfopsItem);
+  HRESULT (__stdcall *PerformOperations)(IFileOperation *This);
+  HRESULT (__stdcall *GetAnyOperationsAborted)(IFileOperation *This, BOOL *pfAnyOperationsAborted);
+
+};

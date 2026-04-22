@@ -1,0 +1,12 @@
+// Структура: _MINIDUMP_TOKEN_INFO_LIST
+// Полей: 4
+// Строки в оригинале: 123080-123086
+struct _MINIDUMP_TOKEN_INFO_LIST
+{
+
+  unsigned int TokenListSize;
+  unsigned int TokenListEntries;
+  unsigned int ListHeaderSize;
+  unsigned int ElementHeaderSize;
+
+};

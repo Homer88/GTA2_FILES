@@ -1,0 +1,20 @@
+// Структура: _ARM64_NT_CONTEXT
+// Полей: 12
+// Строки в оригинале: 82628-82642
+struct _ARM64_NT_CONTEXT
+{
+
+  unsigned int ContextFlags;
+  unsigned int Cpsr;
+  $AD17F1676D41D16CA66302BADE5B12FF ___u2;
+  unsigned __int64 Sp;
+  unsigned __int64 Pc;
+  _ARM64_NT_NEON128 V[32];
+  unsigned int Fpcr;
+  unsigned int Fpsr;
+  unsigned int Bcr[8];
+  unsigned __int64 Bvr[8];
+  unsigned int Wcr[2];
+  unsigned __int64 Wvr[2];
+
+};

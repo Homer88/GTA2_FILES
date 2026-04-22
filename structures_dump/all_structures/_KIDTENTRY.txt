@@ -1,0 +1,12 @@
+// Структура: _KIDTENTRY
+// Полей: 4
+// Строки в оригинале: 14072-14078
+struct _KIDTENTRY
+{
+
+  unsigned __int16 Offset;
+  unsigned __int16 Selector;
+  unsigned __int16 Access;
+  unsigned __int16 ExtendedOffset;
+
+};

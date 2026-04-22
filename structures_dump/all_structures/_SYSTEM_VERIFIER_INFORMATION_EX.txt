@@ -1,0 +1,14 @@
+// Структура: _SYSTEM_VERIFIER_INFORMATION_EX
+// Полей: 6
+// Строки в оригинале: 98190-98198
+struct _SYSTEM_VERIFIER_INFORMATION_EX
+{
+
+  unsigned int VerifyMode;
+  unsigned int OptionChanges;
+  _UNICODE_STRING PreviousBucketName;
+  unsigned int IrpCancelTimeoutMsec;
+  unsigned int VerifierExtensionEnabled;
+  unsigned int Reserved[3];
+
+};

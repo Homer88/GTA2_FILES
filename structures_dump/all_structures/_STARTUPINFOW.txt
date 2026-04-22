@@ -1,0 +1,26 @@
+// Структура: _STARTUPINFOW
+// Полей: 18
+// Строки в оригинале: 58886-58906
+struct _STARTUPINFOW
+{
+
+  unsigned int cb;
+  wchar_t *lpReserved;
+  wchar_t *lpDesktop;
+  wchar_t *lpTitle;
+  unsigned int dwX;
+  unsigned int dwY;
+  unsigned int dwXSize;
+  unsigned int dwYSize;
+  unsigned int dwXCountChars;
+  unsigned int dwYCountChars;
+  unsigned int dwFillAttribute;
+  unsigned int dwFlags;
+  unsigned __int16 wShowWindow;
+  unsigned __int16 cbReserved2;
+  unsigned __int8 *lpReserved2;
+  void *hStdInput;
+  void *hStdOutput;
+  void *hStdError;
+
+};

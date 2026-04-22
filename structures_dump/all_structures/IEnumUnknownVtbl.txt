@@ -1,0 +1,15 @@
+// Структура: IEnumUnknownVtbl
+// Полей: 7
+// Строки в оригинале: 27631-27640
+struct IEnumUnknownVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumUnknown *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumUnknown *This);
+  ULONG (__stdcall *Release)(IEnumUnknown *This);
+  HRESULT (__stdcall *Next)(IEnumUnknown *This, ULONG celt, IUnknown **rgelt, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumUnknown *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumUnknown *This);
+  HRESULT (__stdcall *Clone)(IEnumUnknown *This, IEnumUnknown **ppenum);
+
+};

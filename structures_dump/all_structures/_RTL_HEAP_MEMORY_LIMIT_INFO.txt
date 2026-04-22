@@ -1,0 +1,10 @@
+// Структура: _RTL_HEAP_MEMORY_LIMIT_INFO
+// Полей: 2
+// Строки в оригинале: 80519-80523
+struct _RTL_HEAP_MEMORY_LIMIT_INFO
+{
+
+  unsigned int Version;
+  _RTL_HEAP_MEMORY_LIMIT_DATA Data;
+
+};

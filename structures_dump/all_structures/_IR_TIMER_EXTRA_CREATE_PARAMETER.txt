@@ -1,0 +1,10 @@
+// Структура: _IR_TIMER_EXTRA_CREATE_PARAMETER
+// Полей: 2
+// Строки в оригинале: 99812-99816
+struct _IR_TIMER_EXTRA_CREATE_PARAMETER
+{
+
+  unsigned __int16 ComponentId;
+  unsigned __int16 RelativeId;
+
+};

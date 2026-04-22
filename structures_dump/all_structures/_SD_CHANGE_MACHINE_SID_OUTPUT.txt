@@ -1,0 +1,15 @@
+// Структура: _SD_CHANGE_MACHINE_SID_OUTPUT
+// Полей: 7
+// Строки в оригинале: 94132-94141
+struct _SD_CHANGE_MACHINE_SID_OUTPUT
+{
+
+  unsigned __int64 NumSDChangedSuccess;
+  unsigned __int64 NumSDChangedFail;
+  unsigned __int64 NumSDUnused;
+  unsigned __int64 NumSDTotal;
+  unsigned __int64 NumMftSDChangedSuccess;
+  unsigned __int64 NumMftSDChangedFail;
+  unsigned __int64 NumMftSDTotal;
+
+};

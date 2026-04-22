@@ -1,0 +1,9 @@
+// Структура: ITransferMediumItem
+// Полей: 1
+// Строки в оригинале: 33795-33798
+struct ITransferMediumItem
+{
+
+  struct ITransferMediumItemVtbl *lpVtbl;
+
+};

@@ -1,0 +1,21 @@
+// Структура: ANON_OBJECT_HEADER_BIGOBJ
+// Полей: 13
+// Строки в оригинале: 79712-79727
+struct ANON_OBJECT_HEADER_BIGOBJ
+{
+
+  unsigned __int16 Sig1;
+  unsigned __int16 Sig2;
+  unsigned __int16 Version;
+  unsigned __int16 Machine;
+  unsigned int TimeDateStamp;
+  _GUID ClassID;
+  unsigned int SizeOfData;
+  unsigned int Flags;
+  unsigned int MetaDataSize;
+  unsigned int MetaDataOffset;
+  unsigned int NumberOfSections;
+  unsigned int PointerToSymbolTable;
+  unsigned int NumberOfSymbols;
+
+};

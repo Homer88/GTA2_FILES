@@ -1,0 +1,11 @@
+// Структура: tagAUDIODESCRIPTION
+// Полей: 3
+// Строки в оригинале: 91575-91580
+struct tagAUDIODESCRIPTION
+{
+
+  unsigned int cbSize;
+  int Enabled;
+  unsigned int Locale;
+
+};

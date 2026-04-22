@@ -1,0 +1,9 @@
+// Структура: IDirect3DCubeTexture9
+// Полей: 1
+// Строки в оригинале: 25769-25772
+struct IDirect3DCubeTexture9
+{
+
+  struct IDirect3DCubeTexture9Vtbl *lpVtbl;
+
+};

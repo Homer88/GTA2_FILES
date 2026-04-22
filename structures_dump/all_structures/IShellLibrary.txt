@@ -1,0 +1,9 @@
+// Структура: IShellLibrary
+// Полей: 1
+// Строки в оригинале: 41101-41104
+struct IShellLibrary
+{
+
+  struct IShellLibraryVtbl *lpVtbl;
+
+};

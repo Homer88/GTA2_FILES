@@ -1,0 +1,13 @@
+// Структура: WireWinrtAsyncCallSuccessDetailsPart1
+// Полей: 5
+// Строки в оригинале: 269592-269599
+struct WireWinrtAsyncCallSuccessDetailsPart1
+{
+
+  unsigned int sizeOfMarshaledResults;
+  unsigned int reserved;
+  unsigned int ref;
+  unsigned int array_size;
+  unsigned __int8 marshaledResultData[];
+
+};

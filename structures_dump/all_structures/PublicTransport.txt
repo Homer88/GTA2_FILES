@@ -1,0 +1,15 @@
+// Структура: PublicTransport
+// Полей: 7
+// Строки в оригинале: 9801-9810
+struct PublicTransport
+{
+
+  BaseCar BaseCar[100];
+  Bus BUS[10];
+  Bus BusMetrics;
+  char field_1818;
+  char field_1819;
+  char field_181A;
+  char field_181B;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _CERT_ALT_NAME_INFO
+// Полей: 2
+// Строки в оригинале: 91435-91439
+struct _CERT_ALT_NAME_INFO
+{
+
+  unsigned int cAltEntry;
+  _CERT_ALT_NAME_ENTRY *rgAltEntry;
+
+};

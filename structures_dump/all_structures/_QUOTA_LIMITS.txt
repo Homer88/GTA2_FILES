@@ -1,0 +1,14 @@
+// Структура: _QUOTA_LIMITS
+// Полей: 6
+// Строки в оригинале: 80267-80275
+struct _QUOTA_LIMITS
+{
+
+  unsigned int PagedPoolLimit;
+  unsigned int NonPagedPoolLimit;
+  unsigned int MinimumWorkingSetSize;
+  unsigned int MaximumWorkingSetSize;
+  unsigned int PagefileLimit;
+  _LARGE_INTEGER TimeLimit;
+
+};

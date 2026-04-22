@@ -1,0 +1,12 @@
+// Структура: _PERFINFO_KERNELMEMORY_RANGE_USAGE
+// Полей: 4
+// Строки в оригинале: 310748-310754
+struct _PERFINFO_KERNELMEMORY_RANGE_USAGE
+{
+
+  unsigned __int32 UsageType : 5;
+  unsigned __int32 Spare : 27;
+  void *VirtualAddress;
+  unsigned int PageCount;
+
+};

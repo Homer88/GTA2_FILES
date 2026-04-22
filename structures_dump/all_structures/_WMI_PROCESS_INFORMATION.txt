@@ -1,0 +1,16 @@
+// Структура: _WMI_PROCESS_INFORMATION
+// Полей: 8
+// Строки в оригинале: 313045-313055
+struct _WMI_PROCESS_INFORMATION
+{
+
+  unsigned int UniqueProcessKey;
+  unsigned int ProcessId;
+  unsigned int ParentId;
+  unsigned int SessionId;
+  int ExitStatus;
+  unsigned int DirectoryTableBase;
+  unsigned int Flags;
+  unsigned int Sid;
+
+};

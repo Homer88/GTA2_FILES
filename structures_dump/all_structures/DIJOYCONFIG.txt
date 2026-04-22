@@ -1,0 +1,15 @@
+// Структура: DIJOYCONFIG
+// Полей: 7
+// Строки в оригинале: 29689-29698
+struct DIJOYCONFIG
+{
+
+  DWORD dwSize;
+  GUID guidInstance;
+  JOYREGHWCONFIG hwc;
+  DWORD dwGain;
+  WCHAR wszType[256];
+  WCHAR wszCallout[256];
+  GUID guidGameport;
+
+};

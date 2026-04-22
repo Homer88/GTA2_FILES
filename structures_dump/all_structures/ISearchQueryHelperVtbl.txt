@@ -1,0 +1,32 @@
+// Структура: ISearchQueryHelperVtbl
+// Полей: 24
+// Строки в оригинале: 44192-44218
+struct ISearchQueryHelperVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISearchQueryHelper *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISearchQueryHelper *This);
+  ULONG (__stdcall *Release)(ISearchQueryHelper *This);
+  HRESULT (__stdcall *get_ConnectionString)(ISearchQueryHelper *This, LPWSTR *pszConnectionString);
+  HRESULT (__stdcall *put_QueryContentLocale)(ISearchQueryHelper *This, LCID lcid);
+  HRESULT (__stdcall *get_QueryContentLocale)(ISearchQueryHelper *This, LCID *plcid);
+  HRESULT (__stdcall *put_QueryKeywordLocale)(ISearchQueryHelper *This, LCID lcid);
+  HRESULT (__stdcall *get_QueryKeywordLocale)(ISearchQueryHelper *This, LCID *plcid);
+  HRESULT (__stdcall *put_QueryTermExpansion)(ISearchQueryHelper *This, SEARCH_TERM_EXPANSION expandTerms);
+  HRESULT (__stdcall *get_QueryTermExpansion)(ISearchQueryHelper *This, SEARCH_TERM_EXPANSION *pExpandTerms);
+  HRESULT (__stdcall *put_QuerySyntax)(ISearchQueryHelper *This, SEARCH_QUERY_SYNTAX querySyntax);
+  HRESULT (__stdcall *get_QuerySyntax)(ISearchQueryHelper *This, SEARCH_QUERY_SYNTAX *pQuerySyntax);
+  HRESULT (__stdcall *put_QueryContentProperties)(ISearchQueryHelper *This, LPCWSTR pszContentProperties);
+  HRESULT (__stdcall *get_QueryContentProperties)(ISearchQueryHelper *This, LPWSTR *ppszContentProperties);
+  HRESULT (__stdcall *put_QuerySelectColumns)(ISearchQueryHelper *This, LPCWSTR pszSelectColumns);
+  HRESULT (__stdcall *get_QuerySelectColumns)(ISearchQueryHelper *This, LPWSTR *ppszSelectColumns);
+  HRESULT (__stdcall *put_QueryWhereRestrictions)(ISearchQueryHelper *This, LPCWSTR pszRestrictions);
+  HRESULT (__stdcall *get_QueryWhereRestrictions)(ISearchQueryHelper *This, LPWSTR *ppszRestrictions);
+  HRESULT (__stdcall *put_QuerySorting)(ISearchQueryHelper *This, LPCWSTR pszSorting);
+  HRESULT (__stdcall *get_QuerySorting)(ISearchQueryHelper *This, LPWSTR *ppszSorting);
+  HRESULT (__stdcall *GenerateSQLFromUserQuery)(ISearchQueryHelper *This, LPCWSTR pszQuery, LPWSTR *ppszSQL);
+  HRESULT (__stdcall *WriteProperties)(ISearchQueryHelper *This, ITEMID itemID, DWORD dwNumberOfColumns, PROPERTYKEY *pColumns, SEARCH_COLUMN_PROPERTIES *pValues, FILETIME *pftGatherModifiedTime);
+  HRESULT (__stdcall *put_QueryMaxResults)(ISearchQueryHelper *This, LONG cMaxResults);
+  HRESULT (__stdcall *get_QueryMaxResults)(ISearchQueryHelper *This, LONG *pcMaxResults);
+
+};

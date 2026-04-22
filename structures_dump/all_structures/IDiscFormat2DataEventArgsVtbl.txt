@@ -1,0 +1,26 @@
+// Структура: IDiscFormat2DataEventArgsVtbl
+// Полей: 18
+// Строки в оригинале: 45243-45263
+struct IDiscFormat2DataEventArgsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDiscFormat2DataEventArgs *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDiscFormat2DataEventArgs *This);
+  ULONG (__stdcall *Release)(IDiscFormat2DataEventArgs *This);
+  HRESULT (__stdcall *GetTypeInfoCount)(IDiscFormat2DataEventArgs *This, UINT *pctinfo);
+  HRESULT (__stdcall *GetTypeInfo)(IDiscFormat2DataEventArgs *This, UINT iTInfo, LCID lcid, ITypeInfo **ppTInfo);
+  HRESULT (__stdcall *GetIDsOfNames)(IDiscFormat2DataEventArgs *This, const IID *const riid, LPOLESTR *rgszNames, UINT cNames, LCID lcid, DISPID *rgDispId);
+  HRESULT (__stdcall *Invoke)(IDiscFormat2DataEventArgs *This, DISPID dispIdMember, const IID *const riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr);
+  HRESULT (__stdcall *get_StartLba)(IDiscFormat2DataEventArgs *This, LONG *value);
+  HRESULT (__stdcall *get_SectorCount)(IDiscFormat2DataEventArgs *This, LONG *value);
+  HRESULT (__stdcall *get_LastReadLba)(IDiscFormat2DataEventArgs *This, LONG *value);
+  HRESULT (__stdcall *get_LastWrittenLba)(IDiscFormat2DataEventArgs *This, LONG *value);
+  HRESULT (__stdcall *get_TotalSystemBuffer)(IDiscFormat2DataEventArgs *This, LONG *value);
+  HRESULT (__stdcall *get_UsedSystemBuffer)(IDiscFormat2DataEventArgs *This, LONG *value);
+  HRESULT (__stdcall *get_FreeSystemBuffer)(IDiscFormat2DataEventArgs *This, LONG *value);
+  HRESULT (__stdcall *get_ElapsedTime)(IDiscFormat2DataEventArgs *This, LONG *value);
+  HRESULT (__stdcall *get_RemainingTime)(IDiscFormat2DataEventArgs *This, LONG *value);
+  HRESULT (__stdcall *get_TotalTime)(IDiscFormat2DataEventArgs *This, LONG *value);
+  HRESULT (__stdcall *get_CurrentAction)(IDiscFormat2DataEventArgs *This, IMAPI_FORMAT2_DATA_WRITE_ACTION *value);
+
+};

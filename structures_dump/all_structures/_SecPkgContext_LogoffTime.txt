@@ -1,0 +1,9 @@
+// Структура: _SecPkgContext_LogoffTime
+// Полей: 1
+// Строки в оригинале: 325842-325845
+struct _SecPkgContext_LogoffTime
+{
+
+  _LARGE_INTEGER tsLogoffTime;
+
+};

@@ -1,0 +1,9 @@
+// Структура: _TP_DEBUG_FREE_INFO
+// Полей: 1
+// Строки в оригинале: 97061-97064
+struct _TP_DEBUG_FREE_INFO
+{
+
+  unsigned int FreeListSize;
+
+};

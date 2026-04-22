@@ -1,0 +1,14 @@
+// Структура: IMAGE_COR_ILMETHOD_SECT_EH_CLAUSE_SMALL
+// Полей: 6
+// Строки в оригинале: 332749-332757
+struct IMAGE_COR_ILMETHOD_SECT_EH_CLAUSE_SMALL
+{
+
+  __int32 Flags : 16;
+  unsigned __int32 TryOffset : 16;
+  unsigned __int32 TryLength : 8;
+  unsigned __int32 HandlerOffset : 16;
+  unsigned __int32 HandlerLength : 8;
+  $409BA26C4615E29011D1BC352864A895 ___u5;
+
+};

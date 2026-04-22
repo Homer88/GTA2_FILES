@@ -1,0 +1,12 @@
+// Структура: tagCONTROLINFO
+// Полей: 4
+// Строки в оригинале: 40089-40095
+struct tagCONTROLINFO
+{
+
+  ULONG cb;
+  HACCEL hAccel;
+  USHORT cAccel;
+  DWORD dwFlags;
+
+};

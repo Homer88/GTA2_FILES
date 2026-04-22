@@ -1,0 +1,13 @@
+// Структура: _MODLOAD_DATA
+// Полей: 5
+// Строки в оригинале: 122410-122417
+struct _MODLOAD_DATA
+{
+
+  unsigned int ssize;
+  unsigned int ssig;
+  void *data;
+  unsigned int size;
+  unsigned int flags;
+
+};

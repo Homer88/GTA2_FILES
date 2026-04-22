@@ -1,0 +1,10 @@
+// Структура: _OWNER_ENTRY
+// Полей: 2
+// Строки в оригинале: 16617-16621
+struct _OWNER_ENTRY
+{
+
+  unsigned int OwnerThread;
+  $807414DC919B53BBFDA21F01AE87FA9E ___u1;
+
+};

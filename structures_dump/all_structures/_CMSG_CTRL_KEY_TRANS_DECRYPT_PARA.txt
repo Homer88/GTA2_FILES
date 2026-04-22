@@ -1,0 +1,13 @@
+// Структура: _CMSG_CTRL_KEY_TRANS_DECRYPT_PARA
+// Полей: 5
+// Строки в оригинале: 92699-92706
+struct _CMSG_CTRL_KEY_TRANS_DECRYPT_PARA
+{
+
+  unsigned int cbSize;
+  $2648935626D60F3A93F830EF5D884CB4 ___u1;
+  unsigned int dwKeySpec;
+  _CMSG_KEY_TRANS_RECIPIENT_INFO *pKeyTrans;
+  unsigned int dwRecipientIndex;
+
+};

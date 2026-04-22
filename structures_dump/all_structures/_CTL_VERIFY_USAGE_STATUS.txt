@@ -1,0 +1,15 @@
+// Структура: _CTL_VERIFY_USAGE_STATUS
+// Полей: 7
+// Строки в оригинале: 99181-99190
+struct _CTL_VERIFY_USAGE_STATUS
+{
+
+  unsigned int cbSize;
+  unsigned int dwError;
+  unsigned int dwFlags;
+  const _CTL_CONTEXT **ppCtl;
+  unsigned int dwCtlEntryIndex;
+  const _CERT_CONTEXT **ppSigner;
+  unsigned int dwSignerIndex;
+
+};

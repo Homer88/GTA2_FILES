@@ -1,0 +1,9 @@
+// Структура: _AHC_SERVICE_CLEAR
+// Полей: 1
+// Строки в оригинале: 313089-313092
+struct _AHC_SERVICE_CLEAR
+{
+
+  _AHC_INFO_CLASS InfoClass;
+
+};

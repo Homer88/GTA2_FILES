@@ -1,0 +1,9 @@
+// Структура: IUnbufferedFileHandleOplockCallback
+// Полей: 1
+// Строки в оригинале: 352396-352399
+struct IUnbufferedFileHandleOplockCallback
+{
+
+  struct IUnbufferedFileHandleOplockCallbackVtbl *lpVtbl;
+
+};

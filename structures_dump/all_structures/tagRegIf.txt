@@ -1,0 +1,11 @@
+// Структура: tagRegIf
+// Полей: 3
+// Строки в оригинале: 248549-248554
+struct tagRegIf
+{
+
+  void *hServerIf;
+  unsigned int dwRegFlags;
+  int (__stdcall *pfnSecurityCB)(void *, void *);
+
+};

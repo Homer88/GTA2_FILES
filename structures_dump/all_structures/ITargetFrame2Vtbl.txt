@@ -1,0 +1,23 @@
+// Структура: ITargetFrame2Vtbl
+// Полей: 15
+// Строки в оригинале: 39686-39703
+struct ITargetFrame2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITargetFrame2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITargetFrame2 *This);
+  ULONG (__stdcall *Release)(ITargetFrame2 *This);
+  HRESULT (__stdcall *SetFrameName)(ITargetFrame2 *This, LPCWSTR pszFrameName);
+  HRESULT (__stdcall *GetFrameName)(ITargetFrame2 *This, LPWSTR *ppszFrameName);
+  HRESULT (__stdcall *GetParentFrame)(ITargetFrame2 *This, IUnknown **ppunkParent);
+  HRESULT (__stdcall *SetFrameSrc)(ITargetFrame2 *This, LPCWSTR pszFrameSrc);
+  HRESULT (__stdcall *GetFrameSrc)(ITargetFrame2 *This, LPWSTR *ppszFrameSrc);
+  HRESULT (__stdcall *GetFramesContainer)(ITargetFrame2 *This, IOleContainer **ppContainer);
+  HRESULT (__stdcall *SetFrameOptions)(ITargetFrame2 *This, DWORD dwFlags);
+  HRESULT (__stdcall *GetFrameOptions)(ITargetFrame2 *This, DWORD *pdwFlags);
+  HRESULT (__stdcall *SetFrameMargins)(ITargetFrame2 *This, DWORD dwWidth, DWORD dwHeight);
+  HRESULT (__stdcall *GetFrameMargins)(ITargetFrame2 *This, DWORD *pdwWidth, DWORD *pdwHeight);
+  HRESULT (__stdcall *FindFrame)(ITargetFrame2 *This, LPCWSTR pszTargetName, DWORD dwFlags, IUnknown **ppunkTargetFrame);
+  HRESULT (__stdcall *GetTargetAlias)(ITargetFrame2 *This, LPCWSTR pszTargetName, LPWSTR *ppszTargetAlias);
+
+};

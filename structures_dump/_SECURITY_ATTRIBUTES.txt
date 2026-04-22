@@ -1,0 +1,10 @@
+// Structure: _SECURITY_ATTRIBUTES
+// Lines: 2183 - 2188
+// Fields: 4
+
+struct _SECURITY_ATTRIBUTES
+{
+  DWORD nLength;
+  LPVOID lpSecurityDescriptor;
+  BOOL bInheritHandle;
+};

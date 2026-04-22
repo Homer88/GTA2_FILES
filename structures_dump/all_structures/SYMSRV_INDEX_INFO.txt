@@ -1,0 +1,18 @@
+// Структура: SYMSRV_INDEX_INFO
+// Полей: 10
+// Строки в оригинале: 123869-123881
+struct SYMSRV_INDEX_INFO
+{
+
+  unsigned int sizeofstruct;
+  char file[261];
+  int stripped;
+  unsigned int timestamp;
+  unsigned int size;
+  char dbgfile[261];
+  char pdbfile[261];
+  _GUID guid;
+  unsigned int sig;
+  unsigned int age;
+
+};

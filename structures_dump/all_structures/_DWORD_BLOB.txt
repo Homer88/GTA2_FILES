@@ -1,0 +1,10 @@
+// Структура: _DWORD_BLOB
+// Полей: 2
+// Строки в оригинале: 97332-97336
+struct _DWORD_BLOB
+{
+
+  unsigned int clSize;
+  unsigned int alData[1];
+
+};

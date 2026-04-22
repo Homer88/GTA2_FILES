@@ -1,0 +1,11 @@
+// Структура: _TAPE_WMI_OPERATIONS
+// Полей: 3
+// Строки в оригинале: 124268-124273
+struct _TAPE_WMI_OPERATIONS
+{
+
+  unsigned int Method;
+  unsigned int DataBufferSize;
+  void *DataBuffer;
+
+};

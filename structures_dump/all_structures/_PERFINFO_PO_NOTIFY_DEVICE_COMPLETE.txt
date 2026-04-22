@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_PO_NOTIFY_DEVICE_COMPLETE
+// Полей: 2
+// Строки в оригинале: 313168-313172
+struct _PERFINFO_PO_NOTIFY_DEVICE_COMPLETE
+{
+
+  void *Irp;
+  int Status;
+
+};

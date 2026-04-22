@@ -1,0 +1,10 @@
+// Структура: FOLDERSETTINGS
+// Полей: 2
+// Строки в оригинале: 33273-33277
+struct FOLDERSETTINGS
+{
+
+  UINT ViewMode;
+  UINT fFlags;
+
+};

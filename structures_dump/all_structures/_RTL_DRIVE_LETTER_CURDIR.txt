@@ -1,0 +1,12 @@
+// Структура: _RTL_DRIVE_LETTER_CURDIR
+// Полей: 4
+// Строки в оригинале: 2970-2976
+struct _RTL_DRIVE_LETTER_CURDIR
+{
+
+  uint16_t Flags;
+  uint16_t Length;
+  unsigned int TimeStamp;
+  struct _STRING DosPath;
+
+};

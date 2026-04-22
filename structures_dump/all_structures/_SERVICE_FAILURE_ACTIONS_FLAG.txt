@@ -1,0 +1,9 @@
+// Структура: _SERVICE_FAILURE_ACTIONS_FLAG
+// Полей: 1
+// Строки в оригинале: 109640-109643
+struct _SERVICE_FAILURE_ACTIONS_FLAG
+{
+
+  int fFailureActionsOnNonCrashFailures;
+
+};

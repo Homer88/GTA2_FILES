@@ -1,0 +1,11 @@
+// Структура: _ETW_CRITSEC_EVENT_INIT
+// Полей: 3
+// Строки в оригинале: 311587-311592
+struct _ETW_CRITSEC_EVENT_INIT
+{
+
+  _SYSTEM_TRACE_HEADER Header;
+  void *SpinCount;
+  void *Address;
+
+};

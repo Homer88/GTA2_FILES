@@ -1,0 +1,11 @@
+// Структура: _XSAVE_AREA_HEADER
+// Полей: 3
+// Строки в оригинале: 15211-15216
+struct _XSAVE_AREA_HEADER
+{
+
+  unsigned __int64 Mask;
+  unsigned __int64 CompactionMask;
+  unsigned __int64 Reserved2[6];
+
+};

@@ -1,0 +1,10 @@
+// Структура: _CERT_ISSUER_SERIAL_NUMBER
+// Полей: 2
+// Строки в оригинале: 81163-81167
+struct _CERT_ISSUER_SERIAL_NUMBER
+{
+
+  _CRYPTOAPI_BLOB Issuer;
+  _CRYPTOAPI_BLOB SerialNumber;
+
+};

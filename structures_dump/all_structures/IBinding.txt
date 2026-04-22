@@ -1,0 +1,9 @@
+// Структура: IBinding
+// Полей: 1
+// Строки в оригинале: 41718-41721
+struct IBinding
+{
+
+  struct IBindingVtbl *lpVtbl;
+
+};

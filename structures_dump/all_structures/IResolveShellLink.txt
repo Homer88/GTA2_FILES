@@ -1,0 +1,9 @@
+// Структура: IResolveShellLink
+// Полей: 1
+// Строки в оригинале: 35293-35296
+struct IResolveShellLink
+{
+
+  struct IResolveShellLinkVtbl *lpVtbl;
+
+};

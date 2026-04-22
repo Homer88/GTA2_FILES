@@ -1,0 +1,17 @@
+// Структура: _DICOLORSET
+// Полей: 9
+// Строки в оригинале: 29224-29235
+struct _DICOLORSET
+{
+
+  DWORD dwSize;
+  D3DCOLOR cTextFore;
+  D3DCOLOR cTextHighlight;
+  D3DCOLOR cCalloutLine;
+  D3DCOLOR cCalloutHighlight;
+  D3DCOLOR cBorder;
+  D3DCOLOR cControlFill;
+  D3DCOLOR cHighlightFill;
+  D3DCOLOR cAreaFill;
+
+};

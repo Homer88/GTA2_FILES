@@ -1,0 +1,11 @@
+// Структура: _REMOTE_PORT_VIEW
+// Полей: 3
+// Строки в оригинале: 88254-88259
+struct _REMOTE_PORT_VIEW
+{
+
+  unsigned int Length;
+  unsigned int ViewSize;
+  void *ViewBase;
+
+};

@@ -1,0 +1,12 @@
+// Структура: tagCURSORINFO
+// Полей: 4
+// Строки в оригинале: 104057-104063
+struct tagCURSORINFO
+{
+
+  unsigned int cbSize;
+  unsigned int flags;
+  HICON__ *hCursor;
+  tagPOINT ptScreenPos;
+
+};

@@ -1,0 +1,30 @@
+// Структура: INameSpaceTreeControlVtbl
+// Полей: 22
+// Строки в оригинале: 35321-35345
+struct INameSpaceTreeControlVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(INameSpaceTreeControl *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(INameSpaceTreeControl *This);
+  ULONG (__stdcall *Release)(INameSpaceTreeControl *This);
+  HRESULT (__stdcall *Initialize)(INameSpaceTreeControl *This, HWND hwndParent, RECT *prc, NSTCSTYLE nsctsFlags);
+  HRESULT (__stdcall *TreeAdvise)(INameSpaceTreeControl *This, IUnknown *punk, DWORD *pdwCookie);
+  HRESULT (__stdcall *TreeUnadvise)(INameSpaceTreeControl *This, DWORD dwCookie);
+  HRESULT (__stdcall *AppendRoot)(INameSpaceTreeControl *This, IShellItem *psiRoot, SHCONTF grfEnumFlags, NSTCROOTSTYLE grfRootStyle, IShellItemFilter *pif);
+  HRESULT (__stdcall *InsertRoot)(INameSpaceTreeControl *This, int iIndex, IShellItem *psiRoot, SHCONTF grfEnumFlags, NSTCROOTSTYLE grfRootStyle, IShellItemFilter *pif);
+  HRESULT (__stdcall *RemoveRoot)(INameSpaceTreeControl *This, IShellItem *psiRoot);
+  HRESULT (__stdcall *RemoveAllRoots)(INameSpaceTreeControl *This);
+  HRESULT (__stdcall *GetRootItems)(INameSpaceTreeControl *This, IShellItemArray **ppsiaRootItems);
+  HRESULT (__stdcall *SetItemState)(INameSpaceTreeControl *This, IShellItem *psi, NSTCITEMSTATE nstcisMask, NSTCITEMSTATE nstcisFlags);
+  HRESULT (__stdcall *GetItemState)(INameSpaceTreeControl *This, IShellItem *psi, NSTCITEMSTATE nstcisMask, NSTCITEMSTATE *pnstcisFlags);
+  HRESULT (__stdcall *GetSelectedItems)(INameSpaceTreeControl *This, IShellItemArray **psiaItems);
+  HRESULT (__stdcall *GetItemCustomState)(INameSpaceTreeControl *This, IShellItem *psi, int *piStateNumber);
+  HRESULT (__stdcall *SetItemCustomState)(INameSpaceTreeControl *This, IShellItem *psi, int iStateNumber);
+  HRESULT (__stdcall *EnsureItemVisible)(INameSpaceTreeControl *This, IShellItem *psi);
+  HRESULT (__stdcall *SetTheme)(INameSpaceTreeControl *This, LPCWSTR pszTheme);
+  HRESULT (__stdcall *GetNextItem)(INameSpaceTreeControl *This, IShellItem *psi, NSTCGNI nstcgi, IShellItem **ppsiNext);
+  HRESULT (__stdcall *HitTest)(INameSpaceTreeControl *This, POINT *ppt, IShellItem **ppsiOut);
+  HRESULT (__stdcall *GetItemRect)(INameSpaceTreeControl *This, IShellItem *psi, RECT *prect);
+  HRESULT (__stdcall *CollapseAll)(INameSpaceTreeControl *This);
+
+};

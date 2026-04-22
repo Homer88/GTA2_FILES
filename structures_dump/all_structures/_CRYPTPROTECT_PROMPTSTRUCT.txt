@@ -1,0 +1,12 @@
+// Структура: _CRYPTPROTECT_PROMPTSTRUCT
+// Полей: 4
+// Строки в оригинале: 94229-94235
+struct _CRYPTPROTECT_PROMPTSTRUCT
+{
+
+  unsigned int cbSize;
+  unsigned int dwPromptFlags;
+  HWND__ *hwndApp;
+  const wchar_t *szPrompt;
+
+};

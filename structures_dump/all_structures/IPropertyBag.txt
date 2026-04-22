@@ -1,0 +1,9 @@
+// Структура: IPropertyBag
+// Полей: 1
+// Строки в оригинале: 35227-35230
+struct IPropertyBag
+{
+
+  struct IPropertyBagVtbl *lpVtbl;
+
+};

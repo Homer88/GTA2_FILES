@@ -1,0 +1,10 @@
+// Структура: _HEAP_TUNING_PARAMETERS
+// Полей: 2
+// Строки в оригинале: 21023-21027
+struct _HEAP_TUNING_PARAMETERS
+{
+
+  unsigned int CommittThresholdShift;
+  unsigned int MaxPreCommittThreshold;
+
+};

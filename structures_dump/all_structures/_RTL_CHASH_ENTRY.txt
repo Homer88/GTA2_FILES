@@ -1,0 +1,9 @@
+// Структура: _RTL_CHASH_ENTRY
+// Полей: 1
+// Строки в оригинале: 21553-21556
+struct _RTL_CHASH_ENTRY
+{
+
+  unsigned int Key;
+
+};

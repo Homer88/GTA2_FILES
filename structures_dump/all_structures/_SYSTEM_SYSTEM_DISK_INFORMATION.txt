@@ -1,0 +1,9 @@
+// Структура: _SYSTEM_SYSTEM_DISK_INFORMATION
+// Полей: 1
+// Строки в оригинале: 112247-112250
+struct _SYSTEM_SYSTEM_DISK_INFORMATION
+{
+
+  _UNICODE_STRING SystemDisk;
+
+};

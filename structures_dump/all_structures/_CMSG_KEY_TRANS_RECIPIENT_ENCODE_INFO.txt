@@ -1,0 +1,14 @@
+// Структура: _CMSG_KEY_TRANS_RECIPIENT_ENCODE_INFO
+// Полей: 6
+// Строки в оригинале: 87717-87725
+struct _CMSG_KEY_TRANS_RECIPIENT_ENCODE_INFO
+{
+
+  unsigned int cbSize;
+  _CRYPT_ALGORITHM_IDENTIFIER KeyEncryptionAlgorithm;
+  void *pvKeyEncryptionAuxInfo;
+  unsigned int hCryptProv;
+  _CRYPT_BIT_BLOB RecipientPublicKey;
+  _CERT_ID RecipientId;
+
+};

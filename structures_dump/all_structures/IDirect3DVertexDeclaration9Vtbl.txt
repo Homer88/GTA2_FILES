@@ -1,0 +1,13 @@
+// Структура: IDirect3DVertexDeclaration9Vtbl
+// Полей: 5
+// Строки в оригинале: 26192-26199
+struct IDirect3DVertexDeclaration9Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirect3DVertexDeclaration9 *This, const IID *const riid, void **ppvObj);
+  ULONG (__stdcall *AddRef)(IDirect3DVertexDeclaration9 *This);
+  ULONG (__stdcall *Release)(IDirect3DVertexDeclaration9 *This);
+  HRESULT (__stdcall *GetDevice)(IDirect3DVertexDeclaration9 *This, IDirect3DDevice9 **ppDevice);
+  HRESULT (__stdcall *GetDeclaration)(IDirect3DVertexDeclaration9 *This, D3DVERTEXELEMENT9 *, UINT *pNumElements);
+
+};

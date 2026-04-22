@@ -1,0 +1,13 @@
+// Структура: WinrtRtti
+// Полей: 5
+// Строки в оригинале: 320455-320462
+struct WinrtRtti
+{
+
+  WinrtRttiKind Kind;
+  unsigned int Version;
+  const WinrtRtti *Namespace;
+  const wchar_t *Name;
+  _MIDL_METHOD_PROPERTY_MAP PropertyMap;
+
+};

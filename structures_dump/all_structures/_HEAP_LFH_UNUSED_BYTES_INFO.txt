@@ -1,0 +1,9 @@
+// Структура: _HEAP_LFH_UNUSED_BYTES_INFO
+// Полей: 1
+// Строки в оригинале: 21684-21687
+struct _HEAP_LFH_UNUSED_BYTES_INFO
+{
+
+  $35B95AFCF7894A3140D293940FF22DD5 ___u0;
+
+};

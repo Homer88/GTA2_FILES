@@ -1,0 +1,18 @@
+// Структура: IFolderViewSettingsVtbl
+// Полей: 10
+// Строки в оригинале: 30597-30609
+struct IFolderViewSettingsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFolderViewSettings *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFolderViewSettings *This);
+  ULONG (__stdcall *Release)(IFolderViewSettings *This);
+  HRESULT (__stdcall *GetColumnPropertyList)(IFolderViewSettings *This, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetGroupByProperty)(IFolderViewSettings *This, PROPERTYKEY *pkey, BOOL *pfGroupAscending);
+  HRESULT (__stdcall *GetViewMode)(IFolderViewSettings *This, FOLDERLOGICALVIEWMODE *plvm);
+  HRESULT (__stdcall *GetIconSize)(IFolderViewSettings *This, UINT *puIconSize);
+  HRESULT (__stdcall *GetFolderFlags)(IFolderViewSettings *This, FOLDERFLAGS *pfolderMask, FOLDERFLAGS *pfolderFlags);
+  HRESULT (__stdcall *GetSortColumns)(IFolderViewSettings *This, SORTCOLUMN *rgSortColumns, UINT cColumnsIn, UINT *pcColumnsOut);
+  HRESULT (__stdcall *GetGroupSubsetCount)(IFolderViewSettings *This, UINT *pcVisibleRows);
+
+};

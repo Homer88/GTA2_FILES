@@ -1,0 +1,11 @@
+// Структура: _PSINJECTDATA
+// Полей: 3
+// Строки в оригинале: 93017-93022
+struct _PSINJECTDATA
+{
+
+  unsigned int DataBytes;
+  unsigned __int16 InjectionPoint;
+  unsigned __int16 PageNumber;
+
+};

@@ -1,0 +1,13 @@
+// Структура: _SYSTEM_WORKINGSET_ENTRY
+// Полей: 5
+// Строки в оригинале: 92017-92024
+struct _SYSTEM_WORKINGSET_ENTRY
+{
+
+  $16DE3CDFF8F5270CCCE99ED599B296AA ___u0;
+  unsigned int WorkingSetPageCount;
+  unsigned int CommitPageCount;
+  $6A069524B1C65A5A585CCD08C1824143 ___u3;
+  unsigned int PrivateWorkingSetPageCount;
+
+};

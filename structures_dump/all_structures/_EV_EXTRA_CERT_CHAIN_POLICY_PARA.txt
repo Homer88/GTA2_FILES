@@ -1,0 +1,10 @@
+// Структура: _EV_EXTRA_CERT_CHAIN_POLICY_PARA
+// Полей: 2
+// Строки в оригинале: 84043-84047
+struct _EV_EXTRA_CERT_CHAIN_POLICY_PARA
+{
+
+  unsigned int cbSize;
+  unsigned int dwRootProgramQualifierFlags;
+
+};

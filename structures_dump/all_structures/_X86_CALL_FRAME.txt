@@ -1,0 +1,12 @@
+// Структура: _X86_CALL_FRAME
+// Полей: 4
+// Строки в оригинале: 111432-111438
+struct _X86_CALL_FRAME
+{
+
+  unsigned int ReturnAddress;
+  unsigned int Param1;
+  unsigned int Param2;
+  unsigned int CompatibilityArea;
+
+};

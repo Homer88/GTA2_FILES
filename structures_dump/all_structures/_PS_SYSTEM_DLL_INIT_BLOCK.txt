@@ -1,0 +1,20 @@
+// Структура: _PS_SYSTEM_DLL_INIT_BLOCK
+// Полей: 12
+// Строки в оригинале: 91769-91783
+struct _PS_SYSTEM_DLL_INIT_BLOCK
+{
+
+  unsigned int Size;
+  unsigned __int64 SystemDllWowRelocation;
+  unsigned __int64 SystemDllNativeRelocation;
+  unsigned __int64 Wow64SharedInformation[16];
+  unsigned int RngData;
+  $58C0A4D3F232A91E5B04F7A98B896523 ___u5;
+  _PS_MITIGATION_OPTIONS_MAP MitigationOptionsMap;
+  unsigned __int64 CfgBitMap;
+  unsigned __int64 CfgBitMapSize;
+  unsigned __int64 Wow64CfgBitMap;
+  unsigned __int64 Wow64CfgBitMapSize;
+  _PS_MITIGATION_AUDIT_OPTIONS_MAP MitigationAuditOptionsMap;
+
+};

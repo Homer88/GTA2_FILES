@@ -1,0 +1,14 @@
+// Структура: _RTL_CRITICAL_SECTION64
+// Полей: 6
+// Строки в оригинале: 106886-106894
+struct _RTL_CRITICAL_SECTION64
+{
+
+  unsigned __int64 DebugInfo;
+  int LockCount;
+  int RecursionCount;
+  unsigned __int64 OwningThread;
+  unsigned __int64 LockSemaphore;
+  unsigned __int64 SpinCount;
+
+};

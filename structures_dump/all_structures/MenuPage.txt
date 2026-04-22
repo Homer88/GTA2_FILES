@@ -1,0 +1,14 @@
+// Структура: MenuPage
+// Полей: 6
+// Строки в оригинале: 5883-5891
+struct MenuPage
+{
+
+  unsigned __int16 numMenuItems[2];
+  MenuEntry MenuEntry[10];
+  GUI GUI[15];
+  MenuItem MenuItem[10];
+  ushort IndexMenuActions;
+  __int16 SelectActiveElementDefault;
+
+};

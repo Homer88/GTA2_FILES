@@ -1,0 +1,16 @@
+// Структура: IShellItemVtbl
+// Полей: 8
+// Строки в оригинале: 31186-31196
+struct IShellItemVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IShellItem *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IShellItem *This);
+  ULONG (__stdcall *Release)(IShellItem *This);
+  HRESULT (__stdcall *BindToHandler)(IShellItem *This, IBindCtx *pbc, const GUID *const bhid, const IID *const riid, void **ppv);
+  HRESULT (__stdcall *GetParent)(IShellItem *This, IShellItem **ppsi);
+  HRESULT (__stdcall *GetDisplayName)(IShellItem *This, SIGDN sigdnName, LPWSTR *ppszName);
+  HRESULT (__stdcall *GetAttributes)(IShellItem *This, SFGAOF sfgaoMask, SFGAOF *psfgaoAttribs);
+  HRESULT (__stdcall *Compare)(IShellItem *This, IShellItem *psi, SICHINTF hint, int *piOrder);
+
+};

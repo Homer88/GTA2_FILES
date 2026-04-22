@@ -1,0 +1,19 @@
+// Структура: IDirectInput8AVtbl
+// Полей: 11
+// Строки в оригинале: 29398-29411
+struct IDirectInput8AVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirectInput8A *This, const IID *const riid, LPVOID *ppvObj);
+  ULONG (__stdcall *AddRef)(IDirectInput8A *This);
+  ULONG (__stdcall *Release)(IDirectInput8A *This);
+  HRESULT (__stdcall *CreateDevice)(IDirectInput8A *This, const GUID *const, LPDIRECTINPUTDEVICE8A *, LPUNKNOWN);
+  HRESULT (__stdcall *EnumDevices)(IDirectInput8A *This, DWORD, LPDIENUMDEVICESCALLBACKA, LPVOID, DWORD);
+  HRESULT (__stdcall *GetDeviceStatus)(IDirectInput8A *This, const GUID *const);
+  HRESULT (__stdcall *RunControlPanel)(IDirectInput8A *This, HWND, DWORD);
+  HRESULT (__stdcall *Initialize)(IDirectInput8A *This, HINSTANCE, DWORD);
+  HRESULT (__stdcall *FindDevice)(IDirectInput8A *This, const GUID *const, LPCSTR, LPGUID);
+  HRESULT (__stdcall *EnumDevicesBySemantics)(IDirectInput8A *This, LPCSTR, LPDIACTIONFORMATA, LPDIENUMDEVICESBYSEMANTICSCBA, LPVOID, DWORD);
+  HRESULT (__stdcall *ConfigureDevices)(IDirectInput8A *This, LPDICONFIGUREDEVICESCALLBACK, LPDICONFIGUREDEVICESPARAMSA, DWORD, LPVOID);
+
+};

@@ -1,0 +1,11 @@
+// Структура: ASSOCIATIONELEMENT
+// Полей: 3
+// Строки в оригинале: 112355-112360
+struct ASSOCIATIONELEMENT
+{
+
+  ASSOCCLASS ac;
+  HKEY__ *hkClass;
+  const wchar_t *pszClass;
+
+};

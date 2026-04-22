@@ -1,0 +1,12 @@
+// Структура: ITfRangeBackupVtbl
+// Полей: 4
+// Строки в оригинале: 30455-30461
+struct ITfRangeBackupVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ITfRangeBackup *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ITfRangeBackup *This);
+  ULONG (__stdcall *Release)(ITfRangeBackup *This);
+  HRESULT (__stdcall *Restore)(ITfRangeBackup *This, TfEditCookie ec, ITfRange *pRange);
+
+};

@@ -1,0 +1,9 @@
+// Структура: ITaskSettings
+// Полей: 1
+// Строки в оригинале: 44647-44650
+struct ITaskSettings
+{
+
+  struct ITaskSettingsVtbl *lpVtbl;
+
+};

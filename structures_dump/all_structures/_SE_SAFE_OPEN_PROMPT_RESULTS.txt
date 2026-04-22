@@ -1,0 +1,10 @@
+// Структура: _SE_SAFE_OPEN_PROMPT_RESULTS
+// Полей: 2
+// Строки в оригинале: 84571-84575
+struct _SE_SAFE_OPEN_PROMPT_RESULTS
+{
+
+  _SE_SAFE_OPEN_PROMPT_EXPERIENCE_RESULTS Results;
+  wchar_t Path[260];
+
+};

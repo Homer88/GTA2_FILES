@@ -1,0 +1,23 @@
+// Структура: _FILESYSTEM_STATISTICS
+// Полей: 15
+// Строки в оригинале: 110142-110159
+struct _FILESYSTEM_STATISTICS
+{
+
+  unsigned __int16 FileSystemType;
+  unsigned __int16 Version;
+  unsigned int SizeOfCompleteStructure;
+  unsigned int UserFileReads;
+  unsigned int UserFileReadBytes;
+  unsigned int UserDiskReads;
+  unsigned int UserFileWrites;
+  unsigned int UserFileWriteBytes;
+  unsigned int UserDiskWrites;
+  unsigned int MetaDataReads;
+  unsigned int MetaDataReadBytes;
+  unsigned int MetaDataDiskReads;
+  unsigned int MetaDataWrites;
+  unsigned int MetaDataWriteBytes;
+  unsigned int MetaDataDiskWrites;
+
+};

@@ -1,0 +1,11 @@
+// Структура: tagBANDSITEINFO
+// Полей: 3
+// Строки в оригинале: 32879-32884
+struct tagBANDSITEINFO
+{
+
+  DWORD dwMask;
+  DWORD dwState;
+  DWORD dwStyle;
+
+};

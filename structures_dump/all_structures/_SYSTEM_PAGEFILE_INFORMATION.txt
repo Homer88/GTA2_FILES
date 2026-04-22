@@ -1,0 +1,13 @@
+// Структура: _SYSTEM_PAGEFILE_INFORMATION
+// Полей: 5
+// Строки в оригинале: 80555-80562
+struct _SYSTEM_PAGEFILE_INFORMATION
+{
+
+  unsigned int NextEntryOffset;
+  unsigned int TotalSize;
+  unsigned int TotalInUse;
+  unsigned int PeakUsage;
+  _UNICODE_STRING PageFileName;
+
+};

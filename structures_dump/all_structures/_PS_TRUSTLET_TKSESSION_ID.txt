@@ -1,0 +1,9 @@
+// Структура: _PS_TRUSTLET_TKSESSION_ID
+// Полей: 1
+// Строки в оригинале: 22484-22487
+struct _PS_TRUSTLET_TKSESSION_ID
+{
+
+  unsigned __int64 SessionId[4];
+
+};

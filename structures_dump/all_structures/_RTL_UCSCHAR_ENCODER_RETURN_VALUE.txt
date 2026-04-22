@@ -1,0 +1,10 @@
+// Структура: _RTL_UCSCHAR_ENCODER_RETURN_VALUE
+// Полей: 2
+// Строки в оригинале: 147982-147986
+struct _RTL_UCSCHAR_ENCODER_RETURN_VALUE
+{
+
+  unsigned __int8 *NewCursorValue;
+  int FailureReason;
+
+};

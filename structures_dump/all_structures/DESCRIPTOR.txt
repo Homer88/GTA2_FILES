@@ -1,0 +1,16 @@
+// Структура: DESCRIPTOR
+// Полей: 8
+// Строки в оригинале: 147013-147023
+struct DESCRIPTOR
+{
+
+  unsigned __int8 bWidth;
+  unsigned __int8 bHeight;
+  unsigned __int8 colorCount;
+  unsigned __int8 bReserved;
+  unsigned __int16 xHotSpot;
+  unsigned __int16 yHotSpot;
+  unsigned int BytesInRes;
+  unsigned int OffsetToBits;
+
+};

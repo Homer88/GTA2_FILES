@@ -1,0 +1,9 @@
+// Структура: _SecPkgContext_ClientSpecifiedTarget
+// Полей: 1
+// Строки в оригинале: 325865-325868
+struct _SecPkgContext_ClientSpecifiedTarget
+{
+
+  wchar_t *sTargetName;
+
+};

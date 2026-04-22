@@ -1,0 +1,15 @@
+// Структура: IDataAdviseHolderVtbl
+// Полей: 7
+// Строки в оригинале: 182525-182534
+struct IDataAdviseHolderVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDataAdviseHolder *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IDataAdviseHolder *This);
+  ULONG (__stdcall *Release)(IDataAdviseHolder *This);
+  HRESULT (__stdcall *Advise)(IDataAdviseHolder *This, IDataObject *pDataObject, FORMATETC *pFetc, DWORD advf, IAdviseSink *pAdvise, DWORD *pdwConnection);
+  HRESULT (__stdcall *Unadvise)(IDataAdviseHolder *This, DWORD dwConnection);
+  HRESULT (__stdcall *EnumAdvise)(IDataAdviseHolder *This, IEnumSTATDATA **ppenumAdvise);
+  HRESULT (__stdcall *SendOnDataChange)(IDataAdviseHolder *This, IDataObject *pDataObject, DWORD dwReserved, DWORD advf);
+
+};

@@ -1,0 +1,10 @@
+// Структура: _CERT_CRL_CONTEXT_PAIR
+// Полей: 2
+// Строки в оригинале: 97292-97296
+struct _CERT_CRL_CONTEXT_PAIR
+{
+
+  const _CERT_CONTEXT *pCertContext;
+  const _CRL_CONTEXT *pCrlContext;
+
+};

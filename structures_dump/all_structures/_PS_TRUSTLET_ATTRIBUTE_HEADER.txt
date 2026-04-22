@@ -1,0 +1,11 @@
+// Структура: _PS_TRUSTLET_ATTRIBUTE_HEADER
+// Полей: 3
+// Строки в оригинале: 16041-16046
+struct _PS_TRUSTLET_ATTRIBUTE_HEADER
+{
+
+  _PS_TRUSTLET_ATTRIBUTE_TYPE AttributeType;
+  unsigned __int32 InstanceNumber : 8;
+  unsigned __int32 Reserved : 24;
+
+};

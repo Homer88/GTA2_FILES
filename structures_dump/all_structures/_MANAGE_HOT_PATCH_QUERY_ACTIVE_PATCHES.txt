@@ -1,0 +1,13 @@
+// Структура: _MANAGE_HOT_PATCH_QUERY_ACTIVE_PATCHES
+// Полей: 5
+// Строки в оригинале: 94824-94831
+struct _MANAGE_HOT_PATCH_QUERY_ACTIVE_PATCHES
+{
+
+  unsigned int Version;
+  void *ProcessHandle;
+  unsigned int PatchCount;
+  _UNICODE_STRING *PatchPathStrings;
+  _HOT_PATCH_IMAGE_INFO *BaseInfos;
+
+};

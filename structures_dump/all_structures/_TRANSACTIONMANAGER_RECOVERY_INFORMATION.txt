@@ -1,0 +1,9 @@
+// Структура: _TRANSACTIONMANAGER_RECOVERY_INFORMATION
+// Полей: 1
+// Строки в оригинале: 109788-109791
+struct _TRANSACTIONMANAGER_RECOVERY_INFORMATION
+{
+
+  unsigned __int64 LastRecoveredLsn;
+
+};

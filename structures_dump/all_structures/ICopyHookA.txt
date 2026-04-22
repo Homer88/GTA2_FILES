@@ -1,0 +1,9 @@
+// Структура: ICopyHookA
+// Полей: 1
+// Строки в оригинале: 30076-30079
+struct ICopyHookA
+{
+
+  struct ICopyHookAVtbl *lpVtbl;
+
+};

@@ -1,0 +1,16 @@
+// Структура: IWordSinkVtbl
+// Полей: 8
+// Строки в оригинале: 36664-36674
+struct IWordSinkVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IWordSink *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IWordSink *This);
+  ULONG (__stdcall *Release)(IWordSink *This);
+  HRESULT (__stdcall *PutWord)(IWordSink *This, ULONG cwc, const WCHAR *pwcInBuf, ULONG cwcSrcLen, ULONG cwcSrcPos);
+  HRESULT (__stdcall *PutAltWord)(IWordSink *This, ULONG cwc, const WCHAR *pwcInBuf, ULONG cwcSrcLen, ULONG cwcSrcPos);
+  HRESULT (__stdcall *StartAltPhrase)(IWordSink *This);
+  HRESULT (__stdcall *EndAltPhrase)(IWordSink *This);
+  HRESULT (__stdcall *PutBreak)(IWordSink *This, WORDREP_BREAK_TYPE breakType);
+
+};

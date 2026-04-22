@@ -1,0 +1,9 @@
+// Structure: S8__a
+// Lines: 5602 - 5606
+// Fields: 3
+
+struct S8__a
+{
+  _BYTE gap0[107];
+  char field_0;
+};

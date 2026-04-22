@@ -1,0 +1,9 @@
+// Структура: IRunningTaskCollection
+// Полей: 1
+// Строки в оригинале: 44518-44521
+struct IRunningTaskCollection
+{
+
+  struct IRunningTaskCollectionVtbl *lpVtbl;
+
+};

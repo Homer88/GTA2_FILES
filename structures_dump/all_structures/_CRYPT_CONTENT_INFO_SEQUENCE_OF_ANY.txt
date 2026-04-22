@@ -1,0 +1,11 @@
+// Структура: _CRYPT_CONTENT_INFO_SEQUENCE_OF_ANY
+// Полей: 3
+// Строки в оригинале: 93762-93767
+struct _CRYPT_CONTENT_INFO_SEQUENCE_OF_ANY
+{
+
+  char *pszObjId;
+  unsigned int cValue;
+  _CRYPTOAPI_BLOB *rgValue;
+
+};

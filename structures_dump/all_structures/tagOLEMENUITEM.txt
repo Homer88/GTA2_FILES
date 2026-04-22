@@ -1,0 +1,11 @@
+// Структура: tagOLEMENUITEM
+// Полей: 3
+// Строки в оригинале: 141044-141049
+struct tagOLEMENUITEM
+{
+
+  unsigned int item;
+  unsigned __int16 fwPopup;
+  int fObjectMenu;
+
+};

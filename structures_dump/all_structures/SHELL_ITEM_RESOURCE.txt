@@ -1,0 +1,10 @@
+// Структура: SHELL_ITEM_RESOURCE
+// Полей: 2
+// Строки в оригинале: 36974-36978
+struct SHELL_ITEM_RESOURCE
+{
+
+  GUID guidType;
+  WCHAR szName[260];
+
+};

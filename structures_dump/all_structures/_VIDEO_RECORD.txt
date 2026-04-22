@@ -1,0 +1,19 @@
+// Структура: _VIDEO_RECORD
+// Полей: 11
+// Строки в оригинале: 308769-308782
+struct _VIDEO_RECORD
+{
+
+  unsigned int MemorySize;
+  unsigned int XResolution;
+  unsigned int YResolution;
+  unsigned int BitsPerPixel;
+  unsigned int VRefresh;
+  wchar_t ChipType[256];
+  wchar_t DACType[256];
+  wchar_t AdapterString[256];
+  wchar_t BiosString[256];
+  wchar_t DeviceId[256];
+  unsigned int StateFlags;
+
+};

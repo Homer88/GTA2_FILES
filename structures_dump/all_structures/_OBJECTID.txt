@@ -1,0 +1,10 @@
+// Структура: _OBJECTID
+// Полей: 2
+// Строки в оригинале: 100169-100173
+struct _OBJECTID
+{
+
+  _GUID Lineage;
+  unsigned int Uniquifier;
+
+};

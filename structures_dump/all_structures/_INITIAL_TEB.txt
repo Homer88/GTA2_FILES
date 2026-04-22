@@ -1,0 +1,12 @@
+// Структура: _INITIAL_TEB
+// Полей: 4
+// Строки в оригинале: 103756-103762
+struct _INITIAL_TEB
+{
+
+  _INITIAL_TEB::<unnamed_type_OldInitialTeb> OldInitialTeb;
+  void *StackBase;
+  void *StackLimit;
+  void *StackAllocationBase;
+
+};

@@ -1,0 +1,10 @@
+// Структура: _CTL_USAGE_MATCH
+// Полей: 2
+// Строки в оригинале: 98110-98114
+struct _CTL_USAGE_MATCH
+{
+
+  unsigned int dwType;
+  _CTL_USAGE Usage;
+
+};

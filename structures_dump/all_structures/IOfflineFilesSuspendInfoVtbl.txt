@@ -1,0 +1,12 @@
+// Структура: IOfflineFilesSuspendInfoVtbl
+// Полей: 4
+// Строки в оригинале: 27470-27476
+struct IOfflineFilesSuspendInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesSuspendInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesSuspendInfo *This);
+  ULONG (__stdcall *Release)(IOfflineFilesSuspendInfo *This);
+  HRESULT (__stdcall *IsSuspended)(IOfflineFilesSuspendInfo *This, BOOL *pbSuspended, BOOL *pbSuspendedRoot);
+
+};

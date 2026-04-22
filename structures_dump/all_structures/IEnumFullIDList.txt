@@ -1,0 +1,9 @@
+// Структура: IEnumFullIDList
+// Полей: 1
+// Строки в оригинале: 39827-39830
+struct IEnumFullIDList
+{
+
+  struct IEnumFullIDListVtbl *lpVtbl;
+
+};

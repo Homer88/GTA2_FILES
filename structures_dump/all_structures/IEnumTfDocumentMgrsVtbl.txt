@@ -1,0 +1,15 @@
+// Структура: IEnumTfDocumentMgrsVtbl
+// Полей: 7
+// Строки в оригинале: 41626-41635
+struct IEnumTfDocumentMgrsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumTfDocumentMgrs *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumTfDocumentMgrs *This);
+  ULONG (__stdcall *Release)(IEnumTfDocumentMgrs *This);
+  HRESULT (__stdcall *Clone)(IEnumTfDocumentMgrs *This, IEnumTfDocumentMgrs **ppEnum);
+  HRESULT (__stdcall *Next)(IEnumTfDocumentMgrs *This, ULONG ulCount, ITfDocumentMgr **rgDocumentMgr, ULONG *pcFetched);
+  HRESULT (__stdcall *Reset)(IEnumTfDocumentMgrs *This);
+  HRESULT (__stdcall *Skip)(IEnumTfDocumentMgrs *This, ULONG ulCount);
+
+};

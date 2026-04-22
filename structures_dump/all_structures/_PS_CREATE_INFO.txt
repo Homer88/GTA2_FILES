@@ -1,0 +1,11 @@
+// Структура: _PS_CREATE_INFO
+// Полей: 3
+// Строки в оригинале: 111717-111722
+struct _PS_CREATE_INFO
+{
+
+  unsigned int Size;
+  PS_CREATE_STATE State;
+  $97C89A4B134657B5B93617EB27617CEA ___u2;
+
+};

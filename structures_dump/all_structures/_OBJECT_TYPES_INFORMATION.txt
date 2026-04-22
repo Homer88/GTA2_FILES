@@ -1,0 +1,9 @@
+// Структура: _OBJECT_TYPES_INFORMATION
+// Полей: 1
+// Строки в оригинале: 90274-90277
+struct _OBJECT_TYPES_INFORMATION
+{
+
+  unsigned int NumberOfTypes;
+
+};

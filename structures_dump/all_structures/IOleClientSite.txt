@@ -1,0 +1,9 @@
+// Структура: IOleClientSite
+// Полей: 1
+// Строки в оригинале: 27534-27537
+struct IOleClientSite
+{
+
+  struct IOleClientSiteVtbl *lpVtbl;
+
+};

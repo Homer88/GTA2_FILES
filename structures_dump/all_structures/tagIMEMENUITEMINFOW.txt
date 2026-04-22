@@ -1,0 +1,17 @@
+// Структура: tagIMEMENUITEMINFOW
+// Полей: 9
+// Строки в оригинале: 86733-86744
+struct tagIMEMENUITEMINFOW
+{
+
+  unsigned int cbSize;
+  unsigned int fType;
+  unsigned int fState;
+  unsigned int wID;
+  HBITMAP__ *hbmpChecked;
+  HBITMAP__ *hbmpUnchecked;
+  unsigned int dwItemData;
+  wchar_t szString[80];
+  HBITMAP__ *hbmpItem;
+
+};

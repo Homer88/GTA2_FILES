@@ -1,0 +1,13 @@
+// Структура: _JOBOBJECT_SECURITY_LIMIT_INFORMATION
+// Полей: 5
+// Строки в оригинале: 107754-107761
+struct _JOBOBJECT_SECURITY_LIMIT_INFORMATION
+{
+
+  unsigned int SecurityLimitFlags;
+  void *JobToken;
+  _TOKEN_GROUPS *SidsToDisable;
+  _TOKEN_PRIVILEGES *PrivilegesToDelete;
+  _TOKEN_GROUPS *RestrictedSids;
+
+};

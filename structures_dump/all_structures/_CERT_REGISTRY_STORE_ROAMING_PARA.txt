@@ -1,0 +1,10 @@
+// Структура: _CERT_REGISTRY_STORE_ROAMING_PARA
+// Полей: 2
+// Строки в оригинале: 108377-108381
+struct _CERT_REGISTRY_STORE_ROAMING_PARA
+{
+
+  HKEY__ *hKey;
+  wchar_t *pwszStoreDirectory;
+
+};

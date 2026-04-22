@@ -1,0 +1,9 @@
+// Структура: _TRUSTLET_COLLABORATION_ID
+// Полей: 1
+// Строки в оригинале: 16069-16072
+struct _TRUSTLET_COLLABORATION_ID
+{
+
+  unsigned __int64 Value[2];
+
+};

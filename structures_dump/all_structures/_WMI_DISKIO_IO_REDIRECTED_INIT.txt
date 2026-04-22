@@ -1,0 +1,10 @@
+// Структура: _WMI_DISKIO_IO_REDIRECTED_INIT
+// Полей: 2
+// Строки в оригинале: 313119-313123
+struct _WMI_DISKIO_IO_REDIRECTED_INIT
+{
+
+  void *Irp;
+  void *FileKey;
+
+};

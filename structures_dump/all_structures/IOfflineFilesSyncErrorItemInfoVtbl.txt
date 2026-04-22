@@ -1,0 +1,14 @@
+// Структура: IOfflineFilesSyncErrorItemInfoVtbl
+// Полей: 6
+// Строки в оригинале: 28164-28172
+struct IOfflineFilesSyncErrorItemInfoVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IOfflineFilesSyncErrorItemInfo *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IOfflineFilesSyncErrorItemInfo *This);
+  ULONG (__stdcall *Release)(IOfflineFilesSyncErrorItemInfo *This);
+  HRESULT (__stdcall *GetFileAttributesA)(IOfflineFilesSyncErrorItemInfo *This, DWORD *pdwAttributes);
+  HRESULT (__stdcall *GetFileTimes)(IOfflineFilesSyncErrorItemInfo *This, FILETIME *pftLastWrite, FILETIME *pftChange);
+  HRESULT (__stdcall *GetFileSize)(IOfflineFilesSyncErrorItemInfo *This, LARGE_INTEGER *pSize);
+
+};

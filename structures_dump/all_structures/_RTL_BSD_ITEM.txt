@@ -1,0 +1,11 @@
+// Структура: _RTL_BSD_ITEM
+// Полей: 3
+// Строки в оригинале: 92784-92789
+struct _RTL_BSD_ITEM
+{
+
+  RTL_BSD_ITEM_TYPE Type;
+  void *DataBuffer;
+  unsigned int DataLength;
+
+};

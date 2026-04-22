@@ -1,0 +1,9 @@
+// Структура: _ETW_COVERAGE_SAMPLER_STATUS
+// Полей: 1
+// Строки в оригинале: 309074-309077
+struct _ETW_COVERAGE_SAMPLER_STATUS
+{
+
+  unsigned __int8 Active;
+
+};

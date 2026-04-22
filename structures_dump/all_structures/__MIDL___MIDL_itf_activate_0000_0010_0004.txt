@@ -1,0 +1,19 @@
+// Структура: __MIDL___MIDL_itf_activate_0000_0010_0004
+// Полей: 11
+// Строки в оригинале: 103646-103659
+struct __MIDL___MIDL_itf_activate_0000_0010_0004
+{
+
+  unsigned int ulNumClasses;
+  _GUID *pCLSIDs;
+  unsigned int pidProcess;
+  void *hProcess;
+  void *hImpersonationToken;
+  wchar_t *pwszWinstaDesktop;
+  unsigned int dwState;
+  _GUID AppId;
+  __MIDL___MIDL_itf_activate_0000_0010_0001 ServerType;
+  __MIDL___MIDL_itf_activate_0000_0010_0002 ServerID;
+  _FILETIME ftCreated;
+
+};

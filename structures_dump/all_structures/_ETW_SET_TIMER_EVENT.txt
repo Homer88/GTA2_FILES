@@ -1,0 +1,17 @@
+// Структура: _ETW_SET_TIMER_EVENT
+// Полей: 9
+// Строки в оригинале: 310679-310690
+struct _ETW_SET_TIMER_EVENT
+{
+
+  unsigned __int64 ExpectedDueTime;
+  unsigned int TimerAddress;
+  unsigned __int16 TargetProcessorGroup;
+  unsigned __int8 TargetProcessorIndex;
+  unsigned __int8 Flags;
+  unsigned int Period;
+  unsigned __int8 EncodedDelay;
+  unsigned __int8 Reserved0;
+  unsigned __int16 UniqueProcessId;
+
+};

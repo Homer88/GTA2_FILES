@@ -1,0 +1,16 @@
+// Структура: IDirectInputAVtbl
+// Полей: 8
+// Строки в оригинале: 6091-6101
+struct IDirectInputAVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IDirectInputA *This, const IID *const riid, LPVOID *ppvObj);
+  ULONG (__stdcall *AddRef)(IDirectInputA *This);
+  ULONG (__stdcall *Release)(IDirectInputA *This);
+  HRESULT (__stdcall *CreateDevice)(IDirectInputA *This, const GUID *const, LPDIRECTINPUTDEVICEA *, LPUNKNOWN);
+  HRESULT (__stdcall *EnumDevices)(IDirectInputA *This, DWORD, LPDIENUMDEVICESCALLBACKA, LPVOID, DWORD);
+  HRESULT (__stdcall *GetDeviceStatus)(IDirectInputA *This, const GUID *const);
+  HRESULT (__stdcall *RunControlPanel)(IDirectInputA *This, HWND, DWORD);
+  HRESULT (__stdcall *Initialize)(IDirectInputA *This, HINSTANCE, DWORD);
+
+};

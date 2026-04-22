@@ -1,0 +1,18 @@
+// Структура: IFileDialogEventsVtbl
+// Полей: 10
+// Строки в оригинале: 34528-34540
+struct IFileDialogEventsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IFileDialogEvents *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IFileDialogEvents *This);
+  ULONG (__stdcall *Release)(IFileDialogEvents *This);
+  HRESULT (__stdcall *OnFileOk)(IFileDialogEvents *This, IFileDialog *pfd);
+  HRESULT (__stdcall *OnFolderChanging)(IFileDialogEvents *This, IFileDialog *pfd, IShellItem *psiFolder);
+  HRESULT (__stdcall *OnFolderChange)(IFileDialogEvents *This, IFileDialog *pfd);
+  HRESULT (__stdcall *OnSelectionChange)(IFileDialogEvents *This, IFileDialog *pfd);
+  HRESULT (__stdcall *OnShareViolation)(IFileDialogEvents *This, IFileDialog *pfd, IShellItem *psi, FDE_SHAREVIOLATION_RESPONSE *pResponse);
+  HRESULT (__stdcall *OnTypeChange)(IFileDialogEvents *This, IFileDialog *pfd);
+  HRESULT (__stdcall *OnOverwrite)(IFileDialogEvents *This, IFileDialog *pfd, IShellItem *psi, FDE_OVERWRITE_RESPONSE *pResponse);
+
+};

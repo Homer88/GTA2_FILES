@@ -1,0 +1,10 @@
+// Структура: _RTL_DYNAMIC_HASH_TABLE_ENTRY
+// Полей: 2
+// Строки в оригинале: 12811-12815
+struct _RTL_DYNAMIC_HASH_TABLE_ENTRY
+{
+
+  _LIST_ENTRY Linkage;
+  unsigned int Signature;
+
+};

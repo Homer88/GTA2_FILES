@@ -1,0 +1,10 @@
+// Структура: _RTL_FEATURE_CONFIGURATION_TABLE
+// Полей: 2
+// Строки в оригинале: 100060-100064
+struct _RTL_FEATURE_CONFIGURATION_TABLE
+{
+
+  unsigned int FeatureCount;
+  _RTL_FEATURE_CONFIGURATION Features[1];
+
+};

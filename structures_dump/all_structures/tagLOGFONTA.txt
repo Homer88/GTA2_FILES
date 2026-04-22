@@ -1,0 +1,22 @@
+// Структура: tagLOGFONTA
+// Полей: 14
+// Строки в оригинале: 79836-79852
+struct tagLOGFONTA
+{
+
+  int lfHeight;
+  int lfWidth;
+  int lfEscapement;
+  int lfOrientation;
+  int lfWeight;
+  unsigned __int8 lfItalic;
+  unsigned __int8 lfUnderline;
+  unsigned __int8 lfStrikeOut;
+  unsigned __int8 lfCharSet;
+  unsigned __int8 lfOutPrecision;
+  unsigned __int8 lfClipPrecision;
+  unsigned __int8 lfQuality;
+  unsigned __int8 lfPitchAndFamily;
+  char lfFaceName[32];
+
+};

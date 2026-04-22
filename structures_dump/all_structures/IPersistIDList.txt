@@ -1,0 +1,9 @@
+// Структура: IPersistIDList
+// Полей: 1
+// Строки в оригинале: 46067-46070
+struct IPersistIDList
+{
+
+  struct IPersistIDListVtbl *lpVtbl;
+
+};

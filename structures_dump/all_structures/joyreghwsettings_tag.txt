@@ -1,0 +1,10 @@
+// Структура: joyreghwsettings_tag
+// Полей: 2
+// Строки в оригинале: 29607-29611
+struct joyreghwsettings_tag
+{
+
+  DWORD dwFlags;
+  DWORD dwNumButtons;
+
+};

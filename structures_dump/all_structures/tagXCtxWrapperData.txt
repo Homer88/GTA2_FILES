@@ -1,0 +1,14 @@
+// Структура: tagXCtxWrapperData
+// Полей: 6
+// Строки в оригинале: 242735-242743
+struct tagXCtxWrapperData
+{
+
+  const _GUID *pIID;
+  IUnknown *pServer;
+  unsigned int dwState;
+  CObjectContext *pServerCtx;
+  CObjectContext *pClientCtx;
+  void *pv;
+
+};

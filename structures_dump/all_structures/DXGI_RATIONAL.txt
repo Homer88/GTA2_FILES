@@ -1,0 +1,10 @@
+// Структура: DXGI_RATIONAL
+// Полей: 2
+// Строки в оригинале: 352192-352196
+struct DXGI_RATIONAL
+{
+
+  UINT Numerator;
+  UINT Denominator;
+
+};

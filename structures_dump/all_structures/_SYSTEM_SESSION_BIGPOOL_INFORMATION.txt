@@ -1,0 +1,12 @@
+// Структура: _SYSTEM_SESSION_BIGPOOL_INFORMATION
+// Полей: 4
+// Строки в оригинале: 104434-104440
+struct _SYSTEM_SESSION_BIGPOOL_INFORMATION
+{
+
+  unsigned int NextEntryOffset;
+  unsigned int SessionId;
+  unsigned int Count;
+  _SYSTEM_BIGPOOL_ENTRY AllocatedInfo[1];
+
+};

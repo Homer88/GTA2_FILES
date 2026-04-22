@@ -1,0 +1,12 @@
+// Структура: _PROCESS_HANDLE_TRACING_ENTRY
+// Полей: 4
+// Строки в оригинале: 89747-89753
+struct _PROCESS_HANDLE_TRACING_ENTRY
+{
+
+  void *Handle;
+  _CLIENT_ID ClientId;
+  unsigned int Type;
+  void *Stacks[16];
+
+};

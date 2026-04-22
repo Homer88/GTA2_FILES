@@ -1,0 +1,10 @@
+// Структура: _ETW_COVERAGE_SAMPLER_SAMPLE
+// Полей: 2
+// Строки в оригинале: 309214-309218
+struct _ETW_COVERAGE_SAMPLER_SAMPLE
+{
+
+  unsigned int ModuleId;
+  unsigned int Offset;
+
+};

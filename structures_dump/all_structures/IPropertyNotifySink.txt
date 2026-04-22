@@ -1,0 +1,9 @@
+// Структура: IPropertyNotifySink
+// Полей: 1
+// Строки в оригинале: 37637-37640
+struct IPropertyNotifySink
+{
+
+  struct IPropertyNotifySinkVtbl *lpVtbl;
+
+};

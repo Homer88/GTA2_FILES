@@ -1,0 +1,13 @@
+// Структура: _SECURITY_PACKAGE_OPTIONS
+// Полей: 5
+// Строки в оригинале: 325816-325823
+struct _SECURITY_PACKAGE_OPTIONS
+{
+
+  unsigned int Size;
+  unsigned int Type;
+  unsigned int Flags;
+  unsigned int SignatureSize;
+  void *Signature;
+
+};

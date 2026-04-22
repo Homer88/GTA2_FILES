@@ -1,0 +1,11 @@
+// Структура: _NDR_CS_TAG_FLAGS
+// Полей: 3
+// Строки в оригинале: 330885-330890
+struct _NDR_CS_TAG_FLAGS
+{
+
+  unsigned __int8 STag : 1;
+  unsigned __int8 DRTag : 1;
+  unsigned __int8 RTag : 1;
+
+};

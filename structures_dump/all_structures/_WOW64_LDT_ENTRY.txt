@@ -1,0 +1,11 @@
+// Структура: _WOW64_LDT_ENTRY
+// Полей: 3
+// Строки в оригинале: 99677-99682
+struct _WOW64_LDT_ENTRY
+{
+
+  unsigned __int16 LimitLow;
+  unsigned __int16 BaseLow;
+  _WOW64_LDT_ENTRY::<unnamed_type_HighWord> HighWord;
+
+};

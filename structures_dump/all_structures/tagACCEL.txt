@@ -1,0 +1,11 @@
+// Структура: tagACCEL
+// Полей: 3
+// Строки в оригинале: 109619-109624
+struct tagACCEL
+{
+
+  unsigned __int8 fVirt;
+  unsigned __int16 key;
+  unsigned __int16 cmd;
+
+};

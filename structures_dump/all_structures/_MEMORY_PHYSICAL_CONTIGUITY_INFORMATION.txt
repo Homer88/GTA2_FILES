@@ -1,0 +1,13 @@
+// Структура: _MEMORY_PHYSICAL_CONTIGUITY_INFORMATION
+// Полей: 5
+// Строки в оригинале: 91484-91491
+struct _MEMORY_PHYSICAL_CONTIGUITY_INFORMATION
+{
+
+  void *VirtualAddress;
+  unsigned int Size;
+  unsigned int ContiguityUnitSize;
+  unsigned int Flags;
+  _MEMORY_PHYSICAL_CONTIGUITY_UNIT_INFORMATION *ContiguityUnitInformation;
+
+};

@@ -1,0 +1,12 @@
+// Структура: _NDR64_SIMPLE_MEMBER_FORMAT
+// Полей: 4
+// Строки в оригинале: 332626-332632
+struct _NDR64_SIMPLE_MEMBER_FORMAT
+{
+
+  unsigned __int8 FormatCode;
+  unsigned __int8 Reserved1;
+  unsigned __int16 Reserved2;
+  unsigned int Reserved3;
+
+};

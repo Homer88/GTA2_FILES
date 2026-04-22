@@ -1,0 +1,14 @@
+// Структура: tagActivationContextInfoData
+// Полей: 6
+// Строки в оригинале: 193113-193121
+struct tagActivationContextInfoData
+{
+
+  int clientOK;
+  int bReserved1;
+  unsigned int dwReserved1;
+  unsigned int dwReserved2;
+  tagMInterfacePointer *pIFDClientCtx;
+  tagMInterfacePointer *pIFDPrototypeCtx;
+
+};

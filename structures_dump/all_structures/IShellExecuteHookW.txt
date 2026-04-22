@@ -1,0 +1,9 @@
+// Структура: IShellExecuteHookW
+// Полей: 1
+// Строки в оригинале: 34734-34737
+struct IShellExecuteHookW
+{
+
+  struct IShellExecuteHookWVtbl *lpVtbl;
+
+};

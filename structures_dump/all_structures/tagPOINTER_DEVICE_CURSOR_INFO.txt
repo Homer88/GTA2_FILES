@@ -1,0 +1,10 @@
+// Структура: tagPOINTER_DEVICE_CURSOR_INFO
+// Полей: 2
+// Строки в оригинале: 102026-102030
+struct tagPOINTER_DEVICE_CURSOR_INFO
+{
+
+  unsigned int cursorId;
+  tagPOINTER_DEVICE_CURSOR_TYPE cursor;
+
+};

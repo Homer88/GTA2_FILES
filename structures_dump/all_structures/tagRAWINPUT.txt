@@ -1,0 +1,10 @@
+// Структура: tagRAWINPUT
+// Полей: 2
+// Строки в оригинале: 105940-105944
+struct tagRAWINPUT
+{
+
+  tagRAWINPUTHEADER header;
+  tagRAWINPUT::<unnamed_type_data> data;
+
+};

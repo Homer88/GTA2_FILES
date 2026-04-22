@@ -1,0 +1,11 @@
+// Структура: _MINIDUMP_TOKEN_INFO_HEADER
+// Полей: 3
+// Строки в оригинале: 122374-122379
+struct _MINIDUMP_TOKEN_INFO_HEADER
+{
+
+  unsigned int TokenSize;
+  unsigned int TokenId;
+  unsigned __int64 TokenHandle;
+
+};

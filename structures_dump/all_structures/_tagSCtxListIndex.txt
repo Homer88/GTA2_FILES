@@ -1,0 +1,11 @@
+// Структура: _tagSCtxListIndex
+// Полей: 3
+// Строки в оригинале: 61059-61064
+struct _tagSCtxListIndex
+{
+
+  int idx;
+  int next;
+  int prev;
+
+};

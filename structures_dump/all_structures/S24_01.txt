@@ -1,0 +1,12 @@
+// Структура: S24_01
+// Полей: 4
+// Строки в оригинале: 7660-7666
+struct S24_01
+{
+
+  char field_0;
+  char field_1;
+  char field_2;
+  char field_3;
+
+};

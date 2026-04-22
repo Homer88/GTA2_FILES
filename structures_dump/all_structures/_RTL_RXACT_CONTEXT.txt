@@ -1,0 +1,12 @@
+// Структура: _RTL_RXACT_CONTEXT
+// Полей: 4
+// Строки в оригинале: 85326-85332
+struct _RTL_RXACT_CONTEXT
+{
+
+  void *RootRegistryKey;
+  void *RXactKey;
+  unsigned __int8 HandlesValid;
+  _RTL_RXACT_LOG *RXactLog;
+
+};

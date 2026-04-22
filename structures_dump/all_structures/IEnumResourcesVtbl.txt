@@ -1,0 +1,15 @@
+// Структура: IEnumResourcesVtbl
+// Полей: 7
+// Строки в оригинале: 36956-36965
+struct IEnumResourcesVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IEnumResources *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IEnumResources *This);
+  ULONG (__stdcall *Release)(IEnumResources *This);
+  HRESULT (__stdcall *Next)(IEnumResources *This, ULONG celt, SHELL_ITEM_RESOURCE *psir, ULONG *pceltFetched);
+  HRESULT (__stdcall *Skip)(IEnumResources *This, ULONG celt);
+  HRESULT (__stdcall *Reset)(IEnumResources *This);
+  HRESULT (__stdcall *Clone)(IEnumResources *This, IEnumResources **ppenumr);
+
+};

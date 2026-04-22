@@ -1,0 +1,13 @@
+// Структура: DXGI_GAMMA_CONTROL_CAPABILITIES
+// Полей: 5
+// Строки в оригинале: 352227-352234
+struct DXGI_GAMMA_CONTROL_CAPABILITIES
+{
+
+  BOOL ScaleAndOffsetSupported;
+  float MaxConvertedValue;
+  float MinConvertedValue;
+  UINT NumGammaControlPoints;
+  float ControlPointPositions[1025];
+
+};

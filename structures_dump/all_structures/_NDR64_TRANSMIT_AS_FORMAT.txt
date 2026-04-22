@@ -1,0 +1,16 @@
+// Структура: _NDR64_TRANSMIT_AS_FORMAT
+// Полей: 8
+// Строки в оригинале: 331496-331506
+struct _NDR64_TRANSMIT_AS_FORMAT
+{
+
+  unsigned __int8 FormatCode;
+  unsigned __int8 Flags;
+  unsigned __int16 RoutineIndex;
+  unsigned __int16 TransmittedTypeWireAlignment;
+  unsigned __int16 MemoryAlignment;
+  unsigned int PresentedTypeMemorySize;
+  unsigned int TransmittedTypeBufferSize;
+  const void *TransmittedType;
+
+};

@@ -1,0 +1,33 @@
+// Структура: _WOW64_CONTEXT
+// Полей: 25
+// Строки в оригинале: 104809-104836
+struct _WOW64_CONTEXT
+{
+
+  unsigned int ContextFlags;
+  unsigned int Dr0;
+  unsigned int Dr1;
+  unsigned int Dr2;
+  unsigned int Dr3;
+  unsigned int Dr6;
+  unsigned int Dr7;
+  _WOW64_FLOATING_SAVE_AREA FloatSave;
+  unsigned int SegGs;
+  unsigned int SegFs;
+  unsigned int SegEs;
+  unsigned int SegDs;
+  unsigned int Edi;
+  unsigned int Esi;
+  unsigned int Ebx;
+  unsigned int Edx;
+  unsigned int Ecx;
+  unsigned int Eax;
+  unsigned int Ebp;
+  unsigned int Eip;
+  unsigned int SegCs;
+  unsigned int EFlags;
+  unsigned int Esp;
+  unsigned int SegSs;
+  unsigned __int8 ExtendedRegisters[512];
+
+};

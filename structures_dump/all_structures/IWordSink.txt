@@ -1,0 +1,9 @@
+// Структура: IWordSink
+// Полей: 1
+// Строки в оригинале: 36640-36643
+struct IWordSink
+{
+
+  struct IWordSinkVtbl *lpVtbl;
+
+};

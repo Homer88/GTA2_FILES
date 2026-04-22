@@ -1,0 +1,13 @@
+// Структура: _LAST_EXCEPTION_LOG
+// Полей: 5
+// Строки в оригинале: 109573-109580
+struct _LAST_EXCEPTION_LOG
+{
+
+  _EXCEPTION_RECORD ExceptionRecord;
+  _CONTEXT ContextRecord;
+  unsigned int ControlPc;
+  _EXCEPTION_DISPOSITION Disposition;
+  unsigned int HandlerData[5];
+
+};

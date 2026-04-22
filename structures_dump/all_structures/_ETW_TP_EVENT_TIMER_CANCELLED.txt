@@ -1,0 +1,11 @@
+// Структура: _ETW_TP_EVENT_TIMER_CANCELLED
+// Полей: 3
+// Строки в оригинале: 309603-309608
+struct _ETW_TP_EVENT_TIMER_CANCELLED
+{
+
+  _SYSTEM_TRACE_HEADER Header;
+  void *SubQueue;
+  void *Timer;
+
+};

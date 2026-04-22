@@ -1,0 +1,9 @@
+// Структура: IRowsetLocate
+// Полей: 1
+// Строки в оригинале: 40130-40133
+struct IRowsetLocate
+{
+
+  struct IRowsetLocateVtbl *lpVtbl;
+
+};

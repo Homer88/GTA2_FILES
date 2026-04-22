@@ -1,0 +1,12 @@
+// Структура: S88
+// Полей: 4
+// Строки в оригинале: 8149-8155
+struct S88
+{
+
+  int field_0;
+  GLuint *GLuint;
+  __int16 field_8;
+  __int16 field_A;
+
+};

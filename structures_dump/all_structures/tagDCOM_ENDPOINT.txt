@@ -1,0 +1,11 @@
+// Структура: tagDCOM_ENDPOINT
+// Полей: 3
+// Строки в оригинале: 87221-87226
+struct tagDCOM_ENDPOINT
+{
+
+  wchar_t *wszProtSeq;
+  wchar_t *wszPorts;
+  unsigned int dwFlags;
+
+};

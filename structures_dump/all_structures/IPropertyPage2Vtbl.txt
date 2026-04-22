@@ -1,0 +1,23 @@
+// Структура: IPropertyPage2Vtbl
+// Полей: 15
+// Строки в оригинале: 182355-182372
+struct IPropertyPage2Vtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(IPropertyPage2 *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(IPropertyPage2 *This);
+  ULONG (__stdcall *Release)(IPropertyPage2 *This);
+  HRESULT (__stdcall *SetPageSite)(IPropertyPage2 *This, IPropertyPageSite *pPageSite);
+  HRESULT (__stdcall *Activate)(IPropertyPage2 *This, HWND hWndParent, LPCRECT pRect, BOOL bModal);
+  HRESULT (__stdcall *Deactivate)(IPropertyPage2 *This);
+  HRESULT (__stdcall *GetPageInfo)(IPropertyPage2 *This, PROPPAGEINFO *pPageInfo);
+  HRESULT (__stdcall *SetObjects)(IPropertyPage2 *This, ULONG cObjects, IUnknown **ppUnk);
+  HRESULT (__stdcall *Show)(IPropertyPage2 *This, UINT nCmdShow);
+  HRESULT (__stdcall *Move)(IPropertyPage2 *This, LPCRECT pRect);
+  HRESULT (__stdcall *IsPageDirty)(IPropertyPage2 *This);
+  HRESULT (__stdcall *Apply)(IPropertyPage2 *This);
+  HRESULT (__stdcall *Help)(IPropertyPage2 *This, LPCOLESTR pszHelpDir);
+  HRESULT (__stdcall *TranslateAcceleratorA)(IPropertyPage2 *This, MSG *pMsg);
+  HRESULT (__stdcall *EditProperty)(IPropertyPage2 *This, DISPID dispID);
+
+};

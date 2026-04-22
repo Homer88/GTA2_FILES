@@ -1,0 +1,15 @@
+// Структура: _SERVICE_NOTIFY_2W
+// Полей: 7
+// Строки в оригинале: 81346-81355
+struct _SERVICE_NOTIFY_2W
+{
+
+  unsigned int dwVersion;
+  void (__stdcall *pfnNotifyCallback)(void *);
+  void *pContext;
+  unsigned int dwNotificationStatus;
+  _SERVICE_STATUS_PROCESS ServiceStatus;
+  unsigned int dwNotificationTriggered;
+  wchar_t *pszServiceNames;
+
+};

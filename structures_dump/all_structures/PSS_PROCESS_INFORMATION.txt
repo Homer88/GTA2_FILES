@@ -1,0 +1,34 @@
+// Структура: PSS_PROCESS_INFORMATION
+// Полей: 26
+// Строки в оригинале: 285926-285954
+struct PSS_PROCESS_INFORMATION
+{
+
+  unsigned int ExitStatus;
+  void *PebBaseAddress;
+  unsigned int AffinityMask;
+  int BasePriority;
+  unsigned int ProcessId;
+  unsigned int ParentProcessId;
+  PSS_PROCESS_FLAGS Flags;
+  _FILETIME CreateTime;
+  _FILETIME ExitTime;
+  _FILETIME KernelTime;
+  _FILETIME UserTime;
+  unsigned int PriorityClass;
+  unsigned int PeakVirtualSize;
+  unsigned int VirtualSize;
+  unsigned int PageFaultCount;
+  unsigned int PeakWorkingSetSize;
+  unsigned int WorkingSetSize;
+  unsigned int QuotaPeakPagedPoolUsage;
+  unsigned int QuotaPagedPoolUsage;
+  unsigned int QuotaPeakNonPagedPoolUsage;
+  unsigned int QuotaNonPagedPoolUsage;
+  unsigned int PagefileUsage;
+  unsigned int PeakPagefileUsage;
+  unsigned int PrivateUsage;
+  unsigned int ExecuteFlags;
+  wchar_t ImageFileName[260];
+
+};

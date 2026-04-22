@@ -1,0 +1,14 @@
+// Структура: THUMBBUTTON
+// Полей: 6
+// Строки в оригинале: 41524-41532
+struct THUMBBUTTON
+{
+
+  THUMBBUTTONMASK dwMask;
+  UINT iId;
+  UINT iBitmap;
+  HICON hIcon;
+  WCHAR szTip[260];
+  THUMBBUTTONFLAGS dwFlags;
+
+};

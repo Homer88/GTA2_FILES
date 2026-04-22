@@ -1,0 +1,17 @@
+// Структура: tagMDICREATESTRUCTA
+// Полей: 9
+// Строки в оригинале: 96733-96744
+struct tagMDICREATESTRUCTA
+{
+
+  const char *szClass;
+  const char *szTitle;
+  void *hOwner;
+  int x;
+  int y;
+  int cx;
+  int cy;
+  unsigned int style;
+  int lParam;
+
+};

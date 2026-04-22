@@ -1,0 +1,12 @@
+// Структура: _JOBOBJECT_IO_ATTRIBUTION_STATS
+// Полей: 4
+// Строки в оригинале: 85210-85216
+struct _JOBOBJECT_IO_ATTRIBUTION_STATS
+{
+
+  unsigned int IoCount;
+  unsigned __int64 TotalNonOverlappedQueueTime;
+  unsigned __int64 TotalNonOverlappedServiceTime;
+  unsigned __int64 TotalSize;
+
+};

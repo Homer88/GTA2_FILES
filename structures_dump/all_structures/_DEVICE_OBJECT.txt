@@ -1,0 +1,33 @@
+// Структура: _DEVICE_OBJECT
+// Полей: 25
+// Строки в оригинале: 16534-16561
+struct _DEVICE_OBJECT
+{
+
+  __int16 Type;
+  unsigned __int16 Size;
+  int ReferenceCount;
+  _DRIVER_OBJECT *DriverObject;
+  _DEVICE_OBJECT *NextDevice;
+  _DEVICE_OBJECT *AttachedDevice;
+  _IRP *CurrentIrp;
+  _IO_TIMER *Timer;
+  unsigned int Flags;
+  unsigned int Characteristics;
+  _VPB *Vpb;
+  void *DeviceExtension;
+  unsigned int DeviceType;
+  char StackSize;
+  _DEVICE_OBJECT::$1E1C779D8310069EE2DDA30D7BD92BC9 Queue;
+  unsigned int AlignmentRequirement;
+  _KDEVICE_QUEUE DeviceQueue;
+  _KDPC Dpc;
+  unsigned int ActiveThreadCount;
+  void *SecurityDescriptor;
+  _KEVENT DeviceLock;
+  unsigned __int16 SectorSize;
+  unsigned __int16 Spare1;
+  _DEVOBJ_EXTENSION *DeviceObjectExtension;
+  void *Reserved;
+
+};

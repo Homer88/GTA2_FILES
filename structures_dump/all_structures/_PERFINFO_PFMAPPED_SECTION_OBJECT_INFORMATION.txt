@@ -1,0 +1,10 @@
+// Структура: _PERFINFO_PFMAPPED_SECTION_OBJECT_INFORMATION
+// Полей: 2
+// Строки в оригинале: 309140-309144
+struct _PERFINFO_PFMAPPED_SECTION_OBJECT_INFORMATION
+{
+
+  void *SectionObject;
+  void *RangeBase;
+
+};

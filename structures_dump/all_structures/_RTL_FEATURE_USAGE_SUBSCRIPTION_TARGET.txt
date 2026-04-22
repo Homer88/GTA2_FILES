@@ -1,0 +1,9 @@
+// Структура: _RTL_FEATURE_USAGE_SUBSCRIPTION_TARGET
+// Полей: 1
+// Строки в оригинале: 83071-83074
+struct _RTL_FEATURE_USAGE_SUBSCRIPTION_TARGET
+{
+
+  unsigned int Data[2];
+
+};

@@ -1,0 +1,10 @@
+// Структура: _SYSTEM_MANUFACTURING_INFORMATION
+// Полей: 2
+// Строки в оригинале: 105086-105090
+struct _SYSTEM_MANUFACTURING_INFORMATION
+{
+
+  unsigned int Options;
+  _UNICODE_STRING ProfileName;
+
+};

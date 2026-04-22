@@ -1,0 +1,11 @@
+// Структура: _SYSDBG_VIRTUAL
+// Полей: 3
+// Строки в оригинале: 104021-104026
+struct _SYSDBG_VIRTUAL
+{
+
+  void *Address;
+  void *Buffer;
+  unsigned int Request;
+
+};

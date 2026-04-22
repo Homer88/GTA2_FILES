@@ -1,0 +1,14 @@
+// Структура: _ACCESS_DENIED_CALLBACK_OBJECT_ACE
+// Полей: 6
+// Строки в оригинале: 79870-79878
+struct _ACCESS_DENIED_CALLBACK_OBJECT_ACE
+{
+
+  _ACE_HEADER Header;
+  unsigned int Mask;
+  unsigned int Flags;
+  _GUID ObjectType;
+  _GUID InheritedObjectType;
+  unsigned int SidStart;
+
+};

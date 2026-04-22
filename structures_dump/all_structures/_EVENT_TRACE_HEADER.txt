@@ -1,0 +1,16 @@
+// Структура: _EVENT_TRACE_HEADER
+// Полей: 8
+// Строки в оригинале: 309335-309345
+struct _EVENT_TRACE_HEADER
+{
+
+  unsigned __int16 Size;
+  $251B56E8167482127E27E70460F9ECC7 ___u1;
+  $CB242439E583EC9AA7F4D476F82D4787 ___u2;
+  unsigned int ThreadId;
+  unsigned int ProcessId;
+  _LARGE_INTEGER TimeStamp;
+  $14FACACCD4ED2D3F543C0C78C6E94405 ___u6;
+  $FD3AA17BB0CFCE8A0F96F873B74EE7F4 ___u7;
+
+};

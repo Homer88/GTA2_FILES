@@ -1,0 +1,10 @@
+// Структура: _JOBOBJECT_ASSOCIATE_COMPLETION_PORT
+// Полей: 2
+// Строки в оригинале: 90239-90243
+struct _JOBOBJECT_ASSOCIATE_COMPLETION_PORT
+{
+
+  void *CompletionKey;
+  void *CompletionPort;
+
+};

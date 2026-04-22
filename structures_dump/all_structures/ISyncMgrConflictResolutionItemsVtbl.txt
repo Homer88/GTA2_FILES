@@ -1,0 +1,13 @@
+// Структура: ISyncMgrConflictResolutionItemsVtbl
+// Полей: 5
+// Строки в оригинале: 33611-33618
+struct ISyncMgrConflictResolutionItemsVtbl
+{
+
+  HRESULT (__stdcall *QueryInterface)(ISyncMgrConflictResolutionItems *This, const IID *const riid, void **ppvObject);
+  ULONG (__stdcall *AddRef)(ISyncMgrConflictResolutionItems *This);
+  ULONG (__stdcall *Release)(ISyncMgrConflictResolutionItems *This);
+  HRESULT (__stdcall *GetCount)(ISyncMgrConflictResolutionItems *This, UINT *pCount);
+  HRESULT (__stdcall *GetItem)(ISyncMgrConflictResolutionItems *This, UINT iIndex, CONFIRM_CONFLICT_RESULT_INFO *pItemInfo);
+
+};

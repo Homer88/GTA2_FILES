@@ -1,0 +1,15 @@
+// Структура: _CERT_CHAIN_ELEMENT
+// Полей: 7
+// Строки в оригинале: 79950-79959
+struct _CERT_CHAIN_ELEMENT
+{
+
+  unsigned int cbSize;
+  const _CERT_CONTEXT *pCertContext;
+  _CERT_TRUST_STATUS TrustStatus;
+  _CERT_REVOCATION_INFO *pRevocationInfo;
+  _CTL_USAGE *pIssuanceUsage;
+  _CTL_USAGE *pApplicationUsage;
+  const wchar_t *pwszExtendedErrorInfo;
+
+};

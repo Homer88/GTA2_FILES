@@ -1,0 +1,12 @@
+// Структура: _NOTIFYICONIDENTIFIER
+// Полей: 4
+// Строки в оригинале: 93553-93559
+struct _NOTIFYICONIDENTIFIER
+{
+
+  unsigned int cbSize;
+  HWND__ *hWnd;
+  unsigned int uID;
+  _GUID guidItem;
+
+};

@@ -1,0 +1,10 @@
+// Структура: DISPLAYCONFIG_SOURCE_DEVICE_NAME
+// Полей: 2
+// Строки в оригинале: 112223-112227
+struct DISPLAYCONFIG_SOURCE_DEVICE_NAME
+{
+
+  DISPLAYCONFIG_DEVICE_INFO_HEADER header;
+  wchar_t viewGdiDeviceName[32];
+
+};

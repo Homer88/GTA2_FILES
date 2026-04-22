@@ -1,0 +1,30 @@
+// Структура: _SEGMENT_HEAP
+// Полей: 22
+// Строки в оригинале: 20767-20791
+struct _SEGMENT_HEAP
+{
+
+  RTL_HP_ENV_HANDLE EnvHandle;
+  unsigned int Signature;
+  unsigned int GlobalFlags;
+  unsigned int Interceptor;
+  unsigned __int16 ProcessHeapListIndex;
+  unsigned __int16 AllocatedFromMetadata : 1;
+  $F97D49B98FE0E89BA04E74336011DD69 ___u6;
+  __declspec(align(32)) unsigned int LargeMetadataLock;
+  _RTL_RB_TREE LargeAllocMetadata;
+  volatile unsigned int LargeReservedPages;
+  volatile unsigned int LargeCommittedPages;
+  _RTL_RUN_ONCE StackTraceInitVar;
+  __declspec(align(64)) _HEAP_RUNTIME_MEMORY_STATS MemStats;
+  unsigned __int16 GlobalLockCount;
+  unsigned int GlobalLockOwner;
+  unsigned int ContextExtendLock;
+  unsigned __int8 *AllocatedBase;
+  unsigned __int8 *UncommittedBase;
+  unsigned __int8 *ReservedLimit;
+  __declspec(align(64)) _HEAP_SEG_CONTEXT SegContexts[2];
+  _HEAP_VS_CONTEXT VsContext;
+  _HEAP_LFH_CONTEXT LfhContext;
+
+};

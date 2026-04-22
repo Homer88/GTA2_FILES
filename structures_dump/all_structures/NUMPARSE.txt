@@ -1,0 +1,14 @@
+// Структура: NUMPARSE
+// Полей: 6
+// Строки в оригинале: 85673-85681
+struct NUMPARSE
+{
+
+  int cDig;
+  unsigned int dwInFlags;
+  unsigned int dwOutFlags;
+  int cchUsed;
+  int nBaseShift;
+  int nPwr10;
+
+};

@@ -1,0 +1,11 @@
+// Структура: _PATCHOP
+// Полей: 3
+// Строки в оригинале: 308716-308721
+struct _PATCHOP
+{
+
+  unsigned int dwOpcode;
+  unsigned int dwNextOpcode;
+  unsigned __int8 data[];
+
+};

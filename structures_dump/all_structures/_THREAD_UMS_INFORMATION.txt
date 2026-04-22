@@ -1,0 +1,11 @@
+// Структура: _THREAD_UMS_INFORMATION
+// Полей: 3
+// Строки в оригинале: 109555-109560
+struct _THREAD_UMS_INFORMATION
+{
+
+  _THREAD_UMS_INFORMATION_COMMAND Command;
+  $BA09CD3BC454A4C66EA9FD01587EC616 ___u1;
+  _RTL_UMS_CONTEXT *UmsContext;
+
+};
