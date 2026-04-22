@@ -1,35 +1,93 @@
 ```
-# Build artifacts
+# Compiled and build artifacts
 *.o
 *.obj
-*.a
-*.lib
+*.exe
 *.dll
 *.so
-*.dylib
-*.exe
+*.a
 *.out
 
 # Dependencies
-node_modules/
 venv/
 .venv/
-.env
-.env.local
-*.env.*
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+.venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
 
-# IDE and editor files
+# Build directories
+build/
+dist/
+*.egg
+*.egg-info/
+.installed.cfg
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+*.pot
+*.po
+*~
+.DS_Store
+Thumbs.db
+
+# C++ specific
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.out
+*.ilk
+*.pdb
+*.lib
+*.exp
+*.iobj
+*.ipdb
+*.tlog
+*.lastbuildstate
+*.obj/
+*.ilk/
+*.pdb/
+*.idb/
+*.iobj/
+*.ipdb/
+*.tlog/
+*.lastbuildstate/
+
+# Debug and release builds
+Debug/
+Release/
+x64/
+x86/
+build/
+bin/
+obj/
+
+# IDE specific
+.vs/
 .vscode/
 .idea/
 *.swp
 *.swo
 *.tmp
 
-# Logs
-*.log
-
-# Distribution and build directories
-dist/
-build/
-target/
+# Environment files
+.env
+.env.local
+*.env
+*.env.*
+.env*
+.env.*
 ```
