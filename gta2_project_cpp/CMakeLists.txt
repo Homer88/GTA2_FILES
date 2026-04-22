@@ -18,6 +18,7 @@ set(GTA2_CORE_SOURCES
     src/Game.cpp
     src/InitWindow.cpp
     src/Menu.cpp
+    src/PlayerSlotConfig.cpp
 )
 
 set(GTA2_CORE_HEADERS
@@ -30,6 +31,7 @@ set(GTA2_CORE_HEADERS
     include/gta2/Game.h
     include/gta2/InitWindow.h
     include/gta2/Menu.h
+    include/gta2/PlayerSlotConfig.h
     include/gta2/gta2_types.h
 )
 

@@ -360,6 +360,30 @@ src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
+src/PlayerSlotConfig.o: src/PlayerSlotConfig.cpp.o
+.PHONY : src/PlayerSlotConfig.o
+
+# target to build an object file
+src/PlayerSlotConfig.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/PlayerSlotConfig.cpp.o
+.PHONY : src/PlayerSlotConfig.cpp.o
+
+src/PlayerSlotConfig.i: src/PlayerSlotConfig.cpp.i
+.PHONY : src/PlayerSlotConfig.i
+
+# target to preprocess a source file
+src/PlayerSlotConfig.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/PlayerSlotConfig.cpp.i
+.PHONY : src/PlayerSlotConfig.cpp.i
+
+src/PlayerSlotConfig.s: src/PlayerSlotConfig.cpp.s
+.PHONY : src/PlayerSlotConfig.s
+
+# target to generate assembly for a file
+src/PlayerSlotConfig.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/PlayerSlotConfig.cpp.s
+.PHONY : src/PlayerSlotConfig.cpp.s
+
 src/Weapon.o: src/Weapon.cpp.o
 .PHONY : src/Weapon.o
 
@@ -492,6 +516,9 @@ help:
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
+	@echo "... src/PlayerSlotConfig.o"
+	@echo "... src/PlayerSlotConfig.i"
+	@echo "... src/PlayerSlotConfig.s"
 	@echo "... src/Weapon.o"
 	@echo "... src/Weapon.i"
 	@echo "... src/Weapon.s"
