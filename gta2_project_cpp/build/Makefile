@@ -257,6 +257,30 @@ src/Car.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Car.cpp.s
 .PHONY : src/Car.cpp.s
 
+src/DebugProfiler.o: src/DebugProfiler.cpp.o
+.PHONY : src/DebugProfiler.o
+
+# target to build an object file
+src/DebugProfiler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.o
+.PHONY : src/DebugProfiler.cpp.o
+
+src/DebugProfiler.i: src/DebugProfiler.cpp.i
+.PHONY : src/DebugProfiler.i
+
+# target to preprocess a source file
+src/DebugProfiler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.i
+.PHONY : src/DebugProfiler.cpp.i
+
+src/DebugProfiler.s: src/DebugProfiler.cpp.s
+.PHONY : src/DebugProfiler.s
+
+# target to generate assembly for a file
+src/DebugProfiler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.s
+.PHONY : src/DebugProfiler.cpp.s
+
 src/Game.o: src/Game.cpp.o
 .PHONY : src/Game.o
 
@@ -781,6 +805,9 @@ help:
 	@echo "... src/Car.o"
 	@echo "... src/Car.i"
 	@echo "... src/Car.s"
+	@echo "... src/DebugProfiler.o"
+	@echo "... src/DebugProfiler.i"
+	@echo "... src/DebugProfiler.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"

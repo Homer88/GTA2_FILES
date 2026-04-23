@@ -31,8 +31,8 @@ MenuItemConfig::~MenuItemConfig()
 // ============================================================================
 
 void MenuItemConfig::Initialize(uint8_t isActive, uint8_t subType,
-                                 uint16_t param1, uint16_t param2,
-                                 uint16_t selectedIndex, const wchar_t* description)
+                                 uint16_t param1, uint32_t param2,
+                                 uint32_t selectedIndex, const wchar_t* description)
 {
     IsActive = isActive;
     SubType = subType;

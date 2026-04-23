@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/workspace/gta2_project_cpp/src/Car.cpp" "CMakeFiles/gta2_core.dir/src/Car.cpp.o" "gcc" "CMakeFiles/gta2_core.dir/src/Car.cpp.o.d"
+  "/workspace/gta2_project_cpp/src/DebugProfiler.cpp" "CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.o" "gcc" "CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.o.d"
   "/workspace/gta2_project_cpp/src/Game.cpp" "CMakeFiles/gta2_core.dir/src/Game.cpp.o" "gcc" "CMakeFiles/gta2_core.dir/src/Game.cpp.o.d"
   "/workspace/gta2_project_cpp/src/GameObject.cpp" "CMakeFiles/gta2_core.dir/src/GameObject.cpp.o" "gcc" "CMakeFiles/gta2_core.dir/src/GameObject.cpp.o.d"
   "/workspace/gta2_project_cpp/src/Gang.cpp" "CMakeFiles/gta2_core.dir/src/Gang.cpp.o" "gcc" "CMakeFiles/gta2_core.dir/src/Gang.cpp.o.d"

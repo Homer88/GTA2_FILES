@@ -23,6 +23,7 @@ set(GTA2_CORE_SOURCES
     src/gta2/MenuStringSlot.cpp
     src/gta2/PlayerStats.cpp
     src/MissionObjective.cpp
+    src/DebugProfiler.cpp
 )
 
 set(GTA2_CORE_HEADERS
@@ -39,7 +40,9 @@ set(GTA2_CORE_HEADERS
     include/gta2/MenuItemConfig.h
     include/gta2/MenuStringSlot.h
     include/gta2/PlayerStats.h
+    include/gta2/DebugProfiler.h
     include/gta2/MissionObjective.h
+    include/gta2/gta2_forward.h
     include/gta2/gta2_types.h
 )
 

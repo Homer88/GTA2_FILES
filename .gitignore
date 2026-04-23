@@ -7,28 +7,48 @@ cmake_install.cmake
 CMakeCache.txt
 *.cmake
 *.dir/
+
+# Dependencies
+*.a
 *.so
 *.dylib
 *.dll
-*.exe
-*.o
-*.obj
-*.a
 *.lib
+*.obj
+*.o
 
-# Dependencies
-vendor/
-
-# Logs and temp files
+# Logs
 *.log
-*.tmp
-*.swp
+
+# Environment
+.env
+.env.local
+*.env.*
 
 # Editors
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# OS specific
+# OS
 .DS_Store
 Thumbs.db
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Python (if present)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Tests
+.pytest_cache/
+.mypy_cache/
 ```

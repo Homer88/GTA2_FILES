@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gta2_core.dir/src/Car.cpp.o"
   "CMakeFiles/gta2_core.dir/src/Car.cpp.o.d"
+  "CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.o"
+  "CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.o.d"
   "CMakeFiles/gta2_core.dir/src/Game.cpp.o"
   "CMakeFiles/gta2_core.dir/src/Game.cpp.o.d"
   "CMakeFiles/gta2_core.dir/src/GameObject.cpp.o"
