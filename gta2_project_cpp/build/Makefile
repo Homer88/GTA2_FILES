@@ -221,6 +221,45 @@ test_missionobjective/fast:
 .PHONY : test_missionobjective/fast
 
 #=============================================================================
+# Target rules for targets named test_pathnode
+
+# Build rule for target.
+test_pathnode: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_pathnode
+.PHONY : test_pathnode
+
+# fast build rule for target.
+test_pathnode/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pathnode.dir/build.make CMakeFiles/test_pathnode.dir/build
+.PHONY : test_pathnode/fast
+
+#=============================================================================
+# Target rules for targets named test_entitymanager
+
+# Build rule for target.
+test_entitymanager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_entitymanager
+.PHONY : test_entitymanager
+
+# fast build rule for target.
+test_entitymanager/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_entitymanager.dir/build.make CMakeFiles/test_entitymanager.dir/build
+.PHONY : test_entitymanager/fast
+
+#=============================================================================
+# Target rules for targets named test_display
+
+# Build rule for target.
+test_display: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_display
+.PHONY : test_display
+
+# fast build rule for target.
+test_display/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_display.dir/build.make CMakeFiles/test_display.dir/build
+.PHONY : test_display/fast
+
+#=============================================================================
 # Target rules for targets named gta2_runner
 
 # Build rule for target.
@@ -280,6 +319,54 @@ src/DebugProfiler.s: src/DebugProfiler.cpp.s
 src/DebugProfiler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.s
 .PHONY : src/DebugProfiler.cpp.s
+
+src/Display.o: src/Display.cpp.o
+.PHONY : src/Display.o
+
+# target to build an object file
+src/Display.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Display.cpp.o
+.PHONY : src/Display.cpp.o
+
+src/Display.i: src/Display.cpp.i
+.PHONY : src/Display.i
+
+# target to preprocess a source file
+src/Display.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Display.cpp.i
+.PHONY : src/Display.cpp.i
+
+src/Display.s: src/Display.cpp.s
+.PHONY : src/Display.s
+
+# target to generate assembly for a file
+src/Display.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Display.cpp.s
+.PHONY : src/Display.cpp.s
+
+src/EntityManager.o: src/EntityManager.cpp.o
+.PHONY : src/EntityManager.o
+
+# target to build an object file
+src/EntityManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/EntityManager.cpp.o
+.PHONY : src/EntityManager.cpp.o
+
+src/EntityManager.i: src/EntityManager.cpp.i
+.PHONY : src/EntityManager.i
+
+# target to preprocess a source file
+src/EntityManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/EntityManager.cpp.i
+.PHONY : src/EntityManager.cpp.i
+
+src/EntityManager.s: src/EntityManager.cpp.s
+.PHONY : src/EntityManager.s
+
+# target to generate assembly for a file
+src/EntityManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/EntityManager.cpp.s
+.PHONY : src/EntityManager.cpp.s
 
 src/Game.o: src/Game.cpp.o
 .PHONY : src/Game.o
@@ -448,6 +535,30 @@ src/MissionObjective.s: src/MissionObjective.cpp.s
 src/MissionObjective.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.s
 .PHONY : src/MissionObjective.cpp.s
+
+src/PathNode.o: src/PathNode.cpp.o
+.PHONY : src/PathNode.o
+
+# target to build an object file
+src/PathNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/PathNode.cpp.o
+.PHONY : src/PathNode.cpp.o
+
+src/PathNode.i: src/PathNode.cpp.i
+.PHONY : src/PathNode.i
+
+# target to preprocess a source file
+src/PathNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/PathNode.cpp.i
+.PHONY : src/PathNode.cpp.i
+
+src/PathNode.s: src/PathNode.cpp.s
+.PHONY : src/PathNode.s
+
+# target to generate assembly for a file
+src/PathNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/PathNode.cpp.s
+.PHONY : src/PathNode.cpp.s
 
 src/Ped.o: src/Ped.cpp.o
 .PHONY : src/Ped.o
@@ -641,6 +752,54 @@ test_all_structures.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_structures.dir/build.make CMakeFiles/test_structures.dir/test_all_structures.cpp.s
 .PHONY : test_all_structures.cpp.s
 
+test_display.o: test_display.cpp.o
+.PHONY : test_display.o
+
+# target to build an object file
+test_display.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_display.dir/build.make CMakeFiles/test_display.dir/test_display.cpp.o
+.PHONY : test_display.cpp.o
+
+test_display.i: test_display.cpp.i
+.PHONY : test_display.i
+
+# target to preprocess a source file
+test_display.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_display.dir/build.make CMakeFiles/test_display.dir/test_display.cpp.i
+.PHONY : test_display.cpp.i
+
+test_display.s: test_display.cpp.s
+.PHONY : test_display.s
+
+# target to generate assembly for a file
+test_display.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_display.dir/build.make CMakeFiles/test_display.dir/test_display.cpp.s
+.PHONY : test_display.cpp.s
+
+test_entitymanager.o: test_entitymanager.cpp.o
+.PHONY : test_entitymanager.o
+
+# target to build an object file
+test_entitymanager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_entitymanager.dir/build.make CMakeFiles/test_entitymanager.dir/test_entitymanager.cpp.o
+.PHONY : test_entitymanager.cpp.o
+
+test_entitymanager.i: test_entitymanager.cpp.i
+.PHONY : test_entitymanager.i
+
+# target to preprocess a source file
+test_entitymanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_entitymanager.dir/build.make CMakeFiles/test_entitymanager.dir/test_entitymanager.cpp.i
+.PHONY : test_entitymanager.cpp.i
+
+test_entitymanager.s: test_entitymanager.cpp.s
+.PHONY : test_entitymanager.s
+
+# target to generate assembly for a file
+test_entitymanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_entitymanager.dir/build.make CMakeFiles/test_entitymanager.dir/test_entitymanager.cpp.s
+.PHONY : test_entitymanager.cpp.s
+
 test_initwindow.o: test_initwindow.cpp.o
 .PHONY : test_initwindow.o
 
@@ -761,6 +920,30 @@ test_missionobjective.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_missionobjective.dir/build.make CMakeFiles/test_missionobjective.dir/test_missionobjective.cpp.s
 .PHONY : test_missionobjective.cpp.s
 
+test_pathnode.o: test_pathnode.cpp.o
+.PHONY : test_pathnode.o
+
+# target to build an object file
+test_pathnode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pathnode.dir/build.make CMakeFiles/test_pathnode.dir/test_pathnode.cpp.o
+.PHONY : test_pathnode.cpp.o
+
+test_pathnode.i: test_pathnode.cpp.i
+.PHONY : test_pathnode.i
+
+# target to preprocess a source file
+test_pathnode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pathnode.dir/build.make CMakeFiles/test_pathnode.dir/test_pathnode.cpp.i
+.PHONY : test_pathnode.cpp.i
+
+test_pathnode.s: test_pathnode.cpp.s
+.PHONY : test_pathnode.s
+
+# target to generate assembly for a file
+test_pathnode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pathnode.dir/build.make CMakeFiles/test_pathnode.dir/test_pathnode.cpp.s
+.PHONY : test_pathnode.cpp.s
+
 test_playerstats.o: test_playerstats.cpp.o
 .PHONY : test_playerstats.o
 
@@ -795,11 +978,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... gta2_core"
 	@echo "... gta2_runner"
+	@echo "... test_display"
+	@echo "... test_entitymanager"
 	@echo "... test_initwindow"
 	@echo "... test_menuitemconfig"
 	@echo "... test_menuslotconfig"
 	@echo "... test_menustringslot"
 	@echo "... test_missionobjective"
+	@echo "... test_pathnode"
 	@echo "... test_playerstats"
 	@echo "... test_structures"
 	@echo "... src/Car.o"
@@ -808,6 +994,12 @@ help:
 	@echo "... src/DebugProfiler.o"
 	@echo "... src/DebugProfiler.i"
 	@echo "... src/DebugProfiler.s"
+	@echo "... src/Display.o"
+	@echo "... src/Display.i"
+	@echo "... src/Display.s"
+	@echo "... src/EntityManager.o"
+	@echo "... src/EntityManager.i"
+	@echo "... src/EntityManager.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
@@ -829,6 +1021,9 @@ help:
 	@echo "... src/MissionObjective.o"
 	@echo "... src/MissionObjective.i"
 	@echo "... src/MissionObjective.s"
+	@echo "... src/PathNode.o"
+	@echo "... src/PathNode.i"
+	@echo "... src/PathNode.s"
 	@echo "... src/Ped.o"
 	@echo "... src/Ped.i"
 	@echo "... src/Ped.s"
@@ -853,6 +1048,12 @@ help:
 	@echo "... test_all_structures.o"
 	@echo "... test_all_structures.i"
 	@echo "... test_all_structures.s"
+	@echo "... test_display.o"
+	@echo "... test_display.i"
+	@echo "... test_display.s"
+	@echo "... test_entitymanager.o"
+	@echo "... test_entitymanager.i"
+	@echo "... test_entitymanager.s"
 	@echo "... test_initwindow.o"
 	@echo "... test_initwindow.i"
 	@echo "... test_initwindow.s"
@@ -868,6 +1069,9 @@ help:
 	@echo "... test_missionobjective.o"
 	@echo "... test_missionobjective.i"
 	@echo "... test_missionobjective.s"
+	@echo "... test_pathnode.o"
+	@echo "... test_pathnode.i"
+	@echo "... test_pathnode.s"
 	@echo "... test_playerstats.o"
 	@echo "... test_playerstats.i"
 	@echo "... test_playerstats.s"
