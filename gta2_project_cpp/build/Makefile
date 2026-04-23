@@ -182,6 +182,19 @@ test_menuitemconfig/fast:
 .PHONY : test_menuitemconfig/fast
 
 #=============================================================================
+# Target rules for targets named test_menustringslot
+
+# Build rule for target.
+test_menustringslot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_menustringslot
+.PHONY : test_menustringslot
+
+# fast build rule for target.
+test_menustringslot/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_menustringslot.dir/build.make CMakeFiles/test_menustringslot.dir/build
+.PHONY : test_menustringslot/fast
+
+#=============================================================================
 # Target rules for targets named gta2_runner
 
 # Build rule for target.
@@ -458,6 +471,30 @@ src/Weapon.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/Weapon.cpp.s
 .PHONY : src/Weapon.cpp.s
 
+src/gta2/MenuStringSlot.o: src/gta2/MenuStringSlot.cpp.o
+.PHONY : src/gta2/MenuStringSlot.o
+
+# target to build an object file
+src/gta2/MenuStringSlot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o
+.PHONY : src/gta2/MenuStringSlot.cpp.o
+
+src/gta2/MenuStringSlot.i: src/gta2/MenuStringSlot.cpp.i
+.PHONY : src/gta2/MenuStringSlot.i
+
+# target to preprocess a source file
+src/gta2/MenuStringSlot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.i
+.PHONY : src/gta2/MenuStringSlot.cpp.i
+
+src/gta2/MenuStringSlot.s: src/gta2/MenuStringSlot.cpp.s
+.PHONY : src/gta2/MenuStringSlot.s
+
+# target to generate assembly for a file
+src/gta2/MenuStringSlot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.s
+.PHONY : src/gta2/MenuStringSlot.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -578,6 +615,30 @@ test_menuslotconfig.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_menuslotconfig.dir/build.make CMakeFiles/test_menuslotconfig.dir/test_menuslotconfig.cpp.s
 .PHONY : test_menuslotconfig.cpp.s
 
+test_menustringslot.o: test_menustringslot.cpp.o
+.PHONY : test_menustringslot.o
+
+# target to build an object file
+test_menustringslot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_menustringslot.dir/build.make CMakeFiles/test_menustringslot.dir/test_menustringslot.cpp.o
+.PHONY : test_menustringslot.cpp.o
+
+test_menustringslot.i: test_menustringslot.cpp.i
+.PHONY : test_menustringslot.i
+
+# target to preprocess a source file
+test_menustringslot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_menustringslot.dir/build.make CMakeFiles/test_menustringslot.dir/test_menustringslot.cpp.i
+.PHONY : test_menustringslot.cpp.i
+
+test_menustringslot.s: test_menustringslot.cpp.s
+.PHONY : test_menustringslot.s
+
+# target to generate assembly for a file
+test_menustringslot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_menustringslot.dir/build.make CMakeFiles/test_menustringslot.dir/test_menustringslot.cpp.s
+.PHONY : test_menustringslot.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -591,6 +652,7 @@ help:
 	@echo "... test_initwindow"
 	@echo "... test_menuitemconfig"
 	@echo "... test_menuslotconfig"
+	@echo "... test_menustringslot"
 	@echo "... test_structures"
 	@echo "... src/Car.o"
 	@echo "... src/Car.i"
@@ -625,6 +687,9 @@ help:
 	@echo "... src/Weapon.o"
 	@echo "... src/Weapon.i"
 	@echo "... src/Weapon.s"
+	@echo "... src/gta2/MenuStringSlot.o"
+	@echo "... src/gta2/MenuStringSlot.i"
+	@echo "... src/gta2/MenuStringSlot.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -640,6 +705,9 @@ help:
 	@echo "... test_menuslotconfig.o"
 	@echo "... test_menuslotconfig.i"
 	@echo "... test_menuslotconfig.s"
+	@echo "... test_menustringslot.o"
+	@echo "... test_menustringslot.i"
+	@echo "... test_menustringslot.s"
 .PHONY : help
 
 

@@ -25,7 +25,7 @@ struct Game
 {
     uint32_t Status;                    // 0x0000 - Статус игры
     Player* pPlayer[6];                 // 0x0004 - Массив указателей на игроков (6 шт)
-    Player* CurentPlayer;               // 0x001C - Текущий активный игрок
+    uint8_t CurentPlayer;               // 0x001C - Индекс текущего активного игрока
     uint8_t CurrentPlayerCopy;          // 0x0020 - Копия текущего игрока
     uint8_t Index;                      // 0x0021 - Индекс
     uint8_t field_22;                   // 0x0022

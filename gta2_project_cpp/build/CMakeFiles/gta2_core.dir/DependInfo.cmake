@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/workspace/gta2_project_cpp/src/Player.cpp" "CMakeFiles/gta2_core.dir/src/Player.cpp.o" "gcc" "CMakeFiles/gta2_core.dir/src/Player.cpp.o.d"
   "/workspace/gta2_project_cpp/src/PlayerSlotConfig.cpp" "CMakeFiles/gta2_core.dir/src/PlayerSlotConfig.cpp.o" "gcc" "CMakeFiles/gta2_core.dir/src/PlayerSlotConfig.cpp.o.d"
   "/workspace/gta2_project_cpp/src/Weapon.cpp" "CMakeFiles/gta2_core.dir/src/Weapon.cpp.o" "gcc" "CMakeFiles/gta2_core.dir/src/Weapon.cpp.o.d"
+  "/workspace/gta2_project_cpp/src/gta2/MenuStringSlot.cpp" "CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o" "gcc" "CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o.d"
   )
 
 # Targets to which this target links.

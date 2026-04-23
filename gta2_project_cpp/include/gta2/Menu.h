@@ -24,6 +24,8 @@
     // Заглушки для DirectInput
     typedef struct IDirectInputA { void* vtable; } IDirectInputA;
     typedef struct IDirectInputDeviceA { void* vtable; } IDirectInputDeviceA;
+    typedef IDirectInputA* LPDIRECTINPUTA;
+    typedef IDirectInputDeviceA* LPDIRECTINPUTDEVICEA;
     #define DIK_ESCAPE 1
     #define DIK_RETURN 28
     #define DIK_UP 200
@@ -235,7 +237,7 @@ struct Menu
     char field_ED3E[100];
     char field_EDA2[50];
     // S138 S138[8];                            // Пропущено для краткости
-    MenuPic MenuPic;                            // 0xEDF4 - Картинка меню
+    MenuPic menuPicType;                        // 0xEDF4 - Картинка меню (тип)
     char field_EDF5;
     int16_t field_EDF6;
     char field_EDF8;
