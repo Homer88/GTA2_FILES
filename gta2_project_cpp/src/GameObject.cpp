@@ -4,7 +4,7 @@
 // ============================================================================
 // GameObject module implementation
 // Total functions: 62 (из gta2.exe.map)
-// Based on structure GameObject (79+ fields, size 0x1C8)
+// Based on structure GameObject (71 fields, size 0xB4)
 // Data source: structures_dump/all_structures/GameObject.txt
 // Addresses from: gta2.exe/ida_pro/gta2.exe.map
 // ============================================================================
@@ -19,11 +19,11 @@ void GameObject_Constructor(GameObject* obj) {
     obj->NextGameObject = nullptr;
     obj->Car1 = nullptr;
     obj->Car2 = nullptr;
-    obj->Ped = nullptr;
-    obj->SpriteS1 = nullptr;
-    obj->GetVehicle = nullptr;
-    obj->Car = nullptr;
-    obj->GameObject = nullptr;
+    obj->pPed = nullptr;
+    obj->pSpriteS1 = nullptr;
+    obj->pGetVehicle = nullptr;
+    obj->pCar = nullptr;
+    obj->GameObject_ptr = nullptr;
 }
 
 void GameObject_Destructor(GameObject* obj) {
@@ -34,11 +34,11 @@ void GameObject_Destructor(GameObject* obj) {
     obj->NextGameObject = nullptr;
     obj->Car1 = nullptr;
     obj->Car2 = nullptr;
-    obj->Ped = nullptr;
-    obj->SpriteS1 = nullptr;
-    obj->GetVehicle = nullptr;
-    obj->Car = nullptr;
-    obj->GameObject = nullptr;
+    obj->pPed = nullptr;
+    obj->pSpriteS1 = nullptr;
+    obj->pGetVehicle = nullptr;
+    obj->pCar = nullptr;
+    obj->GameObject_ptr = nullptr;
 }
 
 // Основные методы доступа к координатам
@@ -67,13 +67,13 @@ float GameObject_GetZ(GameObject* obj) {
 void GameObject_SetPed(GameObject* obj, Ped* ped) {
     // Address: 0x004328E0 - GameObject::SetPed
     if (!obj) return;
-    obj->Ped = ped;
+    obj->pPed = ped;
 }
 
 void GameObject_SetCar(GameObject* obj, Car* car) {
     // Address: 0x00432900 - GameObject::SetCar
     if (!obj) return;
-    obj->Car = car;
+    obj->pCar = car;
     if (car) {
         obj->Car1 = car;
         obj->Car2 = car;
@@ -87,13 +87,13 @@ void GameObject_SetSpeed(GameObject* obj, int speed) {
     obj->Speed1 = speed;
 }
 
-void GameObject_SetRotation(GameObject* obj, __int16 angle) {
+void GameObject_SetRotation(GameObject* obj, int16_t angle) {
     // Address: 0x00432A30 - GameObject::SetRotation
     if (!obj) return;
     obj->Rotation = angle;
 }
 
-__int16 GameObject_get_rotation(GameObject* obj) {
+int16_t GameObject_get_rotation(GameObject* obj) {
     // Address: 0x00432A40 - GameObject::get_rotation
     if (!obj) return 0;
     return obj->Rotation;
@@ -103,21 +103,22 @@ __int16 GameObject_get_rotation(GameObject* obj) {
 Car* GameObject_GetVehicle(GameObject* obj) {
     // Address: 0x00412900 - GameObject::GetVehicle
     if (!obj) return nullptr;
-    return obj->GetVehicle ? obj->GetVehicle : obj->Car;
+    return obj->pGetVehicle ? obj->pGetVehicle : obj->pCar;
 }
 
 SpriteS1* GameObject_GetSpriteS1(GameObject* obj) {
     // Address: 0x004328D0 - GameObject::GetSpriteS1
     if (!obj) return nullptr;
-    return obj->SpriteS1;
+    return obj->pSpriteS1;
 }
 
 // Установка состояния пешехода
 void GameObject_set_ped_state_1(GameObject* obj, int state) {
     // Address: 0x00432910 - GameObject::set_ped_state_1
-    if (!obj || !obj->Ped) return;
+    if (!obj || !obj->pPed) return;
     // Устанавливает состояние связанного пешехода
     // Реализация зависит от структуры Ped
+    (void)state; // Подавляем предупреждение о неиспользуемом параметре
 }
 
 // Дополнительные методы (теперь с осмысленными именами)
