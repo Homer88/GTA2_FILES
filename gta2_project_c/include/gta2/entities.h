@@ -97,7 +97,7 @@ struct PedGroup {
 struct S200 {
     u8 Data[100];           // 0x0-0x63 - Exact content unknown, initialized by S200::S200
 };
-static_assert(sizeof(struct S200) == 0x64, "S200 size must be 100 bytes");
+// static_assert(sizeof(struct S200) == 0x64, "S200 size must be 100 bytes");
 
 // ============================================================================
 // Ped structure

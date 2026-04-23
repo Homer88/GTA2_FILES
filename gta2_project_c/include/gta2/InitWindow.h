@@ -1,6 +1,19 @@
 #pragma once
 
+// Заглушка для Windows API при компиляции на Linux
+#ifndef _WIN32
+#include <cstdint>
+using HWND = void*;
+using HINSTANCE = void*;
+using WPARAM = uintptr_t;
+using LPARAM = intptr_t;
+using UINT = unsigned int;
+using LRESULT = intptr_t;
+#define CW_USEDEFAULT 0x80000000
+#else
 #include <windows.h>
+#endif
+
 #include "gta2_types.h"
 
 namespace GTA2 {

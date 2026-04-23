@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef GANG_H
+#define GANG_H
+
 #include <cstdint>
 #include "gta2_types.h"
 
@@ -146,9 +149,5 @@ void Gang_SetGang(Gang* gang, int gangId);
 
 // Address: 0x00475950 - Set target Ped for gang attacks
 void Gang_SetKillChar(Gang* gang, Ped* ped);
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif // GANG_H

@@ -66,7 +66,6 @@ struct Weapon
 // ФУНКЦИИ WEAPON (адреса из gta2.exe.map)
 // ============================================================================
 
-
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -208,5 +207,3 @@ void Weapon__sub_4D0230(Weapon* weapon);
 #ifdef __cplusplus
 }
 #endif
-
-#endif // WEAPON_H

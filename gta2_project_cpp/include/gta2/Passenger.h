@@ -9,9 +9,8 @@
 
 struct Passenger
 {
-    Passenger* Passenger;     // 0x0000 - Предыдущий пассажир
-    Passenger* PassengerPrev; // 0x0004 - Следующий пассажир
+    Passenger* PassengerNext;     // 0x0000 - Следующий пассажир
+    Passenger* PassengerPrev;     // 0x0004 - Предыдущий пассажир
 };
 
 
-#endif // PASSENGER_H

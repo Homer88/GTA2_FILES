@@ -1,0 +1,265 @@
+#pragma once
+
+/**
+ * @file MenuItemConfig.h
+ * @brief Конфигурация текстового элемента меню
+ * 
+ * Оригинальное имя: S140
+ * Размер: 108 байт (6 полей)
+ * Используется: массив элементов меню или настроек
+ * 
+ * Предназначение: Хранит конфигурацию текстового элемента меню:
+ * - fild: Флаг активности / типа элемента
+ * - field_1: Дополнительные флаги / подтип
+ * - field_2: Значение параметра 1 (ID, индекс)
+ * - field_4: Значение параметра 2 (счетчик, состояние)
+ * - Selecet: Текущий выбранный вариант (для списков)
+ * - str[50]: Текстовое описание элемента (Unicode)
+ */
+
+#include <cstdint>
+#include <cwchar>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+// Прямое объявление для использования в C
+struct MenuItemConfig_t;
+
+#ifdef __cplusplus
+}
+#endif
+
+#ifdef __cplusplus
+
+#include "gta2_forward.h"
+
+/**
+ * @class MenuItemConfig
+ * @brief Конфигурация текстового элемента меню
+ * 
+ * Адрес конструктора: 0x00452D10 (предположительно)
+ * Адрес деструктора: 0x00452D20 (предположительно)
+ * Адрес метода инициализации: 0x00452D30 (предположительно)
+ */
+#pragma pack(push, 1)
+struct MenuItemConfig
+{
+    /**
+     * @brief Флаг активности / типа элемента
+     * 0 = неактивен
+     * 1 = активен
+     * Другие значения = специальные типы элементов
+     */
+    uint8_t IsActive;             // +0x00 (fild)
+    
+    /**
+     * @brief Дополнительные флаги / подтип элемента
+     * Битовые флаги или подкатегория элемента меню
+     */
+    uint8_t SubType;              // +0x01 (field_1)
+    
+    /**
+     * @brief Параметр 1: ID или индекс элемента
+     * Может быть ссылкой на другую структуру или идентификатором
+     */
+    uint16_t Param1;              // +0x02 (field_2)
+    
+    /**
+     * @brief Параметр 2: Счетчик или состояние
+     * Дополнительное числовое значение (счетчик, позиция, значение)
+     */
+    uint16_t Param2;              // +0x04 (field_4)
+    
+    /**
+     * @brief Текущий выбранный вариант
+     * Для элементов со списком вариантов хранит текущий выбор
+     * 0-based индекс или специальное значение
+     */
+    uint16_t SelectedIndex;       // +0x06 (Selecet)
+    
+    /**
+     * @brief Текстовое описание элемента
+     * Unicode строка до 50 символов (100 байт)
+     * Содержит отображаемое название элемента меню
+     */
+    wchar_t Description[50];      // +0x08 (str)
+    
+    // Статический размер: 108 байт
+    static_assert(sizeof(MenuItemConfig) == 108, "MenuItemConfig must be 108 bytes");
+    
+    /**
+     * @brief Конструктор
+     * Инициализирует все поля в 0/null
+     */
+    MenuItemConfig();
+    
+    /**
+     * @brief Деструктор
+     * Очищает ресурсы (если есть)
+     */
+    ~MenuItemConfig();
+    
+    /**
+     * @brief Инициализация элемента меню
+     * @param isActive Активность элемента
+     * @param subType Подтип элемента
+     * @param param1 Первый параметр (ID/индекс)
+     * @param param2 Второй параметр (счетчик/состояние)
+     * @param selectedIndex Начальный выбранный индекс
+     * @param description Текстовое описание (Unicode строка)
+     */
+    void Initialize(uint8_t isActive, uint8_t subType,
+                    uint16_t param1, uint16_t param2,
+                    uint16_t selectedIndex, const wchar_t* description);
+    
+    /**
+     * @brief Установка текстового описания
+     * @param text Unicode строка для установки
+     * @param maxLength Максимальная длина копируемой строки
+     */
+    void SetDescription(const wchar_t* text, size_t maxLength = 49);
+    
+    /**
+     * @brief Получение текстового описания
+     * @return Указатель на внутреннюю строку описания
+     */
+    const wchar_t* GetDescription() const { return Description; }
+    
+    /**
+     * @brief Проверка активности элемента
+     * @return true если элемент активен
+     */
+    bool IsActiveElement() const { return IsActive != 0; }
+    
+    /**
+     * @brief Установка активности
+     * @param active Новое состояние активности
+     */
+    void SetActive(bool active) { IsActive = active ? 1 : 0; }
+    
+    /**
+     * @brief Установка подтипа
+     * @param type Новый подтип элемента
+     */
+    void SetSubType(uint8_t type) { SubType = type; }
+    
+    /**
+     * @brief Установка первого параметра
+     * @param id Значение параметра 1
+     */
+    void SetParam1(uint16_t id) { Param1 = id; }
+    
+    /**
+     * @brief Установка второго параметра
+     * @param value Значение параметра 2
+     */
+    void SetParam2(uint16_t value) { Param2 = value; }
+    
+    /**
+     * @brief Установка выбранного индекса
+     * @param index Индекс выбранного элемента
+     */
+    void SetSelectedIndex(uint16_t index) { SelectedIndex = index; }
+    
+    /**
+     * @brief Получение выбранного индекса
+     * @return Текущий выбранный индекс
+     */
+    uint16_t GetSelectedIndex() const { return SelectedIndex; }
+    
+    /**
+     * @brief Сброс всех настроек элемента
+     */
+    void Reset();
+    
+    /**
+     * @brief Копирование из другой структуры
+     * @param other Источник для копирования
+     */
+    void CopyFrom(const MenuItemConfig& other);
+};
+
+#pragma pack(pop)
+
+#endif // __cplusplus
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+// C-версия структуры
+typedef struct MenuItemConfig_t
+{
+    uint8_t IsActive;           ///< Флаг активности
+    uint8_t SubType;            ///< Подтип элемента
+    uint16_t Param1;            ///< Параметр 1 (ID/индекс)
+    uint16_t Param2;            ///< Параметр 2 (счетчик/состояние)
+    uint16_t SelectedIndex;     ///< Выбранный индекс
+    wchar_t Description[50];    ///< Текстовое описание
+} MenuItemConfig_t;
+
+// Утверждение размера для C версии
+// sizeof(MenuItemConfig_t) должно быть равно 108
+
+#ifdef __cplusplus
+}
+#endif
+
+// Функции для работы с MenuItemConfig в C стиле
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/**
+ * @brief Инициализация структуры MenuItemConfig
+ * @param config Указатель на структуру
+ * @param isActive Активность
+ * @param subType Подтип
+ * @param param1 Параметр 1
+ * @param param2 Параметр 2
+ * @param selectedIndex Выбранный индекс
+ * @param description Описание (Unicode строка)
+ */
+void MenuItemConfig_Init(MenuItemConfig_t* config,
+                         uint8_t isActive,
+                         uint8_t subType,
+                         uint16_t param1,
+                         uint16_t param2,
+                         uint16_t selectedIndex,
+                         const wchar_t* description);
+
+/**
+ * @brief Сброс структуры MenuItemConfig
+ * @param config Указатель на структуру
+ */
+void MenuItemConfig_Reset(MenuItemConfig_t* config);
+
+/**
+ * @brief Установка описания
+ * @param config Указатель на структуру
+ * @param text Unicode строка
+ * @param maxLength Максимальная длина
+ */
+void MenuItemConfig_SetDescription(MenuItemConfig_t* config,
+                                   const wchar_t* text,
+                                   size_t maxLength);
+
+/**
+ * @brief Проверка активности
+ * @param config Указатель на структуру
+ * @return 1 если активен, 0 иначе
+ */
+int MenuItemConfig_IsActive(const MenuItemConfig_t* config);
+
+/**
+ * @brief Копирование структуры
+ * @param dest Структура назначения
+ * @param src Структура источник
+ */
+void MenuItemConfig_Copy(MenuItemConfig_t* dest, const MenuItemConfig_t* src);
+
+#ifdef __cplusplus
+}
+#endif

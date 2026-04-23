@@ -11,6 +11,9 @@
 
 #pragma once
 
+#ifndef PED_H
+#define PED_H
+
 #include <cstdint>
 
 // Forward declarations

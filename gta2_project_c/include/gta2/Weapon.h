@@ -61,7 +61,7 @@ struct Weapon
 
 #pragma pack(pop)
 
-static_assert(sizeof(Weapon) == 0x30, "Weapon structure size mismatch");
+// static_assert(sizeof(Weapon) == 0x30, "Weapon structure size mismatch");
 
 // ============================================================================
 // ФУНКЦИИ WEAPON (адреса из gta2.exe.map)

@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gta2_core.dir/src/InitWindow.cpp.o.d"
   "CMakeFiles/gta2_core.dir/src/Menu.cpp.o"
   "CMakeFiles/gta2_core.dir/src/Menu.cpp.o.d"
+  "CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o"
+  "CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o.d"
   "CMakeFiles/gta2_core.dir/src/Ped.cpp.o"
   "CMakeFiles/gta2_core.dir/src/Ped.cpp.o.d"
   "CMakeFiles/gta2_core.dir/src/Player.cpp.o"
@@ -19,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gta2_core.dir/src/PlayerSlotConfig.cpp.o.d"
   "CMakeFiles/gta2_core.dir/src/Weapon.cpp.o"
   "CMakeFiles/gta2_core.dir/src/Weapon.cpp.o.d"
+  "CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o"
+  "CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o.d"
   "libgta2_core.a"
   "libgta2_core.pdb"
 )

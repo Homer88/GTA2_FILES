@@ -3,8 +3,8 @@
  * @brief Базовая структура для всех объектов мира в GTA 2
  * 
  * Адрес структуры в дампе: line 3765 в gta2.exe.h
- * Размер: 0x40 (64 байта) - требует проверки по бинарнику
- * Основано на: gta2.exe/ida_pro/gta2.exe.h, gta2.exe.map
+ * Размер: 0xB4 (180 байт) - 71 поле
+ * Основано на: structures_dump/all_structures/GameObject.txt
  * 
  * ВАЖНО: Это базовый класс для Ped, Car и других объектов
  */
@@ -17,28 +17,89 @@
 struct Ped;
 struct Car;
 struct SpriteS1;
-struct Model;
 
 #pragma pack(push, 1)
 
 struct GameObject
 {
-    void* vtable;                       // 0x0000 - Указатель на таблицу виртуальных методов
-    SpriteS1* SpriteS1;                 // 0x0004 - Спрайт объекта
-    Model* Model;                       // 0x0008 - Модель объекта
-    float X;                            // 0x000C - Позиция X
-    float Y;                            // 0x0010 - Позиция Y
-    float Z;                            // 0x0014 - Позиция Z
-    float Rotation;                     // 0x0018 - Вращение
-    int ID;                             // 0x001C - Идентификатор объекта
-    int Flags;                          // 0x0020 - Флаги состояния
-    int Type;                           // 0x0024 - Тип объекта (Ped, Car, etc.)
-    Ped* pPed;                          // 0x0028 - Связанный Ped (если есть)
-    Car* pCar;                          // 0x002C - Связанный Car (если есть)
-    int field_30;                       // 0x0030
-    int field_34;                       // 0x0034
-    int field_38;                       // 0x0038
-    int field_3C;                       // 0x003C
+    // 0x000 - Основные поля
+    GameObject* NextGameObject1;          // 0x0000
+    char field_4;                         // 0x0004
+    char Remap;                           // 0x0005
+    char field_6;                         // 0x0006
+    char field_7;                         // 0x0007
+    int field_8;                          // 0x0008
+    int field_C;                          // 0x000C
+    int field_10;                         // 0x0010
+    int16_t field_14;                     // 0x0014
+    char field_16;                        // 0x0016
+    char field_17;                        // 0x0017
+    int field_18;                         // 0x0018
+    int ProbablyPhysics;                  // 0x001C
+    int field_20;                         // 0x0020
+    int field_24;                         // 0x0024
+    int16_t field_28;                     // 0x0028
+    int16_t field_2A;                     // 0x002A
+    int16_t field_2C;                     // 0x002C
+    char field_2E;                        // 0x002E
+    char field_2F;                        // 0x002F
+    int field_30;                         // 0x0030
+    int16_t short_field;                  // 0x0034
+    char field_36;                        // 0x0036
+    char field_37;                        // 0x0037
+    int Speed;                            // 0x0038
+    
+    // 0x003C - Связанные объекты
+    GameObject* NextGameObject;           // 0x003C
+    int16_t Rotation;                     // 0x0040
+    int16_t field_42;                     // 0x0042
+    char field_44;                        // 0x0044
+    char field_45;                        // 0x0045
+    int16_t field_46;                     // 0x0046
+    char field_48;                        // 0x0048
+    char field_49;                        // 0x0049
+    int16_t CigaretteIdleTimer;           // 0x004A
+    Car* Car1;                            // 0x004C
+    Car* Car2;                            // 0x0050
+    char field_54;                        // 0x0054
+    char field_55;                        // 0x0055
+    char field_56;                        // 0x0056
+    char field_57;                        // 0x0057
+    int field_58;                         // 0x0058
+    int field_5C;                         // 0x005C
+    int field_60;                         // 0x0060
+    int field_64;                         // 0x0064
+    char field_68;                        // 0x0068
+    char field_69;                        // 0x0069
+    char field_6A;                        // 0x006A
+    char field_6B;                        // 0x006B
+    int field_6C;                         // 0x006C
+    char field_70;                        // 0x0070
+    char field_71;                        // 0x0071
+    char field_72;                        // 0x0072
+    char field_73;                        // 0x0073
+    int16_t field_74;                     // 0x0074
+    char field_76;                        // 0x0076
+    char field_77;                        // 0x0077
+    
+    // 0x0078 - Указатели на связанные объекты
+    GameObject* GameObject_ptr;           // 0x0078
+    Ped* pPed;                            // 0x007C - Связанный Ped (если есть)
+    SpriteS1* pSpriteS1;                  // 0x0080 - Спрайт объекта
+    Car* pGetVehicle;                     // 0x0084
+    Car* pCar;                            // 0x0088 - Связанный Car (если есть)
+    int field_8C;                         // 0x008C
+    int Speed1;                           // 0x0090
+    int field_94;                         // 0x0094
+    
+    // 0x0098 - Позиция и телепортация
+    int deltaX;                           // 0x0098
+    int deltaY;                           // 0x009C
+    int field_A0;                         // 0x00A0
+    int teleportX;                        // 0x00A4
+    int teleportY;                        // 0x00A8
+    int teleportZ;                        // 0x00AC
+    int field_B0;                         // 0x00B0
 };
 
 #pragma pack(pop)

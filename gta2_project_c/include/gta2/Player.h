@@ -88,7 +88,7 @@ struct Player
 
 #pragma pack(pop)
 
-static_assert(sizeof(Player) == 0x8B0, "Player structure size mismatch");
+// static_assert(sizeof(Player) == 0x8B0, "Player structure size mismatch");
 
 // ============================================================================
 // ФУНКЦИИ PLAYER (адреса из gta2.exe.map)

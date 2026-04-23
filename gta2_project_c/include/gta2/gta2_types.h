@@ -11,8 +11,61 @@
 
 #pragma once
 
-#include <windows.h>
+// Заглушка для Windows API при компиляции на Linux
+#ifndef _WIN32
 #include <cstdint>
+using HWND = void*;
+using HINSTANCE = void*;
+using WPARAM = uintptr_t;
+using LPARAM = intptr_t;
+using UINT = unsigned int;
+using LRESULT = intptr_t;
+using RECT = struct { int left; int top; int right; int bottom; };
+using POINT = struct { int x; int y; };
+using MSG = struct { void* hwnd; UINT message; WPARAM wParam; LPARAM lParam; };
+#define CW_USEDEFAULT 0x80000000
+#define WS_OVERLAPPEDWINDOW 0
+#define WS_VISIBLE 0
+#define WS_CHILD 0
+#define BS_PUSHBUTTON 0
+#define ES_NUMBER 0
+#define SW_SHOW 0
+#define IDI_APPLICATION nullptr
+#define IDC_ARROW nullptr
+#define WHITE_BRUSH 0
+#define WM_DESTROY 0
+#define WM_COMMAND 0
+#define PostQuitMessage(x) do {} while(0)
+#define LoadIcon(x,y) nullptr
+#define LoadCursor(x,y) nullptr
+#define GetStockObject(x) nullptr
+#define RegisterClass(x) 0
+#define CreateWindowEx(a,b,c,d,e,f,g,h,i,j,k,l) nullptr
+#define ShowWindow(x,y) do {} while(0)
+#define UpdateWindow(x) do {} while(0)
+#define GetMessage(x,y,z,w) 0
+#define TranslateMessage(x) 0
+#define DispatchMessage(x) 0
+#define DefWindowProc(x,y,z,w) 0
+#define SendMessage(x,y,z,w) 0
+#define SetWindowText(x,y) do {} while(0)
+#define GetWindowText(x,y,z) 0
+#define DestroyWindow(x) 0
+#else
+#include <windows.h>
+#endif
+
+#include <cstdint>
+
+// Basic types matching GTA2 binary
+using u8 = uint8_t;
+using s8 = int8_t;
+using u16 = uint16_t;
+using s16 = int16_t;
+using u32 = uint32_t;
+using s32 = int32_t;
+using f32 = float;
+using f64 = double;
 
 // ============================================================================
 // FORWARD DECLARATIONS - порядок важен для корректной компиляции

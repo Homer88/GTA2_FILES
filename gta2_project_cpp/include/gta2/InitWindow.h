@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef INITWINDOW_H
+#define INITWINDOW_H
+
 #ifndef _WIN32
     // Заглушки для Linux для компиляции тестов
     typedef void* HWND;

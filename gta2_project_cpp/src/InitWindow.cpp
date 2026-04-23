@@ -1,6 +1,11 @@
 #include "gta2/InitWindow.h"
 #include <cstring>
 #include <cstdio>
+#include <cstdlib>
+
+#ifndef _WIN32
+    #include <unistd.h>
+#endif
 
 namespace GTA2 {
 

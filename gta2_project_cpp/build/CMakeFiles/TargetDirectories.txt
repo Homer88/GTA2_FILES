@@ -1,6 +1,9 @@
 /workspace/gta2_project_cpp/build/CMakeFiles/gta2_core.dir
 /workspace/gta2_project_cpp/build/CMakeFiles/test_structures.dir
 /workspace/gta2_project_cpp/build/CMakeFiles/test_initwindow.dir
+/workspace/gta2_project_cpp/build/CMakeFiles/test_menuslotconfig.dir
+/workspace/gta2_project_cpp/build/CMakeFiles/test_menuitemconfig.dir
+/workspace/gta2_project_cpp/build/CMakeFiles/test_menustringslot.dir
 /workspace/gta2_project_cpp/build/CMakeFiles/gta2_runner.dir
 /workspace/gta2_project_cpp/build/CMakeFiles/edit_cache.dir
 /workspace/gta2_project_cpp/build/CMakeFiles/rebuild_cache.dir

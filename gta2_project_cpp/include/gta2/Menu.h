@@ -1,7 +1,40 @@
 #pragma once
 
+#ifndef MENU_H
+#define MENU_H
+
+#ifndef _WIN32
+    // Заглушки для Linux
+    typedef void* HWND;
+    typedef void* HINSTANCE;
+    #define CALLBACK
+    typedef int INT;
+    typedef unsigned int UINT;
+    typedef long LONG;
+    typedef unsigned long DWORD;
+    typedef long LPARAM;
+    typedef long WPARAM;
+    typedef long LRESULT;
+    typedef unsigned short WORD;
+    typedef void* HANDLE;
+#else
 #include <windows.h>
+#endif
+#ifndef _WIN32
+    // Заглушки для DirectInput
+    typedef struct IDirectInputA { void* vtable; } IDirectInputA;
+    typedef struct IDirectInputDeviceA { void* vtable; } IDirectInputDeviceA;
+    typedef IDirectInputA* LPDIRECTINPUTA;
+    typedef IDirectInputDeviceA* LPDIRECTINPUTDEVICEA;
+    #define DIK_ESCAPE 1
+    #define DIK_RETURN 28
+    #define DIK_UP 200
+    #define DIK_DOWN 208
+    #define DIK_LEFT 203
+    #define DIK_RIGHT 205
+#else
 #include <dinput.h>
+#endif
 #include "Player.h"
 
 #pragma pack(push, 1)
@@ -111,9 +144,9 @@ struct MenuEntry
 struct MenuPage
 {
     uint16_t numMenuItems[2];           // Количество элементов меню
-    MenuEntry MenuEntry[10];            // Элементы меню
-    GUI GUI[15];                        // GUI элементы
-    MenuItem MenuItem[10];              // Пункты меню
+    struct MenuEntry MenuEntryArr[10];  // Элементы меню (переименовано для избежания конфликта)
+    struct GUI GUIMembers[15];          // GUI элементы (переименовано для избежания конфликта)
+    struct MenuItem MenuItemArr[10];    // Пункты меню (переименовано для избежания конфликта)
     uint16_t IndexMenuActions;          // Индекс действий меню
     int16_t SelectActiveElementDefault; // Активный элемент по умолчанию
 };
@@ -136,7 +169,7 @@ struct Menu
     LPDIRECTINPUTA DirectInput;                 // 0x00 - DirectInput интерфейс
     LPDIRECTINPUTDEVICEA InputDevice;           // 0x04 - Устройство ввода
     char Keys[256];                             // 0x08 - Состояние клавиш
-    FrontendState FrontendState;                // 0x108 - Состояние фронтенда
+    FrontendState CurrentFrontendState;         // 0x108 - Состояние фронтенда (переименовано)
     char KeyboardAcquired;                      // 0x10C - Клавиатура захвачена
     char FrontendKeysEnabled;                   // 0x10D - Клавиши фронтенда включены
     char field_10E;
@@ -204,7 +237,7 @@ struct Menu
     char field_ED3E[100];
     char field_EDA2[50];
     // S138 S138[8];                            // Пропущено для краткости
-    MenuPic MenuPic;                            // 0xEDF4 - Картинка меню
+    MenuPic menuPicType;                        // 0xEDF4 - Картинка меню (тип)
     char field_EDF5;
     int16_t field_EDF6;
     char field_EDF8;
@@ -460,3 +493,5 @@ public:
 };
 
 #endif // __cplusplus
+
+#endif // MENU_H

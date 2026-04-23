@@ -209,6 +209,34 @@ CMakeFiles/gta2_core.dir/src/PlayerSlotConfig.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gta2_core.dir/src/PlayerSlotConfig.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/gta2_project_cpp/src/PlayerSlotConfig.cpp -o CMakeFiles/gta2_core.dir/src/PlayerSlotConfig.cpp.s
 
+CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o: CMakeFiles/gta2_core.dir/flags.make
+CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o: /workspace/gta2_project_cpp/src/MenuItemConfig.cpp
+CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o: CMakeFiles/gta2_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o -MF CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o.d -o CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o -c /workspace/gta2_project_cpp/src/MenuItemConfig.cpp
+
+CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/gta2_project_cpp/src/MenuItemConfig.cpp > CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.i
+
+CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/gta2_project_cpp/src/MenuItemConfig.cpp -o CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.s
+
+CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o: CMakeFiles/gta2_core.dir/flags.make
+CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o: /workspace/gta2_project_cpp/src/gta2/MenuStringSlot.cpp
+CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o: CMakeFiles/gta2_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o -MF CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o.d -o CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o -c /workspace/gta2_project_cpp/src/gta2/MenuStringSlot.cpp
+
+CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/gta2_project_cpp/src/gta2/MenuStringSlot.cpp > CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.i
+
+CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/gta2_project_cpp/src/gta2/MenuStringSlot.cpp -o CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.s
+
 # Object files for target gta2_core
 gta2_core_OBJECTS = \
 "CMakeFiles/gta2_core.dir/src/GameObject.cpp.o" \
@@ -220,7 +248,9 @@ gta2_core_OBJECTS = \
 "CMakeFiles/gta2_core.dir/src/Game.cpp.o" \
 "CMakeFiles/gta2_core.dir/src/InitWindow.cpp.o" \
 "CMakeFiles/gta2_core.dir/src/Menu.cpp.o" \
-"CMakeFiles/gta2_core.dir/src/PlayerSlotConfig.cpp.o"
+"CMakeFiles/gta2_core.dir/src/PlayerSlotConfig.cpp.o" \
+"CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o" \
+"CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o"
 
 # External object files for target gta2_core
 gta2_core_EXTERNAL_OBJECTS =
@@ -235,9 +265,11 @@ libgta2_core.a: CMakeFiles/gta2_core.dir/src/Game.cpp.o
 libgta2_core.a: CMakeFiles/gta2_core.dir/src/InitWindow.cpp.o
 libgta2_core.a: CMakeFiles/gta2_core.dir/src/Menu.cpp.o
 libgta2_core.a: CMakeFiles/gta2_core.dir/src/PlayerSlotConfig.cpp.o
+libgta2_core.a: CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o
+libgta2_core.a: CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o
 libgta2_core.a: CMakeFiles/gta2_core.dir/build.make
 libgta2_core.a: CMakeFiles/gta2_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libgta2_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libgta2_core.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/gta2_core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gta2_core.dir/link.txt --verbose=$(VERBOSE)
 
