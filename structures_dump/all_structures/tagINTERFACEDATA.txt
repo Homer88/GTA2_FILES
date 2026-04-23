@@ -1,10 +1,10 @@
-// Структура: tagINTERFACEDATA
+// Структура: tagInterfaceData
 // Полей: 2
-// Строки в оригинале: 106566-106570
-struct tagINTERFACEDATA
+// Строки в оригинале: 60895-60899
+struct tagInterfaceData
 {
 
-  tagMETHODDATA *pmethdata;
-  unsigned int cMembers;
+  unsigned int ulCntData;
+  unsigned __int8 abData[1024];
 
 };
