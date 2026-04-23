@@ -1,1 +1,1 @@
-Nothing should be ignored based on the provided file changes. The only added file is a header file (.h) which is source code and should not be ignored.
+Nothing should be ignored based on the provided file changes. The only added file is a source code file (.c file), which should not be ignored.
