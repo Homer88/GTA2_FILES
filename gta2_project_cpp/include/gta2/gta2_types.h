@@ -1,169 +1,126 @@
 /**
  * @file gta2_types.h
- * @brief Главный заголовочный файл, связывающий все структуры GTA 2
+ * @brief Главный заголовочный файл GTA 2 - связывает все структуры и типы
  * 
- * Основано на дампе IDA Pro (gta2.exe/ida_pro/gta2.exe.h)
- * Адреса функций взяты из gta2.exe.map
- * DirectX версия: 6.1 (НЕ 9!)
+ * Проект: Reverse Engineering GTA 2 (gta2.exe)
+ * Версия DirectX: 6.1 (1998 год)
  * 
- * ВАЖНО: Порядок включения файлов критичен для корректной компиляции
+ * ВАЖНО: Все адреса функций взяты из gta2.exe.map
+ * НЕ использовать структуры DirectX 9 из дампа IDA!
  */
 
 #pragma once
 
-#ifdef _WIN32
+#ifndef _WIN32
+    // Заглушки для Linux для компиляции тестов
+    typedef void* HWND;
+    typedef void* HINSTANCE;
+    #define CALLBACK
+    typedef int INT;
+    typedef unsigned int UINT;
+    typedef long LONG;
+    typedef long LPARAM;
+    typedef long WPARAM;
+    typedef long LRESULT;
+#else
     #include <windows.h>
 #endif
+
 #include <cstdint>
 
 // ============================================================================
-// FORWARD DECLARATIONS - предотвращаем циклические зависимости
+// FORWARD DECLARATIONS - порядок важен для корректной компиляции
 // ============================================================================
 
+struct GameObject;
 struct Ped;
 struct Car;
 struct Player;
 struct Weapon;
 struct Gang;
-struct GameObject;
-struct Gangs;
-struct SpriteS1;
-struct SpriteS3;
-struct EngineStruct;
-struct Model;
-struct Passenger;
-struct CarDoor;
-struct CarSystemManager;
-struct CarTransforms;
-struct S103;
-struct S104;
-struct S169;
-struct S94;
-struct S200;
-struct S161;
-struct Tango;
-struct CameraOrPhysics;
-struct AudioManager;
-struct Arsenal;
-struct EventHandler;
+struct Game;
 
 // ============================================================================
-// ENUMS - типы перечислений из дампа
+// БАЗОВЫЕ ТИПЫ И КОНСТАНТЫ
 // ============================================================================
 
-enum class SearchType : uint8_t {};
-enum class CarModel : int32_t {};
-enum class DamageType : uint8_t {};
-enum class CAR_ENGINE_STATE : uint8_t {};
-enum class TRAFFIC_CAR_TYPE : uint8_t {};
-enum class GANG : uint8_t {
-    Yakuza = 0,
-    Zaibatsu_Corporation = 1,
-    Loonies = 2,
-    GANG_3 = 3,
-    GANG_4 = 4,
-    GANG_5 = 5,
-    GANG_6 = 6,
-    GANG_7 = 7,
-    GANG_8 = 8,
-    GANG_9 = 9,
-    GANG_10 = 10
+constexpr int MAX_PLAYERS = 6;
+constexpr int MAX_PEDS = 256;      // Требует проверки по бинарнику
+constexpr int MAX_CARS = 256;      // Требует проверки по бинарнику
+constexpr int MAX_GANGS = 32;      // Требует проверки по бинарнику
+
+// Типы состояний игры
+enum class GameState : uint32_t {
+    STATE_IDLE = 0,
+    STATE_LOADING = 1,
+    STATE_PLAYING = 2,
+    STATE_PAUSED = 3,
+    STATE_GAMEOVER = 4
 };
 
-enum class ALL_PED : int32_t {
-    PLAYER = 0,
-    EMPTY = 1,
-    DUMMY = 3,
-    DRIVER = 5,
-    PSYCHO = 14,
-    MUGGER = 15,
-    CARTHIEF = 16,
-    BANK_ROBBER = 17,
-    ELVIS = 22,
-    POLICE = 24,
-    SWAT = 25,
-    FBI = 26,
-    ARMYARMY = 27,
-    GUARD = 28,
-    FIREMAN = 38,
-    DRONE = 41,
-    ANY_GANG_MEMBER = 48,
-    NO_OCCUPATION = 51
+// Флаги PED
+enum class PedFlags : uint32_t {
+    NONE = 0,
+    IN_VEHICLE = 0x01,
+    IS_PLAYER = 0x02,
+    DEAD = 0x04,
+    ARMED = 0x08
 };
 
-enum class Remap : int8_t {
-    REMAP_COP = 0,
-    REMAP_GREEN_COP = 1,
-    REMAP_RED_COP = 2,
-    REMAP_YELLOW_COP = 3,
-    REMAP_ARMY = 4,
-    REMAP_ZAIBATSU = 8,
-    REMAP_KRISHNA = 9,
-    REMAP_RUSSIAN = 10,
-    REMAP_ELVIS = 12,
-    REMAP_YAKUZA = 13,
-    REMAP_PLAYER = 25
-};
+// ============================================================================
+// ПОДКЛЮЧЕНИЕ СТРУКТУР В ПРАВИЛЬНОМ ПОРЯДКЕ
+// ============================================================================
 
-enum class PedState : int32_t {
-    PEDSTATE_MOVE_TURN = 0,
-    PEDSTATE_ENTER_CAR = 3,
-    PEDSTATE_EXIT_CAR = 4,
-    PEDSTATE_IDLE = 7,
-    PEDSTATE_FALL = 8,
-    PEDSTATE_DEAD = 9,
-    PEDSTATE_IN_CAR = 10
-};
+// 1. GameObject - базовый класс для всех объектов мира
+#include "GameObject.h"
 
-enum class GraphicType : int32_t {
-    GRAPHIC_DUMMY = 0,
-    GRAPHIC_EMERG = 1,
-    GRAPHIC_GANG = 2
-};
+// 1.5 Passenger - должен быть перед Car
+#include "Passenger.h"
 
-enum class DEATH_REASON : int32_t {
-    WASTED0 = 0,
-    WASTED = 1,
-    FRIED = 2,
-    NICKED = 3,
-    SHOCKED = 4
-};
+// 2. Weapon - оружие (может использоваться Ped и Player)
+#include "Weapon.h"
 
-enum class POWERUP_TYPE : int16_t {
-    POWERUP_TYPE_MULTIPLIER = 0,
-    POWERUP_TYPE_LIFE = 1,
-    POWERUP_TYPE_HEALTH = 2,
-    POWERUP_TYPE_ARMOR = 3,
-    POWERUP_TYPE_GET_OUTTA_JAIL_FREE_CARD = 4,
-    POWERUP_TYPE_COP_BRIBE = 5,
-    POWERUP_TYPE_INVULNERABILITY = 6,
-    POWERUP_TYPE_DOUBLE_DAMAGE = 7,
-    POWERUP_TYPE_FAST_RELOAD = 8,
-    POWERUP_TYPE_ELECTROFINGERS = 9,
-    POWERUP_TYPE_RESPECT = 10,
-    POWERUP_TYPE_INVISIBILITY = 11,
-    POWERUP_TYPE_INSTANT_GANG = 12
-};
+// 3. Gang - банды (используется в Ped и Player)
+#include "Gang.h"
 
-enum class KeyPlayer : int16_t {
-    Rotate_Left = 48,
-    Rotate_Right = 1392
-};
+// 4. Car - транспорт (связан с Ped как водитель/пассажир)
+#include "Car.h"
 
-enum class FW : int16_t {
-    FW_Forward = 16384,
-    FW_Backward = -16384
-};
+// 5. Ped - персонажи (использует Car, Weapon, Gang)
+#include "Ped.h"
 
-enum class WeaponType : int32_t {};
+// 6. Player - игрок (наследует/содержит Ped)
+#include "Player.h"
 
-// Типы для совместимости с MSVC
-typedef short __int16;
-typedef int __int32;
-#ifdef _MSC_VER
-typedef __int64 __int64;
-#else
-typedef long long __int64;
-#endif
+// 7. Game - основная структура управления игрой
+#include "Game.h"
 
-#endif // GTA2_TYPES_H
+// 8. InitWindow - окно инициализации
+#include "InitWindow.h"
+
+// 9. Menu - система меню
+#include "Menu.h"
+
+// ============================================================================
+// ГЛОБАЛЬНЫЕ ЭКЗЕМПЛЯРЫ (адреса будут определены при линковке)
+// ============================================================================
+
+// extern Game g_Game;
+// extern Ped g_Peds[MAX_PEDS];
+// extern Car g_Cars[MAX_CARS];
+// extern Gang g_Gangs[MAX_GANGS];
+
+// ============================================================================
+// МАКРОСЫ ДЛЯ РАБОТЫ С АДРЕСАМИ
+// ============================================================================
+
+// Макрос для получения функции по адресу (для отладки)
+#define GET_FUNC_ADDR(className, funcName, addr) \
+    static const void* className##_##funcName##_addr = reinterpret_cast<void*>(addr)
+
+// ============================================================================
+// ПРОВЕРКИ РАЗМЕРОВ СТРУКТУР (static_assert)
+// ============================================================================
+
+// Эти проверки должны быть активированы после восстановления всех структур
+

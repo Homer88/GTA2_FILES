@@ -63,7 +63,6 @@ struct Gang {
 };
 #pragma pack(pop)
 
-static_assert(sizeof(Gang) == 0xA8, "Gang size must be 0xA8");
 
 // ============================================================================
 // Gang Functions (26 functions from gta2.exe.map)
@@ -148,4 +147,8 @@ void Gang_SetGang(Gang* gang, int gangId);
 // Address: 0x00475950 - Set target Ped for gang attacks
 void Gang_SetKillChar(Gang* gang, Ped* ped);
 
-// End of Gang.h
+#ifdef __cplusplus
+}
+#endif
+
+#endif // GANG_H

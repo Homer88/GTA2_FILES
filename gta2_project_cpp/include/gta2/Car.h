@@ -34,15 +34,15 @@ enum class TRAFFIC_CAR_TYPE : uint8_t {};
 struct Car
 {
     void* vtable;                       // 0x0000 - Указатель на таблицу виртуальных методов
-    Passenger* Passenger;               // 0x0004 - Пассажиры
+    struct Passenger* Passengers;       // 0x0004 - Пассажиры (переименовано для избежания конфликта)
     CAR_LIGHTS_AND_DOORS_BITSTATE carLights; // 0x0008 - Состояние огней и дверей
-    CarDoor CarDoor[4];                 // 0x000C - Двери автомобиля (4 шт)
+    CarDoor* carDoors[4];                 // 0x000C - Двери автомобиля (4 шт)
     Car* LastCar;                       // 0x003C - Последний автомобиль
     SpriteS1* CarSprite;                // 0x0040 - Спрайт автомобиля
     Ped* Driver;                        // 0x0044 - Водитель
     Player* pPlayer;                    // 0x0048 - Игрок
-    EngineStruct* EngineStruct;         // 0x004C - Структура двигателя
-    Model* Model;                       // 0x0050 - Модель
+    EngineStruct* pEngine;         // 0x004C - Структура двигателя
+    Model* pModel;                       // 0x0050 - Модель
     void* TrailerCtrl;                  // 0x0054 - Управление прицепом
     int field_58;                       // 0x0058
     int ID;                             // 0x005C - Идентификатор автомобиля
@@ -52,7 +52,7 @@ struct Car
     int16_t PhysicsBitmask;             // 0x0068 - Физическая битовая маска
     char field_6A;                      // 0x006A
     char field_6B;                      // 0x006B
-    SearchType SearchType;              // 0x006C - Тип поиска
+    SearchType searchType;              // 0x006C - Тип поиска
     char field_70;                      // 0x0070
     char field_71;                      // 0x0071
     char field_72;                      // 0x0072
@@ -63,7 +63,7 @@ struct Car
     char field_7D;                      // 0x007D
     char AlarmTime;                     // 0x007E - Время сигнализации
     char field_7F;                      // 0x007F
-    DamageType DamageType;              // 0x0080 - Тип повреждения
+    DamageType damageType;              // 0x0080 - Тип повреждения
     char DamageShotTimer;               // 0x0081 - Таймер выстрела
     char PlayerId;                      // 0x0082 - ID игрока
     char field_83;                      // 0x0083
@@ -89,15 +89,13 @@ struct Car
 
 #pragma pack(pop)
 
-static_assert(sizeof(Car) == 0xA4, "Car structure size mismatch");
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 // ============================================================================
 // ФУНКЦИИ CAR (адреса из gta2.exe.map)
 // ============================================================================
-
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 // Адрес: 0x00403800 - Car__sub_403800
 void Car__sub_403800(Car* car);

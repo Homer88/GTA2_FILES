@@ -39,5 +39,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/test_gameobject.dir/DependInfo.cmake"
+  "CMakeFiles/gta2_core.dir/DependInfo.cmake"
+  "CMakeFiles/test_structures.dir/DependInfo.cmake"
+  "CMakeFiles/test_initwindow.dir/DependInfo.cmake"
+  "CMakeFiles/gta2_runner.dir/DependInfo.cmake"
   )

@@ -1,4 +1,4 @@
-#include "Ped.h"
+#include "gta2/Ped.h"
 #include <cstring>
 
 // Ped module implementation
