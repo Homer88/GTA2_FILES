@@ -19,6 +19,7 @@ set(GTA2_CORE_SOURCES
     src/InitWindow.cpp
     src/Menu.cpp
     src/PlayerSlotConfig.cpp
+    src/MenuItemConfig.cpp
 )
 
 set(GTA2_CORE_HEADERS
@@ -32,6 +33,7 @@ set(GTA2_CORE_HEADERS
     include/gta2/InitWindow.h
     include/gta2/Menu.h
     include/gta2/PlayerSlotConfig.h
+    include/gta2/MenuItemConfig.h
     include/gta2/gta2_types.h
 )
 
@@ -64,6 +66,14 @@ target_link_libraries(test_structures PRIVATE gta2_core)
 # Тест InitWindow
 add_executable(test_initwindow test_initwindow.cpp)
 target_link_libraries(test_initwindow PRIVATE gta2_core)
+
+# Тест MenuSlotConfig
+add_executable(test_menuslotconfig test_menuslotconfig.cpp)
+target_link_libraries(test_menuslotconfig PRIVATE gta2_core)
+
+# Тест MenuItemConfig (S140)
+add_executable(test_menuitemconfig test_menuitemconfig.cpp)
+target_link_libraries(test_menuitemconfig PRIVATE gta2_core)
 
 # ============================================
 # ОСНОВНОЕ ПРИЛОЖЕНИЕ (точка входа)

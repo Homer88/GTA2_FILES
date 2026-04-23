@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef GANG_H
+#define GANG_H
+
 #include <cstdint>
 #include "gta2_types.h"
 

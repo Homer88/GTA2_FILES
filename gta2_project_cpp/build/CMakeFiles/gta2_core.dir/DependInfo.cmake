@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/workspace/gta2_project_cpp/src/Gang.cpp" "CMakeFiles/gta2_core.dir/src/Gang.cpp.o" "gcc" "CMakeFiles/gta2_core.dir/src/Gang.cpp.o.d"
   "/workspace/gta2_project_cpp/src/InitWindow.cpp" "CMakeFiles/gta2_core.dir/src/InitWindow.cpp.o" "gcc" "CMakeFiles/gta2_core.dir/src/InitWindow.cpp.o.d"
   "/workspace/gta2_project_cpp/src/Menu.cpp" "CMakeFiles/gta2_core.dir/src/Menu.cpp.o" "gcc" "CMakeFiles/gta2_core.dir/src/Menu.cpp.o.d"
+  "/workspace/gta2_project_cpp/src/MenuItemConfig.cpp" "CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o" "gcc" "CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o.d"
   "/workspace/gta2_project_cpp/src/Ped.cpp" "CMakeFiles/gta2_core.dir/src/Ped.cpp.o" "gcc" "CMakeFiles/gta2_core.dir/src/Ped.cpp.o.d"
   "/workspace/gta2_project_cpp/src/Player.cpp" "CMakeFiles/gta2_core.dir/src/Player.cpp.o" "gcc" "CMakeFiles/gta2_core.dir/src/Player.cpp.o.d"
   "/workspace/gta2_project_cpp/src/PlayerSlotConfig.cpp" "CMakeFiles/gta2_core.dir/src/PlayerSlotConfig.cpp.o" "gcc" "CMakeFiles/gta2_core.dir/src/PlayerSlotConfig.cpp.o.d"

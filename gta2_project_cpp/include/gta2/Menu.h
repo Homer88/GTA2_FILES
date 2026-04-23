@@ -142,9 +142,9 @@ struct MenuEntry
 struct MenuPage
 {
     uint16_t numMenuItems[2];           // Количество элементов меню
-    MenuEntry MenuEntry[10];            // Элементы меню
-    GUI GUI[15];                        // GUI элементы
-    MenuItem MenuItem[10];              // Пункты меню
+    struct MenuEntry MenuEntryArr[10];  // Элементы меню (переименовано для избежания конфликта)
+    struct GUI GUIMembers[15];          // GUI элементы (переименовано для избежания конфликта)
+    struct MenuItem MenuItemArr[10];    // Пункты меню (переименовано для избежания конфликта)
     uint16_t IndexMenuActions;          // Индекс действий меню
     int16_t SelectActiveElementDefault; // Активный элемент по умолчанию
 };
@@ -167,7 +167,7 @@ struct Menu
     LPDIRECTINPUTA DirectInput;                 // 0x00 - DirectInput интерфейс
     LPDIRECTINPUTDEVICEA InputDevice;           // 0x04 - Устройство ввода
     char Keys[256];                             // 0x08 - Состояние клавиш
-    FrontendState FrontendState;                // 0x108 - Состояние фронтенда
+    FrontendState CurrentFrontendState;         // 0x108 - Состояние фронтенда (переименовано)
     char KeyboardAcquired;                      // 0x10C - Клавиатура захвачена
     char FrontendKeysEnabled;                   // 0x10D - Клавиши фронтенда включены
     char field_10E;
@@ -491,3 +491,5 @@ public:
 };
 
 #endif // __cplusplus
+
+#endif // MENU_H
