@@ -4,7 +4,7 @@
 namespace gta2 {
 
 // Конструктор
-// Address: 0x?????? (Original: Display__Display)
+// Address: 0x44B8F0 (Original: Display__Display)
 Display::Display() {
     // Инициализация массива режимов нулями или дефолтными значениями
     std::memset(modes, 0, sizeof(modes));
@@ -12,7 +12,7 @@ Display::Display() {
 }
 
 // Деструктор
-// Address: 0x?????? (Original: Display__Display_des)
+// Address: 0x4699B0 (Original: Display__Display_des)
 Display::~Display() {
     // Очистка ресурсов, если необходимо
     shutdownVideo();
@@ -48,11 +48,11 @@ void Display::shutdownVideo() {
     // Освобождение графических ресурсов, закрытие окон
 }
 
-// Метод 5: Обработка ошибок
+// Метод 5: Дополнительная обработка/обновление
 // Address: 0x4C3950 (Original: Display__sub_4C3950)
-void Display::handleError(int errorCode) {
-    // Логика обработки ошибок видеоподсистемы
-    // Вывод сообщения, попытка восстановления или завершение
+void Display::update() {
+    // Логика обновления состояния дисплея
+    // Возможно, обработка изменений разрешения или переключения режимов
 }
 
 } // namespace gta2
