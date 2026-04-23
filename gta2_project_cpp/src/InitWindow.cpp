@@ -69,7 +69,7 @@ namespace GTA2 {
         WNDCLASSEX wc = {};
         wc.cbSize = sizeof(WNDCLASSEX);
         wc.style = CS_HREDRAW | CS_VREDRAW;
-        wc.lpfnWndProc = WndProc;
+        wc.lpfnWndProc = (void*)WndProc;  // Приведение к void* для совместимости с Linux
         wc.hInstance = hInstance;
         wc.hCursor = LoadCursor(NULL, IDC_ARROW);
         wc.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
