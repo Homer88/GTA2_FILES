@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gta2_core.dir/src/Menu.cpp.o.d"
   "CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o"
   "CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o.d"
+  "CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.o"
+  "CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.o.d"
   "CMakeFiles/gta2_core.dir/src/Ped.cpp.o"
   "CMakeFiles/gta2_core.dir/src/Ped.cpp.o.d"
   "CMakeFiles/gta2_core.dir/src/Player.cpp.o"

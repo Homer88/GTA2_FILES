@@ -208,6 +208,19 @@ test_playerstats/fast:
 .PHONY : test_playerstats/fast
 
 #=============================================================================
+# Target rules for targets named test_missionobjective
+
+# Build rule for target.
+test_missionobjective: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_missionobjective
+.PHONY : test_missionobjective
+
+# fast build rule for target.
+test_missionobjective/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_missionobjective.dir/build.make CMakeFiles/test_missionobjective.dir/build
+.PHONY : test_missionobjective/fast
+
+#=============================================================================
 # Target rules for targets named gta2_runner
 
 # Build rule for target.
@@ -387,6 +400,30 @@ src/MenuItemConfig.s: src/MenuItemConfig.cpp.s
 src/MenuItemConfig.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.s
 .PHONY : src/MenuItemConfig.cpp.s
+
+src/MissionObjective.o: src/MissionObjective.cpp.o
+.PHONY : src/MissionObjective.o
+
+# target to build an object file
+src/MissionObjective.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.o
+.PHONY : src/MissionObjective.cpp.o
+
+src/MissionObjective.i: src/MissionObjective.cpp.i
+.PHONY : src/MissionObjective.i
+
+# target to preprocess a source file
+src/MissionObjective.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.i
+.PHONY : src/MissionObjective.cpp.i
+
+src/MissionObjective.s: src/MissionObjective.cpp.s
+.PHONY : src/MissionObjective.s
+
+# target to generate assembly for a file
+src/MissionObjective.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.s
+.PHONY : src/MissionObjective.cpp.s
 
 src/Ped.o: src/Ped.cpp.o
 .PHONY : src/Ped.o
@@ -676,6 +713,30 @@ test_menustringslot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_menustringslot.dir/build.make CMakeFiles/test_menustringslot.dir/test_menustringslot.cpp.s
 .PHONY : test_menustringslot.cpp.s
 
+test_missionobjective.o: test_missionobjective.cpp.o
+.PHONY : test_missionobjective.o
+
+# target to build an object file
+test_missionobjective.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_missionobjective.dir/build.make CMakeFiles/test_missionobjective.dir/test_missionobjective.cpp.o
+.PHONY : test_missionobjective.cpp.o
+
+test_missionobjective.i: test_missionobjective.cpp.i
+.PHONY : test_missionobjective.i
+
+# target to preprocess a source file
+test_missionobjective.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_missionobjective.dir/build.make CMakeFiles/test_missionobjective.dir/test_missionobjective.cpp.i
+.PHONY : test_missionobjective.cpp.i
+
+test_missionobjective.s: test_missionobjective.cpp.s
+.PHONY : test_missionobjective.s
+
+# target to generate assembly for a file
+test_missionobjective.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_missionobjective.dir/build.make CMakeFiles/test_missionobjective.dir/test_missionobjective.cpp.s
+.PHONY : test_missionobjective.cpp.s
+
 test_playerstats.o: test_playerstats.cpp.o
 .PHONY : test_playerstats.o
 
@@ -714,6 +775,7 @@ help:
 	@echo "... test_menuitemconfig"
 	@echo "... test_menuslotconfig"
 	@echo "... test_menustringslot"
+	@echo "... test_missionobjective"
 	@echo "... test_playerstats"
 	@echo "... test_structures"
 	@echo "... src/Car.o"
@@ -737,6 +799,9 @@ help:
 	@echo "... src/MenuItemConfig.o"
 	@echo "... src/MenuItemConfig.i"
 	@echo "... src/MenuItemConfig.s"
+	@echo "... src/MissionObjective.o"
+	@echo "... src/MissionObjective.i"
+	@echo "... src/MissionObjective.s"
 	@echo "... src/Ped.o"
 	@echo "... src/Ped.i"
 	@echo "... src/Ped.s"
@@ -773,6 +838,9 @@ help:
 	@echo "... test_menustringslot.o"
 	@echo "... test_menustringslot.i"
 	@echo "... test_menustringslot.s"
+	@echo "... test_missionobjective.o"
+	@echo "... test_missionobjective.i"
+	@echo "... test_missionobjective.s"
 	@echo "... test_playerstats.o"
 	@echo "... test_playerstats.i"
 	@echo "... test_playerstats.s"

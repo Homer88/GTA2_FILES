@@ -22,6 +22,7 @@ set(GTA2_CORE_SOURCES
     src/MenuItemConfig.cpp
     src/gta2/MenuStringSlot.cpp
     src/gta2/PlayerStats.cpp
+    src/MissionObjective.cpp
 )
 
 set(GTA2_CORE_HEADERS
@@ -38,6 +39,7 @@ set(GTA2_CORE_HEADERS
     include/gta2/MenuItemConfig.h
     include/gta2/MenuStringSlot.h
     include/gta2/PlayerStats.h
+    include/gta2/MissionObjective.h
     include/gta2/gta2_types.h
 )
 
@@ -86,6 +88,10 @@ target_link_libraries(test_menustringslot PRIVATE gta2_core)
 # Тест PlayerStats (S161 - статистика игрока)
 add_executable(test_playerstats test_playerstats.cpp)
 target_link_libraries(test_playerstats PRIVATE gta2_core)
+
+# Тест MissionObjective (S25 - цели миссии)
+add_executable(test_missionobjective test_missionobjective.cpp)
+target_link_libraries(test_missionobjective PRIVATE gta2_core)
 
 # ============================================
 # ОСНОВНОЕ ПРИЛОЖЕНИЕ (точка входа)

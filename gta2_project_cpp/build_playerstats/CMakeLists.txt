@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.10)
+project(test_playerstats_only CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Минимальная библиотека только для PlayerStats
+add_library(playerstats_lib STATIC ../src/PlayerStats.cpp)
+target_include_directories(playerstats_lib PUBLIC ../include)
+
+# Тест PlayerStats
+add_executable(test_playerstats ../test_playerstats.cpp)
+target_link_libraries(test_playerstats PRIVATE playerstats_lib)
