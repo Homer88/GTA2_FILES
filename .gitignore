@@ -1,12 +1,14 @@
 ```
-# Compiled and build artifacts
+# Compiled and binary files
 *.o
 *.obj
+*.out
 *.exe
 *.dll
 *.so
 *.a
-*.out
+*.pyc
+*.class
 
 # Dependencies
 node_modules/
@@ -18,19 +20,15 @@ __pycache__/
 target/
 .gradle/
 
-# Build directories
-build/
+# Build artifacts
 dist/
+build/
 
-# Editors
+# Editors and IDEs
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# Logs and temp files
-*.log
-*.tmp
 
 # System files
 .DS_Store
@@ -39,7 +37,8 @@ Thumbs.db
 .env.local
 *.env.*
 
-# Coverage
+# Logs and coverage
+*.log
 coverage/
 htmlcov/
 .coverage
