@@ -1,103 +1,168 @@
 #ifndef MISSIONMANAGER_H
 #define MISSIONMANAGER_H
-
-#include "../types.h"
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-/*
- * Структура: MissionManager (S27)
- * Описание: Менеджер миссий. Отвечает за активацию, выполнение, провал миссий,
- *           отслеживание целей, выдачу наград и управление скриптами миссий.
- * Размер: 512 байт (ТРЕБУЕТ УТОЧНЕНИЯ ПО ДАМПУ)
- * Адреса: Требуется привязка к MAP-файлу
- */
-
-typedef struct MissionManager {
-    // Основные данные о текущей миссии
-    int32_t current_mission_id;       // 0x00: ID текущей активной миссии
-    int32_t mission_state;            // 0x04: Состояние миссии (0: нет, 1: активна, 2: завершена, 3: провалена)
-    
-    // Цели миссии
-    int32_t total_objectives;         // 0x08: Общее количество целей
-    int32_t completed_objectives;     // 0x0C: Количество выполненных целей
-    uint8_t objectives_mask[32];      // 0x10: Битовая маска выполненных целей (до 256 целей)
-    
-    // Награды и скрипты
-    int32_t reward_pending;           // 0x30: Ожидающая выдачи награда (деньги/очки)
-    int32_t script_thread_id;         // 0x34: ID потока скрипта миссии
-    void* script_pointer;             // 0x38: Указатель на данные скрипта миссии
-    
-    // Целевые объекты и локации
-    int32_t target_ped_id;            // 0x3C: ID целевого персонажа (если есть)
-    int32_t target_car_id;            // 0x40: ID целевой машины (если есть)
-    float target_location_x;          // 0x44: Координата X цели
-    float target_location_y;          // 0x48: Координата Y цели
-    float target_location_z;          // 0x4C: Координата Z цели (если используется)
-    
-    // Таймеры и флаги
-    int32_t timer;                    // 0x50: Таймер миссии (тикани или секунды)
-    int32_t time_limit;               // 0x54: Лимит времени на миссию
-    uint32_t flags;                   // 0x58: Флаги состояния (битовое поле)
-    
-    // Буфер данных (заглушка до полного восстановления полей)
-    uint8_t data_padding[444];        // 0x5C - 0x1FF: Дополнительные данные (заглушка)
-} MissionManager;
-
-// Глобальные переменные
-extern MissionManager gMissionManager;
-extern MissionManager* pMissionManager;
-
-// ============================================================================
-// Методы MissionManager
-// ============================================================================
-
-// Конструктор и деструктор
-void MissionManager__Constructor(MissionManager* self);
-void MissionManager__Destructor(MissionManager* self);
-
-// Управление жизненным циклом миссии
-void MissionManager__StartMission(MissionManager* self, int32_t mission_id);
-void MissionManager__EndMission(MissionManager* self);
-void MissionManager__FailMission(MissionManager* self);
-void MissionManager__AbortAllMissions(MissionManager* self);
-
-// Получение информации о миссии
-int32_t MissionManager__GetCurrentMissionId(const MissionManager* self);
-int32_t MissionManager__GetMissionState(const MissionManager* self);
-uint8_t MissionManager__IsMissionActive(const MissionManager* self);
-void* MissionManager__GetMissionScriptPointer(const MissionManager* self);
-
-// Управление целями
-void MissionManager__UpdateObjectives(MissionManager* self);
-uint8_t MissionManager__CheckCompletion(const MissionManager* self);
-int32_t MissionManager__GetObjectiveCount(const MissionManager* self);
-int32_t MissionManager__GetCompletedObjectivesCount(const MissionManager* self);
-void MissionManager__SetObjectiveCompleted(MissionManager* self, int32_t objective_index);
-uint8_t MissionManager__IsObjectiveCompleted(const MissionManager* self, int32_t objective_index);
-
-// Награды и прогресс
-void MissionManager__GiveReward(MissionManager* self);
-void MissionManager__SetNextMission(MissionManager* self, int32_t next_mission_id);
-void MissionManager__ResetProgress(MissionManager* self);
-
-// События и триггеры
-void MissionManager__TriggerEvent(MissionManager* self, int32_t event_type, void* event_data);
-
-// Загрузка/Сохранение
-void MissionManager__LoadMissionData(MissionManager* self, const void* data_ptr);
-void MissionManager__SaveMissionData(const MissionManager* self, void* data_ptr);
-
-// Установка целей и локаций
-void MissionManager__SetTargetPed(MissionManager* self, int32_t ped_id);
-void MissionManager__SetTargetCar(MissionManager* self, int32_t car_id);
-void MissionManager__SetTargetLocation(MissionManager* self, float x, float y, float z);
-void MissionManager__SetTimer(MissionManager* self, int32_t time_limit);
-
-#ifdef __cplusplus
-}
-#endif
-
-#endif // MISSIONMANAGER_H
+     4	#include "types.h"
+     5	#include "MissionTypes.h"
+     6	
+     7	#ifdef __cplusplus
+     8	extern "C" {
+     9	#endif
+    10	
+    11	// Точный размер структуры из MAP-файла
+    12	#define MISSION_MANAGER_SIZE 0xC1EA8
+    13	
+    14	// Адрес глобальной переменной из MAP-файла
+    15	#define MISSION_MANAGER_ADDR 0x006644BC
+    16	
+    17	/**
+    18	 * @brief Состояния менеджера миссий
+    19	 */
+    20	typedef enum {
+    21	    MISSION_STATE_UNLOADED = 0,
+    22	    MISSION_STATE_IDLE,
+    23	    MISSION_STATE_LOADING,
+    24	    MISSION_STATE_RUNNING,
+    25	    MISSION_STATE_PAUSED,
+    26	    MISSION_STATE_ENDED,
+    27	    MISSION_STATE_FAILED
+    28	} MissionState;
+    29	
+    30	/**
+    31	 * @brief Основная структура MissionManager
+    32	 * Размер: 0xC1EA8 (793,768 байт)
+    33	 * Адрес глобального экземпляра: 0x006644BC
+    34	 * 
+    35	 * Отвечает за загрузку, выполнение и сохранение миссий.
+    36	 * Содержит скриптовый движок, пулы объектов и триггеров.
+    37	 */
+    38	typedef struct {
+    39	    // === Блок состояния (0x00 - 0x20) ===
+    40	    uint32_t state;                     // 0x00: Текущее состояние (MissionState)
+    41	    uint32_t current_mission_id;        // 0x04: ID текущей активной миссии
+    42	    uint32_t mission_status;            // 0x08: Статус выполнения (0=None, 1=Success, 2=Failed)
+    43	    uint32_t total_objectives;          // 0x0C: Общее количество целей в текущей миссии
+    44	    uint32_t completed_objectives;      // 0x10: Количество выполненных целей
+    45	    void* script_buffer_ptr;            // 0x14: Указатель на загруженный буфер скрипта
+    46	    uint32_t script_size;               // 0x18: Размер загруженного скрипта в байтах
+    47	    uint32_t script_cursor;             // 0x1C: Текущая позиция чтения в скрипте
+    48	    
+    49	    // === Буферы путей (0x20 - 0x220) ===
+    50	    char current_script_path[256];      // 0x20: Путь к текущему файлу скрипта миссии
+    51	    char save_file_path[256];           // 0x120: Путь к файлу сохранения
+    52	    
+    53	    // === Таймеры и награды (0x220 - 0x230) ===
+    54	    uint32_t timer_main;                // 0x220: Главный таймер миссии
+    55	    uint32_t timer_secondary;           // 0x224: Вторичный таймер для конкретных целей
+    56	    float reward_money;                 // 0x228: Сумма награды за текущую миссию
+    57	    uint32_t reward_respect;            // 0x22C: Очки уважения/репутации за миссию
+    58	    
+    59	    // === Флаги целей (0x230 - 0x630) ===
+    60	    uint8_t objectives_flags[1024];     // 0x230: Битовая маска выполнения целей (до 8192 целей)
+    61	    
+    62	    // === Внутренние буферы (0x630 - 0x1630) ===
+    63	    uint8_t mission_data_buffer[4096];  // 0x630: Буфер для временных данных миссии
+    64	    
+    65	    // === Основной текстовый буфер скрипта (0x1630 - 0x11630) ===
+    66	    char script_text_buffer[65536];     // 0x1630: Сырой текст скрипта миссии после загрузки
+    67	    
+    68	    // === Пул объектов миссии (0x11630 - 0x91630) ===
+    69	    // ~524288 байт / sizeof(MissionObject) ≈ 4096 объектов (если размер 128 байт)
+    70	    MissionObject objects_pool[MAX_MISSION_OBJECTS]; 
+    71	    
+    72	    // === Пул триггеров (0x91630 - 0xC1630) ===
+    73	    // ~200000 байт / sizeof(MissionTrigger) ≈ 3125 триггеров (если размер 64 байта)
+    74	    MissionTrigger triggers_pool[MAX_MISSION_TRIGGERS];
+    75	    
+    76	    // === Зарезервировано / Выравнивание (0xC1630 - 0xC1EA8) ===
+    77	    uint8_t reserved[0xC1EA8 - 0xC1630 - (sizeof(MissionObject) * MAX_MISSION_OBJECTS) - (sizeof(MissionTrigger) * MAX_MISSION_TRIGGERS)];
+    78	    
+    79	} MissionManager;
+    80	
+    81	// Глобальная переменная (экземпляр менеджера)
+    82	extern MissionManager gMissionManager;
+    83	extern MissionManager* pMissionManager; // Указатель для удобного доступа
+    84	
+    85	// ============================================================================
+    86	// МЕТОДЫ МИССИОННОГО МЕНЕДЖЕРА (71 функция)
+    87	// ============================================================================
+    88	
+    89	// --- Инициализация и жизненный цикл ---
+    90	void MissionManager__Constructor(MissionManager* self);
+    91	void MissionManager__Destructor(MissionManager* self);
+    92	void MissionManager__Reset(MissionManager* self);
+    93	
+    94	// --- Управление потоком миссии ---
+    95	int32_t MissionManager__StartMission(MissionManager* self, uint32_t missionId);
+    96	void MissionManager__EndMission(MissionManager* self, int32_t result);
+    97	void MissionManager__FailMission(MissionManager* self);
+    98	void MissionManager__AbortMission(MissionManager* self);
+    99	void MissionManager__Update(MissionManager* self);
+   100	void MissionManager__CheckObjectives(MissionManager* self);
+   101	int32_t MissionManager__IsMissionActive(MissionManager* self);
+   102	uint32_t MissionManager__GetCurrentMissionId(MissionManager* self);
+   103	uint32_t MissionManager__GetMissionState(MissionManager* self);
+   104	void MissionManager__SetNextMission(MissionManager* self, uint32_t nextId);
+   105	void MissionManager__AbortAllMissions(MissionManager* self);
+   106	
+   107	// --- Работа со скриптами и файлами ---
+   108	int32_t MissionManager__LoadScript(MissionManager* self, const char* filename);
+   109	int32_t MissionManager__SaveFile(MissionManager* self);
+   110	int32_t MissionManager__LoadGame(MissionManager* self, const char* filename);
+   111	void MissionManager__ExtractFileNameWithoutExtension(const char* fullPath, char* outName);
+   112	int32_t MissionManager__ParseScriptCommand(MissionManager* self);
+   113	void* MissionManager__GetMissionScript(MissionManager* self);
+   114	void MissionManager__InitScriptVariables(MissionManager* self);
+   115	
+   116	// --- Цели и прогресс ---
+   117	void MissionManager__UpdateObjectives(MissionManager* self);
+   118	int32_t MissionManager__CheckCompletion(MissionManager* self);
+   119	void MissionManager__GiveReward(MissionManager* self);
+   120	void MissionManager__SetObjectiveFlag(MissionManager* self, uint32_t index, int32_t completed);
+   121	uint32_t MissionManager__GetObjectiveCount(MissionManager* self);
+   122	uint32_t MissionManager__GetCompletedObjectives(MissionManager* self);
+   123	void MissionManager__ResetProgress(MissionManager* self);
+   124	
+   125	// --- Управление объектами и триггерами ---
+   126	MissionObject* MissionManager__GetObjectPtr(MissionManager* self, uint32_t index);
+   127	MissionTrigger* MissionManager__GetTriggerPtr(MissionManager* self, uint32_t index);
+   128	void MissionManager__SpawnScriptObjects(MissionManager* self);
+   129	void MissionManager__DespawnObject(MissionManager* self, uint32_t objIndex);
+   130	void MissionManager__ActivateTrigger(MissionManager* self, uint32_t trigIndex);
+   131	void MissionManager__UpdateTriggers(MissionManager* self);
+   132	
+   133	// --- Внутренние утилиты и данные ---
+   134	void MissionManager__ClampValues(MissionManager* self);
+   135	int32_t MissionManager__greater_than(MissionManager* self, int32_t a, int32_t b);
+   136	int32_t MissionManager__less_or_equal(MissionManager* self, int32_t a, int32_t b);
+   137	int32_t MissionManager__NotEqual(MissionManager* self, int32_t a, int32_t b);
+   138	int32_t MissionManager__less_than(MissionManager* self, int32_t a, int32_t b);
+   139	void MissionManager__PrepareArray(MissionManager* self);
+   140	void MissionManager__ClearMissionData(MissionManager* self);
+   141	void MissionManager__AllocateMissionBuffer(MissionManager* self, uint32_t size);
+   142	void MissionManager__FreeMissionBuffer(MissionManager* self);
+   143	
+   144	// --- Сохранение и загрузка данных ---
+   145	void MissionManager__SaveMissionData(MissionManager* self);
+   146	void MissionManager__LoadMissionData(MissionManager* self);
+   147	int32_t MissionManager__IsValidMission(MissionManager* self, uint32_t missionId);
+   148	
+   149	// --- События и триггеры внешнего мира ---
+   150	void MissionManager__TriggerEvent(MissionManager* self, uint32_t eventType, void* data);
+   151	void MissionManager__OnPlayerDeath(MissionManager* self);
+   152	void MissionManager__OnCarDestroyed(MissionManager* self, uint32_t carId);
+   153	void MissionManager__OnPedKilled(MissionManager* self, uint32_t pedId);
+   154	void MissionManager__OnZoneEntered(MissionManager* self, const char* zoneName);
+   155	void MissionManager__OnItemCollected(MissionManager* self, uint32_t itemId);
+   156	
+   157	// --- Отладка и прочее ---
+   158	void MissionManager__PrintDebugInfo(MissionManager* self);
+   159	void MissionManager__DumpState(MissionManager* self);
+   160	void MissionManager__sub_4699F0(MissionManager* self); // Destructor alias
+   161	void MissionManager__sub_490C30(MissionManager* self); // Reset alias
+   162	// ... остальные методы sub_XXXXXXXX будут добавлены по мере анализа ...
+   163	
+   164	#ifdef __cplusplus
+   165	}
+   166	#endif
+   167	
+   168	#endif // MISSIONMANAGER_H
+   169	
