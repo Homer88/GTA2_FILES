@@ -9,11 +9,16 @@
  * Функции: 232 функции из gta2.exe.map
  */
 
+<<<<<<< Updated upstream
 #pragma once
 
 #ifndef PLAYER_H
 #define PLAYER_H
 
+=======
+#ifndef __PLAYER_H_
+#define __PLAYER_H_
+>>>>>>> Stashed changes
 #include <cstdint>
 
 // Forward declarations
@@ -99,9 +104,6 @@ struct Player
 
 
 // === Основные функции управления ===
-#ifdef __cplusplus
-extern "C" {
-#endif
 // Адрес: 0x00401B40 - Player__sub_401B40
 void Player__sub_401B40(Player* player);
 
@@ -250,8 +252,5 @@ void Player__sub_476700(Player* player);
 void Player__sub_476730(Player* player);
 
 
-#ifdef __cplusplus
-}
-#endif
 
 #endif // PLAYER_H
