@@ -105,5 +105,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_menuslotconfig.dir/DependInfo.cmake"
   "CMakeFiles/test_menuitemconfig.dir/DependInfo.cmake"
   "CMakeFiles/test_menustringslot.dir/DependInfo.cmake"
+  "CMakeFiles/test_playerstats.dir/DependInfo.cmake"
   "CMakeFiles/gta2_runner.dir/DependInfo.cmake"
   )

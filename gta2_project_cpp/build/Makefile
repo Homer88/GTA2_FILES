@@ -195,6 +195,19 @@ test_menustringslot/fast:
 .PHONY : test_menustringslot/fast
 
 #=============================================================================
+# Target rules for targets named test_playerstats
+
+# Build rule for target.
+test_playerstats: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_playerstats
+.PHONY : test_playerstats
+
+# fast build rule for target.
+test_playerstats/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_playerstats.dir/build.make CMakeFiles/test_playerstats.dir/build
+.PHONY : test_playerstats/fast
+
+#=============================================================================
 # Target rules for targets named gta2_runner
 
 # Build rule for target.
@@ -495,6 +508,30 @@ src/gta2/MenuStringSlot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.s
 .PHONY : src/gta2/MenuStringSlot.cpp.s
 
+src/gta2/PlayerStats.o: src/gta2/PlayerStats.cpp.o
+.PHONY : src/gta2/PlayerStats.o
+
+# target to build an object file
+src/gta2/PlayerStats.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.o
+.PHONY : src/gta2/PlayerStats.cpp.o
+
+src/gta2/PlayerStats.i: src/gta2/PlayerStats.cpp.i
+.PHONY : src/gta2/PlayerStats.i
+
+# target to preprocess a source file
+src/gta2/PlayerStats.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.i
+.PHONY : src/gta2/PlayerStats.cpp.i
+
+src/gta2/PlayerStats.s: src/gta2/PlayerStats.cpp.s
+.PHONY : src/gta2/PlayerStats.s
+
+# target to generate assembly for a file
+src/gta2/PlayerStats.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gta2_core.dir/build.make CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.s
+.PHONY : src/gta2/PlayerStats.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -639,6 +676,30 @@ test_menustringslot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_menustringslot.dir/build.make CMakeFiles/test_menustringslot.dir/test_menustringslot.cpp.s
 .PHONY : test_menustringslot.cpp.s
 
+test_playerstats.o: test_playerstats.cpp.o
+.PHONY : test_playerstats.o
+
+# target to build an object file
+test_playerstats.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_playerstats.dir/build.make CMakeFiles/test_playerstats.dir/test_playerstats.cpp.o
+.PHONY : test_playerstats.cpp.o
+
+test_playerstats.i: test_playerstats.cpp.i
+.PHONY : test_playerstats.i
+
+# target to preprocess a source file
+test_playerstats.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_playerstats.dir/build.make CMakeFiles/test_playerstats.dir/test_playerstats.cpp.i
+.PHONY : test_playerstats.cpp.i
+
+test_playerstats.s: test_playerstats.cpp.s
+.PHONY : test_playerstats.s
+
+# target to generate assembly for a file
+test_playerstats.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_playerstats.dir/build.make CMakeFiles/test_playerstats.dir/test_playerstats.cpp.s
+.PHONY : test_playerstats.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -653,6 +714,7 @@ help:
 	@echo "... test_menuitemconfig"
 	@echo "... test_menuslotconfig"
 	@echo "... test_menustringslot"
+	@echo "... test_playerstats"
 	@echo "... test_structures"
 	@echo "... src/Car.o"
 	@echo "... src/Car.i"
@@ -690,6 +752,9 @@ help:
 	@echo "... src/gta2/MenuStringSlot.o"
 	@echo "... src/gta2/MenuStringSlot.i"
 	@echo "... src/gta2/MenuStringSlot.s"
+	@echo "... src/gta2/PlayerStats.o"
+	@echo "... src/gta2/PlayerStats.i"
+	@echo "... src/gta2/PlayerStats.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -708,6 +773,9 @@ help:
 	@echo "... test_menustringslot.o"
 	@echo "... test_menustringslot.i"
 	@echo "... test_menustringslot.s"
+	@echo "... test_playerstats.o"
+	@echo "... test_playerstats.i"
+	@echo "... test_playerstats.s"
 .PHONY : help
 
 
