@@ -1,54 +1,42 @@
 ```
 # Build artifacts
 build/
-CMakeFiles/
-Makefile
-cmake_install.cmake
-CMakeCache.txt
-*.cmake
-*.dir/
+cmake-build-*/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.exe
 
 # Dependencies
-*.a
-*.so
-*.dylib
-*.dll
-*.lib
-*.obj
-*.o
+vendor/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
 
 # Logs
 *.log
+
+# Temporary files
+*.tmp
+*.temp
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
 # Coverage
 coverage/
 htmlcov/
 .coverage
 
-# Python (if present)
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-*.so
-
-# Tests
-.pytest_cache/
-.mypy_cache/
+# OS
+.DS_Store
+Thumbs.db
 ```
