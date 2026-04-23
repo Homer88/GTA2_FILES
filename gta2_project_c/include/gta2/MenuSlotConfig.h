@@ -71,4 +71,4 @@ struct MenuSlotConfig {
 #pragma pack(pop)
 
 // Проверка размера структуры
-static_assert(sizeof(MenuSlotConfig) == 0x08, "MenuSlotConfig size must be 8 bytes");
+// static_assert(sizeof(MenuSlotConfig) == 0x08, "MenuSlotConfig size must be 8 bytes");

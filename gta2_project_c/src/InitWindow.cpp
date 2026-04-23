@@ -1,4 +1,4 @@
-#include "InitWindow.h"
+#include "gta2/InitWindow.h"
 #include <cstring>
 #include <cstdio>
 

@@ -9,6 +9,9 @@
 
 #pragma once
 
+#ifndef CAR_H
+#define CAR_H
+
 #include <cstdint>
 
 // Forward declarations

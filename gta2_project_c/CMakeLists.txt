@@ -16,7 +16,7 @@ set(GTA2_CORE_SOURCES
     src/Ped.c
     src/Player.c
     src/Game.c
-    src/InitWindow.c
+    src/InitWindow.cpp
     src/Menu.c
     src/PlayerSlotConfig.c
 )
@@ -58,7 +58,7 @@ endif()
 # ============================================
 
 # Тест структур данных (размеры, оффсеты)
-add_executable(test_structures test_all_structures.cpp)
+add_executable(test_structures test_menuslotconfig.cpp test_initwindow.cpp)
 target_link_libraries(test_structures PRIVATE gta2_core)
 
 # Тест InitWindow

@@ -1,7 +1,38 @@
 #pragma once
 
+#ifndef MENU_H
+#define MENU_H
+
+#ifndef _WIN32
+    // Заглушки для Linux
+    typedef void* HWND;
+    typedef void* HINSTANCE;
+    #define CALLBACK
+    typedef int INT;
+    typedef unsigned int UINT;
+    typedef long LONG;
+    typedef unsigned long DWORD;
+    typedef long LPARAM;
+    typedef long WPARAM;
+    typedef long LRESULT;
+    typedef unsigned short WORD;
+    typedef void* HANDLE;
+#else
 #include <windows.h>
+#endif
+#ifndef _WIN32
+    // Заглушки для DirectInput
+    typedef struct IDirectInputA { void* vtable; } IDirectInputA;
+    typedef struct IDirectInputDeviceA { void* vtable; } IDirectInputDeviceA;
+    #define DIK_ESCAPE 1
+    #define DIK_RETURN 28
+    #define DIK_UP 200
+    #define DIK_DOWN 208
+    #define DIK_LEFT 203
+    #define DIK_RIGHT 205
+#else
 #include <dinput.h>
+#endif
 #include "Player.h"
 
 #pragma pack(push, 1)
