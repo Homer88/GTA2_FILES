@@ -5,6 +5,35 @@
 
 #ifndef _WIN32
     #include <unistd.h>
+    // Эмуляция Windows API для Linux (заглушки)
+    #define _strdup strdup
+    #define MessageBox(hwnd, text, caption, type) printf("[%s] %s\n", caption, text)
+    #define MB_OK 0
+    #define MB_ICONINFORMATION 0
+    #define MB_ICONWARNING 0
+    #define GetWindowTextA(hwnd, buf, size) snprintf(buf, size, "127.0.0.1")
+    // Заглушки для WinAPI типов и функций
+    #define WNDCLASSEX WNDCLASSEXA
+    #define LoadCursor(a, b) nullptr
+    #define IDC_ARROW nullptr
+    #define HBRUSH void*
+    #define COLOR_WINDOW 0
+    #define RegisterClassEx(a) 1
+    #define CreateWindowEx(a, b, c, d, e, f, g, h, i, j, k, l) nullptr
+    #define WS_OVERLAPPEDWINDOW 0
+    #define WS_THICKFRAME 0
+    #define WS_MAXIMIZEBOX 0
+    #define WS_CHILD 0
+    #define WS_VISIBLE 0
+    #define SS_CENTER 0
+    #define BS_PUSHBUTTON 0
+    #define SW_HIDE 0
+    #define WS_EX_CLIENTEDGE 0
+    #define ES_AUTOHSCROLL 0
+    #define LOWORD(x) (x)
+    #define DefWindowProc(a, b, c, d) 0
+    #define UnregisterClass(a, b)
+    #define ShowWindow(a, b)
 #endif
 
 namespace GTA2 {
@@ -40,7 +69,7 @@ namespace GTA2 {
         WNDCLASSEX wc = {};
         wc.cbSize = sizeof(WNDCLASSEX);
         wc.style = CS_HREDRAW | CS_VREDRAW;
-        wc.lpfnWndProc = WndProc;
+        wc.lpfnWndProc = (void*)WndProc;  // Приведение к void* для совместимости с Linux
         wc.hInstance = hInstance;
         wc.hCursor = LoadCursor(NULL, IDC_ARROW);
         wc.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);

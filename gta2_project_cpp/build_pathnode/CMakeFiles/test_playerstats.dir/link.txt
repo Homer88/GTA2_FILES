@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_playerstats.dir/test_playerstats.cpp.o -o test_playerstats  libgta2_core.a 

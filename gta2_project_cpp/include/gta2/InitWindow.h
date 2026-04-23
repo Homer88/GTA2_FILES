@@ -31,7 +31,7 @@
     struct WNDCLASSEXA {
         UINT cbSize;
         UINT style;
-        void* lpfnWndProc;
+        void* lpfnWndProc;  // Должен быть void* для совместимости
         INT cbClsExtra;
         INT cbWndExtra;
         HINSTANCE hInstance;

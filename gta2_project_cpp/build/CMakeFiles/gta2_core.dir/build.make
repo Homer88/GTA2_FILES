@@ -237,6 +237,90 @@ CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/gta2_project_cpp/src/gta2/MenuStringSlot.cpp -o CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.s
 
+CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.o: CMakeFiles/gta2_core.dir/flags.make
+CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.o: /workspace/gta2_project_cpp/src/gta2/PlayerStats.cpp
+CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.o: CMakeFiles/gta2_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.o -MF CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.o.d -o CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.o -c /workspace/gta2_project_cpp/src/gta2/PlayerStats.cpp
+
+CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/gta2_project_cpp/src/gta2/PlayerStats.cpp > CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.i
+
+CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/gta2_project_cpp/src/gta2/PlayerStats.cpp -o CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.s
+
+CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.o: CMakeFiles/gta2_core.dir/flags.make
+CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.o: /workspace/gta2_project_cpp/src/MissionObjective.cpp
+CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.o: CMakeFiles/gta2_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.o -MF CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.o.d -o CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.o -c /workspace/gta2_project_cpp/src/MissionObjective.cpp
+
+CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/gta2_project_cpp/src/MissionObjective.cpp > CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.i
+
+CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/gta2_project_cpp/src/MissionObjective.cpp -o CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.s
+
+CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.o: CMakeFiles/gta2_core.dir/flags.make
+CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.o: /workspace/gta2_project_cpp/src/DebugProfiler.cpp
+CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.o: CMakeFiles/gta2_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.o -MF CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.o.d -o CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.o -c /workspace/gta2_project_cpp/src/DebugProfiler.cpp
+
+CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/gta2_project_cpp/src/DebugProfiler.cpp > CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.i
+
+CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/gta2_project_cpp/src/DebugProfiler.cpp -o CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.s
+
+CMakeFiles/gta2_core.dir/src/PathNode.cpp.o: CMakeFiles/gta2_core.dir/flags.make
+CMakeFiles/gta2_core.dir/src/PathNode.cpp.o: /workspace/gta2_project_cpp/src/PathNode.cpp
+CMakeFiles/gta2_core.dir/src/PathNode.cpp.o: CMakeFiles/gta2_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/gta2_core.dir/src/PathNode.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gta2_core.dir/src/PathNode.cpp.o -MF CMakeFiles/gta2_core.dir/src/PathNode.cpp.o.d -o CMakeFiles/gta2_core.dir/src/PathNode.cpp.o -c /workspace/gta2_project_cpp/src/PathNode.cpp
+
+CMakeFiles/gta2_core.dir/src/PathNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gta2_core.dir/src/PathNode.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/gta2_project_cpp/src/PathNode.cpp > CMakeFiles/gta2_core.dir/src/PathNode.cpp.i
+
+CMakeFiles/gta2_core.dir/src/PathNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gta2_core.dir/src/PathNode.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/gta2_project_cpp/src/PathNode.cpp -o CMakeFiles/gta2_core.dir/src/PathNode.cpp.s
+
+CMakeFiles/gta2_core.dir/src/EntityManager.cpp.o: CMakeFiles/gta2_core.dir/flags.make
+CMakeFiles/gta2_core.dir/src/EntityManager.cpp.o: /workspace/gta2_project_cpp/src/EntityManager.cpp
+CMakeFiles/gta2_core.dir/src/EntityManager.cpp.o: CMakeFiles/gta2_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/gta2_core.dir/src/EntityManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gta2_core.dir/src/EntityManager.cpp.o -MF CMakeFiles/gta2_core.dir/src/EntityManager.cpp.o.d -o CMakeFiles/gta2_core.dir/src/EntityManager.cpp.o -c /workspace/gta2_project_cpp/src/EntityManager.cpp
+
+CMakeFiles/gta2_core.dir/src/EntityManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gta2_core.dir/src/EntityManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/gta2_project_cpp/src/EntityManager.cpp > CMakeFiles/gta2_core.dir/src/EntityManager.cpp.i
+
+CMakeFiles/gta2_core.dir/src/EntityManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gta2_core.dir/src/EntityManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/gta2_project_cpp/src/EntityManager.cpp -o CMakeFiles/gta2_core.dir/src/EntityManager.cpp.s
+
+CMakeFiles/gta2_core.dir/src/Display.cpp.o: CMakeFiles/gta2_core.dir/flags.make
+CMakeFiles/gta2_core.dir/src/Display.cpp.o: /workspace/gta2_project_cpp/src/Display.cpp
+CMakeFiles/gta2_core.dir/src/Display.cpp.o: CMakeFiles/gta2_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/gta2_core.dir/src/Display.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gta2_core.dir/src/Display.cpp.o -MF CMakeFiles/gta2_core.dir/src/Display.cpp.o.d -o CMakeFiles/gta2_core.dir/src/Display.cpp.o -c /workspace/gta2_project_cpp/src/Display.cpp
+
+CMakeFiles/gta2_core.dir/src/Display.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gta2_core.dir/src/Display.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/gta2_project_cpp/src/Display.cpp > CMakeFiles/gta2_core.dir/src/Display.cpp.i
+
+CMakeFiles/gta2_core.dir/src/Display.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gta2_core.dir/src/Display.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/gta2_project_cpp/src/Display.cpp -o CMakeFiles/gta2_core.dir/src/Display.cpp.s
+
 # Object files for target gta2_core
 gta2_core_OBJECTS = \
 "CMakeFiles/gta2_core.dir/src/GameObject.cpp.o" \
@@ -250,7 +334,13 @@ gta2_core_OBJECTS = \
 "CMakeFiles/gta2_core.dir/src/Menu.cpp.o" \
 "CMakeFiles/gta2_core.dir/src/PlayerSlotConfig.cpp.o" \
 "CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o" \
-"CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o"
+"CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o" \
+"CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.o" \
+"CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.o" \
+"CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.o" \
+"CMakeFiles/gta2_core.dir/src/PathNode.cpp.o" \
+"CMakeFiles/gta2_core.dir/src/EntityManager.cpp.o" \
+"CMakeFiles/gta2_core.dir/src/Display.cpp.o"
 
 # External object files for target gta2_core
 gta2_core_EXTERNAL_OBJECTS =
@@ -267,9 +357,15 @@ libgta2_core.a: CMakeFiles/gta2_core.dir/src/Menu.cpp.o
 libgta2_core.a: CMakeFiles/gta2_core.dir/src/PlayerSlotConfig.cpp.o
 libgta2_core.a: CMakeFiles/gta2_core.dir/src/MenuItemConfig.cpp.o
 libgta2_core.a: CMakeFiles/gta2_core.dir/src/gta2/MenuStringSlot.cpp.o
+libgta2_core.a: CMakeFiles/gta2_core.dir/src/gta2/PlayerStats.cpp.o
+libgta2_core.a: CMakeFiles/gta2_core.dir/src/MissionObjective.cpp.o
+libgta2_core.a: CMakeFiles/gta2_core.dir/src/DebugProfiler.cpp.o
+libgta2_core.a: CMakeFiles/gta2_core.dir/src/PathNode.cpp.o
+libgta2_core.a: CMakeFiles/gta2_core.dir/src/EntityManager.cpp.o
+libgta2_core.a: CMakeFiles/gta2_core.dir/src/Display.cpp.o
 libgta2_core.a: CMakeFiles/gta2_core.dir/build.make
 libgta2_core.a: CMakeFiles/gta2_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libgta2_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/gta2_project_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX static library libgta2_core.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/gta2_core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gta2_core.dir/link.txt --verbose=$(VERBOSE)
 

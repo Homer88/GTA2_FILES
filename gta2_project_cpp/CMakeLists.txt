@@ -21,6 +21,12 @@ set(GTA2_CORE_SOURCES
     src/PlayerSlotConfig.cpp
     src/MenuItemConfig.cpp
     src/gta2/MenuStringSlot.cpp
+    src/gta2/PlayerStats.cpp
+    src/MissionObjective.cpp
+    src/DebugProfiler.cpp
+    src/PathNode.cpp
+    src/EntityManager.cpp
+    src/Display.cpp
 )
 
 set(GTA2_CORE_HEADERS
@@ -36,6 +42,13 @@ set(GTA2_CORE_HEADERS
     include/gta2/PlayerSlotConfig.h
     include/gta2/MenuItemConfig.h
     include/gta2/MenuStringSlot.h
+    include/gta2/PlayerStats.h
+    include/gta2/DebugProfiler.h
+    include/gta2/MissionObjective.h
+    include/gta2/PathNode.h
+    include/gta2/EntityManager.h
+    include/gta2/Display.h
+    include/gta2/gta2_forward.h
     include/gta2/gta2_types.h
 )
 
@@ -80,6 +93,26 @@ target_link_libraries(test_menuitemconfig PRIVATE gta2_core)
 # Тест MenuStringSlot (S140 - новая структура)
 add_executable(test_menustringslot test_menustringslot.cpp)
 target_link_libraries(test_menustringslot PRIVATE gta2_core)
+
+# Тест PlayerStats (S161 - статистика игрока)
+add_executable(test_playerstats test_playerstats.cpp)
+target_link_libraries(test_playerstats PRIVATE gta2_core)
+
+# Тест MissionObjective (S25 - цели миссии)
+add_executable(test_missionobjective test_missionobjective.cpp)
+target_link_libraries(test_missionobjective PRIVATE gta2_core)
+
+# Тест PathNode (S12 - навигационные узлы)
+add_executable(test_pathnode test_pathnode.cpp)
+target_link_libraries(test_pathnode PRIVATE gta2_core)
+
+# Тест EntityManager (S17 - менеджер сущностей)
+add_executable(test_entitymanager test_entitymanager.cpp)
+target_link_libraries(test_entitymanager PRIVATE gta2_core)
+
+# Тест Display (S18 - управление видеорежимами)
+add_executable(test_display test_display.cpp)
+target_link_libraries(test_display PRIVATE gta2_core)
 
 # ============================================
 # ОСНОВНОЕ ПРИЛОЖЕНИЕ (точка входа)

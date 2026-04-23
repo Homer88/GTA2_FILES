@@ -25,15 +25,20 @@ extern "C" {
 #endif
 
 // Прямое объявление для использования в C
-struct MenuItemConfig_t;
+typedef struct MenuItemConfig_t {
+    uint8_t  flags;           // +0x00
+    uint8_t  subType;         // +0x01
+    uint16_t param1;          // +0x02
+    uint32_t param2;          // +0x04
+    uint32_t selectedValue;   // +0x08
+    wchar_t  Description[50]; // +0x0C
+} MenuItemConfig_t;
 
 #ifdef __cplusplus
 }
 #endif
 
 #ifdef __cplusplus
-
-#include "gta2_forward.h"
 
 /**
  * @class MenuItemConfig
@@ -70,21 +75,21 @@ struct MenuItemConfig
      * @brief Параметр 2: Счетчик или состояние
      * Дополнительное числовое значение (счетчик, позиция, значение)
      */
-    uint16_t Param2;              // +0x04 (field_4)
+    uint32_t Param2;              // +0x04 (field_4)
     
     /**
      * @brief Текущий выбранный вариант
      * Для элементов со списком вариантов хранит текущий выбор
      * 0-based индекс или специальное значение
      */
-    uint16_t SelectedIndex;       // +0x06 (Selecet)
+    uint32_t SelectedIndex;       // +0x08 (Selecet)
     
     /**
      * @brief Текстовое описание элемента
      * Unicode строка до 50 символов (100 байт)
      * Содержит отображаемое название элемента меню
      */
-    wchar_t Description[50];      // +0x08 (str)
+    wchar_t Description[50];      // +0x0C (str)
     
     // Статический размер: 108 байт
     static_assert(sizeof(MenuItemConfig) == 108, "MenuItemConfig must be 108 bytes");

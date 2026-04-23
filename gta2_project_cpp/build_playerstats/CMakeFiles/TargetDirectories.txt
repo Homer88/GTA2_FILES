@@ -1,0 +1,4 @@
+/workspace/gta2_project_cpp/build_playerstats/CMakeFiles/playerstats_lib.dir
+/workspace/gta2_project_cpp/build_playerstats/CMakeFiles/test_playerstats.dir
+/workspace/gta2_project_cpp/build_playerstats/CMakeFiles/edit_cache.dir
+/workspace/gta2_project_cpp/build_playerstats/CMakeFiles/rebuild_cache.dir

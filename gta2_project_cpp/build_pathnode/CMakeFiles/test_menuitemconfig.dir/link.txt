@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_menuitemconfig.dir/test_menuitemconfig.cpp.o -o test_menuitemconfig  libgta2_core.a 

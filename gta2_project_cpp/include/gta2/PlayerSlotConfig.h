@@ -22,7 +22,12 @@ extern "C" {
 #endif
 
 // Прямое объявление для использования в C
-struct PlayerSlotConfig_t;
+typedef struct PlayerSlotConfig_t {
+    uint8_t IsActive;       // +0x00
+    uint8_t ControllerType; // +0x01
+    uint8_t PlayerID;       // +0x02
+    uint8_t StateFlags;     // +0x03
+} PlayerSlotConfig_t;
 
 #ifdef __cplusplus
 }
@@ -30,7 +35,8 @@ struct PlayerSlotConfig_t;
 
 #ifdef __cplusplus
 
-#include "gta2_forward.h"
+#include <cstdint>
+#include <cwchar>
 
 /**
  * @class PlayerSlotConfig

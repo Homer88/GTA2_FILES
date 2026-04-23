@@ -124,10 +124,10 @@ void Game_TogglePolice(Game* pGame, int skip)
  */
 Player* Game_GetCurrentPlayer(Game* pGame)
 {
-    if (!pGame || pGame->CurentPlayer < 0 || pGame->CurentPlayer >= 6)
+    if (!pGame || pGame->CurentPlayer >= 6)
         return nullptr;
     
-    return &pGame->pPlayer[pGame->CurentPlayer];
+    return pGame->pPlayer[pGame->CurentPlayer];
 }
 
 // ============================================================================

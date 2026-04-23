@@ -1,6 +1,13 @@
 #include "gta2/Menu.h"
 #include <cstring>
+
+#ifndef _WIN32
+    // Заглушки для Linux
+    #include <cstdio>
+    #include <cwchar>
+#else
 #include <windows.h>
+#endif
 
 // ============================================================================
 // Menu - реализация функций (заглушки для будущей привязки к адресам)
