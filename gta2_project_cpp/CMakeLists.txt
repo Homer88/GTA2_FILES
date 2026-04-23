@@ -25,6 +25,7 @@ set(GTA2_CORE_SOURCES
     src/MissionObjective.cpp
     src/DebugProfiler.cpp
     src/PathNode.cpp
+    src/EntityManager.cpp
 )
 
 set(GTA2_CORE_HEADERS
@@ -44,6 +45,7 @@ set(GTA2_CORE_HEADERS
     include/gta2/DebugProfiler.h
     include/gta2/MissionObjective.h
     include/gta2/PathNode.h
+    include/gta2/EntityManager.h
     include/gta2/gta2_forward.h
     include/gta2/gta2_types.h
 )
@@ -101,6 +103,10 @@ target_link_libraries(test_missionobjective PRIVATE gta2_core)
 # Тест PathNode (S12 - навигационные узлы)
 add_executable(test_pathnode test_pathnode.cpp)
 target_link_libraries(test_pathnode PRIVATE gta2_core)
+
+# Тест EntityManager (S17 - менеджер сущностей)
+add_executable(test_entitymanager test_entitymanager.cpp)
+target_link_libraries(test_entitymanager PRIVATE gta2_core)
 
 # ============================================
 # ОСНОВНОЕ ПРИЛОЖЕНИЕ (точка входа)
