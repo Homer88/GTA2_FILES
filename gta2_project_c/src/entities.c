@@ -3,7 +3,7 @@
  * Based on gta2.exe.map function addresses
  */
 
-#include "../include/gta2/entities.h"
+#include "../include/entities.h"
 #include <string.h>
 
 /* ============================================================================
