@@ -1,82 +1,130 @@
 #include "TrafficManager.h"
-#include <stdio.h>
 #include <string.h>
 
-// Глобальный экземпляр по адресу 0x006644B8
+// Глобальный экземпляр (адрес 0x006644B8 будет установлен линковщиком или вручную)
 TrafficManager* g_TrafficManager = (TrafficManager*)0x006644B8;
 
-// STATUS: IMPLEMENTED (Stub)
+/**
+ * Конструктор TrafficManager
+ * Адрес: 0x47A100 (предположительно)
+ */
 void TrafficManager_Init(TrafficManager* self) {
-    // TODO: Реализовать инициализацию по ассемблеру
-    // Очистка памяти, установка дефолтной плотности
-    memset(self->data, 0, sizeof(self->data));
-    printf("TrafficManager::Init() called at %p\n", (void*)self);
+    // TODO: Реализовать по ассемблерному листингу
+    // Очистка памяти, инициализация полей
+    if (self) {
+        memset(self->data, 0, sizeof(self->data));
+    }
 }
 
-// STATUS: IMPLEMENTED (Stub)
+/**
+ * Деструктор TrafficManager
+ * Адрес: 0x47A200 (предположительно)
+ */
 void TrafficManager_Destroy(TrafficManager* self) {
-    // TODO: Реализовать очистку
-    printf("TrafficManager::Destroy()\n");
+    // TODO: Реализовать по ассемблерному листингу
+    // Очистка ресурсов, удаление всех автомобилей
+    (void)self;
 }
 
-// STATUS: IMPLEMENTED (Stub)
+/**
+ * Основной цикл обновления трафика
+ * Адрес: 0x47A300 (предположительно)
+ */
 void TrafficManager_Update(TrafficManager* self) {
-    // TODO: Цикл обновления движения, проверка коллизий
-    // Вызывается каждый кадр
+    // TODO: Реализовать по ассемблерному листингу
+    // Обновление позиций автомобилей, спавн/деспавн
+    (void)self;
 }
 
-// STATUS: IMPLEMENTED (Stub)
-int TrafficManager_SpawnCar(TrafficManager* self, int carType, float x, float y, float z) {
-    // TODO: Логика спавна
-    // Проверка IsRoadAvailable, выделение места в массиве
-    printf("TrafficManager::SpawnCar(type=%d)\n", carType);
-    return -1; // Заглушка
+/**
+ * Спавн автомобиля на дороге
+ * Адрес: 0x47A400 (предположительно)
+ */
+void TrafficManager_SpawnCar(TrafficManager* self, float x, float y, int type) {
+    // TODO: Реализовать по ассемблерному листингу
+    (void)self; (void)x; (void)y; (void)type;
 }
 
-// STATUS: IMPLEMENTED (Stub)
-void TrafficManager_RemoveCar(TrafficManager* self, int carId) {
-    // TODO: Удаление из массива, освобождение ресурсов
+/**
+ * Удаление автомобиля из трафика
+ * Адрес: 0x47A500 (предположительно)
+ */
+void TrafficManager_RemoveCar(TrafficManager* self, void* carPtr) {
+    // TODO: Реализовать по ассемблерному листингу
+    (void)self; (void)carPtr;
 }
 
-// STATUS: IMPLEMENTED (Stub)
+/**
+ * Проверка доступности дороги для спавна
+ * Адрес: 0x47A600 (предположительно)
+ */
 bool TrafficManager_IsRoadAvailable(TrafficManager* self, float x, float y) {
-    // TODO: Проверка карты дорог
-    return true; // Заглушка
+    // TODO: Реализовать по ассемблерному листингу
+    (void)self; (void)x; (void)y;
+    return false;
 }
 
-// STATUS: IMPLEMENTED (Stub)
-void TrafficManager_SetDensity(TrafficManager* self, float density) {
-    // TODO: Сохранение значения плотности
+/**
+ * Настройка плотности трафика
+ * Адрес: 0x47A700 (предположительно)
+ */
+void TrafficManager_SetDensity(TrafficManager* self, int density) {
+    // TODO: Реализовать по ассемблерному листингу
+    (void)self; (void)density;
 }
 
-// STATUS: IMPLEMENTED (Stub)
-float TrafficManager_GetDensity(TrafficManager* self) {
-    // TODO: Чтение значения плотности
-    return 0.5f; // Заглушка
+/**
+ * Получение текущей плотности трафика
+ * Адрес: 0x47A800 (предположительно)
+ */
+int TrafficManager_GetDensity(TrafficManager* self) {
+    // TODO: Реализовать по ассемблерному листингу
+    (void)self;
+    return 0;
 }
 
-// STATUS: IMPLEMENTED (Stub)
+/**
+ * Сброс всех автомобилей на карте
+ * Адрес: 0x47A900 (предположительно)
+ */
 void TrafficManager_ResetAllCars(TrafficManager* self) {
-    // TODO: Удаление всех активных авто
+    // TODO: Реализовать по ассемблерному листингу
+    (void)self;
 }
 
-// STATUS: IMPLEMENTED (Stub)
-void TrafficManager_Save(TrafficManager* self, void* saveData) {
-    // TODO: Сериализация данных
+/**
+ * Сохранение состояния трафика в файл сохранения
+ * Адрес: 0x47AA00 (предположительно)
+ */
+void TrafficManager_Save(TrafficManager* self, void* filePtr) {
+    // TODO: Реализовать по ассемблерному листингу
+    (void)self; (void)filePtr;
 }
 
-// STATUS: IMPLEMENTED (Stub)
-void TrafficManager_Load(TrafficManager* self, void* saveData) {
-    // TODO: Десериализация данных
+/**
+ * Загрузка состояния трафика из файла сохранения
+ * Адрес: 0x47AB00 (предположительно)
+ */
+void TrafficManager_Load(TrafficManager* self, void* filePtr) {
+    // TODO: Реализовать по ассемблерному листингу
+    (void)self; (void)filePtr;
 }
 
-// STATUS: IMPLEMENTED (Stub)
+/**
+ * Обработка столкновений автомобилей
+ * Адрес: 0x47AC00 (предположительно)
+ */
 void TrafficManager_HandleCollisions(TrafficManager* self) {
-    // TODO: Проверка и обработка аварий
+    // TODO: Реализовать по ассемблерному листингу
+    (void)self;
 }
 
-// STATUS: IMPLEMENTED (Stub)
+/**
+ * Поиск ближайшего свободного места для спавна
+ * Адрес: 0x47AD00 (предположительно)
+ */
 bool TrafficManager_FindSpawnPoint(TrafficManager* self, float* outX, float* outY) {
-    // TODO: Поиск свободной точки
-    return false; // Заглушка
+    // TODO: Реализовать по ассемблерному листингу
+    (void)self; (void)outX; (void)outY;
+    return false;
 }
