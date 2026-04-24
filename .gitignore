@@ -2,13 +2,19 @@
 # Compiled and build artifacts
 *.o
 *.obj
+*.exe
+*.dll
+*.so
+*.a
 *.out
 
 # Dependencies
-*.a
-*.so
-*.dll
-*.exe
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
 # Build directories
 build/
@@ -18,10 +24,12 @@ target/
 # Logs and temp files
 *.log
 *.tmp
+*.swp
 
-# Environment
+# Environment variables
 .env
-*.env
+.env.local
+*.env.*
 
 # Editors
 .vscode/
@@ -29,13 +37,18 @@ target/
 *.swp
 *.swo
 
-# Python specific
-__pycache__/
-*.pyc
-*.pyo
-.Python
+# OS specific
+.DS_Store
+Thumbs.db
 
-# Compression files
+# Testing
+.coverage
+coverage/
+htmlcov/
+.mypy_cache/
+.pytest_cache/
+
+# Compression
 *.zip
 *.gz
 *.tar
@@ -58,38 +71,4 @@ __pycache__/
 *.tar.bz2
 *.tar.xz
 *.tar.zst
-
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# C/C++ specific
-*.a
-*.so
-*.dylib
-*.dll
-*.exe
-*.out
-*.o
-*.obj
-*.i
-*.ii
-*.s
-*.mod
-*.sconsign
-*.sconsign.*
-*.S
-*.su
-*.sbb
-
-# Debug files
-*.dSYM/
-*.pdb
-
-# Temporary files
-*.tmp
-*~
-.DS_Store
-Thumbs.db
 ```
