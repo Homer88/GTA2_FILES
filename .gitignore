@@ -1,5 +1,5 @@
 ```
-# Compiled and build artifacts
+# Compiled files
 *.o
 *.obj
 *.exe
@@ -8,6 +8,10 @@
 *.a
 *.out
 
+# Build directories
+build/
+dist/
+
 # Dependencies
 venv/
 .venv/
@@ -15,39 +19,56 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.egg-info/
-.Python
-pip-log.txt
-pip-delete-this-directory.txt
 
-# Build directories
-build/
-dist/
-*.egg
-
-# Logs and temp files
+# Logs
 *.log
+
+# Temporary files
 *.tmp
 *.swp
 *.swo
 
-# Environment variables
+# Environment files
 .env
 .env.local
-.env.*
+*.env.*
 
-# Editors
+# Editor/IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# OS generated files
+# OS files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
+
+# Coverage
+coverage/
+htmlcov/
+*.coverage
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
 ```
