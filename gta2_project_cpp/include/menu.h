@@ -168,107 +168,184 @@ typedef struct Menu {
 // static_assert(sizeof(Menu) == 0x1EB40, "Menu size mismatch");
 
 // Объявления функций (будут реализованы в .c/.cpp файлах)
+// Формат: // Адрес: 0xXXXXXX - Размер: 0xXX байт
 
 // Инициализация и очистка
-void Menu__Initialize(Menu* self);
+// Адрес: 0x00456F80 - Размер: 0x933 байт
+void Menu__InitializeState(Menu* self);
+// Адрес: 0x004578B3 - Размер: 0xC5B байт
 void Menu__CleanupResources(Menu* self);
+// Адрес: 0x0045850E - Размер: 0x4D байт
 void Menu__CloseBinkResources(Menu* self);
 
 // Управление состоянием
+// Адрес: 0x00456F50 - Размер: 0xB байт
 void Menu__SetFrontendState(Menu* self, FrontendState state);
+// Адрес: 0x00456F60 - Размер: 0x103 байт
 void Menu__UpdateState(Menu* self);
+// Адрес: 0x004570A0 - Размер: 0xF9 байт
 void Menu__UpdateMenuFrame(Menu* self);
+// Адрес: 0x00457199 - Размер: 0x18B байт
 void Menu__RenderMenu(Menu* self);
 
 // Ввод
+// Адрес: 0x00456A00 - Размер: 0x91 байт
 void Menu__InitDevice(Menu* self);
+// Адрес: 0x00456A91 - Размер: 0x22 байт
 void Menu__ReleaseInputDevice(Menu* self);
+// Адрес: 0x00456AB3 - Размер: 0x4E байт
 void Menu__ReadDeviceState(Menu* self);
+// Адрес: 0x00456B01 - Размер: 0x152 байт
 void Menu__ProcessInput(Menu* self);
+// Адрес: 0x00456C53 - Размер: 0x2A байт
 void Menu__HandleKeyPress(Menu* self, KeyCode key);
+// Адрес: 0x00456C7D - Размер: 0xF байт
 void Menu__SetFrontendKeysEnabled(Menu* self, bool enabled);
 
 // Работа с игроком
+// Адрес: 0x00458600 - Размер: 0x2F байт
 void Menu__SetPlayerName(Menu* self, const char* name);
+// Адрес: 0x0045862F - Размер: 0x4F байт
 void Menu__SetPlayerNameFromMenu(Menu* self, const char* name);
+// Адрес: 0x0045867E - Размер: 0x38 байт
 bool Menu__ValidatePlayerName(Menu* self, const char* name);
+// Адрес: 0x004586B6 - Размер: 0x26 байт
 const char* Menu__getPlayerProfileName(Menu* self);
+// Адрес: 0x004586DC - Размер: 0x25B байт
 void Menu__LoadPlayerProfile(Menu* self, int slot);
+// Адрес: 0x00458937 - Размер: 0x10C байт
 void Menu__SelectPlayerSlot(Menu* self, int slot);
+// Адрес: 0x00458A43 - Размер: 0x4B байт
 int Menu__FindLastActiveArenaSlot(Menu* self);
 
 // Сохранение/загрузка
+// Адрес: 0x00458A8E - Размер: 0x1B3 байт
 void Menu__SaveGame(Menu* self);
+// Адрес: 0x00458C41 - Размер: 0x6B байт
 void Menu__LoadGame(Menu* self);
+// Адрес: 0x00458CAC - Размер: 0x169 байт
 void Menu__NewGame(Menu* self);
+// Адрес: 0x00458E15 - Размер: 0x86 байт
 bool Menu__CheckSaveFile(Menu* self, const char* filename);
+// Адрес: 0x00458E9B - Размер: 0x9E байт
 const char* Menu__GettingSaveFile(Menu* self);
+// Адрес: 0x00458F39 - Размер: 0x4E байт
 const char* Menu__GetSaveFile(Menu* self);
+// Адрес: 0x00458F87 - Размер: 0x6A байт
 void Menu__SaveSettings(Menu* self);
 
 // Отрисовка и ресурсы
+// Адрес: 0x00457324 - Размер: 0x43 байт
 void Menu__PrintCentr(Menu* self, const char* text, float x, float y);
+// Адрес: 0x00457367 - Размер: 0xCC байт
 void* Menu__LoadTexture(Menu* self, const char* filename);
+// Адрес: 0x00457433 - Размер: 0x3A байт
 void Menu__LoadTexturesFromTable(Menu* self, void* table);
+// Адрес: 0x0045746D - Размер: 0x14B байт
 void* Menu__FindBackground(Menu* self, int index);
+// Адрес: 0x004575B8 - Размер: 0x1B5 байт
 void Menu__DrawMenuBackground(Menu* self);
+// Адрес: 0x0045776D - Размер: 0x46 байт
 void Menu__DrawMenuElements(Menu* self);
+// Адрес: 0x004577B3 - Размер: 0x7D байт
 void Menu__UpdateGUI(Menu* self);
+// Адрес: 0x00457830 - Размер: 0x1512 байт
 void Menu__LoadTextMenu(Menu* self);
 
 // Обработка событий и навигация
+// Адрес: 0x00456D00 - Размер: 0x2A байт
 void Menu__SwitchPage(Menu* self, int pageIndex);
+// Адрес: 0x00456D2A - Размер: 0xBC байт
 void Menu__ActivateElement(Menu* self, int elementIndex);
+// Адрес: 0x00456DE6 - Размер: 0x60B байт
 void Menu__HandleMenuEvent(Menu* self, int event);
+// Адрес: 0x00456DF0 - Размер: 0x66 байт
 void Menu__NavigatePages(Menu* self, int direction);
+// Адрес: 0x00456E56 - Размер: 0x66 байт
 void Menu__GoBack(Menu* self);
 
 // Логика меню
+// Адрес: 0x00457F00 - Размер: 0x35C байт
 void Menu__MainMenuLogic(Menu* self);
+// Адрес: 0x00458050 - Размер: 0x1A9 байт
 void Menu__PauseMenu(Menu* self);
+// Адрес: 0x004581F9 - Размер: 0x2CB байт
 void Menu__OptionsMenu(Menu* self);
+// Адрес: 0x004584C4 - Размер: 0x16B байт
 void Menu__PlayerList(Menu* self);
+// Адрес: 0x0045862F - Размер: 0xDA байт
 void Menu__MultiplayerMenu(Menu* self);
+// Адрес: 0x00458709 - Размер: 0x9C байт
 void Menu__ServerSettings(Menu* self);
 
 // Настройки и конфигурация
+// Адрес: 0x00458800 - Размер: 0x17B байт
 void Menu__ApplyMoneyCheatIfApplicable(Menu* self);
+// Адрес: 0x0045897B - Размер: 0x2C4 байт
 void Menu__SetDifficulty(Menu* self, int difficulty);
+// Адрес: 0x00458C3F - Размер: 0x6E байт
 void Menu__SelectCharacter(Menu* self, int characterIndex);
+// Адрес: 0x00458CAD - Размер: 0x38 байт
 void Menu__ConfigureControls(Menu* self, int config);
+// Адрес: 0x00458CE5 - Размер: 0x28 байт
 void Menu__AudioOptions(Menu* self);
+// Адрес: 0x00458D0D - Размер: 0x44 байт
 void Menu__VideoOptions(Menu* self);
+// Адрес: 0x00458D51 - Размер: 0x53 байт
 void Menu__ApplySettings(Menu* self);
+// Адрес: 0x00458DA4 - Размер: 0x15F байт
 void Menu__ResetSettings(Menu* self);
 
 // Специальные экраны
+// Адрес: 0x00458F03 - Размер: 0x23 байт
 void Menu__Intro_BIK(Menu* self);
+// Адрес: 0x00458F26 - Размер: 0x42 байт
 void Menu__PreIntro(Menu* self);
+// Адрес: 0x00458F68 - Размер: 0x66 байт
 void Menu__SelectMission(Menu* self);
+// Адрес: 0x00458FCE - Размер: 0xF9 байт
 void Menu__WorldMap(Menu* self);
+// Адрес: 0x004590C7 - Размер: 0x66 байт
 void Menu__ShowStatistics(Menu* self);
+// Адрес: 0x0045912D - Размер: 0x139 байт
 void Menu__ShowAwards(Menu* self);
+// Адрес: 0x00459266 - Размер: 0x2A байт
 void Menu__Gallery(Menu* self);
+// Адрес: 0x00459290 - Размер: 0x2A байт
 void Menu__ShowCredits(Menu* self);
+// Адрес: 0x004592BA - Размер: 0x141 байт
 void Menu__ConfirmExit(Menu* self);
 
 // Проверки и условия
+// Адрес: 0x004593FB - Размер: 0x4C+0x69+0x161 байт
 void Menu__CheckConditions(Menu* self);
+// Адрес: 0x00459447 - Размер: 0x31 байт
 void Menu__MenuShowJapanText(Menu* self);
 
 // Читы и специальные функции
+// Адрес: 0x00459478 - Размер: 0x44E байт
 void Menu__PlayerCheat(Menu* self, int cheatCode);
+// Адрес: 0x004598C6 - Размер: 0xC1 байт
 void Menu__SpecialFunction1(Menu* self);
+// Адрес: 0x00459987 - Размер: 0xF9 байт
 void Menu__SpecialFunction2(Menu* self);
+// Адрес: 0x00459A80 - Размер: 0x61D байт
 void Menu__SpecialFunction3(Menu* self);
+// Адрес: 0x0045A09D - Размер: 0x1D6 байт
 void Menu__SpecialFunction4(Menu* self);
+// Адрес: 0x0045A273 - Размер: 0x231 байт
 void Menu__SpecialFunction5(Menu* self);
+// Адрес: 0x0045A4A4 - Размер: 0xB5 байт
 void Menu__SpecialFunction6(Menu* self);
+// Адрес: 0x0045A559 - Размер: 0x133 байт
 void Menu__SpecialFunction7(Menu* self);
 
 // Основной метод меню
+// Адрес: 0x00456F00 - Размер: 0x32E байт
 void Menu__Menu(Menu* self);
+// Адрес: 0x0045722E - Размер: 0xF0 байт
 void Menu__Menu_Des(Menu* self);
+// Адрес: 0x0045731E - Размер: 0x1E байт
 void Menu__Menu_Des1(Menu* self);
 
 // ============================================================================

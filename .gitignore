@@ -1,5 +1,5 @@
 ```
-# Compiled and binary files
+# Compiled and build artifacts
 *.o
 *.obj
 *.exe
@@ -8,39 +8,61 @@
 *.a
 *.out
 
-# Build artifacts
-build/
-dist/
-
 # Dependencies
 node_modules/
 venv/
 .venv/
 __pycache__/
-.mypy_cache/
-.pytest_cache/
+dist/
+build/
 target/
 .gradle/
 
-# Editor/IDE files
-.vscode/
-.idea/
+# Logs and temp files
+*.log
+*.tmp
 *.swp
 *.swo
-*.tmp
 
-# System files
-.DS_Store
-Thumbs.db
+# Environment
 .env
 .env.local
 *.env.*
 
-# Logs
-*.log
+# Editors
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
 
 # Coverage
 coverage/
 htmlcov/
 .coverage
+
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# C/C++ specific
+*.a
+*.lib
+*.obj
+*.o
+*.ilk
+*.pdb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build directories (common for C/C++)
+build/
+cmake-build-*/
+Makefile
 ```
