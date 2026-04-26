@@ -1,107 +1,208 @@
 #include "gang.h"
 
-// 1. Инициализация банды
-// Адрес: 0x0044A100, Размер: 0x38 байт
-void Gang__Init(Gang* gang, const char* name, int id) {
-    // TODO: Реализация из ассемблера
-    (void)gang;
-    (void)name;
-    (void)id;
+// ==========================================
+// РЕАЛИЗАЦИЯ МЕТОДОВ КЛАССА Gang
+// ==========================================
+
+void Gang__Gang(Gang* this) {
+    // Адрес: 0x0046C960
+    // TODO: Реализовать конструктор по asm
 }
 
-// 2. Получение указателя на банду по ID
-// Адрес: 0x0044A140, Размер: 0x24 байта
-Gang* Gang__GetGangPointer(int id) {
-    // TODO: Реализация из ассемблера
-    (void)id;
+void Gang__Gang_Des(Gang* this) {
+    // Адрес: 0x00469E50
+    // TODO: Реализовать деструктор по asm
+}
+
+void Gang__Gang1(Gang* this, Gang* src) {
+    // Адрес: 0x00469E40
+    // TODO: Реализовать копирующий конструктор по asm
+}
+
+void Gang__SetName(Gang* this, const char* name) {
+    // Адрес: 0x0046CB40
+    // TODO: Реализовать по asm
+}
+
+void Gang__SetRespectForPlayer(Gang* this, int playerId, int value) {
+    // Адрес: 0x0046CA20
+    // TODO: Реализовать по asm
+}
+
+int Gang__GetRespectForPlayer(Gang* this, int playerId) {
+    // Адрес: 0x0046CAC0
+    // TODO: Реализовать по asm
+    return 0;
+}
+
+void Gang__decreaseRespect(Gang* this, int playerId) {
+    // Адрес: 0x0046CA80
+    // TODO: Реализовать по asm
+}
+
+void Gang__SetWarMaskGang(Gang* this, uint32_t mask) {
+    // Адрес: 0x0046CB20
+    // TODO: Реализовать по asm
+}
+
+void Gang__SetRemap(Gang* this, uint8_t remap) {
+    // Адрес: 0x004848A0
+    // TODO: Реализовать по asm
+}
+
+void Gang__SetWeapon1(Gang* this, int weaponId) {
+    // Адрес: 0x004848B0
+    // TODO: Реализовать по asm
+}
+
+void Gang__SetWeapon2(Gang* this, int weaponId) {
+    // Адрес: 0x004848C0
+    // TODO: Реализовать по asm
+}
+
+void Gang__SetWeapon3(Gang* this, int weaponId) {
+    // Адрес: 0x004848D0
+    // TODO: Реализовать по asm
+}
+
+void Gang__SetTypeCar(Gang* this, int carModel) {
+    // Адрес: 0x004848E0
+    // TODO: Реализовать по asm
+}
+
+void Gang__SetCar_remap(Gang* this, uint8_t remap) {
+    // Адрес: 0x004848F0
+    // TODO: Реализовать по asm
+}
+
+void Gang__SetXYZ(Gang* this, float x, float y, float z) {
+    // Адрес: 0x00484910
+    // TODO: Реализовать по asm
+}
+
+void Gang__SetGang(Gang* this, int type) {
+    // Адрес: 0x00484940
+    // TODO: Реализовать по asm
+}
+
+void Gang__SetKillChar(Gang* this, char ch) {
+    // Адрес: 0x00484950
+    // TODO: Реализовать по asm
+}
+
+void Gang__sub_45D920(Gang* this) {
+    // Адрес: 0x0046C920
+    // TODO: Реализовать по asm
+}
+
+void Gang__sub_45D9E0(Gang* this) {
+    // Адрес: 0x0046C9E0
+    // TODO: Реализовать по asm
+}
+
+void Gang__sub_45DAE0(Gang* this) {
+    // Адрес: 0x0046CAE0
+    // TODO: Реализовать по asm
+}
+
+void Gang__sub_45DB70(Gang* this) {
+    // Адрес: 0x0046CB70
+    // TODO: Реализовать по asm
+}
+
+Gang* Gang__GetVisibleGang(Gang* this) {
+    // Адрес: 0x0046CD50
+    // TODO: Реализовать по asm
     return (Gang*)0;
 }
 
-// 3. Получение названия банды
-// Адрес: 0x0044A170, Размер: 0x1E байт
-const char* Gang__GetGangName(Gang* gang) {
-    // TODO: Реализация из ассемблера
-    (void)gang;
-    return (const char*)0;
+void Gang__sub_45DE10(Gang* this) {
+    // Адрес: 0x0046CE10
+    // TODO: Реализовать по asm
 }
 
-// 4. Установка отношения к другой банде
-// Адрес: 0x0044A190, Размер: 0x32 байта
-void Gang__SetRelation(Gang* gang, int targetGangId, int relationValue) {
-    // TODO: Реализация из ассемблера
-    (void)gang;
-    (void)targetGangId;
-    (void)relationValue;
+void Gang__sub_45DEA0(Gang* this) {
+    // Адрес: 0x0046CEA0
+    // TODO: Реализовать по asm
 }
 
-// 5. Получение отношения к другой банде
-// Адрес: 0x0044A1D0, Размер: 0x2A байт
-int Gang__GetRelation(Gang* gang, int targetGangId) {
-    // TODO: Реализация из ассемблера
-    (void)gang;
-    (void)targetGangId;
+void Gang__Set_475900(Gang* this) {
+    // Адрес: 0x00484900
+    // TODO: Реализовать по asm
+}
+
+// ==========================================
+// РЕАЛИЗАЦИЯ МЕТОДОВ КЛАССА Gangs
+// ==========================================
+
+void Gangs__Gangs(Gangs* this) {
+    // Адрес: 0x00469E60
+    // TODO: Реализовать конструктор по asm
+}
+
+void Gangs__Gangs_Des(Gangs* this) {
+    // Адрес: 0x00469E80
+    // TODO: Реализовать деструктор по asm
+}
+
+void Gangs__Gangs_des(Gangs* this) {
+    // Адрес: 0x0046AEE0
+    // TODO: Реализовать по asm
+}
+
+void Gangs__IncreaseRespectForPlayer(Gangs* this, int playerId, int value) {
+    // Адрес: 0x0046CA40
+    // TODO: Реализовать по asm
+}
+
+Gang* Gangs__FindByName(Gangs* this, const char* name) {
+    // Адрес: 0x0046CBB0
+    // TODO: Реализовать по asm
+    return (Gang*)0;
+}
+
+Gang* Gangs__GetGang(Gangs* this, int id) {
+    // Адрес: 0x0046CC20
+    // TODO: Реализовать по asm
+    return (Gang*)0;
+}
+
+void Gangs__SelectGang(Gangs* this, int id) {
+    // Адрес: 0x0046CC70
+    // TODO: Реализовать по asm
+}
+
+int Gangs__AddNewGang(Gangs* this) {
+    // Адрес: 0x0046CC90
+    // TODO: Реализовать по asm
     return 0;
 }
 
-// 6. Проверка: союзник?
-// Адрес: 0x0044A200, Размер: 0x22 байта
-bool Gang__IsAlly(Gang* gang, int targetGangId) {
-    // TODO: Реализация из ассемблера
-    (void)gang;
-    (void)targetGangId;
-    return false;
+float* Gangs__GetGangPositionByName(Gangs* this, const char* name) {
+    // Адрес: 0x0046CCC0
+    // TODO: Реализовать по asm
+    return (float*)0;
 }
 
-// 7. Проверка: враг?
-// Адрес: 0x0044A230, Размер: 0x22 байта
-bool Gang__IsEnemy(Gang* gang, int targetGangId) {
-    // TODO: Реализация из ассемблера
-    (void)gang;
-    (void)targetGangId;
-    return false;
+Gang* Gangs__FindGangByCarModel(Gangs* this, int carModel) {
+    // Адрес: 0x0046CCE0
+    // TODO: Реализовать по asm
+    return (Gang*)0;
 }
 
-// 8. Получение силы банды
-// Адрес: 0x0044A260, Размер: 0x1A байт
-int Gang__GetStrength(Gang* gang) {
-    // TODO: Реализация из ассемблера
-    (void)gang;
-    return 0;
+Gang* Gangs__GetFirstUsedGang(Gangs* this) {
+    // Адрес: 0x0046CD60
+    // TODO: Реализовать по asm
+    return (Gang*)0;
 }
 
-// 9. Установка силы банды
-// Адрес: 0x0044A280, Размер: 0x26 байт
-void Gang__SetStrength(Gang* gang, int strength) {
-    // TODO: Реализация из ассемблера
-    (void)gang;
-    (void)strength;
+Gang* Gangs__GetNextUsedGang(Gangs* this, Gang* current) {
+    // Адрес: 0x0046CDB0
+    // TODO: Реализовать по asm
+    return (Gang*)0;
 }
 
-// 10. Получение набора оружия
-// Адрес: 0x0044A2B0, Размер: 0x20 байт
-int Gang__GetWeaponSet(Gang* gang) {
-    // TODO: Реализация из ассемблера
-    (void)gang;
-    return 0;
-}
-
-// 11. Спавн члена банды
-// Адрес: 0x0044A2E0, Размер: 0x8C байт
-void* Gang__SpawnMember(Gang* gang, float x, float y, float z) {
-    // TODO: Реализация из ассемблера
-    (void)gang;
-    (void)x;
-    (void)y;
-    (void)z;
-    return (void*)0;
-}
-
-// 12. Обновление территории
-// Адрес: 0x0044A370, Размер: 0x54 байта
-void Gang__UpdateTerritory(Gang* gang, float x, float y, float radius) {
-    // TODO: Реализация из ассемблера
-    (void)gang;
-    (void)x;
-    (void)y;
-    (void)radius;
+void Gangs__sub_45DF30(Gangs* this) {
+    // Адрес: 0x0046CF30
+    // TODO: Реализовать по asm
 }

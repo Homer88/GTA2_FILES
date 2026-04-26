@@ -5,69 +5,95 @@
 #include <stdbool.h>
 
 // Структура банды Gang
-// Размер: ~0x40 байт (предположительно)
-typedef struct {
-    char name[24];          // 0x00 - Название банды
-    uint8_t primaryColor;   // 0x18 - Основной цвет
-    uint8_t secondaryColor; // 0x19 - Вторичный цвет
-    uint8_t modelId;        // 0x1A - ID модели пешехода
-    uint8_t pad0;           // 0x1B - Выравнивание
-    int32_t relations[8];   // 0x1C - Отношения с другими бандами (8 штук)
-    int32_t strength;       // 0x3C - Сила банды
-    int32_t weaponSet;      // 0x40 - Набор оружия
-    float territoryX;       // 0x44 - Территория X
-    float territoryY;       // 0x48 - Территория Y
-    float territoryRadius;  // 0x4C - Радиус территории
-} Gang;
+// Размер требует уточнения по asm (конструктор 0x0046C960)
+// Глобальный менеджер: gGangs (0x0046F898)
 
-// Методы с адресами из дампа
+typedef struct Gang Gang;
+typedef struct Gangs Gangs;
 
-// 1. Инициализация банды
-// Адрес: 0x0044A100, Размер: 0x38 байт
-void Gang__Init(Gang* gang, const char* name, int id);
+// Перечисление отношений
+typedef enum {
+    GANG_RELATION_NEUTRAL = 0,
+    GANG_RELATION_ALLY = 1,
+    GANG_RELATION_ENEMY = 2,
+    GANG_RELATION_WAR = 3
+} GangRelation;
 
-// 2. Получение указателя на банду по ID
-// Адрес: 0x0044A140, Размер: 0x24 байта
-Gang* Gang__GetGangPointer(int id);
+// Структура одной банды (поля предположительные, требуют уточнения по asm)
+struct Gang {
+    char     name[24];        // Имя банды
+    int      colors[2];       // Цвета
+    int      carModel;        // Модель машины
+    int      weapons[3];      // Оружие
+    int      gangType;        // Тип банды
+    float    spawnX, spawnY, spawnZ; // Координаты
+    int      respect[4];      // Уважение
+    uint32_t warMask;         // Маска войны
+    uint8_t  remap;           // Перекраска
+    uint8_t  carRemap;        // Перекраска авто
+    uint8_t  killChar;        // Символ убийства
+    uint8_t  padding;
+};
 
-// 3. Получение названия банды
-// Адрес: 0x0044A170, Размер: 0x1E байт
-const char* Gang__GetGangName(Gang* gang);
+// Менеджер гангов
+struct Gangs {
+    Gang gangsArray[32];
+    int    count;
+    int    selectedGangId;
+};
 
-// 4. Установка отношения к другой банде
-// Адрес: 0x0044A190, Размер: 0x32 байта
-void Gang__SetRelation(Gang* gang, int targetGangId, int relationValue);
+// ==========================================
+// МЕТОДЫ КЛАССА Gang (Реальные адреса из gta2.map)
+// ==========================================
 
-// 5. Получение отношения к другой банде
-// Адрес: 0x0044A1D0, Размер: 0x2A байт
-int Gang__GetRelation(Gang* gang, int targetGangId);
+// Конструктор / Деструктор
+void Gang__Gang(Gang* this);                 // 0x0046C960
+void Gang__Gang_Des(Gang* this);             // 0x00469E50
+void Gang__Gang1(Gang* this, Gang* src);     // 0x00469E40
 
-// 6. Проверка: союзник?
-// Адрес: 0x0044A200, Размер: 0x22 байта
-bool Gang__IsAlly(Gang* gang, int targetGangId);
+// Свойства и настройка
+void Gang__SetName(Gang* this, const char* name);       // 0x0046CB40
+void Gang__SetRespectForPlayer(Gang* this, int playerId, int value); // 0x0046CA20
+int  Gang__GetRespectForPlayer(Gang* this, int playerId); // 0x0046CAC0
+void Gang__decreaseRespect(Gang* this, int playerId);   // 0x0046CA80
+void Gang__SetWarMaskGang(Gang* this, uint32_t mask);   // 0x0046CB20
+void Gang__SetRemap(Gang* this, uint8_t remap);         // 0x004848A0
+void Gang__SetWeapon1(Gang* this, int weaponId);        // 0x004848B0
+void Gang__SetWeapon2(Gang* this, int weaponId);        // 0x004848C0
+void Gang__SetWeapon3(Gang* this, int weaponId);        // 0x004848D0
+void Gang__SetTypeCar(Gang* this, int carModel);        // 0x004848E0
+void Gang__SetCar_remap(Gang* this, uint8_t remap);     // 0x004848F0
+void Gang__SetXYZ(Gang* this, float x, float y, float z); // 0x00484910
+void Gang__SetGang(Gang* this, int type);               // 0x00484940
+void Gang__SetKillChar(Gang* this, char ch);            // 0x00484950
 
-// 7. Проверка: враг?
-// Адрес: 0x0044A230, Размер: 0x22 байта
-bool Gang__IsEnemy(Gang* gang, int targetGangId);
+// Внутренние функции
+void Gang__sub_45D920(Gang* this);           // 0x0046C920
+void Gang__sub_45D9E0(Gang* this);           // 0x0046C9E0
+void Gang__sub_45DAE0(Gang* this);           // 0x0046CAE0
+void Gang__sub_45DB70(Gang* this);           // 0x0046CB70
+Gang* Gang__GetVisibleGang(Gang* this);      // 0x0046CD50
+void Gang__sub_45DE10(Gang* this);           // 0x0046CE10
+void Gang__sub_45DEA0(Gang* this);           // 0x0046CEA0
+void Gang__Set_475900(Gang* this);           // 0x00484900
 
-// 8. Получение силы банды
-// Адрес: 0x0044A260, Размер: 0x1A байт
-int Gang__GetStrength(Gang* gang);
+// ==========================================
+// МЕТОДЫ КЛАССА Gangs (Менеджер)
+// ==========================================
 
-// 9. Установка силы банды
-// Адрес: 0x0044A280, Размер: 0x26 байт
-void Gang__SetStrength(Gang* gang, int strength);
+void Gangs__Gangs(Gangs* this);              // 0x00469E60
+void Gangs__Gangs_Des(Gangs* this);          // 0x00469E80
+void Gangs__Gangs_des(Gangs* this);          // 0x0046AEE0
 
-// 10. Получение набора оружия
-// Адрес: 0x0044A2B0, Размер: 0x20 байт
-int Gang__GetWeaponSet(Gang* gang);
-
-// 11. Спавн члена банды
-// Адрес: 0x0044A2E0, Размер: 0x8C байт
-void* Gang__SpawnMember(Gang* gang, float x, float y, float z);
-
-// 12. Обновление территории
-// Адрес: 0x0044A370, Размер: 0x54 байта
-void Gang__UpdateTerritory(Gang* gang, float x, float y, float radius);
+void Gangs__IncreaseRespectForPlayer(Gangs* this, int playerId, int value); // 0x0046CA40
+Gang* Gangs__FindByName(Gangs* this, const char* name); // 0x0046CBB0
+Gang* Gangs__GetGang(Gangs* this, int id);              // 0x0046CC20
+void  Gangs__SelectGang(Gangs* this, int id);           // 0x0046CC70
+int   Gangs__AddNewGang(Gangs* this);                   // 0x0046CC90
+float* Gangs__GetGangPositionByName(Gangs* this, const char* name); // 0x0046CCC0
+Gang* Gangs__FindGangByCarModel(Gangs* this, int carModel); // 0x0046CCE0
+Gang* Gangs__GetFirstUsedGang(Gangs* this);  // 0x0046CD60
+Gang* Gangs__GetNextUsedGang(Gangs* this, Gang* current); // 0x0046CDB0
+void Gangs__sub_45DF30(Gangs* this);         // 0x0046CF30
 
 #endif // GANG_H
