@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/gta2_runner.dir/src/main.cpp.o -o gta2_runner  libgta2_core.a 

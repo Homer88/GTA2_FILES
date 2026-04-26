@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/test_menustringslot.dir/test_menustringslot.cpp.o -o test_menustringslot  libgta2_core.a 

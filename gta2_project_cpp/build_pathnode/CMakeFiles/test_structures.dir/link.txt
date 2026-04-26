@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/test_structures.dir/test_all_structures.cpp.o -o test_structures  libgta2_core.a 

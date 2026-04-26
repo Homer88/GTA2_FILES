@@ -45,7 +45,7 @@ public:
     inline int32_t& GetMaxCount() { return *reinterpret_cast<int32_t*>(raw_data + 0x04); }
     
     // Constructor
-    // Address: 0x?????? (Called after operator_new(0x2F04))
+    // Address: 0x0045B050 (Called after operator_new(0x2F04))
     EntityManager();
     
     // Destructor

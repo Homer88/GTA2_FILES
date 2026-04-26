@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/test_missionobjective.dir/test_missionobjective.cpp.o -o test_missionobjective  libgta2_core.a 

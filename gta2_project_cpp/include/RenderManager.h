@@ -36,13 +36,13 @@ struct RenderManager {
 
     /**
      * @brief Конструктор
-     * Address: 0x44B??? (Требуется точный адрес из MAP/ASM)
+     * Address: 0x004C4DC0 (Требуется точный адрес из MAP/ASM)
      */
     RenderManager();
 
     /**
      * @brief Деструктор
-     * Address: 0x44B???
+     * Address: 0x004C4D80
      */
     ~RenderManager();
 

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libplayerstats_lib.a CMakeFiles/playerstats_lib.dir/workspace/gta2_project_cpp/src/PlayerStats.cpp.o
-/usr/bin/ranlib libplayerstats_lib.a

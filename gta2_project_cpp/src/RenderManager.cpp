@@ -8,14 +8,14 @@ namespace gta2 {
 RenderManager gRenderManager;
 
 RenderManager::RenderManager() {
-    // Address: 0x44B??? (Конструктор S20)
+    // Address: 0x004C4DC0 (Конструктор S20)
     // Инициализация полей нулями или дефолтными значениями
     std::memset(this, 0, sizeof(RenderManager));
     camera_zoom = 1.0f;
 }
 
 RenderManager::~RenderManager() {
-    // Address: 0x44B??? (Деструктор S20)
+    // Address: 0x004C4D80 (Деструктор S20)
     shutdown();
 }
 
