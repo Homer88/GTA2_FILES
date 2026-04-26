@@ -9,72 +9,40 @@
 *.out
 
 # Dependencies
+node_modules/
 venv/
 .venv/
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-.venv.bak/
-pip-log.txt
-pip-delete-this-directory.txt
+.mypy_cache/
+.pytest_cache/
+target/
+.gradle/
 
 # Build directories
 build/
 dist/
-*.egg
-*.egg-info/
-.sconsign.dblite
-._build/
-bld/
-.bzr/
-.direnv/
-
-# Logs and temp files
-*.log
-*.tmp
-*.swp
-*.swo
-*~
-.DS_Store
-Thumbs.db
-
-# Environment
-.env
-.env.local
-*.env.*
 
 # Editors
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
+
+# Logs and temp files
+*.log
+*.tmp
+
+# System files
+.DS_Store
+Thumbs.db
+.env
+.env.local
+*.env.*
 
 # Coverage
-.coverage
 coverage/
 htmlcov/
-
-# MyPy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# PyTest
-.pytest_cache/
-
-# Gradle
-.gradle/
-build/
-
-# Node
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+.coverage
 
 # Compressed files
 *.zip
