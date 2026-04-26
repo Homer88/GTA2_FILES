@@ -564,3 +564,31 @@ void Menu__Menu_Des1(Menu* self) {
     // Адрес: TBD, Размер: 0x1E bytes
     if (!self) return;
 }
+
+// ============================================================================
+// CMenuDataBlock (ранее S138)
+// ============================================================================
+
+// Конструктор: адрес 0x00061CE0
+void CMenuDataBlock__CMenuDataBlock(CMenuDataBlock* self) {
+    // TODO: Реализовать на основе ассемблерного кода
+    if (!self) return;
+    self->field_0 = 0;
+    self->field_1 = 0;
+    self->field_2 = 0;
+    self->field_3 = 0;
+}
+
+// Деструктор: адрес 0x00061CF0
+void CMenuDataBlock__CMenuDataBlock_DEC(CMenuDataBlock* self) {
+    // TODO: Реализовать на основе ассемблерного кода
+    if (!self) return;
+    // Очистка ресурсов
+}
+
+// Загрузка данных: адрес 0x00061D00 (ранее sub_452D00)
+void CMenuDataBlock__Load(CMenuDataBlock* self) {
+    // TODO: Реализовать на основе ассемблерного кода
+    if (!self) return;
+    // Загрузка данных из файла
+}

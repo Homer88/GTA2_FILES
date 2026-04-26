@@ -271,6 +271,29 @@ void Menu__Menu(Menu* self);
 void Menu__Menu_Des(Menu* self);
 void Menu__Menu_Des1(Menu* self);
 
+// ============================================================================
+// Структура CMenuDataBlock (ранее S138)
+// Размер: 4 байта
+// Адрес в памяти: уточнить по дампу
+// ============================================================================
+
+typedef struct CMenuDataBlock {
+    uint8_t field_0; // смещение 0x0 - флаг состояния
+    uint8_t field_1; // смещение 0x1
+    uint8_t field_2; // смещение 0x2
+    uint8_t field_3; // смещение 0x3
+} CMenuDataBlock;
+
+// Методы структуры CMenuDataBlock
+// Конструктор: адрес 0x00061CE0
+void CMenuDataBlock__CMenuDataBlock(CMenuDataBlock* self);
+
+// Деструктор: адрес 0x00061CF0
+void CMenuDataBlock__CMenuDataBlock_DEC(CMenuDataBlock* self);
+
+// Загрузка данных: адрес 0x00061D00 (ранее sub_452D00)
+void CMenuDataBlock__Load(CMenuDataBlock* self);
+
 #ifdef __cplusplus
 }
 #endif
