@@ -9,20 +9,18 @@
 *.out
 
 # Dependencies
-node_modules/
-venv/
-.venv/
-__pycache__/
-dist/
+*.deps/
+deps/
+
+# Build directories
 build/
+dist/
 target/
-.gradle/
 
 # Logs and temp files
 *.log
 *.tmp
 *.swp
-*.swo
 
 # Environment
 .env
@@ -32,6 +30,8 @@ target/
 # Editors
 .vscode/
 .idea/
+*.swp
+*.swo
 
 # System files
 .DS_Store
@@ -43,26 +43,33 @@ htmlcov/
 .coverage
 
 # Python specific
+__pycache__/
 *.pyc
 *.pyo
 *.pyd
 .Python
 *.so
 
+# Node.js specific
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
 # C/C++ specific
-*.a
-*.lib
-*.obj
-*.o
-*.ilk
-*.pdb
-*.suo
+*.i
+*.ii
+*.s
+*.su
+*.sln
+*.vcxproj
+*.vcproj
+*.csproj
 *.user
 *.userosscache
-*.sln.docstates
-
-# Build directories (common for C/C++)
-build/
-cmake-build-*/
-Makefile
+*.suo
+*.lock
+!*.dll
+!*.so
+!*.exe
 ```
